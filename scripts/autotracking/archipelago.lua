@@ -35,6 +35,20 @@ function onClear(slot_data)
 	
 	--print(dump_table(slot_data))
 
+	-- reset events
+	local reset_events = {
+		"EVENT_GOT_KENYA", "EVENT_GAVE_KENYA", "EVENT_JASMINE_RETURNED_TO_GYM", "EVENT_DECIDED_TO_HELP_LANCE",
+        "EVENT_CLEARED_ROCKET_HIDEOUT", "EVENT_CLEARED_RADIO_TOWER", "EVENT_BEAT_ELITE_FOUR", "EVENT_RESTORED_POWER_TO_KANTO",
+        "EVENT_VIRIDIAN_GYM_BLUE", "EVENT_BEAT_RED"
+	}
+	
+	for _, code in ipairs(reset_events) do
+		local obj = Tracker:FindObjectForCode(code)
+		if obj ~= nil then
+			obj.Active = false
+		end
+	end
+
 	for k,v in pairs(slot_data) do
 		if SLOT_CODES[k] then
 			Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
