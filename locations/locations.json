@@ -175,7 +175,7 @@
 			},
 			{
 				"name": "Dark Cave Violet Entrance",
-				"access_rules": ["$can_flash"],
+				"access_rules": ["^$can_flash"],
 				"sections": [
 					{
 						"name": "Item 1",
@@ -316,19 +316,19 @@
 					},
 					{
 						"name": "Aerodactyl Room Item 1",
-						"access_rules": ["$can_surf,$can_flash"]
+						"access_rules": ["$can_surf,^$can_flash"]
 					},
 					{
 						"name": "Aerodactyl Room Item 2",
-						"access_rules": ["$can_surf,$can_flash"]
+						"access_rules": ["$can_surf,^$can_flash"]
 					},
 					{
 						"name": "Aerodactyl Room Item 3",
-						"access_rules": ["$can_surf,$can_flash"]
+						"access_rules": ["$can_surf,^$can_flash"]
 					},
 					{
 						"name": "Aerodactyl Room Item 4",
-						"access_rules": ["$can_surf,$can_flash"]
+						"access_rules": ["$can_surf,^$can_flash"]
 					},
 					{
 						"name": "Kabuto Room Item 1 (Escape Rope)",
@@ -1348,7 +1348,7 @@
 			},
 			{
 				"name": "Tin Tower",
-				"access_rules": ["$tintower_access"],
+				"access_rules": ["^$tintower_access"],
 				"sections": [
 					{
 						"name": "3F - Item"
@@ -1805,58 +1805,58 @@
 					},
 					{
 						"name": "1F - Item in Northeast",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "1F - Item in Southwest",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "B1F - Item 1",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "B1F - Item 2",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "B1F - Item 3",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "B1F - Item 4",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "B1F - Item 5",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "B1F - Hidden Item in Northeast",
-						"access_rules": ["$can_flash,[$hid]"],
+						"access_rules": ["^$can_flash,[$hid]"],
 						"visibility_rules": ["hiddenitems_on"]
 					},
 					{
 						"name": "B1F - Hidden Item in East",
-						"access_rules": ["$can_flash,[$hid]"],
+						"access_rules": ["^$can_flash,[$hid]"],
 						"visibility_rules": ["hiddenitems_on"]
 					},
 					{
 						"name": "B1F - Hidden Item on Boulder in West",
-						"access_rules": ["$can_flash,[$hid]"],
+						"access_rules": ["^$can_flash,[$hid]"],
 						"visibility_rules": ["hiddenitems_on"]
 					},
 					{
 						"name": "B2F - Item 1",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "B2F - Item 2",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "B2F - Item 3",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					}
 				],
 				"map_locations": [
@@ -2597,7 +2597,7 @@
 			},
 			{
 				"name": "Dark Cave Blackthorn Entrance",
-				"access_rules": ["$blackthorn_access,$can_flash,$can_surf"],
+				"access_rules": ["$blackthorn_access,^$can_flash,$can_surf"],
 				"sections": [
 					{
 						"name": "Blackglasses from Man"
@@ -2681,7 +2681,7 @@
 			},
 			{
 				"name": "Route 46",
-				"access_rules": ["$can_flash,$can_rocksmash", "$blackthorn_access"],
+				"access_rules": ["^$can_flash,$can_rocksmash", "$blackthorn_access"],
 				"sections": [
 					{
 						"name": "Item"
@@ -2908,59 +2908,59 @@
 					},
 					{
 						"name": "1F - Item 1",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "1F - Item 2",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "1F - Item 3",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "1F - Item 4",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "1F - Hidden Item 1",
-						"access_rules": ["$can_flash,[$hid]"],
+						"access_rules": ["^$can_flash,[$hid]"],
 						"visibility_rules": ["hiddenitems_on"]
 					},
 					{
 						"name": "1F - Hidden Item 2",
-						"access_rules": ["$can_flash,[$hid]"],
+						"access_rules": ["^$can_flash,[$hid]"],
 						"visibility_rules": ["hiddenitems_on"]
 					},
 					{
 						"name": "2F - Item 1",
-						"access_rules": ["$can_flash,$can_waterfall"]
+						"access_rules": ["^$can_flash,$can_waterfall"]
 					},
 					{
 						"name": "2F - Item 2",
-						"access_rules": ["$can_flash,$can_waterfall"]
+						"access_rules": ["^$can_flash,$can_waterfall"]
 					},
 					{
 						"name": "2F - Item 3",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					},
 					{
 						"name": "2F - Chambers Item 1",
-						"access_rules": ["$can_flash,$can_waterfall"]
+						"access_rules": ["^$can_flash,$can_waterfall"]
 					},
 					{
 						"name": "2F - Chambers Item 2",
-						"access_rules": ["$can_flash,$can_waterfall"]
+						"access_rules": ["^$can_flash,$can_waterfall"]
 					},
 					{
 						"name": "2F - Hidden Item",
-						"access_rules": ["$can_flash,[$hid]"],
+						"access_rules": ["^$can_flash,[$hid]"],
 						"visibility_rules": ["hiddenitems_on"]
 					},
 					{
 						"name": "Defeat Red",
 						"hosted_item": "EVENT_BEAT_RED",
-						"access_rules": ["$can_flash"]
+						"access_rules": ["^$can_flash"]
 					}
 				],
 				"map_locations": [
@@ -3360,7 +3360,7 @@
 			},
 			{
 				"name": "Route 9",
-				"access_rules": ["$saffron_access,$can_cut", "$saffron_access,$can_flash"],
+				"access_rules": ["$saffron_access,$can_cut", "$saffron_access,^$can_flash"],
 				"visibility_rules": ["johto_only_off"],
 				"sections": [
 					{
@@ -3403,7 +3403,7 @@
 			},
 			{
 				"name": "Rock Tunnel",
-				"access_rules": ["$saffron_access,$can_flash"],
+				"access_rules": ["$saffron_access,^$can_flash"],
 				"visibility_rules": ["johto_only_off"],
 				"sections": [
 					{
