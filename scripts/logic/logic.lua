@@ -43,9 +43,11 @@ function flash_badge()
 end
 
 function can_flash()
-	return (
-		has("HM_FLASH") and flash_badge()
-	)
+	if has("HM_FLASH") and flash_badge() then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
 end
 
 function strength_badge()
@@ -138,7 +140,15 @@ function ferry_from_vermilion()
 end
 
 function tintower_access()
-	return ecruteak_access() and has("CLEAR_BELL") and has("EVENT_CLEARED_RADIO_TOWER")
+    if ecruteak_access() and has("CLEAR_BELL") and has("EVENT_CLEARED_RADIO_TOWER") then
+        return AccessibilityLevel.Normal
+    elseif ecruteak_access() and has("EVENT_CLEARED_RADIO_TOWER") then
+        return AccessibilityLevel.None
+    elseif ecruteak_access() then
+        return AccessibilityLevel.SequenceBreak
+    else
+        return AccessibilityLevel.None -- or any default value that fits your logic
+    end
 end
 
 function cianwood_access()
