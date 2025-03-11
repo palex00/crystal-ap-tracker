@@ -7,10 +7,10 @@ PopTracker v0.30.4 or higher is neccessary.
 
 Original project by AliceMousie. 
 
-Known Issues
+## Known Issues
 - None
 
-Planned Features
+## Planned Features
 - Johto Only Mode
 - Split Mode for Johto/Kanto-Only views
 - More submaps (especially Gyms)
