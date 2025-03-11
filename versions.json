@@ -1,66 +1,10 @@
 {
 	"versions": [
 		{
-			"package_version": "0.1.1",
-			"download_url": "https://codeload.github.com/AliceMousie/crystal-ap-tracker/zip/refs/tags/v0.1.1",
-			"sha256": "2393e10c00f0c122082e12af9a2184050ca2e8b9eaf4379f15627f240201e82c",
-			"changelog": ["Bug fixes"]
-		},
-		{
-			"package_version": "0.1.0",
-			"download_url": "https://codeload.github.com/AliceMousie/crystal-ap-tracker/zip/refs/tags/v0.1.0",
-			"sha256": "59655923010a0cfdf533b710567463f9e20c2751a70984ee19d6eb0e7dba69ea",
-			"changelog": [
-				"Added berry tree locations",
-				"Added free fly and map card fly locations",
-				"Added escape rope and water stone items for Alph logic",
-				"Added autotracking for these items when bought at marts",
-				"Fixed vanilla key item autotracking",
-				"Fixed some settings being incorrectly set when connecting to AP",
-				"Other minor fixes"
-			]
-		},
-		{
-			"package_version": "0.0.7",
-			"download_url": "https://codeload.github.com/AliceMousie/crystal-ap-tracker/zip/refs/tags/v0.0.7",
-			"sha256": "e5e40bb8d8063ceb5c721d337ba5833b4efdaa967baea6ca1acaca4522f93653",
-			"changelog": ["Added split map view", "Fixed some map tracking issues"]
-		},
-		{
-			"package_version": "0.0.6",
-			"download_url": "https://codeload.github.com/AliceMousie/crystal-ap-tracker/zip/refs/tags/v0.0.6",
-			"sha256": "1e5dd68ba058bc9342bc9f75d9a18e7051377933eafd1c787e3adf3591b3ef47",
-			"changelog": ["Added more detail maps", "Auto map tracking"]
-		},
-		{
-			"package_version": "0.0.5",
-			"download_url": "https://codeload.github.com/AliceMousie/crystal-ap-tracker/zip/refs/tags/v0.0.5",
-			"sha256": "d08855251652fb53f60a55d7cf9adc2e384097a5a8c232dfe9f822d643f01835",
-			"changelog": ["Pass autotracking fix"]
-		},
-		{
-			"package_version": "0.0.4",
-			"download_url": "https://codeload.github.com/AliceMousie/crystal-ap-tracker/zip/refs/tags/v0.0.4",
-			"sha256": "5dc74f2ebc2d114441c93f327469e676a506773884fdb9a167ce2c526f6fd548",
-			"changelog": ["Various logic and auto-tracking fixes"]
-		},
-		{
-			"package_version": "0.0.3",
-			"download_url": "https://codeload.github.com/AliceMousie/crystal-ap-tracker/zip/refs/tags/v0.0.3",
-			"sha256": "d8a16e4823c033b63d7bb878721abb12fced0c5fa758162d1084e8c2da05ecc5",
-			"changelog": ["Crystal 2.0.0 release tracker"]
-		},
-		{
-			"package_version": "0.0.2",
-			"download_url": "https://codeload.github.com/AliceMousie/crystal-ap-tracker/zip/refs/tags/v0.0.2",
-			"sha256": "9314878762ceaebecf26933bf3546cbe7f11af569ef0ad009c15f489525fc6c9",
-			"changelog": ["Dungeon maps, bugfixes"]
-		},
-		{
-			"package_version": "0.0.1",
-			"download_url": "https://codeload.github.com/AliceMousie/crystal-ap-tracker/zip/refs/tags/v0.0.1",
-			"sha256": "36980be5dd894a2de1d0e994c2f4e5a8893144d1a67841e84f32716105b805b9",
-			"changelog": ["Initial release!"]
+			"package_version": "0.2.0",
+			"download_url": "https://github.com/palex00/crystal-ap-tracker/archive/refs/tags/0.2.0.zip",
+			"sha256": "cd6627aec6d261499ca646f37682e883e8d5286fcf2725e6ac4f46bdf4d2579d",
+			"changelog": ["New Fork Release"]
 		}
 	]
 }
