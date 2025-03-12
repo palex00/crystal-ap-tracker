@@ -218,3 +218,8 @@ end
 function silver_cave()
 	return not has("johto_only_on")
 end
+
+function ilextree()
+  return has("ilextree_off")
+  or has("ilextree_on") and can_cut()
+end

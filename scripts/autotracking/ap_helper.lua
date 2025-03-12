@@ -95,5 +95,9 @@ SLOT_CODES = {
 	randomize_berry_trees={
 		code="berries",
 		mapping=MAP_TOGGLE
+	},
+	ilex_cut_tree={
+		code="ilextree",
+		mapping=MAP_TOGGLE
 	}
 }
