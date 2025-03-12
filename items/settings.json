@@ -427,5 +427,27 @@
 				"inherit_codes": false
 			}
 		]
-	}
+	},
+    {
+        "name": "Ilex Cut Tree",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Ilex Forest has a Cut Tree",
+                "img": "/images/settings/ilextree.png",
+                "codes": "ilextree, ilextree_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Ilex Forest has no Cut Tree",
+                "img": "/images/settings/ilextree.png",
+                "img_mods": "@disabled",
+                "codes": "ilextree, ilextree_off",
+                "inherit_codes": false
+            }
+        ]
+    }
 ]
