@@ -1,5 +1,11 @@
 [
 	{
+		"name": "Egg Collected",
+		"type": "toggle",
+		"img": "/images/items/mysteryegg.png",
+		"codes": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
+	},
+	{
 		"name": "Kenya Collected",
 		"type": "toggle",
 		"img": "/images/events/kenya_collected.png",

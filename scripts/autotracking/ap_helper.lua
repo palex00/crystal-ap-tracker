@@ -99,5 +99,9 @@ SLOT_CODES = {
 	ilex_cut_tree={
 		code="ilextree",
 		mapping=MAP_TOGGLE
+	},
+	route_32_condition={
+		code="r32_guy",
+		mapping=MAP_TRIPLE
 	}
 }
