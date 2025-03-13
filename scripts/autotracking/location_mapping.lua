@@ -177,6 +177,7 @@ LOCATION_MAPPING = {
 	[283] = "@JohtoKanto/Cherrygrove City/Map Card from Guide",
 	[285] = "@JohtoKanto/Lavender Town/Radio Tower - EXPN Card",
 	[286] = "@JohtoKanto/New Bark Town/Player's House - Pokegear from Mom",
+	[544] = "@JohtoKanto/Tin Tower/1F - Rainbow Wing",
 	[551] = "@JohtoKanto/Radio Tower/2F - Blue Card from Buena",
 	[950] = "@JohtoKanto/Radio Tower/5F - Basement Key from False Director",
 	[1039] = "@JohtoKanto/Route 40/Swimmer Elaine",
