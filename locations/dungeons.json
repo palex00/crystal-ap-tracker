@@ -265,22 +265,14 @@
 			{
 				"name": "",
 				"sections": [
+					{ "ref": "JohtoKanto/Tin Tower/1F - Rainbow Wing", "name": "Tin Tower 1F - Rainbow Wing" },
 					{ "ref": "JohtoKanto/Tin Tower/3F - Item", "name": "Tin Tower 3F - Item" },
 					{ "ref": "JohtoKanto/Tin Tower/4F - Item 1", "name": "Tin Tower 4F - Item 1" },
-					{
-						"ref": "JohtoKanto/Tin Tower/4F - Hidden Item in Center",
-						"name": "Tin Tower 4F - Hidden Item in Center"
-					},
+					{ "ref": "JohtoKanto/Tin Tower/4F - Hidden Item in Center", "name": "Tin Tower 4F - Hidden Item in Center" },
 					{ "ref": "JohtoKanto/Tin Tower/4F - Item 2", "name": "Tin Tower 4F - Item 2" },
 					{ "ref": "JohtoKanto/Tin Tower/4F - Item 3", "name": "Tin Tower 4F - Item 3" },
-					{
-						"ref": "JohtoKanto/Tin Tower/5F - Hidden Item in Southwest",
-						"name": "Tin Tower 5F - Hidden Item in Southwest"
-					},
-					{
-						"ref": "JohtoKanto/Tin Tower/5F - Hidden Item in Southeast",
-						"name": "Tin Tower 5F - Hidden Item in Southeast"
-					},
+					{ "ref": "JohtoKanto/Tin Tower/5F - Hidden Item in Southwest", "name": "Tin Tower 5F - Hidden Item in Southwest" },
+					{ "ref": "JohtoKanto/Tin Tower/5F - Hidden Item in Southeast", "name": "Tin Tower 5F - Hidden Item in Southeast" },
 					{ "ref": "JohtoKanto/Tin Tower/5F - Item", "name": "Tin Tower 5F - Item" },
 					{ "ref": "JohtoKanto/Tin Tower/6F - Item", "name": "Tin Tower 6F - Item" },
 					{ "ref": "JohtoKanto/Tin Tower/7F - Item", "name": "Tin Tower 7F - Item" },
@@ -4017,6 +4009,11 @@
 				"name": "",
 				"sections": [{ "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Scientist Mitch" }],
 				"map_locations": [{ "map": "TeamRocketBaseB3F", "x": 184, "y": 248 }]
+			},
+			{
+				"name": "",
+				"sections": [{ "ref": "JohtoKanto/Tin Tower/1F - Rainbow Wing" }],
+				"map_locations": [{ "map": "TinTower1F", "x": 152, "y": 40 }]
 			},
 			{
 				"name": "",
