@@ -124,7 +124,7 @@ function can_freefly(destination)
 end
 
 function tower_takeover() 
-	return badges() >= progCount("tower-badges")
+	return badges() >= progCount("tower_badges")
 end
 
 function ecruteak_freefly()
