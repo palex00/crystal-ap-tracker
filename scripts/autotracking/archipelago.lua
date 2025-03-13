@@ -59,6 +59,9 @@ function onClear(slot_data)
 			if k == "red_badges" then
 				Tracker:FindObjectForCode("red_badges").AcquiredCount = v
 			end
+			if k == "tower_badges" then
+				Tracker:FindObjectForCode("tower_badges").AcquiredCount = v
+			end
 		end
 	end
 

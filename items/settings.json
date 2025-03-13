@@ -1,433 +1,438 @@
 [
-	{
-		"name": "Goal",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Goal - Defeat Elite Four",
-				"img": "/images/events/become_champion.png",
-				"codes": "goal,goal_e4",
-				"inherit_codes": false
-			},
-			{
-				"name": "Goal - Defeat Red",
-				"img": "/images/events/defeat_red.png",
-				"codes": "goal,goal_red",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Johto Only",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Johto Only - Off",
-				"img": "/images/settings/johto_off.png",
-				"img_mods": "@disabled",
-				"codes": "johto_only,johto_only_off",
-				"inherit_codes": false
-			},
-			{
-				"name": "Johto Only - On",
-				"img": "/images/settings/johto_off.png",
-				"codes": "johto_only,johto_only_on",
-				"inherit_codes": false
-			},
-			{
-				"name": "Johto Only - Include Silver Cave",
-				"img": "/images/settings/johto_silver.png",
-				"codes": "johto_only,johto_only_silver",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Elite Four Badges",
-		"img": "/images/events/become_champion.png",
-		"codes": "e4_badges",
-		"type": "consumable",
-		"min_quantity": 1,
-		"max_quantity": 16,
-		"initial_quantity": 8
-	},
-	{
-		"name": "Red Badges",
-		"img": "/images/events/defeat_red.png",
-		"codes": "red_badges",
-		"type": "consumable",
-		"min_quantity": 1,
-		"max_quantity": 16,
-		"initial_quantity": 16
-	},
-	{
-		"name": "Randomize Badges",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Randomize Badges - Off",
-				"img": "/images/settings/badges_on.png",
-				"img_mods": "@disabled",
-				"codes": "badges,badges_off",
-				"inherit_codes": false
-			},
-			{
-				"name": "Randomize Badges - Shuffle",
-				"img": "/images/settings/badges_shuffle.png",
-				"codes": "badges,badges_shuffle",
-				"inherit_codes": false
-			},
-			{
-				"name": "Randomize Badges - On",
-				"img": "/images/settings/badges_on.png",
-				"codes": "badges,badges_on",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "HM Badge Requirements",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "HM Badge Requirements - Vanilla",
-				"img": "/images/settings/badges_vanilla.png",
-				"codes": "badgereqs,badgereqs_vanilla",
-				"inherit_codes": false
-			},
-			{
-				"name": "HM Badge Requirements - No Badges",
-				"img": "/images/settings/badges_vanilla.png",
-				"img_mods": "@disabled",
-				"codes": "badgereqs,badgereqs_none",
-				"inherit_codes": false
-			},
-			{
-				"name": "HM Badge Requirements - Add Kanto",
-				"img": "/images/settings/badges_kanto.png",
-				"codes": "badgereqs,badgereqs_kanto",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Randomize Pokegear",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Randomize Pokegear - Off",
-				"img": "/images/settings/pokegear.png",
-				"img_mods": "@disabled",
-				"codes": "pokegear,pokegear_off",
-				"inherit_codes": false
-			},
-			{
-				"name": "Randomize Pokegear - On",
-				"img": "/images/settings/pokegear.png",
-				"codes": "pokegear,pokegear_on",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Randomize Berry Trees",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Randomize Berry Trees - Off",
-				"img": "/images/settings/berries.png",
-				"img_mods": "@disabled",
-				"codes": "berries,berries_off",
-				"inherit_codes": false
-			},
-			{
-				"name": "Randomize Berry Trees - On",
-				"img": "/images/settings/berries.png",
-				"codes": "berries,berries_on",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Randomize Hidden Items",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Randomize Hidden Items - Off",
-				"img": "/images/settings/hiddenitems.png",
-				"img_mods": "@disabled",
-				"codes": "hiddenitems,hiddenitems_off",
-				"inherit_codes": false
-			},
-			{
-				"name": "Randomize Hidden Items - On",
-				"img": "/images/settings/hiddenitems.png",
-				"codes": "hiddenitems,hiddenitems_on",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Require Itemfinder",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Require Itemfinder - On",
-				"img": "/images/items/itemfinder.png",
-				"codes": "reqitemfinder,reqitemfinder_on",
-				"inherit_codes": false
-			},
-			{
-				"name": "Require Itemfinder - Off",
-				"img": "/images/items/itemfinder.png",
-				"img_mods": "@disabled",
-				"codes": "reqitemfinder,reqitemfinder_off",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Trainersanity",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Trainersanity - Off",
-				"img": "/images/settings/trainersanity.png",
-				"img_mods": "@disabled",
-				"codes": "trainersanity,trainersanity_off",
-				"inherit_codes": false
-			},
-			{
-				"name": "Trainersanity - On",
-				"img": "/images/settings/trainersanity.png",
-				"codes": "trainersanity,trainersanity_on",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Free Fly Location",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Free Fly Location - Off",
-				"img": "/images/settings/freefly_0.png",
-				"codes": "free_fly,free_fly_0",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Ecruteak City",
-				"img": "/images/settings/freefly_1.png",
-				"codes": "free_fly,free_fly_Ecruteak",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Olivine City",
-				"img": "/images/settings/freefly_2.png",
-				"codes": "free_fly,free_fly_Olivine",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Cianwood City",
-				"img": "/images/settings/freefly_3.png",
-				"codes": "free_fly,free_fly_Cianwood",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Mahogany Town",
-				"img": "/images/settings/freefly_4.png",
-				"codes": "free_fly,free_fly_Mahogany",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Blackthorn City",
-				"img": "/images/settings/freefly_5.png",
-				"codes": "free_fly,free_fly_Blackthorn",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Viridian City",
-				"img": "/images/settings/freefly_6.png",
-				"codes": "free_fly,free_fly_Viridian",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Pewter City",
-				"img": "/images/settings/freefly_7.png",
-				"codes": "free_fly,free_fly_Pewter",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Cerulean City",
-				"img": "/images/settings/freefly_8.png",
-				"codes": "free_fly,free_fly_Cerulean",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Vermilion City",
-				"img": "/images/settings/freefly_9.png",
-				"codes": "free_fly,free_fly_Vermilion",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Lavender Town",
-				"img": "/images/settings/freefly_10.png",
-				"codes": "free_fly,free_fly_Lavender",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Celadon City",
-				"img": "/images/settings/freefly_11.png",
-				"codes": "free_fly,free_fly_Celadon",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Saffron City",
-				"img": "/images/settings/freefly_12.png",
-				"codes": "free_fly,free_fly_Saffron",
-				"inherit_codes": false
-			},
-			{
-				"name": "Free Fly Location - Fuchsia City",
-				"img": "/images/settings/freefly_13.png",
-				"codes": "free_fly,free_fly_Fuchsia",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Map Card Fly Location",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Map Card Fly Location - Off",
-				"img": "/images/settings/mapfly_0.png",
-				"codes": "map_card_fly,map_card_fly_0",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Ecruteak City",
-				"img": "/images/settings/mapfly_1.png",
-				"codes": "map_card_fly,map_card_fly_Ecruteak",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Olivine City",
-				"img": "/images/settings/mapfly_2.png",
-				"codes": "map_card_fly,map_card_fly_Olivine",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Cianwood City",
-				"img": "/images/settings/mapfly_3.png",
-				"codes": "map_card_fly,map_card_fly_Cianwood",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Mahogany Town",
-				"img": "/images/settings/mapfly_4.png",
-				"codes": "map_card_fly,map_card_fly_Mahogany",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Blackthorn City",
-				"img": "/images/settings/mapfly_5.png",
-				"codes": "map_card_fly,map_card_fly_Blackthorn",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Viridian City",
-				"img": "/images/settings/mapfly_6.png",
-				"codes": "map_card_fly,map_card_fly_Viridian",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Pewter City",
-				"img": "/images/settings/mapfly_7.png",
-				"codes": "map_card_fly,map_card_fly_Pewter",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Cerulean City",
-				"img": "/images/settings/mapfly_8.png",
-				"codes": "map_card_fly,map_card_fly_Cerulean",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Vermilion City",
-				"img": "/images/settings/mapfly_9.png",
-				"codes": "map_card_fly,map_card_fly_Vermilion",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Lavender Town",
-				"img": "/images/settings/mapfly_10.png",
-				"codes": "map_card_fly,map_card_fly_Lavender",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Celadon City",
-				"img": "/images/settings/mapfly_11.png",
-				"codes": "map_card_fly,map_card_fly_Celadon",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Saffron City",
-				"img": "/images/settings/mapfly_12.png",
-				"codes": "map_card_fly,map_card_fly_Saffron",
-				"inherit_codes": false
-			},
-			{
-				"name": "Map Card Fly Location - Fuchsia City",
-				"img": "/images/settings/mapfly_13.png",
-				"codes": "map_card_fly,map_card_fly_Fuchsia",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Auto-Track Map",
-		"type": "progressive",
-		"loop": true,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Auto-Track Map - On",
-				"img": "/images/settings/automap.png",
-				"codes": "automap,automap_on",
-				"inherit_codes": false
-			},
-			{
-				"name": "Auto-Track Map - Off",
-				"img": "/images/settings/automap.png",
-				"img_mods": "@disabled",
-				"codes": "automap,automap_off",
-				"inherit_codes": false
-			}
-		]
-	},
+    {
+        "name": "Goal",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Goal - Defeat Elite Four",
+                "img": "/images/events/become_champion.png",
+                "codes": "goal,goal_e4",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal - Defeat Red",
+                "img": "/images/events/defeat_red.png",
+                "codes": "goal,goal_red",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Johto Only",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Johto Only - Off",
+                "img": "/images/settings/johto_off.png",
+                "img_mods": "@disabled",
+                "codes": "johto_only,johto_only_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Johto Only - On",
+                "img": "/images/settings/johto_off.png",
+                "codes": "johto_only,johto_only_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Johto Only - Include Silver Cave",
+                "img": "/images/settings/johto_silver.png",
+                "codes": "johto_only,johto_only_silver",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Elite Four Badges",
+        "img": "/images/events/become_champion.png",
+        "codes": "e4_badges",
+        "type": "consumable",
+        "min_quantity": 1,
+        "max_quantity": 16,
+        "initial_quantity": 8
+    },
+    {
+        "name": "Red Badges",
+        "img": "/images/events/defeat_red.png",
+        "codes": "red_badges",
+        "type": "consumable",
+        "min_quantity": 1,
+        "max_quantity": 16,
+        "initial_quantity": 16
+    },
+    {
+        "name": "Randomize Badges",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "Randomize Badges - Off",
+                "img": "/images/settings/badges_on.png",
+                "img_mods": "@disabled",
+                "codes": "badges,badges_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Badges - Shuffle",
+                "img": "/images/settings/badges_shuffle.png",
+                "codes": "badges,badges_shuffle",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Badges - On",
+                "img": "/images/settings/badges_on.png",
+                "codes": "badges,badges_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "HM Badge Requirements",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "HM Badge Requirements - Vanilla",
+                "img": "/images/settings/badges_vanilla.png",
+                "codes": "badgereqs,badgereqs_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "HM Badge Requirements - No Badges",
+                "img": "/images/settings/badges_vanilla.png",
+                "img_mods": "@disabled",
+                "codes": "badgereqs,badgereqs_none",
+                "inherit_codes": false
+            },
+            {
+                "name": "HM Badge Requirements - Add Kanto",
+                "img": "/images/settings/badges_kanto.png",
+                "codes": "badgereqs,badgereqs_kanto",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Pokegear",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Pokegear - Off",
+                "img": "/images/settings/pokegear.png",
+                "img_mods": "@disabled",
+                "codes": "pokegear,pokegear_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Pokegear - On",
+                "img": "/images/settings/pokegear.png",
+                "codes": "pokegear,pokegear_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Berry Trees",
+        "type": "progressive",
+        "initial_stage_idx": 1,
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Berry Trees - Off",
+                "img": "/images/settings/berries.png",
+                "img_mods": "@disabled",
+                "codes": "berries,berries_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Berry Trees - On",
+                "img": "/images/settings/berries.png",
+                "codes": "berries,berries_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Hidden Items",
+        "type": "progressive",
+        "initial_stage_idx": 1,
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Hidden Items - Off",
+                "img": "/images/settings/hiddenitems.png",
+                "img_mods": "@disabled",
+                "codes": "hiddenitems,hiddenitems_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Hidden Items - On",
+                "img": "/images/settings/hiddenitems.png",
+                "codes": "hiddenitems,hiddenitems_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Require Itemfinder",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Require Itemfinder - On",
+                "img": "/images/items/itemfinder.png",
+                "codes": "reqitemfinder,reqitemfinder_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Require Itemfinder - Off",
+                "img": "/images/items/itemfinder.png",
+                "img_mods": "@disabled",
+                "codes": "reqitemfinder,reqitemfinder_off",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Trainersanity",
+        "type": "progressive",
+        "initial_stage_idx": 1,
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Trainersanity - Off",
+                "img": "/images/settings/trainersanity.png",
+                "img_mods": "@disabled",
+                "codes": "trainersanity,trainersanity_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Trainersanity - On",
+                "img": "/images/settings/trainersanity.png",
+                "codes": "trainersanity,trainersanity_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Free Fly Location",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Free Fly Location - Off",
+                "img": "/images/settings/freefly_0.png",
+                "codes": "free_fly,free_fly_0",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Ecruteak City",
+                "img": "/images/settings/freefly_1.png",
+                "codes": "free_fly,free_fly_Ecruteak",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Olivine City",
+                "img": "/images/settings/freefly_2.png",
+                "codes": "free_fly,free_fly_Olivine",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Cianwood City",
+                "img": "/images/settings/freefly_3.png",
+                "codes": "free_fly,free_fly_Cianwood",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Mahogany Town",
+                "img": "/images/settings/freefly_4.png",
+                "codes": "free_fly,free_fly_Mahogany",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Blackthorn City",
+                "img": "/images/settings/freefly_5.png",
+                "codes": "free_fly,free_fly_Blackthorn",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Viridian City",
+                "img": "/images/settings/freefly_6.png",
+                "codes": "free_fly,free_fly_Viridian",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Pewter City",
+                "img": "/images/settings/freefly_7.png",
+                "codes": "free_fly,free_fly_Pewter",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Cerulean City",
+                "img": "/images/settings/freefly_8.png",
+                "codes": "free_fly,free_fly_Cerulean",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Vermilion City",
+                "img": "/images/settings/freefly_9.png",
+                "codes": "free_fly,free_fly_Vermilion",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Lavender Town",
+                "img": "/images/settings/freefly_10.png",
+                "codes": "free_fly,free_fly_Lavender",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Celadon City",
+                "img": "/images/settings/freefly_11.png",
+                "codes": "free_fly,free_fly_Celadon",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Saffron City",
+                "img": "/images/settings/freefly_12.png",
+                "codes": "free_fly,free_fly_Saffron",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Fuchsia City",
+                "img": "/images/settings/freefly_13.png",
+                "codes": "free_fly,free_fly_Fuchsia",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Map Card Fly Location",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Map Card Fly Location - Off",
+                "img": "/images/settings/mapfly_0.png",
+                "codes": "map_card_fly,map_card_fly_0",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Ecruteak City",
+                "img": "/images/settings/mapfly_1.png",
+                "codes": "map_card_fly,map_card_fly_Ecruteak",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Olivine City",
+                "img": "/images/settings/mapfly_2.png",
+                "codes": "map_card_fly,map_card_fly_Olivine",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Cianwood City",
+                "img": "/images/settings/mapfly_3.png",
+                "codes": "map_card_fly,map_card_fly_Cianwood",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Mahogany Town",
+                "img": "/images/settings/mapfly_4.png",
+                "codes": "map_card_fly,map_card_fly_Mahogany",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Blackthorn City",
+                "img": "/images/settings/mapfly_5.png",
+                "codes": "map_card_fly,map_card_fly_Blackthorn",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Viridian City",
+                "img": "/images/settings/mapfly_6.png",
+                "codes": "map_card_fly,map_card_fly_Viridian",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Pewter City",
+                "img": "/images/settings/mapfly_7.png",
+                "codes": "map_card_fly,map_card_fly_Pewter",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Cerulean City",
+                "img": "/images/settings/mapfly_8.png",
+                "codes": "map_card_fly,map_card_fly_Cerulean",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Vermilion City",
+                "img": "/images/settings/mapfly_9.png",
+                "codes": "map_card_fly,map_card_fly_Vermilion",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Lavender Town",
+                "img": "/images/settings/mapfly_10.png",
+                "codes": "map_card_fly,map_card_fly_Lavender",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Celadon City",
+                "img": "/images/settings/mapfly_11.png",
+                "codes": "map_card_fly,map_card_fly_Celadon",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Saffron City",
+                "img": "/images/settings/mapfly_12.png",
+                "codes": "map_card_fly,map_card_fly_Saffron",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Fuchsia City",
+                "img": "/images/settings/mapfly_13.png",
+                "codes": "map_card_fly,map_card_fly_Fuchsia",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Auto-Track Map",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Auto-Track Map - On",
+                "img": "/images/settings/automap.png",
+                "codes": "automap,automap_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Auto-Track Map - Off",
+                "img": "/images/settings/automap.png",
+                "img_mods": "@disabled",
+                "codes": "automap,automap_off",
+                "inherit_codes": false
+            }
+        ]
+    },
     {
         "name": "Ilex Cut Tree",
         "type": "progressive",
@@ -449,5 +454,14 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Radio Tower Badges",
+        "img": "/images/events/tower_cleared.png",
+        "codes": "tower_badges",
+        "type": "consumable",
+        "min_quantity": 1,
+        "max_quantity": 16,
+        "initial_quantity": 7
     }
 ]

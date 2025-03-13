@@ -124,7 +124,7 @@ function can_freefly(destination)
 end
 
 function tower_takeover() 
-	return badges() >= progCount("e4_badges") - 1
+	return badges() >= progCount("tower-badges")
 end
 
 function ecruteak_freefly()
@@ -147,7 +147,7 @@ function tintower_access()
     elseif ecruteak_access() then
         return AccessibilityLevel.SequenceBreak
     else
-        return AccessibilityLevel.None -- or any default value that fits your logic
+        return AccessibilityLevel.None
     end
 end
 
