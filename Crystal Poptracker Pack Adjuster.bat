@@ -5,7 +5,7 @@ setlocal
 cls
 echo Welcome to the Pokemon Crystal AP Poptracker Pack Adjuster by palex00
 echo.
-echo All this pack does is download files from https://github.com/palex00/crystal-ap-tracker/tree/user-overrides, move files and delete files inside your Document folder.
+echo All this pack does is download files from https://github.com/palex00/crystal-ap-tracker/tree/user-overrides, move files and delete files inside your Poptracker Users folder.
 echo.
 echo Please select what you want to adjust:
 echo 1 - Badge Images
@@ -40,7 +40,7 @@ if "%badge_choice%"=="" goto badges
 
 if "%folder%"=="" goto badges
 
-set "target_dir=%USERPROFILE%\Documents\PopTracker\user-override\ap_crystal_palex00\images\items\"
+set "target_dir=%USERPROFILE%\PopTracker\user-override\ap_crystal_palex00\images\items\"
 if not exist "%target_dir%" (
     echo Creating directory: %target_dir%
     mkdir "%target_dir%"
@@ -75,7 +75,7 @@ echo Are you sure you want to remove all modifications? (Y/N)
 set /p confirm=
 if /I not "%confirm%"=="Y" goto mainmenu
 cls
-set "mod_dir=%USERPROFILE%\Documents\PopTracker\user-override\ap_crystal_palex00"
+set "mod_dir=%USERPROFILE%\PopTracker\user-override\ap_crystal_palex00"
 if exist "%mod_dir%" (
     echo Deleting modifications in: %mod_dir%
     rmdir /s /q "%mod_dir%"
