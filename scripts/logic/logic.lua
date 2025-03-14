@@ -227,5 +227,5 @@ end
 function r32_guy()
   return has("r32_guy_open")
   or has("r32_guy_badge") and (badges() >= 1)
-  or has("r32_guy_egg") and has("EVENT_EGG_COLLECTED")
+  or has("r32_guy_egg") and has("EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE")
 end
