@@ -755,7 +755,10 @@
             },
             {
                 "name": "Route 33",
-                "access_rules": ["@JohtoKanto/Union Cave", "@JohtoKanto/Azalea Town"],
+                "access_rules": [
+                    "@JohtoKanto/Union Cave",
+                    "@JohtoKanto/Azalea Town"
+                    ],
                 "sections": [
                     {
                         "name": "Berry Tree",
@@ -826,7 +829,11 @@
             },
             {
                 "name": "Azalea Town",
-                "access_rules": ["@JohtoKanto/Route 33", "@JohtoKanto/Ilex Forest/Pre-Tree"],
+                "access_rules": [
+                    "@JohtoKanto/Route 33",
+                    "@JohtoKanto/Ilex Forest/Pre-Tree",
+                    "$can_freefly|Azalea"
+                    ],
                 "sections": [
                     {
                         "name": "Gym - Hive Badge from Bugsy",
@@ -1109,8 +1116,10 @@
             {
                 "name": "Goldenrod City",
                 "access_rules": [
-                "@JohtoKanto/Ilex Forest/Post-Tree",
-                "@JohtoKanto/Violet City, SQUIRTBOTTLE"                
+                    "@JohtoKanto/Ilex Forest/Post-Tree",
+                    "@JohtoKanto/Violet City, SQUIRTBOTTLE",
+                    "$can_freefly|Goldenrod",
+                    "@JohtoKanto/Saffron City, PASS"
                 ],
                 "sections": [
                     {

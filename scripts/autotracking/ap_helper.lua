@@ -39,9 +39,10 @@ MAP_FREEFLY={
 	[FLY_CELADON]=11,
 	[FLY_SAFFRON]=12,
 	[FLY_FUCHSIA]=13,
+	[FLY_AZALEA]=14,
+	[FLY_GOLDENROD]=15,
 }
--- MAP_BADGES={}
--- for i=0,8 do MAP_BADGES[i]=i end
+
 
 SLOT_CODES = {
 	randomize_hidden_items={
