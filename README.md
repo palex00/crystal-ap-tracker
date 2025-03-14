@@ -17,3 +17,22 @@ Grab the raw files from inside the folders of the ``user-overrides`` branch and 
   - Linux & macOS: ``$HOME/PopTracker/user-override\ap_crystal_palex00\images\items``
 
 To delete the override, just delete the ``ap_crystal_palex00`` folder.
+
+## Modification Examples
+"1 - Retro with no border"
+
+![grafik](https://github.com/user-attachments/assets/a72594c7-76f1-4daa-ba56-5b9d765a6551)
+
+
+"2 - Retro with 1-pixel white border"
+
+![grafik](https://github.com/user-attachments/assets/29b2c8ca-ca2a-4b24-9200-15bf40d872f8)
+
+"3 - Retro with 2-pixel white border"
+
+![grafik](https://github.com/user-attachments/assets/ba9bb5c6-9724-409a-aa44-71b1313befee)
+
+
+"4 - Modern"
+
+![grafik](https://github.com/user-attachments/assets/a83191b6-6533-412b-899f-46003291e45e)
