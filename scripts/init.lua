@@ -26,3 +26,6 @@ Tracker:AddLayouts("layouts/broadcast.json")
 
 -- AutoTracking for Poptracker
 ScriptHost:LoadScript("scripts/autotracking.lua")
+
+-- Watches
+ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
