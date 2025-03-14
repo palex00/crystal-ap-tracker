@@ -1,0 +1,108 @@
+{
+	"tabbed_maps": {
+		"type": "tabbed",
+		"tabs": [
+			{
+				"title": "Single Map View",
+				"content": {
+					"type": "tabbed",
+					"tabs": [
+						{
+							"title": "Overworld",
+							"content": {
+								"type": "map",
+								"maps": ["johtokanto"]
+							}
+						},
+						{
+							"title": "Johto Cities",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "johto_cities"
+								}
+							}
+						},
+						{
+							"title": "Johto Routes",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "johto_routes"
+								}
+							}
+						},
+						{
+							"title": "Johto Dungeons",
+							"content": {
+								"type": "dock",
+								"content": {
+									"type": "layout",
+									"key": "johto_dungeons"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"title": "Split View",
+				"content": {
+					"type": "array",
+					"orientation": "horizontal",
+					"content": [
+						{
+							"type": "tabbed",
+							"tabs": [
+								{
+									"title": "Johto Cities",
+									"content": {
+										"type": "dock",
+										"content": {
+											"type": "layout",
+											"key": "johto_cities"
+										}
+									}
+								},
+								{
+									"title": "Johto Routes",
+									"content": {
+										"type": "dock",
+										"content": {
+											"type": "layout",
+											"key": "johto_routes"
+										}
+									}
+								},
+								{
+									"title": "Johto Dungeons",
+									"content": {
+										"type": "dock",
+										"content": {
+											"type": "layout",
+											"key": "johto_dungeons"
+										}
+									}
+								}
+							]
+						},
+						{
+							"type": "tabbed",
+							"tabs": [
+								{
+									"title": "Overworld",
+									"content": {
+										"type": "map",
+										"maps": ["johtokanto"]
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}

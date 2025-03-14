@@ -52,3 +52,22 @@ function dump_table(o, depth)
 		return tostring(o)
 	end
 end
+
+
+function toggle_johto(code)
+    if has("johto_only_off") then
+        Tracker:AddMaps("maps/maps.json")
+        Tracker:AddLayouts("layouts/items.json")
+        Tracker:AddLayouts("layouts/events.json")
+        Tracker:AddLayouts("layouts/tabs.json")
+    else
+        Tracker:AddLayouts("layouts/johto_only/items.json")
+        Tracker:AddLayouts("layouts/johto_only/events.json")
+        Tracker:AddLayouts("layouts/johto_only/tabs_johto.json")
+        if has("johto_only_on") then
+            Tracker:AddMaps("maps/maps_johto_no_silver.json")
+        elseif has("johto_only_silver") then
+            Tracker:AddMaps("maps/maps_johto_only.json")
+        end
+    end
+end

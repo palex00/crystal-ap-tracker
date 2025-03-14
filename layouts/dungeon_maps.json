@@ -35,7 +35,10 @@
 			{ "title": "Lake of Rage", "content": { "type": "map", "maps": ["LakeOfRage"] } },
 			{ "title": "Route 44", "content": { "type": "map", "maps": ["Route44"] } },
 			{ "title": "Route 45", "content": { "type": "map", "maps": ["Route45North", "Route45South"] } },
-			{ "title": "Route 46", "content": { "type": "map", "maps": ["Route46"] } }
+			{ "title": "Route 46", "content": { "type": "map", "maps": ["Route46"] } },
+			{ "title": "Route 26", "content": { "type": "map", "maps": ["Route26North", "Route26South"] } },
+			{ "title": "Route 27", "content": { "type": "map", "maps": ["Route27"] } },
+			{ "title": "Route 28", "content": { "type": "map", "maps": ["Route28"] } }
 		]
 	},
 	"johto_dungeons": {
@@ -330,6 +333,30 @@
 					"type": "map",
 					"maps": ["VictoryRoad1F", "VictoryRoad2F", "VictoryRoad3F"]
 				}
+			},
+			{
+				"title": "Silver Cave",
+				"content": {
+					"type": "tabbed",
+					"tabs": [
+						{
+							"title": "Silver Cave Outside",
+							"content": { "type": "map", "maps": ["SilverCaveOutside"] }
+						},
+						{
+							"title": "Silver Cave 1F",
+							"content": { "type": "map", "maps": ["SilverCaveRoom1"] }
+						},
+						{
+							"title": "Silver Cave 2F",
+							"content": { "type": "map", "maps": ["SilverCaveRoom2", "SilverCaveItemRooms"] }
+						},
+						{
+							"title": "Silver Cave 3F",
+							"content": { "type": "map", "maps": ["SilverCaveRoom3"] }
+						}
+					]
+				}
 			}
 		]
 	},
@@ -388,10 +415,7 @@
 			{ "title": "Route 19", "content": { "type": "map", "maps": ["Route19"] } },
 			{ "title": "Route 20", "content": { "type": "map", "maps": ["Route20"] } },
 			{ "title": "Route 21", "content": { "type": "map", "maps": ["Route21"] } },
-			{ "title": "Route 25", "content": { "type": "map", "maps": ["Route25"] } },
-			{ "title": "Route 26", "content": { "type": "map", "maps": ["Route26North", "Route26South"] } },
-			{ "title": "Route 27", "content": { "type": "map", "maps": ["Route27"] } },
-			{ "title": "Route 28", "content": { "type": "map", "maps": ["Route28"] } }
+			{ "title": "Route 25", "content": { "type": "map", "maps": ["Route25"] } }
 		]
 	},
 	"kanto_dungeons": {
@@ -415,31 +439,7 @@
 			},
 			{ "title": "Power Plant", "content": { "type": "map", "maps": ["PowerPlant"] } },
 			{ "title": "Digletts Cave", "content": { "type": "map", "maps": ["DiglettsCave"] } },
-			{ "title": "Underground Path", "content": { "type": "map", "maps": ["UndergroundPath"] } },
-			{
-				"title": "Silver Cave",
-				"content": {
-					"type": "tabbed",
-					"tabs": [
-						{
-							"title": "Silver Cave Outside",
-							"content": { "type": "map", "maps": ["SilverCaveOutside"] }
-						},
-						{
-							"title": "Silver Cave 1F",
-							"content": { "type": "map", "maps": ["SilverCaveRoom1"] }
-						},
-						{
-							"title": "Silver Cave 2F",
-							"content": { "type": "map", "maps": ["SilverCaveRoom2", "SilverCaveItemRooms"] }
-						},
-						{
-							"title": "Silver Cave 3F",
-							"content": { "type": "map", "maps": ["SilverCaveRoom3"] }
-						}
-					]
-				}
-			}
+			{ "title": "Underground Path", "content": { "type": "map", "maps": ["UndergroundPath"] } }
 		]
 	}
 }
