@@ -9,6 +9,8 @@ Currently, only alternatives for Badge Images are supported. More will be suppor
 
 **LINUX & MACOS:** Run the ``Crystal_Poptracker_Pack_Adjuster-LINUX-macOS.sh`` shell script. wget is needed for this to work. It will allow you to install it through the shell script itself if it can, otherwise you'll have to install it manually
 
+Thank you to [@tioui](https://github.com/tioui) for fixing the Linux & macOS integration!
+
 Once you have changed the aesthetic to your liking, please delete the script. If you ever want to change your aesthetic choices, re-download it anew as it will be updated and cannot auto-update.
 
 ## Manual Installation
