@@ -35,20 +35,6 @@ function onClear(slot_data)
 	
 	print(dump_table(slot_data))
 
-	-- reset events
-	local reset_events = {
-		"EVENT_GOT_KENYA", "EVENT_GAVE_KENYA", "EVENT_JASMINE_RETURNED_TO_GYM", "EVENT_DECIDED_TO_HELP_LANCE",
-        "EVENT_CLEARED_ROCKET_HIDEOUT", "EVENT_CLEARED_RADIO_TOWER", "EVENT_BEAT_ELITE_FOUR", "EVENT_RESTORED_POWER_TO_KANTO",
-        "EVENT_VIRIDIAN_GYM_BLUE", "EVENT_BEAT_RED"
-	}
-	
-	for _, code in ipairs(reset_events) do
-		local obj = Tracker:FindObjectForCode(code)
-		if obj ~= nil then
-			obj.Active = false
-		end
-	end
-
 	for k,v in pairs(slot_data) do
 		if SLOT_CODES[k] then
 			Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
@@ -59,7 +45,7 @@ function onClear(slot_data)
 			if k == "red_badges" then
 				Tracker:FindObjectForCode("red_badges").AcquiredCount = v
 			end
-			if k == "tower_badges" then
+			if k == "radio_tower_badges" then
 				Tracker:FindObjectForCode("tower_badges").AcquiredCount = v
 			end
 		end
@@ -128,8 +114,11 @@ end
 
 function updateEvents(value)
 	if value ~= nil then
-		local gyms = 0
 		for i, code in ipairs(FLAG_EVENT_CODES) do
+            local obj = Tracker:FindObjectForCode(code)
+            if obj ~= nil then
+                obj.Active = false
+            end
 			local bit = value >> (i - 1) & 1
 			if #code>0 then
 				Tracker:FindObjectForCode(code).Active = Tracker:FindObjectForCode(code).Active or bit

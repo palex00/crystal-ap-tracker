@@ -1,3 +1,4 @@
+Tracker.AllowDeferredLogicUpdate = true
 --Items
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/events.json")
@@ -24,6 +25,4 @@ Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 
 -- AutoTracking for Poptracker
-if PopVersion and PopVersion >= "0.18.0" then
-	ScriptHost:LoadScript("scripts/autotracking.lua")
-end
+ScriptHost:LoadScript("scripts/autotracking.lua")

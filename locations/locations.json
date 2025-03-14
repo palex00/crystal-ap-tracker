@@ -320,6 +320,12 @@
                         "visibility_rules": [
                             "berries_on"
                         ]
+                    },
+                    {
+                        "name": "Miracle Seed from Man in North",
+                        "access_rules": [
+                            "ZEPHYR_BADGE"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -512,13 +518,8 @@
             },
             {
                 "name": "Route 32",
+                "access_rules": ["@JohtoKanto/Violet City, $r32_guy", "@JohtoKanto/Union Cave"],
                 "sections": [
-                    {
-                        "name": "Miracle Seed from Man in North",
-                        "access_rules": [
-                            "ZEPHYR_BADGE"
-                        ]
-                    },
                     {
                         "name": "Poison Barb from Frieda"
                     },
@@ -614,6 +615,7 @@
             },
             {
                 "name": "Union Cave",
+                "access_rules": ["@JohtoKanto/Route 32", "@JohtoKanto/Route 33"],
                 "sections": [
                     {
                         "name": "1F - Item 1"
@@ -749,6 +751,7 @@
             },
             {
                 "name": "Route 33",
+                "access_rules": ["@JohtoKanto/Union Cave", "@JohtoKanto/Azalea Town"],
                 "sections": [
                     {
                         "name": "Berry Tree",
@@ -773,6 +776,7 @@
             },
             {
                 "name": "Slowpoke Well",
+                "access_rules": ["@JohtoKanto/Azalea Town"],
                 "sections": [
                     {
                         "name": "B1F - Item 1"
@@ -818,6 +822,7 @@
             },
             {
                 "name": "Azalea Town",
+                "access_rules": ["@JohtoKanto/Route 33", "@JohtoKanto/Ilex Forest/Pre-Tree"],
                 "sections": [
                     {
                         "name": "Gym - Hive Badge from Bugsy",
