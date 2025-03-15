@@ -1759,18 +1759,27 @@
                         "name": "Berry Tree",
                         "visibility_rules": [
                             "berries_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Goldenrod City"
                         ]
                     },
                     {
                         "name": "Psychic Mark",
                         "visibility_rules": [
                             "trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Goldenrod City"
                         ]
                     },
                     {
                         "name": "Schoolboy Alan",
                         "visibility_rules": [
                             "trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Goldenrod City"
                         ]
                     },
                     {
