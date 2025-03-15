@@ -1187,6 +1187,12 @@
                             "CARD_KEY",
                             "BASEMENT_KEY"
                         ]
+                    },
+                    {
+                        "name": "Post-E4 GS-Ball from Trade Corner Receptionist",
+                        "access_rules": [
+                            "EVENT_BEAT_ELITE_FOUR"
+                        ]
                     }
                 ],
                 "map_locations": [
