@@ -179,6 +179,7 @@ LOCATION_MAPPING = {
 	[286] = "@JohtoKanto/New Bark Town/Player's House - Pokegear from Mom",
 	[544] = "@JohtoKanto/Tin Tower/1F - Rainbow Wing",
 	[551] = "@JohtoKanto/Radio Tower/2F - Blue Card from Buena",
+    [554] = "@JohtoKanto/Goldenrod City/Post-E4 GS-Ball from Trade Corner Receptionist",
 	[950] = "@JohtoKanto/Radio Tower/5F - Basement Key from False Director",
 	[1039] = "@JohtoKanto/Route 40/Swimmer Elaine",
 	[1040] = "@JohtoKanto/Route 40/Swimmer Paula",
