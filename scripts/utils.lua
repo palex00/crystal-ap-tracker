@@ -11,6 +11,8 @@ FLY_LAVENDER = 8
 FLY_CELADON = 10
 FLY_SAFFRON = 9
 FLY_FUCHSIA = 11
+FLY_AZALEA = 18
+FLY_GOLDENROD = 20
 
 function has_value(t, val)
 	for i, v in ipairs(t) do
