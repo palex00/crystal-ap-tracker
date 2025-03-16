@@ -3080,7 +3080,10 @@
 						"name": "Route 34 - TM12 from Woman in Gate"
 					}
 				],
-				"map_locations": [{ "map": "Route34", "x": 216, "y": 600 }]
+				"map_locations": [
+                    { "map": "Route34", "x": 224, "y": 600 },
+                    { "map": "IlexForest", "x": 24, "y": 88 }                   
+                    ]
 			},
 			{
 				"name": "",
