@@ -3135,10 +3135,13 @@
 			{
 				"name": "",
 				"sections": [
-					{ "ref": "JohtoKanto/Route 35/Kenya Collected", "name": "Route 35 - Kenya Collected" },
+					{ "ref": "JohtoKanto/Route 35/Collect Kenya", "name": "Route 35 - Collect Kenya" },
 					{ "ref": "JohtoKanto/Route 35/HP Up After Delivering Kenya", "name": "Route 35 - HP Up After Delivering Kenya" }
 				],
-				"map_locations": [{ "map": "Route35", "x": 152, "y": 536 }]
+				"map_locations": [
+                    { "map": "Route35", "x": 160, "y": 536 },
+                    { "map": "GoldenrodCity", "x": 312, "y": 24 }
+                ]
 			},
 			{
 				"name": "",
