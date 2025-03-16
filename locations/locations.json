@@ -4473,7 +4473,8 @@
                     {
                         "name": "TM42 from Sleepy Guy",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf",
+                            "$can_cut"
                         ]
                     }
                 ],
