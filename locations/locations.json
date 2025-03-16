@@ -418,25 +418,25 @@
                     {
                         "name": "Aerodactyl Room Item 1",
                         "access_rules": [
-                            "$can_surf,^$can_flash"
+                            "$can_surf, $flash_badge, HM_FLASH"
                         ]
                     },
                     {
                         "name": "Aerodactyl Room Item 2",
                         "access_rules": [
-                            "$can_surf,^$can_flash"
+                            "$can_surf, $flash_badge, HM_FLASH"
                         ]
                     },
                     {
                         "name": "Aerodactyl Room Item 3",
                         "access_rules": [
-                            "$can_surf,^$can_flash"
+                            "$can_surf, $flash_badge, HM_FLASH"
                         ]
                     },
                     {
                         "name": "Aerodactyl Room Item 4",
                         "access_rules": [
-                            "$can_surf,^$can_flash"
+                            "$can_surf, $flash_badge, HM_FLASH"
                         ]
                     },
                     {
@@ -522,7 +522,10 @@
             },
             {
                 "name": "Route 32",
-                "access_rules": ["@JohtoKanto/Violet City, $r32_guy", "@JohtoKanto/Union Cave"],
+                "access_rules": [
+                    "@JohtoKanto/Violet City, $r32_guy",
+                    "@JohtoKanto/Union Cave"
+                ],
                 "sections": [
                     {
                         "name": "Poison Barb from Frieda"
@@ -1205,7 +1208,7 @@
             },
             {
                 "name": "Goldenrod Underground",
-                "access_rules": ["@JohtoKanto/Ilex Forest/Post-Tree"],
+                "access_rules": ["@JohtoKanto/Goldenrod City"],
                 "sections": [
                     {
                         "name": "Item 1"
@@ -1424,7 +1427,7 @@
             },
             {
                 "name": "Radio Tower",
-                "access_rules": ["@JohtoKanto/Ilex Forest/Post-Tree"],
+                "access_rules": ["@JohtoKanto/Goldenrod City"],
                 "sections": [
                     {
                         "name": "1F - Radio Card from Quiz",
@@ -1803,7 +1806,7 @@
             {
                 "name": "Route 37",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Ecruteak City"
                 ],
                 "sections": [
                     {
@@ -1860,7 +1863,10 @@
             {
                 "name": "Ecruteak City",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Goldenrod City, SQUIRTBOTTLE",
+                    "@JohtoKanto/Olivine City",
+                    "@JohtoKanto/Mahogany Town",
+                    "$can_freefly|Ecruteak"
                 ],
                 "sections": [
                     {
@@ -1961,7 +1967,7 @@
             {
                 "name": "Burned Tower",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Ecruteak City"
                 ],
                 "sections": [
                     {
@@ -2006,11 +2012,14 @@
             {
                 "name": "Tin Tower",
                 "access_rules": [
-                    "^$tintower_access"
+                    "@JohtoKanto/Ecruteak City, ^$tintower_access"
                 ],
                 "sections": [
                     {
-                        "name": "1F - Rainbow Wing"
+                        "name": "1F - Rainbow Wing",
+                        "access_rules": [
+                            "EVENT_BEAT_ELITE_FOUR"
+                        ]
                     },
                     {
                         "name": "3F - Item"
@@ -2084,7 +2093,7 @@
             {
                 "name": "Route 38",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Ecruteak City"
                 ],
                 "sections": [
                     {
@@ -2141,7 +2150,7 @@
             {
                 "name": "Route 39",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Olivine City"
                 ],
                 "sections": [
                     {
@@ -2198,7 +2207,9 @@
             {
                 "name": "Olivine City",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Ecruteak City",
+                    "@JohtoKanto/Cianwood City, $can_surf",
+                    "@JohtoKanto/S.S. Aqua"
                 ],
                 "sections": [
                     {
@@ -2254,7 +2265,7 @@
             {
                 "name": "Olivine Lighthouse",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Olivine City"
                 ],
                 "sections": [
                     {
@@ -2354,7 +2365,8 @@
             {
                 "name": "S.S. Aqua",
                 "access_rules": [
-                    "$ecruteak_access,S_S_TICKET"
+                    "@JohtoKanto/Olivine City, S_S_TICKET",
+                    "@JohtoKanto/Vermilion City, S_S_TICKET"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -2494,7 +2506,7 @@
             {
                 "name": "Route 40",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Olivine City"
                 ],
                 "sections": [
                     {
@@ -2557,7 +2569,7 @@
             {
                 "name": "Route 41",
                 "access_rules": [
-                    "$ecruteak_access,$can_surf"
+                    "@JohtoKanto/Olivine City, $can_surf"
                 ],
                 "sections": [
                     {
@@ -2632,7 +2644,7 @@
             {
                 "name": "Whirl Islands",
                 "access_rules": [
-                    "$cianwood_access,$can_whirlpool"
+                    "@JohtoKanto/Cianwood City, $can_whirlpool"
                 ],
                 "sections": [
                     {
@@ -2743,7 +2755,8 @@
             {
                 "name": "Cianwood City",
                 "access_rules": [
-                    "$cianwood_access"
+                    "@JohtoKanto/Olivine City, $can_surf",
+                    "$can_freefly|Cianwood"
                 ],
                 "sections": [
                     {
@@ -2838,7 +2851,7 @@
             {
                 "name": "Route 42",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Ecruteak City"
                 ],
                 "sections": [
                     {
@@ -2856,7 +2869,7 @@
                             "berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf,$can_cut"
+                            "$can_surf, $can_cut"
                         ]
                     },
                     {
@@ -2865,7 +2878,7 @@
                             "berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf,$can_cut"
+                            "$can_surf, $can_cut"
                         ]
                     },
                     {
@@ -2874,7 +2887,7 @@
                             "berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf,$can_cut"
+                            "$can_surf, $can_cut"
                         ]
                     },
                     {
@@ -2916,7 +2929,7 @@
             {
                 "name": "Mount Mortar",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Ecruteak City"
                 ],
                 "sections": [
                     {
@@ -3111,7 +3124,9 @@
             {
                 "name": "Mahogany Town",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Ecruteak City",
+                    "@JohtoKanto/Blackthorn City",
+                    "$can_freefly|Mahogany"
                 ],
                 "sections": [
                     {
@@ -3363,7 +3378,7 @@
             {
                 "name": "Route 43",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Mahogany Town"
                 ],
                 "sections": [
                     {
@@ -3432,7 +3447,7 @@
             {
                 "name": "Lake of Rage",
                 "access_rules": [
-                    "$ecruteak_access"
+                    "@JohtoKanto/Mahogany Town"
                 ],
                 "sections": [
                     {
@@ -3538,7 +3553,7 @@
             {
                 "name": "Route 44",
                 "access_rules": [
-                    "$icepath_access"
+                    "@JohtoKanto/Mahogany Town, $tower_takeover"
                 ],
                 "sections": [
                     {
@@ -3622,7 +3637,8 @@
             {
                 "name": "Ice Path",
                 "access_rules": [
-                    "$icepath_access"
+                    "@JohtoKanto/Mahogany Town, $tower_takeover",
+                    "@JohtoKanto/Blackthorn City"
                 ],
                 "sections": [
                     {
@@ -3637,19 +3653,19 @@
                     {
                         "name": "1F - Item 2",
                         "access_rules": [
-                            "$blackthorn_access"
+                            "@JohtoKanto/Blackthorn City"
                         ]
                     },
                     {
                         "name": "B1F - Item",
                         "access_rules": [
-                            "$blackthorn_access"
+                            "@JohtoKanto/Blackthorn City"
                         ]
                     },
                     {
                         "name": "B1F - Hidden Item on Boulder",
                         "access_rules": [
-                            "[$hid],$blackthorn_access"
+                            "[$hid], @JohtoKanto/Blackthorn City"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -3661,13 +3677,13 @@
                     {
                         "name": "B2F - Item 2",
                         "access_rules": [
-                            "$blackthorn_access"
+                            "@JohtoKanto/Blackthorn City"
                         ]
                     },
                     {
                         "name": "B2F - Item 3",
                         "access_rules": [
-                            "$blackthorn_access"
+                            "@JohtoKanto/Blackthorn City"
                         ]
                     },
                     {
@@ -3682,7 +3698,7 @@
                     {
                         "name": "B2F - Hidden Item on Boulder",
                         "access_rules": [
-                            "[$hid],$blackthorn_access"
+                            "[$hid], @JohtoKanto/Blackthorn City"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -3691,7 +3707,7 @@
                     {
                         "name": "B3F - Item",
                         "access_rules": [
-                            "$blackthorn_access"
+                            "@JohtoKanto/Blackthorn City"
                         ]
                     }
                 ],
@@ -3706,13 +3722,14 @@
             {
                 "name": "Blackthorn City",
                 "access_rules": [
-                    "$blackthorn_access"
+                    "@JohtoKanto/Mahogany Town, $tower_takeover, $can_strength",
+                    "$can_freefly|Blackthorn"
                 ],
                 "sections": [
                     {
                         "name": "Gym - Rising Badge from Clair",
                         "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER,$can_strength"
+                            "EVENT_CLEARED_RADIO_TOWER, $can_strength"
                         ],
                         "visibility_rules": [
                             "badges_on",
@@ -3722,7 +3739,7 @@
                     {
                         "name": "​Gym - Rising Badge from Clair",
                         "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER,$can_strength"
+                            "EVENT_CLEARED_RADIO_TOWER, $can_strength"
                         ],
                         "visibility_rules": [
                             "badges_off"
@@ -3732,7 +3749,7 @@
                     {
                         "name": "Gym - TM24 from Clair",
                         "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER,$can_strength"
+                            "EVENT_CLEARED_RADIO_TOWER, $can_strength"
                         ]
                     },
                     {
@@ -3786,25 +3803,25 @@
                     {
                         "name": "Dragon's Den B1F - Item 1",
                         "access_rules": [
-                            "$can_surf,$can_strength,EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ]
                     },
                     {
                         "name": "Dragon's Den B1F - Item 2",
                         "access_rules": [
-                            "$can_whirlpool,$can_strength,EVENT_CLEARED_RADIO_TOWER"
+                            "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ]
                     },
                     {
                         "name": "Dragon's Den B1F - Item 3",
                         "access_rules": [
-                            "$can_surf,$can_strength,EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ]
                     },
                     {
                         "name": "Dragon's Den B1F - Cool Trainer Cara",
                         "access_rules": [
-                            "$can_surf,$can_strength,EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "trainersanity_on"
@@ -3813,7 +3830,7 @@
                     {
                         "name": "Dragon's Den B1F - Cool Trainer Darin",
                         "access_rules": [
-                            "$can_surf,$can_strength,EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "trainersanity_on"
@@ -3822,7 +3839,7 @@
                     {
                         "name": "Dragon's Den B1F - Twins Lea & Pia",
                         "access_rules": [
-                            "$can_surf,$can_strength,EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "trainersanity_on"
@@ -3831,7 +3848,7 @@
                     {
                         "name": "Dragon's Den B1F - Hidden Item in SE Corner",
                         "access_rules": [
-                            "$can_whirlpool,$can_strength,EVENT_CLEARED_RADIO_TOWER,[$hid]"
+                            "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER,[$hid]"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -3840,7 +3857,7 @@
                     {
                         "name": "Dragon's Den B1F - Hidden Item in Water 1",
                         "access_rules": [
-                            "$can_whirlpool,$can_strength,EVENT_CLEARED_RADIO_TOWER,[$hid]"
+                            "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER,[$hid]"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -3849,7 +3866,7 @@
                     {
                         "name": "Dragon's Den B1F - Hidden Item in Water 2",
                         "access_rules": [
-                            "$can_surf,$can_strength,EVENT_CLEARED_RADIO_TOWER,[$hid]"
+                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER,[$hid]"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -3867,7 +3884,7 @@
             {
                 "name": "Dark Cave Blackthorn Entrance",
                 "access_rules": [
-                    "$blackthorn_access,^$can_flash,$can_surf"
+                    "@JohtoKanto/Blackthorn City, ^$can_flash, $can_surf"
                 ],
                 "sections": [
                     {
@@ -3891,7 +3908,7 @@
             {
                 "name": "Route 45",
                 "access_rules": [
-                    "$blackthorn_access"
+                    "@JohtoKanto/Blackthorn City"
                 ],
                 "sections": [
                     {
@@ -3975,8 +3992,8 @@
             {
                 "name": "Route 46",
                 "access_rules": [
-                    "^$can_flash,$can_rocksmash",
-                    "$blackthorn_access"
+                    "^$can_flash, $can_rocksmash",
+                    "@JohtoKanto/Blackthorn City"
                 ],
                 "sections": [
                     {
@@ -4023,16 +4040,30 @@
             },
             {
                 "name": "Route 27",
-                "access_rules": [
-                    "$can_surf",
-                    "$rt26_access"
-                ],
                 "sections": [
+                    {
+                        "name": "Pre-Waterfall",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "$can_surf"
+                        ]
+                    },
+                    {
+                        "name": "Post-Waterfall",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall",
+                            "@JohtoKanto/Route 26"
+                        ]
+                    },
                     {
                         "name": "Sandstorm from Woman in House",
                         "access_rules": [
-                            "$can_waterfall",
-                            "$rt26_access,$can_surf"
+                            "@JohtoKanto/Route 27/Post-Waterfall, $can_surf"
                         ]
                     },
                     {
@@ -4044,15 +4075,13 @@
                     {
                         "name": "Item 2",
                         "access_rules": [
-                            "$can_whirlpool,$can_waterfall",
-                            "$can_whirlpool,$rt26_access"
+                            "@JohtoKanto/Route 27/Post-Waterfall, $can_whirlpool"
                         ]
                     },
                     {
                         "name": "Psychic Gilbert",
                         "access_rules": [
-                            "$can_waterfall",
-                            "$rt26_access"
+                            "@JohtoKanto/Route 27/Post-Waterfall"
                         ],
                         "visibility_rules": [
                             "trainersanity_on"
@@ -4061,8 +4090,7 @@
                     {
                         "name": "Cool Trainer Blake",
                         "access_rules": [
-                            "$can_waterfall",
-                            "$rt26_access"
+                            "@JohtoKanto/Route 27/Post-Waterfall"
                         ],
                         "visibility_rules": [
                             "trainersanity_on"
@@ -4071,8 +4099,7 @@
                     {
                         "name": "Cool Trainer Brian",
                         "access_rules": [
-                            "$can_waterfall",
-                            "$rt26_access"
+                            "@JohtoKanto/Route 27/Post-Waterfall"
                         ],
                         "visibility_rules": [
                             "trainersanity_on"
@@ -4081,8 +4108,7 @@
                     {
                         "name": "Cool Trainer Reena",
                         "access_rules": [
-                            "$can_waterfall",
-                            "$rt26_access"
+                            "@JohtoKanto/Route 27/Post-Waterfall"
                         ],
                         "visibility_rules": [
                             "trainersanity_on"
@@ -4091,8 +4117,7 @@
                     {
                         "name": "Cool Trainer Megan",
                         "access_rules": [
-                            "$can_waterfall",
-                            "$rt26_access,$can_surf"
+                            "@JohtoKanto/Route 27/Post-Waterfall, $can_surf"
                         ],
                         "visibility_rules": [
                             "trainersanity_on"
@@ -4101,8 +4126,7 @@
                     {
                         "name": "Bird Keeper Jose",
                         "access_rules": [
-                            "$can_whirlpool,$can_waterfall",
-                            "$can_whirlpool,$rt26_access"
+                            "@JohtoKanto/Route 27/Post-Waterfall, $can_whirlpool"
                         ],
                         "visibility_rules": [
                             "trainersanity_on"
@@ -4126,7 +4150,8 @@
             {
                 "name": "Route 26",
                 "access_rules": [
-                    "$rt26_access"
+                    "@JohtoKanto/Route 27/Post-Waterfall",
+                    "@JohtoKanto/Viridian City, $clear_snorlax"
                 ],
                 "sections": [
                     {
@@ -4186,7 +4211,7 @@
             {
                 "name": "Victory Road",
                 "access_rules": [
-                    "$victoryroad_access"
+                    "@JohtoKanto/Route 26, $elite_four_badges"
                 ],
                 "sections": [
                     {
@@ -4234,7 +4259,7 @@
             {
                 "name": "Indigo Plateau",
                 "access_rules": [
-                    "$victoryroad_access"
+                    "@JohtoKanto/Victory Road"
                 ],
                 "sections": [
                     {
@@ -4253,7 +4278,7 @@
             {
                 "name": "Route 28",
                 "access_rules": [
-                    "$red_access"
+                    "@JohtoKanto/Route 26, $red_badges"
                 ],
                 "visibility_rules": [
                     "$silver_cave"
@@ -4268,7 +4293,7 @@
                     {
                         "name": "Hidden Item Behind Cut Tree",
                         "access_rules": [
-                            "$can_cut,[$hid]"
+                            "$can_cut, [$hid]"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -4286,7 +4311,7 @@
             {
                 "name": "Silver Cave",
                 "access_rules": [
-                    "$red_access"
+                    "@JohtoKanto/Route 26, $red_badges"
                 ],
                 "visibility_rules": [
                     "$silver_cave"
@@ -4415,7 +4440,10 @@
             {
                 "name": "Viridian City",
                 "access_rules": [
-                    "$viridian_access"
+                    "@JohtoKanto/Pewter City",
+                    "@JohtoKanto/Vermilion City, $clear_snorlax",
+                    "@JohtoKanto/Pallet Town",
+                    "$can_freefly|Viridian"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4459,7 +4487,7 @@
             {
                 "name": "Route 1",
                 "access_rules": [
-                    "$viridian_access"
+                    "@JohtoKanto/Viridian City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4495,7 +4523,9 @@
             {
                 "name": "Pallet Town",
                 "access_rules": [
-                    "$viridian_access"
+                    "@JohtoKanto/Viridian City",
+                    "@JohtoKanto/Cinnabar Island, $can_surf",
+                    "$can_freefly|Pallet"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4512,7 +4542,7 @@
             {
                 "name": "Route 2",
                 "access_rules": [
-                    "$viridian_access"
+                    "@JohtoKanto/Viridian City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4522,14 +4552,14 @@
                         "name": "Nugget from Guy",
                         "access_rules": [
                             "$can_cut",
-                            "$clear_snorlax"
+                            "@JohtoKanto/Vermilion City, $clear_snorlax"
                         ]
                     },
                     {
                         "name": "Item 1",
                         "access_rules": [
                             "$can_cut",
-                            "$clear_snorlax"
+                            "@JohtoKanto/Vermilion City, $clear_snorlax"
                         ]
                     },
                     {
@@ -4616,7 +4646,8 @@
             {
                 "name": "Pewter City",
                 "access_rules": [
-                    "$viridian_access"
+                    "@JohtoKanto/Viridian City",
+                    "$can_freefly|Pewter"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4669,7 +4700,7 @@
             {
                 "name": "Route 3",
                 "access_rules": [
-                    "$viridian_access"
+                    "@JohtoKanto/Pewter City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4711,7 +4742,7 @@
             {
                 "name": "Mt. Moon",
                 "access_rules": [
-                    "$viridian_access"
+                    "@JohtoKanto/Pewter City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4728,7 +4759,7 @@
             {
                 "name": "Route 4",
                 "access_rules": [
-                    "$viridian_access"
+                    "@JohtoKanto/Pewter City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4776,7 +4807,10 @@
             {
                 "name": "Cerulean City",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Pewter City",
+                    "@JohtoKanto/Saffron City",
+                    "@JohtoKanto/Route 9, $can_cut",
+                    "$can_freefly|Cerulean"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4838,7 +4872,7 @@
             {
                 "name": "Route 5",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Cerulean City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4877,7 +4911,7 @@
             {
                 "name": "Route 25",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Cerulean City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -4955,8 +4989,8 @@
             {
                 "name": "Route 9",
                 "access_rules": [
-                    "$saffron_access,$can_cut",
-                    "$saffron_access,^$can_flash"
+                    "@JohtoKanto/Cerulean City, $can_cut",
+                    "@JohtoKanto/Lavender Town, ^$can_flash"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5019,7 +5053,8 @@
             {
                 "name": "Rock Tunnel",
                 "access_rules": [
-                    "$saffron_access,^$can_flash"
+                    "@JohtoKanto/Lavender Town, ^$can_flash",
+                    "@JohtoKanto/Route 9, ^$can_flash"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5079,7 +5114,7 @@
             {
                 "name": "Power Plant",
                 "access_rules": [
-                    "$powerplant_access"
+                    "@JohtoKanto/Route 9, $can_surf"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5110,7 +5145,7 @@
             {
                 "name": "Route 10",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5140,7 +5175,10 @@
             {
                 "name": "Lavender Town",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Saffron City",
+                    "@JohtoKanto/Route 9, ^$can_flash",
+                    "@JohtoKanto/Fuchsia City",
+                    "$can_freefly|Lavender"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5177,7 +5215,7 @@
             {
                 "name": "Route 8",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Saffron City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5231,7 +5269,12 @@
             {
                 "name": "Saffron City",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Goldenrod City, PASS",
+                    "$can_freefly|Saffron",
+                    "@JohtoKanto/Cerulean City",
+                    "@JohtoKanto/Celadon City",
+                    "@JohtoKanto/Lavender Town",
+                    "@JohtoKanto/Vermilion City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5302,7 +5345,8 @@
             {
                 "name": "Celadon City",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Saffron City",
+                    "@JohtoKanto/Fuchsia City, BICYCLE"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5394,7 +5438,7 @@
             {
                 "name": "Route 17",
                 "access_rules": [
-                    "$saffron_access,BICYCLE"
+                    "@JohtoKanto/Celadon City, BICYCLE"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5454,7 +5498,7 @@
             {
                 "name": "Route 18",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Fuchsia City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5484,7 +5528,9 @@
             {
                 "name": "Vermilion City",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Saffron City",
+                    "@JohtoKanto/Viridian City, $clear_snorlax",
+                    "@JohtoKanto/S.S. Aqua"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5587,7 +5633,8 @@
             {
                 "name": "Diglett's Cave",
                 "access_rules": [
-                    "$clear_snorlax,$saffron_access"
+                    "@JohtoKanto/Vermilion City, $clear_snorlax",
+                    "@JohtoKanto/Route 2, $can_cut"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5614,7 +5661,7 @@
             {
                 "name": "Route 6",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Saffron City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5644,7 +5691,7 @@
             {
                 "name": "Route 11",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5701,7 +5748,7 @@
             {
                 "name": "Route 12",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5767,7 +5814,7 @@
             {
                 "name": "Route 13",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5824,7 +5871,7 @@
             {
                 "name": "Route 14",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Fuchsia City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5860,7 +5907,7 @@
             {
                 "name": "Route 15",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Fuchsia City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5920,7 +5967,8 @@
             {
                 "name": "Fuchsia City",
                 "access_rules": [
-                    "$saffron_access"
+                    "@JohtoKanto/Lavender Town",
+                    "@JohtoKanto/Celadon City, BICYCLE"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5964,7 +6012,7 @@
             {
                 "name": "Route 19",
                 "access_rules": [
-                    "$viridian_access,$can_surf"
+                    "@JohtoKanto/Cinnabar Island, $can_surf"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -6006,7 +6054,7 @@
             {
                 "name": "Route 20",
                 "access_rules": [
-                    "$viridian_access,$can_surf"
+                    "@JohtoKanto/Cinnabar Island, $can_surf"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -6042,7 +6090,7 @@
             {
                 "name": "Seafoam Islands",
                 "access_rules": [
-                    "$viridian_access,$can_surf"
+                    "@JohtoKanto/Cinnabar Island, $can_surf"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -6074,7 +6122,8 @@
             {
                 "name": "Cinnabar Island",
                 "access_rules": [
-                    "$viridian_access,$can_surf"
+                    "@JohtoKanto/Pallet Town, $can_surf",
+                    "$can_freefly|Cinnabar"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -6105,7 +6154,7 @@
             {
                 "name": "Route 21",
                 "access_rules": [
-                    "$viridian_access,$can_surf"
+                    "@JohtoKanto/Pallet Town, $can_surf"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
