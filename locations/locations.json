@@ -412,39 +412,6 @@
                 "name": "Ruins of Alph",
                 "sections": [
                     {
-                        "name": "Outside - Psychic Nathan",
-                        "access_rules": [
-                            "$can_surf"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Aerodactyl Room Item 1",
-                        "access_rules": [
-                            "$can_surf, $flash_badge, HM_FLASH"
-                        ]
-                    },
-                    {
-                        "name": "Aerodactyl Room Item 2",
-                        "access_rules": [
-                            "$can_surf, $flash_badge, HM_FLASH"
-                        ]
-                    },
-                    {
-                        "name": "Aerodactyl Room Item 3",
-                        "access_rules": [
-                            "$can_surf, $flash_badge, HM_FLASH"
-                        ]
-                    },
-                    {
-                        "name": "Aerodactyl Room Item 4",
-                        "access_rules": [
-                            "$can_surf, $flash_badge, HM_FLASH"
-                        ]
-                    },
-                    {
                         "name": "Kabuto Room Item 1 (Escape Rope)",
                         "access_rules": [
                             "ESCAPE_ROPE"
@@ -493,6 +460,30 @@
                         ]
                     },
                     {
+                        "name": "Aerodactyl Room Item 1 (Flash)",
+                        "access_rules": [
+                            "$can_surf, $flash_badge, HM_FLASH"
+                        ]
+                    },
+                    {
+                        "name": "Aerodactyl Room Item 2 (Flash)",
+                        "access_rules": [
+                            "$can_surf, $flash_badge, HM_FLASH"
+                        ]
+                    },
+                    {
+                        "name": "Aerodactyl Room Item 3 (Flash)",
+                        "access_rules": [
+                            "$can_surf, $flash_badge, HM_FLASH"
+                        ]
+                    },
+                    {
+                        "name": "Aerodactyl Room Item 4 (Flash)",
+                        "access_rules": [
+                            "$can_surf, $flash_badge, HM_FLASH"
+                        ]
+                    },
+                    {
                         "name": "Ho-Oh Room Item 1 (Rainbow Wing)",
                         "access_rules": [
                             "$can_surf, RAINBOW_WING"
@@ -514,6 +505,15 @@
                         "name": "Ho-Oh Room Item 4 (Rainbow Wing)",
                         "access_rules": [
                             "$can_surf, RAINBOW_WING"
+                        ]
+                    },
+                    {
+                        "name": "Outside - Psychic Nathan",
+                        "access_rules": [
+                            "$can_surf"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
                         ]
                     }
                 ],
