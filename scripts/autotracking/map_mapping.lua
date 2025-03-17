@@ -322,10 +322,10 @@ MAP_MAPPING =	{
 		[14] =	{"Kanto Routes", "Route 12"},		--ROUTE_12_SUPER_ROD_HOUSE
 	},
 	[19] =	{
-		[1] =	{"Kanto Routes", "Route 28"},								--ROUTE_28
+		[1] =	{"Johto Routes", "Route 28"},								--ROUTE_28
 		[2] =	{"Johto Dungeons", "Silver Cave", "Silver Cave Outside"},	--SILVER_CAVE_OUTSIDE
 		[3] =	{"Johto Dungeons", "Silver Cave", "Silver Cave Outside"},	--SILVER_CAVE_POKECENTER_1F
-		[4] =	{"Kanto Routes", "Route 28"},								--ROUTE_28_STEEL_WING_HOUSE
+		[4] =	{"Johto Routes", "Route 28"},								--ROUTE_28_STEEL_WING_HOUSE
 	},
 	[20] =	{
 		[1] =	{},	--POKECENTER_2F
