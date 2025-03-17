@@ -141,10 +141,23 @@ function updateVanillaKeyItems(value)
 	end
 end
 
+last_map_group = nil
+last_map_number = nil
+
 function onMap(value)
 	if has("automap_on") and value ~= nil and value["data"] ~= nil then
 		map_group = value["data"]["mapGroup"]
 		map_number = value["data"]["mapNumber"]
+		print("Map ID: " .. tostring(map_group) .. ", " .. tostring(map_number))
+		-- Check if map_number is 54 but previous wasn't 53 or 56
+		if map_group == 3 and map_number == 54 and not (last_map_number == 53 or last_map_number == 56) then
+			return
+		end
+
+		-- Update last processed values
+		last_map_group = map_group
+		last_map_number = map_number
+
 		tabs = MAP_MAPPING[map_group][map_number]
 		for i, tab in ipairs(tabs) do
 			Tracker:UiHint("ActivateTab", tab)
