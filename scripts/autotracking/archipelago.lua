@@ -113,6 +113,7 @@ function onNotifyLaunch(key, value)
 end
 
 function updateEvents(value)
+    print("Event: "..value)
 	if value ~= nil then
 		for i, code in ipairs(FLAG_EVENT_CODES) do
             local obj = Tracker:FindObjectForCode(code)
