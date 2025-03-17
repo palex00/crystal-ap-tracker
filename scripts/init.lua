@@ -32,3 +32,4 @@ ScriptHost:LoadScript("scripts/autotracking.lua")
 -- Watches
 ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
 ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
+ScriptHost:AddWatchForCode("r32_guy", "r32_guy", toggle_johto)

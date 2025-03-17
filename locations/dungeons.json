@@ -49,6 +49,7 @@
 					{ "ref": "JohtoKanto/Slowpoke Well/B1F - Grunt 2", "name": "Slowpoke Well B1F - Grunt 2" },
 					{ "ref": "JohtoKanto/Slowpoke Well/B1F - Grunt 3", "name": "Slowpoke Well B1F - Grunt 3" },
 					{ "ref": "JohtoKanto/Slowpoke Well/B2F - Item 1", "name": "Slowpoke Well B2F - Item 1" },
+					{ "ref": "JohtoKanto/Slowpoke Well/Cleared Slowpoke Well", "name": "Cleared Slowpoke Well" },
 					{
 						"ref": "JohtoKanto/Slowpoke Well/B2F - Kings Rock from Man",
 						"name": "Slowpoke Well B2F - Kings Rock from Man"
@@ -185,16 +186,6 @@
 			{
 				"name": "",
 				"sections": [
-					{ "ref": "JohtoKanto/Burned Tower/1F - Hidden Item 1", "name": "Burned Tower 1F - Hidden Item 1" },
-					{ "ref": "JohtoKanto/Burned Tower/1F - Hidden Item 2", "name": "Burned Tower 1F - Hidden Item 2" },
-					{ "ref": "JohtoKanto/Burned Tower/1F - Item", "name": "Burned Tower 1F - Item" },
-					{ "ref": "JohtoKanto/Burned Tower/B1F - Item", "name": "Burned Tower B1F - Item" }
-				],
-				"map_locations": [{ "map": "EcruteakCity", "x": 88, "y": 88 }]
-			},
-			{
-				"name": "",
-				"sections": [
 					{
 						"ref": "JohtoKanto/Ecruteak City/Dance Theater - Kimono Girl Kuni",
 						"name": "Dance Theater - Kimono Girl Kuni"
@@ -278,6 +269,11 @@
 			},
 			{
 				"name": "",
+				"sections": [{ "ref": "JohtoKanto/Burned Tower/B1F - Released the Beasts" }],
+				"map_locations": [{ "map": "BurnedTowerB1F", "x": 152, "y": 72 }]
+			},
+			{
+				"name": "",
 				"sections": [{ "ref": "JohtoKanto/Celadon City/Hidden Item At Dead End" }],
 				"map_locations": [{ "map": "CeladonCity", "x": 600, "y": 344 }]
 			},
@@ -357,7 +353,8 @@
 					{ "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Nob", "name": "Cianwood Gym - Blackbelt Nob" },
 					{ "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Yoshi", "name": "Cianwood Gym - Blackbelt Yoshi" },
 					{ "ref": "JohtoKanto/Cianwood City/Gym - Storm Badge from Chuck", "name": "Cianwood Gym - Storm Badge from Chuck" },
-					{ "ref": "JohtoKanto/Cianwood City/Gym - TM01 from Chuck", "name": "Cianwood Gym - TM01 from Chuck" }
+					{ "ref": "JohtoKanto/Cianwood City/Gym - TM01 from Chuck", "name": "Cianwood Gym - TM01 from Chuck" },
+                    { "ref": "JohtoKanto/Cianwood City/Gym - Beat Chuck", "name": "Beat Chuck" }
 				],
 				"map_locations": [{ "map": "CianwoodCity", "x": 136, "y": 696 }]
 			},
@@ -1345,6 +1342,11 @@
 				"name": "",
 				"sections": [{ "ref": "JohtoKanto/Ice Path/B3F - Item" }],
 				"map_locations": [{ "map": "IcePathB3F", "x": 88, "y": 120 }]
+			},
+			{
+				"name": "",
+				"sections": [{ "ref": "JohtoKanto/Ilex Forest/Herded Farfetch'd" }],
+				"map_locations": [{ "map": "IlexForest", "x": 104, "y": 456 }]
 			},
 			{
 				"name": "",
@@ -3751,6 +3753,11 @@
 			},
 			{
 				"name": "",
+				"sections": [{ "ref": "JohtoKanto/Slowpoke Well/Cleared Slowpoke Well" }],
+				"map_locations": [{ "map": "SlowpokeWellB1F", "x": 104, "y": 40 }]
+			},
+			{
+				"name": "",
 				"sections": [{ "ref": "JohtoKanto/Slowpoke Well/B2F - Item 1" }],
 				"map_locations": [{ "map": "SlowpokeWellB2F", "x": 248, "y": 88 }]
 			},
@@ -3822,7 +3829,11 @@
 					{
 						"ref": "JohtoKanto/Violet City/​Gym - Zephyr Badge from Falkner",
 						"name": "Violet Gym - Zephyr Badge from Falkner​"
-					}
+					},
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - Beat Falkner",
+                        "name": "Beat Falkner"
+                    }
 				],
 				"map_locations": [{ "map": "VioletCity", "x": 296, "y": 280 }]
 			},
