@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.3.0",
+			"download_url": "https://github.com/palex00/crystal-ap-tracker/archive/refs/tags/0.3.0.zip",
+			"sha256": "63aab63e4d111b126ac2fc2af010cfec117157b42e706e42c58b6517601f61aa",
+			"changelog": ["Complete logic overhaul + 3.0.0 support + lots of QOL changes"]
+		},
+		{
 			"package_version": "0.2.1",
 			"download_url": "https://github.com/palex00/crystal-ap-tracker/archive/refs/tags/0.2.1.zip",
 			"sha256": "50d5aa4cdd9f92b0163500cda9a66344e6636e09c041704cee812ccbfb4beea6",
