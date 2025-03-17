@@ -43,7 +43,7 @@ end
 
 function toggle_johto(code)
     if has("johto_only_off") then
-        Tracker:AddMaps("maps/maps.json")
+        Tracker:AddMaps("maps/maps_johto_and_kanto.json")
         Tracker:AddLayouts("layouts/items.json")
         Tracker:AddLayouts("layouts/events.json")
         Tracker:AddLayouts("layouts/tabs.json")
@@ -56,5 +56,13 @@ function toggle_johto(code)
         elseif has("johto_only_silver") then
             Tracker:AddMaps("maps/maps_johto_only.json")
         end
+    end
+end
+
+function toggle_ilex(code)
+    if has("ilextree_on") then
+        Tracker:AddMaps("maps/ilex_forest_tree.json")
+    elseif has("ilextree_off") then
+        Tracker:AddMaps("maps/ilex_forest_no_tree.json")
     end
 end
