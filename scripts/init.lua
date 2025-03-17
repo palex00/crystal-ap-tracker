@@ -9,11 +9,13 @@ ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
+Tracker:AddMaps("maps/ilex_forest_no_tree.json")
+Tracker:AddMaps("maps/maps_johto_and_kanto.json")
+
+
 -- Locations
 Tracker:AddLocations("locations/locations.json")
-if PopVersion and PopVersion >= "0.23.0" then
-	Tracker:AddLocations("locations/dungeons.json")
-end
+Tracker:AddLocations("locations/dungeons.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/dungeon_maps.json")
@@ -29,3 +31,4 @@ ScriptHost:LoadScript("scripts/autotracking.lua")
 
 -- Watches
 ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
+ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
