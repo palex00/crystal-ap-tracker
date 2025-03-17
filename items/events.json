@@ -1,5 +1,11 @@
 [
 	{
+		"name": "Beat Falkner",
+		"type": "toggle",
+		"img": "/images/events/beat_falkner.png",
+		"codes": "EVENT_BEAT_FALKNER"
+	},
+	{
 		"name": "Egg Collected",
 		"type": "toggle",
 		"img": "/images/events/egg_collected.png",
@@ -18,10 +24,34 @@
 		"codes": "EVENT_GAVE_KENYA"
 	},
 	{
+		"name": "Cleared Slowpoke Well",
+		"type": "toggle",
+		"img": "/images/events/cleared_slowpoke_well.png",
+		"codes": "EVENT_CLEARED_SLOWPOKE_WELL"
+	},
+	{
+		"name": "Herded Farfetch'd",
+		"type": "toggle",
+		"img": "/images/events/herded_farfetchd.png",
+		"codes": "EVENT_HERDED_FARFETCHD"
+	},
+	{
+		"name": "Released the Beasts",
+		"type": "toggle",
+		"img": "/images/events/released_the_beasts.png",
+		"codes": "EVENT_RELEASED_THE_BEASTS"
+	},
+	{
 		"name": "Heal Amphy",
 		"type": "toggle",
 		"img": "/images/events/jasmine_returned.png",
 		"codes": "EVENT_JASMINE_RETURNED_TO_GYM"
+	},
+	{
+		"name": "Beat Chuck",
+		"type": "toggle",
+		"img": "/images/events/beat_chuck.png",
+		"codes": "EVENT_BEAT_CHUCK"
 	},
 	{
 		"name": "Help Lance",

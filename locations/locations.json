@@ -266,6 +266,21 @@
                 "name": "Violet City",
                 "sections": [
                     {
+                        "name": "Gym - Bird Keeper Abe",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Bird Keeper Rod",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - TM31 from Falkner"
+                    },
+                    {
                         "name": "Gym - Zephyr Badge from Falkner",
                         "visibility_rules": [
                             "badges_on",
@@ -280,23 +295,13 @@
                         "hosted_item": "ZEPHYR_BADGE"
                     },
                     {
-                        "name": "Gym - TM31 from Falkner"
-                    },
-                    {
-                        "name": "Gym - Bird Keeper Abe",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
+                        "name": "Gym - Beat Falkner",
+                        "hosted_item": "EVENT_BEAT_FALKNER"
                     },
                     {
                         "name": "Egg Collected",
-                        "hosted_item": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
-                    },
-                    {
-                        "name": "Gym - Bird Keeper Rod",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
+                        "hosted_item": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
+                        "access_rules": ["EVENT_BEAT_FALKNER"]
                     },
                     {
                         "name": "Item 1",
@@ -820,6 +825,10 @@
                         "visibility_rules": [
                             "trainersanity_on"
                         ]
+                    },
+                    {
+                        "name": "Cleared Slowpoke Well",
+                        "hosted_item": "EVENT_CLEARED_SLOWPOKE_WELL"
                     }
                 ],
                 "map_locations": [
@@ -843,47 +852,56 @@
                         "visibility_rules": [
                             "badges_on",
                             "badges_shuffle"
-                        ]
+                        ],
+                        "access_rules": ["EVENT_CLEARED_SLOWPOKE_WELL"]
                     },
                     {
                         "name": "​Gym - Hive Badge from Bugsy",
                         "visibility_rules": [
                             "badges_off"
                         ],
-                        "hosted_item": "HIVE_BADGE"
+                        "hosted_item": "HIVE_BADGE",
+                        "access_rules": ["EVENT_CLEARED_SLOWPOKE_WELL"]
                     },
                     {
-                        "name": "Gym - TM49 from Bugsy"
+                        "name": "Gym - TM49 from Bugsy",
+                        "access_rules": ["EVENT_CLEARED_SLOWPOKE_WELL"]
                     },
                     {
                         "name": "Gym - Bug Catcher Al",
                         "visibility_rules": [
                             "trainersanity_on"
-                        ]
+                        ],
+                        "access_rules": ["EVENT_CLEARED_SLOWPOKE_WELL"]
                     },
                     {
                         "name": "Gym - Bug Catcher Benny",
                         "visibility_rules": [
                             "trainersanity_on"
-                        ]
+                        ],
+                        "access_rules": ["EVENT_CLEARED_SLOWPOKE_WELL"]
                     },
                     {
                         "name": "Gym - Bug Catcher Josh",
                         "visibility_rules": [
                             "trainersanity_on"
-                        ]
+                        ],
+                        "access_rules": ["EVENT_CLEARED_SLOWPOKE_WELL"]
                     },
                     {
                         "name": "Gym - Twins Amy & May",
                         "visibility_rules": [
                             "trainersanity_on"
-                        ]
+                        ],
+                        "access_rules": ["EVENT_CLEARED_SLOWPOKE_WELL"]
                     },
                     {
-                        "name": "Lure Ball from Kurt"
+                        "name": "Lure Ball from Kurt",
+                        "access_rules": ["EVENT_CLEARED_SLOWPOKE_WELL"]
                     },
                     {
-                        "name": "Charcoal from Charcoal Kiln"
+                        "name": "Charcoal from Charcoal Kiln",
+                        "access_rules": ["EVENT_HERDED_FARFETCHD"]
                     },
                     {
                         "name": "Hidden Item By Well",
@@ -933,9 +951,14 @@
                         ]
                     },
                     {
+                        "name": "Herded Farfetch'd",
+                        "hosted_item": "EVENT_HERDED_FARFETCHD",
+                        "access_rules": ["EVENT_CLEARED_SLOWPOKE_WELL"]
+                    },
+                    {
                         "name": "HM01 from Farfetch'd Guy",
                         "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Pre-Tree"
+                            "@JohtoKanto/Ilex Forest/Pre-Tree, EVENT_HERDED_FARFETCHD"
                         ]
                     },
                     {
@@ -1870,45 +1893,52 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - Medium Grace",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ],
+                        "access_rules": ["EVENT_RELEASED_THE_BEASTS"]
+                    },
+                    {
+                        "name": "Gym - Medium Martha",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ],
+                        "access_rules": ["EVENT_RELEASED_THE_BEASTS"]
+                    },
+                    {
+                        "name": "Gym - Sage Jeffrey",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ],
+                        "access_rules": ["EVENT_RELEASED_THE_BEASTS"]
+                    },
+                    {
+                        "name": "Gym - Sage Ping",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ],
+                        "access_rules": ["EVENT_RELEASED_THE_BEASTS"]
+                    },
+                    {
+                        "name": "Gym - TM30 from Morty",
+                        "access_rules": ["EVENT_RELEASED_THE_BEASTS"]
+                    },
+                    {
                         "name": "Gym - Fog Badge from Morty",
                         "visibility_rules": [
                             "badges_on",
                             "badges_shuffle"
-                        ]
+                        ],
+                        "access_rules": ["EVENT_RELEASED_THE_BEASTS"]
                     },
                     {
                         "name": "​Gym - Fog Badge from Morty",
                         "visibility_rules": [
                             "badges_off"
                         ],
-                        "hosted_item": "FOG_BADGE"
-                    },
-                    {
-                        "name": "Gym - TM30 from Morty"
-                    },
-                    {
-                        "name": "Gym - Medium Grace",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Medium Martha",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Sage Jeffrey",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Sage Ping",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
+                        "hosted_item": "FOG_BADGE",
+                        "access_rules": ["EVENT_RELEASED_THE_BEASTS"]
                     },
                     {
                         "name": "Itemfinder from Itemfinder Guy"
@@ -1999,6 +2029,10 @@
                         "access_rules": [
                             "$can_strength"
                         ]
+                    },
+                    {
+                        "name": "B1F - Released the Beasts",
+                        "hosted_item": "EVENT_RELEASED_THE_BEASTS"
                     }
                 ],
                 "map_locations": [
@@ -2006,6 +2040,11 @@
                         "map": "johtokanto",
                         "x": 52,
                         "y": 20
+                    },
+                    { 
+                        "map": "EcruteakCity",
+                        "x": 88,
+                        "y": 88
                     }
                 ]
             },
@@ -2760,32 +2799,6 @@
                 ],
                 "sections": [
                     {
-                        "name": "Gym - Storm Badge from Chuck",
-                        "access_rules": [
-                            "$can_strength"
-                        ],
-                        "visibility_rules": [
-                            "badges_on",
-                            "badges_shuffle"
-                        ]
-                    },
-                    {
-                        "name": "​Gym - Storm Badge from Chuck",
-                        "access_rules": [
-                            "$can_strength"
-                        ],
-                        "visibility_rules": [
-                            "badges_off"
-                        ],
-                        "hosted_item": "STORM_BADGE"
-                    },
-                    {
-                        "name": "Gym - TM01 from Chuck",
-                        "access_rules": [
-                            "$can_strength"
-                        ]
-                    },
-                    {
                         "name": "Gym - Blackbelt Nob",
                         "visibility_rules": [
                             "trainersanity_on"
@@ -2813,9 +2826,42 @@
                         ]
                     },
                     {
-                        "name": "HM02 from Chuck's Wife",
+                        "name": "Gym - TM01 from Chuck",
                         "access_rules": [
                             "$can_strength"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Storm Badge from Chuck",
+                        "access_rules": [
+                            "$can_strength"
+                        ],
+                        "visibility_rules": [
+                            "badges_on",
+                            "badges_shuffle"
+                        ]
+                    },
+                    {
+                        "name": "​Gym - Storm Badge from Chuck",
+                        "access_rules": [
+                            "$can_strength"
+                        ],
+                        "visibility_rules": [
+                            "badges_off"
+                        ],
+                        "hosted_item": "STORM_BADGE"
+                    },
+                    {
+                        "name": "Gym - Beat Chuck",
+                        "access_rules": [
+                            "$can_strength"
+                        ],
+                        "hosted_item": "EVENT_BEAT_CHUCK"
+                    },
+                    {
+                        "name": "HM02 from Chuck's Wife",
+                        "access_rules": [
+                            "EVENT_BEAT_CHUCK"
                         ]
                     },
                     {
