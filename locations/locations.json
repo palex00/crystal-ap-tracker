@@ -296,12 +296,14 @@
                     },
                     {
                         "name": "Gym - Beat Falkner",
-                        "hosted_item": "EVENT_BEAT_FALKNER"
+                        "hosted_item": "EVENT_BEAT_FALKNER",
+                        "visibility_rules": ["r32_guy_egg"]
                     },
                     {
                         "name": "Egg Collected",
                         "hosted_item": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
-                        "access_rules": ["EVENT_BEAT_FALKNER"]
+                        "access_rules": ["EVENT_BEAT_FALKNER"],
+                        "visibility_rules": ["r32_guy_egg"]
                     },
                     {
                         "name": "Item 1",
