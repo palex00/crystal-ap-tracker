@@ -3179,6 +3179,7 @@
                 "access_rules": [
                     "@JohtoKanto/Ecruteak City",
                     "@JohtoKanto/Blackthorn City",
+                    "@JohtoKanto/Lake of Rage",
                     "$can_freefly|Mahogany"
                 ],
                 "sections": [
@@ -3500,7 +3501,8 @@
             {
                 "name": "Lake of Rage",
                 "access_rules": [
-                    "@JohtoKanto/Mahogany Town"
+                    "@JohtoKanto/Mahogany Town",
+                    "$freefly|LakeOfRage"
                 ],
                 "sections": [
                     {
@@ -4205,7 +4207,8 @@
                 "name": "Route 26",
                 "access_rules": [
                     "@JohtoKanto/Route 27/Post-Waterfall",
-                    "@JohtoKanto/Viridian City, $clear_snorlax"
+                    "@JohtoKanto/Viridian City, $clear_snorlax",
+                    "@JohtoKanto/Silver Cave, $red_badges"
                 ],
                 "sections": [
                     {
@@ -4332,7 +4335,8 @@
             {
                 "name": "Route 28",
                 "access_rules": [
-                    "@JohtoKanto/Route 26, $red_badges"
+                    "@JohtoKanto/Route 26, $red_badges",
+                    "@JohtoKanto/Silver Cave"
                 ],
                 "visibility_rules": [
                     "$silver_cave"
@@ -4365,7 +4369,8 @@
             {
                 "name": "Silver Cave",
                 "access_rules": [
-                    "@JohtoKanto/Route 26, $red_badges"
+                    "@JohtoKanto/Route 26, $red_badges",
+                    "$freefly|Silver Cave"
                 ],
                 "visibility_rules": [
                     "$silver_cave"
