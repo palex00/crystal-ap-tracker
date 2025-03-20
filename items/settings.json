@@ -277,9 +277,21 @@
                 "inherit_codes": false
             },
             {
+                "name": "Free Fly Location - Lake of Rage",
+                "img": "/images/settings/freefly_16.png",
+                "codes": "free_fly,free_fly_LakeOfRage",
+                "inherit_codes": false
+            },
+            {
                 "name": "Free Fly Location - Blackthorn City",
                 "img": "/images/settings/freefly_5.png",
                 "codes": "free_fly,free_fly_Blackthorn",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Pallet Town",
+                "img": "/images/settings/freefly_17.png",
+                "codes": "free_fly,free_fly_PalletTown",
                 "inherit_codes": false
             },
             {
@@ -325,9 +337,21 @@
                 "inherit_codes": false
             },
             {
+                "name": "Free Fly Location - Cinnabar Island",
+                "img": "/images/settings/freefly_18.png",
+                "codes": "free_fly,free_fly_Cinnabar",
+                "inherit_codes": false
+            },
+            {
                 "name": "Free Fly Location - Fuchsia City",
                 "img": "/images/settings/freefly_13.png",
                 "codes": "free_fly,free_fly_Fuchsia",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Silver Cave",
+                "img": "/images/settings/freefly_19.png",
+                "codes": "free_fly,free_fly_SilverCave",
                 "inherit_codes": false
             }
         ]
@@ -381,9 +405,21 @@
                 "inherit_codes": false
             },
             {
+                "name": "Map Card Fly Location - Lake of Rage",
+                "img": "/images/settings/mapfly_16.png",
+                "codes": "map_card_fly,map_card_fly_LakeOfRage",
+                "inherit_codes": false
+            },
+            {
                 "name": "Map Card Fly Location - Blackthorn City",
                 "img": "/images/settings/mapfly_5.png",
                 "codes": "map_card_fly,map_card_fly_Blackthorn",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Pallet Town",
+                "img": "/images/settings/mapfly_17.png",
+                "codes": "map_card_fly,map_card_fly_Pallet",
                 "inherit_codes": false
             },
             {
@@ -429,9 +465,21 @@
                 "inherit_codes": false
             },
             {
+                "name": "Map Card Fly Location - Cinnabar Island",
+                "img": "/images/settings/mapfly_18.png",
+                "codes": "map_card_fly,map_card_fly_Cinnabar",
+                "inherit_codes": false
+            },
+            {
                 "name": "Map Card Fly Location - Fuchsia City",
                 "img": "/images/settings/mapfly_13.png",
                 "codes": "map_card_fly,map_card_fly_Fuchsia",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Silver Cave",
+                "img": "/images/settings/mapfly_19.png",
+                "codes": "map_card_fly,map_card_fly_SilverCave",
                 "inherit_codes": false
             }
         ]
