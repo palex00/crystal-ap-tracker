@@ -78,12 +78,11 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-        "initial_stage_idx": 1,
+        "initial_stage_idx": 2,
         "stages": [
             {
                 "name": "Randomize Badges - Off",
-                "img": "/images/settings/badges_on.png",
-                "img_mods": "@disabled",
+                "img": "/images/settings/badges_off.png",
                 "codes": "badges,badges_off",
                 "inherit_codes": false
             },
@@ -115,8 +114,7 @@
             },
             {
                 "name": "HM Badge Requirements - No Badges",
-                "img": "/images/settings/badges_vanilla.png",
-                "img_mods": "@disabled",
+                "img": "/images/settings/badges_free.png",
                 "codes": "badgereqs,badgereqs_none",
                 "inherit_codes": false
             },
