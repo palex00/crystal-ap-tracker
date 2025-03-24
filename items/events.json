@@ -1,98 +1,98 @@
 [
-	{
-		"name": "Beat Falkner",
-		"type": "toggle",
-		"img": "/images/events/beat_falkner.png",
-		"codes": "EVENT_BEAT_FALKNER"
-	},
-	{
-		"name": "Egg Collected",
-		"type": "toggle",
-		"img": "/images/events/egg_collected.png",
-		"codes": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
-	},
-	{
-		"name": "Kenya Collected",
-		"type": "toggle",
-		"img": "/images/events/kenya_collected.png",
-		"codes": "EVENT_GOT_KENYA"
-	},
-	{
-		"name": "Kenya Delivered",
-		"type": "toggle",
-		"img": "/images/events/kenya_delivered.png",
-		"codes": "EVENT_GAVE_KENYA"
-	},
-	{
-		"name": "Cleared Slowpoke Well",
-		"type": "toggle",
-		"img": "/images/events/cleared_slowpoke_well.png",
-		"codes": "EVENT_CLEARED_SLOWPOKE_WELL"
-	},
-	{
-		"name": "Herded Farfetch'd",
-		"type": "toggle",
-		"img": "/images/events/herded_farfetchd.png",
-		"codes": "EVENT_HERDED_FARFETCHD"
-	},
-	{
-		"name": "Released the Beasts",
-		"type": "toggle",
-		"img": "/images/events/released_the_beasts.png",
-		"codes": "EVENT_RELEASED_THE_BEASTS"
-	},
-	{
-		"name": "Heal Amphy",
-		"type": "toggle",
-		"img": "/images/events/jasmine_returned.png",
-		"codes": "EVENT_JASMINE_RETURNED_TO_GYM"
-	},
-	{
-		"name": "Beat Chuck",
-		"type": "toggle",
-		"img": "/images/events/beat_chuck.png",
-		"codes": "EVENT_BEAT_CHUCK"
-	},
-	{
-		"name": "Help Lance",
-		"type": "toggle",
-		"img": "/images/events/help_lance.png",
-		"codes": "EVENT_DECIDED_TO_HELP_LANCE"
-	},
-	{
-		"name": "Clear Rocket HQ",
-		"type": "toggle",
-		"img": "/images/events/hideout_cleared.png",
-		"codes": "EVENT_CLEARED_ROCKET_HIDEOUT"
-	},
-	{
-		"name": "Clear Radio Tower",
-		"type": "toggle",
-		"img": "/images/events/tower_cleared.png",
-		"codes": "EVENT_CLEARED_RADIO_TOWER"
-	},
-	{
-		"name": "Defeat Elite Four",
-		"type": "toggle",
-		"img": "/images/events/become_champion.png",
-		"codes": "EVENT_BEAT_ELITE_FOUR"
-	},
-	{
-		"name": "Restore Power to Kanto",
-		"type": "toggle",
-		"img": "/images/events/restored_power.png",
-		"codes": "EVENT_RESTORED_POWER_TO_KANTO"
-	},
-	{
-		"name": "Blue Returns to Gym",
-		"type": "toggle",
-		"img": "/images/events/blue_returned.png",
-		"codes": "EVENT_VIRIDIAN_GYM_BLUE"
-	},
-	{
-		"name": "Defeat Red",
-		"type": "toggle",
-		"img": "/images/events/defeat_red.png",
-		"codes": "EVENT_BEAT_RED"
-	}
+  {
+    "name": "Beat Falkner",
+    "type": "toggle",
+    "img": "/images/events/beat_falkner.png",
+    "codes": "EVENT_BEAT_FALKNER"
+  },
+  {
+    "name": "Egg Collected",
+    "type": "toggle",
+    "img": "/images/events/egg_collected.png",
+    "codes": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
+  },
+  {
+    "name": "Kenya Collected",
+    "type": "toggle",
+    "img": "/images/events/kenya_collected.png",
+    "codes": "EVENT_GOT_KENYA"
+  },
+  {
+    "name": "Kenya Delivered",
+    "type": "toggle",
+    "img": "/images/events/kenya_delivered.png",
+    "codes": "EVENT_GAVE_KENYA"
+  },
+  {
+    "name": "Cleared Slowpoke Well",
+    "type": "toggle",
+    "img": "/images/events/cleared_slowpoke_well.png",
+    "codes": "EVENT_CLEARED_SLOWPOKE_WELL"
+  },
+  {
+    "name": "Herded Farfetch'd",
+    "type": "toggle",
+    "img": "/images/events/herded_farfetchd.png",
+    "codes": "EVENT_HERDED_FARFETCHD"
+  },
+  {
+    "name": "Released the Beasts",
+    "type": "toggle",
+    "img": "/images/events/released_the_beasts.png",
+    "codes": "EVENT_RELEASED_THE_BEASTS"
+  },
+  {
+    "name": "Heal Amphy",
+    "type": "toggle",
+    "img": "/images/events/jasmine_returned.png",
+    "codes": "EVENT_JASMINE_RETURNED_TO_GYM"
+  },
+  {
+    "name": "Beat Chuck",
+    "type": "toggle",
+    "img": "/images/events/beat_chuck.png",
+    "codes": "EVENT_BEAT_CHUCK"
+  },
+  {
+    "name": "Help Lance",
+    "type": "toggle",
+    "img": "/images/events/help_lance.png",
+    "codes": "EVENT_DECIDED_TO_HELP_LANCE"
+  },
+  {
+    "name": "Clear Rocket HQ",
+    "type": "toggle",
+    "img": "/images/events/hideout_cleared.png",
+    "codes": "EVENT_CLEARED_ROCKET_HIDEOUT"
+  },
+  {
+    "name": "Clear Radio Tower",
+    "type": "toggle",
+    "img": "/images/events/tower_cleared.png",
+    "codes": "EVENT_CLEARED_RADIO_TOWER"
+  },
+  {
+    "name": "Defeat Elite Four",
+    "type": "toggle",
+    "img": "/images/events/become_champion.png",
+    "codes": "EVENT_BEAT_ELITE_FOUR"
+  },
+  {
+    "name": "Restore Power to Kanto",
+    "type": "toggle",
+    "img": "/images/events/restored_power.png",
+    "codes": "EVENT_RESTORED_POWER_TO_KANTO"
+  },
+  {
+    "name": "Blue Returns to Gym",
+    "type": "toggle",
+    "img": "/images/events/blue_returned.png",
+    "codes": "EVENT_VIRIDIAN_GYM_BLUE"
+  },
+  {
+    "name": "Defeat Red",
+    "type": "toggle",
+    "img": "/images/events/defeat_red.png",
+    "codes": "EVENT_BEAT_RED"
+  }
 ]
