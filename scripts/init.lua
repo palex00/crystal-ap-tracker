@@ -1,5 +1,5 @@
 Tracker.AllowDeferredLogicUpdate = true
---Items
+-- Items
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/events.json")
 Tracker:AddItems("items/settings.json")
@@ -11,7 +11,6 @@ ScriptHost:LoadScript("scripts/logic/logic.lua")
 Tracker:AddMaps("maps/maps.json")
 Tracker:AddMaps("maps/ilex_forest_no_tree.json")
 Tracker:AddMaps("maps/maps_johto_and_kanto.json")
-
 
 -- Locations
 Tracker:AddLocations("locations/locations.json")
