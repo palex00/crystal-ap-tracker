@@ -2057,7 +2057,7 @@
             {
                 "name": "Tin Tower",
                 "access_rules": [
-                    "@JohtoKanto/Ecruteak City, ^$tintower_access"
+                    "@JohtoKanto/Ecruteak City, CLEAR_BELL"
                 ],
                 "sections": [
                     {
@@ -2067,33 +2067,38 @@
                         ]
                     },
                     {
-                        "name": "3F - Item"
+                        "name": "3F - Item",
+                        "access_rules": ["RAINBOW_WING"]
                     },
                     {
-                        "name": "4F - Item 1"
+                        "name": "4F - Item 1",
+                        "access_rules": ["RAINBOW_WING"]
                     },
                     {
-                        "name": "4F - Item 2"
+                        "name": "4F - Item 2",
+                        "access_rules": ["RAINBOW_WING"]
                     },
                     {
-                        "name": "4F - Item 3"
+                        "name": "4F - Item 3",
+                        "access_rules": ["RAINBOW_WING"]
                     },
                     {
                         "name": "4F - Hidden Item in Center",
                         "access_rules": [
-                            "[$hid]"
+                            "[$hid], RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
                         ]
                     },
                     {
-                        "name": "5F - Item"
+                        "name": "5F - Item",
+                        "access_rules": ["RAINBOW_WING"]
                     },
                     {
                         "name": "5F - Hidden Item in Southeast",
                         "access_rules": [
-                            "[$hid]"
+                            "[$hid], RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -2102,29 +2107,35 @@
                     {
                         "name": "5F - Hidden Item in Southwest",
                         "access_rules": [
-                            "[$hid]"
+                            "[$hid], RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
                         ]
                     },
                     {
-                        "name": "6F - Item"
+                        "name": "6F - Item",
+                        "access_rules": ["RAINBOW_WING"]
                     },
                     {
-                        "name": "7F - Item"
+                        "name": "7F - Item",
+                        "access_rules": ["RAINBOW_WING"]
                     },
                     {
-                        "name": "8F - Item 1"
+                        "name": "8F - Item 1",
+                        "access_rules": ["RAINBOW_WING"]
                     },
                     {
-                        "name": "8F - Item 2"
+                        "name": "8F - Item 2",
+                        "access_rules": ["RAINBOW_WING"]
                     },
                     {
-                        "name": "8F - Item 3"
+                        "name": "8F - Item 3",
+                        "access_rules": ["RAINBOW_WING"]
                     },
                     {
-                        "name": "9F - Item"
+                        "name": "9F - Item",
+                        "access_rules": ["RAINBOW_WING"]
                     }
                 ],
                 "map_locations": [
@@ -3502,7 +3513,7 @@
                 "name": "Lake of Rage",
                 "access_rules": [
                     "@JohtoKanto/Mahogany Town",
-                    "$freefly|LakeOfRage"
+                    "$can_freefly|LakeOfRage"
                 ],
                 "sections": [
                     {
@@ -4208,7 +4219,7 @@
                 "access_rules": [
                     "@JohtoKanto/Route 27/Post-Waterfall",
                     "@JohtoKanto/Viridian City, $clear_snorlax",
-                    "@JohtoKanto/Silver Cave, $red_badges"
+                    "@JohtoKanto/Silver Cave, $mt_silver_badges"
                 ],
                 "sections": [
                     {
@@ -4335,7 +4346,7 @@
             {
                 "name": "Route 28",
                 "access_rules": [
-                    "@JohtoKanto/Route 26, $red_badges",
+                    "@JohtoKanto/Route 26, $mt_silver_badges",
                     "@JohtoKanto/Silver Cave"
                 ],
                 "visibility_rules": [
@@ -4369,8 +4380,8 @@
             {
                 "name": "Silver Cave",
                 "access_rules": [
-                    "@JohtoKanto/Route 26, $red_badges",
-                    "$freefly|Silver Cave"
+                    "@JohtoKanto/Route 26, $mt_silver_badges",
+                    "$can_freefly|SilverCave"
                 ],
                 "visibility_rules": [
                     "$silver_cave"
@@ -4470,7 +4481,7 @@
                         "name": "Defeat Red",
                         "hosted_item": "EVENT_BEAT_RED",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash, $red_badges"
                         ]
                     }
                 ],
@@ -4800,14 +4811,24 @@
                 ]
             },
             {
-                "name": "Mt. Moon",
+                "name": "Mount Moon",
                 "access_rules": [
                     "@JohtoKanto/Pewter City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
                 ],
-                "sections": [],
+                "sections": [
+                    {
+                        "name": "Square - Hidden Item under Rock",
+                        "access_rules": [
+                            "[$hid], $can_rocksmash"
+                        ],
+                        "visibility_rules": [
+                            "hiddenitems_on"
+                        ]
+                    }
+                ],
                 "map_locations": [
                     {
                         "map": "johtokanto",
@@ -4868,9 +4889,10 @@
                 "name": "Cerulean City",
                 "access_rules": [
                     "@JohtoKanto/Pewter City",
-                    "@JohtoKanto/Saffron City",
+                    "@JohtoKanto/Saffron City, $tea|north",
                     "@JohtoKanto/Route 9, $can_cut",
-                    "$can_freefly|Cerulean"
+                    "$can_freefly|Cerulean",
+                    "@JohtoKanto/Vermilion City, $passage|ns"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5235,10 +5257,11 @@
             {
                 "name": "Lavender Town",
                 "access_rules": [
-                    "@JohtoKanto/Saffron City",
+                    "@JohtoKanto/Saffron City, $tea|east",
                     "@JohtoKanto/Route 9, ^$can_flash",
                     "@JohtoKanto/Fuchsia City",
-                    "$can_freefly|Lavender"
+                    "$can_freefly|Lavender",
+                    "@JohtoKanto/Celadon City, $passage|ew, ew_underground_on"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5275,7 +5298,7 @@
             {
                 "name": "Route 8",
                 "access_rules": [
-                    "@JohtoKanto/Saffron City"
+                    "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5331,10 +5354,10 @@
                 "access_rules": [
                     "@JohtoKanto/Goldenrod City, PASS",
                     "$can_freefly|Saffron",
-                    "@JohtoKanto/Cerulean City",
-                    "@JohtoKanto/Celadon City",
-                    "@JohtoKanto/Lavender Town",
-                    "@JohtoKanto/Vermilion City"
+                    "@JohtoKanto/Cerulean City, $tea|north",
+                    "@JohtoKanto/Celadon City, $tea|west",
+                    "@JohtoKanto/Lavender Town, $tea|east",
+                    "@JohtoKanto/Vermilion City, $tea|south"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5405,9 +5428,10 @@
             {
                 "name": "Celadon City",
                 "access_rules": [
-                    "@JohtoKanto/Saffron City",
+                    "@JohtoKanto/Saffron City, $tea|west",
                     "@JohtoKanto/Fuchsia City, BICYCLE",
-                    "$can_freefly|Celadon"
+                    "$can_freefly|Celadon",
+                    "@JohtoKanto/Lavender Town, $passage|ew, ew_underground_on"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5485,6 +5509,24 @@
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Leftovers from Cafe",
+                        "access_rules": [
+                            "[$hid]"
+                        ],
+                        "visibility_rules": [
+                            "hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Tea from Granny",
+                        "visibility_rules": [
+                            "coffee_north",
+                            "coffee_east",
+                            "coffee_south",
+                            "coffee_west"
                         ]
                     }
                 ],
@@ -5589,10 +5631,12 @@
             {
                 "name": "Vermilion City",
                 "access_rules": [
-                    "@JohtoKanto/Saffron City",
+                    "@JohtoKanto/Saffron City, $tea|south",
                     "@JohtoKanto/Viridian City, $clear_snorlax",
                     "@JohtoKanto/S.S. Aqua",
-                    "$can_freefly|Vermilion"
+                    "$can_freefly|Vermilion",
+                    "@JohtoKanto/Cerulean City, $passage|ns",
+                    "@JohtoKanto/Route 11, $clear_snorlax"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5723,7 +5767,7 @@
             {
                 "name": "Route 6",
                 "access_rules": [
-                    "@JohtoKanto/Saffron City"
+                    "@JohtoKanto/Vermilion City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -6031,7 +6075,8 @@
                 "access_rules": [
                     "@JohtoKanto/Lavender Town",
                     "@JohtoKanto/Celadon City, BICYCLE",
-                    "$can_freefly|Fuchsia"
+                    "$can_freefly|Fuchsia",
+                    "@JohtoKanto/Cinnabar Island"
                 ],
                 "visibility_rules": [
                     "johto_only_off"

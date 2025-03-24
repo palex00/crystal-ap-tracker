@@ -446,7 +446,24 @@
 			},
 			{ "title": "Power Plant", "content": { "type": "map", "maps": ["PowerPlant"] } },
 			{ "title": "Digletts Cave", "content": { "type": "map", "maps": ["DiglettsCave"] } },
-			{ "title": "Underground Path", "content": { "type": "map", "maps": ["UndergroundPath"] } }
+			{ "title": "Celadon Cafe", "content": { "type": "map", "maps": ["CeladonCafe"] } },
+			{ "title": "Underground Path", "content": { "type": "map", "maps": ["UndergroundPath"] } },
+			{
+				"title": "Mount Moon",
+				"content": {
+					"type": "tabbed",
+					"tabs": [
+						{
+							"title": "Mount Moon Inner",
+							"content": { "type": "map", "maps": ["MountMoonInner"] }
+						},
+						{
+							"title": "Mount Moon Square",
+							"content": { "type": "map", "maps": ["MountMoonSquare"] }
+						}
+					]
+				}
+			}
 		]
 	}
 }

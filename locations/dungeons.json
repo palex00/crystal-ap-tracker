@@ -302,6 +302,29 @@
 			},
 			{
 				"name": "",
+				"sections": [
+					{
+						"ref": "JohtoKanto/Celadon City/Tea from Granny",
+						"name": "Celadon City - Tea from Granny"
+					}
+				],
+				"map_locations": [{ "map": "CeladonCity", "x": 264, "y": 152 }]
+			},
+			{
+				"name": "",
+				"sections": [
+					{
+						"ref": "JohtoKanto/Celadon City/Leftovers from Cafe",
+						"name": "Celadon City - Leftovers from Cafe"
+					}
+				],
+				"map_locations": [
+                {"map": "CeladonCity", "x": 408, "y": 472 },
+                {"map": "CeladonCafe", "x": 120, "y": 24 }
+                ]
+			},
+			{
+				"name": "",
 				"sections": [{ "ref": "JohtoKanto/Cerulean City/Hidden Item in Water" }],
 				"map_locations": [{ "map": "CeruleanCity", "x": 40, "y": 200 }]
 			},

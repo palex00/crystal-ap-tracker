@@ -46,6 +46,7 @@ function toggle_johto(code)
         Tracker:AddMaps("maps/maps_johto_and_kanto.json")
         Tracker:AddLayouts("layouts/tabs.json")
         Tracker:AddLayouts("layouts/items.json")
+        Tracker:AddLayouts("layouts/settings.json")
         if has("r32_guy_egg") then
             Tracker:AddLayouts("layouts/events.json")
         else
@@ -65,8 +66,10 @@ function toggle_johto(code)
         end
         if has("johto_only_on") then
             Tracker:AddMaps("maps/maps_johto_no_silver.json")
+            Tracker:AddLayouts("layouts/johto_only/settings_johto_no_silver.json")
         elseif has("johto_only_silver") then
             Tracker:AddMaps("maps/maps_johto_only.json")
+            Tracker:AddLayouts("layouts/johto_only/settings_johto_with_silver.json")
         end
     end
 end

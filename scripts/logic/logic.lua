@@ -1,5 +1,6 @@
 function badges()
-	return Tracker:ProviderCountForCode("ZEPHYR_BADGE") + 
+	return
+    Tracker:ProviderCountForCode("ZEPHYR_BADGE") + 
 	Tracker:ProviderCountForCode("HIVE_BADGE") + 
 	Tracker:ProviderCountForCode("PLAIN_BADGE") + 
 	Tracker:ProviderCountForCode("FOG_BADGE") + 
@@ -26,7 +27,8 @@ function cut_badge()
 	return (
 		(has("badgereqs_vanilla") and has("HIVE_BADGE")) or
 		(has("badgereqs_kanto") and (has("HIVE_BADGE") or has("CASCADE_BADGE"))) or
-		has("badgereqs_none")
+		has("badgereqs_none") or
+        has("FREE_CUT")
 	)
 end
 
@@ -38,7 +40,8 @@ function flash_badge()
 	return (
 		(has("badgereqs_vanilla") and has("ZEPHYR_BADGE")) or
 		(has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE"))) or
-		has("badgereqs_none")
+		has("badgereqs_none") or
+        has("FREE_FLASH")
 	)
 end
 
@@ -54,7 +57,8 @@ function strength_badge()
 	return (
 		(has("badgereqs_vanilla") and has("PLAIN_BADGE")) or
 		(has("badgereqs_kanto") and (has("PLAIN_BADGE") or has("RAINBOW_BADGE"))) or
-		has("badgereqs_none")
+		has("badgereqs_none") or
+        has("FREE_STRENGTH")
 	)
 end
 
@@ -66,7 +70,8 @@ function surf_badge()
 	return (
 		(has("badgereqs_vanilla") and has("FOG_BADGE")) or
 		(has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE"))) or
-		has("badgereqs_none")
+		has("badgereqs_none") or
+        has("FREE_SURF")
 	)
 end
 
@@ -78,7 +83,8 @@ function whirlpool_badge()
 	return (
 		(has("badgereqs_vanilla") and has("GLACIER_BADGE")) or
 		(has("badgereqs_kanto") and (has("GLACIER_BADGE") or has("VOLCANO_BADGE"))) or
-		has("badgereqs_none")
+		has("badgereqs_none") or
+        has("FREE_WHIRLPOOL")
 	)
 end
 
@@ -90,7 +96,8 @@ function waterfall_badge()
 	return (
 		(has("badgereqs_vanilla") and has("RISING_BADGE")) or
 		(has("badgereqs_kanto") and (has("RISING_BADGE") or has("EARTH_BADGE"))) or
-		has("badgereqs_none")
+		has("badgereqs_none") or
+        has("FREE_WATERFALL")
 	)
 end
 
@@ -106,7 +113,8 @@ function fly_badge()
 	return (
 		(has("badgereqs_vanilla") and has("STORM_BADGE")) or
 		(has("badgereqs_kanto") and (has("STORM_BADGE") or has("THUNDER_BADGE"))) or
-		has("badgereqs_none")
+		has("badgereqs_none") or
+        has("FREE_FLY")
 	)
 end
 
@@ -126,16 +134,6 @@ function tower_takeover()
 	return badges() >= progCount("tower_badges")
 end
 
-function tintower_access()
-    if has("CLEAR_BELL") and has("EVENT_CLEARED_RADIO_TOWER") then
-        return AccessibilityLevel.Normal
-    elseif has("EVENT_CLEARED_RADIO_TOWER") then
-        return AccessibilityLevel.None
-    else
-        return AccessibilityLevel.SequenceBreak
-    end
-end
-
 function clear_snorlax()
 	return (has("POKE_GEAR") and has("RADIO_CARD") and has("EXPN_CARD"))
 end
@@ -146,6 +144,10 @@ end
 
 function red_badges()
 	return badges() >= progCount("red_badges")
+end
+
+function mt_silver_badges()
+	return badges() >= progCount("mt_silver_badges")
 end
 
 function all_badges()
@@ -165,4 +167,14 @@ function r32_guy()
   return has("r32_guy_open")
   or has("r32_guy_badge") and (badges() >= 1)
   or has("r32_guy_egg") and has("EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE")
+end
+
+function tea(direction)
+  return has("coffee"..direction) and has("tea")
+  or not has("coffee_"..direction)
+end
+
+function passage(direction)
+  return has("underground_power_".. direction) and has("EVENT_RESTORED_POWER_TO_KANTO")
+  or not has("underground_power_".. direction)
 end

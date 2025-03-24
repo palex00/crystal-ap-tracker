@@ -38,29 +38,43 @@ function onClear(slot_data)
 	for k,v in pairs(slot_data) do
 		if SLOT_CODES[k] then
 			Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
-		else
-			if k == "elite_four_badges" then
-				Tracker:FindObjectForCode("e4_badges").AcquiredCount = v
-			end 
-			if k == "red_badges" then
-				Tracker:FindObjectForCode("red_badges").AcquiredCount = v
-			end
-			if k == "radio_tower_badges" then
-				Tracker:FindObjectForCode("tower_badges").AcquiredCount = v
-			end
+            print("Setting "..k.." to "..v)
+		elseif BADGE_CODES[k] then
+			Tracker:FindObjectForCode(BADGE_CODES[k].code).AcquiredCount = BADGE_CODES[k].mapping[v]
 		end
 	end
+    
+    -- tea function
+    local stages = {
+        ["0000"] = 0,
+        ["0001"] = 1,
+        ["0010"] = 2,
+        ["0011"] = 3,
+        ["0100"] = 4,
+        ["0101"] = 5,
+        ["0110"] = 6,
+        ["0111"] = 7,
+        ["1000"] = 8,
+        ["1001"] = 9,
+        ["1010"] = 10,
+        ["1011"] = 11,
+        ["1100"] = 12,
+        ["1101"] = 13,
+        ["1110"] = 14,
+        ["1111"] = 15,
+    }
 
-	if PLAYER_ID>-1 then
-		updateEvents(0)
-		EVENT_ID="pokemon_crystal_events_"..TEAM_NUMBER.."_"..PLAYER_ID
-		Archipelago:SetNotify({EVENT_ID})
-		Archipelago:Get({EVENT_ID})
+    -- Fetch Active values for north, east, south, west directions
+    local tea_north = Tracker:FindObjectForCode("tea_north").Active and "1" or "0"
+    local tea_east  = Tracker:FindObjectForCode("tea_east").Active and "1" or "0"
+    local tea_south = Tracker:FindObjectForCode("tea_south").Active and "1" or "0"
+    local tea_west  = Tracker:FindObjectForCode("tea_west").Active and "1" or "0"
 
-		KEY_ID="pokemon_crystal_keys_"..TEAM_NUMBER.."_"..PLAYER_ID
-		Archipelago:SetNotify({KEY_ID})
-		Archipelago:Get({KEY_ID})
-	end
+    -- Concatenate values to form the key
+    local key = tea_north .. tea_east .. tea_south .. tea_west
+
+    -- Set CurrentStage for "tea"
+    Tracker:FindObjectForCode("tea_guard").CurrentStage = stages[key]
 end
 
 function onItem(index, item_id, item_name, player_number)

@@ -30,6 +30,12 @@
 		"img": "images/maps/CeladonCity.png"
 	},
 	{
+		"name": "CeladonCafe",
+		"location_size": 12,
+		"location_border_thickness": 2,
+		"img": "images/maps/CeladonCafe.png"
+	},
+	{
 		"name": "CeruleanCity",
 		"location_size": 12,
 		"location_border_thickness": 2,
@@ -832,5 +838,17 @@
 		"location_size": 12,
 		"location_border_thickness": 2,
 		"img": "images/maps/WhirlIslandSW.png"
+	},
+	{
+		"name": "MountMoonInner",
+		"location_size": 12,
+		"location_border_thickness": 2,
+		"img": "images/maps/MountMoonInner.png"
+	},
+	{
+		"name": "MountMoonSquare",
+		"location_size": 12,
+		"location_border_thickness": 2,
+		"img": "images/maps/MountMoonSquare.png"
 	}
 ]

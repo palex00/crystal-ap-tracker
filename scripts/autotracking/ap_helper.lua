@@ -22,7 +22,15 @@ end
 
 MAP_TOGGLE={[0]=0,[1]=1}
 MAP_TRIPLE={[0]=0,[1]=1,[2]=2}
+MAP_QUADRUPLE={[0]=0,[1]=1,[2]=2,[3]=3}
 MAP_TOGGLE_REVERSE={[0]=1,[1]=0}
+MAP_16 = {
+    [0] = 0, [1] = 1, [2] = 2, [3] = 3, [4] = 4, [5] = 5, 
+    [6] = 6, [7] = 7, [8] = 8, [9] = 9, [10] = 10, 
+    [11] = 11, [12] = 12, [13] = 13, [14] = 14, 
+    [15] = 15, [16] = 16
+}
+
 
 FLY_ECRUTEAK = 22
 FLY_OLIVINE = 21
@@ -73,14 +81,6 @@ SLOT_CODES = {
 		code="hiddenitems", 
 		mapping=MAP_TOGGLE
 	},
-	-- elite_four_badges={
-	-- 	code="e4_badges", 
-	-- 	mapping=MAP_BADGES
-	-- },
-	-- red_badges={
-	-- 	code="red_badges", 
-	-- 	mapping=MAP_BADGES
-	-- },
 	goal={
 		code="goal", 
 		mapping=MAP_TOGGLE
@@ -110,7 +110,7 @@ SLOT_CODES = {
 		mapping=MAP_TRIPLE
 	},
 	free_fly_location={
-		code="free_fly",
+		code="free_fly_location",
 		mapping=MAP_FREEFLY
 	},
 	map_card_fly_location={
@@ -128,5 +128,76 @@ SLOT_CODES = {
 	route_32_condition={
 		code="r32_guy",
 		mapping=MAP_TRIPLE
+	},
+	tea_north={
+		code="tea_north",
+		mapping=MAP_TOGGLE
+	},
+	tea_east={
+		code="tea_east",
+		mapping=MAP_TOGGLE
+	},
+	tea_south={
+		code="tea_south",
+		mapping=MAP_TOGGLE
+	},
+	tea_west={
+		code="tea_west",
+		mapping=MAP_TOGGLE
+	},
+	free_cut={
+		code="FREE_CUT",
+		mapping=MAP_TOGGLE
+	},
+	free_fly={
+		code="FREE_FLY",
+		mapping=MAP_TOGGLE
+	},
+	free_surf={
+		code="FREE_SURF",
+		mapping=MAP_TOGGLE
+	},
+	free_strength={
+		code="FREE_STRENGTH",
+		mapping=MAP_TOGGLE
+	},
+	free_flash={
+		code="FREE_FLASH",
+		mapping=MAP_TOGGLE
+	},
+	free_whirlpool={
+		code="FREE_WHIRLPOOL",
+		mapping=MAP_TOGGLE
+	},
+	free_waterfall={
+		code="FREE_WATERFALL",
+		mapping=MAP_TOGGLE
+	},
+	east_west_underground={
+		code="ew_underground",
+		mapping=MAP_TOGGLE
+	},
+	undergrounds_require_power={
+		code="underground_power",
+		mapping=MAP_QUADRUPLE
+	}
+}
+
+BADGE_CODES = {
+	elite_four_badges={
+		code="e4_badges",
+		mapping=MAP_16
+	},
+	red_badges={
+		code="red_badges",
+		mapping=MAP_16
+	},
+	red_badges={
+		code="red_badges",
+		mapping=MAP_16
+	},
+	mt_silver_badges={
+		code="mt_silver_badges",
+		mapping=MAP_16
 	}
 }
