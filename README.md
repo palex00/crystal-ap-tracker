@@ -15,7 +15,7 @@ Original project by AliceMousie.
 apworld | pack version
 :-------------------------:|:-------------------------:
 2.1.2   | up to 0.2.1
-3.0.0   | 0.3.0
+3.0.0-3.0.1   | 0.3.0-0.3.3
 
 ## Known Issues
 - S.S. Aqua looks awful. It will be overhauled.
