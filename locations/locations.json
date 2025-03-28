@@ -5043,7 +5043,7 @@
           {
             "name": "Underground Path - Hidden Item in North",
             "access_rules": [
-              "[$hid],EVENT_RESTORED_POWER_TO_KANTO"
+              "[$hid], $passage|ns"
             ],
             "visibility_rules": [
               "hiddenitems_on"
@@ -5052,7 +5052,7 @@
           {
             "name": "Underground Path - Hidden Item in South",
             "access_rules": [
-              "[$hid],EVENT_RESTORED_POWER_TO_KANTO"
+              "[$hid], $passage|ns"
             ],
             "visibility_rules": [
               "hiddenitems_on"
