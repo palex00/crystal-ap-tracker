@@ -75,6 +75,17 @@ function onClear(slot_data)
 
     -- Set CurrentStage for "tea"
     Tracker:FindObjectForCode("tea_guard").CurrentStage = stages[key]
+    
+    if PLAYER_ID>-1 then
+        updateEvents(0)
+        EVENT_ID="pokemon_crystal_events_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({EVENT_ID})
+        Archipelago:Get({EVENT_ID})
+
+        KEY_ID="pokemon_crystal_keys_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({KEY_ID})
+        Archipelago:Get({KEY_ID})
+    end
 end
 
 function onItem(index, item_id, item_name, player_number)
