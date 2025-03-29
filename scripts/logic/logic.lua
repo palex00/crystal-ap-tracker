@@ -170,7 +170,7 @@ function r32_guy()
 end
 
 function tea(direction)
-  return has("coffee"..direction) and has("tea")
+  return has("coffee_"..direction) and has("tea")
   or not has("coffee_"..direction)
 end
 
