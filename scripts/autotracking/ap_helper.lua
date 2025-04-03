@@ -206,6 +206,10 @@ SLOT_CODES = {
     undergrounds_require_power = {
         code = "underground_power",
         mapping = MAP_QUADRUPLE
+    },
+    mischief = {
+        code = "mischief",
+        mapping = MAP_TOGGLE
     }
 }
 

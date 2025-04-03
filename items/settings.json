@@ -516,7 +516,6 @@
     "name": "Ilex Cut Tree",
     "type": "progressive",
     "loop": true,
-    "initial_stage_idx": 1,
     "allow_disabled": false,
     "stages": [
       {
@@ -786,6 +785,26 @@
         "img": "/images/settings/power_require_none.png",
         "codes": "underground_power",
         "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MISCHIEF",
+    "type": "progressive",
+    "stages": [
+      {},
+      {
+        "codes": "mischief"
+      }
+    ]
+  },
+  {
+    "name": "CHRISM (item name)",
+    "type": "progressive",
+    "stages": [
+      {},
+      {
+        "codes": "chrism"
       }
     ]
   }
