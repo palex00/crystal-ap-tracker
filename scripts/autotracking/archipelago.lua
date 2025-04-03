@@ -38,7 +38,7 @@ function onClear(slot_data)
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
-            print("Setting " .. k .. " to " .. v)
+            -- print("Setting " .. k .. " to " .. v)
         elseif BADGE_CODES[k] then
             Tracker:FindObjectForCode(BADGE_CODES[k].code).AcquiredCount = BADGE_CODES[k].mapping[v]
         end
@@ -63,6 +63,8 @@ function onClear(slot_data)
         ["1110"] = 14,
         ["1111"] = 15
     }
+    
+    
 
     -- Fetch Active values for north, east, south, west directions
     local tea_north = Tracker:FindObjectForCode("tea_north").Active and "1" or "0"
@@ -77,6 +79,11 @@ function onClear(slot_data)
     Tracker:FindObjectForCode("tea_guard").CurrentStage = stages[key]
     
     if PLAYER_ID>-1 then
+        if Archipelago:GetPlayerAlias(PLAYER_ID) == "Chrism_Crystal" then
+            Tracker:FindObjectForCode("chrism").CurrentStage = 1
+            else
+            Tracker:FindObjectForCode("chrism").CurrentStage = 0
+        end
         updateEvents(0)
         EVENT_ID="pokemon_crystal_events_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({EVENT_ID})

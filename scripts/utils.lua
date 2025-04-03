@@ -58,7 +58,7 @@ function toggle_johto(code)
         else
             Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges.json")
         end
-        Tracker:AddLayouts("layouts/johto_only/tabs_johto.json")
+            Tracker:AddLayouts("layouts/johto_only/tabs_johto.json")
         if has("r32_guy_egg") then
             Tracker:AddLayouts("layouts/johto_only/events.json")
         else
@@ -75,9 +75,26 @@ function toggle_johto(code)
 end
 
 function toggle_ilex(code)
-    if has("ilextree_on") then
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("ilextree_on") and not sudowoodo then
         Tracker:AddMaps("maps/ilex_forest_tree.json")
-    elseif has("ilextree_off") then
+    elseif has("ilextree_on") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/ilex_forest_tree.json")
+    elseif has("ilextree_off") and not sudowoodo then
         Tracker:AddMaps("maps/ilex_forest_no_tree.json")
+    elseif has("ilextree_off") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.json")
+    end
+end
+
+function toggle_mischief(code)
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1
+    if sudowoodo then
+        print("Applying Mischief...")
+        Tracker:AddMaps("maps/mischief/maps.json")
+        Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.json")
+    else
+        Tracker:AddMaps("maps/maps.json")
+        toggle_ilex()
     end
 end
