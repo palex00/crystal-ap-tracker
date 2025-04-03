@@ -1,5 +1,5 @@
 Tracker.AllowDeferredLogicUpdate = true
---Items
+-- Items
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/events.json")
 Tracker:AddItems("items/settings.json")
@@ -11,7 +11,6 @@ ScriptHost:LoadScript("scripts/logic/logic.lua")
 Tracker:AddMaps("maps/maps.json")
 Tracker:AddMaps("maps/ilex_forest_no_tree.json")
 Tracker:AddMaps("maps/maps_johto_and_kanto.json")
-
 
 -- Locations
 Tracker:AddLocations("locations/locations.json")
@@ -34,3 +33,5 @@ ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
 ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
 ScriptHost:AddWatchForCode("r32_guy", "r32_guy", toggle_johto)
 ScriptHost:AddWatchForCode("badges", "badges", toggle_johto)
+ScriptHost:AddWatchForCode("mischief", "mischief", toggle_mischief)
+ScriptHost:AddWatchForCode("chrism", "chrism", toggle_mischief)

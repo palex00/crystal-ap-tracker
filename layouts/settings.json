@@ -1,37 +1,59 @@
 {
-	"setting_grid": {
-		"type": "array",
-		"orientation": "vertical",
-		"margin": "0,0",
-		"content": [
-			{
-				"type": "array",
-				"orientation": "vertical",
-				"margin": "0,0",
-				"content": [
-					{
-						"type": "itemgrid",
-						"item_margin": "2, 2",
-						"item_h_alignment": "center",
-						"h_alignment": "left",
-						"rows": [
-							["johto_only", "e4_badges", "red_badges", "tower_badges", "ilextree", "r32_guy"],
-							["berries", "pokegear", "trainersanity", "hiddenitems", "badges", "reqitemfinder"],
-                            ["badgereqs", "goal", "automap"]
-						]
-					},
-					{
-						"type": "item",
-						"margin": "12, 4",
-						"item": "free_fly"
-					},
-					{
-						"type": "item",
-						"margin": "12, 8",
-						"item": "map_card_fly"
-					}
-				]
-			}
-		]
-	}
+  "setting_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "2, 2",
+            "item_h_alignment": "center",
+            "h_alignment": "left",
+            "rows": [
+              [
+                "tower_badges",
+                "e4_badges",
+                "mt_silver_badges",
+                "red_badges",
+                "ilextree",
+                "r32_guy"
+              ],
+              [
+                "berries",
+                "pokegear",
+                "trainersanity",
+                "hiddenitems",
+                "badges",
+                "reqitemfinder"
+              ],
+              [
+                "tea_guard",
+                "ew_underground",
+                "underground_power",
+                "badgereqs",
+                "goal",
+                "automap",
+                "johto_only"
+              ]
+            ]
+          },
+          {
+            "type": "item",
+            "margin": "12, 4",
+            "item": "free_fly_location"
+          },
+          {
+            "type": "item",
+            "margin": "12, 8",
+            "item": "map_card_fly"
+          }
+        ]
+      }
+    ]
+  }
 }
