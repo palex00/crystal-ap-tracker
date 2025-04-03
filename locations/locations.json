@@ -24,7 +24,7 @@
             "name": "Elm's Lab - Potion from Aide"
           },
           {
-            "name": "Elm's Lab - Gift from Aide After Returning Mystery Egg",
+            "name": "Elm's Lab - Gift from Aide after returning Mystery Egg",
             "access_rules": [
               "MYSTERY_EGG"
             ]
@@ -203,7 +203,7 @@
             "hosted_item": "EVENT_GAVE_KENYA"
           },
           {
-            "name": "TM50 for Delivering Kenya",
+            "name": "TM50 for delivering Kenya",
             "access_rules": [
               "EVENT_GOT_KENYA"
             ]
@@ -324,7 +324,7 @@
             ]
           },
           {
-            "name": "Hidden Item Behind Cut Tree",
+            "name": "Hidden Item behind Cut Tree",
             "access_rules": [
               "$can_cut,[$hid]"
             ],
@@ -935,7 +935,7 @@
             ]
           },
           {
-            "name": "Hidden Item By Well",
+            "name": "Hidden Item by well",
             "access_rules": [
               "[$hid]"
             ],
@@ -1142,7 +1142,7 @@
             ]
           },
           {
-            "name": "Item Across Water",
+            "name": "Item across Water",
             "access_rules": [
               "$can_surf"
             ]
@@ -1157,7 +1157,7 @@
             ]
           },
           {
-            "name": "Hidden Item Across Water",
+            "name": "Hidden Item across Water",
             "access_rules": [
               "$can_surf,[$hid]"
             ],
@@ -1247,7 +1247,7 @@
             "name": "Dept. Store B1F - Southeast Item"
           },
           {
-            "name": "Dept. Store B1F - Item Behind Card Key Door",
+            "name": "Dept. Store B1F - Item behind Card Key Door",
             "access_rules": [
               "CARD_KEY",
               "BASEMENT_KEY"
@@ -1302,7 +1302,7 @@
             ]
           },
           {
-            "name": "Hidden Item Between Tables",
+            "name": "Hidden Item between Tables",
             "access_rules": [
               "[$hid]"
             ],
@@ -1754,7 +1754,7 @@
             "hosted_item": "EVENT_GOT_KENYA"
           },
           {
-            "name": "HP Up After Delivering Kenya",
+            "name": "HP Up after delivering Kenya",
             "access_rules": [
               "EVENT_GAVE_KENYA"
             ]
@@ -1808,7 +1808,7 @@
             ]
           },
           {
-            "name": "Hidden Item Behind Fence",
+            "name": "Hidden Item behind Fence",
             "access_rules": [
               "[$hid]"
             ],
@@ -2287,7 +2287,7 @@
         ],
         "sections": [
           {
-            "name": "Moomoo Farm - TM13 After Feeding Moomoo"
+            "name": "Moomoo Farm - TM13 after feeding Moomoo"
           },
           {
             "name": "Berry Tree",
@@ -2320,7 +2320,7 @@
             ]
           },
           {
-            "name": "Hidden Item Between Miltank",
+            "name": "Hidden Item between Miltank",
             "access_rules": [
               "[$hid]"
             ],
@@ -3074,10 +3074,10 @@
         ],
         "sections": [
           {
-            "name": "1F Outside - Item Up West Ladder"
+            "name": "1F Outside - Item up West Ladder"
           },
           {
-            "name": "1F Outside - Item Up East Ladder"
+            "name": "1F Outside - Item up East Ladder"
           },
           {
             "name": "1F Outside - Hidden Item",
@@ -3660,7 +3660,7 @@
             ]
           },
           {
-            "name": "Hidden Item Behind Cut Tree",
+            "name": "Hidden Item behind Cut Tree",
             "access_rules": [
               "$can_cut,[$hid]"
             ],
@@ -3761,7 +3761,7 @@
             ]
           },
           {
-            "name": "Hidden Item Across Water",
+            "name": "Hidden Item across Water",
             "access_rules": [
               "$can_surf,[$hid]"
             ],
@@ -4437,7 +4437,7 @@
             ]
           },
           {
-            "name": "Hidden Item Behind Cut Tree",
+            "name": "Hidden Item behind Cut Tree",
             "access_rules": [
               "$can_cut, [$hid]"
             ],
@@ -4465,7 +4465,7 @@
         ],
         "sections": [
           {
-            "name": "Outside - Hidden Item Across Water",
+            "name": "Outside - Hidden Item across Water",
             "access_rules": [
               "$can_surf,[$hid]"
             ],
@@ -5080,7 +5080,7 @@
             "name": "Nugget Bridge Prize"
           },
           {
-            "name": "Item Behind Cut Tree",
+            "name": "Item behind Cut Tree",
             "access_rules": [
               "$can_cut"
             ]
@@ -5580,7 +5580,7 @@
             "name": "TM03 from Man in Mansion Roof"
           },
           {
-            "name": "Hidden Item At Dead End",
+            "name": "Hidden Item at Dead End",
             "access_rules": [
               "[$hid]"
             ],
