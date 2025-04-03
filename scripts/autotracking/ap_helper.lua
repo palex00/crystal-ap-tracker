@@ -207,7 +207,7 @@ SLOT_CODES = {
         code = "underground_power",
         mapping = MAP_QUADRUPLE
     },
-    mischief = {
+    enable_mischief = {
         code = "mischief",
         mapping = MAP_TOGGLE
     }
@@ -220,6 +220,10 @@ BADGE_CODES = {
     },
     red_badges = {
         code = "red_badges",
+        mapping = MAP_16
+    },
+    radio_tower_badges = {
+        code = "tower_badges",
         mapping = MAP_16
     },
     mt_silver_badges = {
