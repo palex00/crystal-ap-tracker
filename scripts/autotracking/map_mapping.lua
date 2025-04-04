@@ -394,7 +394,7 @@ MAP_MAPPING =  {
     [10] =  {"Kanto Cities", "Viridian City"},                      --VIRIDIAN_POKECENTER_2F_BETA
     [11] =  {"Kanto Routes", "Route 2"},                            --ROUTE_2_NUGGET_HOUSE
     [12] =  {"Kanto Routes", "Route 2"},                            --ROUTE_2_GATE
-    [13] =  {"Kanto Dungeons", "Victory Road"},                     --VICTORY_ROAD_GATE
+    [13] =  {},                                                     --VICTORY_ROAD_GATE
   },
   [24] =  {
     [1] =  {"Johto Routes", "Route 26"},                            --ROUTE_26
