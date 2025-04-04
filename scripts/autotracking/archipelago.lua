@@ -41,6 +41,16 @@ function onClear(slot_data)
             -- print("Setting " .. k .. " to " .. v)
         elseif BADGE_CODES[k] then
             Tracker:FindObjectForCode(BADGE_CODES[k].code).AcquiredCount = BADGE_CODES[k].mapping[v]
+        elseif k == apworld_version ~=nil then
+            print(k)
+            local version_str = tostring(v)
+            local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
+            print(first_two_dots)
+            if first_two_dots == "3.1" then
+                Tracker:AddLayouts("layouts/tracker.json")
+            else
+                Tracker:AddLayouts("layouts/versionmismatch.json")
+            end
         end
     end
 
