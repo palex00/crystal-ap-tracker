@@ -20,14 +20,12 @@ apworld | pack version
 
 ## Known Issues
 - S.S. Aqua looks awful. It will be overhauled.
-- The Goldenrod Underground Entrances will autotab to the Switch-Room. This cannot be fixed right now.
-- The Victory Road Gatepath will autotab to something. This is being investigated.
 
 ## Planned Features
 - Enhanced "Overview"-Modes (Johto, Kanto, Both (horizontal), Both (vertical)
 - More submaps
 - Continuos support of the AP integration
-- Overview Squares for Mount Mortar & Whirl Islands
+- Overview Squares for Whirl Islands
 
 ## User-Overrides
 You can adjust the aesthetic of certain aspects of this pack via user-overrides. For more information, please visit the [user-overrides branch](https://github.com/palex00/crystal-ap-tracker/tree/user-overrides).
