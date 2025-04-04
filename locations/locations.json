@@ -337,12 +337,6 @@
             "visibility_rules": [
               "berries_on"
             ]
-          },
-          {
-            "name": "Miracle Seed from Man in North",
-            "access_rules": [
-              "ZEPHYR_BADGE"
-            ]
           }
         ],
         "map_locations": [
@@ -535,81 +529,129 @@
       },
       {
         "name": "Route 32",
-        "access_rules": [
-          "@JohtoKanto/Violet City, $r32_guy",
-          "@JohtoKanto/Union Cave"
-        ],
         "sections": [
           {
-            "name": "Poison Barb from Frieda"
+            "name": "Miracle Seed from Man in North",
+            "access_rules": [
+              "ZEPHYR_BADGE"
+            ]
           },
           {
-            "name": "Old Rod from Pokecenter Fishing Guru"
+            "name": "Post-Guy",
+            "visibility_rules": [
+              "invisible"
+            ],
+            "access_rules": [
+                "@JohtoKanto/Violet City, $r32_guy",
+                "@JohtoKanto/Union Cave"
+            ]
+          },
+          {
+            "name": "Poison Barb from Frieda",
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
+            ]
+          },
+          {
+            "name": "Old Rod from Pokecenter Fishing Guru",
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
+            ]
           },
           {
             "name": "TM05 from Roar Guy",
             "access_rules": [
-              "$can_cut"
+              "$can_cut, @JohtoKanto/Route 32/Post-Guy"
             ]
           },
           {
-            "name": "Item 1"
+            "name": "Item 1",
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
+            ]
           },
           {
-            "name": "Item 2"
+            "name": "Item 2",
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
+            ]
           },
           {
             "name": "Bird Keeper Peter",
             "visibility_rules": [
               "trainersanity_on"
+            ],
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
             ]
           },
           {
             "name": "Camper Roland",
             "visibility_rules": [
               "trainersanity_on"
+            ],
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
             ]
           },
           {
             "name": "Fisher Henry",
             "visibility_rules": [
               "trainersanity_on"
+            ],
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
             ]
           },
           {
             "name": "Fisher Justin",
             "visibility_rules": [
               "trainersanity_on"
+            ],
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
             ]
           },
           {
             "name": "Fisher Ralph",
             "visibility_rules": [
               "trainersanity_on"
+            ],
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
             ]
           },
           {
             "name": "Picnicker Liz",
             "visibility_rules": [
               "trainersanity_on"
+            ],
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
             ]
           },
           {
             "name": "Youngster Albert",
             "visibility_rules": [
               "trainersanity_on"
+            ],
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
             ]
           },
           {
             "name": "Youngster Gordon",
             "visibility_rules": [
               "trainersanity_on"
+            ],
+            "access_rules": [
+              "@JohtoKanto/Route 32/Post-Guy"
             ]
           },
           {
             "name": "Hidden Item North of Bridge",
             "access_rules": [
-              "[$hid]"
+              "[$hid], @JohtoKanto/Route 32/Post-Guy"
             ],
             "visibility_rules": [
               "hiddenitems_on"
@@ -618,7 +660,7 @@
           {
             "name": "Hidden Item by Frieda",
             "access_rules": [
-              "[$hid]"
+              "[$hid], @JohtoKanto/Route 32/Post-Guy"
             ],
             "visibility_rules": [
               "hiddenitems_on"
@@ -636,7 +678,7 @@
       {
         "name": "Union Cave",
         "access_rules": [
-          "@JohtoKanto/Route 32",
+          "@JohtoKanto/Route 32/Post-Guy",
           "@JohtoKanto/Route 33"
         ],
         "sections": [
