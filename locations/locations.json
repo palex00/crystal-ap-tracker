@@ -5915,6 +5915,7 @@
       {
         "name": "Route 11",
         "access_rules": [
+          "@JohtoKanto/Vermilion City, $clear_snorlax",
           "@JohtoKanto/Lavender Town"
         ],
         "visibility_rules": [
@@ -6194,7 +6195,8 @@
           "@JohtoKanto/Lavender Town",
           "@JohtoKanto/Celadon City, BICYCLE",
           "$can_freefly|Fuchsia",
-          "@JohtoKanto/Cinnabar Island, $can_surf"
+          "@JohtoKanto/Cinnabar Island, $can_surf",
+          "@JohtoKanto/Route 11"
         ],
         "visibility_rules": [
           "johto_only_off"
