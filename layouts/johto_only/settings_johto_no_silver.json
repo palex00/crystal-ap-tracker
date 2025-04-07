@@ -1,0 +1,54 @@
+{
+  "setting_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "2, 2",
+            "item_h_alignment": "center",
+            "h_alignment": "left",
+            "rows": [
+              [
+                "tower_badges",
+                "e4_badges",
+                "ilextree",
+                "r32_guy",
+                "reqitemfinder"
+              ],
+              [
+                "berries",
+                "pokegear",
+                "trainersanity",
+                "hiddenitems",
+                "badges"
+              ],
+              [
+                "badgereqs",
+                "goal",
+                "automap",
+                "johto_only"
+              ]
+            ]
+          },
+          {
+            "type": "item",
+            "margin": "12, 4",
+            "item": "free_fly_location"
+          },
+          {
+            "type": "item",
+            "margin": "12, 8",
+            "item": "map_card_fly"
+          }
+        ]
+      }
+    ]
+  }
+}

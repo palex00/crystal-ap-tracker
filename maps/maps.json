@@ -1,4 +1,10 @@
 [
+  {
+    "name": "versionmismatch",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/settings/versionmismatch.png"
+  },
 	{
 		"name": "johtokanto_vertical",
 		"location_size": 6,
@@ -17,838 +23,868 @@
 		"location_border_thickness": 1,
 		"img": "images/maps/kanto.png"
 	},
-	{
-		"name": "AzaleaTown",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/AzaleaTown.png"
-	},
-	{
-		"name": "BlackthornCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/BlackthornCity.png"
-	},
-	{
-		"name": "BurnedTower1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/BurnedTower1F.png"
-	},
-	{
-		"name": "BurnedTowerB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/BurnedTowerB1F.png"
-	},
-	{
-		"name": "CeladonCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/CeladonCity.png"
-	},
-	{
-		"name": "CeruleanCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/CeruleanCity.png"
-	},
-	{
-		"name": "CherrygroveCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/CherrygroveCity.png"
-	},
-	{
-		"name": "CianwoodCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/CianwoodCity.png"
-	},
-	{
-		"name": "CinnabarIsland",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/CinnabarIsland.png"
-	},
-	{
-		"name": "DarkCaveBlackthornEntrance",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/DarkCaveBlackthornEntrance.png"
-	},
-	{
-		"name": "DarkCaveVioletEntrance",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/DarkCaveVioletEntrance.png"
-	},
-	{
-		"name": "DiglettsCave",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/DiglettsCave.png"
-	},
-	{
-		"name": "DragonsDenB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/DragonsDenB1F.png"
-	},
-	{
-		"name": "EcruteakCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/EcruteakCity.png"
-	},
-	{
-		"name": "FastShip1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/FastShip1F.png"
-	},
-	{
-		"name": "FastShipB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/FastShipB1F.png"
-	},
-	{
-		"name": "FastShipCabins_NNW_NNE_NE",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/FastShipCabins_NNW_NNE_NE.png"
-	},
-	{
-		"name": "FastShipCabins_SE_SSE_CaptainsCabin",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/FastShipCabins_SE_SSE_CaptainsCabin.png"
-	},
-	{
-		"name": "FastShipCabins_SW_SSW_NW",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/FastShipCabins_SW_SSW_NW.png"
-	},
-	{
-		"name": "FuchsiaCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/FuchsiaCity.png"
-	},
-	{
-		"name": "GoldenrodCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/GoldenrodCity.png"
-	},
-	{
-		"name": "GoldenrodUnderground",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/GoldenrodUnderground.png"
-	},
-	{
-		"name": "GoldenrodUndergroundWarehouse",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/GoldenrodUndergroundWarehouse.png"
-	},
-	{
-		"name": "GoldenrodDeptStoreB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/GoldenrodDeptStoreB1F.png"
-	},
-	{
-		"name": "GoldenrodUndergroundSwitchRoomEntrances",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/GoldenrodUndergroundSwitchRoomEntrances.png"
-	},
-	{
-		"name": "IcePath1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/IcePath1F.png"
-	},
-	{
-		"name": "IcePathB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/IcePathB1F.png"
-	},
-	{
-		"name": "IcePathB2FMahoganySide",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/IcePathB2FMahoganySide.png"
-	},
-	{
-		"name": "IcePathB2FBlackthornSide",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/IcePathB2FBlackthornSide.png"
-	},
-	{
-		"name": "IcePathB3F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/IcePathB3F.png"
-	},
-	{
-		"name": "LakeOfRage",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/LakeOfRage.png"
-	},
-	{
-		"name": "LavenderTown",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/LavenderTown.png"
-	},
-	{
-		"name": "MahoganyTown",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/MahoganyTown.png"
-	},
-	{
-		"name": "MountMortar1FInside",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/MountMortar1FInside.png"
-	},
-	{
-		"name": "MountMortar1FOutside",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/MountMortar1FOutside.png"
-	},
-	{
-		"name": "MountMortar2FInside",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/MountMortar2FInside.png"
-	},
-	{
-		"name": "MountMortarB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/MountMortarB1F.png"
-	},
-	{
-		"name": "NationalPark",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/NationalPark.png"
-	},
-	{
-		"name": "NewBarkTown",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/NewBarkTown.png"
-	},
-	{
-		"name": "OlivineCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/OlivineCity.png"
-	},
-	{
-		"name": "OlivineLighthouse1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/OlivineLighthouse1F.png"
-	},
-	{
-		"name": "OlivineLighthouse2F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/OlivineLighthouse2F.png"
-	},
-	{
-		"name": "OlivineLighthouse3F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/OlivineLighthouse3F.png"
-	},
-	{
-		"name": "OlivineLighthouse4F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/OlivineLighthouse4F.png"
-	},
-	{
-		"name": "OlivineLighthouse5F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/OlivineLighthouse5F.png"
-	},
-	{
-		"name": "OlivineLighthouse6F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/OlivineLighthouse6F.png"
-	},
-	{
-		"name": "PewterCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/PewterCity.png"
-	},
-	{
-		"name": "PowerPlant",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/PowerPlant.png"
-	},
-	{
-		"name": "RadioTower1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/RadioTower1F.png"
-	},
-	{
-		"name": "RadioTower2F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/RadioTower2F.png"
-	},
-	{
-		"name": "RadioTower3F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/RadioTower3F.png"
-	},
-	{
-		"name": "RadioTower4F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/RadioTower4F.png"
-	},
-	{
-		"name": "RadioTower5F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/RadioTower5F.png"
-	},
-	{
-		"name": "RockTunnel1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/RockTunnel1F.png"
-	},
-	{
-		"name": "RockTunnelB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/RockTunnelB1F.png"
-	},
-	{
-		"name": "Route1",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route1.png"
-	},
-	{
-		"name": "Route10South",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route10South.png"
-	},
-	{
-		"name": "Route11",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route11.png"
-	},
-	{
-		"name": "Route12North",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route12North.png"
-	},
-	{
-		"name": "Route12South",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route12South.png"
-	},
-	{
-		"name": "Route13",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route13.png"
-	},
-	{
-		"name": "Route14",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route14.png"
-	},
-	{
-		"name": "Route15",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route15.png"
-	},
-	{
-		"name": "Route17",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route17.png"
-	},
-	{
-		"name": "Route18",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route18.png"
-	},
-	{
-		"name": "Route19",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route19.png"
-	},
-	{
-		"name": "Route2",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route2.png"
-	},
-	{
-		"name": "Route20",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route20.png"
-	},
-	{
-		"name": "Route21",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route21.png"
-	},
-	{
-		"name": "Route25",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route25.png"
-	},
-	{
-		"name": "Route26North",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route26North.png"
-	},
-	{
-		"name": "Route26South",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route26South.png"
-	},
-	{
-		"name": "Route27",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route27.png"
-	},
-	{
-		"name": "Route28",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route28.png"
-	},
-	{
-		"name": "Route29",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route29.png"
-	},
-	{
-		"name": "Route3",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route3.png"
-	},
-	{
-		"name": "Route30",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route30.png"
-	},
-	{
-		"name": "Route31",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route31.png"
-	},
-	{
-		"name": "Route32North",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route32North.png"
-	},
-	{
-		"name": "Route32South",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route32South.png"
-	},
-	{
-		"name": "Route33",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route33.png"
-	},
-	{
-		"name": "Route34",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route34.png"
-	},
-	{
-		"name": "Route35",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route35.png"
-	},
-	{
-		"name": "Route36",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route36.png"
-	},
-	{
-		"name": "Route37",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route37.png"
-	},
-	{
-		"name": "Route38",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route38.png"
-	},
-	{
-		"name": "Route39",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route39.png"
-	},
-	{
-		"name": "Route4",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route4.png"
-	},
-	{
-		"name": "Route40",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route40.png"
-	},
-	{
-		"name": "Route41",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route41.png"
-	},
-	{
-		"name": "Route42",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route42.png"
-	},
-	{
-		"name": "Route43",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route43.png"
-	},
-	{
-		"name": "Route44",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route44.png"
-	},
-	{
-		"name": "Route45North",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route45North.png"
-	},
-	{
-		"name": "Route45South",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route45South.png"
-	},
-	{
-		"name": "Route46",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route46.png"
-	},
-	{
-		"name": "Route5",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route5.png"
-	},
-	{
-		"name": "Route6",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route6.png"
-	},
-	{
-		"name": "Route8",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route8.png"
-	},
-	{
-		"name": "Route9",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/Route9.png"
-	},
-	{
-		"name": "RuinsOfAlphOutside",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/RuinsOfAlphOutside.png"
-	},
-	{
-		"name": "SaffronCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SaffronCity.png"
-	},
-	{
-		"name": "SilverCaveItemRooms",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SilverCaveItemRooms.png"
-	},
-	{
-		"name": "SilverCaveOutside",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SilverCaveOutside.png"
-	},
-	{
-		"name": "SilverCaveRoom1",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SilverCaveRoom1.png"
-	},
-	{
-		"name": "SilverCaveRoom2",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SilverCaveRoom2.png"
-	},
-	{
-		"name": "SilverCaveRoom3",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SilverCaveRoom3.png"
-	},
-	{
-		"name": "SlowpokeWellB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SlowpokeWellB1F.png"
-	},
-	{
-		"name": "SlowpokeWellB2F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SlowpokeWellB2F.png"
-	},
-	{
-		"name": "SproutTower1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SproutTower1F.png"
-	},
-	{
-		"name": "SproutTower2F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SproutTower2F.png"
-	},
-	{
-		"name": "SproutTower3F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/SproutTower3F.png"
-	},
-	{
-		"name": "TeamRocketBaseB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TeamRocketBaseB1F.png"
-	},
-	{
-		"name": "TeamRocketBaseB2F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TeamRocketBaseB2F.png"
-	},
-	{
-		"name": "TeamRocketBaseB3F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TeamRocketBaseB3F.png"
-	},
-	{
-		"name": "TinTower1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TinTower1F.png"
-	},
-	{
-		"name": "TinTower2F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TinTower2F.png"
-	},
-	{
-		"name": "TinTower3F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TinTower3F.png"
-	},
-	{
-		"name": "TinTower4F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TinTower4F.png"
-	},
-	{
-		"name": "TinTower5F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TinTower5F.png"
-	},
-	{
-		"name": "TinTower6F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TinTower6F.png"
-	},
-	{
-		"name": "TinTower7F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TinTower7F.png"
-	},
-	{
-		"name": "TinTower8F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TinTower8F.png"
-	},
-	{
-		"name": "TinTower9F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TinTower9F.png"
-	},
-	{
-		"name": "TohjoFalls",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/TohjoFalls.png"
-	},
-	{
-		"name": "UndergroundPath",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/UndergroundPath.png"
-	},
-	{
-		"name": "UnionCave1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/UnionCave1F.png"
-	},
-	{
-		"name": "UnionCaveB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/UnionCaveB1F.png"
-	},
-	{
-		"name": "UnionCaveB2F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/UnionCaveB2F.png"
-	},
-	{
-		"name": "VermilionCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/VermilionCity.png"
-	},
-	{
-		"name": "VictoryRoad1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/VictoryRoad1F.png"
-	},
-	{
-		"name": "VictoryRoad2F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/VictoryRoad2F.png"
-	},
-	{
-		"name": "VictoryRoad3F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/VictoryRoad3F.png"
-	},
-	{
-		"name": "VioletCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/VioletCity.png"
-	},
-	{
-		"name": "ViridianCity",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/ViridianCity.png"
-	},
-	{
-		"name": "WhirlIslandB1F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/WhirlIslandB1F.png"
-	},
-	{
-		"name": "WhirlIslandB2F",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/WhirlIslandB2F.png"
-	},
-	{
-		"name": "WhirlIslandNE",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/WhirlIslandNE.png"
-	},
-	{
-		"name": "WhirlIslandSW",
-		"location_size": 12,
-		"location_border_thickness": 2,
-		"img": "images/maps/WhirlIslandSW.png"
-	}
+  {
+    "name": "AzaleaTown",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/AzaleaTown.png"
+  },
+  {
+    "name": "BlackthornCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/BlackthornCity.png"
+  },
+  {
+    "name": "BurnedTower1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/BurnedTower1F.png"
+  },
+  {
+    "name": "BurnedTowerB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/BurnedTowerB1F.png"
+  },
+  {
+    "name": "CeladonCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/CeladonCity.png"
+  },
+  {
+    "name": "CeladonCafe",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/CeladonCafe.png"
+  },
+  {
+    "name": "CeruleanCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/CeruleanCity.png"
+  },
+  {
+    "name": "CherrygroveCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/CherrygroveCity.png"
+  },
+  {
+    "name": "CianwoodCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/CianwoodCity.png"
+  },
+  {
+    "name": "CinnabarIsland",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/CinnabarIsland.png"
+  },
+  {
+    "name": "DarkCaveBlackthornEntrance",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/DarkCaveBlackthornEntrance.png"
+  },
+  {
+    "name": "DarkCaveVioletEntrance",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/DarkCaveVioletEntrance.png"
+  },
+  {
+    "name": "DiglettsCave",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/DiglettsCave.png"
+  },
+  {
+    "name": "DragonsDenB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/DragonsDenB1F.png"
+  },
+  {
+    "name": "EcruteakCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/EcruteakCity.png"
+  },
+  {
+    "name": "FastShip1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/FastShip1F.png"
+  },
+  {
+    "name": "FastShipB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/FastShipB1F.png"
+  },
+  {
+    "name": "FastShipCabins_NNW_NNE_NE",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/FastShipCabins_NNW_NNE_NE.png"
+  },
+  {
+    "name": "FastShipCabins_SE_SSE_CaptainsCabin",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/FastShipCabins_SE_SSE_CaptainsCabin.png"
+  },
+  {
+    "name": "FastShipCabins_SW_SSW_NW",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/FastShipCabins_SW_SSW_NW.png"
+  },
+  {
+    "name": "OlivinePort",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/OlivinePort.png"
+  },
+  {
+    "name": "VermilionPort",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/VermilionPort.png"
+  },
+  {
+    "name": "FuchsiaCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/FuchsiaCity.png"
+  },
+  {
+    "name": "GoldenrodCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/GoldenrodCity.png"
+  },
+  {
+    "name": "GoldenrodUnderground",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/GoldenrodUnderground.png"
+  },
+  {
+    "name": "GoldenrodUndergroundWarehouse",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/GoldenrodUndergroundWarehouse.png"
+  },
+  {
+    "name": "GoldenrodDeptStoreB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/GoldenrodDeptStoreB1F.png"
+  },
+  {
+    "name": "GoldenrodUndergroundSwitchRoomEntrances",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/GoldenrodUndergroundSwitchRoomEntrances.png"
+  },
+  {
+    "name": "IcePath1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/IcePath1F.png"
+  },
+  {
+    "name": "IcePathB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/IcePathB1F.png"
+  },
+  {
+    "name": "IcePathB2FMahoganySide",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/IcePathB2FMahoganySide.png"
+  },
+  {
+    "name": "IcePathB2FBlackthornSide",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/IcePathB2FBlackthornSide.png"
+  },
+  {
+    "name": "IcePathB3F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/IcePathB3F.png"
+  },
+  {
+    "name": "LakeOfRage",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/LakeOfRage.png"
+  },
+  {
+    "name": "LavenderTown",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/LavenderTown.png"
+  },
+  {
+    "name": "MahoganyTown",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/MahoganyTown.png"
+  },
+  {
+    "name": "MountMortar1FInside",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/MountMortar1FInside.png"
+  },
+  {
+    "name": "MountMortar1FOutside",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/MountMortar1FOutside.png"
+  },
+  {
+    "name": "MountMortar2FInside",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/MountMortar2FInside.png"
+  },
+  {
+    "name": "MountMortarB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/MountMortarB1F.png"
+  },
+  {
+    "name": "NationalPark",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/NationalPark.png"
+  },
+  {
+    "name": "NewBarkTown",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/NewBarkTown.png"
+  },
+  {
+    "name": "OlivineCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/OlivineCity.png"
+  },
+  {
+    "name": "OlivineLighthouse1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/OlivineLighthouse1F.png"
+  },
+  {
+    "name": "OlivineLighthouse2F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/OlivineLighthouse2F.png"
+  },
+  {
+    "name": "OlivineLighthouse3F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/OlivineLighthouse3F.png"
+  },
+  {
+    "name": "OlivineLighthouse4F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/OlivineLighthouse4F.png"
+  },
+  {
+    "name": "OlivineLighthouse5F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/OlivineLighthouse5F.png"
+  },
+  {
+    "name": "OlivineLighthouse6F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/OlivineLighthouse6F.png"
+  },
+  {
+    "name": "PewterCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/PewterCity.png"
+  },
+  {
+    "name": "PowerPlant",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/PowerPlant.png"
+  },
+  {
+    "name": "RadioTower1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/RadioTower1F.png"
+  },
+  {
+    "name": "RadioTower2F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/RadioTower2F.png"
+  },
+  {
+    "name": "RadioTower3F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/RadioTower3F.png"
+  },
+  {
+    "name": "RadioTower4F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/RadioTower4F.png"
+  },
+  {
+    "name": "RadioTower5F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/RadioTower5F.png"
+  },
+  {
+    "name": "RockTunnel1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/RockTunnel1F.png"
+  },
+  {
+    "name": "RockTunnelB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/RockTunnelB1F.png"
+  },
+  {
+    "name": "Route1",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route1.png"
+  },
+  {
+    "name": "Route10South",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route10South.png"
+  },
+  {
+    "name": "Route11",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route11.png"
+  },
+  {
+    "name": "Route12North",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route12North.png"
+  },
+  {
+    "name": "Route12South",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route12South.png"
+  },
+  {
+    "name": "Route13",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route13.png"
+  },
+  {
+    "name": "Route14",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route14.png"
+  },
+  {
+    "name": "Route15",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route15.png"
+  },
+  {
+    "name": "Route17",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route17.png"
+  },
+  {
+    "name": "Route18",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route18.png"
+  },
+  {
+    "name": "Route19",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route19.png"
+  },
+  {
+    "name": "Route2",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route2.png"
+  },
+  {
+    "name": "Route20",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route20.png"
+  },
+  {
+    "name": "Route21",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route21.png"
+  },
+  {
+    "name": "Route25",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route25.png"
+  },
+  {
+    "name": "Route26North",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route26North.png"
+  },
+  {
+    "name": "Route26South",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route26South.png"
+  },
+  {
+    "name": "Route27",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route27.png"
+  },
+  {
+    "name": "Route28",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route28.png"
+  },
+  {
+    "name": "Route29",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route29.png"
+  },
+  {
+    "name": "Route3",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route3.png"
+  },
+  {
+    "name": "Route30",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route30.png"
+  },
+  {
+    "name": "Route31",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route31.png"
+  },
+  {
+    "name": "Route32North",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route32North.png"
+  },
+  {
+    "name": "Route32South",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route32South.png"
+  },
+  {
+    "name": "Route33",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route33.png"
+  },
+  {
+    "name": "Route34",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route34.png"
+  },
+  {
+    "name": "Route35",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route35.png"
+  },
+  {
+    "name": "Route36",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route36.png"
+  },
+  {
+    "name": "Route37",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route37.png"
+  },
+  {
+    "name": "Route38",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route38.png"
+  },
+  {
+    "name": "Route39",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route39.png"
+  },
+  {
+    "name": "Route4",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route4.png"
+  },
+  {
+    "name": "Route40",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route40.png"
+  },
+  {
+    "name": "Route41",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route41.png"
+  },
+  {
+    "name": "Route42",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route42.png"
+  },
+  {
+    "name": "Route43",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route43.png"
+  },
+  {
+    "name": "Route44",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route44.png"
+  },
+  {
+    "name": "Route45North",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route45North.png"
+  },
+  {
+    "name": "Route45South",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route45South.png"
+  },
+  {
+    "name": "Route46",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route46.png"
+  },
+  {
+    "name": "Route5",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route5.png"
+  },
+  {
+    "name": "Route6",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route6.png"
+  },
+  {
+    "name": "Route8",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route8.png"
+  },
+  {
+    "name": "Route9",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/Route9.png"
+  },
+  {
+    "name": "RuinsOfAlphOutside",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/RuinsOfAlphOutside.png"
+  },
+  {
+    "name": "SaffronCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SaffronCity.png"
+  },
+  {
+    "name": "SilverCaveItemRooms",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SilverCaveItemRooms.png"
+  },
+  {
+    "name": "SilverCaveOutside",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SilverCaveOutside.png"
+  },
+  {
+    "name": "SilverCaveRoom1",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SilverCaveRoom1.png"
+  },
+  {
+    "name": "SilverCaveRoom2",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SilverCaveRoom2.png"
+  },
+  {
+    "name": "SilverCaveRoom3",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SilverCaveRoom3.png"
+  },
+  {
+    "name": "SlowpokeWellB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SlowpokeWellB1F.png"
+  },
+  {
+    "name": "SlowpokeWellB2F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SlowpokeWellB2F.png"
+  },
+  {
+    "name": "SproutTower1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SproutTower1F.png"
+  },
+  {
+    "name": "SproutTower2F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SproutTower2F.png"
+  },
+  {
+    "name": "SproutTower3F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/SproutTower3F.png"
+  },
+  {
+    "name": "TeamRocketBaseB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TeamRocketBaseB1F.png"
+  },
+  {
+    "name": "TeamRocketBaseB2F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TeamRocketBaseB2F.png"
+  },
+  {
+    "name": "TeamRocketBaseB3F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TeamRocketBaseB3F.png"
+  },
+  {
+    "name": "TinTower1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TinTower1F.png"
+  },
+  {
+    "name": "TinTower2F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TinTower2F.png"
+  },
+  {
+    "name": "TinTower3F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TinTower3F.png"
+  },
+  {
+    "name": "TinTower4F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TinTower4F.png"
+  },
+  {
+    "name": "TinTower5F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TinTower5F.png"
+  },
+  {
+    "name": "TinTower6F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TinTower6F.png"
+  },
+  {
+    "name": "TinTower7F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TinTower7F.png"
+  },
+  {
+    "name": "TinTower8F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TinTower8F.png"
+  },
+  {
+    "name": "TinTower9F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TinTower9F.png"
+  },
+  {
+    "name": "TohjoFalls",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/TohjoFalls.png"
+  },
+  {
+    "name": "UndergroundPath",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/UndergroundPath.png"
+  },
+  {
+    "name": "UnionCave1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/UnionCave1F.png"
+  },
+  {
+    "name": "UnionCaveB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/UnionCaveB1F.png"
+  },
+  {
+    "name": "UnionCaveB2F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/UnionCaveB2F.png"
+  },
+  {
+    "name": "VermilionCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/VermilionCity.png"
+  },
+  {
+    "name": "VictoryRoad1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/VictoryRoad1F.png"
+  },
+  {
+    "name": "VictoryRoad2F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/VictoryRoad2F.png"
+  },
+  {
+    "name": "VictoryRoad3F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/VictoryRoad3F.png"
+  },
+  {
+    "name": "VioletCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/VioletCity.png"
+  },
+  {
+    "name": "ViridianCity",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/ViridianCity.png"
+  },
+  {
+    "name": "WhirlIslandB1F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/WhirlIslandB1F.png"
+  },
+  {
+    "name": "WhirlIslandB2F",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/WhirlIslandB2F.png"
+  },
+  {
+    "name": "WhirlIslandNE",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/WhirlIslandNE.png"
+  },
+  {
+    "name": "WhirlIslandSW",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/WhirlIslandSW.png"
+  },
+  {
+    "name": "MountMoonInner",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/MountMoonInner.png"
+  },
+  {
+    "name": "MountMoonSquare",
+    "location_size": 12,
+    "location_border_thickness": 2,
+    "img": "images/maps/MountMoonSquare.png"
+  }
 ]

@@ -1,5 +1,5 @@
 Tracker.AllowDeferredLogicUpdate = true
---Items
+-- Items
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/events.json")
 Tracker:AddItems("items/settings.json")
@@ -34,3 +34,5 @@ ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
 ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
 ScriptHost:AddWatchForCode("r32_guy", "r32_guy", toggle_johto)
 ScriptHost:AddWatchForCode("badges", "badges", toggle_johto)
+ScriptHost:AddWatchForCode("mischief", "mischief", toggle_mischief)
+ScriptHost:AddWatchForCode("chrism", "chrism", toggle_mischief)
