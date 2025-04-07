@@ -12,7 +12,6 @@ Tracker:AddMaps("maps/maps.json")
 Tracker:AddMaps("maps/ilex_forest_no_tree.json")
 Tracker:AddMaps("maps/maps_johto_and_kanto.json")
 
-
 -- Locations
 Tracker:AddLocations("locations/locations.json")
 Tracker:AddLocations("locations/dungeons.json")
@@ -23,6 +22,7 @@ Tracker:AddLayouts("layouts/events.json")
 Tracker:AddLayouts("layouts/settings.json")
 Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/tabs.json")
+Tracker:AddLayouts("layouts/overworld.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 

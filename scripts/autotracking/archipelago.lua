@@ -114,18 +114,23 @@ end
 
 function updateEvents(value)
 	if value ~= nil then
+        print("Event: "..value)
 		for i, code in ipairs(FLAG_EVENT_CODES) do
             local obj = Tracker:FindObjectForCode(code)
             if obj ~= nil then
                 obj.Active = false
             end
 			local bit = value >> (i - 1) & 1
-			if #code>0 then
+            print("bit for index " .. i .. ": " .. bit)  -- Print bit value
+			print("#code for index " .. i .. ": " .. #code)  -- Print length of code
+
+			if #code > 0 then
 				Tracker:FindObjectForCode(code).Active = Tracker:FindObjectForCode(code).Active or bit
 			end
 		end
 	end
 end
+
 
 function updateVanillaKeyItems(value) 
 	if value ~= nil then
