@@ -90,34 +90,58 @@
     "img": "images/maps/mischief/EcruteakCity.png"
   },
   {
-    "name": "FastShip1F",
-    "location_size": 12,
-    "location_border_thickness": 2,
-    "img": "images/maps/mischief/FastShip1F.png"
+      "name": "FastShip1F",
+      "location_size": 12,
+      "location_border_thickness": 2,
+      "img": "images/maps/mischief/FastShip1F.png"
   },
   {
-    "name": "FastShipB1F",
-    "location_size": 12,
-    "location_border_thickness": 2,
-    "img": "images/maps/mischief/FastShipB1F.png"
+      "name": "FastShipB1F_Overview",
+      "location_size": 12,
+      "location_border_thickness": 2,
+      "img": "images/maps/mischief/FastShipB1F_Overview.png"
   },
   {
-    "name": "FastShipCabins_NNW_NNE_NE",
-    "location_size": 12,
-    "location_border_thickness": 2,
-    "img": "images/maps/mischief/FastShipCabins_NNW_NNE_NE.png"
+      "name": "FastShipB1F_FirstVoyage",
+      "location_size": 12,
+      "location_border_thickness": 2,
+      "img": "images/maps/mischief/FastShipB1F_FirstVoyage.png"
   },
   {
-    "name": "FastShipCabins_SE_SSE_CaptainsCabin",
-    "location_size": 12,
-    "location_border_thickness": 2,
-    "img": "images/maps/mischief/FastShipCabins_SE_SSE_CaptainsCabin.png"
+      "name": "FastShipB1F_Eastbound",
+      "location_size": 12,
+      "location_border_thickness": 2,
+      "img": "images/maps/mischief/FastShipB1F_Eastbound.png"
   },
   {
-    "name": "FastShipCabins_SW_SSW_NW",
-    "location_size": 12,
-    "location_border_thickness": 2,
-    "img": "images/maps/mischief/FastShipCabins_SW_SSW_NW.png"
+      "name": "FastShipB1F_Westbound",
+      "location_size": 12,
+      "location_border_thickness": 2,
+      "img": "images/maps/mischief/FastShipB1F_Westbound.png"
+  },
+  {
+      "name": "FastShipCabins_Overview",
+      "location_size": 12,
+      "location_border_thickness": 2,
+      "img": "images/maps/mischief/FastShipCabins_Overview.png"
+  },
+  {
+      "name": "FastShipCabins_FirstVoyage",
+      "location_size": 12,
+      "location_border_thickness": 2,
+      "img": "images/maps/mischief/FastShipCabins_FirstVoyage.png"
+  },
+  {
+      "name": "FastShipCabins_Eastbound",
+      "location_size": 12,
+      "location_border_thickness": 2,
+      "img": "images/maps/mischief/FastShipCabins_Eastbound.png"
+  },
+  {
+      "name": "FastShipCabins_Westbound",
+      "location_size": 12,
+      "location_border_thickness": 2,
+      "img": "images/maps/mischief/FastShipCabins_Westbound.png"
   },
   {
     "name": "OlivinePort",
