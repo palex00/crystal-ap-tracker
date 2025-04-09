@@ -42,10 +42,8 @@ function onClear(slot_data)
         elseif BADGE_CODES[k] then
             Tracker:FindObjectForCode(BADGE_CODES[k].code).AcquiredCount = BADGE_CODES[k].mapping[v]
         elseif k == apworld_version ~=nil then
-            print(k)
             local version_str = tostring(v)
             local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-            print(first_two_dots)
             if first_two_dots == "3.1" then
                 Tracker:AddLayouts("layouts/tracker.json")
             else
@@ -184,16 +182,58 @@ function updateVanillaKeyItems(value)
     end
 end
 
+-- Store last map values
+last_map_group = nil
+last_map_number = nil
+
 function onMap(value)
     if has("automap_on") and value ~= nil and value["data"] ~= nil then
-        map_group = value["data"]["mapGroup"]
-        map_number = value["data"]["mapNumber"]
-        tabs = MAP_MAPPING[map_group][map_number]
-        for i, tab in ipairs(tabs) do
-            Tracker:UiHint("ActivateTab", tab)
+        local map_group = value["data"]["mapGroup"]
+        local map_number = value["data"]["mapNumber"]
+
+        -- Detect map transition logic
+        if last_map_group == 15 and last_map_number == 1 and map_group == 15 and map_number == 3 then
+            Tracker:FindObjectForCode("ssaqua").CurrentStage = 1
+        elseif last_map_group == 15 and last_map_number == 2 and map_group == 15 and map_number == 3 then
+            Tracker:FindObjectForCode("ssaqua").CurrentStage = 2
         end
+
+        -- Retrieve ssaqua and event state
+        local ssaqua = Tracker:FindObjectForCode("ssaqua")
+        local fast_ship_event = Tracker:FindObjectForCode("EVENT_FAST_SHIP_FOUND_GIRL")
+
+        -- Check and possibly modify map_group based on conditions
+        if map_group == 15 then
+            if fast_ship_event.Active == false then
+                map_group = 115
+            else
+                if ssaqua.CurrentStage == 1 then
+                    map_group = 215
+                elseif ssaqua.CurrentStage == 2 then
+                    map_group = 315
+                end
+            end
+        end
+
+        -- Access correct mapping and activate tabs
+        local tabs = MAP_MAPPING[map_group] and MAP_MAPPING[map_group][map_number]
+        if tabs then
+            for i, tab in ipairs(tabs) do
+                -- Optional check: only activate tabs if conditions are met
+                if ssaqua.CurrentStage ~= nil and fast_ship_event.Active == true then
+                    Tracker:UiHint("ActivateTab", tab)
+                elseif fast_ship_event.Active == false then
+                    Tracker:UiHint("ActivateTab", tab)
+                end
+            end
+        end
+
+        -- Save last processed map
+        last_map_group = value["data"]["mapGroup"]
+        last_map_number = value["data"]["mapNumber"]
     end
 end
+
 
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)

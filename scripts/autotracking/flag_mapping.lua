@@ -14,11 +14,24 @@ FLAG_EVENT_CODES = {
     "EVENT_HERDED_FARFETCHD",
     "EVENT_RELEASED_THE_BEASTS",
     "EVENT_BEAT_FALKNER",
-    "",
-    "",
-    "",
-    "",
-    "EVENT_BEAT_CHUCK"
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "EVENT_BEAT_CHUCK",
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "DUMMY",
+    "EVENT_FAST_SHIP_FOUND_GIRL",
+    "EVENT_FOUGHT_SNORLAX"
 }
 
 FLAG_ITEM_CODES = {
