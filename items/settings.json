@@ -870,5 +870,26 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Blackthorn Dark Cave Access",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Dark Cave is vanilla",
+        "img": "/images/settings/blackthorn_dark_cave_access.png",
+        "img_mods": "@disabled",
+        "codes": "blackthorn_dark_cave_access, blackthorn_dark_cave_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "name": "Dark Cave has a waterfall",
+        "img": "/images/settings/blackthorn_dark_cave_access.png",
+        "codes": "blackthorn_dark_cave_access, blackthorn_dark_cave_waterfall",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

@@ -218,6 +218,10 @@ SLOT_CODES = {
     red_gyarados_access = {
         code = "red_gyarados_access",
         mapping = MAP_TOGGLE
+    },
+    blackthorn_dark_cave_access = {
+        code = "blackthorn_dark_cave_access",
+        mapping = MAP_TOGGLE
     }
 }
 

@@ -130,3 +130,16 @@ function toggle_lakeofrage(code)
         Tracker:AddMaps("maps/mischief/lake_of_rage_whirlpool.json")
     end
 end
+
+function toggle_darkcave(code)
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("blackthorn_dark_cave_vanilla") and not sudowoodo then
+        Tracker:AddMaps("maps/blackthorn_dark_cave_vanilla.json")
+    elseif has("blackthorn_dark_cave_waterfall") and not sudowoodo then
+        Tracker:AddMaps("maps/blackthorn_dark_cave_waterfall.json")
+    elseif has("blackthorn_dark_cave_vanilla") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_vanilla.json")
+    elseif has("blackthorn_dark_cave_waterfall") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_waterfall.json")
+    end
+end
