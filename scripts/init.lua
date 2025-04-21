@@ -10,6 +10,7 @@ ScriptHost:LoadScript("scripts/logic/logic.lua")
 -- Maps
 Tracker:AddMaps("maps/maps.json")
 Tracker:AddMaps("maps/ilex_forest_no_tree.json")
+Tracker:AddMaps("maps/route_2_ledge.json")
 Tracker:AddMaps("maps/maps_johto_and_kanto.json")
 
 -- Locations
@@ -32,6 +33,7 @@ ScriptHost:LoadScript("scripts/autotracking.lua")
 -- Watches
 ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
 ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
+ScriptHost:AddWatchForCode("route_2_access", "route_2_access", toggle_route2)
 ScriptHost:AddWatchForCode("r32_guy", "r32_guy", toggle_johto)
 ScriptHost:AddWatchForCode("badges", "badges", toggle_johto)
 ScriptHost:AddWatchForCode("mischief", "mischief", toggle_mischief)

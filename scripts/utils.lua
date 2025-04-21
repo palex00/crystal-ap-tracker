@@ -100,3 +100,20 @@ function toggle_mischief(code)
         toggle_ilex()
     end
 end
+
+function toggle_route2(code)
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("route_2_fence") and not sudowoodo then
+        Tracker:AddMaps("maps/route_2_fence.json")
+    elseif has("route_2_ledge") and not sudowoodo then
+        Tracker:AddMaps("maps/route_2_ledge.json")
+    elseif has("route_2_open") and not sudowoodo then
+        Tracker:AddMaps("maps/route_2_open.json")
+    elseif has("route_2_fence") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/route_2_fence.json")
+    elseif has("route_2_ledge") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/route_2_ledge.json")
+    elseif has("route_2_open") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/route_2_open.json")
+    end
+end

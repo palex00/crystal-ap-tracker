@@ -823,5 +823,32 @@
           "name": "Westbound"
       }
     ]
+  },
+  {
+    "name": "Route 2 Access",
+    "type": "progressive",
+    "initial_stage_idx": 1,
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Route 2 has a fence (vanilla)",
+        "img": "/images/settings/route_2_fence.png",
+        "codes": "route_2_access, route_2_fence",
+        "inherit_codes": false
+      },
+      {
+        "name": "Route 2 has a ledge",
+        "img": "/images/settings/route_2_ledge.png",
+        "codes": "route_2_access, route_2_ledge",
+        "inherit_codes": false
+      },
+      {
+        "name": "Route 2 is open",
+        "img": "/images/settings/route_2_open.png",
+        "codes": "route_2_access, route_2_open",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

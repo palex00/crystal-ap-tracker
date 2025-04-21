@@ -5214,7 +5214,7 @@
                 "name": "Viridian City",
                 "access_rules": [
                     "@JohtoKanto/Pewter City",
-                    "@JohtoKanto/Vermilion City, EVENT_FOUGHT_SNORLAX",
+                    "@JohtoKanto/Route 2/Main Section",
                     "@JohtoKanto/Pallet Town",
                     "$can_freefly|Viridian"
                 ],
@@ -5352,66 +5352,105 @@
             {
                 "name": "Route 2",
                 "access_rules": [
-                    "@JohtoKanto/Viridian City"
+                    ""
                 ],
                 "visibility_rules": [
                     "johto_only_off"
                 ],
                 "sections": [
                     {
+                        "name": "Diglett's Cave Section",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Vermilion City, EVENT_FOUGHT_SNORLAX",
+                            "@JohtoKanto/Route 2/Main Section, route_2_open",
+                            "@JohtoKanto/Route 2/Main Section, $can_cut"
+                        ]
+                    },
+                    {
+                        "name": "Main Section",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Viridian City",
+                            "@JohtoKanto/Route 2/Diglett's Cave Section, route_2_open",
+                            "@JohtoKanto/Route 2/Diglett's Cave Section, route_2_ledge",
+                            "@JohtoKanto/Route 2/Diglett's Cave Section, $can_cut"
+                        ]
+                    },
+                    {
                         "name": "Nugget from Guy",
                         "access_rules": [
-                            "$can_cut",
-                            "@JohtoKanto/Vermilion City, EVENT_FOUGHT_SNORLAX"
+                            "@JohtoKanto/Route 2/Diglett's Cave Section"
                         ]
                     },
                     {
                         "name": "Item 1",
                         "access_rules": [
-                            "$can_cut",
-                            "@JohtoKanto/Vermilion City, EVENT_FOUGHT_SNORLAX"
+                            "@JohtoKanto/Route 2/Diglett's Cave Section"
                         ]
                     },
                     {
-                        "name": "Item 2"
+                        "name": "Item 2",
+                        "access_rules": [
+                            "@JohtoKanto/Route 2/Main Section"
+                        ]
                     },
                     {
                         "name": "Item 3",
                         "access_rules": [
-                            "$can_cut"
+                            "@JohtoKanto/Route 2/Main Section, $can_cut"
                         ]
                     },
                     {
-                        "name": "Item 4"
+                        "name": "Item 4",
+                        "access_rules": [
+                            "@JohtoKanto/Route 2/Main Section"
+                        ]
                     },
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
                             "berries_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 2/Main Section"
                         ]
                     },
                     {
                         "name": "Bug Catcher Doug",
                         "visibility_rules": [
                             "trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 2/Main Section"
                         ]
                     },
                     {
                         "name": "Bug Catcher Ed",
                         "visibility_rules": [
                             "trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 2/Main Section"
                         ]
                     },
                     {
                         "name": "Bug Catcher Rob",
                         "visibility_rules": [
                             "trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 2/Main Section"
                         ]
                     },
                     {
                         "name": "Hidden Item 1",
                         "access_rules": [
-                            "[$hid]"
+                            "@JohtoKanto/Route 2/Main Section, [$hid]"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -5420,7 +5459,7 @@
                     {
                         "name": "Hidden Item 2",
                         "access_rules": [
-                            "[$hid]"
+                            "@JohtoKanto/Route 2/Main Section, [$hid]"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -5429,7 +5468,7 @@
                     {
                         "name": "Hidden Item 3",
                         "access_rules": [
-                            "[$hid]"
+                            "@JohtoKanto/Route 2/Main Section, [$hid]"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -5438,7 +5477,7 @@
                     {
                         "name": "Hidden Item 4",
                         "access_rules": [
-                            "[$hid]"
+                            "@JohtoKanto/Route 2/Main Section, [$hid]"
                         ],
                         "visibility_rules": [
                             "hiddenitems_on"
@@ -6692,7 +6731,7 @@
                 "name": "Diglett's Cave",
                 "access_rules": [
                     "@JohtoKanto/Vermilion City, EVENT_FOUGHT_SNORLAX",
-                    "@JohtoKanto/Route 2, $can_cut"
+                    "@JohtoKanto/Route 2/Diglett's Cave Section"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
