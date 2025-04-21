@@ -196,19 +196,26 @@
     "name": "Require Itemfinder",
     "type": "progressive",
     "loop": true,
+    "initial_stage_idx": 1,
     "allow_disabled": false,
     "stages": [
       {
-        "name": "Require Itemfinder - On",
-        "img": "/images/items/itemfinder.png",
-        "codes": "reqitemfinder,reqitemfinder_on",
+        "name": "Itemfinder not required",
+        "img": "/images/settings/itemfinder.png",
+        "img_mods": "@disabled",
+        "codes": "reqitemfinder,reqitemfinder_off",
         "inherit_codes": false
       },
       {
-        "name": "Require Itemfinder - Off",
-        "img": "/images/items/itemfinder.png",
-        "img_mods": "@disabled",
-        "codes": "reqitemfinder,reqitemfinder_off",
+        "name": "Itemfinder logically required - On",
+        "img": "/images/settings/itemfinder_logic.png",
+        "codes": "reqitemfinder,reqitemfinder_logic",
+        "inherit_codes": false
+      },
+      {
+        "name": "Itemfinder hard required - On",
+        "img": "/images/settings/itemfinder_required.png",
+        "codes": "reqitemfinder,reqitemfinder_hard",
         "inherit_codes": false
       }
     ]

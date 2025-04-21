@@ -20,7 +20,13 @@ function badges()
 end
 
 function hid()
-  return (has("ITEMFINDER") or has("reqitemfinder_off"))
+    if has("reqitemfinder_off") then
+        return AccessibilityLevel.Normal
+    elseif has("ITEMFINDER") then
+        return AccessibilityLevel.Normal
+    elseif has("reqitemfinder_logic") then
+        return AccessibilityLevel.SequenceBreak
+    end
 end
 
 function cut_badge()

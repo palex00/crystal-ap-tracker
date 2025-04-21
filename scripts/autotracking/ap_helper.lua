@@ -129,7 +129,7 @@ SLOT_CODES = {
     },
     require_itemfinder = {
         code = "reqitemfinder",
-        mapping = MAP_TOGGLE_REVERSE
+        mapping = MAP_TRIPLE
     },
     johto_only = {
         code = "johto_only",
