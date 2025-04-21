@@ -222,6 +222,10 @@ SLOT_CODES = {
     blackthorn_dark_cave_access = {
         code = "blackthorn_dark_cave_access",
         mapping = MAP_TOGGLE
+    },
+    national_park_access = {
+        code = "national_park_access",
+        mapping = MAP_TOGGLE
     }
 }
 

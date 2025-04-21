@@ -1392,7 +1392,8 @@
                 "name": "Goldenrod City",
                 "access_rules": [
                     "@JohtoKanto/Ilex Forest/Post-Tree",
-                    "@JohtoKanto/Violet City, SQUIRTBOTTLE",
+                    "@JohtoKanto/National Park, $nationalpark",
+                    "@JohtoKanto/Route 36/Left, $can_cut",
                     "$can_freefly|Goldenrod",
                     "@JohtoKanto/Saffron City, PASS"
                 ],
@@ -2028,7 +2029,8 @@
             {
                 "name": "National Park",
                 "access_rules": [
-                    "@JohtoKanto/Goldenrod City"
+                    "@JohtoKanto/Goldenrod City, $nationalpark",
+                    "@JohtoKanto/Route 36/Left, $nationalpark"
                 ],
                 "sections": [
                     {
@@ -2096,12 +2098,46 @@
                 "name": "Route 36",
                 "sections": [
                     {
+                        "name": "Left",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Goldenrod City, $can_cut",
+                            "@JohtoKanto/National Park",
+                            "@JohtoKanto/Route 36/Top, SQUIRTBOTTLE",
+                            "@JohtoKanto/Route 36/Right, SQUIRTBOTTLE"
+                        ]
+                    },
+                    {
+                        "name": "Right",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Violet City",
+                            "@JohtoKanto/Route 36/Left, SQUIRTBOTTLE",
+                            "@JohtoKanto/Route 36/Top, SQUIRTBOTTLE"
+                        ]
+                    },
+                    {
+                        "name": "Top",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Ecruteak City",
+                            "@JohtoKanto/Route 36/Left, SQUIRTBOTTLE",
+                            "@JohtoKanto/Route 36/Right, SQUIRTBOTTLE"
+                        ]
+                    },
+                    {
                         "name": "Berry Tree",
                         "visibility_rules": [
                             "berries_on"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Goldenrod City"
+                            "@JohtoKanto/Route 36/Left"
                         ]
                     },
                     {
@@ -2110,7 +2146,7 @@
                             "trainersanity_on"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Goldenrod City"
+                            "@JohtoKanto/Route 36/Left"
                         ]
                     },
                     {
@@ -2119,7 +2155,7 @@
                             "trainersanity_on"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Goldenrod City"
+                            "@JohtoKanto/Route 36/Left"
                         ]
                     },
                     {
@@ -2220,7 +2256,7 @@
             {
                 "name": "Ecruteak City",
                 "access_rules": [
-                    "@JohtoKanto/Goldenrod City, SQUIRTBOTTLE",
+                    "@JohtoKanto/Route 36/Top",
                     "@JohtoKanto/Olivine City",
                     "@JohtoKanto/Mahogany Town",
                     "$can_freefly|Ecruteak"

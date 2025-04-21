@@ -898,5 +898,26 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "National Park Access",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "National Park",
+        "img": "/images/settings/national_park_vanilla.png",
+        "img_mods": "@disabled",
+        "codes": "national_park_access, national_park_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "name": "National Skate-Park",
+        "img": "/images/settings/national_park_bicycle.png",
+        "codes": "national_park_access, national_park_bicycle",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

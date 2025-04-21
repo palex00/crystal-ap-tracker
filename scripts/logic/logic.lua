@@ -184,3 +184,7 @@ function passage(direction)
   return has("underground_power_".. direction) and has("EVENT_RESTORED_POWER_TO_KANTO")
   or not has("underground_power_".. direction)
 end
+
+function nationalpark()
+  return has("national_park_vanilla") or has("BICYCLE")
+end
