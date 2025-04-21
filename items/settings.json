@@ -850,5 +850,25 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Red Gyarados Access",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Red Gyarados is unblocked",
+        "img": "/images/settings/red_gyarados_vanilla.png",
+        "codes": "red_gyarados_access, red_gyarados_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "name": "Red Gyarados is surrounded by whirlpools",
+        "img": "/images/settings/red_gyarados_whirlpool.png",
+        "codes": "red_gyarados_access, red_gyarados_whirlpool",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

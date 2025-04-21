@@ -214,6 +214,10 @@ SLOT_CODES = {
     route_2_access = {
         code = "route_2_access",
         mapping = MAP_TRIPLE
+    },
+    red_gyarados_access = {
+        code = "red_gyarados_access",
+        mapping = MAP_TOGGLE
     }
 }
 

@@ -4138,7 +4138,8 @@
                     {
                         "name": "Help Lance",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf, red_gyarados_vanilla",
+                            "$can_whirlpool, red_gyarados_whirlpool"
                         ],
                         "hosted_item": "EVENT_DECIDED_TO_HELP_LANCE"
                     }

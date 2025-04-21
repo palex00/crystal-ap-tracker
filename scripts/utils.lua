@@ -117,3 +117,16 @@ function toggle_route2(code)
         Tracker:AddMaps("maps/mischief/route_2_open.json")
     end
 end
+
+function toggle_lakeofrage(code)
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("red_gyarados_vanilla") and not sudowoodo then
+        Tracker:AddMaps("maps/lake_of_rage_vanilla.json")
+    elseif has("red_gyarados_whirlpool") and not sudowoodo then
+        Tracker:AddMaps("maps/lake_of_rage_whirlpool.json")
+    elseif has("red_gyarados_vanilla") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/lake_of_rage_vanilla.json")
+    elseif has("red_gyarados_whirlpool") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/lake_of_rage_whirlpool.json")
+    end
+end
