@@ -3615,12 +3615,14 @@
                     {
                         "name": "1F Inside - Item 3",
                         "access_rules": [
+                            "$can_strength",
                             "$can_waterfall"
                         ]
                     },
                     {
                         "name": "1F Inside - Item 4",
                         "access_rules": [
+                            "$can_strength",
                             "$can_waterfall"
                         ]
                     },
@@ -3633,14 +3635,12 @@
                     {
                         "name": "1F Inside - Item 6",
                         "access_rules": [
-                            "$can_strength",
                             "$can_waterfall"
                         ]
                     },
                     {
                         "name": "1F Inside - Item 7",
                         "access_rules": [
-                            "$can_strength",
                             "$can_waterfall"
                         ]
                     },
