@@ -4150,7 +4150,8 @@
                     {
                         "name": "Red Scale from Gyarados",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf, red_gyarados_vanilla",
+                            "$can_whirlpool, red_gyarados_whirlpool"
                         ]
                     },
                     {
