@@ -4881,7 +4881,7 @@
                 "name": "Route 26",
                 "access_rules": [
                     "@JohtoKanto/Route 27/Post-Waterfall",
-                    "@JohtoKanto/Viridian City, EVENT_FOUGHT_SNORLAX",
+                    "@JohtoKanto/Viridian City, $kantoaccess",
                     "@JohtoKanto/Silver Cave, $mt_silver_badges"
                 ],
                 "sections": [
@@ -5253,7 +5253,8 @@
                     "@JohtoKanto/Pewter City",
                     "@JohtoKanto/Route 2/Main Section",
                     "@JohtoKanto/Pallet Town",
-                    "$can_freefly|Viridian"
+                    "$can_freefly|Viridian",
+                    "@JohtoKanto/Route 26, $kantoaccess"
                 ],
                 "visibility_rules": [
                     "johto_only_off"

@@ -188,3 +188,9 @@ end
 function nationalpark()
   return has("national_park_vanilla") or has("BICYCLE")
 end
+
+function kantoaccess()
+  return (has("kanto_access_champ") and has("EVENT_BEAT_ELITE_FOUR"))
+  or (has("kanto_access_snorlax") and has("EVENT_FOUGHT_SNORLAX"))
+  or (has("kanto_access_badges") and badges() >= progCount("kanto_access_badges_count"))
+end

@@ -226,6 +226,10 @@ SLOT_CODES = {
     national_park_access = {
         code = "national_park_access",
         mapping = MAP_TOGGLE
+    },
+    kanto_access_condition = {
+        code = "kanto_access_condition",
+        mapping = MAP_TRIPLE
     }
 }
 
@@ -244,6 +248,10 @@ BADGE_CODES = {
     },
     mt_silver_badges = {
         code = "mt_silver_badges",
+        mapping = MAP_16
+    },
+    kanto_access_badges = {
+        code = "kanto_access_badges_count",
         mapping = MAP_16
     }
 }
