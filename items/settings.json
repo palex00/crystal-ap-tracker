@@ -956,5 +956,26 @@
     "min_quantity": 1,
     "max_quantity": 16,
     "initial_quantity": 8
+  },
+  {
+    "name": "Route 3 Access",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Route 3 is vanilla",
+        "img": "/images/settings/brock.png",
+        "img_mods": "@disabled",
+        "codes": "route_3_access, route_3_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "name": "Route 3 requires Boulder Badge",
+        "img": "/images/settings/brock.png",
+        "codes": "route_3_access, route_3_boulder",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

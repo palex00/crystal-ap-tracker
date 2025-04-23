@@ -5658,7 +5658,8 @@
             {
                 "name": "Route 3",
                 "access_rules": [
-                    "@JohtoKanto/Pewter City"
+                    "@JohtoKanto/Pewter City, route_3_vanilla",
+                    "@JohtoKanto/Pewter City, BOULDER_BADGE"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5710,7 +5711,8 @@
             {
                 "name": "Mount Moon",
                 "access_rules": [
-                    "@JohtoKanto/Pewter City"
+                    "@JohtoKanto/Pewter City, route_3_vanilla",
+                    "@JohtoKanto/Pewter City, BOULDER_BADGE"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5747,7 +5749,8 @@
             {
                 "name": "Route 4",
                 "access_rules": [
-                    "@JohtoKanto/Pewter City"
+                    "@JohtoKanto/Pewter City, route_3_vanilla",
+                    "@JohtoKanto/Pewter City, BOULDER_BADGE"
                 ],
                 "visibility_rules": [
                     "johto_only_off"

@@ -230,6 +230,10 @@ SLOT_CODES = {
     kanto_access_condition = {
         code = "kanto_access_condition",
         mapping = MAP_TRIPLE
+    },
+    route_3_access = {
+        code = "route_3_access",
+        mapping = MAP_TOGGLE
     }
 }
 
