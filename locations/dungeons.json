@@ -2187,6 +2187,14 @@
                         "name": "Goldenrod Dept. Store  1F - Buy Waterstone"
                     },
                     {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM21 from Receptionist",
+                        "name": "Goldenrod Dept. Store 5F - TM21 from Receptionist"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM27 from Receptionist",
+                        "name": "Goldenrod Dept. Store 5F - TM27 from Receptionist"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store B1F - Northwest Item",
                         "name": "Goldenrod Dept. Store B1F - Northwest Item"
                     },
@@ -2208,6 +2216,42 @@
                         "map": "GoldenrodCity",
                         "x": 392,
                         "y": 440
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 1F - Buy Waterstone",
+                        "name": "Dept. Store 1F - Buy Waterstone"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStore1F",
+                        "x": 216,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM21 from Receptionist",
+                        "name": "Dept. Store 5F - TM21 from Receptionist"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM27 from Receptionist",
+                        "name": "Dept. Store 5F - TM27 from Receptionist"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStore5F",
+                        "x": 136,
+                        "y": 88
                     }
                 ]
             },
