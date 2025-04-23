@@ -1688,6 +1688,96 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/S.S. Aqua/B1F - Picnicker Debra"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FastShipB1F_Overview",
+                        "x": 40,
+                        "y": 30
+                    },
+                    {
+                        "map": "FastShipB1F_Westbound",
+                        "x": 40,
+                        "y": 30
+                    },
+                    {
+                        "map": "FastShipB1F_Eastbound",
+                        "x": 40,
+                        "y": 30
+                    },
+                    {
+                        "map": "FastShipB1F_FirstVoyage",
+                        "x": 40,
+                        "y": 30
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/B1F - Juggler Fritz"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FastShipB1F_Overview",
+                        "x": 360,
+                        "y": 110
+                    },
+                    {
+                        "map": "FastShipB1F_Westbound",
+                        "x": 360,
+                        "y": 110
+                    },
+                    {
+                        "map": "FastShipB1F_Eastbound",
+                        "x": 360,
+                        "y": 110
+                    },
+                    {
+                        "map": "FastShipB1F_FirstVoyage",
+                        "x": 360,
+                        "y": 110
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/B1F - Sailor Jeff"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FastShipB1F_Overview",
+                        "x": 88,
+                        "y": 142
+                    },
+                    {
+                        "map": "FastShipB1F_Westbound",
+                        "x": 88,
+                        "y": 142
+                    },
+                    {
+                        "map": "FastShipB1F_Eastbound",
+                        "x": 88,
+                        "y": 142
+                    },
+                    {
+                        "map": "FastShipB1F_FirstVoyage",
+                        "x": 88,
+                        "y": 142
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/S.S. Aqua/B1F - Sailor Garrett (Westbound)"
                     }
                 ],
@@ -1775,12 +1865,12 @@
                     {
                         "map": "FastShipB1F_Overview",
                         "x": 88,
-                        "y": 142
+                        "y": 174
                     },
                     {
                         "map": "FastShipB1F_Eastbound",
                         "x": 88,
-                        "y": 142
+                        "y": 174
                     }
                 ]
             },
@@ -1821,6 +1911,126 @@
                         "map": "FastShipB1F_Eastbound",
                         "x": 168,
                         "y": 142
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Firebreather Lyle"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FastShipCabins_Overview",
+                        "x": 200,
+                        "y": 200
+                    },
+                    {
+                        "map": "FastShipCabins_Westbound",
+                        "x": 200,
+                        "y": 200
+                    },
+                    {
+                        "map": "FastShipCabins_Eastbound",
+                        "x": 200,
+                        "y": 200
+                    },
+                    {
+                        "map": "FastShipCabins_FirstVoyage",
+                        "x": 200,
+                        "y": 200
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Twins Meg & Peg"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FastShipCabins_Overview",
+                        "x": 586,
+                        "y": 176
+                    },
+                    {
+                        "map": "FastShipCabins_Westbound",
+                        "x": 586,
+                        "y": 176
+                    },
+                    {
+                        "map": "FastShipCabins_Eastbound",
+                        "x": 586,
+                        "y": 176
+                    },
+                    {
+                        "map": "FastShipCabins_FirstVoyage",
+                        "x": 586,
+                        "y": 176
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Pokefan Colin"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FastShipCabins_Overview",
+                        "x": 552,
+                        "y": 248
+                    },
+                    {
+                        "map": "FastShipCabins_Westbound",
+                        "x": 552,
+                        "y": 248
+                    },
+                    {
+                        "map": "FastShipCabins_Eastbound",
+                        "x": 552,
+                        "y": 248
+                    },
+                    {
+                        "map": "FastShipCabins_FirstVoyage",
+                        "x": 552,
+                        "y": 248
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Hiker Noland"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FastShipCabins_Overview",
+                        "x": 536,
+                        "y": 88
+                    },
+                    {
+                        "map": "FastShipCabins_Westbound",
+                        "x": 536,
+                        "y": 88
+                    },
+                    {
+                        "map": "FastShipCabins_Eastbound",
+                        "x": 536,
+                        "y": 88
+                    },
+                    {
+                        "map": "FastShipCabins_FirstVoyage",
+                        "x": 536,
+                        "y": 88
                     }
                 ]
             },
@@ -1946,12 +2156,12 @@
                 "map_locations": [
                     {
                         "map": "FastShipCabins_Overview",
-                        "x": 56,
+                        "x": 40,
                         "y": 72
                     },
                     {
                         "map": "FastShipCabins_FirstVoyage",
-                        "x": 56,
+                        "x": 40,
                         "y": 72
                     }
                 ]
