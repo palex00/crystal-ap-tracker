@@ -5834,7 +5834,10 @@
                         "hosted_item": "CASCADE_BADGE"
                     },
                     {
-                        "name": "Gym - Machine Part in Water"
+                        "name": "Gym - Machine Part in Water",
+                        "access_rules": [
+                            "^$hid"
+                        ],
                     },
                     {
                         "name": "Gym - Swimmer Briana",
