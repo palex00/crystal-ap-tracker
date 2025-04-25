@@ -444,6 +444,86 @@
                 }
             },
             {
+                "title": "Goldenrod Dept. Store",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Dept. Store B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodDeptStoreB1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dept. Store 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodDeptStore1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dept. Store 2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodDeptStore2F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dept. Store 3F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodDeptStore3F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dept. Store 4F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodDeptStore4F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dept. Store 5F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodDeptStore5F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dept. Store 6F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodDeptStore6F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dept. Store Roof",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodDeptStoreRoof"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
                 "title": "Goldenrod Underground",
                 "content": {
                     "type": "tabbed",
@@ -472,15 +552,6 @@
                                 "type": "map",
                                 "maps": [
                                     "GoldenrodUndergroundWarehouse"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Dept. Store B1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodDeptStoreB1F"
                                 ]
                             }
                         }

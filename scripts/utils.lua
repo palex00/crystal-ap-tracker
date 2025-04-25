@@ -100,3 +100,46 @@ function toggle_mischief(code)
         toggle_ilex()
     end
 end
+
+function toggle_route2(code)
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("route_2_fence") and not sudowoodo then
+        Tracker:AddMaps("maps/route_2_fence.json")
+    elseif has("route_2_ledge") and not sudowoodo then
+        Tracker:AddMaps("maps/route_2_ledge.json")
+    elseif has("route_2_open") and not sudowoodo then
+        Tracker:AddMaps("maps/route_2_open.json")
+    elseif has("route_2_fence") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/route_2_fence.json")
+    elseif has("route_2_ledge") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/route_2_ledge.json")
+    elseif has("route_2_open") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/route_2_open.json")
+    end
+end
+
+function toggle_lakeofrage(code)
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("red_gyarados_vanilla") and not sudowoodo then
+        Tracker:AddMaps("maps/lake_of_rage_vanilla.json")
+    elseif has("red_gyarados_whirlpool") and not sudowoodo then
+        Tracker:AddMaps("maps/lake_of_rage_whirlpool.json")
+    elseif has("red_gyarados_vanilla") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/lake_of_rage_vanilla.json")
+    elseif has("red_gyarados_whirlpool") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/lake_of_rage_whirlpool.json")
+    end
+end
+
+function toggle_darkcave(code)
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("blackthorn_dark_cave_vanilla") and not sudowoodo then
+        Tracker:AddMaps("maps/blackthorn_dark_cave_vanilla.json")
+    elseif has("blackthorn_dark_cave_waterfall") and not sudowoodo then
+        Tracker:AddMaps("maps/blackthorn_dark_cave_waterfall.json")
+    elseif has("blackthorn_dark_cave_vanilla") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_vanilla.json")
+    elseif has("blackthorn_dark_cave_waterfall") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_waterfall.json")
+    end
+end

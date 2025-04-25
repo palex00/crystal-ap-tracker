@@ -129,7 +129,7 @@ SLOT_CODES = {
     },
     require_itemfinder = {
         code = "reqitemfinder",
-        mapping = MAP_TOGGLE_REVERSE
+        mapping = MAP_TRIPLE
     },
     johto_only = {
         code = "johto_only",
@@ -210,6 +210,30 @@ SLOT_CODES = {
     enable_mischief = {
         code = "mischief",
         mapping = MAP_TOGGLE
+    },
+    route_2_access = {
+        code = "route_2_access",
+        mapping = MAP_TRIPLE
+    },
+    red_gyarados_access = {
+        code = "red_gyarados_access",
+        mapping = MAP_TOGGLE
+    },
+    blackthorn_dark_cave_access = {
+        code = "blackthorn_dark_cave_access",
+        mapping = MAP_TOGGLE
+    },
+    national_park_access = {
+        code = "national_park_access",
+        mapping = MAP_TOGGLE
+    },
+    kanto_access_condition = {
+        code = "kanto_access_condition",
+        mapping = MAP_TRIPLE
+    },
+    route_3_access = {
+        code = "route_3_access",
+        mapping = MAP_TOGGLE
     }
 }
 
@@ -228,6 +252,10 @@ BADGE_CODES = {
     },
     mt_silver_badges = {
         code = "mt_silver_badges",
+        mapping = MAP_16
+    },
+    kanto_access_badges = {
+        code = "kanto_access_badges_count",
         mapping = MAP_16
     }
 }
