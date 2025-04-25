@@ -16,10 +16,11 @@ apworld | pack version
 :-------------------------:|:-------------------------:
 2.1.2   | 0.2.X
 3.0.X   | 0.3.X
-3.1.0   | 0.4.X
+3.1.X   | 0.4.X
+3.2.X   | 0.5.X
 
 ## Known Issues
-- S.S. Aqua looks awful. It will be overhauled.
+- Some locations still have their pre-3.2.0 names
 
 ## Planned Features
 - Enhanced "Overview"-Modes (Johto, Kanto, Both (horizontal), Both (vertical)
