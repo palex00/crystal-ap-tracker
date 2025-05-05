@@ -42,3 +42,6 @@ ScriptHost:AddWatchForCode("r32_guy", "r32_guy", toggle_johto)
 ScriptHost:AddWatchForCode("badges", "badges", toggle_johto)
 ScriptHost:AddWatchForCode("mischief", "mischief", toggle_mischief)
 ScriptHost:AddWatchForCode("chrism", "chrism", toggle_mischief)
+
+-- Makes version nil
+first_two_dots = nil
