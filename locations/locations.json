@@ -4444,6 +4444,7 @@
                 "name": "Blackthorn City",
                 "access_rules": [
                     "@JohtoKanto/Mahogany Town, $tower_takeover, $can_strength",
+                    "@JohtoKanto/Route 45",
                     "$can_freefly|Blackthorn"
                 ],
                 "sections": [
@@ -4618,7 +4619,8 @@
             {
                 "name": "Dark Cave Blackthorn Entrance",
                 "access_rules": [
-                    "@JohtoKanto/Blackthorn City, ^$can_flash, $can_surf"
+                    "@JohtoKanto/Route 45, ^$can_flash, $can_surf",
+                    "blackthorn_dark_cave_waterfall, ^$can_flash, $can_waterfall"
                 ],
                 "sections": [
                     {
@@ -4652,7 +4654,8 @@
             {
                 "name": "Route 45",
                 "access_rules": [
-                    "@JohtoKanto/Blackthorn City"
+                    "@JohtoKanto/Blackthorn City",
+                    "@JohtoKanto/Dark Cave Blackthorn Entrance"
                 ],
                 "sections": [
                     {
