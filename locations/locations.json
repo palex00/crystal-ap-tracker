@@ -280,28 +280,28 @@
                 ],
                 "sections": [
                     {
-                        "name": "Item 1",
+                        "name": "Southeast Item (Left)",
                         "access_rules": [
                             "$can_rocksmash"
                         ]
                     },
                     {
-                        "name": "Item 2",
+                        "name": "Southeast Item (Right)",
                         "access_rules": [
                             "$can_rocksmash"
                         ]
                     },
                     {
-                        "name": "Item 3",
+                        "name": "Northeast Item",
                         "access_rules": [
                             "$can_rocksmash"
                         ]
                     },
                     {
-                        "name": "Item 4"
+                        "name": "West Item"
                     },
                     {
-                        "name": "Hidden Item in North",
+                        "name": "Hidden Item",
                         "access_rules": [
                             "$can_rocksmash,^$hid"
                         ],
@@ -1563,7 +1563,7 @@
                         ]
                     },
                     {
-                        "name": "B2F - Item 1",
+                        "name": "B2F - East Item",
                         "access_rules": [
                             "CARD_KEY",
                             "BASEMENT_KEY"
@@ -2410,7 +2410,7 @@
                         ]
                     },
                     {
-                        "name": "1F - Hidden Item 1",
+                        "name": "1F - Hidden Item above Rival",
                         "access_rules": [
                             "^$hid"
                         ],
@@ -2419,7 +2419,7 @@
                         ]
                     },
                     {
-                        "name": "1F - Hidden Item 2",
+                        "name": "1F - Southeast Hidden Item",
                         "access_rules": [
                             "^$hid"
                         ],
@@ -4523,19 +4523,19 @@
                         "name": "Spell Tag from Santos"
                     },
                     {
-                        "name": "Dragon's Den B1F - Item 1",
+                        "name": "Dragon's Den B1F - Northeast Item",
                         "access_rules": [
                             "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ]
                     },
                     {
-                        "name": "Dragon's Den B1F - Item 2",
+                        "name": "Dragon's Den B1F - East Item",
                         "access_rules": [
                             "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ]
                     },
                     {
-                        "name": "Dragon's Den B1F - Item 3",
+                        "name": "Dragon's Den B1F - West Item",
                         "access_rules": [
                             "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ]
@@ -4568,7 +4568,7 @@
                         ]
                     },
                     {
-                        "name": "Dragon's Den B1F - Hidden Item in SE Corner",
+                        "name": "Dragon's Den B1F - Southeast Hidden Item",
                         "access_rules": [
                             "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
                         ],
@@ -4577,7 +4577,7 @@
                         ]
                     },
                     {
-                        "name": "Dragon's Den B1F - Hidden Item in Water 1",
+                        "name": "Dragon's Den B1F - East Hidden Item in Water",
                         "access_rules": [
                             "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
                         ],
@@ -4586,7 +4586,7 @@
                         ]
                     },
                     {
-                        "name": "Dragon's Den B1F - Hidden Item in Water 2",
+                        "name": "Dragon's Den B1F - Center Hidden Item in Water",
                         "access_rules": [
                             "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
                         ],
@@ -4627,10 +4627,10 @@
                         "name": "Blackglasses from Man"
                     },
                     {
-                        "name": "Item 1"
+                        "name": "Southwest Item"
                     },
                     {
-                        "name": "Item 2"
+                        "name": "Southeast Item"
                     }
                 ],
                 "map_locations": [
@@ -7445,7 +7445,7 @@
                         "hosted_item": "EVENT_VIRIDIAN_GYM_BLUE"
                     },
                     {
-                        "name": "Hidden Item in North",
+                        "name": "North Hidden Item",
                         "access_rules": [
                             "^$hid"
                         ],
