@@ -14,10 +14,10 @@ Original project by AliceMousie.
 ## Compatibility Chart
 apworld | pack version
 :-------------------------:|:-------------------------:
-2.1.2   | 0.2.X
-3.0.X   | 0.3.X
-3.1.X   | 0.4.X
 3.2.X   | 0.5.X
+3.1.X   | 0.4.X
+3.0.X   | 0.3.X
+2.1.2   | 0.2.X
 
 ## Known Issues
 - Some locations still have their pre-3.2.0 names
