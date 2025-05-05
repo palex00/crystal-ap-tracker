@@ -1195,25 +1195,25 @@
                         ]
                     },
                     {
-                        "name": "Item 1",
+                        "name": "North Item",
                         "access_rules": [
                             "@JohtoKanto/Ilex Forest/Post-Tree"
                         ]
                     },
                     {
-                        "name": "Item 2",
+                        "name": "Northeast Item",
                         "access_rules": [
                             "@JohtoKanto/Ilex Forest/Post-Tree"
                         ]
                     },
                     {
-                        "name": "Item 3",
+                        "name": "Southeast Item",
                         "access_rules": [
                             "@JohtoKanto/Ilex Forest/Pre-Tree"
                         ]
                     },
                     {
-                        "name": "Item 4",
+                        "name": "West Item",
                         "access_rules": [
                             "@JohtoKanto/Ilex Forest/Post-Tree"
                         ]
@@ -1228,7 +1228,7 @@
                         ]
                     },
                     {
-                        "name": "Hidden Item 1",
+                        "name": "North Hidden Item",
                         "access_rules": [
                             "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
                         ],
@@ -1237,7 +1237,7 @@
                         ]
                     },
                     {
-                        "name": "Hidden Item 2",
+                        "name": "West Hidden Item",
                         "access_rules": [
                             "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
                         ],
@@ -1246,7 +1246,7 @@
                         ]
                     },
                     {
-                        "name": "Hidden Item 3",
+                        "name": "East Hidden Item",
                         "access_rules": [
                             "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
                         ],
