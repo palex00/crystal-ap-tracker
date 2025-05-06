@@ -454,10 +454,10 @@
                         ]
                     },
                     {
-                        "name": "3F - Item 1"
+                        "name": "3F - North Item"
                     },
                     {
-                        "name": "3F - Item 2"
+                        "name": "3F - South Item"
                     },
                     {
                         "name": "3F - HM05 from Sage"
@@ -792,16 +792,16 @@
                 ],
                 "sections": [
                     {
-                        "name": "1F - Item 1"
+                        "name": "1F - South Item"
                     },
                     {
-                        "name": "1F - Item 2"
+                        "name": "1F - East Item"
                     },
                     {
-                        "name": "1F - Item 3"
+                        "name": "1F - West Item"
                     },
                     {
-                        "name": "1F - Item 4"
+                        "name": "1F - North Item"
                     },
                     {
                         "name": "1F - Firebreather Bill",
@@ -834,10 +834,10 @@
                         ]
                     },
                     {
-                        "name": "B1F - Item 1"
+                        "name": "B1F - West Item"
                     },
                     {
-                        "name": "B1F - Item 2"
+                        "name": "B1F - East Item"
                     },
                     {
                         "name": "B1F - Hiker Leonard",
@@ -876,13 +876,13 @@
                         ]
                     },
                     {
-                        "name": "B2F - Item 1",
+                        "name": "B2F - North Item",
                         "access_rules": [
                             "$can_surf"
                         ]
                     },
                     {
-                        "name": "B2F - Item 2",
+                        "name": "B2F - Center Item",
                         "access_rules": [
                             "$can_surf"
                         ]
@@ -978,10 +978,10 @@
                 ],
                 "sections": [
                     {
-                        "name": "B1F - Item 1"
+                        "name": "B1F - Item"
                     },
                     {
-                        "name": "B2F - Item 1",
+                        "name": "B2F - Item",
                         "access_rules": [
                             "$can_surf,$can_strength"
                         ]
@@ -2480,19 +2480,19 @@
                         ]
                     },
                     {
-                        "name": "4F - Item 1",
+                        "name": "4F - Southwest Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ]
                     },
                     {
-                        "name": "4F - Item 2",
+                        "name": "4F - Southeast Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ]
                     },
                     {
-                        "name": "4F - Item 3",
+                        "name": "4F - East Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ]
@@ -2513,7 +2513,7 @@
                         ]
                     },
                     {
-                        "name": "5F - Hidden Item in Southeast",
+                        "name": "5F - Southeast Hidden Item",
                         "access_rules": [
                             "^$hid, RAINBOW_WING"
                         ],
@@ -2522,7 +2522,7 @@
                         ]
                     },
                     {
-                        "name": "5F - Hidden Item in Southwest",
+                        "name": "5F - Southwest Hidden Item",
                         "access_rules": [
                             "^$hid, RAINBOW_WING"
                         ],
@@ -2543,19 +2543,19 @@
                         ]
                     },
                     {
-                        "name": "8F - Item 1",
+                        "name": "8F - Northwest Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ]
                     },
                     {
-                        "name": "8F - Item 2",
+                        "name": "8F - Center Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ]
                     },
                     {
-                        "name": "8F - Item 3",
+                        "name": "8F - South Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ]
@@ -3862,19 +3862,19 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B1F - Item 1",
+                        "name": "Rocket HQ B1F - Item besides Computer",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ]
                     },
                     {
-                        "name": "Rocket HQ B1F - Item 2",
+                        "name": "Rocket HQ B1F - East Item",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ]
                     },
                     {
-                        "name": "Rocket HQ B1F - Item 3",
+                        "name": "Rocket HQ B1F - South Item",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ]
@@ -3898,7 +3898,7 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B1F - Hidden Item in West",
+                        "name": "Rocket HQ B1F - West Hidden Item",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE,^$hid"
                         ],
@@ -3955,31 +3955,31 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B3F - Item 1",
+                        "name": "Rocket HQ B3F - East Item",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ]
                     },
                     {
-                        "name": "Rocket HQ B3F - Item 2",
+                        "name": "Rocket HQ B3F - North Item",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ]
                     },
                     {
-                        "name": "Rocket HQ B3F - Item 3",
+                        "name": "Rocket HQ B3F - West Item (Left)",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ]
                     },
                     {
-                        "name": "Rocket HQ B3F - Item 4",
+                        "name": "Rocket HQ B3F - Center Item",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ]
                     },
                     {
-                        "name": "Rocket HQ B3F - Item 5",
+                        "name": "Rocket HQ B3F - West Item (Right)",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ]
@@ -5013,10 +5013,10 @@
                 ],
                 "sections": [
                     {
-                        "name": "1F - Item 1"
+                        "name": "1F - North Item (Right)"
                     },
                     {
-                        "name": "1F - Item 2"
+                        "name": "1F - North Item (Left)"
                     },
                     {
                         "name": "1F - Hidden Item on Southwest Boulder",
@@ -5028,13 +5028,13 @@
                         ]
                     },
                     {
-                        "name": "2F - Item 1"
+                        "name": "2F - Northeast Item"
                     },
                     {
-                        "name": "2F - Item 2"
+                        "name": "2F - South Item"
                     },
                     {
-                        "name": "2F - Item 3"
+                        "name": "2F - Northwest Item"
                     },
                     {
                         "name": "2F - Hidden Item on Northwest Boulder",
@@ -5176,31 +5176,31 @@
                         ]
                     },
                     {
-                        "name": "1F - Item 1",
+                        "name": "1F - Southwest Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "1F - Item 2",
+                        "name": "1F - Northwest Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "1F - Item 3",
+                        "name": "1F - Southeast Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "1F - Item 4",
+                        "name": "1F - Center Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "1F - Hidden Item 1",
+                        "name": "1F - Southeast Hidden Item",
                         "access_rules": [
                             "^$can_flash,^$hid"
                         ],
@@ -5209,7 +5209,7 @@
                         ]
                     },
                     {
-                        "name": "1F - Hidden Item 2",
+                        "name": "1F - Northeast Hidden Item",
                         "access_rules": [
                             "^$can_flash,^$hid"
                         ],
@@ -5218,31 +5218,31 @@
                         ]
                     },
                     {
-                        "name": "2F - Item 1",
+                        "name": "2F - Northeast Item",
                         "access_rules": [
                             "^$can_flash,$can_waterfall"
                         ]
                     },
                     {
-                        "name": "2F - Item 2",
+                        "name": "2F - West Item",
                         "access_rules": [
                             "^$can_flash,$can_waterfall"
                         ]
                     },
                     {
-                        "name": "2F - Item 3",
+                        "name": "2F - East Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "2F - Chambers Item 1",
+                        "name": "2F - North Chambers Item",
                         "access_rules": [
                             "^$can_flash,$can_waterfall"
                         ]
                     },
                     {
-                        "name": "2F - Chambers Item 2",
+                        "name": "2F - South Chambers Item",
                         "access_rules": [
                             "^$can_flash,$can_waterfall"
                         ]
@@ -5905,7 +5905,7 @@
                         "name": "Cleanse Tag from Woman in House"
                     },
                     {
-                        "name": "Underground Path - Hidden Item in North",
+                        "name": "Underground Path - North Hidden Item",
                         "access_rules": [
                             "^$hid, $passage|ns"
                         ],
@@ -5914,7 +5914,7 @@
                         ]
                     },
                     {
-                        "name": "Underground Path - Hidden Item in South",
+                        "name": "Underground Path - South Hidden Item",
                         "access_rules": [
                             "^$hid, $passage|ns"
                         ],
