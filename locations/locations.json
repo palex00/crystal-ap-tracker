@@ -224,10 +224,10 @@
                 "name": "Route 31",
                 "sections": [
                     {
-                        "name": "Item 1"
+                        "name": "South Item"
                     },
                     {
-                        "name": "Item 2"
+                        "name": "Northeast Item"
                     },
                     {
                         "name": "Berry Tree",
@@ -378,13 +378,13 @@
                         ]
                     },
                     {
-                        "name": "Item 1",
+                        "name": "Northwest Item across Water",
                         "access_rules": [
                             "$can_surf"
                         ]
                     },
                     {
-                        "name": "Item 2",
+                        "name": "Northwest Item across Water",
                         "access_rules": [
                             "$can_surf"
                         ]
@@ -664,13 +664,13 @@
                         ]
                     },
                     {
-                        "name": "Item 1",
+                        "name": "South Item",
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
                         ]
                     },
                     {
-                        "name": "Item 2",
+                        "name": "North Item",
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
                         ]
@@ -1509,7 +1509,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Item 1"
+                        "name": "Item"
                     },
                     {
                         "name": "Pokemaniac Donald",
@@ -1545,7 +1545,7 @@
                         ]
                     },
                     {
-                        "name": "Hidden Item in Center",
+                        "name": "Center Hidden Item",
                         "access_rules": [
                             "^$hid"
                         ],
@@ -1570,7 +1570,7 @@
                         ]
                     },
                     {
-                        "name": "B2F - Item 2",
+                        "name": "B2F - Southwest Item",
                         "access_rules": [
                             "CARD_KEY",
                             "BASEMENT_KEY"
@@ -1637,7 +1637,7 @@
                         ]
                     },
                     {
-                        "name": "B2F - Hidden Item 1",
+                        "name": "B2F - Southeast Hidden Item",
                         "access_rules": [
                             "^$hid,CARD_KEY",
                             "^$hid,BASEMENT_KEY"
@@ -1647,7 +1647,7 @@
                         ]
                     },
                     {
-                        "name": "B2F - Hidden Item 2",
+                        "name": "B2F - West Hidden Item",
                         "access_rules": [
                             "^$hid,CARD_KEY",
                             "^$hid,BASEMENT_KEY"
@@ -1657,21 +1657,21 @@
                         ]
                     },
                     {
-                        "name": "Warehouse - Item 1",
+                        "name": "Warehouse - Southeast Item",
                         "access_rules": [
                             "CARD_KEY",
                             "BASEMENT_KEY"
                         ]
                     },
                     {
-                        "name": "Warehouse - Item 2",
+                        "name": "Warehouse - Center Item",
                         "access_rules": [
                             "CARD_KEY",
                             "BASEMENT_KEY"
                         ]
                     },
                     {
-                        "name": "Warehouse - Item 3",
+                        "name": "Warehouse - Northwest Item",
                         "access_rules": [
                             "CARD_KEY",
                             "BASEMENT_KEY"
@@ -2043,10 +2043,10 @@
                         "name": "Quick Claw from Lady"
                     },
                     {
-                        "name": "Item 1"
+                        "name": "Northeast Item"
                     },
                     {
-                        "name": "Item 2"
+                        "name": "Southwest Item"
                     },
                     {
                         "name": "Lass Krise",
@@ -2843,13 +2843,13 @@
                         ]
                     },
                     {
-                        "name": "5F - Item 1"
+                        "name": "5F - East Item"
                     },
                     {
-                        "name": "5F - Item 2"
+                        "name": "5F - Center Item"
                     },
                     {
-                        "name": "5F - Item 3"
+                        "name": "5F - Southeast Item"
                     },
                     {
                         "name": "5F - Bird Keeper Denis",
@@ -3268,49 +3268,49 @@
                         ]
                     },
                     {
-                        "name": "1F - Item in Northeast",
+                        "name": "1F - Item in Northeast Island",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "1F - Item in Southwest",
+                        "name": "1F - Item in Southwest Island",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "B1F - Item 1",
+                        "name": "B1F - Southeast Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "B1F - Item 2",
+                        "name": "B1F - Southwest Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "B1F - Item 3",
+                        "name": "B1F - South Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "B1F - Item 4",
+                        "name": "B1F - Northwest Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "B1F - Item 5",
+                        "name": "B1F - North Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "B1F - Hidden Item in Northeast",
+                        "name": "B1F - Northeast Hidden Item",
                         "access_rules": [
                             "^$can_flash,^$hid"
                         ],
@@ -3319,7 +3319,7 @@
                         ]
                     },
                     {
-                        "name": "B1F - Hidden Item in East",
+                        "name": "B1F - East Hidden Item",
                         "access_rules": [
                             "^$can_flash,^$hid"
                         ],
@@ -3337,19 +3337,19 @@
                         ]
                     },
                     {
-                        "name": "B2F - Item 1",
+                        "name": "B2F - East Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "B2F - Item 2",
+                        "name": "B2F - West Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
                     },
                     {
-                        "name": "B2F - Item 3",
+                        "name": "B2F - North Item",
                         "access_rules": [
                             "^$can_flash"
                         ]
@@ -3496,13 +3496,13 @@
                 ],
                 "sections": [
                     {
-                        "name": "Item 1",
+                        "name": "Item across Water",
                         "access_rules": [
                             "$can_surf"
                         ]
                     },
                     {
-                        "name": "Item 2"
+                        "name": "West Item"
                     },
                     {
                         "name": "Berry Tree 1",
@@ -3599,47 +3599,47 @@
                         ]
                     },
                     {
-                        "name": "1F Inside - Item 1",
+                        "name": "1F Inside - West Item",
                         "access_rules": [
                             "$can_strength",
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "1F Inside - Item 2",
+                        "name": "1F Inside - Center Item (Left)",
                         "access_rules": [
                             "$can_strength",
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "1F Inside - Item 3",
+                        "name": "1F Inside - East Item",
                         "access_rules": [
                             "$can_strength",
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "1F Inside - Item 4",
+                        "name": "1F Inside - Southeast Item",
                         "access_rules": [
                             "$can_strength",
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "1F Inside - Item 5",
+                        "name": "1F Inside - Northwest Item",
                         "access_rules": [
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "1F Inside - Item 6",
+                        "name": "1F Inside - North Item",
                         "access_rules": [
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "1F Inside - Item 7",
+                        "name": "1F Inside - Center Item (Right)",
                         "access_rules": [
                             "$can_waterfall"
                         ]
@@ -3670,37 +3670,37 @@
                         ]
                     },
                     {
-                        "name": "2F - Item 1",
+                        "name": "2F - Southwest Item",
                         "access_rules": [
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "2F - Item 2",
+                        "name": "2F - Northwest Item",
                         "access_rules": [
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "2F - Item 3",
+                        "name": "2F - Northeast Item",
                         "access_rules": [
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "2F - Item 4",
+                        "name": "2F - East Item",
                         "access_rules": [
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "2F - Item 5",
+                        "name": "2F - West Item",
                         "access_rules": [
                             "$can_waterfall"
                         ]
                     },
                     {
-                        "name": "2F - Item 6",
+                        "name": "2F - Center Item",
                         "access_rules": [
                             "$can_waterfall"
                         ]
@@ -3724,31 +3724,31 @@
                         ]
                     },
                     {
-                        "name": "B1F - Item 1",
+                        "name": "B1F - Southeast Item",
                         "access_rules": [
                             "$can_surf"
                         ]
                     },
                     {
-                        "name": "B1F - Item 2",
+                        "name": "B1F - East Item",
                         "access_rules": [
                             "$can_surf"
                         ]
                     },
                     {
-                        "name": "B1F - Item 3",
+                        "name": "B1F - Northeast Item",
                         "access_rules": [
                             "$can_surf"
                         ]
                     },
                     {
-                        "name": "B1F - Item 4",
+                        "name": "B1F - South Item",
                         "access_rules": [
                             "$can_surf"
                         ]
                     },
                     {
-                        "name": "B1F - Item 5",
+                        "name": "B1F - West Item",
                         "access_rules": [
                             "$can_surf"
                         ]
@@ -4155,13 +4155,13 @@
                         ]
                     },
                     {
-                        "name": "Item 1",
+                        "name": "Northwest Item",
                         "access_rules": [
                             "$can_cut"
                         ]
                     },
                     {
-                        "name": "Item 2",
+                        "name": "Northeast Item",
                         "access_rules": [
                             "$can_cut"
                         ]
@@ -4212,7 +4212,7 @@
                         ]
                     },
                     {
-                        "name": "Hidden Item in Northeast",
+                        "name": "Northeast Hidden Item",
                         "access_rules": [
                             "^$hid"
                         ],
@@ -4258,16 +4258,16 @@
                 ],
                 "sections": [
                     {
-                        "name": "Item 1"
+                        "name": "West Item"
                     },
                     {
-                        "name": "Item 2",
+                        "name": "Center Item across Water",
                         "access_rules": [
                             "$can_surf"
                         ]
                     },
                     {
-                        "name": "Item 3"
+                        "name": "East Item"
                     },
                     {
                         "name": "Berry Tree",
@@ -4356,13 +4356,13 @@
                         "name": "1F - HM07 in Itemball"
                     },
                     {
-                        "name": "1F - Item 1",
+                        "name": "1F - Southeast Item",
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City"
                         ]
                     },
                     {
-                        "name": "1F - Item 2",
+                        "name": "1F - East Item",
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City"
                         ]
@@ -4383,16 +4383,16 @@
                         ]
                     },
                     {
-                        "name": "B2F - Item 1"
+                        "name": "B2F - Northwest Item"
                     },
                     {
-                        "name": "B2F - Item 2",
+                        "name": "B2F - Center Item",
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City"
                         ]
                     },
                     {
-                        "name": "B2F - Item 3",
+                        "name": "B2F - Southeast Item",
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City"
                         ]
@@ -4659,16 +4659,16 @@
                 ],
                 "sections": [
                     {
-                        "name": "Item 1"
+                        "name": "North Item"
                     },
                     {
-                        "name": "Item 2"
+                        "name": "Center Item (Top)"
                     },
                     {
-                        "name": "Item 3"
+                        "name": "Center Item (Bottom)"
                     },
                     {
-                        "name": "Item 4"
+                        "name": "Southwest Item"
                     },
                     {
                         "name": "Berry Tree",
@@ -4834,13 +4834,13 @@
                         ]
                     },
                     {
-                        "name": "Item 1",
+                        "name": "West Item across Water",
                         "access_rules": [
                             "$can_surf"
                         ]
                     },
                     {
-                        "name": "Item 2",
+                        "name": "East Item behind Whirlpool",
                         "access_rules": [
                             "@JohtoKanto/Route 27/Post-Waterfall, $can_whirlpool"
                         ]
@@ -5478,25 +5478,25 @@
                         ]
                     },
                     {
-                        "name": "Item 1",
+                        "name": "Northeast Item",
                         "access_rules": [
                             "@JohtoKanto/Route 2/Diglett's Cave Section"
                         ]
                     },
                     {
-                        "name": "Item 2",
+                        "name": "West Item in Forest",
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section"
                         ]
                     },
                     {
-                        "name": "Item 3",
+                        "name": "Southeast Item",
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section, $can_cut"
                         ]
                     },
                     {
-                        "name": "Item 4",
+                        "name": "Center Item in Forest",
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section"
                         ]
@@ -5538,7 +5538,7 @@
                         ]
                     },
                     {
-                        "name": "Hidden Item 1",
+                        "name": "North Hidden Item in Forest",
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section, ^$hid"
                         ],
@@ -5547,7 +5547,7 @@
                         ]
                     },
                     {
-                        "name": "Hidden Item 2",
+                        "name": "West Hidden Item in Forest",
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section, ^$hid"
                         ],
@@ -5556,7 +5556,7 @@
                         ]
                     },
                     {
-                        "name": "Hidden Item 3",
+                        "name": "East Hidden Item in Forest",
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section, ^$hid"
                         ],
@@ -5565,7 +5565,7 @@
                         ]
                     },
                     {
-                        "name": "Hidden Item 4",
+                        "name": "Southeast Hidden Item in Forest",
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section, ^$hid"
                         ],
@@ -6114,13 +6114,13 @@
                 ],
                 "sections": [
                     {
-                        "name": "1F - Item 1"
+                        "name": "1F - East Item"
                     },
                     {
-                        "name": "1F - Item 2"
+                        "name": "1F - Center Item"
                     },
                     {
-                        "name": "1F - Hidden Item 1",
+                        "name": "1F - Northeast Hidden Item",
                         "access_rules": [
                             "^$hid"
                         ],
@@ -6129,7 +6129,7 @@
                         ]
                     },
                     {
-                        "name": "1F - Hidden Item 2",
+                        "name": "1F - Southeast Hidden Item",
                         "access_rules": [
                             "^$hid"
                         ],
@@ -6138,13 +6138,13 @@
                         ]
                     },
                     {
-                        "name": "B1F - Item 1"
+                        "name": "B1F - South Item"
                     },
                     {
-                        "name": "B1F - Item 2"
+                        "name": "B1F - West Item"
                     },
                     {
-                        "name": "B1F - Item 3"
+                        "name": "B1F - North Item"
                     },
                     {
                         "name": "B1F - Hidden Item",
@@ -6537,7 +6537,7 @@
                         ]
                     },
                     {
-                        "name": "TM03 from Man in Mansion Roof"
+                        "name": "TM03 from Man on Mansion Roof"
                     },
                     {
                         "name": "Hidden Item at Dead End",
@@ -6983,13 +6983,13 @@
                         "name": "Super Rod from Fishing Guru"
                     },
                     {
-                        "name": "Item 1",
+                        "name": "Item behind North Cut Tree",
                         "access_rules": [
                             "$can_cut"
                         ]
                     },
                     {
-                        "name": "Item 2",
+                        "name": "Item behind South Cut Tree across Water",
                         "access_rules": [
                             "$can_cut,$can_surf"
                         ]
