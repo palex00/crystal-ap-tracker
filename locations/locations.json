@@ -384,7 +384,7 @@
                         ]
                     },
                     {
-                        "name": "Northwest Item across Water",
+                        "name": "Northeast Item across Water",
                         "access_rules": [
                             "$can_surf"
                         ]
@@ -1637,7 +1637,7 @@
                         ]
                     },
                     {
-                        "name": "B2F - Southeast Hidden Item",
+                        "name": "B2F - Center Hidden Item",
                         "access_rules": [
                             "^$hid,CARD_KEY",
                             "^$hid,BASEMENT_KEY"
@@ -3319,7 +3319,7 @@
                         ]
                     },
                     {
-                        "name": "B1F - East Hidden Item",
+                        "name": "B1F - Southeast Hidden Item",
                         "access_rules": [
                             "^$can_flash,^$hid"
                         ],
@@ -3694,7 +3694,7 @@
                         ]
                     },
                     {
-                        "name": "2F - West Item",
+                        "name": "2F - North Item",
                         "access_rules": [
                             "$can_waterfall"
                         ]
