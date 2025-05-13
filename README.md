@@ -23,10 +23,8 @@ apworld | pack version
 - Some locations still have their pre-3.2.0 names
 
 ## Planned Features
-- Enhanced "Overview"-Modes (Johto, Kanto, Both (horizontal), Both (vertical)
 - More submaps
 - Continuos support of the AP integration
-- Overview Squares for Whirl Islands
 
 ## User-Overrides
 You can adjust the aesthetic of certain aspects of this pack via user-overrides. For more information, please visit the [user-overrides branch](https://github.com/palex00/crystal-ap-tracker/tree/user-overrides).
