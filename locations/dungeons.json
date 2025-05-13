@@ -9197,6 +9197,21 @@
                 "map_locations": [
                     {
                         "map": "Route41",
+                        "x": 200,
+                        "y": 280
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Hidden Item on Southwest Island"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route41",
                         "x": 152,
                         "y": 568
                     }
@@ -9868,8 +9883,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Top Right Item (Flash)",
-                        "name": "Ruins of Alph - Aerodactyl Room Top Right Item (Flash)"
+                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Bottom Right Item (Flash)",
+                        "name": "Ruins of Alph - Aerodactyl Room Bottom Right Item (Flash)"
                     },
                     {
                         "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Bottom Left Item (Flash)",
