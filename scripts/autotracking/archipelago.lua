@@ -87,9 +87,9 @@ function onClear(slot_data)
     Tracker:FindObjectForCode("tea_guard").CurrentStage = stages[key]
     
     if PLAYER_ID>-1 then
-        if Archipelago:GetPlayerAlias(PLAYER_ID) == "Chrism_Crystal" then
+        if string.lower(Archipelago:GetPlayerAlias(PLAYER_ID)):find("chrism") then
             Tracker:FindObjectForCode("chrism").CurrentStage = 1
-            else
+        else
             Tracker:FindObjectForCode("chrism").CurrentStage = 0
         end
         updateEvents(0)
