@@ -1106,41 +1106,6 @@
                 }
             },
             {
-                "title": "First Voyage",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Fast Ship 1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "FastShip1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Fast Ship 1F Cabins",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "FastShipCabins_FirstVoyage"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Fast Ship B1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "FastShipB1F_FirstVoyage"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
                 "title": "Eastbound",
                 "content": {
                     "type": "tabbed",
