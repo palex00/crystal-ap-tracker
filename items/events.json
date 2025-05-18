@@ -1,116 +1,216 @@
 [
-  {
-    "name": "Beat Falkner",
-    "type": "toggle",
-    "img": "/images/events/beat_falkner.png",
-    "codes": "EVENT_BEAT_FALKNER"
-  },
-  {
-    "name": "Egg Collected",
-    "type": "toggle",
-    "img": "/images/events/egg_collected.png",
-    "codes": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
-  },
-  {
-    "name": "Kenya Collected",
-    "type": "toggle",
-    "img": "/images/events/kenya_collected.png",
-    "codes": "EVENT_GOT_KENYA"
-  },
-  {
-    "name": "Kenya Delivered",
-    "type": "toggle",
-    "img": "/images/events/kenya_delivered.png",
-    "codes": "EVENT_GAVE_KENYA"
-  },
-  {
-    "name": "Cleared Slowpoke Well",
-    "type": "toggle",
-    "img": "/images/events/cleared_slowpoke_well.png",
-    "codes": "EVENT_CLEARED_SLOWPOKE_WELL"
-  },
-  {
-    "name": "Herded Farfetch'd",
-    "type": "toggle",
-    "img": "/images/events/herded_farfetchd.png",
-    "codes": "EVENT_HERDED_FARFETCHD"
-  },
-  {
-    "name": "Released the Beasts",
-    "type": "toggle",
-    "img": "/images/events/released_the_beasts.png",
-    "codes": "EVENT_RELEASED_THE_BEASTS"
-  },
-  {
-    "name": "Heal Amphy",
-    "type": "toggle",
-    "img": "/images/events/jasmine_returned.png",
-    "codes": "EVENT_JASMINE_RETURNED_TO_GYM"
-  },
-  {
-    "name": "Beat Chuck",
-    "type": "toggle",
-    "img": "/images/events/beat_chuck.png",
-    "codes": "EVENT_BEAT_CHUCK"
-  },
-  {
-    "name": "Help Lance",
-    "type": "toggle",
-    "img": "/images/events/help_lance.png",
-    "codes": "EVENT_DECIDED_TO_HELP_LANCE"
-  },
-  {
-    "name": "Clear Rocket HQ",
-    "type": "toggle",
-    "img": "/images/events/hideout_cleared.png",
-    "codes": "EVENT_CLEARED_ROCKET_HIDEOUT"
-  },
-  {
-    "name": "Clear Radio Tower",
-    "type": "toggle",
-    "img": "/images/events/tower_cleared.png",
-    "codes": "EVENT_CLEARED_RADIO_TOWER"
-  },
-  {
-    "name": "Defeat Elite Four",
-    "type": "toggle",
-    "img": "/images/events/become_champion.png",
-    "codes": "EVENT_BEAT_ELITE_FOUR"
-  },
-  {
-    "name": "Restore Power to Kanto",
-    "type": "toggle",
-    "img": "/images/events/restored_power.png",
-    "codes": "EVENT_RESTORED_POWER_TO_KANTO"
-  },
-  {
-    "name": "Blue Returns to Gym",
-    "type": "toggle",
-    "img": "/images/events/blue_returned.png",
-    "codes": "EVENT_VIRIDIAN_GYM_BLUE"
-  },
-  {
-    "name": "Defeat Red",
-    "type": "toggle",
-    "img": "/images/events/defeat_red.png",
-    "codes": "EVENT_BEAT_RED"
-  },
-  {
-    "name": "S.S. Aqua Cleared",
-    "type": "toggle",
-    "img": "",
-    "codes": "EVENT_FAST_SHIP_FOUND_GIRL"
-  },
-  {
-    "name": "Woke Up Snorlax",
-    "type": "toggle",
-    "img": "/images/events/woke_up_snorlax.png",
-    "codes": "EVENT_FOUGHT_SNORLAX"
-  },
-  {
-    "name": "DUMMY",
-    "type": "toggle",
-    "img": "/images/events/woke_up_snorlax.png",
-    "codes": "DUMMY"
-  }
+    {
+        "name": "Beat Falkner",
+        "type": "toggle",
+        "img": "/images/events/beat_falkner.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_FALKNER"
+    },
+    {
+        "name": "Beat Bugsy",
+        "type": "toggle",
+        "img": "/images/events/beat_bugsy.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_BUGSY"
+    },
+    {
+        "name": "Beat Whitney",
+        "type": "toggle",
+        "img": "/images/events/beat_whitney.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_WHITNEY"
+    },
+    {
+        "name": "Beat Morty",
+        "type": "toggle",
+        "img": "/images/events/beat_morty.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_MORTY"
+    },
+    {
+        "name": "Beat Jasmine",
+        "type": "toggle",
+        "img": "/images/events/beat_jasmine.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_JASMINE"
+    },
+    {
+        "name": "Beat Chuck",
+        "type": "toggle",
+        "img": "/images/events/beat_chuck.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_CHUCK"
+    },
+    {
+        "name": "Beat Pryce",
+        "type": "toggle",
+        "img": "/images/events/beat_pryce.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_PRYCE"
+    },
+    {
+        "name": "Beat Clair",
+        "type": "toggle",
+        "img": "/images/events/beat_clair.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_CLAIR"
+    },
+    {
+        "name": "Beat Brock",
+        "type": "toggle",
+        "img": "/images/events/beat_brock.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_BROCK"
+    },
+    {
+        "name": "Beat Misty",
+        "type": "toggle",
+        "img": "/images/events/beat_misty.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_MISTY"
+    },
+    {
+        "name": "Beat Ltsurge",
+        "type": "toggle",
+        "img": "/images/events/beat_ltsurge.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_LTSURGE"
+    },
+    {
+        "name": "Beat Erika",
+        "type": "toggle",
+        "img": "/images/events/beat_erika.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_ERIKA"
+    },
+    {
+        "name": "Beat Janine",
+        "type": "toggle",
+        "img": "/images/events/beat_janine.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_JANINE"
+    },
+    {
+        "name": "Beat Sabrina",
+        "type": "toggle",
+        "img": "/images/events/beat_sabrina.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_SABRINA"
+    },
+    {
+        "name": "Beat Blaine",
+        "type": "toggle",
+        "img": "/images/events/beat_blaine.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_BLAINE"
+    },
+    {
+        "name": "Beat Blue",
+        "type": "toggle",
+        "img": "/images/events/beat_blue.png",
+        "img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_BLUE"
+    },
+    {
+        "name": "Egg Collected",
+        "type": "toggle",
+        "img": "/images/events/egg_collected.png",
+        "codes": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
+    },
+    {
+        "name": "Kenya Collected",
+        "type": "toggle",
+        "img": "/images/events/kenya_collected.png",
+        "codes": "EVENT_GOT_KENYA"
+    },
+    {
+        "name": "Kenya Delivered",
+        "type": "toggle",
+        "img": "/images/events/kenya_delivered.png",
+        "codes": "EVENT_GAVE_KENYA"
+    },
+    {
+        "name": "Cleared Slowpoke Well",
+        "type": "toggle",
+        "img": "/images/events/cleared_slowpoke_well.png",
+        "codes": "EVENT_CLEARED_SLOWPOKE_WELL"
+    },
+    {
+        "name": "Herded Farfetch'd",
+        "type": "toggle",
+        "img": "/images/events/herded_farfetchd.png",
+        "codes": "EVENT_HERDED_FARFETCHD"
+    },
+    {
+        "name": "Released the Beasts",
+        "type": "toggle",
+        "img": "/images/events/released_the_beasts.png",
+        "codes": "EVENT_RELEASED_THE_BEASTS"
+    },
+    {
+        "name": "Heal Amphy",
+        "type": "toggle",
+        "img": "/images/events/jasmine_returned.png",
+        "codes": "EVENT_JASMINE_RETURNED_TO_GYM"
+    },
+    {
+        "name": "Help Lance",
+        "type": "toggle",
+        "img": "/images/events/help_lance.png",
+        "codes": "EVENT_DECIDED_TO_HELP_LANCE"
+    },
+    {
+        "name": "Clear Rocket HQ",
+        "type": "toggle",
+        "img": "/images/events/hideout_cleared.png",
+        "codes": "EVENT_CLEARED_ROCKET_HIDEOUT"
+    },
+    {
+        "name": "Clear Radio Tower",
+        "type": "toggle",
+        "img": "/images/events/tower_cleared.png",
+        "codes": "EVENT_CLEARED_RADIO_TOWER"
+    },
+    {
+        "name": "Defeat Elite Four",
+        "type": "toggle",
+        "img": "/images/events/become_champion.png",
+        "codes": "EVENT_BEAT_ELITE_FOUR"
+    },
+    {
+        "name": "Restore Power to Kanto",
+        "type": "toggle",
+        "img": "/images/events/restored_power.png",
+        "codes": "EVENT_RESTORED_POWER_TO_KANTO"
+    },
+    {
+        "name": "Blue Returns to Gym",
+        "type": "toggle",
+        "img": "/images/events/blue_returned.png",
+        "codes": "EVENT_VIRIDIAN_GYM_BLUE"
+    },
+    {
+        "name": "Defeat Red",
+        "type": "toggle",
+        "img": "/images/events/defeat_red.png",
+        "codes": "EVENT_BEAT_RED"
+    },
+    {
+        "name": "S.S. Aqua Cleared",
+        "type": "toggle",
+        "img": "",
+        "codes": "EVENT_FAST_SHIP_FOUND_GIRL"
+    },
+    {
+        "name": "Woke Up Snorlax",
+        "type": "toggle",
+        "img": "/images/events/woke_up_snorlax.png",
+        "codes": "EVENT_FOUGHT_SNORLAX"
+    },
+    {
+        "name": "DUMMY",
+        "type": "toggle",
+        "img": "/images/events/woke_up_snorlax.png",
+        "codes": "DUMMY"
+    }
 ]
