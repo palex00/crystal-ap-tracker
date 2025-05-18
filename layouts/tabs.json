@@ -17,6 +17,16 @@
                             }
                         },
                         {
+                            "title": "Pokedex",
+                            "content": {
+                                "type": "dock",
+                                "content": {
+                                    "type": "layout",
+                                    "key": "pokedex_grid_full"
+                                }
+                            }
+                        },
+                        {
                             "title": "Johto Cities",
                             "content": {
                                 "type": "dock",
@@ -180,6 +190,16 @@
                                         "content": {
                                             "type": "layout",
                                             "key": "overworld"
+                                        }
+                                    }
+                                },
+                                {
+                                    "title": "Pokedex",
+                                    "content": {
+                                        "type": "dock",
+                                        "content": {
+                                            "type": "layout",
+                                            "key": "pokedex_grid_full"
                                         }
                                     }
                                 }
