@@ -42,16 +42,21 @@ function dump_table(o, depth)
 end
 
 function toggle_johto(code)
+    local coffee = has("coffee_west") or has("coffee_north") or has("coffee_east") or has("coffee_south")
     if has("johto_only_off") then
         Tracker:AddMaps("maps/maps_johto_and_kanto.json")
         Tracker:AddLayouts("layouts/tabs.json")
         Tracker:AddLayouts("layouts/overworld.json")
-        Tracker:AddLayouts("layouts/items.json")
         Tracker:AddLayouts("layouts/settings.json")
         if has("r32_guy_egg") then
             Tracker:AddLayouts("layouts/events.json")
         else
             Tracker:AddLayouts("layouts/events_no_egg.json")
+        end
+        if coffee then
+            Tracker:AddLayouts("layouts/items.json")
+        else
+            Tracker:AddLayouts("layouts/items_no_tea.json")      
         end
     else
         if has("badges_on") then

@@ -36,7 +36,7 @@ function onClear(slot_data)
     print(dump_table(slot_data))
 
     for k, v in pairs(slot_data) do
-        if  k == apworld_version ~=nil then
+        if  k == "apworld_version" then
             local version_str = tostring(v)
             local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
             if first_two_dots == "3.2" or nil then
