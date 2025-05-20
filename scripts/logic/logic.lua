@@ -194,3 +194,7 @@ function kantoaccess()
   or (has("kanto_access_snorlax") and has("EVENT_FOUGHT_SNORLAX"))
   or (has("kanto_access_badges") and badges() >= progCount("kanto_access_badges_count"))
 end
+
+function scout()
+  return AccessibilityLevel.Inspect
+end

@@ -36,12 +36,7 @@ function onClear(slot_data)
     print(dump_table(slot_data))
 
     for k, v in pairs(slot_data) do
-        if SLOT_CODES[k] then
-            Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
-            -- print("Setting " .. k .. " to " .. v)
-        elseif BADGE_CODES[k] then
-            Tracker:FindObjectForCode(BADGE_CODES[k].code).AcquiredCount = BADGE_CODES[k].mapping[v]
-        elseif k == apworld_version ~=nil then
+        if  k == apworld_version ~=nil then
             local version_str = tostring(v)
             local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
             if first_two_dots == "3.2" or nil then
@@ -49,6 +44,11 @@ function onClear(slot_data)
             else
                 Tracker:AddLayouts("layouts/versionmismatch.json")
             end
+        elseif SLOT_CODES[k] then
+            Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
+            -- print("Setting " .. k .. " to " .. v)
+        elseif BADGE_CODES[k] then
+            Tracker:FindObjectForCode(BADGE_CODES[k].code).AcquiredCount = BADGE_CODES[k].mapping[v]
         end
     end
 

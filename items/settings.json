@@ -977,5 +977,15 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Dexsanity",
+    "img": "/images/settings/pokedex.png",
+    "codes": "dexsanity",
+    "type": "consumable",
+    "allow_disabled": true,
+    "min_quantity": 0,
+    "max_quantity": 251,
+    "initial_quantity": 0
   }
 ]

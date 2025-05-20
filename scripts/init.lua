@@ -8,9 +8,11 @@ Tracker:AddItems("items/pokemon.json")
 -- Logic
 ScriptHost:LoadScript("scripts/utils.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
+ScriptHost:LoadScript("scripts/logic/dexsanity.lua")
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
+Tracker:AddMaps("maps/pokedex.json")
 Tracker:AddMaps("maps/ilex_forest_no_tree.json")
 Tracker:AddMaps("maps/route_2_ledge.json")
 Tracker:AddMaps("maps/lake_of_rage_vanilla.json")
@@ -19,7 +21,9 @@ Tracker:AddMaps("maps/maps_johto_and_kanto.json")
 
 -- Locations
 Tracker:AddLocations("locations/locations.json")
-Tracker:AddLocations("locations/dungeons.json")
+--Tracker:AddLocations("locations/dungeons.json")
+Tracker:AddLocations("locations/dexsanity.json")
+Tracker:AddLocations("locations/pokedex.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/dungeon_maps.json")
@@ -31,6 +35,7 @@ Tracker:AddLayouts("layouts/overworld.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/pokedex.json")
+Tracker:AddLayouts("layouts/dexsanity_items.json")
 
 -- AutoTracking for Poptracker
 ScriptHost:LoadScript("scripts/autotracking.lua")
