@@ -23,72 +23,225 @@
             {
                 "title": "Violet City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "VioletCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Violet City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Violet Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Azalea Town",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "AzaleaTown"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Azalea Town",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "AzaleaTown"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Azalea Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "AzaleaGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Goldenrod City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "GoldenrodCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Goldenrod City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Goldenrod Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Ecruteak City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "EcruteakCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Ecruteak City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ecruteak Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Olivine City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "OlivineCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Olivine City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Olivine Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Cianwood City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "CianwoodCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Cianwood City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Cianwood Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Mahogany Town",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "MahoganyTown"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Mahogany Town",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MahoganyTown"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mahogany Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MahoganyGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Blackthorn City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "BlackthornCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Blackthorn City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BlackthornCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Blackthorn Gym",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "BlackthornGym1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "BlackthornGym2F"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     ]
                 }
             }
@@ -271,12 +424,21 @@
                 }
             },
             {
+                "title": "Route 23",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route23"
+                    ]
+                }
+            },
+            {
                 "title": "Route 26",
                 "content": {
                     "type": "map",
                     "maps": [
-                        "Route26North",
-                        "Route26South"
+                        "Route26South",
+                        "Route26North"
                     ]
                 }
             },
@@ -367,9 +529,62 @@
             {
                 "title": "Ruins of Alph",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "RuinsOfAlphOutside"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Outside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphOutside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Inner Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphInnerChamber"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Kabuto Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphKabutoItemRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Omanyte Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphOmanyteItemRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Aerodactyl Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphAerodactylItemRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ho-Oh Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphHoOhItemRoom"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -731,6 +946,15 @@
                                     "TinTower9F"
                                 ]
                             }
+                        },
+                        {
+                            "title": "Tin Tower Roof",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "TinTowerRoof"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -803,20 +1027,20 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Whirl Islands NE",
+                            "title": "Whirl Islands 1F",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "WhirlIslandNE"
+                                    "WhirlIsland1F"
                                 ]
                             }
                         },
                         {
-                            "title": "Whirl Islands SW",
+                            "title": "Whirl Islands Cave",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "WhirlIslandSW"
+                                    "WhirlIslandCave"
                                 ]
                             }
                         },
@@ -835,6 +1059,15 @@
                                 "type": "map",
                                 "maps": [
                                     "WhirlIslandB2F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Whirl Islands Lugia Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "WhirlIslandLugiaChamber"
                                 ]
                             }
                         }
@@ -1183,54 +1416,165 @@
             {
                 "title": "Viridian City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "ViridianCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Viridian City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ViridianCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Viridian Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ViridianGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Pewter City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "PewterCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Pewter City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Pewter Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Cerulean City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "CeruleanCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Cerulean City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Cerulean Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Vermilion City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "VermilionCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Vermilion City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Vermilion Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Celadon City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "CeladonCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Celadon City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Celadon Cafe",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonCafe"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Celadon Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Saffron City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "SaffronCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Saffron City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SaffronCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Saffron Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SaffronGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -1246,18 +1590,52 @@
             {
                 "title": "Fuchsia City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "FuchsiaCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Fuchsia City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FuchsiaCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fuchsia Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FuchsiaGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Cinnabar Island",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "CinnabarIsland"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Cinnabar Island",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CinnabarIsland"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Seafoam Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SeafoamGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             }
@@ -1321,6 +1699,15 @@
                 }
             },
             {
+                "title": "Route 7",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route7"
+                    ]
+                }
+            },
+            {
                 "title": "Route 8",
                 "content": {
                     "type": "map",
@@ -1343,7 +1730,7 @@
                 "content": {
                     "type": "map",
                     "maps": [
-                        "Route10South"
+                        "Route10"
                     ]
                 }
             },
@@ -1439,6 +1826,24 @@
                 }
             },
             {
+                "title": "Route 22",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route22"
+                    ]
+                }
+            },
+            {
+                "title": "Route 24",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route24"
+                    ]
+                }
+            },
+            {
                 "title": "Route 25",
                 "content": {
                     "type": "map",
@@ -1497,15 +1902,6 @@
                 }
             },
             {
-                "title": "Celadon Cafe",
-                "content": {
-                    "type": "map",
-                    "maps": [
-                        "CeladonCafe"
-                    ]
-                }
-            },
-            {
                 "title": "Underground Path",
                 "content": {
                     "type": "map",
@@ -1520,11 +1916,11 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Mount Moon Inner",
+                            "title": "Mount Moon",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "MountMoonInner"
+                                    "MountMoon"
                                 ]
                             }
                         },
