@@ -344,7 +344,11 @@
                         ]
                     },
                     {
-                        "name": "Gym - TM31 from Falkner"
+                        "name": "Gym - Beat Falkner",
+                        "hosted_item": "EVENT_BEAT_FALKNER",
+                        "visibility_rules": [
+                            "r32_guy_egg"
+                        ]
                     },
                     {
                         "name": "Gym - Zephyr Badge from Falkner",
@@ -361,11 +365,7 @@
                         "hosted_item": "ZEPHYR_BADGE"
                     },
                     {
-                        "name": "Gym - Beat Falkner",
-                        "hosted_item": "EVENT_BEAT_FALKNER",
-                        "visibility_rules": [
-                            "r32_guy_egg"
-                        ]
+                        "name": "Gym - TM31 from Falkner"
                     },
                     {
                         "name": "Egg Collected",
@@ -1042,27 +1042,10 @@
                 ],
                 "sections": [
                     {
-                        "name": "Gym - Hive Badge from Bugsy",
+                        "name": "Gym - Twins Amy & May",
                         "visibility_rules": [
-                            "badges_on",
-                            "badges_shuffle"
+                            "trainersanity_on"
                         ],
-                        "access_rules": [
-                            "EVENT_CLEARED_SLOWPOKE_WELL"
-                        ]
-                    },
-                    {
-                        "name": "​Gym - Hive Badge from Bugsy",
-                        "visibility_rules": [
-                            "badges_off"
-                        ],
-                        "hosted_item": "HIVE_BADGE",
-                        "access_rules": [
-                            "EVENT_CLEARED_SLOWPOKE_WELL"
-                        ]
-                    },
-                    {
-                        "name": "Gym - TM49 from Bugsy",
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
                         ]
@@ -1095,10 +1078,34 @@
                         ]
                     },
                     {
-                        "name": "Gym - Twins Amy & May",
+                        "name": "Gym - Beat Bugsy",
+                        "hosted_item": "EVENT_BEAT_BUGSY",
+                        "access_rules": [
+                            "EVENT_CLEARED_SLOWPOKE_WELL"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Hive Badge from Bugsy",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "badges_on",
+                            "badges_shuffle"
                         ],
+                        "access_rules": [
+                            "EVENT_CLEARED_SLOWPOKE_WELL"
+                        ]
+                    },
+                    {
+                        "name": "​Gym - Hive Badge from Bugsy",
+                        "visibility_rules": [
+                            "badges_off"
+                        ],
+                        "hosted_item": "HIVE_BADGE",
+                        "access_rules": [
+                            "EVENT_CLEARED_SLOWPOKE_WELL"
+                        ]
+                    },
+                    {
+                        "name": "Gym - TM49 from Bugsy",
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
                         ]
@@ -1399,6 +1406,34 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - Beauty Victoria",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Beauty Samantha",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Lass Carrie",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Lass Bridget",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Beat Whitney",
+                        "hosted_item": "EVENT_BEAT_WHITNEY"
+                    },
+                    {
                         "name": "Gym - Plain Badge from Whitney",
                         "visibility_rules": [
                             "badges_on",
@@ -1414,30 +1449,6 @@
                     },
                     {
                         "name": "Gym - TM45 from Whitney"
-                    },
-                    {
-                        "name": "Gym - Beauty Samantha",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Beauty Victoria",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Lass Bridget",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Lass Carrie",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
                     },
                     {
                         "name": "Bicycle from Bike Shop"
@@ -2269,7 +2280,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Gym - Medium Grace",
+                        "name": "Gym - Sage Ping",
                         "visibility_rules": [
                             "trainersanity_on"
                         ],
@@ -2278,7 +2289,7 @@
                         ]
                     },
                     {
-                        "name": "Gym - Medium Martha",
+                        "name": "Gym - Medium Grace",
                         "visibility_rules": [
                             "trainersanity_on"
                         ],
@@ -2296,7 +2307,7 @@
                         ]
                     },
                     {
-                        "name": "Gym - Sage Ping",
+                        "name": "Gym - Medium Martha",
                         "visibility_rules": [
                             "trainersanity_on"
                         ],
@@ -2305,7 +2316,8 @@
                         ]
                     },
                     {
-                        "name": "Gym - TM30 from Morty",
+                        "name": "Gym - Beat Morty",
+                        "hosted_item": "EVENT_BEAT_MORTY",
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
                         ]
@@ -2326,6 +2338,12 @@
                             "badges_off"
                         ],
                         "hosted_item": "FOG_BADGE",
+                        "access_rules": [
+                            "EVENT_RELEASED_THE_BEASTS"
+                        ]
+                    },
+                    {
+                        "name": "Gym - TM30 from Morty",
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
                         ]
@@ -2728,6 +2746,13 @@
                     "$can_freefly|Olivine"
                 ],
                 "sections": [
+                    {
+                        "name": "Gym - Beat Jasmine",
+                        "hosted_item": "EVENT_BEAT_JASMINE",
+                        "access_rules": [
+                            "EVENT_JASMINE_RETURNED_TO_GYM"
+                        ]
+                    },
                     {
                         "name": "Gym - Mineral Badge from Jasmine",
                         "access_rules": [
@@ -3381,7 +3406,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Gym - Blackbelt Nob",
+                        "name": "Gym - Blackbelt Yoshi",
                         "visibility_rules": [
                             "trainersanity_on"
                         ]
@@ -3393,7 +3418,7 @@
                         ]
                     },
                     {
-                        "name": "Gym - Blackbelt Yoshi",
+                        "name": "Gym - Blackbelt Nob",
                         "visibility_rules": [
                             "trainersanity_on"
                         ]
@@ -3408,10 +3433,11 @@
                         ]
                     },
                     {
-                        "name": "Gym - TM01 from Chuck",
+                        "name": "Gym - Beat Chuck",
                         "access_rules": [
                             "$can_strength"
-                        ]
+                        ],
+                        "hosted_item": "EVENT_BEAT_CHUCK"
                     },
                     {
                         "name": "Gym - Storm Badge from Chuck",
@@ -3434,11 +3460,10 @@
                         "hosted_item": "STORM_BADGE"
                     },
                     {
-                        "name": "Gym - Beat Chuck",
+                        "name": "Gym - TM01 from Chuck",
                         "access_rules": [
                             "$can_strength"
-                        ],
-                        "hosted_item": "EVENT_BEAT_CHUCK"
+                        ]
                     },
                     {
                         "name": "HM02 from Chuck's Wife",
@@ -3791,6 +3816,58 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - Boarder Ronald",
+                        "access_rules": [
+                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Skier Clarissa",
+                        "access_rules": [
+                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Boarder Brad",
+                        "access_rules": [
+                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Skier Roxanne",
+                        "access_rules": [
+                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Boarder Douglas",
+                        "access_rules": [
+                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Beat Pryce",
+                        "hosted_item": "EVENT_BEAT_PRYCE",
+                        "access_rules": [
+                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                        ]
+                    },
+                    {
                         "name": "Gym - Glacier Badge from Pryce",
                         "access_rules": [
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
@@ -3814,51 +3891,6 @@
                         "name": "Gym - TM16 from Pryce",
                         "access_rules": [
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Boarder Brad",
-                        "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Boarder Douglas",
-                        "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Boarder Ronald",
-                        "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Skier Clarissa",
-                        "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Skier Roxanne",
-                        "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
                         ]
                     },
                     {
@@ -4449,6 +4481,58 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - 1F - Cool Trainer Paul",
+                        "access_rules": [
+                            "EVENT_CLEARED_RADIO_TOWER"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - 2F - Cool Trainer Fran",
+                        "access_rules": [
+                            "EVENT_CLEARED_RADIO_TOWER"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - 2F - Cool Trainer Cody",
+                        "access_rules": [
+                            "EVENT_CLEARED_RADIO_TOWER"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - 1F - Cool Trainer Mike",
+                        "access_rules": [
+                            "EVENT_CLEARED_RADIO_TOWER,$can_strength"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - 1F - Cool Trainer Lola",
+                        "access_rules": [
+                            "EVENT_CLEARED_RADIO_TOWER,$can_strength"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Beat Clair",
+                        "hosted_item": "EVENT_BEAT_CLAIR",
+                        "access_rules": [
+                            "EVENT_CLEARED_RADIO_TOWER, $can_strength"
+                        ]
+                    },
+                    {
                         "name": "Gym - Rising Badge from Clair",
                         "access_rules": [
                             "EVENT_CLEARED_RADIO_TOWER, $can_strength"
@@ -4472,51 +4556,6 @@
                         "name": "Gym - TM24 from Clair",
                         "access_rules": [
                             "EVENT_CLEARED_RADIO_TOWER, $can_strength"
-                        ]
-                    },
-                    {
-                        "name": "Gym - 1F - Cool Trainer Paul",
-                        "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - 2F - Cool Trainer Cody",
-                        "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - 2F - Cool Trainer Fran",
-                        "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - 1F - Cool Trainer Lola",
-                        "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER,$can_strength"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - 1F - Cool Trainer Mike",
-                        "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER,$can_strength"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
                         ]
                     },
                     {
@@ -5313,6 +5352,13 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - Beat Blue",
+                        "hosted_item": "EVENT_BEAT_BLUE",
+                        "access_rules": [
+                            "EVENT_VIRIDIAN_GYM_BLUE"
+                        ]
+                    },
+                    {
                         "name": "Gym - Earth Badge from Blue",
                         "access_rules": [
                             "EVENT_VIRIDIAN_GYM_BLUE"
@@ -5603,6 +5649,16 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - Camper Jerry",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Beat Brock",
+                        "hosted_item": "EVENT_BEAT_BROCK"
+                    },
+                    {
                         "name": "Gym - Boulder Badge from Brock",
                         "visibility_rules": [
                             "badges_on",
@@ -5615,12 +5671,6 @@
                             "badges_off"
                         ],
                         "hosted_item": "BOULDER_BADGE"
-                    },
-                    {
-                        "name": "Gym - Camper Jerry",
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
                     },
                     {
                         "name": "Berry Tree 1",
@@ -5824,20 +5874,6 @@
                 ],
                 "sections": [
                     {
-                        "name": "Gym - Cascade Badge from Misty",
-                        "visibility_rules": [
-                            "badges_on",
-                            "badges_shuffle"
-                        ]
-                    },
-                    {
-                        "name": "​Gym - Cascade Badge from Misty",
-                        "visibility_rules": [
-                            "badges_off"
-                        ],
-                        "hosted_item": "CASCADE_BADGE"
-                    },
-                    {
                         "name": "Gym - Machine Part in Water",
                         "access_rules": [
                             "^$hid"
@@ -5850,16 +5886,34 @@
                         ]
                     },
                     {
+                        "name": "Gym - Swimmer Parker",
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Gym - Swimmer Diana",
                         "visibility_rules": [
                             "trainersanity_on"
                         ]
                     },
                     {
-                        "name": "Gym - Swimmer Parker",
+                        "name": "Gym - Beat Misty",
+                        "hosted_item": "EVENT_BEAT_MISTY"
+                    },
+                    {
+                        "name": "Gym - Cascade Badge from Misty",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "badges_on",
+                            "badges_shuffle"
                         ]
+                    },
+                    {
+                        "name": "​Gym - Cascade Badge from Misty",
+                        "visibility_rules": [
+                            "badges_off"
+                        ],
+                        "hosted_item": "CASCADE_BADGE"
                     },
                     {
                         "name": "Hidden Item in Water",
@@ -6388,20 +6442,6 @@
                 ],
                 "sections": [
                     {
-                        "name": "Gym - Marsh Badge from Sabrina",
-                        "visibility_rules": [
-                            "badges_on",
-                            "badges_shuffle"
-                        ]
-                    },
-                    {
-                        "name": "​Gym - Marsh Badge from Sabrina",
-                        "visibility_rules": [
-                            "badges_off"
-                        ],
-                        "hosted_item": "MARSH_BADGE"
-                    },
-                    {
                         "name": "Gym - Medium Doris",
                         "visibility_rules": [
                             "trainersanity_on"
@@ -6424,6 +6464,24 @@
                         "visibility_rules": [
                             "trainersanity_on"
                         ]
+                    },
+                    {
+                        "name": "Gym - Beat Sabrina",
+                        "hosted_item": "EVENT_BEAT_SABRINA"
+                    },
+                    {
+                        "name": "Gym - Marsh Badge from Sabrina",
+                        "visibility_rules": [
+                            "badges_on",
+                            "badges_shuffle"
+                        ]
+                    },
+                    {
+                        "name": "​Gym - Marsh Badge from Sabrina",
+                        "visibility_rules": [
+                            "badges_off"
+                        ],
+                        "hosted_item": "MARSH_BADGE"
                     },
                     {
                         "name": "TM29 from Mr Psychic"
@@ -6475,6 +6533,49 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - Twins Jo & Zoe",
+                        "access_rules": [
+                            "$can_cut"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Picnicker Tanya",
+                        "access_rules": [
+                            "$can_cut"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Lass Michelle",
+                        "access_rules": [
+                            "$can_cut"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Beauty Julia",
+                        "access_rules": [
+                            "$can_cut"
+                        ],
+                        "visibility_rules": [
+                            "trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Beat Erika",
+                        "hosted_item": "EVENT_BEAT_ERIKA",
+                        "access_rules": [
+                            "$can_cut"
+                        ]
+                    },
+                    {
                         "name": "Gym - Rainbow Badge from Erika",
                         "access_rules": [
                             "$can_cut"
@@ -6498,42 +6599,6 @@
                         "name": "Gym - TM19 from Erika",
                         "access_rules": [
                             "$can_cut"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Beauty Julia",
-                        "access_rules": [
-                            "$can_cut"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Lass Michelle",
-                        "access_rules": [
-                            "$can_cut"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Picnicker Tanya",
-                        "access_rules": [
-                            "$can_cut"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Twins Jo & Zoe",
-                        "access_rules": [
-                            "$can_cut"
-                        ],
-                        "visibility_rules": [
-                            "trainersanity_on"
                         ]
                     },
                     {
@@ -6713,26 +6778,14 @@
                 ],
                 "sections": [
                     {
-                        "name": "Gym - Thunder Badge from Lt. Surge",
+                        "name": "Gym - Juggler Horton",
                         "access_rules": [
                             "$can_cut",
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "badges_on",
-                            "badges_shuffle"
+                            "trainersanity_on"
                         ]
-                    },
-                    {
-                        "name": "​Gym - Thunder Badge from Lt. Surge",
-                        "access_rules": [
-                            "$can_cut",
-                            "$can_surf"
-                        ],
-                        "visibility_rules": [
-                            "badges_off"
-                        ],
-                        "hosted_item": "THUNDER_BADGE"
                     },
                     {
                         "name": "Gym - Gentleman Gregory",
@@ -6755,14 +6808,30 @@
                         ]
                     },
                     {
-                        "name": "Gym - Juggler Horton",
+                        "name": "Gym - Thunder Badge from Lt. Surge",
                         "access_rules": [
                             "$can_cut",
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "badges_on",
+                            "badges_shuffle"
                         ]
+                    },
+                    {
+                        "name": "Gym - Beat Lt. Surge",
+                        "hosted_item": "EVENT_BEAT_LTSURGE"
+                    },
+                    {
+                        "name": "​Gym - Thunder Badge from Lt. Surge",
+                        "access_rules": [
+                            "$can_cut",
+                            "$can_surf"
+                        ],
+                        "visibility_rules": [
+                            "badges_off"
+                        ],
+                        "hosted_item": "THUNDER_BADGE"
                     },
                     {
                         "name": "Lost Item from Guy in Fan Club",
@@ -7243,6 +7312,10 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - Beat Janine",
+                        "hosted_item": "EVENT_BEAT_JANINE"
+                    },
+                    {
                         "name": "Gym - Soul Badge from Janine",
                         "visibility_rules": [
                             "badges_on",
@@ -7397,6 +7470,10 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Gym - Beat Blaine",
+                        "hosted_item": "EVENT_BEAT_BLAINE"
+                    },
                     {
                         "name": "Gym - Volcano Badge from Blaine",
                         "visibility_rules": [

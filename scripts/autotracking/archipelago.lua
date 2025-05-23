@@ -33,7 +33,7 @@ function onClear(slot_data)
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
 
-    print(dump_table(slot_data))
+    --print(dump_table(slot_data))
 
     for k, v in pairs(slot_data) do
         if  k == "apworld_version" then
@@ -117,7 +117,7 @@ function onItem(index, item_id, item_name, player_number)
     if obj then
         obj.Active = true
     else
-        -- print(string.format("onItem: could not find object for code %s", v[1]))
+        print(string.format("onItem: could not find object for code %s", v[1]))
     end
 end
 
@@ -126,13 +126,19 @@ function onLocation(location_id, location_name)
     local v = LOCATION_MAPPING[reverse_offset(location_id)]
     if not v then
         print(string.format("onLocation: could not find location mapping for id %s", location_id))
-        return
     end
+
     local obj = Tracker:FindObjectForCode(v)
     if obj then
-        obj.AvailableChestCount = 0
-    else
-        print(string.format("onLocation: could not find object for code %s", v[1]))
+    	if v:sub(1, 1) == "@" then
+    		obj.AvailableChestCount = obj.AvailableChestCount - 1
+    	elseif obj.Type == "progressive" then
+    		obj.CurrentStage = obj.CurrentStage + 1
+    	else
+    		obj.Active = true
+    	end
+    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+    	print(string.format("onLocation: could not find object for code %s", v[1]))
     end
 end
 

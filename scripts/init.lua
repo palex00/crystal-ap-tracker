@@ -4,6 +4,7 @@ Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/events.json")
 Tracker:AddItems("items/settings.json")
 Tracker:AddItems("items/pokemon.json")
+Tracker:AddItems("items/dexsanity_items.json")
 
 -- Logic
 ScriptHost:LoadScript("scripts/utils.lua")
@@ -21,7 +22,7 @@ Tracker:AddMaps("maps/maps_johto_and_kanto.json")
 
 -- Locations
 Tracker:AddLocations("locations/locations.json")
---Tracker:AddLocations("locations/dungeons.json")
+Tracker:AddLocations("locations/dungeons.json")
 Tracker:AddLocations("locations/dexsanity.json")
 Tracker:AddLocations("locations/pokedex.json")
 
