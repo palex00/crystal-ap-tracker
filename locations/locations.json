@@ -10,13 +10,13 @@
                     {
                         "name": "Player's House - Pokegear from Mom",
                         "visibility_rules": [
-                            "pokegear_on"
+                            "show_items, pokegear_on"
                         ]
                     },
                     {
                         "name": "​Player's House - Pokegear from Mom",
                         "visibility_rules": [
-                            "pokegear_off"
+                            "show_items, pokegear_off"
                         ],
                         "hosted_item": "POKE_GEAR"
                     },
@@ -72,7 +72,7 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
@@ -112,13 +112,13 @@
                     {
                         "name": "Map Card from Guide",
                         "visibility_rules": [
-                            "pokegear_on"
+                            "show_items, pokegear_on"
                         ]
                     },
                     {
                         "name": "​Map Card from Guide",
                         "visibility_rules": [
-                            "pokegear_off"
+                            "show_items, pokegear_off"
                         ],
                         "hosted_item": "MAP_CARD"
                     }
@@ -156,13 +156,13 @@
                     {
                         "name": "Berry Tree 1",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Berry Tree 2",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
@@ -171,25 +171,25 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
                         "name": "Bug Catcher Don",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Youngster Joey",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Youngster Mikey",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -232,13 +232,13 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Bug Catcher Wade",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -306,7 +306,7 @@
                             "$can_rocksmash,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -334,33 +334,33 @@
                     {
                         "name": "Gym - Bird Keeper Abe",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Bird Keeper Rod",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Beat Falkner",
                         "hosted_item": "EVENT_BEAT_FALKNER",
                         "visibility_rules": [
-                            "r32_guy_egg"
+                            "show_items, r32_guy_egg"
                         ]
                     },
                     {
                         "name": "Gym - Zephyr Badge from Falkner",
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
                     {
                         "name": "​Gym - Zephyr Badge from Falkner",
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "ZEPHYR_BADGE"
                     },
@@ -374,7 +374,7 @@
                             "EVENT_BEAT_FALKNER"
                         ],
                         "visibility_rules": [
-                            "r32_guy_egg"
+                            "show_items, r32_guy_egg"
                         ]
                     },
                     {
@@ -395,13 +395,13 @@
                             "$can_cut,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     }
                 ],
@@ -435,7 +435,7 @@
                     {
                         "name": "1F - Sage Chow",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -444,13 +444,13 @@
                     {
                         "name": "2F - Sage Edmond",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "2F - Sage Nico",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -465,19 +465,19 @@
                     {
                         "name": "3F - Sage Jin",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "3F - Sage Neal",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "3F - Sage Troy",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -604,7 +604,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -638,7 +638,7 @@
                     {
                         "name": "Post-Guy",
                         "visibility_rules": [
-                            "invisible"
+                            "show_items, invisible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Violet City, $r32_guy",
@@ -678,7 +678,7 @@
                     {
                         "name": "Bird Keeper Peter",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
@@ -687,7 +687,7 @@
                     {
                         "name": "Camper Roland",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
@@ -696,7 +696,7 @@
                     {
                         "name": "Fisher Henry",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
@@ -705,7 +705,7 @@
                     {
                         "name": "Fisher Justin",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
@@ -714,7 +714,7 @@
                     {
                         "name": "Fisher Ralph",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
@@ -723,7 +723,7 @@
                     {
                         "name": "Picnicker Liz",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
@@ -732,7 +732,7 @@
                     {
                         "name": "Youngster Albert",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
@@ -741,7 +741,7 @@
                     {
                         "name": "Youngster Gordon",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
@@ -753,7 +753,7 @@
                             "^$hid, @JohtoKanto/Route 32/Post-Guy"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -762,7 +762,7 @@
                             "^$hid, @JohtoKanto/Route 32/Post-Guy"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -806,31 +806,31 @@
                     {
                         "name": "1F - Firebreather Bill",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Firebreather Ray",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Hiker Daniel",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Hiker Russell",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Pokemaniac Larry",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -845,7 +845,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -854,7 +854,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -863,7 +863,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -872,7 +872,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -893,7 +893,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -902,7 +902,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -911,7 +911,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -943,13 +943,13 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Hiker Anthony",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -995,19 +995,19 @@
                     {
                         "name": "B1F - Grunt 1",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Grunt 2",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Grunt 3",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1044,7 +1044,7 @@
                     {
                         "name": "Gym - Twins Amy & May",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
@@ -1053,7 +1053,7 @@
                     {
                         "name": "Gym - Bug Catcher Al",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
@@ -1062,7 +1062,7 @@
                     {
                         "name": "Gym - Bug Catcher Benny",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
@@ -1071,7 +1071,7 @@
                     {
                         "name": "Gym - Bug Catcher Josh",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
@@ -1087,7 +1087,7 @@
                     {
                         "name": "Gym - Hive Badge from Bugsy",
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ],
                         "access_rules": [
@@ -1097,7 +1097,7 @@
                     {
                         "name": "​Gym - Hive Badge from Bugsy",
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "HIVE_BADGE",
                         "access_rules": [
@@ -1128,13 +1128,13 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     }
                 ],
@@ -1165,7 +1165,7 @@
                     {
                         "name": "Pre-Tree",
                         "visibility_rules": [
-                            "invisible"
+                            "show_items, invisible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Azalea Town",
@@ -1175,7 +1175,7 @@
                     {
                         "name": "Post-Tree",
                         "visibility_rules": [
-                            "invisible"
+                            "show_items, invisible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Goldenrod City",
@@ -1228,7 +1228,7 @@
                     {
                         "name": "Bug Catcher Wayne",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Ilex Forest/Post-Tree"
@@ -1240,7 +1240,7 @@
                             "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -1249,7 +1249,7 @@
                             "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -1258,7 +1258,7 @@
                             "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -1292,31 +1292,31 @@
                     {
                         "name": "Camper Todd",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Picnicker Gina",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokefan Brandon",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Youngster Ian",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Youngster Samuel",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1325,7 +1325,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1334,7 +1334,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1343,7 +1343,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1364,7 +1364,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -1373,7 +1373,7 @@
                             "$can_surf,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -1408,25 +1408,25 @@
                     {
                         "name": "Gym - Beauty Victoria",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Beauty Samantha",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Lass Carrie",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Lass Bridget",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1436,14 +1436,14 @@
                     {
                         "name": "Gym - Plain Badge from Whitney",
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
                     {
                         "name": "​Gym - Plain Badge from Whitney",
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "PLAIN_BADGE"
                     },
@@ -1525,25 +1525,25 @@
                     {
                         "name": "Pokemaniac Donald",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokemaniac Issac",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Super Nerd Eric",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Super Nerd Teru",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1552,7 +1552,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -1561,7 +1561,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -1570,7 +1570,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -1594,7 +1594,7 @@
                             "$tower_takeover,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1604,7 +1604,7 @@
                             "$tower_takeover,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1614,7 +1614,7 @@
                             "$tower_takeover,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1624,7 +1624,7 @@
                             "$tower_takeover,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1634,7 +1634,7 @@
                             "$tower_takeover,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1644,7 +1644,7 @@
                             "$tower_takeover,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1654,7 +1654,7 @@
                             "^$hid,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -1664,7 +1664,7 @@
                             "^$hid,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -1702,7 +1702,7 @@
                             "$tower_takeover,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1712,7 +1712,7 @@
                             "$tower_takeover,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1722,7 +1722,7 @@
                             "$tower_takeover,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -1753,13 +1753,13 @@
                     {
                         "name": "1F - Radio Card from Quiz",
                         "visibility_rules": [
-                            "pokegear_on"
+                            "show_items, pokegear_on"
                         ]
                     },
                     {
                         "name": "​1F - Radio Card from Quiz",
                         "visibility_rules": [
-                            "pokegear_off"
+                            "show_items, pokegear_off"
                         ],
                         "hosted_item": "RADIO_CARD"
                     },
@@ -1769,7 +1769,7 @@
                             "$tower_takeover"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1781,7 +1781,7 @@
                             "$tower_takeover"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1790,7 +1790,7 @@
                             "$tower_takeover"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1799,7 +1799,7 @@
                             "$tower_takeover"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1808,7 +1808,7 @@
                             "$tower_takeover"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1823,7 +1823,7 @@
                             "$tower_takeover"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1832,7 +1832,7 @@
                             "$tower_takeover"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1841,7 +1841,7 @@
                             "$tower_takeover,CARD_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1850,7 +1850,7 @@
                             "$tower_takeover"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1865,7 +1865,7 @@
                             "$tower_takeover"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1874,7 +1874,7 @@
                             "$tower_takeover,CARD_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1883,7 +1883,7 @@
                             "$tower_takeover,CARD_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1892,7 +1892,7 @@
                             "$tower_takeover"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1919,7 +1919,7 @@
                             "$tower_takeover,CARD_KEY"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1960,7 +1960,7 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ],
                         "access_rules": [
                             "$can_surf"
@@ -1969,49 +1969,49 @@
                     {
                         "name": "Bird Keeper Bryan",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Bug Catcher Arnie",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Camper Elliot",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Camper Ivan",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Firebreather Walt",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Juggler Irwin",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Picnicker Brooke",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Picnicker Kim",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2062,25 +2062,25 @@
                     {
                         "name": "Lass Krise",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokefan Beverly",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokefan William",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Schoolboy Jack",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2089,7 +2089,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -2117,7 +2117,7 @@
                     {
                         "name": "Left",
                         "visibility_rules": [
-                            "invisible"
+                            "show_items, invisible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Goldenrod City, $can_cut",
@@ -2129,7 +2129,7 @@
                     {
                         "name": "Right",
                         "visibility_rules": [
-                            "invisible"
+                            "show_items, invisible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Violet City",
@@ -2140,7 +2140,7 @@
                     {
                         "name": "Top",
                         "visibility_rules": [
-                            "invisible"
+                            "show_items, invisible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Ecruteak City",
@@ -2151,7 +2151,7 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 36/Left"
@@ -2160,7 +2160,7 @@
                     {
                         "name": "Psychic Mark",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 36/Left"
@@ -2169,7 +2169,7 @@
                     {
                         "name": "Schoolboy Alan",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 36/Left"
@@ -2212,31 +2212,31 @@
                     {
                         "name": "Berry Tree 1",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Berry Tree 2",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Berry Tree 3",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Psychic Greg",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Twins Ann & Anne",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2248,7 +2248,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -2282,7 +2282,7 @@
                     {
                         "name": "Gym - Sage Ping",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
@@ -2291,7 +2291,7 @@
                     {
                         "name": "Gym - Medium Grace",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
@@ -2300,7 +2300,7 @@
                     {
                         "name": "Gym - Sage Jeffrey",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
@@ -2309,7 +2309,7 @@
                     {
                         "name": "Gym - Medium Martha",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
@@ -2325,7 +2325,7 @@
                     {
                         "name": "Gym - Fog Badge from Morty",
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ],
                         "access_rules": [
@@ -2335,7 +2335,7 @@
                     {
                         "name": "​Gym - Fog Badge from Morty",
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "FOG_BADGE",
                         "access_rules": [
@@ -2357,31 +2357,31 @@
                     {
                         "name": "Dance Theater - Kimono Girl Kuni",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Dance Theater - Kimono Girl Miki",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Dance Theater - Kimono Girl Naoko",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Dance Theater - Kimono Girl Sayo",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Dance Theater - Kimono Girl Zuki",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2390,7 +2390,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -2433,7 +2433,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -2442,7 +2442,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -2521,7 +2521,7 @@
                             "^$hid, RAINBOW_WING"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -2536,7 +2536,7 @@
                             "^$hid, RAINBOW_WING"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -2545,7 +2545,7 @@
                             "^$hid, RAINBOW_WING"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -2612,43 +2612,43 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Beauty Olivia",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Beauty Valerie",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Bird Keeper Toby",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Lass Dana",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Sailor Harry",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Schoolboy Chad",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -2682,31 +2682,31 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Pokefan Derek",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokefan Ruth",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Psychic Norman",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Sailor Eugene",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2715,7 +2715,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -2759,7 +2759,7 @@
                             "EVENT_JASMINE_RETURNED_TO_GYM"
                         ],
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
@@ -2769,7 +2769,7 @@
                             "EVENT_JASMINE_RETURNED_TO_GYM"
                         ],
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "MINERAL_BADGE"
                     },
@@ -2791,7 +2791,7 @@
                             "S_S_TICKET,$can_surf,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on,johto_only_off"
+                            "show_items, hiddenitems_on,johto_only_off"
                         ]
                     }
                 ],
@@ -2825,13 +2825,13 @@
                     {
                         "name": "2F - Gentleman Alfred",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "2F - Sailor Huey",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2840,31 +2840,31 @@
                     {
                         "name": "3F - Bird Keeper Theo",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "3F - Gentleman Preston",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "3F - Sailor Terrell",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "4F - Lass Connie",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "4F - Sailor Kent",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2879,13 +2879,13 @@
                     {
                         "name": "5F - Bird Keeper Denis",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "5F - Sailor Ernest",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2894,7 +2894,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -2933,31 +2933,31 @@
                     "@JohtoKanto/Vermilion City, S_S_TICKET"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "1F - Firebreather Lyle",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Twins Meg & Peg",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Pokefan Colin",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Hiker Noland",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2966,133 +2966,133 @@
                     {
                         "name": "1F - Beauty Cassie (Eastbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Cool Trainer Carol (Eastbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Cool Trainer Sean (Eastbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Gentleman Edward (Eastbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Psychic Rodney (Eastbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Super Nerd Shawn (Eastbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Bug Catcher Ken (Westbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Burglar Corey (Westbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Guitarist Clyde (Westbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Pokefan Georgia (Westbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Pokefan Jeremy (Westbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "1F - Pokemaniac Ethan (Westbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Picnicker Debra",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Juggler Fritz",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Sailor Jeff",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Blackbelt Wai (Eastbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Fisher Jonah (Eastbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Sailor Garrett (Eastbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Sailor Kenneth (Westbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Schoolboy Nate (Westbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Schoolboy Ricky (Westbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "B1F - Teacher Shirley (Westbound)",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -3134,7 +3134,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3143,7 +3143,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3152,7 +3152,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3161,7 +3161,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3170,7 +3170,7 @@
                             "$can_rocksmash,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -3201,61 +3201,61 @@
                     {
                         "name": "Swimmer Kaylee",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Susie",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Denise",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Kara",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Wendy",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Charlie",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer George",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Berke",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Kirk",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Mathew",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -3289,7 +3289,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3340,7 +3340,7 @@
                             "^$can_flash,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3349,7 +3349,7 @@
                             "^$can_flash,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3358,7 +3358,7 @@
                             "^$can_flash,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3408,19 +3408,19 @@
                     {
                         "name": "Gym - Blackbelt Yoshi",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Blackbelt Lao",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Blackbelt Nob",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3429,7 +3429,7 @@
                             "$can_strength"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3445,7 +3445,7 @@
                             "$can_strength"
                         ],
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
@@ -3455,7 +3455,7 @@
                             "$can_strength"
                         ],
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "STORM_BADGE"
                     },
@@ -3480,7 +3480,7 @@
                             "^$hid,$can_rocksmash"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3489,7 +3489,7 @@
                             "^$hid,$can_rocksmash"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -3532,7 +3532,7 @@
                     {
                         "name": "Berry Tree 1",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ],
                         "access_rules": [
                             "$can_surf, $can_cut"
@@ -3541,7 +3541,7 @@
                     {
                         "name": "Berry Tree 2",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ],
                         "access_rules": [
                             "$can_surf, $can_cut"
@@ -3550,7 +3550,7 @@
                     {
                         "name": "Berry Tree 3",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ],
                         "access_rules": [
                             "$can_surf, $can_cut"
@@ -3559,19 +3559,19 @@
                     {
                         "name": "Fisher Tully",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Hiker Benjamin",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokemaniac Shane",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3580,7 +3580,7 @@
                             "$can_surf,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -3620,7 +3620,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3672,7 +3672,7 @@
                     {
                         "name": "1F Inside - Pokemaniac Miller",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3682,7 +3682,7 @@
                             "$can_waterfall"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3691,7 +3691,7 @@
                             "^$hid,$can_waterfall"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3736,7 +3736,7 @@
                             "$can_waterfall"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3745,7 +3745,7 @@
                             "^$hid,$can_waterfall"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3784,7 +3784,7 @@
                             "^$hid,$can_waterfall"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -3821,7 +3821,7 @@
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3830,7 +3830,7 @@
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3839,7 +3839,7 @@
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3848,7 +3848,7 @@
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3857,7 +3857,7 @@
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3873,7 +3873,7 @@
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
@@ -3883,7 +3883,7 @@
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "GLACIER_BADGE"
                     },
@@ -3917,7 +3917,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3926,7 +3926,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3935,7 +3935,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3956,7 +3956,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3965,7 +3965,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3974,7 +3974,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3983,7 +3983,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4022,7 +4022,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4031,7 +4031,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4040,7 +4040,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4049,7 +4049,7 @@
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4093,7 +4093,7 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ],
                         "access_rules": [
                             "$can_surf,$can_cut"
@@ -4102,37 +4102,37 @@
                     {
                         "name": "Camper Spencer",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Fisher Marvin",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Picnicker Tiffany",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokemaniac Ben",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokemaniac Brent",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokemaniac Ron",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4201,19 +4201,19 @@
                     {
                         "name": "Cool Trainer Lois",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Fisher Andre",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Fisher Raymond",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4222,7 +4222,7 @@
                             "$can_cut"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4231,7 +4231,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4240,7 +4240,7 @@
                             "$can_cut,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4249,7 +4249,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4304,49 +4304,49 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Bird Keeper Vance",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Cool Trainer Allen",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Cool Trainer Cybil",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Fisher Edgar",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Fisher Wilton",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokemaniac Zach",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Psychic Phil",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4355,7 +4355,7 @@
                             "$can_surf,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -4411,7 +4411,7 @@
                             "^$hid, @JohtoKanto/Blackthorn City"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4435,7 +4435,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4444,7 +4444,7 @@
                             "^$hid, @JohtoKanto/Blackthorn City"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4486,7 +4486,7 @@
                             "EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4495,7 +4495,7 @@
                             "EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4504,7 +4504,7 @@
                             "EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4513,7 +4513,7 @@
                             "EVENT_CLEARED_RADIO_TOWER,$can_strength"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4522,7 +4522,7 @@
                             "EVENT_CLEARED_RADIO_TOWER,$can_strength"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4538,7 +4538,7 @@
                             "EVENT_CLEARED_RADIO_TOWER, $can_strength"
                         ],
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
@@ -4548,7 +4548,7 @@
                             "EVENT_CLEARED_RADIO_TOWER, $can_strength"
                         ],
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "RISING_BADGE"
                     },
@@ -4585,7 +4585,7 @@
                             "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4594,7 +4594,7 @@
                             "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4603,7 +4603,7 @@
                             "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4612,7 +4612,7 @@
                             "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4621,7 +4621,7 @@
                             "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4630,7 +4630,7 @@
                             "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -4712,49 +4712,49 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Blackbelt Kenji",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Cool Trainer Kelly",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Cool Trainer Ryan",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Hiker Erik",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Hiker Michael",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Hiker Parry",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Hiker Timothy",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4763,7 +4763,7 @@
                             "$can_surf,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -4798,31 +4798,31 @@
                     {
                         "name": "Berry Tree 1",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Berry Tree 2",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Camper Ted",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Hiker Bailey",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Picnicker Erin",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -4850,7 +4850,7 @@
                     {
                         "name": "Pre-Waterfall",
                         "visibility_rules": [
-                            "invisible"
+                            "show_items, invisible"
                         ],
                         "access_rules": [
                             "$can_surf"
@@ -4859,7 +4859,7 @@
                     {
                         "name": "Post-Waterfall",
                         "visibility_rules": [
-                            "invisible"
+                            "show_items, invisible"
                         ],
                         "access_rules": [
                             "$can_waterfall",
@@ -4890,7 +4890,7 @@
                             "@JohtoKanto/Route 27/Post-Waterfall"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4899,7 +4899,7 @@
                             "@JohtoKanto/Route 27/Post-Waterfall"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4908,7 +4908,7 @@
                             "@JohtoKanto/Route 27/Post-Waterfall"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4917,7 +4917,7 @@
                             "@JohtoKanto/Route 27/Post-Waterfall"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4926,7 +4926,7 @@
                             "@JohtoKanto/Route 27/Post-Waterfall, $can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4935,7 +4935,7 @@
                             "@JohtoKanto/Route 27/Post-Waterfall, $can_whirlpool"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4982,43 +4982,43 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Cool Trainer Beth",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Cool Trainer Gaven",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Cool Trainer Jake",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Cool Trainer Joyce",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Fisher Scott",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Psychic Richard",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -5063,7 +5063,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -5081,7 +5081,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -5153,7 +5153,7 @@
                     "@JohtoKanto/Silver Cave"
                 ],
                 "visibility_rules": [
-                    "$silver_cave"
+                    "show_items, $silver_cave"
                 ],
                 "sections": [
                     {
@@ -5168,7 +5168,7 @@
                             "$can_cut, ^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -5202,7 +5202,7 @@
                     "$can_freefly|SilverCave"
                 ],
                 "visibility_rules": [
-                    "$silver_cave"
+                    "show_items, $silver_cave"
                 ],
                 "sections": [
                     {
@@ -5211,7 +5211,7 @@
                             "$can_surf,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -5244,7 +5244,7 @@
                             "^$can_flash,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -5253,7 +5253,7 @@
                             "^$can_flash,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -5292,7 +5292,7 @@
                             "^$can_flash,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -5327,7 +5327,7 @@
             {
                 "name": "Route 22",
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [],
                 "map_locations": [
@@ -5348,7 +5348,7 @@
                     "@JohtoKanto/Route 26, $kantoaccess"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -5364,7 +5364,7 @@
                             "EVENT_VIRIDIAN_GYM_BLUE"
                         ],
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
@@ -5374,7 +5374,7 @@
                             "EVENT_VIRIDIAN_GYM_BLUE"
                         ],
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "EARTH_BADGE"
                     },
@@ -5413,25 +5413,25 @@
                     "@JohtoKanto/Viridian City"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Cool Trainer Quinn",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Schoolboy Danny",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     }
                 ],
@@ -5461,7 +5461,7 @@
                     "$can_freefly|Pallet"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [],
                 "map_locations": [
@@ -5491,13 +5491,13 @@
                     ""
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Diglett's Cave Section",
                         "visibility_rules": [
-                            "invisible"
+                            "show_items, invisible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City, EVENT_FOUGHT_SNORLAX",
@@ -5508,7 +5508,7 @@
                     {
                         "name": "Main Section",
                         "visibility_rules": [
-                            "invisible"
+                            "show_items, invisible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Viridian City",
@@ -5550,7 +5550,7 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section"
@@ -5559,7 +5559,7 @@
                     {
                         "name": "Bug Catcher Doug",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section"
@@ -5568,7 +5568,7 @@
                     {
                         "name": "Bug Catcher Ed",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section"
@@ -5577,7 +5577,7 @@
                     {
                         "name": "Bug Catcher Rob",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section"
@@ -5589,7 +5589,7 @@
                             "@JohtoKanto/Route 2/Main Section, ^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -5598,7 +5598,7 @@
                             "@JohtoKanto/Route 2/Main Section, ^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -5607,7 +5607,7 @@
                             "@JohtoKanto/Route 2/Main Section, ^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -5616,7 +5616,7 @@
                             "@JohtoKanto/Route 2/Main Section, ^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -5645,13 +5645,13 @@
                     "$can_freefly|Pewter"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Gym - Camper Jerry",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -5661,27 +5661,27 @@
                     {
                         "name": "Gym - Boulder Badge from Brock",
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
                     {
                         "name": "​Gym - Boulder Badge from Brock",
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "BOULDER_BADGE"
                     },
                     {
                         "name": "Berry Tree 1",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Berry Tree 2",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
@@ -5716,31 +5716,31 @@
                     "@JohtoKanto/Pewter City, BOULDER_BADGE"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Firebreather Burt",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Firebreather Otis",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Youngster Jimmy",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Youngster Warren",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -5769,7 +5769,7 @@
                     "@JohtoKanto/Pewter City, BOULDER_BADGE"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -5778,7 +5778,7 @@
                             "^$hid, $can_rocksmash"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -5807,7 +5807,7 @@
                     "@JohtoKanto/Pewter City, BOULDER_BADGE"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -5816,19 +5816,19 @@
                     {
                         "name": "Bird Keeper Hank",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Picnicker Hope",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Picnicker Sharon",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -5837,7 +5837,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -5870,31 +5870,31 @@
                     "@JohtoKanto/Vermilion City, $passage|ns"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Gym - Machine Part in Water",
                         "access_rules": [
                             "^$hid"
-                        ],
+                        ]
                     },
                     {
                         "name": "Gym - Swimmer Briana",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Swimmer Parker",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Swimmer Diana",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -5904,14 +5904,14 @@
                     {
                         "name": "Gym - Cascade Badge from Misty",
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
                     {
                         "name": "​Gym - Cascade Badge from Misty",
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "CASCADE_BADGE"
                     },
@@ -5921,7 +5921,7 @@
                             "$can_surf,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -5952,7 +5952,7 @@
                     "@JohtoKanto/Cerulean City"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -5964,7 +5964,7 @@
                             "^$hid, $passage|ns"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -5973,7 +5973,7 @@
                             "^$hid, $passage|ns"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -6001,7 +6001,7 @@
                     "@JohtoKanto/Cerulean City"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -6016,43 +6016,43 @@
                     {
                         "name": "Camper Lloyd",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Lass Ellen",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Lass Laura",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Lass Shannon",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Schoolboy Dudley",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Schoolboy Joe",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Super Nerd Pat",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6061,7 +6061,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -6090,43 +6090,43 @@
                     "@JohtoKanto/Lavender Town, ^$can_flash"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Camper Dean",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Camper Sid",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Hiker Sidney",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Hiker Tim",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Picnicker Edna",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Picnicker Heidi",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6135,7 +6135,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -6164,7 +6164,7 @@
                     "@JohtoKanto/Route 9, ^$can_flash"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -6179,7 +6179,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -6188,7 +6188,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -6206,7 +6206,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -6234,7 +6234,7 @@
                     "@JohtoKanto/Route 9, $can_surf"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -6275,19 +6275,19 @@
                     "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Hiker Jim",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokefan Robert",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -6319,7 +6319,7 @@
                     "@JohtoKanto/Celadon City, $passage|ew, ew_underground_on"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -6328,7 +6328,7 @@
                             "EVENT_RESTORED_POWER_TO_KANTO"
                         ],
                         "visibility_rules": [
-                            "pokegear_on"
+                            "show_items, pokegear_on"
                         ]
                     },
                     {
@@ -6337,7 +6337,7 @@
                             "EVENT_RESTORED_POWER_TO_KANTO"
                         ],
                         "visibility_rules": [
-                            "pokegear_off"
+                            "show_items, pokegear_off"
                         ],
                         "hosted_item": "EXPN_CARD"
                     }
@@ -6369,43 +6369,43 @@
                     "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Biker Dwayne",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Biker Harris",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Biker Zeke",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Super Nerd Sam",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Super Nerd Tom",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -6438,31 +6438,31 @@
                     "@JohtoKanto/Vermilion City, $tea|south"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Gym - Medium Doris",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Medium Rebecca",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Psychic Franklin",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Gym - Psychic Jared",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6472,14 +6472,14 @@
                     {
                         "name": "Gym - Marsh Badge from Sabrina",
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
                     {
                         "name": "​Gym - Marsh Badge from Sabrina",
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "MARSH_BADGE"
                     },
@@ -6529,7 +6529,7 @@
                     "@JohtoKanto/Lavender Town, $passage|ew, ew_underground_on"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -6538,7 +6538,7 @@
                             "$can_cut"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6547,7 +6547,7 @@
                             "$can_cut"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6556,7 +6556,7 @@
                             "$can_cut"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6565,7 +6565,7 @@
                             "$can_cut"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6581,7 +6581,7 @@
                             "$can_cut"
                         ],
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
@@ -6591,7 +6591,7 @@
                             "$can_cut"
                         ],
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "RAINBOW_BADGE"
                     },
@@ -6610,7 +6610,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -6619,13 +6619,13 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
                         "name": "Tea from Granny",
                         "visibility_rules": [
-                            "coffee_north",
+                            "show_items, coffee_north",
                             "coffee_east",
                             "coffee_south",
                             "coffee_west"
@@ -6659,31 +6659,31 @@
                     "@JohtoKanto/Celadon City, BICYCLE"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Biker Charles",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Biker Glenn",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Biker Joel",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Biker Riley",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6692,7 +6692,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -6701,7 +6701,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -6729,19 +6729,19 @@
                     "@JohtoKanto/Fuchsia City"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Bird Keeper Bob",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Bird Keeper Boris",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -6774,7 +6774,7 @@
                     "@JohtoKanto/Route 11, EVENT_FOUGHT_SNORLAX"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -6784,7 +6784,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6794,7 +6794,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6804,7 +6804,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6814,7 +6814,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
@@ -6829,7 +6829,7 @@
                             "$can_surf"
                         ],
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "THUNDER_BADGE"
                     },
@@ -6854,7 +6854,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -6863,7 +6863,7 @@
                             "S_S_TICKET,$can_surf,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -6900,7 +6900,7 @@
                     "@JohtoKanto/Route 2/Diglett's Cave Section"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -6909,7 +6909,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -6937,19 +6937,19 @@
                     "@JohtoKanto/Vermilion City"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Pokefan Allan",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokefan Rex",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -6978,37 +6978,37 @@
                     "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
                         "name": "Psychic Fidel",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Psychic Herman",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Youngster Jason",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Youngster Owen",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -7017,7 +7017,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -7045,7 +7045,7 @@
                     "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -7066,25 +7066,25 @@
                     {
                         "name": "Fisher Barney",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Fisher Kyle",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Fisher Martin",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Fisher Stephen",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -7093,7 +7093,7 @@
                             "$can_surf,^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -7121,37 +7121,37 @@
                     "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Bird Keeper Bret",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Bird Keeper Perry",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Hiker Kenny",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokefan Alex",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokefan Joshua",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -7160,7 +7160,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -7188,25 +7188,25 @@
                     "@JohtoKanto/Fuchsia City"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Bird Keeper Roy",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokefan Carter",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Pokefan Trevor",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -7234,7 +7234,7 @@
                     "@JohtoKanto/Fuchsia City"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -7246,37 +7246,37 @@
                     {
                         "name": "Schoolboy Billy",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Schoolboy Johnny",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Schoolboy Kipp",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Schoolboy Tommy",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Teacher Colette",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Teacher Hillary",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -7308,7 +7308,7 @@
                     "@JohtoKanto/Route 11"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -7318,14 +7318,14 @@
                     {
                         "name": "Gym - Soul Badge from Janine",
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
                     {
                         "name": "​Gym - Soul Badge from Janine",
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "SOUL_BADGE"
                     },
@@ -7335,7 +7335,7 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "berries_on"
+                            "show_items, berries_on"
                         ],
                         "access_rules": [
                             "$can_cut"
@@ -7369,31 +7369,31 @@
                     "@JohtoKanto/Cinnabar Island, $can_surf"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Swimmer Dawn",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Harold",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Jerome",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Tucker",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -7421,25 +7421,25 @@
                     "@JohtoKanto/Cinnabar Island, $can_surf"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Swimmer Nicole",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Lori",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Cameron",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -7467,7 +7467,7 @@
                     "@JohtoKanto/Cinnabar Island, $can_surf"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -7477,14 +7477,14 @@
                     {
                         "name": "Gym - Volcano Badge from Blaine",
                         "visibility_rules": [
-                            "badges_on",
+                            "show_items, badges_on",
                             "badges_shuffle"
                         ]
                     },
                     {
                         "name": "​Gym - Volcano Badge from Blaine",
                         "visibility_rules": [
-                            "badges_off"
+                            "show_items, badges_off"
                         ],
                         "hosted_item": "VOLCANO_BADGE"
                     }
@@ -7514,7 +7514,7 @@
                     "$can_freefly|Cinnabar"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
@@ -7527,7 +7527,7 @@
                             "^$hid"
                         ],
                         "visibility_rules": [
-                            "hiddenitems_on"
+                            "show_items, hiddenitems_on"
                         ]
                     }
                 ],
@@ -7558,25 +7558,25 @@
                     "@JohtoKanto/Pallet Town, $can_surf"
                 ],
                 "visibility_rules": [
-                    "johto_only_off"
+                    "show_items, johto_only_off"
                 ],
                 "sections": [
                     {
                         "name": "Swimmer Nikki",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Fisher Arnold",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Swimmer Seth",
                         "visibility_rules": [
-                            "trainersanity_on"
+                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
