@@ -987,5 +987,32 @@
     "min_quantity": 0,
     "max_quantity": 251,
     "initial_quantity": 0
+  },
+  {
+    "name": "Location Visibility",
+    "type": "progressive",
+    "loop": true,
+    "codes": "location_visibility",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Only show normal locations",
+        "img": "/images/settings/show_item.png",
+        "codes": "show_items",
+        "inherit_codes": false
+      },
+      {
+        "name": "Show normal and encounter locations",
+        "img": "/images/settings/show_both.png",
+        "codes": "show_items, show_mons",
+        "inherit_codes": false
+      },
+      {
+        "name": "Only show encounterlocations",
+        "img": "/images/settings/show_mon.png",
+        "codes": "show_mons",
+        "inherit_codes": false
+      }
+    ]
   }
 ]
