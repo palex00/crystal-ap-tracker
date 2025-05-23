@@ -206,18 +206,13 @@ function onMap(value)
 
         -- Retrieve ssaqua and event state
         local ssaqua = Tracker:FindObjectForCode("ssaqua")
-        local fast_ship_event = Tracker:FindObjectForCode("EVENT_FAST_SHIP_FOUND_GIRL")
 
         -- Check and possibly modify map_group based on conditions
         if map_group == 15 then
-            if fast_ship_event.Active == false then
+            if ssaqua.CurrentStage == 1 then
                 map_group = 115
-            else
-                if ssaqua.CurrentStage == 1 then
-                    map_group = 215
-                elseif ssaqua.CurrentStage == 2 then
-                    map_group = 315
-                end
+            elseif ssaqua.CurrentStage == 2 then
+                map_group = 215
             end
         end
 

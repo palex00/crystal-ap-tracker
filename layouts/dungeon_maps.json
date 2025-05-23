@@ -26,7 +26,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Violet City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -35,11 +35,46 @@
                             }
                         },
                         {
-                            "title": "Violet Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
                                     "VioletGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Sprout Tower",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "SproutTower1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "SproutTower2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "SproutTower3F"
+                                            ]
+                                        }
+                                    }
                                 ]
                             }
                         }
@@ -52,7 +87,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Azalea Town",
+                            "title": "Town",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -61,11 +96,37 @@
                             }
                         },
                         {
-                            "title": "Azalea Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
                                     "AzaleaGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Slowpoke Well",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "SlowpokeWellB1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "SlowpokeWellB2F"
+                                            ]
+                                        }
+                                    }
                                 ]
                             }
                         }
@@ -78,7 +139,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Goldenrod City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -87,11 +148,179 @@
                             }
                         },
                         {
-                            "title": "Goldenrod Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
                                     "GoldenrodGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dept. Store",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStoreB1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "4F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore4F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "5F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore5F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "6F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore6F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Roof",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStoreRoof"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Radio Tower",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "RadioTower1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "RadioTower2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "RadioTower3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "4F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "RadioTower4F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "5F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "RadioTower5F"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Underground",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodUnderground"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodUndergroundSwitchRoomEntrances"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Warehouse",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodUndergroundWarehouse"
+                                            ]
+                                        }
+                                    }
                                 ]
                             }
                         }
@@ -104,7 +333,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Ecruteak City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -113,11 +342,135 @@
                             }
                         },
                         {
-                            "title": "Ecruteak Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
                                     "EcruteakGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Burned Tower",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "BurnedTower1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "BurnedTowerB1F"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Tin Tower",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "4F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower4F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "5F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower5F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "6F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower6F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "7F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower7F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "8F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower8F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "9F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower9F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Roof",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTowerRoof"
+                                            ]
+                                        }
+                                    }
                                 ]
                             }
                         }
@@ -130,7 +483,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Olivine City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -139,11 +492,73 @@
                             }
                         },
                         {
-                            "title": "Olivine Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
                                     "OlivineGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lighthouse",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "4F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse4F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "5F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse5F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "6F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse6F"
+                                            ]
+                                        }
+                                    }
                                 ]
                             }
                         }
@@ -156,7 +571,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Cianwood City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -165,7 +580,7 @@
                             }
                         },
                         {
-                            "title": "Cianwood Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -182,7 +597,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Mahogany Town",
+                            "title": "Town",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -191,11 +606,46 @@
                             }
                         },
                         {
-                            "title": "Mahogany Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
                                     "MahoganyGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Rocket HQ",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TeamRocketBaseB1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TeamRocketBaseB2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TeamRocketBaseB3F"
+                                            ]
+                                        }
+                                    }
                                 ]
                             }
                         }
@@ -208,7 +658,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Blackthorn City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -217,7 +667,7 @@
                             }
                         },
                         {
-                            "title": "Blackthorn Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "tabbed",
                                 "tabs": [
@@ -239,6 +689,15 @@
                                             ]
                                         }
                                     }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dragons Den",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "DragonsDenB1F"
                                 ]
                             }
                         }
@@ -492,41 +951,6 @@
                 }
             },
             {
-                "title": "Sprout Tower",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Sprout Tower 1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "SproutTower1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Sprout Tower 2F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "SproutTower2F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Sprout Tower 3F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "SproutTower3F"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
                 "title": "Ruins of Alph",
                 "content": {
                     "type": "tabbed",
@@ -624,32 +1048,6 @@
                 }
             },
             {
-                "title": "Slowpoke Well",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Slowpoke Well B1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "SlowpokeWellB1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Slowpoke Well B2F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "SlowpokeWellB2F"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
                 "title": "Ilex Forest",
                 "content": {
                     "type": "map",
@@ -659,365 +1057,11 @@
                 }
             },
             {
-                "title": "Goldenrod Dept. Store",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Dept. Store B1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodDeptStoreB1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Dept. Store 1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodDeptStore1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Dept. Store 2F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodDeptStore2F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Dept. Store 3F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodDeptStore3F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Dept. Store 4F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodDeptStore4F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Dept. Store 5F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodDeptStore5F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Dept. Store 6F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodDeptStore6F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Dept. Store Roof",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodDeptStoreRoof"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "title": "Goldenrod Underground",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Underground B1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodUnderground"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Underground B2F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodUndergroundSwitchRoomEntrances"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Underground Warehouse",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "GoldenrodUndergroundWarehouse"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "title": "Radio Tower",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Radio Tower 1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "RadioTower1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Radio Tower 2F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "RadioTower2F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Radio Tower 3F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "RadioTower3F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Radio Tower 4F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "RadioTower4F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Radio Tower 5F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "RadioTower5F"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
                 "title": "National Park",
                 "content": {
                     "type": "map",
                     "maps": [
                         "NationalPark"
-                    ]
-                }
-            },
-            {
-                "title": "Burned Tower",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Burned Tower 1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "BurnedTower1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Burned Tower B1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "BurnedTowerB1F"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "title": "Tin Tower",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Tin Tower 1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TinTower1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Tin Tower 2F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TinTower2F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Tin Tower 3F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TinTower3F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Tin Tower 4F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TinTower4F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Tin Tower 5F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TinTower5F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Tin Tower 6F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TinTower6F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Tin Tower 7F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TinTower7F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Tin Tower 8F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TinTower8F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Tin Tower 9F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TinTower9F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Tin Tower Roof",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TinTowerRoof"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "title": "Olivine Lighthouse",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Olivine Lighthouse 1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "OlivineLighthouse1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Olivine Lighthouse 2F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "OlivineLighthouse2F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Olivine Lighthouse 3F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "OlivineLighthouse3F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Olivine Lighthouse 4F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "OlivineLighthouse4F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Olivine Lighthouse 5F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "OlivineLighthouse5F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Olivine Lighthouse 6F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "OlivineLighthouse6F"
-                                ]
-                            }
-                        }
                     ]
                 }
             },
@@ -1119,41 +1163,6 @@
                 }
             },
             {
-                "title": "Rocket HQ",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Rocket HQ B1F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TeamRocketBaseB1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Rocket HQ B2F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TeamRocketBaseB2F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Rocket HQ B3F",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "TeamRocketBaseB3F"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
                 "title": "Ice Path",
                 "content": {
                     "type": "tabbed",
@@ -1207,15 +1216,6 @@
                 }
             },
             {
-                "title": "Dragons Den",
-                "content": {
-                    "type": "map",
-                    "maps": [
-                        "DragonsDenB1F"
-                    ]
-                }
-            },
-            {
                 "title": "Tohjo Falls",
                 "content": {
                     "type": "map",
@@ -1241,7 +1241,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Silver Cave Outside",
+                            "title": "Outside",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1250,7 +1250,7 @@
                             }
                         },
                         {
-                            "title": "Silver Cave 1F",
+                            "title": "1F",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1259,7 +1259,7 @@
                             }
                         },
                         {
-                            "title": "Silver Cave 2F",
+                            "title": "2F",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1269,7 +1269,7 @@
                             }
                         },
                         {
-                            "title": "Silver Cave 3F",
+                            "title": "3F",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1309,7 +1309,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Fast Ship 1F",
+                            "title": "1F Hallways",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1318,7 +1318,7 @@
                             }
                         },
                         {
-                            "title": "Fast Ship 1F Cabins",
+                            "title": "1F Cabins",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1327,7 +1327,7 @@
                             }
                         },
                         {
-                            "title": "Fast Ship B1F",
+                            "title": "B1F",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1344,7 +1344,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Fast Ship 1F",
+                            "title": "1F Hallways",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1353,7 +1353,7 @@
                             }
                         },
                         {
-                            "title": "Fast Ship 1F Cabins",
+                            "title": "1F Cabins",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1362,7 +1362,7 @@
                             }
                         },
                         {
-                            "title": "Fast Ship B1F",
+                            "title": "B1F",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1379,7 +1379,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Fast Ship 1F",
+                            "title": "1F Hallways",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1388,7 +1388,7 @@
                             }
                         },
                         {
-                            "title": "Fast Ship 1F Cabins",
+                            "title": "1F Cabins",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1397,7 +1397,7 @@
                             }
                         },
                         {
-                            "title": "Fast Ship B1F",
+                            "title": "B1F",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1414,12 +1414,21 @@
         "type": "tabbed",
         "tabs": [
             {
+                "title": "Pallet Town",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "PalletTown"
+                    ]
+                }
+            },
+            {
                 "title": "Viridian City",
                 "content": {
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Viridian City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1428,7 +1437,7 @@
                             }
                         },
                         {
-                            "title": "Viridian Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1445,7 +1454,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Pewter City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1454,7 +1463,7 @@
                             }
                         },
                         {
-                            "title": "Pewter Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1471,7 +1480,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Cerulean City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1480,7 +1489,7 @@
                             }
                         },
                         {
-                            "title": "Cerulean Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1497,7 +1506,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Vermilion City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1506,7 +1515,7 @@
                             }
                         },
                         {
-                            "title": "Vermilion Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1523,7 +1532,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Celadon City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1532,7 +1541,7 @@
                             }
                         },
                         {
-                            "title": "Celadon Cafe",
+                            "title": "Cafe",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1541,7 +1550,7 @@
                             }
                         },
                         {
-                            "title": "Celadon Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1558,7 +1567,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Saffron City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1567,7 +1576,7 @@
                             }
                         },
                         {
-                            "title": "Saffron Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1593,7 +1602,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Fuchsia City",
+                            "title": "City",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1602,7 +1611,7 @@
                             }
                         },
                         {
-                            "title": "Fuchsia Gym",
+                            "title": "Gym",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1916,7 +1925,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Mount Moon",
+                            "title": "Inside",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1925,7 +1934,7 @@
                             }
                         },
                         {
-                            "title": "Mount Moon Square",
+                            "title": "Square",
                             "content": {
                                 "type": "map",
                                 "maps": [
