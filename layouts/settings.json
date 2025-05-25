@@ -1,67 +1,108 @@
 {
-  "setting_grid": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content": [
-      {
+    "setting_grid": {
         "type": "array",
         "orientation": "vertical",
         "margin": "0,0",
         "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "2, 2",
-            "item_h_alignment": "center",
-            "h_alignment": "left",
-            "rows": [
-              [
-                "tower_badges",
-                "e4_badges",
-                "mt_silver_badges",
-                "red_badges",
-                "ilextree",
-                "r32_guy",
-                "red_gyarados_access",
-                "blackthorn_dark_cave_access",
-                "location_visibility"
-              ],
-              [
-                "berries",
-                "pokegear",
-                "trainersanity",
-                "hiddenitems",
-                "badges",
-                "reqitemfinder",
-                "route_2_access",
-                "national_park_access",
-                "route_3_access"
-              ],
-              [
-                "tea_guard",
-                "ew_underground",
-                "underground_power",
-                "badgereqs",
-                "goal",
-                "automap",
-                "johto_only",
-                "kanto_access_condition",
-                "kanto_access_badges_count"
-              ]
-            ]
-          },
-          {
-            "type": "item",
-            "margin": "12, 4",
-            "item": "free_fly_location"
-          },
-          {
-            "type": "item",
-            "margin": "12, 8",
-            "item": "map_card_fly"
-          }
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, 2",
+                        "item_h_alignment": "center",
+                        "h_alignment": "left",
+                        "rows": [
+                            [
+                                "tower_badges",
+                                "e4_badges",
+                                "mt_silver_badges",
+                                "red_badges",
+                                "ilextree",
+                                "r32_guy",
+                                "red_gyarados_access",
+                                "blackthorn_dark_cave_access",
+                                "location_visibility"
+                            ],
+                            [
+                                "berries",
+                                "pokegear",
+                                "trainersanity",
+                                "hiddenitems",
+                                "badges",
+                                "reqitemfinder",
+                                "route_2_access",
+                                "national_park_access",
+                                "route_3_access"
+                            ],
+                            [
+                                "tea_guard",
+                                "ew_underground",
+                                "underground_power",
+                                "badgereqs",
+                                "goal",
+                                "automap",
+                                "johto_only",
+                                "kanto_access_condition",
+                                "kanto_access_badges_count"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "8,6",
+                "content": [
+                    {
+                        "type": "item",
+                        "item": "free_fly_dummy",
+                        "item_size": "16, 16"
+                    },
+                    {
+                        "type": "item",
+                        "item": "free_fly_location",
+                        "item_size": "256, 16"
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "8,6",
+                "content": [
+                    {
+                        "type": "item",
+                        "item": "map_card_fly_dummy",
+                        "item_size": "16, 16"
+                    },
+                    {
+                        "type": "item",
+                        "item": "map_card_fly",
+                        "item_size": "256, 16"
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "8,6",
+                "content": [
+                    {
+                        "type": "item",
+                        "item": "start_town_dummy",
+                        "item_size": "16, 16"
+                    },
+                    {
+                        "type": "item",
+                        "item": "start_town_location",
+                        "item_size": "256, 16"
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 }

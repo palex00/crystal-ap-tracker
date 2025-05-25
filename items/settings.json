@@ -250,125 +250,130 @@
     "stages": [
       {
         "name": "Free Fly Location - Off",
-        "img": "/images/settings/freefly/freefly_0.png",
+        "img": "/images/settings/town_locations/0.png",
         "codes": "free_fly_location,free_fly_0",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Azalea Town",
-        "img": "/images/settings/freefly/freefly_14.png",
+        "img": "/images/settings/town_locations/14.png",
         "codes": "free_fly_location,free_fly_Azalea",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Goldenrod City",
-        "img": "/images/settings/freefly/freefly_15.png",
+        "img": "/images/settings/town_locations/15.png",
         "codes": "free_fly_location,free_fly_Goldenrod",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Ecruteak City",
-        "img": "/images/settings/freefly/freefly_1.png",
+        "img": "/images/settings/town_locations/1.png",
         "codes": "free_fly_location,free_fly_Ecruteak",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Olivine City",
-        "img": "/images/settings/freefly/freefly_2.png",
+        "img": "/images/settings/town_locations/2.png",
         "codes": "free_fly_location,free_fly_Olivine",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Cianwood City",
-        "img": "/images/settings/freefly/freefly_3.png",
+        "img": "/images/settings/town_locations/3.png",
         "codes": "free_fly_location,free_fly_Cianwood",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Mahogany Town",
-        "img": "/images/settings/freefly/freefly_4.png",
+        "img": "/images/settings/town_locations/4.png",
         "codes": "free_fly_location,free_fly_Mahogany",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Lake of Rage",
-        "img": "/images/settings/freefly/freefly_16.png",
+        "img": "/images/settings/town_locations/16.png",
         "codes": "free_fly_location,free_fly_LakeOfRage",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Blackthorn City",
-        "img": "/images/settings/freefly/freefly_5.png",
+        "img": "/images/settings/town_locations/5.png",
         "codes": "free_fly_location,free_fly_Blackthorn",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Pallet Town",
-        "img": "/images/settings/freefly/freefly_17.png",
+        "img": "/images/settings/town_locations/17.png",
         "codes": "free_fly_location,free_fly_Pallet",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Viridian City",
-        "img": "/images/settings/freefly/freefly_6.png",
+        "img": "/images/settings/town_locations/6.png",
         "codes": "free_fly_location,free_fly_Viridian",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Pewter City",
-        "img": "/images/settings/freefly/freefly_7.png",
+        "img": "/images/settings/town_locations/7.png",
         "codes": "free_fly_location,free_fly_Pewter",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Cerulean City",
-        "img": "/images/settings/freefly/freefly_8.png",
+        "img": "/images/settings/town_locations/8.png",
         "codes": "free_fly_location,free_fly_Cerulean",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Vermilion City",
-        "img": "/images/settings/freefly/freefly_9.png",
+        "img": "/images/settings/town_locations/9.png",
         "codes": "free_fly_location,free_fly_Vermilion",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Lavender Town",
-        "img": "/images/settings/freefly/freefly_10.png",
+        "img": "/images/settings/town_locations/10.png",
         "codes": "free_fly_location,free_fly_Lavender",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Celadon City",
-        "img": "/images/settings/freefly/freefly_11.png",
+        "img": "/images/settings/town_locations/11.png",
         "codes": "free_fly_location,free_fly_Celadon",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Saffron City",
-        "img": "/images/settings/freefly/freefly_12.png",
+        "img": "/images/settings/town_locations/12.png",
         "codes": "free_fly_location,free_fly_Saffron",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Cinnabar Island",
-        "img": "/images/settings/freefly/freefly_18.png",
+        "img": "/images/settings/town_locations/18.png",
         "codes": "free_fly_location,free_fly_Cinnabar",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Fuchsia City",
-        "img": "/images/settings/freefly/freefly_13.png",
+        "img": "/images/settings/town_locations/13.png",
         "codes": "free_fly_location,free_fly_Fuchsia",
         "inherit_codes": false
       },
       {
         "name": "Free Fly Location - Silver Cave",
-        "img": "/images/settings/freefly/freefly_19.png",
+        "img": "/images/settings/town_locations/19.png",
         "codes": "free_fly_location,free_fly_SilverCave",
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "img": "/images/settings/town_locations/freefly_template.png",
+    "codes": "free_fly_dummy",
+    "type": "static"
   },
   {
     "name": "Map Card Fly Location",
@@ -378,125 +383,130 @@
     "stages": [
       {
         "name": "Map Card Fly Location - Off",
-        "img": "/images/settings/freefly/mapfly_0.png",
+        "img": "/images/settings/town_locations/0.png",
         "codes": "map_card_fly,map_card_fly_0",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Azalea Town",
-        "img": "/images/settings/freefly/mapfly_14.png",
+        "img": "/images/settings/town_locations/14.png",
         "codes": "map_card_fly,map_card_fly_Azalea",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Goldenrod City",
-        "img": "/images/settings/freefly/mapfly_15.png",
+        "img": "/images/settings/town_locations/15.png",
         "codes": "map_card_fly,map_card_fly_Goldenrod",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Ecruteak City",
-        "img": "/images/settings/freefly/mapfly_1.png",
+        "img": "/images/settings/town_locations/1.png",
         "codes": "map_card_fly,map_card_fly_Ecruteak",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Olivine City",
-        "img": "/images/settings/freefly/mapfly_2.png",
+        "img": "/images/settings/town_locations/2.png",
         "codes": "map_card_fly,map_card_fly_Olivine",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Cianwood City",
-        "img": "/images/settings/freefly/mapfly_3.png",
+        "img": "/images/settings/town_locations/3.png",
         "codes": "map_card_fly,map_card_fly_Cianwood",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Mahogany Town",
-        "img": "/images/settings/freefly/mapfly_4.png",
+        "img": "/images/settings/town_locations/4.png",
         "codes": "map_card_fly,map_card_fly_Mahogany",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Lake of Rage",
-        "img": "/images/settings/freefly/mapfly_16.png",
+        "img": "/images/settings/town_locations/16.png",
         "codes": "map_card_fly,map_card_fly_LakeOfRage",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Blackthorn City",
-        "img": "/images/settings/freefly/mapfly_5.png",
+        "img": "/images/settings/town_locations/5.png",
         "codes": "map_card_fly,map_card_fly_Blackthorn",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Pallet Town",
-        "img": "/images/settings/freefly/mapfly_17.png",
+        "img": "/images/settings/town_locations/17.png",
         "codes": "map_card_fly,map_card_fly_Pallet",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Viridian City",
-        "img": "/images/settings/freefly/mapfly_6.png",
+        "img": "/images/settings/town_locations/6.png",
         "codes": "map_card_fly,map_card_fly_Viridian",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Pewter City",
-        "img": "/images/settings/freefly/mapfly_7.png",
+        "img": "/images/settings/town_locations/7.png",
         "codes": "map_card_fly,map_card_fly_Pewter",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Cerulean City",
-        "img": "/images/settings/freefly/mapfly_8.png",
+        "img": "/images/settings/town_locations/8.png",
         "codes": "map_card_fly,map_card_fly_Cerulean",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Vermilion City",
-        "img": "/images/settings/freefly/mapfly_9.png",
+        "img": "/images/settings/town_locations/9.png",
         "codes": "map_card_fly,map_card_fly_Vermilion",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Lavender Town",
-        "img": "/images/settings/freefly/mapfly_10.png",
+        "img": "/images/settings/town_locations/10.png",
         "codes": "map_card_fly,map_card_fly_Lavender",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Celadon City",
-        "img": "/images/settings/freefly/mapfly_11.png",
+        "img": "/images/settings/town_locations/11.png",
         "codes": "map_card_fly,map_card_fly_Celadon",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Saffron City",
-        "img": "/images/settings/freefly/mapfly_12.png",
+        "img": "/images/settings/town_locations/12.png",
         "codes": "map_card_fly,map_card_fly_Saffron",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Cinnabar Island",
-        "img": "/images/settings/freefly/mapfly_18.png",
+        "img": "/images/settings/town_locations/18.png",
         "codes": "map_card_fly,map_card_fly_Cinnabar",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Fuchsia City",
-        "img": "/images/settings/freefly/mapfly_13.png",
+        "img": "/images/settings/town_locations/13.png",
         "codes": "map_card_fly,map_card_fly_Fuchsia",
         "inherit_codes": false
       },
       {
         "name": "Map Card Fly Location - Silver Cave",
-        "img": "/images/settings/freefly/mapfly_19.png",
+        "img": "/images/settings/town_locations/19.png",
         "codes": "map_card_fly,map_card_fly_SilverCave",
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "img": "/images/settings/town_locations/mapfly_template.png",
+    "codes": "map_card_fly_dummy",
+    "type": "static"
   },
   {
     "name": "Auto-Track Map",
@@ -1014,5 +1024,150 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Start Town",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Starting Town - Off",
+        "img": "/images/settings/town_locations/0.png",
+        "codes": "start_town_location,start_town_0",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Azalea Town",
+        "img": "/images/settings/town_locations/14.png",
+        "codes": "start_town_location,start_town_Azalea",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Goldenrod City",
+        "img": "/images/settings/town_locations/15.png",
+        "codes": "start_town_location,start_town_Goldenrod",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Ecruteak City",
+        "img": "/images/settings/town_locations/1.png",
+        "codes": "start_town_location,start_town_Ecruteak",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Olivine City",
+        "img": "/images/settings/town_locations/2.png",
+        "codes": "start_town_location,start_town_Olivine",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Cianwood City",
+        "img": "/images/settings/town_locations/3.png",
+        "codes": "start_town_location,start_town_Cianwood",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Mahogany Town",
+        "img": "/images/settings/town_locations/4.png",
+        "codes": "start_town_location,start_town_Mahogany",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Lake of Rage",
+        "img": "/images/settings/town_locations/16.png",
+        "codes": "start_town_location,start_town_LakeOfRage",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Blackthorn City",
+        "img": "/images/settings/town_locations/5.png",
+        "codes": "start_town_location,start_town_Blackthorn",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Pallet Town",
+        "img": "/images/settings/town_locations/17.png",
+        "codes": "start_town_location,start_town_Pallet",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Viridian City",
+        "img": "/images/settings/town_locations/6.png",
+        "codes": "start_town_location,start_town_Viridian",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Pewter City",
+        "img": "/images/settings/town_locations/7.png",
+        "codes": "start_town_location,start_town_Pewter",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Cerulean City",
+        "img": "/images/settings/town_locations/8.png",
+        "codes": "start_town_location,start_town_Cerulean",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Vermilion City",
+        "img": "/images/settings/town_locations/9.png",
+        "codes": "start_town_location,start_town_Vermilion",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Lavender Town",
+        "img": "/images/settings/town_locations/10.png",
+        "codes": "start_town_location,start_town_Lavender",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Celadon City",
+        "img": "/images/settings/town_locations/11.png",
+        "codes": "start_town_location,start_town_Celadon",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Saffron City",
+        "img": "/images/settings/town_locations/12.png",
+        "codes": "start_town_location,start_town_Saffron",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Cinnabar Island",
+        "img": "/images/settings/town_locations/18.png",
+        "codes": "start_town_location,start_town_Cinnabar",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Fuchsia City",
+        "img": "/images/settings/town_locations/13.png",
+        "codes": "start_town_location,start_town_Fuchsia",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Silver Cave",
+        "img": "/images/settings/town_locations/19.png",
+        "codes": "start_town_location,start_town_SilverCave",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Cherrygrove City",
+        "img": "/images/settings/town_locations/20.png",
+        "codes": "start_town_location,start_town_Cherrygrove",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Violet City",
+        "img": "/images/settings/town_locations/21.png",
+        "codes": "start_town_location,start_town_Violet",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "img": "/images/settings/town_locations/starttown_template.png",
+    "codes": "start_town_dummy",
+    "type": "static"
   }
 ]
