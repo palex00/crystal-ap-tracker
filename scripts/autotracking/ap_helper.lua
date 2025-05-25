@@ -64,47 +64,52 @@ MAP_16 = {
     [16] = 16
 }
 
-FLY_ECRUTEAK = 22
-FLY_OLIVINE = 21
-FLY_CIANWOOD = 19
-FLY_MAHOGANY = 23
-FLY_BLACKTHORN = 25
-FLY_VIRIDIAN = 3
-FLY_PEWTER = 4
-FLY_CERULEAN = 5
-FLY_VERMILION = 7
-FLY_LAVENDER = 8
-FLY_CELADON = 10
-FLY_SAFFRON = 9
-FLY_FUCHSIA = 11
-FLY_AZALEA = 18
-FLY_GOLDENROD = 20
-FLY_LAKE_OF_RAGE = 24
-FLY_PALLET = 2
-FLY_CINNABAR = 12
-FLY_SILVER_CAVE = 26
+PALLET = 2
+VIRIDIAN = 3
+PEWTER = 4
+CERULEAN = 5
+VERMILION = 7
+LAVENDER = 8
+SAFFRON = 9
+CELADON = 10
+FUCHSIA = 11
+CINNABAR = 12
+NEW_BARK = 14
+CHERRYGROVE = 15
+VIOLET = 16
+AZALEA = 18
+CIANWOOD = 19
+GOLDENROD = 20
+OLIVINE = 21
+ECRUTEAK = 22
+MAHOGANY = 23
+LAKE_OF_RAGE = 24
+BLACKTHORN = 25
+SILVER_CAVE = 26
 
-MAP_FREEFLY = {
-    [0] = 0,
-    [FLY_AZALEA] = 1,
-    [FLY_GOLDENROD] = 2,
-    [FLY_ECRUTEAK] = 3,
-    [FLY_OLIVINE] = 4,
-    [FLY_CIANWOOD] = 5,
-    [FLY_MAHOGANY] = 6,
-    [FLY_LAKE_OF_RAGE] = 7,
-    [FLY_BLACKTHORN] = 8,
-    [FLY_PALLET] = 9,
-    [FLY_VIRIDIAN] = 10,
-    [FLY_PEWTER] = 11,
-    [FLY_CERULEAN] = 12,
-    [FLY_VERMILION] = 13,
-    [FLY_LAVENDER] = 14,
-    [FLY_CELADON] = 15,
-    [FLY_SAFFRON] = 16,
-    [FLY_CINNABAR] = 17,
-    [FLY_FUCHSIA] = 18,
-    [FLY_SILVER_CAVE] = 19
+TOWN_MAPPING = {
+    [NEW_BARK] = 0,
+    [CHERRYGROVE] = 1,
+    [VIOLET] = 2,
+    [AZALEA] = 3,
+    [GOLDENROD] = 4,
+    [ECRUTEAK] = 5,
+    [OLIVINE] = 6,
+    [CIANWOOD] = 7,
+    [MAHOGANY] = 8,
+    [LAKE_OF_RAGE] = 9,
+    [BLACKTHORN] = 10,
+    [PALLET] = 11,
+    [VIRIDIAN] = 12,
+    [PEWTER] = 13,
+    [CERULEAN] = 14,
+    [VERMILION] = 15,
+    [LAVENDER] = 16,
+    [CELADON] = 17,
+    [SAFFRON] = 18,
+    [CINNABAR] = 19,
+    [FUCHSIA] = 20,
+    [SILVER_CAVE] = 21
 }
 
 SLOT_CODES = {
@@ -142,11 +147,11 @@ SLOT_CODES = {
     },
     free_fly_location = {
         code = "free_fly_location",
-        mapping = MAP_FREEFLY
+        mapping = TOWN_MAPPING
     },
     map_card_fly_location = {
         code = "map_card_fly",
-        mapping = MAP_FREEFLY
+        mapping = TOWN_MAPPING
     },
     randomize_berry_trees = {
         code = "berries",
@@ -239,6 +244,10 @@ SLOT_CODES = {
     route_3_access = {
         code = "route_3_access",
         mapping = MAP_TOGGLE
+    },
+    starting_town = {
+        code = "start_town_location",
+        mapping = TOWN_MAPPING
     }
 }
 

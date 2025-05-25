@@ -7,9 +7,10 @@
             {
                 "name": "New Bark Town",
                 "access_rules": [
-                    "start_town_0",
+                    "start_town_New_Bark",
                     "@JohtoKanto/Route 29",
-                    "@JohtoKanto/Route 27/Pre-Waterfall, $can_surf"
+                    "@JohtoKanto/Route 27/Pre-Waterfall, $can_surf",
+                    "$can_freefly|New_Bark"
                 ],
                 "sections": [
                     {
@@ -133,7 +134,8 @@
                 "access_rules": [
                     "start_town_Cherrygrove",
                     "@JohtoKanto/Route 29",
-                    "@JohtoKanto/Route 31"
+                    "@JohtoKanto/Route 31",
+                    "$can_freefly|Cherrygrove"
                 ],
                 "sections": [
                     {
@@ -415,7 +417,8 @@
                     "start_town_Violet",
                     "@JohtoKanto/Route 31",
                     "@JohtoKanto/Route 36/Right",
-                    "@JohtoKanto/Route 32, $r32_guy"
+                    "@JohtoKanto/Route 32, $r32_guy",
+                    "$can_freefly|Violet"
                 ],
                 "sections": [
                     {
