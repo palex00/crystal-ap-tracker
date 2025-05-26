@@ -40,6 +40,13 @@ MAP_QUADRUPLE = {
     [2] = 2,
     [3] = 3
 }
+MAP_QUINTUPLE = {
+    [0] = 0,
+    [1] = 1,
+    [2] = 2,
+    [3] = 3,
+    [4] = 4
+}
 MAP_TOGGLE_REVERSE = {
     [0] = 1,
     [1] = 0
@@ -192,7 +199,7 @@ SLOT_CODES = {
     },
     route_32_condition = {
         code = "r32_guy",
-        mapping = MAP_TRIPLE
+        mapping = MAP_QUINTUPLE
     },
     tea_north = {
         code = "tea_north",

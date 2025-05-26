@@ -606,6 +606,20 @@
       },
       {
         "img": "/images/settings/r32_guy.png",
+        "img_mods": "overlay|/images/settings/gym_overlay.png",
+        "codes": "r32_guy, r32_guy_gym",
+        "inherit_codes": false,
+        "name": "Route 32 Guy needs any Gym beaten"
+      },
+      {
+        "img": "/images/settings/r32_guy.png",
+        "img_mods": "overlay|/images/settings/zephyr_overlay.png",
+        "codes": "r32_guy, r32_guy_zephyr",
+        "inherit_codes": false,
+        "name": "Route 32 Guy needs Zephyr Badge"
+      },
+      {
+        "img": "/images/settings/r32_guy.png",
         "img_mods": "@disabled",
         "codes": "r32_guy, r32_guy_open",
         "inherit_codes": false,

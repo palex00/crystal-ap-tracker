@@ -19,6 +19,27 @@ function badges()
   Tracker:ProviderCountForCode("EARTH_BADGE")
 end
 
+function gyms()
+  return
+  Tracker:ProviderCountForCode("EVENT_BEAT_FALKNER") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_BUGSY") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_WHITNEY") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_MORTY") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_JASMINE") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_CHUCK") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_PRYCE") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_CLAIR") +
+
+  Tracker:ProviderCountForCode("EVENT_BEAT_BROCK") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_MISTY") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_LTSURGE") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_ERIKA") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_JANINE") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_SABRINA") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_BLAINE") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_BLUE")
+end
+
 function hid()
     if has("reqitemfinder_off") then
         return AccessibilityLevel.Normal
@@ -172,7 +193,9 @@ end
 function r32_guy()
   return has("r32_guy_open")
   or has("r32_guy_badge") and (badges() >= 1)
+  or has("r32_guy_gym") and (gyms() >= 1)
   or has("r32_guy_egg") and has("EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE")
+  or has("r32_guy_zephyr") and has("ZEPHYR_BADGE")
 end
 
 function tea(direction)
