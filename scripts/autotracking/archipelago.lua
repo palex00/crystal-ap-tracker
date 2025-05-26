@@ -49,6 +49,14 @@ function onClear(slot_data)
             -- print("Setting " .. k .. " to " .. v)
         elseif BADGE_CODES[k] then
             Tracker:FindObjectForCode(BADGE_CODES[k].code).AcquiredCount = BADGE_CODES[k].mapping[v]
+        elseif REQUIREMENT_CODES[k] then
+			local item = SLOT_CODES[k].item
+			item:setType(SLOT_CODES[k].mapping[v])
+		elseif AMOUNT_CODES[k] then
+			local item = SLOT_CODES[k].item
+			item:setStage(v)
+        else
+            print(string.format("No setting could be found for key: %s", k))
         end
     end
 

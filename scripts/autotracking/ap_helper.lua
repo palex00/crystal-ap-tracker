@@ -51,25 +51,6 @@ MAP_TOGGLE_REVERSE = {
     [0] = 1,
     [1] = 0
 }
-MAP_16 = {
-    [0] = 0,
-    [1] = 1,
-    [2] = 2,
-    [3] = 3,
-    [4] = 4,
-    [5] = 5,
-    [6] = 6,
-    [7] = 7,
-    [8] = 8,
-    [9] = 9,
-    [10] = 10,
-    [11] = 11,
-    [12] = 12,
-    [13] = 13,
-    [14] = 14,
-    [15] = 15,
-    [16] = 16
-}
 
 PALLET = 2
 VIRIDIAN = 3
@@ -287,25 +268,54 @@ SLOT_CODES = {
     }
 }
 
-BADGE_CODES = {
-    elite_four_badges = {
-        code = "e4_badges",
-        mapping = MAP_16
+REQUIREMENT_CODES = {
+    elite_four_requirement = {
+        code = "e4_requirement",
+        mapping = MAP_BADGEGYM,
+        item = E4_REQ
     },
-    red_badges = {
-        code = "red_badges",
-        mapping = MAP_16
+    red_requirement = {
+        code = "red_requirement",
+        mapping = MAP_BADGEGYM,
+        item = RED_REQ
     },
-    radio_tower_badges = {
-        code = "tower_badges",
-        mapping = MAP_16
+    radio_tower_requirement = {
+        code = "tower_requirement",
+        mapping = MAP_BADGEGYM,
+        item = RADIO_REQ
     },
-    mt_silver_badges = {
-        code = "mt_silver_badges",
-        mapping = MAP_16
+    mt_silver_requirement = {
+        code = "mt_silver_requirement",
+        mapping = MAP_BADGEGYM,
+        item = SILVER_REQ
+    }
+
+}
+AMOUNT_CODES = {
+    elite_four_count = {
+        code = "e4_requirement",
+        item = E4_REQ
     },
-    kanto_access_badges = {
-        code = "kanto_access_badges_count",
-        mapping = MAP_16
+    red_count = {
+        code = "red_requirement",
+        item = RED_REQ
+    },
+    radio_tower_count = {
+        code = "tower_requirement",
+        item = RADIO_REQ
+    },
+    mt_silver_count = {
+        code = "mt_silver_requirement",
+        item = SILVER_REQ
     }
 }
+
+-- Todo: Handle these specially
+--,
+--    kanto_access_badges = {
+--        code = "kanto_access_requirement",
+--        mapping = MAP_BADGEGYM
+--    },
+--    kanto_access_badges = {
+--        code = "kanto_access_requirement"
+--    }

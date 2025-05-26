@@ -4,11 +4,29 @@
         "orientation": "vertical",
         "margin": "0,0",
         "content": [
+            //{
+            //    "type": "array",
+            //    "orientation": "horizontal",
+            //    "margin": "2,2",
+            //    "content": [
+            //        {
+            //            "type": "item",
+            //            "item": "e4_requirement",
+            //            "item_size": "0, 0"
+            //        }
+            //    ]
+            //},
             {
                 "type": "array",
                 "orientation": "vertical",
                 "margin": "0,0",
                 "content": [
+                    {
+                        "type": "item",
+                        "item_margin": "2, 2",
+                        "item": "e4_requirement",
+                        "item_size": "32, 44"
+                    },
                     {
                         "type": "itemgrid",
                         "item_margin": "2, 2",
@@ -16,10 +34,10 @@
                         "h_alignment": "left",
                         "rows": [
                             [
-                                "tower_badges",
-                                "e4_badges",
-                                "mt_silver_badges",
-                                "red_badges",
+                                //"tower_badges",
+                                //"e4_badges",
+                                //"mt_silver_badges",
+                                //"red_badges",
                                 "ilextree",
                                 "r32_guy",
                                 "red_gyarados_access",
@@ -27,6 +45,7 @@
                                 "location_visibility"
                             ],
                             [
+                                "e4_requirement",
                                 "berries",
                                 "pokegear",
                                 "trainersanity",

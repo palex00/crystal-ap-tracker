@@ -10,6 +10,7 @@ Tracker:AddItems("items/dexsanity_items.json")
 ScriptHost:LoadScript("scripts/utils.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/logic/dexsanity.lua")
+ScriptHost:LoadScript("scripts/custom_items.lua")
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")

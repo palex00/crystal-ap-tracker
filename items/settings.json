@@ -46,33 +46,33 @@
       }
     ]
   },
-  {
-    "name": "Elite Four Badges",
-    "img": "/images/events/become_champion.png",
-    "codes": "e4_badges",
-    "type": "consumable",
-    "min_quantity": 1,
-    "max_quantity": 16,
-    "initial_quantity": 8
-  },
-  {
-    "name": "Red Badges",
-    "img": "/images/events/defeat_red.png",
-    "codes": "red_badges",
-    "type": "consumable",
-    "min_quantity": 1,
-    "max_quantity": 16,
-    "initial_quantity": 16
-  },
-  {
-    "name": "Mt. Silver Badges",
-    "img": "/images/settings/mt_silver_badges.png",
-    "codes": "mt_silver_badges",
-    "type": "consumable",
-    "min_quantity": 1,
-    "max_quantity": 16,
-    "initial_quantity": 16
-  },
+  //{
+  //  "name": "Elite Four Badges",
+  //  "img": "/images/events/become_champion.png",
+  //  "codes": "e4_badges",
+  //  "type": "consumable",
+  //  "min_quantity": 1,
+  //  "max_quantity": 16,
+  //  "initial_quantity": 8
+  //},
+  //{
+  //  "name": "Red Badges",
+  //  "img": "/images/events/defeat_red.png",
+  //  "codes": "red_badges",
+  //  "type": "consumable",
+  //  "min_quantity": 1,
+  //  "max_quantity": 16,
+  //  "initial_quantity": 16
+  //},
+  //{
+  //  "name": "Mt. Silver Badges",
+  //  "img": "/images/settings/mt_silver_badges.png",
+  //  "codes": "mt_silver_badges",
+  //  "type": "consumable",
+  //  "min_quantity": 1,
+  //  "max_quantity": 16,
+  //  "initial_quantity": 16
+  //},
   {
     "name": "Randomize Badges",
     "type": "progressive",
@@ -580,15 +580,15 @@
       }
     ]
   },
-  {
-    "name": "Radio Tower Badges",
-    "img": "/images/events/tower_cleared.png",
-    "codes": "tower_badges",
-    "type": "consumable",
-    "min_quantity": 1,
-    "max_quantity": 16,
-    "initial_quantity": 7
-  },
+  //{
+  //  "name": "Radio Tower Badges",
+  //  "img": "/images/events/tower_cleared.png",
+  //  "codes": "tower_badges",
+  //  "type": "consumable",
+  //  "min_quantity": 1,
+  //  "max_quantity": 16,
+  //  "initial_quantity": 7
+  //},
   {
     "name": "Route 32 Guy Condition",
     "type": "progressive",
