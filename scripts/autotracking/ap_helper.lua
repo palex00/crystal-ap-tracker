@@ -171,7 +171,7 @@ SLOT_CODES = {
     },
     hm_badge_requirements = {
         code = "badgereqs",
-        mapping = MAP_TRIPLE
+        mapping = MAP_QUADRUPLE
     },
     require_itemfinder = {
         code = "reqitemfinder",

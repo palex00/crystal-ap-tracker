@@ -50,34 +50,60 @@ function hid()
     end
 end
 
-function cut_badge()
-  return (
-    (has("badgereqs_vanilla") and has("HIVE_BADGE")) or
-    (has("badgereqs_kanto") and (has("HIVE_BADGE") or has("CASCADE_BADGE"))) or
-    has("badgereqs_none") or
-        has("FREE_CUT")
+function can_cut_johto()
+  return has("HM_CUT") and (
+  has("FREE_CUT") or
+  has("badgereqs_none") or
+  ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("HIVE_BADGE")) or
+  (has("badgereqs_kanto") and (has("HIVE_BADGE") or has("CASCADE_BADGE")))
   )
 end
 
-function can_cut()
-  return (has("HM_CUT") and cut_badge())
-end
-
-function flash_badge()
-  return (
-    (has("badgereqs_vanilla") and has("ZEPHYR_BADGE")) or
-    (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE"))) or
-    has("badgereqs_none") or
-        has("FREE_FLASH")
+function can_cut_kanto()
+  return has("HM_CUT") and (
+  has("FREE_CUT") or
+  has("badgereqs_none") or
+  (has("badgereqs_vanilla") and has("HIVE_BADGE")) or
+  (has("badgereqs_kanto") and (has("HIVE_BADGE") or has("CASCADE_BADGE"))) or
+  (has("badgereqs_regional") and has("CASCADE_BADGE"))
   )
 end
 
-function can_flash()
-  if has("HM_FLASH") and flash_badge() then
+function can_flash_johto()
+  if has("HM_FLASH") and (
+  has("FREE_FLASH") or
+  has("badgereqs_none") or
+  ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
+  (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
+  ) then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.SequenceBreak
     end
+end
+
+function can_flash_kanto()
+  if has("HM_FLASH") and (
+  has("FREE_FLASH") or
+  has("badgereqs_none") or
+  (has("badgereqs_vanilla") and has("ZEPHYR_BADGE")) or
+  (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE"))) or
+  (has("badgereqs_regional") and has("BOULDER_BADGE"))
+  ) then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+-- this one literally only exists for the Aerodactyl Room
+function flash_badge()
+  return (
+    has("badgereqs_none") or
+    has("FREE_FLASH") or
+    ((has("badgereqs_vanilla") or has("badge_reqs_regional")) and has("ZEPHYR_BADGE")) or
+    (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
+  )
 end
 
 function strength_badge()
@@ -93,17 +119,23 @@ function can_strength()
   return (has("HM_STRENGTH") and strength_badge())
 end
 
-function surf_badge()
-  return (
-    (has("badgereqs_vanilla") and has("FOG_BADGE")) or
-    (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE"))) or
-    has("badgereqs_none") or
-        has("FREE_SURF")
+function can_surf_johto()
+  return has("HM_SURF") and (
+  has("FREE_SURF") or
+  has("badgereqs_none") or
+  ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("FOG_BADGE")) or
+  (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE")))
   )
 end
 
-function can_surf()
-  return (has("HM_SURF") and surf_badge())
+function can_surf_kanto()
+  return has("HM_SURF") and (
+  has("FREE_SURF") or
+  has("badgereqs_none") or
+  (has("badgereqs_vanilla") and has("FOG_BADGE")) or
+  (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE"))) or
+  (has("badgereqs_regional") and has("SOUL_BADGE"))
+  )
 end
 
 function whirlpool_badge()
@@ -111,12 +143,13 @@ function whirlpool_badge()
     (has("badgereqs_vanilla") and has("GLACIER_BADGE")) or
     (has("badgereqs_kanto") and (has("GLACIER_BADGE") or has("VOLCANO_BADGE"))) or
     has("badgereqs_none") or
-        has("FREE_WHIRLPOOL")
+    has("FREE_WHIRLPOOL")
   )
 end
 
 function can_whirlpool()
-  return (has("HM_WHIRLPOOL") and whirlpool_badge() and can_surf())
+  return (has("HM_WHIRLPOOL") and whirlpool_badge() and can_surf_johto())
+  -- this is hardcoded to Johto because Kanto does currently not have whirlpools
 end
 
 function waterfall_badge()
@@ -124,12 +157,13 @@ function waterfall_badge()
     (has("badgereqs_vanilla") and has("RISING_BADGE")) or
     (has("badgereqs_kanto") and (has("RISING_BADGE") or has("EARTH_BADGE"))) or
     has("badgereqs_none") or
-        has("FREE_WATERFALL")
+    has("FREE_WATERFALL")
   )
 end
 
 function can_waterfall()
-  return (has("HM_WATERFALL") and waterfall_badge() and can_surf())
+  return (has("HM_WATERFALL") and waterfall_badge() and can_surf_johto())
+  -- this is hardcoded to Johto because Kanto does currently not have waterfalls
 end
 
 function can_rocksmash()
@@ -141,7 +175,7 @@ function fly_badge()
     (has("badgereqs_vanilla") and has("STORM_BADGE")) or
     (has("badgereqs_kanto") and (has("STORM_BADGE") or has("THUNDER_BADGE"))) or
     has("badgereqs_none") or
-        has("FREE_FLY")
+    has("FREE_FLY")
   )
 end
 

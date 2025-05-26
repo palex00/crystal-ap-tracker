@@ -9,7 +9,7 @@
                 "access_rules": [
                     "start_town_New_Bark",
                     "@JohtoKanto/Route 29",
-                    "@JohtoKanto/Route 27/Pre-Waterfall, $can_surf",
+                    "@JohtoKanto/Route 27/Pre-Waterfall, $can_surf_johto",
                     "$can_freefly|New_Bark"
                 ],
                 "sections": [
@@ -141,7 +141,7 @@
                     {
                         "name": "Mystic Water from Island Man",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -346,8 +346,8 @@
             {
                 "name": "Dark Cave Violet Entrance",
                 "access_rules": [
-                    "^$can_flash, @JohtoKanto/Route 31",
-                    "^$can_flash, @JohtoKanto/Dark Cave Blackthorn Entrance, $can_surf"
+                    "^$can_flash_johto, @JohtoKanto/Route 31",
+                    "^$can_flash_johto, @JohtoKanto/Dark Cave Blackthorn Entrance, $can_surf_johto"
                 ],
                 "sections": [
                     {
@@ -473,7 +473,7 @@
                     {
                         "name": "Northwest Item across Water",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -482,7 +482,7 @@
                     {
                         "name": "Northeast Item across Water",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -491,7 +491,7 @@
                     {
                         "name": "Hidden Item behind Cut Tree",
                         "access_rules": [
-                            "$can_cut,^$hid"
+                            "$can_cut_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -661,7 +661,7 @@
                     {
                         "name": "Omanyte Room Bottom Left Item (Water Stone)",
                         "access_rules": [
-                            "$can_surf,$can_strength,WATER_STONE"
+                            "$can_surf_johto,$can_strength,WATER_STONE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -670,7 +670,7 @@
                     {
                         "name": "Omanyte Room Bottom Right Item (Water Stone)",
                         "access_rules": [
-                            "$can_surf,$can_strength,WATER_STONE"
+                            "$can_surf_johto,$can_strength,WATER_STONE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -679,7 +679,7 @@
                     {
                         "name": "Omanyte Room Top Right Item (Water Stone)",
                         "access_rules": [
-                            "$can_surf,$can_strength,WATER_STONE"
+                            "$can_surf_johto,$can_strength,WATER_STONE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -688,7 +688,7 @@
                     {
                         "name": "Omanyte Room Top Left Item (Water Stone)",
                         "access_rules": [
-                            "$can_surf,$can_strength,WATER_STONE"
+                            "$can_surf_johto,$can_strength,WATER_STONE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -697,7 +697,7 @@
                     {
                         "name": "Aerodactyl Room Top Right Item (Flash)",
                         "access_rules": [
-                            "$can_surf, $flash_badge, HM_FLASH"
+                            "$can_surf_johto, $flash_badge, HM_FLASH"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -706,7 +706,7 @@
                     {
                         "name": "Aerodactyl Room Bottom Left Item (Flash)",
                         "access_rules": [
-                            "$can_surf, $flash_badge, HM_FLASH"
+                            "$can_surf_johto, $flash_badge, HM_FLASH"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -715,7 +715,7 @@
                     {
                         "name": "Aerodactyl Room Bottom Right Item (Flash)",
                         "access_rules": [
-                            "$can_surf, $flash_badge, HM_FLASH"
+                            "$can_surf_johto, $flash_badge, HM_FLASH"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -724,7 +724,7 @@
                     {
                         "name": "Aerodactyl Room Top Left Item (Flash)",
                         "access_rules": [
-                            "$can_surf, $flash_badge, HM_FLASH"
+                            "$can_surf_johto, $flash_badge, HM_FLASH"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -733,7 +733,7 @@
                     {
                         "name": "Ho-Oh Room Top Right Item (Rainbow Wing)",
                         "access_rules": [
-                            "$can_surf, RAINBOW_WING"
+                            "$can_surf_johto, RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -742,7 +742,7 @@
                     {
                         "name": "Ho-Oh Room Bottom Left Item (Rainbow Wing)",
                         "access_rules": [
-                            "$can_surf, RAINBOW_WING"
+                            "$can_surf_johto, RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -751,7 +751,7 @@
                     {
                         "name": "Ho-Oh Room Bottom Right Item (Rainbow Wing)",
                         "access_rules": [
-                            "$can_surf, RAINBOW_WING"
+                            "$can_surf_johto, RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -760,7 +760,7 @@
                     {
                         "name": "Ho-Oh Room Top Left Item (Rainbow Wing)",
                         "access_rules": [
-                            "$can_surf, RAINBOW_WING"
+                            "$can_surf_johto, RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -769,7 +769,7 @@
                     {
                         "name": "Outside - Psychic Nathan",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -839,7 +839,7 @@
                     {
                         "name": "TM05 from Roar Guy",
                         "access_rules": [
-                            "$can_cut, @JohtoKanto/Route 32/Post-Guy"
+                            "$can_cut_johto, @JohtoKanto/Route 32/Post-Guy"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -1048,7 +1048,7 @@
                     {
                         "name": "B1F - Hiker Leonard",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1057,7 +1057,7 @@
                     {
                         "name": "B1F - Hiker Phillip",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1066,7 +1066,7 @@
                     {
                         "name": "B1F - Pokemaniac Andrew",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1075,7 +1075,7 @@
                     {
                         "name": "B1F - Pokemaniac Calvin",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1084,7 +1084,7 @@
                     {
                         "name": "B2F - North Item",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -1093,7 +1093,7 @@
                     {
                         "name": "B2F - Center Item",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -1102,7 +1102,7 @@
                     {
                         "name": "B2F - Cool Trainer Emma",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1111,7 +1111,7 @@
                     {
                         "name": "B2F - Cool Trainer Gwen",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1120,7 +1120,7 @@
                     {
                         "name": "B2F - Cool Trainer Nick",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1198,7 +1198,7 @@
                     {
                         "name": "B2F - Item",
                         "access_rules": [
-                            "$can_surf,$can_strength"
+                            "$can_surf_johto,$can_strength"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -1207,7 +1207,7 @@
                     {
                         "name": "B2F - Kings Rock from Man",
                         "access_rules": [
-                            "$can_surf,$can_strength"
+                            "$can_surf_johto,$can_strength"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -1583,7 +1583,7 @@
                     {
                         "name": "Cool Trainer Irene",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1592,7 +1592,7 @@
                     {
                         "name": "Cool Trainer Jenn",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1601,7 +1601,7 @@
                     {
                         "name": "Cool Trainer Kate",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1610,7 +1610,7 @@
                     {
                         "name": "Soft Sand from Kate",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -1619,7 +1619,7 @@
                     {
                         "name": "Item across Water",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -1637,7 +1637,7 @@
                     {
                         "name": "Hidden Item across Water",
                         "access_rules": [
-                            "$can_surf,^$hid"
+                            "$can_surf_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -1668,7 +1668,7 @@
                     "start_town_Goldenrod",
                     "@JohtoKanto/Ilex Forest/Post-Tree",
                     "@JohtoKanto/National Park, $nationalpark",
-                    "@JohtoKanto/Route 36/Left, $can_cut",
+                    "@JohtoKanto/Route 36/Left, $can_cut_johto",
                     "$can_freefly|Goldenrod",
                     "@JohtoKanto/Saffron City, PASS"
                 ],
@@ -2312,7 +2312,7 @@
                             "show_items, berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ]
                     },
                     {
@@ -2484,7 +2484,7 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Goldenrod City, $can_cut",
+                            "@JohtoKanto/Goldenrod City, $can_cut_johto",
                             "@JohtoKanto/National Park",
                             "@JohtoKanto/Route 36/Top, SQUIRTBOTTLE",
                             "@JohtoKanto/Route 36/Right, SQUIRTBOTTLE"
@@ -3179,7 +3179,7 @@
                 "access_rules": [
                     "start_town_Olivine",
                     "@JohtoKanto/Ecruteak City",
-                    "@JohtoKanto/Cianwood City, $can_surf",
+                    "@JohtoKanto/Cianwood City, $can_surf_johto",
                     "@JohtoKanto/S.S. Aqua",
                     "$can_freefly|Olivine"
                 ],
@@ -3238,7 +3238,7 @@
                     {
                         "name": "Port - Hidden Item in Buoy",
                         "access_rules": [
-                            "S_S_TICKET,$can_surf,^$hid"
+                            "S_S_TICKET,$can_surf_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on,johto_only_off"
@@ -3605,7 +3605,7 @@
                     {
                         "name": "Swimmer Elaine",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -3614,7 +3614,7 @@
                     {
                         "name": "Swimmer Paula",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -3623,7 +3623,7 @@
                     {
                         "name": "Swimmer Simon",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -3632,7 +3632,7 @@
                     {
                         "name": "Swimmer Randall",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -3669,7 +3669,7 @@
             {
                 "name": "Route 41",
                 "access_rules": [
-                    "@JohtoKanto/Olivine City, $can_surf"
+                    "@JohtoKanto/Olivine City, $can_surf_johto"
                 ],
                 "sections": [
                     {
@@ -3769,7 +3769,7 @@
                     {
                         "name": "1F - Item in Northeast Island",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3778,7 +3778,7 @@
                     {
                         "name": "1F - Item in Southwest Island",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3787,7 +3787,7 @@
                     {
                         "name": "B1F - Southeast Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3796,7 +3796,7 @@
                     {
                         "name": "B1F - Southwest Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3805,7 +3805,7 @@
                     {
                         "name": "B1F - South Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3814,7 +3814,7 @@
                     {
                         "name": "B1F - Northwest Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3823,7 +3823,7 @@
                     {
                         "name": "B1F - North Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3832,7 +3832,7 @@
                     {
                         "name": "B1F - Northeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash,^$hid"
+                            "^$can_flash_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -3841,7 +3841,7 @@
                     {
                         "name": "B1F - Southeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash,^$hid"
+                            "^$can_flash_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -3850,7 +3850,7 @@
                     {
                         "name": "B1F - Hidden Item on Boulder in West",
                         "access_rules": [
-                            "^$can_flash,^$hid"
+                            "^$can_flash_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -3859,7 +3859,7 @@
                     {
                         "name": "B2F - East Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3868,7 +3868,7 @@
                     {
                         "name": "B2F - West Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3877,7 +3877,7 @@
                     {
                         "name": "B2F - North Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3906,7 +3906,7 @@
                 "name": "Cianwood City",
                 "access_rules": [
                     "start_town_Cianwood",
-                    "@JohtoKanto/Olivine City, $can_surf",
+                    "@JohtoKanto/Olivine City, $can_surf_johto",
                     "$can_freefly|Cianwood"
                 ],
                 "sections": [
@@ -4040,7 +4040,7 @@
                     {
                         "name": "Item across Water",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -4058,7 +4058,7 @@
                             "show_items, berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf, $can_cut"
+                            "$can_surf_johto, $can_cut_johto"
                         ]
                     },
                     {
@@ -4067,7 +4067,7 @@
                             "show_items, berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf, $can_cut"
+                            "$can_surf_johto, $can_cut_johto"
                         ]
                     },
                     {
@@ -4076,7 +4076,7 @@
                             "show_items, berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf, $can_cut"
+                            "$can_surf_johto, $can_cut_johto"
                         ]
                     },
                     {
@@ -4100,7 +4100,7 @@
                     {
                         "name": "Hidden Item in Pond Rock",
                         "access_rules": [
-                            "$can_surf,^$hid"
+                            "$can_surf_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -4319,7 +4319,7 @@
                     {
                         "name": "B1F - Southeast Item",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -4328,7 +4328,7 @@
                     {
                         "name": "B1F - East Item",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -4337,7 +4337,7 @@
                     {
                         "name": "B1F - Northeast Item",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -4346,7 +4346,7 @@
                     {
                         "name": "B1F - South Item",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -4355,7 +4355,7 @@
                     {
                         "name": "B1F - West Item",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -4722,7 +4722,7 @@
                             "show_items, berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf,$can_cut"
+                            "$can_surf_johto,$can_cut_johto"
                         ]
                     },
                     {
@@ -4800,7 +4800,7 @@
                     {
                         "name": "TM10 from Hidden Power House",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -4809,7 +4809,7 @@
                     {
                         "name": "Blackbelt from Wesley",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -4818,7 +4818,7 @@
                     {
                         "name": "Red Scale from Gyarados",
                         "access_rules": [
-                            "$can_surf, red_gyarados_vanilla",
+                            "$can_surf_johto, red_gyarados_vanilla",
                             "$can_whirlpool, red_gyarados_whirlpool"
                         ],
                         "visibility_rules": [
@@ -4828,7 +4828,7 @@
                     {
                         "name": "Northwest Item",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -4837,7 +4837,7 @@
                     {
                         "name": "Northeast Item",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -4864,7 +4864,7 @@
                     {
                         "name": "Cool Trainer Aaron",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -4882,7 +4882,7 @@
                     {
                         "name": "Hidden Item behind Cut Tree",
                         "access_rules": [
-                            "$can_cut,^$hid"
+                            "$can_cut_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -4900,7 +4900,7 @@
                     {
                         "name": "Help Lance",
                         "access_rules": [
-                            "$can_surf, red_gyarados_vanilla",
+                            "$can_surf_johto, red_gyarados_vanilla",
                             "$can_whirlpool, red_gyarados_whirlpool"
                         ],
                         "hosted_item": "EVENT_DECIDED_TO_HELP_LANCE",
@@ -4946,7 +4946,7 @@
                     {
                         "name": "Center Item across Water",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5009,7 +5009,7 @@
                     {
                         "name": "Hidden Item across Water",
                         "access_rules": [
-                            "$can_surf,^$hid"
+                            "$can_surf_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5255,7 +5255,7 @@
                     {
                         "name": "Dragon's Den B1F - Northeast Item",
                         "access_rules": [
-                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5273,7 +5273,7 @@
                     {
                         "name": "Dragon's Den B1F - West Item",
                         "access_rules": [
-                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5282,7 +5282,7 @@
                     {
                         "name": "Dragon's Den B1F - Cool Trainer Cara",
                         "access_rules": [
-                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -5291,7 +5291,7 @@
                     {
                         "name": "Dragon's Den B1F - Cool Trainer Darin",
                         "access_rules": [
-                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -5300,7 +5300,7 @@
                     {
                         "name": "Dragon's Den B1F - Twins Lea & Pia",
                         "access_rules": [
-                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -5327,7 +5327,7 @@
                     {
                         "name": "Dragon's Den B1F - Center Hidden Item in Water",
                         "access_rules": [
-                            "$can_surf,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
+                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5358,8 +5358,8 @@
             {
                 "name": "Dark Cave Blackthorn Entrance",
                 "access_rules": [
-                    "@JohtoKanto/Route 45, ^$can_flash, $can_surf",
-                    "blackthorn_dark_cave_waterfall, ^$can_flash, $can_waterfall"
+                    "@JohtoKanto/Route 45, ^$can_flash_johto, $can_surf_johto",
+                    "blackthorn_dark_cave_waterfall, ^$can_flash_johto, $can_waterfall"
                 ],
                 "sections": [
                     {
@@ -5481,7 +5481,7 @@
                     {
                         "name": "Hidden Item in Southeast Pond",
                         "access_rules": [
-                            "$can_surf,^$hid"
+                            "$can_surf_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5509,7 +5509,7 @@
             {
                 "name": "Route 46",
                 "access_rules": [
-                    "^$can_flash, $can_rocksmash",
+                    "^$can_flash_johto, $can_rocksmash",
                     "@JohtoKanto/Blackthorn City"
                 ],
                 "sections": [
@@ -5577,7 +5577,7 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto, @JohtoKanto/New Bark Town"
                         ]
                     },
                     {
@@ -5586,14 +5586,14 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "$can_waterfall",
+                            "$can_waterfall, @JohtoKanto/New Bark Town",
                             "@JohtoKanto/Route 26"
                         ]
                     },
                     {
                         "name": "Sandstorm from Woman in House",
                         "access_rules": [
-                            "@JohtoKanto/Route 27/Post-Waterfall, $can_surf"
+                            "@JohtoKanto/Route 27/Post-Waterfall, $can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5602,7 +5602,7 @@
                     {
                         "name": "West Item across Water",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5656,7 +5656,7 @@
                     {
                         "name": "Cool Trainer Megan",
                         "access_rules": [
-                            "@JohtoKanto/Route 27/Post-Waterfall, $can_surf"
+                            "@JohtoKanto/Route 27/Post-Waterfall, $can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -5674,7 +5674,7 @@
                     {
                         "name": "Tohjo Falls - Item",
                         "access_rules": [
-                            "$can_surf"
+                            "$can_surf_johto, @JohtoKanto/New Bark Town"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5916,7 +5916,7 @@
                     {
                         "name": "Steel Wing from Celebrity in House",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5925,7 +5925,7 @@
                     {
                         "name": "Hidden Item behind Cut Tree",
                         "access_rules": [
-                            "$can_cut, ^$hid"
+                            "$can_cut_johto, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5969,7 +5969,7 @@
                     {
                         "name": "Outside - Hidden Item across Water",
                         "access_rules": [
-                            "$can_surf,^$hid"
+                            "$can_surf_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5978,7 +5978,7 @@
                     {
                         "name": "1F - Southwest Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5987,7 +5987,7 @@
                     {
                         "name": "1F - Northwest Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5996,7 +5996,7 @@
                     {
                         "name": "1F - Southeast Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6005,7 +6005,7 @@
                     {
                         "name": "1F - Center Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6014,7 +6014,7 @@
                     {
                         "name": "1F - Southeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash,^$hid"
+                            "^$can_flash_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -6023,7 +6023,7 @@
                     {
                         "name": "1F - Northeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash,^$hid"
+                            "^$can_flash_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -6032,7 +6032,7 @@
                     {
                         "name": "2F - Northeast Item",
                         "access_rules": [
-                            "^$can_flash,$can_waterfall"
+                            "^$can_flash_johto,$can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6041,7 +6041,7 @@
                     {
                         "name": "2F - West Item",
                         "access_rules": [
-                            "^$can_flash,$can_waterfall"
+                            "^$can_flash_johto,$can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6050,7 +6050,7 @@
                     {
                         "name": "2F - East Item",
                         "access_rules": [
-                            "^$can_flash"
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6059,7 +6059,7 @@
                     {
                         "name": "2F - North Chamber Item",
                         "access_rules": [
-                            "^$can_flash,$can_waterfall"
+                            "^$can_flash_johto,$can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6068,7 +6068,7 @@
                     {
                         "name": "2F - South Chamber Item",
                         "access_rules": [
-                            "^$can_flash,$can_waterfall"
+                            "^$can_flash_johto,$can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6077,7 +6077,7 @@
                     {
                         "name": "2F - Hidden Item",
                         "access_rules": [
-                            "^$can_flash,^$hid"
+                            "^$can_flash_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -6087,7 +6087,7 @@
                         "name": "Defeat Red",
                         "hosted_item": "EVENT_BEAT_RED",
                         "access_rules": [
-                            "^$can_flash, $red_badges"
+                            "^$can_flash_johto, $red_badges"
                         ]
                     }
                 ],
@@ -6173,8 +6173,8 @@
                     {
                         "name": "TM42 from Sleepy Guy",
                         "access_rules": [
-                            "$can_surf",
-                            "$can_cut"
+                            "$can_surf_kanto",
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6253,7 +6253,7 @@
                 "access_rules": [
                     "start_town_Pallet",
                     "@JohtoKanto/Viridian City",
-                    "@JohtoKanto/Cinnabar Island, $can_surf",
+                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto",
                     "$can_freefly|Pallet"
                 ],
                 "visibility_rules": [
@@ -6298,7 +6298,7 @@
                         "access_rules": [
                             "@JohtoKanto/Vermilion City, EVENT_FOUGHT_SNORLAX",
                             "@JohtoKanto/Route 2/Main Section, route_2_open",
-                            "@JohtoKanto/Route 2/Main Section, $can_cut"
+                            "@JohtoKanto/Route 2/Main Section, $can_cut_kanto"
                         ]
                     },
                     {
@@ -6310,7 +6310,7 @@
                             "@JohtoKanto/Viridian City",
                             "@JohtoKanto/Route 2/Diglett's Cave Section, route_2_open",
                             "@JohtoKanto/Route 2/Diglett's Cave Section, route_2_ledge",
-                            "@JohtoKanto/Route 2/Diglett's Cave Section, $can_cut"
+                            "@JohtoKanto/Route 2/Diglett's Cave Section, $can_cut_kanto"
                         ]
                     },
                     {
@@ -6343,7 +6343,7 @@
                     {
                         "name": "Southeast Item",
                         "access_rules": [
-                            "@JohtoKanto/Route 2/Main Section, $can_cut"
+                            "@JohtoKanto/Route 2/Main Section, $can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6687,7 +6687,7 @@
                     "@JohtoKanto/Pewter City, route_3_vanilla",
                     "@JohtoKanto/Pewter City, BOULDER_BADGE",
                     "@JohtoKanto/Saffron City, $tea|north",
-                    "@JohtoKanto/Route 9, $can_cut",
+                    "@JohtoKanto/Route 9, $can_cut_kanto",
                     "$can_freefly|Cerulean",
                     "@JohtoKanto/Vermilion City, $passage|ns"
                 ],
@@ -6746,7 +6746,7 @@
                     {
                         "name": "Hidden Item in Water",
                         "access_rules": [
-                            "$can_surf,^$hid"
+                            "$can_surf_kanto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -6844,7 +6844,7 @@
                     {
                         "name": "Item behind Cut Tree",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6923,9 +6923,9 @@
             {
                 "name": "Route 9",
                 "access_rules": [
-                    "@JohtoKanto/Cerulean City, $can_cut",
+                    "@JohtoKanto/Cerulean City, $can_cut_kanto",
                     "start_town_RockTunnel",
-                    "@JohtoKanto/Lavender Town, ^$can_flash"
+                    "@JohtoKanto/Lavender Town, ^$can_flash_kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -6998,8 +6998,8 @@
             {
                 "name": "Rock Tunnel",
                 "access_rules": [
-                    "@JohtoKanto/Lavender Town, ^$can_flash",
-                    "@JohtoKanto/Route 9, ^$can_flash"
+                    "@JohtoKanto/Lavender Town, ^$can_flash_kanto",
+                    "@JohtoKanto/Route 9, ^$can_flash_kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -7084,7 +7084,7 @@
             {
                 "name": "Power Plant",
                 "access_rules": [
-                    "@JohtoKanto/Route 9, $can_surf"
+                    "@JohtoKanto/Route 9, $can_surf_kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -7173,7 +7173,7 @@
                 "access_rules": [
                     "start_town_Lavender",
                     "@JohtoKanto/Saffron City, $tea|east",
-                    "@JohtoKanto/Route 9, ^$can_flash",
+                    "@JohtoKanto/Route 9, ^$can_flash_kanto",
                     "@JohtoKanto/Fuchsia City",
                     "$can_freefly|Lavender",
                     "@JohtoKanto/Celadon City, $passage|ew, ew_underground_on"
@@ -7412,7 +7412,7 @@
                     {
                         "name": "Gym - Twins Jo & Zoe",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -7421,7 +7421,7 @@
                     {
                         "name": "Gym - Picnicker Tanya",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -7430,7 +7430,7 @@
                     {
                         "name": "Gym - Lass Michelle",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -7439,7 +7439,7 @@
                     {
                         "name": "Gym - Beauty Julia",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -7449,7 +7449,7 @@
                         "name": "Gym - Beat Erika",
                         "hosted_item": "EVENT_BEAT_ERIKA",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7458,7 +7458,7 @@
                     {
                         "name": "Gym - Rainbow Badge from Erika",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, badges_on",
@@ -7468,7 +7468,7 @@
                     {
                         "name": "​Gym - Rainbow Badge from Erika",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, badges_off"
@@ -7478,7 +7478,7 @@
                     {
                         "name": "Gym - TM19 from Erika",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7667,8 +7667,8 @@
                     {
                         "name": "Gym - Juggler Horton",
                         "access_rules": [
-                            "$can_cut",
-                            "$can_surf"
+                            "$can_cut_kanto",
+                            "$can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -7677,8 +7677,8 @@
                     {
                         "name": "Gym - Gentleman Gregory",
                         "access_rules": [
-                            "$can_cut",
-                            "$can_surf"
+                            "$can_cut_kanto",
+                            "$can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -7687,8 +7687,8 @@
                     {
                         "name": "Gym - Guitarist Vincent",
                         "access_rules": [
-                            "$can_cut",
-                            "$can_surf"
+                            "$can_cut_kanto",
+                            "$can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -7697,8 +7697,8 @@
                     {
                         "name": "Gym - Thunder Badge from Lt. Surge",
                         "access_rules": [
-                            "$can_cut",
-                            "$can_surf"
+                            "$can_cut_kanto",
+                            "$can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, badges_on",
@@ -7715,8 +7715,8 @@
                     {
                         "name": "​Gym - Thunder Badge from Lt. Surge",
                         "access_rules": [
-                            "$can_cut",
-                            "$can_surf"
+                            "$can_cut_kanto",
+                            "$can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, badges_off"
@@ -7759,7 +7759,7 @@
                     {
                         "name": "Port - Hidden Item in Buoy",
                         "access_rules": [
-                            "S_S_TICKET,$can_surf,^$hid"
+                            "S_S_TICKET,$can_surf_kanto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -7959,7 +7959,7 @@
                     {
                         "name": "Item behind North Cut Tree",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7968,7 +7968,7 @@
                     {
                         "name": "Item behind South Cut Tree across Water",
                         "access_rules": [
-                            "$can_cut,$can_surf"
+                            "$can_cut_kanto,$can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8001,7 +8001,7 @@
                     {
                         "name": "Hidden Item on Island",
                         "access_rules": [
-                            "$can_surf,^$hid"
+                            "$can_surf_kanto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8151,7 +8151,7 @@
                     {
                         "name": "Item",
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8219,7 +8219,7 @@
                     "@JohtoKanto/Lavender Town",
                     "@JohtoKanto/Celadon City, BICYCLE",
                     "$can_freefly|Fuchsia",
-                    "@JohtoKanto/Cinnabar Island, $can_surf",
+                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto",
                     "@JohtoKanto/Route 11"
                 ],
                 "visibility_rules": [
@@ -8259,7 +8259,7 @@
                             "show_items, berries_on"
                         ],
                         "access_rules": [
-                            "$can_cut"
+                            "$can_cut_kanto"
                         ]
                     }
                 ],
@@ -8287,7 +8287,7 @@
             {
                 "name": "Route 19",
                 "access_rules": [
-                    "@JohtoKanto/Cinnabar Island, $can_surf"
+                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -8339,7 +8339,7 @@
             {
                 "name": "Route 20",
                 "access_rules": [
-                    "@JohtoKanto/Cinnabar Island, $can_surf"
+                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -8385,7 +8385,7 @@
             {
                 "name": "Seafoam Islands",
                 "access_rules": [
-                    "@JohtoKanto/Cinnabar Island, $can_surf"
+                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -8435,7 +8435,7 @@
                 "name": "Cinnabar Island",
                 "access_rules": [
                     "start_town_Cinnabar",
-                    "@JohtoKanto/Pallet Town, $can_surf",
+                    "@JohtoKanto/Pallet Town, $can_surf_kanto",
                     "$can_freefly|Cinnabar"
                 ],
                 "visibility_rules": [
@@ -8483,7 +8483,7 @@
             {
                 "name": "Route 21",
                 "access_rules": [
-                    "@JohtoKanto/Pallet Town, $can_surf"
+                    "@JohtoKanto/Pallet Town, $can_surf_kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
