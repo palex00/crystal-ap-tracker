@@ -1074,6 +1074,12 @@
         "inherit_codes": false
       },
       {
+        "name": "Starting Town - Union Cave",
+        "img": "/images/settings/town_locations/unioncave.png",
+        "codes": "start_town_location,start_town_UnionCave",
+        "inherit_codes": false
+      },
+      {
         "name": "Starting Town - Azalea Town",
         "img": "/images/settings/town_locations/azalea.png",
         "codes": "start_town_location,start_town_Azalea",
@@ -1143,6 +1149,12 @@
         "name": "Starting Town - Cerulean City",
         "img": "/images/settings/town_locations/cerulean.png",
         "codes": "start_town_location,start_town_Cerulean",
+        "inherit_codes": false
+      },
+      {
+        "name": "Starting Town - Rock Tunnel",
+        "img": "/images/settings/town_locations/rocktunnel.png",
+        "codes": "start_town_location,start_town_RockTunnel",
         "inherit_codes": false
       },
       {

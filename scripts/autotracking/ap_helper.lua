@@ -68,6 +68,7 @@ PALLET = 2
 VIRIDIAN = 3
 PEWTER = 4
 CERULEAN = 5
+ROCKTUNNEL = 6
 VERMILION = 7
 LAVENDER = 8
 SAFFRON = 9
@@ -77,6 +78,7 @@ CINNABAR = 12
 NEW_BARK = 14
 CHERRYGROVE = 15
 VIOLET = 16
+UNIONCAVE = 17
 AZALEA = 18
 CIANWOOD = 19
 GOLDENROD = 20
@@ -110,6 +112,33 @@ TOWN_MAPPING = {
     [CINNABAR] = 19,
     [FUCHSIA] = 20,
     [SILVER_CAVE] = 21
+}
+
+STARTTOWN_MAPPING = {
+    [NEW_BARK] = 0,
+    [CHERRYGROVE] = 1,
+    [VIOLET] = 2,
+    [UNIONCAVE] = 3,
+    [AZALEA] = 4,
+    [GOLDENROD] = 5,
+    [ECRUTEAK] = 6,
+    [OLIVINE] = 7,
+    [CIANWOOD] = 8,
+    [MAHOGANY] = 9,
+    [LAKE_OF_RAGE] = 10,
+    [BLACKTHORN] = 11,
+    [PALLET] = 12,
+    [VIRIDIAN] = 13,
+    [PEWTER] = 14,
+    [CERULEAN] = 15,
+    [ROCKTUNNEL] = 16,
+    [VERMILION] = 17,
+    [LAVENDER] = 18,
+    [CELADON] = 19,
+    [SAFFRON] = 20,
+    [CINNABAR] = 21,
+    [FUCHSIA] = 22,
+    [SILVER_CAVE] = 23
 }
 
 SLOT_CODES = {
@@ -247,7 +276,7 @@ SLOT_CODES = {
     },
     starting_town = {
         code = "start_town_location",
-        mapping = TOWN_MAPPING
+        mapping = STARTTOWN_MAPPING
     }
 }
 

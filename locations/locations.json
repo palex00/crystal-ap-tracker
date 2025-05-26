@@ -813,7 +813,8 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Violet City, $r32_guy",
-                            "@JohtoKanto/Union Cave"
+                            "@JohtoKanto/Union Cave",
+                            "start_town_UnionCave"
                         ]
                     },
                     {
@@ -6922,6 +6923,7 @@
                 "name": "Route 9",
                 "access_rules": [
                     "@JohtoKanto/Cerulean City, $can_cut",
+                    "start_town_RockTunnel",
                     "@JohtoKanto/Lavender Town, ^$can_flash"
                 ],
                 "visibility_rules": [
