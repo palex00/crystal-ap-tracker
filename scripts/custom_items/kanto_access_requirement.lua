@@ -51,7 +51,7 @@ function KantoAccessRequirement:updateIcon()
     end
     self.ItemInstance.Icon = ImageReference:FromPackRelativePath(self.baseImage)
     self.ItemInstance.IconMods = "overlay|" .. overlayImg
-    self.ItemInstance:SetOverlayBackground("171717")
+    self.ItemInstance:SetOverlayBackground("202020")
 end
 
 function KantoAccessRequirement:onLeftClick()
