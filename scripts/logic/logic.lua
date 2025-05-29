@@ -193,24 +193,8 @@ function can_freefly(destination)
   return can_fly() and (has("free_fly_"..destination) or (has("map_card_fly_"..destination) and has_mapcard()))
 end
 
-function tower_takeover()
-  return badges() >= progCount("tower_badges")
-end
-
 function clear_snorlax()
   return (has("POKE_GEAR") and has("RADIO_CARD") and has("EXPN_CARD"))
-end
-
-function elite_four_badges()
-  return badges() >= progCount("e4_badges")
-end
-
-function red_badges()
-  return badges() >= progCount("red_badges")
-end
-
-function mt_silver_badges()
-  return badges() >= progCount("mt_silver_badges")
 end
 
 function all_badges()
@@ -246,12 +230,6 @@ end
 
 function nationalpark()
   return has("national_park_vanilla") or has("BICYCLE")
-end
-
-function kantoaccess()
-  return (has("kanto_access_champ") and has("EVENT_BEAT_ELITE_FOUR"))
-  or (has("kanto_access_snorlax") and has("EVENT_FOUGHT_SNORLAX"))
-  or (has("kanto_access_badges") and badges() >= progCount("kanto_access_badges_count"))
 end
 
 function scout()

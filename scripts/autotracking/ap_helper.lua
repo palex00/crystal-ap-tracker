@@ -51,6 +51,10 @@ MAP_TOGGLE_REVERSE = {
     [0] = 1,
     [1] = 0
 }
+MAP_BADGEGYM = {
+    [0] = "badges",
+    [1] = "gyms"
+}
 
 PALLET = 2
 VIRIDIAN = 3
@@ -284,6 +288,11 @@ REQUIREMENT_CODES = {
         code = "mt_silver_requirement",
         mapping = MAP_BADGEGYM,
         item = SILVER_REQ
+    },
+    route_44_access_requirement = {
+        code = "route_44_requirement",
+        mapping = MAP_BADGEGYM,
+        item = R44_REQ
     }
 
 }
@@ -303,6 +312,10 @@ AMOUNT_CODES = {
     mt_silver_count = {
         code = "mt_silver_requirement",
         item = SILVER_REQ
+    },
+    route_44_access_count = {
+        code = "route_44_requirement",
+        item = R44_REQ
     }
 }
 

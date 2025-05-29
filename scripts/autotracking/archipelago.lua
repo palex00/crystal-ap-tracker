@@ -47,8 +47,6 @@ function onClear(slot_data)
         elseif SLOT_CODES[k] then
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
             -- print("Setting " .. k .. " to " .. v)
-        elseif BADGE_CODES[k] then
-            Tracker:FindObjectForCode(BADGE_CODES[k].code).AcquiredCount = BADGE_CODES[k].mapping[v]
         elseif REQUIREMENT_CODES[k] then
 			local item = SLOT_CODES[k].item
 			item:setType(SLOT_CODES[k].mapping[v])

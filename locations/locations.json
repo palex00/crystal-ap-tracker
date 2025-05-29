@@ -1903,8 +1903,8 @@
                     {
                         "name": "B2F - Burglar Duncan",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY",
-                            "$tower_takeover,BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1913,8 +1913,8 @@
                     {
                         "name": "B2F - Burglar Eddie",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY",
-                            "$tower_takeover,BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1923,8 +1923,8 @@
                     {
                         "name": "B2F - Grunt 1",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY",
-                            "$tower_takeover,BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1933,8 +1933,8 @@
                     {
                         "name": "B2F - Grunt 2",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY",
-                            "$tower_takeover,BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1943,8 +1943,8 @@
                     {
                         "name": "B2F - Grunt 3",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY",
-                            "$tower_takeover,BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1953,8 +1953,8 @@
                     {
                         "name": "B2F - Grunt 4",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY",
-                            "$tower_takeover,BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2023,8 +2023,8 @@
                     {
                         "name": "Warehouse - Grunt 1",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY",
-                            "$tower_takeover,BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2033,8 +2033,8 @@
                     {
                         "name": "Warehouse - Grunt 2",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY",
-                            "$tower_takeover,BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2043,8 +2043,8 @@
                     {
                         "name": "Warehouse - Grunt 3",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY",
-                            "$tower_takeover,BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2091,7 +2091,7 @@
                     {
                         "name": "1F - Grunt",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2106,7 +2106,7 @@
                     {
                         "name": "2F - Grunt 1",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2115,7 +2115,7 @@
                     {
                         "name": "2F - Grunt 2",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2124,7 +2124,7 @@
                     {
                         "name": "2F - Grunt 3",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2133,7 +2133,7 @@
                     {
                         "name": "2F - Grunt 4",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2151,7 +2151,7 @@
                     {
                         "name": "3F - Grunt 1",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2160,7 +2160,7 @@
                     {
                         "name": "3F - Grunt 2",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2169,7 +2169,7 @@
                     {
                         "name": "3F - Grunt 3",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY"
+                            "tower_requirement,CARD_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2178,7 +2178,7 @@
                     {
                         "name": "3F - Scientist Marc",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2196,7 +2196,7 @@
                     {
                         "name": "4F - Grunt 1",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2205,7 +2205,7 @@
                     {
                         "name": "4F - Grunt 2",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY"
+                            "tower_requirement,CARD_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2214,7 +2214,7 @@
                     {
                         "name": "4F - Rocket Executive",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY"
+                            "tower_requirement,CARD_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2223,7 +2223,7 @@
                     {
                         "name": "4F - Scientist Rich",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2232,7 +2232,7 @@
                     {
                         "name": "5F - Basement Key from False Director",
                         "access_rules": [
-                            "$tower_takeover"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2241,7 +2241,7 @@
                     {
                         "name": "5F - Clear Bell from Rocket Boss",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY"
+                            "tower_requirement,CARD_KEY"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2250,7 +2250,7 @@
                     {
                         "name": "5F - Item",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY"
+                            "tower_requirement,CARD_KEY"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2259,7 +2259,7 @@
                     {
                         "name": "5F - Rocket Executive",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY"
+                            "tower_requirement,CARD_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2268,7 +2268,7 @@
                     {
                         "name": "Clear Radio Tower",
                         "access_rules": [
-                            "$tower_takeover,CARD_KEY"
+                            "tower_requirement,CARD_KEY"
                         ],
                         "hosted_item": "EVENT_CLEARED_RADIO_TOWER",
                         "visibility_rules": [
@@ -4394,7 +4394,7 @@
                 "access_rules": [
                     "start_town_Mahogany",
                     "@JohtoKanto/Ecruteak City",
-                    "@JohtoKanto/Blackthorn City",
+                    "@JohtoKanto/Blackthorn City, route_44_requirement",
                     "@JohtoKanto/Lake of Rage",
                     "$can_freefly|Mahogany"
                 ],
@@ -4933,7 +4933,7 @@
             {
                 "name": "Route 44",
                 "access_rules": [
-                    "@JohtoKanto/Mahogany Town, $tower_takeover",
+                    "@JohtoKanto/Mahogany Town, route_44_requirement",
                     "@JohtoKanto/Blackthorn City"
                 ],
                 "sections": [
@@ -5037,7 +5037,7 @@
             {
                 "name": "Ice Path",
                 "access_rules": [
-                    "@JohtoKanto/Mahogany Town, $tower_takeover",
+                    "@JohtoKanto/Mahogany Town, route_44_requirement",
                     "@JohtoKanto/Blackthorn City"
                 ],
                 "sections": [
@@ -5157,7 +5157,7 @@
                 "name": "Blackthorn City",
                 "access_rules": [
                     "start_town_Blackthorn",
-                    "@JohtoKanto/Mahogany Town, $tower_takeover, $can_strength",
+                    "@JohtoKanto/Mahogany Town, route_44_requirement, $can_strength",
                     "@JohtoKanto/Route 45",
                     "$can_freefly|Blackthorn"
                 ],
@@ -5708,8 +5708,8 @@
                 "name": "Route 26",
                 "access_rules": [
                     "@JohtoKanto/Route 27/Post-Waterfall",
-                    "@JohtoKanto/Viridian City, $kantoaccess",
-                    "@JohtoKanto/Silver Cave, $mt_silver_badges"
+                    "@JohtoKanto/Viridian City, kanto_access_condition",
+                    "@JohtoKanto/Silver Cave, mt_silver_requirement"
                 ],
                 "sections": [
                     {
@@ -5787,7 +5787,7 @@
             {
                 "name": "Victory Road",
                 "access_rules": [
-                    "@JohtoKanto/Route 26, $elite_four_badges"
+                    "@JohtoKanto/Route 26, e4_requirement"
                 ],
                 "sections": [
                     {
@@ -5906,7 +5906,7 @@
             {
                 "name": "Route 28",
                 "access_rules": [
-                    "@JohtoKanto/Route 26, $mt_silver_badges",
+                    "@JohtoKanto/Route 26, mt_silver_requirement",
                     "@JohtoKanto/Silver Cave"
                 ],
                 "visibility_rules": [
@@ -5959,7 +5959,7 @@
                 "name": "Silver Cave",
                 "access_rules": [
                     "start_town_SilverCave",
-                    "@JohtoKanto/Route 26, $mt_silver_badges",
+                    "@JohtoKanto/Route 26, mt_silver_requirement",
                     "$can_freefly|SilverCave"
                 ],
                 "visibility_rules": [
@@ -6087,7 +6087,7 @@
                         "name": "Defeat Red",
                         "hosted_item": "EVENT_BEAT_RED",
                         "access_rules": [
-                            "^$can_flash_johto, $red_badges"
+                            "^$can_flash_johto, red_requirement"
                         ]
                     }
                 ],
@@ -6134,7 +6134,7 @@
                     "@JohtoKanto/Route 2/Main Section",
                     "@JohtoKanto/Pallet Town",
                     "$can_freefly|Viridian",
-                    "@JohtoKanto/Route 26, $kantoaccess"
+                    "@JohtoKanto/Route 26, kanto_access_condition"
                 ],
                 "visibility_rules": [
                     "johto_only_off"

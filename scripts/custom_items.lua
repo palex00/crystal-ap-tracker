@@ -16,5 +16,4 @@ SILVER_REQ = BadgesGymsRequirement("Mt. Silver Requirement", "mt_silver_requirem
 R44_REQ = BadgesGymsRequirement("Route 44 Requirement", "route_44_requirement", 7, 16, "images/settings/route_44_requirement.png")
 KANTO_REQ = KantoAccessRequirement()
 
-
 -- POKEDEX = Pokedex()
