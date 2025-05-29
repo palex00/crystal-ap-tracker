@@ -4,29 +4,35 @@
         "orientation": "vertical",
         "margin": "0,0",
         "content": [
-            //{
-            //    "type": "array",
-            //    "orientation": "horizontal",
-            //    "margin": "2,2",
-            //    "content": [
-            //        {
-            //            "type": "item",
-            //            "item": "e4_requirement",
-            //            "item_size": "0, 0"
-            //        }
-            //    ]
-            //},
             {
                 "type": "array",
                 "orientation": "vertical",
-                "margin": "0,0",
                 "content": [
                     {
-                        "type": "item",
-                        "item_margin": "2, 2",
-                        "item": "e4_requirement",
-                        "item_size": "32, 44"
-                    },
+                        "type": "itemgrid",
+                        "item_margin": "2, -8",
+                        "item_size": "32,44",
+                        "item_h_alignment": "center",
+                        "item_v_alignment": "center",
+                        "h_alignment": "left",
+                        "rows": [
+                            [
+                                "e4_requirement",
+                                "tower_requirement",
+                                "mt_silver_requirement",
+                                "red_requirement",
+                                "hiddenitems",
+                                "berries",
+                                "trainersanity"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "content": [
                     {
                         "type": "itemgrid",
                         "item_margin": "2, 2",
@@ -34,36 +40,24 @@
                         "h_alignment": "left",
                         "rows": [
                             [
-                                //"tower_badges",
-                                //"e4_badges",
-                                //"mt_silver_badges",
-                                //"red_badges",
-                                "ilextree",
-                                "r32_guy",
-                                "red_gyarados_access",
+                                "johto_only",
+                                "goal",
                                 "blackthorn_dark_cave_access",
-                                "location_visibility"
+                                "r32_guy",
+                                "ilextree",
+                                "red_gyarados_access",
+                                "pokegear",
+                                "badges",
+                                "reqitemfinder"
                             ],
                             [
-                                "e4_requirement",
-                                "berries",
-                                "pokegear",
-                                "trainersanity",
-                                "hiddenitems",
-                                "badges",
-                                "reqitemfinder",
                                 "route_2_access",
                                 "national_park_access",
-                                "route_3_access"
-                            ],
-                            [
+                                "route_3_access",
                                 "tea_guard",
                                 "ew_underground",
                                 "underground_power",
                                 "badgereqs",
-                                "goal",
-                                "automap",
-                                "johto_only",
                                 "kanto_access_condition",
                                 "kanto_access_badges_count"
                             ]
@@ -77,48 +71,80 @@
                 "margin": "8,6",
                 "content": [
                     {
-                        "type": "item",
-                        "item": "free_fly_dummy",
-                        "item_size": "16, 16"
+                        "type": "array",
+                        "orientation": "vertical",
+                        "content": [
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "start_town_dummy",
+                                        "item_size": "16, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "start_town_location",
+                                        "item_size": "256, 16"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "free_fly_dummy",
+                                        "item_size": "16, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "free_fly_location",
+                                        "item_size": "256, 16"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "map_card_fly_dummy",
+                                        "item_size": "16, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "map_card_fly",
+                                        "item_size": "256, 16"
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
-                        "type": "item",
-                        "item": "free_fly_location",
-                        "item_size": "256, 16"
-                    }
-                ]
-            },
-            {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "8,6",
-                "content": [
-                    {
-                        "type": "item",
-                        "item": "map_card_fly_dummy",
-                        "item_size": "16, 16"
-                    },
-                    {
-                        "type": "item",
-                        "item": "map_card_fly",
-                        "item_size": "256, 16"
-                    }
-                ]
-            },
-            {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "8,6",
-                "content": [
-                    {
-                        "type": "item",
-                        "item": "start_town_dummy",
-                        "item_size": "16, 16"
-                    },
-                    {
-                        "type": "item",
-                        "item": "start_town_location",
-                        "item_size": "256, 16"
+                        "type": "array",
+                        "orientation": "vertical",
+                        "margin": "2,2",
+                        "content": [
+                            {
+                                "type": "item",
+                                "item": "location_visibility",
+                                "margin": "2,2",
+                                "item_size": "32, 32"
+                            },
+                            {
+                                "type": "item",
+                                "item": "automap",
+                                "margin": "2,2",
+                                "item_size": "32, 32"
+                            }
+                        ]
                     }
                 ]
             }

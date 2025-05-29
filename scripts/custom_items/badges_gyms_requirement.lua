@@ -46,6 +46,7 @@ function BadgesGymsRequirement:updateIcon()
     self.ItemInstance.Icon = ImageReference:FromPackRelativePath(self.baseImage or "")
     self.ItemInstance.IconMods = "overlay|" .. overlayImg
     self.ItemInstance:SetOverlay(tostring(math.floor(stage)))
+    self.ItemInstance:SetOverlayBackground("171717")
 end
 
 function BadgesGymsRequirement:onLeftClick()

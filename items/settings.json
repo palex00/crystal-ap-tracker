@@ -580,15 +580,15 @@
       }
     ]
   },
-  //{
-  //  "name": "Radio Tower Badges",
-  //  "img": "/images/events/tower_cleared.png",
-  //  "codes": "tower_badges",
-  //  "type": "consumable",
-  //  "min_quantity": 1,
-  //  "max_quantity": 16,
-  //  "initial_quantity": 7
-  //},
+  {
+    "name": "Radio Tower Badges",
+    "img": "/images/events/tower_cleared.png",
+    "codes": "tower_badges",
+    "type": "consumable",
+    "min_quantity": 1,
+    "max_quantity": 16,
+    "initial_quantity": 7
+  },
   {
     "name": "Route 32 Guy Condition",
     "type": "progressive",
