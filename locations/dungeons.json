@@ -243,6 +243,18 @@
                     {
                         "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Southeast Hidden Item",
                         "name": "Dragon's Den B1F - Southeast Hidden Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Rising Badge from Clair",
+                        "name": "Dragon's Den B1F - Rising Badge from Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/​Dragon's Den B1F - Rising Badge from Clair",
+                        "name": "​Dragon's Den B1F - Rising Badge from Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - TM24 from Clair",
+                        "name": "Dragon's Den B1F - TM24 from Clair"
                     }
                 ],
                 "map_locations": [
@@ -1602,6 +1614,30 @@
                     {
                         "map": "DragonsDenB1F",
                         "x": 536,
+                        "y": 472
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Rising Badge from Clair",
+                        "name": "Dragon's Den B1F - Rising Badge from Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/​Dragon's Den B1F - Rising Badge from Clair",
+                        "name": "​Dragon's Den B1F - Rising Badge from Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - TM24 from Clair",
+                        "name": "Dragon's Den B1F - TM24 from Clair"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DragonsDenB1F",
+                        "x": 312,
                         "y": 472
                     }
                 ]
@@ -8718,7 +8754,7 @@
                 "map_locations": [
                     {
                         "map": "Route37",
-                        "x": 104,
+                        "x": 112,
                         "y": 200
                     }
                 ]

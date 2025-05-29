@@ -443,8 +443,7 @@
                     {
                         "name": "Gym - Zephyr Badge from Falkner",
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -1315,8 +1314,7 @@
                     {
                         "name": "Gym - Hive Badge from Bugsy",
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ],
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
@@ -1707,8 +1705,7 @@
                     {
                         "name": "Gym - Plain Badge from Whitney",
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -2705,8 +2702,7 @@
                     {
                         "name": "Gym - Fog Badge from Morty",
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ],
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
@@ -3200,8 +3196,7 @@
                             "EVENT_JASMINE_RETURNED_TO_GYM"
                         ],
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -3953,8 +3948,7 @@
                             "$can_strength"
                         ],
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -4460,8 +4454,7 @@
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -5223,8 +5216,7 @@
                             "EVENT_CLEARED_RADIO_TOWER, $can_strength"
                         ],
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised, clair_behaviour_adult"
                         ]
                     },
                     {
@@ -5233,7 +5225,7 @@
                             "EVENT_CLEARED_RADIO_TOWER, $can_strength"
                         ],
                         "visibility_rules": [
-                            "show_items, badges_off"
+                            "show_items, badges_off, clair_behaviour_adult"
                         ],
                         "hosted_item": "RISING_BADGE"
                     },
@@ -5243,7 +5235,7 @@
                             "EVENT_CLEARED_RADIO_TOWER, $can_strength"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, clair_behaviour_adult"
                         ]
                     },
                     {
@@ -5255,7 +5247,7 @@
                     {
                         "name": "Dragon's Den B1F - Northeast Item",
                         "access_rules": [
-                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5264,7 +5256,7 @@
                     {
                         "name": "Dragon's Den B1F - East Item",
                         "access_rules": [
-                            "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5273,7 +5265,7 @@
                     {
                         "name": "Dragon's Den B1F - West Item",
                         "access_rules": [
-                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5282,7 +5274,7 @@
                     {
                         "name": "Dragon's Den B1F - Cool Trainer Cara",
                         "access_rules": [
-                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -5291,7 +5283,7 @@
                     {
                         "name": "Dragon's Den B1F - Cool Trainer Darin",
                         "access_rules": [
-                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -5300,7 +5292,7 @@
                     {
                         "name": "Dragon's Den B1F - Twins Lea & Pia",
                         "access_rules": [
-                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -5309,7 +5301,7 @@
                     {
                         "name": "Dragon's Den B1F - Southeast Hidden Item",
                         "access_rules": [
-                            "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5318,7 +5310,7 @@
                     {
                         "name": "Dragon's Den B1F - East Hidden Item in Water",
                         "access_rules": [
-                            "$can_whirlpool,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5327,10 +5319,38 @@
                     {
                         "name": "Dragon's Den B1F - Center Hidden Item in Water",
                         "access_rules": [
-                            "$can_surf_johto,$can_strength, EVENT_CLEARED_RADIO_TOWER,^$hid"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Dragon's Den B1F - Rising Badge from Clair",
+                        "access_rules": [
+                            "$can_whirlpool, EVENT_BEAT_CLAIR"
+                        ],
+                        "visibility_rules": [
+                            "show_items, $badges_randomised, clair_behaviour_child"
+                        ]
+                    },
+                    {
+                        "name": "​Dragon's Den B1F - Rising Badge from Clair",
+                        "access_rules": [
+                            "$can_whirlpool, EVENT_BEAT_CLAIR"
+                        ],
+                        "visibility_rules": [
+                            "show_items, badges_off, clair_behaviour_child"
+                        ],
+                        "hosted_item": "RISING_BADGE"
+                    },
+                    {
+                        "name": "Dragon's Den B1F - TM24 from Clair",
+                        "access_rules": [
+                            "$can_whirlpool, EVENT_BEAT_CLAIR"
+                        ],
+                        "visibility_rules": [
+                            "show_items, clair_behaviour_child"
                         ]
                     }
                 ],
@@ -6156,8 +6176,7 @@
                             "EVENT_VIRIDIAN_GYM_BLUE"
                         ],
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -6476,8 +6495,7 @@
                     {
                         "name": "Gym - Boulder Badge from Brock",
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -6732,8 +6750,7 @@
                     {
                         "name": "Gym - Cascade Badge from Misty",
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -7336,8 +7353,7 @@
                     {
                         "name": "Gym - Marsh Badge from Sabrina",
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -7461,8 +7477,7 @@
                             "$can_cut_kanto"
                         ],
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -7701,8 +7716,7 @@
                             "$can_surf_kanto"
                         ],
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -8236,8 +8250,7 @@
                     {
                         "name": "Gym - Soul Badge from Janine",
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {
@@ -8401,8 +8414,7 @@
                     {
                         "name": "Gym - Volcano Badge from Blaine",
                         "visibility_rules": [
-                            "show_items, badges_on",
-                            "show_items, badges_shuffle"
+                            "show_items, $badges_randomised"
                         ]
                     },
                     {

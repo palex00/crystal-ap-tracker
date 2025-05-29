@@ -235,3 +235,7 @@ end
 function scout()
   return AccessibilityLevel.Inspect
 end
+
+function badges_randomised()
+  return has("badges_on") or has("badges_shuffle")
+end

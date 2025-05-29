@@ -1142,5 +1142,26 @@
     "img": "/images/settings/town_locations/starttown_template.png",
     "codes": "start_town_dummy",
     "type": "static"
+  },
+  {
+    "name": "Clair Behavior",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Clair is behaving like an adult",
+        "img": "/images/settings/clair.png",
+        "img_mods": "@disabled",
+        "codes": "claire_behaviour, clair_behaviour_adult",
+        "inherit_codes": false
+      },
+      {
+        "name": "Clair is behaving like a child",
+        "img": "/images/settings/clair.png",
+        "codes": "clair_behaviour, clair_behaviour_child",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

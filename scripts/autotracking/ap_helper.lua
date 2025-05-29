@@ -265,6 +265,10 @@ SLOT_CODES = {
     starting_town = {
         code = "start_town_location",
         mapping = STARTTOWN_MAPPING
+    },
+    claire_behaviour = {
+        code = "claire_behaviour",
+        mapping = MAP_TOGGLE
     }
 }
 
