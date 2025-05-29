@@ -929,43 +929,6 @@
     ]
   },
   {
-    "name": "Kanto Access Condition",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Guard removed by Snorlax",
-        "img": "/images/settings/kanto_access_snorlax.png",
-        "codes": "kanto_access_condition, kanto_access_snorlax",
-        "inherit_codes": false
-      },
-      {
-        "name": "Guard removed by Badges",
-        "img": "/images/settings/kanto_access_badge.png",
-        "codes": "kanto_access_condition, kanto_access_badges",
-        "inherit_codes": false
-      },
-      {
-        "name": "Guard removed by Champ",
-        "img": "/images/settings/kanto_access_champ.png",
-        "codes": "kanto_access_condition, kanto_access_champ",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Kanto Access Badge Requirement Count",
-    "img": "/images/settings/kanto_access_badge.png",
-    "codes": "kanto_access_badges_count",
-    "type": "consumable",
-    "overlay_align": "left",
-    "allow_disabled": "true",
-    "min_quantity": 1,
-    "max_quantity": 16,
-    "initial_quantity": 8
-  },
-  {
     "name": "Route 3 Access",
     "type": "progressive",
     "loop": true,

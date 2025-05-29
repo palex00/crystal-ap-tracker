@@ -1,59 +1,60 @@
-CeruleanCaveRequirement = CustomItem:extend()
+KantoAccessRequirement = CustomItem:extend()
 
-function CeruleanCaveRequirement:init()
-    self:createItem("Cerulean Cave Requirement - Vanilla")
-    self.code = "cerulean_cave_requirement"
-    self.type = "vanilla"
+function KantoAccessRequirement:init()
+    self:createItem("Kanto Access - Wake up Snorlax")
+    self.code = "kanto_access_condition"
+    self.type = "snorlax"
     self:setStage(8)
-    self.stageCount = 8
+    self.baseImage = "images/settings/kanto_access.png"
+    self.stageCount = 16
     self:updateIcon()
 end
 
-function CeruleanCaveRequirement:setType(type)
+function KantoAccessRequirement:setType(type)
     self:setProperty("type", type)
 end
 
-function CeruleanCaveRequirement:getType()
+function KantoAccessRequirement:getType()
     return self:getProperty("type")
 end
 
-function CeruleanCaveRequirement:setStage(stage)
+function KantoAccessRequirement:setStage(stage)
     self:setProperty("stage", stage)
 end
 
-function CeruleanCaveRequirement:getStage()
+function KantoAccessRequirement:getStage()
     return self:getProperty("stage")
 end
 
-function CeruleanCaveRequirement:updateIcon()
+function KantoAccessRequirement:updateIcon()
     local stage = self:getStage()
     local type = self:getType()
-    local img = ""
+    local overlayImg = ""
     local img_mod = ""
-    if type == "vanilla" then
-        self.ItemInstance.Name = "Cerulean Cave Requirement - Vanilla"
-        img = "images/settings/rival_celio.png"
-    elseif type == "champion" then
-        self.ItemInstance.Name = "Cerulean Cave Requirement - Champion"
-        img = "images/settings/rival.png"
-    elseif type == "network_machine" then
-        self.ItemInstance.Name = "Cerulean Cave Requirement - Restore Network Machine"
-        img = "images/settings/celio.png"
+    if type == "snorlax" then
+        self.ItemInstance.Name = "Kanto Access - Wake up Snorlax"
+        overlayImg = "images/settings/kanto_access_snorlax_overlay.png"
     elseif type == "badges" then
-        self.ItemInstance.Name = "Cerulean Cave Requirement - Badges"
-        img = "images/settings/badge.png"
+        self.ItemInstance.Name = "Kanto Access - Obtain Badges"
+        overlayImg = "images/settings/kanto_access_badges_overlay.png"
     elseif type == "gyms" then
-        self.ItemInstance.Name = "Cerulean Cave Requirement - Gyms"
-        img = "images/settings/gym.png"
+        self.ItemInstance.Name = "Kanto Access - Defeat Gyms"
+        overlayImg = "images/settings/kanto_access_gyms_overlay.png"
+    elseif type == "champion" then
+        self.ItemInstance.Name = "Kanto Access - Become Champion"
+        overlayImg = "images/settings/kanto_access_champion_overlay.png"
     end
     if self:getType() == "badges" or self:getType() == "gyms" then
-        img_mod = "overlay|images/overlays/long_count_numbers/" .. math.floor(stage) .. ".png"
+        self.ItemInstance:SetOverlay(tostring(math.floor(stage)))
+    else
+        self.ItemInstance:SetOverlay("")
     end
-    self.ItemInstance.Icon = ImageReference:FromPackRelativePath(img)
-    self.ItemInstance.IconMods = ImageReference:FromPackRelativePath(img_mod)
+    self.ItemInstance.Icon = ImageReference:FromPackRelativePath(self.baseImage)
+    self.ItemInstance.IconMods = "overlay|" .. overlayImg
+    self.ItemInstance:SetOverlayBackground("171717")
 end
 
-function CeruleanCaveRequirement:onLeftClick()
+function KantoAccessRequirement:onLeftClick()
     if self:getType() == "badges" or self:getType() == "gyms" then
         if self:getStage() < self.stageCount then
             self:setStage(self:getStage() + 1)
@@ -63,70 +64,56 @@ function CeruleanCaveRequirement:onLeftClick()
     end
 end
 
-function CeruleanCaveRequirement:onRightClick()
-    if self:getType() == "vanilla" then
-        self:setType("champion")
-    elseif self:getType() == "champion" then
-        self:setType("network_machine")
-    elseif self:getType() == "network_machine" then
+function KantoAccessRequirement:onRightClick()
+    if self:getType() == "snorlax" then
         self:setType("badges")
     elseif self:getType() == "badges" then
         self:setType("gyms")
     elseif self:getType() == "gyms" then
-        self:setType("vanilla")
+        self:setType("champion")
+    elseif self:getType() == "champion" then
+        self:setType("snorlax")
     end
 end
 
-function CeruleanCaveRequirement:canProvideCode(code)
+function KantoAccessRequirement:canProvideCode(code)
     if self.code == code then
         return true
     end
     return false
 end
 
-function CeruleanCaveRequirement:providesCode(code)
+function KantoAccessRequirement:providesCode(code)
     if self:canProvideCode(code) then
-        if self:getType() == "vanilla" then
-            if has("defeat_champion") and has("restore_pokemon_network_machine") then
+        if self:getType() == "snorlax" then
+            if has("EVENT_FOUGHT_SNORLAX")  then
                 return 1
             end
         elseif self:getType() == "champion" then
-            if has("defeat_champion") then
+            if has("EVENT_BEAT_ELITE_FOUR") then
                 return 1
             end
-        elseif self:getType() == "network_machine" then
-            if has("restore_pokemon_network_machine") then
+        elseif self:getType() == "badges" then
+            if badges() >= self:getStage() then
                 return 1
             end
-        elseif self:getType() == "badges" or self:getType() == "gyms" then
-            local req_items = {}
-            local count = 0
-            if self:getType() == "badges" then
-                req_items = BADGES
-            elseif self:getType() == "gyms" then
-                req_items = GYMS
-            end
-            for _, item in pairs(req_items) do
-                if has(item) then
-                    count = count + 1
-                end
-                if count >= self:getStage() then
-                    return 1
-                end
+        elseif self:getType() == "gyms" then
+            if gyms() >= self:getStage() then
+                return 1
             end
         end
     end
     return 0
 end
 
-function CeruleanCaveRequirement:save()
+function KantoAccessRequirement:save()
     local save_data = {}
     save_data["type"] = self:getType()
     save_data["stage"] = self:getStage()
     return save_data
 end
 
-function CeruleanCaveRequirement:load(data)
+function KantoAccessRequirement:load(data)
     if data["type"] ~= nil then
         self:setType(data["type"])
     end
@@ -137,10 +124,10 @@ function CeruleanCaveRequirement:load(data)
     return true
 end
 
-function CeruleanCaveRequirement:propertyChanged(key, value)
-    if TRACKER_READY then
+function KantoAccessRequirement:propertyChanged(key, value)
+    --if TRACKER_READY then
         if key == "type" or key == "stage" then
             self:updateIcon()
         end
-    end
+    --end
 end

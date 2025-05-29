@@ -39,8 +39,6 @@ function BadgesGymsRequirement:updateIcon()
     elseif type == "gyms" then
         self.ItemInstance.Name = self.name.." - Gyms"
         overlayImg = "images/settings/gym_overlay_left.png"
-    else
-        print("Whoopsie at the updateIcon Function")
     end
     
     self.ItemInstance.Icon = ImageReference:FromPackRelativePath(self.baseImage or "")
@@ -74,18 +72,12 @@ end
 
 function BadgesGymsRequirement:providesCode(code)
     if self:canProvideCode(code) then
-        local req_items = {}
-        local count = 0
         if self:getType() == "badges" then
-            req_items = BADGES
-        elseif self:getType() == "gyms" then
-            req_items = GYMS
-        end
-        for _, item in pairs(req_items) do
-            if has(item) then
-                count = count + 1
+            if badges() >= self:getStage() then
+                return 1
             end
-            if count >= self:getStage() then
+        elseif self:getType() == "gyms" then
+            if gyms() >= self:getStage() then
                 return 1
             end
         end
