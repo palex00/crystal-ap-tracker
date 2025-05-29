@@ -207,7 +207,7 @@ end
 
 function ilextree()
   return has("ilextree_off")
-  or has("ilextree_on") and can_cut()
+  or has("ilextree_on") and can_cut_johto()
 end
 
 function r32_guy()

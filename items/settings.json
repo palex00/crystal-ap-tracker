@@ -1163,5 +1163,26 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Split Map",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Split Map - Off",
+        "img": "/images/settings/splitmap.png",
+        "img_mods": "@disabled",
+        "codes": "splitmap, splitmap_off",
+        "inherit_codes": false
+      },
+      {
+        "name": "Split Map - On",
+        "img": "/images/settings/splitmap.png",
+        "codes": "splitmap, splitmap_on",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

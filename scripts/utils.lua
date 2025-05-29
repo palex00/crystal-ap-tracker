@@ -41,18 +41,13 @@ function dump_table(o, depth)
     end
 end
 
-function toggle_johto(code)
+function toggle_johto()
     local coffee = has("coffee_west") or has("coffee_north") or has("coffee_east") or has("coffee_south")
     if has("johto_only_off") then
         Tracker:AddMaps("maps/maps_johto_and_kanto.json")
-        Tracker:AddLayouts("layouts/tabs.json")
         Tracker:AddLayouts("layouts/overworld.json")
         Tracker:AddLayouts("layouts/settings.json")
-        if has("r32_guy_egg") then
-            Tracker:AddLayouts("layouts/events.json")
-        else
-            Tracker:AddLayouts("layouts/events_no_egg.json")
-        end
+        Tracker:AddLayouts("layouts/events.json")
         if coffee then
             Tracker:AddLayouts("layouts/items.json")
         else
@@ -64,13 +59,10 @@ function toggle_johto(code)
         else
             Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges.json")
         end
-        Tracker:AddLayouts("layouts/johto_only/tabs_johto.json")
+        
         Tracker:AddLayouts("layouts/johto_only/overworld.json")
-        if has("r32_guy_egg") then
-            Tracker:AddLayouts("layouts/johto_only/events.json")
-        else
-            Tracker:AddLayouts("layouts/johto_only/events_no_egg.json")
-        end
+        Tracker:AddLayouts("layouts/johto_only/events.json")
+
         if has("johto_only_on") then
             Tracker:AddMaps("maps/maps_johto_no_silver.json")
             Tracker:AddLayouts("layouts/johto_only/settings_johto_no_silver.json")
@@ -79,9 +71,10 @@ function toggle_johto(code)
             Tracker:AddLayouts("layouts/johto_only/settings_johto_with_silver.json")
         end
     end
+    toggle_splitmap()
 end
 
-function toggle_ilex(code)
+function toggle_ilex()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
     if has("ilextree_on") and not sudowoodo then
         Tracker:AddMaps("maps/ilex_forest_tree.json")
@@ -94,7 +87,7 @@ function toggle_ilex(code)
     end
 end
 
-function toggle_mischief(code)
+function toggle_mischief()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1
     if sudowoodo then
         print("Applying Mischief...")
@@ -106,7 +99,7 @@ function toggle_mischief(code)
     end
 end
 
-function toggle_route2(code)
+function toggle_route2()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
     if has("route_2_fence") and not sudowoodo then
         Tracker:AddMaps("maps/route_2_fence.json")
@@ -123,7 +116,7 @@ function toggle_route2(code)
     end
 end
 
-function toggle_lakeofrage(code)
+function toggle_lakeofrage()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
     if has("red_gyarados_vanilla") and not sudowoodo then
         Tracker:AddMaps("maps/lake_of_rage_vanilla.json")
@@ -136,7 +129,7 @@ function toggle_lakeofrage(code)
     end
 end
 
-function toggle_darkcave(code)
+function toggle_darkcave()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
     if has("blackthorn_dark_cave_vanilla") and not sudowoodo then
         Tracker:AddMaps("maps/blackthorn_dark_cave_vanilla.json")
@@ -146,5 +139,17 @@ function toggle_darkcave(code)
         Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_vanilla.json")
     elseif has("blackthorn_dark_cave_waterfall") and sudowoodo then
         Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_waterfall.json")
+    end
+end
+
+function toggle_splitmap()
+    if has("splitmap_off") and has("johto_only_off") then
+        Tracker:AddLayouts("layouts/tabs_single.json")
+    elseif has("splitmap_on") and has("johto_only_off") then
+        Tracker:AddLayouts("layouts/tabs_split.json")
+    elseif has("splitmap_off") then
+        Tracker:AddLayouts("layouts/johto_only/tabs_single.json")
+    elseif has("splitmap_on") then
+        Tracker:AddLayouts("layouts/johto_only/tabs_split.json")
     end
 end

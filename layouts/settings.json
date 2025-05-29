@@ -145,6 +145,18 @@
                                 "item_size": "32, 32"
                             }
                         ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "vertical",
+                        "content": [
+                            {
+                                "type": "item",
+                                "item": "splitmap",
+                                "margin": "2,2",
+                                "item_size": "32, 32"
+                            }
+                        ]
                     }
                 ]
             }
