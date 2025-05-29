@@ -46,33 +46,6 @@
       }
     ]
   },
-  //{
-  //  "name": "Elite Four Badges",
-  //  "img": "/images/events/become_champion.png",
-  //  "codes": "e4_badges",
-  //  "type": "consumable",
-  //  "min_quantity": 1,
-  //  "max_quantity": 16,
-  //  "initial_quantity": 8
-  //},
-  //{
-  //  "name": "Red Badges",
-  //  "img": "/images/events/defeat_red.png",
-  //  "codes": "red_badges",
-  //  "type": "consumable",
-  //  "min_quantity": 1,
-  //  "max_quantity": 16,
-  //  "initial_quantity": 16
-  //},
-  //{
-  //  "name": "Mt. Silver Badges",
-  //  "img": "/images/settings/mt_silver_badges.png",
-  //  "codes": "mt_silver_badges",
-  //  "type": "consumable",
-  //  "min_quantity": 1,
-  //  "max_quantity": 16,
-  //  "initial_quantity": 16
-  //},
   {
     "name": "Randomize Badges",
     "type": "progressive",
@@ -178,50 +151,31 @@
   },
   {
     "name": "Randomize Hidden Items",
-    "type": "progressive",
+    "type": "progressive_toggle",
     "initial_stage_idx": 1,
+    "initial_active_state": true,
+    "codes": "hiddenitems, reqitemfinder",
     "loop": true,
-    "allow_disabled": false,
     "stages": [
       {
-        "name": "Randomize Hidden Items - Off",
+        "name": "Hidden Items - Randomized | Itemfinder not required",
         "img": "/images/settings/hiddenitems.png",
-        "img_mods": "@disabled",
-        "codes": "hiddenitems,hiddenitems_off",
+        "img_mods": "overlay|images/settings/itemfinder_not_required.png",
+        "codes": "hiddenitems_on, reqitemfinder_off",
         "inherit_codes": false
       },
       {
-        "name": "Randomize Hidden Items - On",
+        "name": "Hidden Items - Randomized | Itemfinder is logical",
         "img": "/images/settings/hiddenitems.png",
-        "codes": "hiddenitems,hiddenitems_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Require Itemfinder",
-    "type": "progressive",
-    "loop": true,
-    "initial_stage_idx": 1,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Itemfinder not required",
-        "img": "/images/settings/itemfinder.png",
-        "img_mods": "@disabled",
-        "codes": "reqitemfinder,reqitemfinder_off",
+        "img_mods": "overlay|images/settings/itemfinder_logic.png",
+        "codes": "hiddenitems_on, reqitemfinder_logic",
         "inherit_codes": false
       },
       {
-        "name": "Itemfinder logically required - On",
-        "img": "/images/settings/itemfinder_logic.png",
-        "codes": "reqitemfinder,reqitemfinder_logic",
-        "inherit_codes": false
-      },
-      {
-        "name": "Itemfinder hard required - On",
-        "img": "/images/settings/itemfinder_required.png",
-        "codes": "reqitemfinder,reqitemfinder_hard",
+        "name": "Hidden Items - Randomized | Itemfinder is required",
+        "img": "/images/settings/hiddenitems.png",
+        "img_mods": "overlay|images/settings/itemfinder_required.png",
+        "codes": "hiddenitems_on, reqitemfinder_required",
         "inherit_codes": false
       }
     ]

@@ -47,6 +47,8 @@ function hid()
         return AccessibilityLevel.Normal
     elseif has("reqitemfinder_logic") then
         return AccessibilityLevel.SequenceBreak
+    elseif has("reqitemfinder_required") then
+        return AccessibilityLevel.None
     end
 end
 

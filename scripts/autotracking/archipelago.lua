@@ -55,6 +55,14 @@ function onClear(slot_data)
 		elseif AMOUNT_CODES[k] then
 			local item = SLOT_CODES[k].item
 			item:setStage(v)
+        elseif k == "hiddenitems" then
+        -- hiddenitems are handled specially because this sets it to Active / Inactive
+        -- because I merged hiddenitems and itemfinder logic into one item
+            if v == 0 then
+                Tracker:FindObjectForCode(k).Active = false
+            elseif v == 1 then
+                Tracker:FindObjectForCode(k).Active = true
+            end
         else
             print(string.format("No setting could be found for key: %s", k))
         end

@@ -130,10 +130,6 @@ STARTTOWN_MAPPING = {
 }
 
 SLOT_CODES = {
-    randomize_hidden_items = {
-        code = "hiddenitems",
-        mapping = MAP_TOGGLE
-    },
     goal = {
         code = "goal",
         mapping = MAP_TOGGLE
