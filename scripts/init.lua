@@ -27,6 +27,7 @@ Tracker:AddLocations("locations/dungeons.json")
 Tracker:AddLocations("locations/dexsanity.json")
 Tracker:AddLocations("locations/pokedex.json")
 Tracker:AddLocations("locations/encounters_submaps.json")
+Tracker:AddLocations("locations/special_encounters.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/dungeon_maps.json")

@@ -1,0 +1,300 @@
+[
+    {
+        "name": "Special Encounters",
+        "visibility_rules": [
+            "show_mons"
+        ],
+        "children": [
+            {
+                "name": "Old Rod",
+                "chest_unopened_img": "images/other/fishing_old.png",
+                "chest_opened_img": "images/other/fishing_old_bw.png",
+                "access_rules": [
+                    "^$fishing_old"
+                ],
+                "sections": [
+                    {
+                        "name": "Shore",
+                        "clear_as_group": false,
+                        "item_count": 3,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Ocean",
+                        "clear_as_group": false,
+                        "item_count": 3,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Lake",
+                        "clear_as_group": false,
+                        "item_count": 3,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Pond",
+                        "clear_as_group": false,
+                        "item_count": 3,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Dragon's Den",
+                        "clear_as_group": false,
+                        "item_count": 3,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Lake of Rage",
+                        "clear_as_group": false,
+                        "item_count": 3,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Route 45",
+                        "clear_as_group": false,
+                        "item_count": 3,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Whirl Islands",
+                        "clear_as_group": false,
+                        "item_count": 3,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Routes 12, 13, 32",
+                        "clear_as_group": false,
+                        "item_count": 3,
+                        "access_rules": []
+                    }
+                ]
+            },
+            {
+                "name": "Good Rod",
+                "chest_unopened_img": "images/other/fishing_good.png",
+                "chest_opened_img": "images/other/fishing_good_bw.png",
+                "access_rules": [
+                    "^$fishing_good"
+                ],
+                "sections": [
+                    {
+                        "name": "Shore",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Ocean",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Lake",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Pond",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Dragon's Den",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Lake of Rage",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Route 45",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Whirl Islands",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Routes 12, 13, 32",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    }
+                ]
+            },
+            {
+                "name": "Super Rod",
+                "chest_unopened_img": "images/other/fishing_super.png",
+                "chest_opened_img": "images/other/fishing_super_bw.png",
+                "access_rules": [
+                    "^$fishing_super"
+                ],
+                "sections": [
+                    {
+                        "name": "Shore",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Ocean",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Lake",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Pond",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Dragon's Den",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Lake of Rage",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Route 45",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Whirl Islands",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Routes 12, 13, 32",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "access_rules": []
+                    }
+                ]
+            },
+            {
+                "name": "Headbutt Trees",
+                "chest_unopened_img": "images/other/headbutt.png",
+                "chest_opened_img": "images/other/headbutt_bw.png",
+                "access_rules": [
+                    "^$headbutting"
+                ],
+                "sections": [
+                    {
+                        "name": "Canyon - Common",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Canyon - Rare",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Town - Common",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Town - Rare",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Route - Common",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Route - Rare",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Kanto - Common",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Kanto - Rare",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Lake - Common",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Lake - Rare",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Forest - Common",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Forest - Rare",
+                        "clear_as_group": false,
+                        "item_count": 6,
+                        "access_rules": []
+                    }
+                ]
+            },
+            {
+                "name": "Rocksmash",
+                "chest_unopened_img": "images/other/headbutt.png",
+                "chest_opened_img": "images/other/headbutt_bw.png",
+                "access_rules": [
+                    "^$headbutting"
+                ],
+                "sections": [
+                    {
+                        "name": "Rocksmash",
+                        "clear_as_group": false,
+                        "item_count": 2,
+                        "access_rules": []
+                    },
+                ]
+            }
+        ]
+    }
+]
