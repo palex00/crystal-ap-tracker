@@ -49,7 +49,7 @@ function KantoAccessRequirement:updateIcon()
     else
         self.ItemInstance:SetOverlay("")
     end
-    self.ItemInstance.Icon = ImageReference:FromPackRelativePath(self.baseImage)
+    self.ItemInstance.Icon = self.baseImage
     self.ItemInstance.IconMods = "overlay|" .. overlayImg
     self.ItemInstance:SetOverlayBackground("202020")
 end

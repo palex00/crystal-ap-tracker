@@ -24,6 +24,10 @@
                         "name": "Azalea Gym - Bug Catcher Josh"
                     },
                     {
+                        "ref": "JohtoKanto/Azalea Town/Gym - Beat Bugsy",
+                        "name": "Azalea Gym - Beat Bugsy"
+                    },
+                    {
                         "ref": "JohtoKanto/Azalea Town/Gym - Hive Badge from Bugsy",
                         "name": "Azalea Gym - Hive Badge from Bugsy"
                     },
@@ -1646,16 +1650,16 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Potion from Aide",
+                        "name": "Elm's Lab - Potion from Aide"
+                    },
+                    {
                         "ref": "JohtoKanto/New Bark Town/Elm's Lab - Gift from Aide after returning Mystery Egg",
                         "name": "Elm's Lab - Gift from Aide after returning Mystery Egg"
                     },
                     {
                         "ref": "JohtoKanto/New Bark Town/Elm's Lab - Master Ball from Elm",
                         "name": "Elm's Lab - Master Ball from Elm"
-                    },
-                    {
-                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Potion from Aide",
-                        "name": "Elm's Lab - Potion from Aide"
                     },
                     {
                         "ref": "JohtoKanto/New Bark Town/Elm's Lab - S.S. Ticket from Elm",
@@ -2509,6 +2513,10 @@
                         "name": "Goldenrod Gym - Lass Carrie"
                     },
                     {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Beat Whitney",
+                        "name": "Goldenrod Gym - Beat Whitney"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Gym - Plain Badge from Whitney",
                         "name": "Goldenrod Gym - Plain Badge from Whitney"
                     },
@@ -2645,9 +2653,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Radio Tower/Clear Radio Tower"
-                    },
-                    {
                         "ref": "JohtoKanto/Radio Tower/1F - Radio Card from Quiz",
                         "name": "Radio Tower 1F - Radio Card from Quiz"
                     },
@@ -2656,12 +2661,12 @@
                         "name": "Radio Tower 1F - Radio Card from Quiz​"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/1F - Grunt",
-                        "name": "Radio Tower 1F - Grunt"
-                    },
-                    {
                         "ref": "JohtoKanto/Radio Tower/2F - Blue Card from Buena",
                         "name": "Radio Tower 2F - Blue Card from Buena"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/1F - Grunt",
+                        "name": "Radio Tower 1F - Grunt"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/2F - Grunt 1",
@@ -2734,6 +2739,9 @@
                     {
                         "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive",
                         "name": "Radio Tower 5F - Rocket Executive"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/Clear Radio Tower"
                     }
                 ],
                 "map_locations": [
@@ -10348,6 +10356,10 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Sprout Tower/2F - Sage Nico",
+                        "name": "Sprout Tower 2F - Sage Nico"
+                    },
+                    {
                         "ref": "JohtoKanto/Sprout Tower/1F - Item",
                         "name": "Sprout Tower 1F - Item"
                     },
@@ -10360,24 +10372,12 @@
                         "name": "Sprout Tower 2F - Item"
                     },
                     {
-                        "ref": "JohtoKanto/Sprout Tower/2F - Sage Nico",
-                        "name": "Sprout Tower 2F - Sage Nico"
-                    },
-                    {
                         "ref": "JohtoKanto/Sprout Tower/2F - Sage Edmond",
                         "name": "Sprout Tower 2F - Sage Edmond"
                     },
                     {
-                        "ref": "JohtoKanto/Sprout Tower/3F - North Item",
-                        "name": "Sprout Tower 3F - North Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Sprout Tower/3F - South Item",
                         "name": "Sprout Tower 3F - South Item"
-                    },
-                    {
-                        "ref": "JohtoKanto/Sprout Tower/3F - HM05 from Sage",
-                        "name": "Sprout Tower 3F - HM05 from Sage"
                     },
                     {
                         "ref": "JohtoKanto/Sprout Tower/3F - Sage Jin",
@@ -10390,6 +10390,14 @@
                     {
                         "ref": "JohtoKanto/Sprout Tower/3F - Sage Neal",
                         "name": "Sprout Tower 3F - Sage Neal"
+                    },
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/3F - North Item",
+                        "name": "Sprout Tower 3F - North Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/3F - HM05 from Sage",
+                        "name": "Sprout Tower 3F - HM05 from Sage"
                     }
                 ],
                 "map_locations": [

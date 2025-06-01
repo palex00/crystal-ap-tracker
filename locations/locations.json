@@ -10,6 +10,7 @@
                     "start_town_New_Bark",
                     "@JohtoKanto/Route 29",
                     "@JohtoKanto/Route 27/Pre-Waterfall, $can_surf_johto",
+                    "@JohtoKanto/Route 27/Post-Waterfall, $can_surf_johto",
                     "$can_freefly|New_Bark"
                 ],
                 "sections": [
@@ -58,6 +59,19 @@
                         "visibility_rules": [
                             "show_items"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -86,7 +100,7 @@
                 "access_rules": [
                     "@JohtoKanto/New Bark Town",
                     "@JohtoKanto/Cherrygrove City",
-                    "@JohtoKanto/Route 46"
+                    "@JohtoKanto/Route 46/Above Ledge"
                 ],
                 "sections": [
                     {
@@ -108,6 +122,19 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -139,15 +166,6 @@
                 ],
                 "sections": [
                     {
-                        "name": "Mystic Water from Island Man",
-                        "access_rules": [
-                            "$can_surf_johto"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "Map Card from Guide",
                         "visibility_rules": [
                             "show_items, pokegear_on"
@@ -159,6 +177,28 @@
                             "show_items, pokegear_off"
                         ],
                         "hosted_item": "MAP_CARD"
+                    },
+                    {
+                        "name": "Mystic Water from Island Man",
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -253,6 +293,32 @@
                         "visibility_rules": [
                             "show_items"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -323,6 +389,32 @@
                         "visibility_rules": [
                             "show_items"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -391,6 +483,32 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -417,10 +535,17 @@
                     "start_town_Violet",
                     "@JohtoKanto/Route 31",
                     "@JohtoKanto/Route 36/Right",
-                    "@JohtoKanto/Route 32, $r32_guy",
-                    "$can_freefly|Violet"
+                    "@JohtoKanto/Route 32/Post-Guy, $r32_guy",
+                    "$can_freefly|Violet",
+                    "@JohtoKanto/Union Cave, $can_surf_johto"
                 ],
                 "sections": [
+                    {
+                        "name": "Berry Tree",
+                        "visibility_rules": [
+                            "show_items, berries_on"
+                        ]
+                    },
                     {
                         "name": "Gym - Bird Keeper Abe",
                         "visibility_rules": [
@@ -497,9 +622,16 @@
                         ]
                     },
                     {
-                        "name": "Berry Tree",
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_items, berries_on"
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     }
                 ],
@@ -531,6 +663,12 @@
                 ],
                 "sections": [
                     {
+                        "name": "2F - Sage Nico",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "1F - Item",
                         "visibility_rules": [
                             "show_items"
@@ -555,25 +693,20 @@
                         ]
                     },
                     {
-                        "name": "2F - Sage Nico",
+                        "name": "2F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "3F - North Item",
-                        "visibility_rules": [
-                            "show_items"
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     },
                     {
                         "name": "3F - South Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "3F - HM05 from Sage",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -594,6 +727,31 @@
                         "name": "3F - Sage Troy",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "3F - North Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "3F - HM05 from Sage",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "3F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -660,7 +818,7 @@
                     {
                         "name": "Omanyte Room Bottom Left Item (Water Stone)",
                         "access_rules": [
-                            "$can_surf_johto,$can_strength,WATER_STONE"
+                            "@JohtoKanto/Union Cave, $can_surf_johto,$can_strength,WATER_STONE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -669,7 +827,7 @@
                     {
                         "name": "Omanyte Room Bottom Right Item (Water Stone)",
                         "access_rules": [
-                            "$can_surf_johto,$can_strength,WATER_STONE"
+                            "@JohtoKanto/Union Cave, $can_surf_johto,$can_strength,WATER_STONE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -678,7 +836,7 @@
                     {
                         "name": "Omanyte Room Top Right Item (Water Stone)",
                         "access_rules": [
-                            "$can_surf_johto,$can_strength,WATER_STONE"
+                            "@JohtoKanto/Union Cave, $can_surf_johto,$can_strength,WATER_STONE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -687,7 +845,7 @@
                     {
                         "name": "Omanyte Room Top Left Item (Water Stone)",
                         "access_rules": [
-                            "$can_surf_johto,$can_strength,WATER_STONE"
+                            "@JohtoKanto/Union Cave, $can_surf_johto,$can_strength,WATER_STONE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -768,10 +926,49 @@
                     {
                         "name": "Outside - Psychic Nathan",
                         "access_rules": [
-                            "$can_surf_johto"
+                            "@JohtoKanto/Union Cave, $can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Outside - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Union Cave, $can_surf_johto"
+                        ]
+                    },
+                    {
+                        "name": "Outside - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
+                    },
+                    {
+                        "name": "Inside - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -951,6 +1148,32 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 32/Post-Guy"
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 32/Post-Guy, $can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1027,6 +1250,32 @@
                         ]
                     },
                     {
+                        "name": "1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "1F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
+                    },
+                    {
                         "name": "1F - Pokemaniac Larry",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1081,6 +1330,32 @@
                         ]
                     },
                     {
+                        "name": "B1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "B1F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
+                    },
+                    {
                         "name": "B2F - North Item",
                         "access_rules": [
                             "$can_surf_johto"
@@ -1124,6 +1399,32 @@
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
+                    },
+                    {
+                        "name": "B2F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1162,6 +1463,19 @@
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1189,33 +1503,15 @@
                 ],
                 "sections": [
                     {
-                        "name": "B1F - Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "B2F - Item",
-                        "access_rules": [
-                            "$can_surf_johto,$can_strength"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "B2F - Kings Rock from Man",
-                        "access_rules": [
-                            "$can_surf_johto,$can_strength"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "B1F - Grunt 1",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Item",
+                        "visibility_rules": [
+                            "show_items"
                         ]
                     },
                     {
@@ -1235,6 +1531,76 @@
                         "hosted_item": "EVENT_CLEARED_SLOWPOKE_WELL",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "B1F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Item",
+                        "access_rules": [
+                            "$can_surf_johto, $can_strength"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Kings Rock from Man",
+                        "access_rules": [
+                            "$can_surf_johto, $can_strength"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto, $can_strength"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto, $can_strength"
                         ]
                     }
                 ],
@@ -1265,6 +1631,30 @@
                     "$can_freefly|Azalea"
                 ],
                 "sections": [
+                    {
+                        "name": "Hidden Item by well",
+                        "access_rules": [
+                            "^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Berry Tree",
+                        "visibility_rules": [
+                            "show_items, berries_on"
+                        ]
+                    },
+                    {
+                        "name": "Lure Ball from Kurt",
+                        "access_rules": [
+                            "EVENT_CLEARED_SLOWPOKE_WELL"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
                     {
                         "name": "Gym - Twins Amy & May",
                         "visibility_rules": [
@@ -1340,36 +1730,12 @@
                         ]
                     },
                     {
-                        "name": "Lure Ball from Kurt",
-                        "access_rules": [
-                            "EVENT_CLEARED_SLOWPOKE_WELL"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "Charcoal from Charcoal Kiln",
                         "access_rules": [
                             "EVENT_HERDED_FARFETCHD"
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Hidden Item by well",
-                        "access_rules": [
-                            "^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ]
-                    },
-                    {
-                        "name": "Berry Tree",
-                        "visibility_rules": [
-                            "show_items, berries_on"
                         ]
                     }
                 ],
@@ -1516,6 +1882,33 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Ilex Forest/Post-Tree",
+                            "@JohtoKanto/Ilex Forest/Pre-Tree"
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Ilex Forest/Post-Tree, $can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1640,6 +2033,32 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1672,66 +2091,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Gym - Beauty Victoria",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Beauty Samantha",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Lass Carrie",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Lass Bridget",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Beat Whitney",
-                        "hosted_item": "EVENT_BEAT_WHITNEY",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Gym - Plain Badge from Whitney",
-                        "visibility_rules": [
-                            "show_items, $badges_randomised"
-                        ]
-                    },
-                    {
-                        "name": "​Gym - Plain Badge from Whitney",
-                        "visibility_rules": [
-                            "show_items, badges_off"
-                        ],
-                        "hosted_item": "PLAIN_BADGE"
-                    },
-                    {
-                        "name": "Gym - TM45 from Whitney",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "Bicycle from Bike Shop",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Squirtbottle from Flower Shop",
-                        "access_rules": [
-                            "PLAIN_BADGE"
-                        ],
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -1784,6 +2144,65 @@
                         ]
                     },
                     {
+                        "name": "Gym - Beauty Victoria",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Beauty Samantha",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Lass Carrie",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Lass Bridget",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Beat Whitney",
+                        "hosted_item": "EVENT_BEAT_WHITNEY",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Plain Badge from Whitney",
+                        "visibility_rules": [
+                            "show_items, $badges_randomised"
+                        ]
+                    },
+                    {
+                        "name": "​Gym - Plain Badge from Whitney",
+                        "visibility_rules": [
+                            "show_items, badges_off"
+                        ],
+                        "hosted_item": "PLAIN_BADGE"
+                    },
+                    {
+                        "name": "Gym - TM45 from Whitney",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Squirtbottle from Flower Shop",
+                        "access_rules": [
+                            "PLAIN_BADGE"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "Post-E4 GS-Ball from Trade Corner Receptionist",
                         "access_rules": [
                             "EVENT_BEAT_ELITE_FOUR"
@@ -1821,13 +2240,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Pokemaniac Donald",
+                        "name": "Super Nerd Eric",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -1839,24 +2252,9 @@
                         ]
                     },
                     {
-                        "name": "Super Nerd Eric",
+                        "name": "Item",
                         "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Super Nerd Teru",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Hidden Item between Tables",
-                        "access_rules": [
-                            "^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
+                            "show_items"
                         ]
                     },
                     {
@@ -1869,9 +2267,90 @@
                         ]
                     },
                     {
+                        "name": "Hidden Item between Tables",
+                        "access_rules": [
+                            "^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Super Nerd Teru",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Hidden Item by Blue Door",
                         "access_rules": [
                             "^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Pokemaniac Donald",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Grunt 2",
+                        "access_rules": [
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Grunt 1",
+                        "access_rules": [
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Grunt 3",
+                        "access_rules": [
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "B2F - West Hidden Item",
+                        "access_rules": [
+                            "^$hid,CARD_KEY",
+                            "^$hid,BASEMENT_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Burglar Eddie",
+                        "access_rules": [
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Center Hidden Item",
+                        "access_rules": [
+                            "^$hid,CARD_KEY",
+                            "^$hid,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -1908,46 +2387,6 @@
                         ]
                     },
                     {
-                        "name": "B2F - Burglar Eddie",
-                        "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "B2F - Grunt 1",
-                        "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "B2F - Grunt 2",
-                        "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "B2F - Grunt 3",
-                        "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
                         "name": "B2F - Grunt 4",
                         "access_rules": [
                             "tower_requirement,CARD_KEY",
@@ -1958,23 +2397,23 @@
                         ]
                     },
                     {
-                        "name": "B2F - Center Hidden Item",
+                        "name": "Warehouse - Northwest Item",
                         "access_rules": [
-                            "^$hid,CARD_KEY",
-                            "^$hid,BASEMENT_KEY"
+                            "CARD_KEY",
+                            "BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "show_items, hiddenitems_on"
+                            "show_items"
                         ]
                     },
                     {
-                        "name": "B2F - West Hidden Item",
+                        "name": "Warehouse - Grunt 2",
                         "access_rules": [
-                            "^$hid,CARD_KEY",
-                            "^$hid,BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "show_items, hiddenitems_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1988,17 +2427,27 @@
                         ]
                     },
                     {
-                        "name": "Warehouse - Center Item",
+                        "name": "Warehouse - Grunt 3",
                         "access_rules": [
-                            "CARD_KEY",
-                            "BASEMENT_KEY"
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
-                        "name": "Warehouse - Northwest Item",
+                        "name": "Warehouse - Grunt 1",
+                        "access_rules": [
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Warehouse - Center Item",
                         "access_rules": [
                             "CARD_KEY",
                             "BASEMENT_KEY"
@@ -2015,36 +2464,6 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Warehouse - Grunt 1",
-                        "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Warehouse - Grunt 2",
-                        "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Warehouse - Grunt 3",
-                        "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
                         ]
                     }
                 ],
@@ -2079,6 +2498,12 @@
                         ]
                     },
                     {
+                        "name": "2F - Blue Card from Buena",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "​1F - Radio Card from Quiz",
                         "visibility_rules": [
                             "show_items, pokegear_off"
@@ -2092,12 +2517,6 @@
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "2F - Blue Card from Buena",
-                        "visibility_rules": [
-                            "show_items"
                         ]
                     },
                     {
@@ -2375,6 +2794,32 @@
                         "visibility_rules": [
                             "show_items"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -2451,6 +2896,19 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -2539,7 +2997,7 @@
                     {
                         "name": "TM08 from Rock Smash Guy",
                         "access_rules": [
-                            "SQUIRTBOTTLE"
+                            "@JohtoKanto/Route 36/Right, SQUIRTBOTTLE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2551,7 +3009,21 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Violet City"
+                            "@JohtoKanto/Route 36/Right"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 36/Left",
+                            "@JohtoKanto/Route 36/Right"
                         ]
                     }
                 ],
@@ -2622,6 +3094,19 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -2777,6 +3262,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -2834,6 +3332,19 @@
                         ]
                     },
                     {
+                        "name": "1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
                         "name": "B1F - Item",
                         "access_rules": [
                             "$can_strength"
@@ -2847,6 +3358,19 @@
                         "hosted_item": "EVENT_RELEASED_THE_BEASTS",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -2889,12 +3413,38 @@
                         ]
                     },
                     {
+                        "name": "2F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
                         "name": "3F - Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "3F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     },
                     {
@@ -2934,6 +3484,19 @@
                         ]
                     },
                     {
+                        "name": "4F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
                         "name": "5F - Item",
                         "access_rules": [
                             "RAINBOW_WING"
@@ -2961,6 +3524,19 @@
                         ]
                     },
                     {
+                        "name": "5F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
                         "name": "6F - Item",
                         "access_rules": [
                             "RAINBOW_WING"
@@ -2970,12 +3546,38 @@
                         ]
                     },
                     {
+                        "name": "6F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
                         "name": "7F - Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "7F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     },
                     {
@@ -3006,12 +3608,38 @@
                         ]
                     },
                     {
+                        "name": "8F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
                         "name": "9F - Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "9F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -3079,6 +3707,19 @@
                         "name": "Schoolboy Chad",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -3149,6 +3790,19 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -3231,12 +3885,38 @@
                         ]
                     },
                     {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
+                    },
+                    {
                         "name": "Port - Hidden Item in Buoy",
                         "access_rules": [
                             "S_S_TICKET,$can_surf_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on,johto_only_off"
+                        ]
+                    },
+                    {
+                        "name": "Port - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons, johto_only_off"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto, S_S_TICKET"
                         ]
                     }
                 ],
@@ -3641,6 +4321,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -3726,6 +4419,19 @@
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -3777,6 +4483,84 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "NW - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ]
+                    },
+                    {
+                        "name": "NE - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ]
+                    },
+                    {
+                        "name": "SW - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ]
+                    },
+                    {
+                        "name": "SW - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto, ^$can_flash_johto"
+                        ]
+                    },
+                    {
+                        "name": "SE - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ]
+                    },
+                    {
+                        "name": "Cave - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
                         ]
                     },
                     {
@@ -3852,6 +4636,32 @@
                         ]
                     },
                     {
+                        "name": "B1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto, $can_surf_johto"
+                        ]
+                    },
+                    {
                         "name": "B2F - East Item",
                         "access_rules": [
                             "^$can_flash_johto"
@@ -3876,6 +4686,58 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto, ^$can_flash_johto"
+                        ]
+                    },
+                    {
+                        "name": "Lugia Chamber - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ]
+                    },
+                    {
+                        "name": "Lugia Chamber - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto, ^$can_flash_johto"
                         ]
                     }
                 ],
@@ -4002,6 +4864,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -4099,6 +4974,32 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -4144,6 +5045,32 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "1F Outside - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "1F Outside - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     },
                     {
@@ -4239,6 +5166,19 @@
                         ]
                     },
                     {
+                        "name": "1F Inside - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
                         "name": "2F - Southwest Item",
                         "access_rules": [
                             "$can_waterfall"
@@ -4311,6 +5251,32 @@
                         ]
                     },
                     {
+                        "name": "2F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
+                        ]
+                    },
+                    {
+                        "name": "2F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
+                        ]
+                    },
+                    {
                         "name": "B1F - Southeast Item",
                         "access_rules": [
                             "$can_surf_johto"
@@ -4362,6 +5328,32 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "B1F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     }
                 ],
@@ -4762,6 +5754,32 @@
                         "visibility_rules": [
                             "show_items"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -4900,6 +5918,19 @@
                         "visibility_rules": [
                             "show_items"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -5007,6 +6038,32 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -5059,6 +6116,19 @@
                         ]
                     },
                     {
+                        "name": "1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
                         "name": "B1F - Item",
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City"
@@ -5077,6 +6147,19 @@
                         ]
                     },
                     {
+                        "name": "B1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
                         "name": "B2F - Northwest Item",
                         "visibility_rules": [
                             "show_items"
@@ -5092,12 +6175,16 @@
                         ]
                     },
                     {
-                        "name": "B2F - Southeast Item",
-                        "access_rules": [
-                            "@JohtoKanto/Blackthorn City"
-                        ],
+                        "name": "B2F Mahogany Side - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items"
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     },
                     {
@@ -5110,6 +6197,15 @@
                         ]
                     },
                     {
+                        "name": "B2F - Southeast Item",
+                        "access_rules": [
+                            "@JohtoKanto/Blackthorn City"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "B2F - Hidden Item on Boulder",
                         "access_rules": [
                             "^$hid, @JohtoKanto/Blackthorn City"
@@ -5119,12 +6215,38 @@
                         ]
                     },
                     {
+                        "name": "B2F Blackthorn Side - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Blackthorn City"
+                        ]
+                    },
+                    {
                         "name": "B3F - Item",
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City"
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "B3F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Blackthorn City"
                         ]
                     }
                 ],
@@ -5236,6 +6358,19 @@
                         ],
                         "visibility_rules": [
                             "show_items, clair_behaviour_adult"
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     },
                     {
@@ -5352,6 +6487,19 @@
                         "visibility_rules": [
                             "show_items, clair_behaviour_child"
                         ]
+                    },
+                    {
+                        "name": "Dragon's Den B1F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -5398,6 +6546,32 @@
                         "name": "Southeast Item",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     }
                 ],
@@ -5512,6 +6686,32 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -5534,45 +6734,92 @@
             },
             {
                 "name": "Route 46",
-                "access_rules": [
-                    "^$can_flash_johto, $can_rocksmash",
-                    "@JohtoKanto/Blackthorn City"
-                ],
+                "access_rules": [],
                 "sections": [
+                    {
+                        "name": "Above Ledge",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto, $can_rocksmash",
+                            "@JohtoKanto/Blackthorn City"
+                        ]
+                    },
+                    {
+                        "name": "Below Ledge",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 29"
+                        ]
+                    },
                     {
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 46/Above Ledge"
                         ]
                     },
                     {
                         "name": "Berry Tree 1",
                         "visibility_rules": [
                             "show_items, berries_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 46/Above Ledge"
                         ]
                     },
                     {
                         "name": "Berry Tree 2",
                         "visibility_rules": [
                             "show_items, berries_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 46/Above Ledge"
                         ]
                     },
                     {
                         "name": "Camper Ted",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 46/Above Ledge"
                         ]
                     },
                     {
                         "name": "Hiker Bailey",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 46/Above Ledge"
                         ]
                     },
                     {
                         "name": "Picnicker Erin",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 46/Above Ledge"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 46/Below Ledge"
                         ]
                     }
                 ],
@@ -5628,7 +6875,7 @@
                     {
                         "name": "West Item across Water",
                         "access_rules": [
-                            "$can_surf_johto"
+                            "$can_surf_johto, @JohtoKanto/New Bark Town"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5698,12 +6945,65 @@
                         ]
                     },
                     {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 27/Post-Waterfall"
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto, @JohtoKanto/Route 27/Post-Waterfall",
+                            "$can_surf_johto, @JohtoKanto/Route 27/Pre-Waterfall"
+                        ]
+                    },
+                    {
                         "name": "Tohjo Falls - Item",
                         "access_rules": [
                             "$can_surf_johto, @JohtoKanto/New Bark Town"
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Tohjo Falls Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto, @JohtoKanto/New Bark Town"
+                        ]
+                    },
+                    {
+                        "name": "Tohjo Falls Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto, @JohtoKanto/New Bark Town"
                         ]
                     }
                 ],
@@ -5785,6 +7085,32 @@
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -5863,6 +7189,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -5936,7 +7275,7 @@
                     "@JohtoKanto/Silver Cave"
                 ],
                 "visibility_rules": [
-                    "show_items, $silver_cave"
+                    "$silver_cave"
                 ],
                 "sections": [
                     {
@@ -5955,6 +7294,32 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     }
                 ],
@@ -5989,7 +7354,7 @@
                     "$can_freefly|SilverCave"
                 ],
                 "visibility_rules": [
-                    "show_items, $silver_cave"
+                    "$silver_cave"
                 ],
                 "sections": [
                     {
@@ -5999,6 +7364,32 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Outside - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Outside Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     },
                     {
@@ -6056,12 +7447,38 @@
                         ]
                     },
                     {
+                        "name": "1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ]
+                    },
+                    {
                         "name": "2F - Northeast Item",
                         "access_rules": [
                             "^$can_flash_johto,$can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "2F - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     },
                     {
@@ -6085,7 +7502,7 @@
                     {
                         "name": "2F - North Chamber Item",
                         "access_rules": [
-                            "^$can_flash_johto,$can_waterfall"
+                            "^$can_flash_johto, $can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6094,7 +7511,7 @@
                     {
                         "name": "2F - South Chamber Item",
                         "access_rules": [
-                            "^$can_flash_johto,$can_waterfall"
+                            "^$can_flash_johto, $can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6110,10 +7527,52 @@
                         ]
                     },
                     {
+                        "name": "2F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ]
+                    },
+                    {
+                        "name": "2F Item Rooms - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto, $can_waterfall"
+                        ]
+                    },
+                    {
                         "name": "Defeat Red",
                         "hosted_item": "EVENT_BEAT_RED",
                         "access_rules": [
                             "^$can_flash_johto, red_requirement"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "3F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$can_flash_johto"
                         ]
                     }
                 ],
@@ -6143,11 +7602,48 @@
                 "visibility_rules": [
                     "johto_only_off"
                 ],
-                "sections": [],
+                "sections": [
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
+                    }
+                ],
                 "map_locations": [
                     {
                         "map": "johtokanto",
-                        "x": 172,
+                        "x": 180,
+                        "y": 52
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 32,
+                        "y": 172
+                    },
+                    {
+                        "map": "kanto_overview",
+                        "x": 32,
                         "y": 52
                     }
                 ]
@@ -6204,6 +7700,19 @@
                         "visibility_rules": [
                             "show_items"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -6253,6 +7762,19 @@
                         "visibility_rules": [
                             "show_items, berries_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -6284,7 +7806,21 @@
                 "visibility_rules": [
                     "johto_only_off"
                 ],
-                "sections": [],
+                "sections": [
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
+                    }
+                ],
                 "map_locations": [
                     {
                         "map": "johtokanto",
@@ -6454,6 +7990,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 2/Main Section"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -6584,6 +8133,19 @@
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -6622,6 +8184,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -6644,45 +8219,89 @@
             },
             {
                 "name": "Route 4",
-                "access_rules": [
-                    "@JohtoKanto/Pewter City, route_3_vanilla",
-                    "@JohtoKanto/Pewter City, BOULDER_BADGE"
-                ],
                 "visibility_rules": [
                     "johto_only_off"
                 ],
                 "sections": [
                     {
+                        "name": "Main",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Pewter City, route_3_vanilla",
+                            "@JohtoKanto/Pewter City, BOULDER_BADGE"
+                        ]
+                    },
+                    {
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 4/Main"
                         ]
                     },
                     {
                         "name": "Bird Keeper Hank",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 4/Main"
                         ]
                     },
                     {
                         "name": "Picnicker Hope",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 4/Main"
                         ]
                     },
                     {
                         "name": "Picnicker Sharon",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 4/Main"
                         ]
                     },
                     {
                         "name": "Hidden Item on Plateau",
                         "access_rules": [
-                            "^$hid"
+                            "@JohtoKanto/Route 4/Main, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Cerulean City"
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Cerulean City, $can_surf_kanto"
                         ]
                     }
                 ],
@@ -6774,6 +8393,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -6829,6 +8461,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -6846,6 +8491,60 @@
                         "map": "kanto_overview",
                         "x": 92,
                         "y": 44
+                    }
+                ]
+            },
+            {
+                "name": "Route 24",
+                "access_rules": [
+                    "@JohtoKanto/Cerulean City"
+                ],
+                "visibility_rules": [
+                    "johto_only_off"
+                ],
+                "sections": [
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 236,
+                        "y": 20
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 92,
+                        "y": 140
+                    },
+                    {
+                        "map": "kanto_overview",
+                        "x": 92,
+                        "y": 20
                     }
                 ]
             },
@@ -6923,6 +8622,32 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -6998,6 +8723,32 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -7059,6 +8810,19 @@
                         ]
                     },
                     {
+                        "name": "1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
                         "name": "B1F - South Item",
                         "visibility_rules": [
                             "show_items"
@@ -7083,6 +8847,19 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -7153,23 +8930,70 @@
             },
             {
                 "name": "Route 10",
-                "access_rules": [
-                    "@JohtoKanto/Lavender Town"
-                ],
                 "visibility_rules": [
                     "johto_only_off"
                 ],
                 "sections": [
                     {
+                        "name": "Top",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 9"
+                        ]
+                    },
+                    {
+                        "name": "Bottom",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Lavender Town"
+                        ]
+                    },
+                    {
                         "name": "Hiker Jim",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 10/Bottom"
                         ]
                     },
                     {
                         "name": "Pokefan Robert",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 10/Bottom"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 10/Top"
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 10/Top, $can_surf_kanto"
                         ]
                     }
                 ],
@@ -7289,6 +9113,19 @@
                         "name": "Super Nerd Tom",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
                         ]
                     }
                 ],
@@ -7537,6 +9374,19 @@
                             "coffee_south",
                             "coffee_west"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -7557,6 +9407,47 @@
                         "x": 68,
                         "y": 52,
                         "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "Route 16",
+                "access_rules": [
+                    "@JohtoKanto/Celadon City"
+                ],
+                "visibility_rules": [
+                    "johto_only_off"
+                ],
+                "sections": [
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 204,
+                        "y": 52
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 60,
+                        "y": 172
+                    },
+                    {
+                        "map": "kanto_overview",
+                        "x": 60,
+                        "y": 52
                     }
                 ]
             },
@@ -7610,6 +9501,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -7649,6 +9553,19 @@
                         "name": "Bird Keeper Boris",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -7777,12 +9694,38 @@
                         ]
                     },
                     {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
+                    },
+                    {
                         "name": "Port - Hidden Item in Buoy",
                         "access_rules": [
                             "S_S_TICKET,$can_surf_kanto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Port - Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto, S_S_TICKET"
                         ]
                     },
                     {
@@ -7833,6 +9776,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -7873,6 +9829,32 @@
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -7890,6 +9872,47 @@
                         "map": "kanto_overview",
                         "x": 92,
                         "y": 60
+                    }
+                ]
+            },
+            {
+                "name": "Route 7",
+                "access_rules": [
+                    "@JohtoKanto/Celadon City"
+                ],
+                "visibility_rules": [
+                    "johto_only_off"
+                ],
+                "sections": [
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 224,
+                        "y": 52
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 80,
+                        "y": 172
+                    },
+                    {
+                        "map": "kanto_overview",
+                        "x": 80,
+                        "y": 52
                     }
                 ]
             },
@@ -7940,6 +9963,19 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],
@@ -8026,6 +10062,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -8093,6 +10142,32 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -8138,6 +10213,19 @@
                         "name": "Pokefan Trevor",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
                         ]
                     }
                 ],
@@ -8212,6 +10300,19 @@
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -8280,6 +10381,19 @@
                         "access_rules": [
                             "$can_cut_kanto"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -8335,6 +10449,19 @@
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -8380,6 +10507,19 @@
                         "name": "Swimmer Cameron",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
                         ]
                     }
                 ],
@@ -8475,6 +10615,19 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -8523,6 +10676,32 @@
                         "name": "Swimmer Seth",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "Surf Encounters",
+                        "item_count": 3,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/surf.png",
+                        "chest_opened_img": "images/other/surf_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "$can_surf_kanto"
                         ]
                     }
                 ],
