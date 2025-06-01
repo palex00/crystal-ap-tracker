@@ -1,0 +1,2101 @@
+[
+    {
+        "name": "Encounters",
+        "children": [
+            {
+                "name": "2F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/2F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SproutTower2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "3F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/3F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SproutTower3F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "2F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/2F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TinTower2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "3F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/3F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TinTower3F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "4F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/4F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TinTower4F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "5F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/5F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TinTower5F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "6F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/6F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TinTower6F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "7F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/7F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TinTower7F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "8F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/8F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TinTower8F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "9F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/9F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TinTower9F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Burned Tower/1F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BurnedTower1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Burned Tower/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BurnedTowerB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/National Park/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "NationalPark",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Outside Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Outside - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Outside - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphOutside",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Inside Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Inside - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphInnerChamber",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "UnionCave1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Union Cave/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B1F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "UnionCaveB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B2F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "UnionCaveB2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SlowpokeWellB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B2F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B2F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SlowpokeWellB2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ilex Forest/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ilex Forest/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "IlexForest",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Outside Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MountMortar1FOutside",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Inside Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MountMortar1FInside",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "2F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/2F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MountMortar2FInside",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MountMortarB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/1F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "IcePath1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "IcePathB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B2F Mahogany Side Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F Mahogany Side - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "IcePathB2FMahoganySide",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B2F Blackthorn Side Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F Blackthorn Side - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "IcePathB2FBlackthornSide",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B3F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/B3F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "IcePathB3F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "NW Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/NW - Land Encounters",
+                        "name": "NW Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WhirlIsland1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "NE Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/NE - Land Encounters",
+                        "name": "NE Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WhirlIsland1F",
+                        "x": 192,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "SW Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SW - Land Encounters",
+                        "name": "SW Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SW - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WhirlIsland1F",
+                        "x": 16,
+                        "y": 320,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Cave Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Cave - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WhirlIslandCave",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "SE Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SE - Land Encounters",
+                        "name": "SE Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WhirlIsland1F",
+                        "x": 352,
+                        "y": 320,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B1F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WhirlIslandB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B2F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B2F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WhirlIslandB2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Lugia Chamber Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Lugia Chamber - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Lugia Chamber - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WhirlIslandLugiaChamber",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Silver Cave/1F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SilverCaveRoom1",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "2F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SilverCaveRoom2",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "3F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Silver Cave/3F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SilverCaveRoom3",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "2F Item Rooms Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F Item Rooms - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SilverCaveItemRooms",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DarkCaveVioletEntrance",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Dark Cave Blackthorn Entrance/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Blackthorn Entrance/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DarkCaveBlackthornEntrance",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 29/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route29",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 30/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route30",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 31/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route31",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 32/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route32",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 33/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route33",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 34/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 35/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route35",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 36/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route36",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 37/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route37",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 38/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route38",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 39/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route39",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 42/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 42/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route42",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 43/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route43",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 44/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 44/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route44",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 45/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 45/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route45",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 46/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route46",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Outside Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Silver Cave/Outside - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/Outside Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SilverCaveOutside",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Diglett's Cave/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Diglett'sCave",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MountMoon",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Rock Tunnel/1F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RockTunnel1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Rock Tunnel/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RockTunnelB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Victory Road/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VictoryRoad1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 27/Tohjo Falls Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Tohjo Falls Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TohjoFalls",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 1/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route1",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 2/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route2",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 3/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route3",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 4/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 4/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route4",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 5/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route5",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 6/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 6/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route6",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 7/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route7",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 8/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route8",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 9/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 9/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route9",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 10/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 10/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route10",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 11/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route11",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 13/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 13/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route13",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 14/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route14",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 15/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route15",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 16/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route16",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 17/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route17",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 18/Land Encounters",
+                        "name": "Land Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route18",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 21/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 21/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route21",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 22/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 22/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route22",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 24/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 24/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route24",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 25/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 25/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route25",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 26/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 26/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route26",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 27/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route27",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 28/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 28/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route28",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Dragon's Den/B1F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dragon'sDenB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Port Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine City/Port - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineCityPort",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Port Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Port - Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionCityPort",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 40/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route40",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 41/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route41",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "NewBarkTown",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cherrygrove City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CherrygroveCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Violet City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VioletCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeofRage",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 12/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route12",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 19/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route19",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 20/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route20",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Pallet Town/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "PalletTown",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Viridian City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ViridianCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cinnabar Island/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CinnabarIsland",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            }
+        ]
+    }
+]
