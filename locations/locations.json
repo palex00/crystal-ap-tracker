@@ -240,7 +240,7 @@
                             "show_items, berries_on"
                         ]
                     },
-					{
+                    {
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
@@ -255,13 +255,13 @@
                             "show_items, hiddenitems_on"
                         ]
                     },
-					{
+                    {
                         "name": "Berry Tree 2",
                         "visibility_rules": [
                             "show_items, berries_on"
                         ]
                     },
-					{
+                    {
                         "name": "Mystery Egg from Mr Pokemon",
                         "visibility_rules": [
                             "show_items"
@@ -279,7 +279,7 @@
                             "show_items, trainersanity_on"
                         ]
                     },
-					{
+                    {
                         "name": "Bug Catcher Don",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -365,7 +365,7 @@
                             "show_items, trainersanity_on"
                         ]
                     },
-					{
+                    {
                         "name": "South Item",
                         "visibility_rules": [
                             "show_items"
@@ -1023,7 +1023,7 @@
                             "@JohtoKanto/Route 32/Post-Guy"
                         ]
                     },
-					{
+                    {
                         "name": "TM05 from Roar Guy",
                         "access_rules": [
                             "$can_cut_johto, @JohtoKanto/Route 32/Post-Guy"
@@ -1032,7 +1032,7 @@
                             "show_items"
                         ]
                     },
-					{
+                    {
                         "name": "North Item",
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
@@ -1050,7 +1050,7 @@
                             "@JohtoKanto/Route 32/Post-Guy"
                         ]
                     },
-					{
+                    {
                         "name": "Hidden Item North of Bridge",
                         "access_rules": [
                             "^$hid, @JohtoKanto/Route 32/Post-Guy"
@@ -1059,7 +1059,7 @@
                             "show_items, hiddenitems_on"
                         ]
                     },
-					{
+                    {
                         "name": "Camper Roland",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1077,7 +1077,7 @@
                             "show_items"
                         ]
                     },
-					{
+                    {
                         "name": "Fisher Henry",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1104,7 +1104,7 @@
                             "@JohtoKanto/Route 32/Post-Guy"
                         ]
                     },
-					{
+                    {
                         "name": "Youngster Gordon",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1113,7 +1113,7 @@
                             "@JohtoKanto/Route 32/Post-Guy"
                         ]
                     },
-					{
+                    {
                         "name": "Poison Barb from Frieda",
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
@@ -1941,7 +1941,7 @@
                             "show_items"
                         ]
                     },
-					{
+                    {
                         "name": "Youngster Samuel",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2789,7 +2789,7 @@
                             "show_items, trainersanity_on"
                         ]
                     },
-					{
+                    {
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
@@ -3075,7 +3075,7 @@
                             "show_items"
                         ]
                     },
-					{
+                    {
                         "name": "Twins Ann & Anne",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -3673,7 +3673,7 @@
                             "show_items, trainersanity_on"
                         ]
                     },
-					{
+                    {
                         "name": "Berry Tree",
                         "visibility_rules": [
                             "show_items, berries_on"
@@ -3753,7 +3753,7 @@
                             "show_items, trainersanity_on"
                         ]
                     },
-					{
+                    {
                         "name": "Moomoo Farm - TM13 after feeding Moomoo",
                         "visibility_rules": [
                             "show_items"
@@ -4280,7 +4280,7 @@
                             "show_items, hiddenitems_on"
                         ]
                     },
-					{
+                    {
                         "name": "Sharp Beak from Monica",
                         "visibility_rules": [
                             "show_items"
@@ -4372,7 +4372,7 @@
                             "show_items, trainersanity_on"
                         ]
                     },
-					{
+                    {
                         "name": "Swimmer Kaylee",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -4395,7 +4395,8 @@
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
-                    },                    {
+                    },
+                    {
                         "name": "Swimmer Kirk",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -4920,7 +4921,7 @@
                             "show_items, hiddenitems_on"
                         ]
                     },
-					{
+                    {
                         "name": "Item across Water",
                         "access_rules": [
                             "$can_surf_johto"
@@ -5709,7 +5710,7 @@
                             "show_items"
                         ]
                     },
-					{
+                    {
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
@@ -5843,7 +5844,7 @@
                             "show_items"
                         ]
                     },
-					{
+                    {
                         "name": "Northwest Item",
                         "access_rules": [
                             "$can_cut_johto"
@@ -5852,7 +5853,7 @@
                             "show_items"
                         ]
                     },
-					{
+                    {
                         "name": "Northeast Item",
                         "access_rules": [
                             "$can_cut_johto"
@@ -5861,7 +5862,7 @@
                             "show_items"
                         ]
                     },
-					{
+                    {
                         "name": "TM10 from Hidden Power House",
                         "access_rules": [
                             "$can_cut_johto"
@@ -5886,7 +5887,7 @@
                             "show_items, trainersanity_on"
                         ]
                     },
-					{
+                    {
                         "name": "Fisher Andre",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -5972,7 +5973,7 @@
                             "show_items, trainersanity_on"
                         ]
                     },
-					{
+                    {
                         "name": "West Item",
                         "visibility_rules": [
                             "show_items"
@@ -7073,7 +7074,7 @@
                             "show_items, trainersanity_on"
                         ]
                     },
-					{
+                    {
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
