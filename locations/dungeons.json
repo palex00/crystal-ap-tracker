@@ -67,21 +67,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Azalea Town/Berry Tree"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "AzaleaTown",
-                        "x": 136,
-                        "y": 40
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Azalea Town/Charcoal from Charcoal Kiln",
                         "name": "Charcoal Kiln - Charcoal"
                     }
@@ -91,6 +76,21 @@
                         "map": "AzaleaTown",
                         "x": 344,
                         "y": 216
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Berry Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaTown",
+                        "x": 136,
+                        "y": 40
                     }
                 ]
             },
@@ -598,9 +598,9 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Celadon City/Gym - Beauty Julia",
-                        "name": "Celadon Gym - Beauty Julia"
-                    },
+                        "ref": "JohtoKanto/Celadon City/Gym - Twins Jo & Zoe",
+                        "name": "Celadon Gym - Twins Jo & Zoe"
+                    }
                     {
                         "ref": "JohtoKanto/Celadon City/Gym - Lass Michelle",
                         "name": "Celadon Gym - Lass Michelle"
@@ -608,6 +608,10 @@
                     {
                         "ref": "JohtoKanto/Celadon City/Gym - Picnicker Tanya",
                         "name": "Celadon Gym - Picnicker Tanya"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Gym - Beauty Julia",
+                        "name": "Celadon Gym - Beauty Julia"
                     },
                     {
                         "ref": "JohtoKanto/Celadon City/Gym - Rainbow Badge from Erika",
@@ -621,10 +625,6 @@
                         "ref": "JohtoKanto/Celadon City/Gym - TM19 from Erika",
                         "name": "Celadon Gym - TM19 from Erika"
                     },
-                    {
-                        "ref": "JohtoKanto/Celadon City/Gym - Twins Jo & Zoe",
-                        "name": "Celadon Gym - Twins Jo & Zoe"
-                    }
                 ],
                 "map_locations": [
                     {
@@ -706,14 +706,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Cerulean City/Gym - Cascade Badge from Misty",
-                        "name": "Cerulean Gym - Cascade Badge from Misty"
-                    },
-                    {
-                        "ref": "JohtoKanto/Cerulean City/​Gym - Cascade Badge from Misty",
-                        "name": "Cerulean Gym - Cascade Badge from Misty​"
-                    },
-                    {
                         "ref": "JohtoKanto/Cerulean City/Gym - Machine Part in Water",
                         "name": "Cerulean Gym - Machine Part in Water"
                     },
@@ -722,13 +714,21 @@
                         "name": "Cerulean Gym - Swimmer Briana"
                     },
                     {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Parker",
+                        "name": "Cerulean Gym - Swimmer Parker"
+                    }
+                    {
                         "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Diana",
                         "name": "Cerulean Gym - Swimmer Diana"
                     },
                     {
-                        "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Parker",
-                        "name": "Cerulean Gym - Swimmer Parker"
-                    }
+                        "ref": "JohtoKanto/Cerulean City/Gym - Cascade Badge from Misty",
+                        "name": "Cerulean Gym - Cascade Badge from Misty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cerulean City/​Gym - Cascade Badge from Misty",
+                        "name": "Cerulean Gym - Cascade Badge from Misty​"
+                    },
                 ],
                 "map_locations": [
                     {
@@ -956,14 +956,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Saffron City/Gym - Marsh Badge from Sabrina",
-                        "name": "Saffron Gym - Marsh Badge from Sabrina"
-                    },
-                    {
-                        "ref": "JohtoKanto/Saffron City/​Gym - Marsh Badge from Sabrina",
-                        "name": "Saffron Gym - Marsh Badge from Sabrina​"
-                    },
-                    {
                         "ref": "JohtoKanto/Saffron City/Gym - Medium Doris",
                         "name": "Saffron Gym - Medium Doris"
                     },
@@ -979,6 +971,14 @@
                         "ref": "JohtoKanto/Saffron City/Gym - Psychic Jared",
                         "name": "Saffron Gym - Psychic Jared"
                     }
+                    {
+                        "ref": "JohtoKanto/Saffron City/Gym - Marsh Badge from Sabrina",
+                        "name": "Saffron Gym - Marsh Badge from Sabrina"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/​Gym - Marsh Badge from Sabrina",
+                        "name": "Saffron Gym - Marsh Badge from Sabrina​"
+                    },
                 ],
                 "map_locations": [
                     {
@@ -2353,10 +2353,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Fuchsia City/Gym - TM06 from Janine",
-                        "name": "Fuchsia Gym - TM06 from Janine"
-                    },
-                    {
                         "ref": "JohtoKanto/Fuchsia City/Gym - Soul Badge from Janine",
                         "name": "Fuchsia Gym - Soul Badge from Janine"
                     },
@@ -2364,6 +2360,10 @@
                         "ref": "JohtoKanto/Fuchsia City/​Gym - Soul Badge from Janine",
                         "name": "Fuchsia Gym - Soul Badge from Janine​"
                     }
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - TM06 from Janine",
+                        "name": "Fuchsia Gym - TM06 from Janine"
+                    },
                 ],
                 "map_locations": [
                     {
@@ -3997,10 +3997,6 @@
                         "name": "Mahogany Gym - Skier Roxanne"
                     },
                     {
-                        "ref": "JohtoKanto/Mahogany Town/Gym - TM16 from Pryce",
-                        "name": "Mahogany Gym - TM16 from Pryce"
-                    },
-                    {
                         "ref": "JohtoKanto/Mahogany Town/Gym - Glacier Badge from Pryce",
                         "name": "Mahogany Gym - Glacier Badge from Pryce"
                     },
@@ -4008,6 +4004,10 @@
                         "ref": "JohtoKanto/Mahogany Town/​Gym - Glacier Badge from Pryce",
                         "name": "Mahogany Gym - Glacier Badge from Pryce​"
                     }
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - TM16 from Pryce",
+                        "name": "Mahogany Gym - TM16 from Pryce"
+                    },
                 ],
                 "map_locations": [
                     {
@@ -5946,14 +5946,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Rock Tunnel/1F - Northeast Hidden Item"
+                        "ref": "JohtoKanto/Rock Tunnel/1F - Center Item"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "RockTunnel1F",
-                        "x": 392,
-                        "y": 72
+                        "x": 168,
+                        "y": 248
                     }
                 ]
             },
@@ -5976,14 +5976,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Rock Tunnel/1F - Center Item"
+                        "ref": "JohtoKanto/Rock Tunnel/1F - Northeast Hidden Item"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "RockTunnel1F",
-                        "x": 168,
-                        "y": 248
+                        "x": 392,
+                        "y": 72
                     }
                 ]
             },
@@ -5995,16 +5995,16 @@
                         "name": "Rock Tunnel 1F - East Item"
                     },
                     {
-                        "ref": "JohtoKanto/Rock Tunnel/1F - Northeast Hidden Item",
-                        "name": "Rock Tunnel 1F - Northeast Hidden Item"
+                        "ref": "JohtoKanto/Rock Tunnel/1F - Center Item",
+                        "name": "Rock Tunnel 1F - Center Item"
                     },
                     {
                         "ref": "JohtoKanto/Rock Tunnel/1F - Southeast Hidden Item",
                         "name": "Rock Tunnel 1F - Southeast Hidden Item"
                     },
                     {
-                        "ref": "JohtoKanto/Rock Tunnel/1F - Center Item",
-                        "name": "Rock Tunnel 1F - Center Item"
+                        "ref": "JohtoKanto/Rock Tunnel/1F - Northeast Hidden Item",
+                        "name": "Rock Tunnel 1F - Northeast Hidden Item"
                     },
                     {
                         "ref": "JohtoKanto/Rock Tunnel/B1F - Hidden Item",
@@ -6109,6 +6109,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 9/Picnicker Heidi"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route9",
+                        "x": 632,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 9/Hidden Item in Southeast Corner"
                     }
                 ],
@@ -6116,6 +6131,21 @@
                     {
                         "map": "Route9",
                         "x": 664,
+                        "y": 248
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 9/Hiker Sidney"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route9",
+                        "x": 584,
                         "y": 248
                     }
                 ]
@@ -6139,14 +6169,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 9/Picnicker Heidi"
+                        "ref": "JohtoKanto/Route 9/Hiker Tim"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route9",
-                        "x": 632,
-                        "y": 136
+                        "x": 456,
+                        "y": 56
                     }
                 ]
             },
@@ -6184,29 +6214,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 9/Hiker Tim"
+                        "ref": "JohtoKanto/Rock Tunnel/B1F - South Item"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route9",
-                        "x": 456,
-                        "y": 56
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 9/Hiker Sidney"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route9",
-                        "x": 584,
-                        "y": 248
+                        "map": "RockTunnelB1F",
+                        "x": 120,
+                        "y": 408
                     }
                 ]
             },
@@ -6222,21 +6237,6 @@
                         "map": "RockTunnelB1F",
                         "x": 72,
                         "y": 232
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Rock Tunnel/B1F - South Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "RockTunnelB1F",
-                        "x": 120,
-                        "y": 408
                     }
                 ]
             },
@@ -6274,6 +6274,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 1/Berry Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route1",
+                        "x": 56,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 1/Schoolboy Danny"
                     }
                 ],
@@ -6304,13 +6319,13 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 1/Berry Tree"
+                        "ref": "JohtoKanto/Route 11/Psychic Herman"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route1",
-                        "x": 56,
+                        "map": "Route11",
+                        "x": 456,
                         "y": 120
                     }
                 ]
@@ -6327,6 +6342,21 @@
                         "map": "Route11",
                         "x": 520,
                         "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 11/Berry Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route11",
+                        "x": 520,
+                        "y": 40
                     }
                 ]
             },
@@ -6364,21 +6394,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 11/Psychic Herman"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route11",
-                        "x": 456,
-                        "y": 120
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 11/Psychic Fidel"
                     }
                 ],
@@ -6394,14 +6409,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 11/Berry Tree"
+                        "ref": "JohtoKanto/Route 12/Item behind South Cut Tree across Water"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route11",
-                        "x": 520,
-                        "y": 40
+                        "map": "Route12South",
+                        "x": 88,
+                        "y": 376
                     }
                 ]
             },
@@ -6417,21 +6432,6 @@
                         "map": "Route12South",
                         "x": 88,
                         "y": 248
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 12/Item behind South Cut Tree across Water"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route12South",
-                        "x": 88,
-                        "y": 376
                     }
                 ]
             },
@@ -6470,6 +6470,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 12/Fisher Stephen"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route12North",
+                        "x": 232,
+                        "y": 376
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 12/Hidden Item on Island"
                     }
                 ],
@@ -6477,6 +6492,21 @@
                     {
                         "map": "Route12North",
                         "x": 232,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 12/Fisher Martin"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route12North",
+                        "x": 88,
                         "y": 216
                     }
                 ]
@@ -6500,44 +6530,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 12/Fisher Martin"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route12North",
-                        "x": 88,
-                        "y": 216
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 12/Fisher Stephen"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route12North",
-                        "x": 232,
-                        "y": 376
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 13/Hidden Item in Fence Maze"
+                        "ref": "JohtoKanto/Route 13/Hiker Kenny"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route13",
-                        "x": 488,
-                        "y": 216
+                        "x": 232,
+                        "y": 168
                     }
                 ]
             },
@@ -6575,6 +6575,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 13/Hidden Item in Fence Maze"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route13",
+                        "x": 488,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 13/Bird Keeper Perry"
                     }
                 ],
@@ -6605,14 +6620,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 13/Hiker Kenny"
+                        "ref": "JohtoKanto/Route 14/Bird Keeper Roy"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route13",
-                        "x": 232,
-                        "y": 168
+                        "map": "Route14",
+                        "x": 184,
+                        "y": 440
                     }
                 ]
             },
@@ -6635,21 +6650,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 14/Bird Keeper Roy"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route14",
-                        "x": 184,
-                        "y": 440
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 14/Pokefan Trevor"
                     }
                 ],
@@ -6658,51 +6658,6 @@
                         "map": "Route14",
                         "x": 104,
                         "y": 184
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 15/Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route15",
-                        "x": 200,
-                        "y": 88
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 15/Teacher Colette"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route15",
-                        "x": 488,
-                        "y": 200
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 15/Teacher Hillary"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route15",
-                        "x": 328,
-                        "y": 168
                     }
                 ]
             },
@@ -6740,13 +6695,13 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 15/Schoolboy Johnny"
+                        "ref": "JohtoKanto/Route 15/Teacher Hillary"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route15",
-                        "x": 536,
+                        "x": 328,
                         "y": 168
                     }
                 ]
@@ -6770,14 +6725,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 17/Hidden Item in Fence"
+                        "ref": "JohtoKanto/Route 15/Teacher Colette"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route17",
-                        "x": 136,
-                        "y": 1240
+                        "map": "Route15",
+                        "x": 488,
+                        "y": 200
                     }
                 ]
             },
@@ -6785,14 +6740,29 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 17/Hidden Item at Corner"
+                        "ref": "JohtoKanto/Route 15/Schoolboy Johnny"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route17",
-                        "x": 152,
-                        "y": 872
+                        "map": "Route15",
+                        "x": 536,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 15/Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route15",
+                        "x": 200,
+                        "y": 88
                     }
                 ]
             },
@@ -6815,14 +6785,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 17/Biker Riley"
+                        "ref": "JohtoKanto/Route 17/Hidden Item in Fence"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route17",
-                        "x": 72,
-                        "y": 280
+                        "x": 136,
+                        "y": 1240
                     }
                 ]
             },
@@ -6860,6 +6830,36 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 17/Hidden Item at Corner"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route17",
+                        "x": 152,
+                        "y": 872
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 17/Biker Riley"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route17",
+                        "x": 72,
+                        "y": 280
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 18/Bird Keeper Boris"
                     }
                 ],
@@ -6890,21 +6890,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 19/Swimmer Dawn"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route19",
-                        "x": 152,
-                        "y": 376
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 19/Swimmer Harold"
                     }
                 ],
@@ -6920,14 +6905,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 19/Swimmer Jerome"
+                        "ref": "JohtoKanto/Route 19/Swimmer Dawn"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route19",
-                        "x": 184,
-                        "y": 280
+                        "x": 152,
+                        "y": 376
                     }
                 ]
             },
@@ -6950,134 +6935,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 2/West Item in Forest"
+                        "ref": "JohtoKanto/Route 19/Swimmer Jerome"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route2",
-                        "x": 8,
-                        "y": 472
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 2/North Hidden Item in Forest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route2",
-                        "x": 72,
-                        "y": 232
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 2/West Hidden Item in Forest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route2",
-                        "x": 72,
-                        "y": 440
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 2/East Hidden Item in Forest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route2",
-                        "x": 120,
-                        "y": 376
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 2/Southeast Hidden Item in Forest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route2",
+                        "map": "Route19",
                         "x": 184,
-                        "y": 488
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 2/Center Item in Forest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route2",
-                        "x": 40,
-                        "y": 376
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 2/Berry Tree"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route2",
-                        "x": 168,
-                        "y": 232
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 2/Northeast Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route2",
-                        "x": 312,
-                        "y": 40
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 2/Southeast Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route2",
-                        "x": 232,
-                        "y": 808
+                        "y": 280
                     }
                 ]
             },
@@ -7101,29 +6966,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 2/Bug Catcher Rob"
+                        "ref": "JohtoKanto/Route 2/Northeast Item"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route2",
-                        "x": 168,
-                        "y": 728
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 2/Bug Catcher Doug"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route2",
-                        "x": 8,
-                        "y": 648
+                        "x": 312,
+                        "y": 40
                     }
                 ]
             },
@@ -7146,14 +6996,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 20/Swimmer Nicole"
+                        "ref": "JohtoKanto/Route 2/Center Item in Forest"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route20",
-                        "x": 840,
-                        "y": 136
+                        "map": "Route2",
+                        "x": 40,
+                        "y": 376
                     }
                 ]
             },
@@ -7161,14 +7011,134 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 20/Swimmer Lori"
+                        "ref": "JohtoKanto/Route 2/North Hidden Item in Forest"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route20",
-                        "x": 728,
-                        "y": 216
+                        "map": "Route2",
+                        "x": 72,
+                        "y": 232
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 2/East Hidden Item in Forest"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route2",
+                        "x": 120,
+                        "y": 376
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 2/Berry Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route2",
+                        "x": 168,
+                        "y": 232
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 2/Southeast Hidden Item in Forest"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route2",
+                        "x": 184,
+                        "y": 488
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 2/West Item in Forest"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route2",
+                        "x": 8,
+                        "y": 472
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 2/West Hidden Item in Forest"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route2",
+                        "x": 72,
+                        "y": 440
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 2/Bug Catcher Doug"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route2",
+                        "x": 8,
+                        "y": 648
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 2/Bug Catcher Rob"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route2",
+                        "x": 168,
+                        "y": 728
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 2/Southeast Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route2",
+                        "x": 232,
+                        "y": 808
                     }
                 ]
             },
@@ -7191,6 +7161,36 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 20/Swimmer Lori"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route20",
+                        "x": 728,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 20/Swimmer Nicole"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route20",
+                        "x": 840,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Seafoam Islands/Gym - Volcano Badge from Blaine",
                         "name": "Seafoam Gym - Volcano Badge from Blaine"
                     },
@@ -7204,21 +7204,6 @@
                         "map": "Route20",
                         "x": 616,
                         "y": 120
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 21/Swimmer Seth"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route21",
-                        "x": 40,
-                        "y": 488
                     }
                 ]
             },
@@ -7256,6 +7241,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 21/Swimmer Seth"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route21",
+                        "x": 40,
+                        "y": 488
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 25/Hidden Item in Tree"
                     }
                 ],
@@ -7264,36 +7264,6 @@
                         "map": "Route25",
                         "x": 72,
                         "y": 88
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 25/Item behind Cut Tree"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route25",
-                        "x": 520,
-                        "y": 72
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 25/Nugget Bridge Prize"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route25",
-                        "x": 600,
-                        "y": 136
                     }
                 ]
             },
@@ -7399,6 +7369,36 @@
                         "map": "Route25",
                         "x": 504,
                         "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 25/Item behind Cut Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route25",
+                        "x": 520,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 25/Nugget Bridge Prize"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route25",
+                        "x": 600,
+                        "y": 136
                     }
                 ]
             },
@@ -7759,21 +7759,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 3/Firebreather Otis"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route3",
-                        "x": 424,
-                        "y": 200
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 3/Youngster Warren"
                     }
                 ],
@@ -7797,6 +7782,21 @@
                         "map": "Route3",
                         "x": 264,
                         "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 3/Firebreather Otis"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route3",
+                        "x": 424,
+                        "y": 200
                     }
                 ]
             },
@@ -9046,14 +9046,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 4/Hidden Item on Plateau"
+                        "ref": "JohtoKanto/Route 4/Picnicker Hope"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route4",
-                        "x": 168,
-                        "y": 56
+                        "x": 152,
+                        "y": 136
                     }
                 ]
             },
@@ -9061,13 +9061,13 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 4/Item"
+                        "ref": "JohtoKanto/Route 4/Hidden Item on Plateau"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route4",
-                        "x": 424,
+                        "x": 168,
                         "y": 56
                     }
                 ]
@@ -9091,21 +9091,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 4/Picnicker Hope"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route4",
-                        "x": 152,
-                        "y": 136
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 4/Picnicker Sharon"
                     }
                 ],
@@ -9114,6 +9099,21 @@
                         "map": "Route4",
                         "x": 344,
                         "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 4/Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route4",
+                        "x": 424,
+                        "y": 56
                     }
                 ]
             },
