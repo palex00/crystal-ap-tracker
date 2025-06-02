@@ -1274,21 +1274,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 31/South Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route31",
-                        "x": 312,
-                        "y": 248
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 31/Northeast Item"
                     }
                 ],
@@ -1304,18 +1289,13 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 31/Deliver Kenya",
-                        "name": "Deliver Kenya"
-                    },
-                    {
-                        "ref": "JohtoKanto/Route 31/TM50 for delivering Kenya",
-                        "name": "TM50 for delivering Kenya"
+                        "ref": "JohtoKanto/Route 31/Berry Tree"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route31",
-                        "x": 280,
+                        "x": 264,
                         "y": 120
                     }
                 ]
@@ -1339,13 +1319,33 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 31/Berry Tree"
+                        "ref": "JohtoKanto/Route 31/South Item"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route31",
-                        "x": 264,
+                        "x": 312,
+                        "y": 248
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 31/Deliver Kenya",
+                        "name": "Deliver Kenya"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/TM50 for delivering Kenya",
+                        "name": "TM50 for delivering Kenya"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route31",
+                        "x": 280,
                         "y": 120
                     }
                 ]
@@ -1379,6 +1379,36 @@
                         "map": "Route46",
                         "x": 232,
                         "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 46/Berry Tree 1"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route46",
+                        "x": 120,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 46/Berry Tree 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route46",
+                        "x": 136,
+                        "y": 104
                     }
                 ]
             },
@@ -1439,36 +1469,6 @@
                         "map": "Route46",
                         "x": 200,
                         "y": 312
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 46/Berry Tree 1"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route46",
-                        "x": 120,
-                        "y": 88
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 46/Berry Tree 2"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route46",
-                        "x": 136,
-                        "y": 104
                     }
                 ]
             },
@@ -2168,13 +2168,17 @@
                         "map": "FastShipCabins_Eastbound",
                         "x": 40,
                         "y": 72,
-                        "force_invisibility_rules": ["EVENT_FAST_SHIP_FOUND_GIRL"]
+                        "force_invisibility_rules": [
+                            "EVENT_FAST_SHIP_FOUND_GIRL"
+                        ]
                     },
                     {
                         "map": "FastShipCabins_Westbound",
                         "x": 40,
                         "y": 72,
-                        "force_invisibility_rules": ["EVENT_FAST_SHIP_FOUND_GIRL"]
+                        "force_invisibility_rules": [
+                            "EVENT_FAST_SHIP_FOUND_GIRL"
+                        ]
                     }
                 ]
             },
@@ -3292,73 +3296,13 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 44/Hidden Item across Water"
+                        "ref": "JohtoKanto/Route 44/Berry Tree"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route44",
-                        "x": 520,
-                        "y": 152
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 44/West Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route44",
-                        "x": 232,
-                        "y": 152
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 44/Center Item across Water"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route44",
-                        "x": 488,
-                        "y": 136
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 44/East Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route44",
-                        "x": 728,
-                        "y": 72
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 44/Bird Keeper Vance"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route44",
-                        "x": 824,
+                        "x": 152,
                         "y": 88
                     }
                 ]
@@ -3382,14 +3326,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 44/Fisher Wilton"
+                        "ref": "JohtoKanto/Route 44/West Item"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route44",
-                        "x": 568,
-                        "y": 56
+                        "x": 232,
+                        "y": 152
                     }
                 ]
             },
@@ -3427,21 +3371,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 44/Pokemaniac Zach"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route44",
-                        "x": 696,
-                        "y": 40
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 44/Cool Trainer Allen"
                     }
                 ],
@@ -3457,13 +3386,88 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 44/Berry Tree"
+                        "ref": "JohtoKanto/Route 44/Center Item across Water"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route44",
-                        "x": 152,
+                        "x": 488,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 44/Hidden Item across Water"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route44",
+                        "x": 520,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 44/Fisher Wilton"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route44",
+                        "x": 568,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 44/Pokemaniac Zach"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route44",
+                        "x": 696,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 44/East Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route44",
+                        "x": 728,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 44/Bird Keeper Vance"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route44",
+                        "x": 824,
                         "y": 88
                     }
                 ]
@@ -3772,89 +3776,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Lake of Rage/Northeast Hidden Item"
+                        "ref": "JohtoKanto/Lake of Rage/Cool Trainer Aaron"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "LakeOfRage",
-                        "x": 568,
-                        "y": 88
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Lake of Rage/Fisher Andre"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "LakeOfRage",
-                        "x": 488,
-                        "y": 376
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Lake of Rage/Fisher Raymond"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "LakeOfRage",
-                        "x": 392,
-                        "y": 424
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Lake of Rage/Cool Trainer Lois"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "LakeOfRage",
-                        "x": 584,
-                        "y": 120
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Lake of Rage/Red Scale from Gyarados"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "LakeOfRage",
-                        "x": 296,
-                        "y": 360
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Lake of Rage/Northwest Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "LakeOfRage",
-                        "x": 120,
-                        "y": 168
+                        "x": 72,
+                        "y": 248
                     }
                 ]
             },
@@ -3877,21 +3806,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Lake of Rage/Northeast Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "LakeOfRage",
-                        "x": 568,
-                        "y": 40
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Lake of Rage/Blackbelt from Wesley"
                     }
                 ],
@@ -3907,14 +3821,29 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Lake of Rage/Cool Trainer Aaron"
+                        "ref": "JohtoKanto/Lake of Rage/Northwest Item"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "LakeOfRage",
-                        "x": 72,
-                        "y": 248
+                        "x": 120,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Northeast Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "x": 568,
+                        "y": 40
                     }
                 ]
             },
@@ -3931,6 +3860,81 @@
                         "map": "LakeOfRage",
                         "x": 120,
                         "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Red Scale from Gyarados"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "x": 296,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Fisher Raymond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "x": 392,
+                        "y": 424
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Fisher Andre"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "x": 488,
+                        "y": 376
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Cool Trainer Lois"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "x": 584,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Northeast Hidden Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "x": 568,
+                        "y": 88
                     }
                 ]
             },
@@ -4658,19 +4662,30 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 30/Exp Share from Mr Pokemon",
-                        "name": "Route 30 - Exp Share from Mr Pokemon"
-                    },
-                    {
-                        "ref": "JohtoKanto/Route 30/Mystery Egg from Mr Pokemon",
-                        "name": "Route 30 - Mystery Egg from Mr Pokemon"
+                        "ref": "JohtoKanto/Route 30/Berry Tree 1"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route30",
-                        "x": 280,
-                        "y": 88
+                        "x": 88,
+                        "y": 632
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 30/Berry from House",
+                        "name": "Route 30 - Berry from House"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route30",
+                        "x": 120,
+                        "y": 632
                     }
                 ]
             },
@@ -4701,6 +4716,41 @@
                         "map": "Route30",
                         "x": 232,
                         "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 30/Berry Tree 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route30",
+                        "x": 184,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 30/Exp Share from Mr Pokemon",
+                        "name": "Route 30 - Exp Share from Mr Pokemon"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Mystery Egg from Mr Pokemon",
+                        "name": "Route 30 - Mystery Egg from Mr Pokemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route30",
+                        "x": 280,
+                        "y": 88
                     }
                 ]
             },
@@ -4746,52 +4796,6 @@
                         "map": "Route30",
                         "x": 24,
                         "y": 120
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 30/Berry Tree 1"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route30",
-                        "x": 88,
-                        "y": 632
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 30/Berry Tree 2"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route30",
-                        "x": 184,
-                        "y": 88
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 30/Berry from House",
-                        "name": "Route 30 - Berry from House"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route30",
-                        "x": 120,
-                        "y": 632
                     }
                 ]
             },
@@ -7402,74 +7406,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 26/Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route26North",
-                        "x": 152,
-                        "y": 248
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 26/Cool Trainer Jake"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route26North",
-                        "x": 232,
-                        "y": 392
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 26/Cool Trainer Gaven"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route26North",
-                        "x": 152,
-                        "y": 616
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 26/Cool Trainer Beth"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route26North",
-                        "x": 88,
-                        "y": 136
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 26/Cool Trainer Joyce"
+                        "ref": "JohtoKanto/Route 26/Fisher Scott"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route26South",
                         "x": 168,
-                        "y": 72
+                        "y": 648
                     }
                 ]
             },
@@ -7492,14 +7436,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 26/Fisher Scott"
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Joyce"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route26South",
                         "x": 168,
-                        "y": 648
+                        "y": 72
                     }
                 ]
             },
@@ -7515,6 +7459,103 @@
                         "map": "Route26South",
                         "x": 232,
                         "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Gaven"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route26North",
+                        "x": 152,
+                        "y": 616
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Jake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route26North",
+                        "x": 232,
+                        "y": 392
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Beth"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route26North",
+                        "x": 88,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 26/Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route26North",
+                        "x": 152,
+                        "y": 248
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 27/Tohjo Falls - Item",
+                        "name": "Tohjo Falls - Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route27",
+                        "x": 424,
+                        "y": 88
+                    },
+                    {
+                        "map": "TohjoFalls",
+                        "x": 40,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 27/Sandstorm from Woman in House",
+                        "name": "Route 27 - Sandstorm from Woman in House"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route27",
+                        "x": 536,
+                        "y": 120
                     }
                 ]
             },
@@ -7552,21 +7593,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 27/Psychic Gilbert"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route27",
-                        "x": 1048,
-                        "y": 120
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 27/Cool Trainer Blake"
                     }
                 ],
@@ -7590,6 +7616,21 @@
                         "map": "Route27",
                         "x": 936,
                         "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 27/Psychic Gilbert"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route27",
+                        "x": 1048,
+                        "y": 120
                     }
                 ]
             },
@@ -7642,36 +7683,15 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 27/Sandstorm from Woman in House",
-                        "name": "Route 27 - Sandstorm from Woman in House"
+                        "ref": "JohtoKanto/Route 28/Steel Wing from Celebrity in House",
+                        "name": "Route 28 - Steel Wing from Celebrity in House"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route27",
-                        "x": 536,
-                        "y": 120
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 27/Tohjo Falls - Item",
-                        "name": "Tohjo Falls - Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route27",
-                        "x": 424,
-                        "y": 88
-                    },
-                    {
-                        "map": "TohjoFalls",
-                        "x": 40,
-                        "y": 104
+                        "map": "Route28",
+                        "x": 120,
+                        "y": 56
                     }
                 ]
             },
@@ -7687,22 +7707,6 @@
                         "map": "Route28",
                         "x": 408,
                         "y": 40
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 28/Steel Wing from Celebrity in House",
-                        "name": "Route 28 - Steel Wing from Celebrity in House"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route28",
-                        "x": 120,
-                        "y": 56
                     }
                 ]
             },
@@ -7830,13 +7834,43 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 32/South Item"
+                        "ref": "JohtoKanto/Route 32/Miracle Seed from Man in North"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route32South",
-                        "x": 104,
+                        "map": "Route32North",
+                        "x": 296,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 32/Youngster Albert"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route32North",
+                        "x": 200,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 32/TM05 from Roar Guy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route32North",
+                        "x": 248,
                         "y": 216
                     }
                 ]
@@ -7845,14 +7879,29 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 32/Hidden Item by Frieda"
+                        "ref": "JohtoKanto/Route 32/Picnicker Liz"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route32South",
-                        "x": 184,
-                        "y": 440
+                        "map": "Route32North",
+                        "x": 168,
+                        "y": 488
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 32/North Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route32North",
+                        "x": 56,
+                        "y": 488
                     }
                 ]
             },
@@ -7875,21 +7924,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 32/Poison Barb from Frieda"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route32South",
-                        "x": 200,
-                        "y": 440
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 32/Camper Roland"
                     }
                 ],
@@ -7898,6 +7932,21 @@
                         "map": "Route32South",
                         "x": 56,
                         "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 32/South Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route32South",
+                        "x": 104,
+                        "y": 216
                     }
                 ]
             },
@@ -7965,14 +8014,29 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 32/Bird Keeper Peter"
+                        "ref": "JohtoKanto/Route 32/Hidden Item by Frieda"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route32South",
                         "x": 184,
-                        "y": 680
+                        "y": 440
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 32/Poison Barb from Frieda"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route32South",
+                        "x": 200,
+                        "y": 440
                     }
                 ]
             },
@@ -7989,6 +8053,21 @@
                         "map": "Route32South",
                         "x": 184,
                         "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 32/Bird Keeper Peter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route32South",
+                        "x": 184,
+                        "y": 680
                     }
                 ]
             },
@@ -8081,81 +8160,6 @@
                         "map": "Route32South",
                         "x": 104,
                         "y": 632
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 32/North Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route32North",
-                        "x": 56,
-                        "y": 488
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 32/Miracle Seed from Man in North"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route32North",
-                        "x": 296,
-                        "y": 136
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 32/TM05 from Roar Guy"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route32North",
-                        "x": 248,
-                        "y": 216
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 32/Picnicker Liz"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route32North",
-                        "x": 168,
-                        "y": 488
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 32/Youngster Albert"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route32North",
-                        "x": 200,
-                        "y": 360
                     }
                 ]
             },
@@ -8285,6 +8289,87 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 34/TM12 from Woman in Gate",
+                        "name": "Route 34 - TM12 from Woman in Gate"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 224,
+                        "y": 600
+                    },
+                    {
+                        "map": "IlexForest",
+                        "x": 24,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 34/Youngster Samuel"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 248,
+                        "y": 520
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 34/Pokefan Brandon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 296,
+                        "y": 456
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 34/Picnicker Gina"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 168,
+                        "y": 424
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 34/Youngster Ian"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 184,
+                        "y": 328
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 34/Hidden Item in Day-Care Yard"
                     }
                 ],
@@ -8315,66 +8400,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 34/Picnicker Gina"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route34",
-                        "x": 168,
-                        "y": 424
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 34/Youngster Samuel"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route34",
-                        "x": 248,
-                        "y": 520
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 34/Youngster Ian"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route34",
-                        "x": 184,
-                        "y": 328
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 34/Pokefan Brandon"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route34",
-                        "x": 296,
-                        "y": 456
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 34/Item across Water"
                     }
                 ],
@@ -8383,6 +8408,21 @@
                         "map": "Route34",
                         "x": 120,
                         "y": 488
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 34/Hidden Item across Water"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 136,
+                        "y": 520
                     }
                 ]
             },
@@ -8440,35 +8480,24 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 34/Hidden Item across Water"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route34",
-                        "x": 136,
-                        "y": 520
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 34/TM12 from Woman in Gate",
-                        "name": "Route 34 - TM12 from Woman in Gate"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route34",
-                        "x": 224,
-                        "y": 600
+                        "ref": "JohtoKanto/Route 35/Collect Kenya",
+                        "name": "Route 35 - Collect Kenya"
                     },
                     {
-                        "map": "IlexForest",
-                        "x": 24,
-                        "y": 88
+                        "ref": "JohtoKanto/Route 35/HP Up after delivering Kenya",
+                        "name": "Route 35 - HP Up after delivering Kenya"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route35",
+                        "x": 160,
+                        "y": 536
+                    },
+                    {
+                        "map": "GoldenrodCity",
+                        "x": 312,
+                        "y": 24
                     }
                 ]
             },
@@ -8476,14 +8505,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 35/Item"
+                        "ref": "JohtoKanto/Route 35/Picnicker Kim"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route35",
-                        "x": 216,
-                        "y": 264
+                        "x": 168,
+                        "y": 424
                     }
                 ]
             },
@@ -8491,44 +8520,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 35/Bird Keeper Bryan"
+                        "ref": "JohtoKanto/Route 35/Berry Tree"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route35",
-                        "x": 232,
-                        "y": 456
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 35/Juggler Irwin"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route35",
-                        "x": 88,
-                        "y": 168
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 35/Camper Ivan"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route35",
-                        "x": 72,
-                        "y": 312
+                        "x": 40,
+                        "y": 408
                     }
                 ]
             },
@@ -8566,29 +8565,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 35/Picnicker Kim"
+                        "ref": "JohtoKanto/Route 35/Camper Ivan"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route35",
-                        "x": 168,
-                        "y": 424
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 35/Bug Catcher Arnie"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route35",
-                        "x": 264,
-                        "y": 120
+                        "x": 72,
+                        "y": 312
                     }
                 ]
             },
@@ -8611,14 +8595,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 35/Berry Tree"
+                        "ref": "JohtoKanto/Route 35/Juggler Irwin"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route35",
-                        "x": 40,
-                        "y": 408
+                        "x": 88,
+                        "y": 168
                     }
                 ]
             },
@@ -8626,24 +8610,44 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 35/Collect Kenya",
-                        "name": "Route 35 - Collect Kenya"
-                    },
-                    {
-                        "ref": "JohtoKanto/Route 35/HP Up after delivering Kenya",
-                        "name": "Route 35 - HP Up after delivering Kenya"
+                        "ref": "JohtoKanto/Route 35/Bird Keeper Bryan"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route35",
-                        "x": 160,
-                        "y": 536
-                    },
+                        "x": 232,
+                        "y": 456
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
                     {
-                        "map": "GoldenrodCity",
-                        "x": 312,
-                        "y": 24
+                        "ref": "JohtoKanto/Route 35/Bug Catcher Arnie"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route35",
+                        "x": 264,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 35/Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route35",
+                        "x": 216,
+                        "y": 264
                     }
                 ]
             },
@@ -8681,21 +8685,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 36/Schoolboy Alan"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route36",
-                        "x": 504,
-                        "y": 232
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 36/Psychic Mark"
                     }
                 ],
@@ -8726,14 +8715,59 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 37/Hidden Item"
+                        "ref": "JohtoKanto/Route 36/Schoolboy Alan"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route36",
+                        "x": 504,
+                        "y": 232
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 37/Berry Tree 1"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route37",
-                        "x": 72,
-                        "y": 40
+                        "x": 216,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 37/Berry Tree 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route37",
+                        "x": 264,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 37/Berry Tree 3"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route37",
+                        "x": 248,
+                        "y": 120
                     }
                 ]
             },
@@ -8786,14 +8820,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 37/Berry Tree 1"
+                        "ref": "JohtoKanto/Route 37/Hidden Item"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Route37",
-                        "x": 216,
-                        "y": 88
+                        "x": 72,
+                        "y": 40
                     }
                 ]
             },
@@ -8801,14 +8835,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 37/Berry Tree 2"
+                        "ref": "JohtoKanto/Route 38/Beauty Valerie"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route37",
-                        "x": 264,
-                        "y": 88
+                        "map": "Route38",
+                        "x": 312,
+                        "y": 152
                     }
                 ]
             },
@@ -8816,14 +8850,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 37/Berry Tree 3"
+                        "ref": "JohtoKanto/Route 38/Berry Tree"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route37",
-                        "x": 248,
-                        "y": 120
+                        "map": "Route38",
+                        "x": 200,
+                        "y": 168
                     }
                 ]
             },
@@ -8891,21 +8925,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 38/Beauty Valerie"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route38",
-                        "x": 312,
-                        "y": 152
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 38/Beauty Olivia"
                     }
                 ],
@@ -8914,81 +8933,6 @@
                         "map": "Route38",
                         "x": 88,
                         "y": 136
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 38/Berry Tree"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route38",
-                        "x": 200,
-                        "y": 168
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 39/Hidden Item between Miltank"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route39",
-                        "x": 88,
-                        "y": 216
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 39/Pokefan Derek"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route39",
-                        "x": 168,
-                        "y": 360
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 39/Pokefan Ruth"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route39",
-                        "x": 184,
-                        "y": 312
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 39/Sailor Eugene"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route39",
-                        "x": 216,
-                        "y": 472
                     }
                 ]
             },
@@ -9035,6 +8979,66 @@
                         "map": "Route39",
                         "x": 88,
                         "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 39/Hidden Item between Miltank"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route39",
+                        "x": 88,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 39/Pokefan Ruth"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route39",
+                        "x": 184,
+                        "y": 312
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 39/Pokefan Derek"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route39",
+                        "x": 168,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 39/Sailor Eugene"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route39",
+                        "x": 216,
+                        "y": 472
                     }
                 ]
             },
@@ -9147,6 +9151,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 40/Swimmer Simon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route40",
+                        "x": 232,
+                        "y": 248
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 40/Swimmer Elaine"
                     }
                 ],
@@ -9170,21 +9189,6 @@
                         "map": "Route40",
                         "x": 168,
                         "y": 408
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 40/Swimmer Simon"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route40",
-                        "x": 232,
-                        "y": 248
                     }
                 ]
             },
@@ -9222,6 +9226,36 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 41/Swimmer George"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route41",
+                        "x": 744,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 41/Swimmer Charlie"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route41",
+                        "x": 520,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 41/Swimmer Kaylee"
                     }
                 ],
@@ -9252,81 +9286,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 41/Swimmer Denise"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route41",
-                        "x": 440,
-                        "y": 552
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 41/Swimmer Kara"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route41",
-                        "x": 712,
-                        "y": 456
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 41/Swimmer Wendy"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route41",
-                        "x": 152,
-                        "y": 808
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 41/Swimmer Charlie"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route41",
-                        "x": 520,
-                        "y": 104
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 41/Swimmer George"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route41",
-                        "x": 744,
-                        "y": 136
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 41/Swimmer Berke"
                     }
                 ],
@@ -9335,6 +9294,21 @@
                         "map": "Route41",
                         "x": 328,
                         "y": 424
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 41/Swimmer Denise"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route41",
+                        "x": 440,
+                        "y": 552
                     }
                 ]
             },
@@ -9357,6 +9331,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 41/Swimmer Kara"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route41",
+                        "x": 712,
+                        "y": 456
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 41/Swimmer Mathew"
                     }
                 ],
@@ -9372,14 +9361,14 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 42/Hidden Item in Pond Rock"
+                        "ref": "JohtoKanto/Route 41/Swimmer Wendy"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route42",
-                        "x": 264,
-                        "y": 184
+                        "map": "Route41",
+                        "x": 152,
+                        "y": 808
                     }
                 ]
             },
@@ -9395,6 +9384,21 @@
                         "map": "Route42",
                         "x": 104,
                         "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 42/Hidden Item in Pond Rock"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route42",
+                        "x": 264,
+                        "y": 184
                     }
                 ]
             },
@@ -9507,21 +9511,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 43/Item"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route43",
-                        "x": 200,
-                        "y": 520
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 43/Camper Spencer"
                     }
                 ],
@@ -9530,96 +9519,6 @@
                         "map": "Route43",
                         "x": 216,
                         "y": 648
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 43/Pokemaniac Ben"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route43",
-                        "x": 216,
-                        "y": 88
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 43/Pokemaniac Brent"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route43",
-                        "x": 216,
-                        "y": 328
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 43/Pokemaniac Ron"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route43",
-                        "x": 232,
-                        "y": 120
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 43/Fisher Marvin"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route43",
-                        "x": 72,
-                        "y": 264
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 43/Picnicker Tiffany"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route43",
-                        "x": 152,
-                        "y": 408
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Route 43/Berry Tree"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route43",
-                        "x": 24,
-                        "y": 424
                     }
                 ]
             },
@@ -9643,14 +9542,104 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 45/Hidden Item in Southeast Pond"
+                        "ref": "JohtoKanto/Route 43/Item"
                     }
                 ],
                 "map_locations": [
                     {
-                        "map": "Route45South",
+                        "map": "Route43",
+                        "x": 200,
+                        "y": 520
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 43/Berry Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route43",
+                        "x": 24,
+                        "y": 424
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 43/Picnicker Tiffany"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route43",
+                        "x": 152,
+                        "y": 408
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 43/Pokemaniac Brent"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route43",
                         "x": 216,
-                        "y": 616
+                        "y": 328
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 43/Fisher Marvin"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route43",
+                        "x": 72,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 43/Pokemaniac Ben"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route43",
+                        "x": 216,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 43/Pokemaniac Ron"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route43",
+                        "x": 232,
+                        "y": 120
                     }
                 ]
             },
@@ -9666,6 +9655,21 @@
                         "map": "Route45South",
                         "x": 104,
                         "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 45/Blackbelt Kenji"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route45South",
+                        "x": 184,
+                        "y": 136
                     }
                 ]
             },
@@ -9703,21 +9707,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 45/Blackbelt Kenji"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Route45South",
-                        "x": 184,
-                        "y": 136
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Route 45/Hiker Michael"
                     }
                 ],
@@ -9726,6 +9715,21 @@
                         "map": "Route45South",
                         "x": 248,
                         "y": 376
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 45/Hidden Item in Southeast Pond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route45South",
+                        "x": 216,
+                        "y": 616
                     }
                 ]
             },
@@ -11888,69 +11892,1068 @@
                         "y": 168
                     }
                 ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Bird Keeper Abe",
+                        "ref": "JohtoKanto/Violet City/Gym - Bird Keeper Abe"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VioletGym",
+                        "x": 40,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Bird Keeper Rod",
+                        "ref": "JohtoKanto/Violet City/Gym - Bird Keeper Rod"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VioletGym",
+                        "x": 120,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Bug Catcher Al",
+                        "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Al"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 136,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Bug Catcher Benny",
+                        "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Benny"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Bug Catcher Josh",
+                        "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Josh"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 8,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Twins Amy & May",
+                        "ref": "JohtoKanto/Azalea Town/Gym - Twins Amy & May"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 80,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Beauty Samantha",
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Beauty Samantha"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 312,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Beauty Victoria",
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Beauty Victoria"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 8,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Lass Bridget",
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Lass Bridget"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 152,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Lass Carrie",
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Lass Carrie"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 152,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Medium Grace",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Medium Grace"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 120,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Medium Martha",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Medium Martha"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 120,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Sage Jeffrey",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Sage Jeffrey"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 40,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Sage Ping",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Sage Ping"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 56,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Blackbelt Nob",
+                        "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Nob"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 56,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Blackbelt Lao",
+                        "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Lao"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 120,
+                        "y": 200
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Blackbelt Yoshi",
+                        "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Yoshi"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 40,
+                        "y": 200
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Blackbelt Lung",
+                        "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Lung"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 88,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Boarder Brad",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Brad"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 88,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Boarder Douglas",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Douglas"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 40,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Boarder Ronald",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Ronald"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 8,
+                        "y": 280
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Skier Clarissa",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Skier Clarissa"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 152,
+                        "y": 280
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Skier Roxanne",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Skier Roxanne"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 72,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "1F - Cool Trainer Paul",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Paul"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym1F",
+                        "x": 24,
+                        "y": 232
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "2F - Cool Trainer Cody",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Cody"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym2F",
+                        "x": 72,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "2F - Cool Trainer Fran",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Fran"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym2F",
+                        "x": 72,
+                        "y": 184
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "1F - Cool Trainer Lola",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Lola"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym1F",
+                        "x": 152,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "1F - Cool Trainer Mike",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Mike"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym1F",
+                        "x": 104,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Camper Jerry",
+                        "ref": "JohtoKanto/Pewter City/Gym - Camper Jerry"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "PewterGym",
+                        "x": 40,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Swimmer Briana",
+                        "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Briana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanGym",
+                        "x": 24,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Swimmer Diana",
+                        "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Diana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanGym",
+                        "x": 72,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Swimmer Parker",
+                        "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Parker"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanGym",
+                        "x": 136,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Gentleman Gregory",
+                        "ref": "JohtoKanto/Vermilion City/Gym - Gentleman Gregory"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionGym",
+                        "x": 136,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Guitarist Vincent",
+                        "ref": "JohtoKanto/Vermilion City/Gym - Guitarist Vincent"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionGym",
+                        "x": 72,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Juggler Horton",
+                        "ref": "JohtoKanto/Vermilion City/Gym - Juggler Horton"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionGym",
+                        "x": 8,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Beauty Julia",
+                        "ref": "JohtoKanto/Celadon City/Gym - Beauty Julia"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 56,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Lass Michelle",
+                        "ref": "JohtoKanto/Celadon City/Gym - Lass Michelle"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 120,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Picnicker Tanya",
+                        "ref": "JohtoKanto/Celadon City/Gym - Picnicker Tanya"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 40,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Twins Jo & Zoe",
+                        "ref": "JohtoKanto/Celadon City/Gym - Twins Jo & Zoe"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 80,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Medium Doris",
+                        "ref": "JohtoKanto/Saffron City/Gym - Medium Doris"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 56,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Medium Rebecca",
+                        "ref": "JohtoKanto/Saffron City/Gym - Medium Rebecca"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 280,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Psychic Franklin",
+                        "ref": "JohtoKanto/Saffron City/Gym - Psychic Franklin"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 56,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Psychic Jared",
+                        "ref": "JohtoKanto/Saffron City/Gym - Psychic Jared"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 280,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "Falkner",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - Beat Falkner",
+                        "name": "Beat Falkner"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - Zephyr Badge from Falkner",
+                        "name": "Zephyr Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/​Gym - Zephyr Badge from Falkner",
+                        "name": "Zephyr Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - TM31 from Falkner",
+                        "name": "TM31"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VioletGym",
+                        "x": 88,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Bugsy",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Gym - Beat Bugsy",
+                        "name": "Beat Bugsy"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Gym - Hive Badge from Bugsy",
+                        "name": "Hive Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/​Gym - Hive Badge from Bugsy",
+                        "name": "Hive Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Gym - TM49 from Bugsy",
+                        "name": "TM49"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 88,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Whitney",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Beat Whitney",
+                        "name": "Beat Whitney"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Plain Badge from Whitney",
+                        "name": "Plain Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/​Gym - Plain Badge from Whitney",
+                        "name": "Plain Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - TM45 from Whitney",
+                        "name": "TM45"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 136,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Morty",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Beat Morty",
+                        "name": "Beat Morty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Fog Badge from Morty",
+                        "name": "Fog Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/​Gym - Fog Badge from Morty",
+                        "name": "Fog Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - TM30 from Morty",
+                        "name": "TM30"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 88,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Chuck",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - Beat Chuck",
+                        "name": "Beat Chuck"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - Storm Badge from Chuck",
+                        "name": "Storm Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/​Gym - Storm Badge from Chuck",
+                        "name": "Storm Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - TM01 from Chuck",
+                        "name": "TM01"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 72,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Jasmine",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine City/Gym - Beat Jasmine",
+                        "name": "Beat Jasmine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine City/Gym - Mineral Badge from Jasmine",
+                        "name": "Mineral Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine City/​Gym - Mineral Badge from Jasmine",
+                        "name": "Mineral Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine City/Gym - TM23 from Jasmine",
+                        "name": "TM23"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Pryce",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Beat Pryce",
+                        "name": "Beat Pryce"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Glacier Badge from Pryce",
+                        "name": "Glacier Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/​Gym - Glacier Badge from Pryce",
+                        "name": "Glacier Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - TM16 from Pryce",
+                        "name": "TM16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Clair",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Beat Clair",
+                        "name": "Beat Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Rising Badge from Clair",
+                        "name": "Rising Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/​Gym - Rising Badge from Clair",
+                        "name": "Rising Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - TM24 from Clair",
+                        "name": "TM24"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym1F",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Brock",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Pewter City/Gym - Beat Brock",
+                        "name": "Beat Brock"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pewter City/Gym - Boulder Badge from Brock",
+                        "name": "Boulder Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pewter City/​Gym - Boulder Badge from Brock",
+                        "name": "Boulder Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "PewterGym",
+                        "x": 88,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Misty",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Beat Misty",
+                        "name": "Beat Misty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Cascade Badge from Misty",
+                        "name": "Cascade Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cerulean City/​Gym - Cascade Badge from Misty",
+                        "name": "Cascade Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Lt. Surge",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Gym - Beat Lt. Surge",
+                        "name": "Beat Lt. Surge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Gym - Thunder Badge from Lt. Surge",
+                        "name": "Thunder Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Vermilion City/​Gym - Thunder Badge from Lt. Surge",
+                        "name": "Thunder Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionGym",
+                        "x": 88,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Erika",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Gym - Beat Erika",
+                        "name": "Beat Erika"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Gym - Rainbow Badge from Erika",
+                        "name": "Rainbow Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/​Gym - Rainbow Badge from Erika",
+                        "name": "Rainbow Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Sabrina",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Saffron City/Gym - Beat Sabrina",
+                        "name": "Beat Sabrina"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/Gym - Marsh Badge from Sabrina",
+                        "name": "Marsh Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/​Gym - Marsh Badge from Sabrina",
+                        "name": "Marsh Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 152,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Janine",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Beat Janine",
+                        "name": "Beat Janine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Soul Badge from Janine",
+                        "name": "Soul Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/​Gym - Soul Badge from Janine",
+                        "name": "Soul Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaGym",
+                        "x": 24,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "Blaine",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/Gym - Beat Blaine",
+                        "name": "Beat Blaine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/Gym - Volcano Badge from Blaine",
+                        "name": "Volcano Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/​Gym - Volcano Badge from Blaine",
+                        "name": "Volcano Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SeafoamGym",
+                        "x": 88,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Blue",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Viridian City/Gym - Beat Blue",
+                        "name": "Beat Blue"
+                    },
+                    {
+                        "ref": "JohtoKanto/Viridian City/Gym - Earth Badge from Blue",
+                        "name": "Earth Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Viridian City/​Gym - Earth Badge from Blue",
+                        "name": "Earth Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ViridianGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
             }
-            
-// Gym Trainers         
-,{"sections": [{"name": "Bird Keeper Abe", "ref": "JohtoKanto/Violet City/Gym - Bird Keeper Abe"}], "map_locations": [{"map": "VioletGym", "x": 40, "y": 168}]}
-,{"sections": [{"name": "Bird Keeper Rod", "ref": "JohtoKanto/Violet City/Gym - Bird Keeper Rod"}], "map_locations": [{"map": "VioletGym", "x": 120, "y": 104}]}
-,{"sections": [{"name": "Bug Catcher Al", "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Al"}], "map_locations": [{"map": "AzaleaGym", "x": 136, "y": 136}]}
-,{"sections": [{"name": "Bug Catcher Benny", "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Benny"}], "map_locations": [{"map": "AzaleaGym", "x": 88, "y": 56}]}
-,{"sections": [{"name": "Bug Catcher Josh", "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Josh"}], "map_locations": [{"map": "AzaleaGym", "x": 8, "y": 40}]}
-,{"sections": [{"name": "Twins Amy & May", "ref": "JohtoKanto/Azalea Town/Gym - Twins Amy & May"}], "map_locations": [{"map": "AzaleaGym", "x": 80, "y": 168}]}
-,{"sections": [{"name": "Beauty Samantha", "ref": "JohtoKanto/Goldenrod City/Gym - Beauty Samantha"}], "map_locations": [{"map": "GoldenrodGym", "x": 312, "y": 88}]}
-,{"sections": [{"name": "Beauty Victoria", "ref": "JohtoKanto/Goldenrod City/Gym - Beauty Victoria"}], "map_locations": [{"map": "GoldenrodGym", "x": 8, "y": 40}]}
-,{"sections": [{"name": "Lass Bridget", "ref": "JohtoKanto/Goldenrod City/Gym - Lass Bridget"}], "map_locations": [{"map": "GoldenrodGym", "x": 152, "y": 104}]}
-,{"sections": [{"name": "Lass Carrie", "ref": "JohtoKanto/Goldenrod City/Gym - Lass Carrie"}], "map_locations": [{"map": "GoldenrodGym", "x": 152, "y": 216}]}
-,{"sections": [{"name": "Medium Grace", "ref": "JohtoKanto/Ecruteak City/Gym - Medium Grace"}], "map_locations": [{"map": "EcruteakGym", "x": 120, "y": 152}]}
-,{"sections": [{"name": "Medium Martha", "ref": "JohtoKanto/Ecruteak City/Gym - Medium Martha"}], "map_locations": [{"map": "EcruteakGym", "x": 120, "y": 88}]}
-,{"sections": [{"name": "Sage Jeffrey", "ref": "JohtoKanto/Ecruteak City/Gym - Sage Jeffrey"}], "map_locations": [{"map": "EcruteakGym", "x": 40, "y": 120}]}
-,{"sections": [{"name": "Sage Ping", "ref": "JohtoKanto/Ecruteak City/Gym - Sage Ping"}], "map_locations": [{"map": "EcruteakGym", "x": 56, "y": 216}]}
-,{"sections": [{"name": "Blackbelt Nob", "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Nob"}], "map_locations": [{"map": "CianwoodGym", "x": 56, "y": 152}]}
-,{"sections": [{"name": "Blackbelt Lao", "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Lao"}], "map_locations": [{"map": "CianwoodGym", "x": 120, "y": 200}]}
-,{"sections": [{"name": "Blackbelt Yoshi", "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Yoshi"}], "map_locations": [{"map": "CianwoodGym", "x": 40, "y": 200}]}
-,{"sections": [{"name": "Blackbelt Lung", "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Lung"}], "map_locations": [{"map": "CianwoodGym", "x": 88, "y": 88}]}
-,{"sections": [{"name": "Boarder Brad", "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Brad"}], "map_locations": [{"map": "MahoganyGym", "x": 88, "y": 152}]}
-,{"sections": [{"name": "Boarder Douglas", "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Douglas"}], "map_locations": [{"map": "MahoganyGym", "x": 40, "y": 72}]}
-,{"sections": [{"name": "Boarder Ronald", "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Ronald"}], "map_locations": [{"map": "MahoganyGym", "x": 8, "y": 280}]}
-,{"sections": [{"name": "Skier Clarissa", "ref": "JohtoKanto/Mahogany Town/Gym - Skier Clarissa"}], "map_locations": [{"map": "MahoganyGym", "x": 152, "y": 280}]}
-,{"sections": [{"name": "Skier Roxanne", "ref": "JohtoKanto/Mahogany Town/Gym - Skier Roxanne"}], "map_locations": [{"map": "MahoganyGym", "x": 72, "y": 104}]}
-,{"sections": [{"name": "1F - Cool Trainer Paul", "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Paul"}], "map_locations": [{"map": "BlackthornGym1F", "x": 24, "y": 232}]}
-,{"sections": [{"name": "2F - Cool Trainer Cody", "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Cody"}], "map_locations": [{"map": "BlackthornGym2F", "x": 72, "y": 24}]}
-,{"sections": [{"name": "2F - Cool Trainer Fran", "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Fran"}], "map_locations": [{"map": "BlackthornGym2F", "x": 72, "y": 184}]}
-,{"sections": [{"name": "1F - Cool Trainer Lola", "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Lola"}], "map_locations": [{"map": "BlackthornGym1F", "x": 152, "y": 40}]}
-,{"sections": [{"name": "1F - Cool Trainer Mike", "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Mike"}], "map_locations": [{"map": "BlackthornGym1F", "x": 104, "y": 104}]}
-,{"sections": [{"name": "Camper Jerry", "ref": "JohtoKanto/Pewter City/Gym - Camper Jerry"}], "map_locations": [{"map": "PewterGym", "x": 40, "y": 88}]}
-,{"sections": [{"name": "Swimmer Briana", "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Briana"}], "map_locations": [{"map": "CeruleanGym", "x": 24, "y": 152}]}
-,{"sections": [{"name": "Swimmer Diana", "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Diana"}], "map_locations": [{"map": "CeruleanGym", "x": 72, "y": 104}]}
-,{"sections": [{"name": "Swimmer Parker", "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Parker"}], "map_locations": [{"map": "CeruleanGym", "x": 136, "y": 152}]}
-,{"sections": [{"name": "Gentleman Gregory", "ref": "JohtoKanto/Vermilion City/Gym - Gentleman Gregory"}], "map_locations": [{"map": "VermilionGym", "x": 136, "y": 136}]}
-,{"sections": [{"name": "Guitarist Vincent", "ref": "JohtoKanto/Vermilion City/Gym - Guitarist Vincent"}], "map_locations": [{"map": "VermilionGym", "x": 72, "y": 120}]}
-,{"sections": [{"name": "Juggler Horton", "ref": "JohtoKanto/Vermilion City/Gym - Juggler Horton"}], "map_locations": [{"map": "VermilionGym", "x": 8, "y": 168}]}
-,{"sections": [{"name": "Beauty Julia", "ref": "JohtoKanto/Celadon City/Gym - Beauty Julia"}], "map_locations": [{"map": "CeladonGym", "x": 56, "y": 88}]}
-,{"sections": [{"name": "Lass Michelle", "ref": "JohtoKanto/Celadon City/Gym - Lass Michelle"}], "map_locations": [{"map": "CeladonGym", "x": 120, "y": 136}]}
-,{"sections": [{"name": "Picnicker Tanya", "ref": "JohtoKanto/Celadon City/Gym - Picnicker Tanya"}], "map_locations": [{"map": "CeladonGym", "x": 40, "y": 136}]}
-,{"sections": [{"name": "Twins Jo & Zoe", "ref": "JohtoKanto/Celadon City/Gym - Twins Jo & Zoe"}], "map_locations": [{"map": "CeladonGym", "x": 80, "y": 168}]}
-,{"sections": [{"name": "Medium Doris", "ref": "JohtoKanto/Saffron City/Gym - Medium Doris"}], "map_locations": [{"map": "SaffronGym", "x": 56, "y": 72}]}
-,{"sections": [{"name": "Medium Rebecca", "ref": "JohtoKanto/Saffron City/Gym - Medium Rebecca"}], "map_locations": [{"map": "SaffronGym", "x": 280, "y": 264}]}
-,{"sections": [{"name": "Psychic Franklin", "ref": "JohtoKanto/Saffron City/Gym - Psychic Franklin"}], "map_locations": [{"map": "SaffronGym", "x": 56, "y": 264}]}
-,{"sections": [{"name": "Psychic Jared", "ref": "JohtoKanto/Saffron City/Gym - Psychic Jared"}], "map_locations": [{"map": "SaffronGym", "x": 280, "y": 72}]}
-
-,{"name": "Falkner", "sections": [{"ref": "JohtoKanto/Violet City/Gym - Beat Falkner", "name": "Beat Falkner"}, {"ref": "JohtoKanto/Violet City/Gym - Zephyr Badge from Falkner", "name": "Zephyr Badge"},{"ref": "JohtoKanto/Violet City/​Gym - Zephyr Badge from Falkner", "name": "Zephyr Badge​"}, {"ref": "JohtoKanto/Violet City/Gym - TM31 from Falkner", "name": "TM31"}], "map_locations": [{"map": "VioletGym", "x": 88, "y": 24 }]}	
-,{"name": "Bugsy", "sections": [{"ref": "JohtoKanto/Azalea Town/Gym - Beat Bugsy", "name": "Beat Bugsy"}, {"ref": "JohtoKanto/Azalea Town/Gym - Hive Badge from Bugsy", "name": "Hive Badge"},{"ref": "JohtoKanto/Azalea Town/​Gym - Hive Badge from Bugsy", "name": "Hive Badge​"}, {"ref": "JohtoKanto/Azalea Town/Gym - TM49 from Bugsy", "name": "TM49"}], "map_locations": [{"map": "AzaleaGym", "x": 88, "y": 120 }]}	
-,{"name": "Whitney", "sections": [{"ref": "JohtoKanto/Goldenrod City/Gym - Beat Whitney", "name": "Beat Whitney"}, {"ref": "JohtoKanto/Goldenrod City/Gym - Plain Badge from Whitney", "name": "Plain Badge"},{"ref": "JohtoKanto/Goldenrod City/​Gym - Plain Badge from Whitney", "name": "Plain Badge​"}, {"ref": "JohtoKanto/Goldenrod City/Gym - TM45 from Whitney", "name": "TM45"}], "map_locations": [{"map": "GoldenrodGym", "x": 136, "y": 56 }]}	
-,{"name": "Morty", "sections": [{"ref": "JohtoKanto/Ecruteak City/Gym - Beat Morty", "name": "Beat Morty"}, {"ref": "JohtoKanto/Ecruteak City/Gym - Fog Badge from Morty", "name": "Fog Badge"},{"ref": "JohtoKanto/Ecruteak City/​Gym - Fog Badge from Morty", "name": "Fog Badge​"}, {"ref": "JohtoKanto/Ecruteak City/Gym - TM30 from Morty", "name": "TM30"}], "map_locations": [{"map": "EcruteakGym", "x": 88, "y": 24 }]}	
-,{"name": "Chuck", "sections": [{"ref": "JohtoKanto/Cianwood City/Gym - Beat Chuck", "name": "Beat Chuck"}, {"ref": "JohtoKanto/Cianwood City/Gym - Storm Badge from Chuck", "name": "Storm Badge"},{"ref": "JohtoKanto/Cianwood City/​Gym - Storm Badge from Chuck", "name": "Storm Badge​"}, {"ref": "JohtoKanto/Cianwood City/Gym - TM01 from Chuck", "name": "TM01"}], "map_locations": [{"map": "CianwoodGym", "x": 72, "y": 24 }]}	
-,{"name": "Jasmine", "sections": [{"ref": "JohtoKanto/Olivine City/Gym - Beat Jasmine", "name": "Beat Jasmine"}, {"ref": "JohtoKanto/Olivine City/Gym - Mineral Badge from Jasmine", "name": "Mineral Badge"},{"ref": "JohtoKanto/Olivine City/​Gym - Mineral Badge from Jasmine", "name": "Mineral Badge​"}, {"ref": "JohtoKanto/Olivine City/Gym - TM23 from Jasmine", "name": "TM23"}], "map_locations": [{"map": "OlivineGym", "x": 88, "y": 56 }]}	
-,{"name": "Pryce", "sections": [{"ref": "JohtoKanto/Mahogany Town/Gym - Beat Pryce", "name": "Beat Pryce"}, {"ref": "JohtoKanto/Mahogany Town/Gym - Glacier Badge from Pryce", "name": "Glacier Badge"},{"ref": "JohtoKanto/Mahogany Town/​Gym - Glacier Badge from Pryce", "name": "Glacier Badge​"}, {"ref": "JohtoKanto/Mahogany Town/Gym - TM16 from Pryce", "name": "TM16"}], "map_locations": [{"map": "MahoganyGym", "x": 88, "y": 56 }]}	
-,{"name": "Clair", "sections": [{"ref": "JohtoKanto/Blackthorn City/Gym - Beat Clair", "name": "Beat Clair"}, {"ref": "JohtoKanto/Blackthorn City/Gym - Rising Badge from Clair", "name": "Rising Badge"},{"ref": "JohtoKanto/Blackthorn City/​Gym - Rising Badge from Clair", "name": "Rising Badge​"}, {"ref": "JohtoKanto/Blackthorn City/Gym - TM24 from Clair", "name": "TM24"}], "map_locations": [{"map": "BlackthornGym1F", "x": 88, "y": 56 }]}	
-,{"name": "Brock", "sections": [{"ref": "JohtoKanto/Pewter City/Gym - Beat Brock", "name": "Beat Brock"}, {"ref": "JohtoKanto/Pewter City/Gym - Boulder Badge from Brock", "name": "Boulder Badge"},{"ref": "JohtoKanto/Pewter City/​Gym - Boulder Badge from Brock", "name": "Boulder Badge​"}], "map_locations": [{"map": "PewterGym", "x": 88, "y": 24 }]}	
-,{"name": "Misty", "sections": [{"ref": "JohtoKanto/Cerulean City/Gym - Beat Misty", "name": "Beat Misty"}, {"ref": "JohtoKanto/Cerulean City/Gym - Cascade Badge from Misty", "name": "Cascade Badge"},{"ref": "JohtoKanto/Cerulean City/​Gym - Cascade Badge from Misty", "name": "Cascade Badge​"}], "map_locations": [{"map": "CeruleanGym", "x": 88, "y": 56 }]}	
-,{"name": "Lt. Surge", "sections": [{"ref": "JohtoKanto/Vermilion City/Gym - Beat Lt. Surge", "name": "Beat Lt. Surge"}, {"ref": "JohtoKanto/Vermilion City/Gym - Thunder Badge from Lt. Surge", "name": "Thunder Badge"},{"ref": "JohtoKanto/Vermilion City/​Gym - Thunder Badge from Lt. Surge", "name": "Thunder Badge​"}], "map_locations": [{"map": "VermilionGym", "x": 88, "y": 40 }]}	
-,{"name": "Erika", "sections": [{"ref": "JohtoKanto/Celadon City/Gym - Beat Erika", "name": "Beat Erika"}, {"ref": "JohtoKanto/Celadon City/Gym - Rainbow Badge from Erika", "name": "Rainbow Badge"},{"ref": "JohtoKanto/Celadon City/​Gym - Rainbow Badge from Erika", "name": "Rainbow Badge​"}], "map_locations": [{"map": "CeladonGym", "x": 88, "y": 56 }]}	
-,{"name": "Sabrina", "sections": [{"ref": "JohtoKanto/Saffron City/Gym - Beat Sabrina", "name": "Beat Sabrina"}, {"ref": "JohtoKanto/Saffron City/Gym - Marsh Badge from Sabrina", "name": "Marsh Badge"},{"ref": "JohtoKanto/Saffron City/​Gym - Marsh Badge from Sabrina", "name": "Marsh Badge​"}], "map_locations": [{"map": "SaffronGym", "x": 152, "y": 136 }]}	
-,{"name": "Janine", "sections": [{"ref": "JohtoKanto/Fuchsia City/Gym - Beat Janine", "name": "Beat Janine"}, {"ref": "JohtoKanto/Fuchsia City/Gym - Soul Badge from Janine", "name": "Soul Badge"},{"ref": "JohtoKanto/Fuchsia City/​Gym - Soul Badge from Janine", "name": "Soul Badge​"}], "map_locations": [{"map": "FuchsiaGym", "x": 24, "y": 168 }]}	
-,{"name": "Blaine", "sections": [{"ref": "JohtoKanto/Seafoam Islands/Gym - Beat Blaine", "name": "Beat Blaine"}, {"ref": "JohtoKanto/Seafoam Islands/Gym - Volcano Badge from Blaine", "name": "Volcano Badge"},{"ref": "JohtoKanto/Seafoam Islands/​Gym - Volcano Badge from Blaine", "name": "Volcano Badge​"}], "map_locations": [{"map": "SeafoamGym", "x": 88, "y": 40 }]}	
-,{"name": "Blue", "sections": [{"ref": "JohtoKanto/Viridian City/Gym - Beat Blue", "name": "Beat Blue"}, {"ref": "JohtoKanto/Viridian City/Gym - Earth Badge from Blue", "name": "Earth Badge"},{"ref": "JohtoKanto/Viridian City/​Gym - Earth Badge from Blue", "name": "Earth Badge​"}], "map_locations": [{"map": "ViridianGym", "x": 88, "y": 56 }]}	
         ]
     }
 ]

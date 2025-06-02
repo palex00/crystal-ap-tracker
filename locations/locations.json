@@ -229,12 +229,6 @@
                 ],
                 "sections": [
                     {
-                        "name": "Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "Berry from House",
                         "visibility_rules": [
                             "show_items"
@@ -247,9 +241,9 @@
                         ]
                     },
                     {
-                        "name": "Berry Tree 2",
+                        "name": "Item",
                         "visibility_rules": [
-                            "show_items, berries_on"
+                            "show_items"
                         ]
                     },
                     {
@@ -262,9 +256,15 @@
                         ]
                     },
                     {
-                        "name": "Bug Catcher Don",
+                        "name": "Berry Tree 2",
                         "visibility_rules": [
-                            "show_items, trainersanity_on"
+                            "show_items, berries_on"
+                        ]
+                    },
+                    {
+                        "name": "Mystery Egg from Mr Pokemon",
+                        "visibility_rules": [
+                            "show_items"
                         ]
                     },
                     {
@@ -280,9 +280,9 @@
                         ]
                     },
                     {
-                        "name": "Mystery Egg from Mr Pokemon",
+                        "name": "Bug Catcher Don",
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -348,12 +348,6 @@
                 ],
                 "sections": [
                     {
-                        "name": "South Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "Northeast Item",
                         "visibility_rules": [
                             "show_items"
@@ -369,6 +363,12 @@
                         "name": "Bug Catcher Wade",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "South Item",
+                        "visibility_rules": [
+                            "show_items"
                         ]
                     },
                     {
@@ -1015,36 +1015,18 @@
                         ]
                     },
                     {
-                        "name": "Poison Barb from Frieda",
+                        "name": "Youngster Albert",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Old Rod from Pokecenter Fishing Guru",
-                        "access_rules": [
-                            "@JohtoKanto/Route 32/Post-Guy"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
                         ]
                     },
                     {
                         "name": "TM05 from Roar Guy",
                         "access_rules": [
                             "$can_cut_johto, @JohtoKanto/Route 32/Post-Guy"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "South Item",
-                        "access_rules": [
-                            "@JohtoKanto/Route 32/Post-Guy"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -1060,12 +1042,21 @@
                         ]
                     },
                     {
-                        "name": "Bird Keeper Peter",
+                        "name": "Picnicker Liz",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
+                        ]
+                    },
+                    {
+                        "name": "Hidden Item North of Bridge",
+                        "access_rules": [
+                            "^$hid, @JohtoKanto/Route 32/Post-Guy"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -1075,6 +1066,15 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy"
+                        ]
+                    },
+                    {
+                        "name": "South Item",
+                        "access_rules": [
+                            "@JohtoKanto/Route 32/Post-Guy"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
                         ]
                     },
                     {
@@ -1105,24 +1105,6 @@
                         ]
                     },
                     {
-                        "name": "Picnicker Liz",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ],
-                        "access_rules": [
-                            "@JohtoKanto/Route 32/Post-Guy"
-                        ]
-                    },
-                    {
-                        "name": "Youngster Albert",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ],
-                        "access_rules": [
-                            "@JohtoKanto/Route 32/Post-Guy"
-                        ]
-                    },
-                    {
                         "name": "Youngster Gordon",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -1132,12 +1114,12 @@
                         ]
                     },
                     {
-                        "name": "Hidden Item North of Bridge",
+                        "name": "Poison Barb from Frieda",
                         "access_rules": [
-                            "^$hid, @JohtoKanto/Route 32/Post-Guy"
+                            "@JohtoKanto/Route 32/Post-Guy"
                         ],
                         "visibility_rules": [
-                            "show_items, hiddenitems_on"
+                            "show_items"
                         ]
                     },
                     {
@@ -1147,6 +1129,24 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Old Rod from Pokecenter Fishing Guru",
+                        "access_rules": [
+                            "@JohtoKanto/Route 32/Post-Guy"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Bird Keeper Peter",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 32/Post-Guy"
                         ]
                     },
                     {
@@ -1942,13 +1942,7 @@
                         ]
                     },
                     {
-                        "name": "Camper Todd",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Picnicker Gina",
+                        "name": "Youngster Samuel",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -1960,15 +1954,48 @@
                         ]
                     },
                     {
+                        "name": "Picnicker Gina",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Youngster Ian",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
                     },
                     {
-                        "name": "Youngster Samuel",
+                        "name": "Hidden Item in Day-Care Yard",
+                        "access_rules": [
+                            "^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Camper Todd",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Item across Water",
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Hidden Item across Water",
+                        "access_rules": [
+                            "$can_surf_johto,^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -2005,33 +2032,6 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Item across Water",
-                        "access_rules": [
-                            "$can_surf_johto"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Hidden Item in Day-Care Yard",
-                        "access_rules": [
-                            "^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ]
-                    },
-                    {
-                        "name": "Hidden Item across Water",
-                        "access_rules": [
-                            "$can_surf_johto,^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -2717,9 +2717,25 @@
                 ],
                 "sections": [
                     {
-                        "name": "Item",
+                        "name": "Collect Kenya",
+                        "hosted_item": "EVENT_GOT_KENYA",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "HP Up after delivering Kenya",
+                        "access_rules": [
+                            "EVENT_GAVE_KENYA"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Picnicker Kim",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2732,19 +2748,13 @@
                         ]
                     },
                     {
-                        "name": "Bird Keeper Bryan",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Bug Catcher Arnie",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
                         "name": "Camper Elliot",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Picnicker Brooke",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -2768,29 +2778,19 @@
                         ]
                     },
                     {
-                        "name": "Picnicker Brooke",
+                        "name": "Bug Catcher Arnie",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
                     },
                     {
-                        "name": "Picnicker Kim",
+                        "name": "Bird Keeper Bryan",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
                     },
                     {
-                        "name": "Collect Kenya",
-                        "hosted_item": "EVENT_GOT_KENYA",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "HP Up after delivering Kenya",
-                        "access_rules": [
-                            "EVENT_GAVE_KENYA"
-                        ],
+                        "name": "Item",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -2968,6 +2968,24 @@
                         ]
                     },
                     {
+                        "name": "Hard Stone from Arthur",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 36/Right"
+                        ]
+                    },
+                    {
+                        "name": "TM08 from Rock Smash Guy",
+                        "access_rules": [
+                            "@JohtoKanto/Route 36/Right, SQUIRTBOTTLE"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "Berry Tree",
                         "visibility_rules": [
                             "show_items, berries_on"
@@ -2992,24 +3010,6 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 36/Left"
-                        ]
-                    },
-                    {
-                        "name": "TM08 from Rock Smash Guy",
-                        "access_rules": [
-                            "@JohtoKanto/Route 36/Right, SQUIRTBOTTLE"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Hard Stone from Arthur",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "access_rules": [
-                            "@JohtoKanto/Route 36/Right"
                         ]
                     },
                     {
@@ -3070,9 +3070,9 @@
                         ]
                     },
                     {
-                        "name": "Psychic Greg",
+                        "name": "Magnet from Sunny",
                         "visibility_rules": [
-                            "show_items, trainersanity_on"
+                            "show_items"
                         ]
                     },
                     {
@@ -3082,9 +3082,9 @@
                         ]
                     },
                     {
-                        "name": "Magnet from Sunny",
+                        "name": "Psychic Greg",
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -3668,31 +3668,19 @@
                 ],
                 "sections": [
                     {
-                        "name": "Berry Tree",
-                        "visibility_rules": [
-                            "show_items, berries_on"
-                        ]
-                    },
-                    {
-                        "name": "Beauty Olivia",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
                         "name": "Beauty Valerie",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
                     },
                     {
-                        "name": "Bird Keeper Toby",
+                        "name": "Berry Tree",
                         "visibility_rules": [
-                            "show_items, trainersanity_on"
+                            "show_items, berries_on"
                         ]
                     },
                     {
-                        "name": "Lass Dana",
+                        "name": "Bird Keeper Toby",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -3704,7 +3692,19 @@
                         ]
                     },
                     {
+                        "name": "Lass Dana",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Schoolboy Chad",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Beauty Olivia",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -3748,6 +3748,12 @@
                 ],
                 "sections": [
                     {
+                        "name": "Psychic Norman",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Moomoo Farm - TM13 after feeding Moomoo",
                         "visibility_rules": [
                             "show_items"
@@ -3760,9 +3766,12 @@
                         ]
                     },
                     {
-                        "name": "Pokefan Derek",
+                        "name": "Hidden Item between Miltank",
+                        "access_rules": [
+                            "^$hid"
+                        ],
                         "visibility_rules": [
-                            "show_items, trainersanity_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3772,7 +3781,7 @@
                         ]
                     },
                     {
-                        "name": "Psychic Norman",
+                        "name": "Pokefan Derek",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -3781,15 +3790,6 @@
                         "name": "Sailor Eugene",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Hidden Item between Miltank",
-                        "access_rules": [
-                            "^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4272,9 +4272,27 @@
                 ],
                 "sections": [
                     {
+                        "name": "Hidden Item in Rock",
+                        "access_rules": [
+                            "$can_rocksmash,^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
                         "name": "Sharp Beak from Monica",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Swimmer Simon",
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4296,30 +4314,12 @@
                         ]
                     },
                     {
-                        "name": "Swimmer Simon",
-                        "access_rules": [
-                            "$can_surf_johto"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
                         "name": "Swimmer Randall",
                         "access_rules": [
                             "$can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Hidden Item in Rock",
-                        "access_rules": [
-                            "$can_rocksmash,^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -4361,6 +4361,18 @@
                 ],
                 "sections": [
                     {
+                        "name": "Swimmer George",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Swimmer Charlie",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Swimmer Kaylee",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -4373,37 +4385,13 @@
                         ]
                     },
                     {
-                        "name": "Swimmer Denise",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Swimmer Kara",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Swimmer Wendy",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Swimmer Charlie",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Swimmer George",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
                         "name": "Swimmer Berke",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Swimmer Denise",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -4415,7 +4403,19 @@
                         ]
                     },
                     {
+                        "name": "Swimmer Kara",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Swimmer Mathew",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Swimmer Wendy",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -4907,16 +4907,25 @@
                 ],
                 "sections": [
                     {
-                        "name": "Item across Water",
-                        "access_rules": [
-                            "$can_surf_johto"
-                        ],
+                        "name": "West Item",
                         "visibility_rules": [
                             "show_items"
                         ]
                     },
                     {
-                        "name": "West Item",
+                        "name": "Hidden Item in Pond Rock",
+                        "access_rules": [
+                            "$can_surf_johto,^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Item across Water",
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ],
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -4955,24 +4964,15 @@
                         ]
                     },
                     {
-                        "name": "Hiker Benjamin",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
                         "name": "Pokemaniac Shane",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
                     },
                     {
-                        "name": "Hidden Item in Pond Rock",
-                        "access_rules": [
-                            "$can_surf_johto,^$hid"
-                        ],
+                        "name": "Hiker Benjamin",
                         "visibility_rules": [
-                            "show_items, hiddenitems_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -5696,6 +5696,21 @@
                 ],
                 "sections": [
                     {
+                        "name": "Camper Spencer",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Sludge Bomb from Guard in Gate",
+                        "access_rules": [
+                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
@@ -5708,12 +5723,6 @@
                         ],
                         "access_rules": [
                             "$can_surf_johto,$can_cut_johto"
-                        ]
-                    },
-                    {
-                        "name": "Camper Spencer",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -5744,15 +5753,6 @@
                         "name": "Pokemaniac Ron",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Sludge Bomb from Guard in Gate",
-                        "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
                         ]
                     },
                     {
@@ -5809,28 +5809,36 @@
                 ],
                 "sections": [
                     {
-                        "name": "TM10 from Hidden Power House",
+                        "name": "Hidden Item in West Path",
+                        "access_rules": [
+                            "^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Cool Trainer Aaron",
                         "access_rules": [
                             "$can_cut_johto"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Hidden Item behind Cut Tree",
+                        "access_rules": [
+                            "$can_cut_johto,^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
                         "name": "Blackbelt from Wesley",
                         "access_rules": [
                             "$can_cut_johto"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Red Scale from Gyarados",
-                        "access_rules": [
-                            "$can_surf_johto, red_gyarados_vanilla",
-                            "$can_whirlpool, red_gyarados_whirlpool"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5855,7 +5863,26 @@
                         ]
                     },
                     {
-                        "name": "Cool Trainer Lois",
+                        "name": "TM10 from Hidden Power House",
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Red Scale from Gyarados",
+                        "access_rules": [
+                            "$can_surf_johto, red_gyarados_vanilla",
+                            "$can_whirlpool, red_gyarados_whirlpool"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Fisher Raymond",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -5867,36 +5894,9 @@
                         ]
                     },
                     {
-                        "name": "Fisher Raymond",
+                        "name": "Cool Trainer Lois",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Cool Trainer Aaron",
-                        "access_rules": [
-                            "$can_cut_johto"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Hidden Item in West Path",
-                        "access_rules": [
-                            "^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ]
-                    },
-                    {
-                        "name": "Hidden Item behind Cut Tree",
-                        "access_rules": [
-                            "$can_cut_johto,^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -5962,9 +5962,39 @@
                 ],
                 "sections": [
                     {
+                        "name": "Berry Tree",
+                        "visibility_rules": [
+                            "show_items, berries_on"
+                        ]
+                    },
+                    {
+                        "name": "Psychic Phil",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "West Item",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Fisher Edgar",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Cool Trainer Cybil",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Cool Trainer Allen",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -5977,39 +6007,12 @@
                         ]
                     },
                     {
-                        "name": "East Item",
+                        "name": "Hidden Item across Water",
+                        "access_rules": [
+                            "$can_surf_johto,^$hid"
+                        ],
                         "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Berry Tree",
-                        "visibility_rules": [
-                            "show_items, berries_on"
-                        ]
-                    },
-                    {
-                        "name": "Bird Keeper Vance",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Cool Trainer Allen",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Cool Trainer Cybil",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Fisher Edgar",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -6025,18 +6028,15 @@
                         ]
                     },
                     {
-                        "name": "Psychic Phil",
+                        "name": "East Item",
                         "visibility_rules": [
-                            "show_items, trainersanity_on"
+                            "show_items"
                         ]
                     },
                     {
-                        "name": "Hidden Item across Water",
-                        "access_rules": [
-                            "$can_surf_johto,^$hid"
-                        ],
+                        "name": "Bird Keeper Vance",
                         "visibility_rules": [
-                            "show_items, hiddenitems_on"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -6607,43 +6607,7 @@
                         ]
                     },
                     {
-                        "name": "Center Item (Top)",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Center Item (Bottom)",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Southwest Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Berry Tree",
-                        "visibility_rules": [
-                            "show_items, berries_on"
-                        ]
-                    },
-                    {
-                        "name": "Blackbelt Kenji",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Camper Quentin",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Cool Trainer Kelly",
+                        "name": "Hiker Erik",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -6655,19 +6619,49 @@
                         ]
                     },
                     {
-                        "name": "Hiker Erik",
+                        "name": "Hiker Parry",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Center Item (Top)",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Cool Trainer Kelly",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Center Item (Bottom)",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Blackbelt Kenji",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Southwest Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Camper Quentin",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Hiker Michael",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Hiker Parry",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -6685,6 +6679,12 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Berry Tree",
+                        "visibility_rules": [
+                            "show_items, berries_on"
                         ]
                     },
                     {
@@ -6756,15 +6756,6 @@
                         ]
                     },
                     {
-                        "name": "Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "access_rules": [
-                            "@JohtoKanto/Route 46/Above Ledge"
-                        ]
-                    },
-                    {
                         "name": "Berry Tree 1",
                         "visibility_rules": [
                             "show_items, berries_on"
@@ -6792,7 +6783,16 @@
                         ]
                     },
                     {
-                        "name": "Hiker Bailey",
+                        "name": "Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 46/Above Ledge"
+                        ]
+                    },
+                    {
+                        "name": "Picnicker Erin",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ],
@@ -6801,7 +6801,7 @@
                         ]
                     },
                     {
-                        "name": "Picnicker Erin",
+                        "name": "Hiker Bailey",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ],
@@ -7039,21 +7039,27 @@
                 ],
                 "sections": [
                     {
-                        "name": "Item",
+                        "name": "Fisher Scott",
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Psychic Richard",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Cool Trainer Joyce",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
                             "show_items, berries_on"
-                        ]
-                    },
-                    {
-                        "name": "Cool Trainer Beth",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -7069,19 +7075,13 @@
                         ]
                     },
                     {
-                        "name": "Cool Trainer Joyce",
+                        "name": "Item",
                         "visibility_rules": [
-                            "show_items, trainersanity_on"
+                            "show_items"
                         ]
                     },
                     {
-                        "name": "Fisher Scott",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Psychic Richard",
+                        "name": "Cool Trainer Beth",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
