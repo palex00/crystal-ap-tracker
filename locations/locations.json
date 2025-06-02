@@ -70,7 +70,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -209,7 +209,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -341,7 +341,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -449,7 +449,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -555,7 +555,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -695,7 +695,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -1031,7 +1031,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -1260,7 +1260,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 32/Post-Guy, $can_surf_johto"
+                            "@JohtoKanto/Route 32/Post-Guy, ^$surf_encounter_johto"
                         ]
                     }
                 ],
@@ -1360,7 +1360,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -1440,7 +1440,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -1511,7 +1511,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -1656,7 +1656,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -1700,7 +1700,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, $can_strength"
+                            "^$surf_encounter_johto, $can_strength"
                         ]
                     },
                     {
@@ -2019,7 +2019,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Post-Tree, $can_surf_johto"
+                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$surf_encounter_johto"
                         ]
                     }
                 ],
@@ -2169,7 +2169,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     }
                 ],
@@ -2930,7 +2930,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -3397,7 +3397,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -4034,7 +4034,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -4068,7 +4068,7 @@
                             "show_mons, johto_only_off"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, S_S_TICKET"
+                            "^$surf_encounter_johto, S_S_TICKET"
                         ]
                     },
                     {
@@ -4496,7 +4496,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -4610,7 +4610,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -4726,7 +4726,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$can_flash_johto"
+                            "^$surf_encounter_johto, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -4850,7 +4850,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto, $can_surf_johto"
+                            "^$can_flash_johto, ^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -4903,7 +4903,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$can_flash_johto"
+                            "^$surf_encounter_johto, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -4929,7 +4929,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$can_flash_johto"
+                            "^$surf_encounter_johto, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -5079,7 +5079,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -5218,7 +5218,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -5302,7 +5302,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -5505,7 +5505,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "^$surf_encounter_johto, $can_waterfall"
                         ]
                     },
                     {
@@ -5585,7 +5585,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -6022,7 +6022,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -6185,7 +6185,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -6330,7 +6330,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -6650,7 +6650,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -6790,7 +6790,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -6875,7 +6875,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -7026,7 +7026,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -7295,8 +7295,8 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, @JohtoKanto/Route 27/Post-Waterfall",
-                            "$can_surf_johto, @JohtoKanto/Route 27/Pre-Waterfall"
+                            "^$surf_encounter_johto, @JohtoKanto/Route 27/Post-Waterfall",
+                            "^$surf_encounter_johto, @JohtoKanto/Route 27/Pre-Waterfall"
                         ]
                     },
                     {
@@ -7343,7 +7343,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, @JohtoKanto/New Bark Town"
+                            "^$surf_encounter_johto, @JohtoKanto/New Bark Town"
                         ]
                     }
                 ],
@@ -7449,7 +7449,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -7671,7 +7671,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -7753,7 +7753,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -7912,7 +7912,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -8017,7 +8017,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -8114,7 +8114,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -8232,7 +8232,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -8728,7 +8728,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Cerulean City, $can_surf_kanto"
+                            "@JohtoKanto/Cerulean City, ^$surf_encounter_kanto"
                         ]
                     }
                 ],
@@ -8831,7 +8831,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     }
                 ],
@@ -8953,7 +8953,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -9085,7 +9085,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -9198,7 +9198,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -9456,7 +9456,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 10/Top, $can_surf_kanto"
+                            "@JohtoKanto/Route 10/Top, ^$surf_encounter_kanto"
                         ]
                     }
                 ],
@@ -9848,7 +9848,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     }
                 ],
@@ -10166,7 +10166,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -10200,7 +10200,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto, S_S_TICKET"
+                            "^$surf_encounter_kanto, S_S_TICKET"
                         ]
                     },
                     {
@@ -10340,7 +10340,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -10572,7 +10572,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -10677,7 +10677,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -10915,7 +10915,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -10995,7 +10995,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -11066,7 +11066,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -11185,7 +11185,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -11272,7 +11272,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_kanto"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
