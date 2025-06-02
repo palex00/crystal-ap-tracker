@@ -1270,7 +1270,7 @@
                     }
                 ]
             },
-			{
+            {
                 "name": "",
                 "sections": [
                     {
@@ -2168,13 +2168,17 @@
                         "map": "FastShipCabins_Eastbound",
                         "x": 40,
                         "y": 72,
-                        "force_invisibility_rules": ["EVENT_FAST_SHIP_FOUND_GIRL"]
+                        "force_invisibility_rules": [
+                            "EVENT_FAST_SHIP_FOUND_GIRL"
+                        ]
                     },
                     {
                         "map": "FastShipCabins_Westbound",
                         "x": 40,
                         "y": 72,
-                        "force_invisibility_rules": ["EVENT_FAST_SHIP_FOUND_GIRL"]
+                        "force_invisibility_rules": [
+                            "EVENT_FAST_SHIP_FOUND_GIRL"
+                        ]
                     }
                 ]
             },
@@ -3318,7 +3322,7 @@
                     }
                 ]
             },
-			{
+            {
                 "name": "",
                 "sections": [
                     {
@@ -3333,7 +3337,7 @@
                     }
                 ]
             },
-			{
+            {
                 "name": "",
                 "sections": [
                     {
@@ -4654,7 +4658,7 @@
                     }
                 ]
             },
-{
+            {
                 "name": "",
                 "sections": [
                     {
@@ -4715,7 +4719,7 @@
                     }
                 ]
             },
-			{
+            {
                 "name": "",
                 "sections": [
                     {
@@ -8006,7 +8010,7 @@
                     }
                 ]
             },
-			{
+            {
                 "name": "",
                 "sections": [
                     {
@@ -9624,7 +9628,6 @@
                     }
                 ]
             },
-
             {
                 "name": "",
                 "sections": [
@@ -11889,69 +11892,1068 @@
                         "y": 168
                     }
                 ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Bird Keeper Abe",
+                        "ref": "JohtoKanto/Violet City/Gym - Bird Keeper Abe"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VioletGym",
+                        "x": 40,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Bird Keeper Rod",
+                        "ref": "JohtoKanto/Violet City/Gym - Bird Keeper Rod"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VioletGym",
+                        "x": 120,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Bug Catcher Al",
+                        "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Al"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 136,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Bug Catcher Benny",
+                        "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Benny"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Bug Catcher Josh",
+                        "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Josh"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 8,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Twins Amy & May",
+                        "ref": "JohtoKanto/Azalea Town/Gym - Twins Amy & May"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 80,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Beauty Samantha",
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Beauty Samantha"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 312,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Beauty Victoria",
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Beauty Victoria"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 8,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Lass Bridget",
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Lass Bridget"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 152,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Lass Carrie",
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Lass Carrie"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 152,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Medium Grace",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Medium Grace"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 120,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Medium Martha",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Medium Martha"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 120,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Sage Jeffrey",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Sage Jeffrey"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 40,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Sage Ping",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Sage Ping"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 56,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Blackbelt Nob",
+                        "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Nob"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 56,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Blackbelt Lao",
+                        "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Lao"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 120,
+                        "y": 200
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Blackbelt Yoshi",
+                        "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Yoshi"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 40,
+                        "y": 200
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Blackbelt Lung",
+                        "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Lung"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 88,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Boarder Brad",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Brad"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 88,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Boarder Douglas",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Douglas"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 40,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Boarder Ronald",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Ronald"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 8,
+                        "y": 280
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Skier Clarissa",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Skier Clarissa"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 152,
+                        "y": 280
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Skier Roxanne",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Skier Roxanne"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 72,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "1F - Cool Trainer Paul",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Paul"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym1F",
+                        "x": 24,
+                        "y": 232
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "2F - Cool Trainer Cody",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Cody"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym2F",
+                        "x": 72,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "2F - Cool Trainer Fran",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Fran"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym2F",
+                        "x": 72,
+                        "y": 184
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "1F - Cool Trainer Lola",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Lola"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym1F",
+                        "x": 152,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "1F - Cool Trainer Mike",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Mike"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym1F",
+                        "x": 104,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Camper Jerry",
+                        "ref": "JohtoKanto/Pewter City/Gym - Camper Jerry"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "PewterGym",
+                        "x": 40,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Swimmer Briana",
+                        "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Briana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanGym",
+                        "x": 24,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Swimmer Diana",
+                        "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Diana"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanGym",
+                        "x": 72,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Swimmer Parker",
+                        "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Parker"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanGym",
+                        "x": 136,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Gentleman Gregory",
+                        "ref": "JohtoKanto/Vermilion City/Gym - Gentleman Gregory"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionGym",
+                        "x": 136,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Guitarist Vincent",
+                        "ref": "JohtoKanto/Vermilion City/Gym - Guitarist Vincent"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionGym",
+                        "x": 72,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Juggler Horton",
+                        "ref": "JohtoKanto/Vermilion City/Gym - Juggler Horton"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionGym",
+                        "x": 8,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Beauty Julia",
+                        "ref": "JohtoKanto/Celadon City/Gym - Beauty Julia"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 56,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Lass Michelle",
+                        "ref": "JohtoKanto/Celadon City/Gym - Lass Michelle"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 120,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Picnicker Tanya",
+                        "ref": "JohtoKanto/Celadon City/Gym - Picnicker Tanya"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 40,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Twins Jo & Zoe",
+                        "ref": "JohtoKanto/Celadon City/Gym - Twins Jo & Zoe"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 80,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Medium Doris",
+                        "ref": "JohtoKanto/Saffron City/Gym - Medium Doris"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 56,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Medium Rebecca",
+                        "ref": "JohtoKanto/Saffron City/Gym - Medium Rebecca"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 280,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Psychic Franklin",
+                        "ref": "JohtoKanto/Saffron City/Gym - Psychic Franklin"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 56,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "sections": [
+                    {
+                        "name": "Psychic Jared",
+                        "ref": "JohtoKanto/Saffron City/Gym - Psychic Jared"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 280,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "Falkner",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - Beat Falkner",
+                        "name": "Beat Falkner"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - Zephyr Badge from Falkner",
+                        "name": "Zephyr Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/​Gym - Zephyr Badge from Falkner",
+                        "name": "Zephyr Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - TM31 from Falkner",
+                        "name": "TM31"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VioletGym",
+                        "x": 88,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Bugsy",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Gym - Beat Bugsy",
+                        "name": "Beat Bugsy"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Gym - Hive Badge from Bugsy",
+                        "name": "Hive Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/​Gym - Hive Badge from Bugsy",
+                        "name": "Hive Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Gym - TM49 from Bugsy",
+                        "name": "TM49"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 88,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Whitney",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Beat Whitney",
+                        "name": "Beat Whitney"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Plain Badge from Whitney",
+                        "name": "Plain Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/​Gym - Plain Badge from Whitney",
+                        "name": "Plain Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - TM45 from Whitney",
+                        "name": "TM45"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 136,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Morty",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Beat Morty",
+                        "name": "Beat Morty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Fog Badge from Morty",
+                        "name": "Fog Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/​Gym - Fog Badge from Morty",
+                        "name": "Fog Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - TM30 from Morty",
+                        "name": "TM30"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 88,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Chuck",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - Beat Chuck",
+                        "name": "Beat Chuck"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - Storm Badge from Chuck",
+                        "name": "Storm Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/​Gym - Storm Badge from Chuck",
+                        "name": "Storm Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - TM01 from Chuck",
+                        "name": "TM01"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 72,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Jasmine",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine City/Gym - Beat Jasmine",
+                        "name": "Beat Jasmine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine City/Gym - Mineral Badge from Jasmine",
+                        "name": "Mineral Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine City/​Gym - Mineral Badge from Jasmine",
+                        "name": "Mineral Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine City/Gym - TM23 from Jasmine",
+                        "name": "TM23"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Pryce",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Beat Pryce",
+                        "name": "Beat Pryce"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Glacier Badge from Pryce",
+                        "name": "Glacier Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/​Gym - Glacier Badge from Pryce",
+                        "name": "Glacier Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - TM16 from Pryce",
+                        "name": "TM16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Clair",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Beat Clair",
+                        "name": "Beat Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Rising Badge from Clair",
+                        "name": "Rising Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/​Gym - Rising Badge from Clair",
+                        "name": "Rising Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - TM24 from Clair",
+                        "name": "TM24"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym1F",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Brock",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Pewter City/Gym - Beat Brock",
+                        "name": "Beat Brock"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pewter City/Gym - Boulder Badge from Brock",
+                        "name": "Boulder Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pewter City/​Gym - Boulder Badge from Brock",
+                        "name": "Boulder Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "PewterGym",
+                        "x": 88,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Misty",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Beat Misty",
+                        "name": "Beat Misty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Cascade Badge from Misty",
+                        "name": "Cascade Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cerulean City/​Gym - Cascade Badge from Misty",
+                        "name": "Cascade Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Lt. Surge",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Gym - Beat Lt. Surge",
+                        "name": "Beat Lt. Surge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Gym - Thunder Badge from Lt. Surge",
+                        "name": "Thunder Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Vermilion City/​Gym - Thunder Badge from Lt. Surge",
+                        "name": "Thunder Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionGym",
+                        "x": 88,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Erika",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Gym - Beat Erika",
+                        "name": "Beat Erika"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Gym - Rainbow Badge from Erika",
+                        "name": "Rainbow Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/​Gym - Rainbow Badge from Erika",
+                        "name": "Rainbow Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Sabrina",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Saffron City/Gym - Beat Sabrina",
+                        "name": "Beat Sabrina"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/Gym - Marsh Badge from Sabrina",
+                        "name": "Marsh Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/​Gym - Marsh Badge from Sabrina",
+                        "name": "Marsh Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 152,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Janine",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Beat Janine",
+                        "name": "Beat Janine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Soul Badge from Janine",
+                        "name": "Soul Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/​Gym - Soul Badge from Janine",
+                        "name": "Soul Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaGym",
+                        "x": 24,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "Blaine",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/Gym - Beat Blaine",
+                        "name": "Beat Blaine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/Gym - Volcano Badge from Blaine",
+                        "name": "Volcano Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/​Gym - Volcano Badge from Blaine",
+                        "name": "Volcano Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SeafoamGym",
+                        "x": 88,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Blue",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Viridian City/Gym - Beat Blue",
+                        "name": "Beat Blue"
+                    },
+                    {
+                        "ref": "JohtoKanto/Viridian City/Gym - Earth Badge from Blue",
+                        "name": "Earth Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Viridian City/​Gym - Earth Badge from Blue",
+                        "name": "Earth Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ViridianGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
             }
-            
-// Gym Trainers         
-,{"sections": [{"name": "Bird Keeper Abe", "ref": "JohtoKanto/Violet City/Gym - Bird Keeper Abe"}], "map_locations": [{"map": "VioletGym", "x": 40, "y": 168}]}
-,{"sections": [{"name": "Bird Keeper Rod", "ref": "JohtoKanto/Violet City/Gym - Bird Keeper Rod"}], "map_locations": [{"map": "VioletGym", "x": 120, "y": 104}]}
-,{"sections": [{"name": "Bug Catcher Al", "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Al"}], "map_locations": [{"map": "AzaleaGym", "x": 136, "y": 136}]}
-,{"sections": [{"name": "Bug Catcher Benny", "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Benny"}], "map_locations": [{"map": "AzaleaGym", "x": 88, "y": 56}]}
-,{"sections": [{"name": "Bug Catcher Josh", "ref": "JohtoKanto/Azalea Town/Gym - Bug Catcher Josh"}], "map_locations": [{"map": "AzaleaGym", "x": 8, "y": 40}]}
-,{"sections": [{"name": "Twins Amy & May", "ref": "JohtoKanto/Azalea Town/Gym - Twins Amy & May"}], "map_locations": [{"map": "AzaleaGym", "x": 80, "y": 168}]}
-,{"sections": [{"name": "Beauty Samantha", "ref": "JohtoKanto/Goldenrod City/Gym - Beauty Samantha"}], "map_locations": [{"map": "GoldenrodGym", "x": 312, "y": 88}]}
-,{"sections": [{"name": "Beauty Victoria", "ref": "JohtoKanto/Goldenrod City/Gym - Beauty Victoria"}], "map_locations": [{"map": "GoldenrodGym", "x": 8, "y": 40}]}
-,{"sections": [{"name": "Lass Bridget", "ref": "JohtoKanto/Goldenrod City/Gym - Lass Bridget"}], "map_locations": [{"map": "GoldenrodGym", "x": 152, "y": 104}]}
-,{"sections": [{"name": "Lass Carrie", "ref": "JohtoKanto/Goldenrod City/Gym - Lass Carrie"}], "map_locations": [{"map": "GoldenrodGym", "x": 152, "y": 216}]}
-,{"sections": [{"name": "Medium Grace", "ref": "JohtoKanto/Ecruteak City/Gym - Medium Grace"}], "map_locations": [{"map": "EcruteakGym", "x": 120, "y": 152}]}
-,{"sections": [{"name": "Medium Martha", "ref": "JohtoKanto/Ecruteak City/Gym - Medium Martha"}], "map_locations": [{"map": "EcruteakGym", "x": 120, "y": 88}]}
-,{"sections": [{"name": "Sage Jeffrey", "ref": "JohtoKanto/Ecruteak City/Gym - Sage Jeffrey"}], "map_locations": [{"map": "EcruteakGym", "x": 40, "y": 120}]}
-,{"sections": [{"name": "Sage Ping", "ref": "JohtoKanto/Ecruteak City/Gym - Sage Ping"}], "map_locations": [{"map": "EcruteakGym", "x": 56, "y": 216}]}
-,{"sections": [{"name": "Blackbelt Nob", "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Nob"}], "map_locations": [{"map": "CianwoodGym", "x": 56, "y": 152}]}
-,{"sections": [{"name": "Blackbelt Lao", "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Lao"}], "map_locations": [{"map": "CianwoodGym", "x": 120, "y": 200}]}
-,{"sections": [{"name": "Blackbelt Yoshi", "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Yoshi"}], "map_locations": [{"map": "CianwoodGym", "x": 40, "y": 200}]}
-,{"sections": [{"name": "Blackbelt Lung", "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Lung"}], "map_locations": [{"map": "CianwoodGym", "x": 88, "y": 88}]}
-,{"sections": [{"name": "Boarder Brad", "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Brad"}], "map_locations": [{"map": "MahoganyGym", "x": 88, "y": 152}]}
-,{"sections": [{"name": "Boarder Douglas", "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Douglas"}], "map_locations": [{"map": "MahoganyGym", "x": 40, "y": 72}]}
-,{"sections": [{"name": "Boarder Ronald", "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Ronald"}], "map_locations": [{"map": "MahoganyGym", "x": 8, "y": 280}]}
-,{"sections": [{"name": "Skier Clarissa", "ref": "JohtoKanto/Mahogany Town/Gym - Skier Clarissa"}], "map_locations": [{"map": "MahoganyGym", "x": 152, "y": 280}]}
-,{"sections": [{"name": "Skier Roxanne", "ref": "JohtoKanto/Mahogany Town/Gym - Skier Roxanne"}], "map_locations": [{"map": "MahoganyGym", "x": 72, "y": 104}]}
-,{"sections": [{"name": "1F - Cool Trainer Paul", "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Paul"}], "map_locations": [{"map": "BlackthornGym1F", "x": 24, "y": 232}]}
-,{"sections": [{"name": "2F - Cool Trainer Cody", "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Cody"}], "map_locations": [{"map": "BlackthornGym2F", "x": 72, "y": 24}]}
-,{"sections": [{"name": "2F - Cool Trainer Fran", "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Fran"}], "map_locations": [{"map": "BlackthornGym2F", "x": 72, "y": 184}]}
-,{"sections": [{"name": "1F - Cool Trainer Lola", "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Lola"}], "map_locations": [{"map": "BlackthornGym1F", "x": 152, "y": 40}]}
-,{"sections": [{"name": "1F - Cool Trainer Mike", "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Mike"}], "map_locations": [{"map": "BlackthornGym1F", "x": 104, "y": 104}]}
-,{"sections": [{"name": "Camper Jerry", "ref": "JohtoKanto/Pewter City/Gym - Camper Jerry"}], "map_locations": [{"map": "PewterGym", "x": 40, "y": 88}]}
-,{"sections": [{"name": "Swimmer Briana", "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Briana"}], "map_locations": [{"map": "CeruleanGym", "x": 24, "y": 152}]}
-,{"sections": [{"name": "Swimmer Diana", "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Diana"}], "map_locations": [{"map": "CeruleanGym", "x": 72, "y": 104}]}
-,{"sections": [{"name": "Swimmer Parker", "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Parker"}], "map_locations": [{"map": "CeruleanGym", "x": 136, "y": 152}]}
-,{"sections": [{"name": "Gentleman Gregory", "ref": "JohtoKanto/Vermilion City/Gym - Gentleman Gregory"}], "map_locations": [{"map": "VermilionGym", "x": 136, "y": 136}]}
-,{"sections": [{"name": "Guitarist Vincent", "ref": "JohtoKanto/Vermilion City/Gym - Guitarist Vincent"}], "map_locations": [{"map": "VermilionGym", "x": 72, "y": 120}]}
-,{"sections": [{"name": "Juggler Horton", "ref": "JohtoKanto/Vermilion City/Gym - Juggler Horton"}], "map_locations": [{"map": "VermilionGym", "x": 8, "y": 168}]}
-,{"sections": [{"name": "Beauty Julia", "ref": "JohtoKanto/Celadon City/Gym - Beauty Julia"}], "map_locations": [{"map": "CeladonGym", "x": 56, "y": 88}]}
-,{"sections": [{"name": "Lass Michelle", "ref": "JohtoKanto/Celadon City/Gym - Lass Michelle"}], "map_locations": [{"map": "CeladonGym", "x": 120, "y": 136}]}
-,{"sections": [{"name": "Picnicker Tanya", "ref": "JohtoKanto/Celadon City/Gym - Picnicker Tanya"}], "map_locations": [{"map": "CeladonGym", "x": 40, "y": 136}]}
-,{"sections": [{"name": "Twins Jo & Zoe", "ref": "JohtoKanto/Celadon City/Gym - Twins Jo & Zoe"}], "map_locations": [{"map": "CeladonGym", "x": 80, "y": 168}]}
-,{"sections": [{"name": "Medium Doris", "ref": "JohtoKanto/Saffron City/Gym - Medium Doris"}], "map_locations": [{"map": "SaffronGym", "x": 56, "y": 72}]}
-,{"sections": [{"name": "Medium Rebecca", "ref": "JohtoKanto/Saffron City/Gym - Medium Rebecca"}], "map_locations": [{"map": "SaffronGym", "x": 280, "y": 264}]}
-,{"sections": [{"name": "Psychic Franklin", "ref": "JohtoKanto/Saffron City/Gym - Psychic Franklin"}], "map_locations": [{"map": "SaffronGym", "x": 56, "y": 264}]}
-,{"sections": [{"name": "Psychic Jared", "ref": "JohtoKanto/Saffron City/Gym - Psychic Jared"}], "map_locations": [{"map": "SaffronGym", "x": 280, "y": 72}]}
-
-,{"name": "Falkner", "sections": [{"ref": "JohtoKanto/Violet City/Gym - Beat Falkner", "name": "Beat Falkner"}, {"ref": "JohtoKanto/Violet City/Gym - Zephyr Badge from Falkner", "name": "Zephyr Badge"},{"ref": "JohtoKanto/Violet City/​Gym - Zephyr Badge from Falkner", "name": "Zephyr Badge​"}, {"ref": "JohtoKanto/Violet City/Gym - TM31 from Falkner", "name": "TM31"}], "map_locations": [{"map": "VioletGym", "x": 88, "y": 24 }]}	
-,{"name": "Bugsy", "sections": [{"ref": "JohtoKanto/Azalea Town/Gym - Beat Bugsy", "name": "Beat Bugsy"}, {"ref": "JohtoKanto/Azalea Town/Gym - Hive Badge from Bugsy", "name": "Hive Badge"},{"ref": "JohtoKanto/Azalea Town/​Gym - Hive Badge from Bugsy", "name": "Hive Badge​"}, {"ref": "JohtoKanto/Azalea Town/Gym - TM49 from Bugsy", "name": "TM49"}], "map_locations": [{"map": "AzaleaGym", "x": 88, "y": 120 }]}	
-,{"name": "Whitney", "sections": [{"ref": "JohtoKanto/Goldenrod City/Gym - Beat Whitney", "name": "Beat Whitney"}, {"ref": "JohtoKanto/Goldenrod City/Gym - Plain Badge from Whitney", "name": "Plain Badge"},{"ref": "JohtoKanto/Goldenrod City/​Gym - Plain Badge from Whitney", "name": "Plain Badge​"}, {"ref": "JohtoKanto/Goldenrod City/Gym - TM45 from Whitney", "name": "TM45"}], "map_locations": [{"map": "GoldenrodGym", "x": 136, "y": 56 }]}	
-,{"name": "Morty", "sections": [{"ref": "JohtoKanto/Ecruteak City/Gym - Beat Morty", "name": "Beat Morty"}, {"ref": "JohtoKanto/Ecruteak City/Gym - Fog Badge from Morty", "name": "Fog Badge"},{"ref": "JohtoKanto/Ecruteak City/​Gym - Fog Badge from Morty", "name": "Fog Badge​"}, {"ref": "JohtoKanto/Ecruteak City/Gym - TM30 from Morty", "name": "TM30"}], "map_locations": [{"map": "EcruteakGym", "x": 88, "y": 24 }]}	
-,{"name": "Chuck", "sections": [{"ref": "JohtoKanto/Cianwood City/Gym - Beat Chuck", "name": "Beat Chuck"}, {"ref": "JohtoKanto/Cianwood City/Gym - Storm Badge from Chuck", "name": "Storm Badge"},{"ref": "JohtoKanto/Cianwood City/​Gym - Storm Badge from Chuck", "name": "Storm Badge​"}, {"ref": "JohtoKanto/Cianwood City/Gym - TM01 from Chuck", "name": "TM01"}], "map_locations": [{"map": "CianwoodGym", "x": 72, "y": 24 }]}	
-,{"name": "Jasmine", "sections": [{"ref": "JohtoKanto/Olivine City/Gym - Beat Jasmine", "name": "Beat Jasmine"}, {"ref": "JohtoKanto/Olivine City/Gym - Mineral Badge from Jasmine", "name": "Mineral Badge"},{"ref": "JohtoKanto/Olivine City/​Gym - Mineral Badge from Jasmine", "name": "Mineral Badge​"}, {"ref": "JohtoKanto/Olivine City/Gym - TM23 from Jasmine", "name": "TM23"}], "map_locations": [{"map": "OlivineGym", "x": 88, "y": 56 }]}	
-,{"name": "Pryce", "sections": [{"ref": "JohtoKanto/Mahogany Town/Gym - Beat Pryce", "name": "Beat Pryce"}, {"ref": "JohtoKanto/Mahogany Town/Gym - Glacier Badge from Pryce", "name": "Glacier Badge"},{"ref": "JohtoKanto/Mahogany Town/​Gym - Glacier Badge from Pryce", "name": "Glacier Badge​"}, {"ref": "JohtoKanto/Mahogany Town/Gym - TM16 from Pryce", "name": "TM16"}], "map_locations": [{"map": "MahoganyGym", "x": 88, "y": 56 }]}	
-,{"name": "Clair", "sections": [{"ref": "JohtoKanto/Blackthorn City/Gym - Beat Clair", "name": "Beat Clair"}, {"ref": "JohtoKanto/Blackthorn City/Gym - Rising Badge from Clair", "name": "Rising Badge"},{"ref": "JohtoKanto/Blackthorn City/​Gym - Rising Badge from Clair", "name": "Rising Badge​"}, {"ref": "JohtoKanto/Blackthorn City/Gym - TM24 from Clair", "name": "TM24"}], "map_locations": [{"map": "BlackthornGym1F", "x": 88, "y": 56 }]}	
-,{"name": "Brock", "sections": [{"ref": "JohtoKanto/Pewter City/Gym - Beat Brock", "name": "Beat Brock"}, {"ref": "JohtoKanto/Pewter City/Gym - Boulder Badge from Brock", "name": "Boulder Badge"},{"ref": "JohtoKanto/Pewter City/​Gym - Boulder Badge from Brock", "name": "Boulder Badge​"}], "map_locations": [{"map": "PewterGym", "x": 88, "y": 24 }]}	
-,{"name": "Misty", "sections": [{"ref": "JohtoKanto/Cerulean City/Gym - Beat Misty", "name": "Beat Misty"}, {"ref": "JohtoKanto/Cerulean City/Gym - Cascade Badge from Misty", "name": "Cascade Badge"},{"ref": "JohtoKanto/Cerulean City/​Gym - Cascade Badge from Misty", "name": "Cascade Badge​"}], "map_locations": [{"map": "CeruleanGym", "x": 88, "y": 56 }]}	
-,{"name": "Lt. Surge", "sections": [{"ref": "JohtoKanto/Vermilion City/Gym - Beat Lt. Surge", "name": "Beat Lt. Surge"}, {"ref": "JohtoKanto/Vermilion City/Gym - Thunder Badge from Lt. Surge", "name": "Thunder Badge"},{"ref": "JohtoKanto/Vermilion City/​Gym - Thunder Badge from Lt. Surge", "name": "Thunder Badge​"}], "map_locations": [{"map": "VermilionGym", "x": 88, "y": 40 }]}	
-,{"name": "Erika", "sections": [{"ref": "JohtoKanto/Celadon City/Gym - Beat Erika", "name": "Beat Erika"}, {"ref": "JohtoKanto/Celadon City/Gym - Rainbow Badge from Erika", "name": "Rainbow Badge"},{"ref": "JohtoKanto/Celadon City/​Gym - Rainbow Badge from Erika", "name": "Rainbow Badge​"}], "map_locations": [{"map": "CeladonGym", "x": 88, "y": 56 }]}	
-,{"name": "Sabrina", "sections": [{"ref": "JohtoKanto/Saffron City/Gym - Beat Sabrina", "name": "Beat Sabrina"}, {"ref": "JohtoKanto/Saffron City/Gym - Marsh Badge from Sabrina", "name": "Marsh Badge"},{"ref": "JohtoKanto/Saffron City/​Gym - Marsh Badge from Sabrina", "name": "Marsh Badge​"}], "map_locations": [{"map": "SaffronGym", "x": 152, "y": 136 }]}	
-,{"name": "Janine", "sections": [{"ref": "JohtoKanto/Fuchsia City/Gym - Beat Janine", "name": "Beat Janine"}, {"ref": "JohtoKanto/Fuchsia City/Gym - Soul Badge from Janine", "name": "Soul Badge"},{"ref": "JohtoKanto/Fuchsia City/​Gym - Soul Badge from Janine", "name": "Soul Badge​"}], "map_locations": [{"map": "FuchsiaGym", "x": 24, "y": 168 }]}	
-,{"name": "Blaine", "sections": [{"ref": "JohtoKanto/Seafoam Islands/Gym - Beat Blaine", "name": "Beat Blaine"}, {"ref": "JohtoKanto/Seafoam Islands/Gym - Volcano Badge from Blaine", "name": "Volcano Badge"},{"ref": "JohtoKanto/Seafoam Islands/​Gym - Volcano Badge from Blaine", "name": "Volcano Badge​"}], "map_locations": [{"map": "SeafoamGym", "x": 88, "y": 40 }]}	
-,{"name": "Blue", "sections": [{"ref": "JohtoKanto/Viridian City/Gym - Beat Blue", "name": "Beat Blue"}, {"ref": "JohtoKanto/Viridian City/Gym - Earth Badge from Blue", "name": "Earth Badge"},{"ref": "JohtoKanto/Viridian City/​Gym - Earth Badge from Blue", "name": "Earth Badge​"}], "map_locations": [{"map": "ViridianGym", "x": 88, "y": 56 }]}	
         ]
     }
 ]
