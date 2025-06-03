@@ -21,6 +21,7 @@ function reverse_offset(id)
 end
 
 function onClear(slot_data)
+    isUpdating = true
     CUR_INDEX = -1
     resetLocations()
     resetItems()
@@ -141,7 +142,7 @@ function onLocation(location_id, location_name)
     if not v then
         print(string.format("onLocation: could not find location mapping for id %s", location_id))
     end
-
+    
     local obj = Tracker:FindObjectForCode(v)
     if obj then
     	if v:sub(1, 1) == "@" then
@@ -248,6 +249,67 @@ function onMap(value)
         last_map_number = value["data"]["mapNumber"]
     end
 end
+
+
+-- This code is too pretty to delete. Totally wasted time though.
+
+-- -- Rod types to cover
+-- local rodTypes = { "Old", "Good", "Super" }
+-- 
+-- -- Pairs of NAME and AREA
+-- local locationPairs = {
+--     { name = "Dark Cave Blackthorn Entrance", area = "Lake" },
+--     { name = "Route 32", area = "Routes 12, 13, 32" },
+--     { name = "Ilex Forest", area = "Pond" },
+--     { name = "Tohjo Falls", area = "Lake" },
+--     { name = "Route 10", area = "Lake" }
+-- }
+-- 
+-- -- Generate all valid mappings: [FullID] = siblingFullID
+-- local linkedLocations = {}
+-- 
+-- for _, pair in ipairs(locationPairs) do
+--     for _, rodType in ipairs(rodTypes) do
+--         local fullA = "Special Encounters/" .. pair.name .. " Fishing/" .. rodType .. " Rod - " .. pair.area
+--         local fullB = "Special Encounters/" .. rodType .. " Rod/" .. pair.area
+--         linkedLocations[fullA] = fullB
+--         linkedLocations[fullB] = fullA
+--     end
+-- end
+-- 
+-- 
+-- 
+-- function onSectionChanged(value)
+--     -- Prevent recursion
+--     if isUpdating then return end
+-- 
+--     local changedID = value.FullID
+--     local changedCount = value.AvailableChestCount
+-- 
+--     -- Check if changedID is in our linked map
+--     local targetID = linkedLocations[changedID]
+--     if targetID then
+--         -- Print debug info
+--         print("Changed:", changedID)
+--         print("Target :", targetID)
+-- 
+--         -- Get the other location (needs @ prefix)
+--         local targetLoc = Tracker:FindObjectForCode("@" .. targetID)
+-- 
+--         if targetLoc then
+--             local targetCount = targetLoc.AvailableChestCount
+-- 
+--             if targetCount ~= changedCount then
+--                 isUpdating = true
+--                 targetLoc.AvailableChestCount = changedCount
+--                 isUpdating = false
+--             end
+--         else
+--             print("Target location not found: " .. targetID)
+--         end
+--     end
+-- end
+
 
 
 Archipelago:AddClearHandler("clear handler", onClear)

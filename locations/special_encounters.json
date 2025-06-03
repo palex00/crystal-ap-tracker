@@ -17,55 +17,140 @@
                         "name": "Shore",
                         "clear_as_group": false,
                         "item_count": 3,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Cherrygrove City",
+                            "@JohtoKanto/Cianwood City",
+                            "@JohtoKanto/Olivine City",
+                            "@JohtoKanto/Route 19",
+                            "@JohtoKanto/Route 34",
+                            "@JohtoKanto/Route 40"
+                        ]
                     },
                     {
                         "name": "Ocean",
                         "clear_as_group": false,
                         "item_count": 3,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Cinnabar Island",
+                            "@JohtoKanto/New Bark Town",
+                            "@JohtoKanto/S.S. Aqua",
+                            "@JohtoKanto/Pallet Town",
+                            "@JohtoKanto/Route 20",
+                            "@JohtoKanto/Route 21",
+                            "@JohtoKanto/Route 26",
+                            "@JohtoKanto/Route 27",
+                            "@JohtoKanto/Route 41",
+                            "@JohtoKanto/Vermilion City"
+                        ]
                     },
                     {
                         "name": "Lake",
                         "clear_as_group": false,
                         "item_count": 3,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Dark Cave Violet Entrance",
+                            "@JohtoKanto/Route 45, ^$can_flash_johto",
+                            "@JohtoKanto/Mount Mortar",
+                            "@JohtoKanto/Route 10/Top",
+                            "@JohtoKanto/Route 24",
+                            "@JohtoKanto/Route 25",
+                            "@JohtoKanto/Route 42",
+                            "@JohtoKanto/Route 9",
+                            "@JohtoKanto/Silver Cave, ^$can_flash_johto",
+                            "@JohtoKanto/Slowpoke Well",
+                            "@JohtoKanto/New Bark Town, $can_surf_johto",
+                            "@JohtoKanto/Union Cave"
+                        ]
                     },
                     {
                         "name": "Pond",
                         "clear_as_group": false,
                         "item_count": 3,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Blackthorn City",
+                            "@JohtoKanto/Ecruteak City",
+                            "@JohtoKanto/Ilex Forest/Post-Tree",
+                            "@JohtoKanto/Route 22",
+                            "@JohtoKanto/Route 28",
+                            "@JohtoKanto/Route 30",
+                            "@JohtoKanto/Route 31",
+                            "@JohtoKanto/Route 35",
+                            "@JohtoKanto/Route 43",
+                            "@JohtoKanto/Route 44",
+                            "@JohtoKanto/Route 6",
+                            "@JohtoKanto/Ruins of Alph",
+                            "@JohtoKanto/Silver Cave",
+                            "@JohtoKanto/Violet City",
+                            "@JohtoKanto/Viridian City"
+                        ]
                     },
                     {
                         "name": "Dragon's Den",
                         "clear_as_group": false,
                         "item_count": 3,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR"
+                        ]
                     },
                     {
                         "name": "Lake of Rage",
                         "clear_as_group": false,
                         "item_count": 3,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Lake of Rage"
+                        ]
                     },
                     {
                         "name": "Route 45",
                         "clear_as_group": false,
                         "item_count": 3,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 45"
+                        ]
                     },
                     {
                         "name": "Whirl Islands",
                         "clear_as_group": false,
                         "item_count": 3,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Whirl Islands, ^$can_flash_johto"
+                        ]
                     },
                     {
                         "name": "Routes 12, 13, 32",
                         "clear_as_group": false,
                         "item_count": 3,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 12",
+                            "@JohtoKanto/Route 13",
+                            "@JohtoKanto/Route 32/Post-Guy"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 4,
+                        "y": 4,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 4,
+                        "y": 4,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "johto_overview",
+                        "x": 8,
+                        "y": 8,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
                     }
                 ]
             },
@@ -81,55 +166,140 @@
                         "name": "Shore",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Cherrygrove City",
+                            "@JohtoKanto/Cianwood City",
+                            "@JohtoKanto/Olivine City",
+                            "@JohtoKanto/Route 19",
+                            "@JohtoKanto/Route 34",
+                            "@JohtoKanto/Route 40"
+                        ]
                     },
                     {
                         "name": "Ocean",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Cinnabar Island",
+                            "@JohtoKanto/New Bark Town",
+                            "@JohtoKanto/S.S. Aqua",
+                            "@JohtoKanto/Pallet Town",
+                            "@JohtoKanto/Route 20",
+                            "@JohtoKanto/Route 21",
+                            "@JohtoKanto/Route 26",
+                            "@JohtoKanto/Route 27",
+                            "@JohtoKanto/Route 41",
+                            "@JohtoKanto/Vermilion City"
+                        ]
                     },
                     {
                         "name": "Lake",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Dark Cave Violet Entrance",
+                            "@JohtoKanto/Route 45, ^$can_flash_johto",
+                            "@JohtoKanto/Mount Mortar",
+                            "@JohtoKanto/Route 10/Top",
+                            "@JohtoKanto/Route 24",
+                            "@JohtoKanto/Route 25",
+                            "@JohtoKanto/Route 42",
+                            "@JohtoKanto/Route 9",
+                            "@JohtoKanto/Silver Cave, ^$can_flash_johto",
+                            "@JohtoKanto/Slowpoke Well",
+                            "@JohtoKanto/New Bark Town, $can_surf_johto",
+                            "@JohtoKanto/Union Cave"
+                        ]
                     },
                     {
                         "name": "Pond",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Blackthorn City",
+                            "@JohtoKanto/Ecruteak City",
+                            "@JohtoKanto/Ilex Forest/Post-Tree",
+                            "@JohtoKanto/Route 22",
+                            "@JohtoKanto/Route 28",
+                            "@JohtoKanto/Route 30",
+                            "@JohtoKanto/Route 31",
+                            "@JohtoKanto/Route 35",
+                            "@JohtoKanto/Route 43",
+                            "@JohtoKanto/Route 44",
+                            "@JohtoKanto/Route 6",
+                            "@JohtoKanto/Ruins of Alph",
+                            "@JohtoKanto/Silver Cave",
+                            "@JohtoKanto/Violet City",
+                            "@JohtoKanto/Viridian City"
+                        ]
                     },
                     {
                         "name": "Dragon's Den",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR"
+                        ]
                     },
                     {
                         "name": "Lake of Rage",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Lake of Rage"
+                        ]
                     },
                     {
                         "name": "Route 45",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 45"
+                        ]
                     },
                     {
                         "name": "Whirl Islands",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Whirl Islands, ^$can_flash_johto"
+                        ]
                     },
                     {
                         "name": "Routes 12, 13, 32",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 12",
+                            "@JohtoKanto/Route 13",
+                            "@JohtoKanto/Route 32/Post-Guy"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 14,
+                        "y": 4,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 14,
+                        "y": 4,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "johto_overview",
+                        "x": 14,
+                        "y": 4,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
                     }
                 ]
             },
@@ -145,55 +315,140 @@
                         "name": "Shore",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Cherrygrove City",
+                            "@JohtoKanto/Cianwood City",
+                            "@JohtoKanto/Olivine City",
+                            "@JohtoKanto/Route 19",
+                            "@JohtoKanto/Route 34",
+                            "@JohtoKanto/Route 40"
+                        ]
                     },
                     {
                         "name": "Ocean",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Cinnabar Island",
+                            "@JohtoKanto/New Bark Town",
+                            "@JohtoKanto/S.S. Aqua",
+                            "@JohtoKanto/Pallet Town",
+                            "@JohtoKanto/Route 20",
+                            "@JohtoKanto/Route 21",
+                            "@JohtoKanto/Route 26",
+                            "@JohtoKanto/Route 27",
+                            "@JohtoKanto/Route 41",
+                            "@JohtoKanto/Vermilion City"
+                        ]
                     },
                     {
                         "name": "Lake",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Dark Cave Violet Entrance",
+                            "@JohtoKanto/Route 45, ^$can_flash_johto",
+                            "@JohtoKanto/Mount Mortar",
+                            "@JohtoKanto/Route 10/Top",
+                            "@JohtoKanto/Route 24",
+                            "@JohtoKanto/Route 25",
+                            "@JohtoKanto/Route 42",
+                            "@JohtoKanto/Route 9",
+                            "@JohtoKanto/Silver Cave, ^$can_flash_johto",
+                            "@JohtoKanto/Slowpoke Well",
+                            "@JohtoKanto/New Bark Town, $can_surf_johto",
+                            "@JohtoKanto/Union Cave"
+                        ]
                     },
                     {
                         "name": "Pond",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Blackthorn City",
+                            "@JohtoKanto/Ecruteak City",
+                            "@JohtoKanto/Ilex Forest/Post-Tree",
+                            "@JohtoKanto/Route 22",
+                            "@JohtoKanto/Route 28",
+                            "@JohtoKanto/Route 30",
+                            "@JohtoKanto/Route 31",
+                            "@JohtoKanto/Route 35",
+                            "@JohtoKanto/Route 43",
+                            "@JohtoKanto/Route 44",
+                            "@JohtoKanto/Route 6",
+                            "@JohtoKanto/Ruins of Alph",
+                            "@JohtoKanto/Silver Cave",
+                            "@JohtoKanto/Violet City",
+                            "@JohtoKanto/Viridian City"
+                        ]
                     },
                     {
                         "name": "Dragon's Den",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR"
+                        ]
                     },
                     {
                         "name": "Lake of Rage",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Lake of Rage"
+                        ]
                     },
                     {
                         "name": "Route 45",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 45"
+                        ]
                     },
                     {
                         "name": "Whirl Islands",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Whirl Islands, ^$can_flash_johto"
+                        ]
                     },
                     {
                         "name": "Routes 12, 13, 32",
                         "clear_as_group": false,
                         "item_count": 4,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 12",
+                            "@JohtoKanto/Route 13",
+                            "@JohtoKanto/Route 32/Post-Guy"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 4,
+                        "y": 14,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 4,
+                        "y": 14,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "johto_overview",
+                        "x": 4,
+                        "y": 14,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
                     }
                 ]
             },
@@ -209,73 +464,155 @@
                         "name": "Canyon - Common",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 44"
+                        ]
                     },
                     {
                         "name": "Canyon - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 44"
+                        ]
                     },
                     {
                         "name": "Town - Common",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Azalea Town",
+                            "@JohtoKanto/Route 33",
+                            "@JohtoKanto/Route 42"
+                        ]
                     },
                     {
                         "name": "Town - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Azalea Town",
+                            "@JohtoKanto/Route 33",
+                            "@JohtoKanto/Route 42"
+                        ]
                     },
                     {
                         "name": "Route - Common",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 29",
+                            "@JohtoKanto/Route 30",
+                            "@JohtoKanto/Route 31",
+                            "@JohtoKanto/Route 34",
+                            "@JohtoKanto/Route 35",
+                            "@JohtoKanto/Route 36",
+                            "@JohtoKanto/Route 37/Left",
+                            "@JohtoKanto/Route 37/Right",
+                            "@JohtoKanto/Route 37/Top",
+                            "@JohtoKanto/Route 38",
+                            "@JohtoKanto/Route 39"
+                        ]
                     },
                     {
                         "name": "Route - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 29",
+                            "@JohtoKanto/Route 30",
+                            "@JohtoKanto/Route 31",
+                            "@JohtoKanto/Route 34",
+                            "@JohtoKanto/Route 35",
+                            "@JohtoKanto/Route 36",
+                            "@JohtoKanto/Route 37/Left",
+                            "@JohtoKanto/Route 37/Right",
+                            "@JohtoKanto/Route 37/Top",
+                            "@JohtoKanto/Route 38",
+                            "@JohtoKanto/Route 39"
+                        ]
                     },
                     {
                         "name": "Kanto - Common",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 26",
+                            "@JohtoKanto/Route 27/Pre-Waterfall",
+                            "@JohtoKanto/Route 32/Post-Guy"
+                        ]
                     },
                     {
                         "name": "Kanto - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Route 26",
+                            "@JohtoKanto/Route 27/Pre-Waterfall",
+                            "@JohtoKanto/Route 32/Post-Guy"
+                        ]
                     },
                     {
                         "name": "Lake - Common",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Lake of Rage",
+                            "@JohtoKanto/Route 43"
+                        ]
                     },
                     {
                         "name": "Lake - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Lake of Rage",
+                            "@JohtoKanto/Route 43"
+                        ]
                     },
                     {
                         "name": "Forest - Common",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Ilex Forest/Pre-Tree",
+                            "@JohtoKanto/Ilex Forest/Post-Tree"
+                        ]
                     },
                     {
                         "name": "Forest - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Ilex Forest/Pre-Tree",
+                            "@JohtoKanto/Ilex Forest/Post-Tree"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 14,
+                        "y": 14,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 14,
+                        "y": 14,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "johto_overview",
+                        "x": 14,
+                        "y": 14,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
                     }
                 ]
             },
@@ -291,8 +628,39 @@
                         "name": "Rocksmash",
                         "clear_as_group": false,
                         "item_count": 2,
-                        "access_rules": []
+                        "access_rules": [
+                            "@JohtoKanto/Burned Tower",
+                            "@JohtoKanto/Route 40",
+                            "@JohtoKanto/Cianwood City",
+                            "@JohtoKanto/Dark Cave Violet Entrance"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 24,
+                        "y": 4,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
                     },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 24,
+                        "y": 4,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "johto_overview",
+                        "x": 24,
+                        "y": 4,
+                        "size": 6,
+                        "border_thickness": 1,
+                        "shape": "diamond"
+                    }
                 ]
             }
         ]
