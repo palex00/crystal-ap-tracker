@@ -1183,6 +1183,12 @@
         "img": "/images/settings/splitmap.png",
         "codes": "splitmap, splitmap_on",
         "inherit_codes": false
+      },
+      {
+        "name": "Split Map - Reverse",
+        "img": "/images/settings/splitmap_reverse.png",
+        "codes": "splitmap, splitmap_reverse",
+        "inherit_codes": false
       }
     ]
   }

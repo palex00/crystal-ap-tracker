@@ -147,9 +147,13 @@ function toggle_splitmap()
         Tracker:AddLayouts("layouts/tabs_single.json")
     elseif has("splitmap_on") and has("johto_only_off") then
         Tracker:AddLayouts("layouts/tabs_split.json")
+    elseif has("splitmap_reverse") and has("johto_only_off") then
+        Tracker:AddLayouts("layouts/tabs_reverse.json")
     elseif has("splitmap_off") then
         Tracker:AddLayouts("layouts/johto_only/tabs_single.json")
     elseif has("splitmap_on") then
         Tracker:AddLayouts("layouts/johto_only/tabs_split.json")
+    elseif has("splitmap_reverse") then
+        Tracker:AddLayouts("layouts/johto_only/tabs_reverse.json")
     end
 end
