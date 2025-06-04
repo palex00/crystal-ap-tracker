@@ -134,7 +134,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -304,7 +304,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -400,7 +400,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -443,7 +443,22 @@
                 ],
                 "sections": [
                     {
-                        "name": "Southeast Item (Left)",
+                        "name": "West Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Hidden Item",
+                        "access_rules": [
+                            "$can_rocksmash,^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Northeast Item",
                         "access_rules": [
                             "$can_rocksmash"
                         ],
@@ -461,27 +476,12 @@
                         ]
                     },
                     {
-                        "name": "Northeast Item",
+                        "name": "Southeast Item (Left)",
                         "access_rules": [
                             "$can_rocksmash"
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
-                    },
-                    {
-                        "name": "West Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Hidden Item",
-                        "access_rules": [
-                            "$can_rocksmash,^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -494,7 +494,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -702,7 +702,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -751,7 +751,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -968,7 +968,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -1202,39 +1202,9 @@
                 ],
                 "sections": [
                     {
-                        "name": "1F - South Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "1F - East Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "1F - West Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "1F - North Item",
                         "visibility_rules": [
                             "show_items"
-                        ]
-                    },
-                    {
-                        "name": "1F - Firebreather Bill",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "1F - Firebreather Ray",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1250,6 +1220,42 @@
                         ]
                     },
                     {
+                        "name": "1F - Firebreather Bill",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "1F - East Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "1F - West Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "1F - Pokemaniac Larry",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "1F - Firebreather Ray",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "1F - South Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
@@ -1259,7 +1265,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -1273,12 +1279,6 @@
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
-                        ]
-                    },
-                    {
-                        "name": "1F - Pokemaniac Larry",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -1339,7 +1339,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -1365,6 +1365,15 @@
                         ]
                     },
                     {
+                        "name": "B2F - Cool Trainer Nick",
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "B2F - Center Item",
                         "access_rules": [
                             "$can_surf_johto"
@@ -1384,15 +1393,6 @@
                     },
                     {
                         "name": "B2F - Cool Trainer Gwen",
-                        "access_rules": [
-                            "$can_surf_johto"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "B2F - Cool Trainer Nick",
                         "access_rules": [
                             "$can_surf_johto"
                         ],
@@ -1474,7 +1474,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -1543,7 +1543,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -1803,7 +1803,25 @@
                         ]
                     },
                     {
-                        "name": "TM02 from Headbutt Guy",
+                        "name": "Southeast Item",
+                        "access_rules": [
+                            "@JohtoKanto/Ilex Forest/Pre-Tree"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "West Hidden Item",
+                        "access_rules": [
+                            "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "West Item",
                         "access_rules": [
                             "@JohtoKanto/Ilex Forest/Post-Tree"
                         ],
@@ -1821,7 +1839,16 @@
                         ]
                     },
                     {
-                        "name": "Northeast Item",
+                        "name": "East Hidden Item",
+                        "access_rules": [
+                            "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "TM02 from Headbutt Guy",
                         "access_rules": [
                             "@JohtoKanto/Ilex Forest/Post-Tree"
                         ],
@@ -1830,16 +1857,7 @@
                         ]
                     },
                     {
-                        "name": "Southeast Item",
-                        "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Pre-Tree"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "West Item",
+                        "name": "Northeast Item",
                         "access_rules": [
                             "@JohtoKanto/Ilex Forest/Post-Tree"
                         ],
@@ -1858,24 +1876,6 @@
                     },
                     {
                         "name": "North Hidden Item",
-                        "access_rules": [
-                            "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ]
-                    },
-                    {
-                        "name": "West Hidden Item",
-                        "access_rules": [
-                            "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ]
-                    },
-                    {
-                        "name": "East Hidden Item",
                         "access_rules": [
                             "^$hid, @JohtoKanto/Ilex Forest/Post-Tree"
                         ],
@@ -2044,7 +2044,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -2240,30 +2240,15 @@
                 ],
                 "sections": [
                     {
-                        "name": "Super Nerd Eric",
+                        "name": "Pokemaniac Donald",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
                     },
                     {
-                        "name": "Pokemaniac Issac",
+                        "name": "Super Nerd Teru",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Center Hidden Item",
-                        "access_rules": [
-                            "^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -2276,12 +2261,6 @@
                         ]
                     },
                     {
-                        "name": "Super Nerd Teru",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
                         "name": "Hidden Item by Blue Door",
                         "access_rules": [
                             "^$hid"
@@ -2291,7 +2270,28 @@
                         ]
                     },
                     {
-                        "name": "Pokemaniac Donald",
+                        "name": "Center Hidden Item",
+                        "access_rules": [
+                            "^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Pokemaniac Issac",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Super Nerd Eric",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -2347,16 +2347,6 @@
                         ]
                     },
                     {
-                        "name": "B2F - Center Hidden Item",
-                        "access_rules": [
-                            "^$hid,CARD_KEY",
-                            "^$hid,BASEMENT_KEY"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ]
-                    },
-                    {
                         "name": "B2F - East Item",
                         "access_rules": [
                             "CARD_KEY",
@@ -2367,13 +2357,13 @@
                         ]
                     },
                     {
-                        "name": "B2F - Southwest Item",
+                        "name": "B2F - Center Hidden Item",
                         "access_rules": [
-                            "CARD_KEY",
-                            "BASEMENT_KEY"
+                            "^$hid,CARD_KEY",
+                            "^$hid,BASEMENT_KEY"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -2384,6 +2374,16 @@
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Southwest Item",
+                        "access_rules": [
+                            "CARD_KEY",
+                            "BASEMENT_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
                         ]
                     },
                     {
@@ -2447,7 +2447,7 @@
                         ]
                     },
                     {
-                        "name": "Warehouse - Center Item",
+                        "name": "Warehouse - Card Key from Director",
                         "access_rules": [
                             "CARD_KEY",
                             "BASEMENT_KEY"
@@ -2457,7 +2457,7 @@
                         ]
                     },
                     {
-                        "name": "Warehouse - Card Key from Director",
+                        "name": "Warehouse - Center Item",
                         "access_rules": [
                             "CARD_KEY",
                             "BASEMENT_KEY"
@@ -2498,12 +2498,6 @@
                         ]
                     },
                     {
-                        "name": "2F - Blue Card from Buena",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "​1F - Radio Card from Quiz",
                         "visibility_rules": [
                             "show_items, pokegear_off"
@@ -2520,16 +2514,13 @@
                         ]
                     },
                     {
-                        "name": "2F - Grunt 1",
-                        "access_rules": [
-                            "tower_requirement"
-                        ],
+                        "name": "2F - Blue Card from Buena",
                         "visibility_rules": [
-                            "show_items, trainersanity_on"
+                            "show_items"
                         ]
                     },
                     {
-                        "name": "2F - Grunt 2",
+                        "name": "2F - Grunt 1",
                         "access_rules": [
                             "tower_requirement"
                         ],
@@ -2547,7 +2538,7 @@
                         ]
                     },
                     {
-                        "name": "2F - Grunt 4",
+                        "name": "2F - Grunt 2",
                         "access_rules": [
                             "tower_requirement"
                         ],
@@ -2556,12 +2547,12 @@
                         ]
                     },
                     {
-                        "name": "3F - TM11 from Woman",
+                        "name": "2F - Grunt 4",
                         "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -2583,15 +2574,6 @@
                         ]
                     },
                     {
-                        "name": "3F - Grunt 3",
-                        "access_rules": [
-                            "tower_requirement,CARD_KEY"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
                         "name": "3F - Scientist Marc",
                         "access_rules": [
                             "tower_requirement"
@@ -2601,7 +2583,7 @@
                         ]
                     },
                     {
-                        "name": "4F - Pink Bow from Mary",
+                        "name": "3F - TM11 from Woman",
                         "access_rules": [
                             "EVENT_CLEARED_RADIO_TOWER"
                         ],
@@ -2610,25 +2592,7 @@
                         ]
                     },
                     {
-                        "name": "4F - Grunt 1",
-                        "access_rules": [
-                            "tower_requirement"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "4F - Grunt 2",
-                        "access_rules": [
-                            "tower_requirement,CARD_KEY"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "4F - Rocket Executive",
+                        "name": "3F - Grunt 3",
                         "access_rules": [
                             "tower_requirement,CARD_KEY"
                         ],
@@ -2646,27 +2610,45 @@
                         ]
                     },
                     {
-                        "name": "5F - Basement Key from False Director",
+                        "name": "4F - Grunt 1",
                         "access_rules": [
                             "tower_requirement"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
-                        "name": "5F - Clear Bell from Rocket Boss",
+                        "name": "4F - Rocket Executive",
                         "access_rules": [
                             "tower_requirement,CARD_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "4F - Grunt 2",
+                        "access_rules": [
+                            "tower_requirement,CARD_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "4F - Pink Bow from Mary",
+                        "access_rules": [
+                            "EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "show_items"
                         ]
                     },
                     {
-                        "name": "5F - Item",
+                        "name": "5F - Basement Key from False Director",
                         "access_rules": [
-                            "tower_requirement,CARD_KEY"
+                            "tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2682,11 +2664,29 @@
                         ]
                     },
                     {
+                        "name": "5F - Clear Bell from Rocket Boss",
+                        "access_rules": [
+                            "tower_requirement,CARD_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "Clear Radio Tower",
                         "access_rules": [
                             "tower_requirement,CARD_KEY"
                         ],
                         "hosted_item": "EVENT_CLEARED_RADIO_TOWER",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "5F - Item",
+                        "access_rules": [
+                            "tower_requirement,CARD_KEY"
+                        ],
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -2805,7 +2805,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -2854,13 +2854,19 @@
                         ]
                     },
                     {
-                        "name": "Northeast Item",
+                        "name": "Pokefan Beverly",
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
-                        "name": "Southwest Item",
+                        "name": "Schoolboy Jack",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Northeast Item",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -2872,21 +2878,15 @@
                         ]
                     },
                     {
-                        "name": "Pokefan Beverly",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
                         "name": "Pokefan William",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
                     },
                     {
-                        "name": "Schoolboy Jack",
+                        "name": "Southwest Item",
                         "visibility_rules": [
-                            "show_items, trainersanity_on"
+                            "show_items"
                         ]
                     },
                     {
@@ -2908,7 +2908,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -3106,7 +3106,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -3341,7 +3341,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -3370,7 +3370,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -3422,7 +3422,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -3444,11 +3444,20 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
-                        "name": "4F - Southwest Item",
+                        "name": "4F - Hidden Item",
+                        "access_rules": [
+                            "^$hid, RAINBOW_WING"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "4F - East Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ],
@@ -3466,21 +3475,12 @@
                         ]
                     },
                     {
-                        "name": "4F - East Item",
+                        "name": "4F - Southwest Item",
                         "access_rules": [
                             "RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
-                    },
-                    {
-                        "name": "4F - Hidden Item",
-                        "access_rules": [
-                            "^$hid, RAINBOW_WING"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -3493,7 +3493,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -3533,7 +3533,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -3555,7 +3555,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -3577,7 +3577,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -3617,7 +3617,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -3639,7 +3639,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -3719,7 +3719,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -3802,7 +3802,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -3960,12 +3960,6 @@
                         ]
                     },
                     {
-                        "name": "3F - Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "3F - Bird Keeper Theo",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -3975,6 +3969,12 @@
                         "name": "3F - Gentleman Preston",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "3F - Item",
+                        "visibility_rules": [
+                            "show_items"
                         ]
                     },
                     {
@@ -3996,33 +3996,9 @@
                         ]
                     },
                     {
-                        "name": "5F - East Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "5F - Center Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "5F - Southeast Item",
                         "visibility_rules": [
                             "show_items"
-                        ]
-                    },
-                    {
-                        "name": "5F - Bird Keeper Denis",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "5F - Sailor Ernest",
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -4032,6 +4008,30 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "5F - Bird Keeper Denis",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "5F - East Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "5F - Sailor Ernest",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "5F - Center Item",
+                        "visibility_rules": [
+                            "show_items"
                         ]
                     },
                     {
@@ -4985,7 +4985,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -5057,7 +5057,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -5175,7 +5175,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -5340,7 +5340,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -5469,7 +5469,25 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B1F - Item besides Computer",
+                        "name": "Rocket HQ B1F - Grunt",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B1F - West Hidden Item",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE,^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B1F - East Item",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
@@ -5478,7 +5496,16 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B1F - East Item",
+                        "name": "Rocket HQ B1F - Scientist Jed",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B1F - Item besides Computer",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
@@ -5496,7 +5523,7 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B1F - Grunt",
+                        "name": "Rocket HQ B2F - Grunt 3",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
@@ -5505,7 +5532,7 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B1F - Scientist Jed",
+                        "name": "Rocket HQ B2F - Grunt 1",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
@@ -5514,12 +5541,21 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B1F - West Hidden Item",
+                        "name": "Rocket HQ B2F - Hidden Item",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B2F - Grunt 2",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -5541,42 +5577,6 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B2F - Grunt 1",
-                        "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Rocket HQ B2F - Grunt 2",
-                        "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Rocket HQ B2F - Grunt 3",
-                        "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Rocket HQ B2F - Hidden Item",
-                        "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE,^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ]
-                    },
-                    {
                         "name": "Rocket HQ B3F - East Item",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
@@ -5586,7 +5586,52 @@
                         ]
                     },
                     {
+                        "name": "Rocket HQ B3F - Scientist Ross",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B3F - Grunt 1",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Rocket HQ B3F - North Item",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B3F - Scientist Mitch",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B3F - Grunt 2",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B3F - West Item (Right)",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
                         ],
@@ -5610,51 +5655,6 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Rocket HQ B3F - West Item (Right)",
-                        "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Rocket HQ B3F - Grunt 1",
-                        "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Rocket HQ B3F - Grunt 2",
-                        "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Rocket HQ B3F - Scientist Mitch",
-                        "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
-                        ]
-                    },
-                    {
-                        "name": "Rocket HQ B3F - Scientist Ross",
-                        "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -5765,7 +5765,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -6098,7 +6098,7 @@
                         ]
                     },
                     {
-                        "name": "1F - Southeast Item",
+                        "name": "1F - East Item",
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City"
                         ],
@@ -6107,7 +6107,7 @@
                         ]
                     },
                     {
-                        "name": "1F - East Item",
+                        "name": "1F - Southeast Item",
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City"
                         ],
@@ -6125,16 +6125,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
-                        ]
-                    },
-                    {
-                        "name": "B1F - Item",
-                        "access_rules": [
-                            "@JohtoKanto/Blackthorn City"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -6147,6 +6138,15 @@
                         ]
                     },
                     {
+                        "name": "B1F - Item",
+                        "access_rules": [
+                            "@JohtoKanto/Blackthorn City"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "B1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
@@ -6156,13 +6156,22 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
                         "name": "B2F - Northwest Item",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Hidden Item in Corner",
+                        "access_rules": [
+                            "^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -6184,13 +6193,13 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
-                        "name": "B2F - Hidden Item in Corner",
+                        "name": "B2F - Hidden Item on Boulder",
                         "access_rules": [
-                            "^$hid"
+                            "^$hid, @JohtoKanto/Blackthorn City"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -6203,15 +6212,6 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
-                    },
-                    {
-                        "name": "B2F - Hidden Item on Boulder",
-                        "access_rules": [
-                            "^$hid, @JohtoKanto/Blackthorn City"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -6389,24 +6389,6 @@
                         ]
                     },
                     {
-                        "name": "Dragon's Den B1F - East Item",
-                        "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Dragon's Den B1F - West Item",
-                        "access_rules": [
-                            "$can_surf_johto, EVENT_BEAT_CLAIR"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "Dragon's Den B1F - Cool Trainer Cara",
                         "access_rules": [
                             "$can_surf_johto, EVENT_BEAT_CLAIR"
@@ -6434,21 +6416,12 @@
                         ]
                     },
                     {
-                        "name": "Dragon's Den B1F - Southeast Hidden Item",
+                        "name": "Dragon's Den B1F - West Item",
                         "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$hid"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR"
                         ],
                         "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ]
-                    },
-                    {
-                        "name": "Dragon's Den B1F - East Hidden Item in Water",
-                        "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
+                            "show_items"
                         ]
                     },
                     {
@@ -6486,6 +6459,33 @@
                         ],
                         "visibility_rules": [
                             "show_items, clair_behaviour_child"
+                        ]
+                    },
+                    {
+                        "name": "Dragon's Den B1F - Southeast Hidden Item",
+                        "access_rules": [
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Dragon's Den B1F - East Item",
+                        "access_rules": [
+                            "$can_whirlpool, EVENT_BEAT_CLAIR"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Dragon's Den B1F - East Hidden Item in Water",
+                        "access_rules": [
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -6714,7 +6714,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -7113,7 +7113,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -7160,6 +7160,15 @@
                 ],
                 "sections": [
                     {
+                        "name": "1F - Hidden Item on Southwest Boulder",
+                        "access_rules": [
+                            "^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
                         "name": "1F - North Item (Right)",
                         "visibility_rules": [
                             "show_items"
@@ -7172,22 +7181,13 @@
                         ]
                     },
                     {
-                        "name": "1F - Hidden Item on Southwest Boulder",
-                        "access_rules": [
-                            "^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ]
-                    },
-                    {
-                        "name": "2F - Northeast Item",
+                        "name": "2F - South Item",
                         "visibility_rules": [
                             "show_items"
                         ]
                     },
                     {
-                        "name": "2F - South Item",
+                        "name": "2F - Northeast Item",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -7217,7 +7217,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -7323,7 +7323,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -7393,7 +7393,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -7410,25 +7410,16 @@
                         ]
                     },
                     {
-                        "name": "1F - Southwest Item",
-                        "access_rules": [
-                            "^$can_flash_johto"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "1F - Northwest Item",
-                        "access_rules": [
-                            "^$can_flash_johto"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "1F - Southeast Item",
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "1F - Southwest Item",
                         "access_rules": [
                             "^$can_flash_johto"
                         ],
@@ -7464,6 +7455,15 @@
                         ]
                     },
                     {
+                        "name": "1F - Northwest Item",
+                        "access_rules": [
+                            "^$can_flash_johto"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
@@ -7477,9 +7477,18 @@
                         ]
                     },
                     {
-                        "name": "2F - Northeast Item",
+                        "name": "2F - Hidden Item",
                         "access_rules": [
-                            "^$can_flash_johto,$can_waterfall"
+                            "^$can_flash_johto,^$hid"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "2F - East Item",
+                        "access_rules": [
+                            "^$can_flash_johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7495,9 +7504,18 @@
                         ]
                     },
                     {
-                        "name": "2F - East Item",
+                        "name": "2F - South Chamber Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash_johto, $can_waterfall"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "2F - Northeast Item",
+                        "access_rules": [
+                            "^$can_flash_johto,$can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7510,24 +7528,6 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
-                    },
-                    {
-                        "name": "2F - South Chamber Item",
-                        "access_rules": [
-                            "^$can_flash_johto, $can_waterfall"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "2F - Hidden Item",
-                        "access_rules": [
-                            "^$can_flash_johto,^$hid"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
                         ]
                     },
                     {
@@ -7633,7 +7633,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -7793,7 +7793,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -8164,7 +8164,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -8215,7 +8215,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -8492,7 +8492,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -8533,7 +8533,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -8653,7 +8653,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -8754,7 +8754,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -8839,7 +8839,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -8879,7 +8879,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -9532,7 +9532,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -9585,7 +9585,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -9807,7 +9807,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -9860,7 +9860,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -9914,7 +9914,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -9995,7 +9995,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -10331,7 +10331,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     }
                 ],
@@ -10708,7 +10708,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            ""
+                            "^$land_encounter"
                         ]
                     },
                     {

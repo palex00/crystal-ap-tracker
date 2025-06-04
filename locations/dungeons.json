@@ -114,12 +114,12 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Slowpoke Well/B1F - Item",
-                        "name": "Slowpoke Well B1F - Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Slowpoke Well/B1F - Grunt 1",
                         "name": "Slowpoke Well B1F - Grunt 1"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Item",
+                        "name": "Slowpoke Well B1F - Item"
                     },
                     {
                         "ref": "JohtoKanto/Slowpoke Well/B1F - Grunt 2",
@@ -130,12 +130,12 @@
                         "name": "Slowpoke Well B1F - Grunt 3"
                     },
                     {
-                        "ref": "JohtoKanto/Slowpoke Well/B2F - Item",
-                        "name": "Slowpoke Well B2F - Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Slowpoke Well/Cleared Slowpoke Well",
                         "name": "Cleared Slowpoke Well"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B2F - Item",
+                        "name": "Slowpoke Well B2F - Item"
                     },
                     {
                         "ref": "JohtoKanto/Slowpoke Well/B2F - Kings Rock from Man",
@@ -221,32 +221,20 @@
                         "name": "Dragon's Den B1F - Cool Trainer Darin"
                     },
                     {
-                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Center Hidden Item in Water",
-                        "name": "Dragon's Den B1F - Center Hidden Item in Water"
-                    },
-                    {
-                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - West Item",
-                        "name": "Dragon's Den B1F - West Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Cool Trainer Cara",
                         "name": "Dragon's Den B1F - Cool Trainer Cara"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Center Hidden Item in Water",
+                        "name": "Dragon's Den B1F - Center Hidden Item in Water"
                     },
                     {
                         "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Twins Lea & Pia",
                         "name": "Dragon's Den B1F - Twins Lea & Pia"
                     },
                     {
-                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - East Item",
-                        "name": "Dragon's Den B1F - East Item"
-                    },
-                    {
-                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - East Hidden Item in Water",
-                        "name": "Dragon's Den B1F - East Hidden Item in Water"
-                    },
-                    {
-                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Southeast Hidden Item",
-                        "name": "Dragon's Den B1F - Southeast Hidden Item"
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - West Item",
+                        "name": "Dragon's Den B1F - West Item"
                     },
                     {
                         "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Rising Badge from Clair",
@@ -259,6 +247,18 @@
                     {
                         "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - TM24 from Clair",
                         "name": "Dragon's Den B1F - TM24 from Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Southeast Hidden Item",
+                        "name": "Dragon's Den B1F - Southeast Hidden Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - East Item",
+                        "name": "Dragon's Den B1F - East Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - East Hidden Item in Water",
+                        "name": "Dragon's Den B1F - East Hidden Item in Water"
                     }
                 ],
                 "map_locations": [
@@ -277,12 +277,12 @@
                         "name": "Ice Path 1F - HM07 in Itemball"
                     },
                     {
-                        "ref": "JohtoKanto/Ice Path/1F - Southeast Item",
-                        "name": "Ice Path 1F - Southeast Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Ice Path/1F - East Item",
                         "name": "Ice Path 1F - East Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/1F - Southeast Item",
+                        "name": "Ice Path 1F - Southeast Item"
                     },
                     {
                         "ref": "JohtoKanto/Ice Path/B1F - Hidden Item on Boulder",
@@ -291,14 +291,6 @@
                     {
                         "ref": "JohtoKanto/Ice Path/B1F - Item",
                         "name": "Ice Path B1F - Item"
-                    },
-                    {
-                        "ref": "JohtoKanto/Ice Path/B2F - Hidden Item on Boulder",
-                        "name": "Ice Path B2F - Hidden Item on Boulder"
-                    },
-                    {
-                        "ref": "JohtoKanto/Ice Path/B2F - Southeast Item",
-                        "name": "Ice Path B2F - Southeast Item"
                     },
                     {
                         "ref": "JohtoKanto/Ice Path/B2F - Hidden Item in Corner",
@@ -311,6 +303,14 @@
                     {
                         "ref": "JohtoKanto/Ice Path/B2F - Center Item",
                         "name": "Ice Path B2F - Center Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F - Hidden Item on Boulder",
+                        "name": "Ice Path B2F - Hidden Item on Boulder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F - Southeast Item",
+                        "name": "Ice Path B2F - Southeast Item"
                     },
                     {
                         "ref": "JohtoKanto/Ice Path/B3F - Item",
@@ -489,20 +489,24 @@
                         "name": "Tin Tower 3F - Item"
                     },
                     {
-                        "ref": "JohtoKanto/Tin Tower/4F - Southwest Item",
-                        "name": "Tin Tower 4F - Southwest Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Tin Tower/4F - Hidden Item",
                         "name": "Tin Tower 4F - Hidden Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/4F - East Item",
+                        "name": "Tin Tower 4F - East Item"
                     },
                     {
                         "ref": "JohtoKanto/Tin Tower/4F - Southeast Item",
                         "name": "Tin Tower 4F - Southeast Item"
                     },
                     {
-                        "ref": "JohtoKanto/Tin Tower/4F - East Item",
-                        "name": "Tin Tower 4F - East Item"
+                        "ref": "JohtoKanto/Tin Tower/4F - Southwest Item",
+                        "name": "Tin Tower 4F - Southwest Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/5F - Item",
+                        "name": "Tin Tower 5F - Item"
                     },
                     {
                         "ref": "JohtoKanto/Tin Tower/5F - Southwest Hidden Item",
@@ -511,10 +515,6 @@
                     {
                         "ref": "JohtoKanto/Tin Tower/5F - Southeast Hidden Item",
                         "name": "Tin Tower 5F - Southeast Hidden Item"
-                    },
-                    {
-                        "ref": "JohtoKanto/Tin Tower/5F - Item",
-                        "name": "Tin Tower 5F - Item"
                     },
                     {
                         "ref": "JohtoKanto/Tin Tower/6F - Item",
@@ -600,7 +600,7 @@
                     {
                         "ref": "JohtoKanto/Celadon City/Gym - Twins Jo & Zoe",
                         "name": "Celadon Gym - Twins Jo & Zoe"
-                    }
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Gym - Lass Michelle",
                         "name": "Celadon Gym - Lass Michelle"
@@ -624,7 +624,7 @@
                     {
                         "ref": "JohtoKanto/Celadon City/Gym - TM19 from Erika",
                         "name": "Celadon Gym - TM19 from Erika"
-                    },
+                    }
                 ],
                 "map_locations": [
                     {
@@ -716,7 +716,7 @@
                     {
                         "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Parker",
                         "name": "Cerulean Gym - Swimmer Parker"
-                    }
+                    },
                     {
                         "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Diana",
                         "name": "Cerulean Gym - Swimmer Diana"
@@ -728,7 +728,7 @@
                     {
                         "ref": "JohtoKanto/Cerulean City/​Gym - Cascade Badge from Misty",
                         "name": "Cerulean Gym - Cascade Badge from Misty​"
-                    },
+                    }
                 ],
                 "map_locations": [
                     {
@@ -970,7 +970,7 @@
                     {
                         "ref": "JohtoKanto/Saffron City/Gym - Psychic Jared",
                         "name": "Saffron Gym - Psychic Jared"
-                    }
+                    },
                     {
                         "ref": "JohtoKanto/Saffron City/Gym - Marsh Badge from Sabrina",
                         "name": "Saffron Gym - Marsh Badge from Sabrina"
@@ -978,7 +978,7 @@
                     {
                         "ref": "JohtoKanto/Saffron City/​Gym - Marsh Badge from Sabrina",
                         "name": "Saffron Gym - Marsh Badge from Sabrina​"
-                    },
+                    }
                 ],
                 "map_locations": [
                     {
@@ -1354,24 +1354,24 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/West Item",
+                        "name": "Dark Cave Violet Entrance - West Item"
+                    },
+                    {
                         "ref": "JohtoKanto/Dark Cave Violet Entrance/Hidden Item",
                         "name": "Dark Cave Violet Entrance - Hidden Item"
-                    },
-                    {
-                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Southeast Item (Left)",
-                        "name": "Dark Cave Violet Entrance - Southeast Item (Left)"
-                    },
-                    {
-                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Southeast Item (Right)",
-                        "name": "Dark Cave Violet Entrance - Southeast Item (Right)"
                     },
                     {
                         "ref": "JohtoKanto/Dark Cave Violet Entrance/Northeast Item",
                         "name": "Dark Cave Violet Entrance - Northeast Item"
                     },
                     {
-                        "ref": "JohtoKanto/Dark Cave Violet Entrance/West Item",
-                        "name": "Dark Cave Violet Entrance - West Item"
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Southeast Item (Right)",
+                        "name": "Dark Cave Violet Entrance - Southeast Item (Right)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Southeast Item (Left)",
+                        "name": "Dark Cave Violet Entrance - Southeast Item (Left)"
                     }
                 ],
                 "map_locations": [
@@ -2359,11 +2359,11 @@
                     {
                         "ref": "JohtoKanto/Fuchsia City/​Gym - Soul Badge from Janine",
                         "name": "Fuchsia Gym - Soul Badge from Janine​"
-                    }
+                    },
                     {
                         "ref": "JohtoKanto/Fuchsia City/Gym - TM06 from Janine",
                         "name": "Fuchsia Gym - TM06 from Janine"
-                    },
+                    }
                 ],
                 "map_locations": [
                     {
@@ -2545,6 +2545,14 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Goldenrod Underground/Pokemaniac Donald",
+                        "name": "Goldenrod UG - Pokemaniac Donald"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/Super Nerd Teru",
+                        "name": "Goldenrod UG - Super Nerd Teru"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod Underground/Hidden Item between Tables",
                         "name": "Goldenrod UG - Hidden Item between Tables"
                     },
@@ -2561,10 +2569,6 @@
                         "name": "Goldenrod UG - Item"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Pokemaniac Donald",
-                        "name": "Goldenrod UG - Pokemaniac Donald"
-                    },
-                    {
                         "ref": "JohtoKanto/Goldenrod Underground/Pokemaniac Issac",
                         "name": "Goldenrod UG - Pokemaniac Issac"
                     },
@@ -2573,24 +2577,8 @@
                         "name": "Goldenrod UG - Super Nerd Eric"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Super Nerd Teru",
-                        "name": "Goldenrod UG - Super Nerd Teru"
-                    },
-                    {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - East Item",
-                        "name": "Goldenrod UG B2F - East Item"
-                    },
-                    {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Center Hidden Item",
-                        "name": "Goldenrod UG B2F - Center Hidden Item"
-                    },
-                    {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - West Hidden Item",
-                        "name": "Goldenrod UG B2F - West Hidden Item"
-                    },
-                    {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Southwest Item",
-                        "name": "Goldenrod UG B2F - Southwest Item"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 3",
+                        "name": "Goldenrod UG B2F - Grunt 3"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 1",
@@ -2601,48 +2589,60 @@
                         "name": "Goldenrod UG B2F - Grunt 2"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Burglar Duncan",
-                        "name": "Goldenrod UG B2F - Burglar Duncan"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - West Hidden Item",
+                        "name": "Goldenrod UG B2F - West Hidden Item"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - Burglar Eddie",
                         "name": "Goldenrod UG B2F - Burglar Eddie"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 3",
-                        "name": "Goldenrod UG B2F - Grunt 3"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - East Item",
+                        "name": "Goldenrod UG B2F - East Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Center Hidden Item",
+                        "name": "Goldenrod UG B2F - Center Hidden Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Burglar Duncan",
+                        "name": "Goldenrod UG B2F - Burglar Duncan"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Southwest Item",
+                        "name": "Goldenrod UG B2F - Southwest Item"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 4",
                         "name": "Goldenrod UG B2F - Grunt 4"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Card Key from Director",
-                        "name": "Goldenrod UG Warehouse - Card Key from Director"
-                    },
-                    {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 1",
-                        "name": "Goldenrod UG Warehouse - Grunt 1"
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Northwest Item",
+                        "name": "Goldenrod UG Warehouse - Northwest Item"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 2",
                         "name": "Goldenrod UG Warehouse - Grunt 2"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 3",
-                        "name": "Goldenrod UG Warehouse - Grunt 3"
-                    },
-                    {
                         "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Southeast Item",
                         "name": "Goldenrod UG Warehouse - Southeast Item"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Center Item",
-                        "name": "Goldenrod UG Warehouse - Center Item"
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 3",
+                        "name": "Goldenrod UG Warehouse - Grunt 3"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Northwest Item",
-                        "name": "Goldenrod UG Warehouse - Northwest Item"
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 1",
+                        "name": "Goldenrod UG Warehouse - Grunt 1"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Card Key from Director",
+                        "name": "Goldenrod UG Warehouse - Card Key from Director"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Center Item",
+                        "name": "Goldenrod UG Warehouse - Center Item"
                     }
                 ],
                 "map_locations": [
@@ -2665,32 +2665,28 @@
                         "name": "Radio Tower 1F - Radio Card from Quiz​"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card from Buena",
-                        "name": "Radio Tower 2F - Blue Card from Buena"
-                    },
-                    {
                         "ref": "JohtoKanto/Radio Tower/1F - Grunt",
                         "name": "Radio Tower 1F - Grunt"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card from Buena",
+                        "name": "Radio Tower 2F - Blue Card from Buena"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/2F - Grunt 1",
                         "name": "Radio Tower 2F - Grunt 1"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/2F - Grunt 2",
-                        "name": "Radio Tower 2F - Grunt 2"
-                    },
-                    {
                         "ref": "JohtoKanto/Radio Tower/2F - Grunt 3",
                         "name": "Radio Tower 2F - Grunt 3"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/2F - Grunt 4",
-                        "name": "Radio Tower 2F - Grunt 4"
+                        "ref": "JohtoKanto/Radio Tower/2F - Grunt 2",
+                        "name": "Radio Tower 2F - Grunt 2"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/3F - TM11 from Woman",
-                        "name": "Radio Tower 3F - TM11 from Woman"
+                        "ref": "JohtoKanto/Radio Tower/2F - Grunt 4",
+                        "name": "Radio Tower 2F - Grunt 4"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/3F - Grunt 1",
@@ -2701,24 +2697,24 @@
                         "name": "Radio Tower 3F - Grunt 2"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/3F - Grunt 3",
-                        "name": "Radio Tower 3F - Grunt 3"
-                    },
-                    {
                         "ref": "JohtoKanto/Radio Tower/3F - Scientist Marc",
                         "name": "Radio Tower 3F - Scientist Marc"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/4F - Grunt 1",
-                        "name": "Radio Tower 4F - Grunt 1"
+                        "ref": "JohtoKanto/Radio Tower/3F - TM11 from Woman",
+                        "name": "Radio Tower 3F - TM11 from Woman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/3F - Grunt 3",
+                        "name": "Radio Tower 3F - Grunt 3"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/4F - Scientist Rich",
                         "name": "Radio Tower 4F - Scientist Rich"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/4F - Pink Bow from Mary",
-                        "name": "Radio Tower 4F - Pink Bow from Mary"
+                        "ref": "JohtoKanto/Radio Tower/4F - Grunt 1",
+                        "name": "Radio Tower 4F - Grunt 1"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/4F - Rocket Executive",
@@ -2729,23 +2725,27 @@
                         "name": "Radio Tower 4F - Grunt 2"
                     },
                     {
+                        "ref": "JohtoKanto/Radio Tower/4F - Pink Bow from Mary",
+                        "name": "Radio Tower 4F - Pink Bow from Mary"
+                    },
+                    {
                         "ref": "JohtoKanto/Radio Tower/5F - Basement Key from False Director",
                         "name": "Radio Tower 5F - Basement Key from False Director"
-                    },
-                    {
-                        "ref": "JohtoKanto/Radio Tower/5F - Item",
-                        "name": "Radio Tower 5F - Item"
-                    },
-                    {
-                        "ref": "JohtoKanto/Radio Tower/5F - Clear Bell from Rocket Boss",
-                        "name": "Radio Tower 5F - Clear Bell from Rocket Boss"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive",
                         "name": "Radio Tower 5F - Rocket Executive"
                     },
                     {
+                        "ref": "JohtoKanto/Radio Tower/5F - Clear Bell from Rocket Boss",
+                        "name": "Radio Tower 5F - Clear Bell from Rocket Boss"
+                    },
+                    {
                         "ref": "JohtoKanto/Radio Tower/Clear Radio Tower"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/5F - Item",
+                        "name": "Radio Tower 5F - Item"
                     }
                 ],
                 "map_locations": [
@@ -4003,11 +4003,11 @@
                     {
                         "ref": "JohtoKanto/Mahogany Town/​Gym - Glacier Badge from Pryce",
                         "name": "Mahogany Gym - Glacier Badge from Pryce​"
-                    }
+                    },
                     {
                         "ref": "JohtoKanto/Mahogany Town/Gym - TM16 from Pryce",
                         "name": "Mahogany Gym - TM16 from Pryce"
-                    },
+                    }
                 ],
                 "map_locations": [
                     {
@@ -4021,11 +4021,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mahogany Town/Clear Rocket HQ"
-                    },
-                    {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Item besides Computer",
-                        "name": "Rocket HQ B1F - Item besides Computer"
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Grunt",
+                        "name": "Rocket HQ B1F - Grunt"
                     },
                     {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - West Hidden Item",
@@ -4036,20 +4033,32 @@
                         "name": "Rocket HQ B1F - East Item"
                     },
                     {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - South Item",
-                        "name": "Rocket HQ B1F - South Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Scientist Jed",
                         "name": "Rocket HQ B1F - Scientist Jed"
                     },
                     {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Grunt",
-                        "name": "Rocket HQ B1F - Grunt"
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Item besides Computer",
+                        "name": "Rocket HQ B1F - Item besides Computer"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - South Item",
+                        "name": "Rocket HQ B1F - South Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Grunt 3",
+                        "name": "Rocket HQ B2F - Grunt 3"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Grunt 1",
+                        "name": "Rocket HQ B2F - Grunt 1"
                     },
                     {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Hidden Item",
                         "name": "Rocket HQ B2F - Hidden Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Grunt 2",
+                        "name": "Rocket HQ B2F - Grunt 2"
                     },
                     {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Item",
@@ -4060,24 +4069,32 @@
                         "name": "Rocket HQ B2F - HM06 from Lance"
                     },
                     {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Grunt 1",
-                        "name": "Rocket HQ B2F - Grunt 1"
-                    },
-                    {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Grunt 2",
-                        "name": "Rocket HQ B2F - Grunt 2"
-                    },
-                    {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Grunt 3",
-                        "name": "Rocket HQ B2F - Grunt 3"
-                    },
-                    {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - East Item",
                         "name": "Rocket HQ B3F - East Item"
                     },
                     {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Scientist Ross",
+                        "name": "Rocket HQ B3F - Scientist Ross"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Grunt 1",
+                        "name": "Rocket HQ B3F - Grunt 1"
+                    },
+                    {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - North Item",
                         "name": "Rocket HQ B3F - North Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Scientist Mitch",
+                        "name": "Rocket HQ B3F - Scientist Mitch"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Grunt 2",
+                        "name": "Rocket HQ B3F - Grunt 2"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - West Item (Right)",
+                        "name": "Rocket HQ B3F - West Item (Right)"
                     },
                     {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - West Item (Left)",
@@ -4088,24 +4105,7 @@
                         "name": "Rocket HQ B3F - Center Item"
                     },
                     {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - West Item (Right)",
-                        "name": "Rocket HQ B3F - West Item (Right)"
-                    },
-                    {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Grunt 1",
-                        "name": "Rocket HQ B3F - Grunt 1"
-                    },
-                    {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Grunt 2",
-                        "name": "Rocket HQ B3F - Grunt 2"
-                    },
-                    {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Scientist Ross",
-                        "name": "Rocket HQ B3F - Scientist Ross"
-                    },
-                    {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Scientist Mitch",
-                        "name": "Rocket HQ B3F - Scientist Mitch"
+                        "ref": "JohtoKanto/Mahogany Town/Clear Rocket HQ"
                     }
                 ],
                 "map_locations": [
@@ -4979,9 +4979,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Olivine Lighthouse/Heal Amphy"
-                    },
-                    {
                         "ref": "JohtoKanto/Olivine Lighthouse/2F - Gentleman Alfred",
                         "name": "Olivine Lighthouse 2F - Gentleman Alfred"
                     },
@@ -4990,16 +4987,16 @@
                         "name": "Olivine Lighthouse 2F - Sailor Huey"
                     },
                     {
-                        "ref": "JohtoKanto/Olivine Lighthouse/3F - Item",
-                        "name": "Olivine Lighthouse 3F - Item"
+                        "ref": "JohtoKanto/Olivine Lighthouse/3F - Gentleman Preston",
+                        "name": "Olivine Lighthouse 3F - Gentleman Preston"
                     },
                     {
                         "ref": "JohtoKanto/Olivine Lighthouse/3F - Bird Keeper Theo",
                         "name": "Olivine Lighthouse 3F - Bird Keeper Theo"
                     },
                     {
-                        "ref": "JohtoKanto/Olivine Lighthouse/3F - Gentleman Preston",
-                        "name": "Olivine Lighthouse 3F - Gentleman Preston"
+                        "ref": "JohtoKanto/Olivine Lighthouse/3F - Item",
+                        "name": "Olivine Lighthouse 3F - Item"
                     },
                     {
                         "ref": "JohtoKanto/Olivine Lighthouse/3F - Sailor Terrell",
@@ -5014,14 +5011,6 @@
                         "name": "Olivine Lighthouse 4F - Sailor Kent"
                     },
                     {
-                        "ref": "JohtoKanto/Olivine Lighthouse/5F - East Item",
-                        "name": "Olivine Lighthouse 5F - East Item"
-                    },
-                    {
-                        "ref": "JohtoKanto/Olivine Lighthouse/5F - Center Item",
-                        "name": "Olivine Lighthouse 5F - Center Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Olivine Lighthouse/5F - Southeast Item",
                         "name": "Olivine Lighthouse 5F - Southeast Item"
                     },
@@ -5034,12 +5023,23 @@
                         "name": "Olivine Lighthouse 5F - Bird Keeper Denis"
                     },
                     {
+                        "ref": "JohtoKanto/Olivine Lighthouse/5F - East Item",
+                        "name": "Olivine Lighthouse 5F - East Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/5F - Center Item",
+                        "name": "Olivine Lighthouse 5F - Center Item"
+                    },
+                    {
                         "ref": "JohtoKanto/Olivine Lighthouse/5F - Sailor Ernest",
                         "name": "Olivine Lighthouse 5F - Sailor Ernest"
                     },
                     {
                         "ref": "JohtoKanto/Olivine Lighthouse/6F - Item",
                         "name": "Olivine Lighthouse 6F - Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/Heal Amphy"
                     }
                 ],
                 "map_locations": [
@@ -8075,8 +8075,20 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Union Cave/1F - South Item",
-                        "name": "Union Cave 1F - South Item"
+                        "ref": "JohtoKanto/Union Cave/1F - North Item",
+                        "name": "Union Cave 1F - North Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Hiker Daniel",
+                        "name": "Union Cave 1F - Hiker Daniel"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Hiker Russell",
+                        "name": "Union Cave 1F - Hiker Russell"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Firebreather Bill",
+                        "name": "Union Cave 1F - Firebreather Bill"
                     },
                     {
                         "ref": "JohtoKanto/Union Cave/1F - East Item",
@@ -8087,28 +8099,8 @@
                         "name": "Union Cave 1F - West Item"
                     },
                     {
-                        "ref": "JohtoKanto/Union Cave/1F - North Item",
-                        "name": "Union Cave 1F - North Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Union Cave/1F - Pokemaniac Larry",
                         "name": "Union Cave 1F - Pokemaniac Larry"
-                    },
-                    {
-                        "ref": "JohtoKanto/Union Cave/1F - Hiker Russell",
-                        "name": "Union Cave 1F - Hiker Russell"
-                    },
-                    {
-                        "ref": "JohtoKanto/Union Cave/1F - Hiker Daniel",
-                        "name": "Union Cave 1F - Hiker Daniel"
-                    },
-                    {
-                        "ref": "JohtoKanto/Union Cave/1F - Firebreather Bill",
-                        "name": "Union Cave 1F - Firebreather Bill"
-                    },
-                    {
-                        "ref": "JohtoKanto/Union Cave/1F - Firebreather Ray",
-                        "name": "Union Cave 1F - Firebreather Ray"
                     },
                     {
                         "ref": "JohtoKanto/Union Cave/B1F - West Item",
@@ -8119,12 +8111,12 @@
                         "name": "Union Cave B1F - East Item"
                     },
                     {
-                        "ref": "JohtoKanto/Union Cave/B1F - Hiker Phillip",
-                        "name": "Union Cave B1F - Hiker Phillip"
-                    },
-                    {
                         "ref": "JohtoKanto/Union Cave/B1F - Hiker Leonard",
                         "name": "Union Cave B1F - Hiker Leonard"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B1F - Hiker Phillip",
+                        "name": "Union Cave B1F - Hiker Phillip"
                     },
                     {
                         "ref": "JohtoKanto/Union Cave/B1F - Pokemaniac Andrew",
@@ -8139,12 +8131,12 @@
                         "name": "Union Cave B2F - North Item"
                     },
                     {
-                        "ref": "JohtoKanto/Union Cave/B2F - Center Item",
-                        "name": "Union Cave B2F - Center Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Union Cave/B2F - Cool Trainer Nick",
                         "name": "Union Cave B2F - Cool Trainer Nick"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Center Item",
+                        "name": "Union Cave B2F - Center Item"
                     },
                     {
                         "ref": "JohtoKanto/Union Cave/B2F - Cool Trainer Gwen",
@@ -8153,6 +8145,14 @@
                     {
                         "ref": "JohtoKanto/Union Cave/B2F - Cool Trainer Emma",
                         "name": "Union Cave B2F - Cool Trainer Emma"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Firebreather Ray",
+                        "name": "Union Cave 1F - Firebreather Ray"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - South Item",
+                        "name": "Union Cave 1F - South Item"
                     }
                 ],
                 "map_locations": [
@@ -8197,8 +8197,20 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Union Cave/1F - South Item",
-                        "name": "Union Cave 1F - South Item"
+                        "ref": "JohtoKanto/Union Cave/1F - North Item",
+                        "name": "Union Cave 1F - North Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Hiker Daniel",
+                        "name": "Union Cave 1F - Hiker Daniel"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Hiker Russell",
+                        "name": "Union Cave 1F - Hiker Russell"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Firebreather Bill",
+                        "name": "Union Cave 1F - Firebreather Bill"
                     },
                     {
                         "ref": "JohtoKanto/Union Cave/1F - East Item",
@@ -8209,28 +8221,8 @@
                         "name": "Union Cave 1F - West Item"
                     },
                     {
-                        "ref": "JohtoKanto/Union Cave/1F - North Item",
-                        "name": "Union Cave 1F - North Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Union Cave/1F - Pokemaniac Larry",
                         "name": "Union Cave 1F - Pokemaniac Larry"
-                    },
-                    {
-                        "ref": "JohtoKanto/Union Cave/1F - Hiker Russell",
-                        "name": "Union Cave 1F - Hiker Russell"
-                    },
-                    {
-                        "ref": "JohtoKanto/Union Cave/1F - Hiker Daniel",
-                        "name": "Union Cave 1F - Hiker Daniel"
-                    },
-                    {
-                        "ref": "JohtoKanto/Union Cave/1F - Firebreather Bill",
-                        "name": "Union Cave 1F - Firebreather Bill"
-                    },
-                    {
-                        "ref": "JohtoKanto/Union Cave/1F - Firebreather Ray",
-                        "name": "Union Cave 1F - Firebreather Ray"
                     },
                     {
                         "ref": "JohtoKanto/Union Cave/B1F - West Item",
@@ -8241,12 +8233,12 @@
                         "name": "Union Cave B1F - East Item"
                     },
                     {
-                        "ref": "JohtoKanto/Union Cave/B1F - Hiker Phillip",
-                        "name": "Union Cave B1F - Hiker Phillip"
-                    },
-                    {
                         "ref": "JohtoKanto/Union Cave/B1F - Hiker Leonard",
                         "name": "Union Cave B1F - Hiker Leonard"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B1F - Hiker Phillip",
+                        "name": "Union Cave B1F - Hiker Phillip"
                     },
                     {
                         "ref": "JohtoKanto/Union Cave/B1F - Pokemaniac Andrew",
@@ -8261,12 +8253,12 @@
                         "name": "Union Cave B2F - North Item"
                     },
                     {
-                        "ref": "JohtoKanto/Union Cave/B2F - Center Item",
-                        "name": "Union Cave B2F - Center Item"
-                    },
-                    {
                         "ref": "JohtoKanto/Union Cave/B2F - Cool Trainer Nick",
                         "name": "Union Cave B2F - Cool Trainer Nick"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Center Item",
+                        "name": "Union Cave B2F - Center Item"
                     },
                     {
                         "ref": "JohtoKanto/Union Cave/B2F - Cool Trainer Gwen",
@@ -8275,6 +8267,14 @@
                     {
                         "ref": "JohtoKanto/Union Cave/B2F - Cool Trainer Emma",
                         "name": "Union Cave B2F - Cool Trainer Emma"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Firebreather Ray",
+                        "name": "Union Cave 1F - Firebreather Ray"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - South Item",
+                        "name": "Union Cave 1F - South Item"
                     }
                 ],
                 "map_locations": [
