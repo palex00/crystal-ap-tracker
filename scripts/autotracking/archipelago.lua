@@ -25,6 +25,7 @@ function onClear(slot_data)
     CUR_INDEX = -1
     resetLocations()
     resetItems()
+    resetSettings()
 
     if slot_data == nil then
         print("its fucked")
@@ -34,13 +35,13 @@ function onClear(slot_data)
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
 
-    --print(dump_table(slot_data))
+    print(dump_table(slot_data))
 
     for k, v in pairs(slot_data) do
         if  k == "apworld_version" then
             local version_str = tostring(v)
             local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-            if first_two_dots == "3.2" or nil then
+            if first_two_dots == "4.0" or nil then
                 Tracker:AddLayouts("layouts/tracker.json")
             else
                 Tracker:AddLayouts("layouts/versionmismatch.json")
@@ -49,18 +50,22 @@ function onClear(slot_data)
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
             -- print("Setting " .. k .. " to " .. v)
         elseif REQUIREMENT_CODES[k] then
-			local item = SLOT_CODES[k].item
-			item:setType(SLOT_CODES[k].mapping[v])
+			local item = REQUIREMENT_CODES[k].item
+			item:setType(REQUIREMENT_CODES[k].mapping[v])
 		elseif AMOUNT_CODES[k] then
-			local item = SLOT_CODES[k].item
+			local item = AMOUNT_CODES[k].item
 			item:setStage(v)
-        elseif k == "hiddenitems" then
+        elseif TABLE_CODES[k] then
+            for i in pairs(v) do
+                Tracker:FindObjectForCode(TABLE_CODES[k].mapping[i]).CurrentStage = 1
+            end
+        elseif k == "randomize_hidden_items" then
         -- hiddenitems are handled specially because this sets it to Active / Inactive
         -- because I merged hiddenitems and itemfinder logic into one item
             if v == 0 then
-                Tracker:FindObjectForCode(k).Active = false
+                Tracker:FindObjectForCode("hiddenitems").Active = false
             elseif v == 1 then
-                Tracker:FindObjectForCode(k).Active = true
+                Tracker:FindObjectForCode("hiddenitems").Active = true
             end
         else
             print(string.format("No setting could be found for key: %s", k))

@@ -1191,5 +1191,185 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Evolution Method: Happiness",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Evolution Method: Happiness NOT in logic",
+        "img": "/images/other/outoflogic.png",
+        "codes": "evomethod_happiness, evomethod_happiness_off",
+        "inherit_codes": false
+      },
+      {
+        "name": "Evolution Method: Happiness in logic",
+        "img": "/images/other/logic.png",
+        "codes": "evomethod_happiness, evomethod_happiness_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Evolution Method: Level",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Evolution Method: Leveling NOT in logic",
+        "img": "/images/other/outoflogic.png",
+        "codes": "evomethod_level, evomethod_level_off",
+        "inherit_codes": false
+      },
+      {
+        "name": "Evolution Method: Leveling in logic",
+        "img": "/images/other/logic.png",
+        "codes": "evomethod_level, evomethod_level_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Evolution Method: Tyrogue",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Evolution Method: Tyrogue NOT in logic",
+        "img": "/images/other/outoflogic.png",
+        "codes": "evomethod_tyrogue, evomethod_tyrogue_off",
+        "inherit_codes": false
+      },
+      {
+        "name": "Evolution Method: Tyrogue in logic",
+        "img": "/images/other/logic.png",
+        "codes": "evomethod_tyrogue, evomethod_tyrogue_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Evolution Method: Items",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Evolution Method: Items NOT in logic",
+        "img": "/images/other/outoflogic.png",
+        "codes": "evomethod_useitem, evomethod_useitem_off",
+        "inherit_codes": false
+      },
+      {
+        "name": "Evolution Method: Tyrogue Evolution in logic",
+        "img": "/images/other/logic.png",
+        "codes": "evomethod_useitem, evomethod_useitem_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Encounter Method: Fishing",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Encounter Method: Fishing Encounters NOT in logic",
+        "img": "/images/other/outoflogic.png",
+        "codes": "encmethod_fishing, encmethod_fishing_off",
+        "inherit_codes": false
+      },
+      {
+        "name": "Encounter Method: Fishing Encounters in logic",
+        "img": "/images/other/logic.png",
+        "codes": "encmethod_fishing, encmethod_fishing_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Encounter Method: Headbutt",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Encounter Method: Headbutt Encounters NOT in logic",
+        "img": "/images/other/outoflogic.png",
+        "codes": "encmethod_headbutt, encmethod_headbutt_off",
+        "inherit_codes": false
+      },
+      {
+        "name": "Encounter Method: Headbutt Encounters in logic",
+        "img": "/images/other/logic.png",
+        "codes": "encmethod_headbutt, encmethod_headbutt_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Encounter Method: Land",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Encounter Method: Land Encounters NOT in logic",
+        "img": "/images/other/outoflogic.png",
+        "codes": "encmethod_land, encmethod_land_off",
+        "inherit_codes": false
+      },
+      {
+        "name": "Encounter Method: Land Encounters in logic",
+        "img": "/images/other/logic.png",
+        "codes": "encmethod_land, encmethod_land_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Encounter Method: Rock Smash",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Encounter Method: Rock Smash Encounters NOT in logic",
+        "img": "/images/other/outoflogic.png",
+        "codes": "encmethod_rocksmash, encmethod_rocksmash_off",
+        "inherit_codes": false
+      },
+      {
+        "name": "Encounter Method: Rock Smash Encounters in logic",
+        "img": "/images/other/logic.png",
+        "codes": "encmethod_rocksmash, encmethod_rocksmash_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Encounter Method: Surfing",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Encounter Method: Surfing Encounters NOT in logic",
+        "img": "/images/other/outoflogic.png",
+        "codes": "encmethod_water, encmethod_water_off",
+        "inherit_codes": false
+      },
+      {
+        "name": "Encounter Method: Surfing Encounters in logic",
+        "img": "/images/other/logic.png",
+        "codes": "encmethod_water, encmethod_water_on",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

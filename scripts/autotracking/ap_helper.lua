@@ -25,6 +25,25 @@ function resetLocations()
     end
 end
 
+function resetSettings()
+    for _, v in pairs(MAP_EVO_METHODS) do
+        if v then
+            local obj = Tracker:FindObjectForCode(v)
+            if obj.CurrentStage ~= 0 then
+                obj.CurrentStage = 0
+            end
+        end
+    end
+    for _, v in pairs(MAP_ENC_METHODS) do
+        if v then
+            local obj = Tracker:FindObjectForCode(v)
+            if obj.CurrentStage ~= 0 then
+                obj.CurrentStage = 0
+            end
+        end
+    end
+end
+
 MAP_TOGGLE = {
     [0] = 0,
     [1] = 1
@@ -54,6 +73,12 @@ MAP_TOGGLE_REVERSE = {
 MAP_BADGEGYM = {
     [0] = "badges",
     [1] = "gyms"
+}
+MAP_KANTO_ACCESS = {
+    [0] = "snorlax",
+    [1] = "badges",
+    [2] = "gyms",
+    [3] = "champion"
 }
 
 PALLET = 2
@@ -297,8 +322,12 @@ REQUIREMENT_CODES = {
         code = "route_44_requirement",
         mapping = MAP_BADGEGYM,
         item = R44_REQ
+    },
+    kanto_access_requirement = {
+        code = "kanto_access_condition",
+        mapping = MAP_KANTO_ACCESS,
+        item = KANTO_REQ
     }
-
 }
 AMOUNT_CODES = {
     elite_four_count = {
@@ -320,15 +349,32 @@ AMOUNT_CODES = {
     route_44_access_count = {
         code = "route_44_requirement",
         item = R44_REQ
+    },
+    route_44_access_count = {
+        code = "kanto_access_count",
+        item = KANTO_REQ
     }
 }
 
--- Todo: Handle these specially
---,
---    kanto_access_badges = {
---        code = "kanto_access_requirement",
---        mapping = MAP_BADGEGYM
---    },
---    kanto_access_badges = {
---        code = "kanto_access_requirement"
---    }
+MAP_EVO_METHODS = {
+    [1] = "evomethod_happiness",
+    [2] = "evomethod_level",
+    [3] = "evomethod_tyrogue",
+    [4] = "evomethod_useitem"
+}
+MAP_ENC_METHODS = {
+    [1] = "encmethod_fishing",
+    [2] = "encmethod_headbutt",
+    [3] = "encmethod_land",
+    [4] = "encmethod_rocksmash",
+    [5] = "encmethod_water",
+}
+
+TABLE_CODES = {
+    evolution_methods_required = {
+        mapping = MAP_EVO_METHODS
+    },
+    wild_encounter_methods_required = {
+        mapping = MAP_ENC_METHODS
+    }
+}
