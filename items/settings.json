@@ -1,1375 +1,1777 @@
 [
-  {
-    "name": "Goal",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Goal - Defeat Elite Four",
-        "img": "/images/events/become_champion.png",
-        "codes": "goal,goal_e4",
-        "inherit_codes": false
-      },
-      {
-        "name": "Goal - Defeat Red",
-        "img": "/images/events/defeat_red.png",
-        "codes": "goal,goal_red",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Johto Only",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Johto Only - Off",
-        "img": "/images/settings/johto_off.png",
-        "img_mods": "@disabled",
-        "codes": "johto_only,johto_only_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Johto Only - On",
-        "img": "/images/settings/johto_off.png",
-        "codes": "johto_only,johto_only_on",
-        "inherit_codes": false
-      },
-      {
-        "name": "Johto Only - Include Silver Cave",
-        "img": "/images/settings/johto_silver.png",
-        "codes": "johto_only,johto_only_silver",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Randomize Badges",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "initial_stage_idx": 2,
-    "stages": [
-      {
-        "name": "Randomize Badges - Off",
-        "img": "/images/settings/badges_off.png",
-        "codes": "badges,badges_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Randomize Badges - Shuffle",
-        "img": "/images/settings/badges_shuffle.png",
-        "codes": "badges,badges_shuffle",
-        "inherit_codes": false
-      },
-      {
-        "name": "Randomize Badges - On",
-        "img": "/images/settings/badges_on.png",
-        "codes": "badges,badges_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "HM Badge Requirements",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "HM Badge Requirements - Vanilla",
-        "img": "/images/settings/badges_vanilla.png",
-        "codes": "badgereqs,badgereqs_vanilla",
-        "inherit_codes": false
-      },
-      {
-        "name": "HM Badge Requirements - No Badges",
-        "img": "/images/settings/badges_free.png",
-        "codes": "badgereqs,badgereqs_none",
-        "inherit_codes": false
-      },
-      {
-        "name": "HM Badge Requirements - Add Kanto",
-        "img": "/images/settings/badges_kanto.png",
-        "codes": "badgereqs,badgereqs_kanto",
-        "inherit_codes": false
-      },
-      {
-        "name": "HM Badge Requirements - Regional",
-        "img": "/images/settings/badges_regional.png",
-        "codes": "badgereqs,badgereqs_regional",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Randomize Pokegear",
-    "type": "progressive",
-    "loop": true,
-    "initial_stage_idx": 1,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Randomize Pokegear - Off",
-        "img": "/images/settings/pokegear.png",
-        "img_mods": "@disabled",
-        "codes": "pokegear,pokegear_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Randomize Pokegear - On",
-        "img": "/images/settings/pokegear.png",
-        "codes": "pokegear,pokegear_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Randomize Berry Trees",
-    "type": "progressive",
-    "initial_stage_idx": 1,
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Randomize Berry Trees - Off",
-        "img": "/images/settings/berries.png",
-        "img_mods": "@disabled",
-        "codes": "berries,berries_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Randomize Berry Trees - On",
-        "img": "/images/settings/berries.png",
-        "codes": "berries,berries_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Randomize Hidden Items",
-    "type": "progressive_toggle",
-    "initial_stage_idx": 1,
-    "initial_active_state": true,
-    "codes": "hiddenitems, reqitemfinder",
-    "loop": true,
-    "stages": [
-      {
-        "name": "Hidden Items - Randomized | Itemfinder not required",
-        "img": "/images/settings/hiddenitems.png",
-        "img_mods": "overlay|images/settings/itemfinder_not_required.png",
-        "codes": "hiddenitems_on, reqitemfinder_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Hidden Items - Randomized | Itemfinder is logical",
-        "img": "/images/settings/hiddenitems.png",
-        "img_mods": "overlay|images/settings/itemfinder_logic.png",
-        "codes": "hiddenitems_on, reqitemfinder_logic",
-        "inherit_codes": false
-      },
-      {
-        "name": "Hidden Items - Randomized | Itemfinder is required",
-        "img": "/images/settings/hiddenitems.png",
-        "img_mods": "overlay|images/settings/itemfinder_required.png",
-        "codes": "hiddenitems_on, reqitemfinder_required",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Trainersanity",
-    "type": "progressive",
-    "initial_stage_idx": 1,
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Trainersanity - Off",
-        "img": "/images/settings/trainersanity.png",
-        "img_mods": "@disabled",
-        "codes": "trainersanity,trainersanity_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Trainersanity - On",
-        "img": "/images/settings/trainersanity.png",
-        "codes": "trainersanity,trainersanity_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Free Fly Location",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Free Fly Location - New Bark Town",
-        "img": "/images/settings/town_locations/new_bark.png",
-        "codes": "free_fly_location,free_fly_NewBark",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Cherrygrove City",
-        "img": "/images/settings/town_locations/cherrygrove.png",
-        "codes": "free_fly_location,free_fly_Cherrygrove",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Violet City",
-        "img": "/images/settings/town_locations/violet.png",
-        "codes": "free_fly_location,free_fly_Violet",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Azalea Town",
-        "img": "/images/settings/town_locations/azalea.png",
-        "codes": "free_fly_location,free_fly_Azalea",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Goldenrod City",
-        "img": "/images/settings/town_locations/goldenrod.png",
-        "codes": "free_fly_location,free_fly_Goldenrod",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Ecruteak City",
-        "img": "/images/settings/town_locations/ecruteak.png",
-        "codes": "free_fly_location,free_fly_Ecruteak",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Olivine City",
-        "img": "/images/settings/town_locations/olivine.png",
-        "codes": "free_fly_location,free_fly_Olivine",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Cianwood City",
-        "img": "/images/settings/town_locations/cianwood.png",
-        "codes": "free_fly_location,free_fly_Cianwood",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Mahogany Town",
-        "img": "/images/settings/town_locations/mahogany.png",
-        "codes": "free_fly_location,free_fly_Mahogany",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Lake of Rage",
-        "img": "/images/settings/town_locations/lakeofrage.png",
-        "codes": "free_fly_location,free_fly_LakeOfRage",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Blackthorn City",
-        "img": "/images/settings/town_locations/blackthorn.png",
-        "codes": "free_fly_location,free_fly_Blackthorn",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Pallet Town",
-        "img": "/images/settings/town_locations/pallet.png",
-        "codes": "free_fly_location,free_fly_Pallet",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Viridian City",
-        "img": "/images/settings/town_locations/viridian.png",
-        "codes": "free_fly_location,free_fly_Viridian",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Pewter City",
-        "img": "/images/settings/town_locations/pewter.png",
-        "codes": "free_fly_location,free_fly_Pewter",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Cerulean City",
-        "img": "/images/settings/town_locations/cerulean.png",
-        "codes": "free_fly_location,free_fly_Cerulean",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Vermilion City",
-        "img": "/images/settings/town_locations/vermilion.png",
-        "codes": "free_fly_location,free_fly_Vermilion",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Lavender Town",
-        "img": "/images/settings/town_locations/lavender.png",
-        "codes": "free_fly_location,free_fly_Lavender",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Celadon City",
-        "img": "/images/settings/town_locations/celadon.png",
-        "codes": "free_fly_location,free_fly_Celadon",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Saffron City",
-        "img": "/images/settings/town_locations/saffron.png",
-        "codes": "free_fly_location,free_fly_Saffron",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Cinnabar Island",
-        "img": "/images/settings/town_locations/cinnabar.png",
-        "codes": "free_fly_location,free_fly_Cinnabar",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Fuchsia City",
-        "img": "/images/settings/town_locations/fuchsia.png",
-        "codes": "free_fly_location,free_fly_Fuchsia",
-        "inherit_codes": false
-      },
-      {
-        "name": "Free Fly Location - Silver Cave",
-        "img": "/images/settings/town_locations/silvercave.png",
-        "codes": "free_fly_location,free_fly_SilverCave",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "img": "/images/settings/town_locations/freefly_template.png",
-    "codes": "free_fly_dummy",
-    "type": "static"
-  },
-  {
-    "name": "Map Card Fly Location",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Map Card Fly Location - New Bark Town",
-        "img": "/images/settings/town_locations/new_bark.png",
-        "codes": "map_card_fly,map_card_fly_NewBark",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Cherrygrove City",
-        "img": "/images/settings/town_locations/cherrygrove.png",
-        "codes": "map_card_fly,map_card_fly_Cherrygrove",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Violet City",
-        "img": "/images/settings/town_locations/violet.png",
-        "codes": "map_card_fly,map_card_fly_Violet",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Azalea Town",
-        "img": "/images/settings/town_locations/azalea.png",
-        "codes": "map_card_fly,map_card_fly_Azalea",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Goldenrod City",
-        "img": "/images/settings/town_locations/goldenrod.png",
-        "codes": "map_card_fly,map_card_fly_Goldenrod",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Ecruteak City",
-        "img": "/images/settings/town_locations/ecruteak.png",
-        "codes": "map_card_fly,map_card_fly_Ecruteak",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Olivine City",
-        "img": "/images/settings/town_locations/olivine.png",
-        "codes": "map_card_fly,map_card_fly_Olivine",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Cianwood City",
-        "img": "/images/settings/town_locations/cianwood.png",
-        "codes": "map_card_fly,map_card_fly_Cianwood",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Mahogany Town",
-        "img": "/images/settings/town_locations/mahogany.png",
-        "codes": "map_card_fly,map_card_fly_Mahogany",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Lake of Rage",
-        "img": "/images/settings/town_locations/lakeofrage.png",
-        "codes": "map_card_fly,map_card_fly_LakeOfRage",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Blackthorn City",
-        "img": "/images/settings/town_locations/blackthorn.png",
-        "codes": "map_card_fly,map_card_fly_Blackthorn",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Pallet Town",
-        "img": "/images/settings/town_locations/pallet.png",
-        "codes": "map_card_fly,map_card_fly_Pallet",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Viridian City",
-        "img": "/images/settings/town_locations/viridian.png",
-        "codes": "map_card_fly,map_card_fly_Viridian",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Pewter City",
-        "img": "/images/settings/town_locations/pewter.png",
-        "codes": "map_card_fly,map_card_fly_Pewter",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Cerulean City",
-        "img": "/images/settings/town_locations/cerulean.png",
-        "codes": "map_card_fly,map_card_fly_Cerulean",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Vermilion City",
-        "img": "/images/settings/town_locations/vermilion.png",
-        "codes": "map_card_fly,map_card_fly_Vermilion",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Lavender Town",
-        "img": "/images/settings/town_locations/lavender.png",
-        "codes": "map_card_fly,map_card_fly_Lavender",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Celadon City",
-        "img": "/images/settings/town_locations/celadon.png",
-        "codes": "map_card_fly,map_card_fly_Celadon",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Saffron City",
-        "img": "/images/settings/town_locations/saffron.png",
-        "codes": "map_card_fly,map_card_fly_Saffron",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Cinnabar Island",
-        "img": "/images/settings/town_locations/cinnabar.png",
-        "codes": "map_card_fly,map_card_fly_Cinnabar",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Fuchsia City",
-        "img": "/images/settings/town_locations/fuchsia.png",
-        "codes": "map_card_fly,map_card_fly_Fuchsia",
-        "inherit_codes": false
-      },
-      {
-        "name": "Map Card Fly Location - Silver Cave",
-        "img": "/images/settings/town_locations/silvercave.png",
-        "codes": "map_card_fly,map_card_fly_SilverCave",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "img": "/images/settings/town_locations/mapfly_template.png",
-    "codes": "map_card_fly_dummy",
-    "type": "static"
-  },
-  {
-    "name": "Auto-Track Map",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Auto-Track Map - On",
-        "img": "/images/settings/automap.png",
-        "codes": "automap,automap_on",
-        "inherit_codes": false
-      },
-      {
-        "name": "Auto-Track Map - Off",
-        "img": "/images/settings/automap.png",
-        "img_mods": "@disabled",
-        "codes": "automap,automap_off",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Ilex Cut Tree",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Ilex Forest has a Cut Tree",
-        "img": "/images/settings/ilextree.png",
-        "codes": "ilextree, ilextree_on",
-        "inherit_codes": false
-      },
-      {
-        "name": "Ilex Forest has no Cut Tree",
-        "img": "/images/settings/ilextree.png",
-        "img_mods": "@disabled",
-        "codes": "ilextree, ilextree_off",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Radio Tower Badges",
-    "img": "/images/events/tower_cleared.png",
-    "codes": "tower_badges",
-    "type": "consumable",
-    "min_quantity": 1,
-    "max_quantity": 16,
-    "initial_quantity": 7
-  },
-  {
-    "name": "Route 32 Guy Condition",
-    "type": "progressive",
-    "allow_disabled": false,
-    "initial_stage_idx": 0,
-    "loop": true,
-    "stages": [
-      {
-        "img": "/images/settings/r32_guy.png",
-        "img_mods": "overlay|/images/settings/egg_overlay.png",
-        "codes": "r32_guy, r32_guy_egg",
-        "inherit_codes": false,
-        "name": "Route 32 Guy needs Egg"
-      },
-      {
-        "img": "/images/settings/r32_guy.png",
-        "img_mods": "overlay|/images/settings/badge_overlay.png",
-        "codes": "r32_guy, r32_guy_badge",
-        "inherit_codes": false,
-        "name": "Route 32 Guy needs any badge"
-      },
-      {
-        "img": "/images/settings/r32_guy.png",
-        "img_mods": "overlay|/images/settings/gym_overlay.png",
-        "codes": "r32_guy, r32_guy_gym",
-        "inherit_codes": false,
-        "name": "Route 32 Guy needs any Gym beaten"
-      },
-      {
-        "img": "/images/settings/r32_guy.png",
-        "img_mods": "overlay|/images/settings/zephyr_overlay.png",
-        "codes": "r32_guy, r32_guy_zephyr",
-        "inherit_codes": false,
-        "name": "Route 32 Guy needs Zephyr Badge"
-      },
-      {
-        "img": "/images/settings/r32_guy.png",
-        "img_mods": "@disabled",
-        "codes": "r32_guy, r32_guy_open",
-        "inherit_codes": false,
-        "name": "Route 32 Guy will not block you"
-      }
-    ]
-  },
-  {
-    "name": "Tea - North",
-    "type": "progressive",
-    "stages": [
-      {},
-      {
-        "codes": "tea_north"
-      }
-    ]
-  },
-  {
-    "name": "Tea - East",
-    "type": "progressive",
-    "stages": [
-      {},
-      {
-        "codes": "tea_east"
-      }
-    ]
-  },
-  {
-    "name": "Tea - South",
-    "type": "progressive",
-    "stages": [
-      {},
-      {
-        "codes": "tea_south"
-      }
-    ]
-  },
-  {
-    "name": "Tea - West",
-    "type": "progressive",
-    "stages": [
-      {},
-      {
-        "codes": "tea_west"
-      }
-    ]
-  },
-  {
-    "name": "Tea",
-    "type": "progressive",
-    "allow_disabled": false,
-    "codes": "tea_guard",
-    "initial_stage_idx": 0,
-    "loop": true,
-    "stages": [
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "",
-        "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_true.png",
-        "inherit_codes": false,
-        "name": "Tea required for None"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_west",
-        "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_false.png",
-        "inherit_codes": false,
-        "name": "Tea required for West"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_south",
-        "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_true.png",
-        "inherit_codes": false,
-        "name": "Tea required for South"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_south, coffee_west",
-        "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_false.png",
-        "inherit_codes": false,
-        "name": "Tea required for South West"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_east",
-        "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_true.png",
-        "inherit_codes": false,
-        "name": "Tea required for East"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_east, coffee_west",
-        "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_false.png",
-        "inherit_codes": false,
-        "name": "Tea required for East West"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": " coffee_east, coffee_south",
-        "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_true.png",
-        "inherit_codes": false,
-        "name": "Tea required for East South"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_east, coffee_south, coffee_west",
-        "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_false.png",
-        "inherit_codes": false,
-        "name": "Tea required for East South West"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_north",
-        "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_true.png",
-        "inherit_codes": false,
-        "name": "Tea required for North"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_north, coffee_west",
-        "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_false.png",
-        "inherit_codes": false,
-        "name": "Tea required for North West"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_north, coffee_south",
-        "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_true.png",
-        "inherit_codes": false,
-        "name": "Tea required for North South"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_north, coffee_south, coffee_west",
-        "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_false.png",
-        "inherit_codes": false,
-        "name": "Tea required for North South West"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_north, coffee_east",
-        "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_true.png",
-        "inherit_codes": false,
-        "name": "Tea required for North East"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_north, coffee_east, coffee_west",
-        "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_false.png",
-        "inherit_codes": false,
-        "name": "Tea required for North East West"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_north, coffee_east, coffee_south",
-        "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_true.png",
-        "inherit_codes": false,
-        "name": "Tea required for North East South"
-      },
-      {
-        "img": "/images/settings/tea/tea_guard.png",
-        "codes": "coffee_north, coffee_east, coffee_south, coffee_west",
-        "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_false.png",
-        "inherit_codes": false,
-        "name": "Tea required for all directions"
-      }
-    ]
-  },
-  {
-    "name": "East-West Underground",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "East-West Underground Disabled",
-        "img": "/images/settings/underground.png",
-        "img_mods": "@disabled",
-        "codes": "ew_underground, ew_underground_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "East-West Underground Enabled",
-        "img": "/images/settings/underground.png",
-        "codes": "ew_underground, ew_underground_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Underground Requires Power",
-    "type": "progressive",
-    "loop": true,
-    "codes": "underground_power",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Both Underground Passages require Power",
-        "img": "/images/settings/power_require_both.png",
-        "codes": "underground_power, underground_power_ns, underground_power_ew",
-        "inherit_codes": false
-      },
-      {
-        "name": "North-South Underground Passages requires Power",
-        "img": "/images/settings/power_require_ns.png",
-        "codes": "underground_power, underground_power_ns",
-        "inherit_codes": false
-      },
-      {
-        "name": "East-West Underground Passages requires Power",
-        "img": "/images/settings/power_require_ew.png",
-        "codes": "underground_power, underground_power_ew",
-        "inherit_codes": false
-      },
-      {
-        "name": "No Underground Passage require Power",
-        "img": "/images/settings/power_require_none.png",
+    {
+        "name": "Goal",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Goal - Defeat Elite Four",
+                "img": "/images/events/become_champion.png",
+                "codes": "goal,goal_e4",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal - Defeat Red",
+                "img": "/images/events/defeat_red.png",
+                "codes": "goal,goal_red",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Johto Only",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Johto Only - Off",
+                "img": "/images/settings/johto_off.png",
+                "img_mods": "@disabled",
+                "codes": "johto_only,johto_only_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Johto Only - On",
+                "img": "/images/settings/johto_off.png",
+                "codes": "johto_only,johto_only_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Johto Only - Include Silver Cave",
+                "img": "/images/settings/johto_silver.png",
+                "codes": "johto_only,johto_only_silver",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Badges",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "initial_stage_idx": 2,
+        "stages": [
+            {
+                "name": "Randomize Badges - Off",
+                "img": "/images/settings/badges_off.png",
+                "codes": "badges,badges_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Badges - Shuffle",
+                "img": "/images/settings/badges_shuffle.png",
+                "codes": "badges,badges_shuffle",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Badges - On",
+                "img": "/images/settings/badges_on.png",
+                "codes": "badges,badges_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "HM Badge Requirements",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "HM Badge Requirements - Vanilla",
+                "img": "/images/settings/badges_vanilla.png",
+                "codes": "badgereqs,badgereqs_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "HM Badge Requirements - No Badges",
+                "img": "/images/settings/badges_free.png",
+                "codes": "badgereqs,badgereqs_none",
+                "inherit_codes": false
+            },
+            {
+                "name": "HM Badge Requirements - Add Kanto",
+                "img": "/images/settings/badges_kanto.png",
+                "codes": "badgereqs,badgereqs_kanto",
+                "inherit_codes": false
+            },
+            {
+                "name": "HM Badge Requirements - Regional",
+                "img": "/images/settings/badges_regional.png",
+                "codes": "badgereqs,badgereqs_regional",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Pokegear",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Pokegear - Off",
+                "img": "/images/settings/pokegear.png",
+                "img_mods": "@disabled",
+                "codes": "pokegear,pokegear_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Pokegear - On",
+                "img": "/images/settings/pokegear.png",
+                "codes": "pokegear,pokegear_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Berry Trees",
+        "type": "progressive",
+        "initial_stage_idx": 1,
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Berry Trees - Off",
+                "img": "/images/settings/berries.png",
+                "img_mods": "@disabled",
+                "codes": "berries,berries_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Berry Trees - On",
+                "img": "/images/settings/berries.png",
+                "codes": "berries,berries_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Hidden Items",
+        "type": "progressive_toggle",
+        "initial_stage_idx": 1,
+        "initial_active_state": true,
+        "codes": "hiddenitems, reqitemfinder",
+        "loop": true,
+        "stages": [
+            {
+                "name": "Hidden Items - Randomized | Itemfinder not required",
+                "img": "/images/settings/hiddenitems.png",
+                "img_mods": "overlay|images/settings/itemfinder_not_required.png",
+                "codes": "hiddenitems_on, reqitemfinder_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hidden Items - Randomized | Itemfinder is logical",
+                "img": "/images/settings/hiddenitems.png",
+                "img_mods": "overlay|images/settings/itemfinder_logic.png",
+                "codes": "hiddenitems_on, reqitemfinder_logic",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hidden Items - Randomized | Itemfinder is required",
+                "img": "/images/settings/hiddenitems.png",
+                "img_mods": "overlay|images/settings/itemfinder_required.png",
+                "codes": "hiddenitems_on, reqitemfinder_required",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Trainersanity",
+        "type": "progressive",
+        "initial_stage_idx": 1,
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Trainersanity - Off",
+                "img": "/images/settings/trainersanity.png",
+                "img_mods": "@disabled",
+                "codes": "trainersanity,trainersanity_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Trainersanity - On",
+                "img": "/images/settings/trainersanity.png",
+                "codes": "trainersanity,trainersanity_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Free Fly Location",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Free Fly Location - New Bark Town",
+                "img": "/images/settings/town_locations/new_bark.png",
+                "codes": "free_fly_location,free_fly_NewBark",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Cherrygrove City",
+                "img": "/images/settings/town_locations/cherrygrove.png",
+                "codes": "free_fly_location,free_fly_Cherrygrove",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Violet City",
+                "img": "/images/settings/town_locations/violet.png",
+                "codes": "free_fly_location,free_fly_Violet",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Azalea Town",
+                "img": "/images/settings/town_locations/azalea.png",
+                "codes": "free_fly_location,free_fly_Azalea",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Goldenrod City",
+                "img": "/images/settings/town_locations/goldenrod.png",
+                "codes": "free_fly_location,free_fly_Goldenrod",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Ecruteak City",
+                "img": "/images/settings/town_locations/ecruteak.png",
+                "codes": "free_fly_location,free_fly_Ecruteak",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Olivine City",
+                "img": "/images/settings/town_locations/olivine.png",
+                "codes": "free_fly_location,free_fly_Olivine",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Cianwood City",
+                "img": "/images/settings/town_locations/cianwood.png",
+                "codes": "free_fly_location,free_fly_Cianwood",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Mahogany Town",
+                "img": "/images/settings/town_locations/mahogany.png",
+                "codes": "free_fly_location,free_fly_Mahogany",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Lake of Rage",
+                "img": "/images/settings/town_locations/lakeofrage.png",
+                "codes": "free_fly_location,free_fly_LakeOfRage",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Blackthorn City",
+                "img": "/images/settings/town_locations/blackthorn.png",
+                "codes": "free_fly_location,free_fly_Blackthorn",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Pallet Town",
+                "img": "/images/settings/town_locations/pallet.png",
+                "codes": "free_fly_location,free_fly_Pallet",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Viridian City",
+                "img": "/images/settings/town_locations/viridian.png",
+                "codes": "free_fly_location,free_fly_Viridian",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Pewter City",
+                "img": "/images/settings/town_locations/pewter.png",
+                "codes": "free_fly_location,free_fly_Pewter",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Cerulean City",
+                "img": "/images/settings/town_locations/cerulean.png",
+                "codes": "free_fly_location,free_fly_Cerulean",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Vermilion City",
+                "img": "/images/settings/town_locations/vermilion.png",
+                "codes": "free_fly_location,free_fly_Vermilion",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Lavender Town",
+                "img": "/images/settings/town_locations/lavender.png",
+                "codes": "free_fly_location,free_fly_Lavender",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Celadon City",
+                "img": "/images/settings/town_locations/celadon.png",
+                "codes": "free_fly_location,free_fly_Celadon",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Saffron City",
+                "img": "/images/settings/town_locations/saffron.png",
+                "codes": "free_fly_location,free_fly_Saffron",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Cinnabar Island",
+                "img": "/images/settings/town_locations/cinnabar.png",
+                "codes": "free_fly_location,free_fly_Cinnabar",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Fuchsia City",
+                "img": "/images/settings/town_locations/fuchsia.png",
+                "codes": "free_fly_location,free_fly_Fuchsia",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Silver Cave",
+                "img": "/images/settings/town_locations/silvercave.png",
+                "codes": "free_fly_location,free_fly_SilverCave",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/town_locations/freefly_template.png",
+        "codes": "free_fly_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Map Card Fly Location",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Map Card Fly Location - New Bark Town",
+                "img": "/images/settings/town_locations/new_bark.png",
+                "codes": "map_card_fly,map_card_fly_NewBark",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Cherrygrove City",
+                "img": "/images/settings/town_locations/cherrygrove.png",
+                "codes": "map_card_fly,map_card_fly_Cherrygrove",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Violet City",
+                "img": "/images/settings/town_locations/violet.png",
+                "codes": "map_card_fly,map_card_fly_Violet",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Azalea Town",
+                "img": "/images/settings/town_locations/azalea.png",
+                "codes": "map_card_fly,map_card_fly_Azalea",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Goldenrod City",
+                "img": "/images/settings/town_locations/goldenrod.png",
+                "codes": "map_card_fly,map_card_fly_Goldenrod",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Ecruteak City",
+                "img": "/images/settings/town_locations/ecruteak.png",
+                "codes": "map_card_fly,map_card_fly_Ecruteak",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Olivine City",
+                "img": "/images/settings/town_locations/olivine.png",
+                "codes": "map_card_fly,map_card_fly_Olivine",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Cianwood City",
+                "img": "/images/settings/town_locations/cianwood.png",
+                "codes": "map_card_fly,map_card_fly_Cianwood",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Mahogany Town",
+                "img": "/images/settings/town_locations/mahogany.png",
+                "codes": "map_card_fly,map_card_fly_Mahogany",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Lake of Rage",
+                "img": "/images/settings/town_locations/lakeofrage.png",
+                "codes": "map_card_fly,map_card_fly_LakeOfRage",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Blackthorn City",
+                "img": "/images/settings/town_locations/blackthorn.png",
+                "codes": "map_card_fly,map_card_fly_Blackthorn",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Pallet Town",
+                "img": "/images/settings/town_locations/pallet.png",
+                "codes": "map_card_fly,map_card_fly_Pallet",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Viridian City",
+                "img": "/images/settings/town_locations/viridian.png",
+                "codes": "map_card_fly,map_card_fly_Viridian",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Pewter City",
+                "img": "/images/settings/town_locations/pewter.png",
+                "codes": "map_card_fly,map_card_fly_Pewter",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Cerulean City",
+                "img": "/images/settings/town_locations/cerulean.png",
+                "codes": "map_card_fly,map_card_fly_Cerulean",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Vermilion City",
+                "img": "/images/settings/town_locations/vermilion.png",
+                "codes": "map_card_fly,map_card_fly_Vermilion",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Lavender Town",
+                "img": "/images/settings/town_locations/lavender.png",
+                "codes": "map_card_fly,map_card_fly_Lavender",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Celadon City",
+                "img": "/images/settings/town_locations/celadon.png",
+                "codes": "map_card_fly,map_card_fly_Celadon",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Saffron City",
+                "img": "/images/settings/town_locations/saffron.png",
+                "codes": "map_card_fly,map_card_fly_Saffron",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Cinnabar Island",
+                "img": "/images/settings/town_locations/cinnabar.png",
+                "codes": "map_card_fly,map_card_fly_Cinnabar",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Fuchsia City",
+                "img": "/images/settings/town_locations/fuchsia.png",
+                "codes": "map_card_fly,map_card_fly_Fuchsia",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Card Fly Location - Silver Cave",
+                "img": "/images/settings/town_locations/silvercave.png",
+                "codes": "map_card_fly,map_card_fly_SilverCave",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/town_locations/mapfly_template.png",
+        "codes": "map_card_fly_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Auto-Track Map",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Auto-Track Map - On",
+                "img": "/images/settings/automap.png",
+                "codes": "automap,automap_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Auto-Track Map - Off",
+                "img": "/images/settings/automap.png",
+                "img_mods": "@disabled",
+                "codes": "automap,automap_off",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Ilex Cut Tree",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Ilex Forest has a Cut Tree",
+                "img": "/images/settings/ilextree.png",
+                "codes": "ilextree, ilextree_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Ilex Forest has no Cut Tree",
+                "img": "/images/settings/ilextree.png",
+                "img_mods": "@disabled",
+                "codes": "ilextree, ilextree_off",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Radio Tower Badges",
+        "img": "/images/events/tower_cleared.png",
+        "codes": "tower_badges",
+        "type": "consumable",
+        "min_quantity": 1,
+        "max_quantity": 16,
+        "initial_quantity": 7
+    },
+    {
+        "name": "Route 32 Guy Condition",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/r32_guy.png",
+                "img_mods": "overlay|/images/settings/egg_overlay.png",
+                "codes": "r32_guy, r32_guy_egg",
+                "inherit_codes": false,
+                "name": "Route 32 Guy needs Egg"
+            },
+            {
+                "img": "/images/settings/r32_guy.png",
+                "img_mods": "overlay|/images/settings/badge_overlay.png",
+                "codes": "r32_guy, r32_guy_badge",
+                "inherit_codes": false,
+                "name": "Route 32 Guy needs any badge"
+            },
+            {
+                "img": "/images/settings/r32_guy.png",
+                "img_mods": "overlay|/images/settings/gym_overlay.png",
+                "codes": "r32_guy, r32_guy_gym",
+                "inherit_codes": false,
+                "name": "Route 32 Guy needs any Gym beaten"
+            },
+            {
+                "img": "/images/settings/r32_guy.png",
+                "img_mods": "overlay|/images/settings/zephyr_overlay.png",
+                "codes": "r32_guy, r32_guy_zephyr",
+                "inherit_codes": false,
+                "name": "Route 32 Guy needs Zephyr Badge"
+            },
+            {
+                "img": "/images/settings/r32_guy.png",
+                "img_mods": "@disabled",
+                "codes": "r32_guy, r32_guy_open",
+                "inherit_codes": false,
+                "name": "Route 32 Guy will not block you"
+            }
+        ]
+    },
+    {
+        "name": "Tea - North",
+        "type": "progressive",
+        "stages": [
+            {},
+            {
+                "codes": "tea_north"
+            }
+        ]
+    },
+    {
+        "name": "Tea - East",
+        "type": "progressive",
+        "stages": [
+            {},
+            {
+                "codes": "tea_east"
+            }
+        ]
+    },
+    {
+        "name": "Tea - South",
+        "type": "progressive",
+        "stages": [
+            {},
+            {
+                "codes": "tea_south"
+            }
+        ]
+    },
+    {
+        "name": "Tea - West",
+        "type": "progressive",
+        "stages": [
+            {},
+            {
+                "codes": "tea_west"
+            }
+        ]
+    },
+    {
+        "name": "Tea",
+        "type": "progressive",
+        "allow_disabled": false,
+        "codes": "tea_guard",
+        "initial_stage_idx": 0,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "",
+                "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_true.png",
+                "inherit_codes": false,
+                "name": "Tea required for None"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_west",
+                "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_false.png",
+                "inherit_codes": false,
+                "name": "Tea required for West"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_south",
+                "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_true.png",
+                "inherit_codes": false,
+                "name": "Tea required for South"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_south, coffee_west",
+                "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_false.png",
+                "inherit_codes": false,
+                "name": "Tea required for South West"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_east",
+                "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_true.png",
+                "inherit_codes": false,
+                "name": "Tea required for East"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_east, coffee_west",
+                "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_false.png",
+                "inherit_codes": false,
+                "name": "Tea required for East West"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": " coffee_east, coffee_south",
+                "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_true.png",
+                "inherit_codes": false,
+                "name": "Tea required for East South"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_east, coffee_south, coffee_west",
+                "img_mods": "overlay|/images/settings/tea/north_true.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_false.png",
+                "inherit_codes": false,
+                "name": "Tea required for East South West"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_north",
+                "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_true.png",
+                "inherit_codes": false,
+                "name": "Tea required for North"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_north, coffee_west",
+                "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_false.png",
+                "inherit_codes": false,
+                "name": "Tea required for North West"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_north, coffee_south",
+                "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_true.png",
+                "inherit_codes": false,
+                "name": "Tea required for North South"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_north, coffee_south, coffee_west",
+                "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_true.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_false.png",
+                "inherit_codes": false,
+                "name": "Tea required for North South West"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_north, coffee_east",
+                "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_true.png",
+                "inherit_codes": false,
+                "name": "Tea required for North East"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_north, coffee_east, coffee_west",
+                "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_true.png,overlay|/images/settings/tea/west_false.png",
+                "inherit_codes": false,
+                "name": "Tea required for North East West"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_north, coffee_east, coffee_south",
+                "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_true.png",
+                "inherit_codes": false,
+                "name": "Tea required for North East South"
+            },
+            {
+                "img": "/images/settings/tea/tea_guard.png",
+                "codes": "coffee_north, coffee_east, coffee_south, coffee_west",
+                "img_mods": "overlay|/images/settings/tea/north_false.png,overlay|/images/settings/tea/east_false.png,overlay|/images/settings/tea/south_false.png,overlay|/images/settings/tea/west_false.png",
+                "inherit_codes": false,
+                "name": "Tea required for all directions"
+            }
+        ]
+    },
+    {
+        "name": "East-West Underground",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "East-West Underground Disabled",
+                "img": "/images/settings/underground.png",
+                "img_mods": "@disabled",
+                "codes": "ew_underground, ew_underground_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "East-West Underground Enabled",
+                "img": "/images/settings/underground.png",
+                "codes": "ew_underground, ew_underground_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Underground Requires Power",
+        "type": "progressive",
+        "loop": true,
         "codes": "underground_power",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "MISCHIEF",
-    "type": "progressive",
-    "stages": [
-      {},
-      {
-        "codes": "mischief"
-      }
-    ]
-  },
-  {
-    "name": "CHRISM (item name)",
-    "type": "progressive",
-    "stages": [
-      {},
-      {
-        "codes": "chrism"
-      }
-    ]
-  },
-  {
-    "name": "S.S. Aqua Progress",
-    "type": "progressive",
-    "codes": "ssaqua",
-    "stages": [
-      {
-          "name": "First trip"
-      },
-      {
-          "name": "Eastbound"
-      },
-      {
-          "name": "Westbound"
-      }
-    ]
-  },
-  {
-    "name": "Route 2 Access",
-    "type": "progressive",
-    "initial_stage_idx": 1,
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Route 2 has a fence (vanilla)",
-        "img": "/images/settings/route_2_fence.png",
-        "codes": "route_2_access, route_2_fence",
-        "inherit_codes": false
-      },
-      {
-        "name": "Route 2 has a ledge",
-        "img": "/images/settings/route_2_ledge.png",
-        "codes": "route_2_access, route_2_ledge",
-        "inherit_codes": false
-      },
-      {
-        "name": "Route 2 is open",
-        "img": "/images/settings/route_2_open.png",
-        "codes": "route_2_access, route_2_open",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Red Gyarados Access",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Red Gyarados is unblocked",
-        "img": "/images/settings/red_gyarados_vanilla.png",
-        "codes": "red_gyarados_access, red_gyarados_vanilla",
-        "inherit_codes": false
-      },
-      {
-        "name": "Red Gyarados is surrounded by whirlpools",
-        "img": "/images/settings/red_gyarados_whirlpool.png",
-        "codes": "red_gyarados_access, red_gyarados_whirlpool",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Blackthorn Dark Cave Access",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Dark Cave is vanilla",
-        "img": "/images/settings/blackthorn_dark_cave_access.png",
-        "img_mods": "@disabled",
-        "codes": "blackthorn_dark_cave_access, blackthorn_dark_cave_vanilla",
-        "inherit_codes": false
-      },
-      {
-        "name": "Dark Cave has a waterfall",
-        "img": "/images/settings/blackthorn_dark_cave_access.png",
-        "codes": "blackthorn_dark_cave_access, blackthorn_dark_cave_waterfall",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "National Park Access",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "National Park",
-        "img": "/images/settings/national_park_vanilla.png",
-        "img_mods": "@disabled",
-        "codes": "national_park_access, national_park_vanilla",
-        "inherit_codes": false
-      },
-      {
-        "name": "National Skate-Park",
-        "img": "/images/settings/national_park_bicycle.png",
-        "codes": "national_park_access, national_park_bicycle",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Route 3 Access",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Route 3 is vanilla",
-        "img": "/images/settings/brock.png",
-        "img_mods": "@disabled",
-        "codes": "route_3_access, route_3_vanilla",
-        "inherit_codes": false
-      },
-      {
-        "name": "Route 3 requires Boulder Badge",
-        "img": "/images/settings/brock.png",
-        "codes": "route_3_access, route_3_boulder",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Dexsanity",
-    "img": "/images/settings/pokedex.png",
-    "codes": "dexsanity",
-    "type": "consumable",
-    "allow_disabled": true,
-    "min_quantity": 0,
-    "max_quantity": 251,
-    "initial_quantity": 0
-  },
-  {
-    "name": "Location Visibility",
-    "type": "progressive",
-    "loop": true,
-    "initial_stage_idx": 2,
-    "codes": "location_visibility",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Only show normal locations",
-        "img": "/images/settings/show_item.png",
-        "codes": "show_items",
-        "inherit_codes": false
-      },
-      {
-        "name": "Show normal and encounter locations",
-        "img": "/images/settings/show_both.png",
-        "codes": "show_items, show_mons",
-        "inherit_codes": false
-      },
-      {
-        "name": "Only show encounter locations",
-        "img": "/images/settings/show_mon.png",
-        "codes": "show_mons",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Start Town",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Starting Town - New Bark Town",
-        "img": "/images/settings/town_locations/new_bark.png",
-        "codes": "start_town_location,start_town_New_Bark",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Cherrygrove City",
-        "img": "/images/settings/town_locations/cherrygrove.png",
-        "codes": "start_town_location,start_town_Cherrygrove",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Violet City",
-        "img": "/images/settings/town_locations/violet.png",
-        "codes": "start_town_location,start_town_Violet",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Union Cave",
-        "img": "/images/settings/town_locations/unioncave.png",
-        "codes": "start_town_location,start_town_UnionCave",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Azalea Town",
-        "img": "/images/settings/town_locations/azalea.png",
-        "codes": "start_town_location,start_town_Azalea",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Goldenrod City",
-        "img": "/images/settings/town_locations/goldenrod.png",
-        "codes": "start_town_location,start_town_Goldenrod",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Ecruteak City",
-        "img": "/images/settings/town_locations/ecruteak.png",
-        "codes": "start_town_location,start_town_Ecruteak",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Olivine City",
-        "img": "/images/settings/town_locations/olivine.png",
-        "codes": "start_town_location,start_town_Olivine",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Cianwood City",
-        "img": "/images/settings/town_locations/cianwood.png",
-        "codes": "start_town_location,start_town_Cianwood",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Mahogany Town",
-        "img": "/images/settings/town_locations/mahogany.png",
-        "codes": "start_town_location,start_town_Mahogany",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Lake of Rage",
-        "img": "/images/settings/town_locations/lakeofrage.png",
-        "codes": "start_town_location,start_town_LakeOfRage",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Blackthorn City",
-        "img": "/images/settings/town_locations/blackthorn.png",
-        "codes": "start_town_location,start_town_Blackthorn",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Pallet Town",
-        "img": "/images/settings/town_locations/pallet.png",
-        "codes": "start_town_location,start_town_Pallet",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Viridian City",
-        "img": "/images/settings/town_locations/viridian.png",
-        "codes": "start_town_location,start_town_Viridian",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Pewter City",
-        "img": "/images/settings/town_locations/pewter.png",
-        "codes": "start_town_location,start_town_Pewter",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Cerulean City",
-        "img": "/images/settings/town_locations/cerulean.png",
-        "codes": "start_town_location,start_town_Cerulean",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Rock Tunnel",
-        "img": "/images/settings/town_locations/rocktunnel.png",
-        "codes": "start_town_location,start_town_RockTunnel",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Vermilion City",
-        "img": "/images/settings/town_locations/vermilion.png",
-        "codes": "start_town_location,start_town_Vermilion",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Lavender Town",
-        "img": "/images/settings/town_locations/lavender.png",
-        "codes": "start_town_location,start_town_Lavender",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Celadon City",
-        "img": "/images/settings/town_locations/celadon.png",
-        "codes": "start_town_location,start_town_Celadon",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Saffron City",
-        "img": "/images/settings/town_locations/saffron.png",
-        "codes": "start_town_location,start_town_Saffron",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Cinnabar Island",
-        "img": "/images/settings/town_locations/cinnabar.png",
-        "codes": "start_town_location,start_town_Cinnabar",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Fuchsia City",
-        "img": "/images/settings/town_locations/fuchsia.png",
-        "codes": "start_town_location,start_town_Fuchsia",
-        "inherit_codes": false
-      },
-      {
-        "name": "Starting Town - Silver Cave",
-        "img": "/images/settings/town_locations/silvercave.png",
-        "codes": "start_town_location,start_town_SilverCave",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "img": "/images/settings/town_locations/starttown_template.png",
-    "codes": "start_town_dummy",
-    "type": "static"
-  },
-  {
-    "name": "Clair Behavior",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Clair is behaving like an adult",
-        "img": "/images/settings/clair.png",
-        "img_mods": "@disabled",
-        "codes": "claire_behaviour, clair_behaviour_adult",
-        "inherit_codes": false
-      },
-      {
-        "name": "Clair is behaving like a child",
-        "img": "/images/settings/clair.png",
-        "codes": "clair_behaviour, clair_behaviour_child",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Split Map",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Split Map - Off",
-        "img": "/images/settings/splitmap.png",
-        "img_mods": "@disabled",
-        "codes": "splitmap, splitmap_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Split Map - On",
-        "img": "/images/settings/splitmap.png",
-        "codes": "splitmap, splitmap_on",
-        "inherit_codes": false
-      },
-      {
-        "name": "Split Map - Reverse",
-        "img": "/images/settings/splitmap_reverse.png",
-        "codes": "splitmap, splitmap_reverse",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Evolution Method: Happiness",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Evolution Method: Happiness NOT in logic",
-        "img": "/images/other/outoflogic.png",
-        "codes": "evomethod_happiness, evomethod_happiness_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Evolution Method: Happiness in logic",
-        "img": "/images/other/logic.png",
-        "codes": "evomethod_happiness, evomethod_happiness_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Evolution Method: Level",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Evolution Method: Leveling NOT in logic",
-        "img": "/images/other/outoflogic.png",
-        "codes": "evomethod_level, evomethod_level_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Evolution Method: Leveling in logic",
-        "img": "/images/other/logic.png",
-        "codes": "evomethod_level, evomethod_level_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Evolution Method: Tyrogue",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Evolution Method: Tyrogue NOT in logic",
-        "img": "/images/other/outoflogic.png",
-        "codes": "evomethod_tyrogue, evomethod_tyrogue_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Evolution Method: Tyrogue in logic",
-        "img": "/images/other/logic.png",
-        "codes": "evomethod_tyrogue, evomethod_tyrogue_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Evolution Method: Items",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Evolution Method: Items NOT in logic",
-        "img": "/images/other/outoflogic.png",
-        "codes": "evomethod_useitem, evomethod_useitem_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Evolution Method: Tyrogue Evolution in logic",
-        "img": "/images/other/logic.png",
-        "codes": "evomethod_useitem, evomethod_useitem_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Encounter Method: Fishing",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Encounter Method: Fishing Encounters NOT in logic",
-        "img": "/images/other/outoflogic.png",
-        "codes": "encmethod_fishing, encmethod_fishing_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Encounter Method: Fishing Encounters in logic",
-        "img": "/images/other/logic.png",
-        "codes": "encmethod_fishing, encmethod_fishing_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Encounter Method: Headbutt",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Encounter Method: Headbutt Encounters NOT in logic",
-        "img": "/images/other/outoflogic.png",
-        "codes": "encmethod_headbutt, encmethod_headbutt_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Encounter Method: Headbutt Encounters in logic",
-        "img": "/images/other/logic.png",
-        "codes": "encmethod_headbutt, encmethod_headbutt_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Encounter Method: Land",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Encounter Method: Land Encounters NOT in logic",
-        "img": "/images/other/outoflogic.png",
-        "codes": "encmethod_land, encmethod_land_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Encounter Method: Land Encounters in logic",
-        "img": "/images/other/logic.png",
-        "codes": "encmethod_land, encmethod_land_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Encounter Method: Rock Smash",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Encounter Method: Rock Smash Encounters NOT in logic",
-        "img": "/images/other/outoflogic.png",
-        "codes": "encmethod_rocksmash, encmethod_rocksmash_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Encounter Method: Rock Smash Encounters in logic",
-        "img": "/images/other/logic.png",
-        "codes": "encmethod_rocksmash, encmethod_rocksmash_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Encounter Method: Surfing",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Encounter Method: Surfing Encounters NOT in logic",
-        "img": "/images/other/outoflogic.png",
-        "codes": "encmethod_water, encmethod_water_off",
-        "inherit_codes": false
-      },
-      {
-        "name": "Encounter Method: Surfing Encounters in logic",
-        "img": "/images/other/logic.png",
-        "codes": "encmethod_water, encmethod_water_on",
-        "inherit_codes": false
-      }
-    ]
-  }
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Both Underground Passages require Power",
+                "img": "/images/settings/power_require_both.png",
+                "codes": "underground_power, underground_power_ns, underground_power_ew",
+                "inherit_codes": false
+            },
+            {
+                "name": "North-South Underground Passages requires Power",
+                "img": "/images/settings/power_require_ns.png",
+                "codes": "underground_power, underground_power_ns",
+                "inherit_codes": false
+            },
+            {
+                "name": "East-West Underground Passages requires Power",
+                "img": "/images/settings/power_require_ew.png",
+                "codes": "underground_power, underground_power_ew",
+                "inherit_codes": false
+            },
+            {
+                "name": "No Underground Passage require Power",
+                "img": "/images/settings/power_require_none.png",
+                "codes": "underground_power",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "MISCHIEF",
+        "type": "progressive",
+        "stages": [
+            {},
+            {
+                "codes": "mischief"
+            }
+        ]
+    },
+    {
+        "name": "CHRISM (item name)",
+        "type": "progressive",
+        "stages": [
+            {},
+            {
+                "codes": "chrism"
+            }
+        ]
+    },
+    {
+        "name": "S.S. Aqua Progress",
+        "type": "progressive",
+        "codes": "ssaqua",
+        "stages": [
+            {
+                "name": "First trip"
+            },
+            {
+                "name": "Eastbound"
+            },
+            {
+                "name": "Westbound"
+            }
+        ]
+    },
+    {
+        "name": "Route 2 Access",
+        "type": "progressive",
+        "initial_stage_idx": 1,
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 2 has a fence (vanilla)",
+                "img": "/images/settings/route_2_fence.png",
+                "codes": "route_2_access, route_2_fence",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 2 has a ledge",
+                "img": "/images/settings/route_2_ledge.png",
+                "codes": "route_2_access, route_2_ledge",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 2 is open",
+                "img": "/images/settings/route_2_open.png",
+                "codes": "route_2_access, route_2_open",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Red Gyarados Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Red Gyarados is unblocked",
+                "img": "/images/settings/red_gyarados_vanilla.png",
+                "codes": "red_gyarados_access, red_gyarados_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Red Gyarados is surrounded by whirlpools",
+                "img": "/images/settings/red_gyarados_whirlpool.png",
+                "codes": "red_gyarados_access, red_gyarados_whirlpool",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Blackthorn Dark Cave Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Dark Cave is vanilla",
+                "img": "/images/settings/blackthorn_dark_cave_access.png",
+                "img_mods": "@disabled",
+                "codes": "blackthorn_dark_cave_access, blackthorn_dark_cave_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Dark Cave has a waterfall",
+                "img": "/images/settings/blackthorn_dark_cave_access.png",
+                "codes": "blackthorn_dark_cave_access, blackthorn_dark_cave_waterfall",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "National Park Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "National Park",
+                "img": "/images/settings/national_park_vanilla.png",
+                "img_mods": "@disabled",
+                "codes": "national_park_access, national_park_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "National Skate-Park",
+                "img": "/images/settings/national_park_bicycle.png",
+                "codes": "national_park_access, national_park_bicycle",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Route 3 Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 3 is vanilla",
+                "img": "/images/settings/brock.png",
+                "img_mods": "@disabled",
+                "codes": "route_3_access, route_3_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 3 requires Boulder Badge",
+                "img": "/images/settings/brock.png",
+                "codes": "route_3_access, route_3_boulder",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dexsanity",
+        "img": "/images/settings/pokedex.png",
+        "codes": "dexsanity",
+        "type": "consumable",
+        "allow_disabled": true,
+        "min_quantity": 0,
+        "max_quantity": 251,
+        "overlay_background": "000000",
+        "initial_quantity": 0
+    },
+    {
+        "name": "Location Visibility",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "codes": "location_visibility",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Only show normal locations",
+                "img": "/images/settings/show_item.png",
+                "codes": "show_items",
+                "inherit_codes": false
+            },
+            {
+                "name": "Show normal and encounter locations",
+                "img": "/images/settings/show_both.png",
+                "codes": "show_items, show_mons",
+                "inherit_codes": false
+            },
+            {
+                "name": "Only show encounter locations",
+                "img": "/images/settings/show_mon.png",
+                "codes": "show_mons",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Start Town",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Starting Town - New Bark Town",
+                "img": "/images/settings/town_locations/new_bark.png",
+                "codes": "start_town_location,start_town_New_Bark",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Cherrygrove City",
+                "img": "/images/settings/town_locations/cherrygrove.png",
+                "codes": "start_town_location,start_town_Cherrygrove",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Violet City",
+                "img": "/images/settings/town_locations/violet.png",
+                "codes": "start_town_location,start_town_Violet",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Union Cave",
+                "img": "/images/settings/town_locations/unioncave.png",
+                "codes": "start_town_location,start_town_UnionCave",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Azalea Town",
+                "img": "/images/settings/town_locations/azalea.png",
+                "codes": "start_town_location,start_town_Azalea",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Goldenrod City",
+                "img": "/images/settings/town_locations/goldenrod.png",
+                "codes": "start_town_location,start_town_Goldenrod",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Ecruteak City",
+                "img": "/images/settings/town_locations/ecruteak.png",
+                "codes": "start_town_location,start_town_Ecruteak",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Olivine City",
+                "img": "/images/settings/town_locations/olivine.png",
+                "codes": "start_town_location,start_town_Olivine",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Cianwood City",
+                "img": "/images/settings/town_locations/cianwood.png",
+                "codes": "start_town_location,start_town_Cianwood",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Mahogany Town",
+                "img": "/images/settings/town_locations/mahogany.png",
+                "codes": "start_town_location,start_town_Mahogany",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Lake of Rage",
+                "img": "/images/settings/town_locations/lakeofrage.png",
+                "codes": "start_town_location,start_town_LakeOfRage",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Blackthorn City",
+                "img": "/images/settings/town_locations/blackthorn.png",
+                "codes": "start_town_location,start_town_Blackthorn",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Pallet Town",
+                "img": "/images/settings/town_locations/pallet.png",
+                "codes": "start_town_location,start_town_Pallet",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Viridian City",
+                "img": "/images/settings/town_locations/viridian.png",
+                "codes": "start_town_location,start_town_Viridian",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Pewter City",
+                "img": "/images/settings/town_locations/pewter.png",
+                "codes": "start_town_location,start_town_Pewter",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Cerulean City",
+                "img": "/images/settings/town_locations/cerulean.png",
+                "codes": "start_town_location,start_town_Cerulean",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Rock Tunnel",
+                "img": "/images/settings/town_locations/rocktunnel.png",
+                "codes": "start_town_location,start_town_RockTunnel",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Vermilion City",
+                "img": "/images/settings/town_locations/vermilion.png",
+                "codes": "start_town_location,start_town_Vermilion",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Lavender Town",
+                "img": "/images/settings/town_locations/lavender.png",
+                "codes": "start_town_location,start_town_Lavender",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Celadon City",
+                "img": "/images/settings/town_locations/celadon.png",
+                "codes": "start_town_location,start_town_Celadon",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Saffron City",
+                "img": "/images/settings/town_locations/saffron.png",
+                "codes": "start_town_location,start_town_Saffron",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Cinnabar Island",
+                "img": "/images/settings/town_locations/cinnabar.png",
+                "codes": "start_town_location,start_town_Cinnabar",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Fuchsia City",
+                "img": "/images/settings/town_locations/fuchsia.png",
+                "codes": "start_town_location,start_town_Fuchsia",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Silver Cave",
+                "img": "/images/settings/town_locations/silvercave.png",
+                "codes": "start_town_location,start_town_SilverCave",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/town_locations/starttown_template.png",
+        "codes": "start_town_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Clair Behavior",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Clair is behaving like an adult",
+                "img": "/images/settings/clair.png",
+                "img_mods": "@disabled",
+                "codes": "clair_behaviour, clair_behaviour_adult",
+                "inherit_codes": false
+            },
+            {
+                "name": "Clair is behaving like a child",
+                "img": "/images/settings/clair.png",
+                "codes": "clair_behaviour, clair_behaviour_child",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Split Map",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Split Map - Off",
+                "img": "/images/settings/splitmap.png",
+                "img_mods": "@disabled",
+                "codes": "splitmap, splitmap_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Split Map - On",
+                "img": "/images/settings/splitmap.png",
+                "codes": "splitmap, splitmap_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Split Map - Reverse",
+                "img": "/images/settings/splitmap_reverse.png",
+                "codes": "splitmap, splitmap_reverse",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Encounter Tracking",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Tracking - Off",
+                "img": "/images/settings/encounter_tracking.png",
+                "img_mods": "@disabled",
+                "codes": "encounter_tracking, encounter_tracking_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Tracking - On",
+                "img": "/images/settings/encounter_tracking.png",
+                "codes": "encounter_tracking, encounter_tracking_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/encountermethods.png",
+        "codes": "encountermethods_dummy",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/evolutionmethods.png",
+        "codes": "evolutionmethods_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Evolution Method: Happiness",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolution Method: Happiness NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "evomethod_happiness, evomethod_happiness_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolution Method: Happiness in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "evomethod_happiness, evomethod_happiness_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/happiness.png",
+        "codes": "happiness_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Evolution Method: Leveling",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolution Method: Leveling NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "evomethod_level, evomethod_level_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolution Method: Leveling in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "evomethod_level, evomethod_level_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/leveling.png",
+        "codes": "leveling_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Evolution Method: Tyrogue",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolution Method: Tyrogue NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "evomethod_tyrogue, evomethod_tyrogue_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolution Method: Tyrogue in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "evomethod_tyrogue, evomethod_tyrogue_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/tyrogue.png",
+        "codes": "tyrogue_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Evolution Method: Items",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolution Method: Items NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "evomethod_useitem, evomethod_useitem_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolution Method: Tyrogue Evolution in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "evomethod_useitem, evomethod_useitem_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/useitems.png",
+        "codes": "useitems_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Encounter Method: Fishing",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Fishing Encounters NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "encmethod_fishing, encmethod_fishing_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Fishing Encounters in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "encmethod_fishing, encmethod_fishing_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/fishing.png",
+        "codes": "fishing_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Encounter Method: Headbutt",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Headbutt Encounters NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "encmethod_headbutt, encmethod_headbutt_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Headbutt Encounters in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "encmethod_headbutt, encmethod_headbutt_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/headbutt.png",
+        "codes": "headbutt_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Encounter Method: Land",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Land Encounters NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "encmethod_land, encmethod_land_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Land Encounters in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "encmethod_land, encmethod_land_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/land.png",
+        "codes": "land_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Encounter Method: Rock Smash",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Rock Smash Encounters NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Rock Smash Encounters in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/rocksmash.png",
+        "codes": "rocksmash_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Encounter Method: Surfing",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Surfing Encounters NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "encmethod_water, encmethod_water_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Surfing Encounters in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "encmethod_water, encmethod_water_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/surfing.png",
+        "codes": "surfing_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Encounter Method: Static",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Static Encounters NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "encmethod_static, encmethod_static_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Static Encounters in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "encmethod_static, encmethod_static_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/static.png",
+        "codes": "static_dummy",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/breedinglogic.png",
+        "codes": "breedinglogic_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Evolution Method: Happiness",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolution Method: Happiness NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "evomethod_happiness, evomethod_happiness_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolution Method: Happiness in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "evomethod_happiness, evomethod_happiness_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Breeding Logic",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Breeding Logic: NOT in Logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "breeding_logic, breeding_logic_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Breeding Logic: Only with Ditto",
+                "img": "/images/settings/dex_related/ditto.png",
+                "codes": "breeding_logic, breeding_logic_ditto",
+                "inherit_codes": false
+            },
+            {
+                "name": "Breeding Logic: In Logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "breeding_logic, breeding_logic_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/informationsheet.png",
+        "codes": "informationsheet",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/levelsinlogic.png",
+        "codes": "levelsinlogic",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/dummy_gyms.png",
+        "codes": "dummy_gyms",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/dummy_yaml.png",
+        "codes": "dummy_yaml",
+        "type": "static"
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "gym_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "gym_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "yaml_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "yaml_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "result_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "result_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    }
 ]

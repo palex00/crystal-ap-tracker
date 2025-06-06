@@ -25,25 +25,6 @@ function resetLocations()
     end
 end
 
-function resetSettings()
-    for _, v in pairs(MAP_EVO_METHODS) do
-        if v then
-            local obj = Tracker:FindObjectForCode(v)
-            if obj.CurrentStage ~= 0 then
-                obj.CurrentStage = 0
-            end
-        end
-    end
-    for _, v in pairs(MAP_ENC_METHODS) do
-        if v then
-            local obj = Tracker:FindObjectForCode(v)
-            if obj.CurrentStage ~= 0 then
-                obj.CurrentStage = 0
-            end
-        end
-    end
-end
-
 MAP_TOGGLE = {
     [0] = 0,
     [1] = 1
@@ -107,7 +88,7 @@ BLACKTHORN = 25
 SILVER_CAVE = 26
 
 TOWN_MAPPING = {
-    [NEW_BARK] = 0,
+    [0] = 0,
     [CHERRYGROVE] = 1,
     [VIOLET] = 2,
     [AZALEA] = 3,
@@ -132,7 +113,7 @@ TOWN_MAPPING = {
 }
 
 STARTTOWN_MAPPING = {
-    [NEW_BARK] = 0,
+    [0] = 0,
     [CHERRYGROVE] = 1,
     [VIOLET] = 2,
     [UNIONCAVE] = 3,
@@ -291,9 +272,53 @@ SLOT_CODES = {
         code = "start_town_location",
         mapping = STARTTOWN_MAPPING
     },
-    claire_behaviour = {
-        code = "claire_behaviour",
+    vanilla_clair = {
+        code = "clair_behaviour",
         mapping = MAP_TOGGLE
+    },
+    evomethod_happiness = {
+        code = "evomethod_happiness",
+        mapping = MAP_TOGGLE
+    },
+    evomethod_level = {
+        code = "evomethod_level",
+        mapping = MAP_TOGGLE
+    },
+    evomethod_tyrogue = {
+        code = "evomethod_tyrogue",
+        mapping = MAP_TOGGLE
+    },
+    evomethod_useitem = {
+        code = "evomethod_useitem",
+        mapping = MAP_TOGGLE
+    },
+    encmethod_land = {
+        code = "encmethod_land",
+        mapping = MAP_TOGGLE
+    },
+    encmethod_water = {
+        code = "encmethod_water",
+        mapping = MAP_TOGGLE
+    },
+    encmethod_fishing = {
+        code = "encmethod_fishing",
+        mapping = MAP_TOGGLE
+    },
+    encmethod_headbutt = {
+        code = "encmethod_headbutt",
+        mapping = MAP_TOGGLE
+    },
+    encmethod_rocksmash = {
+        code = "encmethod_rocksmash",
+        mapping = MAP_TOGGLE
+    },
+    static_pokemon_required = {
+        code = "encmethod_static",
+        mapping = MAP_TOGGLE
+    },
+    breeding_methods_required = {
+        code = "breeding_logic",
+        mapping = MAP_TRIPLE
     }
 }
 
@@ -350,31 +375,8 @@ AMOUNT_CODES = {
         code = "route_44_requirement",
         item = R44_REQ
     },
-    route_44_access_count = {
+    kanto_access_count = {
         code = "kanto_access_count",
         item = KANTO_REQ
-    }
-}
-
-MAP_EVO_METHODS = {
-    [1] = "evomethod_happiness",
-    [2] = "evomethod_level",
-    [3] = "evomethod_tyrogue",
-    [4] = "evomethod_useitem"
-}
-MAP_ENC_METHODS = {
-    [1] = "encmethod_fishing",
-    [2] = "encmethod_headbutt",
-    [3] = "encmethod_land",
-    [4] = "encmethod_rocksmash",
-    [5] = "encmethod_water",
-}
-
-TABLE_CODES = {
-    evolution_methods_required = {
-        mapping = MAP_EVO_METHODS
-    },
-    wild_encounter_methods_required = {
-        mapping = MAP_ENC_METHODS
     }
 }

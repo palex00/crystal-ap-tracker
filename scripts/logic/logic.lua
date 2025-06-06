@@ -19,6 +19,25 @@ function badges()
   Tracker:ProviderCountForCode("EARTH_BADGE")
 end
 
+gym_codes = {
+    "EVENT_BEAT_FALKNER",
+    "EVENT_BEAT_BUGSY",
+    "EVENT_BEAT_WHITNEY",
+    "EVENT_BEAT_MORTY",
+    "EVENT_BEAT_JASMINE",
+    "EVENT_BEAT_CHUCK",
+    "EVENT_BEAT_PRYCE",
+    "EVENT_BEAT_CLAIR",
+    "EVENT_BEAT_BROCK",
+    "EVENT_BEAT_MISTY",
+    "EVENT_BEAT_LTSURGE",
+    "EVENT_BEAT_ERIKA",
+    "EVENT_BEAT_JANINE",
+    "EVENT_BEAT_SABRINA",
+    "EVENT_BEAT_BLAINE",
+    "EVENT_BEAT_BLUE"
+}
+
 function gyms()
   return
   Tracker:ProviderCountForCode("EVENT_BEAT_FALKNER") +

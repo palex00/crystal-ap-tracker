@@ -33,6 +33,7 @@ Tracker:AddLocations("locations/special_encounters.json")
 Tracker:AddLayouts("layouts/dungeon_maps.json")
 Tracker:AddLayouts("layouts/events.json")
 Tracker:AddLayouts("layouts/settings.json")
+Tracker:AddLayouts("layouts/pokemonlogic.json")
 Tracker:AddLayouts("layouts/items_no_tea.json")
 Tracker:AddLayouts("layouts/tabs_single.json")
 Tracker:AddLayouts("layouts/overworld.json")
@@ -55,6 +56,13 @@ ScriptHost:AddWatchForCode("red_gyarados_access", "red_gyarados_access", toggle_
 ScriptHost:AddWatchForCode("blackthorn_dark_cave_access", "blackthorn_dark_cave_access", toggle_darkcave)
 ScriptHost:AddWatchForCode("mischief", "mischief", toggle_mischief)
 ScriptHost:AddWatchForCode("chrism", "chrism", toggle_mischief)
+for _, code in ipairs(gym_codes) do
+    ScriptHost:AddWatchForCode(code, code, update_gymcount)
+end
+ScriptHost:AddWatchForCode("gym_digit1", "gym_digit1", calculateEvoLevel)
+ScriptHost:AddWatchForCode("gym_digit2", "gym_digit2", calculateEvoLevel)
+ScriptHost:AddWatchForCode("yaml_digit1", "yaml_digit1", calculateEvoLevel)
+ScriptHost:AddWatchForCode("yaml_digit2", "yaml_digit2", calculateEvoLevel)
 
 -- Makes version nil
 first_two_dots = nil

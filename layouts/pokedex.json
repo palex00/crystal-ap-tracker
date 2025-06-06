@@ -3,6 +3,13 @@
         "type": "tabbed",
         "tabs": [
             {
+                "title": "Pokémon Logic",
+                "content": {
+                    "type": "layout",
+                    "key": "pokemon_logic"
+                }
+            },
+            {
                 "title": "Kanto Dex (001-151)",
                 "content": {
                     "type": "map",

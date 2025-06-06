@@ -49,7 +49,8 @@
                                 "ilextree",
                                 "red_gyarados_access",
                                 "pokegear",
-                                "badges"
+                                "badges",
+                                "dexsanity"
                             ],
                             [
                                 "route_2_access",
@@ -59,7 +60,7 @@
                                 "ew_underground",
                                 "underground_power",
                                 "badgereqs",
-                                "claire_behaviour"
+                                "clair_behaviour"
                             ]
                         ]
                     }
@@ -153,6 +154,12 @@
                             {
                                 "type": "item",
                                 "item": "splitmap",
+                                "margin": "2,2",
+                                "item_size": "32, 32"
+                            },
+                            {
+                                "type": "item",
+                                "item": "encounter_tracking",
                                 "margin": "2,2",
                                 "item_size": "32, 32"
                             }
