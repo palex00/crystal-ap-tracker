@@ -148,10 +148,22 @@ function onClear(slot_data)
         EVENT_ID="pokemon_crystal_events_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({EVENT_ID})
         Archipelago:Get({EVENT_ID})
+        
+        STATIC_ID="pokemon_crystal_statics_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({STATIC_ID})
+        Archipelago:Get({STATIC_ID})
 
+        ROCKETTRAP_ID="pokemon_crystal_rockettraps_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({ROCKETTRAP_ID})
+        Archipelago:Get({ROCKETTRAP_ID})
+        
         KEY_ID="pokemon_crystal_keys_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({KEY_ID})
         Archipelago:Get({KEY_ID})
+        
+        POKE_ID="pokemon_crystal_pokemon_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({POKE_ID})
+        Archipelago:Get({POKE_ID})
     end
 end
 
@@ -203,20 +215,28 @@ end
 function onNotify(key, value, old_value)
     if key == EVENT_ID then
         updateEvents(value)
+    elseif key == STATIC_ID then
+        updateStatics(value)
     elseif key == KEY_ID then
         updateVanillaKeyItems(value)
-    elseif key == POKEDEX_ID then
+    elseif key == POKE_ID then
         updatePokemon(value)
+    elseif key == ROCKETTRAP_ID then
+        updateRocketTraps(value)
     end
 end
 
 function onNotifyLaunch(key, value)
     if key == EVENT_ID then
         updateEvents(value)
+    elseif key == STATIC_ID then
+        updateStatics(value)
     elseif key == KEY_ID then
         updateVanillaKeyItems(value)
-    elseif key == POKEDEX_ID then
+    elseif key == POKE_ID then
         updatePokemon(value)
+    elseif key == ROCKETTRAP_ID then
+        updateRocketTraps(value)
     end
 end
 
@@ -235,10 +255,39 @@ function updateEvents(value)
     end
 end
 
+function updateStatics(value)
+    if value ~= nil then
+        for i, code in ipairs(FLAG_STATIC_CODES) do
+            local obj = Tracker:FindObjectForCode(code)
+            if obj ~= nil then
+                obj.Active = false
+            end
+            local bit = value >> (i - 1) & 1
+            if #code > 0 then
+                Tracker:FindObjectForCode(code).Active = Tracker:FindObjectForCode(code).Active or bit
+            end
+        end
+    end
+end
+
+function updateRocketTraps(value)
+    if value ~= nil then
+        for i, code in ipairs(FLAG_ROCKETTRAPS_CODES) do
+            local obj = Tracker:FindObjectForCode(code)
+            if obj ~= nil then
+                obj.Active = false
+            end
+            local bit = value >> (i - 1) & 1
+            if #code > 0 then
+                Tracker:FindObjectForCode(code).Active = Tracker:FindObjectForCode(code).Active or bit
+            end
+        end
+    end
+end
 
 function updateVanillaKeyItems(value)
     if value ~= nil then
-        -- print(value)
+        print(value)
         for i, obj in ipairs(FLAG_ITEM_CODES) do
             local bit = value >> (i - 1) & 1
             if obj.codes and (obj.option == nil or has(obj.option)) then
@@ -270,7 +319,8 @@ function updatePokemon(pokemon)
 			for dex_number, encounters in pairs(ENCOUNTER_LIST) do
 				local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
                 local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
-				if table_contains(pokemon["caught"], dex_number) or (table_contains(pokemon["seen"], dex_number) and dexcode.Active == false) then
+				if table_contains(pokemon["caught"], dex_number) then
+                -- or (table_contains(pokemon["seen"], dex_number) and dexcode.Active == false)
                     -- TODO: Make the above also check if dexcountsanity is 0 when seen.
 					for _, encounter in pairs(encounters) do
 						local object_name = encounter_mapping[encounter]

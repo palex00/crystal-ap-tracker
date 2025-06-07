@@ -1,22 +1,21 @@
 function breeding()
-    local daycare = Tracker:FindObjectForCode("@JohtoKanto/Route 34").AccessibilityLevel
-    print(daycare)
+    -- Info for prosperity. There is something deeply fucked with this.
+    -- Initially I had it look for JohtoKanto/Route 34 but that returns 0 always. For some reason.
+    -- So we're doing Goldenrod and I'm gonna physically restrain James from decoupling those in logic in the future
+    local daycare = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
     if has("breeding_logic_on") and daycare ~= 0 then
-        print("Case 1")
         return daycare
     elseif has("breeding_logic_ditto") and has("ditto") and daycare ~= 0 then
-        print("Case 2")
         return daycare
     elseif daycare ~= 0 then
-        print("Case 3")
         return AccessibilityLevel.SequenceBreak
     else
-        print("Case 4")
         return AccessibilityLevel.None
     end
 end
 
 function evolve(req_level)
+    req_level = tonumber(req_level)
     req_level = req_level or 0
     local digit1 = Tracker:FindObjectForCode("result_digit1").CurrentStage or 0
     local digit2 = Tracker:FindObjectForCode("result_digit2").CurrentStage or 0
@@ -31,7 +30,6 @@ end
 function evolve_friend()
     local daisy = Tracker:FindObjectForCode("@JohtoKanto/Pallet Town").AccessibilityLevel
     local massage = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
-    print(massage)
     if has("evomethod_happiness_on") and (daisy == 6 or massage == 6) then
         return AccessibilityLevel.Normal
     else
