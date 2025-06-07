@@ -15,7 +15,7 @@ ScriptHost:LoadScript("scripts/custom_items.lua")
 -- Maps
 Tracker:AddMaps("maps/maps.json")
 Tracker:AddMaps("maps/pokedex.json")
-Tracker:AddMaps("maps/ilex_forest_no_tree.json")
+Tracker:AddMaps("maps/ilex_forest_tree.json")
 Tracker:AddMaps("maps/route_2_ledge.json")
 Tracker:AddMaps("maps/lake_of_rage_vanilla.json")
 Tracker:AddMaps("maps/blackthorn_dark_cave_vanilla.json")

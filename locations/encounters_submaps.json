@@ -1155,7 +1155,13 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "Route32",
+                        "map": "Route32North",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Route32South",
                         "x": 16,
                         "y": 16,
                         "shape": "diamond"

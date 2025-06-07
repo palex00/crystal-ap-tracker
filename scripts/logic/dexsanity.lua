@@ -82,7 +82,7 @@ end
 function surf_encounter_kanto()
     if has("encmethod_land_on") and can_surf_kanto() then
         return AccessibilityLevel.Normal
-    elseif can_surf_johto() then
+    elseif can_surf_kanto() then
         return AccessibilityLevel.SequenceBreak
     else
         return AccessibilityLevel.None

@@ -65,7 +65,7 @@ function onClear(slot_data)
             end
         elseif SLOT_CODES[k] then
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
-            -- print("Setting " .. k .. " to " .. v)
+            print("Setting " .. k .. " to " .. v)
         elseif REQUIREMENT_CODES[k] then
 			local item = REQUIREMENT_CODES[k].item
 			item:setType(REQUIREMENT_CODES[k].mapping[v])
@@ -372,14 +372,21 @@ last_map_group = nil
 last_map_number = nil
 
 function onMap(value)
+    print(value)
     if has("automap_on") and value ~= nil and value["data"] ~= nil then
         local map_group = value["data"]["mapGroup"]
         local map_number = value["data"]["mapNumber"]
+        print(map_group)
+        print(map_number)
 
+        Tracker:FindObjectForCode("ssaqua").CurrentStage = 0
+        
         -- Detect map transition logic
         if last_map_group == 15 and last_map_number == 1 and map_group == 15 and map_number == 3 then
+            print("Set SSAqua to 1")
             Tracker:FindObjectForCode("ssaqua").CurrentStage = 1
         elseif last_map_group == 15 and last_map_number == 2 and map_group == 15 and map_number == 3 then
+            print("Set SSAqua to 2")
             Tracker:FindObjectForCode("ssaqua").CurrentStage = 2
         end
 
@@ -399,6 +406,8 @@ function onMap(value)
         local tabs = MAP_MAPPING[map_group] and MAP_MAPPING[map_group][map_number]
         
         for i, tab in ipairs(tabs) do
+            print(i)
+            print(tab)
             Tracker:UiHint("ActivateTab", tab)
         end
         

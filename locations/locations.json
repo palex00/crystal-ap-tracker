@@ -8945,6 +8945,11 @@
                         "map": "kanto_overview",
                         "x": 132,
                         "y": 44
+                    },
+                    {
+                        "map": "Route10",
+                        "x": 56,
+                        "y": 152
                     }
                 ]
             },
@@ -9664,6 +9669,10 @@
                     },
                     {
                         "name": "Gym - Beat Lt. Surge",
+                        "access_rules": [
+                            "$can_cut_kanto",
+                            "$can_surf_kanto"
+                        ],
                         "hosted_item": "EVENT_BEAT_LTSURGE",
                         "visibility_rules": [
                             "show_items"
