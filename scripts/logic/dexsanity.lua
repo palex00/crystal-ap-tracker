@@ -1,12 +1,17 @@
 function breeding()
     local daycare = Tracker:FindObjectForCode("@JohtoKanto/Route 34").AccessibilityLevel
-    if has("breeding_logic_on") and daycare then
+    print(daycare)
+    if has("breeding_logic_on") and daycare ~= 0 then
+        print("Case 1")
         return daycare
-    elseif has("breeding_logic_ditto") and has("ditto") and daycare then
+    elseif has("breeding_logic_ditto") and has("ditto") and daycare ~= 0 then
+        print("Case 2")
         return daycare
-    elseif daycare then
+    elseif daycare ~= 0 then
+        print("Case 3")
         return AccessibilityLevel.SequenceBreak
     else
+        print("Case 4")
         return AccessibilityLevel.None
     end
 end
@@ -26,6 +31,7 @@ end
 function evolve_friend()
     local daisy = Tracker:FindObjectForCode("@JohtoKanto/Pallet Town").AccessibilityLevel
     local massage = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
+    print(massage)
     if has("evomethod_happiness_on") and (daisy == 6 or massage == 6) then
         return AccessibilityLevel.Normal
     else
@@ -34,7 +40,7 @@ function evolve_friend()
 end
 
 function evolve_item()
-    local goldenrod =Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
+    local goldenrod = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
     local celadon = Tracker:FindObjectForCode("@JohtoKanto/Celadon City").AccessibilityLevel
     if has("evomethod_useitem_on") and (goldenrod == 6 or celadon == 6) then
         return AccessibilityLevel.Normal
@@ -119,6 +125,16 @@ function headbutting()
     if has("encmethod_headbutt_on") and has("TM_HEAD_BUTT") then
         return AccessibilityLevel.Normal
     elseif has("TM_HEAD_BUTT") then
+        return AccessibilityLevel.SequenceBreak
+    else
+        return AccessibilityLevel.None
+    end
+end
+
+function rocksmash_encounter()
+    if has("encmethod_rocksmash_on") and has("TM_ROCK_SMASH") then
+        return AccessibilityLevel.Normal
+    elseif has("TM_ROCK_SMASH") then
         return AccessibilityLevel.SequenceBreak
     else
         return AccessibilityLevel.None
