@@ -5340,7 +5340,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "^$land_encounter, $can_waterfall"
                         ]
                     },
                     {
@@ -5353,7 +5353,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto"
+                            "^$surf_encounter_johto, $can_waterfall"
                         ]
                     }
                 ],
@@ -9000,7 +9000,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 10/Top"
+                            "@JohtoKanto/Route 10/Top, $can_surf_kanto"
                         ]
                     },
                     {

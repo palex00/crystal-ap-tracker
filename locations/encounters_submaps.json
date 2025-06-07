@@ -1585,7 +1585,7 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "Diglett'sCave",
+                        "map": "DiglettsCave",
                         "x": 16,
                         "y": 16,
                         "shape": "diamond"
@@ -2216,7 +2216,13 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "Route26",
+                        "map": "Route26North",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Route26South",
                         "x": 16,
                         "y": 16,
                         "shape": "diamond"
@@ -2348,7 +2354,7 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "OlivineCityPort",
+                        "map": "OlivinePort",
                         "x": 16,
                         "y": 16,
                         "shape": "diamond"
@@ -2377,7 +2383,7 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "VermilionCityPort",
+                        "map": "VermilionPort",
                         "x": 16,
                         "y": 16,
                         "shape": "diamond"
