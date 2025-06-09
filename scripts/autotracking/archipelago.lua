@@ -84,6 +84,27 @@ function onClear(slot_data)
             local val = tonumber(v) or 0
             Tracker:FindObjectForCode("yaml_digit1").CurrentStage = math.floor(val / 10)
             Tracker:FindObjectForCode("yaml_digit2").CurrentStage = val % 10
+        elseif k == "dexcountsanity" then
+            local val = tonumber(v) or 0
+            Tracker:FindObjectForCode("dexcountsanity_lastcheck_digit1").CurrentStage = math.floor(val / 100)
+            Tracker:FindObjectForCode("dexcountsanity_lastcheck_digit2").CurrentStage = math.floor(val / 10) % 10
+            Tracker:FindObjectForCode("dexcountsanity_lastcheck_digit3").CurrentStage = val % 10
+        elseif k == "dexcountsanity_step" then
+            local val = tonumber(v) or 0
+            Tracker:FindObjectForCode("dexcountsanity_stepinterval_digit1").CurrentStage = math.floor(val / 100)
+            Tracker:FindObjectForCode("dexcountsanity_stepinterval_digit2").CurrentStage = math.floor(val / 10) % 10
+            Tracker:FindObjectForCode("dexcountsanity_stepinterval_digit3").CurrentStage = val % 10
+        elseif k == "dexcountsanity_leniency" then
+            local val = tonumber(v) or 0
+            Tracker:FindObjectForCode("dexcountsanity_logicleniency_digit1").CurrentStage = math.floor(val / 100)
+            Tracker:FindObjectForCode("dexcountsanity_logicleniency_digit2").CurrentStage = math.floor(val / 10) % 10
+            Tracker:FindObjectForCode("dexcountsanity_logicleniency_digit3").CurrentStage = val % 10
+        elseif k == "dexcountsanity_checks" then
+            local val = tonumber(v) or 0
+            Tracker:FindObjectForCode("dexcountsanity_totalchecks_digit1").CurrentStage = math.floor(val / 100)
+            Tracker:FindObjectForCode("dexcountsanity_totalchecks_digit2").CurrentStage = math.floor(val / 10) % 10
+            Tracker:FindObjectForCode("dexcountsanity_totalchecks_digit3").CurrentStage = val % 10
+            Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount = val
         elseif k == "dexsanity_pokemon" then
             local valid_ids = {}
             for i = 1, 251 do valid_ids[i] = true end
@@ -103,7 +124,9 @@ function onClear(slot_data)
             -- print(string.format("No setting could be found for key: %s", k))
         end
     end
-
+    
+    updateRemainingDexcountsanityChecks()
+    
     -- tea function
     local stages = {
         ["0000"] = 0,
@@ -187,13 +210,6 @@ end
 
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
-
-    -- Skip processing if dexcountsanity ID
-    local id_str = tostring(location_id)
-    if #id_str == 5 and id_str:sub(1, 2) == "20" then
-        return
-    end
-    
     local v = LOCATION_MAPPING[reverse_offset(location_id)]
     if not v then
         print(string.format("onLocation: could not find location mapping for id %s", location_id))
@@ -210,6 +226,11 @@ function onLocation(location_id, location_name)
     	end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
     	print(string.format("onLocation: could not find object for code %s", v[1]))
+    end
+    
+    local id_str = tostring(location_id)
+    if #id_str == 5 and id_str:sub(1, 2) == "20" then
+        updateRemainingDexcountsanityChecks()
     end
 end
 
@@ -318,39 +339,48 @@ function updatePokemon(pokemon)
 			end
 		end
         
-		if has("encounter_tracking_on") then
-            updateEncounterLocations(pokemon)
-		end
-	end
-end
-
-function updateEncounterLocations(pokemon)
-    local encounter_mapping = ENCOUNTER_MAPPING
-    
-    for _, location in pairs(encounter_mapping) do
-        local object = Tracker:FindObjectForCode(location)
-        if object then
-            object.AvailableChestCount = object.ChestCount
-        end
-    end
-    
-    for dex_number, encounters in pairs(ENCOUNTER_LIST) do
-        local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
-        -- local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
-        if table_contains(pokemon["caught"], dex_number) then
-            -- or (table_contains(pokemon["seen"], dex_number) and dexcode.Active == false)
-            -- TODO: Make the above also check if dexcountsanity is 0 when seen.
-            for _, encounter in pairs(encounters) do
-                local object_name = encounter_mapping[encounter]
-                if object_name ~= nil then
-                    local object = Tracker:FindObjectForCode(object_name)
-                    if object then
-                        object.AvailableChestCount = object.AvailableChestCount - 1
+		if has("encounter_tracking_strict") or has("encounter_tracking_loose") then
+			local encounter_mapping = ENCOUNTER_MAPPING
+            
+            for _, location in pairs(encounter_mapping) do
+                local object = Tracker:FindObjectForCode(location)
+                if object then
+                    object.AvailableChestCount = object.ChestCount
+                end
+            end
+            
+            for dex_number, encounters in pairs(ENCOUNTER_LIST) do
+                local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
+                local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
+                local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total")
+            
+                local is_caught = table_contains(pokemon["caught"], dex_number)
+                local is_seen = table_contains(pokemon["seen"], dex_number)
+            
+                local should_decrement = false
+            
+                if is_caught then
+                    should_decrement = true
+                elseif is_seen and dexcode and not dexcode.Active then
+                    if (dexcountsanity and dexcountsanity.AvailableChestCount == 0) or has("encounter_tracking_loose") then
+                        should_decrement = true
+                    end
+                end
+            
+                if should_decrement then
+                    for _, encounter in pairs(encounters) do
+                        local object_name = encounter_mapping[encounter]
+                        if object_name ~= nil then
+                            local object = Tracker:FindObjectForCode(object_name)
+                            if object then
+                                object.AvailableChestCount = object.AvailableChestCount - 1
+                            end
+                        end
                     end
                 end
             end
-        end
-    end
+		end
+	end
 end
 
 function update_gymcount()

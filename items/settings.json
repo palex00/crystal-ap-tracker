@@ -1220,9 +1220,15 @@
                 "inherit_codes": false
             },
             {
-                "name": "Encounter Tracking - On",
+                "name": "Encounter Tracking - Strict",
                 "img": "/images/settings/encounter_tracking.png",
-                "codes": "encounter_tracking, encounter_tracking_on",
+                "codes": "encounter_tracking, encounter_tracking_strict",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Tracking - Loose",
+                "img": "/images/settings/encounter_tracking.png",
+                "codes": "encounter_tracking, encounter_tracking_loose",
                 "inherit_codes": false
             }
         ]
@@ -1785,5 +1791,605 @@
                 "img": "/images/settings/digits/d9.png"
             }
         ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_logicleniency_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_logicleniency_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_logicleniency_digit3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_stepinterval_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_stepinterval_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_stepinterval_digit3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_lastcheck_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_lastcheck_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_lastcheck_digit3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_totalchecks_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_totalchecks_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_totalchecks_digit3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_remainingchecks_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_remainingchecks_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "dexcountsanity_remainingchecks_digit3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/dexcountsanitysettings.png",
+        "codes": "dexcountsanitysettings",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/logicleniency.png",
+        "codes": "logicleniency",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/stepinterval.png",
+        "codes": "stepinterval",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/totalchecks.png",
+        "codes": "totalchecks",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/lastcheck.png",
+        "codes": "lastcheck",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/remainingchecks.png",
+        "codes": "remainingchecks",
+        "type": "static"
     }
 ]

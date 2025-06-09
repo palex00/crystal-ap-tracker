@@ -41,6 +41,7 @@ Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/pokedex.json")
 Tracker:AddLayouts("layouts/dexsanity_items.json")
+Tracker:AddLayouts("layouts/dexcountsanity.json")
 
 -- AutoTracking for Poptracker
 ScriptHost:LoadScript("scripts/autotracking.lua")

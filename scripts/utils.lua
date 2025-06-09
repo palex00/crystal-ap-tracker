@@ -166,3 +166,10 @@ function toggle_splitmap()
         Tracker:AddLayouts("layouts/johto_only/tabs_reverse.json")
     end
 end
+
+function updateRemainingDexcountsanityChecks()
+    local val = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount
+    Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit1").CurrentStage = math.floor(val / 100)
+    Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit2").CurrentStage = math.floor(val / 10) % 10
+    Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit3").CurrentStage = val % 10
+end

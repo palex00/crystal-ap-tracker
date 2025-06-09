@@ -253,7 +253,10 @@
 {"name": "Tyranitar", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_248", "sections": [{"hosted_item": "dexsanity_tyranitar"}], "map_locations": [{ "map": "johtopokemon", "x": 416, "y": 598, "shape": "diamond", "size": 10}]},
 {"name": "Lugia", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_249", "sections": [{"hosted_item": "dexsanity_lugia"}], "map_locations": [{ "map": "johtopokemon", "x": 476, "y": 598, "shape": "diamond", "size": 10}]},
 {"name": "Ho-oh", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_250", "sections": [{"hosted_item": "dexsanity_ho-oh"}], "map_locations": [{ "map": "johtopokemon", "x": 536, "y": 598, "shape": "diamond", "size": 10}]},
-{"name": "Celebi", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_251", "sections": [{"hosted_item": "dexsanity_celebi"}], "map_locations": [{ "map": "johtopokemon", "x": 596, "y": 598, "shape": "diamond", "size": 10}]}
+{"name": "Celebi", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_251", "sections": [{"hosted_item": "dexsanity_celebi"}], "map_locations": [{ "map": "johtopokemon", "x": 596, "y": 598, "shape": "diamond", "size": 10}]},
+
+{"name": "Dexcountsanity", "sections": [{"name": "Total", "item_count": 251}]}
+    
 ]
 }
 ]

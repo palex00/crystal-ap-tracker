@@ -11,7 +11,7 @@ end
 
 function resetLocations()
     for _, v in pairs(LOCATION_MAPPING) do
-        if v and v:sub(1, 2) == "@J" then -- this checks it's not a Dexsanity Location
+        if v and (v:sub(1, 2) == "@J" or v:sub(1, 2) == "@Z") then -- this checks it's not a Dexsanity Location
             local obj = Tracker:FindObjectForCode(v)
             if obj ~= nil then
                 obj.AvailableChestCount = 1
