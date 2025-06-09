@@ -2,13 +2,13 @@
     "pokedex_grid_full": {
         "type": "tabbed",
         "tabs": [
-            //{
-            //    "title": "Pokémon Logic",
-            //    "content": {
-            //        "type": "layout",
-            //        "key": "pokemon_logic"
-            //    }
-            //},
+            {
+                "title": "Pokémon Logic",
+                "content": {
+                    "type": "layout",
+                    "key": "pokemon_logic"
+                }
+            },
             {
                 "title": "Dexcountsanity",
                 "content": {

@@ -2,15 +2,15 @@
     "tabbed_maps": {
         "type": "tabbed",
         "tabs": [
-            //{
-            //    "title": "Overworld",
-            //    "content": {
-            //        "type": "map",
-            //        "maps": [
-            //            "johtokanto"
-            //        ]
-            //    }
-            //},
+            {
+                "title": "Overworld",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "johtokanto"
+                    ]
+                }
+            },
             {
                 "title": "Pokedex",
                 "content": {
