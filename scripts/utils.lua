@@ -85,18 +85,13 @@ end
 
 function toggle_ilex()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
-    print(sudowoodo)
     if has("ilextree_on") and not sudowoodo then
-        print("Case 1")
         Tracker:AddMaps("maps/ilex_forest_tree.json")
     elseif has("ilextree_on") and sudowoodo then
-        print("Case 2")
         Tracker:AddMaps("maps/mischief/ilex_forest_tree.json")
     elseif has("ilextree_off") and not sudowoodo then
-        print("Case 3")
         Tracker:AddMaps("maps/ilex_forest_no_tree.json")
     elseif has("ilextree_off") and sudowoodo then
-        print("Case 4")
         Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.json")
     end
 end
