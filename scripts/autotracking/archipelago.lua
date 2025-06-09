@@ -65,7 +65,7 @@ function onClear(slot_data)
             end
         elseif SLOT_CODES[k] then
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
-            print("Setting " .. k .. " to " .. v)
+            -- print("Setting " .. k .. " to " .. v)
         elseif REQUIREMENT_CODES[k] then
 			local item = REQUIREMENT_CODES[k].item
 			item:setType(REQUIREMENT_CODES[k].mapping[v])
@@ -100,7 +100,7 @@ function onClear(slot_data)
                 end
             end
         else
-            print(string.format("No setting could be found for key: %s", k))
+            -- print(string.format("No setting could be found for key: %s", k))
         end
     end
 
@@ -187,6 +187,13 @@ end
 
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
+
+    -- Skip processing if dexcountsanity ID
+    local id_str = tostring(location_id)
+    if #id_str == 5 and id_str:sub(1, 2) == "20" then
+        return
+    end
+    
     local v = LOCATION_MAPPING[reverse_offset(location_id)]
     if not v then
         print(string.format("onLocation: could not find location mapping for id %s", location_id))
@@ -287,7 +294,6 @@ end
 
 function updateVanillaKeyItems(value)
     if value ~= nil then
-        print(value)
         for i, obj in ipairs(FLAG_ITEM_CODES) do
             local bit = value >> (i - 1) & 1
             if obj.codes and (obj.option == nil or has(obj.option)) then
@@ -301,9 +307,9 @@ end
 
 function updatePokemon(pokemon)
 	if pokemon ~= nil then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		--if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 			print(string.format("updatePokemon: Pokemon - %s", dump_table(pokemon)))
-		end
+		--end
 		for dex_number, code in pairs(POKEMON_MAPPING) do
 			if table_contains(pokemon["caught"], dex_number) then
 				Tracker:FindObjectForCode(code).Active = true
@@ -313,7 +319,6 @@ function updatePokemon(pokemon)
 		end
         
 		if has("encounter_tracking_on") then
-        
 			local encounter_mapping = ENCOUNTER_MAPPING
             
             for _, location in pairs(encounter_mapping) do
@@ -325,7 +330,7 @@ function updatePokemon(pokemon)
             
 			for dex_number, encounters in pairs(ENCOUNTER_LIST) do
 				local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
-                local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
+                -- local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
 				if table_contains(pokemon["caught"], dex_number) then
                     -- or (table_contains(pokemon["seen"], dex_number) and dexcode.Active == false)
                     -- TODO: Make the above also check if dexcountsanity is 0 when seen.
@@ -372,21 +377,16 @@ last_map_group = nil
 last_map_number = nil
 
 function onMap(value)
-    print(value)
     if has("automap_on") and value ~= nil and value["data"] ~= nil then
         local map_group = value["data"]["mapGroup"]
         local map_number = value["data"]["mapNumber"]
-        print(map_group)
-        print(map_number)
 
         Tracker:FindObjectForCode("ssaqua").CurrentStage = 0
         
         -- Detect map transition logic
         if last_map_group == 15 and last_map_number == 1 and map_group == 15 and map_number == 3 then
-            print("Set SSAqua to 1")
             Tracker:FindObjectForCode("ssaqua").CurrentStage = 1
         elseif last_map_group == 15 and last_map_number == 2 and map_group == 15 and map_number == 3 then
-            print("Set SSAqua to 2")
             Tracker:FindObjectForCode("ssaqua").CurrentStage = 2
         end
 
@@ -406,8 +406,6 @@ function onMap(value)
         local tabs = MAP_MAPPING[map_group] and MAP_MAPPING[map_group][map_number]
         
         for i, tab in ipairs(tabs) do
-            print(i)
-            print(tab)
             Tracker:UiHint("ActivateTab", tab)
         end
         
