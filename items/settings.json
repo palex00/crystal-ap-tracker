@@ -209,6 +209,12 @@
         "allow_disabled": false,
         "stages": [
             {
+                "name": "Free Fly Location - None",
+                "img": "/images/settings/town_locations/none.png",
+                "codes": "free_fly_location",
+                "inherit_codes": false
+            },
+            {
                 "name": "Free Fly Location - New Bark Town",
                 "img": "/images/settings/town_locations/new_bark.png",
                 "codes": "free_fly_location,free_fly_NewBark",
@@ -353,6 +359,12 @@
         "loop": true,
         "allow_disabled": false,
         "stages": [
+            {
+                "name": "Map Card Fly Location - None",
+                "img": "/images/settings/town_locations/none.png",
+                "codes": "map_card_fly",
+                "inherit_codes": false
+            },
             {
                 "name": "Map Card Fly Location - New Bark Town",
                 "img": "/images/settings/town_locations/new_bark.png",
