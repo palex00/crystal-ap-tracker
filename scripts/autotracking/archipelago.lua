@@ -380,8 +380,6 @@ function onMap(value)
     if has("automap_on") and value ~= nil and value["data"] ~= nil then
         local map_group = value["data"]["mapGroup"]
         local map_number = value["data"]["mapNumber"]
-
-        Tracker:FindObjectForCode("ssaqua").CurrentStage = 0
         
         -- Detect map transition logic
         if last_map_group == 15 and last_map_number == 1 and map_group == 15 and map_number == 3 then

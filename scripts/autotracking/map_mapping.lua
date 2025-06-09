@@ -266,6 +266,20 @@ MAP_MAPPING =  {
     [7] =  {"Kanto Cities", "Pewter City", "City"},  --PEWTER_POKECENTER_2F_BETA
     [8] =  {"Kanto Cities", "Pewter City", "City"},  --PEWTER_SNOOZE_SPEECH_HOUSE
   },
+  [15] =  {
+    [1] =  {"S.S. Aqua", "Olivine Port"},                 --OLIVINE_PORT
+    [2] =  {"S.S. Aqua", "Vermilion Port"},               --VERMILION_PORT
+    [3] =  {},                                            --FAST_SHIP_1F
+    [4] =  {},                                            --FAST_SHIP_CABINS_NNW_NNE_NE
+    [5] =  {},                                            --FAST_SHIP_CABINS_SW_SSW_NW
+    [6] =  {},                                            --FAST_SHIP_CABINS_SE_SSE_CAPTAINS_CABIN
+    [7] =  {},                                            --FAST_SHIP_B1F
+    [8] =  {},                                            --OLIVINE_PORT_PASSAGE
+    [9] =  {},                                            --VERMILION_PORT_PASSAGE
+    [10] =  {"Kanto Dungeons", "Mount Moon", "Square"},   --MOUNT_MOON_SQUARE
+    [11] =  {"Kanto Dungeons", "Mount Moon", "Square"},   --MOUNT_MOON_GIFT_SHOP
+    [12] =  {"Johto Cities", "Ecruteak City", "Tin Tower", "Roof"}, --TIN_TOWER_1F
+  },
   [115] =  {
     [1] =  {"S.S. Aqua", "Olivine Port"},                 --OLIVINE_PORT
     [2] =  {"S.S. Aqua", "Vermilion Port"},               --VERMILION_PORT
