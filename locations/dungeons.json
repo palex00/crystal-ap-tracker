@@ -10831,6 +10831,30 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "Poké-Trap Koffing",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Koffing"
+                    },
+                    {
+                        "name": "Poké-Trap Voltorb",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Voltorb"
+                    },
+                    {
+                        "name": "Poké-Trap Geodude",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Geodude"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TeamRocketBaseB1F",
+                        "x": 56,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - West Hidden Item"
                     }
                 ],
@@ -10937,6 +10961,9 @@
                 "sections": [
                     {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - HM06 from Lance"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Top"
                     }
                 ],
                 "map_locations": [
@@ -10997,6 +11024,9 @@
                 "sections": [
                     {
                         "ref": "JohtoKanto/Mahogany Town/Clear Rocket HQ"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Middle"
                     }
                 ],
                 "map_locations": [
@@ -11004,6 +11034,21 @@
                         "map": "TeamRocketBaseB2F",
                         "x": 120,
                         "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Bottom"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TeamRocketBaseB2F",
+                        "x": 120,
+                        "y": 152
                     }
                 ]
             },

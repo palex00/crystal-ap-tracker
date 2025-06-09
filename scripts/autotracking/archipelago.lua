@@ -373,7 +373,15 @@ function updatePokemon(pokemon)
                         if object_name ~= nil then
                             local object = Tracker:FindObjectForCode(object_name)
                             if object then
-                                object.AvailableChestCount = object.AvailableChestCount - 1
+                                if string.sub(encounter, 1, 7) == "Static_" then
+                                    local event_name = string.sub(encounter, 8)
+                                    local event_code = Tracker:FindObjectForCode(event_name)
+                                    if event_code and event_code.Active then
+                                        object.AvailableChestCount = object.AvailableChestCount - 1
+                                    end
+                                else
+                                    object.AvailableChestCount = object.AvailableChestCount - 1
+                                end
                             end
                         end
                     end
