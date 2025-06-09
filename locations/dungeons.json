@@ -838,6 +838,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Cianwood City/Got Shuckie from Mania"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodCity",
+                        "x": 280,
+                        "y": 664
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Cianwood City/Gym - Blackbelt Lao",
                         "name": "Cianwood Gym - Blackbelt Lao"
                     },
@@ -1638,6 +1653,21 @@
                     {
                         "map": "DragonsDenB1F",
                         "x": 536,
+                        "y": 472
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Got Dratini from Elder"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DragonsDenB1F",
+                        "x": 312,
                         "y": 472
                     }
                 ]
@@ -2518,6 +2548,21 @@
                         "map": "GoldenrodCity",
                         "x": 472,
                         "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Got Eevee from Bill"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodCity",
+                        "x": 88,
+                        "y": 408
                     }
                 ]
             },
@@ -3515,6 +3560,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Ice Path/B1F - Got Tyrogue from Kiyo"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "IcePathB1F",
+                        "x": 264,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Ice Path/B1F - Item"
                     }
                 ],
@@ -3628,6 +3688,21 @@
                         "map": "IlexForest",
                         "x": 104,
                         "y": 456
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ilex Forest/Celebi"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "IlexForest",
+                        "x": 136,
+                        "y": 364
                     }
                 ]
             },
@@ -3891,7 +3966,12 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "Red Scale from Gyarados",
                         "ref": "JohtoKanto/Lake of Rage/Red Scale from Gyarados"
+                    },
+                    {
+                        "name": "Red Gyarados",
+                        "ref": "JohtoKanto/Lake of Rage/Red Gyarados"
                     }
                 ],
                 "map_locations": [
@@ -8729,6 +8809,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 36/Sudowoodo"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route36",
+                        "x": 568,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 36/Psychic Mark"
                     }
                 ],
@@ -9263,6 +9358,21 @@
                         "map": "Route41",
                         "x": 152,
                         "y": 568
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Lugia Chamber - Lugia"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WhirlIslandLugiaChamber",
+                        "x": 152,
+                        "y": 88
                     }
                 ]
             },
@@ -11051,6 +11161,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Tin Tower/1F - Suicune"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TinTower1F",
+                        "x": 152,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Tin Tower/3F - Item"
                     }
                 ],
@@ -11254,6 +11379,21 @@
                         "map": "TinTower9F",
                         "x": 152,
                         "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/Roof - Ho-Oh"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TinTowerRoof",
+                        "x": 152,
+                        "y": 88
                     }
                 ]
             },
@@ -11584,6 +11724,21 @@
                         "map": "UnionCaveB2F",
                         "x": 56,
                         "y": 488
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Lapras"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "UnionCaveB2F",
+                        "x": 184,
+                        "y": 504
                     }
                 ]
             },

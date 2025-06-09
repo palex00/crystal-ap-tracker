@@ -138,3 +138,11 @@ function rocksmash_encounter()
         return AccessibilityLevel.None
     end
 end
+
+function static_encounter()
+    if has("encmethod_static_on") then
+        return AccessibilityLevel.Normal
+    else then
+        return AccessibilityLevel.SequenceBreak
+    end
+end

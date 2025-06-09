@@ -1401,6 +1401,17 @@
                         ]
                     },
                     {
+                        "name": "B2F - Lapras",
+                        "chest_unopened_img": "images/other/lapras.png",
+                        "chest_opened_img": "images/other/lapras_bw.png",
+                        "access_rules": [
+                            "$can_surf_johto, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
                         "name": "B2F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
@@ -1884,6 +1895,17 @@
                         ]
                     },
                     {
+                        "name": "Celebi",
+                        "chest_unopened_img": "images/other/celebi.png",
+                        "chest_opened_img": "images/other/celebi_bw.png",
+                        "access_rules": [
+                            "@JohtoKanto/Ilex Forest/Pre-Tree, GS_BALL, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
@@ -2209,6 +2231,17 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Got Eevee from Bill",
+                        "chest_unopened_img": "images/other/eevee.png",
+                        "chest_opened_img": "images/other/eevee_bw.png",
+                        "access_rules": [
+                            "EVENT_MET_BILL, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
                         ]
                     }
                 ],
@@ -3013,6 +3046,19 @@
                         ]
                     },
                     {
+                        "name": "Sudowoodo",
+                        "chest_unopened_img": "images/other/sudowoodo.png",
+                        "chest_opened_img": "images/other/sudowoodo_bw.png",
+                        "access_rules": [
+                            "@JohtoKanto/Route 36/Left, ^$static_encounter, SQUIRTBOTTLE",
+                            "@JohtoKanto/Route 36/Right, ^$static_encounter, SQUIRTBOTTLE",
+                            "@JohtoKanto/Route 36/Top, ^$static_encounter, SQUIRTBOTTLE"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
@@ -3404,6 +3450,15 @@
                 ],
                 "sections": [
                     {
+                        "name": "1F - Suicune",
+                        "access_rules": [
+                            "^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
                         "name": "1F - Rainbow Wing",
                         "access_rules": [
                             "EVENT_BEAT_ELITE_FOUR"
@@ -3617,7 +3672,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "RAINBOW_WING, ^$land_encounter"
                         ]
                     },
                     {
@@ -3639,7 +3694,18 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "RAINBOW_WING, ^$land_encounter"
+                        ]
+                    },
+                    {
+                        "name": "Roof - Ho-Oh",
+                        "chest_unopened_img": "images/other/ho_oh.png",
+                        "chest_opened_img": "images/other/ho_oh_bw.png",
+                        "access_rules": [
+                            "RAINBOW_WING, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
                         ]
                     }
                 ],
@@ -4715,6 +4781,17 @@
                         ]
                     },
                     {
+                        "name": "Lugia Chamber - Lugia",
+                        "chest_unopened_img": "images/other/lugia.png",
+                        "chest_opened_img": "images/other/lugia_bw.png",
+                        "access_rules": [
+                            "^$can_flash_johto, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
                         "name": "Lugia Chamber - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
@@ -4863,6 +4940,17 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Got Shuckie from Mania",
+                        "chest_unopened_img": "images/other/shuckie.png",
+                        "chest_opened_img": "images/other/shuckie_bw.png",
+                        "access_rules": [
+                            "^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
                         ]
                     },
                     {
@@ -5328,6 +5416,17 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Got Tyrogue from Kiyo",
+                        "chest_unopened_img": "images/other/tyrogue.png",
+                        "chest_opened_img": "images/other/tyrogue_bw.png",
+                        "access_rules": [
+                            "^$static_encounter, $can_waterfall"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
                         ]
                     },
                     {
@@ -5879,6 +5978,18 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Red Gyarados",
+                        "chest_unopened_img": "images/other/red_gyarados.png",
+                        "chest_opened_img": "images/other/red_gyarados_bw.png",
+                        "access_rules": [
+                            "$can_surf_johto, red_gyarados_vanilla, ^$static_encounter",
+                            "$can_whirlpool, red_gyarados_whirlpool, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
                         ]
                     },
                     {
@@ -6486,6 +6597,17 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Dragon's Den B1F - Got Dratini from Elder",
+                        "chest_unopened_img": "images/other/dratini.png",
+                        "chest_opened_img": "images/other/dratini_bw.png",
+                        "access_rules": [
+                            "^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
                         ]
                     },
                     {
