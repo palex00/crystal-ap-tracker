@@ -5622,6 +5622,39 @@
                         ]
                     },
                     {
+                        "name": "Rocket HQ B1F - Poké-Trap Koffing",
+                        "chest_unopened_img": "images/other/trap_koffing.png",
+                        "chest_opened_img": "images/other/trap_koffing_bw.png",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B1F - Poké-Trap Voltorb",
+                        "chest_unopened_img": "images/other/trap_voltorb.png",
+                        "chest_opened_img": "images/other/trap_voltorb_bw.png",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B1F - Poké-Trap Geodude",
+                        "chest_unopened_img": "images/other/trap_geodude.png",
+                        "chest_opened_img": "images/other/trap_geodude_bw.png",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
                         "name": "Rocket HQ B2F - Grunt 3",
                         "access_rules": [
                             "EVENT_DECIDED_TO_HELP_LANCE"
@@ -5673,6 +5706,39 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B2F - Electrode Bottom",
+                        "chest_unopened_img": "images/other/electrode.png",
+                        "chest_opened_img": "images/other/electrode_bw.png",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B2F - Electrode Middle",
+                        "chest_unopened_img": "images/other/electrode.png",
+                        "chest_opened_img": "images/other/electrode_bw.png",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B2F - Electrode Top",
+                        "chest_unopened_img": "images/other/electrode.png",
+                        "chest_opened_img": "images/other/electrode_bw.png",
+                        "access_rules": [
+                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
                         ]
                     },
                     {

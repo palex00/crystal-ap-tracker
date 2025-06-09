@@ -46,34 +46,37 @@ FLAG_STATIC_CODES = {
     "EVENT_GOT_SHUCKIE",
     "EVENT_GOT_EEVEE",
     "EVENT_GOT_DRATINI",
-    "EVENT_TOGEPI_HATCHED",
+    nil,
     "EVENT_GOT_TYROGUE_FROM_KIYO",
     "EVENT_UNION_CAVE_B2F_LAPRAS"
 }
 
+-- RocketHQTrap1_1 = Voltorb
+-- RocketHQTrap2_1 = Geodude
+-- RocketHQTrap3_1 = Koffing
 FLAG_TRAP_CODES = {
-    "EVENT_EXPLODING_TRAP_1",
-    "EVENT_EXPLODING_TRAP_2",
-    "EVENT_EXPLODING_TRAP_3",
-    "EVENT_EXPLODING_TRAP_4",
-    "EVENT_EXPLODING_TRAP_5",
-    "EVENT_EXPLODING_TRAP_6",
-    "EVENT_EXPLODING_TRAP_7",
-    "EVENT_EXPLODING_TRAP_8",
-    "EVENT_EXPLODING_TRAP_9",
-    "EVENT_EXPLODING_TRAP_10",
-    "EVENT_EXPLODING_TRAP_11",
-    "EVENT_EXPLODING_TRAP_12",
-    "EVENT_EXPLODING_TRAP_13",
-    "EVENT_EXPLODING_TRAP_14",
-    "EVENT_EXPLODING_TRAP_15",
-    "EVENT_EXPLODING_TRAP_16",
-    "EVENT_EXPLODING_TRAP_17",
-    "EVENT_EXPLODING_TRAP_18",
-    "EVENT_EXPLODING_TRAP_19",
-    "EVENT_EXPLODING_TRAP_20",
-    "EVENT_EXPLODING_TRAP_21",
-    "EVENT_EXPLODING_TRAP_22"
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1"
 }
 
 FLAG_ITEM_CODES = {
