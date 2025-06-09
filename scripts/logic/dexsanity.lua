@@ -142,7 +142,7 @@ end
 function static_encounter()
     if has("encmethod_static_on") then
         return AccessibilityLevel.Normal
-    else then
+    else
         return AccessibilityLevel.SequenceBreak
     end
 end
