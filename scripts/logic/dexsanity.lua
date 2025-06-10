@@ -20,7 +20,7 @@ function evolve(req_level)
     local digit1 = Tracker:FindObjectForCode("result_digit1").CurrentStage or 0
     local digit2 = Tracker:FindObjectForCode("result_digit2").CurrentStage or 0
     local current_level = digit1 * 10 + digit2
-    if has("encmethod_land_on") and req_level <= current_level then
+    if has("evomethod_level_on") and req_level <= current_level then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.SequenceBreak

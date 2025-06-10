@@ -46,7 +46,7 @@ FLAG_STATIC_CODES = {
     "Shuckie_1",
     "Eevee_1",
     "Dratini_1",
-    nil,
+    "dummy",
     "Tyrogue_1",
     "UnionCaveLapras_1",
     "Celebi_1"

@@ -64,7 +64,6 @@ function onClear(slot_data)
                 Tracker:AddLayouts("layouts/versionmismatch.json")
             end
         elseif SLOT_CODES[k] then
-            print("Last Processed Slot Code: "..k)
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
             -- print("Setting " .. k .. " to " .. v)
         elseif REQUIREMENT_CODES[k] then
@@ -189,6 +188,8 @@ function onClear(slot_data)
         Archipelago:SetNotify({POKE_ID})
         Archipelago:Get({POKE_ID})
     end
+
+
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -242,30 +243,34 @@ function setEncounterList(wild_encounters)
 end
 
 function onNotify(key, value, old_value)
-    if key == EVENT_ID then
-        updateEvents(value)
-    elseif key == STATIC_ID then
-        updateStatics(value)
-    elseif key == KEY_ID then
-        updateVanillaKeyItems(value)
-    elseif key == POKE_ID then
-        updatePokemon(value)
-    elseif key == ROCKETTRAP_ID then
-        updateRocketTraps(value)
+    if value ~= nil and value ~= 0 then
+        if key == EVENT_ID then
+            updateEvents(value)
+        elseif key == STATIC_ID then
+            updateStatics(value)
+        elseif key == KEY_ID then
+            updateVanillaKeyItems(value)
+        elseif key == POKE_ID then
+            updatePokemon(value)
+        elseif key == ROCKETTRAP_ID then
+            updateRocketTraps(value)
+        end
     end
 end
 
 function onNotifyLaunch(key, value)
-    if key == EVENT_ID then
-        updateEvents(value)
-    elseif key == STATIC_ID then
-        updateStatics(value)
-    elseif key == KEY_ID then
-        updateVanillaKeyItems(value)
-    elseif key == POKE_ID then
-        updatePokemon(value)
-    elseif key == ROCKETTRAP_ID then
-        updateRocketTraps(value)
+    if value ~= nil and value ~= 0 then
+        if key == EVENT_ID then
+            updateEvents(value)
+        elseif key == STATIC_ID then
+            updateStatics(value)
+        elseif key == KEY_ID then
+            updateVanillaKeyItems(value)
+        elseif key == POKE_ID then
+            updatePokemon(value)
+        elseif key == ROCKETTRAP_ID then
+            updateRocketTraps(value)
+        end
     end
 end
 
@@ -285,6 +290,7 @@ function updateEvents(value)
 end
 
 function updateStatics(value)
+    print(value)
     if value ~= nil then
         for i, code in ipairs(FLAG_STATIC_CODES) do
             local obj = Tracker:FindObjectForCode(code)
@@ -330,11 +336,11 @@ end
 local last_pokemon = nil
 
 function updatePokemon(pokemon)
-	if pokemon == nil then
-		pokemon = last_pokemon
-	else
-		last_pokemon = pokemon
-	end
+	--if pokemon == nil then
+	--	pokemon = last_pokemon
+	--else
+	--	last_pokemon = pokemon
+	--end
     
 	if pokemon ~= nil then
 		--if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -363,7 +369,7 @@ function updatePokemon(pokemon)
             for dex_number, encounters in pairs(ENCOUNTER_LIST) do
                 local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
                 local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
-
+                
                 local is_caught = table_contains(pokemon["caught"], dex_number)
                 local is_seen = table_contains(pokemon["seen"], dex_number)
 
@@ -538,3 +544,19 @@ Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
 Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
 Archipelago:AddBouncedHandler("map handler", onMap)
+
+--ScriptHost:AddWatchForCode("Sudowoodo_1", "Sudowoodo_1", updatePokemon)
+--ScriptHost:AddWatchForCode("RedGyarados_1", "RedGyarados_1", updatePokemon)
+--ScriptHost:AddWatchForCode("Ho_Oh_1", "Ho_Oh_1", updatePokemon)
+--ScriptHost:AddWatchForCode("Lugia_1", "Lugia_1", updatePokemon)
+--ScriptHost:AddWatchForCode("Suicune_1", "Suicune_1", updatePokemon)
+--ScriptHost:AddWatchForCode("RocketHQElectrode1_1", "RocketHQElectrode1_1", updatePokemon)
+--ScriptHost:AddWatchForCode("RocketHQElectrode2_1", "RocketHQElectrode2_1", updatePokemon)
+--ScriptHost:AddWatchForCode("RocketHQElectrode3_1", "RocketHQElectrode3_1", updatePokemon)
+--ScriptHost:AddWatchForCode("Shuckie_1", "Shuckie_1", updatePokemon)
+--ScriptHost:AddWatchForCode("Eevee_1", "Eevee_1", updatePokemon)
+--ScriptHost:AddWatchForCode("Dratini_1", "Dratini_1", updatePokemon)
+--ScriptHost:AddWatchForCode("dummy", "dummy", updatePokemon)
+--ScriptHost:AddWatchForCode("Tyrogue_1", "Tyrogue_1", updatePokemon)
+--ScriptHost:AddWatchForCode("UnionCaveLapras_1", "UnionCaveLapras_1", updatePokemon)
+--ScriptHost:AddWatchForCode("Celebi_1", "Celebi_1", updatePokemon)
