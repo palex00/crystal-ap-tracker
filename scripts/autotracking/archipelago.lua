@@ -72,6 +72,8 @@ function onClear(slot_data)
 		elseif AMOUNT_CODES[k] then
 			local item = AMOUNT_CODES[k].item
 			item:setStage(v)
+        elseif k == "dexsanity" then
+            Tracker:FindObjectForCode("dexsanity").AvailableChestCount = v
         elseif k == "evolution_gym_levels" then
             local val = tonumber(v) or 0
             Tracker:FindObjectForCode("yaml_digit1").CurrentStage = math.floor(val / 10)
@@ -275,7 +277,13 @@ function updateEvents(value)
             end
             local bit = value >> (i - 1) & 1
             if #code > 0 then
-                Tracker:FindObjectForCode(code).Active = Tracker:FindObjectForCode(code).Active or bit
+                local obj = Tracker:FindObjectForCode(code)
+                if code == "EVENT_MET_BILL" then
+                    -- behavior is inverted for this because the event is fucked up in the basepatch
+                    obj.Active = bit == 0
+                else
+                    obj.Active = obj.Active or bit == 1
+                end
             end
         end
     end

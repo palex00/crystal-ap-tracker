@@ -3185,6 +3185,13 @@
                 ],
                 "sections": [
                     {
+                        "name": "Met Bill",
+                        "hosted_item": "EVENT_MET_BILL",
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
                         "name": "Gym - Sage Ping",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
