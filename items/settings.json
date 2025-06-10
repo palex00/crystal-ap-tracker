@@ -151,12 +151,33 @@
     },
     {
         "name": "Randomize Hidden Items",
-        "type": "progressive_toggle",
-        "initial_stage_idx": 1,
-        "initial_active_state": true,
-        "codes": "hiddenitems, reqitemfinder",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 3,
+        "codes": "hiddenitem_logic",
         "loop": true,
         "stages": [
+            {
+                "name": "Hidden Items - Not Randomized | Itemfinder not required",
+                "img": "/images/settings/hiddenitems.png",
+                "img_mods": "overlay|images/settings/itemfinder_not_required.png, @disabled",
+                "codes": "hiddenitems_on, reqitemfinder_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hidden Items - Not Randomized | Itemfinder is logical",
+                "img": "/images/settings/hiddenitems.png",
+                "img_mods": "overlay|images/settings/itemfinder_logic.png, @disabled",
+                "codes": "hiddenitems_on, reqitemfinder_logic",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hidden Items - Not Randomized | Itemfinder is required",
+                "img": "/images/settings/hiddenitems.png",
+                "img_mods": "overlay|images/settings/itemfinder_required.png, @disabled",
+                "codes": "hiddenitems_on, reqitemfinder_required",
+                "inherit_codes": false
+            },
             {
                 "name": "Hidden Items - Randomized | Itemfinder not required",
                 "img": "/images/settings/hiddenitems.png",

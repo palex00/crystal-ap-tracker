@@ -72,14 +72,6 @@ function onClear(slot_data)
 		elseif AMOUNT_CODES[k] then
 			local item = AMOUNT_CODES[k].item
 			item:setStage(v)
-        elseif k == "randomize_hidden_items" then
-        -- hiddenitems are handled specially because this sets it to Active / Inactive
-        -- because I merged hiddenitems and itemfinder logic into one item
-            if v == 0 then
-                Tracker:FindObjectForCode("hiddenitems").Active = false
-            elseif v == 1 then
-                Tracker:FindObjectForCode("hiddenitems").Active = true
-            end
         elseif k == "evolution_gym_levels" then
             local val = tonumber(v) or 0
             Tracker:FindObjectForCode("yaml_digit1").CurrentStage = math.floor(val / 10)

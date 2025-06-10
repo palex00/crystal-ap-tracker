@@ -1532,7 +1532,13 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "Route45",
+                        "map": "Route45North",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Route45South",
                         "x": 16,
                         "y": 16,
                         "shape": "diamond"
@@ -2695,7 +2701,7 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "LakeofRage",
+                        "map": "LakeOfRage",
                         "x": 16,
                         "y": 16,
                         "shape": "diamond"
@@ -2753,7 +2759,13 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "Route12",
+                        "map": "Route12North",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Route12South",
                         "x": 16,
                         "y": 16,
                         "shape": "diamond"

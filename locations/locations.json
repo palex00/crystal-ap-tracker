@@ -3477,7 +3477,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "RAINBOW_WING, ^$land_encounter"
                         ]
                     },
                     {
@@ -3499,7 +3499,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "RAINBOW_WING, ^$land_encounter"
                         ]
                     },
                     {
@@ -3517,7 +3517,7 @@
                             "RAINBOW_WING"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "RAINBOW_WING, show_items"
                         ]
                     },
                     {
@@ -3548,7 +3548,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "RAINBOW_WING, ^$land_encounter"
                         ]
                     },
                     {
@@ -3588,7 +3588,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "RAINBOW_WING, ^$land_encounter"
                         ]
                     },
                     {
@@ -3610,7 +3610,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "RAINBOW_WING, ^$land_encounter"
                         ]
                     },
                     {
@@ -3632,7 +3632,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "RAINBOW_WING, ^$land_encounter"
                         ]
                     },
                     {
@@ -6670,7 +6670,7 @@
                         "chest_unopened_img": "images/other/dratini.png",
                         "chest_opened_img": "images/other/dratini_bw.png",
                         "access_rules": [
-                            "^$static_encounter"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$static_encounter"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -6686,7 +6686,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$surf_encounter_johto"
                         ]
                     }
                 ],
@@ -8549,7 +8549,9 @@
                     {
                         "name": "Gym - Machine Part in Water",
                         "access_rules": [
-                            "^$hid"
+                            "reqitemfinder_off",
+                            "reqitemfinder_logic, [ITEMFINDER]",
+                            "reqitemfinder_required, ITEMFINDER"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -9583,9 +9585,9 @@
                         "name": "Tea from Granny",
                         "visibility_rules": [
                             "show_items, coffee_north",
-                            "coffee_east",
-                            "coffee_south",
-                            "coffee_west"
+                            "show_items, coffee_east",
+                            "show_items, coffee_south",
+                            "show_items, coffee_west"
                         ]
                     },
                     {

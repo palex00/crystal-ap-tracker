@@ -47,6 +47,14 @@ MAP_QUINTUPLE = {
     [3] = 3,
     [4] = 4
 }
+MAP_SIXTUPLE = {
+    [0] = 0,
+    [1] = 1,
+    [2] = 2,
+    [3] = 3,
+    [4] = 4,
+    [5] = 5
+}
 MAP_TOGGLE_REVERSE = {
     [0] = 1,
     [1] = 0
@@ -325,6 +333,10 @@ SLOT_CODES = {
     all_pokemon_seen = {
         code = "all_pokemon_seen",
         mapping = MAP_TOGGLE
+    },
+    hiddenitem_logic = {
+        code = "hiddenitem_logic",
+        mapping = MAP_SIXTUPLE
     }
 }
 
