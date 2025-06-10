@@ -1234,6 +1234,24 @@
         ]
     },
     {
+        "name": "All Pokemon Seen",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "All Pokemon Seen - FALSE",
+                "codes": "all_pokemon_seen, all_pokemon_seen_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "All Pokemon Seen - TRUE",
+                "codes": "all_pokemon_seen, all_pokemon_seen_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "img": "/images/settings/dex_related/encountermethods.png",
         "codes": "encountermethods_dummy",
         "type": "static"

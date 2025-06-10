@@ -115,7 +115,7 @@ TOWN_MAPPING = {
 }
 
 STARTTOWN_MAPPING = {
-    [NEW_BARK] = 0,
+    [NONE] = 0,
     [CHERRYGROVE] = 1,
     [VIOLET] = 2,
     [UNIONCAVE] = 3,
@@ -321,6 +321,10 @@ SLOT_CODES = {
     breeding_methods_required = {
         code = "breeding_logic",
         mapping = MAP_TRIPLE
+    },
+    all_pokemon_seen = {
+        code = "all_pokemon_seen",
+        mapping = MAP_TOGGLE
     }
 }
 

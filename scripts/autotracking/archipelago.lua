@@ -64,6 +64,7 @@ function onClear(slot_data)
                 Tracker:AddLayouts("layouts/versionmismatch.json")
             end
         elseif SLOT_CODES[k] then
+            print("Last Processed Slot Code: "..k)
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
             -- print("Setting " .. k .. " to " .. v)
         elseif REQUIREMENT_CODES[k] then
@@ -326,7 +327,15 @@ function updateVanillaKeyItems(value)
     end
 end
 
+local last_pokemon = nil
+
 function updatePokemon(pokemon)
+	if pokemon == nil then
+		pokemon = last_pokemon
+	else
+		last_pokemon = pokemon
+	end
+    
 	if pokemon ~= nil then
 		--if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 			print(string.format("updatePokemon: Pokemon - %s", dump_table(pokemon)))
@@ -349,16 +358,21 @@ function updatePokemon(pokemon)
                 end
             end
             
+            local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total")
+
             for dex_number, encounters in pairs(ENCOUNTER_LIST) do
                 local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
                 local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
-                local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total")
-            
+
                 local is_caught = table_contains(pokemon["caught"], dex_number)
                 local is_seen = table_contains(pokemon["seen"], dex_number)
-            
+
+                if has("all_pokemon_seen_true") and dexcode and not dexcode.Active then
+                    is_seen = true
+                end
+
                 local should_decrement = false
-            
+
                 if is_caught then
                     should_decrement = true
                 elseif is_seen and dexcode and not dexcode.Active then
@@ -366,14 +380,14 @@ function updatePokemon(pokemon)
                         should_decrement = true
                     end
                 end
-            
+
                 if should_decrement then
                     for _, encounter in pairs(encounters) do
                         local object_name = encounter_mapping[encounter]
                         if object_name ~= nil then
                             local object = Tracker:FindObjectForCode(object_name)
                             if object then
-                                if string.sub(encounter, 1, 7) == "Static_" then
+                                if string.sub(encounter, 1, 7):lower() == "static_" then
                                     local event_name = string.sub(encounter, 8)
                                     local event_code = Tracker:FindObjectForCode(event_name)
                                     if event_code and event_code.Active then
