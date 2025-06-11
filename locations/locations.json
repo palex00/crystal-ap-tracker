@@ -6954,7 +6954,7 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto, $can_rocksmash",
+                            "@JohtoKanto/Violet City, ^$can_flash_johto, $can_rocksmash",
                             "@JohtoKanto/Blackthorn City"
                         ]
                     },
