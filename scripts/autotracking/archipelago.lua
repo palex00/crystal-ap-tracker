@@ -545,6 +545,11 @@ Archipelago:AddSetReplyHandler("notify handler", onNotify)
 Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
 Archipelago:AddBouncedHandler("map handler", onMap)
 
+
+for _, code in ipairs(FLAG_STATIC_CODES) do
+    ScriptHost:AddWatchForCode(code, code, updatePokemon)
+end
+
 --ScriptHost:AddWatchForCode("Sudowoodo_1", "Sudowoodo_1", updatePokemon)
 --ScriptHost:AddWatchForCode("RedGyarados_1", "RedGyarados_1", updatePokemon)
 --ScriptHost:AddWatchForCode("Ho_Oh_1", "Ho_Oh_1", updatePokemon)
