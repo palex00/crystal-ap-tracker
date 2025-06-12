@@ -70,7 +70,7 @@ function land_encounter()
 end
 
 function surf_encounter_johto()
-    if has("encmethod_land_on") and can_surf_johto() then
+    if has("encmethod_water_on") and can_surf_johto() then
         return AccessibilityLevel.Normal
     elseif can_surf_johto() then
         return AccessibilityLevel.SequenceBreak
@@ -80,7 +80,7 @@ function surf_encounter_johto()
 end
 
 function surf_encounter_kanto()
-    if has("encmethod_land_on") and can_surf_kanto() then
+    if has("encmethod_water_on") and can_surf_kanto() then
         return AccessibilityLevel.Normal
     elseif can_surf_kanto() then
         return AccessibilityLevel.SequenceBreak
