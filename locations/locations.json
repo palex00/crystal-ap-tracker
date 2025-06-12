@@ -5446,7 +5446,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter, $can_waterfall"
+                            "$can_surf_johto, ^$land_encounter"
                         ]
                     },
                     {
@@ -5459,7 +5459,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, $can_waterfall"
+                            "$can_surf_johto, ^$surf_encounter_johto"
                         ]
                     }
                 ],
