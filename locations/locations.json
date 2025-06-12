@@ -9571,6 +9571,13 @@
                         ]
                     },
                     {
+                        "name": "Dept. Store 1F - Buy Waterstone",
+                        "hosted_item": "WATER_STONE",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "Hidden Item at Dead End",
                         "access_rules": [
                             "^$hid"
