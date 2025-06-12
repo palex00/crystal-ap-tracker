@@ -161,21 +161,21 @@
                 "name": "Hidden Items - Not Randomized | Itemfinder not required",
                 "img": "/images/settings/hiddenitems.png",
                 "img_mods": "overlay|images/settings/itemfinder_not_required.png, @disabled",
-                "codes": "hiddenitems_on, reqitemfinder_off",
+                "codes": "hiddenitems_off, reqitemfinder_off",
                 "inherit_codes": false
             },
             {
                 "name": "Hidden Items - Not Randomized | Itemfinder is logical",
                 "img": "/images/settings/hiddenitems.png",
                 "img_mods": "overlay|images/settings/itemfinder_logic.png, @disabled",
-                "codes": "hiddenitems_on, reqitemfinder_logic",
+                "codes": "hiddenitems_off, reqitemfinder_logic",
                 "inherit_codes": false
             },
             {
                 "name": "Hidden Items - Not Randomized | Itemfinder is required",
                 "img": "/images/settings/hiddenitems.png",
                 "img_mods": "overlay|images/settings/itemfinder_required.png, @disabled",
-                "codes": "hiddenitems_on, reqitemfinder_required",
+                "codes": "hiddenitems_off, reqitemfinder_required",
                 "inherit_codes": false
             },
             {
