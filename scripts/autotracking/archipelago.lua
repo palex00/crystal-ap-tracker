@@ -73,7 +73,7 @@ function onClear(slot_data)
 			local item = AMOUNT_CODES[k].item
 			item:setStage(v)
         elseif k == "dexsanity" then
-            Tracker:FindObjectForCode("dexsanity").AvailableChestCount = v
+            Tracker:FindObjectForCode("dexsanity").AcquiredCount = v
         elseif k == "evolution_gym_levels" then
             local val = tonumber(v) or 0
             Tracker:FindObjectForCode("yaml_digit1").CurrentStage = math.floor(val / 10)
