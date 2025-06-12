@@ -942,7 +942,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Union Cave, $can_surf_johto"
+                            "^$land_encounter, @JohtoKanto/Union Cave, $can_surf_johto"
                         ]
                     },
                     {
@@ -1159,7 +1159,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 32/Post-Guy"
+                            "^$land_encounter, @JohtoKanto/Route 32/Post-Guy"
                         ]
                     },
                     {
@@ -1598,7 +1598,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, $can_strength"
+                            "^$land_encounter, $can_surf_johto, $can_strength"
                         ]
                     },
                     {
@@ -1915,8 +1915,8 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Post-Tree",
-                            "@JohtoKanto/Ilex Forest/Pre-Tree"
+                            "^$land_encounter, @JohtoKanto/Ilex Forest/Post-Tree",
+                            "^$land_encounter, @JohtoKanto/Ilex Forest/Pre-Tree"
                         ]
                     },
                     {
@@ -3068,8 +3068,8 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 36/Left",
-                            "@JohtoKanto/Route 36/Right"
+                            "^$land_encounter, @JohtoKanto/Route 36/Left",
+                            "^$land_encounter, @JohtoKanto/Route 36/Right"
                         ]
                     }
                 ],
@@ -4568,7 +4568,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -4581,7 +4581,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -4594,7 +4594,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -4620,7 +4620,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -4633,7 +4633,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -4718,7 +4718,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -4771,7 +4771,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -4808,7 +4808,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -5355,7 +5355,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "^$land_encounter, $can_waterfall"
                         ]
                     },
                     {
@@ -6233,7 +6233,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$land_encounter, $can_surf_johto"
                         ]
                     },
                     {
@@ -6408,7 +6408,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City"
+                            "^$land_encounter, @JohtoKanto/Blackthorn City"
                         ]
                     },
                     {
@@ -6430,7 +6430,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City"
+                            "^$land_encounter, @JohtoKanto/Blackthorn City"
                         ]
                     }
                 ],
@@ -6768,9 +6768,9 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 45, ^$can_flash_johto",
-                            "@JohtoKanto/Violet City, blackthorn_dark_cave_waterfall, ^$can_flash_johto, $can_waterfall",
-                            "@JohtoKanto/Violet City, blackthorn_dark_cave_vanilla, ^$can_flash_johto, $can_surf_johto"
+                            "^$land_encounter, @JohtoKanto/Route 45, ^$can_flash_johto",
+                            "^$land_encounter, @JohtoKanto/Violet City, blackthorn_dark_cave_waterfall, ^$can_flash_johto, $can_waterfall",
+                            "^$land_encounter, @JohtoKanto/Violet City, blackthorn_dark_cave_vanilla, ^$can_flash_johto, $can_surf_johto"
                         ]
                     },
                     {
@@ -7031,7 +7031,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 46/Below Ledge"
+                            "^$land_encounter, @JohtoKanto/Route 46/Below Ledge"
                         ]
                     }
                 ],
@@ -7166,7 +7166,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 27/Post-Waterfall"
+                            "^$land_encounter, @JohtoKanto/Route 27/Post-Waterfall"
                         ]
                     },
                     {
@@ -7202,7 +7202,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, @JohtoKanto/New Bark Town"
+                            "^$land_encounter, $can_surf_johto, @JohtoKanto/New Bark Town"
                         ]
                     },
                     {
@@ -7668,7 +7668,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -7735,7 +7735,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     },
                     {
@@ -7761,7 +7761,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto, $can_waterfall"
+                            "^$land_encounter, ^$can_flash_johto, $can_waterfall"
                         ]
                     },
                     {
@@ -7784,7 +7784,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash_johto"
                         ]
                     }
                 ],
@@ -8216,7 +8216,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 2/Main Section"
+                            "^$land_encounter, @JohtoKanto/Route 2/Main Section"
                         ]
                     }
                 ],
@@ -8503,7 +8503,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Cerulean City"
+                            "^$land_encounter, @JohtoKanto/Cerulean City"
                         ]
                     },
                     {
@@ -9202,7 +9202,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 10/Top, $can_surf_kanto"
+                            "^$land_encounter, @JohtoKanto/Route 10/Top, $can_surf_kanto"
                         ]
                     },
                     {
@@ -9347,7 +9347,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "^$land_encounter, $can_cut_kanto"
                         ]
                     }
                 ],
@@ -9658,7 +9658,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "^$land_encounter, $can_cut_kanto"
                         ]
                     }
                 ],
@@ -10386,7 +10386,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "^$land_encounter, $can_cut_kanto"
                         ]
                     },
                     {
@@ -10458,7 +10458,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "^$land_encounter, $can_cut_kanto"
                         ]
                     }
                 ],
