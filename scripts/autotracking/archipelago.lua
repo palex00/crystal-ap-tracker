@@ -278,12 +278,7 @@ function updateEvents(value)
             local bit = value >> (i - 1) & 1
             if #code > 0 then
                 local obj = Tracker:FindObjectForCode(code)
-                if code == "EVENT_MET_BILL" then
-                    -- behavior is inverted for this because the event is fucked up in the basepatch
-                    obj.Active = bit == 0
-                else
-                    obj.Active = obj.Active or bit == 1
-                end
+                obj.Active = obj.Active or bit == 1
             end
         end
     end
