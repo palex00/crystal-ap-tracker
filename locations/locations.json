@@ -1421,7 +1421,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "^$land_encounter, $can_surf_johto"
                         ]
                     },
                     {
