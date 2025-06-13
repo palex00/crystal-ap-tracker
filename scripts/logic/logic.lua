@@ -122,7 +122,7 @@ function flash_badge()
   return (
     has("badgereqs_none") or
     has("FREE_FLASH") or
-    ((has("badgereqs_vanilla") or has("badge_reqs_regional")) and has("ZEPHYR_BADGE")) or
+    ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
     (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
   )
 end
@@ -132,7 +132,7 @@ function strength_badge()
     (has("badgereqs_vanilla") and has("PLAIN_BADGE")) or
     (has("badgereqs_kanto") and (has("PLAIN_BADGE") or has("RAINBOW_BADGE"))) or
     (has("badgereqs_none")) or
-    (has("badge_reqs_regional") and has("PLAIN_BADGE")) or 
+    (has("badgereqs_regional") and has("PLAIN_BADGE")) or 
     has("FREE_STRENGTH")
   )
 end
@@ -165,7 +165,7 @@ function whirlpool_badge()
     (has("badgereqs_vanilla") and has("GLACIER_BADGE")) or
     (has("badgereqs_kanto") and (has("GLACIER_BADGE") or has("VOLCANO_BADGE"))) or
     has("badgereqs_none") or
-    (has("badge_reqs_regional") and has("GLACIER_BADGE")) or 
+    (has("badgereqs_regional") and has("GLACIER_BADGE")) or 
     has("FREE_WHIRLPOOL")
   )
 end
@@ -180,7 +180,7 @@ function waterfall_badge()
     (has("badgereqs_vanilla") and has("RISING_BADGE")) or
     (has("badgereqs_kanto") and (has("RISING_BADGE") or has("EARTH_BADGE"))) or
     has("badgereqs_none") or
-    (has("badge_reqs_regional") and has("RISING_BADGE")) or 
+    (has("badgereqs_regional") and has("RISING_BADGE")) or 
     has("FREE_WATERFALL")
   )
 end
@@ -199,7 +199,7 @@ function fly_badge()
     (has("badgereqs_vanilla") and has("STORM_BADGE")) or
     (has("badgereqs_kanto") and (has("STORM_BADGE") or has("THUNDER_BADGE"))) or
     has("badgereqs_none") or
-    (has("badge_reqs_regional") and (has("PLAIN_BADGE") or has("THUNDER_BADGE"))) or 
+    (has("badgereqs_regional") and (has("PLAIN_BADGE") or has("THUNDER_BADGE"))) or 
     has("FREE_FLY")
   )
 end
