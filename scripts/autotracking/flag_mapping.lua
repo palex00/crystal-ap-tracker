@@ -55,7 +55,7 @@ FLAG_STATIC_CODES = {
 -- RocketHQTrap1_1 = Voltorb
 -- RocketHQTrap2_1 = Geodude
 -- RocketHQTrap3_1 = Koffing
-FLAG_TRAP_CODES = {
+FLAG_ROCKETTRAPS_CODES = {
     "RocketHQTrap3_1",
     "RocketHQTrap1_1",
     "RocketHQTrap2_1",

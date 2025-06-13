@@ -245,6 +245,7 @@ function onNotify(key, value, old_value)
         elseif key == KEY_ID then
             updateVanillaKeyItems(value)
         elseif key == POKE_ID then
+            last_pokemon = value
             updatePokemon(value)
         elseif key == ROCKETTRAP_ID then
             updateRocketTraps(value)
@@ -261,6 +262,7 @@ function onNotifyLaunch(key, value)
         elseif key == KEY_ID then
             updateVanillaKeyItems(value)
         elseif key == POKE_ID then
+            last_pokemon = value
             updatePokemon(value)
         elseif key == ROCKETTRAP_ID then
             updateRocketTraps(value)
@@ -285,7 +287,6 @@ function updateEvents(value)
 end
 
 function updateStatics(value)
-    print(value)
     if value ~= nil then
         for i, code in ipairs(FLAG_STATIC_CODES) do
             local obj = Tracker:FindObjectForCode(code)
@@ -328,19 +329,16 @@ function updateVanillaKeyItems(value)
     end
 end
 
-local last_pokemon = nil
-
 function updatePokemon(pokemon)
-	--if pokemon == nil then
-	--	pokemon = last_pokemon
-	--else
-	--	last_pokemon = pokemon
-	--end
+
+    if pokemon == nil then
+        pokemon = last_pokemon
+    end
     
 	if pokemon ~= nil then
-		--if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format("updatePokemon: Pokemon - %s", dump_table(pokemon)))
-		--end
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("updatePokemon: Pokemon - %s", dump_table(pokemon)))
+		end
 		for dex_number, code in pairs(POKEMON_MAPPING) do
 			if table_contains(pokemon["caught"], dex_number) then
 				Tracker:FindObjectForCode(code).Active = true
@@ -541,22 +539,21 @@ Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
 Archipelago:AddBouncedHandler("map handler", onMap)
 
 
-for _, code in ipairs(FLAG_STATIC_CODES) do
-    ScriptHost:AddWatchForCode(code, code, updatePokemon)
-end
+--for _, code in ipairs(FLAG_STATIC_CODES) do
+--    ScriptHost:AddWatchForCode(code, code, updatePokemon)
+--end
 
---ScriptHost:AddWatchForCode("Sudowoodo_1", "Sudowoodo_1", updatePokemon)
---ScriptHost:AddWatchForCode("RedGyarados_1", "RedGyarados_1", updatePokemon)
---ScriptHost:AddWatchForCode("Ho_Oh_1", "Ho_Oh_1", updatePokemon)
---ScriptHost:AddWatchForCode("Lugia_1", "Lugia_1", updatePokemon)
---ScriptHost:AddWatchForCode("Suicune_1", "Suicune_1", updatePokemon)
---ScriptHost:AddWatchForCode("RocketHQElectrode1_1", "RocketHQElectrode1_1", updatePokemon)
---ScriptHost:AddWatchForCode("RocketHQElectrode2_1", "RocketHQElectrode2_1", updatePokemon)
---ScriptHost:AddWatchForCode("RocketHQElectrode3_1", "RocketHQElectrode3_1", updatePokemon)
---ScriptHost:AddWatchForCode("Shuckie_1", "Shuckie_1", updatePokemon)
---ScriptHost:AddWatchForCode("Eevee_1", "Eevee_1", updatePokemon)
---ScriptHost:AddWatchForCode("Dratini_1", "Dratini_1", updatePokemon)
---ScriptHost:AddWatchForCode("dummy", "dummy", updatePokemon)
---ScriptHost:AddWatchForCode("Tyrogue_1", "Tyrogue_1", updatePokemon)
---ScriptHost:AddWatchForCode("UnionCaveLapras_1", "UnionCaveLapras_1", updatePokemon)
---ScriptHost:AddWatchForCode("Celebi_1", "Celebi_1", updatePokemon)
+ScriptHost:AddWatchForCode("Sudowoodo_1", "Sudowoodo_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("RedGyarados_1", "RedGyarados_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("Ho_Oh_1", "Ho_Oh_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("Lugia_1", "Lugia_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("Suicune_1", "Suicune_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("RocketHQElectrode1_1", "RocketHQElectrode1_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("RocketHQElectrode2_1", "RocketHQElectrode2_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("RocketHQElectrode3_1", "RocketHQElectrode3_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("Shuckie_1", "Shuckie_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("Eevee_1", "Eevee_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("Dratini_1", "Dratini_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("Tyrogue_1", "Tyrogue_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("UnionCaveLapras_1", "UnionCaveLapras_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("Celebi_1", "Celebi_1", function() updatePokemon() end)
