@@ -4723,19 +4723,6 @@
                         ]
                     },
                     {
-                        "name": "B1F - Surf Encounters",
-                        "item_count": 3,
-                        "clear_as_group": false,
-                        "chest_unopened_img": "images/other/surf.png",
-                        "chest_opened_img": "images/other/surf_bw.png",
-                        "visibility_rules": [
-                            "show_mons"
-                        ],
-                        "access_rules": [
-                            "^$can_flash_johto, ^$surf_encounter_johto"
-                        ]
-                    },
-                    {
                         "name": "B2F - East Item",
                         "access_rules": [
                             "^$can_flash_johto"

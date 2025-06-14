@@ -377,19 +377,20 @@ function updatePokemon(pokemon)
             for dex_number, encounters in pairs(ENCOUNTER_LIST) do
                 local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
                 local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
+                local dexloc = Tracker:FindObjectForCode("dexsanity_"..POKEMON_MAPPING[dex_number])
                 
                 local is_caught = table_contains(pokemon["caught"], dex_number)
                 local is_seen = table_contains(pokemon["seen"], dex_number)
 
-                if has("all_pokemon_seen_true") and dexcode and not dexcode.Active then
+                if has("all_pokemon_seen_true") then
                     is_seen = true
                 end
-
+                
                 local should_decrement = false
 
                 if is_caught then
                     should_decrement = true
-                elseif is_seen and dexcode and not dexcode.Active then
+                elseif is_seen and (dexloc.Active or not dexcode.Active) then
                     if (dexcountsanity and dexcountsanity.AvailableChestCount == 0) or has("encounter_tracking_loose") then
                         should_decrement = true
                     end
