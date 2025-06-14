@@ -891,7 +891,7 @@
                     {
                         "name": "Ho-Oh Room Top Right Item (Rainbow Wing)",
                         "access_rules": [
-                            "$can_surf_johto, RAINBOW_WING"
+                            "@JohtoKanto/Union Cave, $can_surf_johto, RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -900,7 +900,7 @@
                     {
                         "name": "Ho-Oh Room Bottom Left Item (Rainbow Wing)",
                         "access_rules": [
-                            "$can_surf_johto, RAINBOW_WING"
+                            "@JohtoKanto/Union Cave, $can_surf_johto, RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -909,7 +909,7 @@
                     {
                         "name": "Ho-Oh Room Bottom Right Item (Rainbow Wing)",
                         "access_rules": [
-                            "$can_surf_johto, RAINBOW_WING"
+                            "@JohtoKanto/Union Cave, $can_surf_johto, RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -918,7 +918,7 @@
                     {
                         "name": "Ho-Oh Room Top Left Item (Rainbow Wing)",
                         "access_rules": [
-                            "$can_surf_johto, RAINBOW_WING"
+                            "@JohtoKanto/Union Cave, $can_surf_johto, RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_items"
