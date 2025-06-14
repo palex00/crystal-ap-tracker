@@ -3459,6 +3459,8 @@
                 "sections": [
                     {
                         "name": "1F - Suicune",
+                        "chest_unopened_img": "images/other/suicune.png",
+                        "chest_opened_img": "images/other/suicune_bw.png",
                         "access_rules": [
                             "^$static_encounter"
                         ],
