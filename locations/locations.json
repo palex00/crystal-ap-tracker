@@ -3990,7 +3990,7 @@
                             "show_mons, johto_only_off"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, S_S_TICKET"
+                            "^$surf_encounter_johto"
                         ]
                     }
                 ],
@@ -9947,7 +9947,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_kanto, S_S_TICKET"
+                            "^$surf_encounter_kanto"
                         ]
                     },
                     {
