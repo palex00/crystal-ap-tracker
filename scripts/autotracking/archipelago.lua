@@ -303,18 +303,33 @@ end
 
 function updateRocketTraps(value)
     if value ~= nil then
+        local statusMap = {}
+
         for i, code in ipairs(FLAG_ROCKETTRAPS_CODES) do
+            if #code > 0 then
+                local bit = (value >> (i - 1)) & 1
+                statusMap[code] = (statusMap[code] or 0) | bit
+            end
+        end
+
+        for code, _ in pairs(statusMap) do
             local obj = Tracker:FindObjectForCode(code)
             if obj ~= nil then
                 obj.Active = false
             end
-            local bit = value >> (i - 1) & 1
-            if #code > 0 then
-                Tracker:FindObjectForCode(code).Active = Tracker:FindObjectForCode(code).Active or bit
+        end
+
+        for code, bit in pairs(statusMap) do
+            if bit == 1 then
+                local obj = Tracker:FindObjectForCode(code)
+                if obj ~= nil then
+                    obj.Active = true
+                end
             end
         end
     end
 end
+
 
 function updateVanillaKeyItems(value)
     if value ~= nil then
@@ -551,6 +566,9 @@ ScriptHost:AddWatchForCode("Suicune_1", "Suicune_1", function() updatePokemon() 
 ScriptHost:AddWatchForCode("RocketHQElectrode1_1", "RocketHQElectrode1_1", function() updatePokemon() end)
 ScriptHost:AddWatchForCode("RocketHQElectrode2_1", "RocketHQElectrode2_1", function() updatePokemon() end)
 ScriptHost:AddWatchForCode("RocketHQElectrode3_1", "RocketHQElectrode3_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("RocketHQTrap1_1", "RocketHQTrap1_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("RocketHQTrap2_1", "RocketHQTrap2_1", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("RocketHQTrap3_1", "RocketHQTrap3_1", function() updatePokemon() end)
 ScriptHost:AddWatchForCode("Shuckie_1", "Shuckie_1", function() updatePokemon() end)
 ScriptHost:AddWatchForCode("Eevee_1", "Eevee_1", function() updatePokemon() end)
 ScriptHost:AddWatchForCode("Dratini_1", "Dratini_1", function() updatePokemon() end)

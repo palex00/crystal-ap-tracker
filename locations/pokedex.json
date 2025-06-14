@@ -27,7 +27,7 @@
 {"name": "Ekans", "access_rules": ["ekans", "^$breeding, @Pokemon/Arbok"], "sections": [{"hosted_item": "ekans"}], "map_locations": [{ "map": "kantopokemon", "x": 506, "y": 118, "shape": "rect"}]},
 {"name": "Arbok", "access_rules": ["arbok", "^$evolve|22, @Pokemon/Ekans"], "sections": [{"hosted_item": "arbok"}], "map_locations": [{ "map": "kantopokemon", "x": 566, "y": 118, "shape": "rect"}]},
 {"name": "Pikachu", "access_rules": ["pikachu", "^$evolve_friend, @Pokemon/Pichu"], "sections": [{"hosted_item": "pikachu"}], "map_locations": [{ "map": "kantopokemon", "x": 626, "y": 118, "shape": "rect"}]},
-{"name": "Raichu", "access_rules": ["raichu", "^$evolve_item, @Pokemon/Pichu"], "sections": [{"hosted_item": "raichu"}], "map_locations": [{ "map": "kantopokemon", "x": 686, "y": 118, "shape": "rect"}]},
+{"name": "Raichu", "access_rules": ["raichu", "^$evolve_item, @Pokemon/Pikachu"], "sections": [{"hosted_item": "raichu"}], "map_locations": [{ "map": "kantopokemon", "x": 686, "y": 118, "shape": "rect"}]},
 {"name": "Sandshrew", "access_rules": ["sandshrew", "^$breeding, @Pokemon/Sandslash"], "sections": [{"hosted_item": "sandshrew"}], "map_locations": [{ "map": "kantopokemon", "x": 746, "y": 118, "shape": "rect"}]},
 {"name": "Sandslash", "access_rules": ["sandslash", "^$evolve|22, @Pokemon/Sandshrew"], "sections": [{"hosted_item": "sandslash"}], "map_locations": [{ "map": "kantopokemon", "x": 806, "y": 118, "shape": "rect"}]},
 {"name": "Nidoran♀", "access_rules": ["nidoranf", "^$breeding, @Pokemon/Nidorina", "^$breeding, @Pokemon/Nidoqueen"], "sections": [{"hosted_item": "nidoranf"}], "map_locations": [{ "map": "kantopokemon", "x": 866, "y": 118, "shape": "rect"}]},
