@@ -64,8 +64,8 @@ function onClear(slot_data)
                 Tracker:AddLayouts("layouts/versionmismatch.json")
             end
         elseif SLOT_CODES[k] then
+            print("Setting " .. k .. " to " .. v)
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
-            -- print("Setting " .. k .. " to " .. v)
         elseif REQUIREMENT_CODES[k] then
 			local item = REQUIREMENT_CODES[k].item
 			item:setType(REQUIREMENT_CODES[k].mapping[v])

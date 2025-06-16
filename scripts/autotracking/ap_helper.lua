@@ -124,6 +124,7 @@ TOWN_MAPPING = {
 
 STARTTOWN_MAPPING = {
     [NONE] = 0,
+    [NEW_BARK] = 1,
     [CHERRYGROVE] = 1,
     [VIOLET] = 2,
     [UNIONCAVE] = 3,
