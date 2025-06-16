@@ -1,8 +1,5 @@
 function breeding()
-    -- Info for prosperity. There is something deeply fucked with this.
-    -- Initially I had it look for JohtoKanto/Route 34 but that returns 0 always. For some reason.
-    -- So we're doing Goldenrod and I'm gonna physically restrain James from decoupling those in logic in the future
-    local daycare = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
+    local daycare = Tracker:FindObjectForCode("@JohtoKanto/Route 34").AccessibilityLevel
     if has("breeding_logic_on") and daycare ~= 0 then
         return daycare
     elseif has("breeding_logic_ditto") and has("ditto") and daycare ~= 0 then
