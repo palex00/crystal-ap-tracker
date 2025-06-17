@@ -1,0 +1,39 @@
+{
+    "pokedex_grid_full": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Pokémon Logic",
+                "content": {
+                    "type": "layout",
+                    "key": "pokemon_logic"
+                }
+            },
+            {
+                "title": "Dexcountsanity",
+                "content": {
+                    "type": "layout",
+                    "key": "dexcountsanity"
+                }
+            },
+            {
+                "title": "Kanto Dex (001-151)",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "kantopokemon"
+                    ]
+                }
+            },
+            {
+                "title": "Johto Dex (152-251)",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "johtopokemon"
+                    ]
+                }
+            }
+        ]
+    }
+}

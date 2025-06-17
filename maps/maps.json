@@ -30,10 +30,28 @@
         "img": "images/maps/AzaleaTown.png"
     },
     {
+        "name": "AzaleaGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/AzaleaGym.png"
+    },
+    {
         "name": "BlackthornCity",
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/BlackthornCity.png"
+    },
+    {
+        "name": "BlackthornGym1F",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/BlackthornGym1F.png"
+    },
+    {
+        "name": "BlackthornGym2F",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/BlackthornGym2F.png"
     },
     {
         "name": "BurnedTower1F",
@@ -60,10 +78,22 @@
         "img": "images/maps/CeladonCafe.png"
     },
     {
+        "name": "CeladonGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/CeladonGym.png"
+    },
+    {
         "name": "CeruleanCity",
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/CeruleanCity.png"
+    },
+    {
+        "name": "CeruleanGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/CeruleanGym.png"
     },
     {
         "name": "CherrygroveCity",
@@ -76,6 +106,12 @@
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/CianwoodCity.png"
+    },
+    {
+        "name": "CianwoodGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/CianwoodGym.png"
     },
     {
         "name": "CinnabarIsland",
@@ -100,6 +136,12 @@
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/EcruteakCity.png"
+    },
+    {
+        "name": "EcruteakGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/EcruteakGym.png"
     },
     {
         "name": "FastShip1F",
@@ -150,22 +192,28 @@
         "img": "images/maps/OlivinePort.png"
     },
     {
-        "name": "VermilionPort",
-        "location_size": 12,
-        "location_border_thickness": 2,
-        "img": "images/maps/VermilionPort.png"
-    },
-    {
         "name": "FuchsiaCity",
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/FuchsiaCity.png"
     },
     {
+        "name": "FuchsiaGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/FuchsiaGym.png"
+    },
+    {
         "name": "GoldenrodCity",
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/GoldenrodCity.png"
+    },
+    {
+        "name": "GoldenrodGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/GoldenrodGym.png"
     },
     {
         "name": "GoldenrodUnderground",
@@ -270,10 +318,28 @@
         "img": "images/maps/LavenderTown.png"
     },
     {
+        "name": "MahoganyGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/MahoganyGym.png"
+    },
+    {
         "name": "MahoganyTown",
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/MahoganyTown.png"
+    },
+    {
+        "name": "MountMoon",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/MountMoon.png"
+    },
+    {
+        "name": "MountMoonSquare",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/MountMoonSquare.png"
     },
     {
         "name": "MountMortar1FInside",
@@ -318,6 +384,12 @@
         "img": "images/maps/OlivineCity.png"
     },
     {
+        "name": "OlivineGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/OlivineGym.png"
+    },
+    {
         "name": "OlivineLighthouse1F",
         "location_size": 12,
         "location_border_thickness": 2,
@@ -354,10 +426,22 @@
         "img": "images/maps/OlivineLighthouse6F.png"
     },
     {
+        "name": "PalletTown",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/PalletTown.png"
+    },
+    {
         "name": "PewterCity",
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/PewterCity.png"
+    },
+    {
+        "name": "PewterGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/PewterGym.png"
     },
     {
         "name": "PowerPlant",
@@ -414,10 +498,52 @@
         "img": "images/maps/Route1.png"
     },
     {
-        "name": "Route10South",
+        "name": "Route3",
         "location_size": 12,
         "location_border_thickness": 2,
-        "img": "images/maps/Route10South.png"
+        "img": "images/maps/Route3.png"
+    },
+    {
+        "name": "Route4",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route4.png"
+    },
+    {
+        "name": "Route5",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route5.png"
+    },
+    {
+        "name": "Route6",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route6.png"
+    },
+    {
+        "name": "Route7",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route7.png"
+    },
+    {
+        "name": "Route8",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route8.png"
+    },
+    {
+        "name": "Route9",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route9.png"
+    },
+    {
+        "name": "Route10",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route10.png"
     },
     {
         "name": "Route11",
@@ -456,6 +582,12 @@
         "img": "images/maps/Route15.png"
     },
     {
+        "name": "Route16",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route16.png"
+    },
+    {
         "name": "Route17",
         "location_size": 12,
         "location_border_thickness": 2,
@@ -484,6 +616,24 @@
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/Route21.png"
+    },
+    {
+        "name": "Route22",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route22.png"
+    },
+    {
+        "name": "Route23",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route23.png"
+    },
+    {
+        "name": "Route24",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route24.png"
     },
     {
         "name": "Route25",
@@ -520,12 +670,6 @@
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/Route29.png"
-    },
-    {
-        "name": "Route3",
-        "location_size": 12,
-        "location_border_thickness": 2,
-        "img": "images/maps/Route3.png"
     },
     {
         "name": "Route30",
@@ -594,12 +738,6 @@
         "img": "images/maps/Route39.png"
     },
     {
-        "name": "Route4",
-        "location_size": 12,
-        "location_border_thickness": 2,
-        "img": "images/maps/Route4.png"
-    },
-    {
         "name": "Route40",
         "location_size": 12,
         "location_border_thickness": 2,
@@ -648,28 +786,34 @@
         "img": "images/maps/Route46.png"
     },
     {
-        "name": "Route5",
+        "name": "RuinsOfAlphAerodactylItemRoom",
         "location_size": 12,
-        "location_border_thickness": 2,
-        "img": "images/maps/Route5.png"
+        "location_border_thickness": 1,
+        "img": "images/maps/RuinsOfAlphAerodactylItemRoom.png"
     },
     {
-        "name": "Route6",
+        "name": "RuinsOfAlphHoOhItemRoom",
         "location_size": 12,
-        "location_border_thickness": 2,
-        "img": "images/maps/Route6.png"
+        "location_border_thickness": 1,
+        "img": "images/maps/RuinsOfAlphHoOhItemRoom.png"
     },
     {
-        "name": "Route8",
+        "name": "RuinsOfAlphInnerChamber",
         "location_size": 12,
         "location_border_thickness": 2,
-        "img": "images/maps/Route8.png"
+        "img": "images/maps/RuinsOfAlphInnerChamber.png"
     },
     {
-        "name": "Route9",
+        "name": "RuinsOfAlphKabutoItemRoom",
         "location_size": 12,
-        "location_border_thickness": 2,
-        "img": "images/maps/Route9.png"
+        "location_border_thickness": 1,
+        "img": "images/maps/RuinsOfAlphKabutoItemRoom.png"
+    },
+    {
+        "name": "RuinsOfAlphOmanyteItemRoom",
+        "location_size": 12,
+        "location_border_thickness": 1,
+        "img": "images/maps/RuinsOfAlphOmanyteItemRoom.png"
     },
     {
         "name": "RuinsOfAlphOutside",
@@ -682,6 +826,18 @@
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/SaffronCity.png"
+    },
+    {
+        "name": "SaffronGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/SaffronGym.png"
+    },
+    {
+        "name": "SeafoamGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/SeafoamGym.png"
     },
     {
         "name": "SilverCaveItemRooms",
@@ -816,6 +972,12 @@
         "img": "images/maps/TinTower9F.png"
     },
     {
+        "name": "TinTowerRoof",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/TinTowerRoof.png"
+    },
+    {
         "name": "TohjoFalls",
         "location_size": 12,
         "location_border_thickness": 2,
@@ -852,6 +1014,18 @@
         "img": "images/maps/VermilionCity.png"
     },
     {
+        "name": "VermilionGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/VermilionGym.png"
+    },
+    {
+        "name": "VermilionPort",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/VermilionPort.png"
+    },
+    {
         "name": "VictoryRoad1F",
         "location_size": 12,
         "location_border_thickness": 2,
@@ -876,10 +1050,28 @@
         "img": "images/maps/VioletCity.png"
     },
     {
+        "name": "VioletGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/VioletGym.png"
+    },
+    {
         "name": "ViridianCity",
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/ViridianCity.png"
+    },
+    {
+        "name": "ViridianGym",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/ViridianGym.png"
+    },
+    {
+        "name": "WhirlIsland1F",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/WhirlIsland1F.png"
     },
     {
         "name": "WhirlIslandB1F",
@@ -894,27 +1086,15 @@
         "img": "images/maps/WhirlIslandB2F.png"
     },
     {
-        "name": "WhirlIslandNE",
+        "name": "WhirlIslandCave",
         "location_size": 12,
         "location_border_thickness": 2,
-        "img": "images/maps/WhirlIslandNE.png"
+        "img": "images/maps/WhirlIslandCave.png"
     },
     {
-        "name": "WhirlIslandSW",
+        "name": "WhirlIslandLugiaChamber",
         "location_size": 12,
         "location_border_thickness": 2,
-        "img": "images/maps/WhirlIslandSW.png"
-    },
-    {
-        "name": "MountMoonInner",
-        "location_size": 12,
-        "location_border_thickness": 2,
-        "img": "images/maps/MountMoonInner.png"
-    },
-    {
-        "name": "MountMoonSquare",
-        "location_size": 12,
-        "location_border_thickness": 2,
-        "img": "images/maps/MountMoonSquare.png"
+        "img": "images/maps/WhirlIslandLugiaChamber.png"
     }
 ]

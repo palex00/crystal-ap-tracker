@@ -1,5 +1,4 @@
 FLAG_EVENT_CODES = {
-    "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
     "EVENT_GOT_KENYA",
     "EVENT_GAVE_KENYA",
     "EVENT_JASMINE_RETURNED_TO_GYM",
@@ -14,24 +13,71 @@ FLAG_EVENT_CODES = {
     "EVENT_HERDED_FARFETCHD",
     "EVENT_RELEASED_THE_BEASTS",
     "EVENT_BEAT_FALKNER",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
+    "EVENT_BEAT_BUGSY",
+    "EVENT_BEAT_WHITNEY",
+    "EVENT_BEAT_MORTY",
+    "EVENT_BEAT_JASMINE",
     "EVENT_BEAT_CHUCK",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
-    "DUMMY",
+    "EVENT_BEAT_PRYCE",
+    "EVENT_BEAT_CLAIR",
+    "EVENT_BEAT_BROCK",
+    "EVENT_BEAT_MISTY",
+    "EVENT_BEAT_LTSURGE",
+    "EVENT_BEAT_ERIKA",
+    "EVENT_BEAT_JANINE",
+    "EVENT_BEAT_SABRINA",
+    "EVENT_BEAT_BLAINE",
+    "EVENT_BEAT_BLUE",
     "EVENT_FAST_SHIP_FOUND_GIRL",
-    "EVENT_FOUGHT_SNORLAX"
+    "EVENT_FOUGHT_SNORLAX",
+    "EVENT_MET_BILL"
+}
+
+FLAG_STATIC_CODES = {
+    "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
+    "Sudowoodo_1",
+    "RedGyarados_1",
+    "Ho_Oh_1",
+    "Lugia_1",
+    "Suicune_1",
+    "RocketHQElectrode1_1",
+    "RocketHQElectrode2_1",
+    "RocketHQElectrode3_1",
+    "Shuckie_1",
+    "Eevee_1",
+    "Dratini_1",
+    "dummy",
+    "Tyrogue_1",
+    "UnionCaveLapras_1",
+    "Celebi_1"
+}
+
+-- RocketHQTrap1_1 = Voltorb
+-- RocketHQTrap2_1 = Geodude
+-- RocketHQTrap3_1 = Koffing
+FLAG_ROCKETTRAPS_CODES = {
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap2_1",
+    "RocketHQTrap1_1",
+    "RocketHQTrap3_1",
+    "RocketHQTrap1_1"
 }
 
 FLAG_ITEM_CODES = {

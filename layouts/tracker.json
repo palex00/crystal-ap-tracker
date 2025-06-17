@@ -1,14 +1,16 @@
 ﻿{
   "tracker_default": {
     "type": "container",
-    "background": "#000000",
+    "background": "#171717",
     "content": {
       "type": "dock",
-      "dropshadow": true,
+      "dropshadow": false,
       "content": [
         {
           "type": "dock",
+          "dropshadow": false,
           "dock": "bottom",
+          "background": "#2D2D2D",
           "content": [
             {
               "type": "group",

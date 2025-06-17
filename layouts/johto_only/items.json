@@ -1,71 +1,77 @@
 {
-  "shared_item_grid": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content": [
-      {
+    "shared_item_grid": {
         "type": "array",
-        "orientation": "horizontal",
+        "orientation": "vertical",
         "margin": "0,0",
         "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "2, 2",
-            "h_alignment": "center",
-            "rows": [
-              [
-                "HM_CUT",
-                "HM_FLY",
-                "HM_SURF",
-                "HM_STRENGTH",
-                "HM_FLASH",
-                "HM_WHIRLPOOL",
-                "HM_WATERFALL",
-                "TM_ROCK_SMASH"
-              ],
-              [
-                "ZEPHYR_BADGE",
-                "HIVE_BADGE",
-                "PLAIN_BADGE",
-                "FOG_BADGE",
-                "STORM_BADGE",
-                "MINERAL_BADGE",
-                "GLACIER_BADGE",
-                "RISING_BADGE"
-              ],
-              [
-                "BOULDER_BADGE",
-                "CASCADE_BADGE",
-                "THUNDER_BADGE",
-                "RAINBOW_BADGE",
-                "SOUL_BADGE",
-                "MARSH_BADGE",
-                "VOLCANO_BADGE",
-                "EARTH_BADGE"
-              ],
-              [
-                "MYSTERY_EGG",
-                "SQUIRTBOTTLE",
-                "ITEMFINDER",
-                "SECRETPOTION",
-                "RED_SCALE",
-                "CARD_KEY",
-                "BASEMENT_KEY",
-                "CLEAR_BELL"
-              ],
-              [
-                "POKE_GEAR",
-                "MAP_CARD",
-                "WATER_STONE",
-                "ESCAPE_ROPE",
-                "RAINBOW_WING",
-                "TEA"
-              ]
-            ]
-          }
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, 2",
+                        "h_alignment": "center",
+                        "rows": [
+                            [
+                                "HM_CUT",
+                                "HM_FLY",
+                                "HM_SURF",
+                                "HM_STRENGTH",
+                                "HM_FLASH",
+                                "HM_WHIRLPOOL",
+                                "HM_WATERFALL",
+                                "TM_ROCK_SMASH",
+                                "TM_HEAD_BUTT"
+                            ],
+                            [
+                                "ZEPHYR_BADGE",
+                                "HIVE_BADGE",
+                                "PLAIN_BADGE",
+                                "FOG_BADGE",
+                                "STORM_BADGE",
+                                "MINERAL_BADGE",
+                                "GLACIER_BADGE",
+                                "RISING_BADGE",
+                                "ESCAPE_ROPE"
+                            ],
+                            [
+                                "BOULDER_BADGE",
+                                "CASCADE_BADGE",
+                                "THUNDER_BADGE",
+                                "RAINBOW_BADGE",
+                                "SOUL_BADGE",
+                                "MARSH_BADGE",
+                                "VOLCANO_BADGE",
+                                "EARTH_BADGE",
+                                "WATER_STONE"
+                            ],
+                            [
+                                "POKE_GEAR",
+                                "ITEMFINDER",
+                                "MYSTERY_EGG",
+                                "SQUIRTBOTTLE",
+                                "BICYCLE",
+                                "CARD_KEY",
+                                "BASEMENT_KEY",
+                                "SECRETPOTION",
+                                "RED_SCALE"
+                            ],
+                            [
+                                "MAP_CARD",
+                                "OLD_ROD",
+                                "GOOD_ROD",
+                                "SUPER_ROD",
+                                "CLEAR_BELL",
+                                "GS_BALL",
+                                "SILVER_WING",
+                                "RAINBOW_WING"
+                            ]
+                        ]
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 }

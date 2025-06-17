@@ -1,59 +1,166 @@
 {
-  "setting_grid": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content": [
-      {
+    "setting_grid": {
         "type": "array",
         "orientation": "vertical",
         "margin": "0,0",
         "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "2, 2",
-            "item_h_alignment": "center",
-            "h_alignment": "left",
-            "rows": [
-              [
-                "tower_badges",
-                "e4_badges",
-                "mt_silver_badges",
-                "red_badges",
-                "ilextree",
-                "r32_guy",
-                "red_gyarados_access",
-                "blackthorn_dark_cave_access"
-              ],
-              [
-                "berries",
-                "pokegear",
-                "trainersanity",
-                "hiddenitems",
-                "badges",
-                "reqitemfinder",
-                "national_park_access"
-              ],
-              [
-                "badgereqs",
-                "goal",
-                "automap",
-                "johto_only"
-              ]
-            ]
-          },
-          {
-            "type": "item",
-            "margin": "12, 4",
-            "item": "free_fly_location"
-          },
-          {
-            "type": "item",
-            "margin": "12, 8",
-            "item": "map_card_fly"
-          }
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, -8",
+                        "item_size": "32,44",
+                        "item_h_alignment": "center",
+                        "item_v_alignment": "center",
+                        "h_alignment": "left",
+                        "rows": [
+                            [
+                                "route_44_requirement",
+                                "tower_requirement",
+                                "e4_requirement",
+                                "mt_silver_requirement",
+                                "red_requirement",
+                                "hiddenitem_logic",
+                                "berries",
+                                "trainersanity"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, 2",
+                        "item_h_alignment": "center",
+                        "h_alignment": "left",
+                        "rows": [
+                            [
+                                "johto_only",
+                                "goal",
+                                "badges",
+                                "pokegear",
+                                "badgereqs",
+                                "dexsanity"
+                            ],
+                            [
+                                "blackthorn_dark_cave_access",
+                                "r32_guy",
+                                "ilextree",
+                                "national_park_access",
+                                "red_gyarados_access",
+                                "clair_behaviour"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "8,6",
+                "content": [
+                    {
+                        "type": "array",
+                        "orientation": "vertical",
+                        "content": [
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "start_town_dummy",
+                                        "item_size": "16, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "start_town_location",
+                                        "item_size": "256, 16"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "free_fly_dummy",
+                                        "item_size": "16, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "free_fly_location",
+                                        "item_size": "256, 16"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "map_card_fly_dummy",
+                                        "item_size": "16, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "map_card_fly",
+                                        "item_size": "256, 16"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "vertical",
+                        "margin": "2,2",
+                        "content": [
+                            {
+                                "type": "item",
+                                "item": "location_visibility",
+                                "margin": "2,2",
+                                "item_size": "32, 32"
+                            },
+                            {
+                                "type": "item",
+                                "item": "automap",
+                                "margin": "2,2",
+                                "item_size": "32, 32"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "vertical",
+                        "content": [
+                            {
+                                "type": "item",
+                                "item": "splitmap",
+                                "margin": "2,2",
+                                "item_size": "32, 32"
+                            },
+                            {
+                                "type": "item",
+                                "item": "encounter_tracking",
+                                "margin": "2,2",
+                                "item_size": "32, 32"
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 }

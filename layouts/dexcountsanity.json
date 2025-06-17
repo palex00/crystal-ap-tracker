@@ -1,0 +1,194 @@
+{
+    "dexcountsanity": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "8,6",
+                "content": [
+                    {
+                        "type": "array",
+                        "orientation": "vertical",
+                        "content": [
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanitysettings",
+                                        "item_size": "371, 16"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "lastcheck",
+                                        "item_size": "236, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "",
+                                        "item_size": "5, 1"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_lastcheck_digit1",
+                                        "item_size": "23, 18"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_lastcheck_digit2",
+                                        "item_size": "23, 18"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_lastcheck_digit3",
+                                        "item_size": "23, 18"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "stepinterval",
+                                        "item_size": "236, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "",
+                                        "item_size": "5, 1"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_stepinterval_digit1",
+                                        "item_size": "23, 18"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_stepinterval_digit2",
+                                        "item_size": "23, 18"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_stepinterval_digit3",
+                                        "item_size": "23, 18"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "logicleniency",
+                                        "item_size": "236, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "",
+                                        "item_size": "5, 1"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_logicleniency_digit1",
+                                        "item_size": "23, 18"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_logicleniency_digit2",
+                                        "item_size": "23, 18"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_logicleniency_digit3",
+                                        "item_size": "23, 18"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "totalchecks",
+                                        "item_size": "236, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "",
+                                        "item_size": "5, 1"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_totalchecks_digit1",
+                                        "item_size": "23, 18"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_totalchecks_digit2",
+                                        "item_size": "23, 18"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_totalchecks_digit3",
+                                        "item_size": "23, 18"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "remainingchecks",
+                                        "item_size": "236, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "",
+                                        "item_size": "5, 1"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_remainingchecks_digit1",
+                                        "item_size": "23, 18"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_remainingchecks_digit2",
+                                        "item_size": "23, 18"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "dexcountsanity_remainingchecks_digit3",
+                                        "item_size": "23, 18"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
