@@ -38,6 +38,18 @@ function onClear(slot_data)
     TEAM_NUMBER = Archipelago.TeamNumber or 0
 
     print(dump_table(slot_data))
+    
+    for k, v in pairs(slot_data) do
+        if  k == "apworld_version" then
+            local version_str = tostring(v)
+            local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
+            if first_two_dots == "4.0" or nil then
+                Tracker:AddLayouts("layouts/tracker.json")
+            else
+                Tracker:AddLayouts("layouts/versionmismatch.json")
+            end
+        end
+    end
 
     ENCOUNTER_LIST = {}
     setEncounterList(slot_data["wild_encounters"])
@@ -55,15 +67,7 @@ function onClear(slot_data)
     end
 
     for k, v in pairs(slot_data) do
-        if  k == "apworld_version" then
-            local version_str = tostring(v)
-            local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-            if first_two_dots == "4.0" or nil then
-                Tracker:AddLayouts("layouts/tracker.json")
-            else
-                Tracker:AddLayouts("layouts/versionmismatch.json")
-            end
-        elseif SLOT_CODES[k] then
+        if SLOT_CODES[k] then
             print("Setting " .. k .. " to " .. v)
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
         elseif REQUIREMENT_CODES[k] then
