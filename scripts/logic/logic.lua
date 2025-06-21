@@ -199,7 +199,7 @@ function fly_badge()
     (has("badgereqs_vanilla") and has("STORM_BADGE")) or
     (has("badgereqs_kanto") and (has("STORM_BADGE") or has("THUNDER_BADGE"))) or
     has("badgereqs_none") or
-    (has("badgereqs_regional") and (has("PLAIN_BADGE") or has("THUNDER_BADGE"))) or 
+    (has("badgereqs_regional") and (has("STORM_BADGE") or has("THUNDER_BADGE"))) or 
     has("FREE_FLY")
   )
 end
