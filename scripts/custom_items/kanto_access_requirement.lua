@@ -86,7 +86,7 @@ end
 function KantoAccessRequirement:providesCode(code)
     if self:canProvideCode(code) then
         if self:getType() == "snorlax" then
-            if has("EVENT_FOUGHT_SNORLAX")  then
+            if clear_snorlax() == true  then
                 return 1
             end
         elseif self:getType() == "champion" then

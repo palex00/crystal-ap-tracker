@@ -8063,7 +8063,7 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City, EVENT_FOUGHT_SNORLAX",
+                            "@JohtoKanto/Vermilion City, $clear_snorlax",
                             "@JohtoKanto/Route 2/Main Section, route_2_open",
                             "@JohtoKanto/Route 2/Main Section, $can_cut_kanto"
                         ]
@@ -9812,11 +9812,11 @@
                 "access_rules": [
                     "start_town_Vermilion",
                     "@JohtoKanto/Saffron City, $tea|south",
-                    "@JohtoKanto/Viridian City, EVENT_FOUGHT_SNORLAX",
+                    "@JohtoKanto/Viridian City, $clear_snorlax",
                     "@JohtoKanto/S.S. Aqua",
                     "$can_freefly|Vermilion",
                     "@JohtoKanto/Cerulean City, $passage|ns",
-                    "@JohtoKanto/Route 11, EVENT_FOUGHT_SNORLAX"
+                    "@JohtoKanto/Route 11, $clear_snorlax"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -9953,11 +9953,14 @@
                         ]
                     },
                     {
-                        "name": "Wake Up Snorlax",
-                        "hosted_item": "EVENT_FOUGHT_SNORLAX",
-                        "access_rules": "$clear_snorlax",
+                        "name": "Snorlax",
+                        "chest_unopened_img": "images/other/snorlax.png",
+                        "chest_opened_img": "images/other/snorlax_bw.png",
+                        "access_rules": [
+                            "$clear_snorlax, ^$static_encounter"
+                        ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_mons"
                         ]
                     }
                 ],
@@ -9985,7 +9988,7 @@
             {
                 "name": "Diglett's Cave",
                 "access_rules": [
-                    "@JohtoKanto/Vermilion City, EVENT_FOUGHT_SNORLAX",
+                    "@JohtoKanto/Vermilion City, $clear_snorlax",
                     "@JohtoKanto/Route 2/Diglett's Cave Section"
                 ],
                 "visibility_rules": [
@@ -10143,7 +10146,7 @@
             {
                 "name": "Route 11",
                 "access_rules": [
-                    "@JohtoKanto/Vermilion City, EVENT_FOUGHT_SNORLAX",
+                    "@JohtoKanto/Vermilion City, $clear_snorlax",
                     "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
