@@ -66,6 +66,8 @@ ScriptHost:AddWatchForCode("yaml_digit1", "yaml_digit1", calculateEvoLevel)
 ScriptHost:AddWatchForCode("yaml_digit2", "yaml_digit2", calculateEvoLevel)
 ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", updatePokemon)
 
+ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
+
 
 --for _, code in ipairs(FLAG_STATIC_CODES) do
 --    print(code)

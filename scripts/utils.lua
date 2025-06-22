@@ -173,3 +173,11 @@ function updateRemainingDexcountsanityChecks()
     Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit2").CurrentStage = math.floor(val / 10) % 10
     Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit3").CurrentStage = val % 10
 end
+
+function showMonVisibility()
+    local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount
+    local dexsanity = has("dexsanity")
+    if dexcountsanity ~= 0 or dexsanity ~= false then
+        Tracker:FindObjectForCode("location_visibility").CurrentStage = 1
+    end
+end

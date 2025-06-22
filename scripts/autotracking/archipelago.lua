@@ -124,6 +124,7 @@ function onClear(slot_data)
     end
     
     updateRemainingDexcountsanityChecks()
+    showMonVisibility()
     
     -- tea function
     local stages = {
