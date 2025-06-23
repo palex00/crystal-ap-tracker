@@ -207,6 +207,13 @@
         "img": "/images/events/woke_up_snorlax.png",
         "codes": "Snorlax_1"
     },
+    {
+        "name": "[Static] Odd Egg Collected",      
+        "type": "toggle", 
+        "img": "/images/events/EVENT_GOT_ODD_EGG.png",
+        "codes": "EVENT_GOT_ODD_EGG"
+    },
+    
 {"name": "Met Bill", "type": "toggle", "img": "/images/events/met_bill.png", "codes": "EVENT_MET_BILL"},
 {"name": "[Static] Fought Sudowoodo",       "type": "toggle", "codes": "Sudowoodo_1"},
 {"name": "[Static] Fought Red Gyarados",    "type": "toggle", "codes": "RedGyarados_1"},

@@ -1989,6 +1989,16 @@
                         ]
                     },
                     {
+                        "name": "Odd Egg Collected",
+                        "hosted_item": "EVENT_GOT_ODD_EGG",
+                        "access_rules": [
+                            "^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
                         "name": "Hidden Item in Day-Care Yard",
                         "access_rules": [
                             "^$hid"
