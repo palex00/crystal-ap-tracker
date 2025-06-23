@@ -86,8 +86,9 @@ end
 function KantoAccessRequirement:providesCode(code)
     if self:canProvideCode(code) then
         if self:getType() == "snorlax" then
-            if clear_snorlax() == true  then
-                return 1
+            local vermilion = Tracker:FindObjectForCode("@JohtoKanto/Vermilion City").AccessibilityLevel
+            if clear_snorlax() == true and vermilion ~= 0 then
+                return vermilion
             end
         elseif self:getType() == "champion" then
             if has("EVENT_BEAT_ELITE_FOUR") then
