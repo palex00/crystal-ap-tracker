@@ -201,7 +201,7 @@
 {"name": "Espeon", "access_rules": ["espeon", "^$evolve_item, @Pokemon/Eevee"], "sections": [{"hosted_item": "espeon"}], "map_locations": [{ "map": "johtopokemon", "x": 296, "y": 298, "shape": "rect"}]},
 {"name": "Umbreon", "access_rules": ["umbreon", "^$evolve_item, @Pokemon/Eevee"], "sections": [{"hosted_item": "umbreon"}], "map_locations": [{ "map": "johtopokemon", "x": 356, "y": 298, "shape": "rect"}]},
 {"name": "Murkrow", "access_rules": ["murkrow"], "sections": [{"hosted_item": "murkrow"}], "map_locations": [{ "map": "johtopokemon", "x": 416, "y": 298, "shape": "rect"}]},
-{"name": "Slowking", "access_rules": ["slowking", "^$evolve_item, @Pokemon/Murkrow"], "sections": [{"hosted_item": "slowking"}], "map_locations": [{ "map": "johtopokemon", "x": 476, "y": 298, "shape": "rect"}]},
+{"name": "Slowking", "access_rules": ["slowking", "^$evolve_item, @Pokemon/Slowbro"], "sections": [{"hosted_item": "slowking"}], "map_locations": [{ "map": "johtopokemon", "x": 476, "y": 298, "shape": "rect"}]},
 {"name": "Misdreavus", "access_rules": ["misdreavus"], "sections": [{"hosted_item": "misdreavus"}], "map_locations": [{ "map": "johtopokemon", "x": 536, "y": 298, "shape": "rect"}]},
 {"name": "Unown", "access_rules": ["unown"], "sections": [{"hosted_item": "unown"}], "map_locations": [{ "map": "johtopokemon", "x": 596, "y": 298, "shape": "rect"}]},
 {"name": "Wobbuffet", "access_rules": ["wobbuffet"], "sections": [{"hosted_item": "wobbuffet"}], "map_locations": [{ "map": "johtopokemon", "x": 56, "y": 358, "shape": "rect"}]},
