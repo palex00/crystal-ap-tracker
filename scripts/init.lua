@@ -1,4 +1,5 @@
 Tracker.AllowDeferredLogicUpdate = true
+
 -- Items
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/events.json")
