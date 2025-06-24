@@ -87,7 +87,10 @@ function KantoAccessRequirement:providesCode(code)
     if self:canProvideCode(code) then
         if self:getType() == "snorlax" then
             local vermilion = Tracker:FindObjectForCode("@JohtoKanto/Vermilion City").AccessibilityLevel
+            print("Vermilion is "..vermilion)
+            print(clear_snorlax())
             if clear_snorlax() == true and vermilion ~= 0 then
+                print("Is being processed")
                 return vermilion
             end
         elseif self:getType() == "champion" then
