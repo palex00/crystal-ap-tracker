@@ -448,6 +448,15 @@ function calculateEvoLevel()
     Tracker:FindObjectForCode("result_digit2").CurrentStage = result2
 end
 
+function snorlax_access()
+    if snorlax_code == true then
+        return Tracker:FindObjectForCode("@JohtoKanto/Vermilion City").AccessibilityLevel
+    else
+        return false
+    end
+end
+
+
 -- Store last map values
 last_map_group = nil
 last_map_number = nil

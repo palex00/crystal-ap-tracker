@@ -7248,6 +7248,7 @@
                 "access_rules": [
                     "@JohtoKanto/Route 27/Post-Waterfall",
                     "@JohtoKanto/Viridian City, kanto_access_condition",
+                    "@JohtoKanto/Viridian City, $snorlax_access",
                     "@JohtoKanto/Silver Cave, mt_silver_requirement"
                 ],
                 "sections": [
@@ -7872,7 +7873,8 @@
                     "@JohtoKanto/Route 2/Main Section",
                     "@JohtoKanto/Pallet Town",
                     "$can_freefly|Viridian",
-                    "@JohtoKanto/Route 26, kanto_access_condition"
+                    "@JohtoKanto/Route 26, kanto_access_condition",
+                    "@JohtoKanto/Route 26, $snorlax_access"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
