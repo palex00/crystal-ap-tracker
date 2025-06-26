@@ -32,7 +32,7 @@ apworld | pack version
 2.1.2   | 0.2.X
 
 ## Known Issues
-- Pokémons transitioning via "Use Item" or "Breeding Logic" may show as Red (not in logic) or Yellow (out of logic) even though they're in logic because of a poptracker bug. This is not a pack bug.
+- Viridian City Access through Victory Road with the "Wake up Snorlax"-Event might not be correctly shown if your starting town is New Bark Town.
 
 ## Planned Features
 - More submaps
