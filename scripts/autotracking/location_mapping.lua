@@ -716,8 +716,8 @@ LOCATION_MAPPING = {
   [2072] = "@JohtoKanto/Route 2/Berry Tree",
   [2073] = "@JohtoKanto/Route 1/Berry Tree",
   [2074] = "@JohtoKanto/Route 8/Berry Tree",
-  [2075] = "@JohtoKanto/Pewter City/Berry Tree 1",
-  [2076] = "@JohtoKanto/Pewter City/Berry Tree 2",
+  [2075] = "@JohtoKanto/Pewter City/Berry Tree 2",
+  [2076] = "@JohtoKanto/Pewter City/Berry Tree 1",
   [2077] = "@JohtoKanto/Fuchsia City/Berry Tree",
 
 -- Dexsanity
