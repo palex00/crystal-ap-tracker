@@ -7746,7 +7746,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto"
+                            "^$can_flash_johto, ^$surf_encounter_johto"
                         ]
                     },
                     {
