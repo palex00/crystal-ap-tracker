@@ -7055,6 +7055,10 @@
             },
             {
                 "name": "Route 27",
+                "access_rules":[
+                    "$can_surf_johto, @JohtoKanto/New Bark Town",
+                    "@JohtoKanto/Route 26"
+                ],
                 "sections": [
                     {
                         "name": "Pre-Waterfall",
@@ -7062,7 +7066,6 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, @JohtoKanto/New Bark Town",
                             "@JohtoKanto/Route 27/Post-Waterfall"
                         ]
                     },
@@ -7072,14 +7075,13 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "$can_waterfall, @JohtoKanto/New Bark Town",
-                            "@JohtoKanto/Route 26"
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "Sandstorm from Woman in House",
                         "access_rules": [
-                            "@JohtoKanto/Route 27/Post-Waterfall, $can_surf_johto"
+                            "@JohtoKanto/Route 27/Post-Waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7087,9 +7089,6 @@
                     },
                     {
                         "name": "West Item across Water",
-                        "access_rules": [
-                            "$can_surf_johto, @JohtoKanto/New Bark Town"
-                        ],
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -7186,9 +7185,6 @@
                     },
                     {
                         "name": "Tohjo Falls - Item",
-                        "access_rules": [
-                            "$can_surf_johto, @JohtoKanto/New Bark Town"
-                        ],
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -7203,7 +7199,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$land_encounter, $can_surf_johto, @JohtoKanto/New Bark Town"
+                            "^$land_encounter"
                         ]
                     },
                     {
@@ -7216,7 +7212,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, @JohtoKanto/New Bark Town"
+                            "^$surf_encounter_johto"
                         ]
                     }
                 ],
