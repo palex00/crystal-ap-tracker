@@ -49,7 +49,8 @@ FLAG_STATIC_CODES = {
     "dummy",
     "Tyrogue_1",
     "UnionCaveLapras_1",
-    "Celebi_1"
+    "Celebi_1",
+    "EVENT_GOT_ODD_EGG"
 }
 
 -- RocketHQTrap1_1 = Voltorb
