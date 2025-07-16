@@ -563,7 +563,7 @@
                         "name": "Gym - Beat Falkner",
                         "hosted_item": "EVENT_BEAT_FALKNER",
                         "visibility_rules": [
-                            "show_items, r32_guy_egg"
+                            "show_items"
                         ]
                     },
                     {
@@ -592,7 +592,8 @@
                             "EVENT_BEAT_FALKNER"
                         ],
                         "visibility_rules": [
-                            "show_items, r32_guy_egg"
+                            "show_items, r32_guy_egg",
+                            "show_mons"
                         ]
                     },
                     {
