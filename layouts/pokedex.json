@@ -3,10 +3,19 @@
         "type": "tabbed",
         "tabs": [
             {
-                "title": "Pokémon Logic",
+                "title": "Logic Settings",
                 "content": {
                     "type": "layout",
                     "key": "pokemon_logic"
+                }
+            },
+            {
+                "title": "Information",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "info_sheet"
+                    ]
                 }
             },
             {
