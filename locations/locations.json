@@ -4794,7 +4794,7 @@
                         "chest_unopened_img": "images/other/lugia.png",
                         "chest_opened_img": "images/other/lugia_bw.png",
                         "access_rules": [
-                            "^$can_flash_johto, ^$static_encounter"
+                            "^$can_flash_johto, ^$static_encounter, SILVER_WING"
                         ],
                         "visibility_rules": [
                             "show_mons"
