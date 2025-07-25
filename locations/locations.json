@@ -6493,7 +6493,7 @@
                     {
                         "name": "Gym - 1F - Cool Trainer Mike",
                         "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER,$can_strength"
+                            "EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity_on"
