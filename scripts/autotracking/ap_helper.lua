@@ -342,6 +342,10 @@ SLOT_CODES = {
     mount_mortar_access = {
         code = "mount_mortar_access",
         mapping = MAP_TOGGLE
+    },
+    fly_cheese = {
+        code = "fly_cheese",
+        mapping = MAP_TRIPLE
     }
 }
 

@@ -2451,5 +2451,31 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Fly Cheese",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Fly Cheese is out of logic",
+                "img": "/images/settings/fly_cheese_optional.png",
+                "codes": "fly_cheese, fly_cheese_optional",
+                "inherit_codes": false
+            },
+            {
+                "name": "Fly Cheese is impossible",
+                "img": "/images/settings/fly_cheese_forbidden.png",
+                "codes": "fly_cheese, fly_cheese_forbidden",
+                "inherit_codes": false
+            },
+            {
+                "name": "Fly Cheese is in logic",
+                "img": "/images/settings/fly_cheese_required.png",
+                "codes": "fly_cheese, fly_cheese_required",
+                "inherit_codes": false
+            }
+        ]
     }
 ]
