@@ -107,4 +107,6 @@ FLAG_ITEM_CODES = {
   {option="pokegear_off", codes=nil},
   {option=nil, codes={"ESCAPE_ROPE"}},
   {option=nil, codes={"WATER_STONE"}},
+  
+  {option="badges_off", codes={"RISING_BADGE"}},
 }
