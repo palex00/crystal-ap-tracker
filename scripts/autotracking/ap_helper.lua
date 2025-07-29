@@ -14,7 +14,7 @@ function resetLocations()
         if v and (v:sub(1, 2) == "@J" or v:sub(1, 2) == "@Z") then -- this checks it's not a Dexsanity Location
             local obj = Tracker:FindObjectForCode(v)
             if obj ~= nil then
-                obj.AvailableChestCount = 1
+                obj.AvailableChestCount = obj.ChestCount
             end
         else
             local obj = Tracker:FindObjectForCode(v)
@@ -161,10 +161,6 @@ SLOT_CODES = {
     },
     randomize_pokegear = {
         code = "pokegear",
-        mapping = MAP_TOGGLE
-    },
-    trainersanity = {
-        code = "trainersanity",
         mapping = MAP_TOGGLE
     },
     hm_badge_requirements = {
@@ -340,12 +336,16 @@ SLOT_CODES = {
         mapping = MAP_SIXTUPLE
     },
     mount_mortar_access = {
-        code = "mount_mortar_access",
+        code = "mount_mortar_access",
         mapping = MAP_TOGGLE
     },
     fly_cheese = {
-        code = "fly_cheese",
+        code = "fly_cheese",
         mapping = MAP_TRIPLE
+    },
+    randomize_pokemon_requests = {
+        code = "randomize_pokemon_requests",
+        mapping = MAP_QUADRUPLE
     }
 }
 

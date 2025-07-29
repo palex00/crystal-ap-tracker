@@ -8865,6 +8865,16 @@
                         ]
                     },
                     {
+                        "name": "Bill's Grandpa - Pokémon Request Rewards",
+                        "item_count": 5,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/bills_grandpa.png",
+                        "chest_opened_img": "images/other/bills_grandpa_bw.png",
+                        "visibility_rules": [
+                            "randomize_pokemon_requests_true"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,

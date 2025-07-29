@@ -2477,5 +2477,38 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Bill's Grandpa",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 4,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Bill's Grandpa - Vanilla Requests, Vanilla Rewards",
+                "img": "/images/settings/bills_grandpa_neither.png",
+                "codes": "randomize_pokemon_requests",
+                "inherit_codes": false
+            },
+            {
+                "name": "Bill's Grandpa - Vanilla Requests, Randomized Rewards",
+                "img": "/images/settings/bills_grandpa_rewards.png",
+                "codes": "randomize_pokemon_requests, randomize_pokemon_requests_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Bill's Grandpa - Randomized Requests, Vanilla Rewards",
+                "img": "/images/settings/bills_grandpa_requests.png",
+                "codes": "randomize_pokemon_requests",
+                "inherit_codes": false
+            },
+            {
+                "name": "Bill's Grandpa - Randomized Requests, Randomized Rewards",
+                "img": "/images/settings/bills_grandpa_both.png",
+                "codes": "randomize_pokemon_requests, randomize_pokemon_requests_true",
+                "inherit_codes": false
+            }
+        ]
     }
 ]
