@@ -151,6 +151,19 @@ function toggle_darkcave()
     end
 end
 
+function toggle_mountmortar()
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("mount_mortar_access_vanilla") and not sudowoodo then
+        Tracker:AddMaps("maps/mount_mortar_vanilla.json")
+    elseif has("mount_mortar_access_rocksmash") and not sudowoodo then
+        Tracker:AddMaps("maps/mount_mortar_rocksmash.json")
+    elseif has("mount_mortar_access_vanilla") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/mount_mortar_vanilla.json")
+    elseif has("mount_mortar_access_rocksmash") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/mount_mortar_rocksmash.json")
+    end
+end
+
 function toggle_splitmap()
     if has("splitmap_off") and has("johto_only_off") then
         Tracker:AddLayouts("layouts/tabs_single.json")

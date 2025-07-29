@@ -338,6 +338,10 @@ SLOT_CODES = {
     hiddenitem_logic = {
         code = "hiddenitem_logic",
         mapping = MAP_SIXTUPLE
+    },
+    mount_mortar_access = {
+        code = "mount_mortar_access",
+        mapping = MAP_TOGGLE
     }
 }
 

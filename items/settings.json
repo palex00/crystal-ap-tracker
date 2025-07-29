@@ -2430,5 +2430,26 @@
         "img": "/images/settings/dex_related/remainingchecks.png",
         "codes": "remainingchecks",
         "type": "static"
+    },
+    {
+        "name": "Mount Mortar Rock Smash Rock",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Mount Mortar is vanilla",
+                "img": "/images/other/rocksmash.png",
+                "img_mods": "@disabled",
+                "codes": "mount_mortar_access, mount_mortar_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Mount Mortar has Rock Smash Rocks",
+                "img": "/images/other/rocksmash.png",
+                "codes": "mount_mortar_access, mount_mortar_access_rocksmash",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

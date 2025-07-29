@@ -262,3 +262,20 @@ end
 function badges_randomised()
   return has("badges_on") or has("badges_shuffle")
 end
+
+function pass_mortar()
+  local pass_rocksmash = has("mount_mortar_access_vanilla") or has("TM_ROCK_SMASH")
+  return pass_rocksmash or can_surf_johto()
+end
+
+function mountmortar_back()
+  local pass_rocksmash = has("mount_mortar_access_vanilla") or has("TM_ROCK_SMASH")
+  
+  return (pass_rocksmash and can_strength()) or can_waterfall()
+end
+
+function mountmortar_front()
+  local pass_rocksmash = has("mount_mortar_access_vanilla") or has("TM_ROCK_SMASH")
+  
+  return pass_rocksmash or (can_waterfall() and can_strength())
+end

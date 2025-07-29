@@ -20,6 +20,7 @@ Tracker:AddMaps("maps/ilex_forest_tree.json")
 Tracker:AddMaps("maps/route_2_ledge.json")
 Tracker:AddMaps("maps/lake_of_rage_vanilla.json")
 Tracker:AddMaps("maps/blackthorn_dark_cave_vanilla.json")
+Tracker:AddMaps("maps/mount_mortar_vanilla.json")
 Tracker:AddMaps("maps/maps_johto_and_kanto.json")
 
 -- Locations
@@ -55,6 +56,7 @@ ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
 ScriptHost:AddWatchForCode("route_2_access", "route_2_access", toggle_route2)
 ScriptHost:AddWatchForCode("red_gyarados_access", "red_gyarados_access", toggle_lakeofrage)
 ScriptHost:AddWatchForCode("blackthorn_dark_cave_access", "blackthorn_dark_cave_access", toggle_darkcave)
+ScriptHost:AddWatchForCode("mount_mortar_access", "mount_mortar_access", toggle_mountmortar)
 ScriptHost:AddWatchForCode("mischief", "mischief", toggle_mischief)
 ScriptHost:AddWatchForCode("chrism", "chrism", toggle_mischief)
 for _, code in ipairs(gym_codes) do
