@@ -505,6 +505,34 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Tin Tower/Wise Trios Room - Sage Gaku",
+                        "name": "Wise Trios Room - Sage Gaku"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/Wise Trios Room - Sage Masa",
+                        "name": "Wise Trios Room - Sage Masa"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/Wise Trios Room - Sage Koji",
+                        "name": "Wise Trios Room - Sage Koji"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakCity",
+                        "x": 296,
+                        "y": 184
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/1F - Suicune",
+                        "name": "Tin Tower 1F - Suicune"
+                    },
+                    {
                         "ref": "JohtoKanto/Tin Tower/1F - Rainbow Wing",
                         "name": "Tin Tower 1F - Rainbow Wing"
                     },
@@ -2407,6 +2435,22 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Lass Linda",
+                        "name": "Fuchsia Gym - Lass Linda"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Picnicker Cindy",
+                        "name": "Fuchsia Gym - Picnicker Cindy"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Camper Barry",
+                        "name": "Fuchsia Gym - Camper Barry"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Lass Alice",
+                        "name": "Fuchsia Gym - Lass Alice"
+                    },
+                    {
                         "ref": "JohtoKanto/Fuchsia City/Gym - Beat Janine",
                         "name": "Fuchsia Gym - Beat Janine"
                     },
@@ -3580,21 +3624,6 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/B1F - Got Tyrogue from Kiyo"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "IcePathB1F",
-                        "x": 264,
-                        "y": 72
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "sections": [
-                    {
                         "ref": "JohtoKanto/Ice Path/B1F - Item"
                     }
                 ],
@@ -4349,6 +4378,14 @@
                         "name": "2F - Hidden Item"
                     },
                     {
+                        "name": "B1F - Blackbelt Kiyo",
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Blackbelt Kiyo"
+                    },
+                    {
+                        "name": "B1F - Got Tyrogue from Kiyo",
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Got Tyrogue from Kiyo"
+                    },
+                    {
                         "ref": "JohtoKanto/Mount Mortar/B1F - Southeast Item",
                         "name": "B1F - Southeast Item"
                     },
@@ -4715,6 +4752,11 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "B1F - Blackbelt Kiyo",
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Blackbelt Kiyo"
+                    },
+                    {
+                        "name": "B1F - Got Tyrogue from Kiyo",
                         "ref": "JohtoKanto/Mount Mortar/B1F - Got Tyrogue from Kiyo"
                     }
                 ],
@@ -7415,6 +7457,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 24/Grunt"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route24",
+                        "x": 136,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 25/Hidden Item in Tree"
                     }
                 ],
@@ -8574,6 +8631,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Route 34/Officer Keith"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 152,
+                        "y": 184
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Route 34/Camper Todd"
                     }
                 ],
@@ -8792,6 +8864,21 @@
                         "map": "Route35",
                         "x": 88,
                         "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 35/Officer Dirk"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route35",
+                        "x": 88,
+                        "y": 104
                     }
                 ]
             },
@@ -9227,6 +9314,21 @@
                     {
                         "map": "Route39",
                         "x": 168,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 39/Pokefan Jaime"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route39",
+                        "x": 72,
                         "y": 360
                     }
                 ]
@@ -13483,6 +13585,98 @@
                         "map": "FuchsiaGym",
                         "x": 24,
                         "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Lass Linda"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaGym",
+                        "x": 88,
+                        "y": 184
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Picnicker Cindy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaGym",
+                        "x": 152,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Camper Barry"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaGym",
+                        "x": 72,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "name": "Indigo Plateau - Elite 4 Will",
+                        "ref": "JohtoKanto/Indigo Plateau/Elite 4 Will"
+                    },
+                    {
+                        "name": "Indigo Plateau - Elite 4 Koga",
+                        "ref": "JohtoKanto/Indigo Plateau/Elite 4 Koga"
+                    },
+                    {
+                        "name": "Indigo Plateau - Elite 4 Bruno",
+                        "ref": "JohtoKanto/Indigo Plateau/Elite 4 Bruno"
+                    },
+                    {
+                        "name": "Indigo Plateau - Elite 4 Karen",
+                        "ref": "JohtoKanto/Indigo Plateau/Elite 4 Karen"
+                    },
+                    {
+                        "name": "Indigo Plateau - Become Champion",
+                        "ref": "JohtoKanto/Indigo Plateau/Become Champion"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route23",
+                        "x": 160,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Lass Alice"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaGym",
+                        "x": 88,
+                        "y": 120
                     }
                 ]
             },

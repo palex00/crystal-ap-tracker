@@ -2009,6 +2009,12 @@
                         ]
                     },
                     {
+                        "name": "Officer Keith",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Camper Todd",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -2824,6 +2830,12 @@
                         ]
                     },
                     {
+                        "name": "Officer Dirk",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Bug Catcher Arnie",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
@@ -3470,6 +3482,24 @@
                 ],
                 "sections": [
                     {
+                        "name": "Wise Trios Room - Sage Gaku",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Wise Trios Room - Sage Masa",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Wise Trios Room - Sage Koji",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "1F - Suicune",
                         "chest_unopened_img": "images/other/suicune.png",
                         "chest_opened_img": "images/other/suicune_bw.png",
@@ -3870,6 +3900,12 @@
                     },
                     {
                         "name": "Pokefan Derek",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Pokefan Jaime",
                         "visibility_rules": [
                             "show_items, trainersanity_on"
                         ]
@@ -5443,6 +5479,15 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Blackbelt Kiyo",
+                        "access_rules": [
+                            "$can_waterfall"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
                         ]
                     },
                     {
@@ -7469,6 +7514,30 @@
                 ],
                 "sections": [
                     {
+                        "name": "Elite 4 Will",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Elite 4 Koga",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Elite 4 Bruno",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Elite 4 Karen",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
                         "name": "Become Champion",
                         "hosted_item": "EVENT_BEAT_ELITE_FOUR",
                         "visibility_rules": [
@@ -8744,6 +8813,12 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Grunt",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
                     {
                         "name": "Land Encounters",
                         "item_count": 7,
@@ -10618,6 +10693,30 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Gym - Lass Linda",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Picnicker Cindy",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Camper Barry",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Lass Alice",
+                        "visibility_rules": [
+                            "show_items, trainersanity_on"
+                        ]
+                    },
                     {
                         "name": "Gym - Beat Janine",
                         "hosted_item": "EVENT_BEAT_JANINE",
