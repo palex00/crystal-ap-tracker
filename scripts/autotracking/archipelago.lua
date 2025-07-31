@@ -55,20 +55,24 @@ function onClear(slot_data)
         end            
     end
 
-    ENCOUNTER_LIST = {}
-    setEncounterList(slot_data["wild_encounters"])
 
-    local encounter_mapping_reset = {}
-    encounter_mapping_reset = ENCOUNTER_MAPPING
-    
-    for _, location in pairs(encounter_mapping_reset) do
-        local object = Tracker:FindObjectForCode(location)
-        if object then
-            object.AvailableChestCount = object.ChestCount
-        else
-            print("There is a typo with ".. location)
+    POKEMON_TO_LOCATIONS = {}
+    for location, dex_list in pairs(slot_data["region_encounters"]) do
+        for _, dex_number in pairs(dex_list) do
+            if POKEMON_TO_LOCATIONS[dex_number] == nil then
+                POKEMON_TO_LOCATIONS[dex_number] = {}
+            end
+            table.insert(POKEMON_TO_LOCATIONS[dex_number], location)
         end
     end
+    
+    -- This sets each Encounter location to however many unique encounters there are in it
+    for region_key, location in pairs(ENCOUNTER_MAPPING) do
+        local object = Tracker:FindObjectForCode(location)
+        object.AvailableChestCount = #slot_data.region_encounters[region_key]
+    end
+    
+    REGION_ENCOUNTERS = slot_data.region_encounters
 
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then
@@ -239,12 +243,6 @@ function onLocation(location_id, location_name)
     end
 end
 
-function setEncounterList(wild_encounters)
-	for dex_number, encounters in pairs(wild_encounters) do
-		ENCOUNTER_LIST[tonumber(dex_number)] = encounters
-	end
-end
-
 function onNotify(key, value, old_value)
     if value ~= nil and value ~= 0 then
         if key == EVENT_ID then
@@ -354,10 +352,7 @@ function updateVanillaKeyItems(value)
 end
 
 function updatePokemon(pokemon)
-
-    if pokemon == nil then
-        pokemon = last_pokemon
-    end
+    pokemon = pokemon or last_pokemon
     
 	if pokemon ~= nil then
 		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -372,18 +367,14 @@ function updatePokemon(pokemon)
 		end
         
 		if has("encounter_tracking_strict") or has("encounter_tracking_loose") then
-			local encounter_mapping = ENCOUNTER_MAPPING
-            
-            for _, location in pairs(encounter_mapping) do
+            for region_key, location in pairs(ENCOUNTER_MAPPING) do
                 local object = Tracker:FindObjectForCode(location)
-                if object then
-                    object.AvailableChestCount = object.ChestCount
-                end
+                object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
             end
             
             local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total")
 
-            for dex_number, encounters in pairs(ENCOUNTER_LIST) do
+            for dex_number, locations in pairs(POKEMON_TO_LOCATIONS) do
                 local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
                 local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
                 local dexloc = Tracker:FindObjectForCode("dexsanity_"..POKEMON_MAPPING[dex_number])
@@ -406,13 +397,13 @@ function updatePokemon(pokemon)
                 end
 
                 if should_decrement then
-                    for _, encounter in pairs(encounters) do
-                        local object_name = encounter_mapping[encounter]
+                   for _, location in pairs(locations) do
+                        local object_name = ENCOUNTER_MAPPING[location]
                         if object_name ~= nil then
                             local object = Tracker:FindObjectForCode(object_name)
                             if object then
-                                if string.sub(encounter, 1, 7):lower() == "static_" then
-                                    local event_name = string.sub(encounter, 8)
+                                if string.sub(location, 1, 7):lower() == "static_" then
+                                    local event_name = string.sub(location, 8)
                                     local event_code = Tracker:FindObjectForCode(event_name)
                                     if event_code and event_code.Active then
                                         object.AvailableChestCount = object.AvailableChestCount - 1
