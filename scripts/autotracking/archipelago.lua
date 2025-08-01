@@ -6,8 +6,6 @@ ScriptHost:LoadScript("scripts/autotracking/encounter_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/pokemon_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/ap_helper.lua")
 
-BASE_OFFSET = 7680000
-
 CUR_INDEX = -1
 PLAYER_ID = -1
 TEAM_NUMBER = 0
@@ -15,13 +13,6 @@ TEAM_NUMBER = 0
 EVENT_ID = ""
 KEY_ID = ""
 POKE_ID = ""
-
-function reverse_offset(id)
-    if id >= BASE_OFFSET then
-        return id - BASE_OFFSET
-    end
-    return id
-end
 
 function onClear(slot_data)
     isUpdating = true
@@ -35,11 +26,6 @@ function onClear(slot_data)
         if obj then
             obj.Active = false
         end
-    end
-
-    if slot_data == nil then
-        print("its fucked")
-        return
     end
 
     PLAYER_ID = Archipelago.PlayerNumber or -1
@@ -84,7 +70,6 @@ function onClear(slot_data)
 
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then
-            print("Setting " .. k .. " to " .. v)
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
         elseif REQUIREMENT_CODES[k] then
 			local item = REQUIREMENT_CODES[k].item
@@ -224,9 +209,9 @@ function onItem(index, item_id, item_name, player_number)
         return
     end
     CUR_INDEX = index;
-    local v = ITEM_MAPPING[reverse_offset(item_id)]
+    local v = ITEM_MAPPING[item_id]
     if not v then
-        -- print(string.format("onItem: could not find item mapping for id %s", item_id))
+        --print(string.format("onItem: could not find item mapping for id %s", item_id))
         return
     end
     local obj = Tracker:FindObjectForCode(v)
@@ -239,7 +224,7 @@ end
 
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
-    local v = LOCATION_MAPPING[reverse_offset(location_id)]
+    local v = LOCATION_MAPPING[location_id]
     if not v then
         print(string.format("onLocation: could not find location mapping for id %s", location_id))
     end
@@ -513,68 +498,6 @@ function onMap(value)
         last_map_number = value["data"]["mapNumber"]
     end
 end
-
-
--- This code is too pretty to delete. Totally wasted time though.
-
--- -- Rod types to cover
--- local rodTypes = { "Old", "Good", "Super" }
--- 
--- -- Pairs of NAME and AREA
--- local locationPairs = {
---     { name = "Dark Cave Blackthorn Entrance", area = "Lake" },
---     { name = "Route 32", area = "Routes 12, 13, 32" },
---     { name = "Ilex Forest", area = "Pond" },
---     { name = "Tohjo Falls", area = "Lake" },
---     { name = "Route 10", area = "Lake" }
--- }
--- 
--- -- Generate all valid mappings: [FullID] = siblingFullID
--- local linkedLocations = {}
--- 
--- for _, pair in ipairs(locationPairs) do
---     for _, rodType in ipairs(rodTypes) do
---         local fullA = "Special Encounters/" .. pair.name .. " Fishing/" .. rodType .. " Rod - " .. pair.area
---         local fullB = "Special Encounters/" .. rodType .. " Rod/" .. pair.area
---         linkedLocations[fullA] = fullB
---         linkedLocations[fullB] = fullA
---     end
--- end
--- 
--- 
--- 
--- function onSectionChanged(value)
---     -- Prevent recursion
---     if isUpdating then return end
--- 
---     local changedID = value.FullID
---     local changedCount = value.AvailableChestCount
--- 
---     -- Check if changedID is in our linked map
---     local targetID = linkedLocations[changedID]
---     if targetID then
---         -- Print debug info
---         print("Changed:", changedID)
---         print("Target :", targetID)
--- 
---         -- Get the other location (needs @ prefix)
---         local targetLoc = Tracker:FindObjectForCode("@" .. targetID)
--- 
---         if targetLoc then
---             local targetCount = targetLoc.AvailableChestCount
--- 
---             if targetCount ~= changedCount then
---                 isUpdating = true
---                 targetLoc.AvailableChestCount = changedCount
---                 isUpdating = false
---             end
---         else
---             print("Target location not found: " .. targetID)
---         end
---     end
--- end
-
-
 
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)

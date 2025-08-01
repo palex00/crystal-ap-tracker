@@ -34,15 +34,26 @@ function dump_table(o, depth)
     if depth == nil then
         depth = 0
     end
+
+    local ignore_keys = {
+        region_encounters = true,
+        trainersanity = true,
+        dexcountsanity_counts = true,
+        dexsanity_pokemon = true,
+    }
+
     if type(o) == 'table' then
         local tabs = ('\t'):rep(depth)
         local tabs2 = ('\t'):rep(depth + 1)
         local s = '{\n'
         for k, v in pairs(o) do
-            if type(k) ~= 'number' then
-                k = '"' .. k .. '"'
+            local key_str = tostring(k)
+            if not ignore_keys[key_str] then
+                if type(k) ~= 'number' then
+                    k = '"' .. k .. '"'
+                end
+                s = s .. tabs2 .. '[' .. k .. '] = ' .. dump_table(v, depth + 1) .. ',\n'
             end
-            s = s .. tabs2 .. '[' .. k .. '] = ' .. dump_table(v, depth + 1) .. ',\n'
         end
         return s .. tabs .. '}'
     else
@@ -99,7 +110,6 @@ end
 function toggle_mischief()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1
     if sudowoodo then
-        print("Applying Mischief...")
         Tracker:AddMaps("maps/mischief/maps.json")
         Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.json")
     else
