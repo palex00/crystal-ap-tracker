@@ -202,28 +202,6 @@
         ]
     },
     {
-        "name": "Trainersanity",
-        "type": "progressive",
-        "initial_stage_idx": 1,
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-            {
-                "name": "Trainersanity - Off",
-                "img": "/images/settings/trainersanity.png",
-                "img_mods": "@disabled",
-                "codes": "trainersanity,trainersanity_off",
-                "inherit_codes": false
-            },
-            {
-                "name": "Trainersanity - On",
-                "img": "/images/settings/trainersanity.png",
-                "codes": "trainersanity,trainersanity_on",
-                "inherit_codes": false
-            }
-        ]
-    },
-    {
         "name": "Free Fly Location",
         "type": "progressive",
         "loop": true,

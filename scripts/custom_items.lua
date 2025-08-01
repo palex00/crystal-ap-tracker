@@ -6,6 +6,7 @@ ScriptHost:LoadScript("scripts/custom_items/class.lua")
 ScriptHost:LoadScript("scripts/custom_items/custom_item.lua")
 ScriptHost:LoadScript("scripts/custom_items/badges_gyms_requirement.lua")
 ScriptHost:LoadScript("scripts/custom_items/kanto_access_requirement.lua")
+ScriptHost:LoadScript("scripts/custom_items/trainersanity.lua")
 -- ScriptHost:LoadScript("scripts/custom_items/pokedex.lua")
 -- ScriptHost:LoadScript("scripts/custom_items/pokedex_requirement.lua")
 
@@ -15,5 +16,6 @@ RADIO_REQ = BadgesGymsRequirement("Radio Tower Requirement", "tower_requirement"
 SILVER_REQ = BadgesGymsRequirement("Mt. Silver Requirement", "mt_silver_requirement", 16, 16, "images/settings/mt_silver_requirement.png")
 R44_REQ = BadgesGymsRequirement("Route 44 Requirement", "route_44_requirement", 7, 16, "images/settings/route_44_requirement.png")
 KANTO_REQ = KantoAccessRequirement()
+TRAINERS = TrainersanityNumber()
 
 -- POKEDEX = Pokedex()

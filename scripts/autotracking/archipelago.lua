@@ -28,6 +28,14 @@ function onClear(slot_data)
     CUR_INDEX = -1
     resetLocations()
     resetItems()
+    -- this resets trainer visibility. It will cause some "cannot find object"-errors
+    -- but I am not willing to make yet another list that is just a list.
+    for i = 1039, 1522 do
+        local obj = Tracker:FindObjectForCode("trainersanity_" .. i)
+        if obj then
+            obj.Active = false
+        end
+    end
 
     if slot_data == nil then
         print("its fucked")
@@ -84,6 +92,18 @@ function onClear(slot_data)
 		elseif AMOUNT_CODES[k] then
 			local item = AMOUNT_CODES[k].item
 			item:setStage(v)
+        elseif k == "trainersanity" then
+            for _, value in ipairs(v) do
+                Tracker:FindObjectForCode("trainersanity_" .. value).Active = true
+            end
+            if #v == 0 then
+                TRAINERS:setType("none")
+            elseif #v == 340 then
+                TRAINERS:setType("full")
+            else
+                TRAINERS:setType("partial")
+                TRAINERS:setStage(#v)
+            end
         elseif k == "dexsanity" then
             Tracker:FindObjectForCode("dexsanity").AcquiredCount = v
         elseif k == "evolution_gym_levels" then
