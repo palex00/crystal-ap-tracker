@@ -213,7 +213,10 @@ function has_mapcard()
 end
 
 function can_freefly(destination)
-  return can_fly() and (has("free_fly_"..destination) or (has("map_card_fly_"..destination) and has_mapcard()))
+  return can_fly() and 
+  (has("free_fly_"..destination) or
+  (has("map_card_fly_"..destination) and has_mapcard()) or
+  (has("flyunlock_"..destination)))
 end
 
 function clear_snorlax()
