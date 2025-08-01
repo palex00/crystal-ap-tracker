@@ -1,0 +1,42 @@
+{
+    "fly_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, 2",
+                        "h_alignment": "center",
+                        "rows": [
+                            [
+                                "fly_newbarktown",
+                                "fly_cherrygrovecity",
+                                "fly_violetcity"
+                            ],
+                            [
+                                "fly_azaleatown",
+                                "fly_cianwoodcity",
+                                "fly_goldenrodcity"
+                            ],
+                            [
+                                "fly_olivinecity",
+                                "fly_ecruteakcity",
+                                "fly_mahoganytown"
+                            ],
+                            [
+                                "fly_lakeofrage",
+                                "fly_blackthorncity"
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

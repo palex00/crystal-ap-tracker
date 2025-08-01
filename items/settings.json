@@ -2488,5 +2488,27 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Fly Unlock",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Fly Unlocks are not randomized",
+                "img": "/images/items/flyunlocks/flyunlock.png",
+                "img_mods": "@disabled",
+                "codes": "randomize_fly_unlocks, randomize_fly_unlocks_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Fly Unlocks are randomized",
+                "img": "/images/items/flyunlocks/flyunlock.png",
+                "codes": "randomize_fly_unlocks, randomize_fly_unlocks_true",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

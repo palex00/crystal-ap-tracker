@@ -346,6 +346,10 @@ SLOT_CODES = {
     randomize_pokemon_requests = {
         code = "randomize_pokemon_requests",
         mapping = MAP_QUADRUPLE
+    },
+    randomize_fly_unlocks = {
+        code = "randomize_fly_unlocks",
+        mapping = MAP_TOGGLE
     }
 }
 

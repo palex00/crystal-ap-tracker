@@ -68,6 +68,7 @@ function toggle_johto()
         Tracker:AddLayouts("layouts/overworld.json")
         Tracker:AddLayouts("layouts/settings.json")
         Tracker:AddLayouts("layouts/events.json")
+        Tracker:AddLayouts("layouts/flyunlocks.json")
         if coffee then
             Tracker:AddLayouts("layouts/items.json")
         else
@@ -85,9 +86,11 @@ function toggle_johto()
 
         if has("johto_only_on") then
             Tracker:AddMaps("maps/maps_johto_no_silver.json")
+            Tracker:AddLayouts("layouts/johto_only/flyunlocks_no_silver.json")
             Tracker:AddLayouts("layouts/johto_only/settings_johto_no_silver.json")
         elseif has("johto_only_silver") then
             Tracker:AddMaps("maps/maps_johto_only.json")
+            Tracker:AddLayouts("layouts/johto_only/flyunlocks.json")
             Tracker:AddLayouts("layouts/johto_only/settings_johto_with_silver.json")
         end
     end
@@ -189,6 +192,14 @@ function toggle_splitmap()
         Tracker:AddLayouts("layouts/johto_only/tabs_reverse.json")
     end
 end
+
+function toggle_flyunlocks()
+    if has("randomize_fly_unlocks_false") then
+        Tracker:AddLayouts("layouts/tracker.json")
+    elseif has("randomize_fly_unlocks_true") then
+        Tracker:AddLayouts("layouts/tracker_with_flyunlock.json")
+    end
+end        
 
 function updateRemainingDexcountsanityChecks()
     local val = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount

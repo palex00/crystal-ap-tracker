@@ -38,6 +38,8 @@ Tracker:AddLayouts("layouts/events.json")
 Tracker:AddLayouts("layouts/settings.json")
 Tracker:AddLayouts("layouts/pokemonlogic.json")
 Tracker:AddLayouts("layouts/items_no_tea.json")
+Tracker:AddLayouts("layouts/flyunlocks.json")
+Tracker:AddLayouts("layouts/schema_items_and_fly.json")
 Tracker:AddLayouts("layouts/tabs_single.json")
 Tracker:AddLayouts("layouts/overworld.json")
 Tracker:AddLayouts("layouts/tracker.json")
@@ -70,6 +72,8 @@ ScriptHost:AddWatchForCode("yaml_digit2", "yaml_digit2", calculateEvoLevel)
 ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", updatePokemon)
 
 ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
+
+ScriptHost:AddWatchForCode("randomize_fly_unlocks", "randomize_fly_unlocks", toggle_flyunlocks)
 
 
 --for _, code in ipairs(FLAG_STATIC_CODES) do

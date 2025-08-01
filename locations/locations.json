@@ -73,6 +73,14 @@
                         "access_rules": [
                             "^$surf_encounter_johto"
                         ]
+                    },
+                    {
+                        "name": "Visit New Bark Town",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -199,6 +207,14 @@
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
+                        ]
+                    },
+                    {
+                        "name": "Visit Cherrygrove City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -640,6 +656,14 @@
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
+                        ]
+                    },
+                    {
+                        "name": "Visit Violet City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -1791,6 +1815,14 @@
                         "visibility_rules": [
                             "show_items"
                         ]
+                    },
+                    {
+                        "name": "Visit Azalea Town",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -2315,6 +2347,14 @@
                         ],
                         "visibility_rules": [
                             "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Visit Goldenrod City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -3461,6 +3501,14 @@
                         "access_rules": [
                             "^$surf_encounter_johto"
                         ]
+                    },
+                    {
+                        "name": "Visit Ecruteak City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -4163,6 +4211,14 @@
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
+                        ]
+                    },
+                    {
+                        "name": "Visit Olivine City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -5185,6 +5241,14 @@
                         "access_rules": [
                             "^$surf_encounter_johto"
                         ]
+                    },
+                    {
+                        "name": "Visit Cianwood City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -6100,6 +6164,14 @@
                         "visibility_rules": [
                             "show_items"
                         ]
+                    },
+                    {
+                        "name": "Visit Mahogany Town",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -6386,6 +6458,14 @@
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
+                        ]
+                    },
+                    {
+                        "name": "Visit Lake of Rage",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -6981,6 +7061,14 @@
                         ],
                         "access_rules": [
                             "$can_whirlpool, EVENT_BEAT_CLAIR, ^$surf_encounter_johto"
+                        ]
+                    },
+                    {
+                        "name": "Visit Blackthorn City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -8126,6 +8214,14 @@
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
                         ]
+                    },
+                    {
+                        "name": "Visit Silver Cave",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -8269,6 +8365,14 @@
                         "access_rules": [
                             "^$surf_encounter_kanto"
                         ]
+                    },
+                    {
+                        "name": "Visit Viridian City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -8376,6 +8480,14 @@
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Visit Pallet Town",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -8638,6 +8750,14 @@
                         "name": "Berry Tree 2",
                         "visibility_rules": [
                             "show_items, berries_on"
+                        ]
+                    },
+                    {
+                        "name": "Visit Pewter City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -8979,6 +9099,14 @@
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Visit Cerulean City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -9658,6 +9786,14 @@
                             "show_items, pokegear_off"
                         ],
                         "hosted_item": "EXPN_CARD"
+                    },
+                    {
+                        "name": "Visit Lavender Town",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -9852,6 +9988,14 @@
                         "visibility_rules": [
                             "show_items"
                         ]
+                    },
+                    {
+                        "name": "Visit Saffron City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -10017,6 +10161,14 @@
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Visit Celadon City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -10382,6 +10534,14 @@
                         ],
                         "visibility_rules": [
                             "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Visit Vermilion City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
@@ -11094,6 +11254,14 @@
                         "access_rules": [
                             "^$surf_encounter_kanto"
                         ]
+                    },
+                    {
+                        "name": "Visit Fuchsia City",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -11334,6 +11502,14 @@
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Visit Cinnabar Island",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
+                        "visibility_rules": [
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     }
                 ],
