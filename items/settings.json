@@ -1369,13 +1369,19 @@
             {
                 "name": "Encounter Method: Fishing Encounters NOT in logic",
                 "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "encmethod_fishing, encmethod_fishing_off",
+                "codes": "encmethod_fishing, encmethod_fishing_off, encmethod_fishing_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Fishing Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_fishing, encmethod_fishing_forbidden",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Fishing Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_fishing, encmethod_fishing_on",
+                "codes": "encmethod_fishing, encmethod_fishing_on, encmethod_fishing_visible",
                 "inherit_codes": false
             }
         ]
@@ -1394,13 +1400,19 @@
             {
                 "name": "Encounter Method: Headbutt Encounters NOT in logic",
                 "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "encmethod_headbutt, encmethod_headbutt_off",
+                "codes": "encmethod_headbutt, encmethod_headbutt_off, encmethod_headbutt_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Headbutt Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_headbutt, encmethod_headbutt_forbidden",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Headbutt Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_headbutt, encmethod_headbutt_on",
+                "codes": "encmethod_headbutt, encmethod_headbutt_on, encmethod_headbutt_visible",
                 "inherit_codes": false
             }
         ]
@@ -1419,13 +1431,19 @@
             {
                 "name": "Encounter Method: Land Encounters NOT in logic",
                 "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "encmethod_land, encmethod_land_off",
+                "codes": "encmethod_land, encmethod_land_off, encmethod_land_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Land Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_land, encmethod_land_forbidden",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Land Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_land, encmethod_land_on",
+                "codes": "encmethod_land, encmethod_land_on, encmethod_land_visible",
                 "inherit_codes": false
             }
         ]
@@ -1444,13 +1462,19 @@
             {
                 "name": "Encounter Method: Rock Smash Encounters NOT in logic",
                 "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "encmethod_rocksmash, encmethod_rocksmash_off",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_off, encmethod_rocksmash_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Rock Smash Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_forbidden",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Rock Smash Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_rocksmash, encmethod_rocksmash_on",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_on, encmethod_rocksmash_visible",
                 "inherit_codes": false
             }
         ]
@@ -1469,13 +1493,19 @@
             {
                 "name": "Encounter Method: Surfing Encounters NOT in logic",
                 "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "encmethod_water, encmethod_water_off",
+                "codes": "encmethod_water, encmethod_water_off, encmethod_water_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Surfing Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_water, encmethod_water_forbidden",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Surfing Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_water, encmethod_water_on",
+                "codes": "encmethod_water, encmethod_water_on, encmethod_water_visible",
                 "inherit_codes": false
             }
         ]

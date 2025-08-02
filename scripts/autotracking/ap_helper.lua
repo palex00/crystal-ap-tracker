@@ -301,23 +301,23 @@ SLOT_CODES = {
     },
     encmethod_land = {
         code = "encmethod_land",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     encmethod_water = {
         code = "encmethod_water",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     encmethod_fishing = {
         code = "encmethod_fishing",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     encmethod_headbutt = {
         code = "encmethod_headbutt",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     encmethod_rocksmash = {
         code = "encmethod_rocksmash",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     static_pokemon_required = {
         code = "encmethod_static",
@@ -349,6 +349,10 @@ SLOT_CODES = {
     },
     randomize_fly_unlocks = {
         code = "randomize_fly_unlocks",
+        mapping = MAP_TOGGLE
+    },
+    enforce_wild_encounter_methods_logic = {
+        code = "enforce_wild_encounter_methods_logic",
         mapping = MAP_TOGGLE
     }
 }

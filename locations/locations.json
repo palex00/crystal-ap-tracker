@@ -68,7 +68,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -140,7 +140,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -203,7 +203,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -321,7 +321,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -334,7 +334,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -418,7 +418,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -431,7 +431,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -512,7 +512,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -525,7 +525,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -652,7 +652,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -734,7 +734,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -786,7 +786,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -978,7 +978,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Union Cave, $can_surf_johto"
@@ -991,7 +991,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -1004,7 +1004,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -1203,7 +1203,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Route 32/Post-Guy"
@@ -1216,7 +1216,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy, ^$surf_encounter_johto"
@@ -1314,7 +1314,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -1327,7 +1327,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -1392,7 +1392,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -1405,7 +1405,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -1477,7 +1477,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, $can_surf_johto"
@@ -1490,7 +1490,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -1542,7 +1542,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -1614,7 +1614,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -1627,7 +1627,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -1658,7 +1658,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, $can_surf_johto, $can_strength"
@@ -1671,7 +1671,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto, $can_strength"
@@ -1988,7 +1988,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Ilex Forest/Post-Tree",
@@ -2002,7 +2002,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Ilex Forest/Post-Tree, ^$surf_encounter_johto"
@@ -2164,7 +2164,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -2177,7 +2177,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -2991,7 +2991,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -3004,7 +3004,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -3098,7 +3098,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -3227,7 +3227,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Route 36/Left",
@@ -3313,7 +3313,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -3496,7 +3496,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -3572,7 +3572,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -3601,7 +3601,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -3685,7 +3685,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "RAINBOW_WING, ^$land_encounter"
@@ -3707,7 +3707,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "RAINBOW_WING, ^$land_encounter"
@@ -3756,7 +3756,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "RAINBOW_WING, ^$land_encounter"
@@ -3796,7 +3796,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "RAINBOW_WING, ^$land_encounter"
@@ -3818,7 +3818,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "RAINBOW_WING, ^$land_encounter"
@@ -3840,7 +3840,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "RAINBOW_WING, ^$land_encounter"
@@ -3880,7 +3880,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "RAINBOW_WING, ^$land_encounter"
@@ -3902,7 +3902,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "RAINBOW_WING, ^$land_encounter"
@@ -3999,7 +3999,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -4093,7 +4093,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -4185,7 +4185,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -4670,7 +4670,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -4778,7 +4778,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -4843,7 +4843,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -4856,7 +4856,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -4869,7 +4869,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -4882,7 +4882,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto, ^$can_flash_johto"
@@ -4895,7 +4895,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -4908,7 +4908,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -4993,7 +4993,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -5033,7 +5033,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -5046,7 +5046,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto, ^$can_flash_johto"
@@ -5070,7 +5070,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -5083,7 +5083,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto, ^$can_flash_johto"
@@ -5236,7 +5236,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -5370,7 +5370,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Mahogany Town"
@@ -5383,7 +5383,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -5449,7 +5449,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -5462,7 +5462,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -5567,7 +5567,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -5653,7 +5653,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, $can_waterfall"
@@ -5666,7 +5666,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto, $can_waterfall"
@@ -5754,7 +5754,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "$can_surf_johto, ^$land_encounter"
@@ -5767,7 +5767,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "$can_surf_johto, ^$surf_encounter_johto"
@@ -6274,7 +6274,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -6287,7 +6287,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -6454,7 +6454,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -6589,7 +6589,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, $can_surf_johto"
@@ -6602,7 +6602,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -6665,7 +6665,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -6696,7 +6696,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -6733,7 +6733,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -6764,7 +6764,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Blackthorn City"
@@ -6786,7 +6786,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Blackthorn City"
@@ -6915,7 +6915,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -7057,7 +7057,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "$can_whirlpool, EVENT_BEAT_CLAIR, ^$surf_encounter_johto"
@@ -7140,7 +7140,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Route 45, ^$can_flash_johto",
@@ -7155,7 +7155,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Blackthorn Entrance/All Items, ^$surf_encounter_johto"
@@ -7289,7 +7289,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -7302,7 +7302,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -7414,7 +7414,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Route 46/Below Ledge"
@@ -7556,7 +7556,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Route 27/Post-Waterfall"
@@ -7569,7 +7569,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto, @JohtoKanto/Route 27/Post-Waterfall",
@@ -7592,7 +7592,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, $can_surf_johto, @JohtoKanto/New Bark Town"
@@ -7605,7 +7605,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto, @JohtoKanto/New Bark Town"
@@ -7705,7 +7705,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -7718,7 +7718,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -7809,7 +7809,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -7943,7 +7943,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -7956,7 +7956,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -8013,7 +8013,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -8026,7 +8026,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
@@ -8093,7 +8093,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -8160,7 +8160,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -8173,7 +8173,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$can_flash_johto, ^$surf_encounter_johto"
@@ -8186,7 +8186,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto, $can_waterfall"
@@ -8209,7 +8209,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, ^$can_flash_johto"
@@ -8261,7 +8261,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -8274,7 +8274,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -8360,7 +8360,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -8432,7 +8432,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -8476,7 +8476,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -8671,7 +8671,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Route 2/Main Section"
@@ -8827,7 +8827,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -8878,7 +8878,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -8974,7 +8974,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Cerulean City"
@@ -8987,7 +8987,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Cerulean City, ^$surf_encounter_kanto"
@@ -9095,7 +9095,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -9171,7 +9171,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -9219,7 +9219,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -9232,7 +9232,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -9356,7 +9356,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -9369,7 +9369,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -9463,7 +9463,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -9476,7 +9476,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -9548,7 +9548,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -9588,7 +9588,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -9716,7 +9716,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, @JohtoKanto/Route 10/Top, $can_surf_kanto"
@@ -9729,7 +9729,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 10/Top, ^$surf_encounter_kanto"
@@ -9874,7 +9874,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, $can_cut_kanto"
@@ -10157,7 +10157,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -10209,7 +10209,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, $can_cut_kanto"
@@ -10296,7 +10296,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -10351,7 +10351,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -10497,7 +10497,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -10519,7 +10519,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -10592,7 +10592,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -10647,7 +10647,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -10660,7 +10660,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -10701,7 +10701,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -10786,7 +10786,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -10888,7 +10888,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -10973,7 +10973,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, $can_cut_kanto"
@@ -10986,7 +10986,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -11048,7 +11048,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter, $can_cut_kanto"
@@ -11140,7 +11140,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -11249,7 +11249,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -11329,7 +11329,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -11391,7 +11391,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -11498,7 +11498,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"
@@ -11571,7 +11571,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
                             "^$land_encounter"
@@ -11584,7 +11584,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
                             "^$surf_encounter_kanto"

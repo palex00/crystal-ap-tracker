@@ -12,6 +12,9 @@
                 "access_rules": [
                     "^$fishing_old"
                 ],
+                "visibility_rules": [
+                    "encmethod_fishing_visible"
+                ],
                 "sections": [
                     {
                         "name": "Shore",
@@ -161,6 +164,9 @@
                 "chest_opened_img": "images/other/fishing_good_bw.png",
                 "access_rules": [
                     "^$fishing_good"
+                ],
+                "visibility_rules": [
+                    "encmethod_fishing_visible"
                 ],
                 "sections": [
                     {
@@ -312,6 +318,9 @@
                 "access_rules": [
                     "^$fishing_super"
                 ],
+                "visibility_rules": [
+                    "encmethod_fishing_visible"
+                ],
                 "sections": [
                     {
                         "name": "Shore",
@@ -461,6 +470,9 @@
                 "chest_opened_img": "images/other/headbutt_bw.png",
                 "access_rules": [
                     "^$headbutting"
+                ],
+                "visibility_rules": [
+                    "encmethod_headbutt_visible"
                 ],
                 "sections": [
                     {
@@ -625,6 +637,9 @@
                 "chest_opened_img": "images/other/rocksmash_bw.png",
                 "access_rules": [
                     "^$rocksmash_encounter"
+                ],
+                "visibility_rules": [
+                    "encmethod_rocksmash_visible"
                 ],
                 "sections": [
                     {
