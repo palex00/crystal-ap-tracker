@@ -350,10 +350,6 @@ SLOT_CODES = {
     randomize_fly_unlocks = {
         code = "randomize_fly_unlocks",
         mapping = MAP_TOGGLE
-    },
-    enforce_wild_encounter_methods_logic = {
-        code = "enforce_wild_encounter_methods_logic",
-        mapping = MAP_TOGGLE
     }
 }
 
