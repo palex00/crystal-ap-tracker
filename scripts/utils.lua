@@ -224,7 +224,7 @@ function toggle_shopgrid()
     elseif not gamecorner and bluecard and not apricorn then
         Tracker:AddLayouts("layouts/shopsanity_bluecard.json")
     elseif not gamecorner and bluecard and apricorn then
-        Tracker:AddLayouts("layouts/shopsanity_apricorn_bluecorn.json")
+        Tracker:AddLayouts("layouts/shopsanity_apricorn_bluecard.json")
     elseif not gamecorner and not bluecard and apricorn then
         Tracker:AddLayouts("layouts/shopsanity_apricorn.json")
     end
