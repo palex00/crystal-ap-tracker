@@ -8676,6 +8676,16 @@
                         ]
                     },
                     {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 9,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Surf Encounters",
                         "item_count": 3,
                         "clear_as_group": false,
@@ -9075,6 +9085,16 @@
                         ]
                     },
                     {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 7,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Visit Pewter City",
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -9418,6 +9438,16 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 9,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
                         ]
                     },
                     {
@@ -10120,6 +10150,16 @@
                         "hosted_item": "EXPN_CARD"
                     },
                     {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 8,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Visit Lavender Town",
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -10328,7 +10368,7 @@
                         "chest_opened_img": "images/other/shopitems_bw.png",
                         "clear_as_group": false,
                         "visibility_rules": [
-                            "show_items, shopsanity_johtomarts_true"
+                            "show_items, shopsanity_kantomarts_true"
                         ]
                     },
                     {
@@ -10843,6 +10883,16 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 8,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
                         ]
                     },
                     {
