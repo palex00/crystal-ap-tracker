@@ -1,5 +1,5 @@
 {
-    "setting_grid": {
+    "settings_popup": {
         "type": "array",
         "orientation": "vertical",
         "margin": "0,0",
@@ -65,6 +65,13 @@
                                 "randomize_pokemon_requests",
                                 "route_2_access",
                                 "route_3_access"
+                            ],
+                            [
+                                "shopsanity_apricorn",
+                                "shopsanity_bluecard",
+                                "shopsanity_gamecorners",
+                                "shopsanity_johtomarts",
+                                "shopsanity_kantomarts"
                             ]
                         ]
                     }

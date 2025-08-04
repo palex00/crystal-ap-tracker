@@ -193,13 +193,42 @@ function toggle_splitmap()
     end
 end
 
-function toggle_flyunlocks()
-    if has("randomize_fly_unlocks_false") then
+function toggle_itemgrid()
+    local fly_unlock = has("randomize_fly_unlocks_true")
+    local shops = has("shopsanity_gamecorner_true") or has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true")
+    if not fly_unlock and not shops then
         Tracker:AddLayouts("layouts/tracker.json")
-    elseif has("randomize_fly_unlocks_true") then
+        toggle_shopgrid()
+    elseif fly_unlock and not shops then
         Tracker:AddLayouts("layouts/tracker_with_flyunlock.json")
+        toggle_shopgrid()
+    elseif fly_unlock and shops then
+        Tracker:AddLayouts("layouts/tracker_with_flyunlock_and_shopsanity.json")
+        toggle_shopgrid()
+    elseif not fly_unlock and shops then
+        Tracker:AddLayouts("layouts/tracker_with_shopsanity.json")
+        toggle_shopgrid()
     end
-end        
+end
+
+function toggle_shopgrid()
+    local gamecorner = has("shopsanity_gamecorner_true")
+    local bluecard = has("shopsanity_bluecard_true")
+    local apricorn = has("shopsanity_apricorn_true")
+    if gamecorner and not bluecard and not apricorn then
+        Tracker:AddLayouts("layouts/shopsanity_gamecorner.json")
+    elseif gamecorner and bluecard and not apricorn then
+        Tracker:AddLayouts("layouts/shopsanity_gamecorner_bluecard.json")
+    elseif gamecorner and bluecard and apricorn then
+        Tracker:AddLayouts("layouts/shopsanity_all.json")
+    elseif not gamecorner and bluecard and not apricorn then
+        Tracker:AddLayouts("layouts/shopsanity_bluecard.json")
+    elseif not gamecorner and bluecard and apricorn then
+        Tracker:AddLayouts("layouts/shopsanity_apricorn_bluecorn.json")
+    elseif not gamecorner and not bluecard and apricorn then
+        Tracker:AddLayouts("layouts/shopsanity_apricorn.json")
+    end
+end
 
 function updateRemainingDexcountsanityChecks()
     local val = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount

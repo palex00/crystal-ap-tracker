@@ -350,6 +350,26 @@ SLOT_CODES = {
     randomize_fly_unlocks = {
         code = "randomize_fly_unlocks",
         mapping = MAP_TOGGLE
+    },
+    shopsanity_apricorn = {
+        code = "shopsanity_apricorn",
+        mapping = MAP_TOGGLE
+    },
+    shopsanity_bluecard = {
+        code = "shopsanity_bluecard",
+        mapping = MAP_TOGGLE
+    },
+    shopsanity_gamecorners = {
+        code = "shopsanity_gamecorners",
+        mapping = MAP_TOGGLE
+    },
+    shopsanity_johtomarts = {
+        code = "shopsanity_johtomarts",
+        mapping = MAP_TOGGLE
+    },
+    shopsanity_kantomarts = {
+        code = "shopsanity_kantomarts",
+        mapping = MAP_TOGGLE
     }
 }
 

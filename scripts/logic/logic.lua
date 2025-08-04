@@ -292,3 +292,29 @@ function fly_cheese()
         return AccessibilityLevel.None
     end
 end
+
+function kurt_shop(color)
+    if has(color.."_APRICORN") then
+        return AccessibilityLevel.Normal
+    elseif has("berries_off") then
+        return AccessibilityLevel.SequenceBreak
+    else
+        return AccessibilityLevel.Inspect
+    end
+end
+
+function gamecorner_shop()
+    if has("COIN_CASE") then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.Inspect
+    end
+end
+
+function bluecard_shop(amount)
+    if has("BLUE_CARD") and has("BLUE_CARD_POINT", amount) then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.Inspect
+    end
+end

@@ -26,10 +26,10 @@ Tracker:AddMaps("maps/maps_johto_and_kanto.json")
 
 -- Locations
 Tracker:AddLocations("locations/locations.json")
---Tracker:AddLocations("locations/dungeons.json")
+Tracker:AddLocations("locations/dungeons.json")
 Tracker:AddLocations("locations/dexsanity.json")
 Tracker:AddLocations("locations/pokedex.json")
---Tracker:AddLocations("locations/encounters_submaps.json")
+Tracker:AddLocations("locations/encounters_submaps.json")
 Tracker:AddLocations("locations/special_encounters.json")
 
 -- Layout
@@ -39,7 +39,7 @@ Tracker:AddLayouts("layouts/settings.json")
 Tracker:AddLayouts("layouts/pokemonlogic.json")
 Tracker:AddLayouts("layouts/items_no_tea.json")
 Tracker:AddLayouts("layouts/flyunlocks.json")
-Tracker:AddLayouts("layouts/schema_items_and_fly.json")
+Tracker:AddLayouts("layouts/shopsanity_all.json")
 Tracker:AddLayouts("layouts/tabs_single.json")
 Tracker:AddLayouts("layouts/overworld.json")
 Tracker:AddLayouts("layouts/tracker.json")
@@ -73,7 +73,10 @@ ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", updatePok
 
 ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
 
-ScriptHost:AddWatchForCode("randomize_fly_unlocks", "randomize_fly_unlocks", toggle_flyunlocks)
+ScriptHost:AddWatchForCode("randomize_fly_unlocks", "randomize_fly_unlocks", toggle_itemgrid)
+ScriptHost:AddWatchForCode("shopsanity_gamecorners", "shopsanity_gamecorners", toggle_itemgrid)
+ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_itemgrid)
+ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_itemgrid)
 
 
 --for _, code in ipairs(FLAG_STATIC_CODES) do

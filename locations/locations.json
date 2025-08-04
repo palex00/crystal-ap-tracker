@@ -197,6 +197,16 @@
                         ]
                     },
                     {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 5,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Surf Encounters",
                         "item_count": 3,
                         "clear_as_group": false,
@@ -643,6 +653,16 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 10,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
                         ]
                     },
                     {
@@ -1817,6 +1837,100 @@
                         ]
                     },
                     {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 9,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Red Apricorn",
+                        "chest_unopened_img": "images/other/kurt_red.png",
+                        "chest_opened_img": "images/other/kurt_red_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "^$kurt_shop|RED"
+                        ]
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Grn Apricorn",
+                        "chest_unopened_img": "images/other/kurt_grn.png",
+                        "chest_opened_img": "images/other/kurt_grn_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "^$kurt_shop|GRN"
+                        ]
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Blu Apricorn",
+                        "chest_unopened_img": "images/other/kurt_blu.png",
+                        "chest_opened_img": "images/other/kurt_blu_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "^$kurt_shop|BLU"
+                        ]
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Ylw Apricorn",
+                        "chest_unopened_img": "images/other/kurt_ylw.png",
+                        "chest_opened_img": "images/other/kurt_ylw_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "^$kurt_shop|YLW"
+                        ]
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Blk Apricorn",
+                        "chest_unopened_img": "images/other/kurt_blk.png",
+                        "chest_opened_img": "images/other/kurt_blk_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "^$kurt_shop|BLK"
+                        ]
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Wht Apricorn",
+                        "chest_unopened_img": "images/other/kurt_wht.png",
+                        "chest_opened_img": "images/other/kurt_wht_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "^$kurt_shop|WHT"
+                        ]
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Pnk Apricorn",
+                        "chest_unopened_img": "images/other/kurt_pnk.png",
+                        "chest_opened_img": "images/other/kurt_pnk_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "^$kurt_shop|PNK"
+                        ]
+                    },
+                    {
                         "name": "Visit Azalea Town",
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -2230,6 +2344,46 @@
                         ]
                     },
                     {
+                        "name": "Dept. Store 2F - Top Salesman - Shop Items",
+                        "item_count": 7,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 2F - Bottom Salesman - Shop Items",
+                        "item_count": 8,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 3F - X Items Shop - Shop Items",
+                        "item_count": 7,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 4F - Vitamin Shop - Shop Items",
+                        "item_count": 5,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store 5F - TM21 from Receptionist",
                         "visibility_rules": [
                             "show_items"
@@ -2239,6 +2393,29 @@
                         "name": "Dept. Store 5F - TM27 from Receptionist",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 5F - TM Shop - Shop Items",
+                        "item_count": 3,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store - Rooftop Sale - Shop Items",
+                        "item_count": 9,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ],
+                        "access_rules": [
+                            "EVENT_BEAT_ELITE_FOUR"
                         ]
                     },
                     {
@@ -2350,6 +2527,19 @@
                         ]
                     },
                     {
+                        "name": "Game Corner Prize Shop - Shop Items",
+                        "item_count": 3,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_gamecorners_true"
+                        ],
+                        "access_rules": [
+                            "^$gamecorner_shop"
+                        ]
+                    },
+                    {
                         "name": "Visit Goldenrod City",
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -2430,6 +2620,26 @@
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Herb Shop - Shop Items",
+                        "item_count": 4,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Bargain Shop - Shop Items",
+                        "item_count": 5,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
                         ]
                     },
                     {
@@ -2677,6 +2887,45 @@
                         "name": "2F - Blue Card from Buena",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "2F - Blue Card Shop - 2 Points",
+                        "item_count": 2,
+                        "chest_unopened_img": "images/other/buena.png",
+                        "chest_opened_img": "images/other/buena_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_bluecard_true"
+                        ],
+                        "access_rules": [
+                            "^$bluecard_shop|2"
+                        ]
+                    },
+                    {
+                        "name": "2F - Blue Card Shop - 3 Points",
+                        "item_count": 2,
+                        "chest_unopened_img": "images/other/buena.png",
+                        "chest_opened_img": "images/other/buena_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_bluecard_true"
+                        ],
+                        "access_rules": [
+                            "^$bluecard_shop|3"
+                        ]
+                    },
+                    {
+                        "name": "2F - Blue Card Shop - 5 Points",
+                        "item_count": 5,
+                        "chest_unopened_img": "images/other/buena.png",
+                        "chest_opened_img": "images/other/buena_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_bluecard_true"
+                        ],
+                        "access_rules": [
+                            "^$bluecard_shop|5"
                         ]
                     },
                     {
@@ -3490,6 +3739,16 @@
                         ]
                     },
                     {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 10,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Surf Encounters",
                         "item_count": 3,
                         "clear_as_group": false,
@@ -4176,6 +4435,16 @@
                         "name": "Good Rod from Fishing Guru",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 9,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
                         ]
                     },
                     {
@@ -5243,6 +5512,16 @@
                         ]
                     },
                     {
+                        "name": "Pharmarcy - Shop Items",
+                        "item_count": 5,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Visit Cianwood City",
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -6166,6 +6445,29 @@
                         ]
                     },
                     {
+                        "name": "Rocket Shop - Shop Items",
+                        "item_count": 4,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 9,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ],
+                        "access_rules": [
+                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                        ]
+                    },
+                    {
                         "name": "Visit Mahogany Town",
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -6821,6 +7123,12 @@
                 ],
                 "sections": [
                     {
+                        "name": "Spell Tag from Santos",
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "Gym - 1F - Cool Trainer Paul",
                         "access_rules": [
                             "EVENT_CLEARED_RADIO_TOWER"
@@ -6909,6 +7217,16 @@
                         ]
                     },
                     {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 9,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Surf Encounters",
                         "item_count": 3,
                         "clear_as_group": false,
@@ -6919,12 +7237,6 @@
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
-                        ]
-                    },
-                    {
-                        "name": "Spell Tag from Santos",
-                        "visibility_rules": [
-                            "show_items"
                         ]
                     },
                     {
@@ -7845,6 +8157,16 @@
                     "@JohtoKanto/Victory Road"
                 ],
                 "sections": [
+                    {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 7,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
                     {
                         "name": "Elite 4 Will",
                         "visibility_rules": [
@@ -8869,6 +9191,16 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Square - Gift Shop - Shop Items",
+                        "item_count": 6,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
                         ]
                     },
                     {
@@ -9990,6 +10322,16 @@
                         ]
                     },
                     {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 8,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Visit Saffron City",
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -10148,6 +10490,19 @@
                             "show_items, coffee_east",
                             "show_items, coffee_south",
                             "show_items, coffee_west"
+                        ]
+                    },
+                    {
+                        "name": "Game Corner Prize Shop - Shop Items",
+                        "item_count": 3,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_gamecorners_true"
+                        ],
+                        "access_rules": [
+                            "^$gamecorner_shop"
                         ]
                     },
                     {
@@ -11240,6 +11595,16 @@
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Poke Mart - Shop Items",
+                        "item_count": 7,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
                         ]
                     },
                     {

@@ -2540,5 +2540,115 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Shopsanity: Apricorn",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Shopsanity: Apricorn is not enabled",
+                "img": "/images/settings/shopsanity.png",
+                "img_mods": "@disabled",
+                "codes": "shopsanity_apricorn, shopsanity_apricorn_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity: Apricorn is enabled",
+                "img": "/images/settings/shopsanity.png",
+                "codes": "shopsanity_apricorn, shopsanity_apricorn_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shopsanity: Blue Card",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Shopsanity: Blue Card is not enabled",
+                "img": "/images/settings/shopsanity.png",
+                "img_mods": "@disabled",
+                "codes": "shopsanity_bluecard, shopsanity_bluecard_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity: Blue Card is enabled",
+                "img": "/images/settings/shopsanity.png",
+                "codes": "shopsanity_bluecard, shopsanity_bluecard_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shopsanity: Game Corners",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Shopsanity: Game Corners is not enabled",
+                "img": "/images/settings/shopsanity.png",
+                "img_mods": "@disabled",
+                "codes": "shopsanity_gamecorners, shopsanity_gamecorners_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity: Game Corners is enabled",
+                "img": "/images/settings/shopsanity.png",
+                "codes": "shopsanity_gamecorners, shopsanity_gamecorners_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shopsanity: Johto Marts",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Shopsanity: Johto Marts is not enabled",
+                "img": "/images/settings/shopsanity.png",
+                "img_mods": "@disabled",
+                "codes": "shopsanity_johtomarts, shopsanity_johtomarts_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity: Johto Marts is enabled",
+                "img": "/images/settings/shopsanity.png",
+                "codes": "shopsanity_johtomarts, shopsanity_johtomarts_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shopsanity: Kanto Marts",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Shopsanity: Kanto Marts is not enabled",
+                "img": "/images/settings/shopsanity.png",
+                "img_mods": "@disabled",
+                "codes": "shopsanity_kantomarts, shopsanity_kantomarts_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity: Kanto Marts is enabled",
+                "img": "/images/settings/shopsanity.png",
+                "codes": "shopsanity_kantomarts, shopsanity_kantomarts_true",
+                "inherit_codes": false
+            }
+        ]
     }
 ]
