@@ -10506,6 +10506,66 @@
                         ]
                     },
                     {
+                        "name": "Dept. Store 2F - Left Salesman - Shop Items",
+                        "item_count": 7,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 2F - Right Salesman - Shop Items",
+                        "item_count": 10,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 3F - TM Shop - Shop Items",
+                        "item_count": 5,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 4F - Mail Shop - Shop Items",
+                        "item_count": 3,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 5F - Vitamin Shop - Shop Items",
+                        "item_count": 5,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 5F - X Items Shop - Shop Items",
+                        "item_count": 7,
+                        "chest_unopened_img": "images/other/shopitems.png",
+                        "chest_opened_img": "images/other/shopitems_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Hidden Item at Dead End",
                         "access_rules": [
                             "^$hid"
