@@ -8196,6 +8196,13 @@
                         ]
                     },
                     {
+                        "name": "Champion Lance",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1507"
+                        ]
+                    },
+                    {
                         "name": "Become Champion",
                         "hosted_item": "EVENT_BEAT_ELITE_FOUR",
                         "visibility_rules": [
@@ -9684,6 +9691,13 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1455"
+                        ]
+                    },
+                    {
+                        "name": "Cool Trainer Kevin",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1407"
                         ]
                     },
                     {

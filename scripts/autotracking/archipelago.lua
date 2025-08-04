@@ -83,7 +83,7 @@ function onClear(slot_data)
             end
             if #v == 0 then
                 TRAINERS:setType("none")
-            elseif #v == 340 then
+            elseif #v == 342 then
                 TRAINERS:setType("full")
             else
                 TRAINERS:setType("partial")
