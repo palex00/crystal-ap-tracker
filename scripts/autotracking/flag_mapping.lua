@@ -35,22 +35,28 @@ FLAG_EVENT_CODES = {
 
 FLAG_STATIC_CODES = {
     "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
-    "Sudowoodo",
-    "RedGyarados",
-    "Ho_Oh",
-    "Lugia",
-    "Suicune",
-    "RocketHQElectrode1",
-    "RocketHQElectrode2",
-    "RocketHQElectrode3",
-    "Shuckie",
-    "Eevee",
-    "Dratini",
+    "Static_Sudowoodo",
+    "Static_RedGyarados",
+    "Static_Ho_Oh",
+    "Static_Lugia",
+    "Static_Suicune",
+    "Static_RocketHQElectrode1",
+    "Static_RocketHQElectrode2",
+    "Static_RocketHQElectrode3",
+    "Static_Shuckie",
+    "Static_Eevee",
+    "Static_Dratini",
     "dummy",
-    "Tyrogue",
-    "UnionCaveLapras",
-    "Celebi",
-    "EVENT_GOT_ODD_EGG"
+    "Static_Tyrogue",
+    "Static_UnionCaveLapras",
+    "Static_Celebi",
+    "EVENT_GOT_ODD_EGG",
+    "dummy",
+    "dummy",
+    "dummy",
+    "dummy",
+    "dummy",
+    "dummy"
 }
 
 -- RocketHQTrap1_1 = Voltorb
