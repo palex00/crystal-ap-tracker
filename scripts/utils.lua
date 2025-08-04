@@ -195,7 +195,7 @@ end
 
 function toggle_itemgrid()
     local fly_unlock = has("randomize_fly_unlocks_true")
-    local shops = has("shopsanity_gamecorner_true") or has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true")
+    local shops = has("shopsanity_gamecorners_true") or has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true")
     if not fly_unlock and not shops then
         Tracker:AddLayouts("layouts/tracker.json")
         toggle_shopgrid()
@@ -212,7 +212,7 @@ function toggle_itemgrid()
 end
 
 function toggle_shopgrid()
-    local gamecorner = has("shopsanity_gamecorner_true")
+    local gamecorner = has("shopsanity_gamecorners_true")
     local bluecard = has("shopsanity_bluecard_true")
     local apricorn = has("shopsanity_apricorn_true")
     if gamecorner and not bluecard and not apricorn then
