@@ -11729,6 +11729,9 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
                         ]
                     },
                     {
