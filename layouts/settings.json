@@ -10,7 +10,7 @@
                 "content": [
                     {
                         "type": "itemgrid",
-                        "item_margin": "2, -8",
+                        "item_margin": "2, 2",
                         "item_size": "32,44",
                         "item_h_alignment": "center",
                         "item_v_alignment": "center",
@@ -136,43 +136,6 @@
                                         "item_size": "256, 16"
                                     }
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "type": "array",
-                        "orientation": "vertical",
-                        "margin": "2,2",
-                        "content": [
-                            {
-                                "type": "item",
-                                "item": "location_visibility",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
-                            },
-                            {
-                                "type": "item",
-                                "item": "automap",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "array",
-                        "orientation": "vertical",
-                        "content": [
-                            {
-                                "type": "item",
-                                "item": "splitmap",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
-                            },
-                            {
-                                "type": "item",
-                                "item": "encounter_tracking",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
                             }
                         ]
                     }

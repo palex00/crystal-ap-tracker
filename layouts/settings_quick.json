@@ -1,0 +1,38 @@
+{
+    "quick_settings_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "2,2",
+        "content": [
+            {
+                "type": "item",
+                "item": "location_visibility",
+                "margin": "2,2",
+                "item_size": "32, 32"
+            },
+            {
+                "type": "item",
+                "item": "automap",
+                "margin": "2,2",
+                "item_size": "32, 32"
+            },
+            {
+                "type": "item",
+                "item": "splitmap",
+                "margin": "2,2",
+                "item_size": "32, 32"
+            },
+            {
+                "type": "item",
+                "item": "encounter_tracking",
+                "margin": "2,2",
+                "item_size": "32, 32"
+            },
+            {
+                "type": "item",
+                "item": "dummy",
+                "item_size": "32,32"
+            }
+        ]
+    }
+}

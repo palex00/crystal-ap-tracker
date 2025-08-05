@@ -1,5 +1,5 @@
 {
-    "setting_grid": {
+    "settings_popup": {
         "type": "array",
         "orientation": "vertical",
         "margin": "0,0",
@@ -10,7 +10,7 @@
                 "content": [
                     {
                         "type": "itemgrid",
-                        "item_margin": "2, -8",
+                        "item_margin": "2, 2",
                         "item_size": "32,44",
                         "item_h_alignment": "center",
                         "item_v_alignment": "center",
@@ -24,7 +24,8 @@
                                 "red_requirement",
                                 "hiddenitem_logic",
                                 "berries",
-                                "trainersanity"
+                                "trainersanity",
+                                "randomize_fly_unlocks"
                             ]
                         ]
                     }
@@ -43,6 +44,7 @@
                             [
                                 "johto_only",
                                 "goal",
+                                "fly_cheese",
                                 "badges",
                                 "pokegear",
                                 "badgereqs",
@@ -55,6 +57,12 @@
                                 "national_park_access",
                                 "red_gyarados_access",
                                 "clair_behaviour"
+                            ],
+                            [
+                                "shopsanity_apricorn",
+                                "shopsanity_bluecard",
+                                "shopsanity_gamecorners",
+                                "shopsanity_johtomarts"
                             ]
                         ]
                     }
@@ -119,43 +127,6 @@
                                         "item_size": "256, 16"
                                     }
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "type": "array",
-                        "orientation": "vertical",
-                        "margin": "2,2",
-                        "content": [
-                            {
-                                "type": "item",
-                                "item": "location_visibility",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
-                            },
-                            {
-                                "type": "item",
-                                "item": "automap",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "array",
-                        "orientation": "vertical",
-                        "content": [
-                            {
-                                "type": "item",
-                                "item": "splitmap",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
-                            },
-                            {
-                                "type": "item",
-                                "item": "encounter_tracking",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
                             }
                         ]
                     }
