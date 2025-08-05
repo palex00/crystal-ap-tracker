@@ -558,64 +558,64 @@
     {
         "name": "Blue Card",
         "type": "toggle",
-        "img": "/images/items/shopsanity/blue_card.png",
+        "img": "/images/shopsanity/blue_card.png",
         "codes": "BLUE_CARD"
     },
     {
         "name": "Blue Card Point",
         "type": "consumable",
         "min_quantity": 0,
-        "min_quantity": 5,
+        "max_quantity": 5,
         "initial_quantity": 0,
-        "img": "/images/items/shopsanity/blue_card.png",
+        "img": "/images/shopsanity/blue_card.png",
         "codes": "BLUE_CARD_POINT"
     },
     {
         "name": "Coin Case",
         "type": "toggle",
-        "img": "/images/items/shopsanity/placeholder.png",
+        "img": "/images/shopsanity/coin_case.png",
         "codes": "COIN_CASE"
     },
     {
         "name": "Red Apricorn",
         "type": "toggle",
-        "img": "/images/items/shopsanity/placeholder.png",
+        "img": "/images/shopsanity/red_apricorn.png",
         "codes": "RED_APRICORN"
     },
     {
         "name": "Blu Apricorn",
         "type": "toggle",
-        "img": "/images/items/shopsanity/placeholder.png",
+        "img": "/images/shopsanity/blu_apricorn.png",
         "codes": "BLU_APRICORN"
     },
     {
         "name": "Ylw Apricorn",
         "type": "toggle",
-        "img": "/images/items/shopsanity/placeholder.png",
+        "img": "/images/shopsanity/ylw_apricorn.png",
         "codes": "YLW_APRICORN"
     },
     {
         "name": "Grn Apricorn",
         "type": "toggle",
-        "img": "/images/items/shopsanity/placeholder.png",
+        "img": "/images/shopsanity/grn_apricorn.png",
         "codes": "GRN_APRICORN"
     },
     {
         "name": "Wht Apricorn",
         "type": "toggle",
-        "img": "/images/items/shopsanity/placeholder.png",
+        "img": "/images/shopsanity/wht_apricorn.png",
         "codes": "WHT_APRICORN"
     },
     {
         "name": "Blk Apricorn",
         "type": "toggle",
-        "img": "/images/items/shopsanity/placeholder.png",
+        "img": "/images/shopsanity/blk_apricorn.png",
         "codes": "BLK_APRICORN"
     },
     {
         "name": "Pnk Apricorn",
         "type": "toggle",
-        "img": "/images/items/shopsanity/placeholder.png",
+        "img": "/images/shopsanity/pnk_apricorn.png",
         "codes": "PNK_APRICORN"
     }
 ]
