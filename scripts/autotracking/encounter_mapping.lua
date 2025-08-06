@@ -216,5 +216,11 @@ ENCOUNTER_MAPPING = {
   ["Static_Shuckie"] = "@JohtoKanto/Cianwood City/Got Shuckie from Mania",
   ["Static_Dratini"] = "@JohtoKanto/Blackthorn City/Dragon's Den B1F - Got Dratini from Elder",
   ["Static_Eevee"] = "@JohtoKanto/Goldenrod City/Got Eevee from Bill",
-  ["Static_Tyrogue"] = "@JohtoKanto/Mount Mortar/B1F - Got Tyrogue from Kiyo"
+  ["Static_Tyrogue"] = "@JohtoKanto/Mount Mortar/B1F - Got Tyrogue from Kiyo",
+  ["Static_GoldenrodGameCorner1"] = "@JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Abra",
+  ["Static_GoldenrodGameCorner2"] = "@JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Cubone",
+  ["Static_GoldenrodGameCorner3"] = "@JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Wobbuffet",
+  ["Static_CeladonGamecorner1"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Pikachu",
+  ["Static_CeladonGamecorner2"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Porygon",
+  ["Static_CeladonGamecorner3"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Larvitar"
 }

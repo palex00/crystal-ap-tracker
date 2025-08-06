@@ -46,17 +46,17 @@ FLAG_STATIC_CODES = {
     "Static_Shuckie",
     "Static_Eevee",
     "Static_Dratini",
-    "dummy",
+    "dummy", -- This is Togepi Egg hatched but we don't track Egg hatches
     "Static_Tyrogue",
     "Static_UnionCaveLapras",
     "Static_Celebi",
     "EVENT_GOT_ODD_EGG",
-    "dummy",
-    "dummy",
-    "dummy",
-    "dummy",
-    "dummy",
-    "dummy"
+    "Static_GoldenrodGameCorner1",
+    "Static_GoldenrodGamecorner2",
+    "Static_GoldenrodGamecorner3",
+    "Static_CeladonGamecorner1",
+    "Static_CeladonGamecorner2",
+    "Static_CeladonGamecorner3"
 }
 
 -- RocketHQTrap1_1 = Voltorb

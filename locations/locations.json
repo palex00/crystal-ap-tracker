@@ -2540,6 +2540,39 @@
                         ]
                     },
                     {
+                        "name": "Game Corner Pokemon Shop - Abra",
+                        "chest_unopened_img": "images/shopsanity/gamecorner_abra.png",
+                        "chest_opened_img": "images/shopsanity/gamecorner_abra_bw.png",
+                        "access_rules": [
+                            "COIN_CASE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Game Corner Pokemon Shop - Cubone",
+                        "chest_unopened_img": "images/shopsanity/gamecorner_cubone.png",
+                        "chest_opened_img": "images/shopsanity/gamecorner_cubone_bw.png",
+                        "access_rules": [
+                            "COIN_CASE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Game Corner Pokemon Shop - Wobbuffet",
+                        "chest_unopened_img": "images/shopsanity/gamecorner_wobbuffet.png",
+                        "chest_opened_img": "images/shopsanity/gamecorner_wobbuffet_bw.png",
+                        "access_rules": [
+                            "COIN_CASE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
                         "name": "Visit Goldenrod City",
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -10617,6 +10650,39 @@
                         ],
                         "access_rules": [
                             "^$gamecorner_shop"
+                        ]
+                    },
+                    {
+                        "name": "Game Corner Pokemon Shop - Pikachu",
+                        "chest_unopened_img": "images/shopsanity/gamecorner_pikachu.png",
+                        "chest_opened_img": "images/shopsanity/gamecorner_pikachu_bw.png",
+                        "access_rules": [
+                            "COIN_CASE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Game Corner Pokemon Shop - Porygon",
+                        "chest_unopened_img": "images/shopsanity/gamecorner_porygon.png",
+                        "chest_opened_img": "images/shopsanity/gamecorner_porygon_bw.png",
+                        "access_rules": [
+                            "COIN_CASE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Game Corner Pokemon Shop - Larvitar",
+                        "chest_unopened_img": "images/shopsanity/gamecorner_larvitar.png",
+                        "chest_opened_img": "images/shopsanity/gamecorner_larvitar_bw.png",
+                        "access_rules": [
+                            "COIN_CASE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
+                            "show_mons"
                         ]
                     },
                     {

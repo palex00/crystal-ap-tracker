@@ -70,7 +70,6 @@ function onClear(slot_data)
 
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then
-            print("Processing "..k)
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
         elseif REQUIREMENT_CODES[k] then
 			local item = REQUIREMENT_CODES[k].item
