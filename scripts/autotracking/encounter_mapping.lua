@@ -220,7 +220,7 @@ ENCOUNTER_MAPPING = {
   ["Static_GoldenrodGameCorner1"] = "@JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Abra",
   ["Static_GoldenrodGameCorner2"] = "@JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Cubone",
   ["Static_GoldenrodGameCorner3"] = "@JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Wobbuffet",
-  ["Static_CeladonGamecorner1"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Pikachu",
-  ["Static_CeladonGamecorner2"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Porygon",
-  ["Static_CeladonGamecorner3"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Larvitar"
+  ["Static_CeladonGameCornerPrizeRoom1"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Pikachu",
+  ["Static_CeladonGameCornerPrizeRoom2"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Porygon",
+  ["Static_CeladonGameCornerPrizeRoom3"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Larvitar"
 }
