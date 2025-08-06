@@ -2538,6 +2538,12 @@
                 "img": "/images/items/flyunlocks/flyunlock.png",
                 "codes": "randomize_fly_unlocks, randomize_fly_unlocks_true",
                 "inherit_codes": false
+            },
+            {
+                "name": "Fly Unlocks are randomized except for Silver Cave",
+                "img": "/images/items/flyunlocks/flyunlock.png",
+                "codes": "randomize_fly_unlocks, randomize_fly_unlocks_true",
+                "inherit_codes": false
             }
         ]
     },

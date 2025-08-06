@@ -349,7 +349,7 @@ SLOT_CODES = {
     },
     randomize_fly_unlocks = {
         code = "randomize_fly_unlocks",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     shopsanity_apricorn = {
         code = "shopsanity_apricorn",
