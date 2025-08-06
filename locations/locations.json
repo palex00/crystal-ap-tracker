@@ -5747,11 +5747,11 @@
                     },
                     {
                         "name": "1F Outside - Hidden Item",
-                        "access_rules": [
-                            "$mountmortar_front"
-                        ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ],
+                        "access_rules": [
+                            "$mountmortar_front"
                         ]
                     },
                     {
@@ -5782,65 +5782,65 @@
                     },
                     {
                         "name": "1F Inside - West Item",
-                        "access_rules": [
-                            "$mountmortar_back"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$mountmortar_back"
                         ]
                     },
                     {
                         "name": "1F Inside - Center Item (Left)",
-                        "access_rules": [
-                            "$mountmortar_back"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$mountmortar_back"
                         ]
                     },
                     {
                         "name": "1F Inside - East Item",
-                        "access_rules": [
-                            "$mountmortar_back"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$mountmortar_back"
                         ]
                     },
                     {
                         "name": "1F Inside - Southeast Item",
-                        "access_rules": [
-                            "$mountmortar_back"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$mountmortar_back"
                         ]
                     },
                     {
                         "name": "1F Inside - Northwest Item",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "1F Inside - North Item",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "1F Inside - Center Item (Right)",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
@@ -5865,11 +5865,11 @@
                     },
                     {
                         "name": "1F Inside - Hidden Item",
-                        "access_rules": [
-                            "^$hid, $can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ],
+                        "access_rules": [
+                            "^$hid, $can_waterfall"
                         ]
                     },
                     {
@@ -5882,80 +5882,80 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "^$land_encounter, $mountmortar_front"
                         ]
                     },
                     {
                         "name": "2F - Southwest Item",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "2F - Northwest Item",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "2F - Northeast Item",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "2F - East Item",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "2F - North Item",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "2F - Center Item",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "2F - Super Nerd Hugh",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1516"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "2F - Hidden Item",
-                        "access_rules": [
-                            "^$hid, $can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ],
+                        "access_rules": [
+                            "^$hid, $can_waterfall"
                         ]
                     },
                     {
@@ -5986,77 +5986,77 @@
                     },
                     {
                         "name": "B1F - Southeast Item",
-                        "access_rules": [
-                            "$can_surf_johto"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     },
                     {
                         "name": "B1F - East Item",
-                        "access_rules": [
-                            "$can_surf_johto"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     },
                     {
                         "name": "B1F - Northeast Item",
-                        "access_rules": [
-                            "$can_surf_johto"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     },
                     {
                         "name": "B1F - South Item",
-                        "access_rules": [
-                            "$can_surf_johto"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     },
                     {
                         "name": "B1F - West Item",
-                        "access_rules": [
-                            "$can_surf_johto"
-                        ],
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
                         ]
                     },
                     {
                         "name": "B1F - Hidden Item on Boulder",
-                        "access_rules": [
-                            "^$hid, $can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ],
+                        "access_rules": [
+                            "^$hid, $can_waterfall"
                         ]
                     },
                     {
                         "name": "B1F - Blackbelt Kiyo",
-                        "access_rules": [
-                            "$can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1232"
+                        ],
+                        "access_rules": [
+                            "$can_waterfall"
                         ]
                     },
                     {
                         "name": "B1F - Got Tyrogue from Kiyo",
                         "chest_unopened_img": "images/other/tyrogue.png",
                         "chest_opened_img": "images/other/tyrogue_bw.png",
-                        "access_rules": [
-                            "^$static_encounter, $can_waterfall"
-                        ],
                         "visibility_rules": [
                             "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$static_encounter, $can_waterfall"
                         ]
                     },
                     {
