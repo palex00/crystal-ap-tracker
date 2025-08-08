@@ -1,3 +1,32 @@
+EVOLUTION_METHOD_MAP = {
+    EVOLVE_LEVEL = function(_) return "Via Levelup" end,
+    EVOLVE_HAPPINESS = function(_) return "Via Happiness" end,
+    EVOLVE_STAT = function(condition)
+        if condition == "ATK_LT_DEF" then
+            return "While Attack is lower than Defense"
+        elseif condition == "ATK_EQ_DEF" then
+            return "While Attack is equal to Defense"
+        elseif condition == "ATK_GT_DEF" then
+            return "While Attack is greater than Defense"
+        end
+    end,
+    EVOLVE_ITEM = function(condition)
+        local item_map = {
+            FIRE_STONE = "Using a Fire Stone",
+            THUNDERSTONE = "Using a Thunderstone",
+            WATER_STONE = "Using a Water Stone",
+            UP_GRADE = "Using an Up-Grade",
+            METAL_COAT = "Using a Metal Coat",
+            DRAGON_SCALE = "Using a Dragon Scale",
+            MOON_STONE = "Using a Moon Stone",
+            SUN_STONE = "Using a Sun Stone",
+            KINGS_ROCK = "Using a Kings Rock",
+            LEAF_STONE = "Using a Leaf Stone",
+        }
+        return item_map[condition]
+    end
+}
+
 function breeding()
     local daycare = Tracker:FindObjectForCode("@JohtoKanto/Route 34").AccessibilityLevel
     if has("breeding_logic_on") and daycare ~= 0 then
@@ -142,4 +171,28 @@ function static_encounter()
     else
         return AccessibilityLevel.SequenceBreak
     end
+end
+
+function evolve_new(ID)
+    local evolutions = EVOLUTION_DATA[ID]
+
+    if not evolutions then
+        return
+    end
+
+    for _, evo in ipairs(evolutions) do
+        if evo.method == "EVOLVE_LEVEL" then
+            return evolve(evo.condition)
+        elseif evo.method == "EVOLVE_ITEM" then
+            return evolve_item()
+        elseif evo.method == "EVOLVE_HAPPINESS" then
+            return evolve_friend()
+        elseif evo.method == "EVOLVE_STAT" then
+            return evolve_tyrogue()
+        end
+    end
+end
+
+function breeding_new()
+    breeding()
 end

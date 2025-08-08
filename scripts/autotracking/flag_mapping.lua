@@ -52,11 +52,11 @@ FLAG_STATIC_CODES = {
     "Static_Celebi",
     "EVENT_GOT_ODD_EGG",
     "Static_GoldenrodGameCorner1",
-    "Static_GoldenrodGamecorner2",
-    "Static_GoldenrodGamecorner3",
-    "Static_CeladonGamecorner1",
-    "Static_CeladonGamecorner2",
-    "Static_CeladonGamecorner3"
+    "Static_GoldenrodGameCorner2",
+    "Static_GoldenrodGameCorner3",
+    "Static_CeladonGameCornerPrizeRoom1",
+    "Static_CeladonGameCornerPrizeRoom2",
+    "Static_CeladonGameCornerPrizeRoom3"
 }
 
 -- RocketHQTrap1_1 = Voltorb

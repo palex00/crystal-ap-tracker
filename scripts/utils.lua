@@ -36,7 +36,7 @@ function dump_table(o, depth)
     end
 
     local ignore_keys = {
-        --region_encounters = true,
+        region_encounters = true,
         trainersanity = true,
         dexcountsanity_counts = true,
         dexsanity_pokemon = true,

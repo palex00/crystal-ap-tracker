@@ -1,0 +1,521 @@
+[
+    {
+        "name": "Breeding",
+        "children": [
+
+{"name": "Breed Bulbasaur","access_rules": ["^$breeding|1"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Bulbasaur"}],"map_locations": [{"map":"evolutionsanity_1","x": 70,"y": 28}]},
+{"name": "Breed Ivysaur","access_rules": ["^$breeding|2"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Ivysaur"}],"map_locations": [{"map":"evolutionsanity_1","x": 70,"y": 84}]},
+{"name": "Breed Venusaur","access_rules": ["^$breeding|3"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Venusaur"}],"map_locations": [{"map":"evolutionsanity_1","x": 70,"y": 140}]},
+{"name": "Breed Charmander","access_rules": ["^$breeding|4"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Charmander"}],"map_locations": [{"map":"evolutionsanity_1","x": 70,"y": 196}]},
+{"name": "Breed Charmeleon","access_rules": ["^$breeding|5"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Charmeleon"}],"map_locations": [{"map":"evolutionsanity_1","x": 70,"y": 252}]},
+{"name": "Breed Charizard","access_rules": ["^$breeding|6"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Charizard"}],"map_locations": [{"map":"evolutionsanity_1","x": 70,"y": 308}]},
+{"name": "Breed Squirtle","access_rules": ["^$breeding|7"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Squirtle"}],"map_locations": [{"map":"evolutionsanity_1","x": 70,"y": 364}]},
+{"name": "Breed Wartortle","access_rules": ["^$breeding|8"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Wartortle"}],"map_locations": [{"map":"evolutionsanity_1","x": 70,"y": 420}]},
+{"name": "Breed Blastoise","access_rules": ["^$breeding|9"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Blastoise"}],"map_locations": [{"map":"evolutionsanity_1","x": 70,"y": 476}]},
+{"name": "Breed Caterpie","access_rules": ["^$breeding|10"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Caterpie"}],"map_locations": [{"map":"evolutionsanity_1","x": 70,"y": 532}]},
+{"name": "Breed Metapod","access_rules": ["^$breeding|11"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Metapod"}],"map_locations": [{"map":"evolutionsanity_1","x": 238,"y": 28}]},
+{"name": "Breed Butterfree","access_rules": ["^$breeding|12"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Butterfree"}],"map_locations": [{"map":"evolutionsanity_1","x": 238,"y": 84}]},
+{"name": "Breed Weedle","access_rules": ["^$breeding|13"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Weedle"}],"map_locations": [{"map":"evolutionsanity_1","x": 238,"y": 140}]},
+{"name": "Breed Kakuna","access_rules": ["^$breeding|14"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Kakuna"}],"map_locations": [{"map":"evolutionsanity_1","x": 238,"y": 196}]},
+{"name": "Breed Beedrill","access_rules": ["^$breeding|15"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Beedrill"}],"map_locations": [{"map":"evolutionsanity_1","x": 238,"y": 252}]},
+{"name": "Breed Pidgey","access_rules": ["^$breeding|16"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Pidgey"}],"map_locations": [{"map":"evolutionsanity_1","x": 238,"y": 308}]},
+{"name": "Breed Pidgeotto","access_rules": ["^$breeding|17"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Pidgeotto"}],"map_locations": [{"map":"evolutionsanity_1","x": 238,"y": 364}]},
+{"name": "Breed Pidgeot","access_rules": ["^$breeding|18"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Pidgeot"}],"map_locations": [{"map":"evolutionsanity_1","x": 238,"y": 420}]},
+{"name": "Breed Rattata","access_rules": ["^$breeding|19"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Rattata"}],"map_locations": [{"map":"evolutionsanity_1","x": 238,"y": 476}]},
+{"name": "Breed Raticate","access_rules": ["^$breeding|20"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Raticate"}],"map_locations": [{"map":"evolutionsanity_1","x": 238,"y": 532}]},
+{"name": "Breed Spearow","access_rules": ["^$breeding|21"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Spearow"}],"map_locations": [{"map":"evolutionsanity_1","x": 406,"y": 28}]},
+{"name": "Breed Fearow","access_rules": ["^$breeding|22"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Fearow"}],"map_locations": [{"map":"evolutionsanity_1","x": 406,"y": 84}]},
+{"name": "Breed Ekans","access_rules": ["^$breeding|23"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Ekans"}],"map_locations": [{"map":"evolutionsanity_1","x": 406,"y": 140}]},
+{"name": "Breed Arbok","access_rules": ["^$breeding|24"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Arbok"}],"map_locations": [{"map":"evolutionsanity_1","x": 406,"y": 196}]},
+{"name": "Breed Pikachu","access_rules": ["^$breeding|25"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Pikachu"}],"map_locations": [{"map":"evolutionsanity_1","x": 406,"y": 252}]},
+{"name": "Breed Raichu","access_rules": ["^$breeding|26"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Raichu"}],"map_locations": [{"map":"evolutionsanity_1","x": 406,"y": 308}]},
+{"name": "Breed Sandshrew","access_rules": ["^$breeding|27"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Sandshrew"}],"map_locations": [{"map":"evolutionsanity_1","x": 406,"y": 364}]},
+{"name": "Breed Sandslash","access_rules": ["^$breeding|28"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Sandslash"}],"map_locations": [{"map":"evolutionsanity_1","x": 406,"y": 420}]},
+{"name": "Breed Nidoran F","access_rules": ["^$breeding|29"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Nidoran F"}],"map_locations": [{"map":"evolutionsanity_1","x": 406,"y": 476}]},
+{"name": "Breed Nidoran M","access_rules": ["^$breeding|32"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Nidoran M"}],"map_locations": [{"map":"evolutionsanity_1","x": 574,"y": 84}]},
+{"name": "Breed Nidorino","access_rules": ["^$breeding|33"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Nidorino"}],"map_locations": [{"map":"evolutionsanity_1","x": 574,"y": 140}]},
+{"name": "Breed Nidoking","access_rules": ["^$breeding|34"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Nidoking"}],"map_locations": [{"map":"evolutionsanity_1","x": 574,"y": 196}]},
+{"name": "Breed Clefairy","access_rules": ["^$breeding|35"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Clefairy"}],"map_locations": [{"map":"evolutionsanity_1","x": 574,"y": 252}]},
+{"name": "Breed Clefable","access_rules": ["^$breeding|36"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Clefable"}],"map_locations": [{"map":"evolutionsanity_1","x": 574,"y": 308}]},
+{"name": "Breed Vulpix","access_rules": ["^$breeding|37"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Vulpix"}],"map_locations": [{"map":"evolutionsanity_1","x": 574,"y": 364}]},
+{"name": "Breed Ninetales","access_rules": ["^$breeding|38"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Ninetales"}],"map_locations": [{"map":"evolutionsanity_1","x": 574,"y": 420}]},
+{"name": "Breed Jigglypuff","access_rules": ["^$breeding|39"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Jigglypuff"}],"map_locations": [{"map":"evolutionsanity_1","x": 574,"y": 476}]},
+{"name": "Breed Wigglytuff","access_rules": ["^$breeding|40"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Wigglytuff"}],"map_locations": [{"map":"evolutionsanity_1","x": 574,"y": 532}]},
+{"name": "Breed Zubat","access_rules": ["^$breeding|41"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Zubat"}],"map_locations": [{"map":"evolutionsanity_1","x": 742,"y": 28}]},
+{"name": "Breed Golbat","access_rules": ["^$breeding|42"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Golbat"}],"map_locations": [{"map":"evolutionsanity_1","x": 742,"y": 84}]},
+{"name": "Breed Oddish","access_rules": ["^$breeding|43"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Oddish"}],"map_locations": [{"map":"evolutionsanity_1","x": 742,"y": 140}]},
+{"name": "Breed Gloom","access_rules": ["^$breeding|44"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Gloom"}],"map_locations": [{"map":"evolutionsanity_1","x": 742,"y": 196}]},
+{"name": "Breed Vileplume","access_rules": ["^$breeding|45"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Vileplume"}],"map_locations": [{"map":"evolutionsanity_1","x": 742,"y": 252}]},
+{"name": "Breed Paras","access_rules": ["^$breeding|46"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Paras"}],"map_locations": [{"map":"evolutionsanity_1","x": 742,"y": 308}]},
+{"name": "Breed Parasect","access_rules": ["^$breeding|47"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Parasect"}],"map_locations": [{"map":"evolutionsanity_1","x": 742,"y": 364}]},
+{"name": "Breed Venonat","access_rules": ["^$breeding|48"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Venonat"}],"map_locations": [{"map":"evolutionsanity_1","x": 742,"y": 420}]},
+{"name": "Breed Venomoth","access_rules": ["^$breeding|49"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Venomoth"}],"map_locations": [{"map":"evolutionsanity_1","x": 742,"y": 476}]},
+{"name": "Breed Diglett","access_rules": ["^$breeding|50"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Diglett"}],"map_locations": [{"map":"evolutionsanity_1","x": 742,"y": 532}]},
+{"name": "Breed Dugtrio","access_rules": ["^$breeding|51"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Dugtrio"}],"map_locations": [{"map":"evolutionsanity_1","x": 910,"y": 28}]},
+{"name": "Breed Meowth","access_rules": ["^$breeding|52"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Meowth"}],"map_locations": [{"map":"evolutionsanity_1","x": 910,"y": 84}]},
+{"name": "Breed Persian","access_rules": ["^$breeding|53"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Persian"}],"map_locations": [{"map":"evolutionsanity_1","x": 910,"y": 140}]},
+{"name": "Breed Psyduck","access_rules": ["^$breeding|54"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Psyduck"}],"map_locations": [{"map":"evolutionsanity_1","x": 910,"y": 196}]},
+{"name": "Breed Golduck","access_rules": ["^$breeding|55"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Golduck"}],"map_locations": [{"map":"evolutionsanity_1","x": 910,"y": 252}]},
+{"name": "Breed Mankey","access_rules": ["^$breeding|56"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Mankey"}],"map_locations": [{"map":"evolutionsanity_1","x": 910,"y": 308}]},
+{"name": "Breed Primeape","access_rules": ["^$breeding|57"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Primeape"}],"map_locations": [{"map":"evolutionsanity_1","x": 910,"y": 364}]},
+{"name": "Breed Growlithe","access_rules": ["^$breeding|58"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Growlithe"}],"map_locations": [{"map":"evolutionsanity_1","x": 910,"y": 420}]},
+{"name": "Breed Arcanine","access_rules": ["^$breeding|59"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Arcanine"}],"map_locations": [{"map":"evolutionsanity_1","x": 910,"y": 476}]},
+{"name": "Breed Poliwag","access_rules": ["^$breeding|60"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Poliwag"}],"map_locations": [{"map":"evolutionsanity_1","x": 910,"y": 532}]},
+{"name": "Breed Poliwhirl","access_rules": ["^$breeding|61"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Poliwhirl"}],"map_locations": [{"map":"evolutionsanity_2","x": 70,"y": 28}]},
+{"name": "Breed Poliwrath","access_rules": ["^$breeding|62"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Poliwrath"}],"map_locations": [{"map":"evolutionsanity_2","x": 70,"y": 84}]},
+{"name": "Breed Abra","access_rules": ["^$breeding|63"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Abra"}],"map_locations": [{"map":"evolutionsanity_2","x": 70,"y": 140}]},
+{"name": "Breed Kadabra","access_rules": ["^$breeding|64"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Kadabra"}],"map_locations": [{"map":"evolutionsanity_2","x": 70,"y": 196}]},
+{"name": "Breed Alakazam","access_rules": ["^$breeding|65"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Alakazam"}],"map_locations": [{"map":"evolutionsanity_2","x": 70,"y": 252}]},
+{"name": "Breed Machop","access_rules": ["^$breeding|66"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Machop"}],"map_locations": [{"map":"evolutionsanity_2","x": 70,"y": 308}]},
+{"name": "Breed Machoke","access_rules": ["^$breeding|67"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Machoke"}],"map_locations": [{"map":"evolutionsanity_2","x": 70,"y": 364}]},
+{"name": "Breed Machamp","access_rules": ["^$breeding|68"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Machamp"}],"map_locations": [{"map":"evolutionsanity_2","x": 70,"y": 420}]},
+{"name": "Breed Bellsprout","access_rules": ["^$breeding|69"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Bellsprout"}],"map_locations": [{"map":"evolutionsanity_2","x": 70,"y": 476}]},
+{"name": "Breed Weepinbell","access_rules": ["^$breeding|70"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Weepinbell"}],"map_locations": [{"map":"evolutionsanity_2","x": 70,"y": 532}]},
+{"name": "Breed Victreebel","access_rules": ["^$breeding|71"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Victreebel"}],"map_locations": [{"map":"evolutionsanity_2","x": 238,"y": 28}]},
+{"name": "Breed Tentacool","access_rules": ["^$breeding|72"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Tentacool"}],"map_locations": [{"map":"evolutionsanity_2","x": 238,"y": 84}]},
+{"name": "Breed Tentacruel","access_rules": ["^$breeding|73"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Tentacruel"}],"map_locations": [{"map":"evolutionsanity_2","x": 238,"y": 140}]},
+{"name": "Breed Geodude","access_rules": ["^$breeding|74"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Geodude"}],"map_locations": [{"map":"evolutionsanity_2","x": 238,"y": 196}]},
+{"name": "Breed Graveler","access_rules": ["^$breeding|75"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Graveler"}],"map_locations": [{"map":"evolutionsanity_2","x": 238,"y": 252}]},
+{"name": "Breed Golem","access_rules": ["^$breeding|76"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Golem"}],"map_locations": [{"map":"evolutionsanity_2","x": 238,"y": 308}]},
+{"name": "Breed Ponyta","access_rules": ["^$breeding|77"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Ponyta"}],"map_locations": [{"map":"evolutionsanity_2","x": 238,"y": 364}]},
+{"name": "Breed Rapidash","access_rules": ["^$breeding|78"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Rapidash"}],"map_locations": [{"map":"evolutionsanity_2","x": 238,"y": 420}]},
+{"name": "Breed Slowpoke","access_rules": ["^$breeding|79"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Slowpoke"}],"map_locations": [{"map":"evolutionsanity_2","x": 238,"y": 476}]},
+{"name": "Breed Slowbro","access_rules": ["^$breeding|80"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Slowbro"}],"map_locations": [{"map":"evolutionsanity_2","x": 238,"y": 532}]},
+{"name": "Breed Magnemite","access_rules": ["^$breeding|81"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Magnemite"}],"map_locations": [{"map":"evolutionsanity_2","x": 406,"y": 28}]},
+{"name": "Breed Magneton","access_rules": ["^$breeding|82"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Magneton"}],"map_locations": [{"map":"evolutionsanity_2","x": 406,"y": 84}]},
+{"name": "Breed Farfetch'd","access_rules": ["^$breeding|83"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Farfetch'd"}],"map_locations": [{"map":"evolutionsanity_2","x": 406,"y": 140}]},
+{"name": "Breed Doduo","access_rules": ["^$breeding|84"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Doduo"}],"map_locations": [{"map":"evolutionsanity_2","x": 406,"y": 196}]},
+{"name": "Breed Dodrio","access_rules": ["^$breeding|85"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Dodrio"}],"map_locations": [{"map":"evolutionsanity_2","x": 406,"y": 252}]},
+{"name": "Breed Seel","access_rules": ["^$breeding|86"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Seel"}],"map_locations": [{"map":"evolutionsanity_2","x": 406,"y": 308}]},
+{"name": "Breed Dewgong","access_rules": ["^$breeding|87"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Dewgong"}],"map_locations": [{"map":"evolutionsanity_2","x": 406,"y": 364}]},
+{"name": "Breed Grimer","access_rules": ["^$breeding|88"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Grimer"}],"map_locations": [{"map":"evolutionsanity_2","x": 406,"y": 420}]},
+{"name": "Breed Muk","access_rules": ["^$breeding|89"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Muk"}],"map_locations": [{"map":"evolutionsanity_2","x": 406,"y": 476}]},
+{"name": "Breed Shellder","access_rules": ["^$breeding|90"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Shellder"}],"map_locations": [{"map":"evolutionsanity_2","x": 406,"y": 532}]},
+{"name": "Breed Cloyster","access_rules": ["^$breeding|91"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Cloyster"}],"map_locations": [{"map":"evolutionsanity_2","x": 574,"y": 28}]},
+{"name": "Breed Gastly","access_rules": ["^$breeding|92"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Gastly"}],"map_locations": [{"map":"evolutionsanity_2","x": 574,"y": 84}]},
+{"name": "Breed Haunter","access_rules": ["^$breeding|93"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Haunter"}],"map_locations": [{"map":"evolutionsanity_2","x": 574,"y": 140}]},
+{"name": "Breed Gengar","access_rules": ["^$breeding|94"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Gengar"}],"map_locations": [{"map":"evolutionsanity_2","x": 574,"y": 196}]},
+{"name": "Breed Onix","access_rules": ["^$breeding|95"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Onix"}],"map_locations": [{"map":"evolutionsanity_2","x": 574,"y": 252}]},
+{"name": "Breed Drowzee","access_rules": ["^$breeding|96"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Drowzee"}],"map_locations": [{"map":"evolutionsanity_2","x": 574,"y": 308}]},
+{"name": "Breed Hypno","access_rules": ["^$breeding|97"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Hypno"}],"map_locations": [{"map":"evolutionsanity_2","x": 574,"y": 364}]},
+{"name": "Breed Krabby","access_rules": ["^$breeding|98"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Krabby"}],"map_locations": [{"map":"evolutionsanity_2","x": 574,"y": 420}]},
+{"name": "Breed Kingler","access_rules": ["^$breeding|99"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Kingler"}],"map_locations": [{"map":"evolutionsanity_2","x": 574,"y": 476}]},
+{"name": "Breed Voltorb","access_rules": ["^$breeding|100"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Voltorb"}],"map_locations": [{"map":"evolutionsanity_2","x": 574,"y": 532}]},
+{"name": "Breed Electrode","access_rules": ["^$breeding|101"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Electrode"}],"map_locations": [{"map":"evolutionsanity_2","x": 742,"y": 28}]},
+{"name": "Breed Exeggcute","access_rules": ["^$breeding|102"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Exeggcute"}],"map_locations": [{"map":"evolutionsanity_2","x": 742,"y": 84}]},
+{"name": "Breed Exeggutor","access_rules": ["^$breeding|103"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Exeggutor"}],"map_locations": [{"map":"evolutionsanity_2","x": 742,"y": 140}]},
+{"name": "Breed Cubone","access_rules": ["^$breeding|104"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Cubone"}],"map_locations": [{"map":"evolutionsanity_2","x": 742,"y": 196}]},
+{"name": "Breed Marowak","access_rules": ["^$breeding|105"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Marowak"}],"map_locations": [{"map":"evolutionsanity_2","x": 742,"y": 252}]},
+{"name": "Breed Hitmonlee","access_rules": ["^$breeding|106"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Hitmonlee"}],"map_locations": [{"map":"evolutionsanity_2","x": 742,"y": 308}]},
+{"name": "Breed Hitmonchan","access_rules": ["^$breeding|107"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Hitmonchan"}],"map_locations": [{"map":"evolutionsanity_2","x": 742,"y": 364}]},
+{"name": "Breed Lickitung","access_rules": ["^$breeding|108"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Lickitung"}],"map_locations": [{"map":"evolutionsanity_2","x": 742,"y": 420}]},
+{"name": "Breed Koffing","access_rules": ["^$breeding|109"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Koffing"}],"map_locations": [{"map":"evolutionsanity_2","x": 742,"y": 476}]},
+{"name": "Breed Weezing","access_rules": ["^$breeding|110"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Weezing"}],"map_locations": [{"map":"evolutionsanity_2","x": 742,"y": 532}]},
+{"name": "Breed Rhyhorn","access_rules": ["^$breeding|111"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Rhyhorn"}],"map_locations": [{"map":"evolutionsanity_2","x": 910,"y": 28}]},
+{"name": "Breed Rhydon","access_rules": ["^$breeding|112"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Rhydon"}],"map_locations": [{"map":"evolutionsanity_2","x": 910,"y": 84}]},
+{"name": "Breed Chansey","access_rules": ["^$breeding|113"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Chansey"}],"map_locations": [{"map":"evolutionsanity_2","x": 910,"y": 140}]},
+{"name": "Breed Tangela","access_rules": ["^$breeding|114"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Tangela"}],"map_locations": [{"map":"evolutionsanity_2","x": 910,"y": 196}]},
+{"name": "Breed Kangaskhan","access_rules": ["^$breeding|115"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Kangaskhan"}],"map_locations": [{"map":"evolutionsanity_2","x": 910,"y": 252}]},
+{"name": "Breed Horsea","access_rules": ["^$breeding|116"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Horsea"}],"map_locations": [{"map":"evolutionsanity_2","x": 910,"y": 308}]},
+{"name": "Breed Seadra","access_rules": ["^$breeding|117"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Seadra"}],"map_locations": [{"map":"evolutionsanity_2","x": 910,"y": 364}]},
+{"name": "Breed Goldeen","access_rules": ["^$breeding|118"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Goldeen"}],"map_locations": [{"map":"evolutionsanity_2","x": 910,"y": 420}]},
+{"name": "Breed Seaking","access_rules": ["^$breeding|119"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Seaking"}],"map_locations": [{"map":"evolutionsanity_2","x": 910,"y": 476}]},
+{"name": "Breed Staryu","access_rules": ["^$breeding|120"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Staryu"}],"map_locations": [{"map":"evolutionsanity_2","x": 910,"y": 532}]},
+{"name": "Breed Starmie","access_rules": ["^$breeding|121"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Starmie"}],"map_locations": [{"map":"evolutionsanity_3","x": 70,"y": 28}]},
+{"name": "Breed Mr. Mime","access_rules": ["^$breeding|122"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Mr. Mime"}],"map_locations": [{"map":"evolutionsanity_3","x": 70,"y": 84}]},
+{"name": "Breed Scyther","access_rules": ["^$breeding|123"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Scyther"}],"map_locations": [{"map":"evolutionsanity_3","x": 70,"y": 140}]},
+{"name": "Breed Jynx","access_rules": ["^$breeding|124"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Jynx"}],"map_locations": [{"map":"evolutionsanity_3","x": 70,"y": 196}]},
+{"name": "Breed Electabuzz","access_rules": ["^$breeding|125"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Electabuzz"}],"map_locations": [{"map":"evolutionsanity_3","x": 70,"y": 252}]},
+{"name": "Breed Magmar","access_rules": ["^$breeding|126"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Magmar"}],"map_locations": [{"map":"evolutionsanity_3","x": 70,"y": 308}]},
+{"name": "Breed Pinsir","access_rules": ["^$breeding|127"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Pinsir"}],"map_locations": [{"map":"evolutionsanity_3","x": 70,"y": 364}]},
+{"name": "Breed Tauros","access_rules": ["^$breeding|128"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Tauros"}],"map_locations": [{"map":"evolutionsanity_3","x": 70,"y": 420}]},
+{"name": "Breed Magikarp","access_rules": ["^$breeding|129"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Magikarp"}],"map_locations": [{"map":"evolutionsanity_3","x": 70,"y": 476}]},
+{"name": "Breed Gyarados","access_rules": ["^$breeding|130"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Gyarados"}],"map_locations": [{"map":"evolutionsanity_3","x": 70,"y": 532}]},
+{"name": "Breed Lapras","access_rules": ["^$breeding|131"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Lapras"}],"map_locations": [{"map":"evolutionsanity_3","x": 238,"y": 28}]},
+{"name": "Breed Eevee","access_rules": ["^$breeding|133"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Eevee"}],"map_locations": [{"map":"evolutionsanity_3","x": 238,"y": 140}]},
+{"name": "Breed Vaporeon","access_rules": ["^$breeding|134"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Vaporeon"}],"map_locations": [{"map":"evolutionsanity_3","x": 238,"y": 196}]},
+{"name": "Breed Jolteon","access_rules": ["^$breeding|135"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Jolteon"}],"map_locations": [{"map":"evolutionsanity_3","x": 238,"y": 252}]},
+{"name": "Breed Flareon","access_rules": ["^$breeding|136"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Flareon"}],"map_locations": [{"map":"evolutionsanity_3","x": 238,"y": 308}]},
+{"name": "Breed Porygon","access_rules": ["^$breeding|137"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Porygon"}],"map_locations": [{"map":"evolutionsanity_3","x": 238,"y": 364}]},
+{"name": "Breed Omanyte","access_rules": ["^$breeding|138"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Omanyte"}],"map_locations": [{"map":"evolutionsanity_3","x": 238,"y": 420}]},
+{"name": "Breed Omastar","access_rules": ["^$breeding|139"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Omastar"}],"map_locations": [{"map":"evolutionsanity_3","x": 238,"y": 476}]},
+{"name": "Breed Kabuto","access_rules": ["^$breeding|140"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Kabuto"}],"map_locations": [{"map":"evolutionsanity_3","x": 238,"y": 532}]},
+{"name": "Breed Kabutops","access_rules": ["^$breeding|141"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Kabutops"}],"map_locations": [{"map":"evolutionsanity_3","x": 406,"y": 28}]},
+{"name": "Breed Aerodactyl","access_rules": ["^$breeding|142"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Aerodactyl"}],"map_locations": [{"map":"evolutionsanity_3","x": 406,"y": 84}]},
+{"name": "Breed Snorlax","access_rules": ["^$breeding|143"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Snorlax"}],"map_locations": [{"map":"evolutionsanity_3","x": 406,"y": 140}]},
+{"name": "Breed Dratini","access_rules": ["^$breeding|147"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Dratini"}],"map_locations": [{"map":"evolutionsanity_3","x": 406,"y": 196}]},
+{"name": "Breed Dragonair","access_rules": ["^$breeding|148"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Dragonair"}],"map_locations": [{"map":"evolutionsanity_3","x": 406,"y": 252}]},
+{"name": "Breed Dragonite","access_rules": ["^$breeding|149"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Dragonite"}],"map_locations": [{"map":"evolutionsanity_3","x": 406,"y": 308}]},
+{"name": "Breed Chikorita","access_rules": ["^$breeding|152"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Chikorita"}],"map_locations": [{"map":"evolutionsanity_3","x": 406,"y": 364}]},
+{"name": "Breed Bayleef","access_rules": ["^$breeding|153"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Bayleef"}],"map_locations": [{"map":"evolutionsanity_3","x": 406,"y": 420}]},
+{"name": "Breed Meganium","access_rules": ["^$breeding|154"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Meganium"}],"map_locations": [{"map":"evolutionsanity_3","x": 406,"y": 476}]},
+{"name": "Breed Cyndaquil","access_rules": ["^$breeding|155"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Cyndaquil"}],"map_locations": [{"map":"evolutionsanity_3","x": 406,"y": 532}]},
+{"name": "Breed Quilava","access_rules": ["^$breeding|156"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Quilava"}],"map_locations": [{"map":"evolutionsanity_3","x": 574,"y": 28}]},
+{"name": "Breed Typhlosion","access_rules": ["^$breeding|157"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Typhlosion"}],"map_locations": [{"map":"evolutionsanity_3","x": 574,"y": 84}]},
+{"name": "Breed Totodile","access_rules": ["^$breeding|158"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Totodile"}],"map_locations": [{"map":"evolutionsanity_3","x": 574,"y": 140}]},
+{"name": "Breed Croconaw","access_rules": ["^$breeding|159"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Croconaw"}],"map_locations": [{"map":"evolutionsanity_3","x": 574,"y": 196}]},
+{"name": "Breed Feraligatr","access_rules": ["^$breeding|160"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Feraligatr"}],"map_locations": [{"map":"evolutionsanity_3","x": 574,"y": 252}]},
+{"name": "Breed Sentret","access_rules": ["^$breeding|161"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Sentret"}],"map_locations": [{"map":"evolutionsanity_3","x": 574,"y": 308}]},
+{"name": "Breed Furret","access_rules": ["^$breeding|162"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Furret"}],"map_locations": [{"map":"evolutionsanity_3","x": 574,"y": 364}]},
+{"name": "Breed Hoothoot","access_rules": ["^$breeding|163"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Hoothoot"}],"map_locations": [{"map":"evolutionsanity_3","x": 574,"y": 420}]},
+{"name": "Breed Noctowl","access_rules": ["^$breeding|164"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Noctowl"}],"map_locations": [{"map":"evolutionsanity_3","x": 574,"y": 476}]},
+{"name": "Breed Ledyba","access_rules": ["^$breeding|165"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Ledyba"}],"map_locations": [{"map":"evolutionsanity_3","x": 574,"y": 532}]},
+{"name": "Breed Ledian","access_rules": ["^$breeding|166"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Ledian"}],"map_locations": [{"map":"evolutionsanity_3","x": 742,"y": 28}]},
+{"name": "Breed Spinarak","access_rules": ["^$breeding|167"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Spinarak"}],"map_locations": [{"map":"evolutionsanity_3","x": 742,"y": 84}]},
+{"name": "Breed Ariados","access_rules": ["^$breeding|168"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Ariados"}],"map_locations": [{"map":"evolutionsanity_3","x": 742,"y": 140}]},
+{"name": "Breed Crobat","access_rules": ["^$breeding|169"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Crobat"}],"map_locations": [{"map":"evolutionsanity_3","x": 742,"y": 196}]},
+{"name": "Breed Chinchou","access_rules": ["^$breeding|170"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Chinchou"}],"map_locations": [{"map":"evolutionsanity_3","x": 742,"y": 252}]},
+{"name": "Breed Lanturn","access_rules": ["^$breeding|171"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Lanturn"}],"map_locations": [{"map":"evolutionsanity_3","x": 742,"y": 308}]},
+{"name": "Breed Togetic","access_rules": ["^$breeding|176"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Togetic"}],"map_locations": [{"map":"evolutionsanity_3","x": 910,"y": 28}]},
+{"name": "Breed Natu","access_rules": ["^$breeding|177"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Natu"}],"map_locations": [{"map":"evolutionsanity_3","x": 910,"y": 84}]},
+{"name": "Breed Xatu","access_rules": ["^$breeding|178"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Xatu"}],"map_locations": [{"map":"evolutionsanity_3","x": 910,"y": 140}]},
+{"name": "Breed Mareep","access_rules": ["^$breeding|179"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Mareep"}],"map_locations": [{"map":"evolutionsanity_3","x": 910,"y": 196}]},
+{"name": "Breed Flaaffy","access_rules": ["^$breeding|180"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Flaaffy"}],"map_locations": [{"map":"evolutionsanity_3","x": 910,"y": 252}]},
+{"name": "Breed Ampharos","access_rules": ["^$breeding|181"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Ampharos"}],"map_locations": [{"map":"evolutionsanity_3","x": 910,"y": 308}]},
+{"name": "Breed Bellossom","access_rules": ["^$breeding|182"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Bellossom"}],"map_locations": [{"map":"evolutionsanity_3","x": 910,"y": 364}]},
+{"name": "Breed Marill","access_rules": ["^$breeding|183"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Marill"}],"map_locations": [{"map":"evolutionsanity_3","x": 910,"y": 420}]},
+{"name": "Breed Azumarill","access_rules": ["^$breeding|184"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Azumarill"}],"map_locations": [{"map":"evolutionsanity_3","x": 910,"y": 476}]},
+{"name": "Breed Sudowoodo","access_rules": ["^$breeding|185"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Sudowoodo"}],"map_locations": [{"map":"evolutionsanity_3","x": 910,"y": 532}]},
+{"name": "Breed Politoed","access_rules": ["^$breeding|186"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Politoed"}],"map_locations": [{"map":"evolutionsanity_4","x": 70,"y": 28}]},
+{"name": "Breed Hoppip","access_rules": ["^$breeding|187"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Hoppip"}],"map_locations": [{"map":"evolutionsanity_4","x": 70,"y": 84}]},
+{"name": "Breed Skiploom","access_rules": ["^$breeding|188"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Skiploom"}],"map_locations": [{"map":"evolutionsanity_4","x": 70,"y": 140}]},
+{"name": "Breed Jumpluff","access_rules": ["^$breeding|189"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Jumpluff"}],"map_locations": [{"map":"evolutionsanity_4","x": 70,"y": 196}]},
+{"name": "Breed Aipom","access_rules": ["^$breeding|190"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Aipom"}],"map_locations": [{"map":"evolutionsanity_4","x": 70,"y": 252}]},
+{"name": "Breed Sunkern","access_rules": ["^$breeding|191"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Sunkern"}],"map_locations": [{"map":"evolutionsanity_4","x": 70,"y": 308}]},
+{"name": "Breed Sunflora","access_rules": ["^$breeding|192"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Sunflora"}],"map_locations": [{"map":"evolutionsanity_4","x": 70,"y": 364}]},
+{"name": "Breed Yanma","access_rules": ["^$breeding|193"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Yanma"}],"map_locations": [{"map":"evolutionsanity_4","x": 70,"y": 420}]},
+{"name": "Breed Wooper","access_rules": ["^$breeding|194"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Wooper"}],"map_locations": [{"map":"evolutionsanity_4","x": 70,"y": 476}]},
+{"name": "Breed Quagsire","access_rules": ["^$breeding|195"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Quagsire"}],"map_locations": [{"map":"evolutionsanity_4","x": 70,"y": 532}]},
+{"name": "Breed Espeon","access_rules": ["^$breeding|196"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Espeon"}],"map_locations": [{"map":"evolutionsanity_4","x": 238,"y": 28}]},
+{"name": "Breed Umbreon","access_rules": ["^$breeding|197"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Umbreon"}],"map_locations": [{"map":"evolutionsanity_4","x": 238,"y": 84}]},
+{"name": "Breed Murkrow","access_rules": ["^$breeding|198"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Murkrow"}],"map_locations": [{"map":"evolutionsanity_4","x": 238,"y": 140}]},
+{"name": "Breed Slowking","access_rules": ["^$breeding|199"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Slowking"}],"map_locations": [{"map":"evolutionsanity_4","x": 238,"y": 196}]},
+{"name": "Breed Misdreavus","access_rules": ["^$breeding|200"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Misdreavus"}],"map_locations": [{"map":"evolutionsanity_4","x": 238,"y": 252}]},
+{"name": "Breed Wobbuffet","access_rules": ["^$breeding|202"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Wobbuffet"}],"map_locations": [{"map":"evolutionsanity_4","x": 238,"y": 364}]},
+{"name": "Breed Girafarig","access_rules": ["^$breeding|203"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Girafarig"}],"map_locations": [{"map":"evolutionsanity_4","x": 238,"y": 420}]},
+{"name": "Breed Pineco","access_rules": ["^$breeding|204"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Pineco"}],"map_locations": [{"map":"evolutionsanity_4","x": 238,"y": 476}]},
+{"name": "Breed Forretress","access_rules": ["^$breeding|205"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Forretress"}],"map_locations": [{"map":"evolutionsanity_4","x": 238,"y": 532}]},
+{"name": "Breed Dunsparce","access_rules": ["^$breeding|206"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Dunsparce"}],"map_locations": [{"map":"evolutionsanity_4","x": 406,"y": 28}]},
+{"name": "Breed Gligar","access_rules": ["^$breeding|207"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Gligar"}],"map_locations": [{"map":"evolutionsanity_4","x": 406,"y": 84}]},
+{"name": "Breed Steelix","access_rules": ["^$breeding|208"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Steelix"}],"map_locations": [{"map":"evolutionsanity_4","x": 406,"y": 140}]},
+{"name": "Breed Snubbull","access_rules": ["^$breeding|209"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Snubbull"}],"map_locations": [{"map":"evolutionsanity_4","x": 406,"y": 196}]},
+{"name": "Breed Granbull","access_rules": ["^$breeding|210"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Granbull"}],"map_locations": [{"map":"evolutionsanity_4","x": 406,"y": 252}]},
+{"name": "Breed Qwilfish","access_rules": ["^$breeding|211"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Qwilfish"}],"map_locations": [{"map":"evolutionsanity_4","x": 406,"y": 308}]},
+{"name": "Breed Scizor","access_rules": ["^$breeding|212"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Scizor"}],"map_locations": [{"map":"evolutionsanity_4","x": 406,"y": 364}]},
+{"name": "Breed Shuckle","access_rules": ["^$breeding|213"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Shuckle"}],"map_locations": [{"map":"evolutionsanity_4","x": 406,"y": 420}]},
+{"name": "Breed Heracross","access_rules": ["^$breeding|214"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Heracross"}],"map_locations": [{"map":"evolutionsanity_4","x": 406,"y": 476}]},
+{"name": "Breed Sneasel","access_rules": ["^$breeding|215"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Sneasel"}],"map_locations": [{"map":"evolutionsanity_4","x": 406,"y": 532}]},
+{"name": "Breed Teddiursa","access_rules": ["^$breeding|216"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Teddiursa"}],"map_locations": [{"map":"evolutionsanity_4","x": 574,"y": 28}]},
+{"name": "Breed Ursaring","access_rules": ["^$breeding|217"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Ursaring"}],"map_locations": [{"map":"evolutionsanity_4","x": 574,"y": 84}]},
+{"name": "Breed Slugma","access_rules": ["^$breeding|218"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Slugma"}],"map_locations": [{"map":"evolutionsanity_4","x": 574,"y": 140}]},
+{"name": "Breed Magcargo","access_rules": ["^$breeding|219"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Magcargo"}],"map_locations": [{"map":"evolutionsanity_4","x": 574,"y": 196}]},
+{"name": "Breed Swinub","access_rules": ["^$breeding|220"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Swinub"}],"map_locations": [{"map":"evolutionsanity_4","x": 574,"y": 252}]},
+{"name": "Breed Piloswine","access_rules": ["^$breeding|221"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Piloswine"}],"map_locations": [{"map":"evolutionsanity_4","x": 574,"y": 308}]},
+{"name": "Breed Corsola","access_rules": ["^$breeding|222"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Corsola"}],"map_locations": [{"map":"evolutionsanity_4","x": 574,"y": 364}]},
+{"name": "Breed Remoraid","access_rules": ["^$breeding|223"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Remoraid"}],"map_locations": [{"map":"evolutionsanity_4","x": 574,"y": 420}]},
+{"name": "Breed Octillery","access_rules": ["^$breeding|224"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Octillery"}],"map_locations": [{"map":"evolutionsanity_4","x": 574,"y": 476}]},
+{"name": "Breed Delibird","access_rules": ["^$breeding|225"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Delibird"}],"map_locations": [{"map":"evolutionsanity_4","x": 574,"y": 532}]},
+{"name": "Breed Mantine","access_rules": ["^$breeding|226"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Mantine"}],"map_locations": [{"map":"evolutionsanity_4","x": 742,"y": 28}]},
+{"name": "Breed Skarmory","access_rules": ["^$breeding|227"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Skarmory"}],"map_locations": [{"map":"evolutionsanity_4","x": 742,"y": 84}]},
+{"name": "Breed Houndour","access_rules": ["^$breeding|228"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Houndour"}],"map_locations": [{"map":"evolutionsanity_4","x": 742,"y": 140}]},
+{"name": "Breed Houndoom","access_rules": ["^$breeding|229"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Houndoom"}],"map_locations": [{"map":"evolutionsanity_4","x": 742,"y": 196}]},
+{"name": "Breed Kingdra","access_rules": ["^$breeding|230"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Kingdra"}],"map_locations": [{"map":"evolutionsanity_4","x": 742,"y": 252}]},
+{"name": "Breed Phanpy","access_rules": ["^$breeding|231"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Phanpy"}],"map_locations": [{"map":"evolutionsanity_4","x": 742,"y": 308}]},
+{"name": "Breed Donphan","access_rules": ["^$breeding|232"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Donphan"}],"map_locations": [{"map":"evolutionsanity_4","x": 742,"y": 364}]},
+{"name": "Breed Porygon2","access_rules": ["^$breeding|233"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Porygon2"}],"map_locations": [{"map":"evolutionsanity_4","x": 742,"y": 420}]},
+{"name": "Breed Stantler","access_rules": ["^$breeding|234"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Stantler"}],"map_locations": [{"map":"evolutionsanity_4","x": 742,"y": 476}]},
+{"name": "Breed Smeargle","access_rules": ["^$breeding|235"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Smeargle"}],"map_locations": [{"map":"evolutionsanity_4","x": 742,"y": 532}]},
+{"name": "Breed Hitmontop","access_rules": ["^$breeding|237"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Hitmontop"}],"map_locations": [{"map":"evolutionsanity_4","x": 910,"y": 84}]},
+{"name": "Breed Miltank","access_rules": ["^$breeding|241"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Miltank"}],"map_locations": [{"map":"evolutionsanity_4","x": 910,"y": 308}]},
+{"name": "Breed Blissey","access_rules": ["^$breeding|242"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Blissey"}],"map_locations": [{"map":"evolutionsanity_4","x": 910,"y": 364}]},
+{"name": "Breed Larvitar","access_rules": ["^$breeding|246"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Larvitar"}],"map_locations": [{"map":"evolutionsanity_4","x": 910,"y": 420}]},
+{"name": "Breed Pupitar","access_rules": ["^$breeding|247"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Pupitar"}],"map_locations": [{"map":"evolutionsanity_4","x": 910,"y": 476}]},
+{"name": "Breed Tyranitar","access_rules": ["^$breeding|248"],"chest_unopened_img": "images/evolutionsanity/egg.png", "chest_opened_img": "images/evolutionsanity/egg_bw.png","sections": [{"name": "Breed Tyranitar"}],"map_locations": [{"map":"evolutionsanity_4","x": 910,"y": 532}]}
+        ]
+    },
+    {
+        "name": "Evolving",
+        "children": [
+{"name":"Evolve Bulbasaur","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|1"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":98,"y":28}]},
+{"name":"Evolve Ivysaur","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|2"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":98,"y":84}]},
+{"name":"Evolve Charmander","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|4"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":98,"y":196}]},
+{"name":"Evolve Charmeleon","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|5"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":98,"y":252}]},
+{"name":"Evolve Squirtle","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|7"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":98,"y":364}]},
+{"name":"Evolve Wartortle","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|8"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":98,"y":420}]},
+{"name":"Evolve Caterpie","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|10"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":98,"y":532}]},
+{"name":"Evolve Metapod","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|11"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":266,"y":28}]},
+{"name":"Evolve Weedle","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|13"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":266,"y":140}]},
+{"name":"Evolve Kakuna","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|14"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":266,"y":196}]},
+{"name":"Evolve Pidgey","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|16"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":266,"y":308}]},
+{"name":"Evolve Pidgeotto","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|17"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":266,"y":364}]},
+{"name":"Evolve Rattata","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|19"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":266,"y":476}]},
+{"name":"Evolve Spearow","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|21"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":434,"y":28}]},
+{"name":"Evolve Ekans","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|23"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":434,"y":140}]},
+{"name":"Evolve Pikachu","sections":[{"name":"Using a Thunderstone","access_rules":["^$evolve_new|25"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":434,"y":252}]},
+{"name":"Evolve Sandshrew","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|27"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":434,"y":364}]},
+{"name":"Evolve Nidoran F","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|29"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":434,"y":476}]},
+{"name":"Evolve Nidorina","sections":[{"name":"Using a Moon Stone","access_rules":["^$evolve_new|30"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":434,"y":532}]},
+{"name":"Evolve Nidoran M","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|32"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":602,"y":84}]},
+{"name":"Evolve Nidorino","sections":[{"name":"Using a Moon Stone","access_rules":["^$evolve_new|33"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":602,"y":140}]},
+{"name":"Evolve Clefairy","sections":[{"name":"Using a Moon Stone","access_rules":["^$evolve_new|35"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":602,"y":252}]},
+{"name":"Evolve Vulpix","sections":[{"name":"Using a Fire Stone","access_rules":["^$evolve_new|37"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":602,"y":364}]},
+{"name":"Evolve Jigglypuff","sections":[{"name":"Using a Moon Stone","access_rules":["^$evolve_new|39"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":602,"y":476}]},
+{"name":"Evolve Zubat","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|41"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":770,"y":28}]},
+{"name":"Evolve Golbat","sections":[{"name":"Via Happiness","access_rules":["^$evolve_new|42"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":770,"y":84}]},
+{"name":"Evolve Oddish","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|43"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":770,"y":140}]},
+{
+    "name": "Evolve Gloom",
+    "sections": [
+        {
+            "name": "Using a Leaf Stone",
+            "access_rules": [
+                "^$evolve_new|44"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/leafstone.png",
+            "chest_opened_img": "images/evolutionsanity/leafstone_bw.png"
+        },
+        {
+            "name": "Using a Sun Stone",
+            "access_rules": [
+                "^$evolve_new|44"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/sunstone.png",
+            "chest_opened_img": "images/evolutionsanity/sunstone_bw.png"
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "evolutionsanity_1",
+            "x": 770,
+            "y": 196
+        }
+    ]
+},
+{"name":"Evolve Paras","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|46"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":770,"y":308}]},
+{"name":"Evolve Venonat","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|48"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":770,"y":420}]},
+{"name":"Evolve Diglett","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|50"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":770,"y":532}]},
+{"name":"Evolve Meowth","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|52"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":938,"y":84}]},
+{"name":"Evolve Psyduck","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|54"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":938,"y":196}]},
+{"name":"Evolve Mankey","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|56"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":938,"y":308}]},
+{"name":"Evolve Growlithe","sections":[{"name":"Using a Fire Stone","access_rules":["^$evolve_new|58"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":938,"y":420}]},
+{"name":"Evolve Poliwag","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|60"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_1","x":938,"y":532}]},
+{
+    "name": "Evolve Poliwhirl",
+    "sections": [
+        {
+            "name": "Using a Water Stone",
+            "access_rules": [
+                "^$evolve_new|61"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/waterstone.png",
+            "chest_opened_img": "images/evolutionsanity/waterstone_bw.png"
+        },
+        {
+            "name": "Using a Kings Rock",
+            "access_rules": [
+                "^$evolve_new|61"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/kingsrock.png",
+            "chest_opened_img": "images/evolutionsanity/kingsrock_bw.png"
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "evolutionsanity_2",
+            "x": 98,
+            "y": 28
+        }
+    ]
+},
+{"name":"Evolve Abra","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|63"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":140}]},
+{"name":"Evolve Kadabra","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|64"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":196}]},
+{"name":"Evolve Machop","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|66"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":308}]},
+{"name":"Evolve Machoke","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|67"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":364}]},
+{"name":"Evolve Bellsprout","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|69"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":476}]},
+{"name":"Evolve Weepinbell","sections":[{"name":"Using a Leaf Stone","access_rules":["^$evolve_new|70"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":532}]},
+{"name":"Evolve Tentacool","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|72"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":266,"y":84}]},
+{"name":"Evolve Geodude","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|74"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":266,"y":196}]},
+{"name":"Evolve Graveler","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|75"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":266,"y":252}]},
+{"name":"Evolve Ponyta","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|77"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":266,"y":364}]},
+{
+    "name": "Evolve Slowpoke",
+    "sections": [
+        {
+            "name": "Via Levelup",
+            "access_rules": [
+                "^$evolve_new|79"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/rarecandy.png",
+            "chest_opened_img": "images/evolutionsanity/rarecandy_bw.png"
+        },
+        {
+            "name": "Using a Kings Rock",
+            "access_rules": [
+                "^$evolve_new|79"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/kingsrock.png",
+            "chest_opened_img": "images/evolutionsanity/kingsrock_bw.png"
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "evolutionsanity_2",
+            "x": 266,
+            "y": 476
+        }
+    ]
+},
+{"name":"Evolve Magnemite","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|81"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":434,"y":28}]},
+{"name":"Evolve Doduo","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|84"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":434,"y":196}]},
+{"name":"Evolve Seel","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|86"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":434,"y":308}]},
+{"name":"Evolve Grimer","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|88"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":434,"y":420}]},
+{"name":"Evolve Shellder","sections":[{"name":"Using a Water Stone","access_rules":["^$evolve_new|90"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":434,"y":532}]},
+{"name":"Evolve Gastly","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|92"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":84}]},
+{"name":"Evolve Haunter","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|93"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":140}]},
+{"name":"Evolve Onix","sections":[{"name":"Using a Metal Coat","access_rules":["^$evolve_new|95"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":252}]},
+{"name":"Evolve Drowzee","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|96"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":308}]},
+{"name":"Evolve Krabby","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|98"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":420}]},
+{"name":"Evolve Voltorb","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|100"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":532}]},
+{"name":"Evolve Exeggcute","sections":[{"name":"Using a Leaf Stone","access_rules":["^$evolve_new|102"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":770,"y":84}]},
+{"name":"Evolve Cubone","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|104"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":770,"y":196}]},
+{"name":"Evolve Koffing","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|109"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":770,"y":476}]},
+{"name":"Evolve Rhyhorn","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|111"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":938,"y":28}]},
+{"name":"Evolve Chansey","sections":[{"name":"Via Happiness","access_rules":["^$evolve_new|113"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":938,"y":140}]},
+{"name":"Evolve Horsea","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|116"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":938,"y":308}]},
+{"name":"Evolve Seadra","sections":[{"name":"Using a Dragon Scale","access_rules":["^$evolve_new|117"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":938,"y":364}]},
+{"name":"Evolve Goldeen","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|118"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":938,"y":420}]},
+{"name":"Evolve Staryu","sections":[{"name":"Using a Water Stone","access_rules":["^$evolve_new|120"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":938,"y":532}]},
+{"name":"Evolve Scyther","sections":[{"name":"Using a Metal Coat","access_rules":["^$evolve_new|123"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":98,"y":140}]},
+{"name":"Evolve Magikarp","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|129"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":98,"y":476}]},
+{
+    "name": "Evolve Eevee",
+    "sections": [
+        {
+            "name": "Using a Water Stone",
+            "access_rules": [
+                "^$evolve_new|133"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/waterstone.png",
+            "chest_opened_img": "images/evolutionsanity/waterstone_bw.png"
+        },
+        {
+            "name": "Using a Thunderstone",
+            "access_rules": [
+                "^$evolve_new|133"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/thunderstone.png",
+            "chest_opened_img": "images/evolutionsanity/thunderstone_bw.png"
+        },
+        {
+            "name": "Using a Fire Stone",
+            "access_rules": [
+                "^$evolve_new|133"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/firestone.png",
+            "chest_opened_img": "images/evolutionsanity/firestone_bw.png"
+        },
+        {
+            "name": "Using a Sun Stone",
+            "access_rules": [
+                "^$evolve_new|133"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/sunstone.png",
+            "chest_opened_img": "images/evolutionsanity/sunstone_bw.png"
+        },
+        {
+            "name": "Using a Moon Stone",
+            "access_rules": [
+                "^$evolve_new|133"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/moonstone.png",
+            "chest_opened_img": "images/evolutionsanity/moonstone_bw.png"
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "evolutionsanity_3",
+            "x": 266,
+            "y": 140
+        }
+    ]
+},
+{"name":"Evolve Porygon","sections":[{"name":"Using an Up-Grade","access_rules":["^$evolve_new|137"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":266,"y":364}]},
+{"name":"Evolve Omanyte","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|138"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":266,"y":420}]},
+{"name":"Evolve Kabuto","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|140"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":266,"y":532}]},
+{"name":"Evolve Dratini","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|147"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":434,"y":196}]},
+{"name":"Evolve Dragonair","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|148"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":434,"y":252}]},
+{"name":"Evolve Chikorita","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|152"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":434,"y":364}]},
+{"name":"Evolve Bayleef","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|153"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":434,"y":420}]},
+{"name":"Evolve Cyndaquil","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|155"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":434,"y":532}]},
+{"name":"Evolve Quilava","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|156"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":602,"y":28}]},
+{"name":"Evolve Totodile","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|158"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":602,"y":140}]},
+{"name":"Evolve Croconaw","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|159"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":602,"y":196}]},
+{"name":"Evolve Sentret","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|161"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":602,"y":308}]},
+{"name":"Evolve Hoothoot","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|163"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":602,"y":420}]},
+{"name":"Evolve Ledyba","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|165"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":602,"y":532}]},
+{"name":"Evolve Spinarak","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|167"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":770,"y":84}]},
+{"name":"Evolve Chinchou","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|170"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":770,"y":252}]},
+{"name":"Evolve Pichu","sections":[{"name":"Via Happiness","access_rules":["^$evolve_new|172"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":770,"y":364}]},
+{"name":"Evolve Cleffa","sections":[{"name":"Via Happiness","access_rules":["^$evolve_new|173"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":770,"y":420}]},
+{"name":"Evolve Igglybuff","sections":[{"name":"Via Happiness","access_rules":["^$evolve_new|174"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":770,"y":476}]},
+{"name":"Evolve Togepi","sections":[{"name":"Via Happiness","access_rules":["^$evolve_new|175"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":770,"y":532}]},
+{"name":"Evolve Natu","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|177"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":938,"y":84}]},
+{"name":"Evolve Mareep","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|179"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":938,"y":196}]},
+{"name":"Evolve Flaaffy","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|180"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":938,"y":252}]},
+{"name":"Evolve Marill","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|183"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_3","x":938,"y":420}]},
+{"name":"Evolve Hoppip","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|187"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":98,"y":84}]},
+{"name":"Evolve Skiploom","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|188"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":98,"y":140}]},
+{"name":"Evolve Sunkern","sections":[{"name":"Using a Sun Stone","access_rules":["^$evolve_new|191"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":98,"y":308}]},
+{"name":"Evolve Wooper","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|194"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":98,"y":476}]},
+{"name":"Evolve Pineco","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|204"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":266,"y":476}]},
+{"name":"Evolve Snubbull","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|209"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":434,"y":196}]},
+{"name":"Evolve Teddiursa","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|216"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":602,"y":28}]},
+{"name":"Evolve Slugma","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|218"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":602,"y":140}]},
+{"name":"Evolve Swinub","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|220"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":602,"y":252}]},
+{"name":"Evolve Remoraid","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|223"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":602,"y":420}]},
+{"name":"Evolve Houndour","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|228"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":770,"y":140}]},
+{"name":"Evolve Phanpy","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|231"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":770,"y":308}]},
+{
+    "name": "Evolve Tyrogue",
+    "sections": [
+        {
+            "name": "While Attack is lower than Defense",
+            "access_rules": [
+                "^$evolve_new|236"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/vitamin_protein.png",
+            "chest_opened_img": "images/evolutionsanity/vitamin_protein_bw.png"
+        },
+        {
+            "name": "While Attack is greater than Defense",
+            "access_rules": [
+                "^$evolve_new|236"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/vitamin_iron.png",
+            "chest_opened_img": "images/evolutionsanity/vitamin_iron_bw.png"
+        },
+        {
+            "name": "While Attack is equal to Defense",
+            "access_rules": [
+                "^$evolve_new|236"
+            ],
+            "chest_unopened_img": "images/evolutionsanity/vitamin_both.png",
+            "chest_opened_img": "images/evolutionsanity/vitamin_both_bw.png"
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "evolutionsanity_4",
+            "x": 938,
+            "y": 28
+        }
+    ]
+},
+{"name":"Evolve Smoochum","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|238"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":938,"y":140}]},
+{"name":"Evolve Elekid","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|239"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":938,"y":196}]},
+{"name":"Evolve Magby","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|240"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":938,"y":252}]},
+{"name":"Evolve Larvitar","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|246"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":938,"y":420}]},
+{"name":"Evolve Pupitar","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|247"],"chest_unopened_img":"images/evolutionsanity/rarecandy.png","chest_opened_img":"images/evolutionsanity/rarecandy_bw.png"}],"map_locations":[{"map":"evolutionsanity_4","x":938,"y":476}]},
+        ]
+    }
+]

@@ -4,6 +4,7 @@ ScriptHost:LoadScript("scripts/autotracking/map_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/flag_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/encounter_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/pokemon_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/evolution_location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/ap_helper.lua")
 
 CUR_INDEX = -1
@@ -13,6 +14,8 @@ TEAM_NUMBER = 0
 EVENT_ID = ""
 KEY_ID = ""
 POKE_ID = ""
+EVOLUTION_DATA = ""
+BREEDING_DATA = ""
 
 function onClear(slot_data)
     isUpdating = true
@@ -67,6 +70,8 @@ function onClear(slot_data)
     end
     
     REGION_ENCOUNTERS = slot_data.region_encounters
+    EVOLUTION_DATA = slot_data.evolution_info
+    BREEDING_DATA = slot_data.breeding_info
 
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then
@@ -301,7 +306,6 @@ function updateEvents(value)
 end
 
 function updateStatics(value)
-    print(value)
     if value ~= nil then
         for i, code in ipairs(FLAG_STATIC_CODES) do
             local obj = Tracker:FindObjectForCode(code)
@@ -313,7 +317,6 @@ function updateStatics(value)
                 Tracker:FindObjectForCode(code).Active = Tracker:FindObjectForCode(code).Active or bit
             end
             local is_active = tostring(Tracker:FindObjectForCode(code).Active)
-            print(i.." is ".. is_active)
         end
     end
 end
@@ -365,9 +368,7 @@ function updatePokemon(pokemon)
     pokemon = pokemon or last_pokemon
     
 	if pokemon ~= nil then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print(string.format("updatePokemon: Pokemon - %s", dump_table(pokemon)))
-		end
+        --print(string.format("updatePokemon: Pokemon - %s", dump_table(pokemon)))
 		for dex_number, code in pairs(POKEMON_MAPPING) do
 			if table_contains(pokemon["caught"], dex_number) then
 				Tracker:FindObjectForCode(code).Active = true
@@ -377,6 +378,11 @@ function updatePokemon(pokemon)
 		end
         
 		if has("encounter_tracking_strict") or has("encounter_tracking_loose") then
+            
+            resetEvolutionsanityData()
+            updateEvolutionInfo(pokemon)
+            updateBreedingInfo(pokemon)
+            
             for region_key, location in pairs(ENCOUNTER_MAPPING) do
                 local object = Tracker:FindObjectForCode(location)
                 object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
@@ -400,10 +406,8 @@ function updatePokemon(pokemon)
 
                 if is_caught then
                     should_decrement = true
-                elseif is_seen and (dexloc.Active or not dexcode.Active) then
-                    if (dexcountsanity and dexcountsanity.AvailableChestCount == 0) or has("encounter_tracking_loose") then
-                        should_decrement = true
-                    end
+                elseif is_seen and (dexloc.Active or not dexcode.Active) and has("encounter_tracking_loose") then
+                    should_decrement = true
                 end
 
                 if should_decrement then
@@ -427,6 +431,86 @@ function updatePokemon(pokemon)
             end
 		end
 	end
+end
+
+function resetEvolutionsanityData()
+    --for _, evo_string in pairs(EVO_LOC_MAPPING) do
+    --    local breed_loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string.. "/Breed ".. evo_string)
+    --    if breed_loc then
+    --        breed_loc.AvailableChestCount = 1
+    --    end
+    --end
+    
+    for from_id, evolutions in pairs(EVOLUTION_DATA) do
+        local evo_string = EVO_LOC_MAPPING[tonumber(from_id)]
+        if evo_string then
+            for _, evo in ipairs(evolutions) do
+                if EVOLUTION_METHOD_MAP[evo.method] then
+                    local method_result = EVOLUTION_METHOD_MAP[evo.method](evo.condition)
+                    if method_result then
+                        local loc = Tracker:FindObjectForCode("@Evolving/Evolve " .. evo_string .. "/" .. method_result)
+                        if loc then
+                            loc.AvailableChestCount = 1
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
+
+function updateEvolutionInfo(pokemon)
+    if not pokemon.caught then
+        return
+    end
+
+    for _, caught_id in pairs(pokemon.caught) do
+        for from_id, evolutions in pairs(EVOLUTION_DATA) do
+            for _, evo in ipairs(evolutions) do
+                if evo.into == caught_id then
+                    local evo_string = EVO_LOC_MAPPING[tonumber(from_id)]
+                    if evo_string and EVOLUTION_METHOD_MAP[evo.method] then
+                        local method_result = EVOLUTION_METHOD_MAP[evo.method](evo.condition)
+                        if method_result then
+                            local loc = Tracker:FindObjectForCode("@Evolving/Evolve " .. evo_string .. "/" .. method_result)
+                            if loc then
+                                loc.AvailableChestCount = 0
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
+function updateBreedingInfo(pokemon)
+    print("It is here")
+    if not pokemon.caught then
+        return
+    end
+    
+    for _, caught_id in pairs(pokemon.caught) do
+        for _, pair in pairs(BREEDING_DATA) do
+            local sep_index = string.find(pair, ":")
+            if sep_index then
+                local first_id = tonumber(string.sub(pair, 1, sep_index - 1))
+                print("First ID is "..first_id)
+                local second_id = tonumber(string.sub(pair, sep_index + 1))
+                print("Second ID is "..second_id)
+                if second_id == caught_id then
+                    local evo_string = EVO_LOC_MAPPING[first_id]
+                    if evo_string then
+                        local loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string .. "/Breed " .. evo_string)
+                        if loc then
+                            loc.AvailableChestCount = 0
+                        end
+                    end
+                end
+            end
+        end
+    end
 end
 
 function update_gymcount()
