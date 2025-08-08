@@ -29,7 +29,7 @@ FLAG_EVENT_CODES = {
     "EVENT_BEAT_BLAINE",
     "EVENT_BEAT_BLUE",
     "EVENT_FAST_SHIP_FOUND_GIRL",
-    "Snorlax",
+    "Static_Snorlax",
     "EVENT_MET_BILL"
 }
 
