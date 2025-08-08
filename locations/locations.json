@@ -5751,7 +5751,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "$mountmortar_front"
+                            "$mountmortar_front, ^$hid"
                         ]
                     },
                     {

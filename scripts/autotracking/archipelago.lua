@@ -486,7 +486,6 @@ function updateEvolutionInfo(pokemon)
 end
 
 function updateBreedingInfo(pokemon)
-    print("It is here")
     if not pokemon.caught then
         return
     end
@@ -496,9 +495,7 @@ function updateBreedingInfo(pokemon)
             local sep_index = string.find(pair, ":")
             if sep_index then
                 local first_id = tonumber(string.sub(pair, 1, sep_index - 1))
-                print("First ID is "..first_id)
                 local second_id = tonumber(string.sub(pair, sep_index + 1))
-                print("Second ID is "..second_id)
                 if second_id == caught_id then
                     local evo_string = EVO_LOC_MAPPING[first_id]
                     if evo_string then
