@@ -2536,7 +2536,7 @@
                             "show_items, shopsanity_gamecorners_true"
                         ],
                         "access_rules": [
-                            "^$gamecorner_shop"
+                            "COIN_CASE"
                         ]
                     },
                     {
@@ -10649,7 +10649,7 @@
                             "show_items, shopsanity_gamecorners_true"
                         ],
                         "access_rules": [
-                            "^$gamecorner_shop"
+                            "COIN_CASE"
                         ]
                     },
                     {

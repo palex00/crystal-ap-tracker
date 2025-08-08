@@ -303,19 +303,9 @@ function kurt_shop(color)
     end
 end
 
-function gamecorner_shop()
-    if has("COIN_CASE") then
-        return AccessibilityLevel.Normal
-    else
-        return AccessibilityLevel.Inspect
-    end
-end
-
 function bluecard_shop(amount)
     if has("BLUE_CARD") and has("BLUE_CARD_POINT", amount) then
         return AccessibilityLevel.Normal
-    elseif has("BLUE_CARD") then
-        return AccessibilityLevel.Inspect
     else
         return AccessibilityLevel.None
     end
