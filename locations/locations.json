@@ -2089,7 +2089,7 @@
                         "chest_unopened_img": "images/other/celebi.png",
                         "chest_opened_img": "images/other/celebi_bw.png",
                         "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Pre-Tree, GS_BALL, ^$static_encounter"
+                            "@JohtoKanto/Ilex Forest/Pre-Tree, GS_BALL, ^$static_encounter, EVENT_CLEARED_SLOWPOKE_WELL"
                         ],
                         "visibility_rules": [
                             "show_mons"
