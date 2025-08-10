@@ -40,6 +40,14 @@ function breeding()
     end
 end
 
+function evolve_old(req_level)
+    if has("randomize_evolution_true") then
+        return AccessibilityLevel.Inspect
+    else
+       return evolve(req_level)
+    end
+end
+
 function evolve(req_level)
     req_level = tonumber(req_level)
     req_level = req_level or 0
@@ -63,6 +71,14 @@ function evolve_friend()
     end
 end
 
+function evolve_friend_old()
+    if has("randomize_evolution_true") then
+        return AccessibilityLevel.Inspect
+    else
+       return evolve_friend()
+    end
+end
+
 function evolve_item()
     local goldenrod = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
     local celadon = Tracker:FindObjectForCode("@JohtoKanto/Celadon City").AccessibilityLevel
@@ -73,6 +89,14 @@ function evolve_item()
     end
 end
 
+function evolve_item_old()
+    if has("randomize_evolution_true") then
+        return AccessibilityLevel.Inspect
+    else
+       return evolve_item()
+    end
+end
+       
 function evolve_tyrogue()
     local digit1 = Tracker:FindObjectForCode("result_digit1").CurrentStage or 0
     local digit2 = Tracker:FindObjectForCode("result_digit2").CurrentStage or 0
@@ -84,6 +108,14 @@ function evolve_tyrogue()
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function evolve_tyrogue_old()
+    if has("randomize_evolution_true") then
+        return AccessibilityLevel.Inspect
+    else
+       return evolve_tyrogue()
     end
 end
 

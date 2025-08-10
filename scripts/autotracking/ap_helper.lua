@@ -374,6 +374,10 @@ SLOT_CODES = {
     shopsanity_kantomarts = {
         code = "shopsanity_kantomarts",
         mapping = MAP_TOGGLE
+    },
+    randomize_evolution = {
+        code = "randomize_evolution",
+        mapping = MAP_TRIPLE
     }
 }
 

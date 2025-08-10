@@ -2656,5 +2656,33 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Evolutionsanity",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolutionsanity: Off",
+                "img": "/images/settings/evolutionsanity.png",
+                "img_mods": "@disabled",
+                "codes": "randomize_evolution",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolutionsanity: BST + Types",
+                "img": "/images/settings/evolutionsanity.png",
+                "codes": "randomize_evolution, randomize_evolution_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolutionsanity: BST",
+                "img": "/images/settings/evolutionsanity.png",
+                "codes": "randomize_evolution, randomize_evolution_true",
+                "inherit_codes": false
+            }
+        ]
     }
 ]
