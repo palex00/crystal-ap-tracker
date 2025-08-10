@@ -438,12 +438,12 @@ function updatePokemon(pokemon)
 end
 
 function resetEvolutionsanityData()
-    --for _, evo_string in pairs(EVO_LOC_MAPPING) do
-    --    local breed_loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string.. "/Breed ".. evo_string)
-    --    if breed_loc then
-    --        breed_loc.AvailableChestCount = 1
-    --    end
-    --end
+    for _, evo_string in pairs(EVO_LOC_MAPPING) do
+        local breed_loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string.. "/Breed ".. evo_string)
+        if breed_loc then
+            breed_loc.AvailableChestCount = 1
+        end
+    end
     
     for from_id, evolutions in pairs(EVOLUTION_DATA) do
         local evo_string = EVO_LOC_MAPPING[tonumber(from_id)]
@@ -493,20 +493,15 @@ function updateBreedingInfo(pokemon)
     if not pokemon.caught then
         return
     end
-    
-    for _, caught_id in pairs(pokemon.caught) do
-        for _, pair in pairs(BREEDING_DATA) do
-            local sep_index = string.find(pair, ":")
-            if sep_index then
-                local first_id = tonumber(string.sub(pair, 1, sep_index - 1))
-                local second_id = tonumber(string.sub(pair, sep_index + 1))
-                if second_id == caught_id then
-                    local evo_string = EVO_LOC_MAPPING[first_id]
-                    if evo_string then
-                        local loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string .. "/Breed " .. evo_string)
-                        if loc then
-                            loc.AvailableChestCount = 0
-                        end
+
+    for first_id, second_id in pairs(BREEDING_DATA) do
+        for _, caught_id in pairs(pokemon.caught) do
+            if second_id == caught_id then
+                local evo_string = EVO_LOC_MAPPING[first_id]
+                if evo_string then
+                    local loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string .. "/Breed " .. evo_string)
+                    if loc then
+                        loc.AvailableChestCount = 0
                     end
                 end
             end

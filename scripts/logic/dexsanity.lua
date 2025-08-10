@@ -179,6 +179,11 @@ function evolve_new(ID)
     if not evolutions then
         return
     end
+    
+    local pokemon_ownership = POKEMON_MAPPING[tonumber(ID)]
+    if Tracker:FindObjectForCode(pokemon_ownership).Active == false then
+        return AccessibilityLevel.None
+    end
 
     for _, evo in ipairs(evolutions) do
         if evo.method == "EVOLVE_LEVEL" then
@@ -193,6 +198,10 @@ function evolve_new(ID)
     end
 end
 
-function breeding_new()
-    breeding()
+function breeding_new(ID)
+    local pokemon_ownership = POKEMON_MAPPING[tonumber(ID)]
+    if Tracker:FindObjectForCode(pokemon_ownership).Active == false then
+        return AccessibilityLevel.None
+    end
+    return breeding()
 end
