@@ -98,8 +98,36 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Azalea Town/Lure Ball from Kurt",
-                        "name": "Azalea Town - Lure Ball from Kurt"
+                        "name": "Lure Ball from Kurt",
+                        "ref": "JohtoKanto/Azalea Town/Lure Ball from Kurt"
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Red Apricorn",
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Red Apricorn"
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Grn Apricorn",
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Grn Apricorn"
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Blu Apricorn",
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Blu Apricorn"
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Ylw Apricorn",
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Ylw Apricorn"
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Blk Apricorn",
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Blk Apricorn"
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Wht Apricorn",
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Wht Apricorn"
+                    },
+                    {
+                        "name": "Kurt's Ball Shop - Pnk Apricorn",
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Pnk Apricorn"
                     }
                 ],
                 "map_locations": [
@@ -845,6 +873,21 @@
                         "map": "CianwoodCity",
                         "x": 88,
                         "y": 472
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cherrygrove City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CherrygroveCity",
+                        "x": 374,
+                        "y": 56
                     }
                 ]
             },
@@ -1780,6 +1823,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Olivine City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineCity",
+                        "x": 312,
+                        "y": 280
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Olivine City/Port - Hidden Item in Buoy"
                     }
                 ],
@@ -2495,6 +2553,34 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Goldenrod City/Game Corner Prize Shop - Shop Items",
+                        "name": "Game Corner Prize Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Abra",
+                        "name": "Game Corner Pokemon Shop - Abra"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Cubone",
+                        "name": "Game Corner Pokemon Shop - Cubone"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Wobbuffet",
+                        "name": "Game Corner Pokemon Shop - Wobbuffet"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodCity",
+                        "x": 232,
+                        "y": 344
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Post-E4 GS-Ball from Trade Corner Receptionist",
                         "name": "Post-E4 GS-Ball from Trade Corner Receptionist"
                     }
@@ -2515,12 +2601,36 @@
                         "name": "Goldenrod Dept. Store  1F - Buy Waterstone"
                     },
                     {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 2F - Top Salesman - Shop Items",
+                        "name": "Goldenrod Dept. Store 2F - Top Salesman - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 2F - Bottom Salesman - Shop Items",
+                        "name": "Goldenrod Dept. Store 2F - Bottom Salesman - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 3F - X Items Shop - Shop Items",
+                        "name": "Goldenrod Dept. Store 3F - X Items Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 4F - Vitamin Shop - Shop Items",
+                        "name": "Goldenrod Dept. Store 4F - Vitamin Shop - Shop Items"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM21 from Receptionist",
                         "name": "Goldenrod Dept. Store 5F - TM21 from Receptionist"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM27 from Receptionist",
                         "name": "Goldenrod Dept. Store 5F - TM27 from Receptionist"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM Shop - Shop Items",
+                        "name": "Goldenrod Dept. Store 5F - TM Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store - Rooftop Sale - Shop Items",
+                        "name": "Goldenrod Dept. Store - Rooftop Sale - Shop Items"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store B1F - Northwest Item",
@@ -2551,6 +2661,66 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 2F - Top Salesman - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStore2F",
+                        "x": 216,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 2F - Bottom Salesman - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStore2F",
+                        "x": 216,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 3F - X Items Shop - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStore3F",
+                        "x": 104,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 4F - Vitamin Shop - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStore4F",
+                        "x": 216,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 1F - Buy Waterstone",
                         "name": "Dept. Store 1F - Buy Waterstone"
                     }
@@ -2567,6 +2737,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM Shop - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStore5F",
+                        "x": 136,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 1F - Buy Waterstone",
                         "name": "Dept. Store 1F - Buy Waterstone"
                     }
@@ -2576,6 +2761,21 @@
                         "map": "CeladonCity",
                         "x": 72,
                         "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store - Rooftop Sale - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStoreRoof",
+                        "x": 24,
+                        "y": 88
                     }
                 ]
             },
@@ -2702,6 +2902,14 @@
                         "name": "Goldenrod UG - Item"
                     },
                     {
+                        "ref": "JohtoKanto/Goldenrod Underground/Herb Shop - Shop Items",
+                        "name": "Goldenrod UG - Herb Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/Bargain Shop - Shop Items",
+                        "name": "Goldenrod UG - Bargain Shop - Shop Items"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod Underground/Pokemaniac Issac",
                         "name": "Goldenrod UG - Pokemaniac Issac"
                     },
@@ -2783,6 +2991,11 @@
                         "map": "GoldenrodCity",
                         "x": 152,
                         "y": 88
+                    },
+                    {
+                        "map": "GoldenrodCity",
+                        "x": 184,
+                        "y": 472
                     }
                 ]
             },
@@ -2804,6 +3017,18 @@
                     {
                         "ref": "JohtoKanto/Radio Tower/2F - Blue Card from Buena",
                         "name": "Radio Tower 2F - Blue Card from Buena"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card Shop - 2 Points",
+                        "name": "Radio Tower 2F - Blue Card Shop - 2 Points"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card Shop - 3 Points",
+                        "name": "Radio Tower 2F - Blue Card Shop - 3 Points"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card Shop - 5 Points",
+                        "name": "Radio Tower 2F - Blue Card Shop - 5 Points"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/2F - Grunt 1",
@@ -3066,6 +3291,36 @@
                         "map": "GoldenrodUnderground",
                         "x": 40,
                         "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/Herb Shop - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodUnderground",
+                        "x": 120,
+                        "y": 344
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/Bargain Shop - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodUnderground",
+                        "x": 120,
+                        "y": 184
                     }
                 ]
             },
@@ -4177,6 +4432,14 @@
             {
                 "name": "",
                 "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket Shop - Shop Items",
+                        "name": "Rocket Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Poke Mart - Shop Items",
+                        "name": "Poke Mart - Shop Items"
+                    },
                     {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Grunt",
                         "name": "Rocket HQ B1F - Grunt"
@@ -5832,7 +6095,20 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "2F - Blue Card from Buena",
                         "ref": "JohtoKanto/Radio Tower/2F - Blue Card from Buena"
+                    },
+                    {
+                        "name": "2F - Blue Card Shop - 2 Points",
+                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card Shop - 2 Points"
+                    },
+                    {
+                        "name": "2F - Blue Card Shop - 3 Points",
+                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card Shop - 3 Points"
+                    },
+                    {
+                        "name": "2F - Blue Card Shop - 5 Points",
+                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card Shop - 5 Points"
                     }
                 ],
                 "map_locations": [
@@ -11082,6 +11358,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Violet City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "City",
+                        "x": 152,
+                        "y": 280
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Violet City/Egg Collected"
                     }
                 ],
@@ -12592,6 +12883,21 @@
                 ]
             },
             {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaTown",
+                        "x": 344,
+                        "y": 88
+                    }
+                ]
+            },
+            {
                 "sections": [
                     {
                         "name": "Bug Catcher Al",
@@ -12772,6 +13078,21 @@
                 ]
             },
             {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Pharmacy - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodCity",
+                        "x": 348,
+                        "y": 760
+                    }
+                ]
+            },
+            {
                 "sections": [
                     {
                         "name": "Blackbelt Nob",
@@ -12903,6 +13224,21 @@
                         "map": "MahoganyGym",
                         "x": 72,
                         "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornCity",
+                        "x": 248,
+                        "y": 472
                     }
                 ]
             },
