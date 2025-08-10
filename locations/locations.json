@@ -251,32 +251,58 @@
             },
             {
                 "name": "Route 30",
-                "access_rules": [
-                    "@JohtoKanto/Cherrygrove City"
-                ],
                 "sections": [
+                    {
+                        "name": "Pre-Mr-Pokemon",
+                        "visibility_rules": [
+                            "Invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Cherrygrove City",
+                            "@JohtoKanto/Route 31"
+                        ]
+                    },
+                    {
+                        "name": "Post-Mr-Pokemon",
+                        "visibility_rules": [
+                            "Invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Cherrygrove City, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+                            "@JohtoKanto/Route 31"
+                        ]
+                    },
                     {
                         "name": "Berry from House",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
                         ]
                     },
                     {
                         "name": "Berry Tree 1",
                         "visibility_rules": [
                             "show_items, berries_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
                         ]
                     },
                     {
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
                         ]
                     },
                     {
                         "name": "Hidden Item in Flowers",
                         "access_rules": [
-                            "^$hid"
+                            "^$hid, @JohtoKanto/Route 30/Pre-Mr-Pokemon"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -286,12 +312,28 @@
                         "name": "Berry Tree 2",
                         "visibility_rules": [
                             "show_items, berries_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
+                        ]
+                    },
+                    {
+                        "name": "Meet Mr. Pokemon",
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
+                        ],
+                        "hosted_item": "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+                        "visibility_rules": [
+                            "show_items"
                         ]
                     },
                     {
                         "name": "Mystery Egg from Mr Pokemon",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
                         ]
                     },
                     {
@@ -299,6 +341,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1488"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon"
                         ]
                     },
                     {
@@ -306,6 +351,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1489"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon"
                         ]
                     },
                     {
@@ -313,12 +361,15 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1375"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon"
                         ]
                     },
                     {
                         "name": "Exp Share from Mr Pokemon",
                         "access_rules": [
-                            "RED_SCALE"
+                            "RED_SCALE, @JohtoKanto/Route 30/Pre-Mr-Pokemon"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -334,7 +385,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "^$land_encounter, @JohtoKanto/Route 30/Pre-Mr-Pokemon"
                         ]
                     },
                     {
@@ -347,7 +398,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto"
+                            "^$surf_encounter_johto, @JohtoKanto/Route 30/Pre-Mr-Pokemon"
                         ]
                     }
                 ],
@@ -372,7 +423,7 @@
             {
                 "name": "Route 31",
                 "access_rules": [
-                    "@JohtoKanto/Cherrygrove City",
+                    "@JohtoKanto/Route 30/Post-Mr-Pokemon",
                     "@JohtoKanto/Violet City",
                     "@JohtoKanto/Dark Cave Violet Entrance"
                 ],

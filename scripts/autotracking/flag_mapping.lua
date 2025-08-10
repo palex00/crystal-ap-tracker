@@ -29,7 +29,7 @@ FLAG_EVENT_CODES = {
     "EVENT_BEAT_BLAINE",
     "EVENT_BEAT_BLUE",
     "EVENT_FAST_SHIP_FOUND_GIRL",
-    "Static_Snorlax",
+    "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
     "EVENT_MET_BILL"
 }
 
@@ -56,7 +56,8 @@ FLAG_STATIC_CODES = {
     "Static_GoldenrodGameCorner3",
     "Static_CeladonGameCornerPrizeRoom1",
     "Static_CeladonGameCornerPrizeRoom2",
-    "Static_CeladonGameCornerPrizeRoom3"
+    "Static_CeladonGameCornerPrizeRoom3",
+    "Static_Snorlax"
 }
 
 -- RocketHQTrap1_1 = Voltorb
