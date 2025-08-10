@@ -208,7 +208,7 @@ function onClear(slot_data)
         Archipelago:Get({POKE_ID})
     end
 
-
+    toggle_itemgrid()
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -223,7 +223,11 @@ function onItem(index, item_id, item_name, player_number)
     end
     local obj = Tracker:FindObjectForCode(v)
     if obj then
-        obj.Active = true
+        if v == "BLUE_CARD_POINT" then
+            obj.AcquiredCount = obj.AcquiredCount + 1
+        else
+            obj.Active = true
+        end
     else
         print(string.format("onItem: could not find object for code %s", v[1]))
     end

@@ -3,7 +3,11 @@ function resetItems()
         if v then
             local obj = Tracker:FindObjectForCode(v)
             if obj then
-                obj.Active = false
+                if v == "BLUE_CARD_POINT" then
+                    obj.AcquiredCount = 0
+                else
+                    obj.Active = false
+                end
             end
         end
     end
