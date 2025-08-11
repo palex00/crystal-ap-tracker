@@ -293,6 +293,16 @@ function fly_cheese()
     end
 end
 
+function fly_cheese_unlock()
+    if has("fly_cheese_optional") then
+        return AccessibilityLevel.SequenceBreak
+    elseif has("fly_cheese_required") then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
+    end
+end
+
 function kurt_shop(color)
     if has(color.."_APRICORN") then
         return AccessibilityLevel.Normal

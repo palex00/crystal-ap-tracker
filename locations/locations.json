@@ -3677,7 +3677,7 @@
                     "start_town_Ecruteak",
                     "@JohtoKanto/Route 36/Top",
                     "@JohtoKanto/Olivine City",
-                    "@JohtoKanto/Mahogany Town, $pass_mortar",
+                    "@JohtoKanto/Mahogany Town/Town, $pass_mortar",
                     "$can_freefly|Ecruteak"
                 ],
                 "sections": [
@@ -4737,7 +4737,7 @@
                 "name": "S.S. Aqua",
                 "access_rules": [
                     "@JohtoKanto/Olivine City, S_S_TICKET",
-                    "@JohtoKanto/Vermilion City, S_S_TICKET"
+                    "@JohtoKanto/Vermilion City/City, S_S_TICKET"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -5639,7 +5639,7 @@
                 "name": "Route 42",
                 "access_rules": [
                     "@JohtoKanto/Ecruteak City",
-                    "@JohtoKanto/Mahogany Town"
+                    "@JohtoKanto/Mahogany Town/Town"
                 ],
                 "sections": [
                     {
@@ -5703,7 +5703,7 @@
                             "show_items, trainersanity_1147"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mahogany Town"
+                            "@JohtoKanto/Mahogany Town/Town"
                         ]
                     },
                     {
@@ -5713,7 +5713,7 @@
                             "show_items, trainersanity_1294"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mahogany Town"
+                            "@JohtoKanto/Mahogany Town/Town"
                         ]
                     },
                     {
@@ -5723,7 +5723,7 @@
                             "show_items, trainersanity_1360"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mahogany Town"
+                            "@JohtoKanto/Mahogany Town/Town"
                         ]
                     },
                     {
@@ -5736,7 +5736,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Mahogany Town"
+                            "^$land_encounter, @JohtoKanto/Mahogany Town/Town"
                         ]
                     },
                     {
@@ -5775,7 +5775,7 @@
                 "name": "Mount Mortar",
                 "access_rules": [
                     "@JohtoKanto/Ecruteak City",
-                    "@JohtoKanto/Mahogany Town"
+                    "@JohtoKanto/Mahogany Town/Town"
                 ],
                 "sections": [
                     {
@@ -6158,18 +6158,26 @@
             {
                 "name": "Mahogany Town",
                 "access_rules": [
-                    "start_town_Mahogany",
-                    "@JohtoKanto/Ecruteak City, $pass_mortar",
-                    "@JohtoKanto/Blackthorn City, route_44_requirement",
-                    "@JohtoKanto/Blackthorn City, ^$fly_cheese",
-                    "@JohtoKanto/Lake of Rage",
-                    "$can_freefly|Mahogany"
                 ],
                 "sections": [
                     {
+                        "name": "Town",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "start_town_Mahogany",
+                            "@JohtoKanto/Ecruteak City, $pass_mortar",
+                            "@JohtoKanto/Blackthorn City, route_44_requirement",
+                            "@JohtoKanto/Blackthorn City, ^$fly_cheese",
+                            "@JohtoKanto/Lake of Rage",
+                            "$can_freefly|Mahogany"
+                        ]
+                    },
+                    {
                         "name": "Gym - Boarder Ronald",
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6179,7 +6187,7 @@
                     {
                         "name": "Gym - Skier Clarissa",
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6189,7 +6197,7 @@
                     {
                         "name": "Gym - Boarder Brad",
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6199,7 +6207,7 @@
                     {
                         "name": "Gym - Skier Roxanne",
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6209,7 +6217,7 @@
                     {
                         "name": "Gym - Boarder Douglas",
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6220,7 +6228,7 @@
                         "name": "Gym - Beat Pryce",
                         "hosted_item": "EVENT_BEAT_PRYCE",
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6229,7 +6237,7 @@
                     {
                         "name": "Gym - Glacier Badge from Pryce",
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
@@ -6238,7 +6246,7 @@
                     {
                         "name": "​Gym - Glacier Badge from Pryce",
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
                             "show_items, badges_off"
@@ -6248,7 +6256,7 @@
                     {
                         "name": "Gym - TM16 from Pryce",
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6257,7 +6265,7 @@
                     {
                         "name": "Rocket HQ B1F - Grunt",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6267,7 +6275,7 @@
                     {
                         "name": "Rocket HQ B1F - West Hidden Item",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE,^$hid"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -6276,7 +6284,7 @@
                     {
                         "name": "Rocket HQ B1F - East Item",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6285,7 +6293,7 @@
                     {
                         "name": "Rocket HQ B1F - Scientist Jed",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6295,7 +6303,7 @@
                     {
                         "name": "Rocket HQ B1F - Item besides Computer",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6304,7 +6312,7 @@
                     {
                         "name": "Rocket HQ B1F - South Item",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6315,7 +6323,7 @@
                         "chest_unopened_img": "images/other/trap_koffing.png",
                         "chest_opened_img": "images/other/trap_koffing_bw.png",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -6326,7 +6334,7 @@
                         "chest_unopened_img": "images/other/trap_voltorb.png",
                         "chest_opened_img": "images/other/trap_voltorb_bw.png",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -6337,7 +6345,7 @@
                         "chest_unopened_img": "images/other/trap_geodude.png",
                         "chest_opened_img": "images/other/trap_geodude_bw.png",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -6346,7 +6354,7 @@
                     {
                         "name": "Rocket HQ B2F - Grunt 3",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6356,7 +6364,7 @@
                     {
                         "name": "Rocket HQ B2F - Grunt 1",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6366,7 +6374,7 @@
                     {
                         "name": "Rocket HQ B2F - Hidden Item",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE,^$hid"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -6375,7 +6383,7 @@
                     {
                         "name": "Rocket HQ B2F - Grunt 2",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6385,7 +6393,7 @@
                     {
                         "name": "Rocket HQ B2F - Item",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6394,7 +6402,7 @@
                     {
                         "name": "Rocket HQ B2F - HM06 from Lance",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6405,7 +6413,7 @@
                         "chest_unopened_img": "images/other/electrode.png",
                         "chest_opened_img": "images/other/electrode_bw.png",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -6416,7 +6424,7 @@
                         "chest_unopened_img": "images/other/electrode.png",
                         "chest_opened_img": "images/other/electrode_bw.png",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -6427,7 +6435,7 @@
                         "chest_unopened_img": "images/other/electrode.png",
                         "chest_opened_img": "images/other/electrode_bw.png",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE, ^$static_encounter"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -6436,7 +6444,7 @@
                     {
                         "name": "Rocket HQ B3F - East Item",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6445,7 +6453,7 @@
                     {
                         "name": "Rocket HQ B3F - Scientist Ross",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6455,7 +6463,7 @@
                     {
                         "name": "Rocket HQ B3F - Grunt 1",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6465,7 +6473,7 @@
                     {
                         "name": "Rocket HQ B3F - North Item",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6474,7 +6482,7 @@
                     {
                         "name": "Rocket HQ B3F - Scientist Mitch",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6484,7 +6492,7 @@
                     {
                         "name": "Rocket HQ B3F - Grunt 2",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6494,7 +6502,7 @@
                     {
                         "name": "Rocket HQ B3F - West Item (Right)",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6503,7 +6511,7 @@
                     {
                         "name": "Rocket HQ B3F - West Item (Left)",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6512,7 +6520,7 @@
                     {
                         "name": "Rocket HQ B3F - Center Item",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -6521,7 +6529,7 @@
                     {
                         "name": "Clear Rocket HQ",
                         "access_rules": [
-                            "EVENT_DECIDED_TO_HELP_LANCE"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "hosted_item": "EVENT_CLEARED_ROCKET_HIDEOUT",
                         "visibility_rules": [
@@ -6530,6 +6538,9 @@
                     },
                     {
                         "name": "Rocket Shop - Shop Items",
+                        "access_rules": [
+                            "@JohtoKanto/Mahogany Town/Town"
+                        ],
                         "item_count": 4,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
@@ -6548,7 +6559,7 @@
                             "show_items, shopsanity_johtomarts_true"
                         ],
                         "access_rules": [
-                            "EVENT_CLEARED_RADIO_TOWER"
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_RADIO_TOWER"
                         ]
                     },
                     {
@@ -6557,6 +6568,10 @@
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
                         "visibility_rules": [
                             "show_items, randomize_fly_unlocks_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mahogany Town/Town",
+                            "@JohtoKanto/Blackthorn City, ^$fly_cheese_unlock"
                         ]
                     }
                 ],
@@ -6584,7 +6599,7 @@
             {
                 "name": "Route 43",
                 "access_rules": [
-                    "@JohtoKanto/Mahogany Town"
+                    "@JohtoKanto/Mahogany Town/Town"
                 ],
                 "sections": [
                     {
@@ -6702,7 +6717,7 @@
                 "name": "Lake of Rage",
                 "access_rules": [
                     "start_town_LakeOfRage",
-                    "@JohtoKanto/Mahogany Town",
+                    "@JohtoKanto/Mahogany Town/Town",
                     "$can_freefly|LakeOfRage"
                 ],
                 "sections": [
@@ -6879,7 +6894,7 @@
             {
                 "name": "Route 44",
                 "access_rules": [
-                    "@JohtoKanto/Mahogany Town, route_44_requirement",
+                    "@JohtoKanto/Mahogany Town/Town, route_44_requirement",
                     "@JohtoKanto/Blackthorn City"
                 ],
                 "sections": [
@@ -7016,7 +7031,7 @@
             {
                 "name": "Ice Path",
                 "access_rules": [
-                    "@JohtoKanto/Mahogany Town, route_44_requirement",
+                    "@JohtoKanto/Mahogany Town/Town, route_44_requirement",
                     "@JohtoKanto/Blackthorn City"
                 ],
                 "sections": [
@@ -7201,7 +7216,7 @@
                 "name": "Blackthorn City",
                 "access_rules": [
                     "start_town_Blackthorn",
-                    "@JohtoKanto/Mahogany Town, route_44_requirement, $can_strength",
+                    "@JohtoKanto/Mahogany Town/Town, route_44_requirement, $can_strength",
                     "@JohtoKanto/Route 45",
                     "$can_freefly|Blackthorn"
                 ],
@@ -8950,7 +8965,7 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City, $clear_snorlax",
+                            "@JohtoKanto/Vermilion City/City, $clear_snorlax",
                             "@JohtoKanto/Route 2/Main Section, route_2_open",
                             "@JohtoKanto/Route 2/Main Section, $can_cut_kanto"
                         ]
@@ -9464,7 +9479,7 @@
                     "@JohtoKanto/Saffron City, $tea|north",
                     "@JohtoKanto/Route 9, $can_cut_kanto",
                     "$can_freefly|Cerulean",
-                    "@JohtoKanto/Vermilion City, $passage|ns"
+                    "@JohtoKanto/Vermilion City/City, $passage|ns"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -10378,7 +10393,7 @@
                     "@JohtoKanto/Cerulean City, $tea|north",
                     "@JohtoKanto/Celadon City, $tea|west",
                     "@JohtoKanto/Lavender Town, $tea|east",
-                    "@JohtoKanto/Vermilion City, $tea|south"
+                    "@JohtoKanto/Vermilion City/City, $tea|south"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -10964,25 +10979,31 @@
             },
             {
                 "name": "Vermilion City",
-                "access_rules": [
-                    "start_town_Vermilion",
-                    "@JohtoKanto/Saffron City, $tea|south",
-                    "@JohtoKanto/Route 2/Diglett's Cave Section, $clear_snorlax",
-                    "@JohtoKanto/Route 2/Diglett's Cave Section, ^$fly_cheese",
-                    "@JohtoKanto/S.S. Aqua",
-                    "$can_freefly|Vermilion",
-                    "@JohtoKanto/Cerulean City, $passage|ns",
-                    "@JohtoKanto/Route 11, $clear_snorlax"
-                ],
                 "visibility_rules": [
                     "johto_only_off"
                 ],
                 "sections": [
                     {
+                        "name": "City",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "start_town_Vermilion",
+                            "@JohtoKanto/Saffron City, $tea|south",
+                            "@JohtoKanto/Route 2/Diglett's Cave Section, $clear_snorlax",
+                            "@JohtoKanto/Route 2/Diglett's Cave Section, ^$fly_cheese",
+                            "@JohtoKanto/S.S. Aqua",
+                            "$can_freefly|Vermilion",
+                            "@JohtoKanto/Cerulean City, $passage|ns",
+                            "@JohtoKanto/Route 11, $clear_snorlax"
+                        ]
+                    },
+                    {
                         "name": "Gym - Juggler Horton",
                         "access_rules": [
-                            "$can_cut_kanto",
-                            "$can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -10992,8 +11013,8 @@
                     {
                         "name": "Gym - Gentleman Gregory",
                         "access_rules": [
-                            "$can_cut_kanto",
-                            "$can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -11003,8 +11024,8 @@
                     {
                         "name": "Gym - Guitarist Vincent",
                         "access_rules": [
-                            "$can_cut_kanto",
-                            "$can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -11014,8 +11035,8 @@
                     {
                         "name": "Gym - Thunder Badge from Lt. Surge",
                         "access_rules": [
-                            "$can_cut_kanto",
-                            "$can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
@@ -11024,8 +11045,8 @@
                     {
                         "name": "Gym - Beat Lt. Surge",
                         "access_rules": [
-                            "$can_cut_kanto",
-                            "$can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
                         ],
                         "hosted_item": "EVENT_BEAT_LTSURGE",
                         "visibility_rules": [
@@ -11035,8 +11056,8 @@
                     {
                         "name": "​Gym - Thunder Badge from Lt. Surge",
                         "access_rules": [
-                            "$can_cut_kanto",
-                            "$can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
                         ],
                         "visibility_rules": [
                             "show_items, badges_off"
@@ -11046,7 +11067,7 @@
                     {
                         "name": "Lost Item from Guy in Fan Club",
                         "access_rules": [
-                            "EVENT_RESTORED_POWER_TO_KANTO"
+                            "@JohtoKanto/Vermilion City/City, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -11056,12 +11077,15 @@
                         "name": "Rare Candy from Fan Club President",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Vermilion City/City"
                         ]
                     },
                     {
                         "name": "HP Up from Man nowhere near PokeCenter",
                         "access_rules": [
-                            "$all_badges"
+                            "@JohtoKanto/Vermilion City/City, $all_badges"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -11070,7 +11094,7 @@
                     {
                         "name": "Hidden Item by Gym",
                         "access_rules": [
-                            "^$hid"
+                            "@JohtoKanto/Vermilion City/City, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -11084,6 +11108,9 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Vermilion City/City"
                         ]
                     },
                     {
@@ -11096,13 +11123,13 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_kanto"
+                            "@JohtoKanto/Vermilion City/City, ^$surf_encounter_kanto"
                         ]
                     },
                     {
                         "name": "Port - Hidden Item in Buoy",
                         "access_rules": [
-                            "S_S_TICKET,$can_surf_kanto,^$hid"
+                            "@JohtoKanto/Vermilion City/City, S_S_TICKET,$can_surf_kanto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -11118,7 +11145,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_kanto"
+                            "@JohtoKanto/Vermilion City/City, ^$surf_encounter_kanto"
                         ]
                     },
                     {
@@ -11126,7 +11153,7 @@
                         "chest_unopened_img": "images/other/snorlax.png",
                         "chest_opened_img": "images/other/snorlax_bw.png",
                         "access_rules": [
-                            "$clear_snorlax, ^$static_encounter"
+                            "@JohtoKanto/Vermilion City/City, $clear_snorlax, ^$static_encounter"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -11138,6 +11165,10 @@
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
                         "visibility_rules": [
                             "show_items, randomize_fly_unlocks_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Vermilion City/City",
+                            "@JohtoKanto/Diglett's Cave, ^$fly_cheese_unlock"
                         ]
                     }
                 ],
@@ -11165,7 +11196,7 @@
             {
                 "name": "Diglett's Cave",
                 "access_rules": [
-                    "@JohtoKanto/Vermilion City, $clear_snorlax",
+                    "@JohtoKanto/Vermilion City/City, $clear_snorlax",
                     "@JohtoKanto/Route 2/Diglett's Cave Section"
                 ],
                 "visibility_rules": [
@@ -11216,7 +11247,7 @@
             {
                 "name": "Route 6",
                 "access_rules": [
-                    "@JohtoKanto/Vermilion City"
+                    "@JohtoKanto/Vermilion City/City"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -11325,7 +11356,7 @@
             {
                 "name": "Route 11",
                 "access_rules": [
-                    "@JohtoKanto/Vermilion City, $clear_snorlax",
+                    "@JohtoKanto/Vermilion City/City, $clear_snorlax",
                     "@JohtoKanto/Lavender Town"
                 ],
                 "visibility_rules": [
