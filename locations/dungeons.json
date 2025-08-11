@@ -2723,7 +2723,7 @@
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 1F - Buy Waterstone",
                         "name": "Dept. Store 1F - Buy Waterstone"
-                    }
+                    },
                 ],
                 "map_locations": [
                     {
@@ -2752,8 +2752,60 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Celadon City/Game Corner Prize Shop - Shop Items",
+                        "name": "Game Corner Prize Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Game Corner Pokemon Shop - Pikachu",
+                        "name": "Game Corner Pokemon Shop - Pikachu"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Game Corner Pokemon Shop - Porygon",
+                        "name": "Game Corner Pokemon Shop - Porygon"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Game Corner Pokemon Shop - Larvitar",
+                        "name": "Game Corner Pokemon Shop - Larvitar"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonCity",
+                        "x": 376,
+                        "y": 312
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 1F - Buy Waterstone",
                         "name": "Dept. Store 1F - Buy Waterstone"
+                    }, 
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Left Salesman - Shop Items",
+                        "name": "Dept. Store 2F - Left Salesman - Shop Items"
+                    }, 
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Right Salesman - Shop Items",
+                        "name": "Dept. Store 2F - Right Salesman - Shop Items"
+                    }, 
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 3F - TM Shop - Shop Items",
+                        "name": "Dept. Store 3F - TM Shop - Shop Items"
+                    }, 
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 4F - Mail Shop - Shop Items",
+                        "name": "Dept. Store 4F - Mail Shop - Shop Items"
+                    }, 
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 5F - Vitamin Shop - Shop Items",
+                        "name": "Dept. Store 5F - Vitamin Shop - Shop Items"
+                    }, 
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 5F - X Items Shop - Shop Items",
+                        "name": "Dept. Store 5F - X Items Shop - Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -4358,6 +4410,21 @@
                         "map": "LakeOfRage",
                         "x": 344,
                         "y": 456
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lavender Town/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LavenderTown",
+                        "x": 24,
+                        "y": 88
                     }
                 ]
             },
@@ -8328,6 +8395,21 @@
                         "map": "Route3",
                         "x": 792,
                         "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Square - Gift Shop - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MountMoonSquare",
+                        "x": 216,
+                        "y": 120
                     }
                 ]
             },
@@ -12607,6 +12689,21 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Viridian City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ViridianCity",
+                        "x": 472,
+                        "y": 312
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "ref": "JohtoKanto/Viridian City/TM42 from Sleepy Guy"
                     }
                 ],
@@ -13318,6 +13415,21 @@
                 ]
             },
             {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Pewter City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "PewterCity",
+                        "x": 376,
+                        "y": 280
+                    }
+                ]
+            },
+            {
                 "sections": [
                     {
                         "name": "Camper Jerry",
@@ -13329,6 +13441,21 @@
                         "map": "PewterGym",
                         "x": 40,
                         "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanCity",
+                        "x": 408,
+                        "y": 472
                     }
                 ]
             },
@@ -13389,6 +13516,21 @@
                         "map": "CeruleanGym",
                         "x": 136,
                         "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionCity",
+                        "x": 344,
+                        "y": 216
                     }
                 ]
             },
@@ -13494,6 +13636,21 @@
                         "map": "CeladonGym",
                         "x": 80,
                         "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Saffron City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronCity",
+                        "x": 408,
+                        "y": 184
                     }
                 ]
             },
@@ -13902,6 +14059,21 @@
                         "map": "SaffronGym",
                         "x": 152,
                         "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaCity",
+                        "x": 88,
+                        "y": 216
                     }
                 ]
             },
