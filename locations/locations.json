@@ -37,7 +37,7 @@
                     {
                         "name": "Elm's Lab - Gift from Aide after returning Mystery Egg",
                         "access_rules": [
-                            "MYSTERY_EGG"
+                            "MYSTERY_EGG, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
                         ],
                         "visibility_rules": [
                             "show_items"
