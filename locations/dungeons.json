@@ -982,6 +982,10 @@
                     {
                         "ref": "JohtoKanto/Cianwood City/Pharmacy - Secretpotion",
                         "name": "Cianwood Pharmacy - Secretpotion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Pharmacy - Shop Items",
+                        "name": "Cianwood Pharmacy - Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -11445,7 +11449,7 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "City",
+                        "map": "VioletCity",
                         "x": 152,
                         "y": 280
                     }
@@ -13175,21 +13179,6 @@
                 ]
             },
             {
-                "name": "",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Cianwood City/Pharmacy - Shop Items"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "CianwoodCity",
-                        "x": 348,
-                        "y": 760
-                    }
-                ]
-            },
-            {
                 "sections": [
                     {
                         "name": "Blackbelt Nob",
@@ -13795,6 +13784,21 @@
                         "map": "GoldenrodGym",
                         "x": 136,
                         "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakCity",
+                        "x": 472,
+                        "y": 344
                     }
                 ]
             },
