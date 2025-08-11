@@ -213,7 +213,10 @@ function has_mapcard()
 end
 
 function can_freefly(destination)
-  return can_fly() and (has("free_fly_"..destination) or (has("map_card_fly_"..destination) and has_mapcard()))
+  return can_fly() and 
+  (has("free_fly_"..destination) or
+  (has("map_card_fly_"..destination) and has_mapcard()) or
+  (has("flyunlock_"..destination)))
 end
 
 function clear_snorlax()
@@ -261,4 +264,59 @@ end
 
 function badges_randomised()
   return has("badges_on") or has("badges_shuffle")
+end
+
+function pass_mortar()
+  local pass_rocksmash = has("mount_mortar_access_vanilla") or has("TM_ROCK_SMASH")
+  return pass_rocksmash or can_surf_johto()
+end
+
+function mountmortar_back()
+  local pass_rocksmash = has("mount_mortar_access_vanilla") or has("TM_ROCK_SMASH")
+  
+  return (pass_rocksmash and can_strength()) or can_waterfall()
+end
+
+function mountmortar_front()
+  local pass_rocksmash = has("mount_mortar_access_vanilla") or has("TM_ROCK_SMASH")
+  
+  return pass_rocksmash or (can_waterfall() and can_strength())
+end
+
+function fly_cheese()
+    if has("fly_cheese_optional") and can_fly() and has("randomize_fly_unlocks_false") then
+        return AccessibilityLevel.SequenceBreak
+    elseif has("fly_cheese_required") and can_fly() and has("randomize_fly_unlocks_false") then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
+    end
+end
+
+function fly_cheese_unlock()
+    if has("fly_cheese_optional") then
+        return AccessibilityLevel.SequenceBreak
+    elseif has("fly_cheese_required") then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
+    end
+end
+
+function kurt_shop(color)
+    if has(color.."_APRICORN") then
+        return AccessibilityLevel.Normal
+    elseif has("berries_off") then
+        return AccessibilityLevel.SequenceBreak
+    else
+        return AccessibilityLevel.Inspect
+    end
+end
+
+function bluecard_shop(amount)
+    if has("BLUE_CARD") and has("BLUE_CARD_POINT", amount) then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
+    end
 end

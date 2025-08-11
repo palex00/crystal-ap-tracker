@@ -1,404 +1,621 @@
 [
-  {
-    "name": "Zephyr Badge",
-    "type": "toggle",
-    "img": "/images/items/zephyrbadge.png",
-    "codes": "ZEPHYR_BADGE"
-  },
-  {
-    "name": "Hive Badge",
-    "type": "toggle",
-    "img": "/images/items/hivebadge.png",
-    "codes": "HIVE_BADGE"
-  },
-  {
-    "name": "Plain Badge",
-    "type": "toggle",
-    "img": "/images/items/plainbadge.png",
-    "codes": "PLAIN_BADGE"
-  },
-  {
-    "name": "Fog Badge",
-    "type": "toggle",
-    "img": "/images/items/fogbadge.png",
-    "codes": "FOG_BADGE"
-  },
-  {
-    "name": "Storm Badge",
-    "type": "toggle",
-    "img": "/images/items/stormbadge.png",
-    "codes": "STORM_BADGE"
-  },
-  {
-    "name": "Mineral Badge",
-    "type": "toggle",
-    "img": "/images/items/mineralbadge.png",
-    "codes": "MINERAL_BADGE"
-  },
-  {
-    "name": "Glacier Badge",
-    "type": "toggle",
-    "img": "/images/items/glacierbadge.png",
-    "codes": "GLACIER_BADGE"
-  },
-  {
-    "name": "Rising Badge",
-    "type": "toggle",
-    "img": "/images/items/risingbadge.png",
-    "codes": "RISING_BADGE"
-  },
-  {
-    "name": "Boulder Badge",
-    "type": "toggle",
-    "img": "/images/items/boulderbadge.png",
-    "codes": "BOULDER_BADGE"
-  },
-  {
-    "name": "Cascade Badge",
-    "type": "toggle",
-    "img": "/images/items/cascadebadge.png",
-    "codes": "CASCADE_BADGE"
-  },
-  {
-    "name": "Thunder Badge",
-    "type": "toggle",
-    "img": "/images/items/thunderbadge.png",
-    "codes": "THUNDER_BADGE"
-  },
-  {
-    "name": "Rainbow Badge",
-    "type": "toggle",
-    "img": "/images/items/rainbowbadge.png",
-    "codes": "RAINBOW_BADGE"
-  },
-  {
-    "name": "Soul Badge",
-    "type": "toggle",
-    "img": "/images/items/soulbadge.png",
-    "codes": "SOUL_BADGE"
-  },
-  {
-    "name": "Marsh Badge",
-    "type": "toggle",
-    "img": "/images/items/marshbadge.png",
-    "codes": "MARSH_BADGE"
-  },
-  {
-    "name": "Volcano Badge",
-    "type": "toggle",
-    "img": "/images/items/volcanobadge.png",
-    "codes": "VOLCANO_BADGE"
-  },
-  {
-    "name": "Earth Badge",
-    "type": "toggle",
-    "img": "/images/items/earthbadge.png",
-    "codes": "EARTH_BADGE"
-  },
-  {
-    "name": "HM01 - Cut",
-    "type": "progressive_toggle",
-    "img": "images/items/hm01",
-    "codes": "HM_CUT",
-    "stages": [
-      {
+    {
+        "name": "Zephyr Badge",
+        "type": "toggle",
+        "img": "/images/items/zephyrbadge.png",
+        "codes": "ZEPHYR_BADGE"
+    },
+    {
+        "name": "Hive Badge",
+        "type": "toggle",
+        "img": "/images/items/hivebadge.png",
+        "codes": "HIVE_BADGE"
+    },
+    {
+        "name": "Plain Badge",
+        "type": "toggle",
+        "img": "/images/items/plainbadge.png",
+        "codes": "PLAIN_BADGE"
+    },
+    {
+        "name": "Fog Badge",
+        "type": "toggle",
+        "img": "/images/items/fogbadge.png",
+        "codes": "FOG_BADGE"
+    },
+    {
+        "name": "Storm Badge",
+        "type": "toggle",
+        "img": "/images/items/stormbadge.png",
+        "codes": "STORM_BADGE"
+    },
+    {
+        "name": "Mineral Badge",
+        "type": "toggle",
+        "img": "/images/items/mineralbadge.png",
+        "codes": "MINERAL_BADGE"
+    },
+    {
+        "name": "Glacier Badge",
+        "type": "toggle",
+        "img": "/images/items/glacierbadge.png",
+        "codes": "GLACIER_BADGE"
+    },
+    {
+        "name": "Rising Badge",
+        "type": "toggle",
+        "img": "/images/items/risingbadge.png",
+        "codes": "RISING_BADGE"
+    },
+    {
+        "name": "Boulder Badge",
+        "type": "toggle",
+        "img": "/images/items/boulderbadge.png",
+        "codes": "BOULDER_BADGE"
+    },
+    {
+        "name": "Cascade Badge",
+        "type": "toggle",
+        "img": "/images/items/cascadebadge.png",
+        "codes": "CASCADE_BADGE"
+    },
+    {
+        "name": "Thunder Badge",
+        "type": "toggle",
+        "img": "/images/items/thunderbadge.png",
+        "codes": "THUNDER_BADGE"
+    },
+    {
+        "name": "Rainbow Badge",
+        "type": "toggle",
+        "img": "/images/items/rainbowbadge.png",
+        "codes": "RAINBOW_BADGE"
+    },
+    {
+        "name": "Soul Badge",
+        "type": "toggle",
+        "img": "/images/items/soulbadge.png",
+        "codes": "SOUL_BADGE"
+    },
+    {
+        "name": "Marsh Badge",
+        "type": "toggle",
+        "img": "/images/items/marshbadge.png",
+        "codes": "MARSH_BADGE"
+    },
+    {
+        "name": "Volcano Badge",
+        "type": "toggle",
+        "img": "/images/items/volcanobadge.png",
+        "codes": "VOLCANO_BADGE"
+    },
+    {
+        "name": "Earth Badge",
+        "type": "toggle",
+        "img": "/images/items/earthbadge.png",
+        "codes": "EARTH_BADGE"
+    },
+    {
         "name": "HM01 - Cut",
+        "type": "progressive_toggle",
+        "img": "images/items/hm01",
         "codes": "HM_CUT",
-        "img": "images/items/hm01.png"
-      },
-      {
-        "name": "HM01 - Cut - No Badge Requirement",
-        "codes": "HM_CUT, FREE_CUT",
-        "img": "images/items/hm01.png",
-        "img_mods": "overlay|images/items/free.png"
-      }
-    ]
-  },
-  {
-    "name": "HM02 - Cut",
-    "type": "progressive_toggle",
-    "img": "images/items/hm02",
-    "codes": "HM_FLY",
-    "stages": [
-      {
-        "name": "HM02 - Fly",
+        "stages": [
+            {
+                "name": "HM01 - Cut",
+                "codes": "HM_CUT",
+                "img": "images/items/hm01.png"
+            },
+            {
+                "name": "HM01 - Cut - No Badge Requirement",
+                "codes": "HM_CUT, FREE_CUT",
+                "img": "images/items/hm01.png",
+                "img_mods": "overlay|images/items/free.png"
+            }
+        ]
+    },
+    {
+        "name": "HM02 - Cut",
+        "type": "progressive_toggle",
+        "img": "images/items/hm02",
         "codes": "HM_FLY",
-        "img": "images/items/hm02.png"
-      },
-      {
-        "name": "HM02 - Fly - No Badge Requirement",
-        "codes": "HM_FLY, FREE_FLY",
-        "img": "images/items/hm02.png",
-        "img_mods": "overlay|images/items/free.png"
-      }
-    ]
-  },
-  {
-    "name": "HM03 - Surf",
-    "type": "progressive_toggle",
-    "img": "images/items/hm03",
-    "codes": "HM_SURF",
-    "stages": [
-      {
+        "stages": [
+            {
+                "name": "HM02 - Fly",
+                "codes": "HM_FLY",
+                "img": "images/items/hm02.png"
+            },
+            {
+                "name": "HM02 - Fly - No Badge Requirement",
+                "codes": "HM_FLY, FREE_FLY",
+                "img": "images/items/hm02.png",
+                "img_mods": "overlay|images/items/free.png"
+            }
+        ]
+    },
+    {
         "name": "HM03 - Surf",
+        "type": "progressive_toggle",
+        "img": "images/items/hm03",
         "codes": "HM_SURF",
-        "img": "images/items/hm03.png"
-      },
-      {
-        "name": "HM03 - Surf - No Badge Requirement",
-        "codes": "HM_SURF, FREE_SURF",
-        "img": "images/items/hm03.png",
-        "img_mods": "overlay|images/items/free.png"
-      }
-    ]
-  },
-  {
-    "name": "HM04 - Strength",
-    "type": "progressive_toggle",
-    "img": "images/items/hm04",
-    "codes": "HM_STRENGTH",
-    "stages": [
-      {
+        "stages": [
+            {
+                "name": "HM03 - Surf",
+                "codes": "HM_SURF",
+                "img": "images/items/hm03.png"
+            },
+            {
+                "name": "HM03 - Surf - No Badge Requirement",
+                "codes": "HM_SURF, FREE_SURF",
+                "img": "images/items/hm03.png",
+                "img_mods": "overlay|images/items/free.png"
+            }
+        ]
+    },
+    {
         "name": "HM04 - Strength",
+        "type": "progressive_toggle",
+        "img": "images/items/hm04",
         "codes": "HM_STRENGTH",
-        "img": "images/items/hm04.png"
-      },
-      {
-        "name": "HM04 - Strength - No Badge Requirement",
-        "codes": "HM_STRENGTH, FREE_STRENGTH",
-        "img": "images/items/hm04.png",
-        "img_mods": "overlay|images/items/free.png"
-      }
-    ]
-  },
-  {
-    "name": "HM05 - Flash",
-    "type": "progressive_toggle",
-    "img": "images/items/hm05",
-    "codes": "HM_FLASH",
-    "stages": [
-      {
+        "stages": [
+            {
+                "name": "HM04 - Strength",
+                "codes": "HM_STRENGTH",
+                "img": "images/items/hm04.png"
+            },
+            {
+                "name": "HM04 - Strength - No Badge Requirement",
+                "codes": "HM_STRENGTH, FREE_STRENGTH",
+                "img": "images/items/hm04.png",
+                "img_mods": "overlay|images/items/free.png"
+            }
+        ]
+    },
+    {
         "name": "HM05 - Flash",
+        "type": "progressive_toggle",
+        "img": "images/items/hm05",
         "codes": "HM_FLASH",
-        "img": "images/items/hm05.png"
-      },
-      {
-        "name": "HM05 - Flash - No Badge Requirement",
-        "codes": "HM_FLASH, FREE_FLASH",
-        "img": "images/items/hm05.png",
-        "img_mods": "overlay|images/items/free.png"
-      }
-    ]
-  },
-  {
-    "name": "HM06 - Whirlpool",
-    "type": "progressive_toggle",
-    "img": "images/items/hm06",
-    "codes": "HM_WHIRLPOOL",
-    "stages": [
-      {
+        "stages": [
+            {
+                "name": "HM05 - Flash",
+                "codes": "HM_FLASH",
+                "img": "images/items/hm05.png"
+            },
+            {
+                "name": "HM05 - Flash - No Badge Requirement",
+                "codes": "HM_FLASH, FREE_FLASH",
+                "img": "images/items/hm05.png",
+                "img_mods": "overlay|images/items/free.png"
+            }
+        ]
+    },
+    {
         "name": "HM06 - Whirlpool",
+        "type": "progressive_toggle",
+        "img": "images/items/hm06",
         "codes": "HM_WHIRLPOOL",
-        "img": "images/items/hm06.png"
-      },
-      {
-        "name": "HM06 - Whirlpool - No Badge Requirement",
-        "codes": "HM_WHIRLPOOL, FREE_WHIRLPOOL",
-        "img": "images/items/hm06.png",
-        "img_mods": "overlay|images/items/free.png"
-      }
-    ]
-  },
-  {
-    "name": "HM07 - Waterfall",
-    "type": "progressive_toggle",
-    "img": "images/items/hm07",
-    "codes": "HM_WATERFALL",
-    "stages": [
-      {
+        "stages": [
+            {
+                "name": "HM06 - Whirlpool",
+                "codes": "HM_WHIRLPOOL",
+                "img": "images/items/hm06.png"
+            },
+            {
+                "name": "HM06 - Whirlpool - No Badge Requirement",
+                "codes": "HM_WHIRLPOOL, FREE_WHIRLPOOL",
+                "img": "images/items/hm06.png",
+                "img_mods": "overlay|images/items/free.png"
+            }
+        ]
+    },
+    {
         "name": "HM07 - Waterfall",
+        "type": "progressive_toggle",
+        "img": "images/items/hm07",
         "codes": "HM_WATERFALL",
-        "img": "images/items/hm07.png"
-      },
-      {
-        "name": "HM07 - Waterfall - No Badge Requirement",
-        "codes": "HM_WATERFALL, FREE_WATERFALL",
-        "img": "images/items/hm07.png",
-        "img_mods": "overlay|images/items/free.png"
-      }
-    ]
-  },
-  {
-    "name": "TM08 - Rock Smash",
-    "type": "toggle",
-    "img": "/images/items/tm08.png",
-    "codes": "TM_ROCK_SMASH"
-  },
-  {
-    "name": "Bicycle",
-    "type": "toggle",
-    "img": "/images/items/bicycle.png",
-    "codes": "BICYCLE"
-  },
-  {
-    "name": "Itemfinder",
-    "type": "toggle",
-    "img": "/images/items/itemfinder.png",
-    "codes": "ITEMFINDER"
-  },
-  {
-    "name": "Red Scale",
-    "type": "toggle",
-    "img": "/images/items/redscale.png",
-    "codes": "RED_SCALE"
-  },
-  {
-    "name": "Secretpotion",
-    "type": "toggle",
-    "img": "/images/items/secretpotion.png",
-    "codes": "SECRETPOTION"
-  },
-  {
-    "name": "S.S. Ticket",
-    "type": "toggle",
-    "img": "/images/items/ssticket.png",
-    "codes": "S_S_TICKET"
-  },
-  {
-    "name": "Mystery Egg",
-    "type": "toggle",
-    "img": "/images/items/mysteryegg.png",
-    "codes": "MYSTERY_EGG"
-  },
-  {
-    "name": "Clear Bell",
-    "type": "toggle",
-    "img": "/images/items/clearbell.png",
-    "codes": "CLEAR_BELL"
-  },
-  {
-    "name": "Card Key",
-    "type": "toggle",
-    "img": "/images/items/cardkey.png",
-    "codes": "CARD_KEY"
-  },
-  {
-    "name": "Machine Part",
-    "type": "toggle",
-    "img": "/images/items/machinepart.png",
-    "codes": "MACHINE_PART"
-  },
-  {
-    "name": "Lost Item",
-    "type": "toggle",
-    "img": "/images/items/lostitem.png",
-    "codes": "LOST_ITEM"
-  },
-  {
-    "name": "Basement Key",
-    "type": "toggle",
-    "img": "/images/items/basementkey.png",
-    "codes": "BASEMENT_KEY"
-  },
-  {
-    "name": "Pass",
-    "type": "toggle",
-    "img": "/images/items/pass.png",
-    "codes": "PASS"
-  },
-  {
-    "name": "Squirtbottle",
-    "type": "toggle",
-    "img": "/images/items/squirtbottle.png",
-    "codes": "SQUIRTBOTTLE"
-  },
-  {
-    "name": "Pokegear",
-    "type": "toggle",
-    "img": "/images/items/pokegear.png",
-    "codes": "POKE_GEAR"
-  },
-  {
-    "name": "Radio Card",
-    "type": "toggle",
-    "img": "/images/items/radiocard.png",
-    "codes": "RADIO_CARD"
-  },
-  {
-    "name": "EXPN Card",
-    "type": "toggle",
-    "img": "/images/items/expncard.png",
-    "codes": "EXPN_CARD"
-  },
-  {
-    "name": "Map Card",
-    "type": "toggle",
-    "img": "/images/items/mapcard.png",
-    "codes": "MAP_CARD"
-  },
-  {
-    "name": "Water Stone",
-    "type": "toggle",
-    "img": "/images/items/waterstone.png",
-    "codes": "WATER_STONE"
-  },
-  {
-    "name": "Escape Rope",
-    "type": "toggle",
-    "img": "/images/items/escaperope.png",
-    "codes": "ESCAPE_ROPE"
-  },
-  {
-    "name": "Rainbow Wing",
-    "type": "toggle",
-    "img": "/images/items/rainbowwing.png",
-    "codes": "RAINBOW_WING"
-  },
-  {
-    "name": "Tea",
-    "type": "toggle",
-    "img": "/images/items/tea.png",
-    "codes": "TEA"
-  },
-  {
-    "name": "Old Rod",
-    "type": "toggle",
-    "img": "/images/items/oldrod.png",
-    "codes": "OLD_ROD"
-  },
-  {
-    "name": "Good Rod",
-    "type": "toggle",
-    "img": "/images/items/goodrod.png",
-    "codes": "GOOD_ROD"
-  },
-  {
-    "name": "Super Rod",
-    "type": "toggle",
-    "img": "/images/items/superrod.png",
-    "codes": "SUPER_ROD"
-  },
-  {
-    "name": "TM02 - Headbutt",
-    "type": "toggle",
-    "img": "/images/items/tm02.png",
-    "codes": "TM_HEAD_BUTT"
-  },
-  {
-    "name": "GS Ball",
-    "type": "toggle",
-    "img": "/images/items/gsball.png",
-    "codes": "GS_BALL"
-  },
-  {
-    "name": "Silver Wing",
-    "type": "toggle",
-    "img": "/images/items/silverwing.png",
-    "codes": "SILVER_WING"
-  },
-  {
-    "name": "dummy",
-    "type": "toggle",
-    "codes": "dummy"
-  }
+        "stages": [
+            {
+                "name": "HM07 - Waterfall",
+                "codes": "HM_WATERFALL",
+                "img": "images/items/hm07.png"
+            },
+            {
+                "name": "HM07 - Waterfall - No Badge Requirement",
+                "codes": "HM_WATERFALL, FREE_WATERFALL",
+                "img": "images/items/hm07.png",
+                "img_mods": "overlay|images/items/free.png"
+            }
+        ]
+    },
+    {
+        "name": "TM08 - Rock Smash",
+        "type": "toggle",
+        "img": "/images/items/tm08.png",
+        "codes": "TM_ROCK_SMASH"
+    },
+    {
+        "name": "Bicycle",
+        "type": "toggle",
+        "img": "/images/items/bicycle.png",
+        "codes": "BICYCLE"
+    },
+    {
+        "name": "Itemfinder",
+        "type": "toggle",
+        "img": "/images/items/itemfinder.png",
+        "codes": "ITEMFINDER"
+    },
+    {
+        "name": "Red Scale",
+        "type": "toggle",
+        "img": "/images/items/redscale.png",
+        "codes": "RED_SCALE"
+    },
+    {
+        "name": "Secretpotion",
+        "type": "toggle",
+        "img": "/images/items/secretpotion.png",
+        "codes": "SECRETPOTION"
+    },
+    {
+        "name": "S.S. Ticket",
+        "type": "toggle",
+        "img": "/images/items/ssticket.png",
+        "codes": "S_S_TICKET"
+    },
+    {
+        "name": "Mystery Egg",
+        "type": "toggle",
+        "img": "/images/items/mysteryegg.png",
+        "codes": "MYSTERY_EGG"
+    },
+    {
+        "name": "Clear Bell",
+        "type": "toggle",
+        "img": "/images/items/clearbell.png",
+        "codes": "CLEAR_BELL"
+    },
+    {
+        "name": "Card Key",
+        "type": "toggle",
+        "img": "/images/items/cardkey.png",
+        "codes": "CARD_KEY"
+    },
+    {
+        "name": "Machine Part",
+        "type": "toggle",
+        "img": "/images/items/machinepart.png",
+        "codes": "MACHINE_PART"
+    },
+    {
+        "name": "Lost Item",
+        "type": "toggle",
+        "img": "/images/items/lostitem.png",
+        "codes": "LOST_ITEM"
+    },
+    {
+        "name": "Basement Key",
+        "type": "toggle",
+        "img": "/images/items/basementkey.png",
+        "codes": "BASEMENT_KEY"
+    },
+    {
+        "name": "Pass",
+        "type": "toggle",
+        "img": "/images/items/pass.png",
+        "codes": "PASS"
+    },
+    {
+        "name": "Squirtbottle",
+        "type": "toggle",
+        "img": "/images/items/squirtbottle.png",
+        "codes": "SQUIRTBOTTLE"
+    },
+    {
+        "name": "Pokegear",
+        "type": "toggle",
+        "img": "/images/items/pokegear.png",
+        "codes": "POKE_GEAR"
+    },
+    {
+        "name": "Radio Card",
+        "type": "toggle",
+        "img": "/images/items/radiocard.png",
+        "codes": "RADIO_CARD"
+    },
+    {
+        "name": "EXPN Card",
+        "type": "toggle",
+        "img": "/images/items/expncard.png",
+        "codes": "EXPN_CARD"
+    },
+    {
+        "name": "Map Card",
+        "type": "toggle",
+        "img": "/images/items/mapcard.png",
+        "codes": "MAP_CARD"
+    },
+    {
+        "name": "Water Stone",
+        "type": "toggle",
+        "img": "/images/items/waterstone.png",
+        "codes": "WATER_STONE"
+    },
+    {
+        "name": "Escape Rope",
+        "type": "toggle",
+        "img": "/images/items/escaperope.png",
+        "codes": "ESCAPE_ROPE"
+    },
+    {
+        "name": "Rainbow Wing",
+        "type": "toggle",
+        "img": "/images/items/rainbowwing.png",
+        "codes": "RAINBOW_WING"
+    },
+    {
+        "name": "Tea",
+        "type": "toggle",
+        "img": "/images/items/tea.png",
+        "codes": "TEA"
+    },
+    {
+        "name": "Old Rod",
+        "type": "toggle",
+        "img": "/images/items/oldrod.png",
+        "codes": "OLD_ROD"
+    },
+    {
+        "name": "Good Rod",
+        "type": "toggle",
+        "img": "/images/items/goodrod.png",
+        "codes": "GOOD_ROD"
+    },
+    {
+        "name": "Super Rod",
+        "type": "toggle",
+        "img": "/images/items/superrod.png",
+        "codes": "SUPER_ROD"
+    },
+    {
+        "name": "TM02 - Headbutt",
+        "type": "toggle",
+        "img": "/images/items/tm02.png",
+        "codes": "TM_HEAD_BUTT"
+    },
+    {
+        "name": "GS Ball",
+        "type": "toggle",
+        "img": "/images/items/gsball.png",
+        "codes": "GS_BALL"
+    },
+    {
+        "name": "Silver Wing",
+        "type": "toggle",
+        "img": "/images/items/silverwing.png",
+        "codes": "SILVER_WING"
+    },
+    {
+        "name": "dummy",
+        "type": "toggle",
+        "codes": "dummy"
+    },
+    {
+        "name": "Fly Pallet Town",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_pallettown.png",
+        "codes": "flyunlock_Pallet"
+    },
+    {
+        "name": "Fly Viridian City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_viridiancity.png",
+        "codes": "flyunlock_Viridian"
+    },
+    {
+        "name": "Fly Pewter City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_pewtercity.png",
+        "codes": "flyunlock_Pewter"
+    },
+    {
+        "name": "Fly Cerulean City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_ceruleancity.png",
+        "codes": "flyunlock_Cerulean"
+    },
+    {
+        "name": "Fly Vermilion City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_vermilioncity.png",
+        "codes": "flyunlock_Vermilion"
+    },
+    {
+        "name": "Fly Fuchsia City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_fuchsiacity.png",
+        "codes": "flyunlock_Fuchsia"
+    },
+    {
+        "name": "Fly Lavender Town",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_lavendertown.png",
+        "codes": "flyunlock_Lavender"
+    },
+    {
+        "name": "Fly Celadon City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_celadoncity.png",
+        "codes": "flyunlock_Celadon"
+    },
+    {
+        "name": "Fly Saffron City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_saffroncity.png",
+        "codes": "flyunlock_Saffron"
+    },
+    {
+        "name": "Fly Cinnabar Island",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_cinnabarisland.png",
+        "codes": "flyunlock_Cinnabar"
+    },
+    {
+        "name": "Fly New Bark Town",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_newbarktown.png",
+        "codes": "flyunlock_NewBark"
+    },
+    {
+        "name": "Fly Cherrygrove City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_cherrygrovecity.png",
+        "codes": "flyunlock_Cherrygrove"
+    },
+    {
+        "name": "Fly Violet City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_violetcity.png",
+        "codes": "flyunlock_Violet"
+    },
+    {
+        "name": "Fly Azalea Town",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_azaleatown.png",
+        "codes": "flyunlock_Azalea"
+    },
+    {
+        "name": "Fly Cianwood City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_cianwoodcity.png",
+        "codes": "flyunlock_Cianwood"
+    },
+    {
+        "name": "Fly Goldenrod City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_goldenrodcity.png",
+        "codes": "flyunlock_Goldenrod"
+    },
+    {
+        "name": "Fly Olivine City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_olivinecity.png",
+        "codes": "flyunlock_Olivine"
+    },
+    {
+        "name": "Fly Ecruteak City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_ecruteakcity.png",
+        "codes": "flyunlock_Ecruteak"
+    },
+    {
+        "name": "Fly Mahogany Town",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_mahoganytown.png",
+        "codes": "flyunlock_Mahogany"
+    },
+    {
+        "name": "Fly Lake of Rage",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_lakeofrage.png",
+        "codes": "flyunlock_LakeOfRage"
+    },
+    {
+        "name": "Fly Blackthorn City",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_blackthorncity.png",
+        "codes": "flyunlock_Blackthorn"
+    },
+    {
+        "name": "Fly Silver Cave",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_silvercave.png",
+        "codes": "flyunlock_SilverCave"
+    },
+    {
+        "name": "Blue Card",
+        "type": "toggle",
+        "img": "/images/shopsanity/blue_card.png",
+        "codes": "BLUE_CARD"
+    },
+    {
+        "name": "Blue Card Point",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "initial_quantity": 0,
+        "img": "/images/shopsanity/blue_card.png",
+        "codes": "BLUE_CARD_POINT"
+    },
+    {
+        "name": "Coin Case",
+        "type": "toggle",
+        "img": "/images/shopsanity/coin_case.png",
+        "codes": "COIN_CASE"
+    },
+    {
+        "name": "Red Apricorn",
+        "type": "toggle",
+        "img": "/images/shopsanity/red_apricorn.png",
+        "codes": "RED_APRICORN"
+    },
+    {
+        "name": "Blu Apricorn",
+        "type": "toggle",
+        "img": "/images/shopsanity/blu_apricorn.png",
+        "codes": "BLU_APRICORN"
+    },
+    {
+        "name": "Ylw Apricorn",
+        "type": "toggle",
+        "img": "/images/shopsanity/ylw_apricorn.png",
+        "codes": "YLW_APRICORN"
+    },
+    {
+        "name": "Grn Apricorn",
+        "type": "toggle",
+        "img": "/images/shopsanity/grn_apricorn.png",
+        "codes": "GRN_APRICORN"
+    },
+    {
+        "name": "Wht Apricorn",
+        "type": "toggle",
+        "img": "/images/shopsanity/wht_apricorn.png",
+        "codes": "WHT_APRICORN"
+    },
+    {
+        "name": "Blk Apricorn",
+        "type": "toggle",
+        "img": "/images/shopsanity/blk_apricorn.png",
+        "codes": "BLK_APRICORN"
+    },
+    {
+        "name": "Pnk Apricorn",
+        "type": "toggle",
+        "img": "/images/shopsanity/pnk_apricorn.png",
+        "codes": "PNK_APRICORN"
+    }
 ]

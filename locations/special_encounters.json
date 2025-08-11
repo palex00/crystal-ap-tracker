@@ -12,6 +12,9 @@
                 "access_rules": [
                     "^$fishing_old"
                 ],
+                "visibility_rules": [
+                    "encmethod_fishing_visible"
+                ],
                 "sections": [
                     {
                         "name": "Shore",
@@ -40,7 +43,7 @@
                             "@JohtoKanto/Route 26",
                             "@JohtoKanto/Route 27/Post-Waterfall",
                             "@JohtoKanto/Route 41",
-                            "@JohtoKanto/Vermilion City"
+                            "@JohtoKanto/Vermilion City/City"
                         ]
                     },
                     {
@@ -72,7 +75,7 @@
                             "@JohtoKanto/Ilex Forest/Post-Tree",
                             "@JohtoKanto/Route 22",
                             "@JohtoKanto/Route 28",
-                            "@JohtoKanto/Route 30",
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
                             "@JohtoKanto/Route 31",
                             "@JohtoKanto/Route 35",
                             "@JohtoKanto/Route 43",
@@ -162,6 +165,9 @@
                 "access_rules": [
                     "^$fishing_good"
                 ],
+                "visibility_rules": [
+                    "encmethod_fishing_visible"
+                ],
                 "sections": [
                     {
                         "name": "Shore",
@@ -190,7 +196,7 @@
                             "@JohtoKanto/Route 26",
                             "@JohtoKanto/Route 27/Post-Waterfall",
                             "@JohtoKanto/Route 41",
-                            "@JohtoKanto/Vermilion City"
+                            "@JohtoKanto/Vermilion City/City"
                         ]
                     },
                     {
@@ -222,7 +228,7 @@
                             "@JohtoKanto/Ilex Forest/Post-Tree",
                             "@JohtoKanto/Route 22",
                             "@JohtoKanto/Route 28",
-                            "@JohtoKanto/Route 30",
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
                             "@JohtoKanto/Route 31",
                             "@JohtoKanto/Route 35",
                             "@JohtoKanto/Route 43",
@@ -312,6 +318,9 @@
                 "access_rules": [
                     "^$fishing_super"
                 ],
+                "visibility_rules": [
+                    "encmethod_fishing_visible"
+                ],
                 "sections": [
                     {
                         "name": "Shore",
@@ -340,7 +349,7 @@
                             "@JohtoKanto/Route 26",
                             "@JohtoKanto/Route 27/Post-Waterfall",
                             "@JohtoKanto/Route 41",
-                            "@JohtoKanto/Vermilion City"
+                            "@JohtoKanto/Vermilion City/City"
                         ]
                     },
                     {
@@ -372,7 +381,7 @@
                             "@JohtoKanto/Ilex Forest/Post-Tree",
                             "@JohtoKanto/Route 22",
                             "@JohtoKanto/Route 28",
-                            "@JohtoKanto/Route 30",
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
                             "@JohtoKanto/Route 31",
                             "@JohtoKanto/Route 35",
                             "@JohtoKanto/Route 43",
@@ -462,6 +471,9 @@
                 "access_rules": [
                     "^$headbutting"
                 ],
+                "visibility_rules": [
+                    "encmethod_headbutt_visible"
+                ],
                 "sections": [
                     {
                         "name": "Canyon - Common",
@@ -505,10 +517,11 @@
                         "item_count": 6,
                         "access_rules": [
                             "@JohtoKanto/Route 29",
-                            "@JohtoKanto/Route 30",
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
                             "@JohtoKanto/Route 31",
-                            "@JohtoKanto/Route 34",
-                            "@JohtoKanto/Route 35",
+                            // These are not in logic because there aren't enough trees
+                            //"@JohtoKanto/Route 34",
+                            //"@JohtoKanto/Route 35",
                             "@JohtoKanto/Route 36/Left",
                             "@JohtoKanto/Route 36/Right",
                             "@JohtoKanto/Route 36/Top",
@@ -523,10 +536,11 @@
                         "item_count": 6,
                         "access_rules": [
                             "@JohtoKanto/Route 29",
-                            "@JohtoKanto/Route 30",
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
                             "@JohtoKanto/Route 31",
-                            "@JohtoKanto/Route 34",
-                            "@JohtoKanto/Route 35",
+                            // These are not in logic because there aren't enough trees
+                            //"@JohtoKanto/Route 34",
+                            //"@JohtoKanto/Route 35",
                             "@JohtoKanto/Route 36/Left",
                             "@JohtoKanto/Route 36/Right",
                             "@JohtoKanto/Route 36/Top",
@@ -625,6 +639,9 @@
                 "chest_opened_img": "images/other/rocksmash_bw.png",
                 "access_rules": [
                     "^$rocksmash_encounter"
+                ],
+                "visibility_rules": [
+                    "encmethod_rocksmash_visible"
                 ],
                 "sections": [
                     {

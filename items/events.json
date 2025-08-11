@@ -196,6 +196,12 @@
         "codes": "EVENT_BEAT_RED"
     },
     {
+        "name": "Meet Mr. Pokemon",
+        "type": "toggle",
+        "img": "/images/events/mr_pokemon.png",
+        "codes": "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
+    },
+    {
         "name": "S.S. Aqua Cleared",
         "type": "toggle",
         "img": "",
@@ -205,7 +211,7 @@
         "name": "[Static] Fought Snorlax",
         "type": "toggle",
         "img": "/images/events/woke_up_snorlax.png",
-        "codes": "Snorlax_1"
+        "codes": "Static_Snorlax"
     },
     {
         "name": "[Static] Odd Egg Collected",      
@@ -215,22 +221,28 @@
     },
     
 {"name": "Met Bill", "type": "toggle", "img": "/images/events/met_bill.png", "codes": "EVENT_MET_BILL"},
-{"name": "[Static] Fought Sudowoodo",       "type": "toggle", "codes": "Sudowoodo_1"},
-{"name": "[Static] Fought Red Gyarados",    "type": "toggle", "codes": "RedGyarados_1"},
-{"name": "[Static] Fought Ho-Oh",           "type": "toggle", "codes": "Ho_Oh_1"},
-{"name": "[Static] Fought Lugia",           "type": "toggle", "codes": "Lugia_1"},
-{"name": "[Static] Fought Suicune",         "type": "toggle", "codes": "Suicune_1"},
-{"name": "[Static] Rocket HQ Electrode 1",  "type": "toggle", "codes": "RocketHQElectrode1_1"},
-{"name": "[Static] Rocket HQ Electrode 1",  "type": "toggle", "codes": "RocketHQElectrode2_1"},
-{"name": "[Static] Rocket HQ Electrode 1",  "type": "toggle", "codes": "RocketHQElectrode3_1"},
-{"name": "[Static] Got Shuckie from Mania", "type": "toggle", "codes": "Shuckie_1"},
-{"name": "[Static] Got Eevee from Bill",    "type": "toggle", "codes": "Eevee_1"},
-{"name": "[Static] Got Dratini from Elder", "type": "toggle", "codes": "Dratini_1"},
+{"name": "[Static] Fought Sudowoodo",       "type": "toggle", "codes": "Static_Sudowoodo"},
+{"name": "[Static] Fought Red Gyarados",    "type": "toggle", "codes": "Static_RedGyarados"},
+{"name": "[Static] Fought Ho-Oh",           "type": "toggle", "codes": "Static_Ho_Oh"},
+{"name": "[Static] Fought Lugia",           "type": "toggle", "codes": "Static_Lugia"},
+{"name": "[Static] Fought Suicune",         "type": "toggle", "codes": "Static_Suicune"},
+{"name": "[Static] Rocket HQ Electrode 1",  "type": "toggle", "codes": "Static_RocketHQElectrode1"},
+{"name": "[Static] Rocket HQ Electrode 1",  "type": "toggle", "codes": "Static_RocketHQElectrode2"},
+{"name": "[Static] Rocket HQ Electrode 1",  "type": "toggle", "codes": "Static_RocketHQElectrode3"},
+{"name": "[Static] Got Shuckie from Mania", "type": "toggle", "codes": "Static_Shuckie"},
+{"name": "[Static] Got Eevee from Bill",    "type": "toggle", "codes": "Static_Eevee"},
+{"name": "[Static] Got Dratini from Elder", "type": "toggle", "codes": "Static_Dratini"},
 //{"name": "[Static] Togepi-Egg Hatched",     "type": "toggle", "codes": "EVENT_TOGEPI_HATCHED"},
-{"name": "[Static] Got Tyrogue from Kiyo",  "type": "toggle", "codes": "Tyrogue_1"},
-{"name": "[Static] Rocket HQ Trap Voltorb", "type": "toggle", "codes": "RocketHQTrap1_1"},
-{"name": "[Static] Rocket HQ Trap Geodude", "type": "toggle", "codes": "RocketHQTrap2_1"},
-{"name": "[Static] Rocket HQ Trap Koffing", "type": "toggle", "codes": "RocketHQTrap3_1"},
-{"name": "[Static] Fought Lapras",          "type": "toggle", "codes": "UnionCaveLapras_1"},
-{"name": "[Static] Fought Celebi",          "type": "toggle", "codes": "Celebi_1"}
+{"name": "[Static] Got Tyrogue from Kiyo",  "type": "toggle", "codes": "Static_Tyrogue"},
+{"name": "[Static] Rocket HQ Trap Voltorb", "type": "toggle", "codes": "Static_RocketHQTrap1"},
+{"name": "[Static] Rocket HQ Trap Geodude", "type": "toggle", "codes": "Static_RocketHQTrap2"},
+{"name": "[Static] Rocket HQ Trap Koffing", "type": "toggle", "codes": "Static_RocketHQTrap3"},
+{"name": "[Static] Fought Lapras",          "type": "toggle", "codes": "Static_UnionCaveLapras"},
+{"name": "[Static] Fought Celebi",          "type": "toggle", "codes": "Static_Celebi"},
+{"name": "[Static] Goldenrod Game Corner 1","type": "toggle", "codes": "Static_GoldenrodGameCorner1"},
+{"name": "[Static] Goldenrod Game Corner 2","type": "toggle", "codes": "Static_GoldenrodGameCorner2"},
+{"name": "[Static] Goldenrod Game Corner 3","type": "toggle", "codes": "Static_GoldenrodGameCorner3"},
+{"name": "[Static] Celadon Game Corner 1",  "type": "toggle", "codes": "Static_CeladonGameCornerPrizeRoom1"},
+{"name": "[Static] Celadon Game Corner 2",  "type": "toggle", "codes": "Static_CeladonGameCornerPrizeRoom2"},
+{"name": "[Static] Celadon Game Corner 3",  "type": "toggle", "codes": "Static_CeladonGameCornerPrizeRoom3"}
 ]

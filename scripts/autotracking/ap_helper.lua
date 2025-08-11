@@ -3,7 +3,11 @@ function resetItems()
         if v then
             local obj = Tracker:FindObjectForCode(v)
             if obj then
-                obj.Active = false
+                if v == "BLUE_CARD_POINT" then
+                    obj.AcquiredCount = 0
+                else
+                    obj.Active = false
+                end
             end
         end
     end
@@ -14,7 +18,7 @@ function resetLocations()
         if v and (v:sub(1, 2) == "@J" or v:sub(1, 2) == "@Z") then -- this checks it's not a Dexsanity Location
             local obj = Tracker:FindObjectForCode(v)
             if obj ~= nil then
-                obj.AvailableChestCount = 1
+                obj.AvailableChestCount = obj.ChestCount
             end
         else
             local obj = Tracker:FindObjectForCode(v)
@@ -163,10 +167,6 @@ SLOT_CODES = {
         code = "pokegear",
         mapping = MAP_TOGGLE
     },
-    trainersanity = {
-        code = "trainersanity",
-        mapping = MAP_TOGGLE
-    },
     hm_badge_requirements = {
         code = "badgereqs",
         mapping = MAP_QUADRUPLE
@@ -305,23 +305,23 @@ SLOT_CODES = {
     },
     encmethod_land = {
         code = "encmethod_land",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     encmethod_water = {
         code = "encmethod_water",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     encmethod_fishing = {
         code = "encmethod_fishing",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     encmethod_headbutt = {
         code = "encmethod_headbutt",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     encmethod_rocksmash = {
         code = "encmethod_rocksmash",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     static_pokemon_required = {
         code = "encmethod_static",
@@ -338,6 +338,46 @@ SLOT_CODES = {
     hiddenitem_logic = {
         code = "hiddenitem_logic",
         mapping = MAP_SIXTUPLE
+    },
+    mount_mortar_access = {
+        code = "mount_mortar_access",
+        mapping = MAP_TOGGLE
+    },
+    fly_cheese = {
+        code = "fly_cheese",
+        mapping = MAP_TRIPLE
+    },
+    randomize_pokemon_requests = {
+        code = "randomize_pokemon_requests",
+        mapping = MAP_QUADRUPLE
+    },
+    randomize_fly_unlocks = {
+        code = "randomize_fly_unlocks",
+        mapping = MAP_TRIPLE
+    },
+    shopsanity_apricorn = {
+        code = "shopsanity_apricorn",
+        mapping = MAP_TOGGLE
+    },
+    shopsanity_bluecard = {
+        code = "shopsanity_bluecard",
+        mapping = MAP_TOGGLE
+    },
+    shopsanity_gamecorners = {
+        code = "shopsanity_gamecorners",
+        mapping = MAP_TOGGLE
+    },
+    shopsanity_johtomarts = {
+        code = "shopsanity_johtomarts",
+        mapping = MAP_TOGGLE
+    },
+    shopsanity_kantomarts = {
+        code = "shopsanity_kantomarts",
+        mapping = MAP_TOGGLE
+    },
+    randomize_evolution = {
+        code = "randomize_evolution",
+        mapping = MAP_TRIPLE
     }
 }
 

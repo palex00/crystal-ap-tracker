@@ -1,169 +1,208 @@
 {
-    "setting_grid": {
+    "settings_popup": {
+        "type": "dock",
+        "content": {
+            "type": "array",
+            "orientation": "vertical",
+            "h_alignment": "left",
+            "content": [
+                {
+                    "type": "group",
+                    "header": "Sanities & Shuffles",
+                    "content": {
+                        "type": "layout",
+                        "key": "sanity_grid"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Logic",
+                    "content": {
+                        "type": "layout",
+                        "key": "logic_grid"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Roadblocks",
+                    "content": {
+                        "type": "layout",
+                        "key": "roadblock_grid"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Kanto-related",
+                    "content": {
+                        "type": "layout",
+                        "key": "kanto_grid"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Shopsanity",
+                    "content": {
+                        "type": "layout",
+                        "key": "shopsanity_grid"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Start Town & Fly Locations",
+                    "content": {
+                        "type": "layout",
+                        "key": "flysetting_grid"
+                    }
+                }
+            ]
+        }
+    },
+    "sanity_grid": {
+        "type": "itemgrid",
+        "item_margin": "2, 2",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "goal",
+                "johto_only",
+                "dexsanity",
+                "berries",
+                "trainersanity",
+                "randomize_fly_unlocks",
+                "badges",
+                "pokegear"
+            ]
+        ]
+    },
+    "logic_grid": {
+        "type": "itemgrid",
+        "item_margin": "2, 2",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "hiddenitem_logic",
+                "fly_cheese",
+                "badgereqs",
+                "clair_behaviour",
+                "randomize_evolution"
+            ]
+        ]
+    },
+    "roadblock_grid": {
+        "type": "itemgrid",
+        "item_margin": "2, 2",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "blackthorn_dark_cave_access",
+                "r32_guy",
+                "ilextree",
+                "tower_requirement",
+                "national_park_access",
+                "mount_mortar_access"
+            ],
+            [
+                "red_gyarados_access",
+                "route_44_requirement",
+                "e4_requirement",
+                "mt_silver_requirement",
+                "red_requirement"
+            ]
+        ]
+    },
+    "kanto_grid": {
+        "type": "itemgrid",
+        "item_margin": "2, 2",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "kanto_access_condition",
+                "ew_underground",
+                "underground_power",
+                "tea_guard",
+                "randomize_pokemon_requests",
+                "route_2_access",
+                "route_3_access"
+            ]
+        ]
+    },
+    "shopsanity_grid": {
+        "type": "itemgrid",
+        "item_margin": "2, 2",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "shopsanity_apricorn",
+                "shopsanity_bluecard",
+                "shopsanity_gamecorners",
+                "shopsanity_johtomarts",
+                "shopsanity_kantomarts"
+            ]
+        ]
+    },
+    "flysetting_grid": {
         "type": "array",
         "orientation": "vertical",
-        "margin": "0,0",
         "content": [
             {
                 "type": "array",
-                "orientation": "vertical",
+                "orientation": "horizontal",
+                "margin": "2,6",
                 "content": [
                     {
-                        "type": "itemgrid",
-                        "item_margin": "2, -8",
-                        "item_size": "32,44",
-                        "item_h_alignment": "center",
-                        "item_v_alignment": "center",
-                        "h_alignment": "left",
-                        "rows": [
-                            [
-                                "route_44_requirement",
-                                "tower_requirement",
-                                "e4_requirement",
-                                "kanto_access_condition",
-                                "mt_silver_requirement",
-                                "red_requirement",
-                                "hiddenitem_logic",
-                                "berries",
-                                "trainersanity"
-                            ]
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "array",
-                "orientation": "vertical",
-                "content": [
+                        "type": "item",
+                        "item": "start_town_dummy",
+                        "item_size": "16, 16"
+                    },
                     {
-                        "type": "itemgrid",
-                        "item_margin": "2, 2",
-                        "item_h_alignment": "center",
-                        "h_alignment": "left",
-                        "rows": [
-                            [
-                                "johto_only",
-                                "goal",
-                                "badges",
-                                "pokegear",
-                                "badgereqs",
-                                "dexsanity",
-                                "blackthorn_dark_cave_access",
-                                "r32_guy",
-                                "ilextree"
-                            ],
-                            [
-                                "national_park_access",
-                                "red_gyarados_access",
-                                "clair_behaviour",
-                                "ew_underground",
-                                "underground_power",
-                                "tea_guard",
-                                "route_2_access",
-                                "route_3_access"
-                            ]
-                        ]
+                        "type": "item",
+                        "item": "start_town_location",
+                        "item_size": "256, 16"
                     }
                 ]
             },
             {
                 "type": "array",
                 "orientation": "horizontal",
-                "margin": "8,6",
+                "margin": "2,6",
                 "content": [
                     {
-                        "type": "array",
-                        "orientation": "vertical",
-                        "content": [
-                            {
-                                "type": "array",
-                                "orientation": "horizontal",
-                                "margin": "2,6",
-                                "content": [
-                                    {
-                                        "type": "item",
-                                        "item": "start_town_dummy",
-                                        "item_size": "16, 16"
-                                    },
-                                    {
-                                        "type": "item",
-                                        "item": "start_town_location",
-                                        "item_size": "256, 16"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "array",
-                                "orientation": "horizontal",
-                                "margin": "2,6",
-                                "content": [
-                                    {
-                                        "type": "item",
-                                        "item": "free_fly_dummy",
-                                        "item_size": "16, 16"
-                                    },
-                                    {
-                                        "type": "item",
-                                        "item": "free_fly_location",
-                                        "item_size": "256, 16"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "array",
-                                "orientation": "horizontal",
-                                "margin": "2,6",
-                                "content": [
-                                    {
-                                        "type": "item",
-                                        "item": "map_card_fly_dummy",
-                                        "item_size": "16, 16"
-                                    },
-                                    {
-                                        "type": "item",
-                                        "item": "map_card_fly",
-                                        "item_size": "256, 16"
-                                    }
-                                ]
-                            }
-                        ]
+                        "type": "item",
+                        "item": "free_fly_dummy",
+                        "item_size": "16, 16"
                     },
                     {
-                        "type": "array",
-                        "orientation": "vertical",
-                        "margin": "2,2",
-                        "content": [
-                            {
-                                "type": "item",
-                                "item": "location_visibility",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
-                            },
-                            {
-                                "type": "item",
-                                "item": "automap",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
-                            }
-                        ]
+                        "type": "item",
+                        "item": "free_fly_location",
+                        "item_size": "256, 16"
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "2,6",
+                "content": [
+                    {
+                        "type": "item",
+                        "item": "map_card_fly_dummy",
+                        "item_size": "16, 16"
                     },
                     {
-                        "type": "array",
-                        "orientation": "vertical",
-                        "content": [
-                            {
-                                "type": "item",
-                                "item": "splitmap",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
-                            },
-                            {
-                                "type": "item",
-                                "item": "encounter_tracking",
-                                "margin": "2,2",
-                                "item_size": "32, 32"
-                            }
-                        ]
+                        "type": "item",
+                        "item": "map_card_fly",
+                        "item_size": "256, 16"
                     }
                 ]
             }

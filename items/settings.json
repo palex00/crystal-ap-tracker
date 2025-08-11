@@ -202,28 +202,6 @@
         ]
     },
     {
-        "name": "Trainersanity",
-        "type": "progressive",
-        "initial_stage_idx": 1,
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-            {
-                "name": "Trainersanity - Off",
-                "img": "/images/settings/trainersanity.png",
-                "img_mods": "@disabled",
-                "codes": "trainersanity,trainersanity_off",
-                "inherit_codes": false
-            },
-            {
-                "name": "Trainersanity - On",
-                "img": "/images/settings/trainersanity.png",
-                "codes": "trainersanity,trainersanity_on",
-                "inherit_codes": false
-            }
-        ]
-    },
-    {
         "name": "Free Fly Location",
         "type": "progressive",
         "loop": true,
@@ -1248,7 +1226,7 @@
             },
             {
                 "name": "Encounter Tracking - Loose",
-                "img": "/images/settings/encounter_tracking.png",
+                "img": "/images/settings/encounter_tracking_loose.png",
                 "codes": "encounter_tracking, encounter_tracking_loose",
                 "inherit_codes": false
             }
@@ -1391,13 +1369,19 @@
             {
                 "name": "Encounter Method: Fishing Encounters NOT in logic",
                 "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "encmethod_fishing, encmethod_fishing_off",
+                "codes": "encmethod_fishing, encmethod_fishing_off, encmethod_fishing_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Fishing Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_fishing, encmethod_fishing_forbidden",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Fishing Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_fishing, encmethod_fishing_on",
+                "codes": "encmethod_fishing, encmethod_fishing_on, encmethod_fishing_visible",
                 "inherit_codes": false
             }
         ]
@@ -1416,13 +1400,19 @@
             {
                 "name": "Encounter Method: Headbutt Encounters NOT in logic",
                 "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "encmethod_headbutt, encmethod_headbutt_off",
+                "codes": "encmethod_headbutt, encmethod_headbutt_off, encmethod_headbutt_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Headbutt Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_headbutt, encmethod_headbutt_forbidden",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Headbutt Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_headbutt, encmethod_headbutt_on",
+                "codes": "encmethod_headbutt, encmethod_headbutt_on, encmethod_headbutt_visible",
                 "inherit_codes": false
             }
         ]
@@ -1441,13 +1431,19 @@
             {
                 "name": "Encounter Method: Land Encounters NOT in logic",
                 "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "encmethod_land, encmethod_land_off",
+                "codes": "encmethod_land, encmethod_land_off, encmethod_land_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Land Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_land, encmethod_land_forbidden",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Land Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_land, encmethod_land_on",
+                "codes": "encmethod_land, encmethod_land_on, encmethod_land_visible",
                 "inherit_codes": false
             }
         ]
@@ -1466,13 +1462,19 @@
             {
                 "name": "Encounter Method: Rock Smash Encounters NOT in logic",
                 "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "encmethod_rocksmash, encmethod_rocksmash_off",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_off, encmethod_rocksmash_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Rock Smash Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_forbidden",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Rock Smash Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_rocksmash, encmethod_rocksmash_on",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_on, encmethod_rocksmash_visible",
                 "inherit_codes": false
             }
         ]
@@ -1491,13 +1493,19 @@
             {
                 "name": "Encounter Method: Surfing Encounters NOT in logic",
                 "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "encmethod_water, encmethod_water_off",
+                "codes": "encmethod_water, encmethod_water_off, encmethod_water_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Surfing Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_water, encmethod_water_forbidden",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Surfing Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_water, encmethod_water_on",
+                "codes": "encmethod_water, encmethod_water_on, encmethod_water_visible",
                 "inherit_codes": false
             }
         ]
@@ -2430,5 +2438,251 @@
         "img": "/images/settings/dex_related/remainingchecks.png",
         "codes": "remainingchecks",
         "type": "static"
+    },
+    {
+        "name": "Mount Mortar Rock Smash Rock",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Mount Mortar is vanilla",
+                "img": "/images/other/rocksmash.png",
+                "img_mods": "@disabled",
+                "codes": "mount_mortar_access, mount_mortar_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Mount Mortar has Rock Smash Rocks",
+                "img": "/images/other/rocksmash.png",
+                "codes": "mount_mortar_access, mount_mortar_access_rocksmash",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Fly Cheese",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Fly Cheese is out of logic",
+                "img": "/images/settings/fly_cheese_optional.png",
+                "codes": "fly_cheese, fly_cheese_optional",
+                "inherit_codes": false
+            },
+            {
+                "name": "Fly Cheese is impossible",
+                "img": "/images/settings/fly_cheese_forbidden.png",
+                "codes": "fly_cheese, fly_cheese_forbidden",
+                "inherit_codes": false
+            },
+            {
+                "name": "Fly Cheese is in logic",
+                "img": "/images/settings/fly_cheese_required.png",
+                "codes": "fly_cheese, fly_cheese_required",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Bill's Grandpa",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 4,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Bill's Grandpa - Vanilla Requests, Vanilla Rewards",
+                "img": "/images/settings/bills_grandpa_neither.png",
+                "codes": "randomize_pokemon_requests",
+                "inherit_codes": false
+            },
+            {
+                "name": "Bill's Grandpa - Vanilla Requests, Randomized Rewards",
+                "img": "/images/settings/bills_grandpa_rewards.png",
+                "codes": "randomize_pokemon_requests, randomize_pokemon_requests_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Bill's Grandpa - Randomized Requests, Vanilla Rewards",
+                "img": "/images/settings/bills_grandpa_requests.png",
+                "codes": "randomize_pokemon_requests",
+                "inherit_codes": false
+            },
+            {
+                "name": "Bill's Grandpa - Randomized Requests, Randomized Rewards",
+                "img": "/images/settings/bills_grandpa_both.png",
+                "codes": "randomize_pokemon_requests, randomize_pokemon_requests_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Fly Unlock",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Fly Unlocks are not randomized",
+                "img": "/images/items/flyunlocks/flyunlock.png",
+                "img_mods": "@disabled",
+                "codes": "randomize_fly_unlocks, randomize_fly_unlocks_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Fly Unlocks are randomized",
+                "img": "/images/items/flyunlocks/flyunlock.png",
+                "codes": "randomize_fly_unlocks, randomize_fly_unlocks_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Fly Unlocks are randomized except for Silver Cave",
+                "img": "/images/items/flyunlocks/flyunlock.png",
+                "codes": "randomize_fly_unlocks, randomize_fly_unlocks_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shopsanity: Apricorn",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Shopsanity: Apricorn is not enabled",
+                "img": "/images/shopsanity/kurt_blu.png",
+                "img_mods": "@disabled",
+                "codes": "shopsanity_apricorn, shopsanity_apricorn_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity: Apricorn is enabled",
+                "img": "/images/shopsanity/kurt_blu.png",
+                "codes": "shopsanity_apricorn, shopsanity_apricorn_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shopsanity: Blue Card",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Shopsanity: Blue Card is not enabled",
+                "img": "/images/shopsanity/buena.png",
+                "img_mods": "@disabled",
+                "codes": "shopsanity_bluecard, shopsanity_bluecard_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity: Blue Card is enabled",
+                "img": "/images/shopsanity/buena.png",
+                "codes": "shopsanity_bluecard, shopsanity_bluecard_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shopsanity: Game Corners",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Shopsanity: Game Corners is not enabled",
+                "img": "/images/shopsanity/coin_case.png",
+                "img_mods": "@disabled",
+                "codes": "shopsanity_gamecorners, shopsanity_gamecorners_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity: Game Corners is enabled",
+                "img": "/images/shopsanity/coin_case.png",
+                "codes": "shopsanity_gamecorners, shopsanity_gamecorners_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shopsanity: Johto Marts",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Shopsanity: Johto Marts is not enabled",
+                "img": "/images/shopsanity/pokemarts_johto.png",
+                "img_mods": "@disabled",
+                "codes": "shopsanity_johtomarts, shopsanity_johtomarts_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity: Johto Marts is enabled",
+                "img": "/images/shopsanity/pokemarts_johto.png",
+                "codes": "shopsanity_johtomarts, shopsanity_johtomarts_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shopsanity: Kanto Marts",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Shopsanity: Kanto Marts is not enabled",
+                "img": "/images/shopsanity/pokemarts_kanto.png",
+                "img_mods": "@disabled",
+                "codes": "shopsanity_kantomarts, shopsanity_kantomarts_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity: Kanto Marts is enabled",
+                "img": "/images/shopsanity/pokemarts_kanto.png",
+                "codes": "shopsanity_kantomarts, shopsanity_kantomarts_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Evolutionsanity",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolutionsanity: Off",
+                "img": "/images/settings/evolutionsanity.png",
+                "img_mods": "@disabled",
+                "codes": "randomize_evolution",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolutionsanity: BST + Types",
+                "img": "/images/settings/evolutionsanity.png",
+                "codes": "randomize_evolution, randomize_evolution_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolutionsanity: BST",
+                "img": "/images/settings/evolutionsanity.png",
+                "codes": "randomize_evolution, randomize_evolution_true",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

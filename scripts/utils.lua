@@ -34,15 +34,26 @@ function dump_table(o, depth)
     if depth == nil then
         depth = 0
     end
+
+    local ignore_keys = {
+        region_encounters = true,
+        trainersanity = true,
+        dexcountsanity_counts = true,
+        dexsanity_pokemon = true,
+    }
+
     if type(o) == 'table' then
         local tabs = ('\t'):rep(depth)
         local tabs2 = ('\t'):rep(depth + 1)
         local s = '{\n'
         for k, v in pairs(o) do
-            if type(k) ~= 'number' then
-                k = '"' .. k .. '"'
+            local key_str = tostring(k)
+            if not ignore_keys[key_str] then
+                if type(k) ~= 'number' then
+                    k = '"' .. k .. '"'
+                end
+                s = s .. tabs2 .. '[' .. k .. '] = ' .. dump_table(v, depth + 1) .. ',\n'
             end
-            s = s .. tabs2 .. '[' .. k .. '] = ' .. dump_table(v, depth + 1) .. ',\n'
         end
         return s .. tabs .. '}'
     else
@@ -57,6 +68,7 @@ function toggle_johto()
         Tracker:AddLayouts("layouts/overworld.json")
         Tracker:AddLayouts("layouts/settings.json")
         Tracker:AddLayouts("layouts/events.json")
+        Tracker:AddLayouts("layouts/flyunlocks.json")
         if coffee then
             Tracker:AddLayouts("layouts/items.json")
         else
@@ -74,9 +86,11 @@ function toggle_johto()
 
         if has("johto_only_on") then
             Tracker:AddMaps("maps/maps_johto_no_silver.json")
+            Tracker:AddLayouts("layouts/johto_only/flyunlocks_no_silver.json")
             Tracker:AddLayouts("layouts/johto_only/settings_johto_no_silver.json")
         elseif has("johto_only_silver") then
             Tracker:AddMaps("maps/maps_johto_only.json")
+            Tracker:AddLayouts("layouts/johto_only/flyunlocks.json")
             Tracker:AddLayouts("layouts/johto_only/settings_johto_with_silver.json")
         end
     end
@@ -99,7 +113,6 @@ end
 function toggle_mischief()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1
     if sudowoodo then
-        print("Applying Mischief...")
         Tracker:AddMaps("maps/mischief/maps.json")
         Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.json")
     else
@@ -151,6 +164,19 @@ function toggle_darkcave()
     end
 end
 
+function toggle_mountmortar()
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("mount_mortar_access_vanilla") and not sudowoodo then
+        Tracker:AddMaps("maps/mount_mortar_vanilla.json")
+    elseif has("mount_mortar_access_rocksmash") and not sudowoodo then
+        Tracker:AddMaps("maps/mount_mortar_rocksmash.json")
+    elseif has("mount_mortar_access_vanilla") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/mount_mortar_vanilla.json")
+    elseif has("mount_mortar_access_rocksmash") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/mount_mortar_rocksmash.json")
+    end
+end
+
 function toggle_splitmap()
     if has("splitmap_off") and has("johto_only_off") then
         Tracker:AddLayouts("layouts/tabs_single.json")
@@ -164,6 +190,36 @@ function toggle_splitmap()
         Tracker:AddLayouts("layouts/johto_only/tabs_split.json")
     elseif has("splitmap_reverse") then
         Tracker:AddLayouts("layouts/johto_only/tabs_reverse.json")
+    end
+end
+
+function toggle_itemgrid()
+    local fly_unlock = has("randomize_fly_unlocks_true")
+    local shops = has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true")
+    if not fly_unlock and not shops then
+        Tracker:AddLayouts("layouts/tracker.json")
+        toggle_shopgrid()
+    elseif fly_unlock and not shops then
+        Tracker:AddLayouts("layouts/tracker_with_flyunlock.json")
+        toggle_shopgrid()
+    elseif fly_unlock and shops then
+        Tracker:AddLayouts("layouts/tracker_with_flyunlock_and_shopsanity.json")
+        toggle_shopgrid()
+    elseif not fly_unlock and shops then
+        Tracker:AddLayouts("layouts/tracker_with_shopsanity.json")
+        toggle_shopgrid()
+    end
+end
+
+function toggle_shopgrid()
+    local bluecard = has("shopsanity_bluecard_true")
+    local apricorn = has("shopsanity_apricorn_true")
+    if bluecard and not apricorn then
+        Tracker:AddLayouts("layouts/shopsanity_bluecard.json")
+    elseif not bluecard and apricorn then
+        Tracker:AddLayouts("layouts/shopsanity_apricorn.json")
+    elseif bluecard and apricorn then
+        Tracker:AddLayouts("layouts/shopsanity_all.json")
     end
 end
 

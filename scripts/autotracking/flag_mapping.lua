@@ -29,56 +29,63 @@ FLAG_EVENT_CODES = {
     "EVENT_BEAT_BLAINE",
     "EVENT_BEAT_BLUE",
     "EVENT_FAST_SHIP_FOUND_GIRL",
-    "Snorlax_1",
+    "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
     "EVENT_MET_BILL"
 }
 
 FLAG_STATIC_CODES = {
     "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
-    "Sudowoodo_1",
-    "RedGyarados_1",
-    "Ho_Oh_1",
-    "Lugia_1",
-    "Suicune_1",
-    "RocketHQElectrode1_1",
-    "RocketHQElectrode2_1",
-    "RocketHQElectrode3_1",
-    "Shuckie_1",
-    "Eevee_1",
-    "Dratini_1",
-    "dummy",
-    "Tyrogue_1",
-    "UnionCaveLapras_1",
-    "Celebi_1",
-    "EVENT_GOT_ODD_EGG"
+    "Static_Sudowoodo",
+    "Static_RedGyarados",
+    "Static_Ho_Oh",
+    "Static_Lugia",
+    "Static_Suicune",
+    "Static_RocketHQElectrode1",
+    "Static_RocketHQElectrode2",
+    "Static_RocketHQElectrode3",
+    "Static_Shuckie",
+    "Static_Eevee",
+    "Static_Dratini",
+    "dummy", -- This is Togepi Egg hatched but we don't track Egg hatches
+    "Static_Tyrogue",
+    "Static_UnionCaveLapras",
+    "Static_Celebi",
+    "EVENT_GOT_ODD_EGG",
+    "Static_GoldenrodGameCorner1",
+    "Static_GoldenrodGameCorner2",
+    "Static_GoldenrodGameCorner3",
+    "Static_CeladonGameCornerPrizeRoom1",
+    "Static_CeladonGameCornerPrizeRoom2",
+    "Static_CeladonGameCornerPrizeRoom3",
+    "Static_Snorlax"
 }
 
 -- RocketHQTrap1_1 = Voltorb
 -- RocketHQTrap2_1 = Geodude
 -- RocketHQTrap3_1 = Koffing
 FLAG_ROCKETTRAPS_CODES = {
-    "RocketHQTrap3_1",
-    "RocketHQTrap1_1",
-    "RocketHQTrap2_1",
-    "RocketHQTrap1_1",
-    "RocketHQTrap2_1",
-    "RocketHQTrap3_1",
-    "RocketHQTrap1_1",
-    "RocketHQTrap3_1",
-    "RocketHQTrap3_1",
-    "RocketHQTrap1_1",
-    "RocketHQTrap2_1",
-    "RocketHQTrap2_1",
-    "RocketHQTrap2_1",
-    "RocketHQTrap3_1",
-    "RocketHQTrap1_1",
-    "RocketHQTrap3_1",
-    "RocketHQTrap1_1",
-    "RocketHQTrap2_1",
-    "RocketHQTrap2_1",
-    "RocketHQTrap1_1",
-    "RocketHQTrap3_1",
-    "RocketHQTrap1_1"
+    "Static_RocketHQTrap3",
+    "Static_RocketHQTrap1",
+    "Static_RocketHQTrap2",
+    "Static_RocketHQTrap1",
+    "Static_RocketHQTrap2",
+    "Static_RocketHQTrap3",
+    "Static_RocketHQTrap1",
+    "Static_RocketHQTrap3",
+    "Static_RocketHQTrap3",
+    "Static_RocketHQTrap1",
+    "Static_RocketHQTrap2",
+    "Static_RocketHQTrap2",
+    "Static_RocketHQTrap2",
+    "Static_RocketHQTrap3",
+    "Static_RocketHQTrap1",
+    "Static_RocketHQTrap3",
+    "Static_RocketHQTrap1",
+    "Static_RocketHQTrap2",
+    "Static_RocketHQTrap2",
+    "Static_RocketHQTrap1",
+    "Static_RocketHQTrap3",
+    "Static_RocketHQTrap1"
 }
 
 FLAG_ITEM_CODES = {
@@ -107,4 +114,6 @@ FLAG_ITEM_CODES = {
   {option="pokegear_off", codes=nil},
   {option=nil, codes={"ESCAPE_ROPE"}},
   {option=nil, codes={"WATER_STONE"}},
+  
+  {option="badges_off", codes={"RISING_BADGE"}},
 }
