@@ -413,8 +413,6 @@ function updatePokemon(pokemon)
                 elseif is_seen and (dexloc.Active or not dexcode.Active) and has("encounter_tracking_loose") then
                     should_decrement = true
                 end
-                
-                print(should_decrement)
 
                 if should_decrement then
                    for _, location in pairs(locations) do
