@@ -413,6 +413,8 @@ function updatePokemon(pokemon)
                 elseif is_seen and (dexloc.Active or not dexcode.Active) and has("encounter_tracking_loose") then
                     should_decrement = true
                 end
+                
+                print(should_decrement)
 
                 if should_decrement then
                    for _, location in pairs(locations) do
@@ -618,3 +620,4 @@ ScriptHost:AddWatchForCode("Static_GoldenrodGameCorner3", "Static_GoldenrodGameC
 ScriptHost:AddWatchForCode("Static_CeladonGameCornerPrizeRoom1", "Static_CeladonGameCornerPrizeRoom1", function() updatePokemon() end)
 ScriptHost:AddWatchForCode("Static_CeladonGameCornerPrizeRoom2", "Static_CeladonGameCornerPrizeRoom2", function() updatePokemon() end)
 ScriptHost:AddWatchForCode("Static_CeladonGameCornerPrizeRoom3", "Static_CeladonGameCornerPrizeRoom3", function() updatePokemon() end)
+ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function() updatePokemon() end)

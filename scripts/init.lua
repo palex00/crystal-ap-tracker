@@ -71,7 +71,6 @@ ScriptHost:AddWatchForCode("gym_digit1", "gym_digit1", calculateEvoLevel)
 ScriptHost:AddWatchForCode("gym_digit2", "gym_digit2", calculateEvoLevel)
 ScriptHost:AddWatchForCode("yaml_digit1", "yaml_digit1", calculateEvoLevel)
 ScriptHost:AddWatchForCode("yaml_digit2", "yaml_digit2", calculateEvoLevel)
-ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", updatePokemon)
 
 ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
 

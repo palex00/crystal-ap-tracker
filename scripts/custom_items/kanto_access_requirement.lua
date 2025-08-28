@@ -88,7 +88,6 @@ function KantoAccessRequirement:providesCode(code)
         snorlax_code = false
         if self:getType() == "snorlax" then
             if clear_snorlax() == true then
-                print("Is being processed")
                 snorlax_code = true
             end
         elseif self:getType() == "champion" then
