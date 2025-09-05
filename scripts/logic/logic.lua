@@ -90,74 +90,70 @@ function can_cut_kanto()
   )
 end
 
-function can_flash_johto()
-  if has("HM_FLASH") and (
-  has("FREE_FLASH") or
-  has("badgereqs_none") or
-  ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
-  (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
-  ) then
-        return AccessibilityLevel.Normal
-    else
-        return AccessibilityLevel.SequenceBreak
-    end
+function can_use_flash(region)
+    return has("HM_FLASH") and (
+        has("FREE_FLASH") or
+        has("badgereqs_none") or
+        (has("badgereqs_vanilla") and has("ZEPHYR_BADGE")) or
+        (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE"))) or
+        (has("badgereqs_regional") and (
+            (region == "johto" and has("ZEPHYR_BADGE")) or
+            (region == "kanto" and has("BOULDER_BADGE"))
+        ))
+    )
 end
 
-function can_flash_kanto()
-  if has("HM_FLASH") and (
-  has("FREE_FLASH") or
-  has("badgereqs_none") or
-  (has("badgereqs_vanilla") and has("ZEPHYR_BADGE")) or
-  (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE"))) or
-  (has("badgereqs_regional") and has("BOULDER_BADGE"))
-  ) then
+function can_flash(region)
+    if has("require_flash_notrequired") then
         return AccessibilityLevel.Normal
+    elseif has("require_flash_hardrequired") then
+        return can_use_flash(region) and AccessibilityLevel.Normal or AccessibilityLevel.None
     else
-        return AccessibilityLevel.SequenceBreak
+        return can_use_flash(region) and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
     end
 end
 
 -- this one literally only exists for the Aerodactyl Room
 function flash_badge()
-  return (
-    has("badgereqs_none") or
-    has("FREE_FLASH") or
-    ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
-    (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
-  )
+    return (
+        has("badgereqs_none") or
+        has("FREE_FLASH") or
+        ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
+        (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
+    )
 end
 
 function strength_badge()
-  return (
-    (has("badgereqs_vanilla") and has("PLAIN_BADGE")) or
-    (has("badgereqs_kanto") and (has("PLAIN_BADGE") or has("RAINBOW_BADGE"))) or
-    (has("badgereqs_none")) or
-    (has("badgereqs_regional") and has("PLAIN_BADGE")) or 
-    has("FREE_STRENGTH")
-  )
+    return (
+        (has("badgereqs_vanilla") and has("PLAIN_BADGE")) or
+        (has("badgereqs_kanto") and (has("PLAIN_BADGE") or has("RAINBOW_BADGE"))) or
+        (has("badgereqs_none")) or
+        (has("badgereqs_regional") and has("PLAIN_BADGE")) or 
+        has("FREE_STRENGTH")
+    )
 end
 
 function can_strength()
-  return (has("HM_STRENGTH") and strength_badge())
+    return (has("HM_STRENGTH") and strength_badge())
 end
 
 function can_surf_johto()
-  return has("HM_SURF") and (
-  has("FREE_SURF") or
-  has("badgereqs_none") or
-  ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("FOG_BADGE")) or
-  (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE")))
-  )
+    return has("HM_SURF") and (
+        has("FREE_SURF") or
+        has("badgereqs_none") or
+        ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("FOG_BADGE")) or
+        (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE")))
+    )
 end
 
 function can_surf_kanto()
-  return has("HM_SURF") and (
-  has("FREE_SURF") or
-  has("badgereqs_none") or
-  (has("badgereqs_vanilla") and has("FOG_BADGE")) or
-  (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE"))) or
-  (has("badgereqs_regional") and has("SOUL_BADGE"))
-  )
+    return has("HM_SURF") and (
+        has("FREE_SURF") or
+        has("badgereqs_none") or
+        (has("badgereqs_vanilla") and has("FOG_BADGE")) or
+        (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE"))) or
+        (has("badgereqs_regional") and has("SOUL_BADGE"))
+    )
 end
 
 function whirlpool_badge()

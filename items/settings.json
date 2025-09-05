@@ -2706,5 +2706,33 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Flash Logic",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Flash Logic: Not Required",
+                "img": "/images/settings/flash_required.png",
+                "img_mods": "@disabled",
+                "codes": "require_flash, require_flash_notrequired",
+                "inherit_codes": false
+            },
+            {
+                "name": "Flash Logic: Logically Required",
+                "img": "/images/settings/flash_required.png",
+                "codes": "require_flash, require_flash_logical",
+                "inherit_codes": false
+            },
+            {
+                "name": "Flash Logic: Hard Required",
+                "img": "/images/settings/flash_hardrequired.png",
+                "codes": "require_flash, require_flash_hardrequired",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

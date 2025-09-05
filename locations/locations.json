@@ -520,8 +520,8 @@
             {
                 "name": "Dark Cave Violet Entrance",
                 "access_rules": [
-                    "^$can_flash_johto, @JohtoKanto/Route 31",
-                    "^$can_flash_johto, @JohtoKanto/Dark Cave Blackthorn Entrance/All Items, $can_surf_johto"
+                    "^$can_flash|johto, @JohtoKanto/Route 31",
+                    "^$can_flash|johto, @JohtoKanto/Dark Cave Blackthorn Entrance/All Items, $can_surf_johto"
                 ],
                 "sections": [
                     {
@@ -5174,7 +5174,7 @@
                     {
                         "name": "1F - Item in Northeast Island",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5183,7 +5183,7 @@
                     {
                         "name": "1F - Item in Southwest Island",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5199,7 +5199,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
@@ -5212,7 +5212,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
@@ -5225,7 +5225,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
@@ -5238,7 +5238,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, ^$can_flash_johto"
+                            "^$surf_encounter_johto, ^$can_flash|johto"
                         ]
                     },
                     {
@@ -5251,7 +5251,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
@@ -5264,13 +5264,13 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
                         "name": "B1F - Southeast Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5279,7 +5279,7 @@
                     {
                         "name": "B1F - Southwest Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5288,7 +5288,7 @@
                     {
                         "name": "B1F - South Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5297,7 +5297,7 @@
                     {
                         "name": "B1F - Northwest Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5306,7 +5306,7 @@
                     {
                         "name": "B1F - North Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5315,7 +5315,7 @@
                     {
                         "name": "B1F - Northeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash_johto,^$hid"
+                            "^$can_flash|johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5324,7 +5324,7 @@
                     {
                         "name": "B1F - Southeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash_johto,^$hid"
+                            "^$can_flash|johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5333,7 +5333,7 @@
                     {
                         "name": "B1F - Hidden Item on Boulder in West",
                         "access_rules": [
-                            "^$can_flash_johto,^$hid"
+                            "^$can_flash|johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5349,13 +5349,13 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
                         "name": "B2F - East Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5364,7 +5364,7 @@
                     {
                         "name": "B2F - West Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5373,7 +5373,7 @@
                     {
                         "name": "B2F - North Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5389,7 +5389,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
@@ -5402,7 +5402,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, ^$can_flash_johto"
+                            "^$surf_encounter_johto, ^$can_flash|johto"
                         ]
                     },
                     {
@@ -5410,7 +5410,7 @@
                         "chest_unopened_img": "images/other/lugia.png",
                         "chest_opened_img": "images/other/lugia_bw.png",
                         "access_rules": [
-                            "^$can_flash_johto, ^$static_encounter, SILVER_WING"
+                            "^$can_flash|johto, ^$static_encounter, SILVER_WING"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -5426,7 +5426,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
@@ -5439,7 +5439,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, ^$can_flash_johto"
+                            "^$surf_encounter_johto, ^$can_flash|johto"
                         ]
                     }
                 ],
@@ -7513,8 +7513,8 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 45, ^$can_flash_johto, $can_surf_johto",
-                            "@JohtoKanto/Violet City, blackthorn_dark_cave_waterfall, ^$can_flash_johto, $can_waterfall"
+                            "@JohtoKanto/Route 45, ^$can_flash|johto, $can_surf_johto",
+                            "@JohtoKanto/Violet City, blackthorn_dark_cave_waterfall, ^$can_flash|johto, $can_waterfall"
                         ]
                     },
                     {
@@ -7554,9 +7554,9 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Route 45, ^$can_flash_johto",
-                            "^$land_encounter, @JohtoKanto/Violet City, blackthorn_dark_cave_waterfall, ^$can_flash_johto, $can_waterfall",
-                            "^$land_encounter, @JohtoKanto/Violet City, blackthorn_dark_cave_vanilla, ^$can_flash_johto, $can_surf_johto"
+                            "^$land_encounter, @JohtoKanto/Route 45, ^$can_flash|johto",
+                            "^$land_encounter, @JohtoKanto/Violet City, blackthorn_dark_cave_waterfall, ^$can_flash|johto, $can_waterfall",
+                            "^$land_encounter, @JohtoKanto/Violet City, blackthorn_dark_cave_vanilla, ^$can_flash|johto, $can_surf_johto"
                         ]
                     },
                     {
@@ -7748,7 +7748,7 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Violet City, ^$can_flash_johto, $can_rocksmash",
+                            "@JohtoKanto/Violet City, ^$can_flash|johto, $can_rocksmash",
                             "@JohtoKanto/Blackthorn City"
                         ]
                     },
@@ -8478,7 +8478,7 @@
                     {
                         "name": "1F - Southeast Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8487,7 +8487,7 @@
                     {
                         "name": "1F - Southwest Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8496,7 +8496,7 @@
                     {
                         "name": "1F - Center Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8505,7 +8505,7 @@
                     {
                         "name": "1F - Southeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash_johto,^$hid"
+                            "^$can_flash|johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8514,7 +8514,7 @@
                     {
                         "name": "1F - Northeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash_johto,^$hid"
+                            "^$can_flash|johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8523,7 +8523,7 @@
                     {
                         "name": "1F - Northwest Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8539,13 +8539,13 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
                         "name": "2F - Hidden Item",
                         "access_rules": [
-                            "^$can_flash_johto,^$hid"
+                            "^$can_flash|johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8554,7 +8554,7 @@
                     {
                         "name": "2F - East Item",
                         "access_rules": [
-                            "^$can_flash_johto"
+                            "^$can_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8563,7 +8563,7 @@
                     {
                         "name": "2F - West Item",
                         "access_rules": [
-                            "^$can_flash_johto,$can_waterfall"
+                            "^$can_flash|johto,$can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8572,7 +8572,7 @@
                     {
                         "name": "2F - South Chamber Item",
                         "access_rules": [
-                            "^$can_flash_johto, $can_waterfall"
+                            "^$can_flash|johto, $can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8581,7 +8581,7 @@
                     {
                         "name": "2F - Northeast Item",
                         "access_rules": [
-                            "^$can_flash_johto,$can_waterfall"
+                            "^$can_flash|johto,$can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8590,7 +8590,7 @@
                     {
                         "name": "2F - North Chamber Item",
                         "access_rules": [
-                            "^$can_flash_johto, $can_waterfall"
+                            "^$can_flash|johto, $can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8606,7 +8606,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
@@ -8619,7 +8619,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$can_flash_johto, ^$surf_encounter_johto"
+                            "^$can_flash|johto, ^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -8632,14 +8632,14 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto, $can_waterfall"
+                            "^$land_encounter, ^$can_flash|johto, $can_waterfall"
                         ]
                     },
                     {
                         "name": "Defeat Red",
                         "hosted_item": "EVENT_BEAT_RED",
                         "access_rules": [
-                            "^$can_flash_johto, red_requirement"
+                            "^$can_flash|johto, red_requirement"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8655,7 +8655,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash_johto"
+                            "^$land_encounter, ^$can_flash|johto"
                         ]
                     },
                     {
@@ -9889,7 +9889,7 @@
                 "access_rules": [
                     "@JohtoKanto/Cerulean City, $can_cut_kanto",
                     "start_town_RockTunnel",
-                    "@JohtoKanto/Lavender Town, ^$can_flash_kanto"
+                    "@JohtoKanto/Lavender Town, ^$can_flash|kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -9994,8 +9994,8 @@
             {
                 "name": "Rock Tunnel",
                 "access_rules": [
-                    "@JohtoKanto/Lavender Town, ^$can_flash_kanto",
-                    "@JohtoKanto/Route 9, ^$can_flash_kanto"
+                    "@JohtoKanto/Lavender Town, ^$can_flash|kanto",
+                    "@JohtoKanto/Route 9, ^$can_flash|kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -10249,7 +10249,7 @@
                 "access_rules": [
                     "start_town_Lavender",
                     "@JohtoKanto/Saffron City, $tea|east",
-                    "@JohtoKanto/Route 9, ^$can_flash_kanto",
+                    "@JohtoKanto/Route 9, ^$can_flash|kanto",
                     "@JohtoKanto/Fuchsia City",
                     "$can_freefly|Lavender",
                     "@JohtoKanto/Celadon City, $passage|ew, ew_underground_on"

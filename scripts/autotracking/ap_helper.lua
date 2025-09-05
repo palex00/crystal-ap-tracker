@@ -382,6 +382,10 @@ SLOT_CODES = {
     victory_road_access = {
         code = "victory_road_access",
         mapping = MAP_TOGGLE
+    },
+    require_flash = {
+        code = "require_flash",
+        mapping = MAP_TRIPLE
     }
 }
 
