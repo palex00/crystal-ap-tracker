@@ -177,6 +177,19 @@ function toggle_mountmortar()
     end
 end
 
+function toggle_victoryroad()
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("victory_road_access_vanilla") and not sudowoodo then
+        Tracker:AddMaps("maps/victory_road_vanilla.json")
+    elseif has("victory_road_access_strength") and not sudowoodo then
+        Tracker:AddMaps("maps/victory_road_strength.json")
+    elseif has("victory_road_access_vanilla") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/victory_road_vanilla.json")
+    elseif has("victory_road_access_strength") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/victory_road_strength.json")
+    end
+end
+
 function toggle_splitmap()
     if has("splitmap_off") and has("johto_only_off") then
         Tracker:AddLayouts("layouts/tabs_single.json")

@@ -320,3 +320,14 @@ function bluecard_shop(amount)
         return AccessibilityLevel.None
     end
 end
+
+function victory_road_access()
+    if has("victory_road_access_vanilla") then
+        return AccessibilityLevel.Normal
+    elseif has("victory_road_access_strength") and can_strength() then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
+    end
+end
+        

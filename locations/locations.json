@@ -8168,7 +8168,7 @@
                     {
                         "name": "1F - Hidden Item on Southwest Boulder",
                         "access_rules": [
-                            "^$hid"
+                            "^$hid, ^$victory_road_access"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8178,36 +8178,51 @@
                         "name": "1F - North Item (Right)",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$victory_road_access"
                         ]
                     },
                     {
                         "name": "1F - North Item (Left)",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$victory_road_access"
                         ]
                     },
                     {
                         "name": "2F - South Item",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$victory_road_access"
                         ]
                     },
                     {
                         "name": "2F - Northeast Item",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$victory_road_access"
                         ]
                     },
                     {
                         "name": "2F - Northwest Item",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$victory_road_access"
                         ]
                     },
                     {
                         "name": "2F - Hidden Item on Northwest Boulder",
                         "access_rules": [
-                            "^$hid"
+                            "^$hid, ^$victory_road_access"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8253,7 +8268,7 @@
             {
                 "name": "Indigo Plateau",
                 "access_rules": [
-                    "@JohtoKanto/Victory Road"
+                    "@JohtoKanto/Victory Road, ^$victory_road_access"
                 ],
                 "sections": [
                     {

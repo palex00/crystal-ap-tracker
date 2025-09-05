@@ -2684,5 +2684,27 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Victory Road Access",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Victory Road Access: Vanilla",
+                "img": "/images/settings/victoryroadaccess.png",
+                "img_mods": "@disabled",
+                "codes": "victory_road_access, victory_road_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Victory Road Access: Strength",
+                "img": "/images/settings/victoryroadaccess.png",
+                "codes": "victory_road_access, victory_road_access_strength",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

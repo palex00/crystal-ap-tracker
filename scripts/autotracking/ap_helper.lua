@@ -378,6 +378,10 @@ SLOT_CODES = {
     randomize_evolution = {
         code = "randomize_evolution",
         mapping = MAP_TRIPLE
+    },
+    victory_road_access = {
+        code = "victory_road_access",
+        mapping = MAP_TOGGLE
     }
 }
 
