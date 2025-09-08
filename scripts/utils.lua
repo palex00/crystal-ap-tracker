@@ -40,6 +40,9 @@ function dump_table(o, depth)
         trainersanity = true,
         dexcountsanity_counts = true,
         dexsanity_pokemon = true,
+        hm_compat = true,
+        breeding_info = true,
+        evolution_info = true,
     }
 
     if type(o) == 'table' then

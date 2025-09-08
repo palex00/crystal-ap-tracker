@@ -326,4 +326,15 @@ function victory_road_access()
         return AccessibilityLevel.None
     end
 end
-        
+
+function dark(area)
+    if has("dark_"..area.."_false") then
+        return AccessibilityLevel.Normal
+    elseif has("dark_"..area.."_true") then
+        if area == diglettscave or mountmoon or rocktunnel then
+            return can_flash(kanto)
+        else
+            return can_flash(johto)
+        end
+    end
+end

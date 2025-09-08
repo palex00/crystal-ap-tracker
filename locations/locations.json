@@ -520,8 +520,8 @@
             {
                 "name": "Dark Cave Violet Entrance",
                 "access_rules": [
-                    "^$can_flash|johto, @JohtoKanto/Route 31",
-                    "^$can_flash|johto, @JohtoKanto/Dark Cave Blackthorn Entrance/All Items, $can_surf_johto"
+                    "^$dark|darkcave, @JohtoKanto/Route 31",
+                    "^$dark|darkcave, @JohtoKanto/Dark Cave Blackthorn Entrance/All Items, $can_surf_johto"
                 ],
                 "sections": [
                     {
@@ -1325,8 +1325,8 @@
             {
                 "name": "Union Cave",
                 "access_rules": [
-                    "@JohtoKanto/Route 32/Post-Guy",
-                    "@JohtoKanto/Route 33"
+                    "@JohtoKanto/Route 32/Post-Guy, ^$dark|unioncave",
+                    "@JohtoKanto/Route 33, ^$dark|unioncave"
                 ],
                 "sections": [
                     {
@@ -1651,7 +1651,7 @@
             {
                 "name": "Slowpoke Well",
                 "access_rules": [
-                    "@JohtoKanto/Azalea Town"
+                    "@JohtoKanto/Azalea Town, ^$dark|slowpokewell"
                 ],
                 "sections": [
                     {
@@ -2040,8 +2040,8 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Azalea Town",
-                            "@JohtoKanto/Ilex Forest/Post-Tree, $ilextree"
+                            "@JohtoKanto/Azalea Town, ^$dark|ilexforest",
+                            "@JohtoKanto/Ilex Forest/Post-Tree, $ilextree, ^$dark|ilexforest"
                         ]
                     },
                     {
@@ -2050,8 +2050,8 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Goldenrod City",
-                            "@JohtoKanto/Ilex Forest/Pre-Tree, $ilextree"
+                            "@JohtoKanto/Goldenrod City, ^$dark|ilexforest",
+                            "@JohtoKanto/Ilex Forest/Pre-Tree, $ilextree, ^$dark|ilexforest"
                         ]
                     },
                     {
@@ -2704,6 +2704,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1302"
+                        ],
+                        "access_rules": [
+                            "^$dark|goldenrodunderground"
                         ]
                     },
                     {
@@ -2711,12 +2714,15 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1457"
+                        ],
+                        "access_rules": [
+                            "^$dark|goldenrodunderground"
                         ]
                     },
                     {
                         "name": "Hidden Item between Tables",
                         "access_rules": [
-                            "^$hid"
+                            "^$hid, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -2725,7 +2731,7 @@
                     {
                         "name": "Hidden Item by Blue Door",
                         "access_rules": [
-                            "^$hid"
+                            "^$hid, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -2734,7 +2740,7 @@
                     {
                         "name": "Center Hidden Item",
                         "access_rules": [
-                            "^$hid"
+                            "^$hid, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -2744,6 +2750,9 @@
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$dark|goldenrodunderground"
                         ]
                     },
                     {
@@ -2754,6 +2763,9 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
+                        ],
+                        "access_rules": [
+                            "^$dark|goldenrodunderground"
                         ]
                     },
                     {
@@ -2764,6 +2776,9 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
+                        ],
+                        "access_rules": [
+                            "^$dark|goldenrodunderground"
                         ]
                     },
                     {
@@ -2771,6 +2786,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1301"
+                        ],
+                        "access_rules": [
+                            "^$dark|goldenrodunderground"
                         ]
                     },
                     {
@@ -2778,13 +2796,16 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1449"
+                        ],
+                        "access_rules": [
+                            "^$dark|goldenrodunderground"
                         ]
                     },
                     {
                         "name": "B2F - Grunt 2",
                         "access_rules": [
                             "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
+                            "tower_requirement,BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -2795,7 +2816,7 @@
                         "name": "B2F - Grunt 1",
                         "access_rules": [
                             "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
+                            "tower_requirement,BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -2806,7 +2827,7 @@
                         "name": "B2F - Grunt 3",
                         "access_rules": [
                             "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
+                            "tower_requirement,BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -2827,7 +2848,7 @@
                         "name": "B2F - Burglar Eddie",
                         "access_rules": [
                             "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
+                            "tower_requirement,BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -2838,7 +2859,7 @@
                         "name": "B2F - East Item",
                         "access_rules": [
                             "CARD_KEY",
-                            "BASEMENT_KEY"
+                            "BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2847,8 +2868,8 @@
                     {
                         "name": "B2F - Center Hidden Item",
                         "access_rules": [
-                            "^$hid,CARD_KEY",
-                            "^$hid,BASEMENT_KEY"
+                            "^$hid, CARD_KEY",
+                            "^$hid, BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -2857,8 +2878,8 @@
                     {
                         "name": "B2F - Burglar Duncan",
                         "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
+                            "tower_requirement, CARD_KEY",
+                            "tower_requirement, BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -2869,7 +2890,7 @@
                         "name": "B2F - Southwest Item",
                         "access_rules": [
                             "CARD_KEY",
-                            "BASEMENT_KEY"
+                            "BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2878,8 +2899,8 @@
                     {
                         "name": "B2F - Grunt 4",
                         "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
+                            "tower_requirement, CARD_KEY",
+                            "tower_requirement, BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -2890,7 +2911,7 @@
                         "name": "Warehouse - Northwest Item",
                         "access_rules": [
                             "CARD_KEY",
-                            "BASEMENT_KEY"
+                            "BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2899,8 +2920,8 @@
                     {
                         "name": "Warehouse - Grunt 2",
                         "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
+                            "tower_requirement, CARD_KEY",
+                            "tower_requirement, BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -2920,8 +2941,8 @@
                     {
                         "name": "Warehouse - Grunt 3",
                         "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
+                            "tower_requirement, CARD_KEY",
+                            "tower_requirement, BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -2931,8 +2952,8 @@
                     {
                         "name": "Warehouse - Grunt 1",
                         "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY"
+                            "tower_requirement, CARD_KEY",
+                            "tower_requirement, BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -2943,7 +2964,7 @@
                         "name": "Warehouse - Card Key from Director",
                         "access_rules": [
                             "CARD_KEY",
-                            "BASEMENT_KEY"
+                            "BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2953,7 +2974,7 @@
                         "name": "Warehouse - Center Item",
                         "access_rules": [
                             "CARD_KEY",
-                            "BASEMENT_KEY"
+                            "BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -3928,7 +3949,7 @@
             {
                 "name": "Burned Tower",
                 "access_rules": [
-                    "@JohtoKanto/Ecruteak City"
+                    "@JohtoKanto/Ecruteak City, ^$dark|burnedtower"
                 ],
                 "sections": [
                     {
@@ -4659,7 +4680,7 @@
             {
                 "name": "Olivine Lighthouse",
                 "access_rules": [
-                    "@JohtoKanto/Olivine City"
+                    "@JohtoKanto/Olivine City, ^$dark|olivinelighthouse"
                 ],
                 "sections": [
                     {
@@ -5234,7 +5255,7 @@
                     {
                         "name": "1F - Item in Northeast Island",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5243,7 +5264,7 @@
                     {
                         "name": "1F - Item in Southwest Island",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5259,7 +5280,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -5272,7 +5293,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -5285,7 +5306,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -5298,7 +5319,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, ^$can_flash|johto"
+                            "^$surf_encounter_johto, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -5311,7 +5332,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -5324,13 +5345,13 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|whirlislands"
                         ]
                     },
                     {
                         "name": "B1F - Southeast Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5339,7 +5360,7 @@
                     {
                         "name": "B1F - Southwest Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5348,7 +5369,7 @@
                     {
                         "name": "B1F - South Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5357,7 +5378,7 @@
                     {
                         "name": "B1F - Northwest Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5366,7 +5387,7 @@
                     {
                         "name": "B1F - North Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5375,7 +5396,7 @@
                     {
                         "name": "B1F - Northeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash|johto,^$hid"
+                            "^$dark|whirlislands, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5384,7 +5405,7 @@
                     {
                         "name": "B1F - Southeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash|johto,^$hid"
+                            "^$dark|whirlislands, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5393,7 +5414,7 @@
                     {
                         "name": "B1F - Hidden Item on Boulder in West",
                         "access_rules": [
-                            "^$can_flash|johto,^$hid"
+                            "^$dark|whirlislands, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -5409,13 +5430,13 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|whirlislands"
                         ]
                     },
                     {
                         "name": "B2F - East Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5424,7 +5445,7 @@
                     {
                         "name": "B2F - West Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5433,7 +5454,7 @@
                     {
                         "name": "B2F - North Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -5449,7 +5470,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -5462,7 +5483,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, ^$can_flash|johto"
+                            "^$surf_encounter_johto, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -5470,7 +5491,7 @@
                         "chest_unopened_img": "images/other/lugia.png",
                         "chest_opened_img": "images/other/lugia_bw.png",
                         "access_rules": [
-                            "^$can_flash|johto, ^$static_encounter, SILVER_WING"
+                            "^$dark|whirlislands, ^$static_encounter, SILVER_WING"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -5486,7 +5507,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -5499,7 +5520,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, ^$can_flash|johto"
+                            "^$surf_encounter_johto, ^$dark|whirlislands"
                         ]
                     }
                 ],
@@ -5854,7 +5875,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$mountmortar_front"
+                            "$mountmortar_front, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5863,7 +5884,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$mountmortar_front"
+                            "$mountmortar_front, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5872,7 +5893,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "$mountmortar_front, ^$hid"
+                            "$mountmortar_front, ^$hid, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5885,7 +5906,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "^$land_encounter, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5898,7 +5919,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto"
+                            "^$surf_encounter_johto, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5907,7 +5928,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$mountmortar_back"
+                            "$mountmortar_back, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5916,7 +5937,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$mountmortar_back"
+                            "$mountmortar_back, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5925,7 +5946,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$mountmortar_back"
+                            "$mountmortar_back, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5934,7 +5955,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$mountmortar_back"
+                            "$mountmortar_back, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5943,7 +5964,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5952,7 +5973,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5961,7 +5982,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -5971,13 +5992,13 @@
                             "show_items, trainersanity_1515"
                         ],
                         "access_rules": [
-                            "$mountmortar_front"
+                            "$mountmortar_front, ^$dark|mountmortar"
                         ]
                     },
                     {
                         "name": "1F Inside - Super Nerd Markus",
                         "access_rules": [
-                            "$mountmortar_back"
+                            "$mountmortar_back, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -5990,7 +6011,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, $can_waterfall"
+                            "^$hid, $can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6003,7 +6024,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, $mountmortar_front"
+                            "^$land_encounter, $mountmortar_front, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6012,7 +6033,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6021,7 +6042,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6030,7 +6051,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6039,7 +6060,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6048,7 +6069,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6057,7 +6078,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6067,7 +6088,7 @@
                             "show_items, trainersanity_1516"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6076,7 +6097,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, $can_waterfall"
+                            "^$hid, $can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6089,7 +6110,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, $can_waterfall"
+                            "^$land_encounter, $can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6102,7 +6123,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, $can_waterfall"
+                            "^$surf_encounter_johto, $can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6111,7 +6132,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "$can_surf_johto, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6120,7 +6141,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "$can_surf_johto, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6129,7 +6150,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "$can_surf_johto, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6138,7 +6159,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "$can_surf_johto, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6147,7 +6168,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "$can_surf_johto, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6156,7 +6177,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, $can_waterfall"
+                            "^$hid, $can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6166,7 +6187,7 @@
                             "show_items, trainersanity_1232"
                         ],
                         "access_rules": [
-                            "$can_waterfall"
+                            "$can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6177,7 +6198,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$static_encounter, $can_waterfall"
+                            "^$static_encounter, $can_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6190,7 +6211,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$land_encounter"
+                            "$can_surf_johto, ^$land_encounter, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -6203,7 +6224,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$surf_encounter_johto"
+                            "$can_surf_johto, ^$surf_encounter_johto, ^$dark|mountmortar"
                         ]
                     }
                 ],
@@ -6238,8 +6259,8 @@
                         "access_rules": [
                             "start_town_Mahogany",
                             "@JohtoKanto/Ecruteak City, $pass_mortar",
-                            "@JohtoKanto/Blackthorn City, route_44_requirement",
-                            "@JohtoKanto/Blackthorn City, ^$fly_cheese",
+                            "@JohtoKanto/Ice Path, route_44_requirement",
+                            "@JohtoKanto/Ice Path, ^$fly_cheese",
                             "@JohtoKanto/Lake of Rage",
                             "$can_freefly|Mahogany"
                         ]
@@ -6651,7 +6672,7 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Mahogany Town/Town",
-                            "@JohtoKanto/Blackthorn City, ^$fly_cheese_unlock"
+                            "@JohtoKanto/Ice Path, ^$fly_cheese_unlock"
                         ]
                     }
                 ],
@@ -6975,7 +6996,7 @@
                 "name": "Route 44",
                 "access_rules": [
                     "@JohtoKanto/Mahogany Town/Town, route_44_requirement",
-                    "@JohtoKanto/Blackthorn City"
+                    "@JohtoKanto/Ice Path"
                 ],
                 "sections": [
                     {
@@ -7111,8 +7132,8 @@
             {
                 "name": "Ice Path",
                 "access_rules": [
-                    "@JohtoKanto/Mahogany Town/Town, route_44_requirement",
-                    "@JohtoKanto/Blackthorn City"
+                    "@JohtoKanto/Mahogany Town/Town, route_44_requirement, ^$dark|icepath",
+                    "@JohtoKanto/Blackthorn City, ^$dark|icepath"
                 ],
                 "sections": [
                     {
@@ -7296,7 +7317,7 @@
                 "name": "Blackthorn City",
                 "access_rules": [
                     "start_town_Blackthorn",
-                    "@JohtoKanto/Mahogany Town/Town, route_44_requirement, $can_strength",
+                    "@JohtoKanto/Ice Path, $can_strength",
                     "@JohtoKanto/Route 45",
                     "$can_freefly|Blackthorn"
                 ],
@@ -7431,7 +7452,7 @@
                     {
                         "name": "Dragon's Den B1F - Northeast Item",
                         "access_rules": [
-                            "$can_surf_johto, EVENT_BEAT_CLAIR"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7440,7 +7461,7 @@
                     {
                         "name": "Dragon's Den B1F - Cool Trainer Cara",
                         "access_rules": [
-                            "$can_surf_johto, EVENT_BEAT_CLAIR"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -7450,7 +7471,7 @@
                     {
                         "name": "Dragon's Den B1F - Cool Trainer Darin",
                         "access_rules": [
-                            "$can_surf_johto, EVENT_BEAT_CLAIR"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -7460,7 +7481,7 @@
                     {
                         "name": "Dragon's Den B1F - Twins Lea & Pia",
                         "access_rules": [
-                            "$can_surf_johto, EVENT_BEAT_CLAIR"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -7470,7 +7491,7 @@
                     {
                         "name": "Dragon's Den B1F - West Item",
                         "access_rules": [
-                            "$can_surf_johto, EVENT_BEAT_CLAIR"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7479,7 +7500,7 @@
                     {
                         "name": "Dragon's Den B1F - Center Hidden Item in Water",
                         "access_rules": [
-                            "$can_surf_johto, EVENT_BEAT_CLAIR, ^$hid"
+                            "$can_surf_johto, EVENT_BEAT_CLAIR, ^$hid, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -7488,7 +7509,7 @@
                     {
                         "name": "Dragon's Den B1F - Rising Badge from Clair",
                         "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised, clair_behaviour_child"
@@ -7497,7 +7518,7 @@
                     {
                         "name": "​Dragon's Den B1F - Rising Badge from Clair",
                         "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items, badges_off, clair_behaviour_child"
@@ -7507,7 +7528,7 @@
                     {
                         "name": "Dragon's Den B1F - TM24 from Clair",
                         "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items, clair_behaviour_child"
@@ -7516,7 +7537,7 @@
                     {
                         "name": "Dragon's Den B1F - Southeast Hidden Item",
                         "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$hid"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$hid, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -7525,7 +7546,7 @@
                     {
                         "name": "Dragon's Den B1F - East Item",
                         "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7534,7 +7555,7 @@
                     {
                         "name": "Dragon's Den B1F - East Hidden Item in Water",
                         "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$hid"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$hid, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -7545,7 +7566,7 @@
                         "chest_unopened_img": "images/other/dratini.png",
                         "chest_opened_img": "images/other/dratini_bw.png",
                         "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$static_encounter"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$static_encounter, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -7561,7 +7582,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$surf_encounter_johto"
+                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$surf_encounter_johto, ^$dark|dragonsden"
                         ]
                     },
                     {
@@ -7603,8 +7624,8 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 45, ^$can_flash|johto, $can_surf_johto",
-                            "@JohtoKanto/Violet City, blackthorn_dark_cave_waterfall, ^$can_flash|johto, $can_waterfall"
+                            "@JohtoKanto/Route 45, ^$dark|darkcave, $can_surf_johto",
+                            "@JohtoKanto/Violet City, blackthorn_dark_cave_waterfall, ^$dark|darkcave, $can_waterfall"
                         ]
                     },
                     {
@@ -7644,9 +7665,9 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Route 45, ^$can_flash|johto",
-                            "^$land_encounter, @JohtoKanto/Violet City, blackthorn_dark_cave_waterfall, ^$can_flash|johto, $can_waterfall",
-                            "^$land_encounter, @JohtoKanto/Violet City, blackthorn_dark_cave_vanilla, ^$can_flash|johto, $can_surf_johto"
+                            "^$land_encounter, @JohtoKanto/Route 45, ^$dark|darkcave",
+                            "^$land_encounter, @JohtoKanto/Violet City, blackthorn_dark_cave_waterfall, ^$dark|darkcave, $can_waterfall",
+                            "^$land_encounter, @JohtoKanto/Violet City, blackthorn_dark_cave_vanilla, ^$dark|darkcave, $can_surf_johto"
                         ]
                     },
                     {
@@ -7838,7 +7859,7 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Violet City, ^$can_flash|johto, $can_rocksmash",
+                            "@JohtoKanto/Violet City, ^$dark|darkcave, $can_rocksmash",
                             "@JohtoKanto/Blackthorn City"
                         ]
                     },
@@ -7959,7 +7980,7 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "$can_waterfall, @JohtoKanto/New Bark Town",
+                            "$can_waterfall, @JohtoKanto/New Bark Town, ^$dark|tohjofalls",
                             "@JohtoKanto/Route 26"
                         ]
                     },
@@ -8080,7 +8101,7 @@
                     {
                         "name": "Tohjo Falls - Item",
                         "access_rules": [
-                            "$can_surf_johto, @JohtoKanto/New Bark Town"
+                            "$can_surf_johto, @JohtoKanto/New Bark Town, ^$dark|tohjofalls"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8096,7 +8117,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, $can_surf_johto, @JohtoKanto/New Bark Town"
+                            "^$land_encounter, $can_surf_johto, @JohtoKanto/New Bark Town, ^$dark|tohjofalls"
                         ]
                     },
                     {
@@ -8109,7 +8130,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, @JohtoKanto/New Bark Town"
+                            "^$surf_encounter_johto, @JohtoKanto/New Bark Town, ^$dark|tohjofalls"
                         ]
                     }
                 ],
@@ -8252,7 +8273,7 @@
             {
                 "name": "Victory Road",
                 "access_rules": [
-                    "@JohtoKanto/Route 26, e4_requirement"
+                    "@JohtoKanto/Route 26, e4_requirement, ^$dark|victoryroad"
                 ],
                 "sections": [
                     {
@@ -8568,7 +8589,7 @@
                     {
                         "name": "1F - Southeast Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|silvercave"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8577,7 +8598,7 @@
                     {
                         "name": "1F - Southwest Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|silvercave"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8586,7 +8607,7 @@
                     {
                         "name": "1F - Center Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|silvercave"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8595,7 +8616,7 @@
                     {
                         "name": "1F - Southeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash|johto,^$hid"
+                            "^$dark|silvercave, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8604,7 +8625,7 @@
                     {
                         "name": "1F - Northeast Hidden Item",
                         "access_rules": [
-                            "^$can_flash|johto,^$hid"
+                            "^$dark|silvercave, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8613,7 +8634,7 @@
                     {
                         "name": "1F - Northwest Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|silvercave"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8629,13 +8650,13 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|silvercave"
                         ]
                     },
                     {
                         "name": "2F - Hidden Item",
                         "access_rules": [
-                            "^$can_flash|johto,^$hid"
+                            "^$dark|silvercave, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8644,7 +8665,7 @@
                     {
                         "name": "2F - East Item",
                         "access_rules": [
-                            "^$can_flash|johto"
+                            "^$dark|silvercave"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8653,7 +8674,7 @@
                     {
                         "name": "2F - West Item",
                         "access_rules": [
-                            "^$can_flash|johto,$can_waterfall"
+                            "^$dark|silvercave, $can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8662,7 +8683,7 @@
                     {
                         "name": "2F - South Chamber Item",
                         "access_rules": [
-                            "^$can_flash|johto, $can_waterfall"
+                            "^$dark|silvercave, $can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8671,7 +8692,7 @@
                     {
                         "name": "2F - Northeast Item",
                         "access_rules": [
-                            "^$can_flash|johto,$can_waterfall"
+                            "^$dark|silvercave,$can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8680,7 +8701,7 @@
                     {
                         "name": "2F - North Chamber Item",
                         "access_rules": [
-                            "^$can_flash|johto, $can_waterfall"
+                            "^$dark|silvercave, $can_waterfall"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8696,7 +8717,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|silvercave"
                         ]
                     },
                     {
@@ -8709,7 +8730,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$can_flash|johto, ^$surf_encounter_johto"
+                            "^$dark|silvercave, ^$surf_encounter_johto"
                         ]
                     },
                     {
@@ -8722,14 +8743,14 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto, $can_waterfall"
+                            "^$land_encounter, ^$dark|silvercave, $can_waterfall"
                         ]
                     },
                     {
                         "name": "Defeat Red",
                         "hosted_item": "EVENT_BEAT_RED",
                         "access_rules": [
-                            "^$can_flash|johto, red_requirement"
+                            "^$dark|silvercave, red_requirement"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8745,7 +8766,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$can_flash|johto"
+                            "^$land_encounter, ^$dark|silvercave"
                         ]
                     },
                     {
@@ -9080,7 +9101,7 @@
                             "show_items, invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City/City, $clear_snorlax",
+                            "@JohtoKanto/Vermilion City/City, $clear_snorlax, ^$dark|diglettscave",
                             "@JohtoKanto/Route 2/Main Section, route_2_open",
                             "@JohtoKanto/Route 2/Main Section, $can_cut_kanto"
                         ]
@@ -9428,8 +9449,8 @@
             {
                 "name": "Mount Moon",
                 "access_rules": [
-                    "@JohtoKanto/Pewter City, route_3_vanilla",
-                    "@JohtoKanto/Pewter City, BOULDER_BADGE"
+                    "@JohtoKanto/Pewter City, route_3_vanilla, ^$dark|mountmoon",
+                    "@JohtoKanto/Pewter City, BOULDER_BADGE, ^$dark|mountmoon"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -9498,8 +9519,8 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Pewter City, route_3_vanilla",
-                            "@JohtoKanto/Pewter City, BOULDER_BADGE"
+                            "@JohtoKanto/Pewter City, route_3_vanilla, ^$dark|mountmoon",
+                            "@JohtoKanto/Pewter City, BOULDER_BADGE, ^$dark|mountmoon"
                         ]
                     },
                     {
@@ -9599,8 +9620,8 @@
                 "name": "Cerulean City",
                 "access_rules": [
                     "start_town_Cerulean",
-                    "@JohtoKanto/Pewter City, route_3_vanilla",
-                    "@JohtoKanto/Pewter City, BOULDER_BADGE",
+                    "@JohtoKanto/Pewter City, route_3_vanilla, ^$dark|mountmoon",
+                    "@JohtoKanto/Pewter City, BOULDER_BADGE, ^$dark|mountmoon",
                     "@JohtoKanto/Saffron City, $tea|north",
                     "@JohtoKanto/Route 9, $can_cut_kanto",
                     "$can_freefly|Cerulean",
@@ -10009,7 +10030,7 @@
                 "access_rules": [
                     "@JohtoKanto/Cerulean City, $can_cut_kanto",
                     "start_town_RockTunnel",
-                    "@JohtoKanto/Lavender Town, ^$can_flash|kanto"
+                    "@JohtoKanto/Lavender Town, ^$dark|rocktunnel"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -10114,8 +10135,8 @@
             {
                 "name": "Rock Tunnel",
                 "access_rules": [
-                    "@JohtoKanto/Lavender Town, ^$can_flash|kanto",
-                    "@JohtoKanto/Route 9, ^$can_flash|kanto"
+                    "@JohtoKanto/Lavender Town, ^$dark|rocktunnel",
+                    "@JohtoKanto/Route 9, ^$dark|rocktunnel"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -10369,7 +10390,7 @@
                 "access_rules": [
                     "start_town_Lavender",
                     "@JohtoKanto/Saffron City, $tea|east",
-                    "@JohtoKanto/Route 9, ^$can_flash|kanto",
+                    "@JohtoKanto/Route 9, ^$dark|rocktunnel",
                     "@JohtoKanto/Fuchsia City",
                     "$can_freefly|Lavender",
                     "@JohtoKanto/Celadon City, $passage|ew, ew_underground_on"
@@ -11372,8 +11393,8 @@
             {
                 "name": "Diglett's Cave",
                 "access_rules": [
-                    "@JohtoKanto/Vermilion City/City, $clear_snorlax",
-                    "@JohtoKanto/Route 2/Diglett's Cave Section"
+                    "@JohtoKanto/Vermilion City/City, $clear_snorlax, ^$dark|diglettscave",
+                    "@JohtoKanto/Route 2/Diglett's Cave Section, ^$dark|diglettscave"
                 ],
                 "visibility_rules": [
                     "johto_only_off"

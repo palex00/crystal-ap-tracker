@@ -30,6 +30,12 @@ function onClear(slot_data)
             obj.Active = false
         end
     end
+    for i = 296, 301 do
+        local obj = Tracker:FindObjectForCode("trainersanity_" .. i)
+        obj.Active = false
+    end
+    Tracker:FindObjectForCode("trainersanity_1702").Active = false -- literally just Eusine the fucker.
+
 
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
@@ -41,7 +47,7 @@ function onClear(slot_data)
             if  k == "apworld_version" then
                 local version_str = tostring(v)
                 local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-                if first_two_dots == "5.0" or nil then
+                if first_two_dots == "5.1" or nil then
                     Tracker:AddLayouts("layouts/tracker.json")
                 else
                     Tracker:AddLayouts("layouts/versionmismatch.json")
@@ -82,6 +88,17 @@ function onClear(slot_data)
 		elseif AMOUNT_CODES[k] then
 			local item = AMOUNT_CODES[k].item
 			item:setStage(v)
+        elseif LIST_CODES[k] then
+            for _, code in pairs(LIST_CODES[k].values) do
+                Tracker:FindObjectForCode(code).CurrentStage = LIST_CODES[k].mapping[0]
+            end
+        
+            for _, name in ipairs(v or {}) do
+                local code = LIST_CODES[k].values[name]
+                if code then
+                    Tracker:FindObjectForCode(code).CurrentStage = LIST_CODES[k].mapping[1]
+                end
+            end
         elseif k == "trainersanity" then
             for _, value in ipairs(v) do
                 Tracker:FindObjectForCode("trainersanity_" .. value).Active = true
