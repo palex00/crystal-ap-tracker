@@ -2665,6 +2665,10 @@
                         "name": "Goldenrod Dept. Store 5F - TM Shop - Shop Items"
                     },
                     {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 6F - Vending Machine - Shop Items",
+                        "name": "Goldenrod Dept. Store 6F - Vending Machine - Shop Items"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store - Rooftop Sale - Shop Items",
                         "name": "Goldenrod Dept. Store - Rooftop Sale - Shop Items"
                     },
@@ -2822,26 +2826,30 @@
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Left Salesman - Shop Items",
                         "name": "Dept. Store 2F - Left Salesman - Shop Items"
-                    }, 
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Right Salesman - Shop Items",
                         "name": "Dept. Store 2F - Right Salesman - Shop Items"
-                    }, 
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 3F - TM Shop - Shop Items",
                         "name": "Dept. Store 3F - TM Shop - Shop Items"
-                    }, 
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 4F - Mail Shop - Shop Items",
                         "name": "Dept. Store 4F - Mail Shop - Shop Items"
-                    }, 
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 5F - Vitamin Shop - Shop Items",
                         "name": "Dept. Store 5F - Vitamin Shop - Shop Items"
-                    }, 
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 5F - X Items Shop - Shop Items",
                         "name": "Dept. Store 5F - X Items Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 6F - Vending Machine - Shop Items",
+                        "name": "Dept. Store 6F - Vending Machine - Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -2849,6 +2857,21 @@
                         "map": "CeladonCity",
                         "x": 72,
                         "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 6F - Vending Machine - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStore6F",
+                        "x": 184,
+                        "y": 24
                     }
                 ]
             },

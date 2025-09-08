@@ -1028,6 +1028,12 @@ LOCATION_MAPPING = {
   [2323] = "@JohtoKanto/Azalea Town/Kurt's Ball Shop - Blk Apricorn",
   [2324] = "@JohtoKanto/Azalea Town/Kurt's Ball Shop - Wht Apricorn",
   [2325] = "@JohtoKanto/Azalea Town/Kurt's Ball Shop - Pnk Apricorn",
+  [2326] = "@JohtoKanto/Goldenrod City/Dept. Store 6F - Vending Machine - Shop Items",
+  [2327] = "@JohtoKanto/Goldenrod City/Dept. Store 6F - Vending Machine - Shop Items",
+  [2328] = "@JohtoKanto/Goldenrod City/Dept. Store 6F - Vending Machine - Shop Items",
+  [2329] = "@JohtoKanto/Celadon City/Dept. Store 6F - Vending Machine - Shop Items",
+  [2330] = "@JohtoKanto/Celadon City/Dept. Store 6F - Vending Machine - Shop Items",
+  [2331] = "@JohtoKanto/Celadon City/Dept. Store 6F - Vending Machine - Shop Items",
 
 -- Dexsanity
   [10001] = "dexsanity_bulbasaur",

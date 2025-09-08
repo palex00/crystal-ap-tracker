@@ -2477,6 +2477,16 @@
                         ]
                     },
                     {
+                        "name": "Dept. Store 6F - Vending Machine - Shop Items",
+                        "item_count": 3,
+                        "chest_unopened_img": "images/shopsanity/pokedollar.png",
+                        "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store - Rooftop Sale - Shop Items",
                         "item_count": 9,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
@@ -10816,6 +10826,16 @@
                     {
                         "name": "Dept. Store 5F - X Items Shop - Shop Items",
                         "item_count": 7,
+                        "chest_unopened_img": "images/shopsanity/pokedollar.png",
+                        "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 6F - Vending Machine - Shop Items",
+                        "item_count": 3,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
                         "clear_as_group": false,
