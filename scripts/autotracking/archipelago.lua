@@ -71,8 +71,6 @@ function onClear(slot_data)
     
     -- This sets each Encounter location to however many unique encounters there are in it
     for region_key, location in pairs(ENCOUNTER_MAPPING) do
-        print("Error'd at: "..region_key)
-        print("And "..location)
         local object = Tracker:FindObjectForCode(location)
         object.AvailableChestCount = #slot_data.region_encounters[region_key]
     end
