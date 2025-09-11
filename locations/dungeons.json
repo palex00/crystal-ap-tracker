@@ -162,8 +162,8 @@
                         "name": "Slowpoke Well B1F - Grunt 3"
                     },
                     {
-                        "ref": "JohtoKanto/Slowpoke Well/Cleared Slowpoke Well",
-                        "name": "Cleared Slowpoke Well"
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well",
+                        "name": "B1F - Cleared Slowpoke Well"
                     },
                     {
                         "ref": "JohtoKanto/Slowpoke Well/B2F - Item",
@@ -2763,7 +2763,7 @@
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 1F - Buy Waterstone",
                         "name": "Dept. Store 1F - Buy Waterstone"
-                    },
+                    }
                 ],
                 "map_locations": [
                     {
@@ -3202,19 +3202,24 @@
                         "name": "Radio Tower 4F - Pink Bow from Mary"
                     },
                     {
+                        "ref": "JohtoKanto/Radio Tower/5F - False Director",
+                        "name": "Radio Tower 5F - False Director"
+                    },
+                    {
                         "ref": "JohtoKanto/Radio Tower/5F - Basement Key from False Director",
                         "name": "Radio Tower 5F - Basement Key from False Director"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive",
-                        "name": "Radio Tower 5F - Rocket Executive"
+                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive 1",
+                        "name": "Radio Tower 5F - Rocket Executive 1"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/5F - Clear Bell from Rocket Boss",
                         "name": "Radio Tower 5F - Clear Bell from Rocket Boss"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/Clear Radio Tower"
+                        "name": "5F - Clear Radio Tower",
+                        "ref": "JohtoKanto/Radio Tower/5F - Clear Radio Tower"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/5F - Item",
@@ -4659,7 +4664,7 @@
                         "name": "Rocket HQ B3F - Center Item"
                     },
                     {
-                        "ref": "JohtoKanto/Mahogany Town/Clear Rocket HQ"
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Clear Rocket HQ"
                     }
                 ],
                 "map_locations": [
@@ -6479,6 +6484,11 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "5F - False Director",
+                        "ref": "JohtoKanto/Radio Tower/5F - False Director"
+                    },
+                    {
+                        "name": "5F - Basement Key from False Director",
                         "ref": "JohtoKanto/Radio Tower/5F - Basement Key from False Director"
                     }
                 ],
@@ -6524,7 +6534,7 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive"
+                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive 1"
                     }
                 ],
                 "map_locations": [
@@ -6539,7 +6549,12 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Radio Tower/Clear Radio Tower"
+                        "name": "5F - Rocket Executive 2",
+                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive 2"
+                    },
+                    {
+                        "name": "5F - Clear Radio Tower",
+                        "ref": "JohtoKanto/Radio Tower/5F - Clear Radio Tower"
                     }
                 ],
                 "map_locations": [
@@ -11296,13 +11311,18 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Slowpoke Well/Cleared Slowpoke Well"
+                        "name": "B1F - Grunt 4",
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Grunt 4"
+                    },
+                    {
+                        "name": "B1F - Cleared Slowpoke Well",
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "SlowpokeWellB1F",
-                        "x": 104,
+                        "x": 88,
                         "y": 40
                     }
                 ]
@@ -11901,8 +11921,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "name": "Clear Rocket HQ",
-                        "ref": "JohtoKanto/Mahogany Town/Clear Rocket HQ"
+                        "name": "Rocket HQ B2F - Clear Rocket HQ",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Clear Rocket HQ"
                     },
                     {
                         "name": "Rocket HQ B2F - Electrode Middle",
@@ -11921,6 +11941,11 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "Rocket HQ B2F - Rocket Executive",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Rocket Executive"
+                    },
+                    {
+                        "name": "Rocket HQ B2F - Electrode Bottom",
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Bottom"
                     }
                 ],
@@ -12004,6 +12029,21 @@
                         "map": "TeamRocketBaseB3F",
                         "x": 56,
                         "y": 200
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Rocket Executive"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TeamRocketBaseB3F",
+                        "x": 136,
+                        "y": 56
                     }
                 ]
             },
@@ -14297,6 +14337,14 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "Indigo Plateau - Rival Battle",
+                        "ref": "JohtoKanto/Indigo Plateau/Rival Battle"
+                    },
+                    {
+                        "name": "Indigo Plateau - Poke Mart - Shop Items",
+                        "ref": "JohtoKanto/Indigo Plateau/Poke Mart - Shop Items"
+                    },
+                    {
                         "name": "Indigo Plateau - Elite 4 Will",
                         "ref": "JohtoKanto/Indigo Plateau/Elite 4 Will"
                     },
@@ -14393,6 +14441,111 @@
                         "map": "ViridianGym",
                         "x": 88,
                         "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Rival Fight"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaTown",
+                        "x": 88,
+                        "y": 176
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Burned Tower/1F - Rival Fight"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BurnedTower1F",
+                        "x": 168,
+                        "y": 152 
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cherrygrove City/Rival Fight"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CherrygroveCity",
+                        "x": 552,
+                        "y": 112
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Mysticalman Eusine"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodCity",
+                        "x": 184,
+                        "y": 248
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Sailor Stanly"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FastShipCabins_Overview",
+                        "x": 392,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Inside - Rival Fight"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MountMoon",
+                        "x": 56,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Victory Road/3F - Rival Fight"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VictoryRoad3F",
+                        "x": 208,
+                        "y": 128
                     }
                 ]
             }

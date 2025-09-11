@@ -197,6 +197,16 @@
                         ]
                     },
                     {
+                        "name": "Rival Fight",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_296"
+                        ],
+                        "access_rules": [
+                            "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
+                        ]
+                    },
+                    {
                         "name": "Poke Mart - Shop Items",
                         "item_count": 5,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
@@ -1682,7 +1692,14 @@
                         ]
                     },
                     {
-                        "name": "Cleared Slowpoke Well",
+                        "name": "B1F - Grunt 4",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1304"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Cleared Slowpoke Well",
                         "hosted_item": "EVENT_CLEARED_SLOWPOKE_WELL",
                         "visibility_rules": [
                             "show_items"
@@ -1905,6 +1922,16 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Rival Fight",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_297"
+                        ],
+                        "access_rules": [
+                            "EVENT_CLEARED_SLOWPOKE_WELL"
                         ]
                     },
                     {
@@ -3212,6 +3239,16 @@
                         ]
                     },
                     {
+                        "name": "5F - False Director",
+                        "access_rules": [
+                            "tower_requirement"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1434"
+                        ]
+                    },
+                    {
                         "name": "5F - Basement Key from False Director",
                         "access_rules": [
                             "tower_requirement"
@@ -3221,13 +3258,23 @@
                         ]
                     },
                     {
-                        "name": "5F - Rocket Executive",
+                        "name": "5F - Rocket Executive 1",
                         "access_rules": [
                             "tower_requirement,CARD_KEY"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1430"
+                        ]
+                    },
+                    {
+                        "name": "5F - Rocket Executive 2",
+                        "access_rules": [
+                            "tower_requirement,CARD_KEY"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1432"
                         ]
                     },
                     {
@@ -3240,7 +3287,7 @@
                         ]
                     },
                     {
-                        "name": "Clear Radio Tower",
+                        "name": "5F - Clear Radio Tower",
                         "access_rules": [
                             "tower_requirement,CARD_KEY"
                         ],
@@ -3977,6 +4024,13 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Rival Fight",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_298"
                         ]
                     },
                     {
@@ -4853,6 +4907,13 @@
                         ]
                     },
                     {
+                        "name": "1F - Sailor Stanly",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1444"
+                        ]
+                    },
+                    {
                         "name": "Metal Coat from Grandpa",
                         "visibility_rules": [
                             "show_items"
@@ -5660,6 +5721,16 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Mysticalman Eusine",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1702"
+                        ],
+                        "access_rules": [
+                            "EVENT_RELEASED_THE_BEASTS"
                         ]
                     },
                     {
@@ -6492,6 +6563,16 @@
                         ]
                     },
                     {
+                        "name": "Rocket HQ B2F - Rocket Executive",
+                        "access_rules": [
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1431"
+                        ]
+                    },
+                    {
                         "name": "Rocket HQ B2F - Item",
                         "access_rules": [
                             "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
@@ -6628,7 +6709,17 @@
                         ]
                     },
                     {
-                        "name": "Clear Rocket HQ",
+                        "name": "Rocket HQ B3F - Rocket Executive",
+                        "access_rules": [
+                            "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1435"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B2F - Clear Rocket HQ",
                         "access_rules": [
                             "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
@@ -8340,6 +8431,13 @@
                         ]
                     },
                     {
+                        "name": "3F - Rival Fight",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_299"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
@@ -8382,6 +8480,16 @@
                     "@JohtoKanto/Victory Road, ^$victory_road_access"
                 ],
                 "sections": [
+                    {
+                        "name": "Rival Battle",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_301"
+                        ],
+                        "visibility_rules": [
+                            "johto_only_off"
+                        ]
+                    },
                     {
                         "name": "Poke Mart - Shop Items",
                         "item_count": 7,
@@ -9468,6 +9576,13 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Rival Fight",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_301"
+                        ]
+                    },
                     {
                         "name": "Square - Hidden Item under Rock",
                         "access_rules": [
