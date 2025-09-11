@@ -3108,5 +3108,27 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Kanto Lock",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Kanto Gyms are not locked behind High Logic Mons",
+                "img": "/images/settings/kantolock.png",
+                "img_mods": "@disabled",
+                "codes": "lock_kanto_gyms, lock_kanto_gyms_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Kanto Gyms are logically locked behind High Logic Mons",
+                "img": "/images/settings/kantolock.png",
+                "codes": "lock_kanto_gyms, lock_kanto_gyms_true",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

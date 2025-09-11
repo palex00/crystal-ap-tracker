@@ -338,3 +338,27 @@ function dark(area)
         end
     end
 end
+
+function kantogymlock()
+    local snorlax = Tracker:FindObjectForCode("@JohtoKanto/Vermilion City/City").AccessibilityLevel
+    local hooh = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower/9F - Item").AccessibilityLevel
+    local lugia = Tracker:FindObjectForCode("@JohtoKanto/Whirl Islands/B2F - North Item").AccessibilityLevel
+    local suicune = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower").AccessibilityLevel
+    local silvercave = Tracker:FindObjectForCode("@JohtoKanto/Silver Cave").AccessibilityLevel
+
+    if has("lock_kanto_gyms_false") then
+        return AccessibilityLevel.Normal
+    end
+
+    if has("lock_kanto_gyms_true") then
+        if (snorlax == AccessibilityLevel.Normal and clear_snorlax())
+        or hooh == AccessibilityLevel.Normal
+        or (lugia == AccessibilityLevel.Normal and has("SILVER_WING"))
+        or suicune == AccessibilityLevel.Normal
+        or silvercave == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+        else
+            return AccessibilityLevel.SequenceBreak
+        end
+    end
+end

@@ -8872,7 +8872,7 @@
                         "name": "Gym - Beat Blue",
                         "hosted_item": "EVENT_BEAT_BLUE",
                         "access_rules": [
-                            "EVENT_VIRIDIAN_GYM_BLUE"
+                            "EVENT_VIRIDIAN_GYM_BLUE, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8885,13 +8885,13 @@
                             "show_items, trainersanity_1267"
                         ],
                         "access_rules": [
-                            "EVENT_VIRIDIAN_GYM_BLUE"
+                            "EVENT_VIRIDIAN_GYM_BLUE, ^$kantogymlock"
                         ]
                     },
                     {
                         "name": "Gym - Earth Badge from Blue",
                         "access_rules": [
-                            "EVENT_VIRIDIAN_GYM_BLUE"
+                            "EVENT_VIRIDIAN_GYM_BLUE, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
@@ -8900,7 +8900,7 @@
                     {
                         "name": "​Gym - Earth Badge from Blue",
                         "access_rules": [
-                            "EVENT_VIRIDIAN_GYM_BLUE"
+                            "EVENT_VIRIDIAN_GYM_BLUE, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, badges_off"
@@ -9286,6 +9286,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1106"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -9293,6 +9296,9 @@
                         "hosted_item": "EVENT_BEAT_BROCK",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -9302,13 +9308,16 @@
                             "show_items, trainersanity_1260"
                         ],
                         "access_rules": [
-                            ""
+                            "^$kantogymlock"
                         ]
                     },
                     {
                         "name": "Gym - Boulder Badge from Brock",
                         "visibility_rules": [
                             "show_items, $badges_randomised"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -9316,7 +9325,10 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "BOULDER_BADGE"
+                        "hosted_item": "BOULDER_BADGE",
+                        "access_rules": [
+                            "^$kantogymlock"
+                        ]
                     },
                     {
                         "name": "Silver Wing from Old Man",
@@ -9634,9 +9646,9 @@
                     {
                         "name": "Gym - Machine Part in Water",
                         "access_rules": [
-                            "reqitemfinder_off",
-                            "reqitemfinder_logic, [ITEMFINDER]",
-                            "reqitemfinder_required, ITEMFINDER"
+                            "reqitemfinder_off, ^$kantogymlock",
+                            "reqitemfinder_logic, [ITEMFINDER], ^$kantogymlock",
+                            "reqitemfinder_required, ITEMFINDER, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -9647,6 +9659,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1057"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -9654,6 +9669,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1487"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -9661,6 +9679,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1056"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -9668,6 +9689,9 @@
                         "hosted_item": "EVENT_BEAT_MISTY",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -9677,13 +9701,16 @@
                             "show_items, trainersanity_1261"
                         ],
                         "access_rules": [
-                            ""
+                            "^$kantogymlock"
                         ]
                     },
                     {
                         "name": "Gym - Cascade Badge from Misty",
                         "visibility_rules": [
                             "show_items, $badges_randomised"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -9691,7 +9718,10 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "CASCADE_BADGE"
+                        "hosted_item": "CASCADE_BADGE",
+                        "access_rules": [
+                            "^$kantogymlock"
+                        ]
                     },
                     {
                         "name": "Hidden Item in Water",
@@ -10560,6 +10590,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1464"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -10567,6 +10600,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1463"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -10574,6 +10610,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1122"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -10581,6 +10620,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1131"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -10588,6 +10630,9 @@
                         "hosted_item": "EVENT_BEAT_SABRINA",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -10597,13 +10642,16 @@
                             "show_items, trainersanity_1265"
                         ],
                         "access_rules": [
-                            ""
+                            "^$kantogymlock"
                         ]
                     },
                     {
                         "name": "Gym - Marsh Badge from Sabrina",
                         "visibility_rules": [
                             "show_items, $badges_randomised"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -10611,7 +10659,10 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "MARSH_BADGE"
+                        "hosted_item": "MARSH_BADGE",
+                        "access_rules": [
+                            "^$kantogymlock"
+                        ]
                     },
                     {
                         "name": "TM29 from Mr Psychic",
@@ -10696,7 +10747,7 @@
                     {
                         "name": "Gym - Twins Jo & Zoe",
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "$can_cut_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -10706,7 +10757,7 @@
                     {
                         "name": "Gym - Picnicker Tanya",
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "$can_cut_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -10716,7 +10767,7 @@
                     {
                         "name": "Gym - Lass Michelle",
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "$can_cut_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -10726,7 +10777,7 @@
                     {
                         "name": "Gym - Beauty Julia",
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "$can_cut_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -10737,7 +10788,7 @@
                         "name": "Gym - Beat Erika",
                         "hosted_item": "EVENT_BEAT_ERIKA",
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "$can_cut_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -10750,13 +10801,13 @@
                             "show_items, trainersanity_1263"
                         ],
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "$can_cut_kanto, ^$kantogymlock"
                         ]
                     },
                     {
                         "name": "Gym - Rainbow Badge from Erika",
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "$can_cut_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
@@ -10765,7 +10816,7 @@
                     {
                         "name": "​Gym - Rainbow Badge from Erika",
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "$can_cut_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, badges_off"
@@ -10775,7 +10826,7 @@
                     {
                         "name": "Gym - TM19 from Erika",
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "$can_cut_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -11188,8 +11239,8 @@
                     {
                         "name": "Gym - Juggler Horton",
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
-                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto, ^$kantogymlock",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -11199,8 +11250,8 @@
                     {
                         "name": "Gym - Gentleman Gregory",
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
-                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto, ^$kantogymlock",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -11210,8 +11261,8 @@
                     {
                         "name": "Gym - Guitarist Vincent",
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
-                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto, ^$kantogymlock",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -11221,8 +11272,8 @@
                     {
                         "name": "Gym - Beat Lt. Surge",
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
-                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto, ^$kantogymlock",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto, ^$kantogymlock"
                         ],
                         "hosted_item": "EVENT_BEAT_LTSURGE",
                         "visibility_rules": [
@@ -11236,15 +11287,15 @@
                             "show_items, trainersanity_1262"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
-                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto, ^$kantogymlock",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto, ^$kantogymlock"
                         ]
                     },
                     {
                         "name": "​Gym - Thunder Badge from Lt. Surge",
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
-                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto, ^$kantogymlock",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, badges_off"
@@ -11254,8 +11305,8 @@
                     {
                         "name": "Gym - Thunder Badge from Lt. Surge",
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto",
-                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto"
+                            "@JohtoKanto/Vermilion City/City, $can_cut_kanto, ^$kantogymlock",
+                            "@JohtoKanto/Vermilion City/City, $can_surf_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
@@ -12008,6 +12059,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1345"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -12015,6 +12069,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1193"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -12022,6 +12079,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1093"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -12036,6 +12096,9 @@
                         "hosted_item": "EVENT_BEAT_JANINE",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -12045,13 +12108,16 @@
                             "show_items, trainersanity_1264"
                         ],
                         "access_rules": [
-                            ""
+                            "^$kantogymlock"
                         ]
                     },
                     {
                         "name": "Gym - Soul Badge from Janine",
                         "visibility_rules": [
                             "show_items, $badges_randomised"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -12059,12 +12125,18 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "SOUL_BADGE"
+                        "hosted_item": "SOUL_BADGE",
+                        "access_rules": [
+                            "^$kantogymlock"
+                        ]
                     },
                     {
                         "name": "Gym - TM06 from Janine",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -12277,6 +12349,9 @@
                         "hosted_item": "EVENT_BEAT_BLAINE",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -12286,13 +12361,16 @@
                             "show_items, trainersanity_1266"
                         ],
                         "access_rules": [
-                            ""
+                            "^$kantogymlock"
                         ]
                     },
                     {
                         "name": "Gym - Volcano Badge from Blaine",
                         "visibility_rules": [
                             "show_items, $badges_randomised"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
@@ -12300,7 +12378,10 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "VOLCANO_BADGE"
+                        "hosted_item": "VOLCANO_BADGE",
+                        "access_rules": [
+                            "^$kantogymlock"
+                        ]
                     }
                 ],
                 "map_locations": [

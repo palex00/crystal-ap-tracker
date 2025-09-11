@@ -382,6 +382,10 @@ SLOT_CODES = {
     require_flash = {
         code = "require_flash",
         mapping = MAP_TRIPLE
+    },
+    lock_kanto_gyms = {
+        code = "lock_kanto_gyms",
+        mapping = MAP_TOGGLE
     }
 }
 
