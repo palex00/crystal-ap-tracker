@@ -4027,7 +4027,7 @@
                         ]
                     },
                     {
-                        "name": "Rival Fight",
+                        "name": "1F - Rival Fight",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_298"
@@ -4840,7 +4840,7 @@
                         ]
                     },
                     {
-                        "name": "Heal Amphy",
+                        "name": "6F - Heal Amphy",
                         "access_rules": [
                             "SECRETPOTION"
                         ],
@@ -8481,7 +8481,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Rival Battle",
+                        "name": "Rival Fight",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_301"
@@ -8855,7 +8855,7 @@
                         ]
                     },
                     {
-                        "name": "Defeat Red",
+                        "name": "3F - Defeat Red",
                         "hosted_item": "EVENT_BEAT_RED",
                         "access_rules": [
                             "^$dark|silvercave, red_requirement"
@@ -9577,7 +9577,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Rival Fight",
+                        "name": "Inside - Rival Fight",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_301"
