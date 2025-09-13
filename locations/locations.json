@@ -9572,8 +9572,8 @@
             {
                 "name": "Mount Moon",
                 "access_rules": [
-                    "@JohtoKanto/Pewter City, route_3_vanilla, ^$dark|mountmoon",
-                    "@JohtoKanto/Pewter City, BOULDER_BADGE, ^$dark|mountmoon"
+                    "@JohtoKanto/Pewter City, route_3_vanilla, ^$dark|mountmoon, ^$kantogymlock",
+                    "@JohtoKanto/Pewter City, BOULDER_BADGE, ^$dark|mountmoon, ^$kantogymlock"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -9649,8 +9649,7 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Pewter City, route_3_vanilla, ^$dark|mountmoon",
-                            "@JohtoKanto/Pewter City, BOULDER_BADGE, ^$dark|mountmoon"
+                            "@JohtoKanto/Mount Moon"
                         ]
                     },
                     {
