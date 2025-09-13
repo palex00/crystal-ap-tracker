@@ -112,6 +112,7 @@ LOCATION_MAPPING = {
   [182] = "@JohtoKanto/Lake of Rage/Hidden Item behind Cut Tree",
   [183] = "@JohtoKanto/Lake of Rage/Northeast Hidden Item",
   [184] = "@JohtoKanto/Silver Cave/Outside - Hidden Item across Water",
+  [196] = "@JohtoKanto/Goldenrod City/Exchange Eon Mail in Pokecenter",
   [200] = "@JohtoKanto/Route 2/Nugget from Guy",
   [209] = "@JohtoKanto/Saffron City/Pass from Copycat",
   [210] = "@JohtoKanto/Vermilion City/Lost Item from Guy in Fan Club",

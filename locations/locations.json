@@ -2435,6 +2435,15 @@
                         ]
                     },
                     {
+                        "name": "Exchange Eon Mail in Pokecenter",
+                        "access_rules": [
+                            "EVENT_GOT_EON_MAIL_FROM_EUSINE"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store 1F - Buy Waterstone",
                         "hosted_item": "WATER_STONE",
                         "visibility_rules": [
@@ -3631,6 +3640,16 @@
                         ]
                     },
                     {
+                        "name": "Saw Suicune on Route 36 (Event)",
+                        "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_36",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "EVENT_RELEASED_THE_BEASTS, @JohtoKanto/Route 36/Left"
+                        ]
+                    },
+                    {
                         "name": "Berry Tree",
                         "visibility_rules": [
                             "show_items, berries_on"
@@ -4146,6 +4165,16 @@
                         ],
                         "visibility_rules": [
                             "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "1F - Got Eon Mail from Eusine (Event)",
+                        "hosted_item": "EVENT_GOT_EON_MAIL_FROM_EUSINE",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "EVENT_RELEASED_THE_BEASTS, EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY, EVENT_SAW_SUICUNE_ON_ROUTE_42, EVENT_SAW_SUICUNE_ON_ROUTE_36"
                         ]
                     },
                     {
@@ -5623,6 +5652,16 @@
                 ],
                 "sections": [
                     {
+                        "name": "Saw Suicune in Cianwood City (Event)",
+                        "hosted_item": "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "EVENT_RELEASED_THE_BEASTS"
+                        ]
+                    },
+                    {
                         "name": "Gym - Blackbelt Yoshi",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -5840,6 +5879,16 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Saw Suicune on Route 42 (Event)",
+                        "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_42",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "EVENT_RELEASED_THE_BEASTS, $can_surf_johto, $can_cut_johto"
                         ]
                     },
                     {
@@ -8497,11 +8546,11 @@
                     {
                         "name": "Rival",
                         "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, trainersanity_301"
+                            "johto_only_off, show_items, trainersanity",
+                            "johto_only_off, show_items, trainersanity_301"
                         ],
-                        "visibility_rules": [
-                            "johto_only_off"
+                        "access_rules": [
+                            "EVENT_BEAT_RIVAL_IN_MT_MOON"
                         ]
                     },
                     {
@@ -9592,6 +9641,14 @@
                 "sections": [
                     {
                         "name": "Inside - Rival",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_300"
+                        ]
+                    },
+                    {
+                        "name": "Inside - Beat Rival (Event)",
+                        "hosted_item": "EVENT_BEAT_RIVAL_IN_MT_MOON",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_301"
