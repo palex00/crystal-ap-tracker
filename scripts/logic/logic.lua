@@ -298,7 +298,7 @@ function dark(area)
     if has("dark_"..area.."_false") then
         return AccessibilityLevel.Normal
     elseif has("dark_"..area.."_true") then
-        if area == diglettscave or mountmoon or rocktunnel then
+        if area == "diglettscave" or area == "mountmoon" or area == "rocktunnel" then
             return can_flash("kanto")
         else
             return can_flash("johto")
