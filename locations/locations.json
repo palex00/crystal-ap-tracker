@@ -8435,6 +8435,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_299"
+                        ],
+                        "access_rules": [
+                            "^$victory_road_access"
                         ]
                     },
                     {
