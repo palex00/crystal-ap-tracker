@@ -3033,16 +3033,20 @@
                         "name": "Goldenrod UG - Super Nerd Eric"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 3",
-                        "name": "Goldenrod UG B2F - Grunt 3"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Rival",
+                        "name": "Goldenrod UG B2F - Rival"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 1",
+                        "name": "Goldenrod UG B2F - Grunt 1"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 2",
                         "name": "Goldenrod UG B2F - Grunt 2"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 1",
-                        "name": "Goldenrod UG B2F - Grunt 1"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 3",
+                        "name": "Goldenrod UG B2F - Grunt 3"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - West Hidden Item",
@@ -3561,6 +3565,21 @@
                         "map": "GoldenrodUndergroundSwitchRoomEntrances",
                         "x": 72,
                         "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodUndergroundSwitchRoomEntrances",
+                        "x": 312,
+                        "y": 80
                     }
                 ]
             },
@@ -14338,8 +14357,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "name": "Indigo Plateau - Rival Fight",
-                        "ref": "JohtoKanto/Indigo Plateau/Rival Fight"
+                        "name": "Indigo Plateau - Rival",
+                        "ref": "JohtoKanto/Indigo Plateau/Rival"
                     },
                     {
                         "name": "Indigo Plateau - Poke Mart - Shop Items",
@@ -14449,7 +14468,7 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Azalea Town/Rival Fight"
+                        "ref": "JohtoKanto/Azalea Town/Rival"
                     }
                 ],
                 "map_locations": [
@@ -14464,7 +14483,7 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Burned Tower/1F - Rival Fight"
+                        "ref": "JohtoKanto/Burned Tower/1F - Rival"
                     }
                 ],
                 "map_locations": [
@@ -14479,7 +14498,7 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Cherrygrove City/Rival Fight"
+                        "ref": "JohtoKanto/Cherrygrove City/Rival"
                     }
                 ],
                 "map_locations": [
@@ -14524,7 +14543,7 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Moon/Inside - Rival Fight"
+                        "ref": "JohtoKanto/Mount Moon/Inside - Rival"
                     }
                 ],
                 "map_locations": [
@@ -14539,7 +14558,7 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Victory Road/3F - Rival Fight"
+                        "ref": "JohtoKanto/Victory Road/3F - Rival"
                     }
                 ],
                 "map_locations": [

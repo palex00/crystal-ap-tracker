@@ -197,7 +197,7 @@
                         ]
                     },
                     {
-                        "name": "Rival Fight",
+                        "name": "Rival",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_296"
@@ -1925,7 +1925,7 @@
                         ]
                     },
                     {
-                        "name": "Rival Fight",
+                        "name": "Rival",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_297"
@@ -2829,14 +2829,14 @@
                         ]
                     },
                     {
-                        "name": "B2F - Grunt 2",
+                        "name": "B2F - Rival",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_302"
+                        ],
                         "access_rules": [
                             "tower_requirement,CARD_KEY",
                             "tower_requirement,BASEMENT_KEY, ^$dark|goldenrodunderground"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, trainersanity_1314"
                         ]
                     },
                     {
@@ -2848,6 +2848,17 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1316"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Grunt 2",
+                        "access_rules": [
+                            "tower_requirement,CARD_KEY",
+                            "tower_requirement,BASEMENT_KEY, ^$dark|goldenrodunderground"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1314"
                         ]
                     },
                     {
@@ -4027,7 +4038,7 @@
                         ]
                     },
                     {
-                        "name": "1F - Rival Fight",
+                        "name": "1F - Rival",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_298"
@@ -8431,7 +8442,7 @@
                         ]
                     },
                     {
-                        "name": "3F - Rival Fight",
+                        "name": "3F - Rival",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_299"
@@ -8484,7 +8495,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Rival Fight",
+                        "name": "Rival",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_301"
@@ -9580,7 +9591,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Inside - Rival Fight",
+                        "name": "Inside - Rival",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_301"
