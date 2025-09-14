@@ -110,7 +110,7 @@ function onClear(slot_data)
                 TRAINERS:setType("none")
             elseif #v == 372 and has("johto_only_off") then
                 TRAINERS:setType("full")
-            elseif #v == 241 and (has("johto_only_on") or has("johto_only_silver")) then
+            elseif #v == 242 and (has("johto_only_on") or has("johto_only_silver")) then
                 TRAINERS:setType("full")
             else
                 TRAINERS:setType("partial")

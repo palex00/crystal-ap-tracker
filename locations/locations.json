@@ -8430,7 +8430,7 @@
                     {
                         "name": "1F - Hidden Item on Southwest Boulder",
                         "access_rules": [
-                            "^$hid, ^$victory_road_access"
+                            "^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
