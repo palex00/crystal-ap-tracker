@@ -3816,7 +3816,7 @@
                     "start_town_Ecruteak",
                     "@JohtoKanto/Route 36/Top",
                     "@JohtoKanto/Olivine City",
-                    "@JohtoKanto/Mahogany Town/Town, $pass_mortar",
+                    "@JohtoKanto/Mahogany Town/Town, $pass_mortar, ^$dark|mountmortar",
                     "$can_freefly|Ecruteak"
                 ],
                 "sections": [
@@ -6002,12 +6002,96 @@
                 ],
                 "sections": [
                     {
+                        "name": "1F Outside Pre-Smash",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "1F Outside Post-Smash",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Outside Pre-Smash, mount_mortar_access_vanilla",
+                            "@JohtoKanto/Mount Mortar/1F Outside Pre-Smash, TM_ROCK_SMASH",
+                        ]
+                    },
+                    {
+                        "name": "1F Outside Pre-Waterfall",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "$can_surf_johto"
+                        ]
+                    },
+                    {
+                        "name": "1F Outside Post-Waterfall",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Outside Pre-Waterfall, $can_waterfall"
+                        ]
+                    },
+                    {
+                        "name": "1F Inside Pre-Strength",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Outside Post-Smash, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/1F Inside Post-Strength, $can_strength"
+                        ]
+                    },
+                    {
+                        "name": "1F Inside Post-Strength",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength, $can_strength",
+                            "@JohtoKanto/Mount Mortar/1F Inside Top"
+                        ]
+                    },
+                    {
+                        "name": "1F Inside Top",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/2F"
+                        ]
+                    },
+                    {
+                        "name": "2F",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Outside Post-Waterfall, ^$dark|mountmortar"
+                        ]
+                    },
+                    {
+                        "name": "B1F",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Outside Pre-Waterfall, ^$dark|mountmortar"
+                        ]
+                    },
+                    {
                         "name": "1F Outside - Item up West Ladder",
                         "visibility_rules": [
                             "show_items"
                         ],
                         "access_rules": [
-                            "$mountmortar_front, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength"
                         ]
                     },
                     {
@@ -6016,7 +6100,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$mountmortar_front, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength"
                         ]
                     },
                     {
@@ -6025,7 +6109,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "$mountmortar_front, ^$hid, ^$dark|mountmortar"
+                            "^$hid, @JohtoKanto/Mount Mortar/1F Outside Post-Smash"
                         ]
                     },
                     {
@@ -6038,7 +6122,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, ^$dark|mountmortar"
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/Pre-Smash"
                         ]
                     },
                     {
@@ -6051,70 +6135,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, ^$dark|mountmortar"
-                        ]
-                    },
-                    {
-                        "name": "1F Inside - West Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "access_rules": [
-                            "$mountmortar_back, ^$dark|mountmortar"
-                        ]
-                    },
-                    {
-                        "name": "1F Inside - Center Item (Left)",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "access_rules": [
-                            "$mountmortar_back, ^$dark|mountmortar"
-                        ]
-                    },
-                    {
-                        "name": "1F Inside - East Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "access_rules": [
-                            "$mountmortar_back, ^$dark|mountmortar"
-                        ]
-                    },
-                    {
-                        "name": "1F Inside - Southeast Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "access_rules": [
-                            "$mountmortar_back, ^$dark|mountmortar"
-                        ]
-                    },
-                    {
-                        "name": "1F Inside - Northwest Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
-                        ]
-                    },
-                    {
-                        "name": "1F Inside - North Item",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
-                        ]
-                    },
-                    {
-                        "name": "1F Inside - Center Item (Right)",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
+                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/Pre-Waterfall"
                         ]
                     },
                     {
@@ -6124,13 +6145,76 @@
                             "show_items, trainersanity_1515"
                         ],
                         "access_rules": [
-                            "$mountmortar_front, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength"
+                        ]
+                    },
+                    {
+                        "name": "1F Inside - West Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Inside Post-Strength"
+                        ]
+                    },
+                    {
+                        "name": "1F Inside - Center Item (Left)",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Inside Post-Strength"
+                        ]
+                    },
+                    {
+                        "name": "1F Inside - East Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Inside Post-Strength"
+                        ]
+                    },
+                    {
+                        "name": "1F Inside - Southeast Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Inside Post-Strength"
+                        ]
+                    },
+                    {
+                        "name": "1F Inside - Northwest Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Inside Top"
+                        ]
+                    },
+                    {
+                        "name": "1F Inside - North Item",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Inside Top"
+                        ]
+                    },
+                    {
+                        "name": "1F Inside - Center Item (Right)",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F Inside Top"
                         ]
                     },
                     {
                         "name": "1F Inside - Super Nerd Markus",
                         "access_rules": [
-                            "$mountmortar_back, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/1F Inside Post-Strength"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6143,7 +6227,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, $can_waterfall, ^$dark|mountmortar"
+                            "^$hid, @JohtoKanto/Mount Mortar/1F Inside Top"
                         ]
                     },
                     {
@@ -6156,7 +6240,8 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, $mountmortar_front, ^$dark|mountmortar"
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F Inside Pre-Strength",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F Inside Post-Strength"
                         ]
                     },
                     {
@@ -6165,7 +6250,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/2F"
                         ]
                     },
                     {
@@ -6174,7 +6259,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/2F"
                         ]
                     },
                     {
@@ -6183,7 +6268,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/2F"
                         ]
                     },
                     {
@@ -6192,7 +6277,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/2F"
                         ]
                     },
                     {
@@ -6201,7 +6286,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/2F"
                         ]
                     },
                     {
@@ -6210,7 +6295,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/2F"
                         ]
                     },
                     {
@@ -6220,7 +6305,7 @@
                             "show_items, trainersanity_1516"
                         ],
                         "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/2F"
                         ]
                     },
                     {
@@ -6229,7 +6314,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, $can_waterfall, ^$dark|mountmortar"
+                            "^$hid, @JohtoKanto/Mount Mortar/2F"
                         ]
                     },
                     {
@@ -6242,7 +6327,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, $can_waterfall, ^$dark|mountmortar"
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/2F"
                         ]
                     },
                     {
@@ -6255,7 +6340,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, $can_waterfall, ^$dark|mountmortar"
+                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/2F"
                         ]
                     },
                     {
@@ -6264,7 +6349,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -6273,7 +6358,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -6282,7 +6367,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -6291,7 +6376,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -6300,7 +6385,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -6309,7 +6394,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, $can_waterfall, ^$dark|mountmortar"
+                            "^$hid, @JohtoKanto/Mount Mortar/1F Inside Top"
                         ]
                     },
                     {
@@ -6319,7 +6404,7 @@
                             "show_items, trainersanity_1232"
                         ],
                         "access_rules": [
-                            "$can_waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/1F Inside Top"
                         ]
                     },
                     {
@@ -6330,7 +6415,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$static_encounter, $can_waterfall, ^$dark|mountmortar"
+                            "^$static_encounter, @JohtoKanto/Mount Mortar/1F Inside Top"
                         ]
                     },
                     {
@@ -6343,7 +6428,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$land_encounter, ^$dark|mountmortar"
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -6356,7 +6441,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$surf_encounter_johto, ^$dark|mountmortar"
+                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/B1F"
                         ]
                     }
                 ],
@@ -6390,7 +6475,7 @@
                         ],
                         "access_rules": [
                             "start_town_Mahogany",
-                            "@JohtoKanto/Ecruteak City, $pass_mortar",
+                            "@JohtoKanto/Ecruteak City, $pass_mortar, ^$dark|mountmortar",
                             "@JohtoKanto/Ice Path, route_44_requirement",
                             "@JohtoKanto/Ice Path, ^$fly_cheese",
                             "@JohtoKanto/Lake of Rage",
