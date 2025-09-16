@@ -3816,7 +3816,8 @@
                     "start_town_Ecruteak",
                     "@JohtoKanto/Route 36/Top",
                     "@JohtoKanto/Olivine City",
-                    "@JohtoKanto/Mahogany Town/Town, $pass_mortar, ^$dark|mountmortar",
+                    "@JohtoKanto/Mahogany Town/Town, $can_surf_johto",
+                    "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength",
                     "$can_freefly|Ecruteak"
                 ],
                 "sections": [
@@ -6475,7 +6476,8 @@
                         ],
                         "access_rules": [
                             "start_town_Mahogany",
-                            "@JohtoKanto/Ecruteak City, $pass_mortar, ^$dark|mountmortar",
+                            "@JohtoKanto/Ecruteak City, $can_surf_johto",
+                            "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength",
                             "@JohtoKanto/Ice Path, route_44_requirement",
                             "@JohtoKanto/Ice Path, ^$fly_cheese",
                             "@JohtoKanto/Lake of Rage",

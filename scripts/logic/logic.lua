@@ -229,11 +229,6 @@ function badges_randomised()
   return has("badges_on") or has("badges_shuffle")
 end
 
-function pass_mortar()
-  local pass_rocksmash = has("mount_mortar_access_vanilla") or has("TM_ROCK_SMASH")
-  return pass_rocksmash or can_surf_johto()
-end
-
 function fly_cheese()
     if has("fly_cheese_optional") and can_fly() and has("randomize_fly_unlocks_false") then
         return AccessibilityLevel.SequenceBreak
