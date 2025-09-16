@@ -1830,7 +1830,7 @@
                     {
                         "name": "Charcoal from Charcoal Kiln",
                         "access_rules": [
-                            "EVENT_HERDED_FARFETCHD"
+                            "@JohtoKanto/Ilex Forest/Pre-Tree, EVENT_HERDED_FARFETCHD"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2085,7 +2085,7 @@
                         "name": "Herded Farfetch'd",
                         "hosted_item": "EVENT_HERDED_FARFETCHD",
                         "access_rules": [
-                            "EVENT_CLEARED_SLOWPOKE_WELL"
+                            "@JohtoKanto/Ilex Forest/Pre-Tree, EVENT_CLEARED_SLOWPOKE_WELL"
                         ],
                         "visibility_rules": [
                             "show_items"
