@@ -40,6 +40,14 @@
                 },
                 {
                     "type": "group",
+                    "header": "Dark Caves",
+                    "content": {
+                        "type": "layout",
+                        "key": "darkcave_grid"
+                    }
+                },
+                {
+                    "type": "group",
                     "header": "Start Town & Fly Locations",
                     "content": {
                         "type": "layout",
@@ -78,6 +86,7 @@
         "rows": [
             [
                 "hiddenitem_logic",
+                "require_flash",
                 "fly_cheese",
                 "badgereqs",
                 "clair_behaviour",
@@ -103,6 +112,7 @@
             [
                 "red_gyarados_access",
                 "route_44_requirement",
+                "victory_road_access",
                 "e4_requirement",
                 "mt_silver_requirement",
                 "red_requirement"
@@ -139,6 +149,35 @@
                 "shopsanity_bluecard",
                 "shopsanity_gamecorners",
                 "shopsanity_johtomarts"
+            ]
+        ]
+    },
+    "darkcave_grid": {
+        "type": "itemgrid",
+        "item_margin": "2, 2",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "dark_darkcave",
+                "dark_unioncave",
+                "dark_ilexforest",
+                "dark_slowpokewell",
+                "dark_goldenrodunderground"
+            ],
+            [
+                "dark_burnedtower",
+                "dark_olivinelighthouse",
+                "dark_whirlislands",
+                "dark_mountmortar",
+                "dark_icepath"
+            ],
+            [
+                "dark_dragonsden",
+                "dark_tohjofalls",
+                "dark_victoryroad",
+                "dark_silvercave"
             ]
         ]
     },

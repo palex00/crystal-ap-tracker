@@ -2684,5 +2684,451 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Victory Road Access",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Victory Road Access: Vanilla",
+                "img": "/images/settings/victoryroadaccess.png",
+                "img_mods": "@disabled",
+                "codes": "victory_road_access, victory_road_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Victory Road Access: Strength",
+                "img": "/images/settings/victoryroadaccess.png",
+                "codes": "victory_road_access, victory_road_access_strength",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Flash Logic",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Flash Logic: Not Required",
+                "img": "/images/settings/flash_required.png",
+                "img_mods": "@disabled",
+                "codes": "require_flash, require_flash_notrequired",
+                "inherit_codes": false
+            },
+            {
+                "name": "Flash Logic: Logically Required",
+                "img": "/images/settings/flash_required.png",
+                "codes": "require_flash, require_flash_logical",
+                "inherit_codes": false
+            },
+            {
+                "name": "Flash Logic: Hard Required",
+                "img": "/images/settings/flash_hardrequired.png",
+                "codes": "require_flash, require_flash_hardrequired",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Burned Tower",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Burned Tower is lit",
+                "img": "/images/settings/dark_areas/dark_burnedtower.png",
+                "img_mods": "@disabled",
+                "codes": "dark_burnedtower, dark_burnedtower_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Burned Tower is dark",
+                "img": "/images/settings/dark_areas/dark_burnedtower.png",
+                "codes": "dark_burnedtower, dark_burnedtower_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Dark Cave",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Dark Cave is lit",
+                "img": "/images/settings/dark_areas/dark_darkcave.png",
+                "img_mods": "@disabled",
+                "codes": "dark_darkcave, dark_darkcave_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Dark Cave is dark",
+                "img": "/images/settings/dark_areas/dark_darkcave.png",
+                "codes": "dark_darkcave, dark_darkcave_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Diglett's Cave",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Diglett's Cave is lit",
+                "img": "/images/settings/dark_areas/dark_diglettscave.png",
+                "img_mods": "@disabled",
+                "codes": "dark_diglettscave, dark_diglettscave_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Diglett's Cave is dark",
+                "img": "/images/settings/dark_areas/dark_diglettscave.png",
+                "codes": "dark_diglettscave, dark_diglettscave_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Dragon's Den",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Dragon's Den is lit",
+                "img": "/images/settings/dark_areas/dark_dragonsden.png",
+                "img_mods": "@disabled",
+                "codes": "dark_dragonsden, dark_dragonsden_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Dragon's Den is dark",
+                "img": "/images/settings/dark_areas/dark_dragonsden.png",
+                "codes": "dark_dragonsden, dark_dragonsden_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Goldenrod Underground",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Goldenrod Underground is lit",
+                "img": "/images/settings/dark_areas/dark_goldenrodunderground.png",
+                "img_mods": "@disabled",
+                "codes": "dark_goldenrodunderground, dark_goldenrodunderground_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goldenrod Underground is dark",
+                "img": "/images/settings/dark_areas/dark_goldenrodunderground.png",
+                "codes": "dark_goldenrodunderground, dark_goldenrodunderground_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Ice Path",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Ice Path is lit",
+                "img": "/images/settings/dark_areas/dark_icepath.png",
+                "img_mods": "@disabled",
+                "codes": "dark_icepath, dark_icepath_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Ice Path is dark",
+                "img": "/images/settings/dark_areas/dark_icepath.png",
+                "codes": "dark_icepath, dark_icepath_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Ilex Forest",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Ilex Forest is lit",
+                "img": "/images/settings/dark_areas/dark_ilexforest.png",
+                "img_mods": "@disabled",
+                "codes": "dark_ilexforest, dark_ilexforest_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Ilex Forest is dark",
+                "img": "/images/settings/dark_areas/dark_ilexforest.png",
+                "codes": "dark_ilexforest, dark_ilexforest_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Mount Moon",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Mount Moon is lit",
+                "img": "/images/settings/dark_areas/dark_mountmoon.png",
+                "img_mods": "@disabled",
+                "codes": "dark_mountmoon, dark_mountmoon_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Mount Moon is dark",
+                "img": "/images/settings/dark_areas/dark_mountmoon.png",
+                "codes": "dark_mountmoon, dark_mountmoon_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Mount Mortar",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Mount Mortar is lit",
+                "img": "/images/settings/dark_areas/dark_mountmortar.png",
+                "img_mods": "@disabled",
+                "codes": "dark_mountmortar, dark_mountmortar_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Mount Mortar is dark",
+                "img": "/images/settings/dark_areas/dark_mountmortar.png",
+                "codes": "dark_mountmortar, dark_mountmortar_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Olivine Lighthouse",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Olivine Lighthouse is lit",
+                "img": "/images/settings/dark_areas/dark_olivinelighthouse.png",
+                "img_mods": "@disabled",
+                "codes": "dark_olivinelighthouse, dark_olivinelighthouse_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Olivine Lighthouse is dark",
+                "img": "/images/settings/dark_areas/dark_olivinelighthouse.png",
+                "codes": "dark_olivinelighthouse, dark_olivinelighthouse_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Rock Tunnel",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Rock Tunnel is lit",
+                "img": "/images/settings/dark_areas/dark_rocktunnel.png",
+                "img_mods": "@disabled",
+                "codes": "dark_rocktunnel, dark_rocktunnel_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Rock Tunnel is dark",
+                "img": "/images/settings/dark_areas/dark_rocktunnel.png",
+                "codes": "dark_rocktunnel, dark_rocktunnel_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Silver Cave",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Silver Cave is lit",
+                "img": "/images/settings/dark_areas/dark_silvercave.png",
+                "img_mods": "@disabled",
+                "codes": "dark_silvercave, dark_silvercave_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Silver Cave is dark",
+                "img": "/images/settings/dark_areas/dark_silvercave.png",
+                "codes": "dark_silvercave, dark_silvercave_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Slowpoke Well",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Slowpoke Well is lit",
+                "img": "/images/settings/dark_areas/dark_slowpokewell.png",
+                "img_mods": "@disabled",
+                "codes": "dark_slowpokewell, dark_slowpokewell_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Slowpoke Well is dark",
+                "img": "/images/settings/dark_areas/dark_slowpokewell.png",
+                "codes": "dark_slowpokewell, dark_slowpokewell_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Tohjo Falls",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Tohjo Falls is lit",
+                "img": "/images/settings/dark_areas/dark_tohjofalls.png",
+                "img_mods": "@disabled",
+                "codes": "dark_tohjofalls, dark_tohjofalls_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Tohjo Falls is dark",
+                "img": "/images/settings/dark_areas/dark_tohjofalls.png",
+                "codes": "dark_tohjofalls, dark_tohjofalls_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Union Cave",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Union Cave is lit",
+                "img": "/images/settings/dark_areas/dark_unioncave.png",
+                "img_mods": "@disabled",
+                "codes": "dark_unioncave, dark_unioncave_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Union Cave is dark",
+                "img": "/images/settings/dark_areas/dark_unioncave.png",
+                "codes": "dark_unioncave, dark_unioncave_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Victory Road",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Victory Road is lit",
+                "img": "/images/settings/dark_areas/dark_victoryroad.png",
+                "img_mods": "@disabled",
+                "codes": "dark_victoryroad, dark_victoryroad_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Victory Road is dark",
+                "img": "/images/settings/dark_areas/dark_victoryroad.png",
+                "codes": "dark_victoryroad, dark_victoryroad_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Whirl Islands",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Whirl Islands is lit",
+                "img": "/images/settings/dark_areas/dark_whirlislands.png",
+                "img_mods": "@disabled",
+                "codes": "dark_whirlislands, dark_whirlislands_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Whirl Islands is dark",
+                "img": "/images/settings/dark_areas/dark_whirlislands.png",
+                "codes": "dark_whirlislands, dark_whirlislands_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Kanto Lock",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Kanto Gyms are not locked behind High Logic Mons",
+                "img": "/images/settings/kantolock.png",
+                "img_mods": "@disabled",
+                "codes": "lock_kanto_gyms, lock_kanto_gyms_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Kanto Gyms are logically locked behind High Logic Mons",
+                "img": "/images/settings/kantolock.png",
+                "codes": "lock_kanto_gyms, lock_kanto_gyms_true",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

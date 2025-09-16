@@ -12,7 +12,10 @@ PLAYER_ID = -1
 TEAM_NUMBER = 0
 
 EVENT_ID = ""
+EVENT2_ID = ""
 KEY_ID = ""
+STATIC_ID = ""
+ROCKETTRAP_ID = ""
 POKE_ID = ""
 EVOLUTION_DATA = ""
 BREEDING_DATA = ""
@@ -30,6 +33,12 @@ function onClear(slot_data)
             obj.Active = false
         end
     end
+    for i = 296, 302 do
+        local obj = Tracker:FindObjectForCode("trainersanity_" .. i)
+        obj.Active = false
+    end
+    Tracker:FindObjectForCode("trainersanity_1702").Active = false -- literally just Eusine the fucker.
+
 
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
@@ -41,7 +50,7 @@ function onClear(slot_data)
             if  k == "apworld_version" then
                 local version_str = tostring(v)
                 local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-                if first_two_dots == "5.0" or nil then
+                if first_two_dots == "5.1" or nil then
                     Tracker:AddLayouts("layouts/tracker.json")
                 else
                     Tracker:AddLayouts("layouts/versionmismatch.json")
@@ -82,15 +91,26 @@ function onClear(slot_data)
 		elseif AMOUNT_CODES[k] then
 			local item = AMOUNT_CODES[k].item
 			item:setStage(v)
+        elseif LIST_CODES[k] then
+            for _, code in pairs(LIST_CODES[k].values) do
+                Tracker:FindObjectForCode(code).CurrentStage = LIST_CODES[k].mapping[0]
+            end
+        
+            for _, name in ipairs(v or {}) do
+                local code = LIST_CODES[k].values[name]
+                if code then
+                    Tracker:FindObjectForCode(code).CurrentStage = LIST_CODES[k].mapping[1]
+                end
+            end
         elseif k == "trainersanity" then
             for _, value in ipairs(v) do
                 Tracker:FindObjectForCode("trainersanity_" .. value).Active = true
             end
             if #v == 0 then
                 TRAINERS:setType("none")
-            elseif #v == 342 and has("johto_only_off") then
+            elseif #v == 372 and has("johto_only_off") then
                 TRAINERS:setType("full")
-            elseif #v == 223 and (has("johto_only_on") or has("johto_only_silver")) then
+            elseif #v == 242 and (has("johto_only_on") or has("johto_only_silver")) then
                 TRAINERS:setType("full")
             else
                 TRAINERS:setType("partial")
@@ -186,10 +206,16 @@ function onClear(slot_data)
         else
             Tracker:FindObjectForCode("chrism").CurrentStage = 0
         end
+        
         updateEvents(0)
+        
         EVENT_ID="pokemon_crystal_events_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({EVENT_ID})
         Archipelago:Get({EVENT_ID})
+        
+        EVENT2_ID="pokemon_crystal_events_2_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({EVENT2_ID})
+        Archipelago:Get({EVENT2_ID})
         
         STATIC_ID="pokemon_crystal_statics_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({STATIC_ID})
@@ -263,6 +289,8 @@ function onNotify(key, value, old_value)
     if value ~= nil and value ~= 0 then
         if key == EVENT_ID then
             updateEvents(value)
+        elseif key == EVENT2_ID then
+            updateEvents2(value)
         elseif key == STATIC_ID then
             updateStatics(value)
         elseif key == KEY_ID then
@@ -280,6 +308,8 @@ function onNotifyLaunch(key, value)
     if value ~= nil and value ~= 0 then
         if key == EVENT_ID then
             updateEvents(value)
+        elseif key == EVENT2_ID then
+            updateEvents2(value)
         elseif key == STATIC_ID then
             updateStatics(value)
         elseif key == KEY_ID then
@@ -296,6 +326,22 @@ end
 function updateEvents(value)
     if value ~= nil then
         for i, code in ipairs(FLAG_EVENT_CODES) do
+            local obj = Tracker:FindObjectForCode(code)
+            if obj ~= nil then
+                obj.Active = false
+            end
+            local bit = value >> (i - 1) & 1
+            if #code > 0 then
+                local obj = Tracker:FindObjectForCode(code)
+                obj.Active = obj.Active or bit == 1
+            end
+        end
+    end
+end
+
+function updateEvents2(value)
+    if value ~= nil then
+        for i, code in ipairs(FLAG_EVENT_2_CODES) do
             local obj = Tracker:FindObjectForCode(code)
             if obj ~= nil then
                 obj.Active = false

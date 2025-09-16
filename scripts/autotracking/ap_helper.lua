@@ -171,10 +171,6 @@ SLOT_CODES = {
         code = "badgereqs",
         mapping = MAP_QUADRUPLE
     },
-    require_itemfinder = {
-        code = "reqitemfinder",
-        mapping = MAP_TRIPLE
-    },
     johto_only = {
         code = "johto_only",
         mapping = MAP_TRIPLE
@@ -378,6 +374,18 @@ SLOT_CODES = {
     randomize_evolution = {
         code = "randomize_evolution",
         mapping = MAP_TRIPLE
+    },
+    victory_road_access = {
+        code = "victory_road_access",
+        mapping = MAP_TOGGLE
+    },
+    require_flash = {
+        code = "require_flash",
+        mapping = MAP_TRIPLE
+    },
+    lock_kanto_gyms = {
+        code = "lock_kanto_gyms",
+        mapping = MAP_TOGGLE
     }
 }
 
@@ -437,5 +445,30 @@ AMOUNT_CODES = {
     kanto_access_count = {
         code = "kanto_access_count",
         item = KANTO_REQ
+    }
+}
+
+LIST_CODES = {
+    dark_areas = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Burned Tower"]         = "dark_burnedtower",
+            ["Dark Cave"]            = "dark_darkcave",
+            ["Digletts Cave"]        = "dark_diglettscave",
+            ["Dragons Den"]          = "dark_dragonsden",
+            ["Goldenrod Underground"]= "dark_goldenrodunderground",
+            ["Ice Path"]             = "dark_icepath",
+            ["Ilex Forest"]          = "dark_ilexforest",
+            ["Mount Moon"]           = "dark_mountmoon",
+            ["Mount Mortar"]         = "dark_mountmortar",
+            ["Olivine Lighthouse"]   = "dark_olivinelighthouse",
+            ["Rock Tunnel"]          = "dark_rocktunnel",
+            ["Silver Cave"]          = "dark_silvercave",
+            ["Slowpoke Well"]        = "dark_slowpokewell",
+            ["Tohjo Falls"]          = "dark_tohjofalls",
+            ["Union Cave"]           = "dark_unioncave",
+            ["Victory Road"]         = "dark_victoryroad",
+            ["Whirl Islands"]        = "dark_whirlislands",
+        }
     }
 }

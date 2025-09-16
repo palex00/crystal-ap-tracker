@@ -40,6 +40,9 @@ function dump_table(o, depth)
         trainersanity = true,
         dexcountsanity_counts = true,
         dexsanity_pokemon = true,
+        hm_compat = true,
+        breeding_info = true,
+        evolution_info = true,
     }
 
     if type(o) == 'table' then
@@ -174,6 +177,19 @@ function toggle_mountmortar()
         Tracker:AddMaps("maps/mischief/mount_mortar_vanilla.json")
     elseif has("mount_mortar_access_rocksmash") and sudowoodo then
         Tracker:AddMaps("maps/mischief/mount_mortar_rocksmash.json")
+    end
+end
+
+function toggle_victoryroad()
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    if has("victory_road_access_vanilla") and not sudowoodo then
+        Tracker:AddMaps("maps/victory_road_vanilla.json")
+    elseif has("victory_road_access_strength") and not sudowoodo then
+        Tracker:AddMaps("maps/victory_road_strength.json")
+    elseif has("victory_road_access_vanilla") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/victory_road_vanilla.json")
+    elseif has("victory_road_access_strength") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/victory_road_strength.json")
     end
 end
 

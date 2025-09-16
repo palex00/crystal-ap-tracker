@@ -52,17 +52,17 @@
                         "item_count": 3,
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Violet Entrance",
-                            "@JohtoKanto/Route 45, ^$can_flash_johto",
-                            "@JohtoKanto/Mount Mortar",
+                            "@JohtoKanto/Route 45, ^$dark|darkcave",
+                            "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
                             "@JohtoKanto/Route 10/Top",
                             "@JohtoKanto/Route 24",
                             "@JohtoKanto/Route 25",
                             "@JohtoKanto/Route 42",
                             "@JohtoKanto/Route 9",
-                            "@JohtoKanto/Silver Cave, ^$can_flash_johto",
-                            "@JohtoKanto/Slowpoke Well",
+                            "@JohtoKanto/Silver Cave, ^$dark|silvercave",
+                            "@JohtoKanto/Slowpoke Well, ^$dark|slowpokewell",
                             "@JohtoKanto/New Bark Town, $can_surf_johto",
-                            "@JohtoKanto/Union Cave"
+                            "@JohtoKanto/Union Cave, ^$dark|unioncave"
                         ]
                     },
                     {
@@ -72,7 +72,7 @@
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City",
                             "@JohtoKanto/Ecruteak City",
-                            "@JohtoKanto/Ilex Forest/Post-Tree",
+                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$dark|ilexforest",
                             "@JohtoKanto/Route 22",
                             "@JohtoKanto/Route 28",
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
@@ -92,7 +92,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR"
+                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ]
                     },
                     {
@@ -117,7 +117,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Whirl Islands, ^$can_flash_johto"
+                            "@JohtoKanto/Whirl Islands, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -205,17 +205,17 @@
                         "item_count": 4,
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Violet Entrance",
-                            "@JohtoKanto/Route 45, ^$can_flash_johto",
-                            "@JohtoKanto/Mount Mortar",
+                            "@JohtoKanto/Route 45, ^$dark|darkcave",
+                            "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
                             "@JohtoKanto/Route 10/Top",
                             "@JohtoKanto/Route 24",
                             "@JohtoKanto/Route 25",
                             "@JohtoKanto/Route 42",
                             "@JohtoKanto/Route 9",
-                            "@JohtoKanto/Silver Cave, ^$can_flash_johto",
-                            "@JohtoKanto/Slowpoke Well",
+                            "@JohtoKanto/Silver Cave, ^$dark|silvercave",
+                            "@JohtoKanto/Slowpoke Well, ^$dark|slowpokewell",
                             "@JohtoKanto/New Bark Town, $can_surf_johto",
-                            "@JohtoKanto/Union Cave"
+                            "@JohtoKanto/Union Cave, ^$dark|unioncave"
                         ]
                     },
                     {
@@ -225,7 +225,7 @@
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City",
                             "@JohtoKanto/Ecruteak City",
-                            "@JohtoKanto/Ilex Forest/Post-Tree",
+                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$dark|ilexforest",
                             "@JohtoKanto/Route 22",
                             "@JohtoKanto/Route 28",
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
@@ -245,7 +245,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR"
+                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ]
                     },
                     {
@@ -270,7 +270,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Whirl Islands, ^$can_flash_johto"
+                            "@JohtoKanto/Whirl Islands, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -358,17 +358,17 @@
                         "item_count": 4,
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Violet Entrance",
-                            "@JohtoKanto/Route 45, ^$can_flash_johto",
-                            "@JohtoKanto/Mount Mortar",
+                            "@JohtoKanto/Route 45, ^$dark|darkcave",
+                            "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
                             "@JohtoKanto/Route 10/Top",
                             "@JohtoKanto/Route 24",
                             "@JohtoKanto/Route 25",
                             "@JohtoKanto/Route 42",
                             "@JohtoKanto/Route 9",
-                            "@JohtoKanto/Silver Cave, ^$can_flash_johto",
-                            "@JohtoKanto/Slowpoke Well",
+                            "@JohtoKanto/Silver Cave, ^$dark|silvercave",
+                            "@JohtoKanto/Slowpoke Well, ^$dark|slowpokewell",
                             "@JohtoKanto/New Bark Town, $can_surf_johto",
-                            "@JohtoKanto/Union Cave"
+                            "@JohtoKanto/Union Cave, ^$dark|unioncave"
                         ]
                     },
                     {
@@ -378,7 +378,7 @@
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City",
                             "@JohtoKanto/Ecruteak City",
-                            "@JohtoKanto/Ilex Forest/Post-Tree",
+                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$dark|ilexforest",
                             "@JohtoKanto/Route 22",
                             "@JohtoKanto/Route 28",
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
@@ -398,7 +398,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR"
+                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
                         ]
                     },
                     {
@@ -423,7 +423,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Whirl Islands, ^$can_flash_johto"
+                            "@JohtoKanto/Whirl Islands, ^$dark|whirlislands"
                         ]
                     },
                     {
@@ -550,7 +550,7 @@
                         ]
                     },
                     {
-                        "name": "Kanto - Common",
+                        "name": "Border - Common",
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
@@ -560,7 +560,7 @@
                         ]
                     },
                     {
-                        "name": "Kanto - Rare",
+                        "name": "Border - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
@@ -592,8 +592,8 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Pre-Tree",
-                            "@JohtoKanto/Ilex Forest/Post-Tree"
+                            "@JohtoKanto/Ilex Forest/Pre-Tree, ^$dark|ilexforest",
+                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$dark|ilexforest"
                         ]
                     },
                     {
@@ -601,8 +601,8 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Pre-Tree",
-                            "@JohtoKanto/Ilex Forest/Post-Tree"
+                            "@JohtoKanto/Ilex Forest/Pre-Tree, ^$dark|ilexforest",
+                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$dark|ilexforest"
                         ]
                     }
                 ],

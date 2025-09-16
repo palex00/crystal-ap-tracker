@@ -28,6 +28,10 @@
                         "name": "Azalea Gym - Beat Bugsy"
                     },
                     {
+                        "ref": "JohtoKanto/Azalea Town/Gym - Leader Bugsy",
+                        "name": "Azalea Gym - Leader Bugsy"
+                    },
+                    {
                         "ref": "JohtoKanto/Azalea Town/Gym - Hive Badge from Bugsy",
                         "name": "Azalea Gym - Hive Badge from Bugsy"
                     },
@@ -158,8 +162,8 @@
                         "name": "Slowpoke Well B1F - Grunt 3"
                     },
                     {
-                        "ref": "JohtoKanto/Slowpoke Well/Cleared Slowpoke Well",
-                        "name": "Cleared Slowpoke Well"
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well",
+                        "name": "B1F - Cleared Slowpoke Well"
                     },
                     {
                         "ref": "JohtoKanto/Slowpoke Well/B2F - Item",
@@ -199,6 +203,10 @@
                     {
                         "ref": "JohtoKanto/Blackthorn City/Gym - Beat Clair",
                         "name": "Blackthorn Gym - Beat Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Leader Clair",
+                        "name": "Blackthorn Gym - Leader Clair"
                     },
                     {
                         "ref": "JohtoKanto/Blackthorn City/Gym - Rising Badge from Clair",
@@ -477,6 +485,10 @@
                         "name": "Ecruteak City - Beat Morty"
                     },
                     {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Leader Morty",
+                        "name": "Ecruteak Gym - Leader Morty"
+                    },
+                    {
                         "ref": "JohtoKanto/Ecruteak City/Gym - Fog Badge from Morty",
                         "name": "Ecruteak City - Fog Badge from Morty"
                     },
@@ -559,6 +571,10 @@
                     {
                         "ref": "JohtoKanto/Tin Tower/1F - Suicune",
                         "name": "Tin Tower 1F - Suicune"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/1F - Got Eon Mail from Eusine (Event)",
+                        "name": "Tin Tower 1F - Got Eon Mail from Eusine (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Tin Tower/1F - Rainbow Wing",
@@ -698,6 +714,10 @@
                         "name": "Celadon Gym - Beat Erika"
                     },
                     {
+                        "ref": "JohtoKanto/Celadon City/Gym - Leader Erika",
+                        "name": "Celadon Gym - Leader Erika"
+                    },
+                    {
                         "ref": "JohtoKanto/Celadon City/Gym - Rainbow Badge from Erika",
                         "name": "Celadon Gym - Rainbow Badge from Erika"
                     },
@@ -808,6 +828,10 @@
                     {
                         "ref": "JohtoKanto/Cerulean City/Gym - Beat Misty",
                         "name": "Cerulean Gym - Beat Misty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Leader Misty",
+                        "name": "Cerulean Gym - Leader Misty"
                     },
                     {
                         "ref": "JohtoKanto/Cerulean City/Gym - Cascade Badge from Misty",
@@ -966,6 +990,10 @@
                     {
                         "ref": "JohtoKanto/Cianwood City/Gym - Beat Chuck",
                         "name": "Cianwood Gym - Beat Chuck"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - Leader Chuck",
+                        "name": "Cianwood Gym - Leader Chuck"
                     }
                 ],
                 "map_locations": [
@@ -1096,6 +1124,10 @@
                     {
                         "ref": "JohtoKanto/Saffron City/Gym - Beat Sabrina",
                         "name": "Saffron Gym - Beat Sabrina"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/Gym - Leader Sabrina",
+                        "name": "Saffron Gym - Leader Sabrina"
                     },
                     {
                         "ref": "JohtoKanto/Saffron City/Gym - Marsh Badge from Sabrina",
@@ -2517,6 +2549,10 @@
                         "name": "Fuchsia Gym - Beat Janine"
                     },
                     {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Leader Janine",
+                        "name": "Fuchsia Gym - Leader Janine"
+                    },
+                    {
                         "ref": "JohtoKanto/Fuchsia City/Gym - Soul Badge from Janine",
                         "name": "Fuchsia Gym - Soul Badge from Janine"
                     },
@@ -2585,6 +2621,10 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Goldenrod City/Exchange Eon Mail in Pokecenter",
+                        "name": "Exchange Eon Mail in Pokecenter"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Post-E4 GS-Ball from Trade Corner Receptionist",
                         "name": "Post-E4 GS-Ball from Trade Corner Receptionist"
                     }
@@ -2631,6 +2671,10 @@
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM Shop - Shop Items",
                         "name": "Goldenrod Dept. Store 5F - TM Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 6F - Vending Machine - Shop Items",
+                        "name": "Goldenrod Dept. Store 6F - Vending Machine - Shop Items"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store - Rooftop Sale - Shop Items",
@@ -2727,7 +2771,7 @@
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 1F - Buy Waterstone",
                         "name": "Dept. Store 1F - Buy Waterstone"
-                    },
+                    }
                 ],
                 "map_locations": [
                     {
@@ -2790,26 +2834,30 @@
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Left Salesman - Shop Items",
                         "name": "Dept. Store 2F - Left Salesman - Shop Items"
-                    }, 
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Right Salesman - Shop Items",
                         "name": "Dept. Store 2F - Right Salesman - Shop Items"
-                    }, 
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 3F - TM Shop - Shop Items",
                         "name": "Dept. Store 3F - TM Shop - Shop Items"
-                    }, 
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 4F - Mail Shop - Shop Items",
                         "name": "Dept. Store 4F - Mail Shop - Shop Items"
-                    }, 
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 5F - Vitamin Shop - Shop Items",
                         "name": "Dept. Store 5F - Vitamin Shop - Shop Items"
-                    }, 
+                    },
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 5F - X Items Shop - Shop Items",
                         "name": "Dept. Store 5F - X Items Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 6F - Vending Machine - Shop Items",
+                        "name": "Dept. Store 6F - Vending Machine - Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -2817,6 +2865,21 @@
                         "map": "CeladonCity",
                         "x": 72,
                         "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 6F - Vending Machine - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStore6F",
+                        "x": 184,
+                        "y": 24
                     }
                 ]
             },
@@ -2910,6 +2973,10 @@
                         "name": "Goldenrod Gym - Beat Whitney"
                     },
                     {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Leader Whitney",
+                        "name": "Goldenrod Gym - Leader Whitney"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Gym - Plain Badge from Whitney",
                         "name": "Goldenrod Gym - Plain Badge from Whitney"
                     },
@@ -2974,16 +3041,20 @@
                         "name": "Goldenrod UG - Super Nerd Eric"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 3",
-                        "name": "Goldenrod UG B2F - Grunt 3"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Rival",
+                        "name": "Goldenrod UG B2F - Rival"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 1",
+                        "name": "Goldenrod UG B2F - Grunt 1"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 2",
                         "name": "Goldenrod UG B2F - Grunt 2"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 1",
-                        "name": "Goldenrod UG B2F - Grunt 1"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 3",
+                        "name": "Goldenrod UG B2F - Grunt 3"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - West Hidden Item",
@@ -3143,19 +3214,24 @@
                         "name": "Radio Tower 4F - Pink Bow from Mary"
                     },
                     {
+                        "ref": "JohtoKanto/Radio Tower/5F - False Director",
+                        "name": "Radio Tower 5F - False Director"
+                    },
+                    {
                         "ref": "JohtoKanto/Radio Tower/5F - Basement Key from False Director",
                         "name": "Radio Tower 5F - Basement Key from False Director"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive",
-                        "name": "Radio Tower 5F - Rocket Executive"
+                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive 1",
+                        "name": "Radio Tower 5F - Rocket Executive 1"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/5F - Clear Bell from Rocket Boss",
                         "name": "Radio Tower 5F - Clear Bell from Rocket Boss"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/Clear Radio Tower"
+                        "name": "5F - Clear Radio Tower",
+                        "ref": "JohtoKanto/Radio Tower/5F - Clear Radio Tower"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/5F - Item",
@@ -3497,6 +3573,21 @@
                         "map": "GoldenrodUndergroundSwitchRoomEntrances",
                         "x": 72,
                         "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodUndergroundSwitchRoomEntrances",
+                        "x": 312,
+                        "y": 80
                     }
                 ]
             },
@@ -4480,6 +4571,10 @@
                         "name": "Mahogany Gym - Beat Pryce"
                     },
                     {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Leader Pryce",
+                        "name": "Mahogany Gym - Leader Pryce"
+                    },
+                    {
                         "ref": "JohtoKanto/Mahogany Town/Gym - Glacier Badge from Pryce",
                         "name": "Mahogany Gym - Glacier Badge from Pryce"
                     },
@@ -4596,7 +4691,7 @@
                         "name": "Rocket HQ B3F - Center Item"
                     },
                     {
-                        "ref": "JohtoKanto/Mahogany Town/Clear Rocket HQ"
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Clear Rocket HQ"
                     }
                 ],
                 "map_locations": [
@@ -5482,6 +5577,10 @@
                         "name": "Olivine Gym - Beat Jasmine"
                     },
                     {
+                        "ref": "JohtoKanto/Olivine City/Gym - Leader Jasmine",
+                        "name": "Olivine Gym - Leader Jasmine"
+                    },
+                    {
                         "ref": "JohtoKanto/Olivine City/Gym - Mineral Badge from Jasmine",
                         "name": "Olivine Gym - Mineral Badge from Jasmine"
                     },
@@ -5566,7 +5665,8 @@
                         "name": "Olivine Lighthouse 6F - Item"
                     },
                     {
-                        "ref": "JohtoKanto/Olivine Lighthouse/Heal Amphy"
+                        "name": "6F - Heal Amphy",
+                        "ref": "JohtoKanto/Olivine Lighthouse/6F - Heal Amphy"
                     }
                 ],
                 "map_locations": [
@@ -5866,7 +5966,7 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Olivine Lighthouse/Heal Amphy"
+                        "ref": "JohtoKanto/Olivine Lighthouse/6F - Heal Amphy"
                     }
                 ],
                 "map_locations": [
@@ -5932,6 +6032,10 @@
                     {
                         "ref": "JohtoKanto/Pewter City/Gym - Beat Brock",
                         "name": "Pewter Gym - Beat Brock"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pewter City/Gym - Leader Brock",
+                        "name": "Pewter Gym - Leader Brock"
                     },
                     {
                         "ref": "JohtoKanto/Pewter City/Gym - Boulder Badge from Brock",
@@ -6033,6 +6137,10 @@
                     {
                         "ref": "JohtoKanto/Vermilion City/Gym - Beat Lt. Surge",
                         "name": "Vermilion Gym - Beat Lt. Surge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Gym - Leader Lt. Surge",
+                        "name": "Vermilion Gym - Leader Lt. Surge"
                     },
                     {
                         "ref": "JohtoKanto/Vermilion City/Gym - Thunder Badge from Lt. Surge",
@@ -6404,6 +6512,11 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "5F - False Director",
+                        "ref": "JohtoKanto/Radio Tower/5F - False Director"
+                    },
+                    {
+                        "name": "5F - Basement Key from False Director",
                         "ref": "JohtoKanto/Radio Tower/5F - Basement Key from False Director"
                     }
                 ],
@@ -6449,7 +6562,7 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive"
+                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive 1"
                     }
                 ],
                 "map_locations": [
@@ -6464,7 +6577,12 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Radio Tower/Clear Radio Tower"
+                        "name": "5F - Rocket Executive 2",
+                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive 2"
+                    },
+                    {
+                        "name": "5F - Clear Radio Tower",
+                        "ref": "JohtoKanto/Radio Tower/5F - Clear Radio Tower"
                     }
                 ],
                 "map_locations": [
@@ -7741,6 +7859,10 @@
                     {
                         "ref": "JohtoKanto/Seafoam Islands/Gym - Beat Blaine",
                         "name": "Seafoam Gym - Beat Blaine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/Gym - Leader Blaine",
+                        "name": "Seafoam Gym - Leader Blaine"
                     },
                     {
                         "ref": "JohtoKanto/Seafoam Islands/Gym - Volcano Badge from Blaine",
@@ -11217,13 +11339,18 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Slowpoke Well/Cleared Slowpoke Well"
+                        "name": "B1F - Grunt 4",
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Grunt 4"
+                    },
+                    {
+                        "name": "B1F - Cleared Slowpoke Well",
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "SlowpokeWellB1F",
-                        "x": 104,
+                        "x": 88,
                         "y": 40
                     }
                 ]
@@ -11418,6 +11545,10 @@
                     {
                         "ref": "JohtoKanto/Violet City/Gym - Beat Falkner",
                         "name": "Violet Gym - Beat Falkner"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - Leader Falkner",
+                        "name": "Violet Gym - Leader Falkner"
                     },
                     {
                         "ref": "JohtoKanto/Violet City/Gym - Zephyr Badge from Falkner",
@@ -11818,8 +11949,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "name": "Clear Rocket HQ",
-                        "ref": "JohtoKanto/Mahogany Town/Clear Rocket HQ"
+                        "name": "Rocket HQ B2F - Clear Rocket HQ",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Clear Rocket HQ"
                     },
                     {
                         "name": "Rocket HQ B2F - Electrode Middle",
@@ -11838,6 +11969,11 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "Rocket HQ B2F - Rocket Executive",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Rocket Executive"
+                    },
+                    {
+                        "name": "Rocket HQ B2F - Electrode Bottom",
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Bottom"
                     }
                 ],
@@ -11921,6 +12057,21 @@
                         "map": "TeamRocketBaseB3F",
                         "x": 56,
                         "y": 200
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Rocket Executive"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TeamRocketBaseB3F",
+                        "x": 136,
+                        "y": 56
                     }
                 ]
             },
@@ -12727,6 +12878,10 @@
                         "name": "Viridian Gym - Beat Blue"
                     },
                     {
+                        "ref": "JohtoKanto/Viridian City/Gym - Leader Blue",
+                        "name": "Viridian Gym - Leader Blue"
+                    },
+                    {
                         "ref": "JohtoKanto/Viridian City/Gym - Earth Badge from Blue",
                         "name": "Viridian Gym - Earth Badge from Blue"
                     },
@@ -12942,7 +13097,7 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/Defeat Red"
+                        "ref": "JohtoKanto/Silver Cave/3F - Defeat Red"
                     }
                 ],
                 "map_locations": [
@@ -13711,6 +13866,10 @@
                         "name": "Beat Falkner"
                     },
                     {
+                        "ref": "JohtoKanto/Violet City/Gym - Leader Falkner",
+                        "name": "Leader Falkner"
+                    },
+                    {
                         "ref": "JohtoKanto/Violet City/Gym - Zephyr Badge from Falkner",
                         "name": "Zephyr Badge"
                     },
@@ -13739,6 +13898,10 @@
                         "name": "Beat Bugsy"
                     },
                     {
+                        "ref": "JohtoKanto/Azalea Town/Gym - Leader Bugsy",
+                        "name": "Leader Bugsy"
+                    },
+                    {
                         "ref": "JohtoKanto/Azalea Town/Gym - Hive Badge from Bugsy",
                         "name": "Hive Badge"
                     },
@@ -13765,6 +13928,10 @@
                     {
                         "ref": "JohtoKanto/Goldenrod City/Gym - Beat Whitney",
                         "name": "Beat Whitney"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Leader Whitney",
+                        "name": "Leader Whitney"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod City/Gym - Plain Badge from Whitney",
@@ -13808,6 +13975,10 @@
                     {
                         "ref": "JohtoKanto/Ecruteak City/Gym - Beat Morty",
                         "name": "Beat Morty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Leader Morty",
+                        "name": "Leader Morty"
                     },
                     {
                         "ref": "JohtoKanto/Ecruteak City/Gym - Fog Badge from Morty",
@@ -13866,6 +14037,10 @@
                         "name": "Beat Jasmine"
                     },
                     {
+                        "ref": "JohtoKanto/Olivine City/Gym - Leader Jasmine",
+                        "name": "Leader Jasmine"
+                    },
+                    {
                         "ref": "JohtoKanto/Olivine City/Gym - Mineral Badge from Jasmine",
                         "name": "Mineral Badge"
                     },
@@ -13892,6 +14067,10 @@
                     {
                         "ref": "JohtoKanto/Mahogany Town/Gym - Beat Pryce",
                         "name": "Beat Pryce"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Leader Pryce",
+                        "name": "Leader Pryce"
                     },
                     {
                         "ref": "JohtoKanto/Mahogany Town/Gym - Glacier Badge from Pryce",
@@ -13922,6 +14101,10 @@
                         "name": "Beat Clair"
                     },
                     {
+                        "ref": "JohtoKanto/Blackthorn City/Leader Clair",
+                        "name": "Leader Clair"
+                    },
+                    {
                         "ref": "JohtoKanto/Blackthorn City/Gym - Rising Badge from Clair",
                         "name": "Rising Badge"
                     },
@@ -13950,6 +14133,10 @@
                         "name": "Beat Brock"
                     },
                     {
+                        "ref": "JohtoKanto/Pewter City/Gym - Leader Brock",
+                        "name": "Leader Brock"
+                    },
+                    {
                         "ref": "JohtoKanto/Pewter City/Gym - Boulder Badge from Brock",
                         "name": "Boulder Badge"
                     },
@@ -13972,6 +14159,10 @@
                     {
                         "ref": "JohtoKanto/Cerulean City/Gym - Beat Misty",
                         "name": "Beat Misty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Leader Misty",
+                        "name": "Leader Misty"
                     },
                     {
                         "ref": "JohtoKanto/Cerulean City/Gym - Cascade Badge from Misty",
@@ -13998,6 +14189,10 @@
                         "name": "Beat Lt. Surge"
                     },
                     {
+                        "ref": "JohtoKanto/Vermilion City/Gym - Leader Lt. Surge",
+                        "name": "Leader Lt. Surge"
+                    },
+                    {
                         "ref": "JohtoKanto/Vermilion City/Gym - Thunder Badge from Lt. Surge",
                         "name": "Thunder Badge"
                     },
@@ -14020,6 +14215,10 @@
                     {
                         "ref": "JohtoKanto/Celadon City/Gym - Beat Erika",
                         "name": "Beat Erika"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Gym - Leader Erika",
+                        "name": "Leader Erika"
                     },
                     {
                         "ref": "JohtoKanto/Celadon City/Gym - Rainbow Badge from Erika",
@@ -14048,6 +14247,10 @@
                     {
                         "ref": "JohtoKanto/Saffron City/Gym - Beat Sabrina",
                         "name": "Beat Sabrina"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/Gym - Leader Sabrina",
+                        "name": "Leader Sabrina"
                     },
                     {
                         "ref": "JohtoKanto/Saffron City/Gym - Marsh Badge from Sabrina",
@@ -14087,6 +14290,10 @@
                     {
                         "ref": "JohtoKanto/Fuchsia City/Gym - Beat Janine",
                         "name": "Beat Janine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Leader Janine",
+                        "name": "Leader Janine"
                     },
                     {
                         "ref": "JohtoKanto/Fuchsia City/Gym - Soul Badge from Janine",
@@ -14158,6 +14365,14 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "Indigo Plateau - Rival",
+                        "ref": "JohtoKanto/Indigo Plateau/Rival"
+                    },
+                    {
+                        "name": "Indigo Plateau - Poke Mart - Shop Items",
+                        "ref": "JohtoKanto/Indigo Plateau/Poke Mart - Shop Items"
+                    },
+                    {
                         "name": "Indigo Plateau - Elite 4 Will",
                         "ref": "JohtoKanto/Indigo Plateau/Elite 4 Will"
                     },
@@ -14209,6 +14424,10 @@
                         "name": "Beat Blaine"
                     },
                     {
+                        "ref": "JohtoKanto/Seafoam Islands/Gym - Leader Blaine",
+                        "name": "Leader Blaine"
+                    },
+                    {
                         "ref": "JohtoKanto/Seafoam Islands/Gym - Volcano Badge from Blaine",
                         "name": "Volcano Badge"
                     },
@@ -14233,6 +14452,10 @@
                         "name": "Beat Blue"
                     },
                     {
+                        "ref": "JohtoKanto//Gym - Leader Blue",
+                        "name": "Leader Blue"
+                    },
+                    {
                         "ref": "JohtoKanto/Viridian City/Gym - Earth Badge from Blue",
                         "name": "Earth Badge"
                     },
@@ -14246,6 +14469,116 @@
                         "map": "ViridianGym",
                         "x": 88,
                         "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaTown",
+                        "x": 88,
+                        "y": 176
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Burned Tower/1F - Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BurnedTower1F",
+                        "x": 168,
+                        "y": 152 
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cherrygrove City/Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CherrygroveCity",
+                        "x": 552,
+                        "y": 112
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Mysticalman Eusine"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodCity",
+                        "x": 184,
+                        "y": 248
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Sailor Stanly"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FastShipCabins_Overview",
+                        "x": 392,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "name": "Inside - Rival",
+                        "ref": "JohtoKanto/Mount Moon/Inside - Rival"
+                    },
+                    {
+                        "name": "Inside - Beat Rival (Event)",
+                        "ref": "JohtoKanto/Mount Moon/Inside - Beat Rival (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MountMoon",
+                        "x": 56,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Victory Road/3F - Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VictoryRoad3F",
+                        "x": 208,
+                        "y": 128
                     }
                 ]
             }

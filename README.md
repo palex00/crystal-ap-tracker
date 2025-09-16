@@ -25,7 +25,9 @@ Original project by AliceMousie.
 ## Compatibility Chart
 apworld | pack version
 :-------------------------:|:-------------------------:
-4.0.X  | 0.6.X
+5.1.0   | 0.8.X
+5.0.0   | 0.7.X
+4.0.X   | 0.6.X
 3.2.X   | 0.5.X
 3.1.X   | 0.4.X
 3.0.X   | 0.3.X
@@ -35,7 +37,6 @@ apworld | pack version
 - Viridian City Access through Victory Road with the "Wake up Snorlax"-Event might not be correctly shown if your starting town is New Bark Town.
 
 ## Planned Features
-- More submaps
 - Continuos support of the AP integration
 
 ## Special Encounter Equivalency Table
@@ -58,7 +59,7 @@ Qwilfish | Routes 12, 13, 32 | R12, R13, R32
 Canyon  | Route 44
 Town | Azalea Town, Route 33, Route 42
 Route | R29, R30, R31, R34, R35, R36, R37, R38, R39
-Kanto | Route 26, Route 27, Route 32
+Border | Route 26, Route 27, Route 32
 Lake | Lake of Rage, Route 43
 Forest | Ilex Forest
 

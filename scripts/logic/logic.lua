@@ -90,74 +90,37 @@ function can_cut_kanto()
   )
 end
 
-function can_flash_johto()
-  if has("HM_FLASH") and (
-  has("FREE_FLASH") or
-  has("badgereqs_none") or
-  ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
-  (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
-  ) then
-        return AccessibilityLevel.Normal
-    else
-        return AccessibilityLevel.SequenceBreak
-    end
-end
-
-function can_flash_kanto()
-  if has("HM_FLASH") and (
-  has("FREE_FLASH") or
-  has("badgereqs_none") or
-  (has("badgereqs_vanilla") and has("ZEPHYR_BADGE")) or
-  (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE"))) or
-  (has("badgereqs_regional") and has("BOULDER_BADGE"))
-  ) then
-        return AccessibilityLevel.Normal
-    else
-        return AccessibilityLevel.SequenceBreak
-    end
-end
-
--- this one literally only exists for the Aerodactyl Room
-function flash_badge()
-  return (
-    has("badgereqs_none") or
-    has("FREE_FLASH") or
-    ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
-    (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
-  )
-end
-
 function strength_badge()
-  return (
-    (has("badgereqs_vanilla") and has("PLAIN_BADGE")) or
-    (has("badgereqs_kanto") and (has("PLAIN_BADGE") or has("RAINBOW_BADGE"))) or
-    (has("badgereqs_none")) or
-    (has("badgereqs_regional") and has("PLAIN_BADGE")) or 
-    has("FREE_STRENGTH")
-  )
+    return (
+        (has("badgereqs_vanilla") and has("PLAIN_BADGE")) or
+        (has("badgereqs_kanto") and (has("PLAIN_BADGE") or has("RAINBOW_BADGE"))) or
+        (has("badgereqs_none")) or
+        (has("badgereqs_regional") and has("PLAIN_BADGE")) or 
+        has("FREE_STRENGTH")
+    )
 end
 
 function can_strength()
-  return (has("HM_STRENGTH") and strength_badge())
+    return (has("HM_STRENGTH") and strength_badge())
 end
 
 function can_surf_johto()
-  return has("HM_SURF") and (
-  has("FREE_SURF") or
-  has("badgereqs_none") or
-  ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("FOG_BADGE")) or
-  (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE")))
-  )
+    return has("HM_SURF") and (
+        has("FREE_SURF") or
+        has("badgereqs_none") or
+        ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("FOG_BADGE")) or
+        (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE")))
+    )
 end
 
 function can_surf_kanto()
-  return has("HM_SURF") and (
-  has("FREE_SURF") or
-  has("badgereqs_none") or
-  (has("badgereqs_vanilla") and has("FOG_BADGE")) or
-  (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE"))) or
-  (has("badgereqs_regional") and has("SOUL_BADGE"))
-  )
+    return has("HM_SURF") and (
+        has("FREE_SURF") or
+        has("badgereqs_none") or
+        (has("badgereqs_vanilla") and has("FOG_BADGE")) or
+        (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE"))) or
+        (has("badgereqs_regional") and has("SOUL_BADGE"))
+    )
 end
 
 function whirlpool_badge()
@@ -271,18 +234,6 @@ function pass_mortar()
   return pass_rocksmash or can_surf_johto()
 end
 
-function mountmortar_back()
-  local pass_rocksmash = has("mount_mortar_access_vanilla") or has("TM_ROCK_SMASH")
-  
-  return (pass_rocksmash and can_strength()) or can_waterfall()
-end
-
-function mountmortar_front()
-  local pass_rocksmash = has("mount_mortar_access_vanilla") or has("TM_ROCK_SMASH")
-  
-  return pass_rocksmash or can_waterfall()
-end
-
 function fly_cheese()
     if has("fly_cheese_optional") and can_fly() and has("randomize_fly_unlocks_false") then
         return AccessibilityLevel.SequenceBreak
@@ -318,5 +269,84 @@ function bluecard_shop(amount)
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.None
+    end
+end
+
+function victory_road_access()
+    if has("victory_road_access_vanilla") then
+        return AccessibilityLevel.Normal
+    elseif has("victory_road_access_strength") and can_strength() then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
+    end
+end
+
+function dark(area)
+    if has("dark_"..area.."_false") then
+        return AccessibilityLevel.Normal
+    elseif has("dark_"..area.."_true") then
+        if area == "diglettscave" or area == "mountmoon" or area == "rocktunnel" then
+            return can_flash("kanto")
+        else
+            return can_flash("johto")
+        end
+    end
+end
+
+function can_use_flash(region)
+    return has("HM_FLASH") and (
+        has("FREE_FLASH") or
+        has("badgereqs_none") or
+        (has("badgereqs_vanilla") and has("ZEPHYR_BADGE")) or
+        (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE"))) or
+        (has("badgereqs_regional") and (
+            (region == "johto" and has("ZEPHYR_BADGE")) or
+            (region == "kanto" and has("BOULDER_BADGE"))
+        ))
+    )
+end
+
+function can_flash(region)
+    if has("require_flash_notrequired") then
+        return AccessibilityLevel.Normal
+    elseif has("require_flash_hardrequired") then
+        return can_use_flash(region) and AccessibilityLevel.Normal or AccessibilityLevel.None
+    else
+        return can_use_flash(region) and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+    end
+end
+
+-- this one literally only exists for the Aerodactyl Room
+function flash_badge()
+    return (
+        has("badgereqs_none") or
+        has("FREE_FLASH") or
+        ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
+        (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
+    )
+end
+
+function kantogymlock()
+    local snorlax = Tracker:FindObjectForCode("@JohtoKanto/Vermilion City/City").AccessibilityLevel
+    local hooh = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower/9F - Item").AccessibilityLevel
+    local lugia = Tracker:FindObjectForCode("@JohtoKanto/Whirl Islands/B2F - North Item").AccessibilityLevel
+    local suicune = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower").AccessibilityLevel
+    local silvercave = Tracker:FindObjectForCode("@JohtoKanto/Silver Cave").AccessibilityLevel
+
+    if has("lock_kanto_gyms_false") then
+        return AccessibilityLevel.Normal
+    end
+
+    if has("lock_kanto_gyms_true") then
+        if (snorlax == AccessibilityLevel.Normal and clear_snorlax())
+        or hooh == AccessibilityLevel.Normal
+        or (lugia == AccessibilityLevel.Normal and has("SILVER_WING"))
+        or suicune == AccessibilityLevel.Normal
+        or silvercave == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+        else
+            return AccessibilityLevel.SequenceBreak
+        end
     end
 end
