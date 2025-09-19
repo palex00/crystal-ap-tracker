@@ -6276,7 +6276,19 @@
                     {
                         "name": "2F - Blue Card from Buena",
                         "ref": "JohtoKanto/Radio Tower/2F - Blue Card from Buena"
-                    },
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RadioTower2F",
+                        "x": 232,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
                     {
                         "name": "2F - Blue Card Shop - 2 Points",
                         "ref": "JohtoKanto/Radio Tower/2F - Blue Card Shop - 2 Points"
@@ -6293,8 +6305,8 @@
                 "map_locations": [
                     {
                         "map": "RadioTower2F",
-                        "x": 232,
-                        "y": 88
+                        "x": 200,
+                        "y": 120
                     }
                 ]
             },
