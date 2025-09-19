@@ -1821,7 +1821,7 @@
                     {
                         "name": "Lure Ball from Kurt",
                         "access_rules": [
-                            "EVENT_CLEARED_SLOWPOKE_WELL"
+                            "EVENT_CLEARED_SLOWPOKE_WELL, @JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -1953,7 +1953,7 @@
                             "show_items, shopsanity_apricorn_true"
                         ],
                         "access_rules": [
-                            "^$kurt_shop|RED"
+                            "^$kurt_shop|RED, EVENT_CLEARED_SLOWPOKE_WELL, @JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
                         ]
                     },
                     {
@@ -1965,7 +1965,7 @@
                             "show_items, shopsanity_apricorn_true"
                         ],
                         "access_rules": [
-                            "^$kurt_shop|GRN"
+                            "^$kurt_shop|GRN, EVENT_CLEARED_SLOWPOKE_WELL, @JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
                         ]
                     },
                     {
@@ -1977,7 +1977,7 @@
                             "show_items, shopsanity_apricorn_true"
                         ],
                         "access_rules": [
-                            "^$kurt_shop|BLU"
+                            "^$kurt_shop|BLU, EVENT_CLEARED_SLOWPOKE_WELL, @JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
                         ]
                     },
                     {
@@ -1989,7 +1989,7 @@
                             "show_items, shopsanity_apricorn_true"
                         ],
                         "access_rules": [
-                            "^$kurt_shop|YLW"
+                            "^$kurt_shop|YLW, EVENT_CLEARED_SLOWPOKE_WELL, @JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
                         ]
                     },
                     {
@@ -2001,7 +2001,7 @@
                             "show_items, shopsanity_apricorn_true"
                         ],
                         "access_rules": [
-                            "^$kurt_shop|BLK"
+                            "^$kurt_shop|BLK, EVENT_CLEARED_SLOWPOKE_WELL, @JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
                         ]
                     },
                     {
@@ -2013,7 +2013,7 @@
                             "show_items, shopsanity_apricorn_true"
                         ],
                         "access_rules": [
-                            "^$kurt_shop|WHT"
+                            "^$kurt_shop|WHT, EVENT_CLEARED_SLOWPOKE_WELL, @JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
                         ]
                     },
                     {
@@ -2025,7 +2025,7 @@
                             "show_items, shopsanity_apricorn_true"
                         ],
                         "access_rules": [
-                            "^$kurt_shop|PNK"
+                            "^$kurt_shop|PNK, EVENT_CLEARED_SLOWPOKE_WELL, @JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
                         ]
                     },
                     {
@@ -2886,7 +2886,7 @@
                         "name": "B2F - West Hidden Item",
                         "access_rules": [
                             "^$hid,CARD_KEY",
-                            "^$hid,BASEMENT_KEY"
+                            "^$hid,BASEMENT_KEY^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -2980,7 +2980,7 @@
                         "name": "Warehouse - Southeast Item",
                         "access_rules": [
                             "CARD_KEY",
-                            "BASEMENT_KEY"
+                            "BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items"
