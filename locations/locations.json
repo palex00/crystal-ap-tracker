@@ -2886,7 +2886,7 @@
                         "name": "B2F - West Hidden Item",
                         "access_rules": [
                             "^$hid,CARD_KEY",
-                            "^$hid,BASEMENT_KEY^$dark|goldenrodunderground"
+                            "^$hid,BASEMENT_KEY,^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
