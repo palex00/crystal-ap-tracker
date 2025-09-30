@@ -214,15 +214,19 @@ function toggle_itemgrid()
     local shops = has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true")
     if not fly_unlock and not shops then
         Tracker:AddLayouts("layouts/tracker.json")
+        Tracker:AddLayouts("layouts/broadcast.json")
         toggle_shopgrid()
     elseif fly_unlock and not shops then
         Tracker:AddLayouts("layouts/tracker_with_flyunlock.json")
+        Tracker:AddLayouts("layouts/broadcast_with_flyunlock.json")
         toggle_shopgrid()
     elseif fly_unlock and shops then
         Tracker:AddLayouts("layouts/tracker_with_flyunlock_and_shopsanity.json")
+        Tracker:AddLayouts("layouts/broadcast_with_flyunlock_and_shopsanity.json")
         toggle_shopgrid()
     elseif not fly_unlock and shops then
         Tracker:AddLayouts("layouts/tracker_with_shopsanity.json")
+        Tracker:AddLayouts("layouts/broadcast_with_shopsanity.json")
         toggle_shopgrid()
     end
 end
