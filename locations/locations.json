@@ -2558,7 +2558,7 @@
                         "name": "Dept. Store B1F - Item behind Card Key Door",
                         "access_rules": [
                             "CARD_KEY",
-                            "BASEMENT_KEY"
+                            "BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_items"
