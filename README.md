@@ -37,7 +37,7 @@ apworld | pack version
 - Viridian City Access through Victory Road with the "Wake up Snorlax"-Event might not be correctly shown if your starting town is New Bark Town.
 
 ## Planned Features
-- Continuos support of the AP integration
+- Continuous support of the AP integration
 
 ## Special Encounter Equivalency Table
 ### Fishing Rods
