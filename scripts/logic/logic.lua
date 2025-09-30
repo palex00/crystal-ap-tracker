@@ -262,6 +262,8 @@ end
 function bluecard_shop(amount)
     if has("BLUE_CARD") and has("BLUE_CARD_POINT", amount) then
         return AccessibilityLevel.Normal
+    elseif has("BLUE_CARD") then
+        return AccessibilityLevel.Inspect
     else
         return AccessibilityLevel.None
     end
