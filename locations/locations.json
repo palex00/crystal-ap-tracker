@@ -2845,8 +2845,8 @@
                             "show_items, trainersanity_302"
                         ],
                         "access_rules": [
-                            "tower_requirement,CARD_KEY",
-                            "tower_requirement,BASEMENT_KEY, ^$dark|goldenrodunderground"
+                            "CARD_KEY",
+                            "BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ]
                     },
                     {
