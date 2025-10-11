@@ -12362,6 +12362,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1342"
+                        ],
+                        "access_rules": [
+                            "^$kantogymlock"
                         ]
                     },
                     {
