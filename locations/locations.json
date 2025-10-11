@@ -435,7 +435,7 @@
                 "access_rules": [
                     "@JohtoKanto/Route 30/Post-Mr-Pokemon",
                     "@JohtoKanto/Violet City",
-                    "@JohtoKanto/Dark Cave Violet Entrance"
+                    "@JohtoKanto/Dark Cave Violet Entrance/Left Side"
                 ],
                 "sections": [
                     {
@@ -529,21 +529,41 @@
             },
             {
                 "name": "Dark Cave Violet Entrance",
-                "access_rules": [
-                    "^$dark|darkcave, @JohtoKanto/Route 31",
-                    "^$dark|darkcave, @JohtoKanto/Dark Cave Blackthorn Entrance/All Items, $can_surf_johto"
-                ],
                 "sections": [
+                    {
+                        "name": "Left Side",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Dark Cave Blackthorn Entrance/All Items, $can_surf_johto",
+                            "@JohtoKanto/Route 31, ^$dark|darkcave",
+                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side, $can_rocksmash"
+                        ]
+                    },
+                    {
+                        "name": "Right Side",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 46/Above Ledge, ^$dark|darkcave",
+                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side, $can_rocksmash"
+                        ]
+                    },
                     {
                         "name": "West Item",
                         "visibility_rules": [
                             "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side"
                         ]
                     },
                     {
                         "name": "Hidden Item",
                         "access_rules": [
-                            "$can_rocksmash,^$hid"
+                            "$can_rocksmash, ^$hid, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -552,7 +572,7 @@
                     {
                         "name": "Northeast Item",
                         "access_rules": [
-                            "$can_rocksmash"
+                            "$can_rocksmash, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -561,7 +581,7 @@
                     {
                         "name": "Southeast Item (Right)",
                         "access_rules": [
-                            "$can_rocksmash"
+                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -570,7 +590,7 @@
                     {
                         "name": "Southeast Item (Left)",
                         "access_rules": [
-                            "$can_rocksmash"
+                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -586,7 +606,8 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side, ^$land_encounter",
+                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side, ^$land_encounter"
                         ]
                     },
                     {
@@ -599,7 +620,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto"
+                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side, ^$surf_encounter_johto"
                         ]
                     }
                 ],
@@ -8099,7 +8120,7 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Violet City, ^$dark|darkcave, $can_rocksmash",
+                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side",
                             "@JohtoKanto/Blackthorn City"
                         ]
                     },

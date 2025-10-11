@@ -51,7 +51,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Dark Cave Violet Entrance",
+                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
                             "@JohtoKanto/Route 45, ^$dark|darkcave",
                             "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
                             "@JohtoKanto/Route 10/Top",
@@ -204,7 +204,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Dark Cave Violet Entrance",
+                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
                             "@JohtoKanto/Route 45, ^$dark|darkcave",
                             "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
                             "@JohtoKanto/Route 10/Top",
@@ -357,7 +357,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Dark Cave Violet Entrance",
+                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
                             "@JohtoKanto/Route 45, ^$dark|darkcave",
                             "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
                             "@JohtoKanto/Route 10/Top",
@@ -651,7 +651,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 40",
                             "@JohtoKanto/Cianwood City",
-                            "@JohtoKanto/Dark Cave Violet Entrance"
+                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
+                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ]
                     }
                 ],
