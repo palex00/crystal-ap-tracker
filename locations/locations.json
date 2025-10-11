@@ -4737,7 +4737,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons, johto_only_off"
+                            "show_mons, encmethod_water_visible, johto_only_off"
                         ],
                         "access_rules": [
                             "^$surf_encounter_johto"
