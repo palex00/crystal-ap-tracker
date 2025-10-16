@@ -581,7 +581,7 @@
                     {
                         "name": "Southeast Item (Right)",
                         "access_rules": [
-                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side"
+                            "$can_rocksmash, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -590,7 +590,7 @@
                     {
                         "name": "Southeast Item (Left)",
                         "access_rules": [
-                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side"
+                            "$can_rocksmash, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ],
                         "visibility_rules": [
                             "show_items"
