@@ -134,11 +134,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 40,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -386,11 +412,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 35,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon, $can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon, $can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -483,11 +535,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 16,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -600,8 +678,8 @@
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -843,8 +921,8 @@
                         "name": "2F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -895,8 +973,8 @@
                         "name": "3F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -1084,11 +1162,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 3,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Union Cave, $can_surf_johto, $can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Union Cave, $can_surf_johto, $can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Outside - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -1113,8 +1217,8 @@
                         "name": "Inside - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -1309,11 +1413,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 38,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 32/Post-Guy, $can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 32/Post-Guy, $can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -1423,8 +1553,8 @@
                         "name": "1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -1501,8 +1631,8 @@
                         "name": "B1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -1586,8 +1716,8 @@
                         "name": "B2F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -1648,11 +1778,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 3,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -1730,8 +1886,8 @@
                         "name": "B1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -1774,8 +1930,8 @@
                         "name": "B2F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -2218,8 +2374,8 @@
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -2392,11 +2548,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 25,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -3468,11 +3650,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 13,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -3575,11 +3783,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 132,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -3714,11 +3948,51 @@
                         ]
                     },
                     {
+                        "name": "Left Grass",
+                        "item_count": 2,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 36/Left, $can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Right Grass",
+                        "item_count": 3,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 36/Right, $can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 36/Right, $can_cut_johto",
+                            "@JohtoKanto/Route 36/Left, $can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -3800,11 +4074,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 11,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4090,8 +4390,8 @@
                         "name": "1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4119,8 +4419,8 @@
                         "name": "B1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4213,8 +4513,8 @@
                         "name": "2F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4235,8 +4535,8 @@
                         "name": "3F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4284,8 +4584,8 @@
                         "name": "4F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4324,8 +4624,8 @@
                         "name": "5F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4346,8 +4646,8 @@
                         "name": "6F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4368,8 +4668,8 @@
                         "name": "7F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4408,8 +4708,8 @@
                         "name": "8F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4430,8 +4730,8 @@
                         "name": "9F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4524,11 +4824,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 15,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -4618,11 +4944,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 4,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -5398,8 +5750,8 @@
                         "name": "NW - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -5411,8 +5763,8 @@
                         "name": "NE - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -5424,8 +5776,8 @@
                         "name": "SW - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -5450,8 +5802,8 @@
                         "name": "SE - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -5463,8 +5815,8 @@
                         "name": "Cave - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -5548,8 +5900,8 @@
                         "name": "B1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -5588,8 +5940,8 @@
                         "name": "B2F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -5625,8 +5977,8 @@
                         "name": "Lugia Chamber - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -5972,11 +6324,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 4,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mahogany Town/Town, $can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mahogany Town/Town, $can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -6040,7 +6418,7 @@
                         "access_rules": [
                             "@JohtoKanto/Mount Mortar/1F Outside Pre-Smash, mount_mortar_access_vanilla",
                             "@JohtoKanto/Mount Mortar/1F Outside Pre-Smash, TM_ROCK_SMASH",
-                            "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength",
+                            "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength"
                         ]
                     },
                     {
@@ -6139,13 +6517,13 @@
                         "name": "1F Outside - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Mount Mortar/Pre-Smash"
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F Outside Pre-Smash"
                         ]
                     },
                     {
@@ -6158,7 +6536,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/Pre-Waterfall"
+                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/1F Outside Pre-Waterfall"
                         ]
                     },
                     {
@@ -6257,8 +6635,8 @@
                         "name": "1F Inside - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -6344,8 +6722,8 @@
                         "name": "2F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -6445,8 +6823,8 @@
                         "name": "B1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -7031,11 +7409,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 33,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -7346,11 +7750,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 4,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -7425,8 +7855,8 @@
                         "name": "1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -7456,8 +7886,8 @@
                         "name": "B1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -7493,8 +7923,8 @@
                         "name": "B2F Mahogany Side - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -7524,8 +7954,8 @@
                         "name": "B2F Blackthorn Side - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -7546,8 +7976,8 @@
                         "name": "B3F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -7920,8 +8350,8 @@
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -8066,11 +8496,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 44,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -8191,11 +8647,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 13,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 46/Below Ledge, $can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -8333,11 +8815,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 6,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 27/Post-Waterfall, $can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 27/Post-Waterfall, $can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -8372,8 +8880,8 @@
                         "name": "Tohjo Falls Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -8482,11 +8990,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 24,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -8614,8 +9148,8 @@
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -8772,11 +9306,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 20,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -8842,11 +9402,37 @@
                         ]
                     },
                     {
+                        "name": "Outisde - Grass",
+                        "item_count": 21,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Outside - Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
                         "name": "Outside - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -8925,8 +9511,8 @@
                         "name": "1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -8992,8 +9578,8 @@
                         "name": "2F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -9018,8 +9604,8 @@
                         "name": "2F Item Rooms - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -9041,8 +9627,8 @@
                         "name": "3F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -9090,11 +9676,37 @@
                 ],
                 "sections": [
                     {
+                        "name": "Grass",
+                        "item_count": 8,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -9281,11 +9893,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 26,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -9324,6 +9962,32 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
                     {
                         "name": "Surf Encounters",
                         "item_count": 3,
@@ -9369,9 +10033,6 @@
             },
             {
                 "name": "Route 2",
-                "access_rules": [
-                    ""
-                ],
                 "visibility_rules": [
                     "johto_only_off"
                 ],
@@ -9520,11 +10181,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 13,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 2/Main Section, $can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 2/Main Section, $can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -9708,11 +10395,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 11,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -9787,8 +10500,8 @@
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -9879,11 +10592,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 9,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Cerulean City, $can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Cerulean City, $can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -10113,11 +10852,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 8,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -10161,11 +10926,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 3,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -10305,11 +11096,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 2,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -10412,11 +11229,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 10,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -10500,8 +11343,8 @@
                         "name": "1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -10540,8 +11383,8 @@
                         "name": "B1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -10665,11 +11508,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 4,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 10/Top, $can_surf_kanto, $can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 10/Top, $can_surf_kanto, $can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -10833,11 +11702,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 6,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -11335,11 +12230,37 @@
                 ],
                 "sections": [
                     {
+                        "name": "Grass",
+                        "item_count": 2,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -11422,11 +12343,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 8,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -11477,11 +12424,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 8,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -11758,8 +12731,8 @@
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -11810,11 +12783,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 23,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -11864,11 +12863,37 @@
                 ],
                 "sections": [
                     {
+                        "name": "Grass",
+                        "item_count": 6,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -11949,11 +12974,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 57,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -12136,11 +13187,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 13,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -12211,11 +13288,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 9,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -12303,11 +13406,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 8,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],
@@ -12800,11 +13929,37 @@
                         ]
                     },
                     {
+                        "name": "Grass",
+                        "item_count": 6,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_items, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_kanto"
+                        ]
+                    },
+                    {
                         "name": "Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
-                        "chest_unopened_img": "images/other/grass.png",
-                        "chest_opened_img": "images/other/grass_bw.png",
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
                             "show_mons, encmethod_land_visible"
                         ],

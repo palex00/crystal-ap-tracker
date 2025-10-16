@@ -386,6 +386,10 @@ SLOT_CODES = {
     lock_kanto_gyms = {
         code = "lock_kanto_gyms",
         mapping = MAP_TOGGLE
+    },
+    grasssanity = {
+        code = "grasssanity",
+        mapping = MAP_TRIPLE
     }
 }
 

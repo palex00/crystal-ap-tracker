@@ -3130,5 +3130,33 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Grasssanity",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Grassanity: Off",
+                "img": "/images/other/grass.png",
+                "img_mods": "@disabled",
+                "codes": "grasssanity, grasssanity_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Grasssanity: One per area",
+                "img": "/images/other/grass.png",
+                "codes": "grasssanity, grasssanity_single",
+                "inherit_codes": false
+            },
+            {
+                "name": "Grasssanity: Full",
+                "img": "/images/other/grass_full.png",
+                "codes": "grasssanity, grasssanity_full",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

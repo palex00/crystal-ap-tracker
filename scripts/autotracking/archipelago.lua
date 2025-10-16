@@ -50,10 +50,11 @@ function onClear(slot_data)
             if  k == "apworld_version" then
                 local version_str = tostring(v)
                 local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-                if first_two_dots == "5.1" or nil then
+                if first_two_dots == "5.2" or nil then
                     Tracker:AddLayouts("layouts/tracker.json")
                 else
                     Tracker:AddLayouts("layouts/versionmismatch.json")
+                    return
                 end
             end
         else
