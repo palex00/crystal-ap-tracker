@@ -96,7 +96,7 @@
 {"name": "Gastly", "access_rules": ["gastly", "^$breeding, @Pokemon/Haunter", "^$breeding, @Pokemon/Gengar"], "sections": [{"hosted_item": "gastly"}], "map_locations": [{ "map": "kantopokemon", "x": 146, "y": 418, "shape": "rect"}]},
 {"name": "Haunter", "access_rules": ["haunter", "^$evolve_old|25, @Pokemon/Gastly"], "sections": [{"hosted_item": "haunter"}], "map_locations": [{ "map": "kantopokemon", "x": 206, "y": 418, "shape": "rect"}]},
 {"name": "Gengar", "access_rules": ["gengar", "^$evolve_old|37, @Pokemon/Haunter"], "sections": [{"hosted_item": "gengar"}], "map_locations": [{ "map": "kantopokemon", "x": 266, "y": 418, "shape": "rect"}]},
-{"name": "Onix", "access_rules": ["onix", "^$breeding, @Pokemon/Drowzee"], "sections": [{"hosted_item": "onix"}], "map_locations": [{ "map": "kantopokemon", "x": 326, "y": 418, "shape": "rect"}]},
+{"name": "Onix", "access_rules": ["onix", "^$breeding, @Pokemon/Steelix"], "sections": [{"hosted_item": "onix"}], "map_locations": [{ "map": "kantopokemon", "x": 326, "y": 418, "shape": "rect"}]},
 {"name": "Drowzee", "access_rules": ["drowzee", "^$breeding, @Pokemon/Hypno"], "sections": [{"hosted_item": "drowzee"}], "map_locations": [{ "map": "kantopokemon", "x": 386, "y": 418, "shape": "rect"}]},
 {"name": "Hypno", "access_rules": ["hypno", "^$evolve_old|26, @Pokemon/Drowzee"], "sections": [{"hosted_item": "hypno"}], "map_locations": [{ "map": "kantopokemon", "x": 446, "y": 418, "shape": "rect"}]},
 {"name": "Krabby", "access_rules": ["krabby", "^$breeding, @Pokemon/Kingler"], "sections": [{"hosted_item": "krabby"}], "map_locations": [{ "map": "kantopokemon", "x": 506, "y": 418, "shape": "rect"}]},
