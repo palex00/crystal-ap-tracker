@@ -1,29 +1,166 @@
-﻿{
+{
     "tracker_broadcast": {
         "type": "array",
         "orientation": "vertical",
+		"h_alignment": "center",
         "background": "#2D2D2D",
-        "margin": "0,0",
+        "margin": "5,5",
         "content": [
             {
-                "type": "array",
-                "orientation": "horizontal",
+                "type": "itemgrid",
+                "h_alignment": "left",
                 "margin": "0,0",
-                "content": [
-                    {
-                        "type": "layout",
-                        "key": "shared_item_grid"
-                    },
-                    {
-                        "type": "layout",
-                        "key": "fly_grid"
-                    },
-                    {
-                        "type": "layout",
-                        "key": "event_grid"
-                    }
+				"item_margin": "1,2",
+                "rows": [
+                    [
+						"HM_CUT",
+						"HM_FLY",
+						"HM_SURF",
+						"HM_STRENGTH",
+						"HM_FLASH",
+						"HM_WHIRLPOOL",
+						"HM_WATERFALL",
+						"TM_ROCK_SMASH",
+						"TM_HEAD_BUTT"
+					],
+					[
+						"ZEPHYR_BADGE",
+						"HIVE_BADGE",
+						"PLAIN_BADGE",
+						"FOG_BADGE",
+						"STORM_BADGE",
+						"MINERAL_BADGE",
+						"GLACIER_BADGE",
+						"RISING_BADGE",
+						"ESCAPE_ROPE"
+					],
+					[
+						"BOULDER_BADGE",
+						"CASCADE_BADGE",
+						"THUNDER_BADGE",
+						"RAINBOW_BADGE",
+						"SOUL_BADGE",
+						"MARSH_BADGE",
+						"VOLCANO_BADGE",
+						"EARTH_BADGE",
+						"WATER_STONE"
+					],
+					[
+						"POKE_GEAR",
+						"MAP_CARD",
+						"RADIO_CARD",
+						"EXPN_CARD",
+						"MACHINE_PART",
+						"LOST_ITEM",
+						"ITEMFINDER",
+						"MYSTERY_EGG",
+						"COIN_CASE"
+					],
+					[
+						"OLD_ROD",
+						"GOOD_ROD",
+						"SUPER_ROD",
+						"CLEAR_BELL",
+						"GS_BALL",
+						"SILVER_WING",
+						"RAINBOW_WING",
+						"RED_SCALE"
+					],
+					[
+						"SQUIRTBOTTLE",
+						"BICYCLE",
+						"PASS",
+						"S_S_TICKET",
+						"CARD_KEY",
+						"BASEMENT_KEY",
+						"SECRETPOTION",
+						"TEA"
+					]
                 ]
-            }
+            },
+			{
+				"type": "itemgrid",
+                "h_alignment": "left",
+                "margin": "0,5",
+				"item_margin": "1,2",
+                "rows": [
+					[
+						"EVENT_BEAT_FALKNER",
+						"EVENT_BEAT_BUGSY",
+						"EVENT_BEAT_WHITNEY",
+						"EVENT_BEAT_MORTY",
+						"EVENT_BEAT_JASMINE",
+						"EVENT_BEAT_CHUCK",
+						"EVENT_BEAT_PRYCE",
+						"EVENT_BEAT_CLAIR"
+					],
+					[
+						"EVENT_BEAT_BROCK",
+						"EVENT_BEAT_MISTY",
+						"EVENT_BEAT_LTSURGE",
+						"EVENT_BEAT_ERIKA",
+						"EVENT_BEAT_JANINE",
+						"EVENT_BEAT_SABRINA",
+						"EVENT_BEAT_BLAINE",
+						"EVENT_BEAT_BLUE"
+					],
+					[
+						"EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+						"EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
+						"EVENT_GOT_KENYA",
+						"EVENT_GAVE_KENYA",
+						"EVENT_CLEARED_SLOWPOKE_WELL",
+						"EVENT_HERDED_FARFETCHD",
+						"EVENT_RELEASED_THE_BEASTS",
+						"EVENT_JASMINE_RETURNED_TO_GYM"
+					],
+					[
+						"EVENT_DECIDED_TO_HELP_LANCE",
+						"EVENT_CLEARED_ROCKET_HIDEOUT",
+						"EVENT_CLEARED_RADIO_TOWER",
+						"EVENT_BEAT_ELITE_FOUR",
+						"EVENT_RESTORED_POWER_TO_KANTO",
+						"EVENT_VIRIDIAN_GYM_BLUE",
+						"EVENT_BEAT_RED"
+					]
+				]
+			},
+			{
+				"type": "itemgrid",
+                "h_alignment": "left",
+                "margin": "0,10",
+				"item_margin": "1,2",
+                "rows": [
+					[
+						"flyunlock_NewBark",
+						"flyunlock_Cherrygrove",
+						"flyunlock_Violet",
+						"flyunlock_Azalea",
+						"flyunlock_Cianwood",
+						"flyunlock_Goldenrod",
+						"flyunlock_Olivine",
+						"flyunlock_Ecruteak"
+					],
+					[
+						"flyunlock_Mahogany",
+						"flyunlock_LakeOfRage",
+						"flyunlock_Blackthorn",
+						"flyunlock_SilverCave",
+						"flyunlock_Pallet",
+						"flyunlock_Viridian",
+						"flyunlock_Pewter",
+						"flyunlock_Cerulean"
+					],
+					[
+						"flyunlock_Vermilion",
+						"flyunlock_Fuchsia",
+						"flyunlock_Lavender",
+						"flyunlock_Celadon",
+						"flyunlock_Saffron",
+						"flyunlock_Cinnabar"
+					]
+				]
+			}
         ]
     }
 }
