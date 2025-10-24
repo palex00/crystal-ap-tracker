@@ -44,7 +44,15 @@
 						"VOLCANO_BADGE",
 						"EARTH_BADGE",
 						"WATER_STONE"
-					],
+					]
+				]
+			},
+			{
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "margin": "0,0",
+				"item_margin": "1,2",
+                "rows": [
 					[
 						"POKE_GEAR",
 						"MAP_CARD",
@@ -80,8 +88,8 @@
             },
 			{
 				"type": "itemgrid",
-                "h_alignment": "left",
-                "margin": "0,5",
+                "h_alignment": "center",
+                "margin": "15,6",
 				"item_margin": "1,2",
                 "rows": [
 					[
@@ -128,7 +136,7 @@
 			{
 				"type": "itemgrid",
                 "h_alignment": "left",
-                "margin": "0,10",
+                "margin": "0,6",
 				"item_margin": "1,2",
                 "rows": [
 					[
@@ -146,8 +154,8 @@
 			},
 			{
 				"type": "itemgrid",
-                "h_alignment": "left",
-                "margin": "0,11",
+                "h_alignment": "center",
+                "margin": "15,0",
 				"item_margin": "1,2",
                 "rows": [
 					[
@@ -167,10 +175,10 @@
 						"flyunlock_SilverCave",
 						"flyunlock_Pallet",
 						"flyunlock_Viridian",
-						"flyunlock_Pewter",
-						"flyunlock_Cerulean"
+						"flyunlock_Pewter"
 					],
 					[
+						"flyunlock_Cerulean",
 						"flyunlock_Vermilion",
 						"flyunlock_Fuchsia",
 						"flyunlock_Lavender",
