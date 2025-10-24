@@ -44,7 +44,15 @@
 						"VOLCANO_BADGE",
 						"EARTH_BADGE",
 						"WATER_STONE"
-					],
+					]
+				]
+			},
+			{
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "margin": "0,0",
+				"item_margin": "1,2",
+                "rows": [
 					[
 						"POKE_GEAR",
 						"MAP_CARD",
@@ -81,7 +89,7 @@
 			{
 				"type": "itemgrid",
                 "h_alignment": "left",
-                "margin": "0,5",
+                "margin": "15,6",
 				"item_margin": "1,2",
                 "rows": [
 					[
@@ -128,7 +136,7 @@
 			{
 				"type": "itemgrid",
                 "h_alignment": "left",
-                "margin": "0,10",
+                "margin": "0,6",
 				"item_margin": "1,2",
                 "rows": [
 					[
