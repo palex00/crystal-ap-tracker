@@ -429,7 +429,6 @@ function updatePokemon(pokemon)
 		end
         
 		if has("encounter_tracking_strict") or has("encounter_tracking_loose") then
-            
             resetEvolutionsanityData()
             updateEvolutionInfo(pokemon)
             updateBreedingInfo(pokemon)
@@ -544,7 +543,7 @@ function updateBreedingInfo(pokemon)
     for first_id, second_id in pairs(BREEDING_DATA) do
         for _, caught_id in pairs(pokemon.caught) do
             if second_id == caught_id then
-                local evo_string = EVO_LOC_MAPPING[first_id]
+                local evo_string = EVO_LOC_MAPPING[tonumber(first_id)]
                 if evo_string then
                     local loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string .. "/Breed " .. evo_string)
                     if loc then
