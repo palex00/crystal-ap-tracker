@@ -7759,7 +7759,7 @@
                             "show_items, grasssanity_full"
                         ],
                         "access_rules": [
-                            "$can_cut_johto"
+                            "$can_cut_johto, $can_surf_johto"
                         ]
                     },
                     {
@@ -7772,7 +7772,7 @@
                             "show_items, grasssanity_single"
                         ],
                         "access_rules": [
-                            "$can_cut_johto"
+                            "$can_cut_johto, $can_surf_johto"
                         ]
                     },
                     {
