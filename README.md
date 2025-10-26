@@ -25,6 +25,7 @@ Original project by AliceMousie.
 ## Compatibility Chart
 apworld | pack version
 :-------------------------:|:-------------------------:
+5.2.0   | 0.9.X
 5.1.0   | 0.8.X
 5.0.0   | 0.7.X
 4.0.X   | 0.6.X
