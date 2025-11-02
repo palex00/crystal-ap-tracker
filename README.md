@@ -3,19 +3,20 @@
 Archipelago Pokémon Crystal tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with Autotracking.
 Full Map             |  Johto-Only
 :-------------------------:|:-------------------------:
-![grafik](https://github.com/user-attachments/assets/4904cede-b111-4672-beaf-d3d548ae8fad) | ![grafik](https://github.com/user-attachments/assets/002e8dd1-8c78-43e9-a8e3-60a92b6bc205)
+<img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/e6d34243-ab04-4b3e-b099-f4050603d314" /> | <img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/e77c3308-5fd3-449b-a363-c234b8d544c9" />
 
 Submap View             |  Split Map View
 :-------------------------:|:-------------------------:
-![grafik](https://github.com/user-attachments/assets/b43d4d5c-5df0-4347-b5a9-7875a64581c8) | ![grafik](https://github.com/user-attachments/assets/b1bdda42-48ca-422b-905e-adaffbf53fb5)
+<img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/2dc35ed5-bc14-46f4-8721-66dd5a9a8059" /> | <img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/d154099b-5a0e-449f-92b2-00dba426a177" />
 
 Split Vertical Map View   |  Split Kanto Only Map View
 :-------------------------:|:-------------------------:
-![grafik](https://github.com/user-attachments/assets/c1de68f0-6d32-4c21-8b60-9827cf1f86f9) | ![grafik](https://github.com/user-attachments/assets/1770e7e7-056a-44df-8fb9-953538954106)
+<img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/5b7c0939-9d1d-421f-a3db-748fce750241" /> | <img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/2ba55e22-a5c9-43fb-8f26-0284dd3608f0" />
 
-Pokédex Evolution Logic View   |  Pokémon Logic View
+Pokédex Vanilla Logic Page   |  Evolutionsanity Logic Page
 :-------------------------:|:-------------------------:
-![grafik](https://github.com/user-attachments/assets/ffc78e87-9a30-477b-89fd-df99578f980b) | ![grafik](https://github.com/user-attachments/assets/593e1977-01ed-4f2c-aeae-01c40e5133d2)
+<img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/e08c4e44-e6e1-4ecc-a9e4-822250ec9b09" /> | <img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/bd2cf7da-f536-4f7a-84a1-151c08833c71" />
+
 
 
 PopTracker v0.30.4 or higher is neccessary.
