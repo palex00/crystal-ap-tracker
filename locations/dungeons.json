@@ -11123,6 +11123,70 @@
                 ]
             },
             {
+                "name": "Silver Cave",
+                "sections": [
+                    {
+                        "name": "1F - Southeast Item",
+                        "ref": "JohtoKanto/Silver Cave/1F - Southeast Item"
+                    },
+                    {
+                        "name": "1F - Southwest Item",
+                        "ref": "JohtoKanto/Silver Cave/1F - Southwest Item"
+                    },
+                    {
+                        "name": "1F - Center Item",
+                        "ref": "JohtoKanto/Silver Cave/1F - Center Item"
+                    },
+                    {
+                        "name": "1F - Southeast Hidden Item",
+                        "ref": "JohtoKanto/Silver Cave/1F - Southeast Hidden Item"
+                    },
+                    {
+                        "name": "1F - Northwest Item",
+                        "ref": "JohtoKanto/Silver Cave/1F - Northwest Item"
+                    },
+                    {
+                        "name": "1F - Northeast Hidden Item",
+                        "ref": "JohtoKanto/Silver Cave/1F - Northeast Hidden Item"
+                    },
+                    {
+                        "name": "2F - Hidden Item",
+                        "ref": "JohtoKanto/Silver Cave/2F - Hidden Item"
+                    },
+                    {
+                        "name": "2F - East Item",
+                        "ref": "JohtoKanto/Silver Cave/2F - East Item"
+                    },
+                    {
+                        "name": "2F - West Item",
+                        "ref": "JohtoKanto/Silver Cave/2F - West Item"
+                    },
+                    {
+                        "name": "2F - South Chamber Item",
+                        "ref": "JohtoKanto/Silver Cave/2F - South Chamber Item"
+                    },
+                    {
+                        "name": "2F - Northeast Item",
+                        "ref": "JohtoKanto/Silver Cave/2F - Northeast Item"
+                    },
+                    {
+                        "name": "2F - North Chamber Item",
+                        "ref": "JohtoKanto/Silver Cave/2F - North Chamber Item"
+                    },
+                    {
+                        "name": "3F - Defeat Red",
+                        "ref": "JohtoKanto/Silver Cave/3F - Defeat Red"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SilverCaveOutside",
+                        "x": 296,
+                        "y": 184
+                    }
+                ]
+            },
+            {
                 "name": "",
                 "sections": [
                     {
