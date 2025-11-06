@@ -63,7 +63,7 @@ end
 
 function evolve_friend()
     local daisy = Tracker:FindObjectForCode("@JohtoKanto/Pallet Town").AccessibilityLevel
-    local massage = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City/Item").AccessibilityLevel
+    local massage = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod Underground/Item").AccessibilityLevel
     if has("evomethod_happiness_on") and (daisy == 6 or massage == 6) then
         return AccessibilityLevel.Normal
     else
