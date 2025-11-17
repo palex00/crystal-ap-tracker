@@ -63,5 +63,65 @@
                 ]
             }
         ]
+    },
+    "vertical_event_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "14,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, 2",
+                        "h_alignment": "center",
+                        "item_h_alignment": "center",
+                        "rows": [
+                            [
+                                "EVENT_BEAT_FALKNER",
+                                "EVENT_BEAT_BUGSY",
+                                "EVENT_BEAT_WHITNEY",
+                                "EVENT_BEAT_MORTY",
+                                "EVENT_BEAT_JASMINE",
+                                "EVENT_BEAT_CHUCK",
+                                "EVENT_BEAT_PRYCE",
+                                "EVENT_BEAT_CLAIR"
+                            ],
+                            [
+                                "EVENT_BEAT_BROCK",
+                                "EVENT_BEAT_MISTY",
+                                "EVENT_BEAT_LTSURGE",
+                                "EVENT_BEAT_ERIKA",
+                                "EVENT_BEAT_JANINE",
+                                "EVENT_BEAT_SABRINA",
+                                "EVENT_BEAT_BLAINE",
+                                "EVENT_BEAT_BLUE"
+                            ],
+                            [
+                                "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+                                "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
+                                "EVENT_GOT_KENYA",
+                                "EVENT_GAVE_KENYA",
+                                "EVENT_CLEARED_SLOWPOKE_WELL",
+                                "EVENT_HERDED_FARFETCHD",
+                                "EVENT_RELEASED_THE_BEASTS",
+                                "EVENT_JASMINE_RETURNED_TO_GYM"
+                            ],
+                            [
+                                "EVENT_DECIDED_TO_HELP_LANCE",
+                                "EVENT_CLEARED_ROCKET_HIDEOUT",
+                                "EVENT_CLEARED_RADIO_TOWER",
+                                "EVENT_BEAT_ELITE_FOUR",
+                                "EVENT_RESTORED_POWER_TO_KANTO",
+                                "EVENT_VIRIDIAN_GYM_BLUE",
+                                "EVENT_BEAT_RED"
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 }

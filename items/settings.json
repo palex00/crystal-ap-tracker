@@ -3158,5 +3158,25 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Secret Broadcast Orientation Toggle Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Broadcast View: Horizontal",
+                "img": "/images/settings/invisible.png",
+                "codes": "broadcast_view, broadcast_view_horizontal",
+                "inherit_codes": false
+            },
+            {
+                "name": "Broadcast View: Vertical",
+                "img": "/images/settings/invisible.png",
+                "codes": "broadcast_view, broadcast_view_vertical",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

@@ -47,7 +47,7 @@ Tracker:AddLayouts("layouts/shopsanity_all.json")
 Tracker:AddLayouts("layouts/tabs_single.json")
 Tracker:AddLayouts("layouts/overworld.json")
 Tracker:AddLayouts("layouts/tracker.json")
-Tracker:AddLayouts("layouts/broadcast.json")
+Tracker:AddLayouts("layouts/broadcast/broadcast.json")
 Tracker:AddLayouts("layouts/pokedex.json")
 Tracker:AddLayouts("layouts/dexcountsanity.json")
 
@@ -81,6 +81,7 @@ ScriptHost:AddWatchForCode("randomize_fly_unlocks", "randomize_fly_unlocks", tog
 ScriptHost:AddWatchForCode("shopsanity_gamecorners", "shopsanity_gamecorners", toggle_itemgrid)
 ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_itemgrid)
 ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_itemgrid)
+ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
 
 
 --for _, code in ipairs(FLAG_STATIC_CODES) do

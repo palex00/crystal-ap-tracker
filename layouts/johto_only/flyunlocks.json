@@ -39,5 +39,42 @@
                 ]
             }
         ]
+    },
+    "vertical_fly_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, 2",
+                        "h_alignment": "center",
+                        "rows": [
+                            [
+                                "flyunlock_NewBark",
+                                "flyunlock_Cherrygrove",
+                                "flyunlock_Violet",
+                                "flyunlock_Azalea",
+                                "flyunlock_Cianwood",
+                                "flyunlock_Goldenrod",
+                                "flyunlock_Olivine",
+                                "flyunlock_Ecruteak",
+                                "flyunlock_Mahogany"
+                            ],
+                            [
+                                "flyunlock_LakeOfRage",
+                                "flyunlock_Blackthorn",
+                                "flyunlock_SilverCave"
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 }

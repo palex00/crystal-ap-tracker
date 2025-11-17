@@ -1,0 +1,49 @@
+﻿{
+    "tracker_broadcast": {
+        "type": "array",
+        "orientation": "vertical",
+        "background": "#2D2D2D",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "Items",
+                    },
+                    {
+                        "type": "layout",
+                        "key": "shared_item_grid"
+                    },
+                    {
+                        "type": "text",
+                        "text": " ",
+                    },
+                    {
+                        "type": "text",
+                        "text": "Fly Unlocks",
+                    },
+                    {
+                        "type": "layout",
+                        "key": "vertical_fly_grid"
+                    },
+                    {
+                        "type": "text",
+                        "text": " ",
+                    },
+                    {
+                        "type": "text",
+                        "text": "Events",
+                    },
+                    {
+                        "type": "layout",
+                        "key": "vertical_event_grid"
+                    }
+                ]
+            }
+        ]
+    }
+}
