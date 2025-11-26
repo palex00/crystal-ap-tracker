@@ -209,6 +209,10 @@ function onClear(slot_data)
         end
         
         updateEvents(0)
+        updateEvents2(0)
+        updateStatics(0)
+        updateRocketTraps(0)
+        updateVanillaKeyItems(0)
         
         EVENT_ID="pokemon_crystal_events_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({EVENT_ID})
