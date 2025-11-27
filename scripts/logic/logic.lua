@@ -187,7 +187,17 @@ function clear_snorlax()
 end
 
 function all_badges()
-  return badges() > 15
+    kanto_badges = (
+        Tracker:ProviderCountForCode("BOULDER_BADGE") +
+        Tracker:ProviderCountForCode("CASCADE_BADGE") +
+        Tracker:ProviderCountForCode("THUNDER_BADGE") +
+        Tracker:ProviderCountForCode("RAINBOW_BADGE") +
+        Tracker:ProviderCountForCode("SOUL_BADGE") +
+        Tracker:ProviderCountForCode("MARSH_BADGE") +
+        Tracker:ProviderCountForCode("VOLCANO_BADGE") +
+        Tracker:ProviderCountForCode("EARTH_BADGE")
+    )
+    return kanto_badges == 8
 end
 
 function silver_cave()
