@@ -295,7 +295,9 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Cherrygrove City",
-                            "@JohtoKanto/Route 31"
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, route_30_battle_north",
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON, route_30_battle_both",
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, $can_cut_johto, route_30_battle_both"
                         ]
                     },
                     {
@@ -304,7 +306,8 @@
                             "Invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Cherrygrove City, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon, $can_cut_johto",
                             "@JohtoKanto/Route 31"
                         ]
                     },

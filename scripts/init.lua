@@ -65,6 +65,7 @@ ScriptHost:AddWatchForCode("red_gyarados_access", "red_gyarados_access", toggle_
 ScriptHost:AddWatchForCode("blackthorn_dark_cave_access", "blackthorn_dark_cave_access", toggle_darkcave)
 ScriptHost:AddWatchForCode("mount_mortar_access", "mount_mortar_access", toggle_mountmortar)
 ScriptHost:AddWatchForCode("victory_road_access", "victory_road_access", toggle_victoryroad)
+ScriptHost:AddWatchForCode("route_30_battle", "route_30_battle", toggle_route30)
 ScriptHost:AddWatchForCode("mischief", "mischief", toggle_mischief)
 ScriptHost:AddWatchForCode("chrism", "chrism", toggle_mischief)
 for _, code in ipairs(gym_codes) do

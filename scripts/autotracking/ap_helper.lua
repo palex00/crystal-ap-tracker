@@ -390,6 +390,10 @@ SLOT_CODES = {
     grasssanity = {
         code = "grasssanity",
         mapping = MAP_TRIPLE
+    },
+    route_30_battle = {
+        code = "route_30_battle",
+        mapping = MAP_TOGGLE
     }
 }
 

@@ -3178,5 +3178,25 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Route 30 Battle Orientation",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 30 Battle blocks Northbound",
+                "img": "/images/events/become_champion.png",
+                "codes": "route_30_battle, route_30_battle_north",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 30 Battle blocks both directions",
+                "img": "/images/events/defeat_red.png",
+                "codes": "route_30_battle, route_30_battle_both",
+                "inherit_codes": false
+            }
+        ]
     }
 ]
