@@ -305,6 +305,7 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Cherrygrove City, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+                            "@JohtoKanto/Cherrygrove City, $can_cut_johto",
                             "@JohtoKanto/Route 31"
                         ]
                     },
@@ -379,7 +380,7 @@
                             "show_items, trainersanity_1488"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 30/Post-Mr-Pokemon"
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
                         ]
                     },
                     {
