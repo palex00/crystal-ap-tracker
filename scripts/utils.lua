@@ -274,16 +274,3 @@ function showMonVisibility()
         Tracker:FindObjectForCode("location_visibility").CurrentStage = 1
     end
 end
-
-function toggle_route30()
-    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
-    if has("route_30_battle_north") and not sudowoodo then
-        Tracker:AddMaps("maps/route_30_vanilla.json")
-    elseif has("route_30_battle_both") and not sudowoodo then
-        Tracker:AddMaps("maps/route_30_modified.json")
-    elseif has("route_30_battle_north") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/route_30_vanilla.json")
-    elseif has("route_30_battle_both") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/route_30_modified.json")
-    end
-end
