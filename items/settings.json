@@ -3193,13 +3193,13 @@
         "stages": [
             {
                 "name": "Route 30 Battle blocks Northbound",
-                "img": "/images/events/become_champion.png",
+                "img": "/images/settings/route_30_north.png",
                 "codes": "route_30_battle, route_30_battle_north",
                 "inherit_codes": false
             },
             {
                 "name": "Route 30 Battle blocks both directions",
-                "img": "/images/events/defeat_red.png",
+                "img": "/images/settings/route_30_both.png",
                 "codes": "route_30_battle, route_30_battle_both",
                 "inherit_codes": false
             }
