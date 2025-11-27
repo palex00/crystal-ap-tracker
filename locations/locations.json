@@ -7558,7 +7558,8 @@
                         "name": "Red Scale from Gyarados",
                         "access_rules": [
                             "$can_surf_johto, red_gyarados_vanilla",
-                            "$can_whirlpool, red_gyarados_whirlpool"
+                            "$can_whirlpool, red_gyarados_whirlpool",
+                            "red_gyarados_shore"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7570,7 +7571,8 @@
                         "chest_opened_img": "images/other/red_gyarados_bw.png",
                         "access_rules": [
                             "$can_surf_johto, red_gyarados_vanilla, ^$static_encounter",
-                            "$can_whirlpool, red_gyarados_whirlpool, ^$static_encounter"
+                            "$can_whirlpool, red_gyarados_whirlpool, ^$static_encounter",
+                            "red_gyarados_shore, ^$static_encounter"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -7610,7 +7612,8 @@
                         "name": "Help Lance",
                         "access_rules": [
                             "$can_surf_johto, red_gyarados_vanilla",
-                            "$can_whirlpool, red_gyarados_whirlpool"
+                            "$can_whirlpool, red_gyarados_whirlpool",
+                            "red_gyarados_shore"
                         ],
                         "hosted_item": "EVENT_DECIDED_TO_HELP_LANCE",
                         "visibility_rules": [

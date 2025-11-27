@@ -884,15 +884,21 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Red Gyarados is unblocked",
+                "name": "Red Gyarados is in the water, unbothered, striving",
                 "img": "/images/settings/red_gyarados_vanilla.png",
                 "codes": "red_gyarados_access, red_gyarados_vanilla",
                 "inherit_codes": false
             },
             {
-                "name": "Red Gyarados is surrounded by whirlpools",
+                "name": "Red Gyarados is surrounded by whirlpools, oh no",
                 "img": "/images/settings/red_gyarados_whirlpool.png",
                 "codes": "red_gyarados_access, red_gyarados_whirlpool",
+                "inherit_codes": false
+            },
+            {
+                "name": "Red Gyarados is at the shore, it has beached",
+                "img": "/images/settings/red_gyarados_shore.png",
+                "codes": "red_gyarados_access, red_gyarados_shore",
                 "inherit_codes": false
             }
         ]
