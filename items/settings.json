@@ -3213,14 +3213,14 @@
         "stages": [
             {
                 "name": "S.S. Aqua has GPS",
-                "img": "/images/settings/ss_aqua_access.png",
+                "img": "/images/settings/ss_aqua_access_vanilla.png",
                 "img_mods": "@disabled",
                 "codes": "ss_aqua_access, ss_aqua_access_vanilla",
                 "inherit_codes": false
             },
             {
                 "name": "S.S. Aqua needs a lighthouse",
-                "img": "/images/settings/ss_aqua_access.png",
+                "img": "/images/settings/ss_aqua_access_amphy.png",
                 "codes": "ss_aqua_access, ss_aqua_access_amphy",
                 "inherit_codes": false
             }
