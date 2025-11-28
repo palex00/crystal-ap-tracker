@@ -371,3 +371,13 @@ function kantogymlock()
         end
     end
 end
+
+function boat_access()
+    if has("ss_aqua_access_vanilla") and has("S_S_TICKET") then
+        return true
+    elseif has("ss_aqua_access_amphy") and has("S_S_TICKET") and has("EVENT_JASMINE_RETURNED_TO_GYM") then
+        return true
+    else
+        return false    
+    end
+end

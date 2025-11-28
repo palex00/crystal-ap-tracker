@@ -5100,7 +5100,7 @@
                     {
                         "name": "Port - Hidden Item in Buoy",
                         "access_rules": [
-                            "S_S_TICKET,$can_surf_johto,^$hid"
+                            "$boat_access,$can_surf_johto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on,johto_only_off"
@@ -5289,8 +5289,8 @@
             {
                 "name": "S.S. Aqua",
                 "access_rules": [
-                    "@JohtoKanto/Olivine City, S_S_TICKET",
-                    "@JohtoKanto/Vermilion City/City, S_S_TICKET"
+                    "@JohtoKanto/Olivine City, $boat_access",
+                    "@JohtoKanto/Vermilion City/City, $boat_access"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -12663,7 +12663,7 @@
                     {
                         "name": "Port - Hidden Item in Buoy",
                         "access_rules": [
-                            "@JohtoKanto/Vermilion City/City, S_S_TICKET,$can_surf_kanto,^$hid"
+                            "@JohtoKanto/Vermilion City/City, $boat_access,$can_surf_kanto,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"

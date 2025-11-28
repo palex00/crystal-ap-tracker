@@ -3204,5 +3204,26 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "S.S. Aqua Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "S.S. Aqua has GPS",
+                "img": "/images/settings/ss_aqua_access.png",
+                "img_mods": "@disabled",
+                "codes": "ss_aqua_access, ss_aqua_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "S.S. Aqua needs a lighthouse",
+                "img": "/images/settings/ss_aqua_access.png",
+                "codes": "ss_aqua_access, ss_aqua_access_amphy",
+                "inherit_codes": false
+            }
+        ]
     }
 ]
