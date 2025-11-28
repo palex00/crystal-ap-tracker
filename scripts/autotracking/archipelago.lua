@@ -252,6 +252,18 @@ function onItem(index, item_id, item_name, player_number)
         --print(string.format("onItem: could not find item mapping for id %s", item_id))
         return
     end
+    
+    if v == "PROGRESSIVE_ROD" then
+        if has("GOOD_ROD") then
+            Tracker:FindObjectForCode("SUPER_ROD").Active = true
+        elseif has("OLD_ROD") then
+            Tracker:FindObjectForCode("GOOD_ROD").Active = true
+        else
+            Tracker:FindObjectForCode("OLD_ROD").Active = true
+        end
+        return
+    end
+    
     local obj = Tracker:FindObjectForCode(v)
     if obj then
         if v == "BLUE_CARD_POINT" then
