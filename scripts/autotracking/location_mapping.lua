@@ -21,6 +21,7 @@ LOCATION_MAPPING = {
   [39] = "@JohtoKanto/Route 30/Berry from House",
   [53] = "@JohtoKanto/Azalea Town/Lure Ball from Kurt",
   [62] = "@JohtoKanto/Route 39/Moomoo Farm - TM13 after feeding Moomoo",
+  [63] = "@JohtoKanto/Route 39/Moomoo Farm - Moomoo Milk after feeding Moomoo",
   [71] = "@JohtoKanto/Radio Tower/3F - TM11 from Woman",
   [72] = "@JohtoKanto/Radio Tower/4F - Pink Bow from Mary",
   [74] = "@JohtoKanto/Goldenrod Underground/Warehouse - Card Key from Director",
