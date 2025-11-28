@@ -381,3 +381,13 @@ function boat_access()
         return false    
     end
 end
+
+function train_access()
+    if has("magnet_train_access_vanilla") and has("PASS") then
+        return true
+    elseif has("magnet_train_access_power") and has("PASS") and has("EVENT_RESTORED_POWER_TO_KANTO") then
+        return true
+    else
+        return false    
+    end
+end

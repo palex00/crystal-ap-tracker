@@ -2629,7 +2629,7 @@
                     "@JohtoKanto/National Park, $nationalpark",
                     "@JohtoKanto/Route 36/Left, $can_cut_johto",
                     "$can_freefly|Goldenrod",
-                    "@JohtoKanto/Saffron City, PASS"
+                    "@JohtoKanto/Saffron City, $train_access"
                 ],
                 "sections": [
                     {
@@ -11782,7 +11782,7 @@
                 "name": "Saffron City",
                 "access_rules": [
                     "start_town_Saffron",
-                    "@JohtoKanto/Goldenrod City, PASS",
+                    "@JohtoKanto/Goldenrod City, $train_access",
                     "$can_freefly|Saffron",
                     "@JohtoKanto/Cerulean City, $tea|north",
                     "@JohtoKanto/Celadon City, $tea|west",

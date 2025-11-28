@@ -395,6 +395,14 @@ SLOT_CODES = {
     route_30_battle = {
         code = "route_30_battle",
         mapping = MAP_TOGGLE
+    },
+    ss_aqua_access = {
+        code = "ss_aqua_access",
+        mapping = MAP_TOGGLE
+    },
+    magnet_train_access = {
+        code = "magnet_train_access",
+        mapping = MAP_TOGGLE
     }
 }
 

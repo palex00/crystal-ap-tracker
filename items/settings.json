@@ -3225,5 +3225,25 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Magnet Train Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Magnet Train has backup generators",
+                "img": "/images/settings/magnet_train_access_vanilla.png",
+                "codes": "magnet_train_access, magnet_train_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Magnet Train requires power restored to Kanto",
+                "img": "/images/settings/magnet_train_access_power.png",
+                "codes": "magnet_train_access, magnet_train_access_power",
+                "inherit_codes": false
+            }
+        ]
     }
 ]
