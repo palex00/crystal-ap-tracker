@@ -19,6 +19,30 @@ function badges()
   Tracker:ProviderCountForCode("EARTH_BADGE")
 end
 
+function johtobadges()
+  return
+  Tracker:ProviderCountForCode("ZEPHYR_BADGE") +
+  Tracker:ProviderCountForCode("HIVE_BADGE") +
+  Tracker:ProviderCountForCode("PLAIN_BADGE") +
+  Tracker:ProviderCountForCode("FOG_BADGE") +
+  Tracker:ProviderCountForCode("STORM_BADGE") +
+  Tracker:ProviderCountForCode("MINERAL_BADGE") +
+  Tracker:ProviderCountForCode("GLACIER_BADGE") +
+  Tracker:ProviderCountForCode("RISING_BADGE")
+end
+
+function kantobadges()
+  return
+  Tracker:ProviderCountForCode("BOULDER_BADGE") +
+  Tracker:ProviderCountForCode("CASCADE_BADGE") +
+  Tracker:ProviderCountForCode("THUNDER_BADGE") +
+  Tracker:ProviderCountForCode("RAINBOW_BADGE") +
+  Tracker:ProviderCountForCode("SOUL_BADGE") +
+  Tracker:ProviderCountForCode("MARSH_BADGE") +
+  Tracker:ProviderCountForCode("VOLCANO_BADGE") +
+  Tracker:ProviderCountForCode("EARTH_BADGE")
+end
+
 gym_codes = {
     "EVENT_BEAT_FALKNER",
     "EVENT_BEAT_BUGSY",
@@ -187,17 +211,7 @@ function clear_snorlax()
 end
 
 function all_badges()
-    kanto_badges = (
-        Tracker:ProviderCountForCode("BOULDER_BADGE") +
-        Tracker:ProviderCountForCode("CASCADE_BADGE") +
-        Tracker:ProviderCountForCode("THUNDER_BADGE") +
-        Tracker:ProviderCountForCode("RAINBOW_BADGE") +
-        Tracker:ProviderCountForCode("SOUL_BADGE") +
-        Tracker:ProviderCountForCode("MARSH_BADGE") +
-        Tracker:ProviderCountForCode("VOLCANO_BADGE") +
-        Tracker:ProviderCountForCode("EARTH_BADGE")
-    )
-    return kanto_badges == 8
+    return kantobadges() == 8
 end
 
 function silver_cave()

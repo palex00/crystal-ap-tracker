@@ -65,7 +65,8 @@ MAP_TOGGLE_REVERSE = {
 }
 MAP_BADGEGYM = {
     [0] = "badges",
-    [1] = "gyms"
+    [1] = "gyms",
+    [2] = "johtobadges"
 }
 MAP_KANTO_ACCESS = {
     [0] = "snorlax",
