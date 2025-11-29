@@ -3245,5 +3245,37 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Bug Catching Contest",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Bug Catching Contest is not randomized",
+                "img": "/images/settings/bcc_off.png",
+                "codes": "randomize_bug_catching_contest, randomize_bug_catching_contest_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "BCC randomized, all places separate",
+                "img": "/images/settings/bcc_all.png",
+                "codes": "randomize_bug_catching_contest, randomize_bug_catching_contest_all",
+                "inherit_codes": false
+            },
+            {
+                "name": "BCC randomized, second and third place are combined",
+                "img": "/images/settings/bcc_combined.png",
+                "codes": "randomize_bug_catching_contest, randomize_bug_catching_contest_combined",
+                "inherit_codes": false
+            },
+            {
+                "name": "BCC randomized, only participation trophy",
+                "img": "/images/settings/bcc_participation.png",
+                "codes": "randomize_bug_catching_contest, randomize_bug_catching_contest_participation",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

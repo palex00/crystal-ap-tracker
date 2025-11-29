@@ -3786,6 +3786,42 @@
                         ]
                     },
                     {
+                        "name": "Bug Catching Contest - First Place Prize",
+                        "visibility_rules": [
+                            "show_items, bcc_1"
+                        ]
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second Place Prize",
+                        "visibility_rules": [
+                            "show_items, bcc_2"
+                        ]
+                    },
+                    {
+                        "name": "Bug Catching Contest - Third Place Prize",
+                        "visibility_rules": [
+                            "show_items, bcc_3"
+                        ]
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second or Third Place Prize",
+                        "visibility_rules": [
+                            "show_items, bcc_23"
+                        ]
+                    },
+                    {
+                        "name": "Bug Catching Contest - Consolation Prize",
+                        "visibility_rules": [
+                            "show_items, bcc_4"
+                        ]
+                    },
+                    {
+                        "name": "Bug Catching Contest - Participation Prize",
+                        "visibility_rules": [
+                            "show_items, bcc_part"
+                        ]
+                    },
+                    {
                         "name": "Grass",
                         "item_count": 132,
                         "clear_as_group": true,
@@ -3822,6 +3858,19 @@
                         ],
                         "access_rules": [
                             "^$land_encounter"
+                        ]
+                    },
+                    {
+                        "name": "Bug Catching Contest Encounters",
+                        "item_count": 10,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            ""
                         ]
                     }
                 ],

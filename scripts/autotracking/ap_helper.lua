@@ -403,6 +403,10 @@ SLOT_CODES = {
     magnet_train_access = {
         code = "magnet_train_access",
         mapping = MAP_TOGGLE
+    },
+    randomize_bug_catching_contest = {
+        code = "randomize_bug_catching_contest",
+        mapping = MAP_QUADRUPLE
     }
 }
 
