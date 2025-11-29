@@ -169,6 +169,7 @@
         "name": "Clear Radio Tower",
         "type": "toggle",
         "img": "/images/events/tower_cleared.png",
+        "img_mods": "overlay|images/events/overlay_radiotower.png",
         "codes": "EVENT_CLEARED_RADIO_TOWER"
     },
     {
