@@ -19,7 +19,9 @@
                         "name": "Player's House - Pokegear from Mom",
                         "visibility_rules": [
                             "show_items, pokegear_on"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/mom.png",
+                        "chest_opened_img": "images/gift/mom_open.png"
                     },
                     {
                         "name": "​Player's House - Pokegear from Mom",
@@ -32,7 +34,9 @@
                         "name": "Elm's Lab - Potion from Aide",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/scientist.png",
+                        "chest_opened_img": "images/gift/scientist_open.png"
                     },
                     {
                         "name": "Elm's Lab - Gift from Aide after returning Mystery Egg",
@@ -41,7 +45,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/scientist.png",
+                        "chest_opened_img": "images/gift/scientist_open.png"
                     },
                     {
                         "name": "Elm's Lab - Master Ball from Elm",
@@ -50,7 +56,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/elm.png",
+                        "chest_opened_img": "images/gift/elm_open.png"
                     },
                     {
                         "name": "Elm's Lab - S.S. Ticket from Elm",
@@ -59,7 +67,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/elm.png",
+                        "chest_opened_img": "images/gift/elm_open.png"
                     },
                     {
                         "name": "Surf Encounters",
@@ -133,7 +143,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/red_lady.png",
+                        "chest_opened_img": "images/gift/red_lady_open.png"
                     },
                     {
                         "name": "Grass",
@@ -206,7 +218,9 @@
                         "name": "Map Card from Guide",
                         "visibility_rules": [
                             "show_items, pokegear_on"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/cherrygrove_guide.png",
+                        "chest_opened_img": "images/gift/cherrygrove_guide_open.png"
                     },
                     {
                         "name": "​Map Card from Guide",
@@ -222,7 +236,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/green_guy.png",
+                        "chest_opened_img": "images/gift/green_guy_open.png"
                     },
                     {
                         "name": "Rival",
@@ -383,7 +399,9 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gentleman.png",
+                        "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
                         "name": "Youngster Joey",
@@ -428,7 +446,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gentleman.png",
+                        "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
                         "name": "Grass",
@@ -555,7 +575,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue_guy.png",
+                        "chest_opened_img": "images/gift/blue_guy_open.png"
                     },
                     {
                         "name": "Grass",
@@ -805,7 +827,9 @@
                         "name": "Gym - Zephyr Badge from Falkner",
                         "visibility_rules": [
                             "show_items, $badges_randomised"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/falkner.png",
+                        "chest_opened_img": "images/gift/falkner_open.png"
                     },
                     {
                         "name": "​Gym - Zephyr Badge from Falkner",
@@ -818,7 +842,9 @@
                         "name": "Gym - TM31 from Falkner",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/falkner.png",
+                        "chest_opened_img": "images/gift/falkner_open.png"
                     },
                     {
                         "name": "Egg Collected",
@@ -1014,7 +1040,9 @@
                         "name": "3F - HM05 from Sage",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/sage.png",
+                        "chest_opened_img": "images/gift/sage_open.png"
                     },
                     {
                         "name": "3F - Land Encounters",
@@ -1169,7 +1197,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/wise_trio.png",
+                        "chest_opened_img": "images/gift/wise_trio_open.png"
                     },
                     {
                         "name": "Ho-Oh Room Bottom Left Item (Rainbow Wing)",
@@ -1178,7 +1208,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/wise_trio.png",
+                        "chest_opened_img": "images/gift/wise_trio_open.png"
                     },
                     {
                         "name": "Ho-Oh Room Bottom Right Item (Rainbow Wing)",
@@ -1187,7 +1219,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/wise_trio.png",
+                        "chest_opened_img": "images/gift/wise_trio_open.png"
                     },
                     {
                         "name": "Ho-Oh Room Top Left Item (Rainbow Wing)",
@@ -1196,7 +1230,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/wise_trio.png",
+                        "chest_opened_img": "images/gift/wise_trio_open.png"
                     },
                     {
                         "name": "Outside - Psychic Nathan",
@@ -1305,7 +1341,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/route_32_guy.png",
+                        "chest_opened_img": "images/gift/route_32_guy_open.png"
                     },
                     {
                         "name": "Post-Guy",
@@ -1337,7 +1375,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue_guy.png",
+                        "chest_opened_img": "images/gift/blue_guy_open.png"
                     },
                     {
                         "name": "North Item",
@@ -1447,7 +1487,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/frieda.png",
+                        "chest_opened_img": "images/gift/frieda_open.png"
                     },
                     {
                         "name": "Hidden Item by Frieda",
@@ -1467,7 +1509,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/fishing_guru.png",
+                        "chest_opened_img": "images/gift/fishing_guru_open.png"
                     },
                     {
                         "name": "Bird Keeper Peter",
@@ -2029,7 +2073,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/kings_rock_guy.png",
+                        "chest_opened_img": "images/gift/kings_rock_guy_open.png"
                     },
                     {
                         "name": "B2F - Land Encounters",
@@ -2111,7 +2157,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/kurt.png",
+                        "chest_opened_img": "images/gift/kurt_open.png"
                     },
                     {
                         "name": "Charcoal from Charcoal Kiln",
@@ -2120,7 +2168,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue_dude.png",
+                        "chest_opened_img": "images/gift/blue_dude_open.png"
                     },
                     {
                         "name": "Gym - Twins Amy & May",
@@ -2199,7 +2249,9 @@
                         ],
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/bugsy.png",
+                        "chest_opened_img": "images/gift/bugsy_open.png"
                     },
                     {
                         "name": "​Gym - Hive Badge from Bugsy",
@@ -2218,7 +2270,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/bugsy.png",
+                        "chest_opened_img": "images/gift/bugsy_open.png"
                     },
                     {
                         "name": "Rival",
@@ -2454,7 +2508,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/headbutt_guy.png",
+                        "chest_opened_img": "images/gift/headbutt_guy_open.png"
                     },
                     {
                         "name": "Northeast Item",
@@ -2556,7 +2612,9 @@
                         "name": "TM12 from Woman in Gate",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/tm12_lady.png",
+                        "chest_opened_img": "images/gift/tm12_lady_open.png"
                     },
                     {
                         "name": "Youngster Samuel",
@@ -2696,7 +2754,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/cool_trainer_f.png",
+                        "chest_opened_img": "images/gift/cool_trainer_f_open.png"
                     },
                     {
                         "name": "Grass",
@@ -2787,7 +2847,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/trade_corner_receptionist.png",
+                        "chest_opened_img": "images/gift/trade_corner_receptionist_open.png"
                     },
                     {
                         "name": "Exchange Eon Mail in Pokecenter",
@@ -2796,7 +2858,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/wife.png",
+                        "chest_opened_img": "images/gift/wife_open.png"
                     },
                     {
                         "name": "Dept. Store 1F - Buy Waterstone",
@@ -2849,13 +2913,17 @@
                         "name": "Dept. Store 5F - TM21 from Receptionist",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/receptionist.png",
+                        "chest_opened_img": "images/gift/receptionist_open.png"
                     },
                     {
                         "name": "Dept. Store 5F - TM27 from Receptionist",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/receptionist.png",
+                        "chest_opened_img": "images/gift/receptionist_open.png"
                     },
                     {
                         "name": "Dept. Store 5F - TM Shop - Shop Items",
@@ -2922,7 +2990,9 @@
                         "name": "Bicycle from Bike Shop",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/bike_shop_owner.png",
+                        "chest_opened_img": "images/gift/bike_shop_owner_open.png"
                     },
                     {
                         "name": "Gym - Beauty Victoria",
@@ -2983,7 +3053,9 @@
                         "name": "Gym - Plain Badge from Whitney",
                         "visibility_rules": [
                             "show_items, $badges_randomised"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/whitney.png",
+                        "chest_opened_img": "images/gift/whitney_open.png"
                     },
                     {
                         "name": "​Gym - Plain Badge from Whitney",
@@ -2996,7 +3068,9 @@
                         "name": "Gym - TM45 from Whitney",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/whitney.png",
+                        "chest_opened_img": "images/gift/whitney_open.png"
                     },
                     {
                         "name": "Squirtbottle from Flower Shop",
@@ -3005,7 +3079,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/red_lady.png",
+                        "chest_opened_img": "images/gift/red_lady_open.png"
                     },
                     {
                         "name": "Got Eevee from Bill",
@@ -3418,7 +3494,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gentleman.png",
+                        "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
                         "name": "Warehouse - Center Item",
@@ -3459,7 +3537,9 @@
                         "name": "1F - Radio Card from Quiz",
                         "visibility_rules": [
                             "show_items, pokegear_on"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/radio_tower_woman.png",
+                        "chest_opened_img": "images/gift/radio_tower_woman_open.png"
                     },
                     {
                         "name": "​1F - Radio Card from Quiz",
@@ -3484,7 +3564,9 @@
                         "name": "2F - Blue Card from Buena",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/buena.png",
+                        "chest_opened_img": "images/gift/buena_open.png"
                     },
                     {
                         "name": "2F - Blue Card Shop - 2 Points",
@@ -3616,7 +3698,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/radio_tower_woman.png",
+                        "chest_opened_img": "images/gift/radio_tower_woman_open.png"
                     },
                     {
                         "name": "3F - Grunt 3",
@@ -3685,7 +3769,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/green_lady.png",
+                        "chest_opened_img": "images/gift/green_lady_open.png"
                     },
                     {
                         "name": "5F - False Director",
@@ -3696,8 +3782,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1434"
                         ],
-						"chest_unopened_img": "images/trainers/gentleman.png",
-						"chest_opened_img": "images/trainers/gentleman_bw.png"
+                        "chest_unopened_img": "images/trainers/gentleman.png",
+                        "chest_opened_img": "images/trainers/gentleman_bw.png"
                     },
                     {
                         "name": "5F - Basement Key from False Director",
@@ -3706,7 +3792,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gentleman.png",
+                        "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
                         "name": "5F - Rocket Executive 1",
@@ -3739,7 +3827,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gentleman.png",
+                        "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
                         "name": "5F - Clear Radio Tower",
@@ -3800,7 +3890,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gate_guard.png",
+                        "chest_opened_img": "images/gift/gate_guard_open.png"
                     },
                     {
                         "name": "Picnicker Kim",
@@ -3982,7 +4074,9 @@
                         "name": "Quick Claw from Lady",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/green_lady.png",
+                        "chest_opened_img": "images/gift/green_lady_open.png"
                     },
                     {
                         "name": "Pokefan Beverly",
@@ -4145,7 +4239,9 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 36/Right"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue_dude.png",
+                        "chest_opened_img": "images/gift/blue_dude_open.png"
                     },
                     {
                         "name": "TM08 from Rock Smash Guy",
@@ -4154,7 +4250,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue_guy.png",
+                        "chest_opened_img": "images/gift/blue_guy_open.png"
                     },
                     {
                         "name": "Saw Suicune on Route 36 (Event)",
@@ -4321,7 +4419,9 @@
                         "name": "Magnet from Sunny",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/sunny.png",
+                        "chest_opened_img": "images/gift/sunny_open.png"
                     },
                     {
                         "name": "Twins Ann & Anne",
@@ -4505,7 +4605,9 @@
                         ],
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/morty.png",
+                        "chest_opened_img": "images/gift/morty_open.png"
                     },
                     {
                         "name": "​Gym - Fog Badge from Morty",
@@ -4524,19 +4626,25 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/morty.png",
+                        "chest_opened_img": "images/gift/morty_open.png"
                     },
                     {
                         "name": "Itemfinder from Itemfinder Guy",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/cool_trainer_m.png",
+                        "chest_opened_img": "images/gift/cool_trainer_m_open.png"
                     },
                     {
                         "name": "Dance Theater - HM03 from Theater Director",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gentleman.png",
+                        "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
                         "name": "Dance Theater - Kimono Girl Kuni",
@@ -4820,7 +4928,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/wise_trio.png",
+                        "chest_opened_img": "images/gift/wise_trio_open.png"
                     },
                     {
                         "name": "2F - Land Encounters",
@@ -5233,13 +5343,17 @@
                         "name": "Moomoo Farm - Moomoo Milk after feeding Moomoo",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/moomoo_farmer.png",
+                        "chest_opened_img": "images/gift/moomoo_farmer_open.png"
                     },
                     {
                         "name": "Moomoo Farm - TM13 after feeding Moomoo",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/wife.png",
+                        "chest_opened_img": "images/gift/wife_open.png"
                     },
                     {
                         "name": "Berry Tree",
@@ -5393,7 +5507,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/jasmine.png",
+                        "chest_opened_img": "images/gift/jasmine_open.png"
                     },
                     {
                         "name": "​Gym - Mineral Badge from Jasmine",
@@ -5412,19 +5528,25 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/jasmine.png",
+                        "chest_opened_img": "images/gift/jasmine_open.png"
                     },
                     {
                         "name": "HM04 from Sailor in Cafe",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/sailor.png",
+                        "chest_opened_img": "images/gift/sailor_open.png"
                     },
                     {
                         "name": "Good Rod from Fishing Guru",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/fishing_guru.png",
+                        "chest_opened_img": "images/gift/fishing_guru_open.png"
                     },
                     {
                         "name": "Poke Mart - Shop Items",
@@ -5964,7 +6086,9 @@
                         "name": "Sharp Beak from Monica",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/monica.png",
+                        "chest_opened_img": "images/gift/monica_open.png"
                     },
                     {
                         "name": "Swimmer Simon",
@@ -6573,7 +6697,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/chuck.png",
+                        "chest_opened_img": "images/gift/chuck_open.png"
                     },
                     {
                         "name": "​Gym - Storm Badge from Chuck",
@@ -6592,7 +6718,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/chuck.png",
+                        "chest_opened_img": "images/gift/chuck_open.png"
                     },
                     {
                         "name": "HM02 from Chuck's Wife",
@@ -6601,13 +6729,17 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/wife.png",
+                        "chest_opened_img": "images/gift/wife_open.png"
                     },
                     {
                         "name": "Pharmacy - Secretpotion",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/pharmacist.png",
+                        "chest_opened_img": "images/gift/pharmacist_open.png"
                     },
                     {
                         "name": "Hidden Item in North Rock",
@@ -7488,7 +7620,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/pryce.png",
+                        "chest_opened_img": "images/gift/pryce_open.png"
                     },
                     {
                         "name": "​Gym - Glacier Badge from Pryce",
@@ -7507,7 +7641,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/pryce.png",
+                        "chest_opened_img": "images/gift/pryce_open.png"
                     },
                     {
                         "name": "Rocket HQ B1F - Grunt",
@@ -7679,7 +7815,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/lance.png",
+                        "chest_opened_img": "images/gift/lance_open.png"
                     },
                     {
                         "name": "Rocket HQ B2F - Electrode Bottom",
@@ -7911,7 +8049,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gate_guard.png",
+                        "chest_opened_img": "images/gift/gate_guard_open.png"
                     },
                     {
                         "name": "Item",
@@ -8095,7 +8235,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/wesley.png",
+                        "chest_opened_img": "images/gift/wesley_open.png"
                     },
                     {
                         "name": "Northwest Item",
@@ -8122,7 +8264,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue_guy.png",
+                        "chest_opened_img": "images/gift/blue_guy_open.png"
                     },
                     {
                         "name": "Red Scale from Gyarados",
@@ -8625,7 +8769,9 @@
                         "name": "Spell Tag from Santos",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue_dude.png",
+                        "chest_opened_img": "images/gift/blue_dude_open.png"
                     },
                     {
                         "name": "Gym - 1F - Cool Trainer Paul",
@@ -8716,7 +8862,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised, clair_behaviour_adult"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/clair.png",
+                        "chest_opened_img": "images/gift/clair_open.png"
                     },
                     {
                         "name": "​Gym - Rising Badge from Clair",
@@ -8735,7 +8883,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, clair_behaviour_adult"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/clair.png",
+                        "chest_opened_img": "images/gift/clair_open.png"
                     },
                     {
                         "name": "Poke Mart - Shop Items",
@@ -8832,7 +8982,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised, clair_behaviour_child"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/clair.png",
+                        "chest_opened_img": "images/gift/clair_open.png"
                     },
                     {
                         "name": "​Dragon's Den B1F - Rising Badge from Clair",
@@ -8851,7 +9003,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, clair_behaviour_child"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/clair.png",
+                        "chest_opened_img": "images/gift/clair_open.png"
                     },
                     {
                         "name": "Dragon's Den B1F - Southeast Hidden Item",
@@ -8958,7 +9112,9 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Blackthorn Entrance/All Items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue_shades_dude.png",
+                        "chest_opened_img": "images/gift/blue_shades_dude_open.png"
                     },
                     {
                         "name": "Southwest Item",
@@ -9396,7 +9552,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/granny.png",
+                        "chest_opened_img": "images/gift/granny_open.png"
                     },
                     {
                         "name": "West Item across Water",
@@ -10519,7 +10677,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue.png",
+                        "chest_opened_img": "images/gift/blue_open.png"
                     },
                     {
                         "name": "​Gym - Earth Badge from Blue",
@@ -10539,7 +10699,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/red_guy.png",
+                        "chest_opened_img": "images/gift/red_guy_open.png"
                     },
                     {
                         "name": "Poke Mart - Shop Items",
@@ -10804,7 +10966,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/green_guy.png",
+                        "chest_opened_img": "images/gift/green_guy_open.png"
                     },
                     {
                         "name": "Northeast Item",
@@ -11043,7 +11207,9 @@
                         ],
                         "access_rules": [
                             "^$kantogymlock"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/brock.png",
+                        "chest_opened_img": "images/gift/brock_open.png"
                     },
                     {
                         "name": "​Gym - Boulder Badge from Brock",
@@ -11059,7 +11225,9 @@
                         "name": "Silver Wing from Old Man",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/old_man.png",
+                        "chest_opened_img": "images/gift/old_man_open.png"
                     },
                     {
                         "name": "Berry Tree 1",
@@ -11533,7 +11701,9 @@
                         ],
                         "access_rules": [
                             "^$kantogymlock"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/misty.png",
+                        "chest_opened_img": "images/gift/misty_open.png"
                     },
                     {
                         "name": "​Gym - Cascade Badge from Misty",
@@ -11622,7 +11792,9 @@
                         "name": "Cleanse Tag from Woman in House",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/granny.png",
+                        "chest_opened_img": "images/gift/granny_open.png"
                     },
                     {
                         "name": "Underground Path - North Hidden Item",
@@ -11889,7 +12061,9 @@
                         "name": "Nugget Bridge Prize",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/cool_trainer_m.png",
+                        "chest_opened_img": "images/gift/cool_trainer_m_open.png"
                     },
                     {
                         "name": "Item behind Cut Tree",
@@ -12262,7 +12436,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/green_guy.png",
+                        "chest_opened_img": "images/gift/green_guy_open.png"
                     },
                     {
                         "name": "Restore Power to Kanto",
@@ -12438,7 +12614,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, pokegear_on"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gentleman.png",
+                        "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
                         "name": "​Radio Tower - EXPN Card",
@@ -12871,7 +13049,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/erika.png",
+                        "chest_opened_img": "images/gift/erika_open.png"
                     },
                     {
                         "name": "​Gym - Rainbow Badge from Erika",
@@ -12890,13 +13070,17 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/erika.png",
+                        "chest_opened_img": "images/gift/erika_open.png"
                     },
                     {
                         "name": "TM03 from Man on Mansion Roof",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/green_shades_dude.png",
+                        "chest_opened_img": "images/gift/green_shades_dude_open.png"
                     },
                     {
                         "name": "Dept. Store 1F - Buy Waterstone",
@@ -13002,7 +13186,9 @@
                             "show_items, coffee_east",
                             "show_items, coffee_south",
                             "show_items, coffee_west"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/granny.png",
+                        "chest_opened_img": "images/gift/granny_open.png"
                     },
                     {
                         "name": "Game Corner Prize Shop - Shop Items",
@@ -13474,7 +13660,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/surge.png",
+                        "chest_opened_img": "images/gift/surge_open.png"
                     },
                     {
                         "name": "Lost Item from Guy in Fan Club",
@@ -13483,7 +13671,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue_guy.png",
+                        "chest_opened_img": "images/gift/blue_guy_open.png"
                     },
                     {
                         "name": "Rare Candy from Fan Club President",
@@ -13492,7 +13682,9 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City/City"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gentleman.png",
+                        "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
                         "name": "HP Up from Man nowhere near PokeCenter",
@@ -13501,7 +13693,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/pokefan_m.png",
+                        "chest_opened_img": "images/gift/pokefan_m_open.png"
                     },
                     {
                         "name": "Hidden Item by Gym",
@@ -13990,7 +14184,9 @@
                         "name": "Super Rod from Fishing Guru",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/route_12_fishing_guru.png",
+                        "chest_opened_img": "images/gift/route_12_fishing_guru_open.png"
                     },
                     {
                         "name": "Hidden Item on Island",
@@ -14513,7 +14709,9 @@
                         ],
                         "access_rules": [
                             "^$kantogymlock"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/janine.png",
+                        "chest_opened_img": "images/gift/janine_open.png"
                     },
                     {
                         "name": "​Gym - Soul Badge from Janine",
@@ -14532,7 +14730,9 @@
                         ],
                         "access_rules": [
                             "^$kantogymlock"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/janine.png",
+                        "chest_opened_img": "images/gift/janine_open.png"
                     },
                     {
                         "name": "Berry Tree",
@@ -14784,7 +14984,9 @@
                         ],
                         "access_rules": [
                             "^$kantogymlock"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blaine.png",
+                        "chest_opened_img": "images/gift/blaine_open.png"
                     },
                     {
                         "name": "​Gym - Volcano Badge from Blaine",
