@@ -6415,7 +6415,7 @@
                         ],
                         "access_rules": [
                             "mount_mortar_access_vanilla",
-                            "$can_rocksmash, TM_ROCK_SMASH",
+                            "TM_ROCK_SMASH",
                             "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength"
                         ]
                     },
