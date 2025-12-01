@@ -16,7 +16,8 @@ EVENT2_ID = ""
 KEY_ID = ""
 STATIC_ID = ""
 ROCKETTRAP_ID = ""
-POKE_ID = ""
+SEEN_ID = ""
+CAUGHT_ID = ""
 EVOLUTION_DATA = ""
 BREEDING_DATA = ""
 
@@ -25,6 +26,9 @@ function onClear(slot_data)
     CUR_INDEX = -1
     resetLocations()
     resetItems()
+    CAUGHT = {}
+    SEEN = {}
+    
     -- this resets trainer visibility. It will cause some "cannot find object"-errors
     -- but I am not willing to make yet another list that is just a list.
     for i = 1039, 1522 do
@@ -234,9 +238,13 @@ function onClear(slot_data)
         Archipelago:SetNotify({KEY_ID})
         Archipelago:Get({KEY_ID})
         
-        POKE_ID="pokemon_crystal_pokemon_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({POKE_ID})
-        Archipelago:Get({POKE_ID})
+        SEEN_ID="pokemon_crystal_seen_pokemon_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({SEEN_ID})
+        Archipelago:Get({SEEN_ID})
+        
+        CAUGHT_ID="pokemon_crystal_caught_pokemon_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({CAUGHT_ID})
+        Archipelago:Get({CAUGHT_ID})
     end
 
     toggle_itemgrid()
@@ -312,9 +320,12 @@ function onNotify(key, value, old_value)
             updateStatics(value)
         elseif key == KEY_ID then
             updateVanillaKeyItems(value)
-        elseif key == POKE_ID then
-            last_pokemon = value
-            updatePokemon(value)
+        elseif key == CAUGHT_ID then
+            CAUGHT = value
+            updatePokemon()
+        elseif key == SEEN_ID then
+            SEEN = value
+            updatePokemon()
         elseif key == ROCKETTRAP_ID then
             updateRocketTraps(value)
         end
@@ -331,9 +342,12 @@ function onNotifyLaunch(key, value)
             updateStatics(value)
         elseif key == KEY_ID then
             updateVanillaKeyItems(value)
-        elseif key == POKE_ID then
-            last_pokemon = value
-            updatePokemon(value)
+        elseif key == CAUGHT_ID then
+            CAUGHT = value
+            updatePokemon()
+        elseif key == SEEN_ID then
+            SEEN = value
+            updatePokemon()
         elseif key == ROCKETTRAP_ID then
             updateRocketTraps(value)
         end
@@ -431,72 +445,72 @@ function updateVanillaKeyItems(value)
     end
 end
 
-function updatePokemon(pokemon)
-    pokemon = pokemon or last_pokemon
-    
-	if pokemon ~= nil then
-        --print(string.format("updatePokemon: Pokemon - %s", dump_table(pokemon)))
-		for dex_number, code in pairs(POKEMON_MAPPING) do
-			if table_contains(pokemon["caught"], dex_number) then
-				Tracker:FindObjectForCode(code).Active = true
-			else
-				Tracker:FindObjectForCode(code).Active = false
-			end
-		end
+function updatePokemon()
+
+    for dex_number, code in pairs(POKEMON_MAPPING) do
+        if table_contains(CAUGHT, dex_number) then
+            Tracker:FindObjectForCode(code).Active = true
+        else
+            Tracker:FindObjectForCode(code).Active = false
+        end
+    end
+
+    if has("encounter_tracking_off") then
+        return
+    end
+
+    if has("encounter_tracking_strict") or has("encounter_tracking_loose") then
+        resetEvolutionsanityData()
+        updateEvolutionInfo()
+        updateBreedingInfo()
         
-		if has("encounter_tracking_strict") or has("encounter_tracking_loose") then
-            resetEvolutionsanityData()
-            updateEvolutionInfo(pokemon)
-            updateBreedingInfo(pokemon)
+        for region_key, location in pairs(ENCOUNTER_MAPPING) do
+            local object = Tracker:FindObjectForCode(location)
+            object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
+        end
+        
+        local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total")
+
+        for dex_number, locations in pairs(POKEMON_TO_LOCATIONS) do
+            local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
+            local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
+            local dexloc = Tracker:FindObjectForCode("dexsanity_"..POKEMON_MAPPING[dex_number])
             
-            for region_key, location in pairs(ENCOUNTER_MAPPING) do
-                local object = Tracker:FindObjectForCode(location)
-                object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
+            local is_caught = table_contains(CAUGHT, dex_number)
+            local is_seen = table_contains(SEEN, dex_number)
+
+            if has("all_pokemon_seen_true") then
+                is_seen = true
             end
             
-            local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total")
+            local should_decrement = false
 
-            for dex_number, locations in pairs(POKEMON_TO_LOCATIONS) do
-                local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
-                local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
-                local dexloc = Tracker:FindObjectForCode("dexsanity_"..POKEMON_MAPPING[dex_number])
-                
-                local is_caught = table_contains(pokemon["caught"], dex_number)
-                local is_seen = table_contains(pokemon["seen"], dex_number)
+            if is_caught then
+                should_decrement = true
+            elseif is_seen and (dexloc.Active or not dexcode.Active) and has("encounter_tracking_loose") then
+                should_decrement = true
+            end
 
-                if has("all_pokemon_seen_true") then
-                    is_seen = true
-                end
-                
-                local should_decrement = false
-
-                if is_caught then
-                    should_decrement = true
-                elseif is_seen and (dexloc.Active or not dexcode.Active) and has("encounter_tracking_loose") then
-                    should_decrement = true
-                end
-
-                if should_decrement then
-                   for _, location in pairs(locations) do
-                        local object_name = ENCOUNTER_MAPPING[location]
-                        if object_name ~= nil then
-                            local object = Tracker:FindObjectForCode(object_name)
-                            if object then
-                                if string.sub(location, 1, 7):lower() == "static_" then
-                                    local event_code = Tracker:FindObjectForCode(location)
-                                    if event_code and event_code.Active then
-                                        object.AvailableChestCount = object.AvailableChestCount - 1
-                                    end
-                                else
+            if should_decrement then
+                for _, location in pairs(locations) do
+                    local object_name = ENCOUNTER_MAPPING[location]
+                    if object_name ~= nil then
+                        local object = Tracker:FindObjectForCode(object_name)
+                        if object then
+                            if string.sub(location, 1, 7):lower() == "static_" then
+                                local event_code = Tracker:FindObjectForCode(location)
+                                if event_code and event_code.Active then
                                     object.AvailableChestCount = object.AvailableChestCount - 1
                                 end
+                            else
+                                object.AvailableChestCount = object.AvailableChestCount - 1
                             end
                         end
                     end
                 end
             end
-		end
-	end
+        end
+    end
 end
 
 function resetEvolutionsanityData()
@@ -526,12 +540,8 @@ function resetEvolutionsanityData()
 end
 
 
-function updateEvolutionInfo(pokemon)
-    if not pokemon.caught then
-        return
-    end
-
-    for _, caught_id in pairs(pokemon.caught) do
+function updateEvolutionInfo()
+    for _, caught_id in pairs(CAUGHT) do
         for from_id, evolutions in pairs(EVOLUTION_DATA) do
             for _, evo in ipairs(evolutions) do
                 if evo.into == caught_id then
@@ -551,13 +561,9 @@ function updateEvolutionInfo(pokemon)
     end
 end
 
-function updateBreedingInfo(pokemon)
-    if not pokemon.caught then
-        return
-    end
-
+function updateBreedingInfo()
     for first_id, second_id in pairs(BREEDING_DATA) do
-        for _, caught_id in pairs(pokemon.caught) do
+        for _, caught_id in pairs(CAUGHT) do
             if second_id == caught_id then
                 local evo_string = EVO_LOC_MAPPING[tonumber(first_id)]
                 if evo_string then
