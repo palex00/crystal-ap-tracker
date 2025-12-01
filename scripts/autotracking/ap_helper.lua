@@ -407,6 +407,14 @@ SLOT_CODES = {
     randomize_bug_catching_contest = {
         code = "randomize_bug_catching_contest",
         mapping = MAP_QUADRUPLE
+    },
+    encmethod_contest = {
+        code = "encmethod_contest",
+        mapping = MAP_TRIPLE
+    },
+    trades_required = {
+        code = "encmethod_trades",
+        mapping = MAP_TOGGLE
     }
 }
 

@@ -897,6 +897,19 @@
                         ]
                     },
                     {
+                        "name": "Trade: Kyle",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/other/trade.png",
+                        "chest_opened_img": "images/other/trade_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$trade|KYLE"
+                        ]
+                    },
+                    {
                         "name": "Surf Encounters",
                         "item_count": 3,
                         "clear_as_group": false,
@@ -2926,6 +2939,19 @@
                         "chest_opened_img": "images/gift/receptionist_open.png"
                     },
                     {
+                        "name": "Dept. Store 5F - Trade: Mike",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/other/trade.png",
+                        "chest_opened_img": "images/other/trade_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$trade|MIKE"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store 5F - TM Shop - Shop Items",
                         "item_count": 3,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
@@ -4219,10 +4245,10 @@
                         "chest_unopened_img": "images/other/encounter.png",
                         "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_mons, encmethod_contest_visible"
                         ],
                         "access_rules": [
-                            ""
+                            "^$contest_encounter"
                         ]
                     }
                 ],
@@ -5605,6 +5631,19 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Trade: Tim",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/other/trade.png",
+                        "chest_opened_img": "images/other/trade_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$trade|TIM"
                         ]
                     },
                     {
@@ -8947,6 +8986,19 @@
                         ]
                     },
                     {
+                        "name": "Trade: Emy",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/other/trade.png",
+                        "chest_opened_img": "images/other/trade_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$trade|EMY"
+                        ]
+                    },
+                    {
                         "name": "Surf Encounters",
                         "item_count": 3,
                         "clear_as_group": false,
@@ -11305,6 +11357,19 @@
                         ]
                     },
                     {
+                        "name": "Trade: Chris",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/other/trade.png",
+                        "chest_opened_img": "images/other/trade_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$trade|CHRIS"
+                        ]
+                    },
+                    {
                         "name": "Visit Pewter City",
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -12497,6 +12562,19 @@
                         "hosted_item": "EVENT_RESTORED_POWER_TO_KANTO",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Trade: Forest",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/other/trade.png",
+                        "chest_opened_img": "images/other/trade_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$trade|FOREST"
                         ]
                     }
                 ],
@@ -14478,6 +14556,19 @@
                         ],
                         "chest_unopened_img": "images/trainers/pokefan_m.png",
                         "chest_opened_img": "images/trainers/pokefan_m_bw.png"
+                    },
+                    {
+                        "name": "Trade: Kim",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/other/trade.png",
+                        "chest_opened_img": "images/other/trade_bw.png",
+                        "clear_as_group": false,
+                        "visibility_rules": [
+                            "show_mons"
+                        ],
+                        "access_rules": [
+                            "^$trade|KIM, $can_cut_kanto"
+                        ]
                     },
                     {
                         "name": "Grass",

@@ -68,7 +68,15 @@ function onClear(slot_data)
 
 
     POKEMON_TO_LOCATIONS = {}
-    for location, dex_list in pairs(slot_data["region_encounters"]) do
+    
+    -- This appends Trades & BCC to region encounters slot data
+    REGION_ENCOUNTERS = slot_data.region_encounters
+    REGION_ENCOUNTERS["contest_encounters"] = slot_data.contest_encounters
+    for trade_key, trade_data in pairs(slot_data.trades) do
+        REGION_ENCOUNTERS[trade_key] = { tonumber(trade_data.received) }
+    end
+
+    for location, dex_list in pairs(REGION_ENCOUNTERS) do
         for _, dex_number in pairs(dex_list) do
             if POKEMON_TO_LOCATIONS[dex_number] == nil then
                 POKEMON_TO_LOCATIONS[dex_number] = {}
@@ -77,13 +85,14 @@ function onClear(slot_data)
         end
     end
     
+    TRADE_DATA = slot_data.trades
+    
     -- This sets each Encounter location to however many unique encounters there are in it
     for region_key, location in pairs(ENCOUNTER_MAPPING) do
         local object = Tracker:FindObjectForCode(location)
-        object.AvailableChestCount = #slot_data.region_encounters[region_key]
+        object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
     end
     
-    REGION_ENCOUNTERS = slot_data.region_encounters
     EVOLUTION_DATA = slot_data.evolution_info
     BREEDING_DATA = slot_data.breeding_info
 
@@ -497,7 +506,7 @@ function updatePokemon()
                     if object_name ~= nil then
                         local object = Tracker:FindObjectForCode(object_name)
                         if object then
-                            if string.sub(location, 1, 7):lower() == "static_" then
+                            if string.sub(location, 1, 7):lower() == "static_" or string.sub(location, 1, 6):lower() == "TRADE_" then
                                 local event_code = Tracker:FindObjectForCode(location)
                                 if event_code and event_code.Active then
                                     object.AvailableChestCount = object.AvailableChestCount - 1

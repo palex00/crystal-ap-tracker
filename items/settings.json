@@ -3255,27 +3255,83 @@
             {
                 "name": "Bug Catching Contest is not randomized",
                 "img": "/images/settings/bcc_off.png",
-                "codes": "randomize_bug_catching_contest, randomize_bug_catching_contest_off",
+                "codes": "randomize_bug_catching_contest",
                 "inherit_codes": false
             },
             {
                 "name": "BCC randomized, all places separate",
                 "img": "/images/settings/bcc_all.png",
-                "codes": "randomize_bug_catching_contest, randomize_bug_catching_contest_all",
+                "codes": "randomize_bug_catching_contest, bcc_1, bcc_2, bcc_3, bcc_4",
                 "inherit_codes": false
             },
             {
                 "name": "BCC randomized, second and third place are combined",
                 "img": "/images/settings/bcc_combined.png",
-                "codes": "randomize_bug_catching_contest, randomize_bug_catching_contest_combined",
+                "codes": "randomize_bug_catching_contest, bcc_1, bcc_23, bcc_4",
                 "inherit_codes": false
             },
             {
                 "name": "BCC randomized, only participation trophy",
                 "img": "/images/settings/bcc_participation.png",
-                "codes": "randomize_bug_catching_contest, randomize_bug_catching_contest_participation",
+                "codes": "randomize_bug_catching_contest, bcc_part",
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Encounter Method: Contest",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Contest Encounters NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "encmethod_contest, encmethod_contest_off, encmethod_contest_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Contest Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_contest, encmethod_contest_forbidden",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Contest Encounters in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "encmethod_contest, encmethod_contest_on, encmethod_contest_visible",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/contest.png",
+        "codes": "contest_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Encounter Method: Trades",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Trades NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "encmethod_trades, encmethod_trades_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Trades in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "encmethod_trades, encmethod_trades_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/trades.png",
+        "codes": "trades_dummy",
+        "type": "static"
     }
 ]

@@ -222,5 +222,15 @@ ENCOUNTER_MAPPING = {
   ["Static_GoldenrodGameCorner3"] = "@JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Wobbuffet",
   ["Static_CeladonGameCornerPrizeRoom1"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Pikachu",
   ["Static_CeladonGameCornerPrizeRoom2"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Porygon",
-  ["Static_CeladonGameCornerPrizeRoom3"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Larvitar"
+  ["Static_CeladonGameCornerPrizeRoom3"] = "@JohtoKanto/Celadon City/Game Corner Pokemon Shop - Larvitar",
+  
+  -- These are all fake. They don't exist in datastorage. I add them in archipelago.lua
+  ["contest_encounters"] = "@JohtoKanto/National Park/Bug Catching Contest Encounters",
+  ["TRADE_KIM"] = "@JohtoKanto/Route 14/Trade: Kim",
+  ["TRADE_EMY"] = "@JohtoKanto/Blackthorn City/Trade: Emy",
+  ["TRADE_FOREST"] = "@JohtoKanto/Power Plant/Trade: Forest",
+  ["TRADE_TIM"] = "@JohtoKanto/Olivine City/Trade: Tim",
+  ["TRADE_CHRIS"] = "@JohtoKanto/Pewter City/Trade: Chris",
+  ["TRADE_MIKE"] = "@JohtoKanto/Goldenrod City/Dept. Store 5F - Trade: Mike",
+  ["TRADE_KYLE"] = "@JohtoKanto/Violet City/Trade: Kyle"
 }
