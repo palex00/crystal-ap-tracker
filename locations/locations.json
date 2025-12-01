@@ -6407,9 +6407,6 @@
                         "visibility_rules": [
                             "invisible"
                         ],
-                        "access_rules": [
-                            "^$dark|mountmortar"
-                        ]
                     },
                     {
                         "name": "1F Outside Post-Smash",
@@ -6417,8 +6414,8 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/1F Outside Pre-Smash, mount_mortar_access_vanilla",
-                            "@JohtoKanto/Mount Mortar/1F Outside Pre-Smash, TM_ROCK_SMASH",
+                            "mount_mortar_access_vanilla",
+                            "$can_rocksmash, TM_ROCK_SMASH",
                             "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength"
                         ]
                     },
@@ -6428,7 +6425,7 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$dark|mountmortar"
+                            "$can_surf_johto"
                         ]
                     },
                     {
@@ -6511,7 +6508,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, @JohtoKanto/Mount Mortar/1F Outside Post-Smash"
+                             "^$hid, @JohtoKanto/Mount Mortar/1F Outside Post-Smash, @JohtoKanto/Mahogany Town/Town,"
                         ]
                     },
                     {
@@ -6524,7 +6521,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F Outside Pre-Smash"
+                            "^$hid, @JohtoKanto/Mount Mortar/1F Outside Post-Smash, @JohtoKanto/Mahogany Town/Town,"
                         ]
                     },
                     {
