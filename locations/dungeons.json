@@ -4428,6 +4428,28 @@
                 "map_locations": [
                     {
                         "map": "LakeOfRage",
+                        "restrict_visibility_rules": ["red_gyarados_shore"],
+                        "x": 296,
+                        "y": 440
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "name": "Red Scale from Gyarados",
+                        "ref": "JohtoKanto/Lake of Rage/Red Scale from Gyarados"
+                    },
+                    {
+                        "name": "Red Gyarados",
+                        "ref": "JohtoKanto/Lake of Rage/Red Gyarados"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "force_invisibility_rules": ["red_gyarados_shore"],
                         "x": 296,
                         "y": 360
                     }

@@ -151,6 +151,10 @@ function toggle_lakeofrage()
         Tracker:AddMaps("maps/mischief/lake_of_rage_vanilla.json")
     elseif has("red_gyarados_whirlpool") and sudowoodo then
         Tracker:AddMaps("maps/mischief/lake_of_rage_whirlpool.json")
+    elseif has("red_gyarados_shore") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/lake_of_rage_shore.json")
+    elseif has("red_gyarados_shore") and not sudowoodo then
+        Tracker:AddMaps("maps/lake_of_rage_shore.json")
     end
 end
 
