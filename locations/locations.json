@@ -410,7 +410,7 @@
                             "show_items, trainersanity_1488"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 30/Post-Mr-Pokemon"
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
                         ],
                         "chest_unopened_img": "images/trainers/blue_dude.png",
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
@@ -2876,7 +2876,7 @@
                         "chest_opened_img": "images/gift/wife_open.png"
                     },
                     {
-                        "name": "Dept. Store 1F - Buy Waterstone",
+                        "name": "Dept. Store 1F - Buy Water Stone",
                         "hosted_item": "WATER_STONE",
                         "visibility_rules": [
                             "show_items"
@@ -7125,9 +7125,6 @@
                         "visibility_rules": [
                             "invisible"
                         ],
-                        "access_rules": [
-                            "^$dark|mountmortar"
-                        ]
                     },
                     {
                         "name": "1F Outside Post-Smash",
@@ -7135,8 +7132,8 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/1F Outside Pre-Smash, mount_mortar_access_vanilla",
-                            "@JohtoKanto/Mount Mortar/1F Outside Pre-Smash, TM_ROCK_SMASH",
+                            "mount_mortar_access_vanilla",
+                            "TM_ROCK_SMASH",
                             "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength"
                         ]
                     },
@@ -7146,7 +7143,7 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, ^$dark|mountmortar"
+                            "$can_surf_johto"
                         ]
                     },
                     {
@@ -7229,7 +7226,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, @JohtoKanto/Mount Mortar/1F Outside Post-Smash"
+                            "^$hid, @JohtoKanto/Mount Mortar/1F Outside Post-Smash, @JohtoKanto/Mahogany Town/Town,"
                         ],
                         "chest_unopened_img": "images/items/hidden_item.png",
                         "chest_opened_img": "images/items/hidden_item_open.png"
@@ -7244,7 +7241,8 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F Outside Pre-Smash"
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F Outside Pre-Smash",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F Outside Post-Smash"
                         ]
                     },
                     {
@@ -13210,7 +13208,7 @@
                         "chest_opened_img": "images/gift/green_shades_dude_open.png"
                     },
                     {
-                        "name": "Dept. Store 1F - Buy Waterstone",
+                        "name": "Dept. Store 1F - Buy Water Stone",
                         "hosted_item": "WATER_STONE",
                         "visibility_rules": [
                             "show_items"
