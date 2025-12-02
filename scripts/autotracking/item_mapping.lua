@@ -24,6 +24,7 @@ ITEM_MAPPING = {
   [109] = "BLUE_CARD",
   [119] = "CARD_KEY",
   [120] = "MACHINE_PART",
+  [121] = "PROGRESSIVE_ROD",
   [122] = "LOST_ITEM",
   [125] = "BASEMENT_KEY",
   [126] = "PASS",

@@ -91,4 +91,3 @@ ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
 
 -- Makes version nil
 first_two_dots = nil
-pokemon = nil
