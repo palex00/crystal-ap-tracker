@@ -158,7 +158,7 @@ STARTTOWN_MAPPING = {
 SLOT_CODES = {
     goal = {
         code = "goal",
-        mapping = MAP_TOGGLE
+        mapping = MAP_QUINTUPLE
     },
     randomize_badges = {
         code = "badges",

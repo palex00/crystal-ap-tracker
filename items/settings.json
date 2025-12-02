@@ -8,13 +8,37 @@
             {
                 "name": "Goal - Defeat Elite Four",
                 "img": "/images/events/become_champion.png",
-                "codes": "goal,goal_e4",
+                "codes": "goal, goal_e4",
                 "inherit_codes": false
             },
             {
                 "name": "Goal - Defeat Red",
                 "img": "/images/events/defeat_red.png",
-                "codes": "goal,goal_red",
+                "codes": "goal, goal_red",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal - Diploma",
+                "img": "/images/settings/diploma.png",
+                "codes": "goal, goal_diploma",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal - Rival Hunt",
+                "img": "/images/trainers/rival.png",
+                "codes": "goal, goal_rival",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal - Team Rocket Hunt",
+                "img": "/images/trainers/rocket.png",
+                "codes": "goal, goal_rocket",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal - Unown Hunt",
+                "img": "/images/settings/unown.png",
+                "codes": "goal, goal_unown",
                 "inherit_codes": false
             }
         ]
