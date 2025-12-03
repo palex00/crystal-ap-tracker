@@ -250,7 +250,7 @@
 {"name": "Saw Suicune in Cianwood City (Event)", "type": "toggle", "img": "/images/events/saw_suicune_cw.png", "codes": "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY"},
 {"name": "Saw Suicune on Route 42 (Event)", "type": "toggle", "img": "/images/events/saw_suicune_42.png", "codes": "EVENT_SAW_SUICUNE_ON_ROUTE_42"},
 {"name": "Saw Suicune on Route 36 (Event)", "type": "toggle", "img": "/images/events/saw_suicune_36.png", "codes": "EVENT_SAW_SUICUNE_ON_ROUTE_36"},
-{"name": "Beat Rival in Mount Moon (Event)", "type": "toggle", "img": "/images/events/mount_moon_rival.png", "codes": "EVENT_BEAT_RIVAL_IN_MT_MOON"},
+{"name": "Beat Rival in Mount Moon", "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/mount_moon.png", "codes": "EVENT_BEAT_RIVAL_IN_MT_MOON"},
 {"name": "Got Eon Mail from Eusine (Event)", "type": "toggle", "img": "/images/events/eon_mail.png", "codes": "EVENT_GOT_EON_MAIL_FROM_EUSINE"},
 
 {"name": "[Trade] Kim",  "type": "toggle", "codes": "TRADE_KIM"},
@@ -259,5 +259,16 @@
 {"name": "[Trade] Tim",  "type": "toggle", "codes": "TRADE_TIM"},
 {"name": "[Trade] Chris",  "type": "toggle", "codes": "TRADE_CHRIS"},
 {"name": "[Trade] Mike",  "type": "toggle", "codes": "TRADE_MIKE"},
-{"name": "[Trade] Kyle",  "type": "toggle", "codes": "TRADE_KYLE"}
+{"name": "[Trade] Kyle",  "type": "toggle", "codes": "TRADE_KYLE"},
+
+{"name": "Beat Rival in Cherrygrove City",      "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/cherrygrove_city.png", "codes": "EVENT_BEAT_CHERRYGROVE_RIVAL"},
+{"name": "Beat Rival in Azalea Town",           "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/azalea_town.png", "codes": "EVENT_BEAT_AZALEA_RIVAL"},
+{"name": "Beat Rival in Burned Tower",          "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/burned_tower.png", "codes": "EVENT_RIVAL_BURNED_TOWER"},
+{"name": "Beat Rival in Goldenrod Underground", "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/goldenrod_underground.png", "codes": "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL"},
+{"name": "Beat Rival in Victory Road",          "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/victory_road.png", "codes": "EVENT_BEAT_VICTORY_ROAD_RIVAL"},
+{"name": "Beat Rival in Indigo Plateau",        "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/indigo_plateau.png", "codes": "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU"},
+{"name": "Defeat the Grunt on Nugget Bridge",   "type": "toggle", "img": "/images/events/tower_cleared.png", "img_mods": "overlay|images/events/overlay_nugget.png", "codes": "EVENT_ROUTE_24_ROCKET"},
+{"name": "Complete the Unown-Dex",              "type": "toggle", "img": "/images/events/unown.png", "codes": "EVENT_GOT_ALL_UNOWN"},
+{"name": "Obtain Diploma",                      "type": "toggle", "img": "/images/events/diploma.png", "codes": "EVENT_OBTAINED_DIPLOMA"},
+{"name": "Unmask the False Director",           "type": "toggle", "img": "/images/events/tower_cleared.png", "img_mods": "overlay|images/events/overlay_director.png", "codes": "EVENT_BEAT_ROCKET_EXECUTIVEM_3"}
 ]

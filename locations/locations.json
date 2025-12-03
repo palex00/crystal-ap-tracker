@@ -1096,6 +1096,16 @@
                 ],
                 "sections": [
                     {
+                        "name": "Research Center - Complete the Unown Dex",
+                        "hosted_item": "EVENT_GOT_ALL_UNOWN",
+                        "access_rules": [
+                            "$unowngoal"
+                        ],
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ]
+                    },
+                    {
                         "name": "Kabuto Room Bottom Left Item (Escape Rope)",
                         "access_rules": [
                             "ESCAPE_ROPE"
@@ -10606,7 +10616,7 @@
                             "^$dark|silvercave, red_requirement"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_items, goal_red"
                         ]
                     },
                     {
@@ -13200,6 +13210,16 @@
                         "chest_opened_img": "images/gift/erika_open.png"
                     },
                     {
+                        "name": "3F - Obtain Diploma",
+                        "hosted_item": "EVENT_OBTAINED_DIPLOMA",
+                        "access_rules": [
+                            "$diplomagoal"
+                        ],
+                        "visibility_rules": [
+                            "show_items, goal_diploma"
+                        ]
+                    },
+                    {
                         "name": "TM03 from Man on Mansion Roof",
                         "visibility_rules": [
                             "show_items"
@@ -13305,7 +13325,7 @@
                         ]
                     },
                     {
-                        "name": "Tea from Granny",
+                        "name": "Condominiums 1F - Tea from Granny",
                         "visibility_rules": [
                             "show_items, coffee_north",
                             "show_items, coffee_east",
