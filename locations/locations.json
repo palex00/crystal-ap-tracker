@@ -16,6 +16,50 @@
                 ],
                 "sections": [
                     {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|NewBarkTown"
+                        ]
+                    },
+                    {
+                        "name": "Elm's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|NewBarkTownElmsHouse"
+                        ]
+                    },
+                    {
+                        "name": "Elm's Lab Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|NewBarkTownElmsLab"
+                        ]
+                    },
+                    {
+                        "name": "Player's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|NewBarkTownPlayersHouse"
+                        ]
+                    },
+                    {
                         "name": "Player's House - Pokegear from Mom",
                         "visibility_rules": [
                             "show_items, pokegear_on"
@@ -113,6 +157,28 @@
                 ],
                 "sections": [
                     {
+                        "name": "East Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route29Sign1"
+                        ]
+                    },
+                    {
+                        "name": "West Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route29Sign2"
+                        ]
+                    },
+                    {
                         "name": "Item",
                         "visibility_rules": [
                             "show_items"
@@ -201,6 +267,50 @@
                 ],
                 "sections": [
                     {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CherrygroveCity"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CherrygroveCityMart"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CherrygroveCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Guide Gent's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GuideGentsHouse"
+                        ]
+                    },
+                    {
                         "name": "Map Card from Guide",
                         "visibility_rules": [
                             "show_items, pokegear_on"
@@ -288,6 +398,50 @@
             {
                 "name": "Route 30",
                 "sections": [
+                    {
+                        "name": "Mr. Pokemon's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|MrPokemonsHouse"
+                        ]
+                    },
+                    {
+                        "name": "Directions to Mr. Pokemon's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|MrPokemonsHouseDirections"
+                        ]
+                    },
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route30"
+                        ]
+                    },
+                    {
+                        "name": "Trainer Tips Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route30TrainerTips"
+                        ]
+                    },
                     {
                         "name": "Pre-Mr-Pokemon",
                         "visibility_rules": [
@@ -491,6 +645,28 @@
                     "@JohtoKanto/Dark Cave Violet Entrance/Left Side"
                 ],
                 "sections": [
+                    {
+                        "name": "Dark Cave Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|DarkCave"
+                        ]
+                    },
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route31"
+                        ]
+                    },
                     {
                         "name": "Northeast Item",
                         "visibility_rules": [
@@ -789,6 +965,94 @@
                         ]
                     },
                     {
+                        "name": "Earl's Pokemon Academy Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|EarlsPokemonAcademy"
+                        ]
+                    },
+                    {
+                        "name": "Sprout Tower Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SproutTower"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VioletCity"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VioletCityMart"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VioletCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VioletGym"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Left Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VioletGymStatueLeft"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VioletGymStatueRight"
+                        ]
+                    },
+                    {
                         "name": "Egg Collected",
                         "hosted_item": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
                         "access_rules": [
@@ -1008,6 +1272,39 @@
                     "@JohtoKanto/Violet City"
                 ],
                 "sections": [
+                    {
+                        "name": "Outside - Visitors Welcome Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|RuinsOfAlph"
+                        ]
+                    },
+                    {
+                        "name": "Outside - Mystery Chamber Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|RuinsOfAlphOutsideMysteryChamber"
+                        ]
+                    },
+                    {
+                        "name": "Outside - Research Center Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|RuinsOfAlphResearchCenter"
+                        ]
+                    },
                     {
                         "name": "Kabuto Room Bottom Left Item (Escape Rope)",
                         "access_rules": [
@@ -1766,6 +2063,17 @@
                 ],
                 "sections": [
                     {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route33"
+                        ]
+                    },
+                    {
                         "name": "Berry Tree",
                         "visibility_rules": [
                             "show_items, berries_on"
@@ -1982,6 +2290,94 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|AzaleaGym"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|AzaleaTown"
+                        ]
+                    },
+                    {
+                        "name": "Ilex Forest Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|AzaleaTownIlexForest"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|AzaleaTownMart"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|AzaleaTownPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Charcoal Kiln Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CharcoalKiln"
+                        ]
+                    },
+                    {
+                        "name": "Kurt's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|KurtsHouse"
+                        ]
+                    },
+                    {
+                        "name": "Slowpoke Well Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SlowpokeWell"
+                        ]
+                    },
+                    {
                         "name": "Hidden Item by well",
                         "access_rules": [
                             "^$hid"
@@ -2012,6 +2408,30 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Left Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|AzaleaGymStatueLeft",
+                            "EVENT_CLEARED_SLOWPOKE_WELL"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|AzaleaGymStatueRight",
+                            "EVENT_CLEARED_SLOWPOKE_WELL"
                         ]
                     },
                     {
@@ -2425,6 +2845,39 @@
                 ],
                 "sections": [
                     {
+                        "name": "Day Care Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|DayCare"
+                        ]
+                    },
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route34"
+                        ]
+                    },
+                    {
+                        "name": "Trainer Tips Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route34TrainerTips"
+                        ]
+                    },
+                    {
                         "name": "TM12 from Woman in Gate",
                         "visibility_rules": [
                             "show_items"
@@ -2649,10 +3102,164 @@
                         ]
                     },
                     {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodCity"
+                        ]
+                    },
+                    {
+                        "name": "Bike Shop Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodCityBikeShop"
+                        ]
+                    },
+                    {
+                        "name": "Flower Shop Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodCityFlowerShop"
+                        ]
+                    },
+                    {
+                        "name": "Game Corner Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodCityGameCorner"
+                        ]
+                    },
+                    {
+                        "name": "Name Rater Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodCityNameRater"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Radio Tower Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodCityRadioTower"
+                        ]
+                    },
+                    {
+                        "name": "Magnet Train Station Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodCityStation"
+                        ]
+                    },
+                    {
+                        "name": "Underground North Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodCityUndergroundNorth"
+                        ]
+                    },
+                    {
+                        "name": "Underground South Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodCityUndergroundSouth"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodDeptStore"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodGym"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 1F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodDeptStore1FDirectory"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store 1F - Buy Water Stone",
                         "hosted_item": "WATER_STONE",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 2F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodDeptStore2FDirectory"
                         ]
                     },
                     {
@@ -2676,6 +3283,17 @@
                         ]
                     },
                     {
+                        "name": "Dept. Store 3F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodDeptStore3FDirectory"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store 3F - X Items Shop - Shop Items",
                         "item_count": 7,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
@@ -2686,6 +3304,17 @@
                         ]
                     },
                     {
+                        "name": "Dept. Store 4F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodDeptStore4FDirectory"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store 4F - Vitamin Shop - Shop Items",
                         "item_count": 5,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
@@ -2693,6 +3322,17 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 5F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodDeptStore5FDirectory"
                         ]
                     },
                     {
@@ -2715,6 +3355,17 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 6F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodDeptStore6FDirectory"
                         ]
                     },
                     {
@@ -2772,6 +3423,28 @@
                         "name": "Bicycle from Bike Shop",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Left Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodGymStatueLeft"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|GoldenrodGymStatueRight"
                         ]
                     },
                     {
@@ -3258,6 +3931,28 @@
                 ],
                 "sections": [
                     {
+                        "name": "1F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|RadioTower1FDirectory"
+                        ]
+                    },
+                    {
+                        "name": "1F - Lucky Channel Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|RadioTower1FLuckyChannelSign"
+                        ]
+                    },
+                    {
                         "name": "1F - Radio Card from Quiz",
                         "visibility_rules": [
                             "show_items, pokegear_on"
@@ -3278,6 +3973,39 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1306"
+                        ]
+                    },
+                    {
+                        "name": "2F - Oak's PKMN Talk Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|RadioTower2FOaksPKMNTalkSign"
+                        ]
+                    },
+                    {
+                        "name": "2F - Pokemon Radio Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|RadioTower2FPokemonRadioSign"
+                        ]
+                    },
+                    {
+                        "name": "2F - Sales Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|RadioTower2FSalesSign"
                         ]
                     },
                     {
@@ -3556,6 +4284,28 @@
                 ],
                 "sections": [
                     {
+                        "name": "North Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route35North"
+                        ]
+                    },
+                    {
+                        "name": "South Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route35South"
+                        ]
+                    },
+                    {
                         "name": "Collect Kenya",
                         "hosted_item": "EVENT_GOT_KENYA",
                         "visibility_rules": [
@@ -3728,6 +4478,39 @@
                     "@JohtoKanto/Route 36/Left, $nationalpark"
                 ],
                 "sections": [
+                    {
+                        "name": "Battle Notice Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|NationalParkBattleNotice"
+                        ]
+                    },
+                    {
+                        "name": "Relaxation Square Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|NationalParkRelaxationSquare"
+                        ]
+                    },
+                    {
+                        "name": "Trainer Tips Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|NationalParkTrainerTips"
+                        ]
+                    },
                     {
                         "name": "Quick Claw from Lady",
                         "visibility_rules": [
@@ -4028,6 +4811,17 @@
                 ],
                 "sections": [
                     {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route37"
+                        ]
+                    },
+                    {
                         "name": "Berry Tree 1",
                         "visibility_rules": [
                             "show_items, berries_on"
@@ -4236,6 +5030,72 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Burned Tower Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|BurnedTower"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|EcruteakCity"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|EcruteakCityMart"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|EcruteakCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Dance Theater Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|EcruteakDanceTheater"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|EcruteakGym"
                         ]
                     },
                     {
@@ -4777,6 +5637,28 @@
                 ],
                 "sections": [
                     {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route38"
+                        ]
+                    },
+                    {
+                        "name": "Trainer Tips Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route38TrainerTips"
+                        ]
+                    },
+                    {
                         "name": "Beauty Valerie",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -4888,6 +5770,39 @@
                     "@JohtoKanto/Olivine City"
                 ],
                 "sections": [
+                    {
+                        "name": "Moomoo Farm Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|MoomooFarm"
+                        ]
+                    },
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route39"
+                        ]
+                    },
+                    {
+                        "name": "Trainer Tips Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route39TrainerTips"
+                        ]
+                    },
                     {
                         "name": "Psychic Norman",
                         "visibility_rules": [
@@ -5013,6 +5928,28 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - Left Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OlivineGymStatueLeft"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OlivineGymStatueRight"
+                        ]
+                    },
+                    {
                         "name": "Gym - Beat Jasmine",
                         "hosted_item": "EVENT_BEAT_JASMINE",
                         "access_rules": [
@@ -5058,6 +5995,83 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OlivineCity"
+                        ]
+                    },
+                    {
+                        "name": "Battle Tower Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OlivineCityBattleTower"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OlivineCityMart"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OlivineCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Port Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OlivineCityPort"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OlivineGym"
+                        ]
+                    },
+                    {
+                        "name": "Lighthouse Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OlivineLighthouse"
                         ]
                     },
                     {
@@ -5519,6 +6533,28 @@
                     "@JohtoKanto/Olivine City"
                 ],
                 "sections": [
+                    {
+                        "name": "Battle Tower Outside Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|BattleTowerOutside"
+                        ]
+                    },
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route40"
+                        ]
+                    },
                     {
                         "name": "Hidden Item in Rock",
                         "access_rules": [
@@ -6038,6 +7074,28 @@
                         ]
                     },
                     {
+                        "name": "Gym - Left Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CianwoodGymStatueLeft"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CianwoodGymStatueRight"
+                        ]
+                    },
+                    {
                         "name": "Gym - Blackbelt Yoshi",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -6123,6 +7181,72 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CianwoodCity"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CianwoodGym"
+                        ]
+                    },
+                    {
+                        "name": "Pharmacy Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CianwoodPharmacy"
+                        ]
+                    },
+                    {
+                        "name": "Photo Studio Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CianwoodPhotoStudio"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CianwoodPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Poke Seer Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CianwoodPokeSeer"
                         ]
                     },
                     {
@@ -6406,7 +7530,7 @@
                         "name": "1F Outside Pre-Smash",
                         "visibility_rules": [
                             "invisible"
-                        ],
+                        ]
                     },
                     {
                         "name": "1F Outside Post-Smash",
@@ -6865,8 +7989,7 @@
             },
             {
                 "name": "Mahogany Town",
-                "access_rules": [
-                ],
+                "access_rules": [],
                 "sections": [
                     {
                         "name": "Town",
@@ -6979,6 +8102,50 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|MahoganyGym"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|MahoganyTown"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|MahoganyTownPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Ragecandybar Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|MahoganyTownRagecandybar"
                         ]
                     },
                     {
@@ -7342,6 +8509,39 @@
                 ],
                 "sections": [
                     {
+                        "name": "Trainer Tips Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route43TrainerTips"
+                        ]
+                    },
+                    {
+                        "name": "North Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route43Sign1"
+                        ]
+                    },
+                    {
+                        "name": "South Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route43Sign2"
+                        ]
+                    },
+                    {
                         "name": "Camper Spencer",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -7486,6 +8686,28 @@
                     "$can_freefly|LakeOfRage"
                 ],
                 "sections": [
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|LakeOfRage"
+                        ]
+                    },
+                    {
+                        "name": "Magikarp House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|MagikarpHouse"
+                        ]
+                    },
                     {
                         "name": "Hidden Item in West Path",
                         "access_rules": [
@@ -7663,6 +8885,28 @@
                     "@JohtoKanto/Ice Path"
                 ],
                 "sections": [
+                    {
+                        "name": "East Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route44Sign1"
+                        ]
+                    },
+                    {
+                        "name": "West Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route44Sign2"
+                        ]
+                    },
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
@@ -8013,6 +9257,61 @@
                 ],
                 "sections": [
                     {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|BlackthornCity"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|BlackthornCityMart"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|BlackthornCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Trainer Tips Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|BlackthornCityTrainerTips"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|BlackthornGym"
+                        ]
+                    },
+                    {
                         "name": "Spell Tag from Santos",
                         "visibility_rules": [
                             "show_items"
@@ -8114,6 +9413,17 @@
                         ],
                         "visibility_rules": [
                             "show_items, clair_behaviour_adult"
+                        ]
+                    },
+                    {
+                        "name": "Move Deleter's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|MoveDeletersHouse"
                         ]
                     },
                     {
@@ -8399,6 +9709,17 @@
                     "@JohtoKanto/Dark Cave Blackthorn Entrance/All Items"
                 ],
                 "sections": [
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route45"
+                        ]
+                    },
                     {
                         "name": "North Item",
                         "visibility_rules": [
@@ -8935,6 +10256,17 @@
                 ],
                 "sections": [
                     {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route26"
+                        ]
+                    },
+                    {
                         "name": "Fisher Scott",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -9287,6 +10619,17 @@
                 ],
                 "sections": [
                     {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route28"
+                        ]
+                    },
+                    {
                         "name": "Steel Wing from Celebrity in House",
                         "access_rules": [
                             "$can_cut_johto"
@@ -9391,6 +10734,28 @@
                     "$silver_cave"
                 ],
                 "sections": [
+                    {
+                        "name": "Outside - Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SilverCaveOutside"
+                        ]
+                    },
+                    {
+                        "name": "Outside - Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SilverCaveOutsidePokecenter"
+                        ]
+                    },
                     {
                         "name": "Outside - Hidden Item across Water",
                         "access_rules": [
@@ -9688,6 +11053,17 @@
                 ],
                 "sections": [
                     {
+                        "name": "Victory Road Entrance Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route22VictoryRoadEntrance"
+                        ]
+                    },
+                    {
                         "name": "Grass",
                         "item_count": 8,
                         "clear_as_group": true,
@@ -9813,6 +11189,94 @@
                         "hosted_item": "EARTH_BADGE"
                     },
                     {
+                        "name": "Trainer House - Training Hall Info Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|TrainerHouseSign1"
+                        ]
+                    },
+                    {
+                        "name": "Trainer House - No Rules Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|TrainerHouseSign2"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|ViridianCity"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|ViridianCityGym"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|ViridianCityMart"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|ViridianCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Trainer House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|ViridianCityTrainerHouse"
+                        ]
+                    },
+                    {
+                        "name": "Welcome Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|ViridianCityWelcome"
+                        ]
+                    },
+                    {
                         "name": "TM42 from Sleepy Guy",
                         "access_rules": [
                             "$can_surf_kanto",
@@ -9884,6 +11348,17 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route1"
+                        ]
+                    },
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
@@ -9974,6 +11449,72 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Oak's Lab MENU Poster Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OaksLabPoster1"
+                        ]
+                    },
+                    {
+                        "name": "Oak's Lab SAVE Poster Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|OaksLabPoster2"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PalletTown"
+                        ]
+                    },
+                    {
+                        "name": "Blue's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PalletTownBluesHouse"
+                        ]
+                    },
+                    {
+                        "name": "Oak's Lab Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PalletTownOaksLab"
+                        ]
+                    },
+                    {
+                        "name": "Red's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PalletTownRedsHouse"
+                        ]
+                    },
                     {
                         "name": "Grass",
                         "item_count": 1,
@@ -10262,6 +11803,28 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - Left Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PewterGymStatueLeft"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PewterGymStatueRight"
+                        ]
+                    },
+                    {
                         "name": "Gym - Camper Jerry",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -10308,6 +11871,83 @@
                         "hosted_item": "BOULDER_BADGE",
                         "access_rules": [
                             "^$kantogymlock"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PewterCity"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PewterCityGym"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PewterCityMart"
+                        ]
+                    },
+                    {
+                        "name": "Mt. Moon Gift Shop Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PewterCityMtMoonGiftShop"
+                        ]
+                    },
+                    {
+                        "name": "Museum Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PewterCityMuseum"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PewterCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Welcome Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PewterCityWelcome"
                         ]
                     },
                     {
@@ -10378,6 +12018,17 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Mt. Moon Square Ahead Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route3MtMoonSquare"
+                        ]
+                    },
                     {
                         "name": "Youngster Jimmy",
                         "visibility_rules": [
@@ -10487,6 +12138,17 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_301"
+                        ]
+                    },
+                    {
+                        "name": "Square - Don't Litter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|MountMoonSquareDontLitter"
                         ]
                     },
                     {
@@ -10778,6 +12440,83 @@
                         ]
                     },
                     {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeruleanCity"
+                        ]
+                    },
+                    {
+                        "name": "Bike Shop Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeruleanCityBikeShop"
+                        ]
+                    },
+                    {
+                        "name": "Cape Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeruleanCityCape"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeruleanCityGym"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeruleanCityMart"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeruleanCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Police Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeruleanCityPolice"
+                        ]
+                    },
+                    {
                         "name": "Poke Mart - Shop Items",
                         "item_count": 9,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
@@ -10840,9 +12579,31 @@
                 ],
                 "sections": [
                     {
+                        "name": "House for Sale Door Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route5HouseForSale"
+                        ]
+                    },
+                    {
                         "name": "Cleanse Tag from Woman in House",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Underground Path Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route5UndergroundPath"
                         ]
                     },
                     {
@@ -11098,6 +12859,17 @@
                         ]
                     },
                     {
+                        "name": "Bill's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route25BillsHouse"
+                        ]
+                    },
+                    {
                         "name": "Bill's Grandpa - Pokémon Request Rewards",
                         "item_count": 5,
                         "clear_as_group": false,
@@ -11189,6 +12961,17 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route9"
+                        ]
+                    },
                     {
                         "name": "Picnicker Heidi",
                         "visibility_rules": [
@@ -11605,6 +13388,94 @@
                 ],
                 "sections": [
                     {
+                        "name": "Radio Tower - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|LavRadioTower1FDirectory"
+                        ]
+                    },
+                    {
+                        "name": "Radio Tower - Poke Flute Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|LavRadioTower1FPokeFluteSign"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|LavenderTown"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|LavenderTownMart"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|LavenderTownPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Radio Station Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|LavenderTownRadioStation"
+                        ]
+                    },
+                    {
+                        "name": "Soul House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|LavenderTownSoulHouse"
+                        ]
+                    },
+                    {
+                        "name": "Volunteer Pokemon House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|LavenderTownVolunteerPokemonHouse"
+                        ]
+                    },
+                    {
                         "name": "Radio Tower - EXPN Card",
                         "access_rules": [
                             "EVENT_RESTORED_POWER_TO_KANTO"
@@ -11672,6 +13543,17 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Underground Path Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route8UndergroundPath"
+                        ]
+                    },
                     {
                         "name": "Biker Dwayne",
                         "visibility_rules": [
@@ -11866,6 +13748,116 @@
                         ]
                     },
                     {
+                        "name": "Fighting Dojo - What Goes Around Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|FightingDojoSign1"
+                        ]
+                    },
+                    {
+                        "name": "Fighting Dojo - Enemies On Every Side Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|FightingDojoSign2"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SaffronCity"
+                        ]
+                    },
+                    {
+                        "name": "Fighting Dojo Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SaffronCityFightingDojo"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SaffronCityGym"
+                        ]
+                    },
+                    {
+                        "name": "Magnet Train Station Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SaffronCityMagnetTrainStation"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SaffronCityMart"
+                        ]
+                    },
+                    {
+                        "name": "Mr. Psychic's House Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SaffronCityMrPsychicsHouse"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SaffronCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Silph. Co Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|SaffronCitySilphCo"
+                        ]
+                    },
+                    {
                         "name": "TM29 from Mr Psychic",
                         "visibility_rules": [
                             "show_items"
@@ -11945,6 +13937,17 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonCity"
+                        ]
+                    },
                     {
                         "name": "Gym - Twins Jo & Zoe",
                         "access_rules": [
@@ -12040,10 +14043,98 @@
                         ]
                     },
                     {
+                        "name": "Mansion Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonCityMansion"
+                        ]
+                    },
+                    {
+                        "name": "Celadon Mansion 2F - Meeting Room Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonMansion2FMeetingRoomSign"
+                        ]
+                    },
+                    {
+                        "name": "Celadon Mansion 3F - Dev Room Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonMansion3FDevRoomSign"
+                        ]
+                    },
+                    {
+                        "name": "Celadon Mansion Manager's Suite Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonMansionManagersSuiteSign"
+                        ]
+                    },
+                    {
+                        "name": "Celadon Mansion Roof Graffiti Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonMansionRoofGraffiti"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonCityDeptStore"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 1F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonDeptStore1FDirectory"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store 1F - Buy Water Stone",
                         "hosted_item": "WATER_STONE",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 2F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonDeptStore2FDirectory"
                         ]
                     },
                     {
@@ -12067,6 +14158,17 @@
                         ]
                     },
                     {
+                        "name": "Dept. Store 3F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonDeptStore3FDirectory"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store 3F - TM Shop - Shop Items",
                         "item_count": 5,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
@@ -12077,6 +14179,17 @@
                         ]
                     },
                     {
+                        "name": "Dept. Store 4F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonDeptStore4FDirectory"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store 4F - Mail Shop - Shop Items",
                         "item_count": 3,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
@@ -12084,6 +14197,17 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
+                        ]
+                    },
+                    {
+                        "name": "Dept. Store 5F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonDeptStore5FDirectory"
                         ]
                     },
                     {
@@ -12107,6 +14231,17 @@
                         ]
                     },
                     {
+                        "name": "Dept. Store 6F - Directory Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonDeptStore6FDirectory"
+                        ]
+                    },
+                    {
                         "name": "Dept. Store 6F - Vending Machine - Shop Items",
                         "item_count": 3,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
@@ -12117,12 +14252,45 @@
                         ]
                     },
                     {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Trainer Tips Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonCityTrainerTips"
+                        ]
+                    },
+                    {
                         "name": "Hidden Item at Dead End",
                         "access_rules": [
                             "^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ]
+                    },
+                    {
+                        "name": "Celadon Cafe - Eatathon Contest Poster Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|EatathonContestPoster"
                         ]
                     },
                     {
@@ -12141,6 +14309,17 @@
                             "show_items, coffee_east",
                             "show_items, coffee_south",
                             "show_items, coffee_west"
+                        ]
+                    },
+                    {
+                        "name": "Game Corner Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonCityGameCorner"
                         ]
                     },
                     {
@@ -12422,6 +14601,17 @@
                 ],
                 "sections": [
                     {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route18"
+                        ]
+                    },
+                    {
                         "name": "Bird Keeper Bob",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -12589,6 +14779,105 @@
                         ],
                         "visibility_rules": [
                             "show_items, $badges_randomised"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Fan Club Bragging Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PokemonFanClubBraggingSign"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Fan Club Listen Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|PokemonFanClubListenSign"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VermilionCity"
+                        ]
+                    },
+                    {
+                        "name": "Diglett's Cave Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VermilionCityDiglettsCave"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VermilionCityGym"
+                        ]
+                    },
+                    {
+                        "name": "Mart Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VermilionCityMart"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VermilionCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Fan Club Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VermilionCityPokemonFanClub"
+                        ]
+                    },
+                    {
+                        "name": "Port Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|VermilionCityPort"
                         ]
                     },
                     {
@@ -12781,6 +15070,17 @@
                 ],
                 "sections": [
                     {
+                        "name": "Underground Path Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route6UndergroundPath"
+                        ]
+                    },
+                    {
                         "name": "Pokefan Allan",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -12875,6 +15175,17 @@
                 ],
                 "sections": [
                     {
+                        "name": "Underground Path Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route7UndergroundPath"
+                        ]
+                    },
+                    {
                         "name": "Grass",
                         "item_count": 6,
                         "clear_as_group": true,
@@ -12942,6 +15253,17 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route11"
+                        ]
+                    },
                     {
                         "name": "Psychic Herman",
                         "visibility_rules": [
@@ -13053,6 +15375,28 @@
                 ],
                 "sections": [
                     {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route12"
+                        ]
+                    },
+                    {
+                        "name": "Fishing Spot Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route12FishingSpot"
+                        ]
+                    },
+                    {
                         "name": "Item behind South Cut Tree across Water",
                         "access_rules": [
                             "$can_cut_kanto,$can_surf_kanto"
@@ -13154,6 +15498,39 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route13"
+                        ]
+                    },
+                    {
+                        "name": "Directions Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route13Directions"
+                        ]
+                    },
+                    {
+                        "name": "Trainer Tips Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route13TrainerTips"
+                        ]
+                    },
                     {
                         "name": "Hiker Kenny",
                         "visibility_rules": [
@@ -13367,6 +15744,17 @@
                 ],
                 "sections": [
                     {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route15"
+                        ]
+                    },
+                    {
                         "name": "Schoolboy Kipp",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -13490,6 +15878,28 @@
                 ],
                 "sections": [
                     {
+                        "name": "Gym - Left Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|FuchsiaGymStatueLeft"
+                        ]
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|FuchsiaGymStatueRight"
+                        ]
+                    },
+                    {
                         "name": "Gym - Lass Linda",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -13600,6 +16010,61 @@
                         ]
                     },
                     {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|FuchsiaCity"
+                        ]
+                    },
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|FuchsiaCityGym"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|FuchsiaCityPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Safari Zone Office Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|FuchsiaCitySafariZoneOffice"
+                        ]
+                    },
+                    {
+                        "name": "Safari Zone Warden's Home Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|FuchsiaCityWardensHome"
+                        ]
+                    },
+                    {
                         "name": "Surf Encounters",
                         "item_count": 3,
                         "clear_as_group": false,
@@ -13651,6 +16116,17 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Careful Swimming Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route19CarefulSwimming"
+                        ]
+                    },
                     {
                         "name": "Swimmer Harold",
                         "visibility_rules": [
@@ -13720,6 +16196,17 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route20CinnabarGym"
+                        ]
+                    },
                     {
                         "name": "Swimmer Cameron",
                         "visibility_rules": [
@@ -13856,6 +16343,39 @@
                         "hosted_item": "EVENT_VIRIDIAN_GYM_BLUE",
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Tourism Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CinnabarIsland"
+                        ]
+                    },
+                    {
+                        "name": "Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CinnabarIslandPokecenter"
+                        ]
+                    },
+                    {
+                        "name": "Gym Relocation Notice Sign",
+                        "chest_unopened_img": "images/other/unownsign",
+                        "chest_opened_img": "images/other/unownsign_bw",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CinnabarIslandGym"
                         ]
                     },
                     {
