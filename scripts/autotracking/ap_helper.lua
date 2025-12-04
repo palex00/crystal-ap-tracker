@@ -65,7 +65,8 @@ MAP_TOGGLE_REVERSE = {
 }
 MAP_BADGEGYM = {
     [0] = "badges",
-    [1] = "gyms"
+    [1] = "gyms",
+    [2] = "johtobadges"
 }
 MAP_KANTO_ACCESS = {
     [0] = "snorlax",
@@ -157,7 +158,7 @@ STARTTOWN_MAPPING = {
 SLOT_CODES = {
     goal = {
         code = "goal",
-        mapping = MAP_TOGGLE
+        mapping = MAP_QUINTUPLE
     },
     randomize_badges = {
         code = "badges",
@@ -257,7 +258,7 @@ SLOT_CODES = {
     },
     red_gyarados_access = {
         code = "red_gyarados_access",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     blackthorn_dark_cave_access = {
         code = "blackthorn_dark_cave_access",
@@ -390,6 +391,30 @@ SLOT_CODES = {
     grasssanity = {
         code = "grasssanity",
         mapping = MAP_TRIPLE
+    },
+    route_30_battle = {
+        code = "route_30_battle",
+        mapping = MAP_TOGGLE
+    },
+    ss_aqua_access = {
+        code = "ss_aqua_access",
+        mapping = MAP_TOGGLE
+    },
+    magnet_train_access = {
+        code = "magnet_train_access",
+        mapping = MAP_TOGGLE
+    },
+    randomize_bug_catching_contest = {
+        code = "randomize_bug_catching_contest",
+        mapping = MAP_QUADRUPLE
+    },
+    encmethod_contest = {
+        code = "encmethod_contest",
+        mapping = MAP_TRIPLE
+    },
+    trades_required = {
+        code = "encmethod_trades",
+        mapping = MAP_TOGGLE
     }
 }
 
