@@ -126,6 +126,40 @@
                                         "item_size": "164, 16"
                                     }
                                 ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "contest_dummy",
+                                        "item_size": "145, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "encmethod_contest",
+                                        "item_size": "164, 16"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "2,6",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "item": "trades_dummy",
+                                        "item_size": "145, 16"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "item": "encmethod_trades",
+                                        "item_size": "164, 16"
+                                    }
+                                ]
                             }
                         ]
                     },

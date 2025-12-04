@@ -205,6 +205,28 @@ function static_encounter()
     end
 end
 
+function contest_encounter()
+    if has("encmethod_contest_on") then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+
+function trade(person)
+    local checked = Tracker:FindObjectForCode("TRADE_"..person).Active
+    local pokemon_name = POKEMON_MAPPING[TRADE_DATA["TRADE_"..person].requested]
+
+    if not checked then
+        return AccessibilityLevel.Inspect
+    elseif has(pokemon_name) then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
 function evolve_new(ID)
     local evolutions = EVOLUTION_DATA[ID]
 
@@ -237,3 +259,4 @@ function breeding_new(ID)
     end
     return breeding()
 end
+

@@ -37,7 +37,7 @@ Tracker:AddLocations("locations/grass_submaps.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/dungeon_maps.json")
-Tracker:AddLayouts("layouts/events.json")
+Tracker:AddLayouts("layouts/events_red.json")
 Tracker:AddLayouts("layouts/settings.json")
 Tracker:AddLayouts("layouts/settings_quick.json")
 Tracker:AddLayouts("layouts/pokemonlogic.json")
@@ -58,6 +58,7 @@ ScriptHost:LoadScript("scripts/autotracking.lua")
 ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
 ScriptHost:AddWatchForCode("tea_guard", "tea_guard", toggle_johto)
 ScriptHost:AddWatchForCode("badges", "badges", toggle_johto)
+ScriptHost:AddWatchForCode("goal", "goal", toggle_johto)
 ScriptHost:AddWatchForCode("splitmap", "splitmap", toggle_splitmap)
 ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
 ScriptHost:AddWatchForCode("route_2_access", "route_2_access", toggle_route2)
@@ -91,4 +92,3 @@ ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
 
 -- Makes version nil
 first_two_dots = nil
-pokemon = nil

@@ -36,10 +36,10 @@ function dump_table(o, depth)
     end
 
     local ignore_keys = {
-        region_encounters = false,
+        region_encounters = true,
         trainersanity = true,
         dexcountsanity_counts = true,
-        dexsanity_pokemon = false,
+        dexsanity_pokemon = true,
         hm_compat = true,
         breeding_info = true,
         evolution_info = true,
@@ -69,9 +69,24 @@ function toggle_johto()
     if has("johto_only_off") then
         Tracker:AddMaps("maps/maps_johto_and_kanto.json")
         Tracker:AddLayouts("layouts/overworld.json")
+        
+        if has("goal_e4") then
+            Tracker:AddLayouts("layouts/events_e4.json")
+        elseif has("goal_red") then
+            Tracker:AddLayouts("layouts/events_red.json")
+        elseif has("goal_diploma") then
+            Tracker:AddLayouts("layouts/events_diploma.json")
+        elseif has("goal_rival") then
+            Tracker:AddLayouts("layouts/events_rival.json")
+        elseif has("goal_rocket") then
+            Tracker:AddLayouts("layouts/events_rocket.json")
+        elseif has("goal_unown") then
+            Tracker:AddLayouts("layouts/events_unown.json")
+        end       
+        
         Tracker:AddLayouts("layouts/settings.json")
-        Tracker:AddLayouts("layouts/events.json")
         Tracker:AddLayouts("layouts/flyunlocks.json")
+        
         if coffee then
             Tracker:AddLayouts("layouts/items.json")
         else
@@ -85,7 +100,16 @@ function toggle_johto()
         end
         
         Tracker:AddLayouts("layouts/johto_only/overworld.json")
-        Tracker:AddLayouts("layouts/johto_only/events.json")
+        
+        if has("goal_e4") then
+            Tracker:AddLayouts("layouts/johto_only/events_e4.json")
+        elseif has("goal_red") then
+            Tracker:AddLayouts("layouts/johto_only/events_red.json")
+        elseif has("goal_rival") then
+            Tracker:AddLayouts("layouts/johto_only/events_rival.json")
+        elseif has("goal_rocket") then
+            Tracker:AddLayouts("layouts/johto_only/events_rocket.json")
+        end
 
         if has("johto_only_on") then
             Tracker:AddMaps("maps/maps_johto_no_silver.json")
@@ -151,6 +175,10 @@ function toggle_lakeofrage()
         Tracker:AddMaps("maps/mischief/lake_of_rage_vanilla.json")
     elseif has("red_gyarados_whirlpool") and sudowoodo then
         Tracker:AddMaps("maps/mischief/lake_of_rage_whirlpool.json")
+    elseif has("red_gyarados_shore") and sudowoodo then
+        Tracker:AddMaps("maps/mischief/lake_of_rage_shore.json")
+    elseif has("red_gyarados_shore") and not sudowoodo then
+        Tracker:AddMaps("maps/lake_of_rage_shore.json")
     end
 end
 
