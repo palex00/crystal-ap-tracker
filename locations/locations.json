@@ -18185,17 +18185,6 @@
                 ],
                 "sections": [
                     {
-                        "name": "Gym Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
-                        "visibility_rules": [
-                            "show_items, goal_unown"
-                        ],
-                        "access_rules": [
-                            "^$unownsign|Route20CinnabarGym"
-                        ]
-                    },
-                    {
                         "name": "Swimmer Cameron",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -18263,6 +18252,17 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Gym Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route20CinnabarGym"
+                        ]
+                    },
                     {
                         "name": "Gym - Beat Blaine",
                         "hosted_item": "EVENT_BEAT_BLAINE",
