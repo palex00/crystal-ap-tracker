@@ -27,6 +27,15 @@ function resetLocations()
             end
         end
     end
+    
+    for _, v in pairs(SIGN_MAPPING) do
+        if v then
+            local obj = Tracker:FindObjectForCode(v)
+            if obj ~= nil then
+                obj.AvailableChestCount = obj.ChestCount
+            end
+        end
+    end
 end
 
 MAP_TOGGLE = {
@@ -158,7 +167,7 @@ STARTTOWN_MAPPING = {
 SLOT_CODES = {
     goal = {
         code = "goal",
-        mapping = MAP_QUINTUPLE
+        mapping = MAP_SIXTUPLE
     },
     randomize_badges = {
         code = "badges",

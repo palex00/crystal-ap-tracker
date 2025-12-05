@@ -2,6 +2,7 @@ ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/map_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/flag_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/sign_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/encounter_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/pokemon_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/evolution_location_mapping.lua")
@@ -20,6 +21,9 @@ SEEN_ID = ""
 CAUGHT_ID = ""
 EVOLUTION_DATA = ""
 BREEDING_DATA = ""
+CHECKED_SIGNS = ""
+UNOWN_DATA = ""
+TRADE_DATA = ""
 
 function onClear(slot_data)
     isUpdating = true
@@ -86,6 +90,7 @@ function onClear(slot_data)
     end
     
     TRADE_DATA = slot_data.trades
+    UNOWN_DATA = slot_data.unown_signs
     
     -- This sets each Encounter location to however many unique encounters there are in it
     for region_key, location in pairs(ENCOUNTER_MAPPING) do
@@ -254,6 +259,10 @@ function onClear(slot_data)
         CAUGHT_ID="pokemon_crystal_caught_pokemon_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({CAUGHT_ID})
         Archipelago:Get({CAUGHT_ID})
+        
+        SIGN_ID="pokemon_crystal_signs_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({SIGN_ID})
+        Archipelago:Get({SIGN_ID})
     end
 
     toggle_itemgrid()
@@ -337,6 +346,10 @@ function onNotify(key, value, old_value)
             updatePokemon()
         elseif key == ROCKETTRAP_ID then
             updateRocketTraps(value)
+        elseif key == SIGN_ID then
+            CHECKED_SIGNS = value
+            Tracker:FindObjectForCode("dummy").Active = true
+            Tracker:FindObjectForCode("dummy").Active = false
         end
     end
 end
@@ -359,6 +372,10 @@ function onNotifyLaunch(key, value)
             updatePokemon()
         elseif key == ROCKETTRAP_ID then
             updateRocketTraps(value)
+        elseif key == SIGN_ID then
+            CHECKED_SIGNS = value
+            Tracker:FindObjectForCode("dummy").Active = true
+            Tracker:FindObjectForCode("dummy").Active = false
         end
     end
 end

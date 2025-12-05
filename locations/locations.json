@@ -15780,24 +15780,6 @@
                         "chest_opened_img": "images/gift/erika_open.png"
                     },
                     {
-                        "name": "3F - Obtain Diploma",
-                        "hosted_item": "EVENT_OBTAINED_DIPLOMA",
-                        "access_rules": [
-                            "$diplomagoal"
-                        ],
-                        "visibility_rules": [
-                            "show_items, goal_diploma"
-                        ]
-                    },
-                    {
-                        "name": "TM03 from Man on Mansion Roof",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "chest_unopened_img": "images/gift/green_shades_dude.png",
-                        "chest_opened_img": "images/gift/green_shades_dude_open.png"
-                    },
-                    {
                         "name": "Mansion Sign",
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
@@ -15807,6 +15789,28 @@
                         "access_rules": [
                             "^$unownsign|CeladonCityMansion"
                         ]
+                    },
+                    {
+                        "name": "Celadon Mansion 1F - Manager's Suite Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|CeladonMansionManagersSuiteSign"
+                        ]
+                    },
+                    {
+                        "name": "Celadon Mansion 1F - Tea from Granny",
+                        "visibility_rules": [
+                            "show_items, coffee_north",
+                            "show_items, coffee_east",
+                            "show_items, coffee_south",
+                            "show_items, coffee_west"
+                        ],
+                        "chest_unopened_img": "images/gift/granny.png",
+                        "chest_opened_img": "images/gift/granny_open.png"
                     },
                     {
                         "name": "Celadon Mansion 2F - Meeting Room Sign",
@@ -15831,14 +15835,13 @@
                         ]
                     },
                     {
-                        "name": "Celadon Mansion Manager's Suite Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
-                        "visibility_rules": [
-                            "show_items, goal_unown"
-                        ],
+                        "name": "Celadon Mansion 3F - Obtain Diploma",
+                        "hosted_item": "EVENT_OBTAINED_DIPLOMA",
                         "access_rules": [
-                            "^$unownsign|CeladonMansionManagersSuiteSign"
+                            "$diplomagoal"
+                        ],
+                        "visibility_rules": [
+                            "show_items, goal_diploma"
                         ]
                     },
                     {
@@ -15851,6 +15854,14 @@
                         "access_rules": [
                             "^$unownsign|CeladonMansionRoofGraffiti"
                         ]
+                    },
+                    {
+                        "name": "TM03 from Man on Mansion Roof",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "chest_unopened_img": "images/gift/green_shades_dude.png",
+                        "chest_opened_img": "images/gift/green_shades_dude_open.png"
                     },
                     {
                         "name": "Dept. Store Sign",
@@ -16058,17 +16069,6 @@
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
                         ]
-                    },
-                    {
-                        "name": "Condominiums 1F - Tea from Granny",
-                        "visibility_rules": [
-                            "show_items, coffee_north",
-                            "show_items, coffee_east",
-                            "show_items, coffee_south",
-                            "show_items, coffee_west"
-                        ],
-                        "chest_unopened_img": "images/gift/granny.png",
-                        "chest_opened_img": "images/gift/granny_open.png"
                     },
                     {
                         "name": "Game Corner Sign",
