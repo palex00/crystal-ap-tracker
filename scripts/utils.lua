@@ -238,42 +238,29 @@ function toggle_splitmap()
 end
 
 function toggle_itemgrid()
-    local fly_unlock = has("randomize_fly_unlocks_true")
     local shops = has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true")
-    local horizontal = has("broadcast_view_horizontal")
-    if not fly_unlock and not shops then
-        Tracker:AddLayouts("layouts/tracker.json")
-        if horizontal then
-            Tracker:AddLayouts("layouts/broadcast/broadcast.json")
-        else
-            Tracker:AddLayouts("layouts/broadcast/vertical_broadcast.json")
-        end
-        toggle_shopgrid()
-    elseif fly_unlock and not shops then
-        Tracker:AddLayouts("layouts/tracker_with_flyunlock.json")
-        if horizontal then
-            Tracker:AddLayouts("layouts/broadcast/broadcast_with_flyunlock.json")
-        else
-            Tracker:AddLayouts("layouts/broadcast/vertical_broadcast_with_flyunlock.json")
-        end
-        toggle_shopgrid()
-    elseif fly_unlock and shops then
-        Tracker:AddLayouts("layouts/tracker_with_flyunlock_and_shopsanity.json")
-        if horizontal then
-            Tracker:AddLayouts("layouts/broadcast/broadcast_with_flyunlock_and_shopsanity.json")
-        else
-            Tracker:AddLayouts("layouts/broadcast/vertical_broadcast_with_flyunlock_and_shopsanity.json")
-        end
-        toggle_shopgrid()
-    elseif not fly_unlock and shops then
-        Tracker:AddLayouts("layouts/tracker_with_shopsanity.json")
-        if horizontal then
-            Tracker:AddLayouts("layouts/broadcast/broadcast_with_shopsanity.json")
-        else
-            Tracker:AddLayouts("layouts/broadcast/vertical_broadcast_with_shopsanity.json")
-        end
-        toggle_shopgrid()
+    
+    local suffix = ""
+    if has("randomize_fly_unlocks_true") then
+        suffix = suffix .. "_flyunlock"
     end
+    if shops then
+        suffix = suffix .. "_shopsanity"
+    end
+    if has("goal_unown") then
+        suffix = suffix .. "_tiles"
+    end
+        
+    Tracker:AddLayouts("layouts/tracker"..suffix..".json")
+    
+    local prefix = ""
+    if has("broadcast_view_vertical") then
+        prefix = "vertical_"
+    end
+    
+    Tracker:AddLayouts("layouts/broadcast/"..prefix.."broadcast"..suffix..".json")
+    
+    toggle_shopgrid()
 end
 
 function toggle_shopgrid()

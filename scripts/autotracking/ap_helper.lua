@@ -1,12 +1,16 @@
 function resetItems()
     for _, v in pairs(ITEM_MAPPING) do
         if v then
-            local obj = Tracker:FindObjectForCode(v)
-            if obj then
-                if v == "BLUE_CARD_POINT" then
-                    obj.AcquiredCount = 0
-                else
-                    obj.Active = false
+            if v == "PROGRESSIVE_ROD" then
+                -- ignore
+            else
+                local obj = Tracker:FindObjectForCode(v)
+                if obj then
+                    if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" then
+                        obj.AcquiredCount = 0
+                    else
+                        obj.Active = false
+                    end
                 end
             end
         end
