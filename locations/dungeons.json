@@ -435,7 +435,15 @@
             },
             {
                 "name": "Ecruteak Gym",
-                "sections": [{"name": "Gym - Left Statue Sign", "ref": "JohtoKanto/Ecruteak City/Gym - Left Statue Sign"},{"name": "Gym - Right Statue Sign", "ref": "JohtoKanto/Ecruteak City/Gym - Right Statue Sign"},
+                "sections": [
+                    {
+                        "name": "Gym - Left Statue Sign",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Right Statue Sign"
+                    },
                     {
                         "ref": "JohtoKanto/Ecruteak City/Gym - Sage Ping",
                         "name": "Gym - Sage Ping"
@@ -742,8 +750,8 @@
                         "ref": "JohtoKanto/Celadon City/Celadon Mansion Manager's Suite Sign"
                     },
                     {
-						"name": "Celadon Mansion 1F - Tea from Granny",
-                        "ref": "JohtoKanto/Celadon City/Condominiums 1F - Tea from Granny",
+                        "name": "Celadon Mansion 1F - Tea from Granny",
+                        "ref": "JohtoKanto/Celadon City/Condominiums 1F - Tea from Granny"
                     },
                     {
                         "name": "Celadon Mansion 2F - Meeting Room Sign",
@@ -1132,7 +1140,11 @@
             },
             {
                 "name": "Saffron Gym",
-                "sections": [{"name": "Statue Sign", "ref": "JohtoKanto/Saffron City/Statue Sign"},
+                "sections": [
+                    {
+                        "name": "Statue Sign",
+                        "ref": "JohtoKanto/Saffron City/Statue Sign"
+                    },
                     {
                         "ref": "JohtoKanto/Saffron City/Gym - Medium Doris",
                         "name": "Gym - Medium Doris"
@@ -6231,7 +6243,15 @@
             },
             {
                 "name": "Pewter Gym",
-                "sections": [{"name": "Gym - Left Statue Sign", "ref": "JohtoKanto/Pewter City/Gym - Left Statue Sign"},{"name": "Gym - Right Statue Sign", "ref": "JohtoKanto/Pewter City/Gym - Right Statue Sign"},
+                "sections": [
+                    {
+                        "name": "Gym - Left Statue Sign",
+                        "ref": "JohtoKanto/Pewter City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "ref": "JohtoKanto/Pewter City/Gym - Right Statue Sign"
+                    },
                     {
                         "ref": "JohtoKanto/Pewter City/Gym - Camper Jerry",
                         "name": "Gym - Camper Jerry"
