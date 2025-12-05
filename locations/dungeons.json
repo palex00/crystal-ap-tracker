@@ -437,6 +437,14 @@
                 "name": "Ecruteak Gym",
                 "sections": [
                     {
+                        "name": "Gym - Left Statue Sign",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Right Statue Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Ecruteak City/Gym - Sage Ping",
                         "name": "Gym - Sage Ping"
                     },
@@ -724,22 +732,6 @@
                     {
                         "ref": "JohtoKanto/Celadon City/TM03 from Man on Mansion Roof",
                         "name": "Celadon City - TM03 from Man on Mansion Roof"
-                    },
-                    {
-                        "name": "Celadon Mansion 2F - Meeting Room Sign",
-                        "ref": "JohtoKanto/Celadon City/Celadon Mansion 2F - Meeting Room Sign"
-                    },
-                    {
-                        "name": "Celadon Mansion 3F - Dev Room Sign",
-                        "ref": "JohtoKanto/Celadon City/Celadon Mansion 3F - Dev Room Sign"
-                    },
-                    {
-                        "name": "Celadon Mansion 1F - Manager's Suite Sign",
-                        "ref": "JohtoKanto/Celadon City/Celadon Mansion 1F - Manager's Suite Sign"
-                    },
-                    {
-                        "name": "Celadon Mansion Roof Graffiti Sign",
-                        "ref": "JohtoKanto/Celadon City/Celadon Mansion Roof Graffiti Sign"
                     }
                 ],
                 "map_locations": [
@@ -754,12 +746,28 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Celadon City/Celadon Mansion 1F - Tea from Granny",
-                        "name": "Celadon Mansion 1F - Tea from Granny"
+                        "name": "Celadon Mansion 1F - Manager's Suite Sign",
+                        "ref": "JohtoKanto/Celadon City/Celadon Mansion Manager's Suite Sign"
+                    },
+                    {
+                        "name": "Celadon Mansion 1F - Tea from Granny",
+                        "ref": "JohtoKanto/Celadon City/Condominiums 1F - Tea from Granny"
+                    },
+                    {
+                        "name": "Celadon Mansion 2F - Meeting Room Sign",
+                        "ref": "JohtoKanto/Celadon City/Celadon Mansion 2F - Meeting Room Sign"
+                    },
+                    {
+                        "name": "Celadon Mansion 3F - Dev Room Sign",
+                        "ref": "JohtoKanto/Celadon City/Celadon Mansion 3F - Dev Room Sign"
                     },
                     {
                         "ref": "JohtoKanto/Celadon City/Celadon Mansion 3F - Obtain Diploma",
                         "name": "Celadon Mansion 3F - Obtain Diploma"
+                    },
+                    {
+                        "name": "Celadon Mansion Roof Graffiti Sign",
+                        "ref": "JohtoKanto/Celadon City/Celadon Mansion Roof Graffiti Sign"
                     }
                 ],
                 "map_locations": [
@@ -1133,6 +1141,10 @@
             {
                 "name": "Saffron Gym",
                 "sections": [
+                    {
+                        "name": "Statue Sign",
+                        "ref": "JohtoKanto/Saffron City/Statue Sign"
+                    },
                     {
                         "ref": "JohtoKanto/Saffron City/Gym - Medium Doris",
                         "name": "Gym - Medium Doris"
@@ -2568,6 +2580,14 @@
                 "name": "Fuchsia Gym",
                 "sections": [
                     {
+                        "name": "Gym - Left Statue Sign",
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Right Statue Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Fuchsia City/Gym - Lass Linda",
                         "name": "Gym - Lass Linda"
                     },
@@ -2680,8 +2700,16 @@
                 "name": "Goldenrod Dept. Store",
                 "sections": [
                     {
+                        "name": "Dept. Store 1F - Directory Sign",
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 1F - Directory Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 1F - Buy Water Stone",
                         "name": "1F - Buy Water Stone"
+                    },
+                    {
+                        "name": "Dept. Store 2F - Directory Sign",
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 2F - Directory Sign"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 2F - Top Salesman - Shop Items",
@@ -2692,12 +2720,24 @@
                         "name": "2F - Bottom Salesman - Shop Items"
                     },
                     {
+                        "name": "Dept. Store 3F - Directory Sign",
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 3F - Directory Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 3F - X Items Shop - Shop Items",
                         "name": "3F - X Items Shop - Shop Items"
                     },
                     {
+                        "name": "Dept. Store 4F - Directory Sign",
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 4F - Directory Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 4F - Vitamin Shop - Shop Items",
                         "name": "4F - Vitamin Shop - Shop Items"
+                    },
+                    {
+                        "name": "Dept. Store 5F - Directory Sign",
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - Directory Sign"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM21 from Receptionist",
@@ -2710,6 +2750,10 @@
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM Shop - Shop Items",
                         "name": "5F - TM Shop - Shop Items"
+                    },
+                    {
+                        "name": "Dept. Store 6F - Directory Sign",
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 6F - Directory Sign"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 6F - Vending Machine - Shop Items",
@@ -3016,6 +3060,14 @@
                 "name": "Goldenrod Gym",
                 "sections": [
                     {
+                        "name": "Gym - Left Statue Sign",
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Right Statue Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod City/Gym - Beauty Samantha",
                         "name": "Gym - Beauty Samantha"
                     },
@@ -3197,6 +3249,14 @@
                 "name": "Radio Tower",
                 "sections": [
                     {
+                        "name": "1F - Lucky Channel Sign",
+                        "ref": "JohtoKanto/Radio Tower/1F - Lucky Channel Sign"
+                    },
+                    {
+                        "name": "1F - Directory Sign",
+                        "ref": "JohtoKanto/Radio Tower/1F - Directory Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Radio Tower/1F - Radio Card from Quiz",
                         "name": "1F - Radio Card from Quiz"
                     },
@@ -3207,6 +3267,18 @@
                     {
                         "ref": "JohtoKanto/Radio Tower/1F - Grunt",
                         "name": "1F - Grunt"
+                    },
+                    {
+                        "name": "2F - Oak's PKMN Talk Sign",
+                        "ref": "JohtoKanto/Radio Tower/2F - Oak's PKMN Talk Sign"
+                    },
+                    {
+                        "name": "2F - Pokemon Radio Sign",
+                        "ref": "JohtoKanto/Radio Tower/2F - Pokemon Radio Sign"
+                    },
+                    {
+                        "name": "2F - Sales Sign",
+                        "ref": "JohtoKanto/Radio Tower/2F - Sales Sign"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/2F - Blue Card from Buena",
@@ -3241,6 +3313,14 @@
                         "name": "2F - Grunt 4"
                     },
                     {
+                        "name": "3F - Personnel Sign",
+                        "ref": "JohtoKanto/Radio Tower/3F - Personnel Sign"
+                    },
+                    {
+                        "name": "3F - Pokemon Music Sign",
+                        "ref": "JohtoKanto/Radio Tower/3F - Pokemon Music Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Radio Tower/3F - Grunt 1",
                         "name": "3F - Grunt 1"
                     },
@@ -3261,6 +3341,14 @@
                         "name": "3F - Grunt 3"
                     },
                     {
+                        "name": "4F - Production Sign",
+                        "ref": "JohtoKanto/Radio Tower/4F - Production Sign"
+                    },
+                    {
+                        "name": "4F - Studio 2 Sign",
+                        "ref": "JohtoKanto/Radio Tower/4F - Studio 2 Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Radio Tower/4F - Scientist Rich",
                         "name": "4F - Scientist Rich"
                     },
@@ -3279,6 +3367,18 @@
                     {
                         "ref": "JohtoKanto/Radio Tower/4F - Pink Bow from Mary",
                         "name": "4F - Pink Bow from Mary"
+                    },
+                    {
+                        "name": "5F - Director's Office Sign",
+                        "ref": "JohtoKanto/Radio Tower/5F - Director's Office Sign"
+                    },
+                    {
+                        "name": "5F - Studio Left Sign",
+                        "ref": "JohtoKanto/Radio Tower/5F - Studio Left Sign"
+                    },
+                    {
+                        "name": "5F - Studio Right Sign",
+                        "ref": "JohtoKanto/Radio Tower/5F - Studio Right Sign"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/5F - False Director",
@@ -4500,7 +4600,9 @@
                 "map_locations": [
                     {
                         "map": "LakeOfRage",
-                        "restrict_visibility_rules": ["red_gyarados_shore"],
+                        "restrict_visibility_rules": [
+                            "red_gyarados_shore"
+                        ],
                         "x": 296,
                         "y": 440
                     }
@@ -4521,7 +4623,9 @@
                 "map_locations": [
                     {
                         "map": "LakeOfRage",
-                        "force_invisibility_rules": ["red_gyarados_shore"],
+                        "force_invisibility_rules": [
+                            "red_gyarados_shore"
+                        ],
                         "x": 296,
                         "y": 360
                     }
@@ -4648,6 +4752,14 @@
             {
                 "name": "Mahogany Gym",
                 "sections": [
+                    {
+                        "name": "Gym - Left Statue Sign",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Right Statue Sign"
+                    },
                     {
                         "ref": "JohtoKanto/Mahogany Town/Gym - Boarder Brad",
                         "name": "Gym - Boarder Brad"
@@ -5676,6 +5788,14 @@
                 "name": "Olivine Gym",
                 "sections": [
                     {
+                        "name": "Gym - Left Statue Sign",
+                        "ref": "JohtoKanto/Olivine City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "ref": "JohtoKanto/Olivine City/Gym - Right Statue Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Olivine City/Gym - Beat Jasmine",
                         "name": "Gym - Beat Jasmine"
                     },
@@ -6125,6 +6245,14 @@
                 "name": "Pewter Gym",
                 "sections": [
                     {
+                        "name": "Gym - Left Statue Sign",
+                        "ref": "JohtoKanto/Pewter City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "ref": "JohtoKanto/Pewter City/Gym - Right Statue Sign"
+                    },
+                    {
                         "ref": "JohtoKanto/Pewter City/Gym - Camper Jerry",
                         "name": "Gym - Camper Jerry"
                     },
@@ -6229,6 +6357,14 @@
             {
                 "name": "Vermilion Gym",
                 "sections": [
+                    {
+                        "name": "Gym - Left Statue Sign",
+                        "ref": "JohtoKanto/Vermilion City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "ref": "JohtoKanto/Vermilion City/Gym - Right Statue Sign"
+                    },
                     {
                         "ref": "JohtoKanto/Vermilion City/Gym - Gentleman Gregory",
                         "name": "Gym - Gentleman Gregory"
@@ -11688,6 +11824,14 @@
             {
                 "name": "Violet Gym",
                 "sections": [
+                    {
+                        "name": "Gym - Left Statue Sign",
+                        "ref": "JohtoKanto/Violet City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Gym - Right Statue Sign",
+                        "ref": "JohtoKanto/Violet City/Gym - Right Statue Sign"
+                    },
                     {
                         "ref": "JohtoKanto/Violet City/Gym - Bird Keeper Abe",
                         "name": "Gym - Bird Keeper Abe"
