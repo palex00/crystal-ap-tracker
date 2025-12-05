@@ -34,6 +34,7 @@ Tracker:AddLocations("locations/evolutionsanity.json")
 Tracker:AddLocations("locations/encounters_submaps.json")
 Tracker:AddLocations("locations/special_encounters.json")
 Tracker:AddLocations("locations/grass_submaps.json")
+Tracker:AddLocations("locations/new_signs.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/dungeon_maps.json")
