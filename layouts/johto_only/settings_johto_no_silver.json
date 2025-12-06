@@ -71,11 +71,14 @@
                 "dexsanity",
                 "berries",
                 "trainersanity",
-                "randomize_fly_unlocks",
+                "randomize_fly_unlocks"
+            ],
+            [
                 "badges",
                 "pokegear",
                 "grasssanity",
-                "randomize_bug_catching_contest"
+                "randomize_bug_catching_contest",
+                "randomize_phone_call_items"
             ]
         ]
     },
@@ -92,7 +95,8 @@
                 "fly_cheese",
                 "badgereqs",
                 "clair_behaviour",
-                "randomize_evolution"
+                "randomize_evolution",
+                "require_pokegear_for_phone_numbers"
             ]
         ]
     },

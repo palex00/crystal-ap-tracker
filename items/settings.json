@@ -3387,6 +3387,7 @@
     {
         "name": "Require Pokegear for Phone Numbers",
         "type": "progressive",
+        "initial_stage_idx": 1,
         "loop": true,
         "allow_disabled": false,
         "stages": [

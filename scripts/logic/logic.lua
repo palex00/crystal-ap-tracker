@@ -462,18 +462,29 @@ function unownsign(sign)
     end
 end
 
---function phonecard()
---    if require_pokegear_for_phone_numbers_true
---end
---
---function phonecall()
---    if has("randomize_phone_call_items_vanilla") then
---        if has("PHONE_CARD") 
---        if not Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel == AccessibilityLevel.None then
---        
---        
---    else
---    
---    
---    end
---end
+function phonecard()
+    if has("PHONE_CARD") and has("POKE_GEAR") then
+        return AccessibilityLevel.Normal
+    elseif has("PHONE_CARD") and has("require_pokegear_for_phone_numbers_false") then
+        return AccessibilityLevel.SequenceBreak    
+    else
+        return AccessibilityLevel.None
+    end
+end
+
+function phonecall()
+    if has("randomize_phone_call_items_vanilla") then
+        if Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel ~= AccessibilityLevel.None then
+            return math.max(Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel, phonecard())
+        else
+            return phonecard()
+        end
+    elseif has("randomize_phone_call_items_simple") then
+        return phonecard()
+    end
+end
+
+function request_pokemon()
+    return AccessibilityLevel.Normal
+    -- we'll deal with this when people complain.
+end

@@ -66,6 +66,8 @@ end
 
 function toggle_johto()
     local coffee = has("coffee_west") or has("coffee_north") or has("coffee_east") or has("coffee_south")
+    local phone = has("phone_calls_visible")
+    
     if has("johto_only_off") then
         Tracker:AddMaps("maps/maps_johto_and_kanto.json")
         Tracker:AddLayouts("layouts/overworld.json")
@@ -87,16 +89,25 @@ function toggle_johto()
         Tracker:AddLayouts("layouts/settings.json")
         Tracker:AddLayouts("layouts/flyunlocks.json")
         
-        if coffee then
+        if coffee and phone then
             Tracker:AddLayouts("layouts/items.json")
-        else
-            Tracker:AddLayouts("layouts/items_no_tea.json")      
+        elseif coffee and not phone then
+            Tracker:AddLayouts("layouts/items_no_phone.json")
+        elseif not coffee and not phone then
+            Tracker:AddLayouts("layouts/items_no_to_both.json")
+        elseif not coffee and phone then
+            Tracker:AddLayouts("layouts/items_no_tea.json")
         end
     else
-        if has("badges_on") then
+        local badges = has("badges_on")
+        if badges and phone then
             Tracker:AddLayouts("layouts/johto_only/items.json")
-        else
+        elseif not badges and phone then
             Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges.json")
+        elseif badges and not phone then
+            Tracker:AddLayouts("layouts/johto_only/items_no_phone.json")
+        elseif not badges and not phone then
+            Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges_and_no_phone.json")
         end
         
         Tracker:AddLayouts("layouts/johto_only/overworld.json")
