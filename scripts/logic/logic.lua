@@ -461,3 +461,19 @@ function unownsign(sign)
         end
     end
 end
+
+--function phonecard()
+--    if require_pokegear_for_phone_numbers_true
+--end
+--
+--function phonecall()
+--    if has("randomize_phone_call_items_vanilla") then
+--        if has("PHONE_CARD") 
+--        if not Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel == AccessibilityLevel.None then
+--        
+--        
+--    else
+--    
+--    
+--    end
+--end

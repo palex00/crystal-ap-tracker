@@ -272,10 +272,10 @@
 {"name": "Obtain Diploma",                      "type": "toggle", "img": "/images/events/diploma.png", "codes": "EVENT_OBTAINED_DIPLOMA"},
 {"name": "Unmask the False Director",           "type": "toggle", "img": "/images/events/tower_cleared.png", "img_mods": "overlay|images/events/overlay_director.png", "codes": "EVENT_BEAT_ROCKET_EXECUTIVEM_3"},
 
-{"name": "Unlocked Unowns A to K", "type": "toggle", "img": "/images/events/unowns_A_to_K.png", "codes": "ENGINE_UNLOCKED_UNOWNS_A_TO_K"},
-{"name": "Unlocked Unowns L to R", "type": "toggle", "img": "/images/events/unowns_L_to_R.png", "codes": "ENGINE_UNLOCKED_UNOWNS_L_TO_R"},
-{"name": "Unlocked Unowns S to W", "type": "toggle", "img": "/images/events/unowns_S_to_W.png", "codes": "ENGINE_UNLOCKED_UNOWNS_S_TO_W"},
-{"name": "Unlocked Unowns X to Z", "type": "toggle", "img": "/images/events/unowns_X_to_Z.png", "codes": "ENGINE_UNLOCKED_UNOWNS_X_TO_Z"},
+{"name": "Unlocked Unowns A to K", "type": "toggle", "img": "/images/events/KABUTO_TILE.png", "codes": "ENGINE_UNLOCKED_UNOWNS_A_TO_K"},
+{"name": "Unlocked Unowns L to R", "type": "toggle", "img": "/images/events/OMANYTE_TILE.png", "codes": "ENGINE_UNLOCKED_UNOWNS_L_TO_R"},
+{"name": "Unlocked Unowns S to W", "type": "toggle", "img": "/images/events/AERODACTYL_TILE.png", "codes": "ENGINE_UNLOCKED_UNOWNS_S_TO_W"},
+{"name": "Unlocked Unowns X to Z", "type": "toggle", "img": "/images/events/HO-OH_TILE.png", "codes": "ENGINE_UNLOCKED_UNOWNS_X_TO_Z"},
 
 {"name": "Obtain Unown A", "type": "toggle", "codes": "UNOWN_1"},
 {"name": "Obtain Unown B", "type": "toggle", "codes": "UNOWN_2"},

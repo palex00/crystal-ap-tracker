@@ -489,7 +489,7 @@ end
 function updateUnown(value)
     for i = 1, 26 do
         if table_contains(value, i) then
-            Tracker:FindObjectForCode("UNOWN_"..i).Active
+            Tracker:FindObjectForCode("UNOWN_"..i).Active = true
         end
     end
 end

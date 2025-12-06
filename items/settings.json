@@ -3357,5 +3357,51 @@
         "img": "/images/settings/dex_related/trades.png",
         "codes": "trades_dummy",
         "type": "static"
+    },
+    {
+        "name": "Randomize Phone Calls",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Phone Calls: Off",
+                "img": "/images/settings/phonecalls_off.png",
+                "codes": "randomize_phone_call_items, randomize_phone_call_items_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Phone Calls: Vanilla",
+                "img": "/images/settings/phonecalls_off.png",
+                "codes": "randomize_phone_call_items, phone_calls_visible, randomize_phone_call_items_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Phone Calls: Simple",
+                "img": "/images/settings/phonecalls_off.png",
+                "codes": "randomize_phone_call_items, phone_calls_visible, randomize_phone_call_items_simple",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Require Pokegear for Phone Numbers",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Require Pokegear for Phone Numbers: False",
+                "img": "/images/settings/require_pokegear_for_phone_numbers_false.png",
+                "codes": "require_pokegear_for_phone_numbers, require_pokegear_for_phone_numbers_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Require Pokegear for Phone Numbers: True",
+                "img": "/images/settings/require_pokegear_for_phone_numbers_true.png",
+                "codes": "require_pokegear_for_phone_numbers, require_pokegear_for_phone_numbers_true",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

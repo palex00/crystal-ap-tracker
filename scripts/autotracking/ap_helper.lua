@@ -428,6 +428,10 @@ SLOT_CODES = {
     trades_required = {
         code = "encmethod_trades",
         mapping = MAP_TOGGLE
+    },
+    require_pokegear_for_phone_numbers = {
+        code = "require_pokegear_for_phone_numbers",
+        mapping = MAP_TOGGLE
     }
 }
 

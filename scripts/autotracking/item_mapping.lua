@@ -52,6 +52,7 @@ ITEM_MAPPING = {
   [181] = "EARTH_BADGE",
   [182] = "RADIO_CARD",
   [183] = "MAP_CARD",
+  [184] = "PHONE_CARD",
   [185] = "EXPN_CARD",
   [186] = "POKE_GEAR",
   [195] = "TEA",
