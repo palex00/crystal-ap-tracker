@@ -419,50 +419,6 @@
                 "name": "Route 30",
                 "sections": [
                     {
-                        "name": "Mr. Pokemon's House Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
-                        "visibility_rules": [
-                            "show_items, goal_unown"
-                        ],
-                        "access_rules": [
-                            "^$unownsign|MrPokemonsHouse"
-                        ]
-                    },
-                    {
-                        "name": "Directions to Mr. Pokemon's House Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
-                        "visibility_rules": [
-                            "show_items, goal_unown"
-                        ],
-                        "access_rules": [
-                            "^$unownsign|MrPokemonsHouseDirections"
-                        ]
-                    },
-                    {
-                        "name": "Road Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
-                        "visibility_rules": [
-                            "show_items, goal_unown"
-                        ],
-                        "access_rules": [
-                            "^$unownsign|Route30"
-                        ]
-                    },
-                    {
-                        "name": "Trainer Tips Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
-                        "visibility_rules": [
-                            "show_items, goal_unown"
-                        ],
-                        "access_rules": [
-                            "^$unownsign|Route30TrainerTips"
-                        ]
-                    },
-                    {
                         "name": "Pre-Mr-Pokemon",
                         "visibility_rules": [
                             "Invisible"
@@ -483,6 +439,17 @@
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon, $can_cut_johto",
                             "@JohtoKanto/Route 31"
+                        ]
+                    },
+                    {
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon, ^$unownsign|Route30"
                         ]
                     },
                     {
@@ -515,6 +482,17 @@
                         ]
                     },
                     {
+                        "name": "Directions to Mr. Pokemon's House Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon, ^$unownsign|MrPokemonsHouseDirections"
+                        ]
+                    },
+                    {
                         "name": "Hidden Item in Flowers",
                         "access_rules": [
                             "^$hid, @JohtoKanto/Route 30/Pre-Mr-Pokemon"
@@ -535,6 +513,17 @@
                         ],
                         "chest_unopened_img": "images/items/berry_tree.png",
                         "chest_opened_img": "images/items/berry_tree_bw.png"
+                    },
+                    {
+                        "name": "Mr. Pokemon's House Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon, ^$unownsign|MrPokemonsHouse"
+                        ]
                     },
                     {
                         "name": "Meet Mr. Pokemon",
@@ -591,6 +580,17 @@
                         ],
                         "chest_unopened_img": "images/trainers/blue_dude.png",
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
+                    },
+                    {
+                        "name": "Trainer Tips Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, ^$unownsign|Route30TrainerTips"
+                        ]
                     },
                     {
                         "name": "Bug Catcher Don",
@@ -8472,7 +8472,6 @@
             },
             {
                 "name": "Route 42",
-                "visibility_rules": "nowayinhell",
                 "access_rules": [
                     "@JohtoKanto/Ecruteak City",
                     "@JohtoKanto/Mahogany Town/Town"
@@ -8714,7 +8713,6 @@
             },
             {
                 "name": "Mount Mortar",
-                "visibility_rules": "nowayinhell",
                 "access_rules": [
                     "@JohtoKanto/Ecruteak City",
                     "@JohtoKanto/Mahogany Town/Town"
@@ -9360,7 +9358,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|MahoganyGym"
+                            "@JohtoKanto/Mahogany Town/Town, ^$unownsign|MahoganyGym"
                         ]
                     },
                     {
@@ -9371,7 +9369,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|MahoganyTown"
+                            "@JohtoKanto/Mahogany Town/Town, ^$unownsign|MahoganyTown"
                         ]
                     },
                     {
@@ -9382,7 +9380,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|MahoganyTownPokecenter"
+                            "@JohtoKanto/Mahogany Town/Town, ^$unownsign|MahoganyTownPokecenter"
                         ]
                     },
                     {
@@ -9393,7 +9391,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|MahoganyTownRagecandybar"
+                            "@JohtoKanto/Mahogany Town/Town, ^$unownsign|MahoganyTownRagecandybar"
                         ]
                     },
                     {
@@ -16839,7 +16837,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|PokemonFanClubBraggingSign"
+                            "@JohtoKanto/Vermilion City/City, ^$unownsign|PokemonFanClubBraggingSign"
                         ]
                     },
                     {
@@ -16850,7 +16848,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|PokemonFanClubListenSign"
+                            "@JohtoKanto/Vermilion City/City, ^$unownsign|PokemonFanClubListenSign"
                         ]
                     },
                     {
@@ -16861,7 +16859,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|VermilionCity"
+                            "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCity"
                         ]
                     },
                     {
@@ -16872,7 +16870,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|VermilionCityDiglettsCave"
+                            "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityDiglettsCave"
                         ]
                     },
                     {
@@ -16883,7 +16881,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|VermilionCityGym"
+                            "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityGym"
                         ]
                     },
                     {
@@ -16894,7 +16892,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|VermilionCityMart"
+                            "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityMart"
                         ]
                     },
                     {
@@ -16905,7 +16903,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|VermilionCityPokecenter"
+                            "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityPokecenter"
                         ]
                     },
                     {
@@ -16916,7 +16914,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|VermilionCityPokemonFanClub"
+                            "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityPokemonFanClub"
                         ]
                     },
                     {
@@ -16927,7 +16925,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|VermilionCityPort"
+                            "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityPort"
                         ]
                     },
                     {

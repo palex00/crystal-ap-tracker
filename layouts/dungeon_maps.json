@@ -828,6 +828,15 @@
                 }
             },
             {
+                "title": "Route 42",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route42"
+                    ]
+                }
+            },
+            {
                 "title": "Route 43",
                 "content": {
                     "type": "map",
@@ -1103,6 +1112,50 @@
                                 "type": "map",
                                 "maps": [
                                     "WhirlIslandLugiaChamber"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Mt. Mortar",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Mt. Mortar 1F - Outside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMortar1FOutside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mt. Mortar 1F - Inside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMortar1FInside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mt. Mortar 2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMortar2FInside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mt. Mortar B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMortarB1F"
                                 ]
                             }
                         }
