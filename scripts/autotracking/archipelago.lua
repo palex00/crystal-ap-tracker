@@ -47,6 +47,13 @@ function onClear(slot_data)
     end
     Tracker:FindObjectForCode("trainersanity_1702").Active = false -- literally just Eusine the fucker.
 
+    -- resets unown codes
+    for i = 1, 26 do
+        local obj = Tracker:FindObjectForCode("UNOWN_" .. i)
+        if obj then
+            obj.Active = false
+        end
+    end
 
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
@@ -263,6 +270,10 @@ function onClear(slot_data)
         SIGN_ID="pokemon_crystal_signs_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({SIGN_ID})
         Archipelago:Get({SIGN_ID})
+        
+        UNOWN_ID="pokemon_crystal_unowns_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({UNOWN_ID})
+        Archipelago:Get({UNOWN_ID})
     end
 
     toggle_itemgrid()
@@ -350,6 +361,8 @@ function onNotify(key, value, old_value)
             CHECKED_SIGNS = value
             Tracker:FindObjectForCode("dummy").Active = true
             Tracker:FindObjectForCode("dummy").Active = false
+        elseif key == UNOWN_ID then
+            updateUnown(value)
         end
     end
 end
@@ -376,6 +389,8 @@ function onNotifyLaunch(key, value)
             CHECKED_SIGNS = value
             Tracker:FindObjectForCode("dummy").Active = true
             Tracker:FindObjectForCode("dummy").Active = false
+        elseif key == UNOWN_ID then
+            updateUnown(value)
         end
     end
 end
@@ -467,6 +482,14 @@ function updateVanillaKeyItems(value)
                     Tracker:FindObjectForCode(code).Active = Tracker:FindObjectForCode(code).Active or bit
                 end
             end
+        end
+    end
+end
+
+function updateUnown(value)
+    for i = 1, 26 do
+        if table_contains(value, i) then
+            Tracker:FindObjectForCode("UNOWN_"..i).Active
         end
     end
 end

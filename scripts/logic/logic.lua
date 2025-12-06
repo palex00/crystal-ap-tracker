@@ -43,6 +43,36 @@ function kantobadges()
   Tracker:ProviderCountForCode("EARTH_BADGE")
 end
 
+function unown_goal()
+  return((
+  Tracker:ProviderCountForCode("UNOWN_1") +
+  Tracker:ProviderCountForCode("UNOWN_2") +
+  Tracker:ProviderCountForCode("UNOWN_3") +
+  Tracker:ProviderCountForCode("UNOWN_4") +
+  Tracker:ProviderCountForCode("UNOWN_5") +
+  Tracker:ProviderCountForCode("UNOWN_6") +
+  Tracker:ProviderCountForCode("UNOWN_7") +
+  Tracker:ProviderCountForCode("UNOWN_8") +
+  Tracker:ProviderCountForCode("UNOWN_9") +
+  Tracker:ProviderCountForCode("UNOWN_10") +
+  Tracker:ProviderCountForCode("UNOWN_11") +
+  Tracker:ProviderCountForCode("UNOWN_12") +
+  Tracker:ProviderCountForCode("UNOWN_13") +
+  Tracker:ProviderCountForCode("UNOWN_14") +
+  Tracker:ProviderCountForCode("UNOWN_15") +
+  Tracker:ProviderCountForCode("UNOWN_16") +
+  Tracker:ProviderCountForCode("UNOWN_17") +
+  Tracker:ProviderCountForCode("UNOWN_18") +
+  Tracker:ProviderCountForCode("UNOWN_19") +
+  Tracker:ProviderCountForCode("UNOWN_20") +
+  Tracker:ProviderCountForCode("UNOWN_21") +
+  Tracker:ProviderCountForCode("UNOWN_22") +
+  Tracker:ProviderCountForCode("UNOWN_23") +
+  Tracker:ProviderCountForCode("UNOWN_24") +
+  Tracker:ProviderCountForCode("UNOWN_25") +
+  Tracker:ProviderCountForCode("UNOWN_26")) == 26)
+end
+
 gym_codes = {
     "EVENT_BEAT_FALKNER",
     "EVENT_BEAT_BUGSY",
