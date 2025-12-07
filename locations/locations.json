@@ -15150,7 +15150,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|Route10NorthPowerPlant, @JohtoKanto/Route 10/Top"
+                            "^$unownsign|Route10NorthPowerPlant, @JohtoKanto/Route 10/Top, $can_surf_kanto"
                         ]
                     },
                     {
