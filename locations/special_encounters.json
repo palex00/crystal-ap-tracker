@@ -53,11 +53,15 @@
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
                             "@JohtoKanto/Route 45, ^$dark|darkcave",
-                            "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall",
+                            "@JohtoKanto/Mount Mortar/2F_outside",
+                            "@JohtoKanto/Mount Mortar/2F_inside",
+                            "@JohtoKanto/Mount Mortar/1F_outside_center",
                             "@JohtoKanto/Route 10/Top",
                             "@JohtoKanto/Route 24",
                             "@JohtoKanto/Route 25",
-                            "@JohtoKanto/Route 42",
+                            "@JohtoKanto/Route 42/East",
+                            "@JohtoKanto/Route 42/West",
                             "@JohtoKanto/Route 9",
                             "@JohtoKanto/Silver Cave, ^$dark|silvercave",
                             "@JohtoKanto/Slowpoke Well, ^$dark|slowpokewell",
@@ -206,11 +210,15 @@
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
                             "@JohtoKanto/Route 45, ^$dark|darkcave",
-                            "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall",
+                            "@JohtoKanto/Mount Mortar/2F_outside",
+                            "@JohtoKanto/Mount Mortar/2F_inside",
+                            "@JohtoKanto/Mount Mortar/1F_outside_center",
                             "@JohtoKanto/Route 10/Top",
                             "@JohtoKanto/Route 24",
                             "@JohtoKanto/Route 25",
-                            "@JohtoKanto/Route 42",
+                            "@JohtoKanto/Route 42/East",
+                            "@JohtoKanto/Route 42/West",
                             "@JohtoKanto/Route 9",
                             "@JohtoKanto/Silver Cave, ^$dark|silvercave",
                             "@JohtoKanto/Slowpoke Well, ^$dark|slowpokewell",
@@ -359,11 +367,15 @@
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
                             "@JohtoKanto/Route 45, ^$dark|darkcave",
-                            "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall",
+                            "@JohtoKanto/Mount Mortar/2F_outside",
+                            "@JohtoKanto/Mount Mortar/2F_inside",
+                            "@JohtoKanto/Mount Mortar/1F_outside_center",
                             "@JohtoKanto/Route 10/Top",
                             "@JohtoKanto/Route 24",
                             "@JohtoKanto/Route 25",
-                            "@JohtoKanto/Route 42",
+                            "@JohtoKanto/Route 42/East",
+                            "@JohtoKanto/Route 42/West",
                             "@JohtoKanto/Route 9",
                             "@JohtoKanto/Silver Cave, ^$dark|silvercave",
                             "@JohtoKanto/Slowpoke Well, ^$dark|slowpokewell",
@@ -498,7 +510,8 @@
                         "access_rules": [
                             "@JohtoKanto/Azalea Town",
                             "@JohtoKanto/Route 33",
-                            "@JohtoKanto/Route 42, $can_surf_johto"
+                            "@JohtoKanto/Route 42/West",
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
                         ]
                     },
                     {
@@ -508,7 +521,8 @@
                         "access_rules": [
                             "@JohtoKanto/Azalea Town",
                             "@JohtoKanto/Route 33",
-                            "@JohtoKanto/Route 42, $can_surf_johto"
+                            "@JohtoKanto/Route 42/West",
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
                         ]
                     },
                     {

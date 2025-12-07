@@ -8510,7 +8510,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Ecruteak City"
+                            "@JohtoKanto/Route 42/West"
                         ]
                     },
                     {
@@ -8521,7 +8521,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|Route42Sign2, @JohtoKanto/Ecruteak City"
+                            "^$unownsign|Route42Sign2, @JohtoKanto/Route 42/West"
                         ]
                     },
                     {
@@ -8532,13 +8532,13 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|MtMortarSign1, @JohtoKanto/Ecruteak City"
+                            "^$unownsign|MtMortarSign1, @JohtoKanto/Route 42/West"
                         ]
                     },
                     {
                         "name": "Hidden Item in Pond Rock",
                         "access_rules": [
-                            "$can_surf_johto,^$hid"
+                            "@JohtoKanto/Route 42/West, $can_surf_johto, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8549,7 +8549,7 @@
                     {
                         "name": "Item across Water",
                         "access_rules": [
-                            "$can_surf_johto"
+                            "@JohtoKanto/Route 42/Center"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -8562,7 +8562,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "EVENT_RELEASED_THE_BEASTS, $can_surf_johto, $can_cut_johto"
+                            "@JohtoKanto/Route 42/Center, EVENT_RELEASED_THE_BEASTS, $can_cut_johto"
                         ]
                     },
                     {
@@ -8571,7 +8571,7 @@
                             "show_items, berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, $can_cut_johto"
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
                         ],
                         "chest_unopened_img": "images/items/berry_tree.png",
                         "chest_opened_img": "images/items/berry_tree_bw.png"
@@ -8582,7 +8582,7 @@
                             "show_items, berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, $can_cut_johto"
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
                         ],
                         "chest_unopened_img": "images/items/berry_tree.png",
                         "chest_opened_img": "images/items/berry_tree_bw.png"
@@ -8593,7 +8593,7 @@
                             "show_items, berries_on"
                         ],
                         "access_rules": [
-                            "$can_surf_johto, $can_cut_johto"
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
                         ],
                         "chest_unopened_img": "images/items/berry_tree.png",
                         "chest_opened_img": "images/items/berry_tree_bw.png"
@@ -8605,7 +8605,7 @@
                             "show_items, trainersanity_1147"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mahogany Town/Town"
+                            "@JohtoKanto/Route 42/East"
                         ],
                         "chest_unopened_img": "images/trainers/fisher.png",
                         "chest_opened_img": "images/trainers/fisher_bw.png"
@@ -8618,7 +8618,7 @@
                             "show_items, phone_calls_visible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mahogany Town/Town, ^$phonecall"
+                            "@JohtoKanto/Route 42/East, ^$phonecall"
                         ]
                     },
                     {
@@ -8628,7 +8628,7 @@
                             "show_items, trainersanity_1294"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mahogany Town/Town"
+                            "@JohtoKanto/Route 42/East"
                         ],
                         "chest_unopened_img": "images/trainers/juggler_pokemaniac.png",
                         "chest_opened_img": "images/trainers/juggler_pokemaniac_bw.png"
@@ -8640,7 +8640,7 @@
                             "show_items, trainersanity_1360"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mahogany Town/Town"
+                            "@JohtoKanto/Route 42/East"
                         ],
                         "chest_unopened_img": "images/trainers/hiker.png",
                         "chest_opened_img": "images/trainers/hiker_bw.png"
@@ -8653,7 +8653,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|MtMortarSign2, @JohtoKanto/Mahogany Town/Town"
+                            "^$unownsign|MtMortarSign2, @JohtoKanto/Route 42/East"
                         ]
                     },
                     {
@@ -8664,7 +8664,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|Route42Sign1, @JohtoKanto/Mahogany Town/Town"
+                            "^$unownsign|Route42Sign1, @JohtoKanto/Route 42/East"
                         ]
                     },
                     {
@@ -8677,7 +8677,7 @@
                             "show_items, grasssanity_full"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mahogany Town/Town, $can_cut_johto"
+                            "@JohtoKanto/Route 42/East, $can_cut_johto"
                         ]
                     },
                     {
@@ -8690,7 +8690,7 @@
                             "show_items, grasssanity_single"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mahogany Town/Town, $can_cut_johto"
+                            "@JohtoKanto/Route 42/East, $can_cut_johto"
                         ]
                     },
                     {
@@ -8703,7 +8703,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Mahogany Town/Town"
+                            "^$land_encounter, @JohtoKanto/Route 42/East"
                         ]
                     },
                     {
@@ -8716,7 +8716,8 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto"
+                            "@JohtoKanto/Route 42/East, ^$surf_encounter_johto",
+                            "@JohtoKanto/Route 42/West, ^$surf_encounter_johto"
                         ]
                     }
                 ],
@@ -8933,7 +8934,15 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Mount Mortar/"
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F_outside_west_entrance",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F_outside_west",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F_outside_center",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F_outside_below_waterfall",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F_outside_east_entrance",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F_outside_east",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/2F_outside",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/3F_outside_west",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/3F_outside_east"
                         ]
                     },
                     {
@@ -8946,7 +8955,8 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/"
+                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/1F_outside_center",
+                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/2F_outside"
                         ]
                     },
                     {
@@ -9057,7 +9067,9 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Mount Mortar/",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F_inside_front",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F_inside_strength",
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/1F_inside_back"
                         ]
                     },
                     {
@@ -9147,7 +9159,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Mount Mortar/"
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/2F_inside"
                         ]
                     },
                     {
@@ -9160,7 +9172,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/"
+                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/2F_inside"
                         ]
                     },
                     {
@@ -9252,7 +9264,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Mount Mortar/"
+                            "^$land_encounter, @JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -9265,7 +9277,8 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/"
+                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/B1F",
+                            "^$surf_encounter_johto, @JohtoKanto/Mount Mortar/B1F_back"
                         ]
                     }
                 ],
