@@ -3438,5 +3438,13 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Diploma Goal Count",
+        "codes": "diploma_goal_count",
+        "type": "consumable",
+        "min_quantity": 1,
+        "max_quantity": 251,
+        "initial_quantity": 251
     }
 ]

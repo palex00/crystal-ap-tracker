@@ -803,6 +803,25 @@ LOCATION_MAPPING = {
   [2076] = "@JohtoKanto/Pewter City/Berry Tree 1",
   [2077] = "@JohtoKanto/Fuchsia City/Berry Tree",
 
+-- Phonecallsanity
+  [256] = "@JohtoKanto/Route 34/Leaf Stone from Gina",
+  [257] = "@JohtoKanto/Route 36/Fire Stone from Alan",
+  [258] = "@JohtoKanto/Route 38/Thunderstone from Dana",
+  [259] = "@JohtoKanto/Route 42/Water Stone from Tully",
+  [260] = "@JohtoKanto/Route 43/Pink Bow from Tiffany",
+  [332] = "@JohtoKanto/National Park/Nugget from Beverly",
+  [335] = "@JohtoKanto/Olivine Lighthouse/2F - Protein from Huey",
+  [336] = "@JohtoKanto/Route 30/HP Up from Joey",
+  [337] = "@JohtoKanto/Route 44/Carbos from Vance",
+  [338] = "@JohtoKanto/Route 45/Iron from Parry",
+  [339] = "@JohtoKanto/Route 46/Calcium from Erin",
+  [346] = "@JohtoKanto/Route 27/Star Piece from Jose",
+  [352] = "@JohtoKanto/Route 31/Berry from Wade",
+  [376] = "@JohtoKanto/Route 39/Nugget from Derek",
+  [386] = "@JohtoKanto/Route 44/Poke Ball from Wilton",
+  [388] = "@JohtoKanto/Route 45/PP Up from Kenji",
+
+
 -- Shopsanity
   [2080] = "@JohtoKanto/Cherrygrove City/Poke Mart - Shop Items",
   [2081] = "@JohtoKanto/Cherrygrove City/Poke Mart - Shop Items",

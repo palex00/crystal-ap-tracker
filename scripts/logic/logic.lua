@@ -498,3 +498,7 @@ function request_pokemon()
     return AccessibilityLevel.Normal
     -- we'll deal with this when people complain.
 end
+
+function diplomagoal()
+    return CAUGHT_COUNT <= Tracker:FindObjectForCode("diploma_goal_count").AcquiredCount
+end

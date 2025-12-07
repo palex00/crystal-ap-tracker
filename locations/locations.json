@@ -1418,7 +1418,7 @@
                         "name": "Research Center - Complete the Unown Dex",
                         "hosted_item": "EVENT_GOT_ALL_UNOWN",
                         "access_rules": [
-                            "$unowngoal"
+                            "$unown_goal"
                         ],
                         "visibility_rules": [
                             "show_items, goal_unown"
@@ -8748,7 +8748,7 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/1F_inside_strength, $can_strength_johto",
+                            "@JohtoKanto/Mount Mortar/1F_inside_strength, $can_strength",
                             "@JohtoKanto/Mount Mortar/1F_inside_back",
                             "@JohtoKanto/Mount Mortar/1F_outside_west, ^$dark|mountmortar",
                             "@JohtoKanto/Mount Mortar/1F_outside_east, ^$dark|mountmortar",
@@ -8763,7 +8763,7 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/1F_inside_front, $can_strength_johto",
+                            "@JohtoKanto/Mount Mortar/1F_inside_front, $can_strength",
                             "@JohtoKanto/Mount Mortar/1F_inside_back"
                         ]
                     },
@@ -8883,7 +8883,7 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Mount Mortar/1F_outside_center, $can_surf_johto, ^$dark|mountmortar",
-                            "@JohtoKanto/Mount Mortar/B1F_back, $can_strength_johto, $can_waterfall"
+                            "@JohtoKanto/Mount Mortar/B1F_back, $can_strength, $can_waterfall"
                         ]
                     },
                     {

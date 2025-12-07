@@ -184,6 +184,8 @@ function onClear(slot_data)
                     Tracker:FindObjectForCode("dexsanity_" .. i).Active = false
                 end
             end
+        elseif k == "logically_available_pokemon_count" then
+            Tracker:FindObjectForCode("diploma_goal_count").AcquiredCount = tonumber(v)
         else
             -- print(string.format("No setting could be found for key: %s", k))
         end
@@ -494,11 +496,14 @@ function updateUnown(value)
     end
 end
 
-function updatePokemon()
+CAUGHT_COUNT = 0
 
+function updatePokemon()
+    CAUGHT_COUNT = 0
     for dex_number, code in pairs(POKEMON_MAPPING) do
         if table_contains(CAUGHT, dex_number) then
             Tracker:FindObjectForCode(code).Active = true
+            CAUGHT_COUNT = CAUGHT_COUNT + 1
         else
             Tracker:FindObjectForCode(code).Active = false
         end
