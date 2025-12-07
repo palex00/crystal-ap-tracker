@@ -3366,19 +3366,20 @@
         "stages": [
             {
                 "name": "Randomize Phone Calls: Off",
-                "img": "/images/settings/phonecalls_off.png",
+                "img": "/images/settings/phonecalls.png",
+                "img_mods": "@disabled",
                 "codes": "randomize_phone_call_items, randomize_phone_call_items_off",
                 "inherit_codes": false
             },
             {
                 "name": "Randomize Phone Calls: Vanilla",
-                "img": "/images/settings/phonecalls_off.png",
+                "img": "/images/settings/phonecalls_vanilla.png",
                 "codes": "randomize_phone_call_items, phone_calls_visible, randomize_phone_call_items_vanilla",
                 "inherit_codes": false
             },
             {
                 "name": "Randomize Phone Calls: Simple",
-                "img": "/images/settings/phonecalls_off.png",
+                "img": "/images/settings/phonecalls.png",
                 "codes": "randomize_phone_call_items, phone_calls_visible, randomize_phone_call_items_simple",
                 "inherit_codes": false
             }
