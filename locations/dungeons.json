@@ -747,7 +747,7 @@
                 "sections": [
                     {
                         "name": "Celadon Mansion 1F - Manager's Suite Sign",
-                        "ref": "JohtoKanto/Celadon City/Celadon Mansion Manager's Suite Sign"
+                        "ref": "JohtoKanto/Celadon City/Celadon Mansion 1F - Manager's Suite Sign"
                     },
                     {
                         "name": "Celadon Mansion 1F - Tea from Granny",
@@ -782,11 +782,27 @@
                 "name": "",
                 "sections": [
                     {
+                        "ref": "JohtoKanto/Celadon City/Leftovers from Cafe"
+                        "name": "Celadon City - Leftovers from Cafe"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonCafe",
+                        "x": 120,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "sections": [
+                    {
                         "name": "Celadon Cafe - Eatathon Contest Poster Sign",
                         "ref": "JohtoKanto/Celadon City/Celadon Cafe - Eatathon Contest Poster Sign"
                     },
-                    {
-                        "ref": "JohtoKanto/Celadon City/Leftovers from Cafe",
+                    {   
+                        "ref": "JohtoKanto/Celadon City/Leftovers from Cafe"
                         "name": "Celadon City - Leftovers from Cafe"
                     }
                 ],
@@ -795,11 +811,6 @@
                         "map": "CeladonCity",
                         "x": 408,
                         "y": 472
-                    },
-                    {
-                        "map": "CeladonCafe",
-                        "x": 120,
-                        "y": 24
                     }
                 ]
             },
