@@ -208,15 +208,34 @@ end
 
 function toggle_mountmortar()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
-    if has("mount_mortar_access_vanilla") and not sudowoodo then
-        Tracker:AddMaps("maps/mount_mortar_vanilla.json")
-    elseif has("mount_mortar_access_rocksmash") and not sudowoodo then
-        Tracker:AddMaps("maps/mount_mortar_rocksmash.json")
-    elseif has("mount_mortar_access_vanilla") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/mount_mortar_vanilla.json")
-    elseif has("mount_mortar_access_rocksmash") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/mount_mortar_rocksmash.json")
+    prefix = ""
+    suffix = ""
+    
+    if sudowoodo then
+        prefix = "mischief/"
     end
+    
+    if has("mount_mortar_access_vanilla") then
+        suffix = "vanilla"
+    elseif has("mount_mortar_access_rocksmash") then
+        suffix = "rocksmash"
+    end
+    
+    if has("route_42_access_whirlchanges") then
+        suffix = suffix.."_hole"
+    end
+    
+    Tracker:AddMaps("maps/"..prefix.."mm_"..suffix..".json")
+    
+    suffix = ""
+    
+    if has("route_42_access_whirlpool") or has("route_42_access_whirlchanges") then
+        suffix = "_whirl"
+    elseif has("route_42_access_blocked") then
+        suffix = "_blocked"
+    end
+    
+    Tracker:AddMaps("maps/"..prefix.."r42"..suffix..".json")
 end
 
 function toggle_victoryroad()
