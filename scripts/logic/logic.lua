@@ -211,6 +211,20 @@ function can_rocksmash()
   return has("TM_ROCK_SMASH")
 end
 
+function mm_rocksmash()
+    return (has("TM_ROCK_SMASH") or has("mount_mortar_access_vanilla"))
+end
+
+function route42_passage()
+    if has("route_42_access_vanilla") then
+        return can_surf_johto()
+    elseif (has("route_42_access_whirlpool") or has("route_42_access_whirlchanges") then
+        return can_whirlpool
+    else
+        return false
+    end
+end
+
 function fly_badge()
   return (
     (has("badgereqs_vanilla") and has("STORM_BADGE")) or

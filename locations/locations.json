@@ -5737,7 +5737,7 @@
                     "@JohtoKanto/Route 36/Top",
                     "@JohtoKanto/Olivine City",
                     "@JohtoKanto/Mahogany Town/Town, $can_surf_johto",
-                    "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength",
+                    "@JohtoKanto/Route 42/West",
                     "$can_freefly|Ecruteak"
                 ],
                 "sections": [
@@ -8470,11 +8470,40 @@
             },
             {
                 "name": "Route 42",
-                "access_rules": [
-                    "@JohtoKanto/Ecruteak City",
-                    "@JohtoKanto/Mahogany Town/Town"
-                ],
                 "sections": [
+                    {
+                        "name": "West",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Ecruteak City",
+                            "@JohtoKanto/Mount Mortar/1F_outside_west_entrance",
+                            "@JohtoKanto/Route 42/Center, $route42_passage"
+                        ]
+                    },
+                    {
+                        "name": "Center",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F_outside_center",
+                            "@JohtoKanto/Route 42/East, $route42_passage",
+                            "@JohtoKanto/Route 42/West, $route42_passage"
+                        ]
+                    },
+                    {
+                        "name": "East",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mahogany Town/Town",
+                            "@JohtoKanto/Mount Mortar/1F_outside_east_entrance",
+                            "@JohtoKanto/Route 42/Center, $route42_passage"
+                        ]
+                    },
                     {
                         "name": "West Item",
                         "visibility_rules": [
@@ -8711,82 +8740,139 @@
             },
             {
                 "name": "Mount Mortar",
-                "access_rules": [
-                    "@JohtoKanto/Ecruteak City",
-                    "@JohtoKanto/Mahogany Town/Town"
-                ],
                 "sections": [
                     {
-                        "name": "1F Outside Pre-Smash",
-                        "visibility_rules": [
-                            "invisible"
-                        ]
-                    },
-                    {
-                        "name": "1F Outside Post-Smash",
+                        "name": "1F_inside_front",
                         "visibility_rules": [
                             "invisible"
                         ],
                         "access_rules": [
-                            "mount_mortar_access_vanilla",
-                            "TM_ROCK_SMASH",
-                            "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength"
+                            "@JohtoKanto/Mount Mortar/1F_inside_strength, $can_strength_johto",
+                            "@JohtoKanto/Mount Mortar/1F_inside_back",
+                            "@JohtoKanto/Mount Mortar/1F_outside_west, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/1F_outside_east, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/3F_outside_west",
+                            "@JohtoKanto/Mount Mortar/3F_outside_east",
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall, ^$dark|mountmortar"
                         ]
                     },
                     {
-                        "name": "1F Outside Pre-Waterfall",
+                        "name": "1F_inside_strength",
                         "visibility_rules": [
                             "invisible"
                         ],
                         "access_rules": [
-                            "$can_surf_johto"
+                            "@JohtoKanto/Mount Mortar/1F_inside_front, $can_strength_johto",
+                            "@JohtoKanto/Mount Mortar/1F_inside_back"
                         ]
                     },
                     {
-                        "name": "1F Outside Post-Waterfall",
+                        "name": "1F_inside_back",
                         "visibility_rules": [
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/1F Outside Pre-Waterfall, $can_waterfall"
+                            "@JohtoKanto/Mount Mortar/2F_inside",
+                            "@JohtoKanto/Mount Mortar/B1F_back"
                         ]
                     },
                     {
-                        "name": "1F Inside Pre-Strength",
+                        "name": "1F_outside_west_entrance",
                         "visibility_rules": [
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/1F Outside Post-Smash, ^$dark|mountmortar",
-                            "@JohtoKanto/Mount Mortar/1F Inside Post-Strength"
+                            "@JohtoKanto/Mount Mortar/1F_outside_west, $mm_rocksmash",
+                            "@JohtoKanto/Route 42/West"
                         ]
                     },
                     {
-                        "name": "1F Inside Post-Strength",
+                        "name": "1F_outside_west",
                         "visibility_rules": [
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength, $can_strength",
-                            "@JohtoKanto/Mount Mortar/1F Inside Top"
+                            "@JohtoKanto/Mount Mortar/1F_outside_west_entrance, $mm_rocksmash",
+                            "@JohtoKanto/Mount Mortar/1F_inside_front"
                         ]
                     },
                     {
-                        "name": "1F Inside Top",
+                        "name": "1F_outside_center",
                         "visibility_rules": [
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/2F"
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall, $can_surf_johto",
+                            "@JohtoKanto/Mount Mortar/2F_outside",
+                            "@JohtoKanto/Mount Mortar/B1F",
+                            "@JohtoKanto/Route 42/Center"
                         ]
                     },
                     {
-                        "name": "2F",
+                        "name": "1F_outside_below_waterfall",
                         "visibility_rules": [
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/1F Outside Post-Waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/1F_outside_center, $can_surf_johto",
+                            "@JohtoKanto/Mount Mortar/1f_inside_front"
+                        ]
+                    },
+                    {
+                        "name": "1F_outside_east",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F_outside_east_entrance, $mm_rocksmash",
+                            "@JohtoKanto/Mount Mortar/1F_inside_front"
+                        ]
+                    },
+                    {
+                        "name": "1F_outside_east_entrance",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F_outside_east, $mm_rocksmash",
+                            "@JohtoKanto/Route 42/East"
+                        ]
+                    },
+                    {
+                        "name": "2F_outside",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F_outside_center, $can_waterfall",
+                            "@JohtoKanto/Mount Mortar/2F_inside"
+                        ]
+                    },
+                    {
+                        "name": "3F_outside_west",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F_inside_front"
+                        ]
+                    },
+                    {
+                        "name": "3F_outside_east",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F_inside_front"
+                        ]
+                    },
+                    {
+                        "name": "2F_inside",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/2F_outside, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -8795,7 +8881,17 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/1F Outside Pre-Waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/1F_outside_center, $can_surf_johto, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/B1F_back, $can_strength_johto, $can_waterfall"
+                        ]
+                    },
+                    {
+                        "name": "B1F_back",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Mount Mortar/1F_inside_back"
                         ]
                     },
                     {
@@ -9195,7 +9291,6 @@
             },
             {
                 "name": "Mahogany Town",
-                "access_rules": [],
                 "sections": [
                     {
                         "name": "Town",
@@ -9205,7 +9300,7 @@
                         "access_rules": [
                             "start_town_Mahogany",
                             "@JohtoKanto/Ecruteak City, $can_surf_johto",
-                            "@JohtoKanto/Mount Mortar/1F Inside Pre-Strength",
+                            "@JohtoKanto/Route 42/East",
                             "@JohtoKanto/Ice Path, route_44_requirement",
                             "@JohtoKanto/Ice Path, ^$fly_cheese",
                             "@JohtoKanto/Lake of Rage",

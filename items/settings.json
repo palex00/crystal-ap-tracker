@@ -3405,5 +3405,38 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Route 42 Access",
+        "type": "progressive",
+        "initial_stage_idx": 1,
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 42 Access: Vanilla",
+                "img": "/images/settings/route_42_access.png",
+                "codes": "route_42_access, route_42_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 42 Access: Whirlpool Blockage",
+                "img": "/images/settings/route_42_access.png",
+                "codes": "route_42_access, route_42_access_whirlpool",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 42 Access: Complete Blockage",
+                "img": "/images/settings/route_42_access.png",
+                "codes": "route_42_access, route_42_access_blocked",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 42 Access: Whirlpool and Mt. Mortar Changes",
+                "img": "/images/settings/route_42_access.png",
+                "codes": "route_42_access, route_42_access_whirlchanges",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

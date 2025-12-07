@@ -432,6 +432,10 @@ SLOT_CODES = {
     require_pokegear_for_phone_numbers = {
         code = "require_pokegear_for_phone_numbers",
         mapping = MAP_TOGGLE
+    },
+    route_42_access = {
+        code = "route_42_access",
+        mapping = MAP_QUADRUPLE
     }
 }
 
