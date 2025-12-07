@@ -859,7 +859,7 @@
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Blackthorn Entrance/All Items, $can_surf_johto",
                             "@JohtoKanto/Route 31, ^$dark|darkcave",
-                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side, $can_rocksmash"
+                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side, TM_ROCK_SMASH"
                         ]
                     },
                     {
@@ -869,7 +869,7 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 46/Above Ledge, ^$dark|darkcave",
-                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side, $can_rocksmash"
+                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side, TM_ROCK_SMASH"
                         ]
                     },
                     {
@@ -884,7 +884,7 @@
                     {
                         "name": "Hidden Item",
                         "access_rules": [
-                            "$can_rocksmash, ^$hid, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
+                            "TM_ROCK_SMASH, ^$hid, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -895,7 +895,7 @@
                     {
                         "name": "Northeast Item",
                         "access_rules": [
-                            "$can_rocksmash, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
+                            "TM_ROCK_SMASH, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -904,7 +904,7 @@
                     {
                         "name": "Southeast Item (Right)",
                         "access_rules": [
-                            "$can_rocksmash, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
+                            "TM_ROCK_SMASH, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -913,7 +913,7 @@
                     {
                         "name": "Southeast Item (Left)",
                         "access_rules": [
-                            "$can_rocksmash, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
+                            "TM_ROCK_SMASH, @JohtoKanto/Dark Cave Violet Entrance/Right Side"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -2959,7 +2959,7 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Azalea Town, ^$dark|ilexforest",
-                            "@JohtoKanto/Ilex Forest/Post-Tree, $ilextree, ^$dark|ilexforest"
+                            "@JohtoKanto/Ilex Forest/Post-Tree, $ilextree"
                         ]
                     },
                     {
@@ -2969,7 +2969,7 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Goldenrod City, ^$dark|ilexforest",
-                            "@JohtoKanto/Ilex Forest/Pre-Tree, $ilextree, ^$dark|ilexforest"
+                            "@JohtoKanto/Ilex Forest/Pre-Tree, $ilextree"
                         ]
                     },
                     {
@@ -6072,7 +6072,7 @@
                     {
                         "name": "1F - Item",
                         "access_rules": [
-                            "$can_rocksmash"
+                            "TM_ROCK_SMASH"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -7615,7 +7615,7 @@
                     {
                         "name": "Hidden Item in Rock",
                         "access_rules": [
-                            "$can_rocksmash,^$hid"
+                            "TM_ROCK_SMASH,^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8373,7 +8373,7 @@
                     {
                         "name": "Hidden Item in North Rock",
                         "access_rules": [
-                            "^$hid,$can_rocksmash"
+                            "^$hid,TM_ROCK_SMASH"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -8384,7 +8384,7 @@
                     {
                         "name": "Hidden Item in West Rock",
                         "access_rules": [
-                            "^$hid,$can_rocksmash"
+                            "^$hid,TM_ROCK_SMASH"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -13991,7 +13991,7 @@
                     {
                         "name": "Square - Hidden Item under Rock",
                         "access_rules": [
-                            "^$hid, $can_rocksmash"
+                            "^$hid, TM_ROCK_SMASH"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"

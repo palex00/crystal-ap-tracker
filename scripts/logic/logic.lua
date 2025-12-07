@@ -207,10 +207,6 @@ function can_waterfall()
   -- this is hardcoded to Johto because Kanto does currently not have waterfalls
 end
 
-function can_rocksmash()
-  return has("TM_ROCK_SMASH")
-end
-
 function mm_rocksmash()
     return (has("TM_ROCK_SMASH") or has("mount_mortar_access_vanilla"))
 end
