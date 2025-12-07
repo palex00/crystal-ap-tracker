@@ -8816,7 +8816,7 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Mount Mortar/1F_outside_center, $can_surf_johto",
-                            "@JohtoKanto/Mount Mortar/1f_inside_front"
+                            "@JohtoKanto/Mount Mortar/1F_inside_front"
                         ]
                     },
                     {
@@ -9251,7 +9251,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$static_encounter, @JohtoKanto/Mount Mortar/"
+                            "^$static_encounter, @JohtoKanto/Mount Mortar/B1F_back"
                         ]
                     },
                     {

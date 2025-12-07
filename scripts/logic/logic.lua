@@ -214,8 +214,8 @@ end
 function route42_passage()
     if has("route_42_access_vanilla") then
         return can_surf_johto()
-    elseif (has("route_42_access_whirlpool") or has("route_42_access_whirlchanges") then
-        return can_whirlpool
+    elseif (has("route_42_access_whirlpool") or has("route_42_access_whirlchanges")) then
+        return can_whirlpool()
     else
         return false
     end
