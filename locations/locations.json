@@ -8909,7 +8909,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/3F_outside_east"
                         ]
                     },
                     {
@@ -8918,7 +8918,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, @JohtoKanto/Mount Mortar/"
+                            "^$hid, @JohtoKanto/Mount Mortar/1F_outside_east"
                         ],
                         "chest_unopened_img": "images/items/hidden_item.png",
                         "chest_opened_img": "images/items/hidden_item_open.png"
@@ -8956,7 +8956,7 @@
                             "show_items, trainersanity_1515"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/1F_inside_front"
                         ],
                         "chest_unopened_img": "images/trainers/juggler_pokemaniac.png",
                         "chest_opened_img": "images/trainers/juggler_pokemaniac_bw.png"
@@ -8967,7 +8967,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/1F_inside_strength"
                         ]
                     },
                     {
@@ -8976,7 +8976,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/1F_inside_strength"
                         ]
                     },
                     {
@@ -8985,7 +8985,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/1F_inside_strength"
                         ]
                     },
                     {
@@ -8994,7 +8994,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/1F_inside_strength"
                         ]
                     },
                     {
@@ -9003,7 +9003,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/1F_inside_back"
                         ]
                     },
                     {
@@ -9012,7 +9012,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/1F_inside_back"
                         ]
                     },
                     {
@@ -9021,13 +9021,13 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/1F_inside_back"
                         ]
                     },
                     {
                         "name": "1F Inside - Super Nerd Markus",
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/1F_inside_strength"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -9042,7 +9042,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, @JohtoKanto/Mount Mortar/"
+                            "^$hid, @JohtoKanto/Mount Mortar/1F_inside_back"
                         ],
                         "chest_unopened_img": "images/items/hidden_item.png",
                         "chest_opened_img": "images/items/hidden_item_open.png"
@@ -9066,7 +9066,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/2F_inside"
                         ]
                     },
                     {
@@ -9075,7 +9075,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/2F_inside"
                         ]
                     },
                     {
@@ -9084,7 +9084,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/2F_inside"
                         ]
                     },
                     {
@@ -9093,7 +9093,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/2F_inside"
                         ]
                     },
                     {
@@ -9102,7 +9102,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/2F_inside"
                         ]
                     },
                     {
@@ -9111,7 +9111,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/2F_inside"
                         ]
                     },
                     {
@@ -9121,7 +9121,7 @@
                             "show_items, trainersanity_1516"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/2F_inside"
                         ],
                         "chest_unopened_img": "images/trainers/super_nerd.png",
                         "chest_opened_img": "images/trainers/super_nerd_bw.png"
@@ -9132,7 +9132,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, @JohtoKanto/Mount Mortar/"
+                            "^$hid, @JohtoKanto/Mount Mortar/2F_inside"
                         ],
                         "chest_unopened_img": "images/items/hidden_item.png",
                         "chest_opened_img": "images/items/hidden_item_open.png"
@@ -9169,7 +9169,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -9178,7 +9178,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -9187,7 +9187,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -9196,7 +9196,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -9205,7 +9205,7 @@
                             "show_items"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/B1F"
                         ]
                     },
                     {
@@ -9214,7 +9214,7 @@
                             "show_items, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$hid, @JohtoKanto/Mount Mortar/"
+                            "^$hid, @JohtoKanto/Mount Mortar/B1F_back"
                         ],
                         "chest_unopened_img": "images/items/hidden_item.png",
                         "chest_opened_img": "images/items/hidden_item_open.png"
@@ -9226,7 +9226,7 @@
                             "show_items, trainersanity_1232"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/"
+                            "@JohtoKanto/Mount Mortar/B1F_back"
                         ],
                         "chest_unopened_img": "images/trainers/blackbelt.png",
                         "chest_opened_img": "images/trainers/blackbelt_bw.png"
