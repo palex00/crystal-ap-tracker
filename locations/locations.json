@@ -276,7 +276,7 @@
                 "access_rules": [
                     "start_town_Cherrygrove",
                     "@JohtoKanto/Route 29",
-                    "@JohtoKanto/Route 31",
+                    "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
                     "$can_freefly|Cherrygrove"
                 ],
                 "sections": [
@@ -576,7 +576,7 @@
                             "show_items, trainersanity_1489"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 30/Post-Mr-Pokemon"
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
                         ],
                         "chest_unopened_img": "images/trainers/blue_dude.png",
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
