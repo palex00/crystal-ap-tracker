@@ -23,7 +23,7 @@ EVOLUTION_DATA = ""
 BREEDING_DATA = ""
 CHECKED_SIGNS = ""
 UNOWN_DATA = ""
-TRADE_DATA = ""
+TRADE_DATA = nil
 
 function onClear(slot_data)
     isUpdating = true
