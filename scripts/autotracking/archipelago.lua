@@ -737,3 +737,4 @@ Archipelago:AddBouncedHandler("map handler", onMap)
 for _, code in ipairs(FLAG_STATIC_CODES) do
     ScriptHost:AddWatchForCode(code, code, updatePokemon)
 end
+ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function() updatePokemon() end)
