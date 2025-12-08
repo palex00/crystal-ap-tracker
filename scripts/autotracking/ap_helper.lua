@@ -436,6 +436,10 @@ SLOT_CODES = {
     route_42_access = {
         code = "route_42_access",
         mapping = MAP_QUADRUPLE
+    },
+    randomize_phone_call_items = {
+        code = "randomize_phone_call_items",
+        mapping = MAP_TRIPLE
     }
 }
 
