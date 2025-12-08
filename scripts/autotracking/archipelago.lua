@@ -33,6 +33,10 @@ function onClear(slot_data)
     CAUGHT = {}
     SEEN = {}
     
+    for _, code in ipairs(FLAG_STATIC_CODES) do
+        ScriptHost:RemoveWatchForCode(code)
+    end
+    
     -- this resets trainer visibility. It will cause some "cannot find object"-errors
     -- but I am not willing to make yet another list that is just a list.
     for i = 1039, 1522 do
@@ -279,6 +283,10 @@ function onClear(slot_data)
     end
 
     toggle_itemgrid()
+    
+    for _, code in ipairs(FLAG_STATIC_CODES) do
+        ScriptHost:AddWatchForCode(code, code, updatePokemon)
+    end
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -569,9 +577,23 @@ end
 
 function resetEvolutionsanityData()
     for _, evo_string in pairs(EVO_LOC_MAPPING) do
-        local breed_loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string.. "/Breed ".. evo_string)
-        if breed_loc then
-            breed_loc.AvailableChestCount = 1
+        if  evo_string ~= "Nidorina"
+        and evo_string ~= "Nidoqueen"
+        and evo_string ~= "Ditto"
+        and evo_string ~= "Pichu"
+        and evo_string ~= "Cleffa"
+        and evo_string ~= "Igglybuff"
+        and evo_string ~= "Togepi"
+        and evo_string ~= "Unown"
+        and evo_string ~= "Tyrogue"
+        and evo_string ~= "Smoochum"
+        and evo_string ~= "Elekid"
+        and evo_string ~= "Magby"
+        then
+            local breed_loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string .. "/Breed " .. evo_string)
+            if breed_loc then
+                breed_loc.AvailableChestCount = 1
+            end
         end
     end
     
@@ -712,32 +734,6 @@ Archipelago:AddSetReplyHandler("notify handler", onNotify)
 Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
 Archipelago:AddBouncedHandler("map handler", onMap)
 
-
---for _, code in ipairs(FLAG_STATIC_CODES) do
---    ScriptHost:AddWatchForCode(code, code, updatePokemon)
---end
-
-ScriptHost:AddWatchForCode("Sudowoodo", "Static_Sudowoodo", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_RedGyarados", "Static_RedGyarados", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_Ho_Oh", "Static_Ho_Oh", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_Lugia", "Static_Lugia", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_Suicune", "Static_Suicune", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_RocketHQElectrode1", "Static_RocketHQElectrode1", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_RocketHQElectrode2", "Static_RocketHQElectrode2", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_RocketHQElectrode3", "Static_RocketHQElectrode3", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_RocketHQTrap1", "Static_RocketHQTrap1", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_RocketHQTrap2", "Static_RocketHQTrap2", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_RocketHQTrap3", "Static_RocketHQTrap3", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_Shuckie", "Static_Shuckie", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_Eevee", "Static_Eevee", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_Dratini", "Static_Dratini", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_Tyrogue", "Static_Tyrogue", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_UnionCaveLapras", "Static_UnionCaveLapras", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_Celebi", "Static_Celebi", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_GoldenrodGameCorner1", "Static_GoldenrodGameCorner1", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_GoldenrodGameCorner2", "Static_GoldenrodGameCorner2", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_GoldenrodGameCorner3", "Static_GoldenrodGameCorner3", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_CeladonGameCornerPrizeRoom1", "Static_CeladonGameCornerPrizeRoom1", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_CeladonGameCornerPrizeRoom2", "Static_CeladonGameCornerPrizeRoom2", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("Static_CeladonGameCornerPrizeRoom3", "Static_CeladonGameCornerPrizeRoom3", function() updatePokemon() end)
-ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function() updatePokemon() end)
+for _, code in ipairs(FLAG_STATIC_CODES) do
+    ScriptHost:AddWatchForCode(code, code, updatePokemon)
+end
