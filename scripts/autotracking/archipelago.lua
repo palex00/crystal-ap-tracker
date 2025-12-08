@@ -60,22 +60,22 @@ function onClear(slot_data)
 
     print(dump_table(slot_data))
     
-    for k, v in pairs(slot_data) do
-        if slot_data["johto_only"] ~= nil then
-            if  k == "apworld_version" then
-                local version_str = tostring(v)
-                local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-                if first_two_dots == "5.2" or nil then
-                    Tracker:AddLayouts("layouts/tracker.json")
-                else
-                    Tracker:AddLayouts("layouts/versionmismatch.json")
-                    return
-                end
-            end
-        else
-            Tracker:AddLayouts("layouts/not_crystal.json")
-        end            
-    end
+    --for k, v in pairs(slot_data) do
+    --    if slot_data["johto_only"] ~= nil then
+    --        if  k == "apworld_version" then
+    --            local version_str = tostring(v)
+    --            local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
+    --            if first_two_dots == "5.2" or nil then
+    --                Tracker:AddLayouts("layouts/tracker.json")
+    --            else
+    --                Tracker:AddLayouts("layouts/versionmismatch.json")
+    --                return
+    --            end
+    --        end
+    --    else
+    --        Tracker:AddLayouts("layouts/not_crystal.json")
+    --    end            
+    --end
 
 
     POKEMON_TO_LOCATIONS = {}
