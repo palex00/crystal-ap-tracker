@@ -22,7 +22,7 @@ CAUGHT_ID = ""
 EVOLUTION_DATA = ""
 BREEDING_DATA = ""
 CHECKED_SIGNS = nil
-UNOWN_DATA = ""
+UNOWN_DATA = nil
 TRADE_DATA = nil
 
 function onClear(slot_data)

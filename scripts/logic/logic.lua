@@ -433,11 +433,25 @@ function train_access()
 end
 
 function unownsign(sign)
-    if CHECKED_SIGNS ~= nil then
-        if unown_goal() == true then
-            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
-            return AccessibilityLevel.Normal
-        elseif not table_contains(CHECKED_SIGNS, sign) then
+    if (CHECKED_SIGNS == nil) or (UNOWN_DATA == nil) then
+        return AccessibilityLevel.Inspect
+    end
+
+    local allChecked = true
+    for key, _ in pairs(UNOWN_DATA) do
+        if not table_contains(CHECKED_SIGNS, key) then
+            allChecked = false
+            break
+        end
+    end
+    
+    if UNOWN_DATA[sign] ~= nil then
+        local value = UNOWN_DATA[sign]
+        local letter = value:sub(#value, #value)
+    end
+    
+    if allChecked == false then
+        if not table_contains(CHECKED_SIGNS, sign) then
             return AccessibilityLevel.Inspect
         elseif not table_contains(UNOWN_DATA, sign) then
             Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
@@ -446,8 +460,6 @@ function unownsign(sign)
             Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
             return AccessibilityLevel.Normal
         else
-            local value = UNOWN_DATA[sign]
-            local letter = value:sub(#value, #value)
             if letter >= "A" and letter <= "K" then
                 if has("ENGINE_UNLOCKED_UNOWNS_A_TO_K") then
                     return AccessibilityLevel.Normal
@@ -475,7 +487,39 @@ function unownsign(sign)
             end
         end
     else
-        return AccessibilityLevel.Inspect
+        if not table_contains(UNOWN_DATA, sign) then
+            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+            return AccessibilityLevel.Normal
+        elseif has("Unown_"..letter) then
+            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+            return AccessibilityLevel.Normal
+        else
+            if letter >= "A" and letter <= "K" then
+                if has("ENGINE_UNLOCKED_UNOWNS_A_TO_K") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            elseif letter >= "L" and letter <= "R" then
+                if has("ENGINE_UNLOCKED_UNOWNS_L_TO_R") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            elseif letter >= "S" and letter <= "W" then
+                if has("ENGINE_UNLOCKED_UNOWNS_S_TO_W") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            elseif letter >= "X" and letter <= "Z" then
+                if has("ENGINE_UNLOCKED_UNOWNS_X_TO_Z") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            end
+        end        
     end
 end
 
