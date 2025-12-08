@@ -11696,6 +11696,15 @@
                         ]
                     },
                     {
+                        "name": "West Item across Water",
+                        "access_rules": [
+                            "$can_surf_johto, @JohtoKanto/New Bark Town"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
                         "name": "Sandstorm from Woman in House",
                         "access_rules": [
                             "@JohtoKanto/Route 27/Post-Waterfall, $can_surf_johto"
@@ -11707,34 +11716,16 @@
                         "chest_opened_img": "images/gift/granny_open.png"
                     },
                     {
-                        "name": "West Item across Water",
+                        "name": "Cool Trainer Megan",
                         "access_rules": [
-                            "$can_surf_johto, @JohtoKanto/New Bark Town"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "East Item behind Whirlpool",
-                        "access_rules": [
-                            "@JohtoKanto/Route 27/Post-Waterfall, $can_whirlpool"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Psychic Gilbert",
-                        "access_rules": [
-                            "@JohtoKanto/Route 27/Post-Waterfall"
+                            "@JohtoKanto/Route 27/Post-Waterfall, $can_surf_johto"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
-                            "show_items, trainersanity_1130"
+                            "show_items, trainersanity_1420"
                         ],
-                        "chest_unopened_img": "images/trainers/blue_dude.png",
-                        "chest_opened_img": "images/trainers/blue_dude_bw.png"
+                        "chest_unopened_img": "images/trainers/cool_trainer_f.png",
+                        "chest_opened_img": "images/trainers/cool_trainer_f_bw.png"
                     },
                     {
                         "name": "Cool Trainer Blake",
@@ -11761,6 +11752,18 @@
                         "chest_opened_img": "images/trainers/cool_trainer_m_bw.png"
                     },
                     {
+                        "name": "Psychic Gilbert",
+                        "access_rules": [
+                            "@JohtoKanto/Route 27/Post-Waterfall"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1130"
+                        ],
+                        "chest_unopened_img": "images/trainers/blue_dude.png",
+                        "chest_opened_img": "images/trainers/blue_dude_bw.png"
+                    },
+                    {
                         "name": "Cool Trainer Reena",
                         "access_rules": [
                             "@JohtoKanto/Route 27/Post-Waterfall"
@@ -11773,16 +11776,13 @@
                         "chest_opened_img": "images/trainers/cool_trainer_f_bw.png"
                     },
                     {
-                        "name": "Cool Trainer Megan",
+                        "name": "East Item behind Whirlpool",
                         "access_rules": [
-                            "@JohtoKanto/Route 27/Post-Waterfall, $can_surf_johto"
+                            "@JohtoKanto/Route 27/Post-Waterfall, $can_whirlpool"
                         ],
                         "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, trainersanity_1420"
-                        ],
-                        "chest_unopened_img": "images/trainers/cool_trainer_f.png",
-                        "chest_opened_img": "images/trainers/cool_trainer_f_bw.png"
+                            "show_items"
+                        ]
                     },
                     {
                         "name": "Bird Keeper Jose",
