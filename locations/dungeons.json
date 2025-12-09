@@ -3399,6 +3399,10 @@
                         "ref": "JohtoKanto/Radio Tower/5F - Studio Right Sign"
                     },
                     {
+                        "ref": "JohtoKanto/Radio Tower/5F - Unmask the False Director",
+                        "name": "5F - Unmask the False Director"
+                    },
+                    {
                         "ref": "JohtoKanto/Radio Tower/5F - False Director",
                         "name": "5F - False Director"
                     },
@@ -6818,6 +6822,10 @@
                 "name": "",
                 "sections": [
                     {
+                        "name": "5F - Unmask the False Director",
+                        "ref": "JohtoKanto/Radio Tower/5F - Unmask the False Director"
+                    },
+                    {
                         "name": "5F - False Director",
                         "ref": "JohtoKanto/Radio Tower/5F - False Director"
                     },
@@ -8233,9 +8241,14 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Nugget Grunt",
                 "sections": [
                     {
+                        "name": "Defeat the Grunt on Nugget Bridge",
+                        "ref": "JohtoKanto/Route 24/Defeat the Grunt on Nugget Bridge"
+                    },
+                    {
+                        "name": "Grunt",
                         "ref": "JohtoKanto/Route 24/Grunt"
                     }
                 ],

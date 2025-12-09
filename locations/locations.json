@@ -4722,6 +4722,16 @@
                         ]
                     },
                     {
+                        "name": "5F - Unmask the False Director",
+                        "access_rules": [
+                            "tower_requirement"
+                        ],
+                        "hosted_item": "EVENT_BEAT_ROCKET_EXECUTIVEM_3",
+                        "visibility_rules": [
+                            "show_items, goal_rocket"
+                        ]
+                    },
+                    {
                         "name": "5F - False Director",
                         "access_rules": [
                             "tower_requirement"
@@ -14587,6 +14597,13 @@
                     "johto_only_off"
                 ],
                 "sections": [
+                    {
+                        "name": "Defeat the Grunt on Nugget Bridge",
+                        "hosted_item": "EVENT_ROUTE_24_ROCKET",
+                        "visibility_rules": [
+                            "show_items, goal_rocket"
+                        ]
+                    },
                     {
                         "name": "Grunt",
                         "visibility_rules": [
