@@ -351,6 +351,16 @@
                         "chest_opened_img": "images/gift/green_guy_open.png"
                     },
                     {
+                        "name": "Beat Rival in Cherrygrove City",
+                        "access_rules": [
+                            "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
+                        ],
+                        "hosted_item": "EVENT_BEAT_CHERRYGROVE_RIVAL",
+                        "visibility_rules": [
+                            "show_items, goal_rival"
+                        ]
+                    },
+                    {
                         "name": "Rival",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -2814,6 +2824,16 @@
                         "chest_opened_img": "images/gift/bugsy_open.png"
                     },
                     {
+                        "name": "Beat Rival in Azalea Town",
+                        "access_rules": [
+                            "EVENT_CLEARED_SLOWPOKE_WELL"
+                        ],
+                        "hosted_item": "EVENT_BEAT_AZALEA_RIVAL",
+                        "visibility_rules": [
+                            "show_items, goal_rival"
+                        ]
+                    },
+                    {
                         "name": "Rival",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -4128,6 +4148,17 @@
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodUndergroundNoEntrySign, ^$dark|goldenrodunderground"
+                        ]
+                    },
+                    {
+                        "name": "B2F - Beat Rival in Goldenrod Underground",
+                        "access_rules": [
+                            "CARD_KEY",
+                            "BASEMENT_KEY, ^$dark|goldenrodunderground"
+                        ],
+                        "hosted_item": "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL",
+                        "visibility_rules": [
+                            "show_items, goal_rival"
                         ]
                     },
                     {
@@ -6108,6 +6139,13 @@
                         ],
                         "chest_unopened_img": "images/items/hidden_item.png",
                         "chest_opened_img": "images/items/hidden_item_open.png"
+                    },
+                    {
+                        "name": "1F - Beat Rival in Burned Tower",
+                        "hosted_item": "EVENT_RIVAL_BURNED_TOWER",
+                        "visibility_rules": [
+                            "show_items, goal_rival"
+                        ]
                     },
                     {
                         "name": "1F - Rival",
@@ -12167,6 +12205,16 @@
                         "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
+                        "name": "3F - Beat Rival in Victory Road",
+                        "access_rules": [
+                            "^$victory_road_access"
+                        ],
+                        "hosted_item": "EVENT_BEAT_VICTORY_ROAD_RIVAL",
+                        "visibility_rules": [
+                            "show_items, goal_rival"
+                        ]
+                    },
+                    {
                         "name": "3F - Rival",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -12230,6 +12278,16 @@
                         ],
                         "access_rules": [
                             "^$unownsign|Route23IndigoPlateauSign"
+                        ]
+                    },
+                    {
+                        "name": "Beat Rival in Indigo Plateau",
+                        "access_rules": [
+                            "EVENT_BEAT_RIVAL_IN_MT_MOON"
+                        ],
+                        "hosted_item": "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU",
+                        "visibility_rules": [
+                            "show_items, goal_rival"
                         ]
                     },
                     {
@@ -13978,11 +14036,12 @@
                         "chest_opened_img": "images/trainers/rival_bw.png"
                     },
                     {
-                        "name": "Inside - Beat Rival (Event)",
+                        "name": "Inside - Beat Rival",
                         "hosted_item": "EVENT_BEAT_RIVAL_IN_MT_MOON",
                         "visibility_rules": [
                             "show_items, trainersanity",
-                            "show_items, trainersanity_301"
+                            "show_items, trainersanity_301",
+                            "show_items, goal_rival"
                         ]
                     },
                     {

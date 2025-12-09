@@ -3178,6 +3178,10 @@
                         "name": "Super Nerd Eric"
                     },
                     {
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Beat Rival in Goldenrod Underground",
+                        "name": "B2F - Beat Rival in Goldenrod Underground"
+                    },
+                    {
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - Rival",
                         "name": "B2F - Rival"
                     },
@@ -3766,9 +3770,14 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Rival in Goldenrod Underround",
                 "sections": [
                     {
+                        "name": "B2F - Beat Rival in Goldenrod Underground",
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Beat Rival in Goldenrod Underground"
+                    },
+                    {
+                        "name": "B2F - Rival",
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - Rival"
                     }
                 ],
@@ -14802,6 +14811,10 @@
                 "name": "Indigo Plateau",
                 "sections": [
                     {
+                        "name": "Beat Rival in Indigo Plateau",
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Rival in Indigo Plateau"
+                    },
+                    {
                         "name": "Rival",
                         "ref": "JohtoKanto/Indigo Plateau/Rival"
                     },
@@ -14910,9 +14923,14 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Rival in Azalea Town",
                 "sections": [
                     {
+                        "name": "Beat Rival in Azalea Town",
+                        "ref": "JohtoKanto/Azalea Town/Beat Rival in Azalea Town"
+                    },
+                    {
+                        "name": "Rival",
                         "ref": "JohtoKanto/Azalea Town/Rival"
                     }
                 ],
@@ -14925,9 +14943,14 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Rival in Burned Tower",
                 "sections": [
                     {
+                        "name": "Beat Rival in Burned Tower",
+                        "ref": "JohtoKanto/Burned Tower/1F - Beat Rival in Burned Tower"
+                    },
+                    {
+                        "name": "Rival",
                         "ref": "JohtoKanto/Burned Tower/1F - Rival"
                     }
                 ],
@@ -14940,9 +14963,14 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Rival in Cherrygrove City",
                 "sections": [
                     {
+                        "name": "Beat Rival in Cherrygrove City",
+                        "ref": "JohtoKanto/Cherrygrove City/Beat Rival in Cherrygrove City"
+                    },
+                    {
+                        "name": "Rival",
                         "ref": "JohtoKanto/Cherrygrove City/Rival"
                     }
                 ],
@@ -15000,15 +15028,15 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Rival in Mount Moon",
                 "sections": [
+                    {
+                        "name": "Inside - Beat Rival",
+                        "ref": "JohtoKanto/Mount Moon/Inside - Beat Rival"
+                    },
                     {
                         "name": "Inside - Rival",
                         "ref": "JohtoKanto/Mount Moon/Inside - Rival"
-                    },
-                    {
-                        "name": "Inside - Beat Rival (Event)",
-                        "ref": "JohtoKanto/Mount Moon/Inside - Beat Rival (Event)"
                     }
                 ],
                 "map_locations": [
@@ -15020,9 +15048,14 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Rival in Indigo Plateau",
                 "sections": [
                     {
+                        "name": "3F - Beat Rival in Indigo Plateau",
+                        "ref": "JohtoKanto/Victory Road/3F - Beat Rival in Indigo Plateau"
+                    },
+                    {
+                        "name": "3F - Rival",
                         "ref": "JohtoKanto/Victory Road/3F - Rival"
                     }
                 ],
