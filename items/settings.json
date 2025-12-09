@@ -3445,5 +3445,25 @@
         "min_quantity": 1,
         "max_quantity": 251,
         "initial_quantity": 251
+    },
+    {
+        "name": "Route 12 Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 12: Vanilla",
+                "img": "/images/settings/route_12_access_vanilla.png",
+                "codes": "route_12_access, route_12_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 12: Weird Tree",
+                "img": "/images/settings/route_12_access_weirdtree.png",
+                "codes": "route_12_access, route_12_access_weirdtree",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

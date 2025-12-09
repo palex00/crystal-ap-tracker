@@ -15445,7 +15445,7 @@
                     "start_town_Lavender",
                     "@JohtoKanto/Saffron City, $tea|east",
                     "@JohtoKanto/Route 9, ^$dark|rocktunnel",
-                    "@JohtoKanto/Fuchsia City",
+                    "@JohtoKanto/Route 12/North",
                     "$can_freefly|Lavender",
                     "@JohtoKanto/Celadon City, $passage|ew, ew_underground_on"
                 ],
@@ -17490,7 +17490,7 @@
                 "name": "Route 11",
                 "access_rules": [
                     "@JohtoKanto/Vermilion City/City, $clear_snorlax",
-                    "@JohtoKanto/Lavender Town"
+                    "@JohtoKanto/Route 12/South"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -17622,23 +17622,41 @@
             },
             {
                 "name": "Route 12",
-                "access_rules": [
-                    "@JohtoKanto/Lavender Town"
-                ],
                 "visibility_rules": [
                     "johto_only_off"
                 ],
                 "sections": [
                     {
-                        "name": "Road Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "name": "North",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "invisible"
                         ],
                         "access_rules": [
-                            "^$unownsign|Route12"
+                            "@JohtoKanto/Lavender Town",
+                            "@JohtoKanto/Route 12/South, $r12_passage"
                         ]
+                    },
+                    {
+                        "name": "South",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 12/North, $r12_passage",
+                            "@JohtoKanto/Route 11"
+                        ]
+                    },
+                    {
+                        "name": "Fisher Kyle",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, trainersanity_1144"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 12/North"
+                        ],
+                        "chest_unopened_img": "images/trainers/fisher.png",
+                        "chest_opened_img": "images/trainers/fisher_bw.png"
                     },
                     {
                         "name": "Fishing Spot Sign",
@@ -17648,51 +17666,28 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|Route12FishingSpot"
+                            "@JohtoKanto/Route 12/North, ^$unownsign|Route12FishingSpot"
                         ]
                     },
                     {
-                        "name": "Item behind South Cut Tree across Water",
-                        "access_rules": [
-                            "$can_cut_kanto,$can_surf_kanto"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Item behind North Cut Tree",
-                        "access_rules": [
-                            "$can_cut_kanto"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "Fisher Barney",
+                        "name": "Fisher Martin",
                         "visibility_rules": [
                             "show_items, trainersanity",
-                            "show_items, trainersanity_1155"
+                            "show_items, trainersanity_1153"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 12/North"
                         ],
                         "chest_unopened_img": "images/trainers/fisher.png",
                         "chest_opened_img": "images/trainers/fisher_bw.png"
                     },
                     {
-                        "name": "Super Rod from Fishing Guru",
-                        "visibility_rules": [
-                            "show_items"
-                        ],
-                        "chest_unopened_img": "images/gift/route_12_fishing_guru.png",
-                        "chest_opened_img": "images/gift/route_12_fishing_guru_open.png"
-                    },
-                    {
                         "name": "Hidden Item on Island",
-                        "access_rules": [
-                            "$can_surf_kanto,^$hid"
-                        ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 12/North, $can_surf_kanto, ^$hid"
                         ],
                         "chest_unopened_img": "images/items/hidden_item.png",
                         "chest_opened_img": "images/items/hidden_item_open.png"
@@ -17703,26 +17698,64 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1154"
                         ],
-                        "chest_unopened_img": "images/trainers/fisher.png",
-                        "chest_opened_img": "images/trainers/fisher_bw.png"
-                    },
-                    {
-                        "name": "Fisher Martin",
-                        "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, trainersanity_1153"
+                        "access_rules": [
+                            "@JohtoKanto/Route 12/North"
                         ],
                         "chest_unopened_img": "images/trainers/fisher.png",
                         "chest_opened_img": "images/trainers/fisher_bw.png"
                     },
                     {
-                        "name": "Fisher Kyle",
+                        "name": "Road Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_items, goal_unown"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 12/North, ^$unownsign|Route12",
+                            "@JohtoKanto/Route 12/South, ^$unownsign|Route12"
+                        ]
+                    },
+                    {
+                        "name": "Super Rod from Fishing Guru",
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 12/South"
+                        ],
+                        "chest_unopened_img": "images/gift/route_12_fishing_guru.png",
+                        "chest_opened_img": "images/gift/route_12_fishing_guru_open.png"
+                    },
+                    {
+                        "name": "Fisher Barney",
                         "visibility_rules": [
                             "show_items, trainersanity",
-                            "show_items, trainersanity_1144"
+                            "show_items, trainersanity_1155"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 12/South"
                         ],
                         "chest_unopened_img": "images/trainers/fisher.png",
                         "chest_opened_img": "images/trainers/fisher_bw.png"
+                    },
+                    {
+                        "name": "Item behind North Cut Tree",
+                        "access_rules": [
+                            "@JohtoKanto/Route 12/South, $can_cut_kanto"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Item behind South Cut Tree across Water",
+                        "access_rules": [
+                            "@JohtoKanto/Route 12/South, $can_cut_kanto, $can_surf_kanto"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
                     },
                     {
                         "name": "Surf Encounters",
@@ -17734,7 +17767,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_kanto"
+                            "@JohtoKanto/Route 12/South, ^$surf_encounter_kanto"
                         ]
                     }
                 ],
@@ -17759,7 +17792,8 @@
             {
                 "name": "Route 13",
                 "access_rules": [
-                    "@JohtoKanto/Lavender Town"
+                    "@JohtoKanto/Route 12/South",
+                    "@JohtoKanto/Route 14"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -17928,7 +17962,8 @@
             {
                 "name": "Route 14",
                 "access_rules": [
-                    "@JohtoKanto/Fuchsia City"
+                    "@JohtoKanto/Route 15",
+                    "@JohtoKanto/Route 13"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -18035,7 +18070,8 @@
             {
                 "name": "Route 15",
                 "access_rules": [
-                    "@JohtoKanto/Fuchsia City"
+                    "@JohtoKanto/Fuchsia City",
+                    "@JohtoKanto/Route 14"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -18177,11 +18213,10 @@
                 "name": "Fuchsia City",
                 "access_rules": [
                     "start_town_Fuchsia",
-                    "@JohtoKanto/Lavender Town",
+                    "@JohtoKanto/Route 15",
                     "@JohtoKanto/Celadon City, BICYCLE",
                     "$can_freefly|Fuchsia",
-                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto",
-                    "@JohtoKanto/Route 11"
+                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"

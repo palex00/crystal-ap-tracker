@@ -238,6 +238,22 @@ function toggle_mountmortar()
     Tracker:AddMaps("maps/"..prefix.."r42"..suffix..".json")
 end
 
+function toggle_r12()
+    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
+    prefix = ""
+    suffix = ""
+    
+    if sudowoodo then
+        prefix = "mischief/"
+    end
+    
+    if has("route_12_access_weirdtree") then
+        suffix = "_tree"
+    end
+
+    Tracker:AddMaps("maps/"..prefix.."r12"..suffix..".json")
+end
+
 function toggle_victoryroad()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
     if has("victory_road_access_vanilla") and not sudowoodo then

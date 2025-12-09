@@ -440,6 +440,10 @@ SLOT_CODES = {
     randomize_phone_call_items = {
         code = "randomize_phone_call_items",
         mapping = MAP_TRIPLE
+    },
+    route_12_access = {
+        code = "route_12_access",
+        mapping = MAP_TOGGLE
     }
 }
 
