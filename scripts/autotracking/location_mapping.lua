@@ -179,6 +179,7 @@ LOCATION_MAPPING = {
   [281] = "@JohtoKanto/New Bark Town/Elm's Lab - Gift from Aide after returning Mystery Egg",
   [282] = "@JohtoKanto/Radio Tower/1F - Radio Card from Quiz",
   [283] = "@JohtoKanto/Cherrygrove City/Map Card from Guide",
+  [284] = "@JohtoKanto/New Bark Town/Player's House - Pokegear from Mom",
   [285] = "@JohtoKanto/Lavender Town/Radio Tower - EXPN Card",
   [286] = "@JohtoKanto/New Bark Town/Player's House - Pokegear from Mom",
   [289] = "@JohtoKanto/Celadon City/Celadon Mansion 1F - Tea from Granny",

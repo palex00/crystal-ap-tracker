@@ -75,6 +75,21 @@
                         "hosted_item": "POKE_GEAR"
                     },
                     {
+                        "name": "Player's House - Phone Card from Mom",
+                        "visibility_rules": [
+                            "show_items, pokegear_on"
+                        ],
+                        "chest_unopened_img": "images/gift/mom.png",
+                        "chest_opened_img": "images/gift/mom_open.png"
+                    },
+                    {
+                        "name": "​Player's House - Phone Card from Mom",
+                        "visibility_rules": [
+                            "show_items, pokegear_off"
+                        ],
+                        "hosted_item": "PHONE_CARD"
+                    },
+                    {
                         "name": "Elm's Lab - Potion from Aide",
                         "visibility_rules": [
                             "show_items"
