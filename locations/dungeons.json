@@ -333,7 +333,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Burned Tower/1F - Hidden Item above Rival"
+                        "ref": "JohtoKanto/Burned Tower/1F - Hidden Item above Rival",
+                        "name": "Hidden Item above Rival"
                     }
                 ],
                 "map_locations": [
@@ -348,7 +349,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Burned Tower/1F - Southeast Hidden Item"
+                        "ref": "JohtoKanto/Burned Tower/1F - Southeast Hidden Item",
+                        "name": "Southeast Hidden Item"
                     }
                 ],
                 "map_locations": [
@@ -363,7 +365,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Burned Tower/1F - Item"
+                        "ref": "JohtoKanto/Burned Tower/1F - Item",
+                        "name": "Item"
                     }
                 ],
                 "map_locations": [
@@ -621,7 +624,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Burned Tower/B1F - Item"
+                        "ref": "JohtoKanto/Burned Tower/B1F - Item",
+                        "name": "Item"
                     }
                 ],
                 "map_locations": [
@@ -636,7 +640,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Burned Tower/B1F - Released the Beasts"
+                        "ref": "JohtoKanto/Burned Tower/B1F - Released the Beasts",
+                        "name": "Released the Beasts"
                     }
                 ],
                 "map_locations": [
@@ -1127,11 +1132,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Mr. Psychic's House",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Saffron City/TM29 from Mr Psychic",
-                        "name": "Saffron City - TM29 from Mr Psychic"
+                        "name": "TM29 from Mr Psychic"
                     }
                 ],
                 "map_locations": [
@@ -2842,10 +2847,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Top Salesman",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 2F - Top Salesman - Shop Items"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 2F - Top Salesman - Shop Items",
+                        "name": "Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -2857,10 +2863,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Bottom Salesman",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 2F - Bottom Salesman - Shop Items"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 2F - Bottom Salesman - Shop Items",
+                        "name": "Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -2872,10 +2879,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "X Items Shop",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 3F - X Items Shop - Shop Items"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 3F - X Items Shop - Shop Items",
+                        "name": "Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -2887,10 +2895,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Vitamin Shop",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 4F - Vitamin Shop - Shop Items"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 4F - Vitamin Shop - Shop Items",
+                        "name": "Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -2918,10 +2927,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "TM Shop",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM Shop - Shop Items"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM Shop - Shop Items",
+                        "name": "Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -3029,10 +3039,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Vending Machine",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 6F - Vending Machine - Shop Items"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 6F - Vending Machine - Shop Items",
+                        "name": "Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -3044,10 +3055,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Rooftop Sale",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store - Rooftop Sale - Shop Items"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store - Rooftop Sale - Shop Items",
+                        "name": "Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -3059,7 +3071,7 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Receptionist",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM21 from Receptionist",
@@ -3079,7 +3091,7 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Flower Shop",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Goldenrod City/Squirtbottle from Flower Shop",
@@ -3478,7 +3490,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store B1F - Northwest Item"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store B1F - Northwest Item",
+                        "name": "Northwest Item"
                     }
                 ],
                 "map_locations": [
@@ -3493,7 +3506,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store B1F - South Item"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store B1F - South Item",
+                        "name": "South Item"
                     }
                 ],
                 "map_locations": [
@@ -3508,7 +3522,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store B1F - Southeast Item"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store B1F - Southeast Item",
+                        "name": "Southeast Item"
                     }
                 ],
                 "map_locations": [
@@ -3523,7 +3538,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Dept. Store B1F - Item behind Card Key Door"
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store B1F - Item behind Card Key Door",
+                        "name": "Item behind Card Key Door"
                     }
                 ],
                 "map_locations": [
@@ -3655,10 +3671,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Herb Shop",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Herb Shop - Shop Items"
+                        "ref": "JohtoKanto/Goldenrod Underground/Herb Shop - Shop Items",
+                        "name": "Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -3670,10 +3687,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Bargain Shop",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Bargain Shop - Shop Items"
+                        "ref": "JohtoKanto/Goldenrod Underground/Bargain Shop - Shop Items",
+                        "name": "Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -3688,7 +3706,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - East Item"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - East Item",
+                        "name": "East Item"
                     }
                 ],
                 "map_locations": [
@@ -3703,7 +3722,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Center Hidden Item"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Center Hidden Item",
+                        "name": "Center Hidden Item"
                     }
                 ],
                 "map_locations": [
@@ -3718,7 +3738,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - West Hidden Item"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - West Hidden Item",
+                        "name": "West Hidden Item"
                     }
                 ],
                 "map_locations": [
@@ -3733,7 +3754,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Southwest Item"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Southwest Item",
+                        "name": "Southwest Item"
                     }
                 ],
                 "map_locations": [
@@ -3748,7 +3770,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 2"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 2",
+                        "name": "Grunt 2"
                     }
                 ],
                 "map_locations": [
@@ -3763,7 +3786,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 3"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 3",
+                        "name": "Grunt 3"
                     }
                 ],
                 "map_locations": [
@@ -3778,7 +3802,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Burglar Duncan"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Burglar Duncan",
+                        "name": "Burglar Duncan"
                     }
                 ],
                 "map_locations": [
@@ -3793,7 +3818,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Burglar Eddie"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Burglar Eddie",
+                        "name": "Burglar Eddie"
                     }
                 ],
                 "map_locations": [
@@ -3808,11 +3834,11 @@
                 "name": "Rival in Goldenrod Underround",
                 "sections": [
                     {
-                        "name": "B2F - Beat Rival in Goldenrod Underground",
+                        "name": "Beat Rival in Goldenrod Underground",
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - Beat Rival in Goldenrod Underground"
                     },
                     {
-                        "name": "B2F - Rival",
+                        "name": "Rival",
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - Rival"
                     }
                 ],
@@ -3828,7 +3854,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 1"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 1",
+                        "name": "Grunt 1"
                     }
                 ],
                 "map_locations": [
@@ -3843,7 +3870,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 4"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Grunt 4",
+                        "name": "Grunt 4"
                     }
                 ],
                 "map_locations": [
@@ -3858,7 +3886,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Southeast Item"
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Southeast Item",
+                        "name": "Southeast Item"
                     }
                 ],
                 "map_locations": [
@@ -3873,7 +3902,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Center Item"
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Center Item",
+                        "name": "Center Item"
                     }
                 ],
                 "map_locations": [
@@ -3888,7 +3918,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Northwest Item"
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Northwest Item",
+                        "name": "Northwest Item"
                     }
                 ],
                 "map_locations": [
@@ -3903,7 +3934,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Card Key from Director"
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Card Key from Director",
+                        "name": "Card Key from Director"
                     }
                 ],
                 "map_locations": [
@@ -3918,7 +3950,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 1"
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 1",
+                        "name": "Grunt 1"
                     }
                 ],
                 "map_locations": [
@@ -3933,7 +3966,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 2"
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 2",
+                        "name": "Grunt 2"
                     }
                 ],
                 "map_locations": [
@@ -3948,7 +3982,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 3"
+                        "ref": "JohtoKanto/Goldenrod Underground/Warehouse - Grunt 3",
+                        "name": "Grunt 3"
                     }
                 ],
                 "map_locations": [
@@ -3963,7 +3998,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/1F - HM07 in Itemball"
+                        "ref": "JohtoKanto/Ice Path/1F - HM07 in Itemball",
+                        "name": "HM07 in Itemball"
                     }
                 ],
                 "map_locations": [
@@ -3978,7 +4014,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/1F - Southeast Item"
+                        "ref": "JohtoKanto/Ice Path/1F - Southeast Item",
+                        "name": "Southeast Item"
                     }
                 ],
                 "map_locations": [
@@ -3993,7 +4030,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/1F - East Item"
+                        "ref": "JohtoKanto/Ice Path/1F - East Item",
+                        "name": "East Item"
                     }
                 ],
                 "map_locations": [
@@ -4259,7 +4297,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/B1F - Hidden Item on Boulder"
+                        "ref": "JohtoKanto/Ice Path/B1F - Hidden Item on Boulder",
+                        "name": "Hidden Item on Boulder"
                     }
                 ],
                 "map_locations": [
@@ -4274,7 +4313,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/B1F - Item"
+                        "ref": "JohtoKanto/Ice Path/B1F - Item",
+                        "name": "Item"
                     }
                 ],
                 "map_locations": [
@@ -4289,7 +4329,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/B2F - Hidden Item on Boulder"
+                        "ref": "JohtoKanto/Ice Path/B2F - Hidden Item on Boulder",
+                        "name": "Hidden Item on Boulder"
                     }
                 ],
                 "map_locations": [
@@ -4304,7 +4345,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/B2F - Southeast Item"
+                        "ref": "JohtoKanto/Ice Path/B2F - Southeast Item",
+                        "name": "Southeast Item"
                     }
                 ],
                 "map_locations": [
@@ -4319,7 +4361,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/B2F - Hidden Item in Corner"
+                        "ref": "JohtoKanto/Ice Path/B2F - Hidden Item in Corner",
+                        "name": "Hidden Item in Corner"
                     }
                 ],
                 "map_locations": [
@@ -4334,7 +4377,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/B2F - Northwest Item"
+                        "ref": "JohtoKanto/Ice Path/B2F - Northwest Item",
+                        "name": "Northwest Item"
                     }
                 ],
                 "map_locations": [
@@ -4349,7 +4393,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/B2F - Center Item"
+                        "ref": "JohtoKanto/Ice Path/B2F - Center Item",
+                        "name": "Center Item"
                     }
                 ],
                 "map_locations": [
@@ -4364,7 +4409,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ice Path/B3F - Item"
+                        "ref": "JohtoKanto/Ice Path/B3F - Item",
+                        "name": "Item behind Card Key Door"
                     }
                 ],
                 "map_locations": [
@@ -5143,7 +5189,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Pokemaniac Miller"
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Pokemaniac Miller",
+                        "name": "Pokemaniac Miller"
                     }
                 ],
                 "map_locations": [
@@ -5158,7 +5205,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Southeast Item"
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Southeast Item",
+                        "name": "Southeast Item"
                     }
                 ],
                 "map_locations": [
@@ -5173,7 +5221,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Inside - West Item"
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - West Item",
+                        "name": "West Item"
                     }
                 ],
                 "map_locations": [
@@ -5188,7 +5237,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Inside - East Item"
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - East Item",
+                        "name": "East Item"
                     }
                 ],
                 "map_locations": [
@@ -5203,7 +5253,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Center Item (Left)"
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Center Item (Left)",
+                        "name": "Center Item (Left)"
                     }
                 ],
                 "map_locations": [
@@ -5218,7 +5269,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Super Nerd Markus"
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Super Nerd Markus",
+                        "name": "Super Nerd Markus"
                     }
                 ],
                 "map_locations": [
@@ -5233,7 +5285,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Northwest Item"
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Northwest Item",
+                        "name": "Northwest Item"
                     }
                 ],
                 "map_locations": [
@@ -5248,7 +5301,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Center Item (Right)"
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Center Item (Right)",
+                        "name": "Center Item (Right)"
                     }
                 ],
                 "map_locations": [
@@ -5263,7 +5317,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Inside - North Item"
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - North Item",
+                        "name": "North Item"
                     }
                 ],
                 "map_locations": [
@@ -5278,7 +5333,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Hidden Item"
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Hidden Item",
+                        "name": "Hidden Item"
                     }
                 ],
                 "map_locations": [
@@ -5293,7 +5349,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Hidden Item"
+                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Hidden Item",
+                        "name": "Hidden Item"
                     }
                 ],
                 "map_locations": [
@@ -5308,7 +5365,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Item up West Ladder"
+                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Item up West Ladder",
+                        "name": "Item up West Ladder"
                     }
                 ],
                 "map_locations": [
@@ -5323,7 +5381,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Item up East Ladder"
+                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Item up East Ladder",
+                        "name": "Item up East Ladder"
                     }
                 ],
                 "map_locations": [
@@ -5338,7 +5397,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/2F - North Item"
+                        "ref": "JohtoKanto/Mount Mortar/2F - North Item",
+                        "name": "North Item"
                     }
                 ],
                 "map_locations": [
@@ -5353,7 +5413,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/2F - Northwest Item"
+                        "ref": "JohtoKanto/Mount Mortar/2F - Northwest Item",
+                        "name": "Northwest Item"
                     }
                 ],
                 "map_locations": [
@@ -5368,7 +5429,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/2F - Northeast Item"
+                        "ref": "JohtoKanto/Mount Mortar/2F - Northeast Item",
+                        "name": "Northeast Item"
                     }
                 ],
                 "map_locations": [
@@ -5383,7 +5445,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/2F - East Item"
+                        "ref": "JohtoKanto/Mount Mortar/2F - East Item",
+                        "name": "East Item"
                     }
                 ],
                 "map_locations": [
@@ -5398,7 +5461,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/2F - Southwest Item"
+                        "ref": "JohtoKanto/Mount Mortar/2F - Southwest Item",
+                        "name": "Southwest Item"
                     }
                 ],
                 "map_locations": [
@@ -5413,7 +5477,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/2F - Center Item"
+                        "ref": "JohtoKanto/Mount Mortar/2F - Center Item",
+                        "name": "Center Item"
                     }
                 ],
                 "map_locations": [
@@ -5428,7 +5493,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/2F - Hidden Item"
+                        "ref": "JohtoKanto/Mount Mortar/2F - Hidden Item",
+                        "name": "Hidden Item"
                     }
                 ],
                 "map_locations": [
@@ -5443,7 +5509,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/2F - Super Nerd Hugh"
+                        "ref": "JohtoKanto/Mount Mortar/2F - Super Nerd Hugh",
+                        "name": "Super Nerd Hugh"
                     }
                 ],
                 "map_locations": [
@@ -5458,7 +5525,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/B1F - West Item"
+                        "ref": "JohtoKanto/Mount Mortar/B1F - West Item",
+                        "name": "West Item"
                     }
                 ],
                 "map_locations": [
@@ -5493,7 +5561,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/B1F - Southeast Item"
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Southeast Item",
+                        "name": "Southeast Item"
                     }
                 ],
                 "map_locations": [
@@ -5508,7 +5577,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/B1F - East Item"
+                        "ref": "JohtoKanto/Mount Mortar/B1F - East Item",
+                        "name": "East Item"
                     }
                 ],
                 "map_locations": [
@@ -5523,7 +5593,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/B1F - Northeast Item"
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Northeast Item",
+                        "name": "Northeast Item"
                     }
                 ],
                 "map_locations": [
@@ -5538,7 +5609,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/B1F - South Item"
+                        "ref": "JohtoKanto/Mount Mortar/B1F - South Item",
+                        "name": "South Item"
                     }
                 ],
                 "map_locations": [
@@ -5553,7 +5625,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Mount Mortar/B1F - Hidden Item on Boulder"
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Hidden Item on Boulder",
+                        "name": "Hidden item on Boulder"
                     }
                 ],
                 "map_locations": [
@@ -8909,11 +8982,11 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Gift Shop",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Mount Moon/Square - Gift Shop - Shop Items",
-                        "name": "Gift Shop - Shop Items"
+                        "name": "Shop Items"
                     }
                 ],
                 "map_locations": [
@@ -10363,7 +10436,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Whirl Islands/Lugia Chamber - Lugia"
+                        "ref": "JohtoKanto/Whirl Islands/Lugia Chamber - Lugia",
+                        "name": "Lugia"
                     }
                 ],
                 "map_locations": [
@@ -11473,7 +11547,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ruins of Alph/Outside - Psychic Nathan"
+                        "ref": "JohtoKanto/Ruins of Alph/Outside - Psychic Nathan",
+                        "name": "Psychic Nathan"
                     }
                 ],
                 "map_locations": [
@@ -11552,7 +11627,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/2F - North Chamber Item"
+                        "ref": "JohtoKanto/Silver Cave/2F - North Chamber Item",
+                        "name": "North Chamber Item"
                     }
                 ],
                 "map_locations": [
@@ -11567,7 +11643,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/2F - South Chamber Item"
+                        "ref": "JohtoKanto/Silver Cave/2F - South Chamber Item",
+                        "name": "South Chamber Item"
                     }
                 ],
                 "map_locations": [
@@ -11582,7 +11659,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/Outside - Hidden Item across Water"
+                        "ref": "JohtoKanto/Silver Cave/Outside - Hidden Item across Water",
+                        "name": "Hidden Item across Water"
                     }
                 ],
                 "map_locations": [
@@ -11597,7 +11675,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/1F - Southwest Item"
+                        "ref": "JohtoKanto/Silver Cave/1F - Southwest Item",
+                        "name": "Southwest Item"
                     }
                 ],
                 "map_locations": [
@@ -11612,7 +11691,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/1F - Southeast Hidden Item"
+                        "ref": "JohtoKanto/Silver Cave/1F - Southeast Hidden Item",
+                        "name": "Southeast Hidden Item"
                     }
                 ],
                 "map_locations": [
@@ -11627,7 +11707,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/1F - Northeast Hidden Item"
+                        "ref": "JohtoKanto/Silver Cave/1F - Northeast Hidden Item",
+                        "name": "Northeast Hidden Item"
                     }
                 ],
                 "map_locations": [
@@ -11642,7 +11723,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/1F - Northwest Item"
+                        "ref": "JohtoKanto/Silver Cave/1F - Northwest Item",
+                        "name": "Northwest Item"
                     }
                 ],
                 "map_locations": [
@@ -11657,7 +11739,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/1F - Southeast Item"
+                        "ref": "JohtoKanto/Silver Cave/1F - Southeast Item",
+                        "name": "Southeast Item"
                     }
                 ],
                 "map_locations": [
@@ -11672,7 +11755,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/1F - Center Item"
+                        "ref": "JohtoKanto/Silver Cave/1F - Center Item",
+                        "name": "Center Item"
                     }
                 ],
                 "map_locations": [
@@ -11687,7 +11771,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/2F - Northeast Item"
+                        "ref": "JohtoKanto/Silver Cave/2F - Northeast Item",
+                        "name": "Northeast Item"
                     }
                 ],
                 "map_locations": [
@@ -11702,7 +11787,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/2F - Hidden Item"
+                        "ref": "JohtoKanto/Silver Cave/2F - Hidden Item",
+                        "name": "Hidden Item"
                     }
                 ],
                 "map_locations": [
@@ -11717,7 +11803,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/2F - West Item"
+                        "ref": "JohtoKanto/Silver Cave/2F - West Item",
+                        "name": "West Item"
                     }
                 ],
                 "map_locations": [
@@ -11732,7 +11819,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Silver Cave/2F - East Item"
+                        "ref": "JohtoKanto/Silver Cave/2F - East Item",
+                        "name": "East Item"
                     }
                 ],
                 "map_locations": [
@@ -14929,7 +15017,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Fuchsia City/Gym - Lass Linda"
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Lass Linda",
+                        "name": "Lass Linda"
                     }
                 ],
                 "map_locations": [
@@ -14944,7 +15033,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Fuchsia City/Gym - Picnicker Cindy"
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Picnicker Cindy",
+                        "name": "Picnicker Cindy"
                     }
                 ],
                 "map_locations": [
@@ -14959,7 +15049,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Fuchsia City/Gym - Camper Barry"
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Camper Barry",
+                        "name": "Camper Barry"
                     }
                 ],
                 "map_locations": [
@@ -15018,7 +15109,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Fuchsia City/Gym - Lass Alice"
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Lass Alice",
+                        "name": "Lass Alice"
                     }
                 ],
                 "map_locations": [
@@ -15179,7 +15271,8 @@
                 "name": "",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/S.S. Aqua/1F - Sailor Stanly"
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Sailor Stanly",
+                        "name": "Sailor Stanly"
                     }
                 ],
                 "map_locations": [
