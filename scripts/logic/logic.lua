@@ -444,16 +444,17 @@ function unownsign(sign)
             break
         end
     end
-    
+    local value = nil
+    local letter = nil
     if UNOWN_DATA[sign] ~= nil then
-        local value = UNOWN_DATA[sign]
-        local letter = value:sub(#value, #value)
+        value = UNOWN_DATA[sign]
+        letter = value:sub(#value, #value)
     end
     
     if allChecked == false then
         if not table_contains(CHECKED_SIGNS, sign) then
             return AccessibilityLevel.Inspect
-        elseif not table_contains(UNOWN_DATA, sign) then
+        elseif not UNOWN_DATA[sign] then
             Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
             return AccessibilityLevel.Normal
         elseif has("Unown_"..letter) then
