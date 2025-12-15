@@ -488,7 +488,7 @@ function unownsign(sign)
             end
         end
     else
-        if not table_contains(UNOWN_DATA, sign) then
+        if not UNOWN_DATA[sign] then
             Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
             return AccessibilityLevel.Normal
         elseif has("Unown_"..letter) then
