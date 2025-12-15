@@ -554,3 +554,7 @@ end
 function diplomagoal()
     return CAUGHT_COUNT <= Tracker:FindObjectForCode("diploma_goal_count").AcquiredCount
 end
+
+function r12_passage()
+    return has("SQUIRTBOTTLE") or has("route_12_access_vanilla")
+end
