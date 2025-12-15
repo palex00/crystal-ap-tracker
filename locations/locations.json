@@ -8816,7 +8816,7 @@
                             "@JohtoKanto/Mount Mortar/1F_outside_east, ^$dark|mountmortar",
                             "@JohtoKanto/Mount Mortar/3F_outside_west",
                             "@JohtoKanto/Mount Mortar/3F_outside_east",
-                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall, route_42_access_whirlchanges, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -8878,7 +8878,7 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Mount Mortar/1F_outside_center, $can_surf_johto",
-                            "@JohtoKanto/Mount Mortar/1F_inside_front"
+                            "@JohtoKanto/Mount Mortar/1F_inside_front, route_42_access_whirlchanges"
                         ]
                     },
                     {
