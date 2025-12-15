@@ -10175,6 +10175,12 @@
                         ]
                     },
                     {
+                        "name": "Magikarp Prize",
+                        "visibility_rules": [
+                            "randomize_pokemon_requests_true"
+                        ]
+                    },
+                    {
                         "name": "Hidden Item in West Path",
                         "access_rules": [
                             "^$hid"

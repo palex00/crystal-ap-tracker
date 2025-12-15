@@ -200,6 +200,7 @@ LOCATION_MAPPING = {
   [311] = "@JohtoKanto/National Park/Bug Catching Contest - Consolation Prize",
   [312] = "@JohtoKanto/National Park/Bug Catching Contest - Second or Third Place Prize",
   [313] = "@JohtoKanto/National Park/Bug Catching Contest - Participation Prize",
+  [317] = "@JohtoKanto/Lake of Rage/Magikarp Prize",
   [522] = "@JohtoKanto/Route 25/Bill's Grandpa - Pokémon Request Rewards",
   [523] = "@JohtoKanto/Route 25/Bill's Grandpa - Pokémon Request Rewards",
   [524] = "@JohtoKanto/Route 25/Bill's Grandpa - Pokémon Request Rewards",
