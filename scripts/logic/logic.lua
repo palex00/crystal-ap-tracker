@@ -449,6 +449,7 @@ function unownsign(sign)
     if UNOWN_DATA[sign] ~= nil then
         value = UNOWN_DATA[sign]
         letter = value:sub(#value, #value)
+        letter = string.byte(letter) - string.byte("A") + 1
     end
     
     if allChecked == false then
@@ -457,29 +458,29 @@ function unownsign(sign)
         elseif not UNOWN_DATA[sign] then
             Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
             return AccessibilityLevel.Normal
-        elseif has("Unown_"..letter) then
+        elseif has("UNOWN_"..letter) then
             Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
             return AccessibilityLevel.Normal
         else
-            if letter >= "A" and letter <= "K" then
+            if letter >= 1 and letter <= 11 then
                 if has("ENGINE_UNLOCKED_UNOWNS_A_TO_K") then
                     return AccessibilityLevel.Normal
                 else
                     return AccessibilityLevel.None
                 end
-            elseif letter >= "L" and letter <= "R" then
+            elseif letter >= 12 and letter <= 18 then
                 if has("ENGINE_UNLOCKED_UNOWNS_L_TO_R") then
                     return AccessibilityLevel.Normal
                 else
                     return AccessibilityLevel.None
                 end
-            elseif letter >= "S" and letter <= "W" then
+            elseif letter >= 19 and letter <= 23 then
                 if has("ENGINE_UNLOCKED_UNOWNS_S_TO_W") then
                     return AccessibilityLevel.Normal
                 else
                     return AccessibilityLevel.None
                 end
-            elseif letter >= "X" and letter <= "Z" then
+            elseif letter >= 24 and letter <= 26 then
                 if has("ENGINE_UNLOCKED_UNOWNS_X_TO_Z") then
                     return AccessibilityLevel.Normal
                 else
@@ -491,29 +492,29 @@ function unownsign(sign)
         if not UNOWN_DATA[sign] then
             Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
             return AccessibilityLevel.Normal
-        elseif has("Unown_"..letter) then
+        elseif has("UNOWN_"..letter) then
             Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
             return AccessibilityLevel.Normal
         else
-            if letter >= "A" and letter <= "K" then
+            if letter >= 1 and letter <= 11 then
                 if has("ENGINE_UNLOCKED_UNOWNS_A_TO_K") then
                     return AccessibilityLevel.Normal
                 else
                     return AccessibilityLevel.None
                 end
-            elseif letter >= "L" and letter <= "R" then
+            elseif letter >= 12 and letter <= 18 then
                 if has("ENGINE_UNLOCKED_UNOWNS_L_TO_R") then
                     return AccessibilityLevel.Normal
                 else
                     return AccessibilityLevel.None
                 end
-            elseif letter >= "S" and letter <= "W" then
+            elseif letter >= 19 and letter <= 23 then
                 if has("ENGINE_UNLOCKED_UNOWNS_S_TO_W") then
                     return AccessibilityLevel.Normal
                 else
                     return AccessibilityLevel.None
                 end
-            elseif letter >= "X" and letter <= "Z" then
+            elseif letter >= 24 and letter <= 26 then
                 if has("ENGINE_UNLOCKED_UNOWNS_X_TO_Z") then
                     return AccessibilityLevel.Normal
                 else

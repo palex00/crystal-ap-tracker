@@ -373,6 +373,8 @@ function onNotify(key, value, old_value)
             Tracker:FindObjectForCode("dummy").Active = false
         elseif key == UNOWN_ID then
             updateUnown(value)
+            Tracker:FindObjectForCode("dummy").Active = true
+            Tracker:FindObjectForCode("dummy").Active = false
         end
     end
 end
@@ -401,6 +403,8 @@ function onNotifyLaunch(key, value)
             Tracker:FindObjectForCode("dummy").Active = false
         elseif key == UNOWN_ID then
             updateUnown(value)
+            Tracker:FindObjectForCode("dummy").Active = true
+            Tracker:FindObjectForCode("dummy").Active = false
         end
     end
 end
