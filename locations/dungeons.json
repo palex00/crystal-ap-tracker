@@ -1936,8 +1936,8 @@
                         "name": "Phone Card from Mom"
                     },
                     {
-                        "ref": "JohtoKanto/New Bark Town/Player's House - Phone Card from Mom",
-                        "name": "Phone Card from Mom"
+                        "ref": "JohtoKanto/New Bark Town/​Player's House - Phone Card from Mom",
+                        "name": "Phone Card from Mom​"
                     }
                 ],
                 "map_locations": [
@@ -4626,7 +4626,24 @@
                 ]
             },
             {
+
+                "name": "Magikarp House",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Magikarp Prize"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "x": 440,
+                        "y": 504
+                    }
+                ]
+            },
+            {
                 "name": "Lake of Rage",
+
                 "sections": [
                     {
                         "ref": "JohtoKanto/Lake of Rage/Cool Trainer Aaron"

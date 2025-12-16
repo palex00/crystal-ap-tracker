@@ -75,6 +75,21 @@
                         "hosted_item": "POKE_GEAR"
                     },
                     {
+                        "name": "Player's House - Phone Card from Mom",
+                        "visibility_rules": [
+                            "show_items, pokegear_on"
+                        ],
+                        "chest_unopened_img": "images/gift/mom.png",
+                        "chest_opened_img": "images/gift/mom_open.png"
+                    },
+                    {
+                        "name": "​Player's House - Phone Card from Mom",
+                        "visibility_rules": [
+                            "show_items, pokegear_off"
+                        ],
+                        "hosted_item": "PHONE_CARD"
+                    },
+                    {
                         "name": "Elm's Lab - Potion from Aide",
                         "visibility_rules": [
                             "show_items"
@@ -8801,7 +8816,8 @@
                             "@JohtoKanto/Mount Mortar/1F_outside_east, ^$dark|mountmortar",
                             "@JohtoKanto/Mount Mortar/3F_outside_west",
                             "@JohtoKanto/Mount Mortar/3F_outside_east",
-                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall, route_42_access_whirlchanges, ^$dark|mountmortar",,
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall, route_42_access_blocked, ^$dark|mountmortar"
                         ]
                     },
                     {
@@ -8863,7 +8879,8 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Mount Mortar/1F_outside_center, $can_surf_johto",
-                            "@JohtoKanto/Mount Mortar/1F_inside_front"
+                            "@JohtoKanto/Mount Mortar/1F_inside_front, route_42_access_whirlchanges",
+                            "@JohtoKanto/Mount Mortar/1F_inside_front, route_42_access_blocked"
                         ]
                     },
                     {
@@ -8920,7 +8937,8 @@
                             "invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Mount Mortar/2F_outside, ^$dark|mountmortar"
+                            "@JohtoKanto/Mount Mortar/2F_outside, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/1F_inside_back"
                         ]
                     },
                     {
@@ -10157,6 +10175,15 @@
                         ],
                         "access_rules": [
                             "^$unownsign|MagikarpHouse"
+                        ]
+                    },
+                    {
+                        "name": "Magikarp Prize",
+                        "visibility_rules": [
+                            "randomize_pokemon_requests_true"
+                        ],
+                        "access_rules": [
+                            "EVENT_CLEARED_ROCKET_HIDEOUT"
                         ]
                     },
                     {
@@ -17643,7 +17670,8 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 12/North, $r12_passage",
-                            "@JohtoKanto/Route 11"
+                            "@JohtoKanto/Route 11",
+                            "@JohtoKanto/Route 13"
                         ]
                     },
                     {

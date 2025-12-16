@@ -221,7 +221,7 @@ function toggle_mountmortar()
         suffix = "rocksmash"
     end
     
-    if has("route_42_access_whirlchanges") then
+    if has("route_42_access_whirlchanges") or has("route_42_access_blocked") then
         suffix = suffix.."_hole"
     end
     

@@ -169,6 +169,10 @@ STARTTOWN_MAPPING = {
 }
 
 SLOT_CODES = {
+    enable_mischief = {
+        code = "mischief",
+        mapping = MAP_TOGGLE
+    },
     goal = {
         code = "goal",
         mapping = MAP_SIXTUPLE
@@ -260,10 +264,6 @@ SLOT_CODES = {
     undergrounds_require_power = {
         code = "underground_power",
         mapping = MAP_QUADRUPLE
-    },
-    enable_mischief = {
-        code = "mischief",
-        mapping = MAP_TOGGLE
     },
     route_2_access = {
         code = "route_2_access",

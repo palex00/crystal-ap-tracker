@@ -130,7 +130,7 @@ FLAG_ITEM_CODES = {
 
   {option="pokegear_off", codes={"RADIO_CARD"}},
   {option="pokegear_off", codes={"MAP_CARD"}},
-  {option="pokegear_off", codes=nil},
+  {option="pokegear_off", codes={"PHONE_CARD"}},
   {option="pokegear_off", codes={"EXPN_CARD"}},
   {option="pokegear_off", codes={"POKE_GEAR"}},
   {option="pokegear_off", codes=nil},
