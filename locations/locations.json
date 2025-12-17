@@ -484,7 +484,9 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/hiker.png",
+                        "chest_opened_img": "images/gift/hiker_open.png"
                     },
                     {
                         "name": "Berry Tree 1",
@@ -1942,8 +1944,8 @@
                         "visibility_rules": [
                             "show_items"
                         ],
-                        "chest_unopened_img": "images/gift/fishing_guru.png",
-                        "chest_opened_img": "images/gift/fishing_guru_open.png"
+                        "chest_unopened_img": "images/gift/green_fishing_guru.png",
+                        "chest_opened_img": "images/gift/green_fishing_guru_open.png"
                     },
                     {
                         "name": "Bird Keeper Peter",
@@ -2442,8 +2444,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1332"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "B1F - Item",
@@ -2457,8 +2459,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1335"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_f.png",
+                        "chest_opened_img": "images/trainers/rocket_f_bw.png"
                     },
                     {
                         "name": "B1F - Grunt 3",
@@ -2466,8 +2468,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1305"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "B1F - Grunt 4",
@@ -2475,8 +2477,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1304"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "B1F - Cleared Slowpoke Well",
@@ -4199,8 +4201,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1316"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "B2F - Grunt 2",
@@ -4212,8 +4214,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1314"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "B2F - Grunt 3",
@@ -4225,8 +4227,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1328"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "B2F - West Hidden Item",
@@ -4308,8 +4310,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1337"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_f.png",
+                        "chest_opened_img": "images/trainers/rocket_f_bw.png"
                     },
                     {
                         "name": "Warehouse - Northwest Item",
@@ -4331,8 +4333,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1317"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "Warehouse - Southeast Item",
@@ -4354,8 +4356,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1318"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "Warehouse - Grunt 1",
@@ -4367,8 +4369,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1327"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "Warehouse - Card Key from Director",
@@ -4463,8 +4465,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1306"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "2F - Oak's PKMN Talk Sign",
@@ -4555,8 +4557,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1336"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_f.png",
+                        "chest_opened_img": "images/trainers/rocket_f_bw.png"
                     },
                     {
                         "name": "2F - Grunt 2",
@@ -4567,8 +4569,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1308"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "2F - Grunt 3",
@@ -4579,8 +4581,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1309"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "2F - Grunt 4",
@@ -4591,8 +4593,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1307"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "3F - Personnel Sign",
@@ -4625,8 +4627,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1310"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "3F - Grunt 2",
@@ -4637,8 +4639,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1311"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "3F - Scientist Marc",
@@ -4672,8 +4674,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1312"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "4F - Production Sign",
@@ -4718,8 +4720,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1313"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "4F - Rocket Executive",
@@ -4730,8 +4732,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1433"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "4F - Grunt 2",
@@ -4742,8 +4744,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1338"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_f.png",
+                        "chest_opened_img": "images/trainers/rocket_f_bw.png"
                     },
                     {
                         "name": "4F - Pink Bow from Mary",
@@ -4831,8 +4833,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1430"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_f.png",
+                        "chest_opened_img": "images/trainers/rocket_f_bw.png"
                     },
                     {
                         "name": "5F - Rocket Executive 2",
@@ -4843,8 +4845,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1432"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "5F - Clear Bell from Director",
@@ -7102,8 +7104,8 @@
                         "visibility_rules": [
                             "show_items"
                         ],
-                        "chest_unopened_img": "images/gift/fishing_guru.png",
-                        "chest_opened_img": "images/gift/fishing_guru_open.png"
+                        "chest_unopened_img": "images/gift/green_fishing_guru.png",
+                        "chest_opened_img": "images/gift/green_fishing_guru_open.png"
                     },
                     {
                         "name": "Poke Mart - Shop Items",
@@ -7422,7 +7424,9 @@
                         "name": "Metal Coat from Grandpa",
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/gentleman.png",
+                        "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
                         "name": "1F - Beauty Cassie (Eastbound)",
@@ -9571,8 +9575,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1319"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "Rocket HQ B1F - West Hidden Item",
@@ -9666,8 +9670,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1322"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "Rocket HQ B2F - Grunt 1",
@@ -9678,8 +9682,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1320"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "Rocket HQ B2F - Hidden Item",
@@ -9701,8 +9705,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1321"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "Rocket HQ B2F - Rocket Executive",
@@ -9713,8 +9717,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1431"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_f.png",
+                        "chest_opened_img": "images/trainers/rocket_f_bw.png"
                     },
                     {
                         "name": "Rocket HQ B2F - Item",
@@ -9799,8 +9803,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1339"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_f.png",
+                        "chest_opened_img": "images/trainers/rocket_f_bw.png"
                     },
                     {
                         "name": "Rocket HQ B3F - North Item",
@@ -9832,8 +9836,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1331"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "Rocket HQ B3F - West Item (Right)",
@@ -9871,8 +9875,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1435"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "Rocket HQ B2F - Clear Rocket HQ",
@@ -10184,7 +10188,9 @@
                         ],
                         "access_rules": [
                             "EVENT_CLEARED_ROCKET_HIDEOUT"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/blue_fishing_guru.png",
+                        "chest_opened_img": "images/gift/blue_fishing_guru_open.png"
                     },
                     {
                         "name": "Hidden Item in West Path",
@@ -10290,8 +10296,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1149"
                         ],
-                        "chest_unopened_img": "images/trainers/fisher.png",
-                        "chest_opened_img": "images/trainers/fisher_bw.png"
+                        "chest_unopened_img": "images/trainers/blue_fisher.png",
+                        "chest_opened_img": "images/trainers/blue_fisher_bw.png"
                     },
                     {
                         "name": "Fisher Andre",
@@ -10299,8 +10305,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1148"
                         ],
-                        "chest_unopened_img": "images/trainers/fisher.png",
-                        "chest_opened_img": "images/trainers/fisher_bw.png"
+                        "chest_unopened_img": "images/trainers/blue_fisher.png",
+                        "chest_opened_img": "images/trainers/blue_fisher_bw.png"
                     },
                     {
                         "name": "Cool Trainer Lois",
@@ -12447,7 +12453,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/gift/radio_tower_woman.png",
+                        "chest_opened_img": "images/gift/radio_tower_woman_open.png"
                     },
                     {
                         "name": "Hidden Item behind Cut Tree",
@@ -14696,8 +14704,8 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1334"
                         ],
-                        "chest_unopened_img": "images/trainers/rocket.png",
-                        "chest_opened_img": "images/trainers/rocket_bw.png"
+                        "chest_unopened_img": "images/trainers/rocket_m.png",
+                        "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
                         "name": "Grass",
@@ -15140,7 +15148,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "1F - East Item",
+                        "name": "1F - West Item",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -15264,8 +15272,8 @@
                         "visibility_rules": [
                             "show_items"
                         ],
-                        "chest_unopened_img": "images/gift/green_guy.png",
-                        "chest_opened_img": "images/gift/green_guy_open.png"
+                        "chest_unopened_img": "images/gift/red_guy.png",
+                        "chest_opened_img": "images/gift/red_guy_open.png"
                     },
                     {
                         "name": "Restore Power to Kanto",
@@ -17752,8 +17760,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 12/South"
                         ],
-                        "chest_unopened_img": "images/gift/route_12_fishing_guru.png",
-                        "chest_opened_img": "images/gift/route_12_fishing_guru_open.png"
+                        "chest_unopened_img": "images/gift/red_fishing_guru.png",
+                        "chest_opened_img": "images/gift/red_fishing_guru_open.png"
                     },
                     {
                         "name": "Fisher Barney",
