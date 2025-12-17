@@ -59,6 +59,10 @@ function onClear(slot_data)
         end
     end
 
+    for _, code in ipairs(FLAG_TRADE_CODES) do
+        Tracker:FindObjectForCode(code).Active = false
+    end
+
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
 
@@ -244,7 +248,6 @@ function onClear(slot_data)
         updateStatics(0)
         updateRocketTraps(0)
         updateVanillaKeyItems(0)
-        updateTrade(0)
         
         EVENT_ID="pokemon_crystal_events_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({EVENT_ID})
@@ -498,18 +501,16 @@ end
 
 function updateTrades(value)
     if value ~= nil then
-        for i, code in ipairs(FLAG_TRADE_CODES) do
-            local obj = Tracker:FindObjectForCode(code)
-            if obj ~= nil then
-                obj.Active = false
-            end
-            local bit = value >> (i - 1) & 1
-            if #code > 0 then
+        for _, intVal in ipairs(value) do
+            local code = FLAG_TRADE_CODES[intVal + 1]
+            if code then
                 local obj = Tracker:FindObjectForCode(code)
-                obj.Active = obj.Active or bit == 1
+                if obj then
+                    obj.Active = true
+                end
             end
         end
-    end
+   end
 end
 
 
