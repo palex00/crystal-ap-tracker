@@ -110,6 +110,16 @@ FLAG_ROCKETTRAPS_CODES = {
     "Static_RocketHQTrap1"
 }
 
+FLAG_TRADE_CODES = {
+    "TRADE_MIKE",
+    "TRADE_KYLE",
+    "TRADE_TIM",
+    "TRADE_EMY",
+    "TRADE_CHRIS",
+    "TRADE_KIM",
+    "TRADE_FOREST"
+}
+
 FLAG_ITEM_CODES = {
   {option="badges_off", codes={"ZEPHYR_BADGE"}},
   {option="badges_off", codes={"HIVE_BADGE"}},

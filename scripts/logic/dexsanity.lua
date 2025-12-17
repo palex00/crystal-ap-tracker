@@ -226,6 +226,8 @@ function trade(person)
         else
             return AccessibilityLevel.SequenceBreak
         end
+    else
+        return AccessibilityLevel.Inspect
     end
 end
 
