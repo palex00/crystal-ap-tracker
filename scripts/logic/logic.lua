@@ -19,6 +19,60 @@ function badges()
   Tracker:ProviderCountForCode("EARTH_BADGE")
 end
 
+function johtobadges()
+  return
+  Tracker:ProviderCountForCode("ZEPHYR_BADGE") +
+  Tracker:ProviderCountForCode("HIVE_BADGE") +
+  Tracker:ProviderCountForCode("PLAIN_BADGE") +
+  Tracker:ProviderCountForCode("FOG_BADGE") +
+  Tracker:ProviderCountForCode("STORM_BADGE") +
+  Tracker:ProviderCountForCode("MINERAL_BADGE") +
+  Tracker:ProviderCountForCode("GLACIER_BADGE") +
+  Tracker:ProviderCountForCode("RISING_BADGE")
+end
+
+function kantobadges()
+  return
+  Tracker:ProviderCountForCode("BOULDER_BADGE") +
+  Tracker:ProviderCountForCode("CASCADE_BADGE") +
+  Tracker:ProviderCountForCode("THUNDER_BADGE") +
+  Tracker:ProviderCountForCode("RAINBOW_BADGE") +
+  Tracker:ProviderCountForCode("SOUL_BADGE") +
+  Tracker:ProviderCountForCode("MARSH_BADGE") +
+  Tracker:ProviderCountForCode("VOLCANO_BADGE") +
+  Tracker:ProviderCountForCode("EARTH_BADGE")
+end
+
+function unown_goal()
+  return((
+  Tracker:ProviderCountForCode("UNOWN_1") +
+  Tracker:ProviderCountForCode("UNOWN_2") +
+  Tracker:ProviderCountForCode("UNOWN_3") +
+  Tracker:ProviderCountForCode("UNOWN_4") +
+  Tracker:ProviderCountForCode("UNOWN_5") +
+  Tracker:ProviderCountForCode("UNOWN_6") +
+  Tracker:ProviderCountForCode("UNOWN_7") +
+  Tracker:ProviderCountForCode("UNOWN_8") +
+  Tracker:ProviderCountForCode("UNOWN_9") +
+  Tracker:ProviderCountForCode("UNOWN_10") +
+  Tracker:ProviderCountForCode("UNOWN_11") +
+  Tracker:ProviderCountForCode("UNOWN_12") +
+  Tracker:ProviderCountForCode("UNOWN_13") +
+  Tracker:ProviderCountForCode("UNOWN_14") +
+  Tracker:ProviderCountForCode("UNOWN_15") +
+  Tracker:ProviderCountForCode("UNOWN_16") +
+  Tracker:ProviderCountForCode("UNOWN_17") +
+  Tracker:ProviderCountForCode("UNOWN_18") +
+  Tracker:ProviderCountForCode("UNOWN_19") +
+  Tracker:ProviderCountForCode("UNOWN_20") +
+  Tracker:ProviderCountForCode("UNOWN_21") +
+  Tracker:ProviderCountForCode("UNOWN_22") +
+  Tracker:ProviderCountForCode("UNOWN_23") +
+  Tracker:ProviderCountForCode("UNOWN_24") +
+  Tracker:ProviderCountForCode("UNOWN_25") +
+  Tracker:ProviderCountForCode("UNOWN_26")) == 26)
+end
+
 gym_codes = {
     "EVENT_BEAT_FALKNER",
     "EVENT_BEAT_BUGSY",
@@ -153,8 +207,18 @@ function can_waterfall()
   -- this is hardcoded to Johto because Kanto does currently not have waterfalls
 end
 
-function can_rocksmash()
-  return has("TM_ROCK_SMASH")
+function mm_rocksmash()
+    return (has("TM_ROCK_SMASH") or has("mount_mortar_access_vanilla"))
+end
+
+function route42_passage()
+    if has("route_42_access_vanilla") then
+        return can_surf_johto()
+    elseif (has("route_42_access_whirlpool") or has("route_42_access_whirlchanges")) then
+        return can_whirlpool()
+    else
+        return false
+    end
 end
 
 function fly_badge()
@@ -187,7 +251,7 @@ function clear_snorlax()
 end
 
 function all_badges()
-  return badges() > 15
+    return kantobadges() == 8
 end
 
 function silver_cave()
@@ -346,4 +410,152 @@ function kantogymlock()
             return AccessibilityLevel.SequenceBreak
         end
     end
+end
+
+function boat_access()
+    if has("ss_aqua_access_vanilla") and has("S_S_TICKET") then
+        return true
+    elseif has("ss_aqua_access_amphy") and has("S_S_TICKET") and has("EVENT_JASMINE_RETURNED_TO_GYM") then
+        return true
+    else
+        return false    
+    end
+end
+
+function train_access()
+    if has("magnet_train_access_vanilla") and has("PASS") then
+        return true
+    elseif has("magnet_train_access_power") and has("PASS") and has("EVENT_RESTORED_POWER_TO_KANTO") then
+        return true
+    else
+        return false    
+    end
+end
+
+function unownsign(sign)
+    if (CHECKED_SIGNS == nil) or (UNOWN_DATA == nil) then
+        return AccessibilityLevel.Inspect
+    end
+
+    local allChecked = true
+    for key, _ in pairs(UNOWN_DATA) do
+        if not table_contains(CHECKED_SIGNS, key) then
+            allChecked = false
+            break
+        end
+    end
+    local value = nil
+    local letter = nil
+    if UNOWN_DATA[sign] ~= nil then
+        value = UNOWN_DATA[sign]
+        letter = value:sub(#value, #value)
+        letter = string.byte(letter) - string.byte("A") + 1
+    end
+    
+    if allChecked == false then
+        if not table_contains(CHECKED_SIGNS, sign) then
+            return AccessibilityLevel.Inspect
+        elseif not UNOWN_DATA[sign] then
+            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+            return AccessibilityLevel.Normal
+        elseif has("UNOWN_"..letter) then
+            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+            return AccessibilityLevel.Normal
+        else
+            if letter >= 1 and letter <= 11 then
+                if has("ENGINE_UNLOCKED_UNOWNS_A_TO_K") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            elseif letter >= 12 and letter <= 18 then
+                if has("ENGINE_UNLOCKED_UNOWNS_L_TO_R") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            elseif letter >= 19 and letter <= 23 then
+                if has("ENGINE_UNLOCKED_UNOWNS_S_TO_W") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            elseif letter >= 24 and letter <= 26 then
+                if has("ENGINE_UNLOCKED_UNOWNS_X_TO_Z") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            end
+        end
+    else
+        if not UNOWN_DATA[sign] then
+            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+            return AccessibilityLevel.Normal
+        elseif has("UNOWN_"..letter) then
+            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+            return AccessibilityLevel.Normal
+        else
+            if letter >= 1 and letter <= 11 then
+                if has("ENGINE_UNLOCKED_UNOWNS_A_TO_K") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            elseif letter >= 12 and letter <= 18 then
+                if has("ENGINE_UNLOCKED_UNOWNS_L_TO_R") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            elseif letter >= 19 and letter <= 23 then
+                if has("ENGINE_UNLOCKED_UNOWNS_S_TO_W") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            elseif letter >= 24 and letter <= 26 then
+                if has("ENGINE_UNLOCKED_UNOWNS_X_TO_Z") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            end
+        end        
+    end
+end
+
+function phonecard()
+    if has("PHONE_CARD") and has("POKE_GEAR") then
+        return AccessibilityLevel.Normal
+    elseif has("PHONE_CARD") and has("require_pokegear_for_phone_numbers_false") then
+        return AccessibilityLevel.SequenceBreak    
+    else
+        return AccessibilityLevel.None
+    end
+end
+
+function phonecall()
+    if has("randomize_phone_call_items_vanilla") then
+        if Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel ~= AccessibilityLevel.None then
+            return math.max(Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel, phonecard())
+        else
+            return phonecard()
+        end
+    elseif has("randomize_phone_call_items_simple") then
+        return phonecard()
+    end
+end
+
+function request_pokemon()
+    return AccessibilityLevel.Normal
+    -- we'll deal with this when people complain.
+end
+
+function diplomagoal()
+    return CAUGHT_COUNT >= Tracker:FindObjectForCode("diploma_goal_count").AcquiredCount
+end
+
+function r12_passage()
+    return has("SQUIRTBOTTLE") or has("route_12_access_vanilla")
 end

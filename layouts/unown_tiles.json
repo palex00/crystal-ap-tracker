@@ -1,0 +1,62 @@
+{
+    "tiles_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, 2",
+                        "h_alignment": "center",
+                        "rows": [
+                            [
+                                "KABUTO_TILE"
+                            ],
+                            [
+                                "OMANYTE_TILE"
+                            ],
+                            [
+                                "AERODACTYL_TILE"
+                            ],
+                            [
+                                "HO-OH_TILE"
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "vertical_tiles_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "85,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, 2",
+                        "h_alignment": "center",
+                        "rows": [
+                            [
+                                "KABUTO_TILE",
+                                "OMANYTE_TILE",
+                                "AERODACTYL_TILE",
+                                "HO-OH_TILE"
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

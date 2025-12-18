@@ -53,16 +53,20 @@
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
                             "@JohtoKanto/Route 45, ^$dark|darkcave",
-                            "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall",
+                            "@JohtoKanto/Mount Mortar/2F_outside",
+                            "@JohtoKanto/Mount Mortar/2F_inside",
+                            "@JohtoKanto/Mount Mortar/1F_outside_center",
                             "@JohtoKanto/Route 10/Top",
                             "@JohtoKanto/Route 24",
                             "@JohtoKanto/Route 25",
-                            "@JohtoKanto/Route 42",
+                            "@JohtoKanto/Route 42/East",
+                            "@JohtoKanto/Route 42/West",
                             "@JohtoKanto/Route 9",
                             "@JohtoKanto/Silver Cave, ^$dark|silvercave",
-                            "@JohtoKanto/Slowpoke Well, ^$dark|slowpokewell",
+                            "@JohtoKanto/Slowpoke Well",
                             "@JohtoKanto/Route 27/Tohjo Falls - Item",
-                            "@JohtoKanto/Union Cave, ^$dark|unioncave"
+                            "@JohtoKanto/Union Cave"
                         ]
                     },
                     {
@@ -72,7 +76,7 @@
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City",
                             "@JohtoKanto/Ecruteak City",
-                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$dark|ilexforest",
+                            "@JohtoKanto/Ilex Forest/Post-Tree",
                             "@JohtoKanto/Route 22",
                             "@JohtoKanto/Route 28",
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
@@ -125,7 +129,8 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Route 12",
+                            "@JohtoKanto/Route 12/North",
+                            "@JohtoKanto/Route 12/South",
                             "@JohtoKanto/Route 13",
                             "@JohtoKanto/Route 32/Post-Guy"
                         ]
@@ -206,16 +211,20 @@
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
                             "@JohtoKanto/Route 45, ^$dark|darkcave",
-                            "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall",
+                            "@JohtoKanto/Mount Mortar/2F_outside",
+                            "@JohtoKanto/Mount Mortar/2F_inside",
+                            "@JohtoKanto/Mount Mortar/1F_outside_center",
                             "@JohtoKanto/Route 10/Top",
                             "@JohtoKanto/Route 24",
                             "@JohtoKanto/Route 25",
-                            "@JohtoKanto/Route 42",
+                            "@JohtoKanto/Route 42/East",
+                            "@JohtoKanto/Route 42/West",
                             "@JohtoKanto/Route 9",
                             "@JohtoKanto/Silver Cave, ^$dark|silvercave",
-                            "@JohtoKanto/Slowpoke Well, ^$dark|slowpokewell",
+                            "@JohtoKanto/Slowpoke Well",
                             "@JohtoKanto/Route 27/Tohjo Falls - Item",
-                            "@JohtoKanto/Union Cave, ^$dark|unioncave"
+                            "@JohtoKanto/Union Cave"
                         ]
                     },
                     {
@@ -225,7 +234,7 @@
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City",
                             "@JohtoKanto/Ecruteak City",
-                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$dark|ilexforest",
+                            "@JohtoKanto/Ilex Forest/Post-Tree",
                             "@JohtoKanto/Route 22",
                             "@JohtoKanto/Route 28",
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
@@ -278,7 +287,8 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Route 12",
+                            "@JohtoKanto/Route 12/North",
+                            "@JohtoKanto/Route 12/South",
                             "@JohtoKanto/Route 13",
                             "@JohtoKanto/Route 32/Post-Guy"
                         ]
@@ -359,16 +369,20 @@
                         "access_rules": [
                             "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
                             "@JohtoKanto/Route 45, ^$dark|darkcave",
-                            "@JohtoKanto/Mount Mortar, ^$dark|mountmortar",
+                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall",
+                            "@JohtoKanto/Mount Mortar/2F_outside",
+                            "@JohtoKanto/Mount Mortar/2F_inside",
+                            "@JohtoKanto/Mount Mortar/1F_outside_center",
                             "@JohtoKanto/Route 10/Top",
                             "@JohtoKanto/Route 24",
                             "@JohtoKanto/Route 25",
-                            "@JohtoKanto/Route 42",
+                            "@JohtoKanto/Route 42/East",
+                            "@JohtoKanto/Route 42/West",
                             "@JohtoKanto/Route 9",
                             "@JohtoKanto/Silver Cave, ^$dark|silvercave",
-                            "@JohtoKanto/Slowpoke Well, ^$dark|slowpokewell",
+                            "@JohtoKanto/Slowpoke Well",
                             "@JohtoKanto/Route 27/Tohjo Falls - Item",
-                            "@JohtoKanto/Union Cave, ^$dark|unioncave"
+                            "@JohtoKanto/Union Cave"
                         ]
                     },
                     {
@@ -378,7 +392,7 @@
                         "access_rules": [
                             "@JohtoKanto/Blackthorn City",
                             "@JohtoKanto/Ecruteak City",
-                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$dark|ilexforest",
+                            "@JohtoKanto/Ilex Forest/Post-Tree",
                             "@JohtoKanto/Route 22",
                             "@JohtoKanto/Route 28",
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
@@ -431,7 +445,8 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Route 12",
+                            "@JohtoKanto/Route 12/North",
+                            "@JohtoKanto/Route 12/South",
                             "@JohtoKanto/Route 13",
                             "@JohtoKanto/Route 32/Post-Guy"
                         ]
@@ -498,7 +513,8 @@
                         "access_rules": [
                             "@JohtoKanto/Azalea Town",
                             "@JohtoKanto/Route 33",
-                            "@JohtoKanto/Route 42, $can_surf_johto"
+                            "@JohtoKanto/Route 42/West",
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
                         ]
                     },
                     {
@@ -508,7 +524,8 @@
                         "access_rules": [
                             "@JohtoKanto/Azalea Town",
                             "@JohtoKanto/Route 33",
-                            "@JohtoKanto/Route 42, $can_surf_johto"
+                            "@JohtoKanto/Route 42/West",
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
                         ]
                     },
                     {
@@ -592,8 +609,8 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Pre-Tree, ^$dark|ilexforest",
-                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$dark|ilexforest"
+                            "@JohtoKanto/Ilex Forest/Pre-Tree",
+                            "@JohtoKanto/Ilex Forest/Post-Tree"
                         ]
                     },
                     {
@@ -601,8 +618,8 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Pre-Tree, ^$dark|ilexforest",
-                            "@JohtoKanto/Ilex Forest/Post-Tree, ^$dark|ilexforest"
+                            "@JohtoKanto/Ilex Forest/Pre-Tree",
+                            "@JohtoKanto/Ilex Forest/Post-Tree"
                         ]
                     }
                 ],

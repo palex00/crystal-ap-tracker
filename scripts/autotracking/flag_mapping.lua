@@ -38,8 +38,23 @@ FLAG_EVENT_2_CODES = {
     "EVENT_SAW_SUICUNE_ON_ROUTE_42",
     "EVENT_SAW_SUICUNE_ON_ROUTE_36",
     "EVENT_BEAT_RIVAL_IN_MT_MOON",
-    "EVENT_GOT_EON_MAIL_FROM_EUSINE"
+    "EVENT_GOT_EON_MAIL_FROM_EUSINE",
+    "EVENT_BEAT_CHERRYGROVE_RIVAL",
+    "EVENT_BEAT_AZALEA_RIVAL",
+    "EVENT_RIVAL_BURNED_TOWER",
+    "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL",
+    "EVENT_BEAT_VICTORY_ROAD_RIVAL",
+    "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU",
+    "EVENT_ROUTE_24_ROCKET",
+    "EVENT_GOT_ALL_UNOWN",
+    "EVENT_OBTAINED_DIPLOMA",
+    "EVENT_BEAT_ROCKET_EXECUTIVEM_3",
+    "ENGINE_UNLOCKED_UNOWNS_A_TO_K",
+    "ENGINE_UNLOCKED_UNOWNS_L_TO_R",
+    "ENGINE_UNLOCKED_UNOWNS_S_TO_W",
+    "ENGINE_UNLOCKED_UNOWNS_X_TO_Z"
 }
+
 FLAG_STATIC_CODES = {
     "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
     "Static_Sudowoodo",
@@ -95,6 +110,16 @@ FLAG_ROCKETTRAPS_CODES = {
     "Static_RocketHQTrap1"
 }
 
+FLAG_TRADE_CODES = {
+    "TRADE_MIKE",
+    "TRADE_KYLE",
+    "TRADE_TIM",
+    "TRADE_EMY",
+    "TRADE_CHRIS",
+    "TRADE_KIM",
+    "TRADE_FOREST"
+}
+
 FLAG_ITEM_CODES = {
   {option="badges_off", codes={"ZEPHYR_BADGE"}},
   {option="badges_off", codes={"HIVE_BADGE"}},
@@ -115,7 +140,7 @@ FLAG_ITEM_CODES = {
 
   {option="pokegear_off", codes={"RADIO_CARD"}},
   {option="pokegear_off", codes={"MAP_CARD"}},
-  {option="pokegear_off", codes=nil},
+  {option="pokegear_off", codes={"PHONE_CARD"}},
   {option="pokegear_off", codes={"EXPN_CARD"}},
   {option="pokegear_off", codes={"POKE_GEAR"}},
   {option="pokegear_off", codes=nil},

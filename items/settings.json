@@ -8,13 +8,37 @@
             {
                 "name": "Goal - Defeat Elite Four",
                 "img": "/images/events/become_champion.png",
-                "codes": "goal,goal_e4",
+                "codes": "goal, goal_e4",
                 "inherit_codes": false
             },
             {
                 "name": "Goal - Defeat Red",
                 "img": "/images/events/defeat_red.png",
-                "codes": "goal,goal_red",
+                "codes": "goal, goal_red",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal - Diploma",
+                "img": "/images/events/diploma.png",
+                "codes": "goal, goal_diploma",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal - Rival Hunt",
+                "img": "/images/trainers/rival.png",
+                "codes": "goal, goal_rival",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal - Team Rocket Hunt",
+                "img": "/images/trainers/rocket_m.png",
+                "codes": "goal, goal_rocket",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal - Unown Hunt",
+                "img": "/images/events/unown.png",
+                "codes": "goal, goal_unown",
                 "inherit_codes": false
             }
         ]
@@ -884,15 +908,21 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Red Gyarados is unblocked",
+                "name": "Red Gyarados is in the water, unbothered, striving",
                 "img": "/images/settings/red_gyarados_vanilla.png",
                 "codes": "red_gyarados_access, red_gyarados_vanilla",
                 "inherit_codes": false
             },
             {
-                "name": "Red Gyarados is surrounded by whirlpools",
+                "name": "Red Gyarados is surrounded by whirlpools, oh no",
                 "img": "/images/settings/red_gyarados_whirlpool.png",
                 "codes": "red_gyarados_access, red_gyarados_whirlpool",
+                "inherit_codes": false
+            },
+            {
+                "name": "Red Gyarados is at the shore, it has beached",
+                "img": "/images/settings/red_gyarados_shore.png",
+                "codes": "red_gyarados_access, red_gyarados_shore",
                 "inherit_codes": false
             }
         ]
@@ -3175,6 +3205,263 @@
                 "name": "Broadcast View: Vertical",
                 "img": "/images/settings/invisible.png",
                 "codes": "broadcast_view, broadcast_view_vertical",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Route 30 Battle Orientation",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 30 Battle blocks Northbound",
+                "img": "/images/settings/route_30_north.png",
+                "codes": "route_30_battle, route_30_battle_north",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 30 Battle blocks both directions",
+                "img": "/images/settings/route_30_both.png",
+                "codes": "route_30_battle, route_30_battle_both",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "S.S. Aqua Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "S.S. Aqua has GPS",
+                "img": "/images/settings/ss_aqua_access_vanilla.png",
+                "img_mods": "@disabled",
+                "codes": "ss_aqua_access, ss_aqua_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "S.S. Aqua needs a lighthouse",
+                "img": "/images/settings/ss_aqua_access_amphy.png",
+                "codes": "ss_aqua_access, ss_aqua_access_amphy",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Magnet Train Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Magnet Train has backup generators",
+                "img": "/images/settings/magnet_train_access_vanilla.png",
+                "codes": "magnet_train_access, magnet_train_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Magnet Train requires power restored to Kanto",
+                "img": "/images/settings/magnet_train_access_power.png",
+                "codes": "magnet_train_access, magnet_train_access_power",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Bug Catching Contest",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Bug Catching Contest is not randomized",
+                "img": "/images/settings/bcc_off.png",
+                "codes": "randomize_bug_catching_contest",
+                "inherit_codes": false
+            },
+            {
+                "name": "BCC randomized, all places separate",
+                "img": "/images/settings/bcc_all.png",
+                "codes": "randomize_bug_catching_contest, bcc_1, bcc_2, bcc_3, bcc_4",
+                "inherit_codes": false
+            },
+            {
+                "name": "BCC randomized, second and third place are combined",
+                "img": "/images/settings/bcc_combined.png",
+                "codes": "randomize_bug_catching_contest, bcc_1, bcc_23, bcc_4",
+                "inherit_codes": false
+            },
+            {
+                "name": "BCC randomized, only participation trophy",
+                "img": "/images/settings/bcc_participation.png",
+                "codes": "randomize_bug_catching_contest, bcc_part",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Encounter Method: Contest",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Contest Encounters NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "encmethod_contest, encmethod_contest_off, encmethod_contest_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Contest Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_contest, encmethod_contest_forbidden",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Contest Encounters in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "encmethod_contest, encmethod_contest_on, encmethod_contest_visible",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/contest.png",
+        "codes": "contest_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Encounter Method: Trades",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Trades NOT in logic",
+                "img": "/images/settings/dex_related/notinlogic.png",
+                "codes": "encmethod_trades, encmethod_trades_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Trades in logic",
+                "img": "/images/settings/dex_related/inlogic.png",
+                "codes": "encmethod_trades, encmethod_trades_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/trades.png",
+        "codes": "trades_dummy",
+        "type": "static"
+    },
+    {
+        "name": "Randomize Phone Calls",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Phone Calls: Off",
+                "img": "/images/settings/phonecalls.png",
+                "img_mods": "@disabled",
+                "codes": "randomize_phone_call_items, randomize_phone_call_items_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Phone Calls: Vanilla",
+                "img": "/images/settings/phonecalls_vanilla.png",
+                "codes": "randomize_phone_call_items, phone_calls_visible, randomize_phone_call_items_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Phone Calls: Simple",
+                "img": "/images/settings/phonecalls.png",
+                "codes": "randomize_phone_call_items, phone_calls_visible, randomize_phone_call_items_simple",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Require Pokegear for Phone Numbers",
+        "type": "progressive",
+        "initial_stage_idx": 1,
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Require Pokegear for Phone Numbers: False",
+                "img": "/images/settings/require_pokegear_for_phone_numbers_false.png",
+                "codes": "require_pokegear_for_phone_numbers, require_pokegear_for_phone_numbers_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Require Pokegear for Phone Numbers: True",
+                "img": "/images/settings/require_pokegear_for_phone_numbers_true.png",
+                "codes": "require_pokegear_for_phone_numbers, require_pokegear_for_phone_numbers_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Route 42 Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 42 Access: Vanilla",
+                "img": "/images/settings/route_42_access_vanilla.png",
+                "codes": "route_42_access, route_42_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 42 Access: Whirlpool Blockage",
+                "img": "/images/settings/route_42_access_whirlpool.png",
+                "codes": "route_42_access, route_42_access_whirlpool",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 42 Access: Complete Blockage",
+                "img": "/images/settings/route_42_access_blocked.png",
+                "codes": "route_42_access, route_42_access_blocked",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 42 Access: Whirlpool and Mt. Mortar Changes",
+                "img": "/images/settings/route_42_access_whirlchanges.png",
+                "codes": "route_42_access, route_42_access_whirlchanges",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Diploma Goal Count",
+        "codes": "diploma_goal_count",
+        "type": "consumable",
+        "min_quantity": 1,
+        "max_quantity": 251,
+        "initial_quantity": 251
+    },
+    {
+        "name": "Route 12 Access",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 12: Vanilla",
+                "img": "/images/settings/route_12_access_vanilla.png",
+                "codes": "route_12_access, route_12_access_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 12: Weird Tree",
+                "img": "/images/settings/route_12_access_weirdtree.png",
+                "codes": "route_12_access, route_12_access_weirdtree",
                 "inherit_codes": false
             }
         ]

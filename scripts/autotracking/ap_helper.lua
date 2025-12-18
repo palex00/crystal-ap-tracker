@@ -1,12 +1,16 @@
 function resetItems()
     for _, v in pairs(ITEM_MAPPING) do
         if v then
-            local obj = Tracker:FindObjectForCode(v)
-            if obj then
-                if v == "BLUE_CARD_POINT" then
-                    obj.AcquiredCount = 0
-                else
-                    obj.Active = false
+            if v == "PROGRESSIVE_ROD" then
+                -- ignore
+            else
+                local obj = Tracker:FindObjectForCode(v)
+                if obj then
+                    if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" then
+                        obj.AcquiredCount = 0
+                    else
+                        obj.Active = false
+                    end
                 end
             end
         end
@@ -24,6 +28,15 @@ function resetLocations()
             local obj = Tracker:FindObjectForCode(v)
             if obj ~= nil then
                 obj.Active = false
+            end
+        end
+    end
+    
+    for _, v in pairs(SIGN_MAPPING) do
+        if v then
+            local obj = Tracker:FindObjectForCode(v)
+            if obj ~= nil then
+                obj.AvailableChestCount = obj.ChestCount
             end
         end
     end
@@ -65,7 +78,8 @@ MAP_TOGGLE_REVERSE = {
 }
 MAP_BADGEGYM = {
     [0] = "badges",
-    [1] = "gyms"
+    [1] = "gyms",
+    [2] = "johtobadges"
 }
 MAP_KANTO_ACCESS = {
     [0] = "snorlax",
@@ -155,9 +169,13 @@ STARTTOWN_MAPPING = {
 }
 
 SLOT_CODES = {
+    enable_mischief = {
+        code = "mischief",
+        mapping = MAP_TOGGLE
+    },
     goal = {
         code = "goal",
-        mapping = MAP_TOGGLE
+        mapping = MAP_SIXTUPLE
     },
     randomize_badges = {
         code = "badges",
@@ -247,17 +265,13 @@ SLOT_CODES = {
         code = "underground_power",
         mapping = MAP_QUADRUPLE
     },
-    enable_mischief = {
-        code = "mischief",
-        mapping = MAP_TOGGLE
-    },
     route_2_access = {
         code = "route_2_access",
         mapping = MAP_TRIPLE
     },
     red_gyarados_access = {
         code = "red_gyarados_access",
-        mapping = MAP_TOGGLE
+        mapping = MAP_TRIPLE
     },
     blackthorn_dark_cave_access = {
         code = "blackthorn_dark_cave_access",
@@ -390,6 +404,46 @@ SLOT_CODES = {
     grasssanity = {
         code = "grasssanity",
         mapping = MAP_TRIPLE
+    },
+    route_30_battle = {
+        code = "route_30_battle",
+        mapping = MAP_TOGGLE
+    },
+    ss_aqua_access = {
+        code = "ss_aqua_access",
+        mapping = MAP_TOGGLE
+    },
+    magnet_train_access = {
+        code = "magnet_train_access",
+        mapping = MAP_TOGGLE
+    },
+    randomize_bug_catching_contest = {
+        code = "randomize_bug_catching_contest",
+        mapping = MAP_QUADRUPLE
+    },
+    encmethod_contest = {
+        code = "encmethod_contest",
+        mapping = MAP_TRIPLE
+    },
+    trades_required = {
+        code = "encmethod_trades",
+        mapping = MAP_TOGGLE
+    },
+    require_pokegear_for_phone_numbers = {
+        code = "require_pokegear_for_phone_numbers",
+        mapping = MAP_TOGGLE
+    },
+    route_42_access = {
+        code = "route_42_access",
+        mapping = MAP_QUADRUPLE
+    },
+    randomize_phone_call_items = {
+        code = "randomize_phone_call_items",
+        mapping = MAP_TRIPLE
+    },
+    route_12_access = {
+        code = "route_12_access",
+        mapping = MAP_TOGGLE
     }
 }
 

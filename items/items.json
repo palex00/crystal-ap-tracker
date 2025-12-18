@@ -325,6 +325,12 @@
         "codes": "RADIO_CARD"
     },
     {
+        "name": "Phone Card",
+        "type": "toggle",
+        "img": "/images/items/phonecard.png",
+        "codes": "PHONE_CARD"
+    },
+    {
         "name": "EXPN Card",
         "type": "toggle",
         "img": "/images/items/expncard.png",
@@ -617,5 +623,41 @@
         "type": "toggle",
         "img": "/images/shopsanity/pnk_apricorn.png",
         "codes": "PNK_APRICORN"
+    },
+    {
+        "name": "Aerodactyl Tile",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 16,
+        "initial_quantity": 0,
+        "img": "/images/items/AERODACTYL_TILE.png",
+        "codes": "AERODACTYL_TILE"
+    },
+    {
+        "name": "Ho-Oh Tile",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 16,
+        "initial_quantity": 0,
+        "img": "/images/items/HO-OH_TILE.png",
+        "codes": "HO-OH_TILE"
+    },
+    {
+        "name": "Omanyte Tile",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 16,
+        "initial_quantity": 0,
+        "img": "/images/items/OMANYTE_TILE.png",
+        "codes": "OMANYTE_TILE"
+    },
+    {
+        "name": "Kabuto Tile",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 16,
+        "initial_quantity": 0,
+        "img": "/images/items/KABUTO_TILE.png",
+        "codes": "KABUTO_TILE"
     }
 ]

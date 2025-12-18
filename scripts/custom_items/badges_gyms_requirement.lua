@@ -39,6 +39,9 @@ function BadgesGymsRequirement:updateIcon()
     elseif type == "gyms" then
         self.ItemInstance.Name = self.name.." - Gyms"
         overlayImg = "images/settings/gym_overlay_left.png"
+    elseif type == "johtobadges" then
+        self.ItemInstance.Name = self.name.." - Johto Badges"
+        overlayImg = "images/settings/johtobadge_overlay_left.png"
     end
     
     self.ItemInstance.Icon = ImageReference:FromPackRelativePath(self.baseImage or "")
@@ -59,6 +62,8 @@ function BadgesGymsRequirement:onRightClick()
     if self:getType() == "badges" then
         self:setType("gyms")
     elseif self:getType() == "gyms" then
+        self:setType("johtobadges")
+    elseif self:getType() == "johtobadges" then
         self:setType("badges")
     end
 end
@@ -78,6 +83,10 @@ function BadgesGymsRequirement:providesCode(code)
             end
         elseif self:getType() == "gyms" then
             if gyms() >= self:getStage() then
+                return 1
+            end
+        elseif self:getType() == "johtobadges" then
+            if johtobadges() >= self:getStage() then
                 return 1
             end
         end

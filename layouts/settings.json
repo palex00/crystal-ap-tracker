@@ -81,8 +81,12 @@
                 "trainersanity",
                 "randomize_fly_unlocks",
                 "badges",
-                "pokegear",
-                "grasssanity"
+                "pokegear"
+            ],
+            [
+                "grasssanity",
+                "randomize_bug_catching_contest",
+                "randomize_phone_call_items"
             ]
         ]
     },
@@ -100,7 +104,8 @@
                 "badgereqs",
                 "clair_behaviour",
                 "randomize_evolution",
-                "lock_kanto_gyms"
+                "lock_kanto_gyms",
+                "require_pokegear_for_phone_numbers"
             ]
         ]
     },
@@ -112,14 +117,18 @@
         "h_alignment": "left",
         "rows": [
             [
+                "route_30_battle",
                 "blackthorn_dark_cave_access",
                 "r32_guy",
                 "ilextree",
                 "tower_requirement",
+                "magnet_train_access",
                 "national_park_access",
-                "mount_mortar_access"
+                "ss_aqua_access"
             ],
             [
+                "route_42_access",
+                "mount_mortar_access",
                 "red_gyarados_access",
                 "route_44_requirement",
                 "victory_road_access",
@@ -141,6 +150,7 @@
                 "ew_underground",
                 "underground_power",
                 "tea_guard",
+                "route_12_access",
                 "randomize_pokemon_requests",
                 "route_2_access",
                 "route_3_access"

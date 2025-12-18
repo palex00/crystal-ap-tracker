@@ -71,10 +71,14 @@
                 "dexsanity",
                 "berries",
                 "trainersanity",
-                "randomize_fly_unlocks",
+                "randomize_fly_unlocks"
+            ],
+            [
                 "badges",
                 "pokegear",
-                "grasssanity"
+                "grasssanity",
+                "randomize_bug_catching_contest",
+                "randomize_phone_call_items"
             ]
         ]
     },
@@ -91,7 +95,8 @@
                 "fly_cheese",
                 "badgereqs",
                 "clair_behaviour",
-                "randomize_evolution"
+                "randomize_evolution",
+                "require_pokegear_for_phone_numbers"
             ]
         ]
     },
@@ -103,14 +108,16 @@
         "h_alignment": "left",
         "rows": [
             [
+                "route_30_battle",
                 "blackthorn_dark_cave_access",
                 "r32_guy",
                 "ilextree",
                 "tower_requirement",
                 "national_park_access",
-                "mount_mortar_access"
+                "route_42_access"
             ],
             [
+                "mount_mortar_access",
                 "red_gyarados_access",
                 "route_44_requirement",
                 "victory_road_access",
