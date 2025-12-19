@@ -59,6 +59,10 @@ function onClear(slot_data)
         end
     end
 
+    for _, code in ipairs(FLAG_TRADE_CODES) do
+        Tracker:FindObjectForCode(code).Active = false
+    end
+
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
 
@@ -280,6 +284,10 @@ function onClear(slot_data)
         UNOWN_ID="pokemon_crystal_unowns_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({UNOWN_ID})
         Archipelago:Get({UNOWN_ID})
+        
+        TRADE_ID="pokemon_crystal_trades_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({TRADE_ID})
+        Archipelago:Get({TRADE_ID})
     end
 
     toggle_itemgrid()
@@ -375,6 +383,8 @@ function onNotify(key, value, old_value)
             updateUnown(value)
             Tracker:FindObjectForCode("dummy").Active = true
             Tracker:FindObjectForCode("dummy").Active = false
+        elseif key == TRADE_ID then
+            updateTrades(value)
         end
     end
 end
@@ -405,6 +415,8 @@ function onNotifyLaunch(key, value)
             updateUnown(value)
             Tracker:FindObjectForCode("dummy").Active = true
             Tracker:FindObjectForCode("dummy").Active = false
+        elseif key == TRADE_ID then
+            updateTrades(value)
         end
     end
 end
@@ -484,6 +496,21 @@ function updateRocketTraps(value)
             end
         end
     end
+end
+
+
+function updateTrades(value)
+    if value ~= nil then
+        for _, intVal in ipairs(value) do
+            local code = FLAG_TRADE_CODES[intVal + 1]
+            if code then
+                local obj = Tracker:FindObjectForCode(code)
+                if obj then
+                    obj.Active = true
+                end
+            end
+        end
+   end
 end
 
 

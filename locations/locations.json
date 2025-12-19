@@ -10184,7 +10184,7 @@
                     {
                         "name": "Magikarp Prize",
                         "visibility_rules": [
-                            "randomize_pokemon_requests_true"
+                            "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
                             "EVENT_CLEARED_ROCKET_HIDEOUT"

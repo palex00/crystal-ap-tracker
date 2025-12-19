@@ -553,7 +553,7 @@ function request_pokemon()
 end
 
 function diplomagoal()
-    return CAUGHT_COUNT <= Tracker:FindObjectForCode("diploma_goal_count").AcquiredCount
+    return CAUGHT_COUNT >= Tracker:FindObjectForCode("diploma_goal_count").AcquiredCount
 end
 
 function r12_passage()

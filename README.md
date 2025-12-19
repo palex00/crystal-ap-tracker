@@ -1,6 +1,9 @@
 # Crystal AP Tracker
 
 Archipelago Pokémon Crystal tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with Autotracking.
+
+You can find a video guide on its usage here: https://youtu.be/m1s8IS-FtYs
+
 Full Map             |  Johto-Only
 :-------------------------:|:-------------------------:
 <img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/e6d34243-ab04-4b3e-b099-f4050603d314" /> | <img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/e77c3308-5fd3-449b-a363-c234b8d544c9" />
@@ -26,6 +29,7 @@ Original project by AliceMousie.
 ## Compatibility Chart
 apworld | pack version
 :-------------------------:|:-------------------------:
+5.3.0   | 0.10.0
 5.2.0   | 0.9.X & 0.8.9-0.8.10
 5.1.0   | 0.8.0 - 0.8.7
 5.0.0   | 0.7.X
@@ -36,7 +40,7 @@ apworld | pack version
 2.1.2   | 0.2.X
 
 ## Known Issues
-- Viridian City Access through Victory Road with the "Wake up Snorlax"-Event might not be correctly shown if your starting town is New Bark Town.
+- There are no known issues
 
 ## Planned Features
 - Continuous support of the AP integration
