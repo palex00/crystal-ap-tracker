@@ -678,7 +678,8 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter, @JohtoKanto/Route 30/Pre-Mr-Pokemon"
+                            "^$land_encounter, @JohtoKanto/Route 30/Pre-Mr-Pokemon",
+                            "^$land_encounter, @JohtoKanto/Route 30/Post-Mr-Pokemon"
                         ]
                     },
                     {
