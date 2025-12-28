@@ -11774,7 +11774,8 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|Route27TohjoFalls, @JohtoKanto/Route 27/Pre-Waterfall"
+                            "^$unownsign|Route27TohjoFalls, @JohtoKanto/Route 27/Pre-Waterfall, $can_surf_johto",
+                            "^$unownsign|Route27TohjoFalls, @JohtoKanto/Route 27/Post-Waterfall, $can_surf_johto"
                         ]
                     },
                     {
