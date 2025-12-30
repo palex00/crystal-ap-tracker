@@ -11225,7 +11225,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "$can_whirlpool, EVENT_BEAT_CLAIR, ^$surf_encounter_johto, ^$dark|dragonsden"
+                            "EVENT_BEAT_CLAIR, ^$surf_encounter_johto, ^$dark|dragonsden"
                         ]
                     },
                     {
