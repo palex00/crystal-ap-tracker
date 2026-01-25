@@ -537,6 +537,7 @@ end
 
 function phonecall()
     if has("randomize_phone_call_items_vanilla") then
+        print(Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel)
         if Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel ~= AccessibilityLevel.None then
             return math.max(Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel, phonecard())
         else
