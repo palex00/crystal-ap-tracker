@@ -580,6 +580,27 @@
                         "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
+                        "name": "Pokedex from Oak",
+                        "visibility_rules": [
+                            "show_items, randomize_pokedex_not_vanilla"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
+                        ],
+                        "chest_unopened_img": "images/gift/oak.png",
+                        "chest_opened_img": "images/gift/oak_open.png"
+                    },
+                    {
+                        "name": "Pokedex from Oak​",
+                        "visibility_rules": [
+                            "show_items, randomize_pokedex_vanilla"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
+                        ],
+                        "hosted_item": "POKEDEX"
+                    },
+                    {
                         "name": "Youngster Joey",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -1226,7 +1247,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|KYLE"
+                            "$pokedex, ^$trade|KYLE"
                         ]
                     },
                     {
@@ -3760,7 +3781,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|MIKE"
+                            "$pokedex, ^$trade|MIKE"
                         ]
                     },
                     {
@@ -5210,7 +5231,7 @@
                             "show_items, phone_calls_visible, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/National Park/Park, ^$phonecall, ^$request_pokemon|BEVERLY"
+                            "@JohtoKanto/National Park/Park, ^$phonecall, ^$request_pokemon|BEVERLY, $pokedex"
                         ]
                     },
                     {
@@ -6856,7 +6877,7 @@
                             "show_items, phone_calls_visible, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "^$phonecall, ^$request_pokemon|DEREK"
+                            "^$phonecall, ^$request_pokemon|DEREK, $pokedex"
                         ]
                     },
                     {
@@ -7134,7 +7155,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|TIM"
+                            "$pokedex, ^$trade|TIM"
                         ]
                     },
                     {
@@ -10057,7 +10078,7 @@
                             "show_items, phone_calls_visible, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "^$phonecall, ^$request_pokemon|TIFFANY"
+                            "^$phonecall, ^$request_pokemon|TIFFANY, $pokedex"
                         ]
                     },
                     {
@@ -11044,7 +11065,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|EMY"
+                            "$pokedex, ^$trade|EMY"
                         ]
                     },
                     {
@@ -13911,7 +13932,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|CHRIS"
+                            "$pokedex, ^$trade|CHRIS"
                         ]
                     },
                     {
@@ -14914,6 +14935,9 @@
                         "chest_opened_img": "images/other/bills_grandpa_bw.png",
                         "visibility_rules": [
                             "randomize_pokemon_requests_true"
+                        ],
+                        "access_rules": [
+                            "$pokedex"
                         ]
                     },
                     {
@@ -15303,7 +15327,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|FOREST"
+                            "$pokedex, ^$trade|FOREST"
                         ]
                     }
                 ],
@@ -18050,7 +18074,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|KIM, $can_cut_kanto"
+                            "$pokedex, ^$trade|KIM, $can_cut_kanto"
                         ]
                     },
                     {

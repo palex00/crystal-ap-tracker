@@ -448,6 +448,10 @@ SLOT_CODES = {
     route_30_access = {
         code = "route_30_access",
         mapping = MAP_TOGGLE
+    },
+    randomize_pokedex = {
+        code = "randomize_pokedex",
+        mapping = MAP_TRIPLE
     }
 }
 

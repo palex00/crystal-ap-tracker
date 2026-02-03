@@ -73,7 +73,7 @@ function onClear(slot_data)
             if  k == "apworld_version" then
                 local version_str = tostring(v)
                 local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-                if first_two_dots == "5.3" or nil then
+                if first_two_dots == "5.4" or nil then
                     Tracker:AddLayouts("layouts/tracker.json")
                 else
                     Tracker:AddLayouts("layouts/versionmismatch.json")
@@ -197,6 +197,10 @@ function onClear(slot_data)
         else
             -- print(string.format("No setting could be found for key: %s", k))
         end
+    end
+    
+    if has("randomize_pokedex_startwith") then
+        Tracker:FindObjectForCode("POKEDEX").Active = true
     end
     
     updateRemainingDexcountsanityChecks()

@@ -61,6 +61,7 @@ ScriptHost:LoadScript("scripts/autotracking.lua")
 -- Watches
 ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
 ScriptHost:AddWatchForCode("tea_guard", "tea_guard", toggle_johto)
+ScriptHost:AddWatchForCode("phone_calls_visible", "phone_calls_visible", toggle_johto)
 ScriptHost:AddWatchForCode("badges", "badges", toggle_johto)
 ScriptHost:AddWatchForCode("goal", "goal", toggle_johto)
 ScriptHost:AddWatchForCode("splitmap", "splitmap", toggle_splitmap)

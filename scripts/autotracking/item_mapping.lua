@@ -88,4 +88,5 @@ ITEM_MAPPING = {
   [536] = "flyunlock_LakeOfRage",
   [537] = "flyunlock_Blackthorn",
   [538] = "flyunlock_SilverCave",
+  [560] = "pokedex",
 }

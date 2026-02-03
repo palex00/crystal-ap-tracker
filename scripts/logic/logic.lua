@@ -272,7 +272,7 @@ function r32_guy()
 end
 
 function tea(direction)
-  return has("coffee_"..direction) and has("tea")
+  return (has("coffee_"..direction) and has("tea"))
   or not has("coffee_"..direction)
 end
 
@@ -566,4 +566,8 @@ function r30_passage(direction)
         can_cut_johto() or
         (has("route_30_access_egg") and has("EVENT_GAVE_MYSTERY_EGG_TO_ELM")) or
         (has("route_30_access_mrpokemon") and has("EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"))
+end
+
+function pokedex()
+    return has("randomize_pokedex_startwith") or has("POKEDEX")
 end

@@ -144,7 +144,7 @@ FLAG_ITEM_CODES = {
   {option="pokegear_off", codes={"PHONE_CARD"}},
   {option="pokegear_off", codes={"EXPN_CARD"}},
   {option="pokegear_off", codes={"POKE_GEAR"}},
-  {option="pokegear_off", codes=nil},
+  {option="randomize_pokedex_not_vanilla", codes={"POKEDEX"}},
   {option=nil, codes={"ESCAPE_ROPE"}},
   {option=nil, codes={"WATER_STONE"}},
   

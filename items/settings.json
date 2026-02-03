@@ -992,7 +992,7 @@
     },
     {
         "name": "Dexsanity",
-        "img": "/images/settings/pokedex.png",
+        "img": "/images/items/pokeball.png",
         "codes": "dexsanity",
         "type": "consumable",
         "allow_disabled": true,
@@ -3484,6 +3484,35 @@
                 "name": "Route 12: Weird Tree",
                 "img": "/images/settings/route_12_access_weirdtree.png",
                 "codes": "route_12_access, route_12_access_weirdtree",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Pokedex",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Pokedex is vanilla",
+                "img": "/images/settings/pokedex.png",
+                "img_mods": "overlay|images/settings/overlay_mrpokemon.png",
+                "codes": "randomize_pokedex, randomize_pokedex_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "You start with Pokedex",
+                "img": "/images/settings/pokedex.png",
+                "img_mods": "overlay|images/settings/overlay_startwith.png",
+                "codes": "randomize_pokedex, randomize_pokedex_not_vanilla, randomize_pokedex_startwith",
+                "inherit_codes": false
+            },
+            {
+                "name": "Pokedex is randomized",
+                "img": "/images/settings/pokedex.png",
+                "img_mods": "overlay|images/settings/overlay_randomized.png",
+                "codes": "randomize_pokedex, randomize_pokedex_not_vanilla, randomize_pokedex_randomize",
                 "inherit_codes": false
             }
         ]

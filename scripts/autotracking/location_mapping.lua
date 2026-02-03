@@ -182,6 +182,7 @@ LOCATION_MAPPING = {
   [284] = "@JohtoKanto/New Bark Town/Player's House - Phone Card from Mom",
   [285] = "@JohtoKanto/Lavender Town/Radio Tower - EXPN Card",
   [286] = "@JohtoKanto/New Bark Town/Player's House - Pokegear from Mom",
+  [287] = "@JohtoKanto/Route 30/Pokedex from Oak",
   [289] = "@JohtoKanto/Celadon City/Celadon Mansion 1F - Tea from Granny",
   [291] = "@JohtoKanto/Goldenrod City/Dept. Store 5F - TM27 from Receptionist",
   [292] = "@JohtoKanto/Goldenrod City/Dept. Store 5F - TM21 from Receptionist",
