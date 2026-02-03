@@ -203,6 +203,13 @@
         "codes": "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
     },
     {
+        "name": "Give Mystery Egg to Elm",
+        "type": "toggle",
+        "img": "/images/events/elm.png",
+        "img_mods": "overlay|images/settings/egg_overlay.png",
+        "codes": "EVENT_GAVE_MYSTERY_EGG_TO_ELM"
+    },
+    {
         "name": "S.S. Aqua Cleared",
         "type": "toggle",
         "img": "",

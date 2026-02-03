@@ -444,6 +444,10 @@ SLOT_CODES = {
     route_12_access = {
         code = "route_12_access",
         mapping = MAP_TOGGLE
+    },
+    route_30_access = {
+        code = "route_30_access",
+        mapping = MAP_TOGGLE
     }
 }
 

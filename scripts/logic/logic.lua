@@ -559,3 +559,11 @@ end
 function r12_passage()
     return has("SQUIRTBOTTLE") or has("route_12_access_vanilla") or can_surf_kanto()
 end
+
+function r30_passage(direction)
+    return
+        (direction == "southbound" and has("route_30_battle_north")) or
+        can_cut_johto() or
+        (has("route_30_access_egg") and has("EVENT_GAVE_MYSTERY_EGG_TO_ELM")) or
+        (has("route_30_access_mrpokemon") and has("EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"))
+end
