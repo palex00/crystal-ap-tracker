@@ -516,8 +516,8 @@
                         "access_rules": [
                             "@JohtoKanto/Azalea Town",
                             "@JohtoKanto/Route 33",
-                            "@JohtoKanto/Route 42/West",
-                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
+                            "[@JohtoKanto/Route 42/West], @JohtoKanto/Route 42/Center, $can_cut_johto",
+                            "@JohtoKanto/Route 42/West, [@JohtoKanto/Route 42/Center, $can_cut_johto]"
                         ]
                     },
                     {
@@ -527,8 +527,8 @@
                         "access_rules": [
                             "@JohtoKanto/Azalea Town",
                             "@JohtoKanto/Route 33",
-                            "@JohtoKanto/Route 42/West",
-                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
+                            "[@JohtoKanto/Route 42/West], @JohtoKanto/Route 42/Center, $can_cut_johto",
+                            "@JohtoKanto/Route 42/West, [@JohtoKanto/Route 42/Center], [$can_cut_johto]"
                         ]
                     },
                     {
