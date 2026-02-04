@@ -2734,6 +2734,13 @@
                         "chest_opened_img": "images/items/berry_tree_bw.png"
                     },
                     {
+                        "name": "White Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "hosted_item": "WHT_APRICORN"
+                    },
+                    {
                         "name": "Lure Ball from Kurt",
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL, @JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
@@ -5733,6 +5740,27 @@
                         "chest_opened_img": "images/items/berry_tree_bw.png"
                     },
                     {
+                        "name": "Red Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "hosted_item": "RED_APRICORN"
+                    },
+                    {
+                        "name": "Blue Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "hosted_item": "BLU_APRICORN"
+                    },
+                    {
+                        "name": "Black Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "hosted_item": "BLK_APRICORN"
+                    },
+                    {
                         "name": "Magnet from Sunny",
                         "visibility_rules": [
                             "show_items"
@@ -8702,6 +8730,36 @@
                         ],
                         "chest_unopened_img": "images/items/berry_tree.png",
                         "chest_opened_img": "images/items/berry_tree_bw.png"
+                    },
+                    {
+                        "name": "Pink Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
+                        ],
+                        "hosted_item": "PNK_APRICORN"
+                    },
+                    {
+                        "name": "Green Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
+                        ],
+                        "hosted_item": "GRN_APRICORN"
+                    },
+                    {
+                        "name": "Yellow Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
+                        ],
+                        "hosted_item": "YLW_APRICORN"
                     },
                     {
                         "name": "Fisher Tully",
