@@ -3516,5 +3516,98 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "slotdigit_1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "slotdigit_2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "slotdigit_3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
     }
 ]
