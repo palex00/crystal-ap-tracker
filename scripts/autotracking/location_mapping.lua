@@ -30,6 +30,7 @@ LOCATION_MAPPING = {
   [78] = "@JohtoKanto/Route 32/TM05 from Roar Guy",
   [82] = "@JohtoKanto/Route 35/HP Up after delivering Kenya",
   [83] = "@JohtoKanto/Route 31/TM50 for delivering Kenya",
+  [86] = "@JohtoKanto/New Bark Town/Elm's Lab - Everstone from Elm",
   [87] = "@JohtoKanto/National Park/Quick Claw from Lady",
   [88] = "@JohtoKanto/Lake of Rage/TM10 from Hidden Power House",
   [89] = "@JohtoKanto/Route 43/Sludge Bomb from Guard in Gate",

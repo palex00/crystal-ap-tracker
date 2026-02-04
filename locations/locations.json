@@ -119,6 +119,17 @@
                         "chest_opened_img": "images/gift/scientist_open.png"
                     },
                     {
+                        "name": "Elm's Lab - Everstone from Elm",
+                        "access_rules": [
+                            "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "chest_unopened_img": "images/gift/elm.png",
+                        "chest_opened_img": "images/gift/elm_open.png"
+                    },
+                    {
                         "name": "Elm's Lab - Master Ball from Elm",
                         "access_rules": [
                             "RISING_BADGE"
