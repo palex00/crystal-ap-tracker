@@ -8,6 +8,16 @@ ScriptHost:LoadScript("scripts/autotracking/pokemon_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/evolution_location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/ap_helper.lua")
 
+if Highlight then
+    HIGHTLIGHT_LEVEL = {
+        [0] = Highlight.Unspecified,
+        [10] = Highlight.NoPriority,
+        [20] = Highlight.Avoid,
+        [30] = Highlight.Priority,
+        [40] = Highlight.None
+    }
+end
+
 CUR_INDEX = -1
 PLAYER_ID = -1
 TEAM_NUMBER = 0
@@ -288,6 +298,10 @@ function onClear(slot_data)
         TRADE_ID="pokemon_crystal_trades_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({TRADE_ID})
         Archipelago:Get({TRADE_ID})
+        
+        HINT_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:Get({HINT_ID})
+        Archipelago:SetNotify({HINT_ID})
     end
 
     toggle_itemgrid()
@@ -385,6 +399,8 @@ function onNotify(key, value, old_value)
             Tracker:FindObjectForCode("dummy").Active = false
         elseif key == TRADE_ID then
             updateTrades(value)
+        elseif key == HINT_ID then
+            updateHints(value)
         end
     end
 end
@@ -417,6 +433,8 @@ function onNotifyLaunch(key, value)
             Tracker:FindObjectForCode("dummy").Active = false
         elseif key == TRADE_ID then
             updateTrades(value)
+        elseif key == HINT_ID then
+            updateHints(value)
         end
     end
 end
@@ -436,6 +454,34 @@ function updateEvents(value)
         end
     end
 end
+
+
+function updateHints(value)
+    print(dump_table(value))
+    if not Highlight then
+        return
+    end
+    
+    for _, hint in ipairs(value) do
+        if hint.finding_player == PLAYER_ID then
+            local mapped = LOCATION_MAPPING[hint.location]
+            local locations = (type(mapped) == "table") and mapped or { mapped }
+    
+            
+            for _, location in ipairs(locations) do
+                -- Only sections (items don't support Highlight)
+                if type(location) == "string" and location:sub(1, 1) == "@" then
+                    Tracker:FindObjectForCode(location).Highlight = HIGHTLIGHT_LEVEL[hint.status]
+                    
+                    if not ITEM_MAPPING[hint.item] then
+                        Tracker:FindObjectForCode(location).AvailableChestCount = Tracker:FindObjectForCode(location).AvailableChestCount - 1
+                    end
+                end
+            end
+        end        
+    end
+end
+
 
 function updateEvents2(value)
     if value ~= nil then
