@@ -10,11 +10,10 @@ ScriptHost:LoadScript("scripts/autotracking/ap_helper.lua")
 
 if Highlight then
     HIGHTLIGHT_LEVEL = {
-        [0] = Highlight.Unspecified,
-        [10] = Highlight.NoPriority,
-        [20] = Highlight.Avoid,
-        [30] = Highlight.Priority,
-        [40] = Highlight.None
+        [0] = Highlight.None,
+        [1] = Highlight.Priority,
+        [2] = Highlight.NoPriority,
+        [3] = Highlight.Avoid
     }
 end
 
@@ -470,8 +469,8 @@ function updateHints(value)
             
             for _, location in ipairs(locations) do
                 -- Only sections (items don't support Highlight)
-                if type(location) == "string" and location:sub(1, 1) == "@" then
-                    Tracker:FindObjectForCode(location).Highlight = HIGHTLIGHT_LEVEL[hint.status]
+                if type(location) == "string" and location:sub(1, 1) == "@" and Tracker:FindObjectForCode(location).ChestCount == 1 then
+                    Tracker:FindObjectForCode(location).Highlight = HIGHTLIGHT_LEVEL[hint.item_flags]
                     
                     if not ITEM_MAPPING[hint.item] then
                         Tracker:FindObjectForCode(location).AvailableChestCount = Tracker:FindObjectForCode(location).AvailableChestCount - 1
