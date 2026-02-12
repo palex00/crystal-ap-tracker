@@ -558,7 +558,6 @@ function updateTrades(value)
    end
 end
 
-
 function updateVanillaKeyItems(value)
     if value ~= nil then
         for i, obj in ipairs(FLAG_ITEM_CODES) do
