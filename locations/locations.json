@@ -15003,7 +15003,7 @@
                         "chest_unopened_img": "images/other/bills_grandpa.png",
                         "chest_opened_img": "images/other/bills_grandpa_bw.png",
                         "visibility_rules": [
-                            "randomize_pokemon_requests_true"
+                            "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
                             "$pokedex"
