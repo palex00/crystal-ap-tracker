@@ -138,7 +138,6 @@ FLAG_ITEM_CODES = {
   {option="badges_off", codes={"MARSH_BADGE"}},
   {option="badges_off", codes={"VOLCANO_BADGE"}},
   {option="badges_off", codes={"EARTH_BADGE"}},
-
   {option="pokegear_off", codes={"RADIO_CARD"}},
   {option="pokegear_off", codes={"MAP_CARD"}},
   {option="pokegear_off", codes={"PHONE_CARD"}},
@@ -147,6 +146,12 @@ FLAG_ITEM_CODES = {
   {option="randomize_pokedex_not_vanilla", codes={"POKEDEX"}},
   {option=nil, codes={"ESCAPE_ROPE"}},
   {option=nil, codes={"WATER_STONE"}},
-  
+  {option="berries_off", codes={"RED_APRICORN"}},
+  {option="berries_off", codes={"BLU_APRICORN"}},
+  {option="berries_off", codes={"YLW_APRICORN"}},
+  {option="berries_off", codes={"GRN_APRICORN"}},
+  {option="berries_off", codes={"WHT_APRICORN"}},
+  {option="berries_off", codes={"BLK_APRICORN"}},
+  {option="berries_off", codes={"PNK_APRICORN"}},
   {option="badges_off", codes={"RISING_BADGE"}},
 }
