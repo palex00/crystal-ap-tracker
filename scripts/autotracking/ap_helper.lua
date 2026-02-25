@@ -339,7 +339,7 @@ SLOT_CODES = {
     },
     breeding_methods_required = {
         code = "breeding_logic",
-        mapping = MAP_TRIPLE
+        mapping = MAP_QUINTUPLE
     },
     all_pokemon_seen = {
         code = "all_pokemon_seen",

@@ -1602,20 +1602,32 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Breeding Logic: NOT in Logic",
-                "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "breeding_logic, breeding_logic_off",
+                "name": "Breeding Logic: NOT in Logic (logically)",
+                "img": "/images/settings/dex_related/notinlogic_tall.png",
+                "codes": "breeding_logic, breeding_logic_off_soft",
                 "inherit_codes": false
             },
             {
-                "name": "Breeding Logic: Only with Ditto",
-                "img": "/images/settings/dex_related/ditto.png",
-                "codes": "breeding_logic, breeding_logic_ditto",
+                "name": "Breeding Logic: NOT in Logic (enforced)",
+                "img": "/images/settings/dex_related/forbidden_tall.png",
+                "codes": "breeding_logic, breeding_logic_off_hard",
+                "inherit_codes": false
+            },
+            {
+                "name": "Breeding Logic: Only with Ditto (logically)",
+                "img": "/images/settings/dex_related/ditto_soft.png",
+                "codes": "breeding_logic, breeding_logic_ditto_soft",
+                "inherit_codes": false
+            },
+            {
+                "name": "Breeding Logic: Only with Ditto (enforced)",
+                "img": "/images/settings/dex_related/ditto_hard.png",
+                "codes": "breeding_logic, breeding_logic_ditto_hard",
                 "inherit_codes": false
             },
             {
                 "name": "Breeding Logic: In Logic",
-                "img": "/images/settings/dex_related/inlogic.png",
+                "img": "/images/settings/dex_related/inlogic_tall.png",
                 "codes": "breeding_logic, breeding_logic_on",
                 "inherit_codes": false
             }
