@@ -216,6 +216,10 @@ end
 
 function trade(person)
     if TRADE_DATA ~= nil then
+        if not has("POKEDEX") then
+            return AccessibilityLevel.None
+        end
+        
         local checked = Tracker:FindObjectForCode("TRADE_"..person).Active
         local pokemon_name = POKEMON_MAPPING[tonumber(TRADE_DATA["TRADE_"..person].requested)]
     
