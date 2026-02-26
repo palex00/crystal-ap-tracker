@@ -452,6 +452,14 @@ SLOT_CODES = {
     randomize_pokedex = {
         code = "randomize_pokedex",
         mapping = MAP_TRIPLE
+    },
+    south_kanto_access = {
+        code = "south_kanto_access",
+        mapping = MAP_TRIPLE
+    },
+    south_kanto_condition = {
+        code = "south_kanto_condition",
+        mapping = MAP_TOGGLE
     }
 }
 

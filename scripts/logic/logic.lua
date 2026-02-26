@@ -571,3 +571,29 @@ end
 function pokedex()
     return has("randomize_pokedex_startwith") or has("POKEDEX")
 end
+
+function landslide_clear()
+    if has("south_kanto_condition_power") and has("EVENT_RESTORED_POWER_TO_KANTO") then
+        return AccessibilityLevel.Normal
+    elseif has("south_kanto_condition_south") then
+        return Tracker:FindObjectForCode("@JohtoKanto/Cinnabar Island").AccessibilityLevel
+    else
+        return AccessibilityLevel.None
+    end
+end
+
+function landslide_19()
+    if has("south_kanto_access_free") or has("south_kanto_access_21") then
+        return AccessibilityLevel.Normal
+    elseif has("south_kanto_access_19") then
+        return landslide_clear
+    end
+end
+
+function landslide_21()
+    if has("south_kanto_access_free") or has("south_kanto_access_19") then
+        return AccessibilityLevel.Normal
+    elseif has("south_kanto_access_21") then
+        return landslide_clear
+    end
+end

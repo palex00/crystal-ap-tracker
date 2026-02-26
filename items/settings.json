@@ -3621,5 +3621,51 @@
                 "img": "/images/settings/digits/d9.png"
             }
         ]
+    },
+    {
+        "name": "Landslide Location",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "The landslide is on Route 19 (Vanilla)",
+                "img": "/images/settings/landslide_19.png",
+                "codes": "south_kanto_access, south_kanto_access_19",
+                "inherit_codes": false
+            },
+            {
+                "name": "The landslide is on Route 21",
+                "img": "/images/settings/landslide_21.png",
+                "codes": "south_kanto_access, south_kanto_access_21",
+                "inherit_codes": false
+            },
+            {
+                "name": "The landslide was never real",
+                "img": "/images/settings/landslide_neither.png",
+                "codes": "south_kanto_access, south_kanto_access_free",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Landslide Clear Condition",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Entering South Kanto clears the landslide",
+                "img": "/images/settings/landslide_condition_south.png",
+                "codes": "south_kanto_condition, south_kanto_condition_south",
+                "inherit_codes": false
+            },
+            {
+                "name": "Restoring the Power clears the landslide",
+                "img": "/images/settings/landslide_condition_power.png",
+                "codes": "south_kanto_condition, south_kanto_condition_power",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

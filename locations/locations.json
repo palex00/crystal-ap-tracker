@@ -13403,7 +13403,7 @@
                 "access_rules": [
                     "start_town_Pallet",
                     "@JohtoKanto/Viridian City",
-                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto",
+                    "@JohtoKanto/Route 21/North, $can_surf_kanto",
                     "$can_freefly|Pallet"
                 ],
                 "visibility_rules": [
@@ -18353,7 +18353,7 @@
                     "@JohtoKanto/Route 15",
                     "@JohtoKanto/Celadon City, BICYCLE",
                     "$can_freefly|Fuchsia",
-                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto"
+                    "@JohtoKanto/Route 19/Sea, $can_surf_kanto, ^$landslide_19"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -18645,10 +18645,11 @@
                 ],
                 "sections": [
                     {
-                        "name": "Post-Construction",
+                        "name": "Sea",
                         "visibility_rules": "invisible",
                         "access_rules": [
-                            "@JohtoKanto/Cinnabar Island, $can_surf_kanto"
+                            "@JohtoKanto/Cinnabar Island, $can_surf_kanto",
+                            "@JohtoKanto/Fuchsia City, $can_surf_kanto, ^$landslide_19"
                         ]
                     },
                     {
@@ -18670,7 +18671,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|Route19, @JohtoKanto/Route 19/Post-Construction"
+                            "^$unownsign|Route19, @JohtoKanto/Route 19/Sea"
                         ]
                     },
                     {
@@ -18680,7 +18681,7 @@
                             "show_items, trainersanity_1467"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 19/Post-Construction"
+                            "@JohtoKanto/Route 19/Sea"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_m.png",
                         "chest_opened_img": "images/trainers/swimmer_m_bw.png"
@@ -18692,7 +18693,7 @@
                             "show_items, trainersanity_1050"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 19/Post-Construction"
+                            "@JohtoKanto/Route 19/Sea"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_f.png",
                         "chest_opened_img": "images/trainers/swimmer_f_bw.png"
@@ -18704,7 +18705,7 @@
                             "show_items, trainersanity_1481"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 19/Post-Construction"
+                            "@JohtoKanto/Route 19/Sea"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_m.png",
                         "chest_opened_img": "images/trainers/swimmer_m_bw.png"
@@ -18716,7 +18717,7 @@
                             "show_items, trainersanity_1480"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 19/Post-Construction"
+                            "@JohtoKanto/Route 19/Sea"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_m.png",
                         "chest_opened_img": "images/trainers/swimmer_m_bw.png"
@@ -18731,7 +18732,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_kanto, @JohtoKanto/Route 19/Post-Construction"
+                            "^$surf_encounter_kanto, @JohtoKanto/Route 19/Sea"
                         ]
                     }
                 ],
@@ -18756,6 +18757,7 @@
             {
                 "name": "Route 20",
                 "access_rules": [
+                    "@JohtoKanto/Route 19/Sea, $can_surf_kanto",
                     "@JohtoKanto/Cinnabar Island, $can_surf_kanto"
                 ],
                 "visibility_rules": [
@@ -18907,8 +18909,9 @@
                 "name": "Cinnabar Island",
                 "access_rules": [
                     "start_town_Cinnabar",
-                    "@JohtoKanto/Pallet Town, $can_surf_kanto",
-                    "$can_freefly|Cinnabar"
+                    "$can_freefly|Cinnabar",
+                    "@JohtoKanto/Route 21/South, $can_surf_kanto",
+                    "@JohtoKanto/Route 20, $can_surf_kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -19010,18 +19013,38 @@
             },
             {
                 "name": "Route 21",
-                "access_rules": [
-                    "@JohtoKanto/Pallet Town, $can_surf_kanto"
-                ],
                 "visibility_rules": [
                     "johto_only_off"
                 ],
                 "sections": [
                     {
+                        "name": "North",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Pallet Town, $can_surf_kanto",
+                            "@JohtoKanto/Route 21/South, ^$landslide_21"                         
+                        ]
+                    },
+                    {
+                        "name": "South",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Cinnabar Island, $can_surf_kanto",
+                            "@JohtoKanto/Route 21/North, ^$landslide_21"
+                        ]
+                    },
+                    {
                         "name": "Swimmer Nikki",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1055"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 21/South"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_f.png",
                         "chest_opened_img": "images/trainers/swimmer_f_bw.png"
@@ -19032,6 +19055,9 @@
                             "show_items, trainersanity",
                             "show_items, trainersanity_1143"
                         ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 21/South"
+                        ],
                         "chest_unopened_img": "images/trainers/fisher.png",
                         "chest_opened_img": "images/trainers/fisher_bw.png"
                     },
@@ -19040,6 +19066,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, trainersanity_1484"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 21/South"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_m.png",
                         "chest_opened_img": "images/trainers/swimmer_m_bw.png"
@@ -19054,7 +19083,7 @@
                             "show_items, grasssanity_full"
                         ],
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "@JohtoKanto/Route 21/North, $can_surf_kanto, $can_cut_kanto"
                         ]
                     },
                     {
@@ -19067,7 +19096,7 @@
                             "show_items, grasssanity_single"
                         ],
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "@JohtoKanto/Route 21/North, $can_surf_kanto, $can_cut_kanto"
                         ]
                     },
                     {
@@ -19080,7 +19109,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "@JohtoKanto/Route 21/North, $can_surf_kanto, ^$land_encounter"
                         ]
                     },
                     {
@@ -19093,7 +19122,8 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_kanto"
+                            "@JohtoKanto/Route 21/North, ^$surf_encounter_kanto",
+                            "@JohtoKanto/Route 21/South, ^$surf_encounter_kanto"
                         ]
                     }
                 ],
