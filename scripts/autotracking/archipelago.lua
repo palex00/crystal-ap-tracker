@@ -557,12 +557,15 @@ function updatePokemon()
         updateEvolutionInfo()
         updateBreedingInfo()
         
-        for region_key, location in pairs(ENCOUNTER_MAPPING) do
-            local object = Tracker:FindObjectForCode(location)
-            object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
-        end
+        local regionObjects = {}
+        local baseCounts = {}
+        local pendingDecrements = {}
         
-        local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total")
+        for region_key, location in pairs(ENCOUNTER_MAPPING) do
+            regionObjects[region_key] = Tracker:FindObjectForCode(location)
+            baseCounts[region_key] = #REGION_ENCOUNTERS[region_key]
+            pendingDecrements[region_key] = 0
+        end
 
         for dex_number, locations in pairs(POKEMON_TO_LOCATIONS) do
             local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
@@ -593,16 +596,21 @@ function updatePokemon()
                             if string.sub(location, 1, 7):lower() == "static_" or string.sub(location, 1, 6):lower() == "TRADE_" then
                                 local event_code = Tracker:FindObjectForCode(location)
                                 if event_code and event_code.Active then
-                                    object.AvailableChestCount = object.AvailableChestCount - 1
+                                    pendingDecrements[location] = pendingDecrements[location] + 1
                                 end
                             else
-                                object.AvailableChestCount = object.AvailableChestCount - 1
+                                pendingDecrements[location] = pendingDecrements[location] + 1
                             end
                         end
                     end
                 end
             end
         end
+        
+        for region_key, object in pairs(regionObjects) do
+            object.AvailableChestCount = baseCounts[region_key] - pendingDecrements[region_key]
+        end
+        
     end
 end
 
