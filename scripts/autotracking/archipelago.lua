@@ -37,20 +37,6 @@ function onClear(slot_data)
         ScriptHost:RemoveWatchForCode(code)
     end
     
-    -- this resets trainer visibility. It will cause some "cannot find object"-errors
-    -- but I am not willing to make yet another list that is just a list.
-    for i = 1039, 1522 do
-        local obj = Tracker:FindObjectForCode("trainersanity_" .. i)
-        if obj then
-            obj.Active = false
-        end
-    end
-    for i = 296, 302 do
-        local obj = Tracker:FindObjectForCode("trainersanity_" .. i)
-        obj.Active = false
-    end
-    Tracker:FindObjectForCode("trainersanity_1702").Active = false -- literally just Eusine the fucker.
-
     -- resets unown codes
     for i = 1, 26 do
         local obj = Tracker:FindObjectForCode("UNOWN_" .. i)
@@ -137,9 +123,6 @@ function onClear(slot_data)
                 end
             end
         elseif k == "trainersanity" then
-            for _, value in ipairs(v) do
-                Tracker:FindObjectForCode("trainersanity_" .. value).Active = true
-            end
             if #v == 0 then
                 TRAINERS:setType("none")
             elseif #v == 372 and has("johto_only_off") then
@@ -149,6 +132,10 @@ function onClear(slot_data)
             else
                 TRAINERS:setType("partial")
                 TRAINERS:setStage(#v)
+                resetTrainers()
+                for _, value in ipairs(v) do
+                    Tracker:FindObjectForCode("trainersanity_" .. value).Active = true
+                end
             end
         elseif k == "dexsanity" then
             Tracker:FindObjectForCode("dexsanity").AcquiredCount = v

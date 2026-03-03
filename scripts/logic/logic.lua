@@ -563,3 +563,11 @@ end
 function alph_passage()
     return (not has("goal_unown") or (has("HO-OH_TILE", 16) or can_strength()))
 end
+
+function partial_trainersanity()
+    if TRAINERS:getType() == "partial" then
+        return true
+    else
+        return false
+    end
+end

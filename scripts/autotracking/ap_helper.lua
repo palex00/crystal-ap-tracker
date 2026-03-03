@@ -42,6 +42,22 @@ function resetLocations()
     end
 end
 
+function resetTrainers()
+    -- this resets trainer visibility. It will cause some "cannot find object"-errors
+    -- but I am not willing to make yet another list that is just a list.
+    for i = 1039, 1522 do
+        local obj = Tracker:FindObjectForCode("trainersanity_" .. i)
+        if obj then
+            obj.Active = false
+        end
+    end
+    for i = 296, 302 do
+        local obj = Tracker:FindObjectForCode("trainersanity_" .. i)
+        obj.Active = false
+    end
+    Tracker:FindObjectForCode("trainersanity_1702").Active = false -- literally just Eusine the fucker.
+end
+
 MAP_TOGGLE = {
     [0] = 0,
     [1] = 1

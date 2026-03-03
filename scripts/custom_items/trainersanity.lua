@@ -82,6 +82,8 @@ function TrainersanityNumber:providesCode(code)
     if self:canProvideCode(code) then
         if self:getType() == "full" then
             return 1
+        elseif self:getType() == "partial" then
+            return 69
         end
     end
     return 0
