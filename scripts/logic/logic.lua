@@ -437,7 +437,7 @@ function unownsign(sign)
         return AccessibilityLevel.Inspect
     end
 
-    local allChecked = true
+    allChecked = true
     for key, _ in pairs(UNOWN_DATA) do
         if not table_contains(CHECKED_SIGNS, key) then
             allChecked = false
@@ -452,77 +452,25 @@ function unownsign(sign)
         letter = string.byte(letter) - string.byte("A") + 1
     end
     
-    if allChecked == false then
-        if not table_contains(CHECKED_SIGNS, sign) then
-            return AccessibilityLevel.Inspect
-        elseif not UNOWN_DATA[sign] then
-            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
-            return AccessibilityLevel.Normal
-        elseif has("UNOWN_"..letter) then
-            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
-            return AccessibilityLevel.Normal
-        else
-            if letter >= 1 and letter <= 11 then
-                if has("ENGINE_UNLOCKED_UNOWNS_A_TO_K") then
-                    return AccessibilityLevel.Normal
-                else
-                    return AccessibilityLevel.None
-                end
-            elseif letter >= 12 and letter <= 18 then
-                if has("ENGINE_UNLOCKED_UNOWNS_L_TO_R") then
-                    return AccessibilityLevel.Normal
-                else
-                    return AccessibilityLevel.None
-                end
-            elseif letter >= 19 and letter <= 23 then
-                if has("ENGINE_UNLOCKED_UNOWNS_S_TO_W") then
-                    return AccessibilityLevel.Normal
-                else
-                    return AccessibilityLevel.None
-                end
-            elseif letter >= 24 and letter <= 26 then
-                if has("ENGINE_UNLOCKED_UNOWNS_X_TO_Z") then
-                    return AccessibilityLevel.Normal
-                else
-                    return AccessibilityLevel.None
-                end
-            end
-        end
-    else
-        if not UNOWN_DATA[sign] then
-            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
-            return AccessibilityLevel.Normal
-        elseif has("UNOWN_"..letter) then
-            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
-            return AccessibilityLevel.Normal
-        else
-            if letter >= 1 and letter <= 11 then
-                if has("ENGINE_UNLOCKED_UNOWNS_A_TO_K") then
-                    return AccessibilityLevel.Normal
-                else
-                    return AccessibilityLevel.None
-                end
-            elseif letter >= 12 and letter <= 18 then
-                if has("ENGINE_UNLOCKED_UNOWNS_L_TO_R") then
-                    return AccessibilityLevel.Normal
-                else
-                    return AccessibilityLevel.None
-                end
-            elseif letter >= 19 and letter <= 23 then
-                if has("ENGINE_UNLOCKED_UNOWNS_S_TO_W") then
-                    return AccessibilityLevel.Normal
-                else
-                    return AccessibilityLevel.None
-                end
-            elseif letter >= 24 and letter <= 26 then
-                if has("ENGINE_UNLOCKED_UNOWNS_X_TO_Z") then
-                    return AccessibilityLevel.Normal
-                else
-                    return AccessibilityLevel.None
-                end
-            end
-        end        
+    if not allChecked and not table_contains(CHECKED_SIGNS, sign) then
+        return AccessibilityLevel.Inspect
     end
+    
+    if not UNOWN_DATA[sign] or has("UNOWN_" .. letter) then
+        return AccessibilityLevel.Normal
+    end
+    
+    local groupUnlock =
+        (letter >= 1  and letter <= 11 and "ENGINE_UNLOCKED_UNOWNS_A_TO_K") or
+        (letter >= 12 and letter <= 18 and "ENGINE_UNLOCKED_UNOWNS_L_TO_R") or
+        (letter >= 19 and letter <= 23 and "ENGINE_UNLOCKED_UNOWNS_S_TO_W") or
+        (letter >= 24 and letter <= 26 and "ENGINE_UNLOCKED_UNOWNS_X_TO_Z")
+    
+    if groupUnlock and has(groupUnlock) then
+        return AccessibilityLevel.Normal
+    end
+    
+    return AccessibilityLevel.None
 end
 
 function phonecard()

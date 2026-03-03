@@ -21,6 +21,7 @@ SEEN_ID = ""
 CAUGHT_ID = ""
 EVOLUTION_DATA = ""
 BREEDING_DATA = ""
+allChecked = nil
 CHECKED_SIGNS = nil
 UNOWN_DATA = nil
 TRADE_DATA = nil
@@ -247,7 +248,7 @@ function onClear(slot_data)
         STATIC_ID="pokemon_crystal_statics_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({STATIC_ID})
         Archipelago:Get({STATIC_ID})
-
+    
         ROCKETTRAP_ID="pokemon_crystal_rockettraps_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({ROCKETTRAP_ID})
         Archipelago:Get({ROCKETTRAP_ID})
@@ -363,13 +364,9 @@ function onNotify(key, value, old_value)
         elseif key == ROCKETTRAP_ID then
             updateRocketTraps(value)
         elseif key == SIGN_ID then
-            CHECKED_SIGNS = value
-            Tracker:FindObjectForCode("dummy").Active = true
-            Tracker:FindObjectForCode("dummy").Active = false
+            updateSigns(value)
         elseif key == UNOWN_ID then
             updateUnown(value)
-            Tracker:FindObjectForCode("dummy").Active = true
-            Tracker:FindObjectForCode("dummy").Active = false
         elseif key == TRADE_ID then
             updateTrades(value)
         end
@@ -395,13 +392,9 @@ function onNotifyLaunch(key, value)
         elseif key == ROCKETTRAP_ID then
             updateRocketTraps(value)
         elseif key == SIGN_ID then
-            CHECKED_SIGNS = value
-            Tracker:FindObjectForCode("dummy").Active = true
-            Tracker:FindObjectForCode("dummy").Active = false
+            updateSigns(value)
         elseif key == UNOWN_ID then
             updateUnown(value)
-            Tracker:FindObjectForCode("dummy").Active = true
-            Tracker:FindObjectForCode("dummy").Active = false
         elseif key == TRADE_ID then
             updateTrades(value)
         end
@@ -518,6 +511,48 @@ function updateUnown(value)
     for i = 1, 26 do
         if table_contains(value, i) then
             Tracker:FindObjectForCode("UNOWN_"..i).Active = true
+        end
+    end
+    updateSigns()
+end
+
+function updateSigns(checked_signs)
+    if checked_signs ~= nil then
+        CHECKED_SIGNS = checked_signs
+    end
+
+    allChecked = true
+    for key, _ in pairs(UNOWN_DATA) do
+        if not table_contains(CHECKED_SIGNS, key) then
+            allChecked = false
+            break
+        end
+    end
+    
+    local value = nil
+    local letter = nil
+    
+    for _, sign in ipairs(CHECKED_SIGNS) do
+        if not UNOWN_DATA[sign] then
+            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+        else
+            if UNOWN_DATA[sign] ~= nil then
+                value = UNOWN_DATA[sign]
+                letter = value:sub(#value, #value)
+                letter = string.byte(letter) - string.byte("A") + 1
+            end
+    
+            if has("UNOWN_"..letter) then
+                Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+            end
+        end 
+    end
+    
+    if allChecked == true then
+        for sign, _ in pairs(SIGN_MAPPING) do
+            if UNOWN_DATA[sign] == nil then
+                Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+            end
         end
     end
 end
