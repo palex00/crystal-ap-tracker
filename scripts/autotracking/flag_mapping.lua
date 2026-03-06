@@ -52,7 +52,8 @@ FLAG_EVENT_2_CODES = {
     "ENGINE_UNLOCKED_UNOWNS_A_TO_K",
     "ENGINE_UNLOCKED_UNOWNS_L_TO_R",
     "ENGINE_UNLOCKED_UNOWNS_S_TO_W",
-    "ENGINE_UNLOCKED_UNOWNS_X_TO_Z"
+    "ENGINE_UNLOCKED_UNOWNS_X_TO_Z",
+    "EVENT_GAVE_MYSTERY_EGG_TO_ELM"
 }
 
 FLAG_STATIC_CODES = {
@@ -68,7 +69,7 @@ FLAG_STATIC_CODES = {
     "Static_Shuckie",
     "Static_Eevee",
     "Static_Dratini",
-    "dummy", -- This is Togepi Egg hatched but we don't track Egg hatches
+    "dummy", -- this is the Togepi Egg Hatch. Technically this locks a check but we'll just use the event where you get it
     "Static_Tyrogue",
     "Static_UnionCaveLapras",
     "Static_Celebi",
@@ -137,15 +138,20 @@ FLAG_ITEM_CODES = {
   {option="badges_off", codes={"MARSH_BADGE"}},
   {option="badges_off", codes={"VOLCANO_BADGE"}},
   {option="badges_off", codes={"EARTH_BADGE"}},
-
   {option="pokegear_off", codes={"RADIO_CARD"}},
   {option="pokegear_off", codes={"MAP_CARD"}},
   {option="pokegear_off", codes={"PHONE_CARD"}},
   {option="pokegear_off", codes={"EXPN_CARD"}},
   {option="pokegear_off", codes={"POKE_GEAR"}},
-  {option="pokegear_off", codes=nil},
+  {option="randomize_pokedex_not_vanilla", codes={"POKEDEX"}},
   {option=nil, codes={"ESCAPE_ROPE"}},
   {option=nil, codes={"WATER_STONE"}},
-  
+  {option="berries_off", codes={"RED_APRICORN"}},
+  {option="berries_off", codes={"BLU_APRICORN"}},
+  {option="berries_off", codes={"YLW_APRICORN"}},
+  {option="berries_off", codes={"GRN_APRICORN"}},
+  {option="berries_off", codes={"WHT_APRICORN"}},
+  {option="berries_off", codes={"BLK_APRICORN"}},
+  {option="berries_off", codes={"PNK_APRICORN"}},
   {option="badges_off", codes={"RISING_BADGE"}},
 }

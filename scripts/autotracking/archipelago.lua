@@ -60,7 +60,7 @@ function onClear(slot_data)
             if  k == "apworld_version" then
                 local version_str = tostring(v)
                 local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-                if first_two_dots == "5.3" or nil then
+                if first_two_dots == "5.4" or nil then
                     Tracker:AddLayouts("layouts/tracker.json")
                 else
                     Tracker:AddLayouts("layouts/versionmismatch.json")
@@ -187,6 +187,10 @@ function onClear(slot_data)
         end
     end
     
+    if has("randomize_pokedex_startwith") then
+        Tracker:FindObjectForCode("POKEDEX").Active = true
+    end
+    
     updateRemainingDexcountsanityChecks()
     showMonVisibility()
     
@@ -276,6 +280,10 @@ function onClear(slot_data)
         TRADE_ID="pokemon_crystal_trades_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({TRADE_ID})
         Archipelago:Get({TRADE_ID})
+        
+        SLOT_UNLOCK="pokemon_crystal_tracker_slots_enabled_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({SLOT_UNLOCK})
+        Archipelago:Get({SLOT_UNLOCK})
     end
 
     toggle_itemgrid()
@@ -369,6 +377,8 @@ function onNotify(key, value, old_value)
             updateUnown(value)
         elseif key == TRADE_ID then
             updateTrades(value)
+        elseif key == SLOT_UNLOCK then
+            Tracker:AddLayouts("layouts/settings_quick_slottrack.json")
         end
     end
 end
@@ -397,6 +407,8 @@ function onNotifyLaunch(key, value)
             updateUnown(value)
         elseif key == TRADE_ID then
             updateTrades(value)
+        elseif key == SLOT_UNLOCK then
+            Tracker:AddLayouts("layouts/settings_quick_slottrack.json")
         end
     end
 end
@@ -752,39 +764,48 @@ last_map_number = nil
 
 function onMap(value)
     if has("automap_on") and value ~= nil and value["data"] ~= nil then
-        local map_group = value["data"]["mapGroup"]
-        local map_number = value["data"]["mapNumber"]
+        local slotdigit_1 = Tracker:FindObjectForCode("slotdigit_1").CurrentStage or 0
+        local slotdigit_2 = Tracker:FindObjectForCode("slotdigit_2").CurrentStage or 0
+        local slotdigit_3 = Tracker:FindObjectForCode("slotdigit_3").CurrentStage or 0
+    
+        local slot = slotdigit_1 * 100 + slotdigit_2 * 10 + slotdigit_3
         
-        -- Detect map transition logic
-        if last_map_group == 15 and last_map_number == 1 and map_group == 15 and map_number == 3 then
-            Tracker:FindObjectForCode("ssaqua").CurrentStage = 1
-        elseif last_map_group == 15 and last_map_number == 2 and map_group == 15 and map_number == 3 then
-            Tracker:FindObjectForCode("ssaqua").CurrentStage = 2
-        end
+        if (value["data"]["mapGroup_0"] ~= nil) or (value["data"]["mapGroup_"..slot] ~= nil) then
 
-        -- Retrieve ssaqua and event state
-        local ssaqua = Tracker:FindObjectForCode("ssaqua")
-
-        -- Check and possibly modify map_group based on conditions
-        if map_group == 15 then
-            if ssaqua.CurrentStage == 1 then
-                map_group = 115
-            elseif ssaqua.CurrentStage == 2 then
-                map_group = 215
+            local map_group = value["data"]["mapGroup_0"] or value["data"]["mapGroup_"..slot]
+            local map_number = value["data"]["mapNumber_0"] or value["data"]["mapNumber_"..slot]
+        
+            -- This whole thing about SSAQUA exists to properly show west- or eastbound
+            local ssaqua = Tracker:FindObjectForCode("ssaqua")
+    
+            -- Detect map transition logic
+            if last_map_group == 15 and last_map_number == 1 and map_group == 15 and map_number == 3 then
+                ssaqua.CurrentStage = 1
+            elseif last_map_group == 15 and last_map_number == 2 and map_group == 15 and map_number == 3 then
+                ssaqua.CurrentStage = 2
             end
+    
+            -- Check and possibly modify map_group based on conditions
+            if map_group == 15 then
+                if ssaqua.CurrentStage == 1 then
+                    map_group = 115
+                elseif ssaqua.CurrentStage == 2 then
+                    map_group = 215
+                end
+            end
+    
+            -- Access correct mapping and activate tabs
+            local tabs = MAP_MAPPING[map_group] and MAP_MAPPING[map_group][map_number]
+            
+            for i, tab in ipairs(tabs) do
+                Tracker:UiHint("ActivateTab", tab)
+            end
+            
+    
+            -- Save last processed map
+            last_map_group = value["data"]["mapGroup_0"] or value["data"]["mapGroup_"..slot]
+            last_map_number = value["data"]["mapNumber_0"] or value["data"]["mapNumber_"..slot]
         end
-
-        -- Access correct mapping and activate tabs
-        local tabs = MAP_MAPPING[map_group] and MAP_MAPPING[map_group][map_number]
-        
-        for i, tab in ipairs(tabs) do
-            Tracker:UiHint("ActivateTab", tab)
-        end
-        
-
-        -- Save last processed map
-        last_map_group = value["data"]["mapGroup"]
-        last_map_number = value["data"]["mapNumber"]
     end
 end
 

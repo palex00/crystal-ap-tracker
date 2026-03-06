@@ -98,15 +98,36 @@
                         "chest_opened_img": "images/gift/scientist_open.png"
                     },
                     {
+                        "name": "Elm's Lab - Give Mystery Egg to Elm",
+                        "access_rules": [
+                            "MYSTERY_EGG"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "hosted_item": "EVENT_GAVE_MYSTERY_EGG_TO_ELM"
+                    },
+                    {
                         "name": "Elm's Lab - Gift from Aide after returning Mystery Egg",
                         "access_rules": [
-                            "MYSTERY_EGG, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
+                            "EVENT_GAVE_MYSTERY_EGG_TO_ELM"
                         ],
                         "visibility_rules": [
                             "show_items"
                         ],
                         "chest_unopened_img": "images/gift/scientist.png",
                         "chest_opened_img": "images/gift/scientist_open.png"
+                    },
+                    {
+                        "name": "Elm's Lab - Everstone from Elm",
+                        "access_rules": [
+                            "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ],
+                        "chest_unopened_img": "images/gift/elm.png",
+                        "chest_opened_img": "images/gift/elm_open.png"
                     },
                     {
                         "name": "Elm's Lab - Master Ball from Elm",
@@ -392,7 +413,7 @@
                         "item_count": 5,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -450,9 +471,7 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Cherrygrove City",
-                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, route_30_battle_north",
-                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON, route_30_battle_both",
-                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, $can_cut_johto, route_30_battle_both"
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, $r30_passage|southbound",
                         ]
                     },
                     {
@@ -461,9 +480,7 @@
                             "Invisible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
-                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon, $can_cut_johto",
-                            "@JohtoKanto/Route 31"
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon, $r30_passage|northbound",
                         ]
                     },
                     {
@@ -572,6 +589,27 @@
                         ],
                         "chest_unopened_img": "images/gift/gentleman.png",
                         "chest_opened_img": "images/gift/gentleman_open.png"
+                    },
+                    {
+                        "name": "Pokedex from Oak",
+                        "visibility_rules": [
+                            "show_items, randomize_pokedex_not_vanilla"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
+                        ],
+                        "chest_unopened_img": "images/gift/oak.png",
+                        "chest_opened_img": "images/gift/oak_open.png"
+                    },
+                    {
+                        "name": "Pokedex from Oak​",
+                        "visibility_rules": [
+                            "show_items, randomize_pokedex_vanilla"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
+                        ],
+                        "hosted_item": "POKEDEX"
                     },
                     {
                         "name": "Youngster Joey",
@@ -1205,7 +1243,7 @@
                         "item_count": 10,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -1220,7 +1258,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|KYLE"
+                            "$pokedex, ^$trade|KYLE"
                         ]
                     },
                     {
@@ -2696,6 +2734,13 @@
                         "chest_opened_img": "images/items/berry_tree_bw.png"
                     },
                     {
+                        "name": "White Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "hosted_item": "WHT_APRICORN"
+                    },
+                    {
                         "name": "Lure Ball from Kurt",
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL, @JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
@@ -2868,7 +2913,7 @@
                         "item_count": 9,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -2877,7 +2922,7 @@
                         "name": "Kurt's Ball Shop - Red Apricorn",
                         "chest_unopened_img": "images/shopsanity/kurt_red.png",
                         "chest_opened_img": "images/shopsanity/kurt_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_apricorn_true"
                         ],
@@ -2889,7 +2934,7 @@
                         "name": "Kurt's Ball Shop - Grn Apricorn",
                         "chest_unopened_img": "images/shopsanity/kurt_grn.png",
                         "chest_opened_img": "images/shopsanity/kurt_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_apricorn_true"
                         ],
@@ -2901,7 +2946,7 @@
                         "name": "Kurt's Ball Shop - Blu Apricorn",
                         "chest_unopened_img": "images/shopsanity/kurt_blu.png",
                         "chest_opened_img": "images/shopsanity/kurt_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_apricorn_true"
                         ],
@@ -2913,7 +2958,7 @@
                         "name": "Kurt's Ball Shop - Ylw Apricorn",
                         "chest_unopened_img": "images/shopsanity/kurt_ylw.png",
                         "chest_opened_img": "images/shopsanity/kurt_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_apricorn_true"
                         ],
@@ -2925,7 +2970,7 @@
                         "name": "Kurt's Ball Shop - Blk Apricorn",
                         "chest_unopened_img": "images/shopsanity/kurt_blk.png",
                         "chest_opened_img": "images/shopsanity/kurt_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_apricorn_true"
                         ],
@@ -2937,7 +2982,7 @@
                         "name": "Kurt's Ball Shop - Wht Apricorn",
                         "chest_unopened_img": "images/shopsanity/kurt_wht.png",
                         "chest_opened_img": "images/shopsanity/kurt_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_apricorn_true"
                         ],
@@ -2949,7 +2994,7 @@
                         "name": "Kurt's Ball Shop - Pnk Apricorn",
                         "chest_unopened_img": "images/shopsanity/kurt_pnk.png",
                         "chest_opened_img": "images/shopsanity/kurt_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_apricorn_true"
                         ],
@@ -3660,7 +3705,7 @@
                         "item_count": 7,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -3670,7 +3715,7 @@
                         "item_count": 8,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -3691,7 +3736,7 @@
                         "item_count": 7,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -3712,7 +3757,7 @@
                         "item_count": 5,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -3754,7 +3799,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|MIKE"
+                            "$pokedex, ^$trade|MIKE"
                         ]
                     },
                     {
@@ -3762,7 +3807,7 @@
                         "item_count": 3,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -3783,7 +3828,7 @@
                         "item_count": 3,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -3793,7 +3838,7 @@
                         "item_count": 9,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ],
@@ -3964,7 +4009,7 @@
                         "item_count": 3,
                         "chest_unopened_img": "images/shopsanity/coin_case.png",
                         "chest_opened_img": "images/shopsanity/coin_case_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_gamecorners_true"
                         ],
@@ -4112,7 +4157,7 @@
                         "item_count": 4,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ],
@@ -4125,7 +4170,7 @@
                         "item_count": 5,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ],
@@ -4515,7 +4560,7 @@
                         "item_count": 2,
                         "chest_unopened_img": "images/shopsanity/buena.png",
                         "chest_opened_img": "images/shopsanity/buena_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_bluecard_true"
                         ],
@@ -4528,7 +4573,7 @@
                         "item_count": 2,
                         "chest_unopened_img": "images/shopsanity/buena.png",
                         "chest_opened_img": "images/shopsanity/buena_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_bluecard_true"
                         ],
@@ -4541,7 +4586,7 @@
                         "item_count": 5,
                         "chest_unopened_img": "images/shopsanity/buena.png",
                         "chest_opened_img": "images/shopsanity/buena_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_bluecard_true"
                         ],
@@ -5204,7 +5249,7 @@
                             "show_items, phone_calls_visible, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/National Park/Park, ^$phonecall, ^$request_pokemon|BEVERLY"
+                            "@JohtoKanto/National Park/Park, ^$phonecall, ^$request_pokemon|BEVERLY, $pokedex"
                         ]
                     },
                     {
@@ -5695,6 +5740,27 @@
                         "chest_opened_img": "images/items/berry_tree_bw.png"
                     },
                     {
+                        "name": "Red Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "hosted_item": "RED_APRICORN"
+                    },
+                    {
+                        "name": "Blue Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "hosted_item": "BLU_APRICORN"
+                    },
+                    {
+                        "name": "Black Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "hosted_item": "BLK_APRICORN"
+                    },
+                    {
                         "name": "Magnet from Sunny",
                         "visibility_rules": [
                             "show_items"
@@ -6073,7 +6139,7 @@
                         "item_count": 10,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -6850,7 +6916,7 @@
                             "show_items, phone_calls_visible, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "^$phonecall, ^$request_pokemon|DEREK"
+                            "^$phonecall, ^$request_pokemon|DEREK, $pokedex"
                         ]
                     },
                     {
@@ -7113,7 +7179,7 @@
                         "item_count": 9,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -7128,7 +7194,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|TIM"
+                            "$pokedex, ^$trade|TIM"
                         ]
                     },
                     {
@@ -8500,7 +8566,7 @@
                         "item_count": 5,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -8664,6 +8730,36 @@
                         ],
                         "chest_unopened_img": "images/items/berry_tree.png",
                         "chest_opened_img": "images/items/berry_tree_bw.png"
+                    },
+                    {
+                        "name": "Pink Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
+                        ],
+                        "hosted_item": "PNK_APRICORN"
+                    },
+                    {
+                        "name": "Green Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
+                        ],
+                        "hosted_item": "GRN_APRICORN"
+                    },
+                    {
+                        "name": "Yellow Apricorn from Apricorn Tree",
+                        "visibility_rules": [
+                            "show_items, berries_off, shopsanity_apricorn_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
+                        ],
+                        "hosted_item": "YLW_APRICORN"
                     },
                     {
                         "name": "Fisher Tully",
@@ -9897,7 +9993,7 @@
                         "item_count": 4,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -9907,7 +10003,7 @@
                         "item_count": 9,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ],
@@ -10051,7 +10147,7 @@
                             "show_items, phone_calls_visible, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "^$phonecall, ^$request_pokemon|TIFFANY"
+                            "^$phonecall, ^$request_pokemon|TIFFANY, $pokedex"
                         ]
                     },
                     {
@@ -11023,7 +11119,7 @@
                         "item_count": 9,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -11038,7 +11134,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|EMY"
+                            "$pokedex, ^$trade|EMY"
                         ]
                     },
                     {
@@ -12342,7 +12438,7 @@
                         "item_count": 7,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_johtomarts_true"
                         ]
@@ -13150,7 +13246,7 @@
                         "item_count": 9,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -13307,7 +13403,7 @@
                 "access_rules": [
                     "start_town_Pallet",
                     "@JohtoKanto/Viridian City",
-                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto",
+                    "@JohtoKanto/Route 21/North, $can_surf_kanto",
                     "$can_freefly|Pallet"
                 ],
                 "visibility_rules": [
@@ -13890,7 +13986,7 @@
                         "item_count": 7,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -13905,7 +14001,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|CHRIS"
+                            "$pokedex, ^$trade|CHRIS"
                         ]
                     },
                     {
@@ -14108,7 +14204,7 @@
                         "item_count": 6,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -14517,7 +14613,7 @@
                         "item_count": 9,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -14907,7 +15003,10 @@
                         "chest_unopened_img": "images/other/bills_grandpa.png",
                         "chest_opened_img": "images/other/bills_grandpa_bw.png",
                         "visibility_rules": [
-                            "randomize_pokemon_requests_true"
+                            "show_items, randomize_pokemon_requests_true"
+                        ],
+                        "access_rules": [
+                            "$pokedex"
                         ]
                     },
                     {
@@ -15297,7 +15396,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|FOREST"
+                            "$pokedex, ^$trade|FOREST"
                         ]
                     }
                 ],
@@ -15604,7 +15703,7 @@
                         "item_count": 8,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -16027,7 +16126,7 @@
                         "item_count": 8,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -16350,7 +16449,7 @@
                         "item_count": 7,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -16360,7 +16459,7 @@
                         "item_count": 10,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -16381,7 +16480,7 @@
                         "item_count": 5,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -16402,7 +16501,7 @@
                         "item_count": 3,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -16423,7 +16522,7 @@
                         "item_count": 5,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -16433,7 +16532,7 @@
                         "item_count": 7,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -16454,7 +16553,7 @@
                         "item_count": 3,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ]
@@ -16528,7 +16627,7 @@
                         "item_count": 3,
                         "chest_unopened_img": "images/shopsanity/coin_case.png",
                         "chest_opened_img": "images/shopsanity/coin_case_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_gamecorners_true"
                         ],
@@ -17193,7 +17292,7 @@
                         "item_count": 8,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ],
@@ -18044,7 +18143,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "^$trade|KIM, $can_cut_kanto"
+                            "$pokedex, ^$trade|KIM, $can_cut_kanto"
                         ]
                     },
                     {
@@ -18254,7 +18353,7 @@
                     "@JohtoKanto/Route 15",
                     "@JohtoKanto/Celadon City, BICYCLE",
                     "$can_freefly|Fuchsia",
-                    "@JohtoKanto/Cinnabar Island, $can_surf_kanto"
+                    "@JohtoKanto/Route 19/Sea, $can_surf_kanto, ^$landslide_19"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -18422,7 +18521,7 @@
                         "item_count": 7,
                         "chest_unopened_img": "images/shopsanity/pokedollar.png",
                         "chest_opened_img": "images/shopsanity/pokedollar_bw.png",
-                        "clear_as_group": false,
+                        "clear_as_group": true,
                         "visibility_rules": [
                             "show_items, shopsanity_kantomarts_true"
                         ],
@@ -18546,10 +18645,11 @@
                 ],
                 "sections": [
                     {
-                        "name": "Post-Construction",
+                        "name": "Sea",
                         "visibility_rules": "invisible",
                         "access_rules": [
-                            "@JohtoKanto/Cinnabar Island, $can_surf_kanto"
+                            "@JohtoKanto/Cinnabar Island, $can_surf_kanto",
+                            "@JohtoKanto/Fuchsia City, $can_surf_kanto, ^$landslide_19"
                         ]
                     },
                     {
@@ -18571,7 +18671,7 @@
                             "show_items, goal_unown"
                         ],
                         "access_rules": [
-                            "^$unownsign|Route19, @JohtoKanto/Route 19/Post-Construction"
+                            "^$unownsign|Route19, @JohtoKanto/Route 19/Sea"
                         ]
                     },
                     {
@@ -18581,7 +18681,7 @@
                             "show_items, $partial_trainersanity, trainersanity_1467"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 19/Post-Construction"
+                            "@JohtoKanto/Route 19/Sea"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_m.png",
                         "chest_opened_img": "images/trainers/swimmer_m_bw.png"
@@ -18593,7 +18693,7 @@
                             "show_items, $partial_trainersanity, trainersanity_1050"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 19/Post-Construction"
+                            "@JohtoKanto/Route 19/Sea"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_f.png",
                         "chest_opened_img": "images/trainers/swimmer_f_bw.png"
@@ -18605,7 +18705,7 @@
                             "show_items, $partial_trainersanity, trainersanity_1481"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 19/Post-Construction"
+                            "@JohtoKanto/Route 19/Sea"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_m.png",
                         "chest_opened_img": "images/trainers/swimmer_m_bw.png"
@@ -18617,7 +18717,7 @@
                             "show_items, $partial_trainersanity, trainersanity_1480"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 19/Post-Construction"
+                            "@JohtoKanto/Route 19/Sea"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_m.png",
                         "chest_opened_img": "images/trainers/swimmer_m_bw.png"
@@ -18632,7 +18732,7 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_kanto, @JohtoKanto/Route 19/Post-Construction"
+                            "^$surf_encounter_kanto, @JohtoKanto/Route 19/Sea"
                         ]
                     }
                 ],
@@ -18657,6 +18757,7 @@
             {
                 "name": "Route 20",
                 "access_rules": [
+                    "@JohtoKanto/Route 19/Sea, $can_surf_kanto",
                     "@JohtoKanto/Cinnabar Island, $can_surf_kanto"
                 ],
                 "visibility_rules": [
@@ -18808,8 +18909,9 @@
                 "name": "Cinnabar Island",
                 "access_rules": [
                     "start_town_Cinnabar",
-                    "@JohtoKanto/Pallet Town, $can_surf_kanto",
-                    "$can_freefly|Cinnabar"
+                    "$can_freefly|Cinnabar",
+                    "@JohtoKanto/Route 21/South, $can_surf_kanto",
+                    "@JohtoKanto/Route 20, $can_surf_kanto"
                 ],
                 "visibility_rules": [
                     "johto_only_off"
@@ -18911,18 +19013,38 @@
             },
             {
                 "name": "Route 21",
-                "access_rules": [
-                    "@JohtoKanto/Pallet Town, $can_surf_kanto"
-                ],
                 "visibility_rules": [
                     "johto_only_off"
                 ],
                 "sections": [
                     {
+                        "name": "North",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Pallet Town, $can_surf_kanto",
+                            "@JohtoKanto/Route 21/South, ^$landslide_21"                         
+                        ]
+                    },
+                    {
+                        "name": "South",
+                        "visibility_rules": [
+                            "invisible"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Cinnabar Island, $can_surf_kanto",
+                            "@JohtoKanto/Route 21/North, ^$landslide_21"
+                        ]
+                    },
+                    {
                         "name": "Swimmer Nikki",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, $partial_trainersanity, trainersanity_1055"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 21/South"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_f.png",
                         "chest_opened_img": "images/trainers/swimmer_f_bw.png"
@@ -18933,6 +19055,9 @@
                             "show_items, trainersanity",
                             "show_items, $partial_trainersanity, trainersanity_1143"
                         ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 21/South"
+                        ],
                         "chest_unopened_img": "images/trainers/fisher.png",
                         "chest_opened_img": "images/trainers/fisher_bw.png"
                     },
@@ -18941,6 +19066,9 @@
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, $partial_trainersanity, trainersanity_1484"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 21/South"
                         ],
                         "chest_unopened_img": "images/trainers/swimmer_m.png",
                         "chest_opened_img": "images/trainers/swimmer_m_bw.png"
@@ -18955,7 +19083,7 @@
                             "show_items, grasssanity_full"
                         ],
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "@JohtoKanto/Route 21/North, $can_surf_kanto, $can_cut_kanto"
                         ]
                     },
                     {
@@ -18968,7 +19096,7 @@
                             "show_items, grasssanity_single"
                         ],
                         "access_rules": [
-                            "$can_cut_kanto"
+                            "@JohtoKanto/Route 21/North, $can_surf_kanto, $can_cut_kanto"
                         ]
                     },
                     {
@@ -18981,7 +19109,7 @@
                             "show_mons, encmethod_land_visible"
                         ],
                         "access_rules": [
-                            "^$land_encounter"
+                            "@JohtoKanto/Route 21/North, $can_surf_kanto, ^$land_encounter"
                         ]
                     },
                     {
@@ -18994,7 +19122,8 @@
                             "show_mons, encmethod_water_visible"
                         ],
                         "access_rules": [
-                            "^$surf_encounter_kanto"
+                            "@JohtoKanto/Route 21/North, ^$surf_encounter_kanto",
+                            "@JohtoKanto/Route 21/South, ^$surf_encounter_kanto"
                         ]
                     }
                 ],

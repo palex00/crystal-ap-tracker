@@ -29,14 +29,17 @@ EVOLUTION_METHOD_MAP = {
 
 function breeding()
     local daycare = Tracker:FindObjectForCode("@JohtoKanto/Route 34").AccessibilityLevel
-    if has("breeding_logic_on") and daycare ~= 0 then
-        return daycare
-    elseif has("breeding_logic_ditto") and has("ditto") and daycare ~= 0 then
-        return daycare
-    elseif daycare ~= 0 then
-        return AccessibilityLevel.SequenceBreak
-    else
+    
+    if (daycare == 0) or has("breeding_logic_off_hard") then
         return AccessibilityLevel.None
+    end
+    
+    if has("breeding_logic_on") then
+        return daycare
+    elseif has("ditto") and (has("breeding_logic_ditto_hard") or has("breeding_logic_ditto_soft")) then
+        return daycare
+    else
+        return AccessibilityLevel.SequenceBreak
     end
 end
 
@@ -216,6 +219,10 @@ end
 
 function trade(person)
     if TRADE_DATA ~= nil then
+        if not has("POKEDEX") then
+            return AccessibilityLevel.None
+        end
+        
         local checked = Tracker:FindObjectForCode("TRADE_"..person).Active
         local pokemon_name = POKEMON_MAPPING[tonumber(TRADE_DATA["TRADE_"..person].requested)]
     

@@ -992,7 +992,7 @@
     },
     {
         "name": "Dexsanity",
-        "img": "/images/settings/pokedex.png",
+        "img": "/images/items/pokeball.png",
         "codes": "dexsanity",
         "type": "consumable",
         "allow_disabled": true,
@@ -1602,20 +1602,32 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Breeding Logic: NOT in Logic",
-                "img": "/images/settings/dex_related/notinlogic.png",
-                "codes": "breeding_logic, breeding_logic_off",
+                "name": "Breeding Logic: NOT in Logic (logically)",
+                "img": "/images/settings/dex_related/notinlogic_tall.png",
+                "codes": "breeding_logic, breeding_logic_off_soft",
                 "inherit_codes": false
             },
             {
-                "name": "Breeding Logic: Only with Ditto",
-                "img": "/images/settings/dex_related/ditto.png",
-                "codes": "breeding_logic, breeding_logic_ditto",
+                "name": "Breeding Logic: NOT in Logic (enforced)",
+                "img": "/images/settings/dex_related/forbidden_tall.png",
+                "codes": "breeding_logic, breeding_logic_off_hard",
+                "inherit_codes": false
+            },
+            {
+                "name": "Breeding Logic: Only with Ditto (logically)",
+                "img": "/images/settings/dex_related/ditto_soft.png",
+                "codes": "breeding_logic, breeding_logic_ditto_soft",
+                "inherit_codes": false
+            },
+            {
+                "name": "Breeding Logic: Only with Ditto (enforced)",
+                "img": "/images/settings/dex_related/ditto_hard.png",
+                "codes": "breeding_logic, breeding_logic_ditto_hard",
                 "inherit_codes": false
             },
             {
                 "name": "Breeding Logic: In Logic",
-                "img": "/images/settings/dex_related/inlogic.png",
+                "img": "/images/settings/dex_related/inlogic_tall.png",
                 "codes": "breeding_logic, breeding_logic_on",
                 "inherit_codes": false
             }
@@ -3230,6 +3242,28 @@
         ]
     },
     {
+        "name": "Route 30 Passage",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 30 Passage requires visiting Mr. Pokemon",
+                "img": "/images/settings/route_30_north.png",
+                "img_mods": "overlay|/images/settings/egg_overlay.png",
+                "codes": "route_30_access, route_30_access_mrpokemon",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 30 Passage requires visiting Mr. Pokemon",
+                "img": "/images/settings/route_30_north.png",
+                "img_mods": "overlay|/images/settings/mrpokemon_overlay.png",
+                "codes": "route_30_access, route_30_access_egg",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "S.S. Aqua Access",
         "type": "progressive",
         "loop": true,
@@ -3462,6 +3496,174 @@
                 "name": "Route 12: Weird Tree",
                 "img": "/images/settings/route_12_access_weirdtree.png",
                 "codes": "route_12_access, route_12_access_weirdtree",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Pokedex",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Pokedex is vanilla",
+                "img": "/images/settings/pokedex.png",
+                "img_mods": "overlay|images/settings/overlay_mrpokemon.png",
+                "codes": "randomize_pokedex, randomize_pokedex_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "You start with Pokedex",
+                "img": "/images/settings/pokedex.png",
+                "img_mods": "overlay|images/settings/overlay_startwith.png",
+                "codes": "randomize_pokedex, randomize_pokedex_not_vanilla, randomize_pokedex_startwith",
+                "inherit_codes": false
+            },
+            {
+                "name": "Pokedex is randomized",
+                "img": "/images/settings/pokedex.png",
+                "img_mods": "overlay|images/settings/overlay_randomized.png",
+                "codes": "randomize_pokedex, randomize_pokedex_not_vanilla, randomize_pokedex_randomize",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "slotdigit_1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "slotdigit_2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "codes": "slotdigit_3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "Landslide Location",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "The landslide is on Route 19 (Vanilla)",
+                "img": "/images/settings/landslide_19.png",
+                "codes": "south_kanto_access, south_kanto_access_19",
+                "inherit_codes": false
+            },
+            {
+                "name": "The landslide is on Route 21",
+                "img": "/images/settings/landslide_21.png",
+                "codes": "south_kanto_access, south_kanto_access_21",
+                "inherit_codes": false
+            },
+            {
+                "name": "The landslide was never real",
+                "img": "/images/settings/landslide_neither.png",
+                "codes": "south_kanto_access, south_kanto_access_free",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Landslide Clear Condition",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Entering South Kanto clears the landslide",
+                "img": "/images/settings/landslide_condition_south.png",
+                "codes": "south_kanto_condition, south_kanto_condition_south",
+                "inherit_codes": false
+            },
+            {
+                "name": "Restoring the Power clears the landslide",
+                "img": "/images/settings/landslide_condition_power.png",
+                "codes": "south_kanto_condition, south_kanto_condition_power",
                 "inherit_codes": false
             }
         ]
