@@ -21,6 +21,7 @@ SEEN_ID = ""
 CAUGHT_ID = ""
 EVOLUTION_DATA = ""
 BREEDING_DATA = ""
+allChecked = nil
 CHECKED_SIGNS = nil
 UNOWN_DATA = nil
 TRADE_DATA = nil
@@ -37,20 +38,6 @@ function onClear(slot_data)
         ScriptHost:RemoveWatchForCode(code)
     end
     
-    -- this resets trainer visibility. It will cause some "cannot find object"-errors
-    -- but I am not willing to make yet another list that is just a list.
-    for i = 1039, 1522 do
-        local obj = Tracker:FindObjectForCode("trainersanity_" .. i)
-        if obj then
-            obj.Active = false
-        end
-    end
-    for i = 296, 302 do
-        local obj = Tracker:FindObjectForCode("trainersanity_" .. i)
-        obj.Active = false
-    end
-    Tracker:FindObjectForCode("trainersanity_1702").Active = false -- literally just Eusine the fucker.
-
     -- resets unown codes
     for i = 1, 26 do
         local obj = Tracker:FindObjectForCode("UNOWN_" .. i)
@@ -137,9 +124,6 @@ function onClear(slot_data)
                 end
             end
         elseif k == "trainersanity" then
-            for _, value in ipairs(v) do
-                Tracker:FindObjectForCode("trainersanity_" .. value).Active = true
-            end
             if #v == 0 then
                 TRAINERS:setType("none")
             elseif #v == 372 and has("johto_only_off") then
@@ -149,6 +133,10 @@ function onClear(slot_data)
             else
                 TRAINERS:setType("partial")
                 TRAINERS:setStage(#v)
+                resetTrainers()
+                for _, value in ipairs(v) do
+                    Tracker:FindObjectForCode("trainersanity_" .. value).Active = true
+                end
             end
         elseif k == "dexsanity" then
             Tracker:FindObjectForCode("dexsanity").AcquiredCount = v
@@ -264,7 +252,7 @@ function onClear(slot_data)
         STATIC_ID="pokemon_crystal_statics_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({STATIC_ID})
         Archipelago:Get({STATIC_ID})
-
+    
         ROCKETTRAP_ID="pokemon_crystal_rockettraps_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({ROCKETTRAP_ID})
         Archipelago:Get({ROCKETTRAP_ID})
@@ -384,13 +372,9 @@ function onNotify(key, value, old_value)
         elseif key == ROCKETTRAP_ID then
             updateRocketTraps(value)
         elseif key == SIGN_ID then
-            CHECKED_SIGNS = value
-            Tracker:FindObjectForCode("dummy").Active = true
-            Tracker:FindObjectForCode("dummy").Active = false
+            updateSigns(value)
         elseif key == UNOWN_ID then
             updateUnown(value)
-            Tracker:FindObjectForCode("dummy").Active = true
-            Tracker:FindObjectForCode("dummy").Active = false
         elseif key == TRADE_ID then
             updateTrades(value)
         elseif key == SLOT_UNLOCK then
@@ -418,13 +402,9 @@ function onNotifyLaunch(key, value)
         elseif key == ROCKETTRAP_ID then
             updateRocketTraps(value)
         elseif key == SIGN_ID then
-            CHECKED_SIGNS = value
-            Tracker:FindObjectForCode("dummy").Active = true
-            Tracker:FindObjectForCode("dummy").Active = false
+            updateSigns(value)
         elseif key == UNOWN_ID then
             updateUnown(value)
-            Tracker:FindObjectForCode("dummy").Active = true
-            Tracker:FindObjectForCode("dummy").Active = false
         elseif key == TRADE_ID then
             updateTrades(value)
         elseif key == SLOT_UNLOCK then
@@ -545,6 +525,48 @@ function updateUnown(value)
             Tracker:FindObjectForCode("UNOWN_"..i).Active = true
         end
     end
+    updateSigns()
+end
+
+function updateSigns(checked_signs)
+    if checked_signs ~= nil then
+        CHECKED_SIGNS = checked_signs
+    end
+
+    allChecked = true
+    for key, _ in pairs(UNOWN_DATA) do
+        if not table_contains(CHECKED_SIGNS, key) then
+            allChecked = false
+            break
+        end
+    end
+    
+    local value = nil
+    local letter = nil
+    
+    for _, sign in ipairs(CHECKED_SIGNS) do
+        if not UNOWN_DATA[sign] then
+            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+        else
+            if UNOWN_DATA[sign] ~= nil then
+                value = UNOWN_DATA[sign]
+                letter = value:sub(#value, #value)
+                letter = string.byte(letter) - string.byte("A") + 1
+            end
+    
+            if has("UNOWN_"..letter) then
+                Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+            end
+        end 
+    end
+    
+    if allChecked == true then
+        for sign, _ in pairs(SIGN_MAPPING) do
+            if UNOWN_DATA[sign] == nil then
+                Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
+            end
+        end
+    end
 end
 
 CAUGHT_COUNT = 0
@@ -569,12 +591,15 @@ function updatePokemon()
         updateEvolutionInfo()
         updateBreedingInfo()
         
-        for region_key, location in pairs(ENCOUNTER_MAPPING) do
-            local object = Tracker:FindObjectForCode(location)
-            object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
-        end
+        local regionObjects = {}
+        local baseCounts = {}
+        local pendingDecrements = {}
         
-        local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total")
+        for region_key, location in pairs(ENCOUNTER_MAPPING) do
+            regionObjects[region_key] = Tracker:FindObjectForCode(location)
+            baseCounts[region_key] = #REGION_ENCOUNTERS[region_key]
+            pendingDecrements[region_key] = 0
+        end
 
         for dex_number, locations in pairs(POKEMON_TO_LOCATIONS) do
             local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
@@ -605,16 +630,21 @@ function updatePokemon()
                             if string.sub(location, 1, 7):lower() == "static_" or string.sub(location, 1, 6):lower() == "TRADE_" then
                                 local event_code = Tracker:FindObjectForCode(location)
                                 if event_code and event_code.Active then
-                                    object.AvailableChestCount = object.AvailableChestCount - 1
+                                    pendingDecrements[location] = pendingDecrements[location] + 1
                                 end
                             else
-                                object.AvailableChestCount = object.AvailableChestCount - 1
+                                pendingDecrements[location] = pendingDecrements[location] + 1
                             end
                         end
                     end
                 end
             end
         end
+        
+        for region_key, object in pairs(regionObjects) do
+            object.AvailableChestCount = baseCounts[region_key] - pendingDecrements[region_key]
+        end
+        
     end
 end
 
