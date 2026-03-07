@@ -2,7 +2,9 @@ Tracker.AllowDeferredLogicUpdate = true
 
 -- Items
 Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/items_hosted.json")
 Tracker:AddItems("items/events.json")
+Tracker:AddItems("items/events_hosted.json")
 Tracker:AddItems("items/settings.json")
 Tracker:AddItems("items/pokemon.json")
 Tracker:AddItems("items/trainersanity.json")
@@ -91,6 +93,97 @@ ScriptHost:AddWatchForCode("shopsanity_gamecorners", "shopsanity_gamecorners", t
 ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_itemgrid)
 ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_itemgrid)
 ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
+
+-- Hosted item watches
+HOSTED_ITEMS = {
+    "POKE_GEAR",
+    "PHONE_CARD",
+    "EVENT_GAVE_MYSTERY_EGG_TO_ELM",
+    "MAP_CARD",
+    "EVENT_BEAT_CHERRYGROVE_RIVAL",
+    "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+    "POKEDEX",
+    "EVENT_GAVE_KENYA",
+    "EVENT_BEAT_FALKNER",
+    "ZEPHYR_BADGE",
+    "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
+    "EVENT_GOT_ALL_UNOWN",
+    "ENGINE_UNLOCKED_UNOWNS_A_TO_K",
+    "ENGINE_UNLOCKED_UNOWNS_L_TO_R",
+    "ENGINE_UNLOCKED_UNOWNS_S_TO_W",
+    "ENGINE_UNLOCKED_UNOWNS_X_TO_Z",
+    "EVENT_CLEARED_SLOWPOKE_WELL",
+    "WHT_APRICORN",
+    "EVENT_BEAT_BUGSY",
+    "HIVE_BADGE",
+    "EVENT_BEAT_AZALEA_RIVAL",
+    "EVENT_HERDED_FARFETCHD",
+    "EVENT_GOT_ODD_EGG",
+    "WATER_STONE",
+    "EVENT_BEAT_WHITNEY",
+    "PLAIN_BADGE",
+    "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL",
+    "RADIO_CARD",
+    "EVENT_BEAT_ROCKET_EXECUTIVEM_3",
+    "EVENT_CLEARED_RADIO_TOWER",
+    "EVENT_GOT_KENYA",
+    "EVENT_SAW_SUICUNE_ON_ROUTE_36",
+    "RED_APRICORN",
+    "BLU_APRICORN",
+    "BLK_APRICORN",
+    "EVENT_MET_BILL",
+    "EVENT_BEAT_MORTY",
+    "FOG_BADGE",
+    "EVENT_RIVAL_BURNED_TOWER",
+    "EVENT_RELEASED_THE_BEASTS",
+    "EVENT_GOT_EON_MAIL_FROM_EUSINE",
+    "EVENT_BEAT_JASMINE",
+    "MINERAL_BADGE",
+    "EVENT_JASMINE_RETURNED_TO_GYM",
+    "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY",
+    "EVENT_BEAT_CHUCK",
+    "STORM_BADGE",
+    "EVENT_SAW_SUICUNE_ON_ROUTE_42",
+    "PNK_APRICORN",
+    "GRN_APRICORN",
+    "YLW_APRICORN",
+    "EVENT_BEAT_PRYCE",
+    "GLACIER_BADGE",
+    "EVENT_CLEARED_ROCKET_HIDEOUT",
+    "EVENT_DECIDED_TO_HELP_LANCE",
+    "EVENT_BEAT_CLAIR",
+    "RISING_BADGE",
+    "EVENT_BEAT_VICTORY_ROAD_RIVAL",
+    "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU",
+    "EVENT_BEAT_ELITE_FOUR",
+    "EVENT_BEAT_RED",
+    "EVENT_BEAT_BLUE",
+    "EARTH_BADGE",
+    "EVENT_BEAT_BROCK",
+    "BOULDER_BADGE",
+    "EVENT_BEAT_RIVAL_IN_MT_MOON",
+    "EVENT_BEAT_MISTY",
+    "CASCADE_BADGE",
+    "EVENT_ROUTE_24_ROCKET",
+    "EVENT_RESTORED_POWER_TO_KANTO",
+    "EXPN_CARD",
+    "EVENT_BEAT_SABRINA",
+    "MARSH_BADGE",
+    "EVENT_BEAT_ERIKA",
+    "RAINBOW_BADGE",
+    "EVENT_OBTAINED_DIPLOMA",
+    "EVENT_BEAT_LTSURGE",
+    "THUNDER_BADGE",
+    "EVENT_BEAT_JANINE",
+    "SOUL_BADGE",
+    "EVENT_BEAT_BLAINE",
+    "VOLCANO_BADGE",
+    "EVENT_VIRIDIAN_GYM_BLUE"
+}
+for _, code in pairs(HOSTED_ITEMS) do
+	ScriptHost:AddWatchForCode(code, code, toggle_item)
+	ScriptHost:AddWatchForCode(code .. "_HOSTED", code .. "_HOSTED", toggle_hosted_item)
+end
 
 
 --for _, code in ipairs(FLAG_STATIC_CODES) do

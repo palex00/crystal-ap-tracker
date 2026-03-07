@@ -72,7 +72,7 @@
                         "visibility_rules": [
                             "show_items, pokegear_off"
                         ],
-                        "hosted_item": "POKE_GEAR"
+                        "hosted_item": "POKE_GEAR_HOSTED"
                     },
                     {
                         "name": "Player's House - Phone Card from Mom",
@@ -87,7 +87,7 @@
                         "visibility_rules": [
                             "show_items, pokegear_off"
                         ],
-                        "hosted_item": "PHONE_CARD"
+                        "hosted_item": "PHONE_CARD_HOSTED"
                     },
                     {
                         "name": "Elm's Lab - Potion from Aide",
@@ -105,7 +105,7 @@
                         "visibility_rules": [
                             "show_items"
                         ],
-                        "hosted_item": "EVENT_GAVE_MYSTERY_EGG_TO_ELM"
+                        "hosted_item": "EVENT_GAVE_MYSTERY_EGG_TO_ELM_HOSTED"
                     },
                     {
                         "name": "Elm's Lab - Gift from Aide after returning Mystery Egg",
@@ -373,7 +373,7 @@
                         "visibility_rules": [
                             "show_items, pokegear_off"
                         ],
-                        "hosted_item": "MAP_CARD"
+                        "hosted_item": "MAP_CARD_HOSTED"
                     },
                     {
                         "name": "Mystic Water from Island Man",
@@ -391,7 +391,7 @@
                         "access_rules": [
                             "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
                         ],
-                        "hosted_item": "EVENT_BEAT_CHERRYGROVE_RIVAL",
+                        "hosted_item": "EVENT_BEAT_CHERRYGROVE_RIVAL_HOSTED",
                         "visibility_rules": [
                             "show_items, goal_rival"
                         ]
@@ -574,7 +574,7 @@
                         "access_rules": [
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
                         ],
-                        "hosted_item": "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+                        "hosted_item": "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -609,7 +609,7 @@
                         "access_rules": [
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon"
                         ],
-                        "hosted_item": "POKEDEX"
+                        "hosted_item": "POKEDEX_HOSTED"
                     },
                     {
                         "name": "Youngster Joey",
@@ -827,7 +827,7 @@
                         "access_rules": [
                             "EVENT_GOT_KENYA"
                         ],
-                        "hosted_item": "EVENT_GAVE_KENYA",
+                        "hosted_item": "EVENT_GAVE_KENYA_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -1070,7 +1070,7 @@
                     },
                     {
                         "name": "Gym - Beat Falkner",
-                        "hosted_item": "EVENT_BEAT_FALKNER",
+                        "hosted_item": "EVENT_BEAT_FALKNER_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -1100,7 +1100,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "ZEPHYR_BADGE"
+                        "hosted_item": "ZEPHYR_BADGE_HOSTED"
                     },
                     {
                         "name": "Gym - TM31 from Falkner",
@@ -1200,7 +1200,7 @@
                     },
                     {
                         "name": "Egg Collected",
-                        "hosted_item": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
+                        "hosted_item": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE_HOSTED",
                         "access_rules": [
                             "EVENT_BEAT_FALKNER"
                         ],
@@ -1482,7 +1482,7 @@
                     },
                     {
                         "name": "Research Center - Complete the Unown Dex",
-                        "hosted_item": "EVENT_GOT_ALL_UNOWN",
+                        "hosted_item": "EVENT_GOT_ALL_UNOWN_HOSTED",
                         "access_rules": [
                             "$unown_goal"
                         ],
@@ -1492,7 +1492,7 @@
                     },
                     {
                         "name": "Kabuto Room Puzzle Solved",
-                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_A_TO_K",
+                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_A_TO_K_HOSTED",
                         "access_rules": [
                             "KABUTO_TILE:16"
                         ],
@@ -1538,7 +1538,7 @@
                     },
                     {
                         "name": "Omanyte Room Puzzle Solved",
-                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_L_TO_R",
+                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_L_TO_R_HOSTED",
                         "access_rules": [
                             "@JohtoKanto/Union Cave, $can_surf_johto, $can_strength, OMANYTE_TILE:16"
                         ],
@@ -1584,7 +1584,7 @@
                     },
                     {
                         "name": "Aerodactyl Room Puzzle Solved",
-                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_S_TO_W",
+                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_S_TO_W_HOSTED",
                         "access_rules": [
                             "$can_surf_johto, AERODACTYL_TILE:16"
                         ],
@@ -1630,7 +1630,7 @@
                     },
                     {
                         "name": "Ho-Oh Room Puzzle Solved",
-                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_X_TO_Z",
+                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_X_TO_Z_HOSTED",
                         "access_rules": [
                             "@JohtoKanto/Union Cave, $can_surf_johto, HO-OH_TILE:16"
                         ],
@@ -2521,7 +2521,7 @@
                     },
                     {
                         "name": "B1F - Cleared Slowpoke Well",
-                        "hosted_item": "EVENT_CLEARED_SLOWPOKE_WELL",
+                        "hosted_item": "EVENT_CLEARED_SLOWPOKE_WELL_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -2738,7 +2738,7 @@
                         "visibility_rules": [
                             "show_items, berries_off, shopsanity_apricorn_true"
                         ],
-                        "hosted_item": "WHT_APRICORN"
+                        "hosted_item": "WHT_APRICORN_HOSTED"
                     },
                     {
                         "name": "Lure Ball from Kurt",
@@ -2834,7 +2834,7 @@
                     },
                     {
                         "name": "Gym - Beat Bugsy",
-                        "hosted_item": "EVENT_BEAT_BUGSY",
+                        "hosted_item": "EVENT_BEAT_BUGSY_HOSTED",
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
                         ],
@@ -2870,7 +2870,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "HIVE_BADGE",
+                        "hosted_item": "HIVE_BADGE_HOSTED",
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
                         ]
@@ -2891,7 +2891,7 @@
                         "access_rules": [
                             "EVENT_CLEARED_SLOWPOKE_WELL"
                         ],
-                        "hosted_item": "EVENT_BEAT_AZALEA_RIVAL",
+                        "hosted_item": "EVENT_BEAT_AZALEA_RIVAL_HOSTED",
                         "visibility_rules": [
                             "show_items, goal_rival"
                         ]
@@ -3057,7 +3057,7 @@
                     },
                     {
                         "name": "Herded Farfetch'd",
-                        "hosted_item": "EVENT_HERDED_FARFETCHD",
+                        "hosted_item": "EVENT_HERDED_FARFETCHD_HOSTED",
                         "access_rules": [
                             "@JohtoKanto/Ilex Forest/Pre-Tree, EVENT_CLEARED_SLOWPOKE_WELL"
                         ],
@@ -3331,7 +3331,7 @@
                     },
                     {
                         "name": "Odd Egg Collected",
-                        "hosted_item": "EVENT_GOT_ODD_EGG",
+                        "hosted_item": "EVENT_GOT_ODD_EGG_HOSTED",
                         "access_rules": [
                             "^$static_encounter"
                         ],
@@ -3684,7 +3684,7 @@
                     },
                     {
                         "name": "Dept. Store 1F - Buy Water Stone",
-                        "hosted_item": "WATER_STONE",
+                        "hosted_item": "WATER_STONE_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -3942,7 +3942,7 @@
                     },
                     {
                         "name": "Gym - Beat Whitney",
-                        "hosted_item": "EVENT_BEAT_WHITNEY",
+                        "hosted_item": "EVENT_BEAT_WHITNEY_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -3972,7 +3972,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "PLAIN_BADGE"
+                        "hosted_item": "PLAIN_BADGE_HOSTED"
                     },
                     {
                         "name": "Gym - TM45 from Whitney",
@@ -4219,7 +4219,7 @@
                             "CARD_KEY",
                             "BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
-                        "hosted_item": "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL",
+                        "hosted_item": "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL_HOSTED",
                         "visibility_rules": [
                             "show_items, goal_rival"
                         ]
@@ -4500,7 +4500,7 @@
                         "visibility_rules": [
                             "show_items, pokegear_off"
                         ],
-                        "hosted_item": "RADIO_CARD"
+                        "hosted_item": "RADIO_CARD_HOSTED"
                     },
                     {
                         "name": "1F - Grunt",
@@ -4820,7 +4820,7 @@
                         "access_rules": [
                             "tower_requirement"
                         ],
-                        "hosted_item": "EVENT_BEAT_ROCKET_EXECUTIVEM_3",
+                        "hosted_item": "EVENT_BEAT_ROCKET_EXECUTIVEM_3_HOSTED",
                         "visibility_rules": [
                             "show_items, goal_rocket"
                         ]
@@ -4910,7 +4910,7 @@
                         "access_rules": [
                             "tower_requirement,CARD_KEY"
                         ],
-                        "hosted_item": "EVENT_CLEARED_RADIO_TOWER",
+                        "hosted_item": "EVENT_CLEARED_RADIO_TOWER_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -4973,7 +4973,7 @@
                     },
                     {
                         "name": "Collect Kenya",
-                        "hosted_item": "EVENT_GOT_KENYA",
+                        "hosted_item": "EVENT_GOT_KENYA_HOSTED",
                         "visibility_rules": [
                             "show_items",
                             "show_mons"
@@ -5547,7 +5547,7 @@
                     },
                     {
                         "name": "Saw Suicune on Route 36 (Event)",
-                        "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_36",
+                        "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_36_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ],
@@ -5744,21 +5744,21 @@
                         "visibility_rules": [
                             "show_items, berries_off, shopsanity_apricorn_true"
                         ],
-                        "hosted_item": "RED_APRICORN"
+                        "hosted_item": "RED_APRICORN_HOSTED"
                     },
                     {
                         "name": "Blue Apricorn from Apricorn Tree",
                         "visibility_rules": [
                             "show_items, berries_off, shopsanity_apricorn_true"
                         ],
-                        "hosted_item": "BLU_APRICORN"
+                        "hosted_item": "BLU_APRICORN_HOSTED"
                     },
                     {
                         "name": "Black Apricorn from Apricorn Tree",
                         "visibility_rules": [
                             "show_items, berries_off, shopsanity_apricorn_true"
                         ],
-                        "hosted_item": "BLK_APRICORN"
+                        "hosted_item": "BLK_APRICORN_HOSTED"
                     },
                     {
                         "name": "Magnet from Sunny",
@@ -5867,7 +5867,7 @@
                 "sections": [
                     {
                         "name": "Met Bill",
-                        "hosted_item": "EVENT_MET_BILL",
+                        "hosted_item": "EVENT_MET_BILL_HOSTED",
                         "visibility_rules": [
                             "show_mons"
                         ]
@@ -5944,7 +5944,7 @@
                     },
                     {
                         "name": "Gym - Beat Morty",
-                        "hosted_item": "EVENT_BEAT_MORTY",
+                        "hosted_item": "EVENT_BEAT_MORTY_HOSTED",
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
                         ],
@@ -5980,7 +5980,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "FOG_BADGE",
+                        "hosted_item": "FOG_BADGE_HOSTED",
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
                         ]
@@ -6226,7 +6226,7 @@
                     },
                     {
                         "name": "1F - Beat Rival in Burned Tower",
-                        "hosted_item": "EVENT_RIVAL_BURNED_TOWER",
+                        "hosted_item": "EVENT_RIVAL_BURNED_TOWER_HOSTED",
                         "visibility_rules": [
                             "show_items, goal_rival"
                         ]
@@ -6264,7 +6264,7 @@
                     },
                     {
                         "name": "B1F - Released the Beasts",
-                        "hosted_item": "EVENT_RELEASED_THE_BEASTS",
+                        "hosted_item": "EVENT_RELEASED_THE_BEASTS_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -6363,7 +6363,7 @@
                     },
                     {
                         "name": "1F - Got Eon Mail from Eusine (Event)",
-                        "hosted_item": "EVENT_GOT_EON_MAIL_FROM_EUSINE",
+                        "hosted_item": "EVENT_GOT_EON_MAIL_FROM_EUSINE_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ],
@@ -7029,7 +7029,7 @@
                     },
                     {
                         "name": "Gym - Beat Jasmine",
-                        "hosted_item": "EVENT_BEAT_JASMINE",
+                        "hosted_item": "EVENT_BEAT_JASMINE_HOSTED",
                         "access_rules": [
                             "EVENT_JASMINE_RETURNED_TO_GYM"
                         ],
@@ -7068,7 +7068,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "MINERAL_BADGE"
+                        "hosted_item": "MINERAL_BADGE_HOSTED"
                     },
                     {
                         "name": "Gym - TM23 from Jasmine",
@@ -7408,7 +7408,7 @@
                         "access_rules": [
                             "SECRETPOTION"
                         ],
-                        "hosted_item": "EVENT_JASMINE_RETURNED_TO_GYM",
+                        "hosted_item": "EVENT_JASMINE_RETURNED_TO_GYM_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -8295,7 +8295,7 @@
                 "sections": [
                     {
                         "name": "Saw Suicune in Cianwood City (Event)",
-                        "hosted_item": "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY",
+                        "hosted_item": "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ],
@@ -8369,7 +8369,7 @@
                         "access_rules": [
                             "$can_strength"
                         ],
-                        "hosted_item": "EVENT_BEAT_CHUCK",
+                        "hosted_item": "EVENT_BEAT_CHUCK_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -8405,7 +8405,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "STORM_BADGE"
+                        "hosted_item": "STORM_BADGE_HOSTED"
                     },
                     {
                         "name": "Gym - TM01 from Chuck",
@@ -8690,7 +8690,7 @@
                     },
                     {
                         "name": "Saw Suicune on Route 42 (Event)",
-                        "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_42",
+                        "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_42_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ],
@@ -8739,7 +8739,7 @@
                         "access_rules": [
                             "@JohtoKanto/Route 42/Center, $can_cut_johto"
                         ],
-                        "hosted_item": "PNK_APRICORN"
+                        "hosted_item": "PNK_APRICORN_HOSTED"
                     },
                     {
                         "name": "Green Apricorn from Apricorn Tree",
@@ -8749,7 +8749,7 @@
                         "access_rules": [
                             "@JohtoKanto/Route 42/Center, $can_cut_johto"
                         ],
-                        "hosted_item": "GRN_APRICORN"
+                        "hosted_item": "GRN_APRICORN_HOSTED"
                     },
                     {
                         "name": "Yellow Apricorn from Apricorn Tree",
@@ -8759,7 +8759,7 @@
                         "access_rules": [
                             "@JohtoKanto/Route 42/Center, $can_cut_johto"
                         ],
-                        "hosted_item": "YLW_APRICORN"
+                        "hosted_item": "YLW_APRICORN_HOSTED"
                     },
                     {
                         "name": "Fisher Tully",
@@ -9567,7 +9567,7 @@
                     },
                     {
                         "name": "Gym - Beat Pryce",
-                        "hosted_item": "EVENT_BEAT_PRYCE",
+                        "hosted_item": "EVENT_BEAT_PRYCE_HOSTED",
                         "access_rules": [
                             "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
@@ -9606,7 +9606,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "GLACIER_BADGE"
+                        "hosted_item": "GLACIER_BADGE_HOSTED"
                     },
                     {
                         "name": "Gym - TM16 from Pryce",
@@ -9980,7 +9980,7 @@
                         "access_rules": [
                             "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
-                        "hosted_item": "EVENT_CLEARED_ROCKET_HIDEOUT",
+                        "hosted_item": "EVENT_CLEARED_ROCKET_HIDEOUT_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -10432,7 +10432,7 @@
                             "$can_whirlpool, red_gyarados_whirlpool",
                             "red_gyarados_shore"
                         ],
-                        "hosted_item": "EVENT_DECIDED_TO_HELP_LANCE",
+                        "hosted_item": "EVENT_DECIDED_TO_HELP_LANCE_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -11051,7 +11051,7 @@
                     },
                     {
                         "name": "Gym - Beat Clair",
-                        "hosted_item": "EVENT_BEAT_CLAIR",
+                        "hosted_item": "EVENT_BEAT_CLAIR_HOSTED",
                         "access_rules": [
                             "EVENT_CLEARED_RADIO_TOWER, $can_strength"
                         ],
@@ -11090,7 +11090,7 @@
                         "visibility_rules": [
                             "show_items, badges_off, clair_behaviour_adult"
                         ],
-                        "hosted_item": "RISING_BADGE"
+                        "hosted_item": "RISING_BADGE_HOSTED"
                     },
                     {
                         "name": "Gym - TM24 from Clair",
@@ -11256,7 +11256,7 @@
                         "visibility_rules": [
                             "show_items, badges_off, clair_behaviour_child"
                         ],
-                        "hosted_item": "RISING_BADGE"
+                        "hosted_item": "RISING_BADGE_HOSTED"
                     },
                     {
                         "name": "Dragon's Den B1F - TM24 from Clair",
@@ -12340,7 +12340,7 @@
                         "access_rules": [
                             "^$victory_road_access"
                         ],
-                        "hosted_item": "EVENT_BEAT_VICTORY_ROAD_RIVAL",
+                        "hosted_item": "EVENT_BEAT_VICTORY_ROAD_RIVAL_HOSTED",
                         "visibility_rules": [
                             "show_items, goal_rival"
                         ]
@@ -12416,7 +12416,7 @@
                         "access_rules": [
                             "EVENT_BEAT_RIVAL_IN_MT_MOON"
                         ],
-                        "hosted_item": "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU",
+                        "hosted_item": "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU_HOSTED",
                         "visibility_rules": [
                             "show_items, goal_rival"
                         ]
@@ -12490,7 +12490,7 @@
                     },
                     {
                         "name": "Become Champion",
-                        "hosted_item": "EVENT_BEAT_ELITE_FOUR",
+                        "hosted_item": "EVENT_BEAT_ELITE_FOUR_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -12919,7 +12919,7 @@
                     },
                     {
                         "name": "3F - Defeat Red",
-                        "hosted_item": "EVENT_BEAT_RED",
+                        "hosted_item": "EVENT_BEAT_RED_HOSTED",
                         "access_rules": [
                             "^$dark|silvercave, red_requirement"
                         ],
@@ -13100,7 +13100,7 @@
                     },
                     {
                         "name": "Gym - Beat Blue",
-                        "hosted_item": "EVENT_BEAT_BLUE",
+                        "hosted_item": "EVENT_BEAT_BLUE_HOSTED",
                         "access_rules": [
                             "EVENT_VIRIDIAN_GYM_BLUE, ^$kantogymlock"
                         ],
@@ -13139,7 +13139,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "EARTH_BADGE"
+                        "hosted_item": "EARTH_BADGE_HOSTED"
                     },
                     {
                         "name": "Trainer House - Training Hall Info Sign",
@@ -13839,7 +13839,7 @@
                     },
                     {
                         "name": "Gym - Beat Brock",
-                        "hosted_item": "EVENT_BEAT_BROCK",
+                        "hosted_item": "EVENT_BEAT_BROCK_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ],
@@ -13875,7 +13875,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "BOULDER_BADGE",
+                        "hosted_item": "BOULDER_BADGE_HOSTED",
                         "access_rules": [
                             "^$kantogymlock"
                         ]
@@ -14170,7 +14170,7 @@
                     },
                     {
                         "name": "Inside - Beat Rival",
-                        "hosted_item": "EVENT_BEAT_RIVAL_IN_MT_MOON",
+                        "hosted_item": "EVENT_BEAT_RIVAL_IN_MT_MOON_HOSTED",
                         "visibility_rules": [
                             "show_items, trainersanity",
                             "show_items, $partial_trainersanity, trainersanity_301",
@@ -14479,7 +14479,7 @@
                     },
                     {
                         "name": "Gym - Beat Misty",
-                        "hosted_item": "EVENT_BEAT_MISTY",
+                        "hosted_item": "EVENT_BEAT_MISTY_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ],
@@ -14515,7 +14515,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "CASCADE_BADGE",
+                        "hosted_item": "CASCADE_BADGE_HOSTED",
                         "access_rules": [
                             "^$kantogymlock"
                         ]
@@ -14791,7 +14791,7 @@
                 "sections": [
                     {
                         "name": "Defeat the Grunt on Nugget Bridge",
-                        "hosted_item": "EVENT_ROUTE_24_ROCKET",
+                        "hosted_item": "EVENT_ROUTE_24_ROCKET_HOSTED",
                         "visibility_rules": [
                             "show_items, goal_rocket"
                         ]
@@ -15381,7 +15381,7 @@
                         "access_rules": [
                             "MACHINE_PART"
                         ],
-                        "hosted_item": "EVENT_RESTORED_POWER_TO_KANTO",
+                        "hosted_item": "EVENT_RESTORED_POWER_TO_KANTO_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -15696,7 +15696,7 @@
                         "visibility_rules": [
                             "show_items, pokegear_off"
                         ],
-                        "hosted_item": "EXPN_CARD"
+                        "hosted_item": "EXPN_CARD_HOSTED"
                     },
                     {
                         "name": "Poke Mart - Shop Items",
@@ -15945,7 +15945,7 @@
                     },
                     {
                         "name": "Gym - Beat Sabrina",
-                        "hosted_item": "EVENT_BEAT_SABRINA",
+                        "hosted_item": "EVENT_BEAT_SABRINA_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ],
@@ -15979,7 +15979,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "MARSH_BADGE",
+                        "hosted_item": "MARSH_BADGE_HOSTED",
                         "access_rules": [
                             "^$kantogymlock"
                         ]
@@ -16268,7 +16268,7 @@
                     },
                     {
                         "name": "Gym - Beat Erika",
-                        "hosted_item": "EVENT_BEAT_ERIKA",
+                        "hosted_item": "EVENT_BEAT_ERIKA_HOSTED",
                         "access_rules": [
                             "$can_cut_kanto, ^$kantogymlock"
                         ],
@@ -16307,7 +16307,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "RAINBOW_BADGE"
+                        "hosted_item": "RAINBOW_BADGE_HOSTED"
                     },
                     {
                         "name": "Gym - TM19 from Erika",
@@ -16377,7 +16377,7 @@
                     },
                     {
                         "name": "Celadon Mansion 3F - Obtain Diploma",
-                        "hosted_item": "EVENT_OBTAINED_DIPLOMA",
+                        "hosted_item": "EVENT_OBTAINED_DIPLOMA_HOSTED",
                         "access_rules": [
                             "$diplomagoal"
                         ],
@@ -16428,7 +16428,7 @@
                     },
                     {
                         "name": "Dept. Store 1F - Buy Water Stone",
-                        "hosted_item": "WATER_STONE",
+                        "hosted_item": "WATER_STONE_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -17102,7 +17102,7 @@
                             "@JohtoKanto/Vermilion City/City, $can_cut_kanto, ^$kantogymlock",
                             "@JohtoKanto/Vermilion City/City, $can_surf_kanto, ^$kantogymlock"
                         ],
-                        "hosted_item": "EVENT_BEAT_LTSURGE",
+                        "hosted_item": "EVENT_BEAT_LTSURGE_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]
@@ -17129,7 +17129,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "THUNDER_BADGE"
+                        "hosted_item": "THUNDER_BADGE_HOSTED"
                     },
                     {
                         "name": "Gym - Thunder Badge from Lt. Surge",
@@ -18431,7 +18431,7 @@
                     },
                     {
                         "name": "Gym - Beat Janine",
-                        "hosted_item": "EVENT_BEAT_JANINE",
+                        "hosted_item": "EVENT_BEAT_JANINE_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ],
@@ -18467,7 +18467,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "SOUL_BADGE",
+                        "hosted_item": "SOUL_BADGE_HOSTED",
                         "access_rules": [
                             "^$kantogymlock"
                         ]
@@ -18845,7 +18845,7 @@
                     },
                     {
                         "name": "Gym - Beat Blaine",
-                        "hosted_item": "EVENT_BEAT_BLAINE",
+                        "hosted_item": "EVENT_BEAT_BLAINE_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ],
@@ -18881,7 +18881,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "VOLCANO_BADGE",
+                        "hosted_item": "VOLCANO_BADGE_HOSTED",
                         "access_rules": [
                             "^$kantogymlock"
                         ]
@@ -18919,7 +18919,7 @@
                 "sections": [
                     {
                         "name": "Blue Returns to Gym",
-                        "hosted_item": "EVENT_VIRIDIAN_GYM_BLUE",
+                        "hosted_item": "EVENT_VIRIDIAN_GYM_BLUE_HOSTED",
                         "visibility_rules": [
                             "show_items"
                         ]

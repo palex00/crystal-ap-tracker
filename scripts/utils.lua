@@ -321,6 +321,32 @@ function toggle_shopgrid()
     end
 end
 
+function toggle_item(code)
+    local active = Tracker:FindObjectForCode(code).Active
+    code = code .. "_HOSTED"
+    local object = Tracker:FindObjectForCode(code)
+    if object then
+        object.Active = active
+    else
+        if ENABLE_DEBUG_LOG then
+            print(string.format("toggle_item: could not find object for code %s", code))
+        end
+    end
+end
+
+function toggle_hosted_item(code)
+    local active = Tracker:FindObjectForCode(code).Active
+    code = code:gsub("_HOSTED", "")
+    local object = Tracker:FindObjectForCode(code)
+    if object then
+        object.Active = active
+    else
+        if ENABLE_DEBUG_LOG then
+            print(string.format("toggle_hosted_item: could not find object for code %s", code))
+        end
+    end
+end
+
 function updateRemainingDexcountsanityChecks()
     local val = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount
     Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit1").CurrentStage = math.floor(val / 100)
