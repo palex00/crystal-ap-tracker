@@ -416,15 +416,8 @@ end
 function updateEvents(value)
     if value ~= nil then
         for i, code in ipairs(FLAG_EVENT_CODES) do
-            local obj = Tracker:FindObjectForCode(code)
-            if obj ~= nil then
-                obj.Active = false
-            end
-            local bit = value >> (i - 1) & 1
-            if #code > 0 then
-                local obj = Tracker:FindObjectForCode(code)
-                obj.Active = obj.Active or bit == 1
-            end
+            local bit = (value >> (i - 1)) & 1
+            Tracker:FindObjectForCode(code).Active = (bit == 1)
         end
     end
 end
@@ -432,15 +425,8 @@ end
 function updateEvents2(value)
     if value ~= nil then
         for i, code in ipairs(FLAG_EVENT_2_CODES) do
-            local obj = Tracker:FindObjectForCode(code)
-            if obj ~= nil then
-                obj.Active = false
-            end
-            local bit = value >> (i - 1) & 1
-            if #code > 0 then
-                local obj = Tracker:FindObjectForCode(code)
-                obj.Active = obj.Active or bit == 1
-            end
+            local bit = (value >> (i - 1)) & 1
+            Tracker:FindObjectForCode(code).Active = (bit == 1)
         end
     end
 end
