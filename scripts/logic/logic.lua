@@ -546,7 +546,7 @@ function landslide_19()
     if has("south_kanto_access_free") or has("south_kanto_access_21") then
         return AccessibilityLevel.Normal
     elseif has("south_kanto_access_19") then
-        return landslide_clear
+        return landslide_clear()
     end
 end
 
@@ -554,6 +554,6 @@ function landslide_21()
     if has("south_kanto_access_free") or has("south_kanto_access_19") then
         return AccessibilityLevel.Normal
     elseif has("south_kanto_access_21") then
-        return landslide_clear
+        return landslide_clear()
     end
 end
