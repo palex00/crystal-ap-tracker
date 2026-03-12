@@ -3251,14 +3251,14 @@
                 "name": "Route 30 Passage requires visiting Mr. Pokemon",
                 "img": "/images/settings/route_30_north.png",
                 "img_mods": "overlay|/images/settings/mrpokemon_overlay.png",
-                "codes": "route_30_access, route_30_access_egg",
+                "codes": "route_30_access, route_30_access_mrpokemon",
                 "inherit_codes": false
             },
             {
-                "name": "Route 30 Passage requires visiting Mr. Pokemon",
+                "name": "Route 30 Passage requires delivering the Mystery Egg",
                 "img": "/images/settings/route_30_north.png",
                 "img_mods": "overlay|/images/settings/egg_overlay.png",
-                "codes": "route_30_access, route_30_access_mrpokemon",
+                "codes": "route_30_access, route_30_access_egg",
                 "inherit_codes": false
             }
         ]
