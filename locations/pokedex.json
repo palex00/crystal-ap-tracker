@@ -124,7 +124,7 @@
 {"name": "Staryu", "access_rules": ["staryu", "^$breeding, @Pokemon/Starmie"], "sections": [{"hosted_item": "staryu"}], "map_locations": [{ "map": "kantopokemon", "x": 926, "y": 478, "shape": "rect"}]},
 {"name": "Starmie", "access_rules": ["starmie", "^$evolve_item_old, @Pokemon/Staryu"], "sections": [{"hosted_item": "starmie"}], "map_locations": [{ "map": "kantopokemon", "x": 86, "y": 538, "shape": "rect"}]},
 {"name": "Mr. Mime", "access_rules": ["mrmime"], "sections": [{"hosted_item": "mrmime"}], "map_locations": [{ "map": "kantopokemon", "x": 146, "y": 538, "shape": "rect"}]},
-{"name": "Scyther", "access_rules": ["scyther"], "sections": [{"hosted_item": "scyther"}], "map_locations": [{ "map": "kantopokemon", "x": 206, "y": 538, "shape": "rect"}]},
+{"name": "Scyther", "access_rules": ["scyther", "^$breeding, @Pokemon/Scizor"], "sections": [{"hosted_item": "scyther"}], "map_locations": [{ "map": "kantopokemon", "x": 206, "y": 538, "shape": "rect"}]},
 {"name": "Jynx", "access_rules": ["jynx", "^$evolve_old|30, @Pokemon/Smoochum"], "sections": [{"hosted_item": "jynx"}], "map_locations": [{ "map": "kantopokemon", "x": 266, "y": 538, "shape": "rect"}]},
 {"name": "Electabuzz", "access_rules": ["electabuzz", "^$evolve_old|30, @Pokemon/Elekid"], "sections": [{"hosted_item": "electabuzz"}], "map_locations": [{ "map": "kantopokemon", "x": 326, "y": 538, "shape": "rect"}]},
 {"name": "Magmar", "access_rules": ["magmar", "^$evolve_old|30, @Pokemon/Magby"], "sections": [{"hosted_item": "magmar"}], "map_locations": [{ "map": "kantopokemon", "x": 386, "y": 538, "shape": "rect"}]},
