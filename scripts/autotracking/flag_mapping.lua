@@ -146,6 +146,7 @@ FLAG_ITEM_CODES = {
   {option="randomize_pokedex_vanilla", codes={"POKEDEX"}},
   {option=nil, codes={"ESCAPE_ROPE"}},
   {option=nil, codes={"WATER_STONE"}},
+  {option="badges_off", codes={"RISING_BADGE"}},
   {option="berries_off", codes={"RED_APRICORN"}},
   {option="berries_off", codes={"BLU_APRICORN"}},
   {option="berries_off", codes={"YLW_APRICORN"}},
@@ -153,5 +154,4 @@ FLAG_ITEM_CODES = {
   {option="berries_off", codes={"WHT_APRICORN"}},
   {option="berries_off", codes={"BLK_APRICORN"}},
   {option="berries_off", codes={"PNK_APRICORN"}},
-  {option="badges_off", codes={"RISING_BADGE"}},
 }
