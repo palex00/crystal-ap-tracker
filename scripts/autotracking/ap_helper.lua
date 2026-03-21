@@ -353,7 +353,7 @@ SLOT_CODES = {
         code = "encmethod_static",
         mapping = MAP_TOGGLE
     },
-    breeding_methods_required = {
+    breeding_method = {
         code = "breeding_logic",
         mapping = MAP_QUINTUPLE
     },
