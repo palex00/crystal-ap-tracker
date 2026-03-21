@@ -25,6 +25,16 @@ allChecked = nil
 CHECKED_SIGNS = nil
 UNOWN_DATA = nil
 TRADE_DATA = nil
+SAVED_HINTS = {}
+
+if Highlight then
+    HIGHLIGHT_LEVEL= {
+        [0] = Highlight.None,
+        [1] = Highlight.Priority,
+        [2] = Highlight.NoPriority,
+        [3] = Highlight.Avoid
+    }
+end
 
 function onClear(slot_data)
     isUpdating = true
@@ -284,6 +294,10 @@ function onClear(slot_data)
         SLOT_UNLOCK="pokemon_crystal_tracker_slots_enabled_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({SLOT_UNLOCK})
         Archipelago:Get({SLOT_UNLOCK})
+        
+        HINT_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({HINT_ID})
+        Archipelago:Get({HINT_ID})
     end
 
     toggle_itemgrid()
@@ -379,6 +393,9 @@ function onNotify(key, value, old_value)
             updateTrades(value)
         elseif key == SLOT_UNLOCK then
             Tracker:AddLayouts("layouts/settings_quick_slottrack.json")
+        elseif key == HINT_ID then
+            SAVED_HINTS = value
+            updateHints()
         end
     end
 end
@@ -409,6 +426,9 @@ function onNotifyLaunch(key, value)
             updateTrades(value)
         elseif key == SLOT_UNLOCK then
             Tracker:AddLayouts("layouts/settings_quick_slottrack.json")
+        elseif key == HINT_ID then
+            SAVED_HINTS = value
+            updateHints()
         end
     end
 end
@@ -740,6 +760,54 @@ function snorlax_access()
         return Tracker:FindObjectForCode("@JohtoKanto/Vermilion City/City").AccessibilityLevel
     else
         return false
+    end
+end
+
+
+function updateHints()
+    if not Highlight then
+        return
+    end
+    
+    if has("hint_tracking_off") then
+        for _, hint in ipairs(SAVED_HINTS) do
+            if hint.finding_player == PLAYER_ID then
+                local mapped = LOCATION_MAPPING[hint.location]
+                local locations = (type(mapped) == "table") and mapped or { mapped }
+        
+                for _, location in ipairs(locations) do
+                    -- Only sections (items don't support Highlight)
+                    if location:sub(1, 1) == "@" and Tracker:FindObjectForCode(location).ChestCount == 1 then
+                        Tracker:FindObjectForCode(location).Highlight = 0
+                    end
+                end
+            end
+        end
+    else
+        for _, hint in ipairs(SAVED_HINTS) do
+            if hint.finding_player == PLAYER_ID then
+                local mapped = LOCATION_MAPPING[hint.location]
+                local locations = (type(mapped) == "table") and mapped or { mapped }
+        
+                
+                for _, location in ipairs(locations) do
+                    -- Only sections (items don't support Highlight)
+                    if location:sub(1, 1) == "@" and Tracker:FindObjectForCode(location).ChestCount == 1 then
+                    
+                        if has("hint_tracking_on_plus") then
+                            if hint.item_flags == 1 then
+                                Tracker:FindObjectForCode(location).Highlight = HIGHLIGHT_LEVEL[hint.item_flags]
+                            else
+                                Tracker:FindObjectForCode(location).Highlight = 0
+                                Tracker:FindObjectForCode(location).AvailableChestCount = 0
+                            end
+                        else
+                            Tracker:FindObjectForCode(location).Highlight = HIGHLIGHT_LEVEL[hint.item_flags]
+                        end
+                    end
+                end
+            end
+        end
     end
 end
 
