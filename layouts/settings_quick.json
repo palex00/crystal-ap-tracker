@@ -7,8 +7,7 @@
         "item_size": "32",
         "rows": [
             [
-                "location_visibility",
-                "hint_tracking"
+                "location_visibility"
             ],
             [
                 "automap"
@@ -18,6 +17,9 @@
             ],
             [
                 "encounter_tracking"
+            ],
+            [
+                "hint_tracking"
             ],
             [
                 "broadcast_view"
