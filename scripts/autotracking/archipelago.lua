@@ -29,9 +29,9 @@ SAVED_HINTS = {}
 
 if Highlight then
     HIGHLIGHT_LEVEL= {
-        [0] = Highlight.NoPriority,
+        [0] = Highlight.Unspecified,
         [1] = Highlight.Priority,
-        [2] = Highlight.Unspecified,
+        [2] = Highlight.NoPriority,
         [3] = Highlight.Priority,
         [4] = Highlight.Avoid,
         [5] = Highlight.Priority
