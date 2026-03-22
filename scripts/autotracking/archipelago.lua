@@ -34,7 +34,8 @@ if Highlight then
         [2] = Highlight.NoPriority,
         [3] = Highlight.Priority,
         [4] = Highlight.Avoid,
-        [5] = Highlight.Priority
+        [5] = Highlight.Priority,
+        [5] = Highlight.NoPriority
     }
 end
 
@@ -648,7 +649,7 @@ function updatePokemon()
                     if object_name ~= nil then
                         local object = Tracker:FindObjectForCode(object_name)
                         if object then
-                            if string.sub(location, 1, 7):lower() == "static_" or string.sub(location, 1, 6):lower() == "TRADE_" then
+                            if string.sub(location, 1, 7):lower() == "static_" or string.sub(location, 1, 6):lower() == "trade_" then
                                 local event_code = Tracker:FindObjectForCode(location)
                                 if event_code and event_code.Active then
                                     pendingDecrements[location] = pendingDecrements[location] + 1
