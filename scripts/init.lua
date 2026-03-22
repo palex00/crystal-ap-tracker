@@ -91,7 +91,7 @@ ScriptHost:AddWatchForCode("shopsanity_gamecorners", "shopsanity_gamecorners", t
 ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_itemgrid)
 ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_itemgrid)
 ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
-ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", updateHints)
+ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
 
 
 --for _, code in ipairs(FLAG_STATIC_CODES) do
