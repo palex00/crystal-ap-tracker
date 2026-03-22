@@ -619,7 +619,8 @@
                             "show_items, $partial_trainersanity, trainersanity_1488"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, route_30_access_mrpokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, route_30_access_egg, EVENT_GAVE_MYSTERY_EGG_TO_ELM"
                         ],
                         "chest_unopened_img": "images/trainers/blue_dude.png",
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
@@ -632,7 +633,8 @@
                             "show_items, phone_calls_visible"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, route_30_access_mrpokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON, ^$phonecall, EVENT_BEAT_ELITE_FOUR",
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, route_30_access_egg, EVENT_GAVE_MYSTERY_EGG_TO_ELM, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
                         ]
                     },
                     {
@@ -642,7 +644,8 @@
                             "show_items, $partial_trainersanity, trainersanity_1489"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, route_30_access_mrpokemon, EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, route_30_access_egg, EVENT_GAVE_MYSTERY_EGG_TO_ELM"
                         ],
                         "chest_unopened_img": "images/trainers/blue_dude.png",
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
