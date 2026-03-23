@@ -35,7 +35,7 @@ if Highlight then
         [3] = Highlight.Priority,
         [4] = Highlight.Avoid,
         [5] = Highlight.Priority,
-        [5] = Highlight.NoPriority
+        [6] = Highlight.NoPriority
     }
 end
 
