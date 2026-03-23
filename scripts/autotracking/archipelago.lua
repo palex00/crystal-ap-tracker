@@ -624,7 +624,6 @@ function updatePokemon()
         end
 
         for dex_number, locations in pairs(POKEMON_TO_LOCATIONS) do
-            local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
             local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
             local dexloc = Tracker:FindObjectForCode("dexsanity_"..POKEMON_MAPPING[dex_number])
             
@@ -648,12 +647,10 @@ function updatePokemon()
                 
                 for _, hint in pairs(SAVED_HINTS) do
                     if hint.finding_player == PLAYER_ID then
-                        for _, check in pairs(SAVED_HINTS) do
-                            if padded_dex_number == check.location then
-                                if check.item_flags ~= 1 and check.item_flags ~= 3 and check.item_flags ~= 5 then
-                                    should_decrement = true
-                                    break
-                                end
+                        if padded_dex_number == hint.location then
+                            if hint.item_flags ~= 1 and hint.item_flags ~= 3 and hint.item_flags ~= 5 then
+                                should_decrement = true
+                                break
                             end
                         end
                     end
@@ -798,6 +795,7 @@ function snorlax_access()
 end
 
 function toggleHints()
+    print(dump_table(#SAVED_HINTS))
     if has("hint_tracking_off") then
         updatePokemon()
         resetHints()
