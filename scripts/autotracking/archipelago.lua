@@ -411,7 +411,7 @@ function onNotify(key, value, old_value)
             Tracker:AddLayouts("layouts/settings_quick_slottrack.json")
         elseif key == HINT_ID then
             SAVED_HINTS = value
-            updateHints()
+            toggleHints()
         end
     end
 end
@@ -444,7 +444,7 @@ function onNotifyLaunch(key, value)
             Tracker:AddLayouts("layouts/settings_quick_slottrack.json")
         elseif key == HINT_ID then
             SAVED_HINTS = value
-            updateHints()
+            toggleHints()
         end
     end
 end
@@ -642,6 +642,24 @@ function updatePokemon()
             elseif is_seen and (dexloc.Active or not dexcode.Active) and has("encounter_tracking_loose") then
                 should_decrement = true
             end
+            
+            if has("hint_tracking_on_plus") and SAVED_HINTS ~= nil then
+                local padded_dex_number = 10000 + dex_number
+                
+                for _, hint in pairs(SAVED_HINTS) do
+                    if hint.finding_player == PLAYER_ID then
+                        for _, check in pairs(SAVED_HINTS) do
+                            if padded_dex_number == check.location then
+                                if check.item_flags ~= 1 and check.item_flags ~= 3 and check.item_flags ~= 5 then
+                                    should_decrement = true
+                                    break
+                                end
+                            end
+                        end
+                    end
+                    if should_decrement then break end
+                end
+            end
 
             if should_decrement then
                 for _, location in pairs(locations) do
@@ -781,11 +799,14 @@ end
 
 function toggleHints()
     if has("hint_tracking_off") then
+        updatePokemon()
         resetHints()
     elseif has("hint_tracking_on") then
+        updatePokemon()
         resetHints()
         updateHints()
     elseif has("hint_tracking_on_plus") then
+        updatePokemon()
         updateHints()
     end
 end
@@ -821,8 +842,35 @@ function updateHints()
     for _, hint in ipairs(SAVED_HINTS) do
         if hint.finding_player == PLAYER_ID then
             local mapped = LOCATION_MAPPING[hint.location]
-            local locations = (type(mapped) == "table") and mapped or { mapped }
+            -- Special handling for Pokémon locations (10001–10251)
+            if hint.location >= 10001 and hint.location <= 10251 then
+                local poke_id = hint.location - 10000
+                local poke_locations = POKEMON_TO_LOCATIONS[poke_id]
+            
+                for _, encounter_key in pairs(poke_locations) do
+                    local mapped_location = ENCOUNTER_MAPPING[encounter_key]
+                    if mapped_location and mapped_location:sub(1, 1) == "@" then
+                        local obj = Tracker:FindObjectForCode(mapped_location)
+                        if has("hint_tracking_on_plus") then
+                            if HIGHLIGHT_LEVEL[hint.item_flags] == 3 then
+                                obj.Highlight = HIGHLIGHT_LEVEL[hint.item_flags]
+                            end
+                        else
+                            local current_val = obj.Highlight
+                            local incoming_val = HIGHLIGHT_LEVEL[hint.item_flags]
     
+                            if current_val == nil or HIGHLIGHT_PRIORITY[incoming_val] < HIGHLIGHT_PRIORITY[current_val] then
+                                obj.Highlight = incoming_val
+                            end
+                        end
+                    end
+                end
+                
+                -- Skip normal handling for this hint
+                goto continue_hint
+            end
+            local locations = (type(mapped) == "table") and mapped or { mapped }
+            
             -- we loop over all hinted locations
             for _, location in ipairs(locations) do
                 -- Only sections (items don't support Highlight)
@@ -845,13 +893,24 @@ function updateHints()
                     end
                 end
             end
-            for location, count in pairs(CLEARED_HINTS) do
-                local obj = Tracker:FindObjectForCode(location)
-                local cleared = CLEARED_LOCATIONS[location] or 0
-                obj.AvailableChestCount = obj.ChestCount - count - cleared
-                if obj.AvailableChestCount == 0 then
-                    obj.Highlight = 0
+            if has("hint_tracking_on_plus") then
+                for location, count in pairs(CLEARED_HINTS) do
+                    local obj = Tracker:FindObjectForCode(location)
+                    local cleared = CLEARED_LOCATIONS[location] or 0
+                    obj.AvailableChestCount = obj.ChestCount - count - cleared
+                    if obj.AvailableChestCount == 0 then
+                        obj.Highlight = 0
+                    end
                 end
+            end
+            ::continue_hint::
+        end
+    end
+    for _, location in pairs(ENCOUNTER_MAPPING) do
+        if location and location:sub(1, 1) == "@" then
+            local obj = Tracker:FindObjectForCode(location)
+            if obj and obj.AvailableChestCount == 0 then
+                obj.Highlight = 0
             end
         end
     end
