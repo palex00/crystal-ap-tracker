@@ -857,19 +857,21 @@ function updateHints()
                 local poke_id = hint.location - 10000
                 local poke_locations = POKEMON_TO_LOCATIONS[poke_id]
 
-                for _, encounter_key in pairs(poke_locations) do
-                    local mapped_location = ENCOUNTER_MAPPING[encounter_key]
-                    if mapped_location and mapped_location:sub(1, 1) == "@" then
-                        local obj = Tracker:FindObjectForCode(mapped_location)
-
-                        if tracking_plus then
-                            if incoming_val == 3 then
-                                obj.Highlight = incoming_val
-                            end
-                        else
-                            local current_val = obj.Highlight
-                            if current_val == nil or HIGHLIGHT_PRIORITY[incoming_val] < HIGHLIGHT_PRIORITY[current_val] then
-                                obj.Highlight = incoming_val
+                if poke_locations then
+                    for _, encounter_key in pairs(poke_locations) do
+                        local mapped_location = ENCOUNTER_MAPPING[encounter_key]
+                        if mapped_location and mapped_location:sub(1, 1) == "@" then
+                            local obj = Tracker:FindObjectForCode(mapped_location)
+    
+                            if tracking_plus then
+                                if incoming_val == 3 then
+                                    obj.Highlight = incoming_val
+                                end
+                            else
+                                local current_val = obj.Highlight
+                                if current_val == nil or HIGHLIGHT_PRIORITY[incoming_val] < HIGHLIGHT_PRIORITY[current_val] then
+                                    obj.Highlight = incoming_val
+                                end
                             end
                         end
                     end
