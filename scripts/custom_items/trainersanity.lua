@@ -4,9 +4,9 @@ function TrainersanityNumber:init()
     self:createItem("Trainersanity - Full")
     self.code = "trainersanity"
     self.type = "full"
-    self:setStage(340)
+    self:setStage(372)
     self.baseImage = "images/settings/trainersanity.png"
-    self.stageCount = 340
+    self.stageCount = 372
     self:updateIcon()
 end
 
