@@ -1,0 +1,426 @@
+[
+    {
+        "name": "Beat Falkner",
+        "type": "toggle",
+        "img": "/images/events/beat_falkner.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_FALKNER_HOSTED"
+    },
+    {
+        "name": "Beat Bugsy",
+        "type": "toggle",
+        "img": "/images/events/beat_bugsy.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_BUGSY_HOSTED"
+    },
+    {
+        "name": "Beat Whitney",
+        "type": "toggle",
+        "img": "/images/events/beat_whitney.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_WHITNEY_HOSTED"
+    },
+    {
+        "name": "Beat Morty",
+        "type": "toggle",
+        "img": "/images/events/beat_morty.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_MORTY_HOSTED"
+    },
+    {
+        "name": "Beat Jasmine",
+        "type": "toggle",
+        "img": "/images/events/beat_jasmine.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_JASMINE_HOSTED"
+    },
+    {
+        "name": "Beat Chuck",
+        "type": "toggle",
+        "img": "/images/events/beat_chuck.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_CHUCK_HOSTED"
+    },
+    {
+        "name": "Beat Pryce",
+        "type": "toggle",
+        "img": "/images/events/beat_pryce.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_PRYCE_HOSTED"
+    },
+    {
+        "name": "Beat Clair",
+        "type": "toggle",
+        "img": "/images/events/beat_clair.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_CLAIR_HOSTED"
+    },
+    {
+        "name": "Beat Brock",
+        "type": "toggle",
+        "img": "/images/events/beat_brock.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_BROCK_HOSTED"
+    },
+    {
+        "name": "Beat Misty",
+        "type": "toggle",
+        "img": "/images/events/beat_misty.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_MISTY_HOSTED"
+    },
+    {
+        "name": "Beat Lt. Surge",
+        "type": "toggle",
+        "img": "/images/events/beat_ltsurge.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_LTSURGE_HOSTED"
+    },
+    {
+        "name": "Beat Erika",
+        "type": "toggle",
+        "img": "/images/events/beat_erika.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_ERIKA_HOSTED"
+    },
+    {
+        "name": "Beat Janine",
+        "type": "toggle",
+        "img": "/images/events/beat_janine.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_JANINE_HOSTED"
+    },
+    {
+        "name": "Beat Sabrina",
+        "type": "toggle",
+        "img": "/images/events/beat_sabrina.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_SABRINA_HOSTED"
+    },
+    {
+        "name": "Beat Blaine",
+        "type": "toggle",
+        "img": "/images/events/beat_blaine.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_BLAINE_HOSTED"
+    },
+    {
+        "name": "Beat Blue",
+        "type": "toggle",
+        "img": "/images/events/beat_blue.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_gym.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_gym.png",
+        "codes": "EVENT_BEAT_BLUE_HOSTED"
+    },
+    {
+        "name": "Egg Collected",
+        "type": "toggle",
+        "img": "/images/events/egg_collected.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE_HOSTED"
+    },
+    {
+        "name": "Kenya Collected",
+        "type": "toggle",
+        "img": "/images/events/kenya_collected.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_GOT_KENYA_HOSTED"
+    },
+    {
+        "name": "Kenya Delivered",
+        "type": "toggle",
+        "img": "/images/events/kenya_delivered.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_GAVE_KENYA_HOSTED"
+    },
+    {
+        "name": "Cleared Slowpoke Well",
+        "type": "toggle",
+        "img": "/images/events/cleared_slowpoke_well.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_CLEARED_SLOWPOKE_WELL_HOSTED"
+    },
+    {
+        "name": "Herded Farfetch'd",
+        "type": "toggle",
+        "img": "/images/events/herded_farfetchd.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_HERDED_FARFETCHD_HOSTED"
+    },
+    {
+        "name": "Released the Beasts",
+        "type": "toggle",
+        "img": "/images/events/released_the_beasts.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_RELEASED_THE_BEASTS_HOSTED"
+    },
+    {
+        "name": "Heal Amphy",
+        "type": "toggle",
+        "img": "/images/events/jasmine_returned.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_JASMINE_RETURNED_TO_GYM_HOSTED"
+    },
+    {
+        "name": "Help Lance",
+        "type": "toggle",
+        "img": "/images/events/help_lance.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_DECIDED_TO_HELP_LANCE_HOSTED"
+    },
+    {
+        "name": "Clear Rocket HQ",
+        "type": "toggle",
+        "img": "/images/events/hideout_cleared.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_CLEARED_ROCKET_HIDEOUT_HOSTED"
+    },
+    {
+        "name": "Clear Radio Tower",
+        "type": "toggle",
+        "img": "/images/events/tower_cleared.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_radiotower.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_radiotower.png",
+        "codes": "EVENT_CLEARED_RADIO_TOWER_HOSTED"
+    },
+    {
+        "name": "Defeat Elite Four",
+        "type": "toggle",
+        "img": "/images/events/become_champion.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_BEAT_ELITE_FOUR_HOSTED"
+    },
+    {
+        "name": "Restore Power to Kanto",
+        "type": "toggle",
+        "img": "/images/events/restored_power.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_RESTORED_POWER_TO_KANTO_HOSTED"
+    },
+    {
+        "name": "Blue Returns to Gym",
+        "type": "toggle",
+        "img": "/images/events/blue_returned.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_VIRIDIAN_GYM_BLUE_HOSTED"
+    },
+    {
+        "name": "Defeat Red",
+        "type": "toggle",
+        "img": "/images/events/defeat_red.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_BEAT_RED_HOSTED"
+    },
+    {
+        "name": "Meet Mr. Pokemon",
+        "type": "toggle",
+        "img": "/images/events/mr_pokemon.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON_HOSTED"
+    },
+    {
+        "name": "Give Mystery Egg to Elm",
+        "type": "toggle",
+        "img": "/images/events/elm.png",
+        "img_mods": "@disabled,overlay|images/settings/egg_overlay.png|@disabled",
+        "disabled_img_mods": "overlay|images/settings/egg_overlay.png",
+        "codes": "EVENT_GAVE_MYSTERY_EGG_TO_ELM_HOSTED"
+    },
+    {
+        "name": "[Static] Odd Egg Collected",
+        "type": "toggle",
+        "img": "/images/events/EVENT_GOT_ODD_EGG.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_GOT_ODD_EGG_HOSTED"
+    },
+    {
+        "name": "Met Bill (Event)",
+        "type": "toggle",
+        "img": "/images/events/met_bill.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_MET_BILL_HOSTED"
+    },
+    {
+        "name": "Saw Suicune in Cianwood City (Event)",
+        "type": "toggle",
+        "img": "/images/events/saw_suicune_cw.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY_HOSTED"
+    },
+    {
+        "name": "Saw Suicune on Route 42 (Event)",
+        "type": "toggle",
+        "img": "/images/events/saw_suicune_42.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_SAW_SUICUNE_ON_ROUTE_42_HOSTED"
+    },
+    {
+        "name": "Saw Suicune on Route 36 (Event)",
+        "type": "toggle",
+        "img": "/images/events/saw_suicune_36.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_SAW_SUICUNE_ON_ROUTE_36_HOSTED"
+    },
+    {
+        "name": "Beat Rival in Mount Moon",
+        "type": "toggle",
+        "img": "/images/events/rival.png",
+        "img_mods": "@disabled,overlay|images/events/rival_overlays/mount_moon.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/rival_overlays/mount_moon.png",
+        "codes": "EVENT_BEAT_RIVAL_IN_MT_MOON_HOSTED"
+    },
+    {
+        "name": "Got Eon Mail from Eusine (Event)",
+        "type": "toggle",
+        "img": "/images/events/eon_mail.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_GOT_EON_MAIL_FROM_EUSINE_HOSTED"
+    },
+    {
+        "name": "Beat Rival in Cherrygrove City",
+        "type": "toggle",
+        "img": "/images/events/rival.png",
+        "img_mods": "@disabled,overlay|images/events/rival_overlays/cherrygrove_city.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/rival_overlays/cherrygrove_city.png",
+        "codes": "EVENT_BEAT_CHERRYGROVE_RIVAL_HOSTED"
+    },
+    {
+        "name": "Beat Rival in Azalea Town",
+        "type": "toggle",
+        "img": "/images/events/rival.png",
+        "img_mods": "@disabled,overlay|images/events/rival_overlays/azalea_town.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/rival_overlays/azalea_town.png",
+        "codes": "EVENT_BEAT_AZALEA_RIVAL_HOSTED"
+    },
+    {
+        "name": "Beat Rival in Burned Tower",
+        "type": "toggle",
+        "img": "/images/events/rival.png",
+        "img_mods": "@disabled,overlay|images/events/rival_overlays/burned_tower.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/rival_overlays/burned_tower.png",
+        "codes": "EVENT_RIVAL_BURNED_TOWER_HOSTED"
+    },
+    {
+        "name": "Beat Rival in Goldenrod Underground",
+        "type": "toggle",
+        "img": "/images/events/rival.png",
+        "img_mods": "@disabled,overlay|images/events/rival_overlays/goldenrod_underground.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/rival_overlays/goldenrod_underground.png",
+        "codes": "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL_HOSTED"
+    },
+    {
+        "name": "Beat Rival in Victory Road",
+        "type": "toggle",
+        "img": "/images/events/rival.png",
+        "img_mods": "@disabled,overlay|images/events/rival_overlays/victory_road.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/rival_overlays/victory_road.png",
+        "codes": "EVENT_BEAT_VICTORY_ROAD_RIVAL_HOSTED"
+    },
+    {
+        "name": "Beat Rival in Indigo Plateau",
+        "type": "toggle",
+        "img": "/images/events/rival.png",
+        "img_mods": "@disabled,overlay|images/events/rival_overlays/indigo_plateau.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/rival_overlays/indigo_plateau.png",
+        "codes": "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU_HOSTED"
+    },
+    {
+        "name": "Defeat the Grunt on Nugget Bridge",
+        "type": "toggle",
+        "img": "/images/events/tower_cleared.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_nugget.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_nugget.png",
+        "codes": "EVENT_ROUTE_24_ROCKET_HOSTED"
+    },
+    {
+        "name": "Complete the Unown-Dex",
+        "type": "toggle",
+        "img": "/images/events/unown.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_GOT_ALL_UNOWN_HOSTED"
+    },
+    {
+        "name": "Obtain Diploma",
+        "type": "toggle",
+        "img": "/images/events/diploma.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "EVENT_OBTAINED_DIPLOMA_HOSTED"
+    },
+    {
+        "name": "Unmask the False Director",
+        "type": "toggle",
+        "img": "/images/events/tower_cleared.png",
+        "img_mods": "@disabled,overlay|images/events/overlay_director.png|@disabled",
+        "disabled_img_mods": "overlay|images/events/overlay_director.png",
+        "codes": "EVENT_BEAT_ROCKET_EXECUTIVEM_3_HOSTED"
+    },
+    {
+        "name": "Unlocked Unowns A to K",
+        "type": "toggle",
+        "img": "/images/events/KABUTO_TILE.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "ENGINE_UNLOCKED_UNOWNS_A_TO_K_HOSTED"
+    },
+    {
+        "name": "Unlocked Unowns L to R",
+        "type": "toggle",
+        "img": "/images/events/OMANYTE_TILE.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "ENGINE_UNLOCKED_UNOWNS_L_TO_R_HOSTED"
+    },
+    {
+        "name": "Unlocked Unowns S to W",
+        "type": "toggle",
+        "img": "/images/events/AERODACTYL_TILE.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "ENGINE_UNLOCKED_UNOWNS_S_TO_W_HOSTED"
+    },
+    {
+        "name": "Unlocked Unowns X to Z",
+        "type": "toggle",
+        "img": "/images/events/HO-OH_TILE.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "ENGINE_UNLOCKED_UNOWNS_X_TO_Z_HOSTED"
+    }
+]
