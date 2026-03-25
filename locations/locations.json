@@ -13146,6 +13146,15 @@
                         "hosted_item": "EARTH_BADGE"
                     },
                     {
+                        "name": "Trainer House - Item from Cal",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, $partial_trainersanity, trainersanity_343"
+                        ]
+                    },
+                    {
                         "name": "Trainer House - Training Hall Info Sign",
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",

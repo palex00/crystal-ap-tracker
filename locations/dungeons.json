@@ -13636,6 +13636,30 @@
                 ]
             },
             {
+                "name": "Trainer House",
+                "sections": [
+                    {
+                        "name": "Item from Cal",
+                        "ref": "JohtoKanto/Viridian City/Trainer House - Item from Cal"
+                    },
+                    {
+                        "name": "Training Hall Info Sign",
+                        "ref": "JohtoKanto/Viridian City/Trainer House - Training Hall Info Sign"
+                    },
+                    {
+                        "name": "No Rules Sign",
+                        "ref": "JohtoKanto/Viridian City/Trainer House - No Rules Sign"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ViridianCity",
+                        "x": 376,
+                        "y": 248
+                    }
+                ]
+            },
+            {
                 "name": "Viridian City",
                 "sections": [
                     {
@@ -15592,7 +15616,7 @@
                     }
                 ]
             },
-                        {
+            {
                 "name": "Bug Catching Contest",
                 "map_locations": [
                     {
