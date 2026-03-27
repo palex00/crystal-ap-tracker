@@ -486,6 +486,7 @@ function updateSigns(checked_signs)
     if checked_signs ~= nil then
         CHECKED_SIGNS = checked_signs
     end
+    CHECKED_SIGNS = CHECKED_SIGNS or {}
 
     allChecked = true
     for key, _ in pairs(UNOWN_DATA) do
