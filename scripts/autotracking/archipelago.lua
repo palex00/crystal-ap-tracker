@@ -795,7 +795,6 @@ function snorlax_access()
 end
 
 function toggleHints()
-    print(dump_table(#SAVED_HINTS))
     if has("hint_tracking_off") then
         updatePokemon()
         resetHints()
@@ -848,7 +847,7 @@ function updateHints()
     local tracking_plus = has("hint_tracking_on_plus")
 
     for _, hint in ipairs(SAVED_HINTS) do
-        if hint.finding_player == PLAYER_ID then
+        if hint.finding_player == PLAYER_ID and hint.found == false then
             local mapped = LOCATION_MAPPING[hint.location]
             local incoming_val = HIGHLIGHT_LEVEL[hint.item_flags]
 
