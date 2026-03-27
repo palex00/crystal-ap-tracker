@@ -248,67 +248,39 @@ function onClear(slot_data)
 
     -- Set CurrentStage for "tea"
     Tracker:FindObjectForCode("tea_guard").CurrentStage = stages[key]
-    
     if PLAYER_ID>-1 then
         if string.lower(Archipelago:GetPlayerAlias(PLAYER_ID)):find("chrism") then
             Tracker:FindObjectForCode("chrism").CurrentStage = 1
         else
             Tracker:FindObjectForCode("chrism").CurrentStage = 0
         end
-        
-        updateEvents(0)
-        updateEvents2(0)
+        updateEvents(1, 0)
+        updateEvents(2, 0)
         updateStatics(0)
         updateRocketTraps(0)
         updateVanillaKeyItems(0)
         
-        EVENT_ID="pokemon_crystal_events_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({EVENT_ID})
-        Archipelago:Get({EVENT_ID})
+        local suffix = TEAM_NUMBER .. "_" .. PLAYER_ID
+        local function makeID(s) return "pokemon_crystal_" .. s .. suffix end
         
-        EVENT2_ID="pokemon_crystal_events_2_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({EVENT2_ID})
-        Archipelago:Get({EVENT2_ID})
-        
-        STATIC_ID="pokemon_crystal_statics_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({STATIC_ID})
-        Archipelago:Get({STATIC_ID})
-    
-        ROCKETTRAP_ID="pokemon_crystal_rockettraps_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({ROCKETTRAP_ID})
-        Archipelago:Get({ROCKETTRAP_ID})
-        
-        KEY_ID="pokemon_crystal_keys_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({KEY_ID})
-        Archipelago:Get({KEY_ID})
-        
-        SEEN_ID="pokemon_crystal_seen_pokemon_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({SEEN_ID})
-        Archipelago:Get({SEEN_ID})
-        
-        CAUGHT_ID="pokemon_crystal_caught_pokemon_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({CAUGHT_ID})
-        Archipelago:Get({CAUGHT_ID})
-        
-        SIGN_ID="pokemon_crystal_signs_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({SIGN_ID})
-        Archipelago:Get({SIGN_ID})
-        
-        UNOWN_ID="pokemon_crystal_unowns_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({UNOWN_ID})
-        Archipelago:Get({UNOWN_ID})
-        
-        TRADE_ID="pokemon_crystal_trades_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({TRADE_ID})
-        Archipelago:Get({TRADE_ID})
-        
-        SLOT_UNLOCK="pokemon_crystal_tracker_slots_enabled_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({SLOT_UNLOCK})
-        Archipelago:Get({SLOT_UNLOCK})
-        
-        HINT_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({HINT_ID})
-        Archipelago:Get({HINT_ID})
+        IDs = {
+            EVENT      = makeID("events_"),
+            EVENT2     = makeID("events_2_"),
+            STATIC     = makeID("statics_"),
+            ROCKETTRAP = makeID("rockettraps_"),
+            KEY        = makeID("keys_"),
+            SEEN       = makeID("seen_pokemon_"),
+            CAUGHT     = makeID("caught_pokemon_"),
+            SIGN       = makeID("signs_"),
+            UNOWN      = makeID("unowns_"),
+            TRADE      = makeID("trades_"),
+            SLOT_UNLOCK= makeID("tracker_slots_enabled_"),
+            HINT       = "_read_hints_" .. suffix,
+        }
+        for _, id in pairs(IDs) do
+            Archipelago:SetNotify({id})
+            Archipelago:Get({id})
+        end
     end
 
     toggle_itemgrid()
@@ -385,82 +357,42 @@ end
 
 function onNotify(key, value, old_value)
     if value ~= nil and value ~= 0 then
-        if key == EVENT_ID then
-            updateEvents(value)
-        elseif key == EVENT2_ID then
-            updateEvents2(value)
-        elseif key == STATIC_ID then
+        if key == IDs.EVENT then
+            updateEvents(1, value)
+        elseif key == IDs.EVENT2 then
+            updateEvents(2, value)
+        elseif key == IDs.STATIC then
             updateStatics(value)
-        elseif key == KEY_ID then
+        elseif key == IDs.KEY then
             updateVanillaKeyItems(value)
-        elseif key == CAUGHT_ID then
+        elseif key == IDs.CAUGHT then
             CAUGHT = value
             updatePokemon()
-        elseif key == SEEN_ID then
+        elseif key == IDs.SEEN then
             SEEN = value
             updatePokemon()
-        elseif key == ROCKETTRAP_ID then
+        elseif key == IDs.ROCKETTRAP then
             updateRocketTraps(value)
-        elseif key == SIGN_ID then
+        elseif key == IDs.SIGN then
             updateSigns(value)
-        elseif key == UNOWN_ID then
+        elseif key == IDs.UNOWN then
             updateUnown(value)
-        elseif key == TRADE_ID then
+        elseif key == IDs.TRADE then
             updateTrades(value)
-        elseif key == SLOT_UNLOCK then
+        elseif key == IDs.SLOT_UNLOCK then
             Tracker:AddLayouts("layouts/settings_quick_slottrack.json")
-        elseif key == HINT_ID then
+        elseif key == IDs.HINT then
             SAVED_HINTS = value
             toggleHints()
         end
     end
 end
 
-function onNotifyLaunch(key, value)
-    if value ~= nil and value ~= 0 then
-        if key == EVENT_ID then
-            updateEvents(value)
-        elseif key == EVENT2_ID then
-            updateEvents2(value)
-        elseif key == STATIC_ID then
-            updateStatics(value)
-        elseif key == KEY_ID then
-            updateVanillaKeyItems(value)
-        elseif key == CAUGHT_ID then
-            CAUGHT = value
-            updatePokemon()
-        elseif key == SEEN_ID then
-            SEEN = value
-            updatePokemon()
-        elseif key == ROCKETTRAP_ID then
-            updateRocketTraps(value)
-        elseif key == SIGN_ID then
-            updateSigns(value)
-        elseif key == UNOWN_ID then
-            updateUnown(value)
-        elseif key == TRADE_ID then
-            updateTrades(value)
-        elseif key == SLOT_UNLOCK then
-            Tracker:AddLayouts("layouts/settings_quick_slottrack.json")
-        elseif key == HINT_ID then
-            SAVED_HINTS = value
-            toggleHints()
-        end
-    end
-end
-
-function updateEvents(value)
+function updateEvents(register, value)
     if value ~= nil then
-        for i, code in ipairs(FLAG_EVENT_CODES) do
-            local bit = (value >> (i - 1)) & 1
-            Tracker:FindObjectForCode(code).Active = (bit == 1)
-        end
-    end
-end
-
-function updateEvents2(value)
-    if value ~= nil then
-        for i, code in ipairs(FLAG_EVENT_2_CODES) do
+        local list = _G["FLAG_EVENT_" .. tostring(register) .. "_CODES"]
+        
+        for i, code in ipairs(list) do
             local bit = (value >> (i - 1)) & 1
             Tracker:FindObjectForCode(code).Active = (bit == 1)
         end
@@ -987,7 +919,7 @@ Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
-Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
+Archipelago:AddRetrievedHandler("notify launch handler", onNotify)
 Archipelago:AddBouncedHandler("map handler", onMap)
 
 for _, code in ipairs(FLAG_STATIC_CODES) do
