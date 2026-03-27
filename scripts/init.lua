@@ -4,6 +4,7 @@ Tracker.AllowDeferredLogicUpdate = true
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/events.json")
 Tracker:AddItems("items/settings.json")
+Tracker:AddItems("items/tools.json")
 Tracker:AddItems("items/pokemon.json")
 Tracker:AddItems("items/trainersanity.json")
 Tracker:AddItems("items/dexsanity_items.json")

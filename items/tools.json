@@ -1,0 +1,154 @@
+[
+    {
+        "name": "Hint Tracking",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "Hint Tracking - OFF",
+                "img": "/images/settings/hint_tracking_off.png",
+                "img_mods": "@disabled",
+                "codes": "hint_tracking, hint_tracking_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hint Tracking - ON",
+                "img": "/images/settings/hint_tracking_on.png",
+                "codes": "hint_tracking, hint_tracking_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hint Tracking - ON (w/ Auto-Mark-Off)",
+                "img": "/images/settings/hint_tracking_on_plus.png",
+                "codes": "hint_tracking, hint_tracking_on_plus",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Secret Broadcast Orientation Toggle Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Broadcast View: Horizontal",
+                "img": "/images/settings/invisible.png",
+                "codes": "broadcast_view, broadcast_view_horizontal",
+                "inherit_codes": false
+            },
+            {
+                "name": "Broadcast View: Vertical",
+                "img": "/images/settings/invisible.png",
+                "codes": "broadcast_view, broadcast_view_vertical",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Auto-Track Map",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Auto-Track Map - On",
+                "img": "/images/settings/automap.png",
+                "codes": "automap,automap_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Auto-Track Map - Off",
+                "img": "/images/settings/automap.png",
+                "img_mods": "@disabled",
+                "codes": "automap,automap_off",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Location Visibility",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "codes": "location_visibility",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Only show normal locations",
+                "img": "/images/settings/show_item.png",
+                "codes": "show_items",
+                "inherit_codes": false
+            },
+            {
+                "name": "Show normal and encounter locations",
+                "img": "/images/settings/show_both.png",
+                "codes": "show_items, show_mons",
+                "inherit_codes": false
+            },
+            {
+                "name": "Only show encounter locations",
+                "img": "/images/settings/show_mon.png",
+                "codes": "show_mons",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Split Map",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Split Map - Off",
+                "img": "/images/settings/splitmap.png",
+                "img_mods": "@disabled",
+                "codes": "splitmap, splitmap_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Split Map - On",
+                "img": "/images/settings/splitmap.png",
+                "codes": "splitmap, splitmap_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Split Map - Reverse",
+                "img": "/images/settings/splitmap_reverse.png",
+                "codes": "splitmap, splitmap_reverse",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Encounter Tracking",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Tracking - Off",
+                "img": "/images/settings/encounter_tracking.png",
+                "img_mods": "@disabled",
+                "codes": "encounter_tracking, encounter_tracking_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Tracking - Strict",
+                "img": "/images/settings/encounter_tracking.png",
+                "codes": "encounter_tracking, encounter_tracking_strict",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Tracking - Loose",
+                "img": "/images/settings/encounter_tracking_loose.png",
+                "codes": "encounter_tracking, encounter_tracking_loose",
+                "inherit_codes": false
+            }
+        ]
+    }
+]
