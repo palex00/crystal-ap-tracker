@@ -7,21 +7,23 @@
         "item_size": "32",
         "rows": [
             [
-                "location_visibility"
-            ],
-            [
+                "visibility_items",
                 "automap"
             ],
             [
+                "visibility_mons",
                 "splitmap"
             ],
             [
+                "visibility_events",
                 "encounter_tracking"
             ],
             [
+                "visibility_signs",
                 "hint_tracking"
             ],
             [
+                "visibility_grass",
                 "broadcast_view"
             ]
         ]

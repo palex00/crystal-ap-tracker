@@ -20,7 +20,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|NewBarkTown"
@@ -31,7 +31,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|NewBarkTownElmsHouse"
@@ -42,7 +42,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|NewBarkTownElmsLab"
@@ -53,7 +53,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|NewBarkTownPlayersHouse"
@@ -103,7 +103,7 @@
                             "MYSTERY_EGG"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ],
                         "hosted_item": "EVENT_GAVE_MYSTERY_EGG_TO_ELM"
                     },
@@ -207,7 +207,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route29Sign1"
@@ -218,7 +218,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route29Sign2"
@@ -256,7 +256,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -269,7 +269,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -321,7 +321,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CherrygroveCity"
@@ -332,7 +332,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CherrygroveCityMart"
@@ -343,7 +343,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CherrygroveCityPokecenter"
@@ -354,7 +354,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GuideGentsHouse"
@@ -393,7 +393,7 @@
                         ],
                         "hosted_item": "EVENT_BEAT_CHERRYGROVE_RIVAL",
                         "visibility_rules": [
-                            "show_items, goal_rival"
+                            "show_events, goal_rival"
                         ]
                     },
                     {
@@ -489,7 +489,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon, ^$unownsign|Route30"
@@ -531,7 +531,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon, ^$unownsign|MrPokemonsHouseDirections"
@@ -564,7 +564,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon, ^$unownsign|MrPokemonsHouse"
@@ -577,7 +577,7 @@
                         ],
                         "hosted_item": "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -655,7 +655,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 30/Post-Mr-Pokemon, ^$unownsign|Route30TrainerTips"
@@ -691,7 +691,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon, $can_cut_johto"
@@ -704,7 +704,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 30/Pre-Mr-Pokemon, $can_cut_johto"
@@ -769,7 +769,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|DarkCave"
@@ -780,7 +780,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route31"
@@ -833,7 +833,7 @@
                         ],
                         "hosted_item": "EVENT_GAVE_KENYA",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -854,7 +854,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -867,7 +867,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -1076,7 +1076,7 @@
                         "name": "Gym - Beat Falkner",
                         "hosted_item": "EVENT_BEAT_FALKNER",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -1119,7 +1119,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|EarlsPokemonAcademy"
@@ -1130,7 +1130,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SproutTower"
@@ -1141,7 +1141,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|VioletCity"
@@ -1152,7 +1152,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|VioletCityMart"
@@ -1163,7 +1163,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|VioletCityPokecenter"
@@ -1174,7 +1174,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|VioletGym"
@@ -1185,7 +1185,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|VioletGymStatueLeft"
@@ -1196,7 +1196,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|VioletGymStatueRight"
@@ -1209,7 +1209,7 @@
                             "EVENT_BEAT_FALKNER"
                         ],
                         "visibility_rules": [
-                            "show_items, r32_guy_egg",
+                            "show_events, r32_guy_egg",
                             "show_mons"
                         ]
                     },
@@ -1456,7 +1456,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RuinsOfAlph"
@@ -1467,7 +1467,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RuinsOfAlphOutsideMysteryChamber"
@@ -1478,7 +1478,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RuinsOfAlphResearchCenter"
@@ -1491,7 +1491,7 @@
                             "$unown_goal"
                         ],
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_events, goal_unown"
                         ]
                     },
                     {
@@ -1501,7 +1501,7 @@
                             "KABUTO_TILE:16"
                         ],
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ]
                     },
                     {
@@ -1547,7 +1547,7 @@
                             "@JohtoKanto/Union Cave, $can_surf_johto, $can_strength, OMANYTE_TILE:16"
                         ],
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ]
                     },
                     {
@@ -1593,7 +1593,7 @@
                             "$can_surf_johto, AERODACTYL_TILE:16"
                         ],
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ]
                     },
                     {
@@ -1639,7 +1639,7 @@
                             "@JohtoKanto/Union Cave, $can_surf_johto, HO-OH_TILE:16"
                         ],
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ]
                     },
                     {
@@ -1697,7 +1697,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Union Cave, $can_surf_johto, $can_cut_johto"
@@ -1710,7 +1710,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Union Cave, $can_surf_johto, $can_cut_johto"
@@ -1805,7 +1805,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route32, @JohtoKanto/Violet City"
@@ -1816,7 +1816,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route32Ruins, @JohtoKanto/Violet City"
@@ -1973,7 +1973,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route32Pokecenter, @JohtoKanto/Route 32/Post-Guy"
@@ -2007,7 +2007,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route32UnionCave, @JohtoKanto/Route 32/Post-Guy"
@@ -2020,7 +2020,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy, $can_cut_johto"
@@ -2033,7 +2033,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Post-Guy, $can_cut_johto"
@@ -2394,7 +2394,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route33"
@@ -2424,7 +2424,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -2437,7 +2437,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -2527,7 +2527,7 @@
                         "name": "B1F - Cleared Slowpoke Well",
                         "hosted_item": "EVENT_CLEARED_SLOWPOKE_WELL",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -2635,7 +2635,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|AzaleaGym"
@@ -2646,7 +2646,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|AzaleaTown"
@@ -2657,7 +2657,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|AzaleaTownIlexForest"
@@ -2668,7 +2668,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|AzaleaTownMart"
@@ -2679,7 +2679,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|AzaleaTownPokecenter"
@@ -2690,7 +2690,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CharcoalKiln"
@@ -2701,7 +2701,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|KurtsHouse"
@@ -2712,7 +2712,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SlowpokeWell"
@@ -2771,7 +2771,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|AzaleaGymStatueLeft, EVENT_CLEARED_SLOWPOKE_WELL"
@@ -2782,7 +2782,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|AzaleaGymStatueRight, EVENT_CLEARED_SLOWPOKE_WELL"
@@ -2843,7 +2843,7 @@
                             "EVENT_CLEARED_SLOWPOKE_WELL"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -2897,7 +2897,7 @@
                         ],
                         "hosted_item": "EVENT_BEAT_AZALEA_RIVAL",
                         "visibility_rules": [
-                            "show_items, goal_rival"
+                            "show_events, goal_rival"
                         ]
                     },
                     {
@@ -3066,7 +3066,7 @@
                             "@JohtoKanto/Ilex Forest/Pre-Tree, EVENT_CLEARED_SLOWPOKE_WELL"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -3103,7 +3103,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|IlexForest, @JohtoKanto/Ilex Forest/Post-Tree"
@@ -3250,7 +3250,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|DayCare"
@@ -3261,7 +3261,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route34"
@@ -3272,7 +3272,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route34TrainerTips"
@@ -3446,7 +3446,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -3459,7 +3459,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -3548,7 +3548,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodCity"
@@ -3559,7 +3559,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodCityBikeShop"
@@ -3570,7 +3570,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodCityFlowerShop"
@@ -3581,7 +3581,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodCityGameCorner"
@@ -3592,7 +3592,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodCityNameRater"
@@ -3603,7 +3603,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodCityPokecenter"
@@ -3614,7 +3614,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodCityRadioTower"
@@ -3625,7 +3625,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodCityStation"
@@ -3636,7 +3636,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodCityUndergroundNorth"
@@ -3647,7 +3647,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodCityUndergroundSouth"
@@ -3658,7 +3658,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodDeptStore"
@@ -3669,7 +3669,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodGym"
@@ -3680,7 +3680,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodDeptStore1FDirectory"
@@ -3698,7 +3698,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodDeptStore2FDirectory"
@@ -3729,7 +3729,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodDeptStore3FDirectory"
@@ -3750,7 +3750,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodDeptStore4FDirectory"
@@ -3771,7 +3771,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodDeptStore5FDirectory"
@@ -3821,7 +3821,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodDeptStore6FDirectory"
@@ -3891,7 +3891,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodGymStatueLeft"
@@ -3902,7 +3902,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodGymStatueRight"
@@ -3948,7 +3948,7 @@
                         "name": "Gym - Beat Whitney",
                         "hosted_item": "EVENT_BEAT_WHITNEY",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -4211,7 +4211,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|GoldenrodUndergroundNoEntrySign, ^$dark|goldenrodunderground"
@@ -4225,7 +4225,7 @@
                         ],
                         "hosted_item": "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL",
                         "visibility_rules": [
-                            "show_items, goal_rival"
+                            "show_events, goal_rival"
                         ]
                     },
                     {
@@ -4474,7 +4474,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower1FDirectory"
@@ -4485,7 +4485,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower1FLuckyChannelSign"
@@ -4523,7 +4523,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower2FOaksPKMNTalkSign"
@@ -4534,7 +4534,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower2FPokemonRadioSign"
@@ -4545,7 +4545,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower2FSalesSign"
@@ -4651,7 +4651,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower3FPersonnelSign, tower_requirement"
@@ -4662,7 +4662,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower3FPokemonMusicSign, tower_requirement"
@@ -4732,7 +4732,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower4FProductionSign, tower_requirement"
@@ -4743,7 +4743,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower4FStudio2Sign, tower_requirement, CARD_KEY"
@@ -4813,7 +4813,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower5FDirectorsOfficeSign, tower_requirement"
@@ -4826,7 +4826,7 @@
                         ],
                         "hosted_item": "EVENT_BEAT_ROCKET_EXECUTIVEM_3",
                         "visibility_rules": [
-                            "show_items, goal_rocket"
+                            "show_events, goal_rocket"
                         ]
                     },
                     {
@@ -4857,7 +4857,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower5FStudioLeftSign, tower_requirement, CARD_KEY"
@@ -4868,7 +4868,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RadioTower5FStudioRightSign, tower_requirement, CARD_KEY"
@@ -4916,7 +4916,7 @@
                         ],
                         "hosted_item": "EVENT_CLEARED_RADIO_TOWER",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -4958,7 +4958,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route35North"
@@ -4969,7 +4969,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route35South"
@@ -4979,7 +4979,7 @@
                         "name": "Collect Kenya",
                         "hosted_item": "EVENT_GOT_KENYA",
                         "visibility_rules": [
-                            "show_items",
+                            "show_events",
                             "show_mons"
                         ]
                     },
@@ -5099,7 +5099,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -5112,7 +5112,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -5183,7 +5183,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route35BugCatchingContestExplanationSign, @JohtoKanto/Goldenrod City"
@@ -5194,7 +5194,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/National Park/Park, ^$unownsign|NationalParkBattleNotice"
@@ -5205,7 +5205,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/National Park/Park, ^$unownsign|NationalParkRelaxationSquare"
@@ -5216,7 +5216,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/National Park/Park, ^$unownsign|NationalParkTrainerTips"
@@ -5326,7 +5326,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route36BugCatchingContextExplanationSign, @JohtoKanto/National Park/Park"
@@ -5393,7 +5393,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/National Park/Park, $can_cut_johto"
@@ -5406,7 +5406,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/National Park/Park, $can_cut_johto"
@@ -5499,7 +5499,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route36, @JohtoKanto/Route 36/Right"
@@ -5510,7 +5510,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|RuinsOfAlphNorth, @JohtoKanto/Route 36/Right"
@@ -5543,7 +5543,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route36TrainerTips1, @JohtoKanto/Route 36/Left"
@@ -5553,7 +5553,7 @@
                         "name": "Saw Suicune on Route 36 (Event)",
                         "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_36",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ],
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS, @JohtoKanto/Route 36/Left"
@@ -5623,7 +5623,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route36TrainerTips2, @JohtoKanto/Route 36/Top"
@@ -5636,7 +5636,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 36/Left, $can_cut_johto"
@@ -5649,7 +5649,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 36/Right, $can_cut_johto"
@@ -5662,7 +5662,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 36/Right, $can_cut_johto",
@@ -5713,7 +5713,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route37"
@@ -5808,7 +5808,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -5821,7 +5821,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -5873,7 +5873,7 @@
                         "name": "Met Bill",
                         "hosted_item": "EVENT_MET_BILL",
                         "visibility_rules": [
-                            "show_mons"
+                            "show_events, show_mons"
                         ]
                     },
                     {
@@ -5881,7 +5881,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|EcruteakGymStatueLeft, EVENT_RELEASED_THE_BEASTS"
@@ -5892,7 +5892,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|EcruteakGymStatueRight, EVENT_RELEASED_THE_BEASTS"
@@ -5953,7 +5953,7 @@
                             "EVENT_RELEASED_THE_BEASTS"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -6005,7 +6005,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|BurnedTower"
@@ -6016,7 +6016,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|EcruteakCity"
@@ -6027,7 +6027,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|EcruteakCityMart"
@@ -6038,7 +6038,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|EcruteakCityPokecenter"
@@ -6049,7 +6049,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|EcruteakDanceTheater"
@@ -6060,7 +6060,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|EcruteakGym"
@@ -6232,7 +6232,7 @@
                         "name": "1F - Beat Rival in Burned Tower",
                         "hosted_item": "EVENT_RIVAL_BURNED_TOWER",
                         "visibility_rules": [
-                            "show_items, goal_rival"
+                            "show_events, goal_rival"
                         ]
                     },
                     {
@@ -6270,7 +6270,7 @@
                         "name": "B1F - Released the Beasts",
                         "hosted_item": "EVENT_RELEASED_THE_BEASTS",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -6348,7 +6348,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|TinTower"
@@ -6369,7 +6369,7 @@
                         "name": "1F - Got Eon Mail from Eusine (Event)",
                         "hosted_item": "EVENT_GOT_EON_MAIL_FROM_EUSINE",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ],
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS, EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY, EVENT_SAW_SUICUNE_ON_ROUTE_42, EVENT_SAW_SUICUNE_ON_ROUTE_36"
@@ -6663,7 +6663,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route38"
@@ -6674,7 +6674,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route38TrainerTips"
@@ -6760,7 +6760,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -6773,7 +6773,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -6822,7 +6822,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|MoomooFarm"
@@ -6833,7 +6833,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route39"
@@ -6844,7 +6844,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route39TrainerTips"
@@ -6948,7 +6948,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -6961,7 +6961,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -7014,7 +7014,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OlivineGymStatueLeft"
@@ -7025,7 +7025,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OlivineGymStatueRight"
@@ -7038,7 +7038,7 @@
                             "EVENT_JASMINE_RETURNED_TO_GYM"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -7090,7 +7090,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OlivineCity"
@@ -7101,7 +7101,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OlivineCityBattleTower"
@@ -7112,7 +7112,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OlivineCityMart"
@@ -7123,7 +7123,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OlivineCityPokecenter"
@@ -7134,7 +7134,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OlivineCityPort"
@@ -7145,7 +7145,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OlivineGym"
@@ -7156,7 +7156,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OlivineLighthouse"
@@ -7414,7 +7414,7 @@
                         ],
                         "hosted_item": "EVENT_JASMINE_RETURNED_TO_GYM",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     }
                 ],
@@ -7732,7 +7732,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|BattleTowerOutside"
@@ -7743,7 +7743,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route40"
@@ -8301,7 +8301,7 @@
                         "name": "Saw Suicune in Cianwood City (Event)",
                         "hosted_item": "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ],
                         "access_rules": [
                             "EVENT_RELEASED_THE_BEASTS"
@@ -8312,7 +8312,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CianwoodGymStatueLeft"
@@ -8323,7 +8323,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CianwoodGymStatueRight"
@@ -8375,7 +8375,7 @@
                         ],
                         "hosted_item": "EVENT_BEAT_CHUCK",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -8438,7 +8438,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CianwoodCity"
@@ -8449,7 +8449,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CianwoodGym"
@@ -8460,7 +8460,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CianwoodPharmacy"
@@ -8471,7 +8471,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CianwoodPhotoStudio"
@@ -8482,7 +8482,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CianwoodPokecenter"
@@ -8493,7 +8493,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CianwoodPokeSeer"
@@ -8655,7 +8655,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route42Sign1, @JohtoKanto/Route 42/West"
@@ -8666,7 +8666,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|MtMortarSign1, @JohtoKanto/Route 42/West"
@@ -8696,7 +8696,7 @@
                         "name": "Saw Suicune on Route 42 (Event)",
                         "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_42",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 42/Center, EVENT_RELEASED_THE_BEASTS, $can_cut_johto"
@@ -8817,7 +8817,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|MtMortarSign2, @JohtoKanto/Route 42/East"
@@ -8828,7 +8828,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route42Sign2, @JohtoKanto/Route 42/East"
@@ -8841,7 +8841,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 42/East, $can_cut_johto"
@@ -8854,7 +8854,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 42/East, $can_cut_johto"
@@ -9492,7 +9492,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|MahoganyGymStatueLeft, @JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
@@ -9503,7 +9503,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|MahoganyGymStatueRight, @JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
@@ -9576,7 +9576,7 @@
                             "@JohtoKanto/Mahogany Town/Town, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -9628,7 +9628,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Mahogany Town/Town, ^$unownsign|MahoganyGym"
@@ -9639,7 +9639,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Mahogany Town/Town, ^$unownsign|MahoganyTown"
@@ -9650,7 +9650,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Mahogany Town/Town, ^$unownsign|MahoganyTownPokecenter"
@@ -9661,7 +9661,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Mahogany Town/Town, ^$unownsign|MahoganyTownRagecandybar"
@@ -9986,7 +9986,7 @@
                         ],
                         "hosted_item": "EVENT_CLEARED_ROCKET_HIDEOUT",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -10060,7 +10060,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route43TrainerTips"
@@ -10071,7 +10071,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route43Sign1"
@@ -10082,7 +10082,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route43Sign2"
@@ -10188,7 +10188,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -10201,7 +10201,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -10265,7 +10265,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|LakeOfRage"
@@ -10276,7 +10276,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|MagikarpHouse"
@@ -10438,7 +10438,7 @@
                         ],
                         "hosted_item": "EVENT_DECIDED_TO_HELP_LANCE",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -10496,7 +10496,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route44Sign1"
@@ -10507,7 +10507,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route44Sign2"
@@ -10645,7 +10645,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto, $can_surf_johto"
@@ -10658,7 +10658,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto, $can_surf_johto"
@@ -10913,7 +10913,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|BlackthornCity"
@@ -10924,7 +10924,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|BlackthornCityMart"
@@ -10935,7 +10935,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|BlackthornCityPokecenter"
@@ -10946,7 +10946,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|BlackthornCityTrainerTips"
@@ -10957,7 +10957,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|BlackthornGym"
@@ -10976,7 +10976,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|BlackthornGymStatueLeft, EVENT_CLEARED_RADIO_TOWER"
@@ -10987,7 +10987,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|BlackthornGymStatueRight, EVENT_CLEARED_RADIO_TOWER"
@@ -11060,7 +11060,7 @@
                             "EVENT_CLEARED_RADIO_TOWER, $can_strength"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -11112,7 +11112,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|MoveDeletersHouse"
@@ -11159,7 +11159,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|DragonDens, $can_surf_johto"
@@ -11235,7 +11235,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|DragonsDenB1FDragonShrine, $can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
@@ -11459,7 +11459,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route45"
@@ -11609,7 +11609,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -11622,7 +11622,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -11701,7 +11701,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route46, @JohtoKanto/Route 46/Below Ledge"
@@ -11792,7 +11792,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 46/Below Ledge, $can_cut_johto"
@@ -11805,7 +11805,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 46/Below Ledge, $can_cut_johto"
@@ -11871,7 +11871,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route27TohjoFalls, @JohtoKanto/Route 27/Pre-Waterfall, $can_surf_johto",
@@ -11997,7 +11997,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 27/Post-Waterfall, $can_cut_johto"
@@ -12010,7 +12010,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 27/Post-Waterfall, $can_cut_johto"
@@ -12116,7 +12116,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route26"
@@ -12197,7 +12197,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -12210,7 +12210,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -12346,7 +12346,7 @@
                         ],
                         "hosted_item": "EVENT_BEAT_VICTORY_ROAD_RIVAL",
                         "visibility_rules": [
-                            "show_items, goal_rival"
+                            "show_events, goal_rival"
                         ]
                     },
                     {
@@ -12409,7 +12409,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route23IndigoPlateauSign"
@@ -12422,7 +12422,7 @@
                         ],
                         "hosted_item": "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU",
                         "visibility_rules": [
-                            "show_items, goal_rival"
+                            "show_events, goal_rival"
                         ]
                     },
                     {
@@ -12496,7 +12496,7 @@
                         "name": "Become Champion",
                         "hosted_item": "EVENT_BEAT_ELITE_FOUR",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     }
                 ],
@@ -12542,7 +12542,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route28"
@@ -12577,7 +12577,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -12590,7 +12590,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -12662,7 +12662,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SilverCaveOutside"
@@ -12673,7 +12673,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SilverCaveOutsidePokecenter"
@@ -12697,7 +12697,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -12710,7 +12710,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_johto, $can_surf_johto"
@@ -12723,7 +12723,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_johto"
@@ -12928,7 +12928,7 @@
                             "^$dark|silvercave, red_requirement"
                         ],
                         "visibility_rules": [
-                            "show_items, goal_red"
+                            "show_events, goal_red"
                         ]
                     },
                     {
@@ -12988,7 +12988,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route22VictoryRoadEntrance"
@@ -13001,7 +13001,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -13014,7 +13014,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -13085,7 +13085,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|ViridianGymStatueLeft, ^$kantogymlock"
@@ -13096,7 +13096,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|ViridianGymStatueRight, ^$kantogymlock"
@@ -13109,7 +13109,7 @@
                             "EVENT_VIRIDIAN_GYM_BLUE, ^$kantogymlock"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -13159,7 +13159,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|TrainerHouseSign1"
@@ -13170,7 +13170,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|TrainerHouseSign2"
@@ -13181,7 +13181,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|ViridianCity"
@@ -13192,7 +13192,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|ViridianCityGym"
@@ -13203,7 +13203,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|ViridianCityMart"
@@ -13214,7 +13214,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|ViridianCityPokecenter"
@@ -13225,7 +13225,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|ViridianCityTrainerHouse"
@@ -13236,7 +13236,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|ViridianCityWelcome"
@@ -13321,7 +13321,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route1"
@@ -13360,7 +13360,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -13373,7 +13373,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -13428,7 +13428,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OaksLabPoster1"
@@ -13439,7 +13439,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|OaksLabPoster2"
@@ -13450,7 +13450,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PalletTown"
@@ -13461,7 +13461,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PalletTownBluesHouse"
@@ -13472,7 +13472,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PalletTownOaksLab"
@@ -13483,7 +13483,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PalletTownRedsHouse"
@@ -13496,7 +13496,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -13509,7 +13509,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -13592,7 +13592,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route2DiglettsCave, @JohtoKanto/Route 2/Diglett's Cave Section"
@@ -13741,7 +13741,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route2, @JohtoKanto/Route 2/Main Section"
@@ -13754,7 +13754,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section, $can_cut_kanto"
@@ -13767,7 +13767,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 2/Main Section, $can_cut_kanto"
@@ -13821,7 +13821,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PewterGymStatueLeft"
@@ -13832,7 +13832,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PewterGymStatueRight"
@@ -13854,7 +13854,7 @@
                         "name": "Gym - Beat Brock",
                         "hosted_item": "EVENT_BEAT_BROCK",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ],
                         "access_rules": [
                             "^$kantogymlock"
@@ -13898,7 +13898,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PewterCity"
@@ -13909,7 +13909,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PewterCityGym"
@@ -13920,7 +13920,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PewterCityMart"
@@ -13931,7 +13931,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PewterCityMtMoonGiftShop"
@@ -13942,7 +13942,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PewterCityMuseum"
@@ -13953,7 +13953,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PewterCityPokecenter"
@@ -13964,7 +13964,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|PewterCityWelcome"
@@ -14062,7 +14062,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route3MtMoonSquare"
@@ -14111,7 +14111,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -14124,7 +14124,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -14185,9 +14185,9 @@
                         "name": "Inside - Beat Rival",
                         "hosted_item": "EVENT_BEAT_RIVAL_IN_MT_MOON",
                         "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, $partial_trainersanity, trainersanity_301",
-                            "show_items, goal_rival"
+                            "show_events, trainersanity",
+                            "show_events, $partial_trainersanity, trainersanity_301",
+                            "show_events, goal_rival"
                         ]
                     },
                     {
@@ -14195,7 +14195,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|MountMoonSquareDontLitter"
@@ -14274,7 +14274,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route4MtMoonSquare, @JohtoKanto/Route 4/Main"
@@ -14343,7 +14343,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Cerulean City, $can_cut_kanto"
@@ -14356,7 +14356,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Cerulean City, $can_cut_kanto"
@@ -14426,7 +14426,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeruleanGymStatueLeft, ^$kantogymlock"
@@ -14437,7 +14437,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeruleanGymStatueRight, ^$kantogymlock"
@@ -14494,7 +14494,7 @@
                         "name": "Gym - Beat Misty",
                         "hosted_item": "EVENT_BEAT_MISTY",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ],
                         "access_rules": [
                             "^$kantogymlock"
@@ -14549,7 +14549,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeruleanCity"
@@ -14560,7 +14560,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeruleanCityBikeShop"
@@ -14571,7 +14571,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeruleanCityCape"
@@ -14582,7 +14582,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeruleanCityGym"
@@ -14593,7 +14593,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeruleanCityMart"
@@ -14604,7 +14604,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeruleanCityPokecenter"
@@ -14615,7 +14615,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeruleanCityPolice"
@@ -14688,7 +14688,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route5HouseForSale"
@@ -14707,7 +14707,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route5UndergroundPath"
@@ -14742,7 +14742,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -14755,7 +14755,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -14806,7 +14806,7 @@
                         "name": "Defeat the Grunt on Nugget Bridge",
                         "hosted_item": "EVENT_ROUTE_24_ROCKET",
                         "visibility_rules": [
-                            "show_items, goal_rocket"
+                            "show_events, goal_rocket"
                         ]
                     },
                     {
@@ -14825,7 +14825,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -14838,7 +14838,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -15003,7 +15003,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route25BillsHouse"
@@ -15029,7 +15029,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -15042,7 +15042,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -15109,7 +15109,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route9"
@@ -15187,7 +15187,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -15200,7 +15200,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -15396,7 +15396,7 @@
                         ],
                         "hosted_item": "EVENT_RESTORED_POWER_TO_KANTO",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -15465,7 +15465,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route10NorthPokecenter, @JohtoKanto/Route 10/Top"
@@ -15476,7 +15476,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route10NorthPowerPlant, @JohtoKanto/Route 10/Top, $can_surf_kanto"
@@ -15511,7 +15511,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route10South, @JohtoKanto/Route 10/Bottom"
@@ -15524,7 +15524,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 10/Top, $can_surf_kanto, $can_cut_kanto"
@@ -15537,7 +15537,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 10/Top, $can_surf_kanto, $can_cut_kanto"
@@ -15607,7 +15607,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|LavRadioTower1FDirectory"
@@ -15618,7 +15618,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|LavRadioTower1FPokeFluteSign"
@@ -15629,7 +15629,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|LavenderTown"
@@ -15640,7 +15640,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|LavenderTownMart"
@@ -15651,7 +15651,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|LavenderTownPokecenter"
@@ -15662,7 +15662,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|LavenderTownRadioStation"
@@ -15673,7 +15673,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|LavenderTownSoulHouse"
@@ -15684,7 +15684,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|LavenderTownVolunteerPokemonHouse"
@@ -15765,7 +15765,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route8UndergroundPath"
@@ -15831,7 +15831,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -15844,7 +15844,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -15902,7 +15902,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SaffronGymStatue, ^$kantogymlock"
@@ -15960,7 +15960,7 @@
                         "name": "Gym - Beat Sabrina",
                         "hosted_item": "EVENT_BEAT_SABRINA",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ],
                         "access_rules": [
                             "^$kantogymlock"
@@ -16002,7 +16002,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FightingDojoSign1"
@@ -16013,7 +16013,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FightingDojoSign2"
@@ -16024,7 +16024,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SaffronCity"
@@ -16035,7 +16035,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SaffronCityFightingDojo"
@@ -16046,7 +16046,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SaffronCityGym"
@@ -16057,7 +16057,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SaffronCityMagnetTrainStation"
@@ -16068,7 +16068,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SaffronCityMart"
@@ -16079,7 +16079,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SaffronCityMrPsychicsHouse"
@@ -16090,7 +16090,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SaffronCityPokecenter"
@@ -16101,7 +16101,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|SaffronCitySilphCo"
@@ -16192,7 +16192,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonCity"
@@ -16203,7 +16203,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonCityGym, $can_cut_kanto"
@@ -16214,7 +16214,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonGymStatueLeft, $can_cut_kanto, ^$kantogymlock"
@@ -16225,7 +16225,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonGymStatueRight, $can_cut_kanto, ^$kantogymlock"
@@ -16286,7 +16286,7 @@
                             "$can_cut_kanto, ^$kantogymlock"
                         ],
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -16338,7 +16338,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonCityMansion"
@@ -16349,7 +16349,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonMansionManagersSuiteSign"
@@ -16371,7 +16371,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonMansion2FMeetingRoomSign"
@@ -16382,7 +16382,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonMansion3FDevRoomSign"
@@ -16395,7 +16395,7 @@
                             "$diplomagoal"
                         ],
                         "visibility_rules": [
-                            "show_items, goal_diploma"
+                            "show_events, goal_diploma"
                         ]
                     },
                     {
@@ -16403,7 +16403,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonMansionRoofGraffiti"
@@ -16422,7 +16422,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonCityDeptStore"
@@ -16433,7 +16433,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonDeptStore1FDirectory"
@@ -16451,7 +16451,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonDeptStore2FDirectory"
@@ -16482,7 +16482,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonDeptStore3FDirectory"
@@ -16503,7 +16503,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonDeptStore4FDirectory"
@@ -16524,7 +16524,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonDeptStore5FDirectory"
@@ -16555,7 +16555,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonDeptStore6FDirectory"
@@ -16576,7 +16576,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonCityPokecenter"
@@ -16587,7 +16587,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonCityTrainerTips"
@@ -16609,7 +16609,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|EatathonContestPoster"
@@ -16629,7 +16629,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CeladonCityGameCorner"
@@ -16738,7 +16738,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route16CyclingRoad, $can_cut_kanto",
@@ -16752,7 +16752,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -16765,7 +16765,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -16877,7 +16877,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -16890,7 +16890,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -16942,7 +16942,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route18"
@@ -16973,7 +16973,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -16986,7 +16986,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -17051,7 +17051,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|VermilionGymStatueLeft, @JohtoKanto/Vermilion City/City, $can_cut_kanto, ^$kantogymlock",
@@ -17063,7 +17063,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|VermilionGymStatueRight, @JohtoKanto/Vermilion City/City, $can_cut_kanto, ^$kantogymlock",
@@ -17117,7 +17117,7 @@
                         ],
                         "hosted_item": "EVENT_BEAT_LTSURGE",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -17161,7 +17161,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City/City, ^$unownsign|PokemonFanClubBraggingSign"
@@ -17172,7 +17172,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City/City, ^$unownsign|PokemonFanClubListenSign"
@@ -17183,7 +17183,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCity"
@@ -17194,7 +17194,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityDiglettsCave, $clear_snorlax",
@@ -17206,7 +17206,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityGym"
@@ -17217,7 +17217,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityMart"
@@ -17228,7 +17228,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityPokecenter"
@@ -17239,7 +17239,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityPokemonFanClub"
@@ -17250,7 +17250,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Vermilion City/City, ^$unownsign|VermilionCityPort"
@@ -17462,7 +17462,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route6UndergroundPath"
@@ -17493,7 +17493,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -17506,7 +17506,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -17571,7 +17571,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route7UndergroundPath"
@@ -17584,7 +17584,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -17597,7 +17597,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -17650,7 +17650,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route11"
@@ -17718,7 +17718,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -17731,7 +17731,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -17813,7 +17813,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 12/North, ^$unownsign|Route12FishingSpot"
@@ -17859,7 +17859,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 12/North, ^$unownsign|Route12",
@@ -17954,7 +17954,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route13"
@@ -17965,7 +17965,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route13Directions"
@@ -17976,7 +17976,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route13TrainerTips"
@@ -18045,7 +18045,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -18058,7 +18058,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -18166,7 +18166,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -18179,7 +18179,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -18232,7 +18232,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route15"
@@ -18308,7 +18308,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -18321,7 +18321,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "$can_cut_kanto"
@@ -18377,7 +18377,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FuchsiaGymStatueLeft"
@@ -18388,7 +18388,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FuchsiaGymStatueRight"
@@ -18446,7 +18446,7 @@
                         "name": "Gym - Beat Janine",
                         "hosted_item": "EVENT_BEAT_JANINE",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ],
                         "access_rules": [
                             "^$kantogymlock"
@@ -18501,7 +18501,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FuchsiaCityNoLittering, $can_cut_kanto"
@@ -18523,7 +18523,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FuchsiaCityMart, $can_cut_kanto"
@@ -18547,7 +18547,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FuchsiaCitySafariZoneClosed, $can_cut_kanto"
@@ -18558,7 +18558,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FuchsiaCity"
@@ -18569,7 +18569,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FuchsiaCityGym"
@@ -18580,7 +18580,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FuchsiaCityPokecenter"
@@ -18591,7 +18591,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FuchsiaCitySafariZoneOffice"
@@ -18602,7 +18602,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|FuchsiaCityWardensHome"
@@ -18670,7 +18670,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Fuchsia City, ^$unownsign|Route19CarefulSwimming"
@@ -18681,7 +18681,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route19, @JohtoKanto/Route 19/Sea"
@@ -18850,7 +18850,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|Route20CinnabarGym"
@@ -18860,7 +18860,7 @@
                         "name": "Gym - Beat Blaine",
                         "hosted_item": "EVENT_BEAT_BLAINE",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ],
                         "access_rules": [
                             "^$kantogymlock"
@@ -18934,7 +18934,7 @@
                         "name": "Blue Returns to Gym",
                         "hosted_item": "EVENT_VIRIDIAN_GYM_BLUE",
                         "visibility_rules": [
-                            "show_items"
+                            "show_events"
                         ]
                     },
                     {
@@ -18942,7 +18942,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CinnabarIsland"
@@ -18953,7 +18953,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CinnabarIslandPokecenter"
@@ -18964,7 +18964,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, goal_unown"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$unownsign|CinnabarIslandGym"
@@ -19093,7 +19093,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_full"
+                            "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 21/North, $can_surf_kanto, $can_cut_kanto"
@@ -19106,7 +19106,7 @@
                         "chest_unopened_img": "images/other/grass.png",
                         "chest_opened_img": "images/other/grass_bw.png",
                         "visibility_rules": [
-                            "show_items, grasssanity_single"
+                            "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 21/North, $can_surf_kanto, $can_cut_kanto"
