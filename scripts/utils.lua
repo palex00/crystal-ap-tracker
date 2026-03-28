@@ -332,6 +332,6 @@ function showMonVisibility()
     local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount
     local dexsanity = has("dexsanity")
     if dexcountsanity ~= 0 or dexsanity ~= false then
-        Tracker:FindObjectForCode("location_visibility").CurrentStage = 1
+        Tracker:FindObjectForCode("visibility_mons").CurrentStage = 0
     end
 end

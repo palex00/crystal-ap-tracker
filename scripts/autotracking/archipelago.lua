@@ -260,8 +260,8 @@ function onClear(slot_data)
         updateStatics(0)
         updateRocketTraps(0)
         updateVanillaKeyItems(0)
-        updateShops(J, 0)
-        updateShops(K, 0)
+        updateShops("J", 0)
+        updateShops("K", 0)
         
         local suffix = TEAM_NUMBER .. "_" .. PLAYER_ID
         local function makeID(s) return "pokemon_crystal_" .. s .. suffix end
@@ -390,9 +390,9 @@ function onNotify(key, value, old_value)
             SAVED_HINTS = value
             toggleHints()
         elseif key == IDs.SHOP_J then
-            updateShops(J, value)
+            updateShops("J", value)
         elseif key == IDs.SHOP_K then
-            updateShops(K, value)
+            updateShops("K", value)
         end
     end
 end
