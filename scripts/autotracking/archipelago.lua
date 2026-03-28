@@ -276,6 +276,8 @@ function onClear(slot_data)
             TRADE      = makeID("trades_"),
             SLOT_UNLOCK= makeID("tracker_slots_enabled_"),
             HINT       = "_read_hints_" .. suffix,
+            SHOP_K     = makeID("seen_kanto_marts_"),
+            SHOP_J     = makeID("seen_johto_marts_"),
         }
         for _, id in pairs(IDs) do
             Archipelago:SetNotify({id})
@@ -384,6 +386,27 @@ function onNotify(key, value, old_value)
         elseif key == IDs.HINT then
             SAVED_HINTS = value
             toggleHints()
+        elseif key == IDs.SHOP_J then
+            updateShops(J, value)
+        elseif key == IDs.SHOP_K then
+            updateShops(K, value)
+        end
+    end
+end
+
+function updateShops(region, value)
+    if value ~= nil then
+        local list = _G["FLAG_SHOP_" .. region .. "_CODES"]
+        
+        for i, code in ipairs(list) do
+            local bit = (value >> (i - 1)) & 1
+            Tracker:FindObjectForCode(code).Active = (bit == 1)
+        end
+        
+        for event, location in pairs(SHOP_MAPPING) do
+            if has(event) then
+                Tracker:FindObjectForCode(location).AvailableChestCount = 0
+            end
         end
     end
 end

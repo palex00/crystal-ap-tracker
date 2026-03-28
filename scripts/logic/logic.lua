@@ -316,17 +316,17 @@ end
 function kurt_shop(color)
     if has(color.."_APRICORN") then
         return AccessibilityLevel.Normal
-    elseif has("berries_off") then
-        return AccessibilityLevel.SequenceBreak
-    else
+    elseif not has("EVENT_SEEN_MART_KURTS_BALLS") then
         return AccessibilityLevel.Inspect
+    else
+        return AccessibilityLevel.None
     end
 end
 
 function bluecard_shop(amount)
     if has("BLUE_CARD") and has("BLUE_CARD_POINT", amount) then
         return AccessibilityLevel.Normal
-    elseif has("BLUE_CARD") then
+    elseif has("BLUE_CARD") and not has("EVENT_SEEN_MART_BLUE_CARD") then
         return AccessibilityLevel.Inspect
     else
         return AccessibilityLevel.None
