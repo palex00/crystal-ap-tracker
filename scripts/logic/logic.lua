@@ -394,6 +394,7 @@ function kantogymlock()
     local lugia = Tracker:FindObjectForCode("@JohtoKanto/Whirl Islands/B2F - North Item").AccessibilityLevel
     local suicune = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower").AccessibilityLevel
     local silvercave = Tracker:FindObjectForCode("@JohtoKanto/Silver Cave").AccessibilityLevel
+    local victoryroad = Tracker:FindObjectForCode("@JohtoKanto/Victory Road").AccessibilityLevel
 
     if has("lock_kanto_gyms_false") then
         return AccessibilityLevel.Normal
@@ -404,7 +405,8 @@ function kantogymlock()
         or hooh == AccessibilityLevel.Normal
         or (lugia == AccessibilityLevel.Normal and has("SILVER_WING"))
         or suicune == AccessibilityLevel.Normal
-        or silvercave == AccessibilityLevel.Normal then
+        or silvercave == AccessibilityLevel.Normal
+        or victoryroad == AccessibilityLevel.Normal then
             return AccessibilityLevel.Normal
         else
             return AccessibilityLevel.SequenceBreak

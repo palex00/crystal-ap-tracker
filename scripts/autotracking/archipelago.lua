@@ -388,7 +388,8 @@ function onNotify(key, value, old_value)
             Tracker:AddLayouts("layouts/settings_quick_slottrack.json")
         elseif key == IDs.HINT then
             SAVED_HINTS = value
-            toggleHints()
+            updateHints()
+            updatePokemon()
         elseif key == IDs.SHOP_J then
             updateShops("J", value)
         elseif key == IDs.SHOP_K then
