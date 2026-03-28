@@ -407,6 +407,7 @@ function updateShopEvents(region, value)
             Tracker:FindObjectForCode(code).Active = (bit == 1)
         end
     end
+    updateShops()
 end
 
 function updateShops()
