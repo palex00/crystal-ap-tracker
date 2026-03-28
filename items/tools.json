@@ -232,5 +232,26 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Auto-Mark Off Shops after checked",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Do not mark off shops automatically",
+                "img": "/images/shopsanity/pokedollar_bw.png",
+                "codes": "auto_shop_markoff, auto_shop_markoff_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Mark off shops after you checked them, even if they might still contain progression items",
+                "img": "/images/shopsanity/pokedollar.png",
+                "img_mods": "overlay|/images/tools/auto.png",
+                "codes": "auto_shop_markoff, auto_shop_markoff_true",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

@@ -4,11 +4,13 @@
         "orientation": "vertical",
         "margin": "2,2",
         "item_margin": "2,2",
+        "h_alignment": "left",
         "item_size": "32",
         "rows": [
             [
                 "visibility_items",
-                "automap"
+                "automap",
+                "auto_shop_markoff"
             ],
             [
                 "visibility_mons",

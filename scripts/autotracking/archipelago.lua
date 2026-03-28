@@ -260,8 +260,8 @@ function onClear(slot_data)
         updateStatics(0)
         updateRocketTraps(0)
         updateVanillaKeyItems(0)
-        updateShops("J", 0)
-        updateShops("K", 0)
+        updateShopEvents("J", 0)
+        updateShopEvents("K", 0)
         
         local suffix = TEAM_NUMBER .. "_" .. PLAYER_ID
         local function makeID(s) return "pokemon_crystal_" .. s .. suffix end
@@ -391,14 +391,14 @@ function onNotify(key, value, old_value)
             updateHints()
             updatePokemon()
         elseif key == IDs.SHOP_J then
-            updateShops("J", value)
+            updateShopEvents("J", value)
         elseif key == IDs.SHOP_K then
-            updateShops("K", value)
+            updateShopEvents("K", value)
         end
     end
 end
 
-function updateShops(region, value)
+function updateShopEvents(region, value)
     if value ~= nil then
         local list = _G["FLAG_SHOP_" .. region .. "_CODES"]
         
@@ -406,11 +406,15 @@ function updateShops(region, value)
             local bit = (value >> (i - 1)) & 1
             Tracker:FindObjectForCode(code).Active = (bit == 1)
         end
-        
-        for event, location in pairs(SHOP_MAPPING) do
-            if has(event) then
-                Tracker:FindObjectForCode(location).AvailableChestCount = 0
-            end
+    end
+end
+
+function updateShops()
+    if has("auto_shop_markoff_false") then return end
+    
+    for event, location in pairs(SHOP_MAPPING) do
+        if has(event) then
+            Tracker:FindObjectForCode(location).AvailableChestCount = 0
         end
     end
 end
@@ -767,13 +771,16 @@ function toggleHints()
     if has("hint_tracking_off") then
         updatePokemon()
         resetHints()
+        updateShops()
     elseif has("hint_tracking_on") then
         resetHints()
         updateHints()
         updatePokemon()
+        updateShops()
     elseif has("hint_tracking_on_plus") then
         updateHints()
         updatePokemon()
+        updateShops()
     end
 end
 
@@ -878,6 +885,8 @@ function updateHints()
             ::continue_hint::
         end
     end
+
+    updateShops()
 
     if tracking_plus then
         for location, count in pairs(CLEARED_HINTS) do
