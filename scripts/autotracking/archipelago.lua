@@ -248,6 +248,7 @@ function onClear(slot_data)
 
     -- Set CurrentStage for "tea"
     Tracker:FindObjectForCode("tea_guard").CurrentStage = stages[key]
+    
     if PLAYER_ID>-1 then
         if string.lower(Archipelago:GetPlayerAlias(PLAYER_ID)):find("chrism") then
             Tracker:FindObjectForCode("chrism").CurrentStage = 1
@@ -259,6 +260,8 @@ function onClear(slot_data)
         updateStatics(0)
         updateRocketTraps(0)
         updateVanillaKeyItems(0)
+        updateShops(J, 0)
+        updateShops(K, 0)
         
         local suffix = TEAM_NUMBER .. "_" .. PLAYER_ID
         local function makeID(s) return "pokemon_crystal_" .. s .. suffix end
