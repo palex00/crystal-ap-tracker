@@ -1491,6 +1491,7 @@
                             "$unown_goal"
                         ],
                         "visibility_rules": [
+                            "show_signs, goal_unown",
                             "show_events, goal_unown"
                         ]
                     },
@@ -1501,7 +1502,8 @@
                             "KABUTO_TILE:16"
                         ],
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown",
+                            "show_events, goal_unown"
                         ]
                     },
                     {
@@ -1547,7 +1549,8 @@
                             "@JohtoKanto/Union Cave, $can_surf_johto, $can_strength, OMANYTE_TILE:16"
                         ],
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown",
+                            "show_events, goal_unown"
                         ]
                     },
                     {
@@ -1593,7 +1596,8 @@
                             "$can_surf_johto, AERODACTYL_TILE:16"
                         ],
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown",
+                            "show_events, goal_unown"
                         ]
                     },
                     {
@@ -1639,7 +1643,8 @@
                             "@JohtoKanto/Union Cave, $can_surf_johto, HO-OH_TILE:16"
                         ],
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown",
+                            "show_events, goal_unown"
                         ]
                     },
                     {
