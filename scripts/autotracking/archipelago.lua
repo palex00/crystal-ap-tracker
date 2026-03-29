@@ -887,13 +887,12 @@ function updateHints()
         end
     end
 
-    updateShops()
-
     if tracking_plus then
         for location, count in pairs(CLEARED_HINTS) do
             local obj = Tracker:FindObjectForCode(location)
             local cleared = CLEARED_LOCATIONS[location] or 0
             obj.AvailableChestCount = obj.ChestCount - count - cleared
+            updateShops()
             if obj.AvailableChestCount == 0 then
                 obj.Highlight = 0
             end
