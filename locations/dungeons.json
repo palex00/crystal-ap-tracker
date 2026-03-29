@@ -95,7 +95,12 @@
                 "name": "Azalea Town​​",
                 "sections": [
                     {
+                        "name": "Berry Tree",
                         "ref": "JohtoKanto/Azalea Town/Berry Tree"
+                    },
+                    {
+                        "name": "White Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Azalea Town/White Apricorn from Apricorn Tree"
                     }
                 ],
                 "map_locations": [
@@ -1900,8 +1905,16 @@
                         "name": "Potion from Aide"
                     },
                     {
+                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Give Mystery Egg to Elm",
+                        "name": "Give Mystery Egg to Elm"
+                    },
+                    {
                         "ref": "JohtoKanto/New Bark Town/Elm's Lab - Gift from Aide after returning Mystery Egg",
                         "name": "Gift from Aide after returning Mystery Egg"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Everstone from Elm",
+                        "name": "Everstone from Elm"
                     },
                     {
                         "ref": "JohtoKanto/New Bark Town/Elm's Lab - Master Ball from Elm",
@@ -9961,7 +9974,12 @@
                 "name": "Route 37",
                 "sections": [
                     {
+                        "name": "Berry Tree 1",
                         "ref": "JohtoKanto/Route 37/Berry Tree 1"
+                    },
+                    {
+                        "name": "Red Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 37/Red Apricorn from Apricorn Tree"
                     }
                 ],
                 "map_locations": [
@@ -9976,7 +9994,12 @@
                 "name": "Route 37​",
                 "sections": [
                     {
+                        "name": "Berry Tree 2",
                         "ref": "JohtoKanto/Route 37/Berry Tree 2"
+                    },
+                    {
+                        "name": "Blue Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 37/Blue Apricorn from Apricorn Tree"
                     }
                 ],
                 "map_locations": [
@@ -9991,7 +10014,12 @@
                 "name": "Route 37​​",
                 "sections": [
                     {
+                        "name": "Berry Tree 3",
                         "ref": "JohtoKanto/Route 37/Berry Tree 3"
+                    },
+                    {
+                        "name": "Black Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 37/Black Apricorn from Apricorn Tree"
                     }
                 ],
                 "map_locations": [
@@ -10712,7 +10740,12 @@
                 "name": "Route 42​​​​",
                 "sections": [
                     {
+                        "name": "Berry Tree 1",
                         "ref": "JohtoKanto/Route 42/Berry Tree 1"
+                    },
+                    {
+                        "name": "Pink Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 42/Pink Apricorn from Apricorn Tree"
                     }
                 ],
                 "map_locations": [
@@ -10727,7 +10760,12 @@
                 "name": "Route 42​​​​​",
                 "sections": [
                     {
+                        "name": "Berry Tree 2",
                         "ref": "JohtoKanto/Route 42/Berry Tree 2"
+                    },
+                    {
+                        "name": "Green Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 42/Green Apricorn from Apricorn Tree"
                     }
                 ],
                 "map_locations": [
@@ -10742,7 +10780,12 @@
                 "name": "Route 42​​​​​​",
                 "sections": [
                     {
+                        "name": "Berry Tree 3",
                         "ref": "JohtoKanto/Route 42/Berry Tree 3"
+                    },
+                    {
+                        "name": "Yellow Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 42/Yellow Apricorn from Apricorn Tree"
                     }
                 ],
                 "map_locations": [
@@ -13593,6 +13636,30 @@
                 ]
             },
             {
+                "name": "Trainer House",
+                "sections": [
+                    {
+                        "name": "Item from Cal",
+                        "ref": "JohtoKanto/Viridian City/Trainer House - Item from Cal"
+                    },
+                    {
+                        "name": "Training Hall Info Sign",
+                        "ref": "JohtoKanto/Viridian City/Trainer House - Training Hall Info Sign"
+                    },
+                    {
+                        "name": "No Rules Sign",
+                        "ref": "JohtoKanto/Viridian City/Trainer House - No Rules Sign"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ViridianCity",
+                        "x": 376,
+                        "y": 248
+                    }
+                ]
+            },
+            {
                 "name": "Viridian City",
                 "sections": [
                     {
@@ -15546,6 +15613,42 @@
                         "map": "VioletCity",
                         "x": 344,
                         "y": 472
+                    }
+                ]
+            },
+            {
+                "name": "Bug Catching Contest",
+                "map_locations": [
+                    {
+                        "map": "NationalPark",
+                        "x": 616,
+                        "y": 24
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Bug Catching Contest - First Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - First Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Second Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Third Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Third Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Consolation Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Consolation Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second or Third Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Second or Third Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Participation Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Participation Prize"
                     }
                 ]
             }

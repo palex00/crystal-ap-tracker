@@ -1,0 +1,39 @@
+{
+    "levelinglogic": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "8,6",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "2,6",
+                "content": [
+                    { "type": "item", "item": "level_maxevo", "item_size": "235, 16" },
+                    { "type": "item", "item": "max_digit1", "item_size": "23, 18" },
+                    { "type": "item", "item": "max_digit2", "item_size": "23, 18" }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "2,6",
+                "content": [
+                    { "type": "item", "item": "level_pergym", "item_size": "235, 16" },
+                    { "type": "item", "item": "yaml_digit1", "item_size": "23, 18" },
+                    { "type": "item", "item": "yaml_digit2", "item_size": "23, 18" }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "2,6",
+                "content": [
+                    { "type": "item", "item": "level_inlogic", "item_size": "235, 16" },
+                    { "type": "item", "item": "result_digit1", "item_size": "23, 18" },
+                    { "type": "item", "item": "result_digit2", "item_size": "23, 18" }
+                ]
+            }
+        ]
+    }
+}

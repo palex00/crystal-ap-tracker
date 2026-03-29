@@ -1,0 +1,28 @@
+{
+    "settings_popup": {
+        "type": "dock",
+        "content": {
+            "type": "tabbed",
+            "h_alignment": "center",
+            "dock": "left",
+            "tabs": [
+                {
+                    "title": "General Settings",
+                    "h_alignment": "left",
+                    "content": {
+                        "type": "layout",
+                        "key": "settings_actual"
+                    }
+                },
+                {
+                    "title": "Encounter & Evolution",
+                    "h_alignment": "left",
+                    "content": {
+                        "type": "layout",
+                        "key": "settings_encevo"
+                    }
+                }
+            ]
+        }
+    }
+}

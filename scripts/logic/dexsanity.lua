@@ -29,14 +29,17 @@ EVOLUTION_METHOD_MAP = {
 
 function breeding()
     local daycare = Tracker:FindObjectForCode("@JohtoKanto/Route 34").AccessibilityLevel
-    if has("breeding_logic_on") and daycare ~= 0 then
-        return daycare
-    elseif has("breeding_logic_ditto") and has("ditto") and daycare ~= 0 then
-        return daycare
-    elseif daycare ~= 0 then
-        return AccessibilityLevel.SequenceBreak
-    else
+    
+    if (daycare == 0) or has("breeding_logic_off_hard") then
         return AccessibilityLevel.None
+    end
+    
+    if has("breeding_logic_on") then
+        return daycare
+    elseif has("ditto") and (has("breeding_logic_ditto_hard") or has("breeding_logic_ditto_soft")) then
+        return daycare
+    else
+        return AccessibilityLevel.SequenceBreak
     end
 end
 
@@ -49,12 +52,11 @@ function evolve_old(req_level)
 end
 
 function evolve(req_level)
-    req_level = tonumber(req_level)
-    req_level = req_level or 0
-    local digit1 = Tracker:FindObjectForCode("result_digit1").CurrentStage or 0
-    local digit2 = Tracker:FindObjectForCode("result_digit2").CurrentStage or 0
-    local current_level = digit1 * 10 + digit2
-    if has("evomethod_level_on") and req_level <= current_level then
+    local max_value     = getDigits("yaml_digit1", "yaml_digit2")
+    local current_level = getDigits("result_digit1", "result_digit2")
+    local req           = math.max(tonumber(req_level) or 0, max_value)
+
+    if has("evomethod_level_on") and req <= current_level then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.SequenceBreak
@@ -98,9 +100,7 @@ function evolve_item_old()
 end
        
 function evolve_tyrogue()
-    local digit1 = Tracker:FindObjectForCode("result_digit1").CurrentStage or 0
-    local digit2 = Tracker:FindObjectForCode("result_digit2").CurrentStage or 0
-    local current_level = digit1 * 10 + digit2
+    local current_level = getDigits("result_digit1", "result_digit2")
     local goldenrod = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
     local celadon = Tracker:FindObjectForCode("@JohtoKanto/Celadon City").AccessibilityLevel
     
@@ -216,12 +216,16 @@ end
 
 function trade(person)
     if TRADE_DATA ~= nil then
+        if not has("POKEDEX") then
+            return AccessibilityLevel.None
+        end
+        
         local checked = Tracker:FindObjectForCode("TRADE_"..person).Active
         local pokemon_name = POKEMON_MAPPING[tonumber(TRADE_DATA["TRADE_"..person].requested)]
     
         if not checked then
             return AccessibilityLevel.Inspect
-        elseif has(pokemon_name) then
+        elseif has(pokemon_name) and has("encmethod_trades_on") then
             return AccessibilityLevel.Normal
         else
             return AccessibilityLevel.SequenceBreak

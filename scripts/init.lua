@@ -4,6 +4,8 @@ Tracker.AllowDeferredLogicUpdate = true
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/events.json")
 Tracker:AddItems("items/settings.json")
+Tracker:AddItems("items/settings_encevo.json")
+Tracker:AddItems("items/tools.json")
 Tracker:AddItems("items/pokemon.json")
 Tracker:AddItems("items/trainersanity.json")
 Tracker:AddItems("items/dexsanity_items.json")
@@ -42,8 +44,10 @@ Tracker:AddLocations("locations/new_signs.json")
 Tracker:AddLayouts("layouts/dungeon_maps.json")
 Tracker:AddLayouts("layouts/events_red.json")
 Tracker:AddLayouts("layouts/settings.json")
-Tracker:AddLayouts("layouts/settings_quick.json")
-Tracker:AddLayouts("layouts/pokemonlogic.json")
+Tracker:AddLayouts("layouts/settings_encevo.json")
+Tracker:AddLayouts("layouts/settings_popup.json")
+Tracker:AddLayouts("layouts/settings_quick/settings_quick.json")
+Tracker:AddLayouts("layouts/levelinglogic.json")
 Tracker:AddLayouts("layouts/items_no_tea.json")
 Tracker:AddLayouts("layouts/flyunlocks.json")
 Tracker:AddLayouts("layouts/shopsanity_all.json")
@@ -76,12 +80,14 @@ ScriptHost:AddWatchForCode("victory_road_access", "victory_road_access", toggle_
 ScriptHost:AddWatchForCode("mischief", "mischief", toggle_mischief)
 ScriptHost:AddWatchForCode("chrism", "chrism", toggle_mischief)
 for _, code in ipairs(gym_codes) do
-    ScriptHost:AddWatchForCode(code, code, update_gymcount)
+    ScriptHost:AddWatchForCode(code, code, calculateEvoLevel)
 end
-ScriptHost:AddWatchForCode("gym_digit1", "gym_digit1", calculateEvoLevel)
-ScriptHost:AddWatchForCode("gym_digit2", "gym_digit2", calculateEvoLevel)
 ScriptHost:AddWatchForCode("yaml_digit1", "yaml_digit1", calculateEvoLevel)
 ScriptHost:AddWatchForCode("yaml_digit2", "yaml_digit2", calculateEvoLevel)
+for _, code in ipairs(FLAG_STATIC_CODES) do
+    ScriptHost:AddWatchForCode(code, code, updatePokemon)
+end
+ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function() updatePokemon() end)
 
 ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
 
@@ -91,12 +97,11 @@ ScriptHost:AddWatchForCode("shopsanity_gamecorners", "shopsanity_gamecorners", t
 ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_itemgrid)
 ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_itemgrid)
 ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
-
-
---for _, code in ipairs(FLAG_STATIC_CODES) do
---    print(code)
---    ScriptHost:AddWatchForCode(code, code, updatePokemon)
---end
+ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
+ScriptHost:AddWatchForCode("grasssanity", "grasssanity", toggleQuickSettings)
+ScriptHost:AddWatchForCode("goal", "goal", toggleQuickSettings)
+ScriptHost:AddWatchForCode("shopsanity_johtomarts", "shopsanity_johtomarts", toggleQuickSettings)
+ScriptHost:AddWatchForCode("shopsanity_kantomarts", "shopsanity_kantomarts", toggleQuickSettings)
 
 -- Makes version nil
 first_two_dots = nil

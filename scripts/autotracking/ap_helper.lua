@@ -353,9 +353,9 @@ SLOT_CODES = {
         code = "encmethod_static",
         mapping = MAP_TOGGLE
     },
-    breeding_methods_required = {
+    breeding_method = {
         code = "breeding_logic",
-        mapping = MAP_TRIPLE
+        mapping = MAP_QUINTUPLE
     },
     all_pokemon_seen = {
         code = "all_pokemon_seen",
@@ -459,6 +459,22 @@ SLOT_CODES = {
     },
     route_12_access = {
         code = "route_12_access",
+        mapping = MAP_TOGGLE
+    },
+    route_30_access = {
+        code = "route_30_access",
+        mapping = MAP_TOGGLE
+    },
+    randomize_pokedex = {
+        code = "randomize_pokedex",
+        mapping = MAP_TRIPLE
+    },
+    south_kanto_access = {
+        code = "south_kanto_access",
+        mapping = MAP_TRIPLE
+    },
+    south_kanto_condition = {
+        code = "south_kanto_condition",
         mapping = MAP_TOGGLE
     }
 }

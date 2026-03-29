@@ -1,0 +1,31 @@
+{
+    "quick_settings_grid": {
+        "type": "itemgrid",
+        "orientation": "vertical",
+        "margin": "2,2",
+        "item_margin": "2,2",
+        "h_alignment": "left",
+        "item_size": "32",
+        "rows": [
+            [
+                "visibility_items",
+                "automap"
+            ],
+            [
+                "visibility_mons",
+                "splitmap"
+            ],
+            [
+                "visibility_events",
+                "encounter_tracking"
+            ],
+            [
+                "hint_tracking"
+            ],
+            [
+                "visibility_grass",
+                "broadcast_view"
+            ]
+        ]
+    }
+}

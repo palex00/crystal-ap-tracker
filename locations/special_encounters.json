@@ -24,7 +24,7 @@
                             "@JohtoKanto/Cherrygrove City",
                             "@JohtoKanto/Cianwood City",
                             "@JohtoKanto/Olivine City",
-                            "@JohtoKanto/Route 19/Post-Construction",
+                            "@JohtoKanto/Route 19/Sea",
                             "@JohtoKanto/Route 34",
                             "@JohtoKanto/Route 40",
                             "@JohtoKanto/Union Cave, $can_surf_johto"
@@ -39,7 +39,8 @@
                             "@JohtoKanto/New Bark Town",
                             "@JohtoKanto/Olivine City",
                             "@JohtoKanto/Pallet Town",
-                            "@JohtoKanto/Route 20",
+                            "@JohtoKanto/Route 20/North",
+                            "@JohtoKanto/Route 20/South",
                             "@JohtoKanto/Route 21",
                             "@JohtoKanto/Route 26",
                             "@JohtoKanto/Route 27/Post-Waterfall",
@@ -183,7 +184,7 @@
                             "@JohtoKanto/Cherrygrove City",
                             "@JohtoKanto/Cianwood City",
                             "@JohtoKanto/Olivine City",
-                            "@JohtoKanto/Route 19/Post-Construction",
+                            "@JohtoKanto/Route 19/Sea",
                             "@JohtoKanto/Route 34",
                             "@JohtoKanto/Route 40",
                             "@JohtoKanto/Union Cave, $can_surf_johto"
@@ -198,7 +199,8 @@
                             "@JohtoKanto/New Bark Town",
                             "@JohtoKanto/Olivine City",
                             "@JohtoKanto/Pallet Town",
-                            "@JohtoKanto/Route 20",
+                            "@JohtoKanto/Route 20/North",
+                            "@JohtoKanto/Route 20/South",
                             "@JohtoKanto/Route 21",
                             "@JohtoKanto/Route 26",
                             "@JohtoKanto/Route 27/Post-Waterfall",
@@ -342,7 +344,7 @@
                             "@JohtoKanto/Cherrygrove City",
                             "@JohtoKanto/Cianwood City",
                             "@JohtoKanto/Olivine City",
-                            "@JohtoKanto/Route 19/Post-Construction",
+                            "@JohtoKanto/Route 19/Sea",
                             "@JohtoKanto/Route 34",
                             "@JohtoKanto/Route 40",
                             "@JohtoKanto/Union Cave, $can_surf_johto"
@@ -357,7 +359,8 @@
                             "@JohtoKanto/New Bark Town",
                             "@JohtoKanto/Olivine City",
                             "@JohtoKanto/Pallet Town",
-                            "@JohtoKanto/Route 20",
+                            "@JohtoKanto/Route 20/North",
+                            "@JohtoKanto/Route 20/South",
                             "@JohtoKanto/Route 21",
                             "@JohtoKanto/Route 26",
                             "@JohtoKanto/Route 27/Post-Waterfall",
@@ -516,8 +519,8 @@
                         "access_rules": [
                             "@JohtoKanto/Azalea Town",
                             "@JohtoKanto/Route 33",
-                            "@JohtoKanto/Route 42/West",
-                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
+                            "[@JohtoKanto/Route 42/West], @JohtoKanto/Route 42/Center, $can_cut_johto",
+                            "@JohtoKanto/Route 42/West, [@JohtoKanto/Route 42/Center], [$can_cut_johto]"
                         ]
                     },
                     {
@@ -527,8 +530,8 @@
                         "access_rules": [
                             "@JohtoKanto/Azalea Town",
                             "@JohtoKanto/Route 33",
-                            "@JohtoKanto/Route 42/West",
-                            "@JohtoKanto/Route 42/Center, $can_cut_johto"
+                            "[@JohtoKanto/Route 42/West], @JohtoKanto/Route 42/Center, $can_cut_johto",
+                            "@JohtoKanto/Route 42/West, [@JohtoKanto/Route 42/Center], [$can_cut_johto]"
                         ]
                     },
                     {

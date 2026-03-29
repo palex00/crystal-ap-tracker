@@ -25,18 +25,56 @@ allChecked = nil
 CHECKED_SIGNS = nil
 UNOWN_DATA = nil
 TRADE_DATA = nil
+SAVED_HINTS = {}
+
+if Highlight then
+    HIGHLIGHT_LEVEL= {
+        [0] = Highlight.Unspecified,
+        [1] = Highlight.Priority,
+        [2] = Highlight.NoPriority,
+        [3] = Highlight.Priority,
+        [4] = Highlight.Avoid,
+        [5] = Highlight.Priority,
+        [6] = Highlight.NoPriority
+    }
+end
+
+HIGHLIGHT_PRIORITY =  {
+    [3] = 1,
+    [2] = 2,
+    [-1] = 3,
+    [1] = 4,
+    [0] = 5
+}
+
+function unloadWatches()
+    for _, code in ipairs(FLAG_STATIC_CODES) do
+        ScriptHost:RemoveWatchForCode(code)
+    end
+    
+    for _, code in ipairs(gym_codes) do
+        ScriptHost:RemoveWatchForCode(code)
+    end
+end
+
+function loadWatches()
+    for _, code in ipairs(FLAG_STATIC_CODES) do
+        ScriptHost:AddWatchForCode(code, code, updatePokemon)
+    end
+    
+    for _, code in ipairs(gym_codes) do
+        ScriptHost:AddWatchForCode(code, code, calculateEvoLevel)
+    end
+end
 
 function onClear(slot_data)
-    isUpdating = true
     CUR_INDEX = -1
     resetLocations()
     resetItems()
     CAUGHT = {}
     SEEN = {}
     
-    for _, code in ipairs(FLAG_STATIC_CODES) do
-        ScriptHost:RemoveWatchForCode(code)
-    end
+    unloadWatches()
     
     -- resets unown codes
     for i = 1, 26 do
@@ -60,7 +98,7 @@ function onClear(slot_data)
             if  k == "apworld_version" then
                 local version_str = tostring(v)
                 local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-                if first_two_dots == "5.3" or nil then
+                if first_two_dots == "5.4" or nil then
                     Tracker:AddLayouts("layouts/tracker.json")
                 else
                     Tracker:AddLayouts("layouts/versionmismatch.json")
@@ -126,7 +164,7 @@ function onClear(slot_data)
         elseif k == "trainersanity" then
             if #v == 0 then
                 TRAINERS:setType("none")
-            elseif #v == 372 and has("johto_only_off") then
+            elseif #v == 373 and has("johto_only_off") then
                 TRAINERS:setType("full")
             elseif #v == 242 and (has("johto_only_on") or has("johto_only_silver")) then
                 TRAINERS:setType("full")
@@ -140,30 +178,23 @@ function onClear(slot_data)
             end
         elseif k == "dexsanity" then
             Tracker:FindObjectForCode("dexsanity").AcquiredCount = v
+        elseif k == "maximum_evolution_level" then
+            local val = tonumber(v) or 0
+            if val == 100 then
+                val = 99
+            end
+            makeDigits(v, "max_digit1", "max_digit2")
         elseif k == "evolution_gym_levels" then
-            local val = tonumber(v) or 0
-            Tracker:FindObjectForCode("yaml_digit1").CurrentStage = math.floor(val / 10)
-            Tracker:FindObjectForCode("yaml_digit2").CurrentStage = val % 10
+            makeDigits(v, "yaml_digit1", "yaml_digit2")
         elseif k == "dexcountsanity" then
-            local val = tonumber(v) or 0
-            Tracker:FindObjectForCode("dexcountsanity_lastcheck_digit1").CurrentStage = math.floor(val / 100)
-            Tracker:FindObjectForCode("dexcountsanity_lastcheck_digit2").CurrentStage = math.floor(val / 10) % 10
-            Tracker:FindObjectForCode("dexcountsanity_lastcheck_digit3").CurrentStage = val % 10
+            makeDigits(v, "dexcountsanity_lastcheck_digit1", "dexcountsanity_lastcheck_digit2", "dexcountsanity_lastcheck_digit3")
         elseif k == "dexcountsanity_step" then
-            local val = tonumber(v) or 0
-            Tracker:FindObjectForCode("dexcountsanity_stepinterval_digit1").CurrentStage = math.floor(val / 100)
-            Tracker:FindObjectForCode("dexcountsanity_stepinterval_digit2").CurrentStage = math.floor(val / 10) % 10
-            Tracker:FindObjectForCode("dexcountsanity_stepinterval_digit3").CurrentStage = val % 10
+            makeDigits(v, "dexcountsanity_stepinterval_digit1", "dexcountsanity_stepinterval_digit2", "dexcountsanity_stepinterval_digit3")
         elseif k == "dexcountsanity_leniency" then
-            local val = tonumber(v) or 0
-            Tracker:FindObjectForCode("dexcountsanity_logicleniency_digit1").CurrentStage = math.floor(val / 100)
-            Tracker:FindObjectForCode("dexcountsanity_logicleniency_digit2").CurrentStage = math.floor(val / 10) % 10
-            Tracker:FindObjectForCode("dexcountsanity_logicleniency_digit3").CurrentStage = val % 10
+            makeDigits(v, "dexcountsanity_logicleniency_digit1", "dexcountsanity_logicleniency_digit2", "dexcountsanity_logicleniency_digit3")
         elseif k == "dexcountsanity_checks" then
             local val = tonumber(v) or 0
-            Tracker:FindObjectForCode("dexcountsanity_totalchecks_digit1").CurrentStage = math.floor(val / 100)
-            Tracker:FindObjectForCode("dexcountsanity_totalchecks_digit2").CurrentStage = math.floor(val / 10) % 10
-            Tracker:FindObjectForCode("dexcountsanity_totalchecks_digit3").CurrentStage = val % 10
+            makeDigits(v, "dexcountsanity_totalchecks_digit1", "dexcountsanity_totalchecks_digit2", "dexcountsanity_totalchecks_digit3")
             Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount = val
         elseif k == "dexsanity_pokemon" then
             local valid_ids = {}
@@ -185,6 +216,10 @@ function onClear(slot_data)
         else
             -- print(string.format("No setting could be found for key: %s", k))
         end
+    end
+    
+    if has("randomize_pokedex_startwith") then
+        Tracker:FindObjectForCode("POKEDEX").Active = true
     end
     
     updateRemainingDexcountsanityChecks()
@@ -209,8 +244,6 @@ function onClear(slot_data)
         ["1110"] = 14,
         ["1111"] = 15
     }
-    
-    
 
     -- Fetch Active values for north, east, south, west directions
     local tea_north = Tracker:FindObjectForCode("tea_north").Active and "1" or "0"
@@ -230,59 +263,42 @@ function onClear(slot_data)
         else
             Tracker:FindObjectForCode("chrism").CurrentStage = 0
         end
-        
-        updateEvents(0)
-        updateEvents2(0)
+        updateEvents(1, 0)
+        updateEvents(2, 0)
         updateStatics(0)
         updateRocketTraps(0)
         updateVanillaKeyItems(0)
+        updateShopEvents("J", 0)
+        updateShopEvents("K", 0)
         
-        EVENT_ID="pokemon_crystal_events_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({EVENT_ID})
-        Archipelago:Get({EVENT_ID})
+        local suffix = TEAM_NUMBER .. "_" .. PLAYER_ID
+        local function makeID(s) return "pokemon_crystal_" .. s .. suffix end
         
-        EVENT2_ID="pokemon_crystal_events_2_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({EVENT2_ID})
-        Archipelago:Get({EVENT2_ID})
-        
-        STATIC_ID="pokemon_crystal_statics_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({STATIC_ID})
-        Archipelago:Get({STATIC_ID})
-    
-        ROCKETTRAP_ID="pokemon_crystal_rockettraps_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({ROCKETTRAP_ID})
-        Archipelago:Get({ROCKETTRAP_ID})
-        
-        KEY_ID="pokemon_crystal_keys_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({KEY_ID})
-        Archipelago:Get({KEY_ID})
-        
-        SEEN_ID="pokemon_crystal_seen_pokemon_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({SEEN_ID})
-        Archipelago:Get({SEEN_ID})
-        
-        CAUGHT_ID="pokemon_crystal_caught_pokemon_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({CAUGHT_ID})
-        Archipelago:Get({CAUGHT_ID})
-        
-        SIGN_ID="pokemon_crystal_signs_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({SIGN_ID})
-        Archipelago:Get({SIGN_ID})
-        
-        UNOWN_ID="pokemon_crystal_unowns_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({UNOWN_ID})
-        Archipelago:Get({UNOWN_ID})
-        
-        TRADE_ID="pokemon_crystal_trades_"..TEAM_NUMBER.."_"..PLAYER_ID
-        Archipelago:SetNotify({TRADE_ID})
-        Archipelago:Get({TRADE_ID})
+        IDs = {
+            EVENT      = makeID("events_"),
+            EVENT2     = makeID("events_2_"),
+            STATIC     = makeID("statics_"),
+            ROCKETTRAP = makeID("rockettraps_"),
+            KEY        = makeID("keys_"),
+            SEEN       = makeID("seen_pokemon_"),
+            CAUGHT     = makeID("caught_pokemon_"),
+            SIGN       = makeID("signs_"),
+            UNOWN      = makeID("unowns_"),
+            TRADE      = makeID("trades_"),
+            SLOT_UNLOCK= makeID("tracker_slots_enabled_"),
+            HINT       = "_read_hints_" .. suffix,
+            SHOP_K     = makeID("seen_kanto_marts_"),
+            SHOP_J     = makeID("seen_johto_marts_"),
+        }
+        for _, id in pairs(IDs) do
+            Archipelago:SetNotify({id})
+            Archipelago:Get({id})
+        end
     end
 
     toggle_itemgrid()
-    
-    for _, code in ipairs(FLAG_STATIC_CODES) do
-        ScriptHost:AddWatchForCode(code, code, updatePokemon)
-    end
+    loadWatches()
+
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -319,6 +335,9 @@ function onItem(index, item_id, item_name, player_number)
     end
 end
 
+---- we use this for hint tracking
+CLEARED_LOCATIONS = {}
+
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
     local v = LOCATION_MAPPING[location_id]
@@ -330,6 +349,8 @@ function onLocation(location_id, location_name)
     if obj then
     	if v:sub(1, 1) == "@" then
     		obj.AvailableChestCount = obj.AvailableChestCount - 1
+            local current_total = CLEARED_LOCATIONS[v] or 0
+            CLEARED_LOCATIONS[v] = current_total + 1
     	elseif obj.Type == "progressive" then
     		obj.CurrentStage = obj.CurrentStage + 1
     	else
@@ -345,90 +366,76 @@ function onLocation(location_id, location_name)
     end
 end
 
+
+SLOT_TRACK = false
 function onNotify(key, value, old_value)
     if value ~= nil and value ~= 0 then
-        if key == EVENT_ID then
-            updateEvents(value)
-        elseif key == EVENT2_ID then
-            updateEvents2(value)
-        elseif key == STATIC_ID then
+        if key == IDs.EVENT then
+            updateEvents(1, value)
+        elseif key == IDs.EVENT2 then
+            updateEvents(2, value)
+        elseif key == IDs.STATIC then
             updateStatics(value)
-        elseif key == KEY_ID then
+        elseif key == IDs.KEY then
             updateVanillaKeyItems(value)
-        elseif key == CAUGHT_ID then
+        elseif key == IDs.CAUGHT then
             CAUGHT = value
             updatePokemon()
-        elseif key == SEEN_ID then
+        elseif key == IDs.SEEN then
             SEEN = value
             updatePokemon()
-        elseif key == ROCKETTRAP_ID then
+        elseif key == IDs.ROCKETTRAP then
             updateRocketTraps(value)
-        elseif key == SIGN_ID then
+        elseif key == IDs.SIGN then
             updateSigns(value)
-        elseif key == UNOWN_ID then
+        elseif key == IDs.UNOWN then
             updateUnown(value)
-        elseif key == TRADE_ID then
+        elseif key == IDs.TRADE then
             updateTrades(value)
-        end
-    end
-end
-
-function onNotifyLaunch(key, value)
-    if value ~= nil and value ~= 0 then
-        if key == EVENT_ID then
-            updateEvents(value)
-        elseif key == EVENT2_ID then
-            updateEvents2(value)
-        elseif key == STATIC_ID then
-            updateStatics(value)
-        elseif key == KEY_ID then
-            updateVanillaKeyItems(value)
-        elseif key == CAUGHT_ID then
-            CAUGHT = value
+        elseif key == IDs.SLOT_UNLOCK then
+            SLOT_TRACK = true
+            toggleQuickSettings()
+        elseif key == IDs.HINT then
+            SAVED_HINTS = value
+            updateHints()
             updatePokemon()
-        elseif key == SEEN_ID then
-            SEEN = value
-            updatePokemon()
-        elseif key == ROCKETTRAP_ID then
-            updateRocketTraps(value)
-        elseif key == SIGN_ID then
-            updateSigns(value)
-        elseif key == UNOWN_ID then
-            updateUnown(value)
-        elseif key == TRADE_ID then
-            updateTrades(value)
+        elseif key == IDs.SHOP_J then
+            updateShopEvents("J", value)
+        elseif key == IDs.SHOP_K then
+            updateShopEvents("K", value)
         end
     end
 end
 
-function updateEvents(value)
+function updateShopEvents(region, value)
     if value ~= nil then
-        for i, code in ipairs(FLAG_EVENT_CODES) do
-            local obj = Tracker:FindObjectForCode(code)
-            if obj ~= nil then
-                obj.Active = false
-            end
-            local bit = value >> (i - 1) & 1
-            if #code > 0 then
-                local obj = Tracker:FindObjectForCode(code)
-                obj.Active = obj.Active or bit == 1
-            end
+        local list = _G["FLAG_SHOP_" .. region .. "_CODES"]
+        
+        for i, code in ipairs(list) do
+            local bit = (value >> (i - 1)) & 1
+            Tracker:FindObjectForCode(code).Active = (bit == 1)
+        end
+    end
+    updateShops()
+end
+
+function updateShops()
+    if has("auto_shop_markoff_false") then return end
+    
+    for event, location in pairs(SHOP_MAPPING) do
+        if has(event) then
+            Tracker:FindObjectForCode(location).AvailableChestCount = 0
         end
     end
 end
 
-function updateEvents2(value)
+function updateEvents(register, value)
     if value ~= nil then
-        for i, code in ipairs(FLAG_EVENT_2_CODES) do
-            local obj = Tracker:FindObjectForCode(code)
-            if obj ~= nil then
-                obj.Active = false
-            end
-            local bit = value >> (i - 1) & 1
-            if #code > 0 then
-                local obj = Tracker:FindObjectForCode(code)
-                obj.Active = obj.Active or bit == 1
-            end
+        local list = _G["FLAG_EVENT_" .. tostring(register) .. "_CODES"]
+        
+        for i, code in ipairs(list) do
+            local bit = (value >> (i - 1)) & 1
+            Tracker:FindObjectForCode(code).Active = (bit == 1)
         end
     end
 end
@@ -520,6 +527,7 @@ function updateSigns(checked_signs)
     if checked_signs ~= nil then
         CHECKED_SIGNS = checked_signs
     end
+    CHECKED_SIGNS = CHECKED_SIGNS or {}
 
     allChecked = true
     for key, _ in pairs(UNOWN_DATA) do
@@ -590,7 +598,6 @@ function updatePokemon()
         end
 
         for dex_number, locations in pairs(POKEMON_TO_LOCATIONS) do
-            local code = Tracker:FindObjectForCode(POKEMON_MAPPING[dex_number])
             local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
             local dexloc = Tracker:FindObjectForCode("dexsanity_"..POKEMON_MAPPING[dex_number])
             
@@ -608,6 +615,22 @@ function updatePokemon()
             elseif is_seen and (dexloc.Active or not dexcode.Active) and has("encounter_tracking_loose") then
                 should_decrement = true
             end
+            
+            if has("hint_tracking_on_plus") and SAVED_HINTS ~= nil then
+                local padded_dex_number = 10000 + dex_number
+                
+                for _, hint in pairs(SAVED_HINTS) do
+                    if hint.finding_player == PLAYER_ID then
+                        if padded_dex_number == hint.location then
+                            if hint.item_flags ~= 1 and hint.item_flags ~= 3 and hint.item_flags ~= 5 then
+                                should_decrement = true
+                                break
+                            end
+                        end
+                    end
+                    if should_decrement then break end
+                end
+            end
 
             if should_decrement then
                 for _, location in pairs(locations) do
@@ -615,9 +638,9 @@ function updatePokemon()
                     if object_name ~= nil then
                         local object = Tracker:FindObjectForCode(object_name)
                         if object then
-                            if string.sub(location, 1, 7):lower() == "static_" or string.sub(location, 1, 6):lower() == "TRADE_" then
+                            if string.sub(location, 1, 7):lower() == "static_" or string.sub(location, 1, 6):lower() == "trade_" then
                                 local event_code = Tracker:FindObjectForCode(location)
-                                if event_code and event_code.Active then
+                                if (event_code and event_code.Active) or (CLEARED_ENC_HINTS[object_name] ~= nil) then
                                     pendingDecrements[location] = pendingDecrements[location] + 1
                                 end
                             else
@@ -633,6 +656,15 @@ function updatePokemon()
             object.AvailableChestCount = baseCounts[region_key] - pendingDecrements[region_key]
         end
         
+    end
+
+    for _, location in pairs(ENCOUNTER_MAPPING) do
+        if location and location:sub(1, 1) == "@" then
+            local obj = Tracker:FindObjectForCode(location)
+            if obj and obj.AvailableChestCount == 0 then
+                obj.Highlight = 0
+            end
+        end
     end
 end
 
@@ -714,27 +746,13 @@ function updateBreedingInfo()
     end
 end
 
-function update_gymcount()
-    local val = tonumber(gyms()) or 0
-    Tracker:FindObjectForCode("gym_digit1").CurrentStage = math.floor(val / 10)
-    Tracker:FindObjectForCode("gym_digit2").CurrentStage = val % 10
-end
-
-function calculateEvoLevel()
-    local yaml1 = Tracker:FindObjectForCode("yaml_digit1").CurrentStage or 0
-    local yaml2 = Tracker:FindObjectForCode("yaml_digit2").CurrentStage or 0
-    local gym1 = Tracker:FindObjectForCode("gym_digit1").CurrentStage or 0
-    local gym2 = Tracker:FindObjectForCode("gym_digit2").CurrentStage or 0
-
-    local yaml_value = yaml1 * 10 + yaml2
-    local gym_value = gym1 * 10 + gym2
+function calculateEvoLevel()  
+    local yaml_value = getDigits("yaml_digit1", "yaml_digit2")
+    local gym_value = tonumber(gyms())
+    
     local result = math.min(99, yaml_value * gym_value)
 
-    local result1 = math.floor(result / 10)
-    local result2 = result % 10
-
-    Tracker:FindObjectForCode("result_digit1").CurrentStage = result1
-    Tracker:FindObjectForCode("result_digit2").CurrentStage = result2
+    makeDigits(result, "result_digit1", "result_digit2")
 end
 
 function snorlax_access()
@@ -745,46 +763,183 @@ function snorlax_access()
     end
 end
 
+function toggleHints()
+    if has("hint_tracking_off") then
+        updatePokemon()
+        resetHints()
+        updateShops()
+    elseif has("hint_tracking_on") then
+        resetHints()
+        updateHints()
+        updatePokemon()
+        updateShops()
+    elseif has("hint_tracking_on_plus") then
+        updateHints()
+        updatePokemon()
+        updateShops()
+    end
+end
+
+function resetHints()
+    CLEARED_HINTS = {}
+    for _, hint in ipairs(SAVED_HINTS) do
+        if hint.finding_player == PLAYER_ID then
+            local mapped = LOCATION_MAPPING[hint.location]
+            local locations = (type(mapped) == "table") and mapped or { mapped }
+    
+            for _, location in ipairs(locations) do
+                -- Only sections (items don't support Highlight)
+                if location:sub(1, 1) == "@" then
+                    local obj = Tracker:FindObjectForCode(location)
+                    local final_value = obj.ChestCount
+                    local cleared = CLEARED_LOCATIONS[location] or 0
+                    final_value = final_value - cleared
+                    obj.AvailableChestCount = final_value
+                    obj.Highlight = 0
+                end
+            end
+        end
+    end
+    
+    for _, location in pairs(ENCOUNTER_MAPPING) do
+        if location and location:sub(1, 1) == "@" then
+            local obj = Tracker:FindObjectForCode(location)
+            obj.Highlight = 0
+        end
+    end
+end
+
+CLEARED_HINTS = {}
+CLEARED_ENC_HINTS = {}
+function updateHints()
+    if not Highlight then return end
+    if has("hint_tracking_off") then return end
+
+    CLEARED_HINTS = {}
+    CLEARED_ENC_HINTS = {}
+
+    local tracking_plus = has("hint_tracking_on_plus")
+    for _, hint in ipairs(SAVED_HINTS) do
+        if hint.finding_player == PLAYER_ID then
+            local mapped = LOCATION_MAPPING[hint.location]
+            local incoming_val = HIGHLIGHT_LEVEL[hint.item_flags]
+
+            -- Special handling for Pokémon locations (10001–10251)
+            if hint.location >= 10001 and hint.location <= 10251 then
+                local poke_id = hint.location - 10000
+                local poke_locations = POKEMON_TO_LOCATIONS[poke_id]
+
+                if poke_locations then
+                    for _, encounter_key in pairs(poke_locations) do
+                        local mapped_location = ENCOUNTER_MAPPING[encounter_key]
+                        if mapped_location and mapped_location:sub(1, 1) == "@" then
+                            local obj = Tracker:FindObjectForCode(mapped_location)
+    
+                            if tracking_plus then
+                                if incoming_val == 3 then
+                                    obj.Highlight = incoming_val
+                                else
+                                    CLEARED_ENC_HINTS[mapped_location] = 1
+                                end
+                            else
+                                local current_val = obj.Highlight
+                                if current_val == nil or HIGHLIGHT_PRIORITY[incoming_val] < HIGHLIGHT_PRIORITY[current_val] then
+                                    obj.Highlight = incoming_val
+                                end
+                            end
+                        end
+                    end
+                end
+
+                goto continue_hint
+            end
+
+            local locations = (type(mapped) == "table") and mapped or { mapped }
+            
+            if hint.found == false then
+                for _, location in ipairs(locations) do
+                    if location:sub(1, 1) == "@" then
+                        local obj = Tracker:FindObjectForCode(location)
+    
+                        if tracking_plus then
+                            if incoming_val == 3 then
+                                obj.Highlight = incoming_val
+                            else
+                                local current_total = CLEARED_HINTS[location] or 0
+                                CLEARED_HINTS[location] = current_total + 1
+                            end
+                        else
+                            local current_val = obj.Highlight
+                            if current_val == nil or HIGHLIGHT_PRIORITY[incoming_val] < HIGHLIGHT_PRIORITY[current_val] then
+                                obj.Highlight = incoming_val
+                            end
+                        end
+                    end
+                end
+            end
+
+            ::continue_hint::
+        end
+    end
+
+    if tracking_plus then
+        for location, count in pairs(CLEARED_HINTS) do
+            local obj = Tracker:FindObjectForCode(location)
+            local cleared = CLEARED_LOCATIONS[location] or 0
+            obj.AvailableChestCount = obj.ChestCount - count - cleared
+            updateShops()
+            if obj.AvailableChestCount == 0 then
+                obj.Highlight = 0
+            end
+        end
+    end
+end
+
 
 -- Store last map values
 last_map_group = nil
 last_map_number = nil
 
 function onMap(value)
-    if has("automap_on") and value ~= nil and value["data"] ~= nil then
-        local map_group = value["data"]["mapGroup"]
-        local map_number = value["data"]["mapNumber"]
+    if has("automap_on") and value ~= nil and value["data"] ~= nil then 
+        getDigits("slotdigit_1", "slotdigit_2", "slotdigit_3")
         
-        -- Detect map transition logic
-        if last_map_group == 15 and last_map_number == 1 and map_group == 15 and map_number == 3 then
-            Tracker:FindObjectForCode("ssaqua").CurrentStage = 1
-        elseif last_map_group == 15 and last_map_number == 2 and map_group == 15 and map_number == 3 then
-            Tracker:FindObjectForCode("ssaqua").CurrentStage = 2
-        end
+        if (value["data"]["mapGroup_0"] ~= nil) or (value["data"]["mapGroup_"..slot] ~= nil) then
 
-        -- Retrieve ssaqua and event state
-        local ssaqua = Tracker:FindObjectForCode("ssaqua")
-
-        -- Check and possibly modify map_group based on conditions
-        if map_group == 15 then
-            if ssaqua.CurrentStage == 1 then
-                map_group = 115
-            elseif ssaqua.CurrentStage == 2 then
-                map_group = 215
+            local map_group = value["data"]["mapGroup_0"] or value["data"]["mapGroup_"..slot]
+            local map_number = value["data"]["mapNumber_0"] or value["data"]["mapNumber_"..slot]
+        
+            -- This whole thing about SSAQUA exists to properly show west- or eastbound
+            local ssaqua = Tracker:FindObjectForCode("ssaqua")
+    
+            -- Detect map transition logic
+            if last_map_group == 15 and last_map_number == 1 and map_group == 15 and map_number == 3 then
+                ssaqua.CurrentStage = 1
+            elseif last_map_group == 15 and last_map_number == 2 and map_group == 15 and map_number == 3 then
+                ssaqua.CurrentStage = 2
             end
+    
+            -- Check and possibly modify map_group based on conditions
+            if map_group == 15 then
+                if ssaqua.CurrentStage == 1 then
+                    map_group = 115
+                elseif ssaqua.CurrentStage == 2 then
+                    map_group = 215
+                end
+            end
+    
+            -- Access correct mapping and activate tabs
+            local tabs = MAP_MAPPING[map_group] and MAP_MAPPING[map_group][map_number]
+            
+            for i, tab in ipairs(tabs) do
+                Tracker:UiHint("ActivateTab", tab)
+            end
+            
+    
+            -- Save last processed map
+            last_map_group = value["data"]["mapGroup_0"] or value["data"]["mapGroup_"..slot]
+            last_map_number = value["data"]["mapNumber_0"] or value["data"]["mapNumber_"..slot]
         end
-
-        -- Access correct mapping and activate tabs
-        local tabs = MAP_MAPPING[map_group] and MAP_MAPPING[map_group][map_number]
-        
-        for i, tab in ipairs(tabs) do
-            Tracker:UiHint("ActivateTab", tab)
-        end
-        
-
-        -- Save last processed map
-        last_map_group = value["data"]["mapGroup"]
-        last_map_number = value["data"]["mapNumber"]
     end
 end
 
@@ -792,10 +947,5 @@ Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
-Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
+Archipelago:AddRetrievedHandler("notify launch handler", onNotify)
 Archipelago:AddBouncedHandler("map handler", onMap)
-
-for _, code in ipairs(FLAG_STATIC_CODES) do
-    ScriptHost:AddWatchForCode(code, code, updatePokemon)
-end
-ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function() updatePokemon() end)

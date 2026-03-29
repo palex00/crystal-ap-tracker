@@ -322,16 +322,63 @@ function toggle_shopgrid()
 end
 
 function updateRemainingDexcountsanityChecks()
+    Tracker.BulkUpdate = true
     local val = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount
     Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit1").CurrentStage = math.floor(val / 100)
     Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit2").CurrentStage = math.floor(val / 10) % 10
     Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit3").CurrentStage = val % 10
+    Tracker.BulkUpdate = false
 end
 
 function showMonVisibility()
     local dexcountsanity = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount
     local dexsanity = has("dexsanity")
     if dexcountsanity ~= 0 or dexsanity ~= false then
-        Tracker:FindObjectForCode("location_visibility").CurrentStage = 1
+        Tracker:FindObjectForCode("visibility_mons").CurrentStage = 0
+    end
+end
+
+function toggleQuickSettings()
+    local suffix = ""
+    
+    if SLOT_TRACK == true then
+        suffix = suffix .. "_slots"
+    end
+    
+    if has("goal_unown") then
+        suffix = suffix .. "_signs"
+    end
+    
+    if has("grasssanity_any") then
+        suffix = suffix .. "_grass"
+    end
+    
+    if has("shopsanity_anymart") then
+        suffix = suffix .. "_shop"
+    end
+    
+    Tracker:AddLayouts("layouts/settings_quick/settings_quick"..suffix..".json")
+end
+
+function getDigits(code1, code2, code3)
+    if code3 then
+        return (Tracker:FindObjectForCode(code1).CurrentStage or 0) * 100
+             + (Tracker:FindObjectForCode(code2).CurrentStage or 0) * 10
+             + (Tracker:FindObjectForCode(code3).CurrentStage or 0)
+    else
+        return (Tracker:FindObjectForCode(code1).CurrentStage or 0) * 10
+             + (Tracker:FindObjectForCode(code2).CurrentStage or 0)
+    end
+end
+
+function makeDigits(value, code1, code2, code3)
+    local val = tonumber(value) or 0
+    if code3 then
+        Tracker:FindObjectForCode(code1).CurrentStage = math.floor(val / 100)
+        Tracker:FindObjectForCode(code2).CurrentStage = math.floor(val / 10) % 10
+        Tracker:FindObjectForCode(code3).CurrentStage = val % 10
+    else
+        Tracker:FindObjectForCode(code1).CurrentStage = math.floor(val / 10)
+        Tracker:FindObjectForCode(code2).CurrentStage = val % 10
     end
 end

@@ -272,7 +272,7 @@ function r32_guy()
 end
 
 function tea(direction)
-  return has("coffee_"..direction) and has("tea")
+  return (has("coffee_"..direction) and has("tea"))
   or not has("coffee_"..direction)
 end
 
@@ -316,17 +316,17 @@ end
 function kurt_shop(color)
     if has(color.."_APRICORN") then
         return AccessibilityLevel.Normal
-    elseif has("berries_off") then
-        return AccessibilityLevel.SequenceBreak
-    else
+    elseif not has("EVENT_SEEN_MART_KURTS_BALLS") then
         return AccessibilityLevel.Inspect
+    else
+        return AccessibilityLevel.None
     end
 end
 
 function bluecard_shop(amount)
     if has("BLUE_CARD") and has("BLUE_CARD_POINT", amount) then
         return AccessibilityLevel.Normal
-    elseif has("BLUE_CARD") then
+    elseif has("BLUE_CARD") and not has("EVENT_SEEN_MART_BLUE_CARD") then
         return AccessibilityLevel.Inspect
     else
         return AccessibilityLevel.None
@@ -394,6 +394,7 @@ function kantogymlock()
     local lugia = Tracker:FindObjectForCode("@JohtoKanto/Whirl Islands/B2F - North Item").AccessibilityLevel
     local suicune = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower").AccessibilityLevel
     local silvercave = Tracker:FindObjectForCode("@JohtoKanto/Silver Cave").AccessibilityLevel
+    local victoryroad = Tracker:FindObjectForCode("@JohtoKanto/Victory Road").AccessibilityLevel
 
     if has("lock_kanto_gyms_false") then
         return AccessibilityLevel.Normal
@@ -404,7 +405,8 @@ function kantogymlock()
         or hooh == AccessibilityLevel.Normal
         or (lugia == AccessibilityLevel.Normal and has("SILVER_WING"))
         or suicune == AccessibilityLevel.Normal
-        or silvercave == AccessibilityLevel.Normal then
+        or silvercave == AccessibilityLevel.Normal
+        or victoryroad == AccessibilityLevel.Normal then
             return AccessibilityLevel.Normal
         else
             return AccessibilityLevel.SequenceBreak
@@ -517,5 +519,43 @@ function partial_trainersanity()
         return true
     else
         return false
+    end
+end
+
+function r30_passage(direction)
+    return
+        (direction == "southbound" and has("route_30_battle_north")) or
+        can_cut_johto() or
+        (has("route_30_access_egg") and has("EVENT_GAVE_MYSTERY_EGG_TO_ELM")) or
+        (has("route_30_access_mrpokemon") and has("EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"))
+end
+
+function pokedex()
+    return has("randomize_pokedex_startwith") or has("POKEDEX")
+end
+
+function landslide_clear()
+    if has("south_kanto_condition_power") and has("EVENT_RESTORED_POWER_TO_KANTO") then
+        return AccessibilityLevel.Normal
+    elseif has("south_kanto_condition_south") then
+        return Tracker:FindObjectForCode("@JohtoKanto/Cinnabar Island").AccessibilityLevel
+    else
+        return AccessibilityLevel.None
+    end
+end
+
+function landslide_19()
+    if has("south_kanto_access_free") or has("south_kanto_access_21") then
+        return AccessibilityLevel.Normal
+    elseif has("south_kanto_access_19") then
+        return landslide_clear()
+    end
+end
+
+function landslide_21()
+    if has("south_kanto_access_free") or has("south_kanto_access_19") then
+        return AccessibilityLevel.Normal
+    elseif has("south_kanto_access_21") then
+        return landslide_clear()
     end
 end
