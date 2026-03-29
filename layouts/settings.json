@@ -1,7 +1,5 @@
 {
-    "settings_popup": {
-        "type": "dock",
-        "content": {
+    "settings_actual": {
             "type": "array",
             "orientation": "vertical",
             "h_alignment": "left",
@@ -63,7 +61,6 @@
                     }
                 }
             ]
-        }
     },
     "sanity_grid": {
         "type": "itemgrid",

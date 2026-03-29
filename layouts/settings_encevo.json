@@ -1,0 +1,100 @@
+{
+    "settings_encevo": {
+            "type": "array",
+            "orientation": "vertical",
+            "h_alignment": "left",
+            "content": [
+                {
+                    "type": "group",
+                    "header": "Encounter Logic",
+                    "content": {
+                        "type": "layout",
+                        "key": "encmethod_grid"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Evolution Logic",
+                    "content": {
+                        "type": "layout",
+                        "key": "evomethod_grid"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Leveling Logic",
+                    "content": {
+                        "type": "layout",
+                        "key": "levelinglogic"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Breeding Logic",
+                    "content": {
+                        "type": "layout",
+                        "key": "breeding_grid"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Dexcountsanity",
+                    "content": {
+                        "type": "layout",
+                        "key": "dexcountsanity"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Information",
+                    "content": {
+                        "type": "map",
+                        "maps": [
+                            "info_sheet"
+                        ]
+                    }
+                }
+            ]
+    },
+    "encmethod_grid": {
+        "type": "itemgrid",
+        "item_margin": "4, 4",
+        "item_size": "40,48",
+        "h_alignment": "center",
+        "rows": [
+            [
+                "encmethod_land",
+                "encmethod_water",
+                "encmethod_fishing",
+                "encmethod_headbutt",
+                "encmethod_rocksmash",
+                "encmethod_static"
+            ]
+        ]
+    },
+    "evomethod_grid": {
+        "type": "itemgrid",
+        "item_margin": "16, 4",
+        "item_size": "40,48",
+        "h_alignment": "center",
+        "rows": [
+            [
+                "evomethod_happiness",
+                "evomethod_level",
+                "evomethod_tyrogue",
+                "evomethod_useitem",
+            ]
+        ]
+    },
+    "breeding_grid": {
+        "type": "itemgrid",
+        "item_margin": "4, 4",
+        "item_size": "164,32",
+        "h_alignment": "center",
+        "rows": [
+            [
+                "breeding_logic"
+            ]
+        ]
+    }
+}

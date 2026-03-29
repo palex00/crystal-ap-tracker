@@ -322,10 +322,12 @@ function toggle_shopgrid()
 end
 
 function updateRemainingDexcountsanityChecks()
+    Tracker.BulkUpdate = true
     local val = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount
     Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit1").CurrentStage = math.floor(val / 100)
     Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit2").CurrentStage = math.floor(val / 10) % 10
     Tracker:FindObjectForCode("dexcountsanity_remainingchecks_digit3").CurrentStage = val % 10
+    Tracker.BulkUpdate = false
 end
 
 function showMonVisibility()
@@ -356,4 +358,27 @@ function toggleQuickSettings()
     end
     
     Tracker:AddLayouts("layouts/settings_quick/settings_quick"..suffix..".json")
+end
+
+function getDigits(code1, code2, code3)
+    if code3 then
+        return (Tracker:FindObjectForCode(code1).CurrentStage or 0) * 100
+             + (Tracker:FindObjectForCode(code2).CurrentStage or 0) * 10
+             + (Tracker:FindObjectForCode(code3).CurrentStage or 0)
+    else
+        return (Tracker:FindObjectForCode(code1).CurrentStage or 0) * 10
+             + (Tracker:FindObjectForCode(code2).CurrentStage or 0)
+    end
+end
+
+function makeDigits(value, code1, code2, code3)
+    local val = tonumber(value) or 0
+    if code3 then
+        Tracker:FindObjectForCode(code1).CurrentStage = math.floor(val / 100)
+        Tracker:FindObjectForCode(code2).CurrentStage = math.floor(val / 10) % 10
+        Tracker:FindObjectForCode(code3).CurrentStage = val % 10
+    else
+        Tracker:FindObjectForCode(code1).CurrentStage = math.floor(val / 10)
+        Tracker:FindObjectForCode(code2).CurrentStage = val % 10
+    end
 end

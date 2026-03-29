@@ -3,29 +3,6 @@
         "type": "tabbed",
         "tabs": [
             {
-                "title": "Logic Settings",
-                "content": {
-                    "type": "layout",
-                    "key": "pokemon_logic"
-                }
-            },
-            {
-                "title": "Information",
-                "content": {
-                    "type": "map",
-                    "maps": [
-                        "info_sheet"
-                    ]
-                }
-            },
-            {
-                "title": "Dexcountsanity",
-                "content": {
-                    "type": "layout",
-                    "key": "dexcountsanity"
-                }
-            },
-            {
                 "title": "Kanto Dex (001-151)",
                 "content": {
                     "type": "map",

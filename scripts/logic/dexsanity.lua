@@ -52,12 +52,11 @@ function evolve_old(req_level)
 end
 
 function evolve(req_level)
-    req_level = tonumber(req_level)
-    req_level = req_level or 0
-    local digit1 = Tracker:FindObjectForCode("result_digit1").CurrentStage or 0
-    local digit2 = Tracker:FindObjectForCode("result_digit2").CurrentStage or 0
-    local current_level = digit1 * 10 + digit2
-    if has("evomethod_level_on") and req_level <= current_level then
+    local max_value     = getDigits("yaml_digit1", "yaml_digit2")
+    local current_level = getDigits("result_digit1", "result_digit2")
+    local req           = math.max(tonumber(req_level) or 0, max_value)
+
+    if has("evomethod_level_on") and req <= current_level then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.SequenceBreak
@@ -101,9 +100,7 @@ function evolve_item_old()
 end
        
 function evolve_tyrogue()
-    local digit1 = Tracker:FindObjectForCode("result_digit1").CurrentStage or 0
-    local digit2 = Tracker:FindObjectForCode("result_digit2").CurrentStage or 0
-    local current_level = digit1 * 10 + digit2
+    local current_level = getDigits("result_digit1", "result_digit2")
     local goldenrod = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
     local celadon = Tracker:FindObjectForCode("@JohtoKanto/Celadon City").AccessibilityLevel
     

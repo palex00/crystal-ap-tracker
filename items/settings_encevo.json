@@ -1,0 +1,1100 @@
+[
+    {
+        "name": "Evolution Method: Happiness",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolution Method: Happiness NOT in logic",
+                "img": "/images/settings/dex_related/evo_happiness.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "evomethod_happiness, evomethod_happiness_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolution Method: Happiness in logic",
+                "img": "/images/settings/dex_related/evo_happiness.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "evomethod_happiness, evomethod_happiness_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Evolution Method: Leveling",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolution Method: Leveling NOT in logic",
+                "img": "/images/settings/dex_related/evo_level.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "evomethod_level, evomethod_level_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolution Method: Leveling in logic",
+                "img": "/images/settings/dex_related/evo_level.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "evomethod_level, evomethod_level_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Evolution Method: Tyrogue",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolution Method: Tyrogue NOT in logic",
+                "img": "/images/settings/dex_related/evo_tyrogue.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "evomethod_tyrogue, evomethod_tyrogue_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolution Method: Tyrogue in logic",
+                "img": "/images/settings/dex_related/evo_tyrogue.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "evomethod_tyrogue, evomethod_tyrogue_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Evolution Method: Items",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolution Method: Items NOT in logic",
+                "img": "/images/settings/dex_related/evo_items.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "evomethod_useitem, evomethod_useitem_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolution Method: Items in logic",
+                "img": "/images/settings/dex_related/evo_items.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "evomethod_useitem, evomethod_useitem_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Encounter Method: Fishing",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Fishing Encounters NOT in logic",
+                "img": "/images/settings/dex_related/enc_fishing.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "encmethod_fishing, encmethod_fishing_off, encmethod_fishing_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Fishing Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_fishing.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_fishing, encmethod_fishing_forbidden",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Fishing Encounters in logic",
+                "img": "/images/settings/dex_related/enc_fishing.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "encmethod_fishing, encmethod_fishing_on, encmethod_fishing_visible",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Encounter Method: Headbutt",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Headbutt Encounters NOT in logic",
+                "img": "/images/settings/dex_related/enc_headbutt.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "encmethod_headbutt, encmethod_headbutt_off, encmethod_headbutt_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Headbutt Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_headbutt.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_headbutt, encmethod_headbutt_forbidden",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Headbutt Encounters in logic",
+                "img": "/images/settings/dex_related/enc_headbutt.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "encmethod_headbutt, encmethod_headbutt_on, encmethod_headbutt_visible",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Encounter Method: Land",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Land Encounters NOT in logic",
+                "img": "/images/settings/dex_related/enc_land.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "encmethod_land, encmethod_land_off, encmethod_land_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Land Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_land.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_land, encmethod_land_forbidden",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Land Encounters in logic",
+                "img": "/images/settings/dex_related/enc_land.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "encmethod_land, encmethod_land_on, encmethod_land_visible",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Encounter Method: Rock Smash",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Rock Smash Encounters NOT in logic",
+                "img": "/images/settings/dex_related/enc_rocksmash.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_off, encmethod_rocksmash_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Rock Smash Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_rocksmash.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_forbidden",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Rock Smash Encounters in logic",
+                "img": "/images/settings/dex_related/enc_rocksmash.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_on, encmethod_rocksmash_visible",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Encounter Method: Surfing",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Surfing Encounters NOT in logic",
+                "img": "/images/settings/dex_related/enc_surf.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "encmethod_water, encmethod_water_off, encmethod_water_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Surfing Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_surf.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_water, encmethod_water_forbidden",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Surfing Encounters in logic",
+                "img": "/images/settings/dex_related/enc_surf.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "encmethod_water, encmethod_water_on, encmethod_water_visible",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Encounter Method: Static",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Static Encounters NOT in logic",
+                "img": "/images/settings/dex_related/enc_statics.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "encmethod_static, encmethod_static_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Static Encounters in logic",
+                "img": "/images/settings/dex_related/enc_statics.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "encmethod_static, encmethod_static_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_logicleniency_digit1",
+        "type": "progressive",
+        "codes": "dexcountsanity_logicleniency_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_logicleniency_digit2",
+        "type": "progressive",
+        "codes": "dexcountsanity_logicleniency_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_logicleniency_digit3",
+        "type": "progressive",
+        "codes": "dexcountsanity_logicleniency_digit3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_stepinterval_digit1",
+        "type": "progressive",
+        "codes": "dexcountsanity_stepinterval_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_stepinterval_digit2",
+        "type": "progressive",
+        "codes": "dexcountsanity_stepinterval_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_stepinterval_digit3",
+        "type": "progressive",
+        "codes": "dexcountsanity_stepinterval_digit3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_lastcheck_digit1",
+        "type": "progressive",
+        "codes": "dexcountsanity_lastcheck_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_lastcheck_digit2",
+        "type": "progressive",
+        "codes": "dexcountsanity_lastcheck_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_lastcheck_digit3",
+        "type": "progressive",
+        "codes": "dexcountsanity_lastcheck_digit3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_totalchecks_digit1",
+        "type": "progressive",
+        "codes": "dexcountsanity_totalchecks_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_totalchecks_digit2",
+        "type": "progressive",
+        "codes": "dexcountsanity_totalchecks_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_totalchecks_digit3",
+        "type": "progressive",
+        "codes": "dexcountsanity_totalchecks_digit3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_remainingchecks_digit1",
+        "type": "progressive",
+        "codes": "dexcountsanity_remainingchecks_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_remainingchecks_digit2",
+        "type": "progressive",
+        "codes": "dexcountsanity_remainingchecks_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "dexcountsanity_remainingchecks_digit3",
+        "type": "progressive",
+        "codes": "dexcountsanity_remainingchecks_digit3",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "img": "/images/settings/dex_related/dexcountsanitysettings.png",
+        "codes": "dexcountsanitysettings",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/logicleniency.png",
+        "codes": "logicleniency",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/stepinterval.png",
+        "codes": "stepinterval",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/totalchecks.png",
+        "codes": "totalchecks",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/lastcheck.png",
+        "codes": "lastcheck",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/remainingchecks.png",
+        "codes": "remainingchecks",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/level_maxevo.png",
+        "codes": "level_maxevo",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/level_pergym.png",
+        "codes": "level_pergym",
+        "type": "static"
+    },
+    {
+        "img": "/images/settings/dex_related/level_inlogic.png",
+        "codes": "level_inlogic",
+        "type": "static"
+    },
+    {
+        "name": "max_digit1",
+        "type": "progressive",
+        "codes": "max_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "max_digit2",
+        "type": "progressive",
+        "codes": "max_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "yaml_digit1",
+        "type": "progressive",
+        "codes": "yaml_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "yaml_digit2",
+        "type": "progressive",
+        "codes": "yaml_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "result_digit1",
+        "type": "progressive",
+        "codes": "result_digit1",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    },
+    {
+        "name": "result_digit2",
+        "type": "progressive",
+        "codes": "result_digit2",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "/images/settings/digits/d0.png"
+            },
+            {
+                "img": "/images/settings/digits/d1.png"
+            },
+            {
+                "img": "/images/settings/digits/d2.png"
+            },
+            {
+                "img": "/images/settings/digits/d3.png"
+            },
+            {
+                "img": "/images/settings/digits/d4.png"
+            },
+            {
+                "img": "/images/settings/digits/d5.png"
+            },
+            {
+                "img": "/images/settings/digits/d6.png"
+            },
+            {
+                "img": "/images/settings/digits/d7.png"
+            },
+            {
+                "img": "/images/settings/digits/d8.png"
+            },
+            {
+                "img": "/images/settings/digits/d9.png"
+            }
+        ]
+    }
+]

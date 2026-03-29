@@ -47,17 +47,34 @@ HIGHLIGHT_PRIORITY =  {
     [0] = 5
 }
 
+function unloadWatches()
+    for _, code in ipairs(FLAG_STATIC_CODES) do
+        ScriptHost:RemoveWatchForCode(code)
+    end
+    
+    for _, code in ipairs(gym_codes) do
+        ScriptHost:RemoveWatchForCode(code)
+    end
+end
+
+function loadWatches()
+    for _, code in ipairs(FLAG_STATIC_CODES) do
+        ScriptHost:AddWatchForCode(code, code, updatePokemon)
+    end
+    
+    for _, code in ipairs(gym_codes) do
+        ScriptHost:AddWatchForCode(code, code, calculateEvoLevel)
+    end
+end
+
 function onClear(slot_data)
-    isUpdating = true
     CUR_INDEX = -1
     resetLocations()
     resetItems()
     CAUGHT = {}
     SEEN = {}
     
-    for _, code in ipairs(FLAG_STATIC_CODES) do
-        ScriptHost:RemoveWatchForCode(code)
-    end
+    unloadWatches()
     
     -- resets unown codes
     for i = 1, 26 do
@@ -161,30 +178,23 @@ function onClear(slot_data)
             end
         elseif k == "dexsanity" then
             Tracker:FindObjectForCode("dexsanity").AcquiredCount = v
+        elseif k == "maximum_evolution_level" then
+            local val = tonumber(v) or 0
+            if val == 100 then
+                val = 99
+            end
+            makeDigits(v, "max_digit1", "max_digit2")
         elseif k == "evolution_gym_levels" then
-            local val = tonumber(v) or 0
-            Tracker:FindObjectForCode("yaml_digit1").CurrentStage = math.floor(val / 10)
-            Tracker:FindObjectForCode("yaml_digit2").CurrentStage = val % 10
+            makeDigits(v, "yaml_digit1", "yaml_digit2")
         elseif k == "dexcountsanity" then
-            local val = tonumber(v) or 0
-            Tracker:FindObjectForCode("dexcountsanity_lastcheck_digit1").CurrentStage = math.floor(val / 100)
-            Tracker:FindObjectForCode("dexcountsanity_lastcheck_digit2").CurrentStage = math.floor(val / 10) % 10
-            Tracker:FindObjectForCode("dexcountsanity_lastcheck_digit3").CurrentStage = val % 10
+            makeDigits(v, "dexcountsanity_lastcheck_digit1", "dexcountsanity_lastcheck_digit2", "dexcountsanity_lastcheck_digit3")
         elseif k == "dexcountsanity_step" then
-            local val = tonumber(v) or 0
-            Tracker:FindObjectForCode("dexcountsanity_stepinterval_digit1").CurrentStage = math.floor(val / 100)
-            Tracker:FindObjectForCode("dexcountsanity_stepinterval_digit2").CurrentStage = math.floor(val / 10) % 10
-            Tracker:FindObjectForCode("dexcountsanity_stepinterval_digit3").CurrentStage = val % 10
+            makeDigits(v, "dexcountsanity_stepinterval_digit1", "dexcountsanity_stepinterval_digit2", "dexcountsanity_stepinterval_digit3")
         elseif k == "dexcountsanity_leniency" then
-            local val = tonumber(v) or 0
-            Tracker:FindObjectForCode("dexcountsanity_logicleniency_digit1").CurrentStage = math.floor(val / 100)
-            Tracker:FindObjectForCode("dexcountsanity_logicleniency_digit2").CurrentStage = math.floor(val / 10) % 10
-            Tracker:FindObjectForCode("dexcountsanity_logicleniency_digit3").CurrentStage = val % 10
+            makeDigits(v, "dexcountsanity_logicleniency_digit1", "dexcountsanity_logicleniency_digit2", "dexcountsanity_logicleniency_digit3")
         elseif k == "dexcountsanity_checks" then
             local val = tonumber(v) or 0
-            Tracker:FindObjectForCode("dexcountsanity_totalchecks_digit1").CurrentStage = math.floor(val / 100)
-            Tracker:FindObjectForCode("dexcountsanity_totalchecks_digit2").CurrentStage = math.floor(val / 10) % 10
-            Tracker:FindObjectForCode("dexcountsanity_totalchecks_digit3").CurrentStage = val % 10
+            makeDigits(v, "dexcountsanity_totalchecks_digit1", "dexcountsanity_totalchecks_digit2", "dexcountsanity_totalchecks_digit3")
             Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount = val
         elseif k == "dexsanity_pokemon" then
             local valid_ids = {}
@@ -234,8 +244,6 @@ function onClear(slot_data)
         ["1110"] = 14,
         ["1111"] = 15
     }
-    
-    
 
     -- Fetch Active values for north, east, south, west directions
     local tea_north = Tracker:FindObjectForCode("tea_north").Active and "1" or "0"
@@ -289,10 +297,8 @@ function onClear(slot_data)
     end
 
     toggle_itemgrid()
-    
-    for _, code in ipairs(FLAG_STATIC_CODES) do
-        ScriptHost:AddWatchForCode(code, code, updatePokemon)
-    end
+    loadWatches()
+
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -740,27 +746,13 @@ function updateBreedingInfo()
     end
 end
 
-function update_gymcount()
-    local val = tonumber(gyms()) or 0
-    Tracker:FindObjectForCode("gym_digit1").CurrentStage = math.floor(val / 10)
-    Tracker:FindObjectForCode("gym_digit2").CurrentStage = val % 10
-end
-
-function calculateEvoLevel()
-    local yaml1 = Tracker:FindObjectForCode("yaml_digit1").CurrentStage or 0
-    local yaml2 = Tracker:FindObjectForCode("yaml_digit2").CurrentStage or 0
-    local gym1 = Tracker:FindObjectForCode("gym_digit1").CurrentStage or 0
-    local gym2 = Tracker:FindObjectForCode("gym_digit2").CurrentStage or 0
-
-    local yaml_value = yaml1 * 10 + yaml2
-    local gym_value = gym1 * 10 + gym2
+function calculateEvoLevel()  
+    local yaml_value = getDigits("yaml_digit1", "yaml_digit2")
+    local gym_value = tonumber(gyms())
+    
     local result = math.min(99, yaml_value * gym_value)
 
-    local result1 = math.floor(result / 10)
-    local result2 = result % 10
-
-    Tracker:FindObjectForCode("result_digit1").CurrentStage = result1
-    Tracker:FindObjectForCode("result_digit2").CurrentStage = result2
+    makeDigits(result, "result_digit1", "result_digit2")
 end
 
 function snorlax_access()
@@ -909,12 +901,8 @@ last_map_group = nil
 last_map_number = nil
 
 function onMap(value)
-    if has("automap_on") and value ~= nil and value["data"] ~= nil then
-        local slotdigit_1 = Tracker:FindObjectForCode("slotdigit_1").CurrentStage or 0
-        local slotdigit_2 = Tracker:FindObjectForCode("slotdigit_2").CurrentStage or 0
-        local slotdigit_3 = Tracker:FindObjectForCode("slotdigit_3").CurrentStage or 0
-    
-        local slot = slotdigit_1 * 100 + slotdigit_2 * 10 + slotdigit_3
+    if has("automap_on") and value ~= nil and value["data"] ~= nil then 
+        getDigits("slotdigit_1", "slotdigit_2", "slotdigit_3")
         
         if (value["data"]["mapGroup_0"] ~= nil) or (value["data"]["mapGroup_"..slot] ~= nil) then
 
@@ -961,8 +949,3 @@ Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
 Archipelago:AddRetrievedHandler("notify launch handler", onNotify)
 Archipelago:AddBouncedHandler("map handler", onMap)
-
-for _, code in ipairs(FLAG_STATIC_CODES) do
-    ScriptHost:AddWatchForCode(code, code, updatePokemon)
-end
-ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function() updatePokemon() end)
