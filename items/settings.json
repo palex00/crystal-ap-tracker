@@ -2568,7 +2568,7 @@
             {
                 "name": "Shopsanity: Johto Marts is enabled",
                 "img": "/images/shopsanity/pokemarts_johto.png",
-                "codes": "shopsanity_johtomarts, shopsanity_johtomarts_true",
+                "codes": "shopsanity_johtomarts, shopsanity_johtomarts_true, shopsanity_anymart",
                 "inherit_codes": false
             }
         ]
@@ -2590,7 +2590,7 @@
             {
                 "name": "Shopsanity: Kanto Marts is enabled",
                 "img": "/images/shopsanity/pokemarts_kanto.png",
-                "codes": "shopsanity_kantomarts, shopsanity_kantomarts_true",
+                "codes": "shopsanity_kantomarts, shopsanity_kantomarts_true, shopsanity_anymart",
                 "inherit_codes": false
             }
         ]
@@ -3086,13 +3086,13 @@
             {
                 "name": "Grasssanity: One per area",
                 "img": "/images/other/grass.png",
-                "codes": "grasssanity, grasssanity_single",
+                "codes": "grasssanity, grasssanity_single, grasssanity_any",
                 "inherit_codes": false
             },
             {
                 "name": "Grasssanity: Full",
                 "img": "/images/other/grass_full.png",
-                "codes": "grasssanity, grasssanity_full",
+                "codes": "grasssanity, grasssanity_full, grasssanity_any",
                 "inherit_codes": false
             }
         ]

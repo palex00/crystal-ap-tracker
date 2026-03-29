@@ -335,3 +335,25 @@ function showMonVisibility()
         Tracker:FindObjectForCode("visibility_mons").CurrentStage = 0
     end
 end
+
+function toggleQuickSettings()
+    local suffix = ""
+    
+    if SLOT_TRACK == true then
+        suffix = suffix .. "_slots"
+    end
+    
+    if has("goal_unown") then
+        suffix = suffix .. "_signs"
+    end
+    
+    if has("grasssanity_any") then
+        suffix = suffix .. "_grass"
+    end
+    
+    if has("shopsanity_anymart") then
+        suffix = suffix .. "_shop"
+    end
+    
+    Tracker:AddLayouts("layouts/settings_quick/settings_quick"..suffix..".json")
+end

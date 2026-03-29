@@ -360,6 +360,8 @@ function onLocation(location_id, location_name)
     end
 end
 
+
+SLOT_TRACK = false
 function onNotify(key, value, old_value)
     if value ~= nil and value ~= 0 then
         if key == IDs.EVENT then
@@ -385,7 +387,8 @@ function onNotify(key, value, old_value)
         elseif key == IDs.TRADE then
             updateTrades(value)
         elseif key == IDs.SLOT_UNLOCK then
-            Tracker:AddLayouts("layouts/settings_quick_slottrack.json")
+            SLOT_TRACK = true
+            toggleQuickSettings()
         elseif key == IDs.HINT then
             SAVED_HINTS = value
             updateHints()

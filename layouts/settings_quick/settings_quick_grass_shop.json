@@ -9,7 +9,8 @@
         "rows": [
             [
                 "visibility_items",
-                "automap"
+                "automap",
+                "auto_shop_markoff"
             ],
             [
                 "visibility_mons",
@@ -20,14 +21,10 @@
                 "encounter_tracking"
             ],
             [
-                "visibility_signs",
                 "hint_tracking"
             ],
             [
                 "visibility_grass",
-                "auto_shop_markoff"
-            ],
-            [
                 "broadcast_view"
             ]
         ]

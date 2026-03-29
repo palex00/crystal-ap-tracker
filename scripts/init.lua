@@ -43,7 +43,7 @@ Tracker:AddLocations("locations/new_signs.json")
 Tracker:AddLayouts("layouts/dungeon_maps.json")
 Tracker:AddLayouts("layouts/events_red.json")
 Tracker:AddLayouts("layouts/settings.json")
-Tracker:AddLayouts("layouts/settings_quick.json")
+Tracker:AddLayouts("layouts/settings_quick/settings_quick.json")
 Tracker:AddLayouts("layouts/pokemonlogic.json")
 Tracker:AddLayouts("layouts/items_no_tea.json")
 Tracker:AddLayouts("layouts/flyunlocks.json")
@@ -93,6 +93,10 @@ ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_
 ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_itemgrid)
 ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
 ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
+ScriptHost:AddWatchForCode("grasssanity", "grasssanity", toggleQuickSettings)
+ScriptHost:AddWatchForCode("goal", "goal", toggleQuickSettings)
+ScriptHost:AddWatchForCode("shopsanity_johtomarts", "shopsanity_johtomarts", toggleQuickSettings)
+ScriptHost:AddWatchForCode("shopsanity_kantomarts", "shopsanity_kantomarts", toggleQuickSettings)
 
 
 --for _, code in ipairs(FLAG_STATIC_CODES) do
