@@ -22,13 +22,14 @@ Pokédex Vanilla Logic Page   |  Evolutionsanity Logic Page
 
 
 
-PopTracker v0.30.4 or higher is neccessary.
+PopTracker v0.33.0 or higher is neccessary.
 
 Original project by AliceMousie. 
 
 ## Compatibility Chart
 apworld | pack version
 :-------------------------:|:-------------------------:
+5.4.0   | 11.0.0
 5.3.0   | 0.10.0
 5.2.0   | 0.9.X & 0.8.9-0.8.10
 5.1.0   | 0.8.0 - 0.8.7
