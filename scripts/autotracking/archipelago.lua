@@ -902,7 +902,7 @@ last_map_number = nil
 
 function onMap(value)
     if has("automap_on") and value ~= nil and value["data"] ~= nil then 
-        getDigits("slotdigit_1", "slotdigit_2", "slotdigit_3")
+        local slot = getDigits("slotdigit_1", "slotdigit_2", "slotdigit_3")
         
         if (value["data"]["mapGroup_0"] ~= nil) or (value["data"]["mapGroup_"..slot] ~= nil) then
 
