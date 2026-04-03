@@ -622,19 +622,26 @@ function updatePokemon()
                 should_decrement = true
             end
             
-            if has("hint_tracking_on_plus") and SAVED_HINTS ~= nil then
-                local padded_dex_number = 10000 + dex_number
-                
-                for _, hint in pairs(SAVED_HINTS) do
-                    if hint.finding_player == PLAYER_ID and hint.found == false then
-                        if padded_dex_number == hint.location then
-                            if hint.item_flags ~= 1 and hint.item_flags ~= 3 and hint.item_flags ~= 5 and hint.item_flags ~= 7 then
-                                should_decrement = true
-                                break
+            if should_decrement == false then
+                if has("hint_tracking_on_plus") and SAVED_HINTS ~= nil then
+                    local padded_dex_number = 10000 + dex_number
+                    for _, hint in pairs(SAVED_HINTS) do
+                        if hint.finding_player == PLAYER_ID and hint.found == false then
+                            if padded_dex_number == hint.location then
+                                local level = 0
+                                if hint.status == 0 then
+                                    level = HIGHLIGHT_LEVEL[100 + hint.item_flags]
+                                else
+                                    level = HIGHLIGHT_LEVEL[hint.status]
+                                end
+                                if level ~= Highlight.Priority then
+                                    should_decrement = true
+                                    break
+                                end
                             end
                         end
+                        if should_decrement then break end
                     end
-                    if should_decrement then break end
                 end
             end
 
