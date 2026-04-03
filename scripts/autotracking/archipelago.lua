@@ -830,6 +830,12 @@ function updateHints()
             obj.Highlight = 0
         end
     end
+    for _, location in pairs(ENCOUNTER_MAPPING) do
+        if location:sub(1, 1) == "@" then
+            local obj = Tracker:FindObjectForCode(location)
+            obj.Highlight = 0
+        end
+    end
 
     local tracking_plus = has("hint_tracking_on_plus")
     for _, hint in ipairs(SAVED_HINTS) do
