@@ -23,6 +23,7 @@ function resetLocations()
             local obj = Tracker:FindObjectForCode(v)
             if obj ~= nil then
                 obj.AvailableChestCount = obj.ChestCount
+                obj.Highlight = HIGHLIGHT_LEVEL[40]
             end
         else
             local obj = Tracker:FindObjectForCode(v)

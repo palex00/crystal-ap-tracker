@@ -30,21 +30,27 @@ SAVED_HINTS = {}
 if Highlight then
     HIGHLIGHT_LEVEL= {
         [0] = Highlight.Unspecified,
-        [1] = Highlight.Priority,
-        [2] = Highlight.NoPriority,
-        [3] = Highlight.Priority,
-        [4] = Highlight.Avoid,
-        [5] = Highlight.Priority,
-        [6] = Highlight.NoPriority
+        [10] = Highlight.Unspecified,
+        [20] = Highlight.Avoid,
+        [30] = Highlight.Priority,
+        [40] = Highlight.None,
+        [100] = Highlight.Unspecified,
+        [101] = Highlight.Priority,
+        [102] = Highlight.NoPriority,
+        [103] = Highlight.Priority,
+        [104] = Highlight.Avoid,
+        [105] = Highlight.Priority,
+        [106] = Highlight.NoPriority,
+        [107] = Highlight.Priority,
     }
 end
 
 HIGHLIGHT_PRIORITY =  {
-    [3] = 1,
-    [2] = 2,
-    [-1] = 3,
-    [1] = 4,
-    [0] = 5
+    [Highlight.Priority] = 1, -- priority
+    [Highlight.NoPriority] = 2, -- useful
+    [Highlight.Avoid] = 3, -- trap
+    [Highlight.Unspecified] = 4, -- filler
+    [Highlight.None] = 5 -- none
 }
 
 function unloadWatches()
@@ -620,9 +626,9 @@ function updatePokemon()
                 local padded_dex_number = 10000 + dex_number
                 
                 for _, hint in pairs(SAVED_HINTS) do
-                    if hint.finding_player == PLAYER_ID then
+                    if hint.finding_player == PLAYER_ID and hint.found == false then
                         if padded_dex_number == hint.location then
-                            if hint.item_flags ~= 1 and hint.item_flags ~= 3 and hint.item_flags ~= 5 then
+                            if hint.item_flags ~= 1 and hint.item_flags ~= 3 and hint.item_flags ~= 5 and hint.item_flags ~= 7 then
                                 should_decrement = true
                                 break
                             end
@@ -818,11 +824,25 @@ function updateHints()
     CLEARED_HINTS = {}
     CLEARED_ENC_HINTS = {}
 
+    for _, location in pairs(LOCATION_MAPPING) do
+        if location:sub(1, 1) == "@" then
+            local obj = Tracker:FindObjectForCode(location)
+            obj.Highlight = 0
+        end
+    end
+
     local tracking_plus = has("hint_tracking_on_plus")
     for _, hint in ipairs(SAVED_HINTS) do
         if hint.finding_player == PLAYER_ID then
+            
             local mapped = LOCATION_MAPPING[hint.location]
-            local incoming_val = HIGHLIGHT_LEVEL[hint.item_flags]
+            local incoming_val = 0
+            
+            if hint.status == 0 then
+                incoming_val = HIGHLIGHT_LEVEL[100 + hint.item_flags]
+            else
+                incoming_val = HIGHLIGHT_LEVEL[hint.status]
+            end
 
             -- Special handling for Pokémon locations (10001–10251)
             if hint.location >= 10001 and hint.location <= 10251 then
@@ -836,10 +856,12 @@ function updateHints()
                             local obj = Tracker:FindObjectForCode(mapped_location)
     
                             if tracking_plus then
-                                if incoming_val == 3 then
-                                    obj.Highlight = incoming_val
-                                else
-                                    CLEARED_ENC_HINTS[mapped_location] = 1
+                                if hint.found == false then
+                                    if incoming_val == Highlight.Priority then
+                                        obj.Highlight = incoming_val
+                                    else
+                                        CLEARED_ENC_HINTS[mapped_location] = 1
+                                    end
                                 end
                             else
                                 local current_val = obj.Highlight
@@ -856,23 +878,23 @@ function updateHints()
 
             local locations = (type(mapped) == "table") and mapped or { mapped }
             
-            if hint.found == false then
-                for _, location in ipairs(locations) do
-                    if location:sub(1, 1) == "@" then
-                        local obj = Tracker:FindObjectForCode(location)
+            for _, location in ipairs(locations) do
+                if location:sub(1, 1) == "@" then
+                    local obj = Tracker:FindObjectForCode(location)
     
-                        if tracking_plus then
-                            if incoming_val == 3 then
+                    if tracking_plus then
+                        if hint.found == false then
+                            if incoming_val == Highlight.Priority then
                                 obj.Highlight = incoming_val
                             else
                                 local current_total = CLEARED_HINTS[location] or 0
                                 CLEARED_HINTS[location] = current_total + 1
                             end
-                        else
-                            local current_val = obj.Highlight
-                            if current_val == nil or HIGHLIGHT_PRIORITY[incoming_val] < HIGHLIGHT_PRIORITY[current_val] then
-                                obj.Highlight = incoming_val
-                            end
+                        end
+                    else
+                        local current_val = obj.Highlight
+                        if current_val == nil or HIGHLIGHT_PRIORITY[incoming_val] < HIGHLIGHT_PRIORITY[current_val] then
+                            obj.Highlight = incoming_val
                         end
                     end
                 end
@@ -889,7 +911,7 @@ function updateHints()
             obj.AvailableChestCount = obj.ChestCount - count - cleared
             updateShops()
             if obj.AvailableChestCount == 0 then
-                obj.Highlight = 0
+                obj.Highlight = Highlight.None
             end
         end
     end
