@@ -397,6 +397,7 @@ function onNotify(key, value, old_value)
             updateRocketTraps(value)
         elseif key == IDs.SIGN then
             updateSigns(value)
+            Tracker:FindObjectForCode("update").Active = not Tracker:FindObjectForCode("update").Active
         elseif key == IDs.UNOWN then
             updateUnown(value)
         elseif key == IDs.TRADE then
