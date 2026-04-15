@@ -190,10 +190,11 @@ SLOT_CODES = {
         code = "mischief",
         mapping = MAP_TOGGLE
     },
-    goal = {
-        code = "goal",
-        mapping = MAP_SIXTUPLE
-    },
+    -- temp disabled
+    --goal = {
+    --    code = "goal",
+    --    mapping = MAP_SIXTUPLE
+    --},
     randomize_badges = {
         code = "badges",
         mapping = MAP_TRIPLE

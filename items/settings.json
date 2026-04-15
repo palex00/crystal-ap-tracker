@@ -6,6 +6,12 @@
         "allow_disabled": false,
         "stages": [
             {
+                "name": "Goal - DEBUG: ALL",
+                "img": "/images/events/become_champion.png",
+                "codes": "goal, goal_e4, goal_red, goal_diploma, goal_rival, goal_rocket, goal_unown",
+                "inherit_codes": false
+            },
+            {
                 "name": "Goal - Defeat Elite Four",
                 "img": "/images/events/become_champion.png",
                 "codes": "goal, goal_e4",

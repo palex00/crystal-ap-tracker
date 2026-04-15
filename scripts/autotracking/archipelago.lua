@@ -104,7 +104,7 @@ function onClear(slot_data)
             if  k == "apworld_version" then
                 local version_str = tostring(v)
                 local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-                if first_two_dots == "5.4" or nil then
+                if first_two_dots == "6.0" or nil then
                     Tracker:AddLayouts("layouts/tracker.json")
                 else
                     Tracker:AddLayouts("layouts/versionmismatch.json")
@@ -141,7 +141,10 @@ function onClear(slot_data)
     -- This sets each Encounter location to however many unique encounters there are in it
     for region_key, location in pairs(ENCOUNTER_MAPPING) do
         local object = Tracker:FindObjectForCode(location)
-        object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
+        -- TEMP-FIX
+        if REGION_ENCOUNTERS[region_key] ~= nil then
+            object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
+        end
     end
     
     EVOLUTION_DATA = slot_data.evolution_info
