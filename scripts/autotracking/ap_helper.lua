@@ -104,6 +104,14 @@ MAP_KANTO_ACCESS = {
     [2] = "gyms",
     [3] = "champion"
 }
+GOAL_MAPPING = {
+    [0] = "goal_e4",
+    [1] = "goal_red",
+    [2] = "goal_diploma",
+    [3] = "goal_rival",
+    [4] = "goal_rocket",
+    [5] = "goal_unown"
+}
 
 NONE = 0
 PALLET = 2
@@ -190,10 +198,10 @@ SLOT_CODES = {
         code = "mischief",
         mapping = MAP_TOGGLE
     },
-    goal = {
-        code = "goal",
-        mapping = MAP_SIXTUPLE
-    },
+    --goal = {
+      --  code = "goal",
+      --  mapping = GOAL_MAPPING
+    --},
     randomize_badges = {
         code = "badges",
         mapping = MAP_TRIPLE
