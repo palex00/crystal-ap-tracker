@@ -211,14 +211,14 @@ SLOT_CODES = {
         code = "johto_only",
         mapping = MAP_TRIPLE
     },
-    free_fly_location = {
-        code = "free_fly_location",
-        mapping = TOWN_MAPPING
-    },
-    map_card_fly_location = {
-        code = "map_card_fly",
-        mapping = TOWN_MAPPING
-    },
+    --free_fly_location = {
+    --    code = "free_fly_location",
+    --    mapping = TOWN_MAPPING
+    --},
+    --map_card_fly_location = {
+    --    code = "map_card_fly",
+    --    mapping = TOWN_MAPPING
+    --},
     randomize_berry_trees = {
         code = "berries",
         mapping = MAP_TOGGLE
@@ -307,10 +307,10 @@ SLOT_CODES = {
         code = "route_3_access",
         mapping = MAP_TOGGLE
     },
-    starting_town = {
-        code = "start_town_location",
-        mapping = STARTTOWN_MAPPING
-    },
+    --starting_town = {
+    --    code = "start_town_location",
+    --    mapping = STARTTOWN_MAPPING
+    --},
     vanilla_clair = {
         code = "clair_behaviour",
         mapping = MAP_TOGGLE
