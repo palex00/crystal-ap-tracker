@@ -1,48 +1,124 @@
 [
     {
-        "name": "Goal",
+        "name": "Goal - Defeat Elite Four",
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Goal - DEBUG: ALL",
+                "name": "Defeat Elite Four - Off",
                 "img": "/images/events/become_champion.png",
-                "codes": "goal, goal_e4, goal_red, goal_diploma, goal_rival, goal_rocket, goal_unown",
+                "img_mods": "@disabled",
+                "codes": "goal, goal_e4_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Defeat Elite Four",
+                "name": "Defeat Elite Four",
                 "img": "/images/events/become_champion.png",
                 "codes": "goal, goal_e4",
                 "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal - Defeat Red",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Defeat Red - Off",
+                "img": "/images/events/defeat_red.png",
+                "img_mods": "@disabled",
+                "codes": "goal, goal_red_off",
+                "inherit_codes": false
             },
             {
-                "name": "Goal - Defeat Red",
+                "name": "Defeat Red",
                 "img": "/images/events/defeat_red.png",
                 "codes": "goal, goal_red",
                 "inherit_codes": false
-            },
+            }
+        ]
+    },
+    {
+        "name": "Goal - Diploma",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
             {
-                "name": "Goal - Diploma",
+                "name": "Diploma - Off",
                 "img": "/images/events/diploma.png",
-                "codes": "goal, goal_diploma",
+                "img_mods": "@disabled",
+                "codes": "goal, goal_diploma_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Rival Hunt",
+                "name": "Diploma",
+                "img": "/images/events/diploma.png",
+                "codes": "goal,goal_diploma",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal - Rival Hunt",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Rival Hunt - Off",
                 "img": "/images/trainers/rival.png",
-                "codes": "goal, goal_rival",
+                "img_mods": "@disabled",
+                "codes": "goal, goal_rival_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Team Rocket Hunt",
+                "name": "Rival Hunt",
+                "img": "/images/trainers/rival.png",
+                "codes": "goal,goal_rival",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal - Team Rocket Hunt",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Team Rocket Hunt - Off",
+                "img": "/images/trainers/rocket_m.png",
+                "img_mods": "@disabled",
+                "codes": "goal, goal_rocket_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Team Rocket Hunt",
                 "img": "/images/trainers/rocket_m.png",
                 "codes": "goal, goal_rocket",
                 "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal - Unown Hunt",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Unown Hunt - Off",
+                "img": "/images/events/unown.png",
+                "img_mods": "@disabled",
+                "codes": "goal, goal_unown_off",
+                "inherit_codes": false
             },
             {
-                "name": "Goal - Unown Hunt",
+                "name": "Unown Hunt",
                 "img": "/images/events/unown.png",
                 "codes": "goal, goal_unown",
                 "inherit_codes": false
