@@ -106,30 +106,30 @@ MAP_KANTO_ACCESS = {
 }
 
 NONE = 0
-PALLET = 2
-VIRIDIAN = 3
-PEWTER = 4
-CERULEAN = 5
-ROCKTUNNEL = 6
-VERMILION = 7
-LAVENDER = 8
-SAFFRON = 9
-CELADON = 10
-FUCHSIA = 11
-CINNABAR = 12
-NEW_BARK = 14
-CHERRYGROVE = 15
-VIOLET = 16
-UNIONCAVE = 17
-AZALEA = 18
-CIANWOOD = 19
-GOLDENROD = 20
-OLIVINE = 21
-ECRUTEAK = 22
-MAHOGANY = 23
-LAKE_OF_RAGE = 24
-BLACKTHORN = 25
-SILVER_CAVE = 26
+PALLET = 25
+VIRIDIAN = 26
+PEWTER = 27
+CERULEAN = 28
+ROCKTUNNEL = 29
+VERMILION = 30
+LAVENDER = 31
+SAFFRON = 32
+CELADON = 33
+FUCHSIA = 34
+CINNABAR = 35
+NEW_BARK = 36
+CHERRYGROVE = 37
+VIOLET = 38
+UNIONCAVE = 39
+AZALEA = 40
+CIANWOOD = 41
+GOLDENROD = 42
+OLIVINE = 43
+ECRUTEAK = 44
+MAHOGANY = 45
+LAKE_OF_RAGE = 46
+BLACKTHORN = 47
+SILVER_CAVE = 48
 
 TOWN_MAPPING = {
     [NONE] = 0,
@@ -211,14 +211,14 @@ SLOT_CODES = {
         code = "johto_only",
         mapping = MAP_TRIPLE
     },
-    --free_fly_location = {
-    --    code = "free_fly_location",
-    --    mapping = TOWN_MAPPING
-    --},
-    --map_card_fly_location = {
-    --    code = "map_card_fly",
-    --    mapping = TOWN_MAPPING
-    --},
+    free_fly_location = {
+        code = "free_fly_location",
+        mapping = TOWN_MAPPING
+    },
+    map_card_fly_location = {
+        code = "map_card_fly",
+        mapping = TOWN_MAPPING
+    },
     randomize_berry_trees = {
         code = "berries",
         mapping = MAP_TOGGLE
@@ -307,10 +307,10 @@ SLOT_CODES = {
         code = "route_3_access",
         mapping = MAP_TOGGLE
     },
-    --starting_town = {
-    --    code = "start_town_location",
-    --    mapping = STARTTOWN_MAPPING
-    --},
+    starting_town = {
+        code = "start_town_location",
+        mapping = STARTTOWN_MAPPING
+    },
     vanilla_clair = {
         code = "clair_behaviour",
         mapping = MAP_TOGGLE
