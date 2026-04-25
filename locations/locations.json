@@ -10293,7 +10293,7 @@
                             "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "EVENT_CLEARED_ROCKET_HIDEOUT, $pokedex"
                         ],
                         "chest_unopened_img": "images/gift/blue_fishing_guru.png",
                         "chest_opened_img": "images/gift/blue_fishing_guru_open.png"
