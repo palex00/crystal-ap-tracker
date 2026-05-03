@@ -15651,6 +15651,78 @@
                         "ref": "JohtoKanto/National Park/Bug Catching Contest - Participation Prize"
                     }
                 ]
+            },
+            {
+                "name": "Underground Path",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 5/Underground Path - South Hidden Item",
+                        "name": "South Hidden Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 5/Underground Path - North Hidden Item",
+                        "name": "North Hidden Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route5",
+                        "x": 280,
+                        "y": 248
+                    }
+                ]
+            },
+            {
+                "name": "Underground Path",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 5/Underground Path - South Hidden Item",
+                        "name": "South Hidden Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 5/Underground Path - North Hidden Item",
+                        "name": "North Hidden Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route6",
+                        "x": 280,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "National Park",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/National Park/Route 36 Gate Bug Catching Contest Explanation Sign",
+                        "name": "Route 36 Gate Bug Catching Contest Explanation Sign"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "NationalPark",
+                        "x": 536,
+                        "y": 300
+                    }
+                ]
+            },
+            {
+                "name": "National Park",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/National Park/Route 35 Gate Bug Catching Contest Explanation Sign",
+                        "name": "Route 35 Gate Bug Catching Contest Explanation Sign"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "NationalPark",
+                        "x": 176,
+                        "y": 760
+                    }
+                ]
             }
         ]
     }
