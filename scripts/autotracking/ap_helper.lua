@@ -57,6 +57,7 @@ function resetTrainers()
         obj.Active = false
     end
     Tracker:FindObjectForCode("trainersanity_1702").Active = false -- literally just Eusine the fucker.
+    Tracker:FindObjectForCode("trainersanity_344").Active = false -- literally just Cal the fucker.
 end
 
 MAP_TOGGLE = {
