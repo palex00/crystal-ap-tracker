@@ -530,10 +530,6 @@ function r30_passage(direction)
         (has("route_30_access_mrpokemon") and has("EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"))
 end
 
-function pokedex()
-    return has("randomize_pokedex_startwith") or has("POKEDEX")
-end
-
 function landslide_clear()
     if has("south_kanto_condition_power") and has("EVENT_RESTORED_POWER_TO_KANTO") then
         return AccessibilityLevel.Normal

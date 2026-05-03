@@ -1262,7 +1262,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$pokedex, ^$trade|KYLE"
+                            "POKEDEX, ^$trade|KYLE"
                         ]
                     },
                     {
@@ -3808,7 +3808,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$pokedex, ^$trade|MIKE"
+                            "POKEDEX, ^$trade|MIKE"
                         ]
                     },
                     {
@@ -5258,7 +5258,7 @@
                             "show_items, phone_calls_visible, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/National Park/Park, ^$phonecall, ^$request_pokemon|BEVERLY, $pokedex"
+                            "@JohtoKanto/National Park/Park, ^$phonecall, ^$request_pokemon|BEVERLY, POKEDEX"
                         ]
                     },
                     {
@@ -6925,7 +6925,7 @@
                             "show_items, phone_calls_visible, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "^$phonecall, ^$request_pokemon|DEREK, $pokedex"
+                            "^$phonecall, ^$request_pokemon|DEREK, POKEDEX"
                         ]
                     },
                     {
@@ -7203,7 +7203,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$pokedex, ^$trade|TIM"
+                            "POKEDEX, ^$trade|TIM"
                         ]
                     },
                     {
@@ -10156,7 +10156,7 @@
                             "show_items, phone_calls_visible, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "^$phonecall, ^$request_pokemon|TIFFANY, $pokedex"
+                            "^$phonecall, ^$request_pokemon|TIFFANY, POKEDEX"
                         ]
                     },
                     {
@@ -10293,7 +10293,7 @@
                             "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "POKEDEX, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "chest_unopened_img": "images/gift/blue_fishing_guru.png",
                         "chest_opened_img": "images/gift/blue_fishing_guru_open.png"
@@ -11143,7 +11143,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$pokedex, ^$trade|EMY"
+                            "POKEDEX, ^$trade|EMY"
                         ]
                     },
                     {
@@ -14019,7 +14019,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$pokedex, ^$trade|CHRIS"
+                            "POKEDEX, ^$trade|CHRIS"
                         ]
                     },
                     {
@@ -15024,7 +15024,7 @@
                             "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "$pokedex"
+                            "POKEDEX"
                         ]
                     },
                     {
@@ -15414,7 +15414,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$pokedex, ^$trade|FOREST"
+                            "POKEDEX, ^$trade|FOREST"
                         ]
                     }
                 ],
@@ -18161,7 +18161,7 @@
                             "show_mons"
                         ],
                         "access_rules": [
-                            "$pokedex, ^$trade|KIM, $can_cut_kanto"
+                            "POKEDEX, ^$trade|KIM, $can_cut_kanto"
                         ]
                     },
                     {
