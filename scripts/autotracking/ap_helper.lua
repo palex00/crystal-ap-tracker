@@ -562,5 +562,16 @@ LIST_CODES = {
             ["Victory Road"]         = "dark_victoryroad",
             ["Whirl Islands"]        = "dark_whirlislands",
         }
+    },
+    goal_option = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Defeat Team Rocket"]  = "goal_rocket",
+            ["Unown Hunt"]          = "goal_unown",
+            ["Rival"]               = "goal_rival",
+            ["Elite Four"]          = "goal_e4",
+            ["Red"]                 = "goal_red",
+            ["Diploma"]             = "goal_diploma"
+        }
     }
 }
