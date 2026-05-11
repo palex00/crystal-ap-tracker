@@ -198,9 +198,10 @@ SLOT_CODES = {
         code = "mischief",
         mapping = MAP_TOGGLE
     },
+    -- temp disabled
     --goal = {
-      --  code = "goal",
-      --  mapping = GOAL_MAPPING
+    --    code = "goal",
+    --    mapping = MAP_SIXTUPLE
     --},
     randomize_badges = {
         code = "badges",
@@ -569,5 +570,16 @@ LIST_CODES = {
             ["Victory Road"]         = "dark_victoryroad",
             ["Whirl Islands"]        = "dark_whirlislands",
         }
-    }
+    },
+    goal_option = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Defeat Team Rocket"]  = "goal_rocket",
+            ["Unown Hunt"]          = "goal_unown",
+            ["Rival"]               = "goal_rival",
+            ["Elite Four"]          = "goal_e4",
+            ["Red"]                 = "goal_red",
+            ["Diploma"]             = "goal_diploma"
+        }
+    } --Might have to change it to goal instead of goal_option if James reworks the slot data to puts all the info into goal and removes goal_option
 }
