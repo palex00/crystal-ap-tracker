@@ -30,8 +30,8 @@ Tracker:AddMaps("maps/victory_road_vanilla.jsonc")
 Tracker:AddMaps("maps/maps_johto_and_kanto.jsonc")
 
 -- Locations
-Tracker:AddLocations("locations/locations.jsonc")
-Tracker:AddLocations("locations/dungeons.jsonc")
+Tracker:AddLocations("locations/locations.json")
+Tracker:AddLocations("locations/dungeons.json")
 Tracker:AddLocations("locations/dexsanity.jsonc")
 Tracker:AddLocations("locations/pokedex.jsonc")
 Tracker:AddLocations("locations/evolutionsanity.jsonc")
