@@ -91,7 +91,7 @@ ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function(
 
 ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
 
-ScriptHost:AddWatchForCode("goal2", "goal", toggle_itemgrid)
+ScriptHost:AddWatchForCode("goal2", "goal_option", toggle_itemgrid)
 ScriptHost:AddWatchForCode("randomize_fly_unlocks", "randomize_fly_unlocks", toggle_itemgrid)
 ScriptHost:AddWatchForCode("shopsanity_gamecorners", "shopsanity_gamecorners", toggle_itemgrid)
 ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_itemgrid)
@@ -99,7 +99,7 @@ ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_
 ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
 ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
 ScriptHost:AddWatchForCode("grasssanity", "grasssanity", toggleQuickSettings)
-ScriptHost:AddWatchForCode("goal", "goal", toggleQuickSettings)
+ScriptHost:AddWatchForCode("goal", "goal_option", toggleQuickSettings)
 ScriptHost:AddWatchForCode("shopsanity_johtomarts", "shopsanity_johtomarts", toggleQuickSettings)
 ScriptHost:AddWatchForCode("shopsanity_kantomarts", "shopsanity_kantomarts", toggleQuickSettings)
 

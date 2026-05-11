@@ -67,24 +67,51 @@ end
 function toggle_johto()
     local coffee = has("coffee_west") or has("coffee_north") or has("coffee_east") or has("coffee_south")
     local phone = has("phone_calls_visible")
+    local goalsuffix = ""
     
     if has("johto_only_off") then
         Tracker:AddMaps("maps/maps_johto_and_kanto.json")
         Tracker:AddLayouts("layouts/overworld.json")
         
         if has("goal_e4") then
-            Tracker:AddLayouts("layouts/events_e4.json")
-        elseif has("goal_red") then
-            Tracker:AddLayouts("layouts/events_red.json")
-        elseif has("goal_diploma") then
-            Tracker:AddLayouts("layouts/events_diploma.json")
-        elseif has("goal_rival") then
-            Tracker:AddLayouts("layouts/events_rival.json")
-        elseif has("goal_rocket") then
-            Tracker:AddLayouts("layouts/events_rocket.json")
-        elseif has("goal_unown") then
-            Tracker:AddLayouts("layouts/events_unown.json")
-        end       
+            goalsuffix = goalsuffix .. "_e4"
+        end
+
+        if has("goal_red") then
+            goalsuffix = goalsuffix .. "_red"
+        end
+
+        if has("goal_diploma") then
+            goalsuffix = goalsuffix .. "_diploma"
+        end
+
+        if has("goal_rival") then
+            goalsuffix = goalsuffix .. "_rival"
+        end
+
+        if has("goal_rocket") then
+            goalsuffix = goalsuffix .. "_rocket"
+        end
+
+        if has("goal_unown") then
+            goalsuffix = goalsuffix .. "_unown"
+        end
+
+        Tracker:AddLayouts("layouts/events" .. goalsuffix .. ".json")
+
+        --if has("goal_e4") then
+        --    Tracker:AddLayouts("layouts/events_e4.json")
+        --elseif has("goal_red") then
+        --    Tracker:AddLayouts("layouts/events_red.json")
+        --elseif has("goal_diploma") then
+        --    Tracker:AddLayouts("layouts/events_diploma.json")
+        --elseif has("goal_rival") then
+        --    Tracker:AddLayouts("layouts/events_rival.json")
+        --elseif has("goal_rocket") then
+        --    Tracker:AddLayouts("layouts/events_rocket.json")
+        --elseif has("goal_unown") then
+        --    Tracker:AddLayouts("layouts/events_unown.json")
+        --end       
         
         Tracker:AddLayouts("layouts/settings.json")
         Tracker:AddLayouts("layouts/flyunlocks.json")
@@ -98,6 +125,7 @@ function toggle_johto()
         elseif not coffee and phone then
             Tracker:AddLayouts("layouts/items_no_tea.json")
         end
+
     else
         local badges = has("badges_on")
         if badges and phone then
@@ -113,14 +141,29 @@ function toggle_johto()
         Tracker:AddLayouts("layouts/johto_only/overworld.json")
         
         if has("goal_e4") then
-            Tracker:AddLayouts("layouts/johto_only/events_e4.json")
-        elseif has("goal_red") then
-            Tracker:AddLayouts("layouts/johto_only/events_red.json")
-        elseif has("goal_rival") then
-            Tracker:AddLayouts("layouts/johto_only/events_rival.json")
-        elseif has("goal_rocket") then
-            Tracker:AddLayouts("layouts/johto_only/events_rocket.json")
+            goalsuffix = goalsuffix .. "_e4"
         end
+
+        if has("goal_red") then
+            goalsuffix = goalsuffix .. "_red"
+        end
+        if has("goal_rival") then
+            goalsuffix = goalsuffix .. "_rival"
+        end
+        if has("goal_rocket") then
+            goalsuffix = goalsuffix .. "_rocket"
+        end
+
+        Tracker:AddLayouts("layouts/johto_only/events" .. goalsuffix .. ".json")
+        --if has("goal_e4") then
+        --    Tracker:AddLayouts("layouts/johto_only/events_e4.json")
+        --elseif has("goal_red") then
+        --    Tracker:AddLayouts("layouts/johto_only/events_red.json")
+        --elseif has("goal_rival") then
+        --    Tracker:AddLayouts("layouts/johto_only/events_rival.json")
+        --elseif has("goal_rocket") then
+        --    Tracker:AddLayouts("layouts/johto_only/events_rocket.json")
+        --end
 
         if has("johto_only_on") then
             Tracker:AddMaps("maps/maps_johto_no_silver.json")
