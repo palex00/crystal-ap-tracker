@@ -573,5 +573,5 @@ LIST_CODES = {
             ["Red"]                 = "goal_red",
             ["Diploma"]             = "goal_diploma"
         }
-    }
+    } --Might have to change it to goal instead of goal_option if James reworks the slot data to puts all the info into goal and removes goal_option
 }
