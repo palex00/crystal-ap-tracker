@@ -69,67 +69,67 @@ function toggle_johto()
     local phone = has("phone_calls_visible")
     
     if has("johto_only_off") then
-        Tracker:AddMaps("maps/maps_johto_and_kanto.json")
-        Tracker:AddLayouts("layouts/overworld.json")
+        Tracker:AddMaps("maps/maps_johto_and_kanto.jsonc")
+        Tracker:AddLayouts("layouts/overworld.jsonc")
         
         if has("goal_e4") then
-            Tracker:AddLayouts("layouts/events_e4.json")
+            Tracker:AddLayouts("layouts/events_e4.jsonc")
         elseif has("goal_red") then
-            Tracker:AddLayouts("layouts/events_red.json")
+            Tracker:AddLayouts("layouts/events_red.jsonc")
         elseif has("goal_diploma") then
-            Tracker:AddLayouts("layouts/events_diploma.json")
+            Tracker:AddLayouts("layouts/events_diploma.jsonc")
         elseif has("goal_rival") then
-            Tracker:AddLayouts("layouts/events_rival.json")
+            Tracker:AddLayouts("layouts/events_rival.jsonc")
         elseif has("goal_rocket") then
-            Tracker:AddLayouts("layouts/events_rocket.json")
+            Tracker:AddLayouts("layouts/events_rocket.jsonc")
         elseif has("goal_unown") then
-            Tracker:AddLayouts("layouts/events_unown.json")
+            Tracker:AddLayouts("layouts/events_unown.jsonc")
         end       
         
-        Tracker:AddLayouts("layouts/settings.json")
-        Tracker:AddLayouts("layouts/flyunlocks.json")
+        Tracker:AddLayouts("layouts/settings.jsonc")
+        Tracker:AddLayouts("layouts/flyunlocks.jsonc")
         
         if coffee and phone then
-            Tracker:AddLayouts("layouts/items.json")
+            Tracker:AddLayouts("layouts/items.jsonc")
         elseif coffee and not phone then
-            Tracker:AddLayouts("layouts/items_no_phone.json")
+            Tracker:AddLayouts("layouts/items_no_phone.jsonc")
         elseif not coffee and not phone then
-            Tracker:AddLayouts("layouts/items_no_to_both.json")
+            Tracker:AddLayouts("layouts/items_no_to_both.jsonc")
         elseif not coffee and phone then
-            Tracker:AddLayouts("layouts/items_no_tea.json")
+            Tracker:AddLayouts("layouts/items_no_tea.jsonc")
         end
     else
         local badges = has("badges_on")
         if badges and phone then
-            Tracker:AddLayouts("layouts/johto_only/items.json")
+            Tracker:AddLayouts("layouts/johto_only/items.jsonc")
         elseif not badges and phone then
-            Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges.json")
+            Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges.jsonc")
         elseif badges and not phone then
-            Tracker:AddLayouts("layouts/johto_only/items_no_phone.json")
+            Tracker:AddLayouts("layouts/johto_only/items_no_phone.jsonc")
         elseif not badges and not phone then
-            Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges_and_no_phone.json")
+            Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges_and_no_phone.jsonc")
         end
         
-        Tracker:AddLayouts("layouts/johto_only/overworld.json")
+        Tracker:AddLayouts("layouts/johto_only/overworld.jsonc")
         
         if has("goal_e4") then
-            Tracker:AddLayouts("layouts/johto_only/events_e4.json")
+            Tracker:AddLayouts("layouts/johto_only/events_e4.jsonc")
         elseif has("goal_red") then
-            Tracker:AddLayouts("layouts/johto_only/events_red.json")
+            Tracker:AddLayouts("layouts/johto_only/events_red.jsonc")
         elseif has("goal_rival") then
-            Tracker:AddLayouts("layouts/johto_only/events_rival.json")
+            Tracker:AddLayouts("layouts/johto_only/events_rival.jsonc")
         elseif has("goal_rocket") then
-            Tracker:AddLayouts("layouts/johto_only/events_rocket.json")
+            Tracker:AddLayouts("layouts/johto_only/events_rocket.jsonc")
         end
 
         if has("johto_only_on") then
-            Tracker:AddMaps("maps/maps_johto_no_silver.json")
-            Tracker:AddLayouts("layouts/johto_only/flyunlocks_no_silver.json")
-            Tracker:AddLayouts("layouts/johto_only/settings_johto_no_silver.json")
+            Tracker:AddMaps("maps/maps_johto_no_silver.jsonc")
+            Tracker:AddLayouts("layouts/johto_only/flyunlocks_no_silver.jsonc")
+            Tracker:AddLayouts("layouts/johto_only/settings_johto_no_silver.jsonc")
         elseif has("johto_only_silver") then
-            Tracker:AddMaps("maps/maps_johto_only.json")
-            Tracker:AddLayouts("layouts/johto_only/flyunlocks.json")
-            Tracker:AddLayouts("layouts/johto_only/settings_johto_with_silver.json")
+            Tracker:AddMaps("maps/maps_johto_only.jsonc")
+            Tracker:AddLayouts("layouts/johto_only/flyunlocks.jsonc")
+            Tracker:AddLayouts("layouts/johto_only/settings_johto_with_silver.jsonc")
         end
     end
     toggle_splitmap()
@@ -138,23 +138,23 @@ end
 function toggle_ilex()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
     if has("ilextree_on") and not sudowoodo then
-        Tracker:AddMaps("maps/ilex_forest_tree.json")
+        Tracker:AddMaps("maps/ilex_forest_tree.jsonc")
     elseif has("ilextree_on") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/ilex_forest_tree.json")
+        Tracker:AddMaps("maps/mischief/ilex_forest_tree.jsonc")
     elseif has("ilextree_off") and not sudowoodo then
-        Tracker:AddMaps("maps/ilex_forest_no_tree.json")
+        Tracker:AddMaps("maps/ilex_forest_no_tree.jsonc")
     elseif has("ilextree_off") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.json")
+        Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.jsonc")
     end
 end
 
 function toggle_mischief()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1
     if sudowoodo then
-        Tracker:AddMaps("maps/mischief/maps.json")
-        Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.json")
+        Tracker:AddMaps("maps/mischief/maps.jsonc")
+        Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.jsonc")
     else
-        Tracker:AddMaps("maps/maps.json")
+        Tracker:AddMaps("maps/maps.jsonc")
         toggle_ilex()
     end
 end
@@ -162,47 +162,47 @@ end
 function toggle_route2()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
     if has("route_2_fence") and not sudowoodo then
-        Tracker:AddMaps("maps/route_2_fence.json")
+        Tracker:AddMaps("maps/route_2_fence.jsonc")
     elseif has("route_2_ledge") and not sudowoodo then
-        Tracker:AddMaps("maps/route_2_ledge.json")
+        Tracker:AddMaps("maps/route_2_ledge.jsonc")
     elseif has("route_2_open") and not sudowoodo then
-        Tracker:AddMaps("maps/route_2_open.json")
+        Tracker:AddMaps("maps/route_2_open.jsonc")
     elseif has("route_2_fence") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/route_2_fence.json")
+        Tracker:AddMaps("maps/mischief/route_2_fence.jsonc")
     elseif has("route_2_ledge") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/route_2_ledge.json")
+        Tracker:AddMaps("maps/mischief/route_2_ledge.jsonc")
     elseif has("route_2_open") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/route_2_open.json")
+        Tracker:AddMaps("maps/mischief/route_2_open.jsonc")
     end
 end
 
 function toggle_lakeofrage()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
     if has("red_gyarados_vanilla") and not sudowoodo then
-        Tracker:AddMaps("maps/lake_of_rage_vanilla.json")
+        Tracker:AddMaps("maps/lake_of_rage_vanilla.jsonc")
     elseif has("red_gyarados_whirlpool") and not sudowoodo then
-        Tracker:AddMaps("maps/lake_of_rage_whirlpool.json")
+        Tracker:AddMaps("maps/lake_of_rage_whirlpool.jsonc")
     elseif has("red_gyarados_vanilla") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/lake_of_rage_vanilla.json")
+        Tracker:AddMaps("maps/mischief/lake_of_rage_vanilla.jsonc")
     elseif has("red_gyarados_whirlpool") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/lake_of_rage_whirlpool.json")
+        Tracker:AddMaps("maps/mischief/lake_of_rage_whirlpool.jsonc")
     elseif has("red_gyarados_shore") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/lake_of_rage_shore.json")
+        Tracker:AddMaps("maps/mischief/lake_of_rage_shore.jsonc")
     elseif has("red_gyarados_shore") and not sudowoodo then
-        Tracker:AddMaps("maps/lake_of_rage_shore.json")
+        Tracker:AddMaps("maps/lake_of_rage_shore.jsonc")
     end
 end
 
 function toggle_darkcave()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
     if has("blackthorn_dark_cave_vanilla") and not sudowoodo then
-        Tracker:AddMaps("maps/blackthorn_dark_cave_vanilla.json")
+        Tracker:AddMaps("maps/blackthorn_dark_cave_vanilla.jsonc")
     elseif has("blackthorn_dark_cave_waterfall") and not sudowoodo then
-        Tracker:AddMaps("maps/blackthorn_dark_cave_waterfall.json")
+        Tracker:AddMaps("maps/blackthorn_dark_cave_waterfall.jsonc")
     elseif has("blackthorn_dark_cave_vanilla") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_vanilla.json")
+        Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_vanilla.jsonc")
     elseif has("blackthorn_dark_cave_waterfall") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_waterfall.json")
+        Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_waterfall.jsonc")
     end
 end
 
@@ -225,7 +225,7 @@ function toggle_mountmortar()
         suffix = suffix.."_hole"
     end
     
-    Tracker:AddMaps("maps/"..prefix.."mm_"..suffix..".json")
+    Tracker:AddMaps("maps/"..prefix.."mm_"..suffix..".jsonc")
     
     suffix = ""
     
@@ -235,7 +235,7 @@ function toggle_mountmortar()
         suffix = "_blocked"
     end
     
-    Tracker:AddMaps("maps/"..prefix.."r42"..suffix..".json")
+    Tracker:AddMaps("maps/"..prefix.."r42"..suffix..".jsonc")
 end
 
 function toggle_r12()
@@ -251,35 +251,35 @@ function toggle_r12()
         suffix = "_tree"
     end
 
-    Tracker:AddMaps("maps/"..prefix.."r12"..suffix..".json")
+    Tracker:AddMaps("maps/"..prefix.."r12"..suffix..".jsonc")
 end
 
 function toggle_victoryroad()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
     if has("victory_road_access_vanilla") and not sudowoodo then
-        Tracker:AddMaps("maps/victory_road_vanilla.json")
+        Tracker:AddMaps("maps/victory_road_vanilla.jsonc")
     elseif has("victory_road_access_strength") and not sudowoodo then
-        Tracker:AddMaps("maps/victory_road_strength.json")
+        Tracker:AddMaps("maps/victory_road_strength.jsonc")
     elseif has("victory_road_access_vanilla") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/victory_road_vanilla.json")
+        Tracker:AddMaps("maps/mischief/victory_road_vanilla.jsonc")
     elseif has("victory_road_access_strength") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/victory_road_strength.json")
+        Tracker:AddMaps("maps/mischief/victory_road_strength.jsonc")
     end
 end
 
 function toggle_splitmap()
     if has("splitmap_off") and has("johto_only_off") then
-        Tracker:AddLayouts("layouts/tabs_single.json")
+        Tracker:AddLayouts("layouts/tabs_single.jsonc")
     elseif has("splitmap_on") and has("johto_only_off") then
-        Tracker:AddLayouts("layouts/tabs_split.json")
+        Tracker:AddLayouts("layouts/tabs_split.jsonc")
     elseif has("splitmap_reverse") and has("johto_only_off") then
-        Tracker:AddLayouts("layouts/tabs_reverse.json")
+        Tracker:AddLayouts("layouts/tabs_reverse.jsonc")
     elseif has("splitmap_off") then
-        Tracker:AddLayouts("layouts/johto_only/tabs_single.json")
+        Tracker:AddLayouts("layouts/johto_only/tabs_single.jsonc")
     elseif has("splitmap_on") then
-        Tracker:AddLayouts("layouts/johto_only/tabs_split.json")
+        Tracker:AddLayouts("layouts/johto_only/tabs_split.jsonc")
     elseif has("splitmap_reverse") then
-        Tracker:AddLayouts("layouts/johto_only/tabs_reverse.json")
+        Tracker:AddLayouts("layouts/johto_only/tabs_reverse.jsonc")
     end
 end
 
@@ -297,14 +297,14 @@ function toggle_itemgrid()
         suffix = suffix .. "_tiles"
     end
         
-    Tracker:AddLayouts("layouts/tracker"..suffix..".json")
+    Tracker:AddLayouts("layouts/tracker"..suffix..".jsonc")
     
     local prefix = ""
     if has("broadcast_view_vertical") then
         prefix = "vertical_"
     end
     
-    Tracker:AddLayouts("layouts/broadcast/"..prefix.."broadcast"..suffix..".json")
+    Tracker:AddLayouts("layouts/broadcast/"..prefix.."broadcast"..suffix..".jsonc")
     
     toggle_shopgrid()
 end
@@ -313,11 +313,11 @@ function toggle_shopgrid()
     local bluecard = has("shopsanity_bluecard_true")
     local apricorn = has("shopsanity_apricorn_true")
     if bluecard and not apricorn then
-        Tracker:AddLayouts("layouts/shopsanity_bluecard.json")
+        Tracker:AddLayouts("layouts/shopsanity_bluecard.jsonc")
     elseif not bluecard and apricorn then
-        Tracker:AddLayouts("layouts/shopsanity_apricorn.json")
+        Tracker:AddLayouts("layouts/shopsanity_apricorn.jsonc")
     elseif bluecard and apricorn then
-        Tracker:AddLayouts("layouts/shopsanity_all.json")
+        Tracker:AddLayouts("layouts/shopsanity_all.jsonc")
     end
 end
 
@@ -357,7 +357,7 @@ function toggleQuickSettings()
         suffix = suffix .. "_shop"
     end
     
-    Tracker:AddLayouts("layouts/settings_quick/settings_quick"..suffix..".json")
+    Tracker:AddLayouts("layouts/settings_quick/settings_quick"..suffix..".jsonc")
 end
 
 function getDigits(code1, code2, code3)
