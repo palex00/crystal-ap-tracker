@@ -64,91 +64,54 @@ function dump_table(o, depth)
     end
 end
 
--- Helper: check if file exists
-local function file_exists(name)
-    local f = io.open(name, "r")
-    if f then f:close(); return true end
-    return false
-end
-
--- Helper: find a layout file for the given goals inside folder, regardless of suffix order
-local function find_layout_for_goals(folder, goals)
-    if not goals or #goals == 0 then return nil end
-    table.sort(goals)
-    local canonical = folder .. "/events_" .. table.concat(goals, "_") .. ".json"
-    if file_exists(canonical) then return canonical end
-
-    -- Scan folder for any events_*.json whose token set matches goals
-    local cmd = 'cmd /c dir /b "' .. folder .. '\\events_*.json"'
-    local p = io.popen(cmd)
-    if not p then return nil end
-    for fname in p:lines() do
-        local tokenstr = fname:match("^events_(.*)%.json$")
-        if tokenstr then
-            local toks = {}
-            local count = 0
-            for t in tokenstr:gmatch("([^_]+)") do
-                toks[t] = true
-                count = count + 1
-            end
-            if count == #goals then
-                local ok = true
-                for _, g in ipairs(goals) do
-                    if not toks[g] then ok = false; break end
-                end
-                if ok then
-                    p:close()
-                    return folder .. "\\" .. fname
-                end
-            end
-        end
-    end
-    p:close()
-    return nil
-end
-
 function toggle_johto()
     local coffee = has("coffee_west") or has("coffee_north") or has("coffee_east") or has("coffee_south")
     local phone = has("phone_calls_visible")
+    local goalsuffix = ""
     
     if has("johto_only_off") then
         Tracker:AddMaps("maps/maps_johto_and_kanto.json")
         Tracker:AddLayouts("layouts/overworld.json")
         
-        -- Build a canonical, sorted list of active goals and try to load a combined layout
-        local goals = {}
-        if has("goal_diploma") then table.insert(goals, "diploma") end
-        if has("goal_e4") then table.insert(goals, "e4") end
-        if has("goal_red") then table.insert(goals, "red") end
-        if has("goal_rival") then table.insert(goals, "rival") end
-        if has("goal_rocket") then table.insert(goals, "rocket") end
-        if has("goal_unown") then table.insert(goals, "unown") end
+        if has("goal_e4") then
+            goalsuffix = goalsuffix .. "_e4"
+        end
 
-        if #goals > 0 then
-            table.sort(goals)
-            local found = find_layout_for_goals("layouts", goals)
-            print("toggle_johto: computed goals=", table.concat(goals, ","))
-            if found then
-                print("toggle_johto: using layout file=", found)
-                Tracker:AddLayouts(found)
-            else
-                print("toggle_johto: no combined layout found, falling back to single-goal layouts")
-                -- Fallback to single-goal priority (preserve previous behavior)
-                if has("goal_e4") then
-                    Tracker:AddLayouts("layouts/events_e4.json")
-                elseif has("goal_red") then
-                    Tracker:AddLayouts("layouts/events_red.json")
-                elseif has("goal_diploma") then
-                    Tracker:AddLayouts("layouts/events_diploma.json")
-                elseif has("goal_rival") then
-                    Tracker:AddLayouts("layouts/events_rival.json")
-                elseif has("goal_rocket") then
-                    Tracker:AddLayouts("layouts/events_rocket.json")
-                elseif has("goal_unown") then
-                    Tracker:AddLayouts("layouts/events_unown.json")
-                end
-            end
-        end       
+        if has("goal_red") then
+            goalsuffix = goalsuffix .. "_red"
+        end
+
+        if has("goal_diploma") then
+            goalsuffix = goalsuffix .. "_diploma"
+        end
+
+        if has("goal_rival") then
+            goalsuffix = goalsuffix .. "_rival"
+        end
+
+        if has("goal_rocket") then
+            goalsuffix = goalsuffix .. "_rocket"
+        end
+
+        if has("goal_unown") then
+            goalsuffix = goalsuffix .. "_unown"
+        end
+
+        Tracker:AddLayouts("layouts/events" .. goalsuffix .. ".json")
+
+        --if has("goal_e4") then
+        --    Tracker:AddLayouts("layouts/events_e4.json")
+        --elseif has("goal_red") then
+        --    Tracker:AddLayouts("layouts/events_red.json")
+        --elseif has("goal_diploma") then
+        --    Tracker:AddLayouts("layouts/events_diploma.json")
+        --elseif has("goal_rival") then
+        --    Tracker:AddLayouts("layouts/events_rival.json")
+        --elseif has("goal_rocket") then
+        --    Tracker:AddLayouts("layouts/events_rocket.json")
+        --elseif has("goal_unown") then
+        --    Tracker:AddLayouts("layouts/events_unown.json")
+        --end       
         
         Tracker:AddLayouts("layouts/settings.json")
         Tracker:AddLayouts("layouts/flyunlocks.json")
@@ -162,6 +125,7 @@ function toggle_johto()
         elseif not coffee and phone then
             Tracker:AddLayouts("layouts/items_no_tea.json")
         end
+
     else
         local badges = has("badges_on")
         if badges and phone then
@@ -176,36 +140,30 @@ function toggle_johto()
         
         Tracker:AddLayouts("layouts/johto_only/overworld.json")
         
-        -- Build canonical sorted list of active goals for johto_only layouts
-        local goals = {}
-        if has("goal_diploma") then table.insert(goals, "diploma") end
-        if has("goal_e4") then table.insert(goals, "e4") end
-        if has("goal_red") then table.insert(goals, "red") end
-        if has("goal_rival") then table.insert(goals, "rival") end
-        if has("goal_rocket") then table.insert(goals, "rocket") end
-        if has("goal_unown") then table.insert(goals, "unown") end
-
-        if #goals > 0 then
-            table.sort(goals)
-            local found = find_layout_for_goals("layouts/johto_only", goals)
-            print("toggle_johto (johto_only): computed goals=", table.concat(goals, ","))
-            if found then
-                print("toggle_johto (johto_only): using layout file=", found)
-                Tracker:AddLayouts(found)
-            else
-                print("toggle_johto (johto_only): no combined layout found, falling back to single-goal layouts")
-                -- Fallback to single-goal priority
-                if has("goal_e4") then
-                    Tracker:AddLayouts("layouts/johto_only/events_e4.json")
-                elseif has("goal_red") then
-                    Tracker:AddLayouts("layouts/johto_only/events_red.json")
-                elseif has("goal_rival") then
-                    Tracker:AddLayouts("layouts/johto_only/events_rival.json")
-                elseif has("goal_rocket") then
-                    Tracker:AddLayouts("layouts/johto_only/events_rocket.json")
-                end
-            end
+        if has("goal_e4") then
+            goalsuffix = goalsuffix .. "_e4"
         end
+
+        if has("goal_red") then
+            goalsuffix = goalsuffix .. "_red"
+        end
+        if has("goal_rival") then
+            goalsuffix = goalsuffix .. "_rival"
+        end
+        if has("goal_rocket") then
+            goalsuffix = goalsuffix .. "_rocket"
+        end
+
+        Tracker:AddLayouts("layouts/johto_only/events" .. goalsuffix .. ".json")
+        --if has("goal_e4") then
+        --    Tracker:AddLayouts("layouts/johto_only/events_e4.json")
+        --elseif has("goal_red") then
+        --    Tracker:AddLayouts("layouts/johto_only/events_red.json")
+        --elseif has("goal_rival") then
+        --    Tracker:AddLayouts("layouts/johto_only/events_rival.json")
+        --elseif has("goal_rocket") then
+        --    Tracker:AddLayouts("layouts/johto_only/events_rocket.json")
+        --end
 
         if has("johto_only_on") then
             Tracker:AddMaps("maps/maps_johto_no_silver.json")
@@ -466,133 +424,4 @@ function makeDigits(value, code1, code2, code3)
         Tracker:FindObjectForCode(code1).CurrentStage = math.floor(val / 10)
         Tracker:FindObjectForCode(code2).CurrentStage = val % 10
     end
-end
-
--- Helper: check if file exists
-local function file_exists(name)
-    local f = io.open(name, "r")
-    if f then f:close(); return true end
-    return false
-end
-
--- Helper: find a layout file for the given goals inside folder, regardless of suffix order
-local function find_layout_for_goals(folder, goals)
-    if not goals or #goals == 0 then return nil end
-    table.sort(goals)
-    local canonical = folder .. "/events_" .. table.concat(goals, "_") .. ".json"
-    if file_exists(canonical) then return canonical end
-
-    -- Scan folder for any events_*.json whose token set matches goals
-    local cmd = 'cmd /c dir /b "' .. folder .. '\\events_*.json"'
-    local p = io.popen(cmd)
-    if not p then return nil end
-    for fname in p:lines() do
-        local tokenstr = fname:match("^events_(.*)%.json$")
-        if tokenstr then
-            local toks = {}
-            local count = 0
-            for t in tokenstr:gmatch("([^_]+)") do
-                toks[t] = true
-                count = count + 1
-            end
-            if count == #goals then
-                local ok = true
-                for _, g in ipairs(goals) do
-                    if not toks[g] then ok = false; break end
-                end
-                if ok then
-                    p:close()
-                    return folder .. "\\" .. fname
-                end
-            end
-        end
-    end
-    p:close()
-    return nil
-end
-
--- Helper: check if file exists
-local function file_exists(name)
-    local f = io.open(name, "r")
-    if f then f:close(); return true end
-    return false
-end
-
--- Helper: find a layout file for the given goals inside folder, regardless of suffix order
-local function find_layout_for_goals(folder, goals)
-    if not goals or #goals == 0 then return nil end
-    table.sort(goals)
-    local canonical = folder .. "/events_" .. table.concat(goals, "_") .. ".json"
-    if file_exists(canonical) then return canonical end
-
-    -- Scan folder for any events_*.json whose token set matches goals
-    local cmd = 'cmd /c dir /b "' .. folder .. '\\events_*.json"'
-    local p = io.popen(cmd)
-    if not p then return nil end
-    for fname in p:lines() do
-        local tokenstr = fname:match("^events_(.*)%.json$")
-        if tokenstr then
-            local toks = {}
-            local count = 0
-            for t in tokenstr:gmatch("([^_]+)") do
-                toks[t] = true
-                count = count + 1
-            end
-            if count == #goals then
-                local ok = true
-                for _, g in ipairs(goals) do
-                    if not toks[g] then ok = false; break end
-                end
-                if ok then
-                    p:close()
-                    return folder .. "\\" .. fname
-                end
-            end
-        end
-    end
-    p:close()
-    return nil
-end
-
--- Helper: check if file exists
-local function file_exists(name)
-    local f = io.open(name, "r")
-    if f then f:close(); return true end
-    return false
-end
-
--- Helper: find a layout file for the given goals inside folder, regardless of suffix order
-local function find_layout_for_goals(folder, goals)
-    if not goals or #goals == 0 then return nil end
-    table.sort(goals)
-    local canonical = folder .. "/events_" .. table.concat(goals, "_") .. ".json"
-    if file_exists(canonical) then return canonical end
-
-    -- Scan folder for any events_*.json whose token set matches goals
-    local cmd = 'cmd /c dir /b "' .. folder .. '\\events_*.json"'
-    local p = io.popen(cmd)
-    if not p then return nil end
-    for fname in p:lines() do
-        local tokenstr = fname:match("^events_(.*)%.json$")
-        if tokenstr then
-            local toks = {}
-            local count = 0
-            for t in tokenstr:gmatch("([^_]+)") do
-                toks[t] = true
-                count = count + 1
-            end
-            if count == #goals then
-                local ok = true
-                for _, g in ipairs(goals) do
-                    if not toks[g] then ok = false; break end
-                end
-                if ok then
-                    p:close()
-                    return folder .. "\\" .. fname
-                end
-            end
-        end
-    end
-    p:close()
-    return nil
 end
