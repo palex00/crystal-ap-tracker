@@ -111,7 +111,7 @@ function toggle_johto()
         --    Tracker:AddLayouts("layouts/events_rocket.json")
         --elseif has("goal_unown") then
         --    Tracker:AddLayouts("layouts/events_unown.json")
-        end       
+        --end       
         
         Tracker:AddLayouts("layouts/settings.json")
         Tracker:AddLayouts("layouts/flyunlocks.json")
@@ -125,6 +125,7 @@ function toggle_johto()
         elseif not coffee and phone then
             Tracker:AddLayouts("layouts/items_no_tea.json")
         end
+
     else
         local badges = has("badges_on")
         if badges and phone then
@@ -146,17 +147,11 @@ function toggle_johto()
         if has("goal_red") then
             goalsuffix = goalsuffix .. "_red"
         end
-        if has("goal_diploma") then
-            goalsuffix = goalsuffix .. "_diploma"
-        end
         if has("goal_rival") then
             goalsuffix = goalsuffix .. "_rival"
         end
         if has("goal_rocket") then
             goalsuffix = goalsuffix .. "_rocket"
-        end
-        if has("goal_unown") then
-            goalsuffix = goalsuffix .. "_unown"
         end
 
         Tracker:AddLayouts("layouts/johto_only/events" .. goalsuffix .. ".json")
@@ -168,7 +163,7 @@ function toggle_johto()
         --    Tracker:AddLayouts("layouts/johto_only/events_rival.json")
         --elseif has("goal_rocket") then
         --    Tracker:AddLayouts("layouts/johto_only/events_rocket.json")
-        end
+        --end
 
         if has("johto_only_on") then
             Tracker:AddMaps("maps/maps_johto_no_silver.json")
