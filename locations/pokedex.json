@@ -1,7 +1,6 @@
 [
 {       "name": "Pokemon",
         "children": [
-// Kanto
 {"name": "Bulbasaur", "access_rules": ["bulbasaur", "^$breeding, @Pokemon/Ivysaur", "^$breeding, @Pokemon/Venusaur"], "sections": [{"hosted_item": "bulbasaur"}], "map_locations": [{ "map": "kantopokemon", "x": 86, "y": 58, "shape": "rect"}]},
 {"name": "Ivysaur", "access_rules": ["ivysaur", "^$evolve_old|16, @Pokemon/Bulbasaur"], "sections": [{"hosted_item": "ivysaur"}], "map_locations": [{ "map": "kantopokemon", "x": 146, "y": 58, "shape": "rect"}]},
 {"name": "Venusaur", "access_rules": ["venusaur", "^$evolve_old|32, @Pokemon/Ivysaur"], "sections": [{"hosted_item": "venusaur"}], "map_locations": [{ "map": "kantopokemon", "x": 206, "y": 58, "shape": "rect"}]},
@@ -153,7 +152,6 @@
 {"name": "Dragonite", "access_rules": ["dragonite", "^$evolve_old|50, @Pokemon/Dragonair"], "sections": [{"hosted_item": "dragonite"}], "map_locations": [{ "map": "kantopokemon", "x": 835, "y": 598, "shape": "rect"}]},
 {"name": "Mewtwo", "access_rules": ["mewtwo"], "sections": [{"hosted_item": "mewtwo"}], "map_locations": [{ "map": "kantopokemon", "x": 895, "y": 598, "shape": "rect"}]},
 {"name": "Mew", "access_rules": ["mew"], "sections": [{"hosted_item": "mew"}], "map_locations": [{ "map": "kantopokemon", "x": 955, "y": 598, "shape": "rect"}]},
-// Johto
 {"name": "Chikorita", "access_rules": ["chikorita", "^$breeding, @Pokemon/Bayleef", "^$breeding, @Pokemon/Meganium"], "sections": [{"hosted_item": "chikorita"}], "map_locations": [{ "map": "johtopokemon", "x": 56, "y": 58, "shape": "rect"}]},
 {"name": "Bayleef", "access_rules": ["bayleef", "^$evolve_old|16, @Pokemon/Chikorita"], "sections": [{"hosted_item": "bayleef"}], "map_locations": [{ "map": "johtopokemon", "x": 116, "y": 58, "shape": "rect"}]},
 {"name": "Meganium", "access_rules": ["meganium", "^$evolve_old|32, @Pokemon/Bayleef"], "sections": [{"hosted_item": "meganium"}], "map_locations": [{ "map": "johtopokemon", "x": 176, "y": 58, "shape": "rect"}]},

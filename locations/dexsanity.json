@@ -1,7 +1,7 @@
 [
 {       "name": "ZDexsanity",
         "children": [
-// Kanto
+
 {"name": "Bulbasaur", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_1", "sections": [{"hosted_item": "dexsanity_bulbasaur"}], "map_locations": [{ "map": "kantopokemon", "x": 86, "y": 58, "shape": "diamond", "size": 10}]},
 {"name": "Ivysaur", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_2", "sections": [{"hosted_item": "dexsanity_ivysaur"}], "map_locations": [{ "map": "kantopokemon", "x": 146, "y": 58, "shape": "diamond", "size": 10}]},
 {"name": "Venusaur", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_3", "sections": [{"hosted_item": "dexsanity_venusaur"}], "map_locations": [{ "map": "kantopokemon", "x": 206, "y": 58, "shape": "diamond", "size": 10}]},
@@ -153,7 +153,7 @@
 {"name": "Dragonite", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_149", "sections": [{"hosted_item": "dexsanity_dragonite"}], "map_locations": [{ "map": "kantopokemon", "x": 835, "y": 598, "shape": "diamond", "size": 10}]},
 {"name": "Mewtwo", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_150", "sections": [{"hosted_item": "dexsanity_mewtwo"}], "map_locations": [{ "map": "kantopokemon", "x": 895, "y": 598, "shape": "diamond", "size": 10}]},
 {"name": "Mew", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_151", "sections": [{"hosted_item": "dexsanity_mew"}], "map_locations": [{ "map": "kantopokemon", "x": 955, "y": 598, "shape": "diamond", "size": 10}]},
-// Johto
+
 {"name": "Chikorita", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_152", "sections": [{"hosted_item": "dexsanity_chikorita"}], "map_locations": [{ "map": "johtopokemon", "x": 56, "y": 58, "shape": "diamond", "size": 10}]},
 {"name": "Bayleef", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_153", "sections": [{"hosted_item": "dexsanity_bayleef"}], "map_locations": [{ "map": "johtopokemon", "x": 116, "y": 58, "shape": "diamond", "size": 10}]},
 {"name": "Meganium", "access_rules": ["^$scout"], "visibility_rules": "dexsanity_154", "sections": [{"hosted_item": "dexsanity_meganium"}], "map_locations": [{ "map": "johtopokemon", "x": 176, "y": 58, "shape": "diamond", "size": 10}]},
