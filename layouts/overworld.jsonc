@@ -1,0 +1,43 @@
+{
+    "overworld": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Both Regions (Hor.)",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "johtokanto"
+                    ]
+                }
+            },
+            {
+                "title": "Both Regions (Ver.)",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "johtokanto_vertical"
+                    ]
+                }
+            },
+            {
+                "title": "Johto Only",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "johto_overview"
+                    ]
+                }
+            },
+            {
+                "title": "Kanto Only",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "kanto_overview"
+                    ]
+                }
+            }
+        ]
+    }
+}

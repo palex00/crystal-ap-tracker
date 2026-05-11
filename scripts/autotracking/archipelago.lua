@@ -105,14 +105,14 @@ function onClear(slot_data)
                 local version_str = tostring(v)
                 local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
                 if first_two_dots == "6.0" or nil then
-                    Tracker:AddLayouts("layouts/tracker.json")
+                    Tracker:AddLayouts("layouts/tracker.jsonc")
                 else
-                    Tracker:AddLayouts("layouts/versionmismatch.json")
+                    Tracker:AddLayouts("layouts/versionmismatch.jsonc")
                     return
                 end
             end
         else
-            Tracker:AddLayouts("layouts/not_crystal.json")
+            Tracker:AddLayouts("layouts/not_crystal.jsonc")
         end            
     end
 
