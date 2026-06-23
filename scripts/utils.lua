@@ -382,3 +382,8 @@ function makeDigits(value, code1, code2, code3)
         Tracker:FindObjectForCode(code2).CurrentStage = val % 10
     end
 end
+
+function updateGoalLayout()
+    toggleQuickSettings()
+    toggle_itemgrid()
+end
