@@ -12406,7 +12406,8 @@
             {
                 "name": "Indigo Plateau",
                 "access_rules": [
-                    "@JohtoKanto/Victory Road, ^$victory_road_access"
+                    "@JohtoKanto/Victory Road, ^$victory_road_access",
+                    "$can_freefly|IndigoPlateau"
                 ],
                 "sections": [
                     {

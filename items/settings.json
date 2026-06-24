@@ -310,6 +310,12 @@
                 "inherit_codes": false
             },
             {
+                "name": "Free Fly Location - Silver Cave",
+                "img": "/images/settings/town_locations/silvercave.png",
+                "codes": "free_fly_location,free_fly_SilverCave",
+                "inherit_codes": false
+            },
+            {
                 "name": "Free Fly Location - Pallet Town",
                 "img": "/images/settings/town_locations/pallet.png",
                 "codes": "free_fly_location,free_fly_Pallet",
@@ -370,9 +376,9 @@
                 "inherit_codes": false
             },
             {
-                "name": "Free Fly Location - Silver Cave",
-                "img": "/images/settings/town_locations/silvercave.png",
-                "codes": "free_fly_location,free_fly_SilverCave",
+                "name": "Free Fly Location - Indigo Plateau",
+                "img": "/images/settings/town_locations/indigo.png",
+                "codes": "free_fly_location,free_fly_IndigoPlateau",
                 "inherit_codes": false
             }
         ]
@@ -461,6 +467,12 @@
                 "inherit_codes": false
             },
             {
+                "name": "Map Card Fly Location - Silver Cave",
+                "img": "/images/settings/town_locations/silvercave.png",
+                "codes": "map_card_fly,map_card_fly_SilverCave",
+                "inherit_codes": false
+            },
+            {
                 "name": "Map Card Fly Location - Pallet Town",
                 "img": "/images/settings/town_locations/pallet.png",
                 "codes": "map_card_fly,map_card_fly_Pallet",
@@ -521,9 +533,9 @@
                 "inherit_codes": false
             },
             {
-                "name": "Map Card Fly Location - Silver Cave",
-                "img": "/images/settings/town_locations/silvercave.png",
-                "codes": "map_card_fly,map_card_fly_SilverCave",
+                "name": "Map Card Fly Location - Indigo Plateau",
+                "img": "/images/settings/town_locations/indigo.png",
+                "codes": "map_card_fly,map_card_fly_IndigoPlateau",
                 "inherit_codes": false
             }
         ]
@@ -1128,12 +1140,6 @@
                 "name": "Starting Town - Fuchsia City",
                 "img": "/images/settings/town_locations/fuchsia.png",
                 "codes": "start_town_location,start_town_Fuchsia",
-                "inherit_codes": false
-            },
-            {
-                "name": "Starting Town - Silver Cave",
-                "img": "/images/settings/town_locations/silvercave.png",
-                "codes": "start_town_location,start_town_SilverCave",
                 "inherit_codes": false
             }
         ]
