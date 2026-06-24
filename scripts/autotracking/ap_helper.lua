@@ -216,10 +216,10 @@ SLOT_CODES = {
         code = "free_fly_location",
         mapping = TOWN_MAPPING
     },
-    map_card_fly_location = {
-        code = "map_card_fly",
-        mapping = TOWN_MAPPING
-    },
+    --map_card_fly_location = {
+    --    code = "map_card_fly",
+    --    mapping = TOWN_MAPPING
+    --},
     randomize_berry_trees = {
         code = "berries",
         mapping = MAP_TOGGLE
@@ -474,7 +474,7 @@ SLOT_CODES = {
     },
     south_kanto_access = {
         code = "south_kanto_access",
-        mapping = MAP_TRIPLE
+        mapping = MAP_QUADRUPLE
     },
     south_kanto_condition = {
         code = "south_kanto_condition",

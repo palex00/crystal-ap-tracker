@@ -2374,6 +2374,12 @@
                 "img": "/images/settings/landslide_neither.png",
                 "codes": "south_kanto_access, south_kanto_access_free",
                 "inherit_codes": false
+            },
+            {
+                "name": "The landslide blocks both routes",
+                "img": "/images/settings/landslide_both.png",
+                "codes": "south_kanto_access, south_kanto_access_both",
+                "inherit_codes": false
             }
         ]
     },

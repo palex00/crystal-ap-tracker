@@ -152,7 +152,9 @@ function onClear(slot_data)
 
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then
-            --Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
+            print(k)
+            print(v)
+            Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
         elseif REQUIREMENT_CODES[k] then
 			local item = REQUIREMENT_CODES[k].item
 			item:setType(REQUIREMENT_CODES[k].mapping[v])
@@ -984,7 +986,7 @@ end
 
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
-Archipelago:AddLocationHandler("location handler", onLocation)
+--Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
 Archipelago:AddRetrievedHandler("notify launch handler", onNotify)
 Archipelago:AddBouncedHandler("map handler", onMap)
