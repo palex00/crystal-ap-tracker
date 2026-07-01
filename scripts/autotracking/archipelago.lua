@@ -94,6 +94,14 @@ function onClear(slot_data)
         Tracker:FindObjectForCode(code).Active = false
     end
 
+    -- reset shop codes
+    for i, code in ipairs(FLAG_SHOP_J_CODES) do
+        Tracker:FindObjectForCode(code).Active = false
+    end
+    for i, code in ipairs(FLAG_SHOP_K_CODES) do
+        Tracker:FindObjectForCode(code).Active = false
+    end
+
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
 
