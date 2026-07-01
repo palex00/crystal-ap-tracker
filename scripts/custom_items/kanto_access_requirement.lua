@@ -39,7 +39,7 @@ function KantoAccessRequirement:updateIcon()
         overlayImg = "images/settings/kanto_access_badges_overlay.png"
     elseif type == "gyms" then
         self.ItemInstance.Name = "Kanto Access - Defeat Gyms"
-        overlayImg = "images/settings/kanto_access_gyms_overlay.png"
+        overlayImg = "images/settings/gym_overlay_left.png"
     elseif type == "champion" then
         self.ItemInstance.Name = "Kanto Access - Become Champion"
         overlayImg = "images/settings/kanto_access_champion_overlay.png"
