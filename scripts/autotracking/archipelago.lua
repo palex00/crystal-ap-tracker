@@ -606,7 +606,12 @@ function updatePokemon()
         
         for region_key, location in pairs(ENCOUNTER_MAPPING) do
             regionObjects[region_key] = Tracker:FindObjectForCode(location)
-            baseCounts[region_key] = #REGION_ENCOUNTERS[region_key]
+            -- remove this if condition once you implemented DAY/NITE-split
+            if REGION_ENCOUNTERS[region_key] then
+                baseCounts[region_key] = #REGION_ENCOUNTERS[region_key]
+            else
+                return
+            end
             pendingDecrements[region_key] = 0
         end
 
