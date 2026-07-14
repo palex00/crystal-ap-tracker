@@ -1,0 +1,262 @@
+[
+    {
+        "name": "ER: Dungeon",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Dungeon - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_dungeon, er_dungeon_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Dungeon - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_dungeon, er_dungeon_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Dungeon Interior",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Dungeon Interior - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_dungeon_interior, er_dungeon_interior_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Dungeon Interior - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_dungeon_interior, er_dungeon_interior_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Gym",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Gym - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_gym, er_gym_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Gym - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_gym, er_gym_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Gym Interior",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Gym Interior - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_gym_interior, er_gym_interior_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Gym Interior - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_gym_interior, er_gym_interior_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Mart",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Mart - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_mart, er_mart_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Mart - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_mart, er_mart_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Mart Interior",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Mart Interior - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_mart_interior, er_mart_interior_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Mart Interior - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_mart_interior, er_mart_interior_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Building",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Building - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_building, er_building_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Building - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_building, er_building_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Building Interior",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Building Interior - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_building_interior, er_building_interior_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Building Interior - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_building_interior, er_building_interior_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Gate",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Gate - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_gate, er_gate_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Gate - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_gate, er_gate_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Pokecenter",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Pokecenter - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_pokecenter, er_pokecenter_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Pokecenter - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_pokecenter, er_pokecenter_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Elevator",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Elevator - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_elevator, er_elevator_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Elevator - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_elevator, er_elevator_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: Pokemon League",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: Pokemon League - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_pokemon_league, er_pokemon_league_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: Pokemon League - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_pokemon_league, er_pokemon_league_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "ER: One-Way",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "ER: One-Way - Off",
+                "img": "/images/items/pokeball_bw.png",
+                "codes": "er_one_way, er_one_way_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "ER: One-Way - On",
+                "img": "/images/items/pokeball.png",
+                "codes": "er_one_way, er_one_way_on",
+                "inherit_codes": false
+            }
+        ]
+    }
+]

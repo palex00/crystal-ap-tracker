@@ -9,12 +9,29 @@ Tracker:AddItems("items/tools.json")
 Tracker:AddItems("items/pokemon.json")
 Tracker:AddItems("items/trainersanity.json")
 Tracker:AddItems("items/dexsanity_items.json")
+Tracker:AddItems("items/settings_er.json")
+Tracker:AddItems("items/route.json")
 
 -- Logic
 ScriptHost:LoadScript("scripts/utils.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/logic/dexsanity.lua")
 ScriptHost:LoadScript("scripts/custom_items.lua")
+
+-- Entrance Randomization: CanReach graph engine + entrance items + route mode.
+-- Order matters (imperative graph construction): helpers -> engine -> nodes -> connections
+-- -> registry -> items -> route mode. custom_items.lua (above) must load first (CustomItem base).
+ScriptHost:LoadScript("scripts/logic/logic_helpers.lua")
+ScriptHost:LoadScript("scripts/logic/canreach.lua")
+ScriptHost:LoadScript("scripts/logic/regions/region_definitions.lua")
+ScriptHost:LoadScript("scripts/logic/regions/connections.lua")
+ScriptHost:LoadScript("scripts/entrances/entrance_registry.lua")
+ScriptHost:LoadScript("scripts/entrances/entrance_item.lua")
+createEntrances()
+ScriptHost:LoadScript("scripts/routing/route_mode.lua")
+-- Structural sanity check: warns loudly if a warp is declared in only one of the graph /
+-- registry, has a bad category, or collides on an id. Read-only; no-ops until data exists.
+ScriptHost:LoadScript("scripts/entrances/entrance_validate.lua")
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
@@ -39,6 +56,9 @@ Tracker:AddLocations("locations/encounters_submaps.json")
 Tracker:AddLocations("locations/special_encounters.json")
 Tracker:AddLocations("locations/grass_submaps.json")
 Tracker:AddLocations("locations/new_signs.json")
+-- DUMMY format reference only — NOT loaded (its group names would collide with real
+-- locations). Replace with real entrance locations, then enable:
+-- Tracker:AddLocations("locations/entrances_example.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/dungeon_maps.json")
@@ -58,6 +78,7 @@ Tracker:AddLayouts("layouts/unown_tiles.json")
 Tracker:AddLayouts("layouts/broadcast/broadcast.json")
 Tracker:AddLayouts("layouts/pokedex.json")
 Tracker:AddLayouts("layouts/dexcountsanity.json")
+Tracker:AddLayouts("layouts/route.json")
 
 -- AutoTracking for Poptracker
 ScriptHost:LoadScript("scripts/autotracking.lua")
@@ -101,6 +122,12 @@ ScriptHost:AddWatchForCode("grasssanity", "grasssanity", toggleQuickSettings)
 ScriptHost:AddWatchForCode("goal", "goal", updateGoalLayout)
 ScriptHost:AddWatchForCode("shopsanity_johtomarts", "shopsanity_johtomarts", toggleQuickSettings)
 ScriptHost:AddWatchForCode("shopsanity_kantomarts", "shopsanity_kantomarts", toggleQuickSettings)
+
+-- ER category toggles -> refresh ER_CATEGORY_ENABLED for the CanReach detour
+for _, cat in ipairs(ER_CATEGORIES) do
+    ScriptHost:AddWatchForCode("er_" .. cat, "er_" .. cat, toggle_er)
+end
+refreshERCategories()
 
 -- Makes version nil
 first_two_dots = nil

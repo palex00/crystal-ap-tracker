@@ -150,6 +150,17 @@ function onClear(slot_data)
     EVOLUTION_DATA = slot_data.evolution_info
     BREEDING_DATA = slot_data.breeding_info
 
+    -- Entrance randomization: full connection map (region-string -> region-string). slot_data
+    -- gives a list of pairs (E1, E2) meaning "entering E1 emerges at E2". Connections are only
+    -- revealed per-direction later, as entrance IDs arrive in the DataStorage "entered" list.
+    ENTRANCE_CONNECTIONS = {}
+    if slot_data.entrances then
+        for _, pair in ipairs(slot_data.entrances) do
+            ENTRANCE_CONNECTIONS[pair[1]] = pair[2]
+        end
+    end
+    resetEntrances()
+
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then
             print(k)
@@ -300,6 +311,7 @@ function onClear(slot_data)
             HINT       = "_read_hints_" .. suffix,
             SHOP_K     = makeID("seen_kanto_marts_"),
             SHOP_J     = makeID("seen_johto_marts_"),
+            ENTRANCE   = makeID("entrances_"),
         }
         for _, id in pairs(IDs) do
             Archipelago:SetNotify({id})
@@ -308,6 +320,9 @@ function onClear(slot_data)
     end
 
     toggle_itemgrid()
+    if refreshERCategories then
+        refreshERCategories()
+    end
     loadWatches()
 
 end
@@ -416,7 +431,53 @@ function onNotify(key, value, old_value)
             updateShopEvents("J", value)
         elseif key == IDs.SHOP_K then
             updateShopEvents("K", value)
+        elseif key == IDs.ENTRANCE then
+            updateEntrances(value)
         end
+    end
+end
+
+-- Clears every entrance item's revealed connection state (called on each connect).
+function resetEntrances()
+    if not ENTRANCE_ITEMS then
+        return
+    end
+    for _, item in pairs(ENTRANCE_ITEMS) do
+        item:reset()
+    end
+end
+
+-- Reveals directed connections for every entrance ID in the DataStorage "entered" list.
+-- Each entered id reveals: item(id).forwardTarget = its exit, item(exit).reverseSource = id.
+---@param list integer[]  loose list of entrance IDs that have been entered into
+function updateEntrances(list)
+    if type(list) ~= "table" or not ENTRANCE_ITEMS then
+        return
+    end
+    for _, id in ipairs(list) do
+        local row = REGISTRY.byId[id]
+        if row then
+            local token = row.token
+            local exit = ENTRANCE_CONNECTIONS[token]
+            if exit then
+                local item = ENTRANCE_ITEMS[token]
+                if item then
+                    item:setForward(exit)
+                end
+                local target = ENTRANCE_ITEMS[exit]
+                if target then
+                    target:setReverse(token)
+                end
+            end
+        end
+    end
+    if InvalidateCanReach then
+        InvalidateCanReach()
+    end
+    -- force a logic re-evaluation (same idiom the pack uses after updateSigns)
+    local upd = Tracker:FindObjectForCode("update")
+    if upd then
+        upd.Active = not upd.Active
     end
 end
 

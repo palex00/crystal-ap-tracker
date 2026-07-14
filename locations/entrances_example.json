@@ -1,0 +1,45 @@
+[
+    {
+        "name": "New Bark Town",
+        "sections": [
+            {
+                "//": "DUMMY entrance marker. `hosted_item` is the EntranceItem's Name = its region-string token.",
+                "//2": "The $ChangeEntranceColor rule colors the diamond by revealed/reachable state.",
+                "//3": "The `section` field in the registry can point at '@New Bark Town/Elm's Lab Entrance' for the temp-highlight.",
+                "name": "Elm's Lab Entrance",
+                "hosted_item": "REGION_NEW_BARK_TOWN -> REGION_ELMS_LAB",
+                "access_rules": [
+                    "$ChangeEntranceColor|REGION_NEW_BARK_TOWN -> REGION_ELMS_LAB"
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 132,
+                        "y": 90,
+                        "size": 6
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Azalea Town",
+        "sections": [
+            {
+                "name": "Slowpoke Well Entrance",
+                "hosted_item": "REGION_AZALEA_TOWN -> REGION_SLOWPOKE_WELL",
+                "access_rules": [
+                    "$ChangeEntranceColor|REGION_AZALEA_TOWN -> REGION_SLOWPOKE_WELL"
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 60,
+                        "y": 150,
+                        "size": 6
+                    }
+                ]
+            }
+        ]
+    }
+]

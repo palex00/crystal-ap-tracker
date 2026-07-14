@@ -90,6 +90,16 @@
                         "key": "kanto_dungeons"
                     }
                 }
+            },
+            {
+                "title": "Route",
+                "content": {
+                    "type": "dock",
+                    "content": {
+                        "type": "layout",
+                        "key": "route"
+                    }
+                }
             }
         ]
     }

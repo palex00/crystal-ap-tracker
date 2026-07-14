@@ -283,6 +283,29 @@ function toggle_splitmap()
     end
 end
 
+-- Rebuilds ER_CATEGORY_ENABLED (read by the CanReach detour) from the ER settings items,
+-- then invalidates the CanReach cache. Runs when any ER category toggle changes (init.lua
+-- watches) and after onClear sets them from slot_data.
+function refreshERCategories()
+    if not ER_CATEGORIES then
+        return
+    end
+    ER_CATEGORY_ENABLED = ER_CATEGORY_ENABLED or {}
+    for _, cat in ipairs(ER_CATEGORIES) do
+        ER_CATEGORY_ENABLED[cat] = has("er_" .. cat .. "_on")
+    end
+    if InvalidateCanReach then
+        InvalidateCanReach()
+    end
+end
+
+-- Entrance randomization is per-category; there is no single ER on/off. The Route tab is
+-- part of tabs_single.json. When you author additional tab variants (split/reverse/johto),
+-- add a "Route" tab there too, or swap ER-specific tab layouts here.
+function toggle_er()
+    refreshERCategories()
+end
+
 function toggle_itemgrid()
     local shops = has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true")
     

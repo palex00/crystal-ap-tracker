@@ -1,3 +1,29 @@
+# CURRENT STATUS & ROADMAP FOR THE BETA
+++ THE TRACKER IS CURRENTLY NOT IN A USABLE STATE ++
+In the beginning, I disabled some things so you could run seeds without the new features on the beta.
+Now, I will begin implementing the entire logical rewrite. This will cause the tracker to be *worse* for some time.
+
+The beta tracker now auto-updates!
+
+Unsupported Features:
+- Multiple Goals
+- New Locations
+    - Battle Tower
+    - Momsanity
+    - Rematchsanity
+    - Lucky Number Show
+- Entrance Randomization
+- Flooded Mine
+- Restored Route 23
+- Fly Destination Rando
+- Vanilla Event Chains
+- Time of Day Encounters
+- everything else, basically
+
+Note: Maps are currently fucked.
+
+
+
 # Crystal AP Tracker
 
 Archipelago Pokémon Crystal tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with Autotracking.
@@ -73,3 +99,6 @@ Forest | Ilex Forest
 
 ## User-Overrides
 You can adjust the aesthetic of certain aspects of this pack via user-overrides. For more information, please visit the [user-overrides branch](https://github.com/palex00/crystal-ap-tracker/tree/user-overrides).
+
+## AI Usage Declaration
+The Porting of the ER-mechanics from Stripes007's poptracker pack was done with AI.

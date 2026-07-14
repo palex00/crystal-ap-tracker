@@ -165,6 +165,20 @@ SLOT_CODES = {
         code = "mischief",
         mapping = MAP_TOGGLE
     },
+    -- Entrance randomization category toggles. RENAME the left-hand slot_data keys to match
+    -- your apworld's actual option names. Each maps onto its er_<cat> settings item
+    -- (0 = off, 1 = on); the er_<cat> watch then refreshes ER_CATEGORY_ENABLED. If your
+    -- slot_data sends booleans instead of 0/1, add [true]/[false] to MAP_TOGGLE.
+    randomize_town_exits   = { code = "er_town_exits",   mapping = MAP_TOGGLE },
+    randomize_dungeons     = { code = "er_dungeons",     mapping = MAP_TOGGLE },
+    randomize_caves        = { code = "er_caves",        mapping = MAP_TOGGLE },
+    randomize_holes        = { code = "er_holes",        mapping = MAP_TOGGLE },
+    randomize_gyms         = { code = "er_gyms",         mapping = MAP_TOGGLE },
+    randomize_pokecenters  = { code = "er_pokecenters",  mapping = MAP_TOGGLE },
+    randomize_pokemarts    = { code = "er_pokemarts",    mapping = MAP_TOGGLE },
+    randomize_houses       = { code = "er_houses",       mapping = MAP_TOGGLE },
+    randomize_single_warps = { code = "er_single_warps", mapping = MAP_TOGGLE },
+    randomize_special      = { code = "er_special",      mapping = MAP_TOGGLE },
     -- temp disabled
     --goal = {
     --    code = "goal",

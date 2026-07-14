@@ -5,18 +5,124 @@
             {
                 "title": "New Bark Town",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "NewBarkTown"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Town",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "NewBarkTown"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Elm's Lab",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ElmsLab"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Player's House 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PlayersHouse1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Player's House 2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PlayersHouse2F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Neighbor's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PlayersNeighborsHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Elm's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ElmsHouse"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Cherrygrove City",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "CherrygroveCity"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CherrygroveCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CherrygroveMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CherrygrovePokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CherrygroveGymSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Guide Gent's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GuideGentsHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Evolution Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CherrygroveEvolutionSpeechHouse"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -77,6 +183,51 @@
                                     }
                                 ]
                             }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Earl's Pokemon Academy",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EarlsPokemonAcademy"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Nickname Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletNicknameSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Kyle's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletKylesHouse"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -127,6 +278,51 @@
                                             ]
                                         }
                                     }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "AzaleaPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Charcoal Kiln",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CharcoalKiln"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "AzaleaMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Kurt's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "KurtsHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ilex Forest Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "IlexForestAzaleaGate"
                                 ]
                             }
                         }
@@ -232,6 +428,15 @@
                                                 "GoldenrodDeptStoreRoof"
                                             ]
                                         }
+                                    },
+                                    {
+                                        "title": "Elevator",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStoreElevator"
+                                            ]
+                                        }
                                     }
                                 ]
                             }
@@ -321,6 +526,87 @@
                                             ]
                                         }
                                     }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Bike Shop",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodBikeShop"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Happiness Rater",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodHappinessRater"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Bill's Family's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BillsFamilysHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Magnet Train Station",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodMagnetTrainStation"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Flower Shop",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodFlowerShop"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PP Speech House (yes, yes, the birds and the bees talk)",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodPPSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Name Rater",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodNameRater"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Game Corner",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodGameCorner"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodPokecenter1F"
                                 ]
                             }
                         }
@@ -473,6 +759,69 @@
                                     }
                                 ]
                             }
+                        },
+                        {
+                            "title": "Tin Tower Entrance Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakTinTowerEntrance"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Wise Trio's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "WiseTriosRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lugia Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakLugiaSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dance Theater",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "DanceTheater"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Itemfinder House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakItemfinderHouse"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -561,6 +910,69 @@
                                     }
                                 ]
                             }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivinePokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Tim's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineTimsHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Punishment Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivinePunishmentSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Good Rod House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineGoodRodHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Cafe",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineCafe"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Port Passage",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivinePortPassage"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -585,6 +997,60 @@
                                 "type": "map",
                                 "maps": [
                                     "CianwoodGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mania's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ManiasHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Pharmacy",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodPharmacy"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Photo Studio",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodPhotoStudio"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lugia Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodLugiaSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeSeer's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PokeSeersHouse"
                                 ]
                             }
                         }
@@ -648,6 +1114,33 @@
                                     }
                                 ]
                             }
+                        },
+                        {
+                            "title": "Gyarados Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MahoganyRedGyaradosSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MahoganyPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MahoganyMart1F"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -695,9 +1188,151 @@
                         {
                             "title": "Dragons Den",
                             "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "DragonsDen1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "DragonsDenB1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Dragon Shrine",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "DragonShrine"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dragon Speech House",
+                            "content": {
                                 "type": "map",
                                 "maps": [
-                                    "DragonsDenB1F"
+                                    "BlackthornDragonSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Emy's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BlackthornEmysHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BlackthornMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BlackthornPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Move Deleter's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MoveDeletersHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Indigo Plateau",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "IndigoPlateauPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Will's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "WillsRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Koga's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "KogasRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Bruno's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BrunosRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Karen's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "KarensRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lance's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LancesRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Hall of Fame",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "HallOfFame"
                                 ]
                             }
                         }
@@ -712,37 +1347,123 @@
             {
                 "title": "Route 29",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route29"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route29"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Route 46 Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route29Route46Gate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 30",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route30"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route30"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Berry House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route30BerryHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mr. Pokémon's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MrPokemonsHouse"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 31",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route31"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route31"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Violet Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route31VioletGate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 32",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route32North",
-                        "Route32South"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route32North",
+                                    "Route32South"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ruins of Alph Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route32RuinsOfAlphGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route32Pokecenter1F"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -758,27 +1479,105 @@
             {
                 "title": "Route 34",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route34"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route34"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ilex Forest Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route34IlexForestGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Day Care",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "DayCare"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 35",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route35"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route35"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Goldenrod Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route35GoldenrodGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "National Park Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route35NationalParkGate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 36",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route36"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route36"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ruins of Alph Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route36RuinsOfAlphGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "National Park Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route36NationalParkGate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -794,18 +1593,61 @@
             {
                 "title": "Route 38",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route38"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route38"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ecruteak Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route38EcruteakGate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 39",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route39"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route39"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Barn",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route39Barn"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Farmhouse",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route39Farmhouse"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -830,27 +1672,96 @@
             {
                 "title": "Route 42",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route42"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route42"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ecruteak Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route42EcruteakGate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 43",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route43"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route43"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mahogany Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route43MahoganyGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Scam Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route43Gate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Lake of Rage",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "LakeOfRage"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Outside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LakeOfRage"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Hidden Power House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LakeOfRageHiddenPowerHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Magikarp House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LakeOfRageMagikarpHouse"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -885,37 +1796,141 @@
             {
                 "title": "Route 23",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route23"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Vanilla",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route23"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Restored",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route23Restored"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 26",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route26South",
-                        "Route26North"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route26South",
+                                    "Route26North"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Heal House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route26HealHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Day of Week Sibling's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "DayOfWeekSiblingsHouse"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 27",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route27"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route27"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Sandstorm House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route27SandstormHouse"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 28",
                 "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route28"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Outside Silver Cave",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilverCaveOutside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilverCavePokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Steel Wing House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route28SteelWingHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Victory Road Gate",
+                "content": {
                     "type": "map",
                     "maps": [
-                        "Route28"
+                        "VictoryRoadGate"
                     ]
                 }
             }
@@ -974,7 +1989,7 @@
                             }
                         },
                         {
-                            "title": "Kabuto Room",
+                            "title": "Kabuto Item Room",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -983,7 +1998,7 @@
                             }
                         },
                         {
-                            "title": "Omanyte Room",
+                            "title": "Omanyte Item Room",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -992,7 +2007,7 @@
                             }
                         },
                         {
-                            "title": "Aerodactyl Room",
+                            "title": "Aerodactyl Item Room",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1001,11 +2016,92 @@
                             }
                         },
                         {
-                            "title": "Ho-Oh Room",
+                            "title": "Ho-Oh Item Room",
                             "content": {
                                 "type": "map",
                                 "maps": [
                                     "RuinsOfAlphHoOhItemRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ho-Oh Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphHoOhChamber"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Kabuto Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphKabutoChamber"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Omanyte Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphOmanyteChamber"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Aerodactyl Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphAerodactylChamber"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Research Center",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphResearchCenter"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ho-Oh Word Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphHoOhWordRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Kabuto Word Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphKabutoWordRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Omanyte Word Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphOmanyteWordRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Aerodactyl Word Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphAerodactylWordRoom"
                                 ]
                             }
                         }
@@ -1241,15 +2337,6 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Outside",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "SilverCaveOutside"
-                                ]
-                            }
-                        },
-                        {
                             "title": "1F",
                             "content": {
                                 "type": "map",
@@ -1274,6 +2361,50 @@
                                 "type": "map",
                                 "maps": [
                                     "SilverCaveRoom3"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Flooded Mine",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "FloodedMine"
+                    ]
+                }
+            },
+            {
+                "title": "Battle Tower",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BattleTower1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route40BattleTowerGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Outside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BattleTowerOutside"
                                 ]
                             }
                         }
@@ -1416,9 +2547,53 @@
             {
                 "title": "Pallet Town",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "PalletTown"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Town",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PalletTown"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Red's House 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RedsHouse1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Red's House 2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RedsHouse2F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Blue's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BluesHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Oak's Lab",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OaksLab"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -1442,6 +2617,51 @@
                                 "type": "map",
                                 "maps": [
                                     "ViridianGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Nickname Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ViridianNicknameSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Trainer House 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "TrainerHouse1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Trainer House B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "TrainerHouseB1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ViridianMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ViridianPokecenter1F"
                                 ]
                             }
                         }
@@ -1470,6 +2690,42 @@
                                     "PewterGym"
                                 ]
                             }
+                        },
+                        {
+                            "title": "Nidoran Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterNidoranSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Snooze Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterSnoozeSpeechHouse"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -1496,6 +2752,51 @@
                                     "CeruleanGym"
                                 ]
                             }
+                        },
+                        {
+                            "title": "Badge Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanGymBadgeSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Police Station",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanPoliceStation"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Trade Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanTradeSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanMart"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -1520,6 +2821,69 @@
                                 "type": "map",
                                 "maps": [
                                     "VermilionGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fishing Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionFishingSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Pokemon Fan Club",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PokemonFanClub"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Magnet Train Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionMagnetTrainSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Diglett's Cave Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionDiglettsCaveSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Port Passage",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionPortPassage"
                                 ]
                             }
                         }
@@ -1557,6 +2921,157 @@
                                     "CeladonGym"
                                 ]
                             }
+                        },
+                        {
+                            "title": "Dept. Store",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "4F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore4F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "5F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore5F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "6F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore6F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Elevator",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStoreElevator"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mansion",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonMansion1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonMansion2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonMansion3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Roof",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonMansionRoof"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Penthouse",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonMansionRoofHouse"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Game Corner",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonGameCorner"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Game Corner Prize Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonGameCornerPrizeRoom"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -1583,6 +3098,78 @@
                                     "SaffronGym"
                                 ]
                             }
+                        },
+                        {
+                            "title": "Fighting Dojo",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FightingDojo"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SaffronMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SaffronPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mr. Psychic's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MrPsychicsHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Magnet Train Station",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SaffronMagnetTrainStation"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Silph Co",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilphCo1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Copycat's House 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CopycatsHouse1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Copycat's House 2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CopycatsHouse2F"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -1590,9 +3177,80 @@
             {
                 "title": "Lavender Town",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "LavenderTown"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Town",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavenderTown"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavenderPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mr. Fuji's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MrFujisHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lavender Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavenderSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Name Rater",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavenderNameRater"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavenderMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Soul House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SoulHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Radio Tower",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavRadioTower1F"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -1618,6 +3276,51 @@
                                     "FuchsiaGym"
                                 ]
                             }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FuchsiaMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Safari Zone Main Office",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SafariZoneMainOffice"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Bill's Brother's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BillsBrothersHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FuchsiaPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Safari Zone Warden's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SafariZoneWardensHome"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -1628,7 +3331,7 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Cinnabar Island",
+                            "title": "Island",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -1637,11 +3340,11 @@
                             }
                         },
                         {
-                            "title": "Seafoam Gym",
+                            "title": "Center",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "SeafoamGym"
+                                    "CinnabarPokecenter1F"
                                 ]
                             }
                         }
@@ -1665,9 +3368,35 @@
             {
                 "title": "Route 2",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route2"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route2"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Nugget House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route2NuggetHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route2Gate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -1692,36 +3421,149 @@
             {
                 "title": "Route 5",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route5"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route5"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Underground Path Entrance",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route5UndergroundPathEntrance"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Saffron Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route5SaffronGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Cleanse Tag House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route5CleanseTagHouse"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 6",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route6"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route6"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Saffron Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route6SaffronGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Underground Path Entrance",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route6UndergroundPathEntrance"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 7",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route7"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route7"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Saffron Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route7SaffronGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Underground Path Entrance",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route7UndergroundPathEntrance"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 8",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route8"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route8"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Saffron Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route8SaffronGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Underground Path Entrance",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route8UndergroundPathEntrance"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -1737,9 +3579,26 @@
             {
                 "title": "Route 10",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route10"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route10"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route10Pokecenter1F"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -1755,10 +3614,27 @@
             {
                 "title": "Route 12",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route12North",
-                        "Route12South"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route12North",
+                                    "Route12South"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Super Rod House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route12SuperRodHouse"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -1783,27 +3659,87 @@
             {
                 "title": "Route 15",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route15"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route15"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fuchsia Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route15FuchsiaGate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 16",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route16"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route16"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fuchsia Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route16FuchsiaSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route16Gate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 17",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route17"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route17"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Route 18 Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route17Route18Gate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -1819,18 +3755,52 @@
             {
                 "title": "Route 19",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route19"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route19"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fuchsia Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route19FuchsiaGate"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
             {
                 "title": "Route 20",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route20"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route20"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Seafoam Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SeafoamGym"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -1864,9 +3834,26 @@
             {
                 "title": "Route 25",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "Route25"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route25"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Bill's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BillsHouse"
+                                ]
+                            }
+                        }
                     ]
                 }
             }
@@ -1922,9 +3909,26 @@
             {
                 "title": "Underground Path",
                 "content": {
-                    "type": "map",
-                    "maps": [
-                        "UndergroundPath"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "North-South",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "UndergroundPath"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "East-West",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EastWestUnderground"
+                                ]
+                            }
+                        }
                     ]
                 }
             },
@@ -1948,6 +3952,15 @@
                                 "type": "map",
                                 "maps": [
                                     "MountMoonSquare"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gift Shop",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMoonGiftShop"
                                 ]
                             }
                         }
