@@ -25,6 +25,12 @@ ScriptHost:LoadScript("scripts/logic/logic_helpers.lua")
 ScriptHost:LoadScript("scripts/logic/canreach.lua")
 ScriptHost:LoadScript("scripts/logic/regions/region_definitions.lua")
 ScriptHost:LoadScript("scripts/logic/regions/connections.lua")
+-- Dark areas wrap the edges declared above, so they must come after connections.lua -- and
+-- BEFORE check_leafs.lua, because they wrap every exit of a dark region and the check leaves
+-- are exits too. The leaves are deliberately left ungated here; the area gate is ANDed onto
+-- those locations in their JSON instead. See connections_darkareas.lua.
+ScriptHost:LoadScript("scripts/logic/regions/connections_darkareas.lua")
+ScriptHost:LoadScript("scripts/logic/regions/check_leafs.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_registry.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_item.lua")
 createEntrances()

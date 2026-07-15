@@ -537,6 +537,7 @@ LIST_CODES = {
             ["Dark Cave"]            = "dark_darkcave",
             ["Digletts Cave"]        = "dark_diglettscave",
             ["Dragons Den"]          = "dark_dragonsden",
+            ["Flooded Mine"]         = "dark_floodedmine",
             ["Goldenrod Underground"]= "dark_goldenrodunderground",
             ["Ice Path"]             = "dark_icepath",
             ["Ilex Forest"]          = "dark_ilexforest",

@@ -9717,7 +9717,7 @@
                         "chest_opened_img": "images/trainers/scientist_bw.png"
                     },
                     {
-                        "name": "Rocket HQ B1F - Item besides Computer",
+                        "name": "Rocket HQ B1F - Item by Computer",
                         "access_rules": [
                             "@JohtoKanto/Mahogany Town/Town, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
@@ -10293,7 +10293,7 @@
                             "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "POKEDEX, EVENT_CLEARED_ROCKET_HIDEOUT"
+                            "POKEDEX, EVENT_CLEARED_ROCKET_HIDEOUT, ^$magikarp"
                         ],
                         "chest_unopened_img": "images/gift/blue_fishing_guru.png",
                         "chest_opened_img": "images/gift/blue_fishing_guru_open.png"
@@ -12411,14 +12411,11 @@
                 ],
                 "sections": [
                     {
-                        "name": "Route 23 Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "name": "Visit Indigo Plateau",
+                        "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
+                        "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
-                        ],
-                        "access_rules": [
-                            "^$unownsign|Route23IndigoPlateauSign"
+                            "show_items, randomize_fly_unlocks_true"
                         ]
                     },
                     {
@@ -12529,6 +12526,77 @@
                         "map": "kanto_overview",
                         "x": 20,
                         "y": 20,
+                        "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "Route 23",
+                "visibility_rules": [
+                    ""
+                ],
+                "sections": [
+                    {
+                        "name": "Route 23 Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_signs, goal_unown"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route23IndigoPlateauSign"
+                        ]
+                    },
+                    {
+                        "name": "Grass",
+                        "item_count": 63,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_grass, grasssanity_full"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    },
+                    {
+                        "name": "Single Grass",
+                        "item_count": 1,
+                        "clear_as_group": true,
+                        "chest_unopened_img": "images/other/grass.png",
+                        "chest_opened_img": "images/other/grass_bw.png",
+                        "visibility_rules": [
+                            "show_grass, grasssanity_single"
+                        ],
+                        "access_rules": [
+                            "$can_cut_johto"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 164,
+                        "y": 28,
+                        "size": 6
+                    },
+                    {
+                        "map": "johto_overview",
+                        "x": 164,
+                        "y": 28,
+                        "size": 6
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 20,
+                        "y": 148,
+                        "size": 6
+                    },
+                    {
+                        "map": "kanto_overview",
+                        "x": 20,
+                        "y": 28,
                         "size": 6
                     }
                 ]

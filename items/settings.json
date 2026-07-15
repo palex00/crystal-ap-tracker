@@ -1555,6 +1555,28 @@
         ]
     },
     {
+        "name": "Dark Area: Flooded Mine",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Flooded Mine is lit",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "dark_floodedmine, dark_floodedmine_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Flooded Mine is dark",
+                "img": "/images/placeholder.png",
+                "codes": "dark_floodedmine, dark_floodedmine_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Dark Area: Dark Cave",
         "type": "progressive",
         "loop": true,
@@ -2405,6 +2427,77 @@
                 "name": "Restoring the Power clears the landslide",
                 "img": "/images/settings/landslide_condition_power.png",
                 "codes": "south_kanto_condition, south_kanto_condition_power",
+                "inherit_codes": false
+            }
+        ]
+    },
+
+    // ========================================================================
+    // TO BE COMPLETED LATER
+    // Referenced by scripts/logic/regions/*.lua. Placeholder art, and not yet
+    // wired up: no slot_data read in onClear, no watch in init.lua, not placed
+    // in any layout.
+    // ========================================================================
+
+    {
+        "name": "Vanilla Event Chains: Misty",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Misty's event chain is not required",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "vanilla_chain_misty, vanilla_chain_misty_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Misty's event chain is vanilla",
+                "img": "/images/placeholder.png",
+                "codes": "vanilla_chain_misty, vanilla_chain_misty_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Vanilla Event Chains: Jasmine",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Jasmine's event chain is not required",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "vanilla_chain_jasmine, vanilla_chain_jasmine_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Jasmine's event chain is vanilla",
+                "img": "/images/placeholder.png",
+                "codes": "vanilla_chain_jasmine, vanilla_chain_jasmine_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Vanilla Event Chains: Copycat",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Copycat's event chain is not required",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "vanilla_chain_copycat, vanilla_chain_copycat_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Copycat's event chain is vanilla",
+                "img": "/images/placeholder.png",
+                "codes": "vanilla_chain_copycat, vanilla_chain_copycat_on",
                 "inherit_codes": false
             }
         ]

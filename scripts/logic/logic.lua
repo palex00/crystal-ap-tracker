@@ -211,6 +211,16 @@ function mm_rocksmash()
     return (has("TM_ROCK_SMASH") or has("mount_mortar_access_vanilla"))
 end
 
+-- Generic Rock Smash. Distinct from mm_rocksmash(), which also passes when Mt. Mortar is
+-- set to vanilla access.
+function can_rock_smash()
+    return has("TM_ROCK_SMASH")
+end
+
+function can_headbutt()
+    return has("TM_HEAD_BUTT")
+end
+
 function route42_passage()
     if has("route_42_access_vanilla") then
         return can_surf_johto()
@@ -272,7 +282,7 @@ function r32_guy()
 end
 
 function tea(direction)
-  return (has("coffee_"..direction) and has("tea"))
+  return (has("coffee_"..direction) and has("TEA"))
   or not has("coffee_"..direction)
 end
 
@@ -343,6 +353,21 @@ function victory_road_access()
     end
 end
 
+-- DUMMY. The apworld gates the Victory Road Gate on a badge/gym COUNT
+-- (VictoryRoadRequirement + victory_road_count), which the pack does not model yet: it needs
+-- its own BadgesGymsRequirement custom item plus an ap_helper slot mapping, the way
+-- e4_requirement / mt_silver_requirement / route_44_requirement do. Until then this always
+-- passes, so the gate is not enforced.
+-- NOTE: unrelated to victory_road_access() above, which is the Strength-boulder gate inside
+-- Victory Road itself.
+function has_victory_road_requirement()
+    return true
+end
+
+function has_pokedex()
+    return has("POKEDEX")
+end
+
 function dark(area)
     if has("dark_"..area.."_false") then
         return AccessibilityLevel.Normal
@@ -389,6 +414,11 @@ function flash_badge()
 end
 
 function kantogymlock()
+    -- The gate only exists at all when lock_kanto_gyms is on.
+    if not has("lock_kanto_gyms_true") then
+        return AccessibilityLevel.Normal
+    end
+
     local snorlax = Tracker:FindObjectForCode("@JohtoKanto/Vermilion City/City").AccessibilityLevel
     local hooh = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower/9F - Item").AccessibilityLevel
     local lugia = Tracker:FindObjectForCode("@JohtoKanto/Whirl Islands/B2F - North Item").AccessibilityLevel
@@ -396,22 +426,15 @@ function kantogymlock()
     local silvercave = Tracker:FindObjectForCode("@JohtoKanto/Silver Cave").AccessibilityLevel
     local victoryroad = Tracker:FindObjectForCode("@JohtoKanto/Victory Road").AccessibilityLevel
 
-    if has("lock_kanto_gyms_false") then
+    if (snorlax == AccessibilityLevel.Normal and clear_snorlax())
+    or hooh == AccessibilityLevel.Normal
+    or (lugia == AccessibilityLevel.Normal and has("SILVER_WING"))
+    or suicune == AccessibilityLevel.Normal
+    or silvercave == AccessibilityLevel.Normal
+    or victoryroad == AccessibilityLevel.Normal then
         return AccessibilityLevel.Normal
     end
-
-    if has("lock_kanto_gyms_true") then
-        if (snorlax == AccessibilityLevel.Normal and clear_snorlax())
-        or hooh == AccessibilityLevel.Normal
-        or (lugia == AccessibilityLevel.Normal and has("SILVER_WING"))
-        or suicune == AccessibilityLevel.Normal
-        or silvercave == AccessibilityLevel.Normal
-        or victoryroad == AccessibilityLevel.Normal then
-            return AccessibilityLevel.Normal
-        else
-            return AccessibilityLevel.SequenceBreak
-        end
-    end
+    return AccessibilityLevel.SequenceBreak
 end
 
 function boat_access()
@@ -495,6 +518,16 @@ function phonecall()
     elseif has("randomize_phone_call_items_simple") then
         return phonecard()
     end
+    -- randomize_phone_call_items_off: the phone call items are not in the pool at all.
+    -- Explicit None rather than falling off the end -- a nil was already treated as None by
+    -- PopTracker, but Node:discover logs a warning for every nil a rule returns.
+    return AccessibilityLevel.None
+end
+
+-- Kanto phone calls only work once the power is back on.
+function can_phone_call_power()
+    return math.min(phonecall() or AccessibilityLevel.None,
+        has("EVENT_RESTORED_POWER_TO_KANTO") and AccessibilityLevel.Normal or AccessibilityLevel.None)
 end
 
 function request_pokemon()
@@ -553,5 +586,13 @@ function landslide_21()
         return AccessibilityLevel.Normal
     else
         return landslide_clear()
+    end
+end
+
+function magikarp()
+    if has("magikarp") then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.Inspect
     end
 end
