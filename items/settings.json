@@ -1558,7 +1558,7 @@
         "name": "Dark Area: Flooded Mine",
         "type": "progressive",
         "loop": true,
-        "initial_stage_idx": 1,
+        "initial_stage_idx": 0,
         "allow_disabled": false,
         "stages": [
             {
@@ -2498,6 +2498,50 @@
                 "name": "Copycat's event chain is vanilla",
                 "img": "/images/placeholder.png",
                 "codes": "vanilla_chain_copycat, vanilla_chain_copycat_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Flooded Mine",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Flooded Mine does not exist",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "flooded_mine, flooded_mine_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Flooded Mine exists",
+                "img": "/images/placeholder.png",
+                "codes": "flooded_mine, flooded_mine_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Restored Route 23",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 23 is vanilla",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "route_23_restored, route_23_restored_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Flooded Mine exists",
+                "img": "/images/placeholder.png",
+                "codes": "route_23_restored, route_23_restored_on",
                 "inherit_codes": false
             }
         ]

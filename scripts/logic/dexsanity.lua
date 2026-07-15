@@ -28,7 +28,7 @@ EVOLUTION_METHOD_MAP = {
 }
 
 function breeding()
-    local daycare = Tracker:FindObjectForCode("@JohtoKanto/Route 34").AccessibilityLevel
+    local daycare = CanReach("REGION_ROUTE_34")
     
     if (daycare == 0) or has("breeding_logic_off_hard") then
         return AccessibilityLevel.None
@@ -64,8 +64,8 @@ function evolve(req_level)
 end
 
 function evolve_friend()
-    local daisy = Tracker:FindObjectForCode("@JohtoKanto/Pallet Town").AccessibilityLevel
-    local massage = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod Underground/Item").AccessibilityLevel
+    local daisy = CanReach("REGION_PALLET_TOWN")
+    local massage = CanReach("REGION_GOLDENROD_UNDERGROUND")
     if has("evomethod_happiness_on") and (daisy == 6 or massage == 6) then
         return AccessibilityLevel.Normal
     else
@@ -82,8 +82,8 @@ function evolve_friend_old()
 end
 
 function evolve_item()
-    local goldenrod = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
-    local celadon = Tracker:FindObjectForCode("@JohtoKanto/Celadon City").AccessibilityLevel
+    local goldenrod = CanReach("REGION_GOLDENROD_CITY")
+    local celadon = CanReach("REGION_CELADON_CITY")
     if has("evomethod_useitem_on") and (goldenrod == 6 or celadon == 6) then
         return AccessibilityLevel.Normal
     else
@@ -101,8 +101,8 @@ end
        
 function evolve_tyrogue()
     local current_level = getDigits("result_digit1", "result_digit2")
-    local goldenrod = Tracker:FindObjectForCode("@JohtoKanto/Goldenrod City").AccessibilityLevel
-    local celadon = Tracker:FindObjectForCode("@JohtoKanto/Celadon City").AccessibilityLevel
+    local goldenrod = CanReach("REGION_GOLDENROD_CITY")
+    local celadon = CanReach("REGION_CELADON_CITY")
     
     if has("evomethod_tyrogue_on") and (20 <= current_level) and (goldenrod == 6 or celadon == 6) then
         return AccessibilityLevel.Normal

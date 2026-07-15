@@ -18,7 +18,7 @@
 -- LOCATIONS: rules.py also adds the gate to every location inside these regions. That is not
 -- done here, because arriving through a shuffled door traverses no gated edge. It is handled
 -- on the location side in the JSON instead, by ANDing the area gate onto the section:
---     "access_rules": ["$CanReach|REGION_UNION_CAVE_1F,$dark|unioncave"]
+--     "access_rules": ["^$CanReach|REGION_UNION_CAVE_1F, ^$dark|unioncave"]
 --
 -- Area keys must match the dark_<area>_true / dark_<area>_false codes in items/settings.json.
 

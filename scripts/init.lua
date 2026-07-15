@@ -25,10 +25,19 @@ ScriptHost:LoadScript("scripts/logic/logic_helpers.lua")
 ScriptHost:LoadScript("scripts/logic/canreach.lua")
 ScriptHost:LoadScript("scripts/logic/regions/region_definitions.lua")
 ScriptHost:LoadScript("scripts/logic/regions/connections.lua")
+-- Encounter leaves load BEFORE the dark pass ON PURPOSE -- the opposite of check_leafs.lua
+-- below. An encounter leaf is shared: one table is attached from every region that holds it,
+-- and some tables straddle dark and lit regions (FISHING_Ocean has 1 dark attach point and 23
+-- lit ones). A per-section $dark in the JSON would then demand Flash to fish the Ocean
+-- anywhere, so the gate has to sit on the individual attach EDGE instead -- which is exactly
+-- what gate_region_exits does to every outgoing edge of a dark region. Loading here lets the
+-- dark attach points get gated and leaves the lit ones alone.
+ScriptHost:LoadScript("scripts/logic/regions/encounter_leafs.lua")
 -- Dark areas wrap the edges declared above, so they must come after connections.lua -- and
 -- BEFORE check_leafs.lua, because they wrap every exit of a dark region and the check leaves
--- are exits too. The leaves are deliberately left ungated here; the area gate is ANDed onto
--- those locations in their JSON instead. See connections_darkareas.lua.
+-- are exits too. Those leaves are deliberately left ungated here; each is attached from a
+-- single region, so the area gate is ANDed onto the location in its JSON instead.
+-- See connections_darkareas.lua.
 ScriptHost:LoadScript("scripts/logic/regions/connections_darkareas.lua")
 ScriptHost:LoadScript("scripts/logic/regions/check_leafs.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_registry.lua")
@@ -53,7 +62,7 @@ Tracker:AddMaps("maps/victory_road_vanilla.json")
 Tracker:AddMaps("maps/maps_johto_and_kanto.json")
 
 -- Locations
-Tracker:AddLocations("locations/locations.json")
+Tracker:AddLocations("locations/locations.jsonc")
 Tracker:AddLocations("locations/dungeons.json")
 Tracker:AddLocations("locations/dexsanity.json")
 Tracker:AddLocations("locations/pokedex.json")

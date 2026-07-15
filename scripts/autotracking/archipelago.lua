@@ -843,7 +843,7 @@ end
 
 function snorlax_access()
     if snorlax_code == true then
-        return Tracker:FindObjectForCode("@JohtoKanto/Vermilion City/City").AccessibilityLevel
+        return CanReach("REGION_VERMILION_CITY")
     else
         return false
     end

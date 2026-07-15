@@ -419,12 +419,12 @@ function kantogymlock()
         return AccessibilityLevel.Normal
     end
 
-    local snorlax = Tracker:FindObjectForCode("@JohtoKanto/Vermilion City/City").AccessibilityLevel
-    local hooh = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower/9F - Item").AccessibilityLevel
-    local lugia = Tracker:FindObjectForCode("@JohtoKanto/Whirl Islands/B2F - North Item").AccessibilityLevel
-    local suicune = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower").AccessibilityLevel
-    local silvercave = Tracker:FindObjectForCode("@JohtoKanto/Silver Cave").AccessibilityLevel
-    local victoryroad = Tracker:FindObjectForCode("@JohtoKanto/Victory Road").AccessibilityLevel
+    local snorlax = CanReach("REGION_VERMILION_CITY")
+    local hooh = CanReach("REGION_TIN_TOWER_9F:NORTH")
+    local lugia = CanReach("REGION_WHIRL_ISLAND_B2F:NORTH")
+    local suicune = CanReach("REGION_TIN_TOWER_1F")
+    local silvercave = CanReach("REGION_SILVER_CAVE_OUTSIDE")
+    local victoryroad = CanReach("REGION_VICTORY_ROAD:1F:ENTRANCE")
 
     if (snorlax == AccessibilityLevel.Normal and clear_snorlax())
     or hooh == AccessibilityLevel.Normal
@@ -510,8 +510,9 @@ end
 
 function phonecall()
     if has("randomize_phone_call_items_vanilla") then
-        if Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel ~= AccessibilityLevel.None then
-            return math.min(Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel, phonecard())
+        local newbark = CanReach("REGION_NEW_BARK_TOWN")
+        if newbark ~= AccessibilityLevel.None then
+            return math.min(newbark, phonecard())
         else
             return phonecard()
         end
@@ -567,7 +568,7 @@ function landslide_clear()
     if has("south_kanto_condition_power") and has("EVENT_RESTORED_POWER_TO_KANTO") then
         return AccessibilityLevel.Normal
     elseif has("south_kanto_condition_south") then
-        return Tracker:FindObjectForCode("@JohtoKanto/Cinnabar Island").AccessibilityLevel
+        return CanReach("REGION_CINNABAR_ISLAND")
     else
         return AccessibilityLevel.None
     end

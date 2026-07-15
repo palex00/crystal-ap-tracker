@@ -5,9 +5,11 @@
 -- A leaf is a dead-end node named exactly after the AP location const, attached to the region
 -- that holds it (regions.json "locations" / "events"). It is not a transition and never shows
 -- in a route. Bind one from a location JSON with:
---     "access_rules": ["$CanReach|HM01_CUT"]
+--     "access_rules": ["^$CanReach|HM01_CUT"]
 -- A location whose only requirement is being in its region needs NO leaf -- point its JSON at
--- the region instead: "$CanReach|REGION_ROUTE_35".
+-- the region instead: "^$CanReach|REGION_ROUTE_35".
+-- The leading ^ is required: CanReach returns an AccessibilityLevel, and a bare $rule is
+-- coerced to a bool, which would silently promote Inspect/SequenceBreak to fully reachable.
 --
 -- Loaded AFTER connections_darkareas.lua, so the dark-area pass does not wrap these: the
 -- area gate is applied on the location side in the JSON instead. See connections_darkareas.lua.

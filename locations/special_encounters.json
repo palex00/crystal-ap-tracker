@@ -1,4 +1,13 @@
 [
+    // Encounter sections (^$land_encounter / ^$surf_encounter_* / ^$fishing_* / ^$headbutting
+    // / ^$rocksmash_encounter) deliberately carry NO ^$dark, even in dark areas like Rock
+    // Tunnel. It is not missing: their ^$CanReach points at a shared per-table leaf in
+    // scripts/logic/regions/encounter_leafs.lua, and that file loads BEFORE
+    // connections_darkareas.lua, so gate_region_exits ANDs the Flash gate onto each attach
+    // EDGE individually. A ^$dark here would be wrong for the 6 tables that straddle dark and
+    // lit regions -- FISHING_Ocean has 1 dark attach point and 23 lit ones, so a section-level
+    // gate would demand Flash to fish at Olivine. Change DARK_AREA_REGIONS and every encounter
+    // follows automatically; a copy of the gate here would just go stale.
     {
         "name": "Special Encounters",
         "visibility_rules": [
@@ -21,13 +30,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Cherrygrove City",
-                            "@JohtoKanto/Cianwood City",
-                            "@JohtoKanto/Olivine City",
-                            "@JohtoKanto/Route 19/Sea",
-                            "@JohtoKanto/Route 34",
-                            "@JohtoKanto/Route 40",
-                            "@JohtoKanto/Union Cave, $can_surf_johto"
+                            "^$CanReach|FISHING_Shore"
                         ]
                     },
                     {
@@ -35,17 +38,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Cinnabar Island",
-                            "@JohtoKanto/New Bark Town",
-                            "@JohtoKanto/Olivine City",
-                            "@JohtoKanto/Pallet Town",
-                            "@JohtoKanto/Route 21/North",
-                            "@JohtoKanto/Route 21/South",
-                            "@JohtoKanto/Route 20",
-                            "@JohtoKanto/Route 26",
-                            "@JohtoKanto/Route 27/Post-Waterfall",
-                            "@JohtoKanto/Route 41",
-                            "@JohtoKanto/Vermilion City/City"
+                            "^$CanReach|FISHING_Ocean"
                         ]
                     },
                     {
@@ -53,22 +46,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
-                            "@JohtoKanto/Route 45, ^$dark|darkcave",
-                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall",
-                            "@JohtoKanto/Mount Mortar/2F_outside",
-                            "@JohtoKanto/Mount Mortar/2F_inside",
-                            "@JohtoKanto/Mount Mortar/1F_outside_center",
-                            "@JohtoKanto/Route 10/Top",
-                            "@JohtoKanto/Route 24",
-                            "@JohtoKanto/Route 25",
-                            "@JohtoKanto/Route 42/East",
-                            "@JohtoKanto/Route 42/West",
-                            "@JohtoKanto/Route 9",
-                            "@JohtoKanto/Silver Cave, ^$dark|silvercave",
-                            "@JohtoKanto/Slowpoke Well",
-                            "@JohtoKanto/Route 27/Tohjo Falls - Item",
-                            "@JohtoKanto/Union Cave"
+                            "^$CanReach|FISHING_Lake"
                         ]
                     },
                     {
@@ -76,21 +54,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City",
-                            "@JohtoKanto/Ecruteak City",
-                            "@JohtoKanto/Ilex Forest/Post-Tree",
-                            "@JohtoKanto/Route 22",
-                            "@JohtoKanto/Route 28",
-                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
-                            "@JohtoKanto/Route 31",
-                            "@JohtoKanto/Route 35",
-                            "@JohtoKanto/Route 43",
-                            "@JohtoKanto/Route 44",
-                            "@JohtoKanto/Route 6",
-                            "@JohtoKanto/Ruins of Alph",
-                            "@JohtoKanto/Silver Cave",
-                            "@JohtoKanto/Violet City",
-                            "@JohtoKanto/Viridian City"
+                            "^$CanReach|FISHING_Pond"
                         ]
                     },
                     {
@@ -98,7 +62,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
+                            "^$CanReach|FISHING_Dratini"
                         ]
                     },
                     {
@@ -106,8 +70,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Lake of Rage",
-                            "@JohtoKanto/Fuchsia City"
+                            "^$CanReach|FISHING_Gyarados"
                         ]
                     },
                     {
@@ -115,7 +78,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Route 45"
+                            "^$CanReach|FISHING_Dratini_2"
                         ]
                     },
                     {
@@ -123,7 +86,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Whirl Islands, ^$dark|whirlislands"
+                            "^$CanReach|FISHING_WhirlIslands"
                         ]
                     },
                     {
@@ -131,10 +94,7 @@
                         "clear_as_group": false,
                         "item_count": 3,
                         "access_rules": [
-                            "@JohtoKanto/Route 12/North",
-                            "@JohtoKanto/Route 12/South",
-                            "@JohtoKanto/Route 13",
-                            "@JohtoKanto/Route 32/Post-Guy"
+                            "^$CanReach|FISHING_Qwilfish"
                         ]
                     }
                 ],
@@ -181,13 +141,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Cherrygrove City",
-                            "@JohtoKanto/Cianwood City",
-                            "@JohtoKanto/Olivine City",
-                            "@JohtoKanto/Route 19/Sea",
-                            "@JohtoKanto/Route 34",
-                            "@JohtoKanto/Route 40",
-                            "@JohtoKanto/Union Cave, $can_surf_johto"
+                            "^$CanReach|FISHING_Shore"
                         ]
                     },
                     {
@@ -195,17 +149,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Cinnabar Island",
-                            "@JohtoKanto/New Bark Town",
-                            "@JohtoKanto/Olivine City",
-                            "@JohtoKanto/Pallet Town",
-                            "@JohtoKanto/Route 21/North",
-                            "@JohtoKanto/Route 21/South",
-                            "@JohtoKanto/Route 20",
-                            "@JohtoKanto/Route 26",
-                            "@JohtoKanto/Route 27/Post-Waterfall",
-                            "@JohtoKanto/Route 41",
-                            "@JohtoKanto/Vermilion City/City"
+                            "^$CanReach|FISHING_Ocean"
                         ]
                     },
                     {
@@ -213,22 +157,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
-                            "@JohtoKanto/Route 45, ^$dark|darkcave",
-                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall",
-                            "@JohtoKanto/Mount Mortar/2F_outside",
-                            "@JohtoKanto/Mount Mortar/2F_inside",
-                            "@JohtoKanto/Mount Mortar/1F_outside_center",
-                            "@JohtoKanto/Route 10/Top",
-                            "@JohtoKanto/Route 24",
-                            "@JohtoKanto/Route 25",
-                            "@JohtoKanto/Route 42/East",
-                            "@JohtoKanto/Route 42/West",
-                            "@JohtoKanto/Route 9",
-                            "@JohtoKanto/Silver Cave, ^$dark|silvercave",
-                            "@JohtoKanto/Slowpoke Well",
-                            "@JohtoKanto/Route 27/Tohjo Falls - Item",
-                            "@JohtoKanto/Union Cave"
+                            "^$CanReach|FISHING_Lake"
                         ]
                     },
                     {
@@ -236,21 +165,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City",
-                            "@JohtoKanto/Ecruteak City",
-                            "@JohtoKanto/Ilex Forest/Post-Tree",
-                            "@JohtoKanto/Route 22",
-                            "@JohtoKanto/Route 28",
-                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
-                            "@JohtoKanto/Route 31",
-                            "@JohtoKanto/Route 35",
-                            "@JohtoKanto/Route 43",
-                            "@JohtoKanto/Route 44",
-                            "@JohtoKanto/Route 6",
-                            "@JohtoKanto/Ruins of Alph",
-                            "@JohtoKanto/Silver Cave",
-                            "@JohtoKanto/Violet City",
-                            "@JohtoKanto/Viridian City"
+                            "^$CanReach|FISHING_Pond"
                         ]
                     },
                     {
@@ -258,7 +173,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
+                            "^$CanReach|FISHING_Dratini"
                         ]
                     },
                     {
@@ -266,8 +181,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Lake of Rage",
-                            "@JohtoKanto/Fuchsia City"
+                            "^$CanReach|FISHING_Gyarados"
                         ]
                     },
                     {
@@ -275,7 +189,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Route 45"
+                            "^$CanReach|FISHING_Dratini_2"
                         ]
                     },
                     {
@@ -283,7 +197,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Whirl Islands, ^$dark|whirlislands"
+                            "^$CanReach|FISHING_WhirlIslands"
                         ]
                     },
                     {
@@ -291,10 +205,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Route 12/North",
-                            "@JohtoKanto/Route 12/South",
-                            "@JohtoKanto/Route 13",
-                            "@JohtoKanto/Route 32/Post-Guy"
+                            "^$CanReach|FISHING_Qwilfish"
                         ]
                     }
                 ],
@@ -341,13 +252,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Cherrygrove City",
-                            "@JohtoKanto/Cianwood City",
-                            "@JohtoKanto/Olivine City",
-                            "@JohtoKanto/Route 19/Sea",
-                            "@JohtoKanto/Route 34",
-                            "@JohtoKanto/Route 40",
-                            "@JohtoKanto/Union Cave, $can_surf_johto"
+                            "^$CanReach|FISHING_Shore"
                         ]
                     },
                     {
@@ -355,17 +260,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Cinnabar Island",
-                            "@JohtoKanto/New Bark Town",
-                            "@JohtoKanto/Olivine City",
-                            "@JohtoKanto/Pallet Town",
-                            "@JohtoKanto/Route 21/North",
-                            "@JohtoKanto/Route 21/South",
-                            "@JohtoKanto/Route 20",
-                            "@JohtoKanto/Route 26",
-                            "@JohtoKanto/Route 27/Post-Waterfall",
-                            "@JohtoKanto/Route 41",
-                            "@JohtoKanto/Vermilion City/City"
+                            "^$CanReach|FISHING_Ocean"
                         ]
                     },
                     {
@@ -373,22 +268,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
-                            "@JohtoKanto/Route 45, ^$dark|darkcave",
-                            "@JohtoKanto/Mount Mortar/1F_outside_below_waterfall",
-                            "@JohtoKanto/Mount Mortar/2F_outside",
-                            "@JohtoKanto/Mount Mortar/2F_inside",
-                            "@JohtoKanto/Mount Mortar/1F_outside_center",
-                            "@JohtoKanto/Route 10/Top",
-                            "@JohtoKanto/Route 24",
-                            "@JohtoKanto/Route 25",
-                            "@JohtoKanto/Route 42/East",
-                            "@JohtoKanto/Route 42/West",
-                            "@JohtoKanto/Route 9",
-                            "@JohtoKanto/Silver Cave, ^$dark|silvercave",
-                            "@JohtoKanto/Slowpoke Well",
-                            "@JohtoKanto/Route 27/Tohjo Falls - Item",
-                            "@JohtoKanto/Union Cave"
+                            "^$CanReach|FISHING_Lake"
                         ]
                     },
                     {
@@ -396,21 +276,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City",
-                            "@JohtoKanto/Ecruteak City",
-                            "@JohtoKanto/Ilex Forest/Post-Tree",
-                            "@JohtoKanto/Route 22",
-                            "@JohtoKanto/Route 28",
-                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
-                            "@JohtoKanto/Route 31",
-                            "@JohtoKanto/Route 35",
-                            "@JohtoKanto/Route 43",
-                            "@JohtoKanto/Route 44",
-                            "@JohtoKanto/Route 6",
-                            "@JohtoKanto/Ruins of Alph",
-                            "@JohtoKanto/Silver Cave",
-                            "@JohtoKanto/Violet City",
-                            "@JohtoKanto/Viridian City"
+                            "^$CanReach|FISHING_Pond"
                         ]
                     },
                     {
@@ -418,7 +284,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Blackthorn City, $can_surf_johto, EVENT_BEAT_CLAIR, ^$dark|dragonsden"
+                            "^$CanReach|FISHING_Dratini"
                         ]
                     },
                     {
@@ -426,8 +292,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Lake of Rage",
-                            "@JohtoKanto/Fuchsia City"
+                            "^$CanReach|FISHING_Gyarados"
                         ]
                     },
                     {
@@ -435,7 +300,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Route 45"
+                            "^$CanReach|FISHING_Dratini_2"
                         ]
                     },
                     {
@@ -443,7 +308,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Whirl Islands, ^$dark|whirlislands"
+                            "^$CanReach|FISHING_WhirlIslands"
                         ]
                     },
                     {
@@ -451,10 +316,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "access_rules": [
-                            "@JohtoKanto/Route 12/North",
-                            "@JohtoKanto/Route 12/South",
-                            "@JohtoKanto/Route 13",
-                            "@JohtoKanto/Route 32/Post-Guy"
+                            "^$CanReach|FISHING_Qwilfish"
                         ]
                     }
                 ],
@@ -501,7 +363,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Route 44"
+                            "^$CanReach|HEADBUTT_Canyon"
                         ]
                     },
                     {
@@ -509,7 +371,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Route 44"
+                            "^$CanReach|HEADBUTT_Canyon"
                         ]
                     },
                     {
@@ -517,10 +379,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Azalea Town",
-                            "@JohtoKanto/Route 33",
-                            "[@JohtoKanto/Route 42/West], @JohtoKanto/Route 42/Center, $can_cut_johto",
-                            "@JohtoKanto/Route 42/West, [@JohtoKanto/Route 42/Center], [$can_cut_johto]"
+                            "^$CanReach|HEADBUTT_Town"
                         ]
                     },
                     {
@@ -528,10 +387,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Azalea Town",
-                            "@JohtoKanto/Route 33",
-                            "[@JohtoKanto/Route 42/West], @JohtoKanto/Route 42/Center, $can_cut_johto",
-                            "@JohtoKanto/Route 42/West, [@JohtoKanto/Route 42/Center], [$can_cut_johto]"
+                            "^$CanReach|HEADBUTT_Town"
                         ]
                     },
                     {
@@ -539,18 +395,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Route 29",
-                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
-                            "@JohtoKanto/Route 31",
-                            // These are not in logic because there aren't enough trees
-                            //"@JohtoKanto/Route 34",
-                            //"@JohtoKanto/Route 35",
-                            "@JohtoKanto/Route 36/Left",
-                            "@JohtoKanto/Route 36/Right",
-                            "@JohtoKanto/Route 36/Top",
-                            "@JohtoKanto/Route 37",
-                            "@JohtoKanto/Route 38",
-                            "@JohtoKanto/Route 39"
+                            "^$CanReach|HEADBUTT_Route"
                         ]
                     },
                     {
@@ -558,18 +403,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Route 29",
-                            "@JohtoKanto/Route 30/Pre-Mr-Pokemon",
-                            "@JohtoKanto/Route 31",
-                            // These are not in logic because there aren't enough trees
-                            //"@JohtoKanto/Route 34",
-                            //"@JohtoKanto/Route 35",
-                            "@JohtoKanto/Route 36/Left",
-                            "@JohtoKanto/Route 36/Right",
-                            "@JohtoKanto/Route 36/Top",
-                            "@JohtoKanto/Route 37",
-                            "@JohtoKanto/Route 38",
-                            "@JohtoKanto/Route 39"
+                            "^$CanReach|HEADBUTT_Route"
                         ]
                     },
                     {
@@ -577,9 +411,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Route 26",
-                            "@JohtoKanto/Route 27/Pre-Waterfall",
-                            "@JohtoKanto/Route 32/Post-Guy"
+                            "^$CanReach|HEADBUTT_Border"
                         ]
                     },
                     {
@@ -587,9 +419,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Route 26",
-                            "@JohtoKanto/Route 27/Pre-Waterfall",
-                            "@JohtoKanto/Route 32/Post-Guy"
+                            "^$CanReach|HEADBUTT_Border"
                         ]
                     },
                     {
@@ -597,8 +427,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Lake of Rage",
-                            "@JohtoKanto/Route 43"
+                            "^$CanReach|HEADBUTT_Lake"
                         ]
                     },
                     {
@@ -606,8 +435,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Lake of Rage",
-                            "@JohtoKanto/Route 43"
+                            "^$CanReach|HEADBUTT_Lake"
                         ]
                     },
                     {
@@ -615,8 +443,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Pre-Tree",
-                            "@JohtoKanto/Ilex Forest/Post-Tree"
+                            "^$CanReach|HEADBUTT_Forest"
                         ]
                     },
                     {
@@ -624,8 +451,7 @@
                         "clear_as_group": false,
                         "item_count": 6,
                         "access_rules": [
-                            "@JohtoKanto/Ilex Forest/Pre-Tree",
-                            "@JohtoKanto/Ilex Forest/Post-Tree"
+                            "^$CanReach|HEADBUTT_Forest"
                         ]
                     }
                 ],
@@ -672,10 +498,7 @@
                         "clear_as_group": false,
                         "item_count": 2,
                         "access_rules": [
-                            "@JohtoKanto/Route 40",
-                            "@JohtoKanto/Cianwood City",
-                            "@JohtoKanto/Dark Cave Violet Entrance/Left Side",
-                            "@JohtoKanto/Dark Cave Violet Entrance/Right Side"
+                            "^$CanReach|ROCK_SMASH_ANY"
                         ]
                     }
                 ],
