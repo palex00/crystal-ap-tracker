@@ -20538,7 +20538,7 @@
                     {
                         "name": "Hidden Item Near Cherrygrove Entrance",
                         "visibility_rules": [
-                            "show_items, floodedmine_on"
+                            "show_items, flooded_mine_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FLOODED_MINE:SOUTH_ENTRANCE, ^$dark|floodedmine"
@@ -20549,7 +20549,7 @@
                     {
                         "name": "Hidden Item Southeast",
                         "visibility_rules": [
-                            "show_items, floodedmine_on"
+                            "show_items, flooded_mine_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine"
@@ -20560,7 +20560,7 @@
                     {
                         "name": "Hidden Item Northwest",
                         "visibility_rules": [
-                            "show_items, floodedmine_on"
+                            "show_items, flooded_mine_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine"
@@ -20571,7 +20571,7 @@
                     {
                         "name": "Item",
                         "visibility_rules": [
-                            "show_items, floodedmine_on"
+                            "show_items, flooded_mine_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine"
@@ -20586,7 +20586,7 @@
                         "chest_unopened_img": "images/other/encounter.png",
                         "chest_opened_img": "images/other/encounter_bw.png",
                         "visibility_rules": [
-                            "show_mons, encmethod_land_visible"
+                            "show_mons, encmethod_land_visible, flooded_mine_on"
                         ],
                         "access_rules": [
                             "^$CanReach|GRASS_FLOODED_MINE, ^$land_encounter"
@@ -20599,7 +20599,7 @@
                         "chest_unopened_img": "images/other/surf.png",
                         "chest_opened_img": "images/other/surf_bw.png",
                         "visibility_rules": [
-                            "show_mons, encmethod_water_visible"
+                            "show_mons, encmethod_water_visible, flooded_mine_on"
                         ],
                         "access_rules": [
                             "^$CanReach|SURF_FLOODED_MINE, ^$surf_encounter_johto"
