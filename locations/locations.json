@@ -152,6 +152,96 @@
                         "chest_opened_img": "images/gift/elm_open.png"
                     },
                     {
+                        "name": "Mom's Savings - 900",
+                        "visibility_rules": [
+                            "show_items, momsavings_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Mom's Savings - 4000",
+                        "visibility_rules": [
+                            "show_items, momsavings_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Mom's Savings - 7000",
+                        "visibility_rules": [
+                            "show_items, momsavings_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Mom's Savings - 10000",
+                        "visibility_rules": [
+                            "show_items, momsavings_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Mom's Savings - 15000",
+                        "visibility_rules": [
+                            "show_items, momsavings_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Mom's Savings - 19000",
+                        "visibility_rules": [
+                            "show_items, momsavings_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Mom's Savings - 30000",
+                        "visibility_rules": [
+                            "show_items, momsavings_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Mom's Savings - 40000",
+                        "visibility_rules": [
+                            "show_items, momsavings_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Mom's Savings - 50000",
+                        "visibility_rules": [
+                            "show_items, momsavings_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Mom's Savings - 100000",
+                        "visibility_rules": [
+                            "show_items, momsavings_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Surf Encounters",
                         "item_count": 3,
                         "clear_as_group": false,
@@ -471,7 +561,7 @@
                         ],
                         "access_rules": [
                             "@JohtoKanto/Cherrygrove City",
-                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, $r30_passage|southbound",
+                            "@JohtoKanto/Route 30/Post-Mr-Pokemon, $r30_passage|southbound"
                         ]
                     },
                     {
@@ -624,6 +714,50 @@
                         ],
                         "chest_unopened_img": "images/trainers/blue_dude.png",
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
+                    },
+                    {
+                        "name": "Youngster Joey Rematch - Goldenrod",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_goldenrod"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Youngster Joey Rematch - Olivine",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_olivine"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Youngster Joey Rematch - Radio",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_radio"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Youngster Joey Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "HP Up from Joey",
@@ -808,6 +942,50 @@
                         ],
                         "chest_unopened_img": "images/trainers/bug_catcher.png",
                         "chest_opened_img": "images/trainers/bug_catcher_bw.png"
+                    },
+                    {
+                        "name": "Bug Catcher Wade Rematch - Goldenrod",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_goldenrod"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bug Catcher Wade Rematch - Mahogany",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_mahogany"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bug Catcher Wade Rematch - Radio",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_radio"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bug Catcher Wade Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Berry from Wade",
@@ -1872,6 +2050,50 @@
                         "chest_opened_img": "images/trainers/picnicker_bw.png"
                     },
                     {
+                        "name": "Picnicker Liz Rematch - Ecruteak",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_ecruteak"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Liz Rematch - Rocket Hideout",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_rockethideout"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Liz Rematch - Radio",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_radio"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Liz Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Hidden Item North of Bridge",
                         "access_rules": [
                             "^$hid, @JohtoKanto/Route 32/Post-Guy"
@@ -1938,6 +2160,50 @@
                         ],
                         "chest_unopened_img": "images/trainers/fisher.png",
                         "chest_opened_img": "images/trainers/fisher_bw.png"
+                    },
+                    {
+                        "name": "Fisher Ralph Rematch - Ecruteak",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_ecruteak"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Fisher Ralph Rematch - Lake of Rage",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_lakeofrage"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Fisher Ralph Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Fisher Ralph Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Youngster Gordon",
@@ -2421,6 +2687,50 @@
                         ],
                         "chest_unopened_img": "images/trainers/hiker.png",
                         "chest_opened_img": "images/trainers/hiker_bw.png"
+                    },
+                    {
+                        "name": "Hiker Anthony Rematch - Olivine",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_olivine"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Hiker Anthony Rematch - Radio",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_radio"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Hiker Anthony Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Hiker Anthony Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Grass",
@@ -3319,6 +3629,50 @@
                         "chest_opened_img": "images/trainers/picnicker_bw.png"
                     },
                     {
+                        "name": "Picnicker Gina Rematch - Mahogany",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_mahogany"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Gina Rematch - Radio",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_radio"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Gina Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Gina Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Leaf Stone from Gina",
                         "chest_unopened_img": "images/gift/picnicker_phonecall.png",
                         "chest_opened_img": "images/gift/picnicker_phonecall_bw.png",
@@ -3376,6 +3730,50 @@
                         ],
                         "chest_unopened_img": "images/trainers/camper.png",
                         "chest_opened_img": "images/trainers/camper_bw.png"
+                    },
+                    {
+                        "name": "Camper Todd Rematch - Cianwood",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_cianwood"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Camper Todd Rematch - Blackthorn",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_blackthorn"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Camper Todd Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Camper Todd Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Item across Water",
@@ -4524,6 +4922,33 @@
                         "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
+                        "name": "1F - Lucky Number Show 1st Prize",
+                        "visibility_rules": [
+                            "show_items, luckynumbershow"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "1F - Lucky Number Show 2nd Prize",
+                        "visibility_rules": [
+                            "show_items, luckynumbershow"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "1F - Lucky Number Show 3rd Prize",
+                        "visibility_rules": [
+                            "show_items, luckynumbershow"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "2F - Oak's PKMN Talk Sign",
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
@@ -5083,6 +5508,50 @@
                         "chest_opened_img": "images/trainers/bug_catcher_bw.png"
                     },
                     {
+                        "name": "Bug Catcher Arnie Rematch - Lake of Rage",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_lakeofrage"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bug Catcher Arnie Rematch - Blackthorn",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_blackthorn"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bug Catcher Arnie Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bug Catcher Arnie Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Bird Keeper Bryan",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -5272,6 +5741,50 @@
                         ],
                         "chest_unopened_img": "images/trainers/blue_dude.png",
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
+                    },
+                    {
+                        "name": "Schoolboy Jack Rematch - Olivine",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_olivine"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Jack Rematch - Radio",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_radio"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Jack Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Jack Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Northeast Item",
@@ -5598,6 +6111,50 @@
                         ],
                         "chest_unopened_img": "images/trainers/blue_dude.png",
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
+                    },
+                    {
+                        "name": "Schoolboy Alan Rematch - Olivine",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_olivine"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Alan Rematch - Blackthorn",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_blackthorn"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Alan Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Alan Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Fire Stone from Alan",
@@ -6730,6 +7287,50 @@
                         "chest_opened_img": "images/trainers/lass_bw.png"
                     },
                     {
+                        "name": "Lass Dana Rematch - Cianwood",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_cianwood"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Lass Dana Rematch - Radio",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_radio"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Lass Dana Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Lass Dana Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Thunderstone from Dana",
                         "chest_unopened_img": "images/gift/lass_phonecall.png",
                         "chest_opened_img": "images/gift/lass_phonecall_bw.png",
@@ -6748,6 +7349,50 @@
                         ],
                         "chest_unopened_img": "images/trainers/blue_dude.png",
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
+                    },
+                    {
+                        "name": "Schoolboy Chad Rematch - Mahogany",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_mahogany"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Chad Rematch - Radio",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_radio"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Chad Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Chad Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Beauty Olivia",
@@ -7296,6 +7941,39 @@
                         ],
                         "chest_unopened_img": "images/trainers/sailor.png",
                         "chest_opened_img": "images/trainers/sailor_bw.png"
+                    },
+                    {
+                        "name": "2F - Sailor Huey Rematch - Radio",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_radio"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "2F - Sailor Huey Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "2F - Sailor Huey Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "2F - Protein from Huey",
@@ -8783,6 +9461,39 @@
                         "chest_opened_img": "images/trainers/fisher_bw.png"
                     },
                     {
+                        "name": "Fisher Tully Rematch - Rocket Hideout",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_rockethideout"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Fisher Tully Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Fisher Tully Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Water Stone from Tully",
                         "chest_unopened_img": "images/gift/fisher_phonecall.png",
                         "chest_opened_img": "images/gift/fisher_phonecall_bw.png",
@@ -10149,6 +10860,39 @@
                         "chest_opened_img": "images/trainers/picnicker_bw.png"
                     },
                     {
+                        "name": "Picnicker Tiffany Rematch - Radio",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_radio"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Tiffany Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Tiffany Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Pink Bow from Tiffany",
                         "chest_unopened_img": "images/gift/picnicker_phonecall.png",
                         "chest_opened_img": "images/gift/picnicker_phonecall_bw.png",
@@ -10176,6 +10920,39 @@
                         ],
                         "chest_unopened_img": "images/trainers/juggler_pokemaniac.png",
                         "chest_opened_img": "images/trainers/juggler_pokemaniac_bw.png"
+                    },
+                    {
+                        "name": "Pokemaniac Brent Rematch - Rocket Hideout",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_rockethideout"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokemaniac Brent Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokemaniac Brent Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Pokemaniac Ron",
@@ -10598,6 +11375,28 @@
                         "chest_opened_img": "images/trainers/fisher_bw.png"
                     },
                     {
+                        "name": "Fisher Wilton Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Fisher Wilton Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Poke Ball from Wilton",
                         "chest_unopened_img": "images/gift/fisher_phonecall.png",
                         "chest_opened_img": "images/gift/fisher_phonecall_bw.png",
@@ -10631,6 +11430,28 @@
                         ],
                         "chest_unopened_img": "images/trainers/camper.png",
                         "chest_opened_img": "images/trainers/camper_bw.png"
+                    },
+                    {
+                        "name": "Bird Keeper Vance Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bird Keeper Vance Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Carbos from Vance",
@@ -11504,6 +12325,28 @@
                         "chest_opened_img": "images/trainers/hiker_bw.png"
                     },
                     {
+                        "name": "Hiker Parry Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Hiker Parry Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Iron from Parry",
                         "chest_unopened_img": "images/gift/hiker_phonecall.png",
                         "chest_opened_img": "images/gift/hiker_phonecall_bw.png",
@@ -11768,6 +12611,28 @@
                         "chest_opened_img": "images/trainers/picnicker_bw.png"
                     },
                     {
+                        "name": "Picnicker Erin Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Erin Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Calcium from Erin",
                         "chest_unopened_img": "images/gift/picnicker_phonecall.png",
                         "chest_opened_img": "images/gift/picnicker_phonecall_bw.png",
@@ -11964,6 +12829,28 @@
                         "chest_opened_img": "images/trainers/cool_trainer_f_bw.png"
                     },
                     {
+                        "name": "Cool Trainer Reena Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Cool Trainer Reena Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "East Item behind Whirlpool",
                         "access_rules": [
                             "@JohtoKanto/Route 27/Post-Waterfall, $can_whirlpool"
@@ -11983,6 +12870,28 @@
                         ],
                         "chest_unopened_img": "images/trainers/blue_dude.png",
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
+                    },
+                    {
+                        "name": "Bird Keeper Jose Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bird Keeper Jose Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Star Piece from Jose",
@@ -12172,6 +13081,28 @@
                         "chest_opened_img": "images/trainers/cool_trainer_m_bw.png"
                     },
                     {
+                        "name": "Cool Trainer Gaven Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Cool Trainer Gaven Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
                         "name": "Cool Trainer Jake",
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -12194,6 +13125,28 @@
                         ],
                         "chest_unopened_img": "images/trainers/cool_trainer_f.png",
                         "chest_opened_img": "images/trainers/cool_trainer_f_bw.png"
+                    },
+                    {
+                        "name": "Cool Trainer Beth Rematch - Champion",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_champion"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Cool Trainer Beth Rematch - Kanto Power Restored",
+                        "visibility_rules": [
+                            "show_items, randomize_rematches_true"
+                        ],
+                        "access_rules": [
+                            "$rematch_kantopowerrestored"
+                        ],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Grass",
@@ -12546,6 +13499,33 @@
                         "access_rules": [
                             "^$unownsign|Route23IndigoPlateauSign"
                         ]
+                    },
+                    {
+                        "name": "Berry Tree",
+                        "visibility_rules": [
+                            "show_items, restored_route23"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Hidden Item in Bush",
+                        "visibility_rules": [
+                            "show_items, restored_route23"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Hidden Item on Island",
+                        "visibility_rules": [
+                            "show_items, restored_route23"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     },
                     {
                         "name": "Grass",
@@ -15936,6 +16916,24 @@
                         "access_rules": [
                             "^$land_encounter, $can_cut_kanto"
                         ]
+                    },
+                    {
+                        "name": "East-West Underground Path - Hidden Max Revive",
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "East-West Underground Path - Hidden Nugget",
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
                     }
                 ],
                 "map_locations": [
@@ -19229,6 +20227,830 @@
                         "map": "kanto_overview",
                         "x": 44,
                         "y": 100
+                    }
+                ]
+            },
+            {
+                "name": "Flooded Mine",
+                "visibility_rules": [
+                    ""
+                ],
+                "sections": [
+                    {
+                        "name": "Hidden Item Near Cherrygrove Entrance",
+                        "visibility_rules": [
+                            "show_items, floodedmine_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Hidden Item Southeast",
+                        "visibility_rules": [
+                            "show_items, floodedmine_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Hidden Item Northwest",
+                        "visibility_rules": [
+                            "show_items, floodedmine_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Item",
+                        "visibility_rules": [
+                            "show_items, floodedmine_on"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 84,
+                        "y": 84,
+                        "size": 6
+                    },
+                    {
+                        "map": "johto_overview",
+                        "x": 84,
+                        "y": 84,
+                        "size": 6
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 84,
+                        "y": 84,
+                        "size": 6
+                    },
+                    {
+                        "map": "kanto_overview",
+                        "x": 84,
+                        "y": 84,
+                        "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "Battle Tower",
+                "visibility_rules": [
+                    ""
+                ],
+                "sections": [
+                    {
+                        "name": "Tier 1 Complete",
+                        "visibility_rules": [
+                            "show_items, battle_tower_1"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Tier 2 Complete",
+                        "visibility_rules": [
+                            "show_items, battle_tower_1"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Tier 3 Complete",
+                        "visibility_rules": [
+                            "show_items, battle_tower_1"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Tier 4 Complete",
+                        "visibility_rules": [
+                            "show_items, battle_tower_1"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Tier 5 Complete",
+                        "visibility_rules": [
+                            "show_items, battle_tower_1"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Tier 6 Complete",
+                        "visibility_rules": [
+                            "show_items, battle_tower_1"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Tier 7 Complete",
+                        "visibility_rules": [
+                            "show_items, battle_tower_1"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Tier 8 Complete",
+                        "visibility_rules": [
+                            "show_items, battle_tower_1"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Tier 9 Complete",
+                        "visibility_rules": [
+                            "show_items, battle_tower_1"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Tier 10 Complete",
+                        "visibility_rules": [
+                            "show_items, battle_tower_1"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Fisher Hanson",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokemaniac Sawyer",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Guitarist Masuda",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Scientist Nickel",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokefan Olson",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Lass Zaborowski",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Youngster Wright",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Hiker Alexander",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Teacher Kawakami",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokefan Bickett",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Kimono Girl Saito",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Boarder Crawford",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Diaz",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Biker Erickson",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Juggler Fairfield",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokefan Hunter",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Firebreather Hill",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Swimmer Javier",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Swimmer Kaufman",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Skier Lancaster",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Camper McMahill",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Gentleman Obrien",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Beauty Frost",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Super Nerd Morse",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Blackbelt Yufune",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Cool Trainer Rajan",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Officer Rodriguez",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Psychic Santiago",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokefan Stock",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Scientist Thurman",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Beauty Valentino",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Camper Wagner",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bird Keeper Yates",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Picnicker Andrews",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokemaniac Bahn",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Scientist Mori",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Sage Buckman",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Cobb",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Fisher Hughes",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Kimono Girl Arita",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Psychic Easton",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Camper Freeman",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Lass Giese",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Gentleman Hatcher",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokefan Jackson",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokemaniac Kahn",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Youngster Leong",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Teacher Marino",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Sailor Newman",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Blackbelt Nguyen",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Super Nerd Ogden",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Cool Trainer Park",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Swimmer Raine",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bird Keeper Sells",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Boarder Rockwell",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Lass Thornton",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Officer Turner",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Skier Van Dyke",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Schoolboy Walker",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Swimmer Meyer",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Youngster Johnson",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Guitarist Adams",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bug Catcher Smith",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Bug Catcher Tajiri",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Pokemaniac Baker",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Scientist Collins",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Super Nerd Smart",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Swimmer Dykstra",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Biker Eaton",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    },
+                    {
+                        "name": "Firebreather Wong",
+                        "visibility_rules": [
+                            "show_items, battle_tower_2"
+                        ],
+                        "access_rules": [],
+                        "chest_unopened_img": "images/placeholder.png",
+                        "chest_opened_img": "images/placeholder.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 20,
+                        "y": 36,
+                        "size": 6
+                    },
+                    {
+                        "map": "johto_overview",
+                        "x": 20,
+                        "y": 36,
+                        "size": 6
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 20,
+                        "y": 36,
+                        "size": 6
+                    },
+                    {
+                        "map": "kanto_overview",
+                        "x": 20,
+                        "y": 36,
+                        "size": 6
                     }
                 ]
             }
