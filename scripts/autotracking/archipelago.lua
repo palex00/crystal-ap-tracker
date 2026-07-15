@@ -616,9 +616,7 @@ function updateSigns(checked_signs)
     
     for _, sign in ipairs(CHECKED_SIGNS) do
         if not UNOWN_DATA[sign] then
-            if SIGN_MAPPING[sign] then -- remove this once you implemented route23
-                Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
-            end -- remove this once you implemented route23
+            Tracker:FindObjectForCode(SIGN_MAPPING[sign]).AvailableChestCount = 0
         else
             if UNOWN_DATA[sign] ~= nil then
                 value = UNOWN_DATA[sign]
