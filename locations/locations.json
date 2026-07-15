@@ -13124,20 +13124,42 @@
                 ],
                 "sections": [
                     {
-                        "name": "Route 23 Sign",
+                        "name": "Road Sign",
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown, restored_route23_off"
                         ],
                         "access_rules": [
                             "^$unownsign|Route23IndigoPlateauSign"
                         ]
                     },
                     {
+                        "name": "Cinnabar Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_signs, goal_unown, restored_route23_on"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route23RestoredSign1"
+                        ]
+                    },
+                    {
+                        "name": "Victory Road Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_signs, goal_unown, restored_route23_on"
+                        ],
+                        "access_rules": [
+                            "^$unownsign|Route23RestoredSign2"
+                        ]
+                    },
+                    {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "show_items, restored_route23"
+                            "show_items, restored_route23_on"
                         ],
                         "access_rules": [],
                         "chest_unopened_img": "images/placeholder.png",
@@ -13146,7 +13168,7 @@
                     {
                         "name": "Hidden Item in Bush",
                         "visibility_rules": [
-                            "show_items, restored_route23"
+                            "show_items, restored_route23_on"
                         ],
                         "access_rules": [],
                         "chest_unopened_img": "images/placeholder.png",
@@ -13155,7 +13177,7 @@
                     {
                         "name": "Hidden Item on Island",
                         "visibility_rules": [
-                            "show_items, restored_route23"
+                            "show_items, restored_route23_on"
                         ],
                         "access_rules": [],
                         "chest_unopened_img": "images/placeholder.png",
