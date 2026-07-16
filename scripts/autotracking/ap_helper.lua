@@ -300,10 +300,6 @@ SLOT_CODES = {
         code = "start_town_location",
         mapping = STARTTOWN_MAPPING
     },
-    vanilla_clair = {
-        code = "clair_behaviour",
-        mapping = MAP_TOGGLE
-    },
     evomethod_happiness = {
         code = "evomethod_happiness",
         mapping = MAP_TOGGLE
@@ -551,6 +547,15 @@ LIST_CODES = {
             ["Union Cave"]           = "dark_unioncave",
             ["Victory Road"]         = "dark_victoryroad",
             ["Whirl Islands"]        = "dark_whirlislands",
+        }
+    },
+    vanilla_event_chains = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Misty"]               = "vanilla_chain_misty",
+            ["Clair"]               = "clair_behaviour",
+            ["Jasmine"]             = "vanilla_chain_jasmine",
+            ["Copycat"]             = "vanilla_chain_copycat",
         }
     }
 }

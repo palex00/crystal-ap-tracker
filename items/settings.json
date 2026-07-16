@@ -2446,14 +2446,14 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Misty's event chain is not required",
+                "name": "Misty isn't dating",
                 "img": "/images/placeholder.png",
                 "img_mods": "@disabled",
                 "codes": "vanilla_chain_misty, vanilla_chain_misty_off",
                 "inherit_codes": false
             },
             {
-                "name": "Misty's event chain is vanilla",
+                "name": "Misty is on a hot date",
                 "img": "/images/placeholder.png",
                 "codes": "vanilla_chain_misty, vanilla_chain_misty_on",
                 "inherit_codes": false
@@ -2467,14 +2467,14 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Jasmine's event chain is not required",
+                "name": "You know all there is to know about AMPHY",
                 "img": "/images/placeholder.png",
                 "img_mods": "@disabled",
                 "codes": "vanilla_chain_jasmine, vanilla_chain_jasmine_off",
                 "inherit_codes": false
             },
             {
-                "name": "Jasmine's event chain is vanilla",
+                "name": "You better learn about AMPHY",
                 "img": "/images/placeholder.png",
                 "codes": "vanilla_chain_jasmine, vanilla_chain_jasmine_on",
                 "inherit_codes": false
@@ -2488,14 +2488,14 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Copycat's event chain is not required",
+                "name": "You telephatically connect to copycat",
                 "img": "/images/placeholder.png",
                 "img_mods": "@disabled",
                 "codes": "vanilla_chain_copycat, vanilla_chain_copycat_off",
                 "inherit_codes": false
             },
             {
-                "name": "Copycat's event chain is vanilla",
+                "name": "To find a lost item, you first need to know an item is lost",
                 "img": "/images/placeholder.png",
                 "codes": "vanilla_chain_copycat, vanilla_chain_copycat_on",
                 "inherit_codes": false
