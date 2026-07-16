@@ -295,6 +295,7 @@ function onClear(slot_data)
         end
         updateEvents(1, 0)
         updateEvents(2, 0)
+        updateEvents(3, 0)
         updateStatics(0)
         updateRocketTraps(0)
         updateVanillaKeyItems(0)
@@ -307,6 +308,7 @@ function onClear(slot_data)
         IDs = {
             EVENT      = makeID("events_"),
             EVENT2     = makeID("events_2_"),
+            EVENT3     = makeID("events_3_"),
             STATIC     = makeID("statics_"),
             ROCKETTRAP = makeID("rockettraps_"),
             KEY        = makeID("keys_"),
@@ -409,6 +411,8 @@ function onNotify(key, value, old_value)
             updateEvents(1, value)
         elseif key == IDs.EVENT2 then
             updateEvents(2, value)
+        elseif key == IDs.EVENT3 then
+            updateEvents(3, value)
         elseif key == IDs.STATIC then
             updateStatics(value)
         elseif key == IDs.KEY then
