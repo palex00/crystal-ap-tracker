@@ -3,18 +3,21 @@
 In the beginning, I disabled some things so you could run seeds without the new features on the beta.
 Now, I will begin implementing the entire logical rewrite. This will cause the tracker to be *worse* for some time.
 
+2026-07-16: I have switched the logic engine to the new logic-graph now. It is severely buggy still but it will show more in logic than truthfully, and never too little. Locations and events now exist as dummies.
+
+
 The beta tracker now auto-updates!
 
 Unsupported Features:
 - Multiple Goals
-- New Locations
+- New Locations (these auto-track but do not have logic to them)
     - Battle Tower
     - Momsanity
     - Rematchsanity
     - Lucky Number Show
 - Entrance Randomization
-- Flooded Mine
-- Restored Route 23
+- Flooded Mine (logic does not work, map changes don't work, setting doesn't autotrack - locations auto-track)
+- Restored Route 23 (logic does not work, map changes don't work, setting doesn't autotrack - locations auto-track)
 - Fly Destination Rando
 - Vanilla Event Chains
 - Time of Day Encounters
