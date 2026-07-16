@@ -73,30 +73,30 @@ function toggle_johto()
         Tracker:AddLayouts("layouts/overworld.json")
         
         if has("goal_e4") then
-            Tracker:AddLayouts("layouts/events_e4.json")
+            Tracker:AddLayouts("layouts/events/events_e4.json")
         elseif has("goal_red") then
-            Tracker:AddLayouts("layouts/events_red.json")
+            Tracker:AddLayouts("layouts/events/events_red.json")
         elseif has("goal_diploma") then
-            Tracker:AddLayouts("layouts/events_diploma.json")
+            Tracker:AddLayouts("layouts/events/events_diploma.json")
         elseif has("goal_rival") then
-            Tracker:AddLayouts("layouts/events_rival.json")
+            Tracker:AddLayouts("layouts/events/events_rival.json")
         elseif has("goal_rocket") then
-            Tracker:AddLayouts("layouts/events_rocket.json")
+            Tracker:AddLayouts("layouts/events/events_rocket.json")
         elseif has("goal_unown") then
-            Tracker:AddLayouts("layouts/events_unown.json")
+            Tracker:AddLayouts("layouts/events/events_unown.json")
         end       
         
-        Tracker:AddLayouts("layouts/settings.json")
+        Tracker:AddLayouts("layouts/settings/settings.json")
         Tracker:AddLayouts("layouts/flyunlocks.json")
         
         if coffee and phone then
-            Tracker:AddLayouts("layouts/items.json")
+            Tracker:AddLayouts("layouts/items/items.json")
         elseif coffee and not phone then
-            Tracker:AddLayouts("layouts/items_no_phone.json")
+            Tracker:AddLayouts("layouts/items/items_no_phone.json")
         elseif not coffee and not phone then
-            Tracker:AddLayouts("layouts/items_no_to_both.json")
+            Tracker:AddLayouts("layouts/items/items_no_to_both.json")
         elseif not coffee and phone then
-            Tracker:AddLayouts("layouts/items_no_tea.json")
+            Tracker:AddLayouts("layouts/items/items_no_tea.json")
         end
     else
         local badges = has("badges_on")
@@ -320,7 +320,7 @@ function toggle_itemgrid()
         suffix = suffix .. "_tiles"
     end
         
-    Tracker:AddLayouts("layouts/tracker"..suffix..".json")
+    Tracker:AddLayouts("layouts/tracker/tracker"..suffix..".json")
     
     local prefix = ""
     if has("broadcast_view_vertical") then
@@ -336,11 +336,11 @@ function toggle_shopgrid()
     local bluecard = has("shopsanity_bluecard_true")
     local apricorn = has("shopsanity_apricorn_true")
     if bluecard and not apricorn then
-        Tracker:AddLayouts("layouts/shopsanity_bluecard.json")
+        Tracker:AddLayouts("layouts/shopsanity/shopsanity_bluecard.json")
     elseif not bluecard and apricorn then
-        Tracker:AddLayouts("layouts/shopsanity_apricorn.json")
+        Tracker:AddLayouts("layouts/shopsanity/shopsanity_apricorn.json")
     elseif bluecard and apricorn then
-        Tracker:AddLayouts("layouts/shopsanity_all.json")
+        Tracker:AddLayouts("layouts/shopsanity/shopsanity_all.json")
     end
 end
 
