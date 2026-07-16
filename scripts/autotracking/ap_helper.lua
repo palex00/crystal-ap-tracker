@@ -463,6 +463,14 @@ SLOT_CODES = {
     south_kanto_condition = {
         code = "south_kanto_condition",
         mapping = MAP_TOGGLE
+    },
+    route_23_restored = {
+        code = "route_23_restored",
+        mapping = MAP_TOGGLE
+    },
+    flooded_mine = {
+        code = "flooded_mine",
+        mapping = MAP_TOGGLE
     }
 }
 
