@@ -562,6 +562,13 @@
         "codes": "flyunlock_SilverCave"
     },
     {
+        "name": "Fly Indigo Plateau",
+        "type": "toggle",
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_indigoplateau.png",
+        "codes": "flyunlock_IndigoPlateau"
+    },
+    {
         "name": "Blue Card",
         "type": "toggle",
         "img": "/images/shopsanity/blue_card.png",
@@ -670,5 +677,98 @@
         "name": "Dummy Update",
         "type": "toggle",
         "codes": "update"
+    },
+    {
+        "name": "Moon Stone",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "MOON_STONE"
+    },
+    {
+        "name": "Fire Stone",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "FIRE_STONE"
+    },
+    {
+        "name": "Thunderstone",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "THUNDERSTONE"
+    },
+    {
+        "name": "Leaf Stone",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "LEAF_STONE"
+    },
+    {
+        "name": "Link Cable",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "LINK_CABLE"
+    },
+    {
+        "name": "King's Rock",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "KINGS_ROCK"
+    },
+    {
+        "name": "Metal Coat",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "METAL_COAT"
+    },
+    {
+        "name": "Dragon Scale",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "DRAGON_SCALE"
+    },
+    {
+        "name": "Sun Stone",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "SUN_STONE"
+    },
+    {
+        "name": "Up-Grade",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "UP_GRADE"
+    },
+    {
+        "name": "Morning",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "MORN_ITEM"
+    },
+    {
+        "name": "Day",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "DAY_ITEM"
+    },
+    {
+        "name": "Night",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "NITE_ITEM"
+    },
+    {
+        "name": "Battle Tower UBER Pass",
+        "type": "toggle",
+        "img": "/images/placeholder.png",
+        "codes": "BATTLE_TOWER_UBER_PASS"
+    },
+    {
+        "name": "Battle Tower Tier Unlock",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 10,
+        "initial_quantity": 0,
+        "img": "/images/placeholder.png",
+        "codes": "BATTLE_TOWER_TIER_UNLOCK"
     }
 ]
