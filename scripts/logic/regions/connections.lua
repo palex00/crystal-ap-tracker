@@ -264,7 +264,7 @@ REGION_CHERRYGROVE_CITY:connect_two_ways_entrance(REGION_CHERRYGROVE_POKECENTER_
 REGION_CHERRYGROVE_CITY:connect_two_ways_entrance(REGION_CHERRYGROVE_GYM_SPEECH_HOUSE, "building")
 REGION_CHERRYGROVE_CITY:connect_two_ways_entrance(REGION_GUIDE_GENTS_HOUSE, "building")
 REGION_CHERRYGROVE_CITY:connect_two_ways_entrance(REGION_CHERRYGROVE_EVOLUTION_SPEECH_HOUSE, "building")
-REGION_CHERRYGROVE_CITY:connect_two_ways(NAMED_NODES["REGION_CHERRYGROVE_CITY:FLOODED_MINE_ENTRANCE"], "Cherrygrove City Water Crossing (Mainland -> Flooded Mine)", "Cherrygrove City Water Crossing (Flooded Mine -> Mainland)", can_surf_johto)
+REGION_CHERRYGROVE_CITY:connect_two_ways(NAMED_NODES["REGION_CHERRYGROVE_CITY:FLOODED_MINE_ENTRANCE"], "Cherrygrove City Water Crossing (Mainland -> Flooded Mine)", "Cherrygrove City Water Crossing (Flooded Mine -> Mainland)", function() return has("flooded_mine_on") and can_surf_johto() end)
 REGION_CHERRYGROVE_CITY:connect_two_ways(REGION_ROUTE_30, "Cherrygrove City North Exit", "Route 30 South Exit")
 REGION_CHERRYGROVE_CITY:connect_two_ways(REGION_ROUTE_29, "Cherrygrove City East Exit", "Route 29 West Exit")
 
@@ -1108,7 +1108,7 @@ NAMED_NODES["REGION_ROUTE_32:NORTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_3
 NAMED_NODES["REGION_ROUTE_32:SOUTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_32:MIRACLE_SEED"], "Route 32 Miracle Seed Guy Access (from South)")
 NAMED_NODES["REGION_ROUTE_32:SOUTH"]:connect_two_ways_entrance(REGION_ROUTE_32_POKECENTER_1F, "pokecenter")
 NAMED_NODES["REGION_ROUTE_32:SOUTH"]:connect_two_ways_entrance(REGION_UNION_CAVE_1F, "dungeon")
-NAMED_NODES["REGION_ROUTE_32:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_FLOODED_MINE:NORTH_ENTRANCE"], "dungeon")
+NAMED_NODES["REGION_ROUTE_32:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_FLOODED_MINE:NORTH_ENTRANCE"], "dungeon", function() return has("flooded_mine_on") end)
 
 -- === REGION_ROUTE_32_POKECENTER_1F ===
 REGION_ROUTE_32_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Route 32 Pokecenter Stairs")
@@ -1261,14 +1261,14 @@ NAMED_NODES["REGION_ROUTE_6_SAFFRON_GATE:NORTH"]:connect_two_ways(NAMED_NODES["R
 REGION_ROUTE_6_UNDERGROUND_PATH_ENTRANCE:connect_two_ways_entrance(REGION_UNDERGROUND_PATH, "dungeon_interior")
 
 -- === REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE ===
-REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE:connect_one_way_entrance(REGION_ROUTE_7, "dungeon")
-REGION_ROUTE_7:connect_one_way_entrance(REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE, "dungeon", function() return passage("ew") end)
-REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE:connect_two_ways_entrance(REGION_EAST_WEST_UNDERGROUND, "dungeon_interior")
+REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE:connect_one_way_entrance(REGION_ROUTE_7, "dungeon", function() return has("ew_underground_on") end)
+REGION_ROUTE_7:connect_one_way_entrance(REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE, "dungeon", function() return has("ew_underground_on") and passage("ew") end)
+REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE:connect_two_ways_entrance(REGION_EAST_WEST_UNDERGROUND, "dungeon_interior", function() return has("ew_underground_on") end)
 
 -- === REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE ===
-REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE:connect_one_way_entrance(REGION_ROUTE_8, "dungeon_interior")
-REGION_ROUTE_8:connect_one_way_entrance(REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE, "dungeon_interior", function() return passage("ew") end)
-REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE:connect_two_ways_entrance(REGION_EAST_WEST_UNDERGROUND, "dungeon_interior")
+REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE:connect_one_way_entrance(REGION_ROUTE_8, "dungeon_interior", function() return has("ew_underground_on") end)
+REGION_ROUTE_8:connect_one_way_entrance(REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE, "dungeon_interior", function() return has("ew_underground_on") and passage("ew") end)
+REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE:connect_two_ways_entrance(REGION_EAST_WEST_UNDERGROUND, "dungeon_interior", function() return has("ew_underground_on") end)
 
 -- === REGION_ROUTE_7 ===
 REGION_ROUTE_7:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_7_SAFFRON_GATE:WEST"], "gate")
@@ -1586,7 +1586,7 @@ NAMED_NODES["REGION_VERMILION_PORT_PASSAGE:ENTRANCE"]:connect_two_ways_entrance(
 NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F"], "TODOBYSNOWFLAV", victory_road_access)
 NAMED_NODES["REGION_VICTORY_ROAD:1F"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"], "TODOBYSNOWFLAV")
 NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "dungeon")
-NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_23_RESTORED:NORTH"], "dungeon")
+NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_23_RESTORED:NORTH"], "dungeon", function() return has("route_23_restored_on") end)
 
 -- === REGION_VICTORY_ROAD:1F ===
 NAMED_NODES["REGION_VICTORY_ROAD:1F"]:connect_two_ways_entrance(NAMED_NODES["REGION_VICTORY_ROAD:2F"], "dungeon_interior")
@@ -1611,7 +1611,7 @@ REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:
 REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "Victory Road Gate Traversal (to North)", "Victory Road Gate Traversal (from North)", has_victory_road_requirement)
 
 -- === REGION_VICTORY_ROAD_GATE:NORTH ===
-NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_23_RESTORED:SOUTH"], "gate")
+NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_23_RESTORED:SOUTH"], "gate", function() return has("route_23_restored_on") end)
 
 -- === REGION_VIOLET_CITY ===
 REGION_VIOLET_CITY:connect_two_ways_entrance(REGION_VIOLET_MART, "mart")
@@ -1692,16 +1692,16 @@ NAMED_NODES["REGION_WHIRL_ISLAND_SW:NORTHWEST"]:connect_two_ways(NAMED_NODES["RE
 NAMED_NODES["REGION_WHIRL_ISLAND_SW:SOUTHWEST"]:connect_two_ways(NAMED_NODES["REGION_WHIRL_ISLAND_SW:SOUTHEAST"], "Whirl Islands Lugia Exit Tunnel B2F Water Crossing (Eastbound)", "Whirl Islands Lugia Exit Tunnel B2F Water Crossing (Westbound)", can_surf_johto)
 
 -- === REGION_ROUTE_23_RESTORED:SOUTH ===
-NAMED_NODES["REGION_ROUTE_23_RESTORED:SOUTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_23_RESTORED:SURF"], "Route 23 Restored Water Crossing (South -> Island)", "Route 23 Restored Water Crossing (Island -> South)", can_surf_johto)
+NAMED_NODES["REGION_ROUTE_23_RESTORED:SOUTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_23_RESTORED:SURF"], "Route 23 Restored Water Crossing (South -> Island)", "Route 23 Restored Water Crossing (Island -> South)", function() return has("route_23_restored_on") and can_surf_johto() end)
 
 -- === REGION_ROUTE_23_RESTORED:NORTH ===
-NAMED_NODES["REGION_ROUTE_23_RESTORED:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_23_RESTORED:SURF"], "Route 23 Restored Water Crossing (North -> Island)", "Route 23 Restored Water Crossing (Island -> North)", can_surf_johto)
+NAMED_NODES["REGION_ROUTE_23_RESTORED:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_23_RESTORED:SURF"], "Route 23 Restored Water Crossing (North -> Island)", "Route 23 Restored Water Crossing (Island -> North)", function() return has("route_23_restored_on") and can_surf_johto() end)
 
 -- === REGION_FLOODED_MINE:NORTH_ENTRANCE ===
-NAMED_NODES["REGION_FLOODED_MINE:NORTH_ENTRANCE"]:connect_two_ways_entrance(REGION_FLOODED_MINE, "dungeon_interior")
+NAMED_NODES["REGION_FLOODED_MINE:NORTH_ENTRANCE"]:connect_two_ways_entrance(REGION_FLOODED_MINE, "dungeon_interior", function() return has("flooded_mine_on") end)
 
 -- === REGION_CHERRYGROVE_CITY:FLOODED_MINE_ENTRANCE ===
-NAMED_NODES["REGION_CHERRYGROVE_CITY:FLOODED_MINE_ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_FLOODED_MINE:SOUTH_ENTRANCE"], "dungeon")
+NAMED_NODES["REGION_CHERRYGROVE_CITY:FLOODED_MINE_ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_FLOODED_MINE:SOUTH_ENTRANCE"], "dungeon", function() return has("flooded_mine_on") end)
 
 -- === REGION_FLOODED_MINE:SOUTH_ENTRANCE ===
-NAMED_NODES["REGION_FLOODED_MINE:SOUTH_ENTRANCE"]:connect_two_ways_entrance(REGION_FLOODED_MINE, "dungeon_interior")
+NAMED_NODES["REGION_FLOODED_MINE:SOUTH_ENTRANCE"]:connect_two_ways_entrance(REGION_FLOODED_MINE, "dungeon_interior", function() return has("flooded_mine_on") end)
