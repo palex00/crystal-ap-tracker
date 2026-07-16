@@ -1,6 +1,30 @@
+TODO:
+    - Settings wireup
+    - VR_REQ custom item
+    - Event wireup (see below)
 
-  Waiting on the codes you said you'd add — the rules reference them and stay inert until they exist: the 14+4 event flags, dark_floodedmine, vanilla_event_chains_misty/_jasmine/_copycat. Plus
-  has_victory_road_requirement() is a dummy returning true until a VR_REQ custom item exists. I've written these to memory.
+ITEM_CODES:
+    -   MOON_STONE
+    -   FIRE_STONE
+    -   THUNDERSTONE
+    -   WATER_STONE
+    -   LEAF_STONE
+    -   LINK_CABLE
+    -   KINGS_ROCK
+    -   METAL_COAT
+    -   DRAGON_SCALE
+    -   SUN_STONE
+    -   UP_GRADE
+    -   
+    -   MORN_ITEM
+    -   DAY_ITEM
+    -   NITE_ITEM
+    -   
+    -   BATTLE_TOWER_UBER_PASS
+    -   BATTLE_TOWER_TIER_UNLOCK
+    -   
+    -   FLY_UNLOCK_INDIGO_PLATEAU
+
 
 
   Boulder pushes (6):

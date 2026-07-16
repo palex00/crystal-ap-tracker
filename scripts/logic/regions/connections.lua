@@ -1317,7 +1317,7 @@ REGION_RUINS_OF_ALPH_INNER_CHAMBER:connect_two_ways_entrance(REGION_RUINS_OF_ALP
 -- === REGION_RUINS_OF_ALPH_KABUTO_CHAMBER ===
 REGION_RUINS_OF_ALPH_KABUTO_CHAMBER:connect_two_ways_entrance(REGION_RUINS_OF_ALPH_OUTSIDE, "dungeon_interior")
 REGION_RUINS_OF_ALPH_KABUTO_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_INNER_CHAMBER, "one_way", function() return not has("goal_unown") or has("KABUTO_TILE", 16) end)
-REGION_RUINS_OF_ALPH_KABUTO_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM, "dungeon_interior", function() return has("EVENT_MART_ESCAPE_ROPE") end)
+REGION_RUINS_OF_ALPH_KABUTO_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM, "dungeon_interior", function() return has("ESCAPE_ROPE") end)
 REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM:connect_one_way_entrance(REGION_RUINS_OF_ALPH_KABUTO_CHAMBER, "dungeon_interior")
 
 -- === REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM ===

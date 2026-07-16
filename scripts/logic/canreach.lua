@@ -184,10 +184,9 @@ function EntranceDetourTarget(token)
     local item = Tracker:FindObjectForCode(token)
     local paired = item and item.ItemState and item.ItemState.forwardTarget
     if paired then
-        -- Coupled/mouth-to-mouth convention: entering this door drops you at the paired
-        -- door's location, i.e. the SOURCE region of the paired token. If the apworld's ER
-        -- turns out to be exit-to-entrance instead, change EntranceSourceRegion -> a
-        -- dest-region helper here (the one line to flip).
+        -- Mouth-to-mouth: entering this door drops you at the paired door's mouth, i.e. the
+        -- SOURCE region of the paired token. Exterior doors pair with interior ones (hence the
+        -- gym/gym_interior category split), so reading the source side is what lands you inside.
         return NAMED_NODES[EntranceSourceRegion(paired)] or Empty_node
     end
     return Empty_node
