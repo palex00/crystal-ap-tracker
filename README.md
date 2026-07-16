@@ -1,29 +1,36 @@
 # CURRENT STATUS & ROADMAP FOR THE BETA
-++ THE TRACKER IS CURRENTLY NOT IN A USABLE STATE ++
-In the beginning, I disabled some things so you could run seeds without the new features on the beta.
+++ THE TRACKER IS CURRENTLY AT A PASSABLE STATE, LIMITATIONS SEE BELOW ++
+In the beginning, I disabled some things so you could run seeds without the new features on the beta. These are slowly being re-implmented.
 Now, I will begin implementing the entire logical rewrite. This will cause the tracker to be *worse* for some time.
 
 2026-07-16: I have switched the logic engine to the new logic-graph now. It is severely buggy still but it will show more in logic than truthfully, and never too little. Locations and events now exist as dummies.
-
+2026-07-16: added autotracking to events and items. Refactored all item grids to show all items currently. Fixed some logic.
 
 The beta tracker now auto-updates!
 
-Unsupported Features:
-- Multiple Goals
+Supported Features:
+- Flooded Mine
+- Restored Route 23
+- Vanilla Event Chains
+
+Unsupported Beta Features:
+- Multiple Goals - currently debug shows all of them; event grid shows all events
 - New Locations (these auto-track but do not have logic to them)
     - Battle Tower
     - Momsanity
     - Rematchsanity
     - Lucky Number Show
 - Entrance Randomization
-- Flooded Mine (logic does not work, map changes don't work, setting doesn't autotrack - locations auto-track)
-- Restored Route 23 (logic does not work, map changes don't work, setting doesn't autotrack - locations auto-track)
 - Fly Destination Rando
-- Vanilla Event Chains
 - Time of Day Encounters
 - everything else, basically
 
-Note: Maps are currently fucked.
+Features that work in live but not in beta:
+- Start Town Rando
+- Fly Unlock Rando
+- Free Fly & Map Fly
+
+Note: Maps are currently fucked (look wrong)
 
 
 
@@ -58,6 +65,7 @@ Original project by AliceMousie.
 ## Compatibility Chart
 apworld | pack version
 :-------------------------:|:-------------------------:
+6.0.0   | 12.0.0
 5.4.0   | 11.0.0
 5.3.0   | 0.10.0
 5.2.0   | 0.9.X & 0.8.9-0.8.10

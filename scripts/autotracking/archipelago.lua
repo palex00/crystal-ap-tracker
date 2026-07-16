@@ -361,7 +361,7 @@ function onItem(index, item_id, item_name, player_number)
     
     local obj = Tracker:FindObjectForCode(v)
     if obj then
-        if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" then
+        if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
             obj.AcquiredCount = obj.AcquiredCount + 1
         else
             obj.Active = true
