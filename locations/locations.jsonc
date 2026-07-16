@@ -17218,7 +17218,7 @@
                     {
                         "name": "East-West Underground Path - Hidden Max Revive",
                         "visibility_rules": [
-                            "show_items, hiddenitems_on"
+                            "show_items, hiddenitems_on, ew_underground_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_EAST_WEST_UNDERGROUND"
@@ -17229,7 +17229,7 @@
                     {
                         "name": "East-West Underground Path - Hidden Nugget",
                         "visibility_rules": [
-                            "show_items, hiddenitems_on"
+                            "show_items, hiddenitems_on, ew_underground_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_EAST_WEST_UNDERGROUND"
