@@ -1,5 +1,5 @@
 {
-    "quick_settings_grid": {
+    "tools_grid": {
         "type": "itemgrid",
         "orientation": "vertical",
         "margin": "2,2",
@@ -8,20 +8,26 @@
         "item_size": "32",
         "rows": [
             [
+                "slotdigit_1",
+                "slotdigit_2",
+                "slotdigit_3"
+            ],
+            [
                 "visibility_items",
                 "automap",
                 "auto_shop_markoff"
             ],
             [
                 "visibility_mons",
-                "splitmap"
+                "splitmap",
             ],
             [
                 "visibility_events",
-                "encounter_tracking"
+                "encounter_tracking",
             ],
             [
-                "hint_tracking"
+                "visibility_signs",
+                "hint_tracking",
             ],
             [
                 "visibility_grass",

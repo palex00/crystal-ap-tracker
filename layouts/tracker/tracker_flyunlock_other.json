@@ -39,6 +39,13 @@
                                                         "type": "layout",
                                                         "key": "encevo_grid"
                                                     }
+                                                },
+                                                {
+                                                    "title": "Other",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "key": "other_grid"
+                                                    }
                                                 }
                                             ]
                                         }
@@ -48,19 +55,38 @@
                         },
                         {
                             "type": "group",
+                            "margin": "100,100",
                             "background": "#171717",
-                            "header": "Events",
                             "dock": "left",
-                            "content": {
-                                "type": "array",
-                                "margin": "0,-3,0,0",
-                                "content": [
-                                    {
-                                        "type": "layout",
-                                        "key": "event_grid"
-                                    }
-                                ]
-                            }
+                            "content": [
+                                {
+                                    "type": "array",
+                                    "margin": "0,-28, 0, 0",
+                                    "content": [
+                                        {
+                                            "type": "tabbed",
+                                            "h_alignment": "left",
+                                            "dock": "left",
+                                            "tabs": [
+                                                {
+                                                    "title": "Events",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "key": "event_grid"
+                                                    }
+                                                },
+                                                {
+                                                    "title": "Fly Unlocks",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "key": "fly_grid"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "type": "group",

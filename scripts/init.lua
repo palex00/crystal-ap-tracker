@@ -14,6 +14,7 @@ Tracker:AddItems("items/route.json")
 
 -- Logic
 ScriptHost:LoadScript("scripts/utils.lua")
+ScriptHost:LoadScript("scripts/toggles.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/logic/dexsanity.lua")
 ScriptHost:LoadScript("scripts/custom_items.lua")
@@ -76,34 +77,42 @@ Tracker:AddLocations("locations/new_signs.json")
 -- Tracker:AddLocations("locations/entrances_example.json")
 
 -- Layout
+---- maps & locations
 Tracker:AddLayouts("layouts/dungeon_maps.json")
-Tracker:AddLayouts("layouts/events/events_red.json")
+Tracker:AddLayouts("layouts/tabs_single.json")
+Tracker:AddLayouts("layouts/overworld.json")
+Tracker:AddLayouts("layouts/route.json")
+
+---- items
+Tracker:AddLayouts("layouts/tracker/tracker_flyunlock_other.json") -- maximum itemgrids
+Tracker:AddLayouts("layouts/items/items_max.json") -- debug for now, will be changed to dynamic later
+Tracker:AddLayouts("layouts/items/encevo_max.json") -- debug for now, will be changed to dynamic later
+Tracker:AddLayouts("layouts/items/other_max.json") -- debug for now, will be changed to dynamic later
+Tracker:AddLayouts("layouts/items/flyunlocks.json") --static
+Tracker:AddLayouts("layouts/events/events_max.json") -- debug for now, will be changed to dynamic later
+
+---- settings
 Tracker:AddLayouts("layouts/settings/settings.json")
 Tracker:AddLayouts("layouts/settings/settings_encevo.json")
 Tracker:AddLayouts("layouts/settings/settings_popup.json")
-Tracker:AddLayouts("layouts/settings_quick/settings_quick.json")
+Tracker:AddLayouts("layouts/tools/tools_max.json")
+
+---- other
 Tracker:AddLayouts("layouts/levelinglogic.json")
-Tracker:AddLayouts("layouts/items/items_no_tea.json")
-Tracker:AddLayouts("layouts/flyunlocks.json")
-Tracker:AddLayouts("layouts/shopsanity/shopsanity_all.json")
-Tracker:AddLayouts("layouts/tabs_single.json")
-Tracker:AddLayouts("layouts/overworld.json")
-Tracker:AddLayouts("layouts/tracker/tracker.json")
-Tracker:AddLayouts("layouts/unown_tiles.json")
 Tracker:AddLayouts("layouts/broadcast/broadcast.json")
 Tracker:AddLayouts("layouts/pokedex.json")
 Tracker:AddLayouts("layouts/dexcountsanity.json")
-Tracker:AddLayouts("layouts/route.json")
+
 
 -- AutoTracking for Poptracker
 ScriptHost:LoadScript("scripts/autotracking.lua")
 
--- Watches
-ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
-ScriptHost:AddWatchForCode("tea_guard", "tea_guard", toggle_johto)
-ScriptHost:AddWatchForCode("phone_calls_visible", "phone_calls_visible", toggle_johto)
-ScriptHost:AddWatchForCode("badges", "badges", toggle_johto)
-ScriptHost:AddWatchForCode("goal", "goal", toggle_johto)
+---- Watches
+--ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
+--ScriptHost:AddWatchForCode("tea_guard", "tea_guard", toggle_johto)
+--ScriptHost:AddWatchForCode("phone_calls_visible", "phone_calls_visible", toggle_johto)
+--ScriptHost:AddWatchForCode("badges", "badges", toggle_johto)
+--ScriptHost:AddWatchForCode("goal", "goal", toggle_johto)
 ScriptHost:AddWatchForCode("splitmap", "splitmap", toggle_splitmap)
 ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
 ScriptHost:AddWatchForCode("route_2_access", "route_2_access", toggle_route2)
@@ -127,16 +136,16 @@ ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function(
 
 ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
 
-ScriptHost:AddWatchForCode("randomize_fly_unlocks", "randomize_fly_unlocks", toggle_itemgrid)
-ScriptHost:AddWatchForCode("shopsanity_gamecorners", "shopsanity_gamecorners", toggle_itemgrid)
-ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_itemgrid)
-ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_itemgrid)
-ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
+--ScriptHost:AddWatchForCode("randomize_fly_unlocks", "randomize_fly_unlocks", toggle_itemgrid)
+--ScriptHost:AddWatchForCode("shopsanity_gamecorners", "shopsanity_gamecorners", toggle_itemgrid)
+--ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_itemgrid)
+--ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_itemgrid)
+--ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
 ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
-ScriptHost:AddWatchForCode("grasssanity", "grasssanity", toggleQuickSettings)
-ScriptHost:AddWatchForCode("goal", "goal", updateGoalLayout)
-ScriptHost:AddWatchForCode("shopsanity_johtomarts", "shopsanity_johtomarts", toggleQuickSettings)
-ScriptHost:AddWatchForCode("shopsanity_kantomarts", "shopsanity_kantomarts", toggleQuickSettings)
+--ScriptHost:AddWatchForCode("grasssanity", "grasssanity", toggleQuickSettings)
+--ScriptHost:AddWatchForCode("goal", "goal", updateGoalLayout)
+--ScriptHost:AddWatchForCode("shopsanity_johtomarts", "shopsanity_johtomarts", toggleQuickSettings)
+--ScriptHost:AddWatchForCode("shopsanity_kantomarts", "shopsanity_kantomarts", toggleQuickSettings)
 
 -- ER category toggles -> refresh ER_CATEGORY_ENABLED for the CanReach detour
 for _, cat in ipairs(ER_CATEGORIES) do

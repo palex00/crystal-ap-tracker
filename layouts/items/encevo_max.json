@@ -1,0 +1,47 @@
+{
+    "encevo_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, 2",
+                        "h_alignment": "center",
+                        "rows": [
+                            [],
+                            [],
+                            [
+                                "GS_BALL",
+                                "SILVER_WING",
+                                "OLD_ROD",
+                                "GOOD_ROD",
+                                "SUPER_ROD",
+                                "MOON_STONE",
+                                "FIRE_STONE",
+                                "THUNDERSTONE",
+                                "LEAF_STONE"
+                        ],
+                        [
+                                "LINK_CABLE",
+                                "KINGS_ROCK",
+                                "METAL_COAT",
+                                "DRAGON_SCALE",
+                                "SUN_STONE",
+                                "UP_GRADE",
+                                "MORN_ITEM",
+                                "DAY_ITEM",
+                                "NITE_ITEM"
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
