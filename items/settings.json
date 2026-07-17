@@ -2545,5 +2545,27 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Momsanity",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Momsanity is off",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "momsanity, momsanity_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Momsanity is on",
+                "img": "/images/placeholder.png",
+                "codes": "momsanity, momsanity_on",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

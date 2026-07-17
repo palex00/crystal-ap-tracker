@@ -12,12 +12,12 @@ Supported Features:
 - Flooded Mine
 - Restored Route 23
 - Vanilla Event Chains
+- Momsanity (locations, logic, autotracking. Note that the Call Mom event doesn't work yet).
 
 Unsupported Beta Features:
 - Multiple Goals - currently debug shows all of them; event grid shows all events
 - New Locations (these auto-track but do not have logic to them)
     - Battle Tower
-    - Momsanity
     - Rematchsanity
     - Lucky Number Show
 - Entrance Randomization
@@ -26,7 +26,6 @@ Unsupported Beta Features:
 - everything else, basically
 
 Features that work in live but not in beta:
-- Start Town Rando
 - Fly Unlock Rando
 - Free Fly & Map Fly
 

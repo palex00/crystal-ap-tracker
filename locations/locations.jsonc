@@ -170,10 +170,10 @@
                     {
                         "name": "Mom's Savings - 900",
                         "visibility_rules": [
-                            "show_items, momsavings_on"
+                            "show_items, momsanity_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PLAYERS_HOUSE_1F"
+                            "^$CanReach|REGION_PLAYERS_HOUSE_1F, ^$mom_saving|1"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -181,10 +181,10 @@
                     {
                         "name": "Mom's Savings - 4000",
                         "visibility_rules": [
-                            "show_items, momsavings_on"
+                            "show_items, momsanity_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PLAYERS_HOUSE_1F"
+                            "^$CanReach|REGION_PLAYERS_HOUSE_1F, ^$mom_saving|2"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -192,10 +192,10 @@
                     {
                         "name": "Mom's Savings - 7000",
                         "visibility_rules": [
-                            "show_items, momsavings_on"
+                            "show_items, momsanity_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PLAYERS_HOUSE_1F"
+                            "^$CanReach|REGION_PLAYERS_HOUSE_1F, ^$mom_saving|3"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -203,10 +203,10 @@
                     {
                         "name": "Mom's Savings - 10000",
                         "visibility_rules": [
-                            "show_items, momsavings_on"
+                            "show_items, momsanity_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PLAYERS_HOUSE_1F"
+                            "^$CanReach|REGION_PLAYERS_HOUSE_1F, ^$mom_saving|4"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -214,10 +214,10 @@
                     {
                         "name": "Mom's Savings - 15000",
                         "visibility_rules": [
-                            "show_items, momsavings_on"
+                            "show_items, momsanity_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PLAYERS_HOUSE_1F"
+                            "^$CanReach|REGION_PLAYERS_HOUSE_1F, ^$mom_saving|5"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -225,10 +225,10 @@
                     {
                         "name": "Mom's Savings - 19000",
                         "visibility_rules": [
-                            "show_items, momsavings_on"
+                            "show_items, momsanity_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PLAYERS_HOUSE_1F"
+                            "^$CanReach|REGION_PLAYERS_HOUSE_1F, ^$mom_saving|6"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -236,10 +236,10 @@
                     {
                         "name": "Mom's Savings - 30000",
                         "visibility_rules": [
-                            "show_items, momsavings_on"
+                            "show_items, momsanity_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PLAYERS_HOUSE_1F"
+                            "^$CanReach|REGION_PLAYERS_HOUSE_1F, ^$mom_saving|7"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -247,10 +247,10 @@
                     {
                         "name": "Mom's Savings - 40000",
                         "visibility_rules": [
-                            "show_items, momsavings_on"
+                            "show_items, momsanity_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PLAYERS_HOUSE_1F"
+                            "^$CanReach|REGION_PLAYERS_HOUSE_1F, ^$mom_saving|8"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -258,10 +258,10 @@
                     {
                         "name": "Mom's Savings - 50000",
                         "visibility_rules": [
-                            "show_items, momsavings_on"
+                            "show_items, momsanity_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PLAYERS_HOUSE_1F"
+                            "^$CanReach|REGION_PLAYERS_HOUSE_1F, ^$mom_saving|9"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -269,10 +269,10 @@
                     {
                         "name": "Mom's Savings - 100000",
                         "visibility_rules": [
-                            "show_items, momsavings_on"
+                            "show_items, momsanity_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PLAYERS_HOUSE_1F"
+                            "^$CanReach|REGION_PLAYERS_HOUSE_1F, ^$mom_saving|10"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"

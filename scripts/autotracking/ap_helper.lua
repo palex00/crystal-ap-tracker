@@ -471,6 +471,10 @@ SLOT_CODES = {
     flooded_mine = {
         code = "flooded_mine",
         mapping = MAP_TOGGLE
+    },
+    momsanity = {
+        code = "momsanity",
+        mapping = MAP_TOGGLE
     }
 }
 

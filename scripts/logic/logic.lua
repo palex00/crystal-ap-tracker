@@ -597,3 +597,16 @@ function magikarp()
         return AccessibilityLevel.Inspect
     end
 end
+
+function mom_saving(number)
+    if not (has("EVENT_GAVE_MYSTERY_EGG_TO_ELM") or has("EVENT_MOM_CALLS")) then
+        return AccessibilityLevel.None
+    end
+    local available_gyms = has("johto_only_off") and 16 or 8
+    local required = math.min(number - 1, available_gyms)
+    if gyms() >= required then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
+end
