@@ -13,6 +13,26 @@ local ALREADY_VISITED = {}
 local PATH = {}
 local STEPS = -1
 
+-- The player can always warp back to their starting town, so route mode treats "warp home"
+-- as a virtual one-hop transition available on every node. HOME is the active start-town
+-- region node (set per route in GetRoute); nil until then. See HomeRegion below.
+local HOME = nil
+
+--- The starting-town region for this seed: the single Entry_point exit whose start_town_*
+--- rule currently passes. Derived from the structural entry edges in connections.lua so there
+--- is one source of truth. Returns nil if no start town is set yet.
+---@return table|nil
+local function HomeRegion()
+    for _, exit in pairs(Entry_point.exits) do
+        local ok = exit[2](0)
+        if type(ok) == "boolean" then ok = A(ok) end
+        if ok and ok > ACCESS_NONE then
+            return exit[1]
+        end
+    end
+    return nil
+end
+
 --- Depth-first search over the graph honoring the entrance detour. Fills PATH with the
 --- pretty-name of each TRANSITION (edge) taken when a route to `finish` is found. Only steps
 --- onto nodes that are both reachable (cached accessibility) and whose edge rule passes.
@@ -76,6 +96,13 @@ local function FindPath(start, finish, stage)
         end
     end
 
+    -- Warp home: a virtual one-hop transition available from any node except home itself.
+    -- Home is always reachable, so no rule/accessibility gate is needed. This lets the search
+    -- pick "warp home, then walk out" when that is fewer hops than walking from here.
+    if HOME and start ~= HOME then
+        table.insert(next_sweep, { node = HOME, label = "Warp Home" })
+    end
+
     for _, step in pairs(next_sweep) do
         if FindPath(step.node, finish, stage) then
             PATH[stage] = step.label
@@ -122,6 +149,7 @@ function GetRoute(start, finish)
     ALREADY_VISITED = {}
     PATH = {}
     STEPS = -1
+    HOME = HomeRegion()
 
     FindPath(start, finish, 0)
     clearRouteTiles()
@@ -154,4 +182,5 @@ function GetRoute(start, finish)
     ALREADY_VISITED = {}
     PATH = {}
     STEPS = -1
+    HOME = nil
 end
