@@ -110,8 +110,10 @@ function ValidateEntrances()
     end
 
     -- 2. Every registry ROW needs a matching graph edge, a well-formed token whose regions
-    --    both exist, a pretty name, and a unique id (REGISTRY.byId silently keeps only one
-    --    row per id, so a collision loses a warp without any error).
+    --    both exist, a pretty name, and tile ids that no OTHER ungated row also claims (a
+    --    silent collision would make ResolveEntranceRow reveal the wrong entrance). Empty ids
+    --    are allowed (reverse-elevator rows); gated rows may share an id with their vanilla
+    --    partner on purpose and are exempt from the uniqueness check.
     local seenId = {}
     if hasRegistry then
         for token, row in pairs(ENTRANCE_REGISTRY) do
@@ -140,13 +142,18 @@ function ValidateEntrances()
                 warn("registry row '" .. token .. "' has no pretty name.")
             end
 
-            if row.id == nil then
-                warn("registry row '" .. token .. "' has no id.")
-            elseif seenId[row.id] ~= nil then
-                warn("registry id " .. tostring(row.id) .. " is shared by '" .. seenId[row.id]
-                    .. "' and '" .. token .. "' -> REGISTRY.byId keeps only one of them.")
-            else
-                seenId[row.id] = token
+            if row.ids == nil then
+                warn("registry row '" .. token .. "' has no ids field.")
+            elseif not row.gate then
+                for _, wid in ipairs(row.ids) do
+                    if seenId[wid] ~= nil then
+                        warn("warp id " .. tostring(wid) .. " is claimed by ungated rows '"
+                            .. seenId[wid] .. "' and '" .. token
+                            .. "' -> ambiguous reveal.")
+                    else
+                        seenId[wid] = token
+                    end
+                end
             end
         end
     end

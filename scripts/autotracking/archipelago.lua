@@ -467,7 +467,7 @@ function updateEntrances(list)
         return
     end
     for _, id in ipairs(list) do
-        local row = REGISTRY.byId[id]
+        local row = ResolveEntranceRow(id)
         if row then
             local token = row.token
             local exit = ENTRANCE_CONNECTIONS[token]

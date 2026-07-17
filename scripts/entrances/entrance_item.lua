@@ -37,7 +37,7 @@ EntranceItem = CustomItem:extend()
 function EntranceItem:init(token, row)
     self:createItem(token) -- LuaItem.Name = token
     self.token = token
-    self.id = row.id
+    self.ids = row.ids
     self.pretty = row.pretty
     self.tab = row.tab
     self.node = EntranceSourceRegion(token) -- region this entrance sits in (route mode start/finish)
