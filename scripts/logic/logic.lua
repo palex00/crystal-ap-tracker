@@ -125,6 +125,16 @@ function hid()
     end
 end
 
+function lance_e4()
+    if has("lance_requires_elite_four_off") then
+        return AccessibilityLevel.Normal
+    elseif has("EVENT_BEAT_ELITE_4_WILL") and has("EVENT_BEAT_ELITE_4_KOGA")
+        and has("EVENT_BEAT_ELITE_4_BRUNO") and has("EVENT_BEAT_ELITE_4_KAREN") then
+        return AccessibilityLevel.Normal
+    end
+    return AccessibilityLevel.None
+end
+
 function can_cut_johto()
   return has("HM_CUT") and (
   has("FREE_CUT") or

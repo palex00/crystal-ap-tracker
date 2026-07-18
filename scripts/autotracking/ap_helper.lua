@@ -468,6 +468,10 @@ SLOT_CODES = {
         code = "route_23_restored",
         mapping = MAP_TOGGLE
     },
+    lance_requires_elite_four = {
+        code = "lance_requires_elite_four",
+        mapping = MAP_TOGGLE
+    },
     flooded_mine = {
         code = "flooded_mine",
         mapping = MAP_TOGGLE

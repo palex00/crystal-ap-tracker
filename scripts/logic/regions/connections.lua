@@ -556,7 +556,8 @@ REGION_GOLDENROD_UNDERGROUND_WAREHOUSE:connect_one_way(NAMED_NODES["REGION_GOLDE
 NAMED_NODES["REGION_GOLDENROD_UNDERGROUND_WAREHOUSE:TAKEOVER"]:connect_one_way(REGION_GOLDENROD_UNDERGROUND_WAREHOUSE, "TODOBYSNOWFLAV")
 
 -- === REGION_HALL_OF_FAME ===
-REGION_HALL_OF_FAME:connect_two_ways(REGION_LANCES_ROOM, "Hall of Fame Exit", "Hall of Fame Entrance")
+REGION_HALL_OF_FAME:connect_one_way(REGION_LANCES_ROOM, "Hall of Fame Exit")
+REGION_LANCES_ROOM:connect_one_way(REGION_HALL_OF_FAME, "Hall of Fame Entrance", lance_e4)
 
 -- === REGION_ICE_PATH_1F:WEST ===
 NAMED_NODES["REGION_ICE_PATH_1F:WEST"]:connect_two_ways_entrance(REGION_ROUTE_44, "dungeon")
@@ -621,7 +622,8 @@ NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"]:connect_two_ways_entr
 NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"]:connect_one_way(NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:RIVAL"], "TODOBYSNOWFLAV", function() return has("EVENT_BEAT_RIVAL_IN_MT_MOON") and has("e4_requirement") end)
 
 -- === REGION_KARENS_ROOM ===
-REGION_KARENS_ROOM:connect_two_ways_entrance(REGION_LANCES_ROOM, "pokemon_league")
+REGION_KARENS_ROOM:connect_one_way_entrance(REGION_LANCES_ROOM, "pokemon_league")
+REGION_LANCES_ROOM:connect_one_way_entrance(REGION_KARENS_ROOM, "pokemon_league", lance_e4)
 
 -- === REGION_KOGAS_ROOM ===
 REGION_KOGAS_ROOM:connect_two_ways_entrance(REGION_WILLS_ROOM, "pokemon_league")
@@ -1610,7 +1612,7 @@ NAMED_NODES["REGION_VERMILION_PORT_PASSAGE:ENTRANCE"]:connect_two_ways_entrance(
 -- === REGION_VICTORY_ROAD:1F:ENTRANCE ===
 NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F"], "TODOBYSNOWFLAV", victory_road_access)
 NAMED_NODES["REGION_VICTORY_ROAD:1F"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"], "TODOBYSNOWFLAV")
-NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "dungeon")
+NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "dungeon", function() return has("route_23_restored_off") end)
 NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_23_RESTORED:NORTH"], "dungeon", function() return has("route_23_restored_on") end)
 
 -- === REGION_VICTORY_ROAD:1F ===

@@ -2547,6 +2547,28 @@
         ]
     },
     {
+        "name": "Lance Requires Elite Four",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Lance can be fought immediately",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "lance_requires_elite_four, lance_requires_elite_four_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Lance requires the other Elite Four",
+                "img": "/images/placeholder.png",
+                "codes": "lance_requires_elite_four, lance_requires_elite_four_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Momsanity",
         "type": "progressive",
         "loop": true,
