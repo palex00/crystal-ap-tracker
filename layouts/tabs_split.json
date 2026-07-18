@@ -104,6 +104,16 @@
                                             "key": "pokedex_grid_full"
                                         }
                                     }
+                                },
+                                {
+                                    "title": "Routing",
+                                    "content": {
+                                        "type": "dock",
+                                        "content": {
+                                            "type": "layout",
+                                            "key": "routing"
+                                        }
+                                    }
                                 }
                             ]
                         }

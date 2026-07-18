@@ -85,7 +85,7 @@ Tracker:AddLocations("locations/new_signs.json")
 Tracker:AddLayouts("layouts/dungeon_maps.json")
 Tracker:AddLayouts("layouts/tabs_single.json")
 Tracker:AddLayouts("layouts/overworld.json")
-Tracker:AddLayouts("layouts/route.json")
+Tracker:AddLayouts("layouts/routing.json")
 
 ---- items
 Tracker:AddLayouts("layouts/tracker/tracker_flyunlock_other.json") -- maximum itemgrids

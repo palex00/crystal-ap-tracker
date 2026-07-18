@@ -22,6 +22,16 @@
                 }
             },
             {
+                "title": "Routing",
+                "content": {
+                    "type": "dock",
+                    "content": {
+                        "type": "layout",
+                        "key": "routing"
+                    }
+                }
+            },
+            {
                 "title": "Johto Cities",
                 "content": {
                     "type": "dock",
@@ -88,16 +98,6 @@
                     "content": {
                         "type": "layout",
                         "key": "kanto_dungeons"
-                    }
-                }
-            },
-            {
-                "title": "Routing",
-                "content": {
-                    "type": "dock",
-                    "content": {
-                        "type": "layout",
-                        "key": "routing"
                     }
                 }
             }

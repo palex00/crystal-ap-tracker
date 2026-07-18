@@ -13,8 +13,8 @@
 --   right  -> tab to what leads to this entrance         (no-op if unrevealed)
 --   middle -> route mode (pick two entrances -> GetRoute)
 
-ENTRANCE_CLOSED_ICON = "images/items/pokeball_bw.png" -- unrevealed marker
-ENTRANCE_OPEN_ICON = "images/items/pokeball.png"      -- revealed marker
+ENTRANCE_CLOSED_ICON = "images/entrances/entrance_unexplored.png" -- unrevealed marker
+ENTRANCE_OPEN_ICON = "images/entrances/entrance_explored.png"     -- revealed marker
 
 -- Temp-highlight state (feature: briefly highlight the destination after navigating).
 local HIGHLIGHT_TARGET = nil
