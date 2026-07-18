@@ -44,6 +44,11 @@ ScriptHost:LoadScript("scripts/logic/regions/check_leafs.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_registry.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_item.lua")
 createEntrances()
+-- NOTE: no global "*" watch for CanReach invalidation. Each logic code gets its own per-code
+-- watch (registered by LogicCount in utils.lua, and pre-registered for every rule code by the
+-- warm pass), which calls InvalidateCanReach only when a reachability-relevant code changes.
+-- A "*" watch would additionally rebuild the whole graph on logic-irrelevant changes (dexsanity,
+-- cosmetics, caught/seen, signs, shops...) -- redundant work, worst during autotracking.
 ScriptHost:LoadScript("scripts/routing/route_mode.lua")
 -- Structural sanity check: warns loudly if a warp is declared in only one of the graph /
 -- registry, has a bad category, or collides on an id. Read-only; no-ops until data exists.
@@ -152,6 +157,10 @@ for _, cat in ipairs(ER_CATEGORIES) do
     ScriptHost:AddWatchForCode("er_" .. cat, "er_" .. cat, toggle_er)
 end
 refreshERCategories()
+
+-- Warm the LogicCount cache across frames so a later batch (e.g. autotracking on connect)
+-- never cold-resolves many codes inside one flood-fill. See WarmLogicCountsStep in canreach.lua.
+ScriptHost:AddOnFrameHandler("logic warm", WarmLogicCountsStep)
 
 -- Makes version nil
 first_two_dots = nil

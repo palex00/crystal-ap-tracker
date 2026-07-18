@@ -40,7 +40,16 @@ end
 --- Lazily rebuilds the whole flood-fill cache when the world state changed.
 ---@param name string
 ---@return integer
+-- True until the frame-stepped LogicCount warm pass finishes (see WarmLogicCountsStep). While
+-- warming, CanReach returns NONE so PopTracker's initial load computation can't trigger a full
+-- cold flood-fill (which would cold-resolve ~269 codes in one call and blow the limit). One real
+-- recompute is forced when warming completes.
+LOGIC_WARMING = true
+
 function CanReach(name)
+    if LOGIC_WARMING then
+        return ACCESS_NONE
+    end
     if stale then
         stale = false
         accessibilityCacheComplete = false
@@ -181,8 +190,8 @@ end
 ---@param token string forward token of this entrance ("REGION_A -> REGION_B")
 ---@return table detour target node (Empty_node if unrevealed)
 function EntranceDetourTarget(token)
-    local item = Tracker:FindObjectForCode(token)
-    local paired = item and item.ItemState and item.ItemState.forwardTarget
+    local item = ENTRANCE_ITEMS[token]
+    local paired = item and item.forwardTarget
     if paired then
         -- Mouth-to-mouth: entering this door drops you at the paired door's mouth, i.e. the
         -- SOURCE region of the paired token. Exterior doors pair with interior ones (hence the
@@ -249,9 +258,43 @@ end
 Entry_point = Node.new("Entry_point")
 Empty_node = Node.new("Empty_node")
 
---- Forces a graph rebuild on any tracker state change.
-function StateChanged()
-    stale = true
+--- Warms the LogicCount cache (utils.lua) by evaluating every edge rule once, so every item
+--- code any rule references is resolved and gets its per-code watch registered BEFORE real
+--- play -- self-maintaining (it warms exactly the codes the rules touch, no hardcoded list).
+--- Stepped across frames so no single call pays the whole cold scan. Without this, a batch
+--- that makes many regions reachable at once (e.g. autotracking on connect) would cold-resolve
+--- dozens of codes inside ONE flood-fill and blow the instruction limit. Registered from
+--- init.lua after the graph is built; removes itself when done.
+local warm_index = 1
+local WARM_COLD_BUDGET = 6 -- cold code resolutions (each an 856-item scan) allowed per frame
+function WarmLogicCountsStep()
+    local keys = NAMED_NODES_KEYS
+    if #keys == 0 then -- nothing to warm; open the gate immediately
+        ScriptHost:RemoveOnFrameHandler("logic warm")
+        LOGIC_WARMING = false
+        return
+    end
+    local start = LOGIC_COLD_RESOLVES
+    while warm_index <= #keys do
+        local node = NAMED_NODES[keys[warm_index]]
+        if node then
+            for _, exit in pairs(node.exits) do
+                pcall(exit[2], 0) -- exit[2] is the rule; calls has()/LogicCount -> warms + watches
+                if LOGIC_COLD_RESOLVES - start >= WARM_COLD_BUDGET then
+                    -- Budget hit: resume THIS node next frame. Already-warm edges re-eval as O(1)
+                    -- cache hits, so re-entering the node is cheap; we just skip to its cold ones.
+                    return
+                end
+            end
+        end
+        warm_index = warm_index + 1
+    end
+    -- Done: open the gate and force one real logic recompute now that every code is warm.
+    ScriptHost:RemoveOnFrameHandler("logic warm")
+    LOGIC_WARMING = false
+    InvalidateCanReach()
+    local upd = Tracker:FindObjectForCode("update")
+    if upd then
+        upd.Active = not upd.Active
+    end
 end
-
-ScriptHost:AddWatchForCode("StateChanged", "*", StateChanged)

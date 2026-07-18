@@ -7,8 +7,40 @@ function has_value(t, val)
     return 0
 end
 
+-- Persistent per-code count cache for logic. PopTracker wipes its own _providerCountCache on
+-- EVERY state change, so Tracker:ProviderCountForCode re-scans all LuaItems for each code on
+-- each toggle -- fatal now that 856 entrance LuaItems are in that scan. We memoize the exact
+-- count here and invalidate ONLY the changed code via a per-code watch registered lazily on
+-- first use, so a toggle drops just the codes it actually touched. Semantics are identical to
+-- Tracker:ProviderCountForCode (unlike FindObjectForCode.AcquiredCount, which misreads the
+-- per-stage _on/_off setting codes).
+LOGIC_COUNTS = LOGIC_COUNTS or {}
+LOGIC_COLD_RESOLVES = LOGIC_COLD_RESOLVES or 0 -- count of cold misses; the warm pass budgets on this
+local logic_count_watched = {}
+
+function LogicCount(code)
+    local count = LOGIC_COUNTS[code]
+    if count == nil then
+        count = Tracker:ProviderCountForCode(code)
+        LOGIC_COUNTS[code] = count
+        LOGIC_COLD_RESOLVES = LOGIC_COLD_RESOLVES + 1
+        if not logic_count_watched[code] then
+            logic_count_watched[code] = true
+            ScriptHost:AddWatchForCode("logiccount_" .. code, code, function()
+                -- Re-resolve eagerly HERE (each watch callback is its own Lua call with its own
+                -- instruction budget) instead of clearing and re-resolving inside the next
+                -- flood-fill. A batch that changes N codes at once then costs N separate
+                -- one-code scans rather than one flood-fill doing N cold scans in a single call.
+                LOGIC_COUNTS[code] = Tracker:ProviderCountForCode(code)
+                if InvalidateCanReach then InvalidateCanReach() end
+            end)
+        end
+    end
+    return count
+end
+
 function has(item, amount)
-    local count = Tracker:ProviderCountForCode(item)
+    local count = LogicCount(item)
     amount = tonumber(amount)
     if not amount then
         return count > 0

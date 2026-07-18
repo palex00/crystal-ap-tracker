@@ -182,9 +182,8 @@ function ChangeEntranceColor(token)
     if Tracker.BulkUpdate then
         return ACCESS_NONE
     end
-    local item = Tracker:FindObjectForCode(token)
-    local state = item and item.ItemState
-    if state and (state.forwardTarget or state.reverseSource) then
+    local item = ENTRANCE_ITEMS[token]
+    if item and (item.forwardTarget or item.reverseSource) then
         return ACCESS_CLEARED
     end
     return CanReach(EntranceSourceRegion(token))
