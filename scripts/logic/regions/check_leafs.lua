@@ -158,7 +158,7 @@ NAMED_NODES["REGION_ROUTE_12:SOUTH"]:connect_one_way("ROUTE_12_NUGGET", function
 REGION_ROUTE_15:connect_one_way("ROUTE_15_PP_UP", can_cut_kanto)
 
 -- === REGION_ROUTE_24:ROCKET ===
-NAMED_NODES["REGION_ROUTE_24:ROCKET"]:connect_one_way("ITEM_FROM_ROCKET_GRUNTM_31", function() return has("EVENT_CERULEAN_GYM_ROCKET") end)
+NAMED_NODES["REGION_ROUTE_24:ROCKET"]:connect_one_way("ITEM_FROM_ROCKET_GRUNTM_31", function() return has("EVENT_MET_MANAGER_AT_POWER_PLANT") end)
 
 -- === REGION_ROUTE_25 ===
 REGION_ROUTE_25:connect_one_way("ROUTE_25_PROTEIN", can_cut_kanto)
