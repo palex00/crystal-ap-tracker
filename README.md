@@ -13,6 +13,7 @@ Supported Features:
 - Restored Route 23
 - Vanilla Event Chains
 - Momsanity (locations, logic, autotracking. Note that the Call Mom event doesn't work yet).
+- Lance Requires E4
 
 Unsupported Beta Features:
 - Multiple Goals - currently debug shows all of them; event grid shows all events
@@ -20,7 +21,7 @@ Unsupported Beta Features:
     - Battle Tower
     - Rematchsanity
     - Lucky Number Show
-- Entrance Randomization
+- Entrance Randomization: the framework exists, it is not wired up yet.
 - Fly Destination Rando
 - Time of Day Encounters
 - everything else, basically
