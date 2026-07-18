@@ -14,6 +14,9 @@ Tracker:AddItems("items/route.json")
 
 -- Logic
 ScriptHost:LoadScript("scripts/utils.lua")
+-- Must be the FIRST watch registered: watch callbacks fire in registration order, so this drops the
+-- LogicCount memo before any other callback can read it. See InvalidateLogicCounts in utils.lua.
+ScriptHost:AddWatchForCode("logiccount invalidate", "*", InvalidateLogicCounts)
 ScriptHost:LoadScript("scripts/toggles.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/logic/dexsanity.lua")
@@ -48,11 +51,6 @@ ScriptHost:LoadScript("scripts/entrances/entrance_item.lua")
 -- map now; the actual EntranceItems are instantiated by createEntrancesForEnabled(), driven by
 -- refreshERCategories() (called at the end of init and whenever a category toggles / on connect).
 buildEntranceCategoryMap()
--- NOTE: no global "*" watch for CanReach invalidation. Each logic code gets its own per-code
--- watch (registered by LogicCount in utils.lua, and pre-registered for every rule code by the
--- warm pass), which calls InvalidateCanReach only when a reachability-relevant code changes.
--- A "*" watch would additionally rebuild the whole graph on logic-irrelevant changes (dexsanity,
--- cosmetics, caught/seen, signs, shops...) -- redundant work, worst during autotracking.
 ScriptHost:LoadScript("scripts/routing/route_mode.lua")
 -- Structural sanity check: warns loudly if a warp is declared in only one of the graph /
 -- registry, has a bad category, or collides on an id. Read-only; no-ops until data exists.

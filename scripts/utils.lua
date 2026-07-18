@@ -87,6 +87,17 @@ function LogicCount(code)
     return count
 end
 
+-- PopTracker dispatches watch callbacks in REGISTRATION order, and the per-code watches above are
+-- registered lazily on first read -- so a callback registered in init.lua (toggle_splitmap and
+-- friends) runs BEFORE the memo for the code it is about to read has been refreshed, and sees the
+-- old value. Registered first in init.lua, this drops the whole memo before any other callback runs.
+function InvalidateLogicCounts()
+    LOGIC_COUNTS = {}
+    if InvalidateCanReach then
+        InvalidateCanReach()
+    end
+end
+
 function has(item, amount)
     local count = LogicCount(item)
     amount = tonumber(amount)
@@ -166,7 +177,7 @@ end
 
 -- Entrance randomization is per-category; there is no single ER on/off. The Route tab is
 -- part of tabs_single.json. When you author additional tab variants (split/reverse/johto),
--- add a "Route" tab there too, or swap ER-specific tab layouts here.
+-- add a "Routing" tab there too, or swap ER-specific tab layouts here.
 function toggle_er()
     refreshERCategories()
 end

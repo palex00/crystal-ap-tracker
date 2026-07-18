@@ -176,7 +176,7 @@ function GetRoute(start, finish)
         writeRouteTile(0, "No Route Found")
     end
 
-    Tracker:UiHint("ActivateTab", "Route")
+    Tracker:UiHint("ActivateTab", "Routing")
 
     FOUND = false
     ALREADY_VISITED = {}
