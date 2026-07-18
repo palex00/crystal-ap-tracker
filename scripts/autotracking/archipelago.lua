@@ -158,13 +158,20 @@ function onClear(slot_data)
     EVOLUTION_DATA = slot_data.evolution_info
     BREEDING_DATA = slot_data.breeding_info
 
-    -- Entrance randomization: full connection map (region-string -> region-string). slot_data
-    -- gives a list of pairs (E1, E2) meaning "entering E1 emerges at E2". Connections are only
-    -- revealed per-direction later, as entrance IDs arrive in the DataStorage "entered" list.
+    -- Entrance randomization: full connection map (token -> token). The apworld sends
+    -- `er_pairings`, a list of (source, target) connection-name pairs. A one-way pairing's
+    -- target carries a " (one-way target)" suffix naming the connection whose DESTINATION
+    -- side you land in; strip it so both kinds key the registry the same way.
+    -- Connections are only revealed per-direction later, as warp IDs arrive in the
+    -- DataStorage warps list.
     ENTRANCE_CONNECTIONS = {}
-    if slot_data.entrances then
-        for _, pair in ipairs(slot_data.entrances) do
-            ENTRANCE_CONNECTIONS[pair[1]] = pair[2]
+    ENTRANCE_ONE_WAY = {}
+    if slot_data.er_pairings then
+        for _, pair in ipairs(slot_data.er_pairings) do
+            local target = pair[2]
+            local stripped = string.gsub(target, " %(one%-way target%)$", "")
+            ENTRANCE_CONNECTIONS[pair[1]] = stripped
+            ENTRANCE_ONE_WAY[pair[1]] = stripped ~= target
         end
     end
     resetEntrances()
@@ -321,7 +328,7 @@ function onClear(slot_data)
             HINT       = "_read_hints_" .. suffix,
             SHOP_K     = makeID("seen_kanto_marts_"),
             SHOP_J     = makeID("seen_johto_marts_"),
-            ENTRANCE   = makeID("entrances_"),
+            ENTRANCE   = makeID("warps_"),
         }
         for _, id in pairs(IDs) do
             Archipelago:SetNotify({id})

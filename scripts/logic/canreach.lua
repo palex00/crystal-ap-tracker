@@ -36,6 +36,18 @@ function EntranceSourceRegion(token)
     return token
 end
 
+--- Returns the substring after " -> " in a region-string token, i.e. the region the entrance
+--- leads to ("REGION_A -> REGION_B" -> "REGION_B").
+---@param token string
+---@return string
+function EntranceDestRegion(token)
+    local _, arrowEnd = string.find(token, " %-> ")
+    if arrowEnd then
+        return string.sub(token, arrowEnd + 1)
+    end
+    return token
+end
+
 --- Checks whether a named node is reachable from the entry point and returns its level.
 --- Lazily rebuilds the whole flood-fill cache when the world state changed.
 ---@param name string
@@ -196,6 +208,13 @@ function EntranceDetourTarget(token)
         -- Mouth-to-mouth: entering this door drops you at the paired door's mouth, i.e. the
         -- SOURCE region of the paired token. Exterior doors pair with interior ones (hence the
         -- gym/gym_interior category split), so reading the source side is what lands you inside.
+        -- Matches the apworld: world.py _resolve_pairing_target returns the target connection's
+        -- exit_region, and in entrance_data.json exit_region is the LEFT side of "A -> B".
+        -- A one-way pairing is the exception -- there the apworld resolves the ORIGINAL
+        -- connection's entrance_region (the RIGHT side), so use the destination instead.
+        if ENTRANCE_ONE_WAY and ENTRANCE_ONE_WAY[token] then
+            return NAMED_NODES[EntranceDestRegion(paired)] or Empty_node
+        end
         return NAMED_NODES[EntranceSourceRegion(paired)] or Empty_node
     end
     return Empty_node

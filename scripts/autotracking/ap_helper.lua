@@ -165,20 +165,9 @@ SLOT_CODES = {
         code = "mischief",
         mapping = MAP_TOGGLE
     },
-    -- Entrance randomization category toggles. RENAME the left-hand slot_data keys to match
-    -- your apworld's actual option names. Each maps onto its er_<cat> settings item
-    -- (0 = off, 1 = on); the er_<cat> watch then refreshes ER_CATEGORY_ENABLED. If your
-    -- slot_data sends booleans instead of 0/1, add [true]/[false] to MAP_TOGGLE.
-    randomize_town_exits   = { code = "er_town_exits",   mapping = MAP_TOGGLE },
-    randomize_dungeons     = { code = "er_dungeons",     mapping = MAP_TOGGLE },
-    randomize_caves        = { code = "er_caves",        mapping = MAP_TOGGLE },
-    randomize_holes        = { code = "er_holes",        mapping = MAP_TOGGLE },
-    randomize_gyms         = { code = "er_gyms",         mapping = MAP_TOGGLE },
-    randomize_pokecenters  = { code = "er_pokecenters",  mapping = MAP_TOGGLE },
-    randomize_pokemarts    = { code = "er_pokemarts",    mapping = MAP_TOGGLE },
-    randomize_houses       = { code = "er_houses",       mapping = MAP_TOGGLE },
-    randomize_single_warps = { code = "er_single_warps", mapping = MAP_TOGGLE },
-    randomize_special      = { code = "er_special",      mapping = MAP_TOGGLE },
+    -- Entrance randomization is NOT one slot_data key per category: the apworld sends a single
+    -- `randomize_entrances` OptionSet holding the display names of the enabled categories
+    -- (empty = ER off). It is handled in LIST_CODES below.
     -- temp disabled
     --goal = {
     --    code = "goal",
@@ -542,6 +531,28 @@ AMOUNT_CODES = {
 }
 
 LIST_CODES = {
+    -- ER categories actually in the shuffle pool. The apworld's RandomizeEntrances OptionSet
+    -- sends the display names below; anything absent stays off (its entrances are vanilla and
+    -- get no tracker item). Setting er_<cat> fires the init.lua watch -> refreshERCategories()
+    -- -> createEntrancesForEnabled(). Keys must match options.py RandomizeEntrances exactly.
+    randomize_entrances = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Dungeon"]           = "er_dungeon",
+            ["Dungeon Interior"]  = "er_dungeon_interior",
+            ["Gym"]               = "er_gym",
+            ["Gym Interior"]      = "er_gym_interior",
+            ["Mart"]              = "er_mart",
+            ["Mart Interior"]     = "er_mart_interior",
+            ["Building"]          = "er_building",
+            ["Building Interior"] = "er_building_interior",
+            ["Gate"]              = "er_gate",
+            ["Pokecenter"]        = "er_pokecenter",
+            ["Elevator"]          = "er_elevator",
+            ["Pokemon League"]    = "er_pokemon_league",
+            ["One-Way"]           = "er_one_way",
+        }
+    },
     dark_areas = {
         mapping = MAP_TOGGLE,
         values = {
