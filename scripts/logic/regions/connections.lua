@@ -275,7 +275,7 @@ NAMED_NODES["REGION_CERULEAN_CITY:SURF"]:connect_two_ways(NAMED_NODES["REGION_RO
 REGION_CERULEAN_GYM:connect_one_way(NAMED_NODES["REGION_CERULEAN_GYM:ROCKET"], "TODOBYSNOWFLAV",
     function() return not has("vanilla_chain_misty_on") or has("EVENT_MET_MANAGER_AT_POWER_PLANT") end)
 REGION_CERULEAN_GYM:connect_one_way(NAMED_NODES["REGION_CERULEAN_GYM:MISTY"], "TODOBYSNOWFLAV",
-    function() return not has("vanilla_chain_misty_on") or has("EVENT_ROUTE_25_MISTY_DATE") end)
+    function() return not has("vanilla_chain_misty_on") or has("EVENT_MISTY_RETURNED_TO_GYM") end)
 
 -- === REGION_CERULEAN_POKECENTER_1F ===
 REGION_CERULEAN_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Cerulean Pokecenter Stairs")
