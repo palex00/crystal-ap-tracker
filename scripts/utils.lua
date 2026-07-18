@@ -14,14 +14,61 @@ end
 -- first use, so a toggle drops just the codes it actually touched. Semantics are identical to
 -- Tracker:ProviderCountForCode (unlike FindObjectForCode.AcquiredCount, which misreads the
 -- per-stage _on/_off setting codes).
+--
+-- DERIVED CODES: a code whose provider is a custom LuaItem that computes its value from OTHER
+-- items (e4_requirement/route_44_requirement/... read badges()/gyms(); kanto_access_condition
+-- reads clear_snorlax() etc). Clearing a gym emits onStateChanged for EVENT_BEAT_* only, so the
+-- watch on route_44_requirement never fires and its cached count would stay stale forever.
+-- (PopTracker dodges this by refusing to cache such codes at all -- _indirectlyConnectedLuaCodes.)
+-- We instead learn the dependencies: any LogicCount that happens WHILE another code is being
+-- resolved is an input to that code, so when the input changes we drop everything derived from it.
 LOGIC_COUNTS = LOGIC_COUNTS or {}
 LOGIC_COLD_RESOLVES = LOGIC_COLD_RESOLVES or 0 -- count of cold misses; the warm pass budgets on this
 local logic_count_watched = {}
+local resolving = {}  -- stack of codes currently being resolved
+local resolving_n = 0
+local derived_from = {} -- input code -> set of codes computed from it
+
+local function invalidateDerived(code, seen)
+    local set = derived_from[code]
+    if not set then
+        return
+    end
+    seen = seen or {}
+    for derived in pairs(set) do
+        if not seen[derived] then
+            seen[derived] = true
+            LOGIC_COUNTS[derived] = nil -- lazy: only a handful, re-resolved on next read
+            invalidateDerived(derived, seen)
+        end
+    end
+end
+
+-- Resolve a code for real, with the stack pushed so any nested LogicCount registers as an input.
+local function resolveCode(code)
+    resolving_n = resolving_n + 1
+    resolving[resolving_n] = code
+    local count = Tracker:ProviderCountForCode(code)
+    resolving[resolving_n] = nil
+    resolving_n = resolving_n - 1
+    return count
+end
 
 function LogicCount(code)
+    if resolving_n > 0 then
+        local parent = resolving[resolving_n]
+        if parent ~= code then
+            local set = derived_from[code]
+            if not set then
+                set = {}
+                derived_from[code] = set
+            end
+            set[parent] = true
+        end
+    end
     local count = LOGIC_COUNTS[code]
     if count == nil then
-        count = Tracker:ProviderCountForCode(code)
+        count = resolveCode(code)
         LOGIC_COUNTS[code] = count
         LOGIC_COLD_RESOLVES = LOGIC_COLD_RESOLVES + 1
         if not logic_count_watched[code] then
@@ -31,7 +78,8 @@ function LogicCount(code)
                 -- instruction budget) instead of clearing and re-resolving inside the next
                 -- flood-fill. A batch that changes N codes at once then costs N separate
                 -- one-code scans rather than one flood-fill doing N cold scans in a single call.
-                LOGIC_COUNTS[code] = Tracker:ProviderCountForCode(code)
+                LOGIC_COUNTS[code] = resolveCode(code)
+                invalidateDerived(code)
                 if InvalidateCanReach then InvalidateCanReach() end
             end)
         end

@@ -166,5 +166,8 @@ refreshERCategories()
 -- never cold-resolves many codes inside one flood-fill. See WarmLogicCountsStep in canreach.lua.
 ScriptHost:AddOnFrameHandler("logic warm", WarmLogicCountsStep)
 
+-- TEMPORARY: per-frame report of how many entrance canProvideCode calls PopTracker made.
+ScriptHost:AddOnFrameHandler("entrance probe", EntranceProbeReport)
+
 -- Makes version nil
 first_two_dots = nil
