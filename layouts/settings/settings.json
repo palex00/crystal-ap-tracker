@@ -22,6 +22,14 @@
                 },
                 {
                     "type": "group",
+                    "header": "Entrance Randomization",
+                    "content": {
+                        "type": "layout",
+                        "key": "er_grid"
+                    }
+                },
+                {
+                    "type": "group",
                     "header": "Roadblocks",
                     "content": {
                         "type": "layout",
@@ -79,9 +87,7 @@
                 "dexsanity",
                 "randomize_fly_unlocks",
                 "badges",
-                "pokegear"
-            ],
-            [
+                "pokegear",
                 "randomize_pokedex",
                 "grasssanity",
                 "randomize_bug_catching_contest",
@@ -109,6 +115,30 @@
             ]
         ]
     },
+    "er_grid": {
+        "type": "itemgrid",
+        "item_margin": "2, 2",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "er_dungeon",
+                "er_dungeon_interior",
+                "er_gym",
+                "er_gym_interior",
+                "er_mart",
+                "er_mart_interior",
+                "er_building",
+                "er_building_interior",
+                "er_gate",
+                "er_pokecenter",
+                "er_elevator",
+                "er_pokemon_league",
+                "er_one_way"
+            ]
+        ]
+    },
     "roadblock_grid": {
         "type": "itemgrid",
         "item_margin": "2, 2",
@@ -124,9 +154,7 @@
                 "ilextree",
                 "tower_requirement",
                 "magnet_train_access",
-                "national_park_access"
-            ],
-            [
+                "national_park_access",
                 "ss_aqua_access",
                 "route_42_access",
                 "mount_mortar_access",
@@ -134,9 +162,7 @@
                 "route_44_requirement",
                 "victory_road_access",
                 "e4_requirement",
-                "mt_silver_requirement"
-            ],
-            [
+                "mt_silver_requirement",
                 "red_requirement",
                 "route_23_restored",
                 "flooded_mine"
@@ -158,9 +184,7 @@
                 "route_12_access",
                 "randomize_pokemon_requests",
                 "route_2_access",
-                "route_3_access"
-            ],
-            [
+                "route_3_access",
                 "south_kanto_access",
                 "south_kanto_condition"
             ]
@@ -195,17 +219,13 @@
                 "dark_unioncave",
                 "dark_ilexforest",
                 "dark_slowpokewell",
-                "dark_goldenrodunderground"
-            ],
-            [
+                "dark_goldenrodunderground",
                 "dark_burnedtower",
                 "dark_olivinelighthouse",
                 "dark_whirlislands",
                 "dark_mountmortar",
                 "dark_icepath",
-                "dark_dragonsden"
-            ],
-            [
+                "dark_dragonsden",
                 "dark_tohjofalls",
                 "dark_victoryroad",
                 "dark_diglettscave",
