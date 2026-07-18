@@ -79,9 +79,6 @@ Tracker:AddLocations("locations/encounters_submaps.json")
 Tracker:AddLocations("locations/special_encounters.json")
 Tracker:AddLocations("locations/grass_submaps.json")
 Tracker:AddLocations("locations/new_signs.json")
--- DUMMY format reference only — NOT loaded (its group names would collide with real
--- locations). Replace with real entrance locations, then enable:
--- Tracker:AddLocations("locations/entrances_example.json")
 
 -- Layout
 ---- maps & locations

@@ -916,15 +916,15 @@ ENTRANCE_REGISTRY = {
     },
     ["REGION_DRAGONS_DEN_1F:LOWER -> REGION_DRAGONS_DEN_1F:UPPER"] = {
         ids = {387},
-        pretty = "Dragon's Den Basement Ladder",
+        pretty = "Dragon's Den Entrance Shaft Lower Ladder",
         tab = {"Johto Cities", "Blackthorn City", "Dragons Den", "1F"},
-        section = "@JohtoKanto/Blackthorn City/Dragon's Den Basement Ladder",
+        section = "@JohtoKanto/Blackthorn City/Dragon's Den Entrance Shaft Lower Ladder",
     },
     ["REGION_DRAGONS_DEN_1F:LOWER -> REGION_DRAGONS_DEN_B1F:NORTH"] = {
         ids = {386},
-        pretty = "Inner Dragon's Den Entrance",
+        pretty = "Dragon's Den Entrance Shaft Lower Exit",
         tab = {"Johto Cities", "Blackthorn City", "Dragons Den", "1F"},
-        section = "@JohtoKanto/Blackthorn City/Inner Dragon's Den Entrance",
+        section = "@JohtoKanto/Blackthorn City/Dragon's Den Entrance Shaft Lower Exit",
     },
     ["REGION_DRAGONS_DEN_1F:UPPER -> REGION_BLACKTHORN_CITY:DRAGONS_DEN_ENTRANCE"] = {
         ids = {384},
@@ -934,9 +934,9 @@ ENTRANCE_REGISTRY = {
     },
     ["REGION_DRAGONS_DEN_1F:UPPER -> REGION_DRAGONS_DEN_1F:LOWER"] = {
         ids = {385},
-        pretty = "Dragon's Den Entrance Ladder",
+        pretty = "Dragon's Den Entrance Shaft Upper Ladder",
         tab = {"Johto Cities", "Blackthorn City", "Dragons Den", "1F"},
-        section = "@JohtoKanto/Blackthorn City/Dragon's Den Entrance Ladder",
+        section = "@JohtoKanto/Blackthorn City/Dragon's Den Entrance Shaft Upper Ladder",
     },
     ["REGION_DRAGONS_DEN_B1F:NORTH -> REGION_DRAGONS_DEN_1F:LOWER"] = {
         ids = {388},
@@ -1204,9 +1204,9 @@ ENTRANCE_REGISTRY = {
     },
     ["REGION_FUCHSIA_GYM -> REGION_FUCHSIA_CITY"] = {
         ids = {930, 931},
-        pretty = "Fuchsia Gym Entrance",
+        pretty = "Fuchsia Gym Exit",
         tab = {"Kanto Cities", "Fuchsia City", "Gym"},
-        section = "@JohtoKanto/Fuchsia City/Fuchsia Gym Entrance",
+        section = "@JohtoKanto/Fuchsia City/Fuchsia Gym Exit",
     },
     ["REGION_FUCHSIA_MART -> REGION_FUCHSIA_CITY:CUT"] = {
         ids = {926, 927},
@@ -3484,9 +3484,9 @@ ENTRANCE_REGISTRY = {
     },
     ["REGION_ROUTE_6_SAFFRON_GATE:SOUTH -> REGION_ROUTE_6"] = {
         ids = {797, 798},
-        pretty = "Route 6 Gate South Entrance",
+        pretty = "Route 6 Gate South Exit",
         tab = {"Kanto Routes", "Route 6", "Saffron Gate"},
-        section = "@JohtoKanto/Route 6/Route 6 Gate South Entrance",
+        section = "@JohtoKanto/Route 6/Route 6 Gate South Exit",
     },
     ["REGION_ROUTE_6_UNDERGROUND_PATH_ENTRANCE -> REGION_ROUTE_6"] = {
         ids = {799, 800},
@@ -4354,9 +4354,9 @@ ENTRANCE_REGISTRY = {
     },
     ["REGION_TIN_TOWER_4F -> REGION_TIN_TOWER_5F"] = {
         ids = {78},
-        pretty = "TIN_TOWER_PLACEHOLDER_1",
+        pretty = "Tin Tower 4F Northwest Stairs",
         tab = {"Johto Cities", "Ecruteak City", "Tin Tower", "4F"},
-        section = "@JohtoKanto/Tin Tower/TIN_TOWER_PLACEHOLDER_1",
+        section = "@JohtoKanto/Tin Tower/Tin Tower 4F Northwest Stairs",
     },
     ["REGION_TIN_TOWER_4F -> REGION_TIN_TOWER_5F:SOUTHEAST"] = {
         ids = {81},
@@ -4372,15 +4372,15 @@ ENTRANCE_REGISTRY = {
     },
     ["REGION_TIN_TOWER_5F -> REGION_TIN_TOWER_4F"] = {
         ids = {83},
-        pretty = "TIN_TOWER_PLACEHOLDER_2",
+        pretty = "Tin Tower 5F Northwest Stairs",
         tab = {"Johto Cities", "Ecruteak City", "Tin Tower", "5F"},
-        section = "@JohtoKanto/Tin Tower/TIN_TOWER_PLACEHOLDER_2",
+        section = "@JohtoKanto/Tin Tower/Tin Tower 5F Northwest Stairs",
     },
     ["REGION_TIN_TOWER_5F:SOUTH -> REGION_TIN_TOWER_6F"] = {
         ids = {82},
-        pretty = "TIN_TOWER_PLACEHOLDER_3",
+        pretty = "Tin Tower 5F South Stairs",
         tab = {"Johto Cities", "Ecruteak City", "Tin Tower", "5F"},
-        section = "@JohtoKanto/Tin Tower/TIN_TOWER_PLACEHOLDER_3",
+        section = "@JohtoKanto/Tin Tower/Tin Tower 5F South Stairs",
     },
     ["REGION_TIN_TOWER_5F:SOUTHEAST -> REGION_TIN_TOWER_4F"] = {
         ids = {85},
@@ -4396,9 +4396,9 @@ ENTRANCE_REGISTRY = {
     },
     ["REGION_TIN_TOWER_6F -> REGION_TIN_TOWER_5F:SOUTH"] = {
         ids = {87},
-        pretty = "TIN_TOWER_PLACEHOLDER_4",
+        pretty = "Tin Tower 6F South Stairs",
         tab = {"Johto Cities", "Ecruteak City", "Tin Tower", "6F"},
-        section = "@JohtoKanto/Tin Tower/TIN_TOWER_PLACEHOLDER_4",
+        section = "@JohtoKanto/Tin Tower/Tin Tower 6F South Stairs",
     },
     ["REGION_TIN_TOWER_6F -> REGION_TIN_TOWER_7F"] = {
         ids = {86},

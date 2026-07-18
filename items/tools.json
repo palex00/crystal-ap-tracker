@@ -234,6 +234,28 @@
         ]
     },
     {
+        "name": "Visibility: Entrances",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Show Entrances",
+                "img": "/images/other/grass.png",
+                "img_mods": "overlay|/images/tools/show.png",
+                "codes": "visibility_entrances, show_entrances",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hide Entrances",
+                "img": "/images/other/grass_bw.png",
+                "img_mods": "overlay|/images/tools/hide.png",
+                "codes": "visibility_entrances",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Auto-Mark Off Shops after checked",
         "type": "progressive",
         "loop": true,

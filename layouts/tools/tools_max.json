@@ -8,29 +8,30 @@
         "item_size": "32",
         "rows": [
             [
+                "visibility_items",
                 "slotdigit_1",
                 "slotdigit_2",
                 "slotdigit_3"
             ],
             [
-                "visibility_items",
+                "visibility_mons",
                 "automap",
                 "auto_shop_markoff"
             ],
             [
-                "visibility_mons",
+                "visibility_events",
                 "splitmap",
             ],
             [
-                "visibility_events",
+                "visibility_signs",
                 "encounter_tracking",
             ],
             [
-                "visibility_signs",
+                "visibility_grass",
                 "hint_tracking",
             ],
             [
-                "visibility_grass",
+                "visibility_entrances",
                 "broadcast_view"
             ]
         ]

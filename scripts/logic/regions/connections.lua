@@ -1266,7 +1266,7 @@ REGION_ROUTE_5:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_5_SAFFRON_GAT
 REGION_ROUTE_5:connect_two_ways_entrance(REGION_ROUTE_5_CLEANSE_TAG_HOUSE, "building")
 
 -- === REGION_ROUTE_5_SAFFRON_GATE:NORTH ===
-NAMED_NODES["REGION_ROUTE_5_SAFFRON_GATE:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_5_SAFFRON_GATE:SOUTH"], "TODOBYSNOWFLAV", function() return tea("north") end)
+NAMED_NODES["REGION_ROUTE_5_SAFFRON_GATE:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_5_SAFFRON_GATE:SOUTH"], "Route 5 Gate Traversal (Southbound)", "Route 5 Gate Traversal (Northbound)", function() return tea("north") end)
 
 -- === REGION_ROUTE_5_SAFFRON_GATE:SOUTH ===
 NAMED_NODES["REGION_ROUTE_5_SAFFRON_GATE:SOUTH"]:connect_two_ways_entrance(REGION_SAFFRON_CITY, "gate")
@@ -1282,7 +1282,7 @@ REGION_ROUTE_6:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_6_SAFFRON_GAT
 
 -- === REGION_ROUTE_6_SAFFRON_GATE:NORTH ===
 NAMED_NODES["REGION_ROUTE_6_SAFFRON_GATE:NORTH"]:connect_two_ways_entrance(REGION_SAFFRON_CITY, "gate")
-NAMED_NODES["REGION_ROUTE_6_SAFFRON_GATE:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_6_SAFFRON_GATE:SOUTH"], "TODOBYSNOWFLAV", function() return tea("south") end)
+NAMED_NODES["REGION_ROUTE_6_SAFFRON_GATE:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_6_SAFFRON_GATE:SOUTH"], "Route 6 Gate Traversal (Southbound)", "Route 6 Gate Traversal (Northbound)", function() return tea("south") end)
 
 -- === REGION_ROUTE_6_UNDERGROUND_PATH_ENTRANCE ===
 REGION_ROUTE_6_UNDERGROUND_PATH_ENTRANCE:connect_two_ways_entrance(REGION_UNDERGROUND_PATH, "dungeon_interior")
@@ -1301,7 +1301,7 @@ REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE:connect_two_ways_entrance(REGION_EAST_W
 REGION_ROUTE_7:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_7_SAFFRON_GATE:WEST"], "gate")
 
 -- === REGION_ROUTE_7_SAFFRON_GATE:WEST ===
-NAMED_NODES["REGION_ROUTE_7_SAFFRON_GATE:WEST"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_7_SAFFRON_GATE:EAST"], "TODOBYSNOWFLAV", function() return tea("west") end)
+NAMED_NODES["REGION_ROUTE_7_SAFFRON_GATE:WEST"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_7_SAFFRON_GATE:EAST"], "Route 7 Gate Traversal (Eastbound)", "Route 7 Gate Traversal (Westbound)", function() return tea("west") end)
 
 -- === REGION_ROUTE_7_SAFFRON_GATE:EAST ===
 NAMED_NODES["REGION_ROUTE_7_SAFFRON_GATE:EAST"]:connect_two_ways_entrance(REGION_SAFFRON_CITY, "gate")
@@ -1312,7 +1312,7 @@ REGION_ROUTE_8:connect_two_ways(NAMED_NODES["REGION_ROUTE_8:CUT"], "TODOBYSNOWFL
 
 -- === REGION_ROUTE_8_SAFFRON_GATE:WEST ===
 NAMED_NODES["REGION_ROUTE_8_SAFFRON_GATE:WEST"]:connect_two_ways_entrance(REGION_SAFFRON_CITY, "gate")
-NAMED_NODES["REGION_ROUTE_8_SAFFRON_GATE:WEST"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_8_SAFFRON_GATE:EAST"], "TODOBYSNOWFLAV", function() return tea("east") end)
+NAMED_NODES["REGION_ROUTE_8_SAFFRON_GATE:WEST"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_8_SAFFRON_GATE:EAST"], "Route 8 Gate Traversal (Eastbound)", "Route 8 Gate Traversal (Westbound)", function() return tea("east") end)
 
 -- === REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER ===
 REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER:connect_two_ways_entrance(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH"], "dungeon_interior")
@@ -1519,12 +1519,12 @@ REGION_TIN_TOWER_4F:connect_two_ways_entrance(NAMED_NODES["REGION_TIN_TOWER_5F:S
 
 -- === REGION_TIN_TOWER_5F:SOUTH ===
 NAMED_NODES["REGION_TIN_TOWER_5F:SOUTH"]:connect_two_ways_entrance(REGION_TIN_TOWER_6F, "dungeon_interior")
-NAMED_NODES["REGION_TIN_TOWER_5F:SOUTH"]:connect_one_way(NAMED_NODES["REGION_TIN_TOWER_5F:SOUTHWEST"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_TIN_TOWER_5F:SOUTH"]:connect_one_way(NAMED_NODES["REGION_TIN_TOWER_5F:SOUTHWEST"], "Tin Tower 5F Ledge Jumps (South -> Southwest)")
 
 -- === REGION_TIN_TOWER_5F ===
-REGION_TIN_TOWER_5F:connect_one_way(NAMED_NODES["REGION_TIN_TOWER_5F:SOUTHWEST"], "TODOBYSNOWFLAV")
-REGION_TIN_TOWER_5F:connect_one_way(NAMED_NODES["REGION_TIN_TOWER_5F:SOUTHEAST"], "TODOBYSNOWFLAV")
-REGION_TIN_TOWER_5F:connect_one_way(NAMED_NODES["REGION_TIN_TOWER_5F:SOUTH"], "TODOBYSNOWFLAV")
+REGION_TIN_TOWER_5F:connect_one_way(NAMED_NODES["REGION_TIN_TOWER_5F:SOUTHWEST"], "Tin Tower 5F Ledge Jumps (Center -> Southwest)")
+REGION_TIN_TOWER_5F:connect_one_way(NAMED_NODES["REGION_TIN_TOWER_5F:SOUTHEAST"], "Tin Tower 5F Ledge Jumps (Center -> Southeast)")
+REGION_TIN_TOWER_5F:connect_one_way(NAMED_NODES["REGION_TIN_TOWER_5F:SOUTH"], "Tin Tower 5F Ledge Jumps (Center -> South)")
 
 -- === REGION_TIN_TOWER_6F ===
 REGION_TIN_TOWER_6F:connect_two_ways_entrance(REGION_TIN_TOWER_7F, "dungeon_interior")
