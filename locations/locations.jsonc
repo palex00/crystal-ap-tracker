@@ -3574,7 +3574,7 @@
                         "chest_unopened_img": "images/other/celebi.png",
                         "chest_opened_img": "images/other/celebi_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_ILEX_FOREST:SOUTH, ^$static_encounter, ^$dark|ilexforest"
+                            "^$CanReach|REGION_ILEX_FOREST:SOUTH, ^$static_encounter, ^$dark|ilexforest, GS_BALL, EVENT_CLEARED_SLOWPOKE_WELL, EVENT_GAVE_KURT_GSBALL"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -4548,7 +4548,7 @@
                         "chest_unopened_img": "images/other/eevee.png",
                         "chest_opened_img": "images/other/eevee_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_BILLS_FAMILYS_HOUSE, ^$static_encounter"
+                            "^$CanReach|REGION_BILLS_FAMILYS_HOUSE, ^$static_encounter, EVENT_MET_BILL"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -4564,7 +4564,7 @@
                             "show_items, shopsanity_gamecorners_true"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_GAME_CORNER"
+                            "^$CanReach|REGION_GOLDENROD_GAME_CORNER, COIN_CASE"
                         ]
                     },
                     {
@@ -4572,7 +4572,7 @@
                         "chest_unopened_img": "images/shopsanity/gamecorner_abra.png",
                         "chest_opened_img": "images/shopsanity/gamecorner_abra_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_GAME_CORNER, ^$static_encounter"
+                            "^$CanReach|REGION_GOLDENROD_GAME_CORNER, ^$static_encounter, COIN_CASE"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -4583,7 +4583,7 @@
                         "chest_unopened_img": "images/shopsanity/gamecorner_cubone.png",
                         "chest_opened_img": "images/shopsanity/gamecorner_cubone_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_GAME_CORNER, ^$static_encounter"
+                            "^$CanReach|REGION_GOLDENROD_GAME_CORNER, ^$static_encounter, COIN_CASE"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -4594,7 +4594,7 @@
                         "chest_unopened_img": "images/shopsanity/gamecorner_wobbuffet.png",
                         "chest_opened_img": "images/shopsanity/gamecorner_wobbuffet_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_GAME_CORNER, ^$static_encounter"
+                            "^$CanReach|REGION_GOLDENROD_GAME_CORNER, ^$static_encounter, COIN_CASE"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -6292,7 +6292,7 @@
                         "chest_unopened_img": "images/other/sudowoodo.png",
                         "chest_opened_img": "images/other/sudowoodo_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_36:EAST, ^$static_encounter"
+                            "^$CanReach|REGION_ROUTE_36:EAST, ^$static_encounter, SQUIRTBOTTLE"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -10887,7 +10887,7 @@
                             "show_items, shopsanity_johtomarts_true"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_MAHOGANY_MART_1F"
+                            "^$CanReach|REGION_MAHOGANY_MART_1F, EVENT_CLEARED_RADIO_TOWER"
                         ]
                     },
                     {
@@ -13833,26 +13833,22 @@
                     {
                         "map": "johtokanto",
                         "x": 164,
-                        "y": 28,
-                        "size": 6
+                        "y": 28
                     },
                     {
                         "map": "johto_overview",
                         "x": 164,
-                        "y": 28,
-                        "size": 6
+                        "y": 28
                     },
                     {
                         "map": "johtokanto_vertical",
                         "x": 20,
-                        "y": 148,
-                        "size": 6
+                        "y": 148
                     },
                     {
                         "map": "kanto_overview",
                         "x": 20,
-                        "y": 28,
-                        "size": 6
+                        "y": 28
                     }
                 ]
             },
@@ -18056,7 +18052,7 @@
                         "chest_unopened_img": "images/shopsanity/gamecorner_pikachu.png",
                         "chest_opened_img": "images/shopsanity/gamecorner_pikachu_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_CELADON_GAME_CORNER_PRIZE_ROOM, ^$static_encounter"
+                            "^$CanReach|REGION_CELADON_GAME_CORNER_PRIZE_ROOM, ^$static_encounter, COIN_CASE"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -18067,7 +18063,7 @@
                         "chest_unopened_img": "images/shopsanity/gamecorner_porygon.png",
                         "chest_opened_img": "images/shopsanity/gamecorner_porygon_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_CELADON_GAME_CORNER_PRIZE_ROOM, ^$static_encounter"
+                            "^$CanReach|REGION_CELADON_GAME_CORNER_PRIZE_ROOM, ^$static_encounter, COIN_CASE"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -18078,7 +18074,7 @@
                         "chest_unopened_img": "images/shopsanity/gamecorner_larvitar.png",
                         "chest_opened_img": "images/shopsanity/gamecorner_larvitar_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_CELADON_GAME_CORNER_PRIZE_ROOM, ^$static_encounter"
+                            "^$CanReach|REGION_CELADON_GAME_CORNER_PRIZE_ROOM, ^$static_encounter, COIN_CASE"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -20610,26 +20606,22 @@
                     {
                         "map": "johtokanto",
                         "x": 84,
-                        "y": 84,
-                        "size": 6
+                        "y": 84
                     },
                     {
                         "map": "johto_overview",
                         "x": 84,
-                        "y": 84,
-                        "size": 6
+                        "y": 84
                     },
                     {
                         "map": "johtokanto_vertical",
                         "x": 84,
-                        "y": 84,
-                        "size": 6
+                        "y": 84
                     },
                     {
                         "map": "kanto_overview",
                         "x": 84,
-                        "y": 84,
-                        "size": 6
+                        "y": 84
                     }
                 ]
             },

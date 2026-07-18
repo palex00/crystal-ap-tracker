@@ -38,7 +38,7 @@ REGION_AZALEA_TOWN:connect_one_way("ITEM_FROM_RIVAL_2", function() return has("E
 
 -- === REGION_BLACKTHORN_GYM_2F ===
 REGION_BLACKTHORN_GYM_2F:connect_one_way("EVENT_BOULDER_IN_BLACKTHORN_GYM_1", can_strength)
-REGION_BLACKTHORN_GYM_2F:connect_one_way("EVENT_BOULDER_IN_BLACKTHORN_GYM_2", can_strength)
+REGION_BLACKTHORN_GYM_2F:connect_one_way("EVENT_BOULDER_IN_BLACKTHORN_GYM_3", can_strength)
 
 -- === REGION_BURNED_TOWER_1F ===
 REGION_BURNED_TOWER_1F:connect_one_way("BURNED_TOWER_1F_HP_UP", can_rock_smash)

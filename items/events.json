@@ -354,12 +354,12 @@
 // autotracking. Placeholder image, no flag_mapping / DataStorage hookup yet.
 // ============================================================================
 
-{"name": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1"},
-{"name": "EVENT_BOULDER_IN_BLACKTHORN_GYM_2", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_BLACKTHORN_GYM_2"},
-{"name": "EVENT_BOULDER_IN_ICE_PATH_1A", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_1A"},
-{"name": "EVENT_BOULDER_IN_ICE_PATH_2A", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_2A"},
-{"name": "EVENT_BOULDER_IN_ICE_PATH_3A", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_3A"},
-{"name": "EVENT_BOULDER_IN_ICE_PATH_4A", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_4A"},
+{"name": "Push top-right boulder into hole", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1"},
+{"name": "Push bottom boulder into hole", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_BLACKTHORN_GYM_3"},
+{"name": "Plug the north hole in Ice Path", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_1A"},
+{"name": "Plug the center-west hole in Ice Path", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_2A"},
+{"name": "Plug the south-west hole in Ice Path", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_3A"},
+{"name": "Plug the south-east hole in Ice Path", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_4A"},
 
 {"name": "Learn the password SlowpokeTail", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ROCKET_GRUNTF_5"},
 {"name": "Learn the password RaticateTail", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ROCKET_GRUNTM_28"},
