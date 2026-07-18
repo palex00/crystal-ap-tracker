@@ -166,11 +166,46 @@ function EntranceItem:providesCode(code)
     return 0
 end
 
---- Instantiate one EntranceItem per registry row. Call after ENTRANCE_REGISTRY is loaded.
+--- token -> ER category, harvested from the graph's entrance edges (the category lives on the
+--- connect_*_entrance edge as exit[4], with the token as exit[5]). Built once after the graph
+--- is loaded, so we can tell which registry rows belong to a shuffled category.
+ENTRANCE_CATEGORY = {}
+function buildEntranceCategoryMap()
+    if not NAMED_NODES_KEYS then
+        return
+    end
+    for _, name in ipairs(NAMED_NODES_KEYS) do
+        local node = NAMED_NODES[name]
+        if node then
+            for _, exit in ipairs(node.exits) do
+                if exit[3] then -- is_entrance edge
+                    ENTRANCE_CATEGORY[exit[5]] = exit[4]
+                end
+            end
+        end
+    end
+end
+
+--- Instantiate EntranceItems ONLY for entrances whose ER category is currently enabled.
+--- A vanilla (non-shuffled) entrance has a fixed connection and needs no tracker item, so the
+--- LuaItem count tracks what's actually shuffled (0 on a non-ER seed). This is what keeps
+--- PopTracker's per-update cost down -- a large _luaItems set makes every item toggle laggy
+--- regardless of the logic path. Idempotent and additive: safe to call repeatedly (e.g. from
+--- refreshERCategories on connect / manual toggle). Items are never removed once created
+--- (PopTracker has no RemoveItems), which is fine because categories are fixed per seed.
+--- Call after ENTRANCE_REGISTRY, the graph, and buildEntranceCategoryMap() are ready.
 ENTRANCE_ITEMS = {}
-function createEntrances()
+function createEntrancesForEnabled()
+    if not ENTRANCE_REGISTRY or not ER_CATEGORY_ENABLED then
+        return
+    end
     for token, row in pairs(ENTRANCE_REGISTRY) do
-        ENTRANCE_ITEMS[token] = EntranceItem(token, row)
+        if not ENTRANCE_ITEMS[token] then
+            local cat = ENTRANCE_CATEGORY[token]
+            if cat and ER_CATEGORY_ENABLED[cat] then
+                ENTRANCE_ITEMS[token] = EntranceItem(token, row)
+            end
+        end
     end
 end
 

@@ -43,7 +43,11 @@ ScriptHost:LoadScript("scripts/logic/regions/connections_darkareas.lua")
 ScriptHost:LoadScript("scripts/logic/regions/check_leafs.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_registry.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_item.lua")
-createEntrances()
+-- Entrance items are created per-ENABLED-category, not all at once: a vanilla entrance needs no
+-- tracker item, and a large _luaItems set makes every toggle laggy. Build the token->category
+-- map now; the actual EntranceItems are instantiated by createEntrancesForEnabled(), driven by
+-- refreshERCategories() (called at the end of init and whenever a category toggles / on connect).
+buildEntranceCategoryMap()
 -- NOTE: no global "*" watch for CanReach invalidation. Each logic code gets its own per-code
 -- watch (registered by LogicCount in utils.lua, and pre-registered for every rule code by the
 -- warm pass), which calls InvalidateCanReach only when a reachability-relevant code changes.

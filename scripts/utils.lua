@@ -107,6 +107,10 @@ function refreshERCategories()
     for _, cat in ipairs(ER_CATEGORIES) do
         ER_CATEGORY_ENABLED[cat] = has("er_" .. cat .. "_on")
     end
+    -- Materialize entrance items for any now-enabled category (additive; skips already-created).
+    if createEntrancesForEnabled then
+        createEntrancesForEnabled()
+    end
     if InvalidateCanReach then
         InvalidateCanReach()
     end
