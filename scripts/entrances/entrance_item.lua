@@ -95,6 +95,7 @@ function EntranceItem:updateBadge()
     end
     inst.BadgeText = text
     inst.BadgeTextColor = "#abcdef"
+    inst:SetOverlayBackground("#000000")
     inst:SetOverlayFontSize(10)
     inst:SetOverlayAlign("left")
     if self:isRevealed() then
