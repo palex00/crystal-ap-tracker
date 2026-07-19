@@ -22387,7 +22387,7 @@
                     {
                         "name": "Grunt",
                         "access_rules": [
-                            "^$CanReach|ITEM_FROM_ROCKET_GRUNTM_31"
+                            "^$CanReach|REGION_ROUTE_24:ROCKET"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
