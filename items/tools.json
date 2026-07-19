@@ -241,15 +241,15 @@
         "stages": [
             {
                 "name": "Show Entrances",
-                "img": "/images/other/grass.png",
+                "img": "/images/entrances/entrance_unexplored.png",
                 "img_mods": "overlay|/images/tools/show.png",
                 "codes": "visibility_entrances, show_entrances",
                 "inherit_codes": false
             },
             {
                 "name": "Hide Entrances",
-                "img": "/images/other/grass_bw.png",
-                "img_mods": "overlay|/images/tools/hide.png",
+                "img": "/images/entrances/entrance_unexplored.png",
+                "img_mods": "overlay|/images/tools/hide.png, @disabled",
                 "codes": "visibility_entrances",
                 "inherit_codes": false
             }

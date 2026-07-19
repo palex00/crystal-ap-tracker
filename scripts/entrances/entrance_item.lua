@@ -63,6 +63,11 @@ function EntranceItem:reset()
     self:updateBadge()
 end
 
+--- Whether either direction has been revealed.
+function EntranceItem:isRevealed()
+    return self.forwardTarget ~= nil or self.reverseSource ~= nil
+end
+
 --- Badge + icon. Badge rule:
 ---   one direction known -> "->dest" or "<-src"
 ---   both known & equal  -> "<->name"   (coupled/symmetric)
@@ -92,7 +97,7 @@ function EntranceItem:updateBadge()
     inst.BadgeTextColor = "#abcdef"
     inst:SetOverlayFontSize(10)
     inst:SetOverlayAlign("left")
-    if fwd or rev then
+    if self:isRevealed() then
         inst.Icon = ImageReference:FromPackRelativePath(ENTRANCE_OPEN_ICON)
     else
         inst.Icon = ImageReference:FromPackRelativePath(ENTRANCE_CLOSED_ICON)
@@ -197,7 +202,11 @@ function EntranceProbeReport()
     probe_distinct = 0
 end
 
+--- Collected state for the section hosting this entrance (hosted_item = the token).
 function EntranceItem:providesCode(code)
+    if code == self.token and self:isRevealed() then
+        return 1
+    end
     return 0
 end
 
@@ -244,19 +253,4 @@ function createEntrancesForEnabled()
             end
         end
     end
-end
-
---- Map-marker color for an entrance (referenced from location JSON as "$ChangeEntranceColor|<token>").
---- Revealed entrances read as cleared; otherwise fall back to whether the region is reachable.
----@param token string
----@return integer
-function ChangeEntranceColor(token)
-    if Tracker.BulkUpdate then
-        return ACCESS_NONE
-    end
-    local item = ENTRANCE_ITEMS[token]
-    if item and (item.forwardTarget or item.reverseSource) then
-        return ACCESS_CLEARED
-    end
-    return CanReach(EntranceSourceRegion(token))
 end
