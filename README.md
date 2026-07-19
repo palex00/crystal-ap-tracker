@@ -5,6 +5,7 @@ Now, I will begin implementing the entire logical rewrite. This will cause the t
 
 2026-07-16: I have switched the logic engine to the new logic-graph now. It is severely buggy still but it will show more in logic than truthfully, and never too little. Locations and events now exist as dummies.
 2026-07-16: added autotracking to events and items. Refactored all item grids to show all items currently. Fixed some logic.
+2026-07-19: I have given up doing these
 
 The beta tracker now auto-updates!
 
@@ -14,6 +15,7 @@ Supported Features:
 - Vanilla Event Chains
 - Momsanity (locations, logic, autotracking. Note that the Call Mom event doesn't work yet).
 - Lance Requires E4
+- ENTRANCE RANDOMISATION!!! (but no submaps yet)
 
 Unsupported Beta Features:
 - Multiple Goals - currently debug shows all of them; event grid shows all events
@@ -21,9 +23,9 @@ Unsupported Beta Features:
     - Battle Tower
     - Rematchsanity
     - Lucky Number Show
-- Entrance Randomization: the framework exists, it is not wired up yet.
 - Fly Destination Rando
 - Time of Day Encounters
+- new submaps
 - everything else, basically
 
 Features that work in live but not in beta:
