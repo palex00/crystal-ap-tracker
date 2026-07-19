@@ -519,7 +519,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_29"
+                            "^$CanReach|REGION_ROUTE_29, $can_cut_johto"
                         ]
                     },
                     {
@@ -532,7 +532,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_29"
+                            "^$CanReach|REGION_ROUTE_29, $can_cut_johto"
                         ]
                     },
                     {
@@ -1131,7 +1131,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_30"
+                            "^$CanReach|REGION_ROUTE_30, $can_cut_johto"
                         ]
                     },
                     {
@@ -1144,7 +1144,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_30"
+                            "^$CanReach|REGION_ROUTE_30, $can_cut_johto"
                         ]
                     },
                     {
@@ -1384,7 +1384,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_31"
+                            "^$CanReach|REGION_ROUTE_31, $can_cut_johto"
                         ]
                     },
                     {
@@ -1397,7 +1397,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_31"
+                            "^$CanReach|REGION_ROUTE_31, $can_cut_johto"
                         ]
                     },
                     {
@@ -2876,7 +2876,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE:WEST"
+                            "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE:WEST, $can_cut_johto"
                         ]
                     },
                     {
@@ -2889,7 +2889,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE:WEST"
+                            "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE:WEST, $can_cut_johto"
                         ]
                     },
                     {
@@ -3345,7 +3345,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_32:SOUTH"
+                            "^$CanReach|REGION_ROUTE_32:SOUTH, $can_cut_johto"
                         ]
                     },
                     {
@@ -3358,7 +3358,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_32:SOUTH"
+                            "^$CanReach|REGION_ROUTE_32:SOUTH, $can_cut_johto"
                         ]
                     },
                     {
@@ -3934,7 +3934,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_33"
+                            "^$CanReach|REGION_ROUTE_33, $can_cut_johto"
                         ]
                     },
                     {
@@ -3947,7 +3947,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_33"
+                            "^$CanReach|REGION_ROUTE_33, $can_cut_johto"
                         ]
                     },
                     {
@@ -5321,7 +5321,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_34"
+                            "^$CanReach|REGION_ROUTE_34, $can_cut_johto"
                         ]
                     },
                     {
@@ -5334,7 +5334,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_34"
+                            "^$CanReach|REGION_ROUTE_34, $can_cut_johto"
                         ]
                     },
                     {
@@ -7972,7 +7972,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_35"
+                            "^$CanReach|REGION_ROUTE_35, $can_cut_johto"
                         ]
                     },
                     {
@@ -7985,7 +7985,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_35"
+                            "^$CanReach|REGION_ROUTE_35, $can_cut_johto"
                         ]
                     },
                     {
@@ -8298,7 +8298,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_NATIONAL_PARK"
+                            "^$CanReach|REGION_NATIONAL_PARK, $can_cut_johto"
                         ]
                     },
                     {
@@ -8311,7 +8311,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_NATIONAL_PARK"
+                            "^$CanReach|REGION_NATIONAL_PARK, $can_cut_johto"
                         ]
                     },
                     {
@@ -8625,7 +8625,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_36:EAST, ^$CanReach|REGION_ROUTE_36:WEST, $can_cut_johto"
+                            "[^$CanReach|REGION_ROUTE_36:EAST], [^$CanReach|REGION_ROUTE_36:WEST], $can_cut_johto"
                         ]
                     },
                     {
@@ -8793,7 +8793,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_37"
+                            "^$CanReach|REGION_ROUTE_37, $can_cut_johto"
                         ]
                     },
                     {
@@ -8806,7 +8806,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_37"
+                            "^$CanReach|REGION_ROUTE_37, $can_cut_johto"
                         ]
                     },
                     {
@@ -10516,7 +10516,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_38"
+                            "^$CanReach|REGION_ROUTE_38, $can_cut_johto"
                         ]
                     },
                     {
@@ -10529,7 +10529,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_38"
+                            "^$CanReach|REGION_ROUTE_38, $can_cut_johto"
                         ]
                     },
                     {
@@ -10765,7 +10765,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_39"
+                            "^$CanReach|REGION_ROUTE_39, $can_cut_johto"
                         ]
                     },
                     {
@@ -10778,7 +10778,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_39"
+                            "^$CanReach|REGION_ROUTE_39, $can_cut_johto"
                         ]
                     },
                     {
@@ -13822,7 +13822,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_42:EAST"
+                            "^$CanReach|REGION_ROUTE_42:EAST, $can_cut_johto"
                         ]
                     },
                     {
@@ -13835,7 +13835,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_42:EAST"
+                            "^$CanReach|REGION_ROUTE_42:EAST, $can_cut_johto"
                         ]
                     },
                     {
@@ -15559,7 +15559,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_43"
+                            "^$CanReach|REGION_ROUTE_43, $can_cut_johto"
                         ]
                     },
                     {
@@ -15572,7 +15572,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_43"
+                            "^$CanReach|REGION_ROUTE_43, $can_cut_johto"
                         ]
                     },
                     {
@@ -16137,7 +16137,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_44:WATER"
+                            "^$CanReach|REGION_ROUTE_44:WATER, $can_cut_johto"
                         ]
                     },
                     {
@@ -16150,7 +16150,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_44:WATER"
+                            "^$CanReach|REGION_ROUTE_44:WATER, $can_cut_johto"
                         ]
                     },
                     {
@@ -17641,7 +17641,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_45"
+                            "^$CanReach|REGION_ROUTE_45, $can_cut_johto"
                         ]
                     },
                     {
@@ -17654,7 +17654,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_45"
+                            "^$CanReach|REGION_ROUTE_45, $can_cut_johto"
                         ]
                     },
                     {
@@ -17846,7 +17846,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_46:SOUTH"
+                            "^$CanReach|REGION_ROUTE_46:SOUTH, $can_cut_johto"
                         ]
                     },
                     {
@@ -17859,7 +17859,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_46:SOUTH"
+                            "^$CanReach|REGION_ROUTE_46:SOUTH, $can_cut_johto"
                         ]
                     },
                     {
@@ -18134,7 +18134,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_27:EAST"
+                            "^$CanReach|REGION_ROUTE_27:EAST, $can_cut_johto"
                         ]
                     },
                     {
@@ -18147,7 +18147,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_27:EAST"
+                            "^$CanReach|REGION_ROUTE_27:EAST, $can_cut_johto"
                         ]
                     },
                     {
@@ -18445,7 +18445,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_26"
+                            "^$CanReach|REGION_ROUTE_26, $can_cut_johto"
                         ]
                     },
                     {
@@ -18458,7 +18458,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_26"
+                            "^$CanReach|REGION_ROUTE_26, $can_cut_johto"
                         ]
                     },
                     {
@@ -19166,7 +19166,7 @@
                             "show_grass, grasssanity_full, route_23_restored_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_23_RESTORED:NORTH"
+                            "^$CanReach|REGION_ROUTE_23_RESTORED:NORTH, $can_cut_johto"
                         ]
                     },
                     {
@@ -19179,7 +19179,7 @@
                             "show_grass, grasssanity_single, route_23_restored_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_23_RESTORED:NORTH"
+                            "^$CanReach|REGION_ROUTE_23_RESTORED:NORTH, $can_cut_johto"
                         ]
                     },
                     {
@@ -19341,7 +19341,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_28"
+                            "^$CanReach|REGION_ROUTE_28, $can_cut_johto"
                         ]
                     },
                     {
@@ -19354,7 +19354,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_28"
+                            "^$CanReach|REGION_ROUTE_28, $can_cut_johto"
                         ]
                     },
                     {
@@ -19546,7 +19546,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_SILVER_CAVE_OUTSIDE"
+                            "^$CanReach|REGION_SILVER_CAVE_OUTSIDE, $can_cut_johto"
                         ]
                     },
                     {
@@ -19559,7 +19559,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_SILVER_CAVE_OUTSIDE"
+                            "^$CanReach|REGION_SILVER_CAVE_OUTSIDE:SURF, $can_cut_johto"
                         ]
                     },
                     {
@@ -19572,7 +19572,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_SILVER_CAVE_OUTSIDE"
+                            "[^$CanReach|REGION_SILVER_CAVE_OUTSIDE], [^$CanReach|REGION_SILVER_CAVE_OUTSIDE:SURF], $can_cut_johto"
                         ]
                     },
                     {
@@ -19860,7 +19860,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_22"
+                            "^$CanReach|REGION_ROUTE_22, $can_cut_kanto"
                         ]
                     },
                     {
@@ -19873,7 +19873,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_22"
+                            "^$CanReach|REGION_ROUTE_22, $can_cut_kanto"
                         ]
                     },
                     {
@@ -20344,7 +20344,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_1"
+                            "^$CanReach|REGION_ROUTE_1, $can_cut_kanto"
                         ]
                     },
                     {
@@ -20357,7 +20357,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_1"
+                            "^$CanReach|REGION_ROUTE_1, $can_cut_kanto"
                         ]
                     },
                     {
@@ -20554,7 +20554,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PALLET_TOWN"
+                            "^$CanReach|REGION_PALLET_TOWN, $can_cut_kanto"
                         ]
                     },
                     {
@@ -20567,7 +20567,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_PALLET_TOWN"
+                            "^$CanReach|REGION_PALLET_TOWN, $can_cut_kanto"
                         ]
                     },
                     {
@@ -20862,7 +20862,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_2:WEST"
+                            "^$CanReach|REGION_ROUTE_2:WEST, $can_cut_kanto"
                         ]
                     },
                     {
@@ -20875,7 +20875,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_2:WEST"
+                            "^$CanReach|REGION_ROUTE_2:WEST, $can_cut_kanto"
                         ]
                     },
                     {
@@ -21347,7 +21347,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_3"
+                            "^$CanReach|REGION_ROUTE_3, $can_cut_kanto"
                         ]
                     },
                     {
@@ -21360,7 +21360,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_3"
+                            "^$CanReach|REGION_ROUTE_3, $can_cut_kanto"
                         ]
                     },
                     {
@@ -21705,7 +21705,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_4:EAST"
+                            "^$CanReach|REGION_ROUTE_4:EAST, $can_cut_kanto"
                         ]
                     },
                     {
@@ -21718,7 +21718,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_4:EAST"
+                            "^$CanReach|REGION_ROUTE_4:EAST, $can_cut_kanto"
                         ]
                     },
                     {
@@ -22320,7 +22320,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_5"
+                            "^$CanReach|REGION_ROUTE_5, $can_cut_kanto"
                         ]
                     },
                     {
@@ -22333,7 +22333,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_5"
+                            "^$CanReach|REGION_ROUTE_5, $can_cut_kanto"
                         ]
                     },
                     {
@@ -22406,7 +22406,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_24"
+                            "^$CanReach|REGION_ROUTE_24, $can_cut_kanto"
                         ]
                     },
                     {
@@ -22419,7 +22419,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_24"
+                            "^$CanReach|REGION_ROUTE_24, $can_cut_kanto"
                         ]
                     },
                     {
@@ -22654,7 +22654,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_25"
+                            "^$CanReach|REGION_ROUTE_25, $can_cut_kanto"
                         ]
                     },
                     {
@@ -22667,7 +22667,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_25"
+                            "^$CanReach|REGION_ROUTE_25, $can_cut_kanto"
                         ]
                     },
                     {
@@ -22835,7 +22835,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_9"
+                            "^$CanReach|REGION_ROUTE_9, $can_cut_kanto"
                         ]
                     },
                     {
@@ -22848,7 +22848,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_9"
+                            "^$CanReach|REGION_ROUTE_9, $can_cut_kanto"
                         ]
                     },
                     {
@@ -23312,7 +23312,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_10_NORTH:SURF"
+                            "^$CanReach|REGION_ROUTE_10_NORTH:SURF, $can_cut_kanto"
                         ]
                     },
                     {
@@ -23325,7 +23325,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_10_NORTH:SURF"
+                            "^$CanReach|REGION_ROUTE_10_NORTH:SURF, $can_cut_kanto"
                         ]
                     },
                     {
@@ -23842,7 +23842,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_8:CUT"
+                            "^$CanReach|REGION_ROUTE_8:CUT, $can_cut_kanto"
                         ]
                     },
                     {
@@ -23855,7 +23855,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_8:CUT"
+                            "^$CanReach|REGION_ROUTE_8:CUT, $can_cut_kanto"
                         ]
                     },
                     {
@@ -25913,7 +25913,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_16:NORTH"
+                            "^$CanReach|REGION_ROUTE_16:NORTH, $can_cut_kanto"
                         ]
                     },
                     {
@@ -25926,7 +25926,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_16:NORTH"
+                            "^$CanReach|REGION_ROUTE_16:NORTH, $can_cut_kanto"
                         ]
                     },
                     {
@@ -26077,7 +26077,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17"
+                            "^$CanReach|REGION_ROUTE_17, $can_cut_kanto"
                         ]
                     },
                     {
@@ -26090,7 +26090,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17"
+                            "^$CanReach|REGION_ROUTE_17, $can_cut_kanto"
                         ]
                     },
                     {
@@ -26186,7 +26186,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_18"
+                            "^$CanReach|REGION_ROUTE_18, $can_cut_kanto"
                         ]
                     },
                     {
@@ -26199,7 +26199,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_18"
+                            "^$CanReach|REGION_ROUTE_18, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27008,7 +27008,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_6"
+                            "^$CanReach|REGION_ROUTE_6, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27021,7 +27021,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_6"
+                            "^$CanReach|REGION_ROUTE_6, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27156,7 +27156,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_7"
+                            "^$CanReach|REGION_ROUTE_7, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27169,7 +27169,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_7"
+                            "^$CanReach|REGION_ROUTE_7, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27301,7 +27301,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_11"
+                            "^$CanReach|REGION_ROUTE_11, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27314,7 +27314,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_11"
+                            "^$CanReach|REGION_ROUTE_11, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27637,7 +27637,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_13:CUT"
+                            "^$CanReach|REGION_ROUTE_13:CUT, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27650,7 +27650,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_13:CUT"
+                            "^$CanReach|REGION_ROUTE_13:CUT, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27763,7 +27763,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_14:CUT"
+                            "^$CanReach|REGION_ROUTE_14:CUT, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27776,7 +27776,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_14:CUT"
+                            "^$CanReach|REGION_ROUTE_14:CUT, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27949,7 +27949,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_15"
+                            "^$CanReach|REGION_ROUTE_15, $can_cut_kanto"
                         ]
                     },
                     {
@@ -27962,7 +27962,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_15"
+                            "^$CanReach|REGION_ROUTE_15, $can_cut_kanto"
                         ]
                     },
                     {
@@ -28914,7 +28914,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_21:NORTH"
+                            "^$CanReach|REGION_ROUTE_21:NORTH, $can_cut_kanto"
                         ]
                     },
                     {
@@ -28927,7 +28927,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_21:NORTH"
+                            "^$CanReach|REGION_ROUTE_21:NORTH, $can_cut_kanto"
                         ]
                     },
                     {
