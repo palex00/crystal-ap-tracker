@@ -93,9 +93,12 @@ function EntranceItem:updateBadge()
     elseif rev then
         text = ARROW_REV .. rev.pretty
     end
+    if text ~= "" then
+        text = text .. "\n"
+    end
     inst.BadgeText = text
     inst.BadgeTextColor = "#abcdef"
-    inst:SetOverlayBackground("#000000")
+    inst:SetOverlayBackground("#c0000000")
     inst:SetOverlayFontSize(10)
     inst:SetOverlayAlign("left")
     if self:isRevealed() then
