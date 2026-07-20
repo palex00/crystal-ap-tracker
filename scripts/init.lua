@@ -73,12 +73,13 @@ Tracker:AddMaps("maps/maps_johto_and_kanto.json")
 -- Locations
 Tracker:AddLocations("locations/locations.jsonc")
 Tracker:AddLocations("locations/dungeons.json")
+Tracker:AddLocations("locations/submaps_special.json")
+Tracker:AddLocations("locations/submaps_encounters.json")
+Tracker:AddLocations("locations/submaps_grass.json")
 Tracker:AddLocations("locations/dexsanity.json")
 Tracker:AddLocations("locations/pokedex.json")
 Tracker:AddLocations("locations/evolutionsanity.json")
-Tracker:AddLocations("locations/encounters_submaps.json")
 Tracker:AddLocations("locations/special_encounters.json")
-Tracker:AddLocations("locations/grass_submaps.json")
 Tracker:AddLocations("locations/new_signs.json")
 
 -- Layout
