@@ -350,8 +350,7 @@
 
 // ============================================================================
 // TO BE COMPLETED LATER
-// Referenced by scripts/logic/regions/*.lua but not yet given real art or
-// autotracking. Placeholder image, no flag_mapping / DataStorage hookup yet.
+// Referenced by scripts/logic/regions/*.lua but not yet given real art.
 // ============================================================================
 
 {"name": "Blackthorn Gym: Push top-right boulder into hole", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1"},
@@ -363,7 +362,6 @@
 
 {"name": "Learn the password SlowpokeTail", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ROCKET_GRUNTF_5"},
 {"name": "Learn the password RaticateTail", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ROCKET_GRUNTM_28"},
-{"name": "Talk to Morty in Burned Tower after releasing the beasts", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BURNED_TOWER_MORTY"},
 {"name": "Heal Moomoo", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_HEALED_MOOMOO"},
 {"name": "Jasmine explains Amphy's sickness", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS"},
 {"name": "Learn the password Hail Giovanni", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_LEARNED_HAIL_GIOVANNI"},

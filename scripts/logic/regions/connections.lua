@@ -462,12 +462,12 @@ REGION_ECRUTEAK_CITY:connect_two_ways_entrance(REGION_ECRUTEAK_POKECENTER_1F, "p
 REGION_ECRUTEAK_CITY:connect_two_ways_entrance(REGION_ECRUTEAK_LUGIA_SPEECH_HOUSE, "building")
 REGION_ECRUTEAK_CITY:connect_two_ways_entrance(REGION_ECRUTEAK_MART, "mart")
 REGION_ECRUTEAK_CITY:connect_one_way_entrance(REGION_ECRUTEAK_GYM, "gym")
-REGION_ECRUTEAK_GYM:connect_one_way_entrance(REGION_ECRUTEAK_CITY, "gym", function() return has("EVENT_BURNED_TOWER_MORTY") end)
+REGION_ECRUTEAK_GYM:connect_one_way_entrance(REGION_ECRUTEAK_CITY, "gym", function() return has("EVENT_RELEASED_THE_BEASTS") end)
 REGION_ECRUTEAK_CITY:connect_two_ways_entrance(REGION_ECRUTEAK_ITEMFINDER_HOUSE, "building")
 REGION_ECRUTEAK_CITY:connect_two_ways_entrance(REGION_ROUTE_38_ECRUTEAK_GATE, "gate")
 
 -- === REGION_ECRUTEAK_GYM ===
-REGION_ECRUTEAK_GYM:connect_one_way(NAMED_NODES["REGION_ECRUTEAK_GYM:INTERIOR"], "TODOBYSNOWFLAV", function() return has("EVENT_BURNED_TOWER_MORTY") end)
+REGION_ECRUTEAK_GYM:connect_one_way(NAMED_NODES["REGION_ECRUTEAK_GYM:INTERIOR"], "TODOBYSNOWFLAV", function() return has("EVENT_RELEASED_THE_BEASTS") end)
 
 -- === REGION_ECRUTEAK_POKECENTER_1F ===
 REGION_ECRUTEAK_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Ecruteak Pokecenter Stairs")

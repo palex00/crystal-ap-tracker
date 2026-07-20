@@ -1354,6 +1354,16 @@
                         ]
                     },
                     {
+                        "name": "Your mom calls you",
+                        "access_rules": [
+                            "^$CanReach|REGION_ROUTE_31"
+                        ],
+                        "hosted_item": "EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
                         "name": "Deliver Kenya",
                         "access_rules": [
                             "^$CanReach|EVENT_GAVE_KENYA"
@@ -4448,6 +4458,26 @@
                         "chest_opened_img": "images/gift/kurt_open.png"
                     },
                     {
+                        "name": "Kurt's House - Meet Kurt",
+                        "access_rules": [
+                            "^$CanReach|REGION_KURTS_HOUSE"
+                        ],
+                        "hosted_item": "EVENT_MET_KURT",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
+                        "name": "Kurt's House - Have Kurt investigate the GS Ball",
+                        "access_rules": [
+                            "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_CLEARED_SLOWPOKE_WELL"
+                        ],
+                        "hosted_item": "EVENT_KURT_RETURNED_GS_BALL",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
                         "name": "Charcoal from Charcoal Kiln",
                         "access_rules": [
                             "^$CanReach|CHARCOAL_IN_CHARCOAL_KILN"
@@ -7472,6 +7502,16 @@
                         ],
                         "chest_unopened_img": "images/trainers/rocket_m.png",
                         "chest_opened_img": "images/trainers/rocket_m_bw.png"
+                    },
+                    {
+                        "name": "3F - Open the Card Key Gate",
+                        "access_rules": [
+                            "^$CanReach|EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER"
+                        ],
+                        "hosted_item": "EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
                     },
                     {
                         "name": "4F - Production Sign",
@@ -10653,6 +10693,16 @@
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
                     },
                     {
+                        "name": "Moomoo Farm Barn - Heal Moomoo",
+                        "access_rules": [
+                            "^$CanReach|REGION_ROUTE_39_BARN"
+                        ],
+                        "hosted_item": "EVENT_HEALED_MOOMOO",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
                         "name": "Moomoo Farm - Moomoo Milk after feeding Moomoo",
                         "access_rules": [
                             "^$CanReach|MOOMOO_MILK_FROM_MOOMOO_FARM"
@@ -11716,6 +11766,16 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "6F - Jasmine explains Amphy's sickness",
+                        "access_rules": [
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_6F, ^$dark|olivinelighthouse"
+                        ],
+                        "hosted_item": "EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS",
+                        "visibility_rules": [
+                            "show_events, vanilla_chain_jasmine_on"
                         ]
                     },
                     {
@@ -15195,6 +15255,36 @@
                         "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
+                        "name": "Rocket HQ B3F - Learn the password SlowpokeTail",
+                        "access_rules": [
+                            "^$CanReach|REGION_TEAM_ROCKET_BASE_B3F:SOUTH"
+                        ],
+                        "hosted_item": "EVENT_BEAT_ROCKET_GRUNTF_5",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B3F - Learn the password RaticateTail",
+                        "access_rules": [
+                            "^$CanReach|REGION_TEAM_ROCKET_BASE_B3F:SOUTH"
+                        ],
+                        "hosted_item": "EVENT_BEAT_ROCKET_GRUNTM_28",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
+                        "name": "Rocket HQ B3F - Learn the password Hail Giovanni",
+                        "access_rules": [
+                            "^$CanReach|REGION_TEAM_ROCKET_BASE_B3F:CENTER"
+                        ],
+                        "hosted_item": "EVENT_LEARNED_HAIL_GIOVANNI",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
                         "name": "Rocket HQ B2F - Clear Rocket HQ",
                         "access_rules": [
                             "^$CanReach|REGION_TEAM_ROCKET_BASE_B2F:CENTER"
@@ -16442,6 +16532,46 @@
                         ]
                     },
                     {
+                        "name": "B1F - Plug the north hole",
+                        "access_rules": [
+                            "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_1A, ^$dark|icepath"
+                        ],
+                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_1A",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Plug the center-west hole",
+                        "access_rules": [
+                            "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_2A, ^$dark|icepath"
+                        ],
+                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_2A",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Plug the south-west hole",
+                        "access_rules": [
+                            "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_3A, ^$dark|icepath"
+                        ],
+                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_3A",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Plug the south-east hole",
+                        "access_rules": [
+                            "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_4A, ^$dark|icepath"
+                        ],
+                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_4A",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
                         "name": "B1F - Land Encounters",
                         "item_count": 7,
                         "clear_as_group": false,
@@ -16976,6 +17106,26 @@
                         ],
                         "chest_unopened_img": "images/trainers/cool_trainer_m.png",
                         "chest_opened_img": "images/trainers/cool_trainer_m_bw.png"
+                    },
+                    {
+                        "name": "Gym - 2F - Push top-right boulder into hole",
+                        "access_rules": [
+                            "^$CanReach|EVENT_BOULDER_IN_BLACKTHORN_GYM_1"
+                        ],
+                        "hosted_item": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
+                        "name": "Gym - 2F - Push bottom boulder into hole",
+                        "access_rules": [
+                            "^$CanReach|EVENT_BOULDER_IN_BLACKTHORN_GYM_3"
+                        ],
+                        "hosted_item": "EVENT_BOULDER_IN_BLACKTHORN_GYM_3",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
                     },
                     {
                         "name": "Gym - 1F - Cool Trainer Mike",
@@ -18950,6 +19100,16 @@
                         ]
                     },
                     {
+                        "name": "Beat Elite 4 Will",
+                        "access_rules": [
+                            "^$CanReach|REGION_WILLS_ROOM"
+                        ],
+                        "hosted_item": "EVENT_BEAT_ELITE_4_WILL",
+                        "visibility_rules": [
+                            "show_events, lance_requires_elite_four_on"
+                        ]
+                    },
+                    {
                         "name": "Elite 4 Will",
                         "access_rules": [
                             "^$CanReach|REGION_WILLS_ROOM"
@@ -18960,6 +19120,16 @@
                         ],
                         "chest_unopened_img": "images/trainers/will.png",
                         "chest_opened_img": "images/trainers/will_bw.png"
+                    },
+                    {
+                        "name": "Beat Elite 4 Koga",
+                        "access_rules": [
+                            "^$CanReach|REGION_KOGAS_ROOM"
+                        ],
+                        "hosted_item": "EVENT_BEAT_ELITE_4_KOGA",
+                        "visibility_rules": [
+                            "show_events, lance_requires_elite_four_on"
+                        ]
                     },
                     {
                         "name": "Elite 4 Koga",
@@ -18974,6 +19144,16 @@
                         "chest_opened_img": "images/trainers/koga_bw.png"
                     },
                     {
+                        "name": "Beat Elite 4 Bruno",
+                        "access_rules": [
+                            "^$CanReach|REGION_BRUNOS_ROOM"
+                        ],
+                        "hosted_item": "EVENT_BEAT_ELITE_4_BRUNO",
+                        "visibility_rules": [
+                            "show_events, lance_requires_elite_four_on"
+                        ]
+                    },
+                    {
                         "name": "Elite 4 Bruno",
                         "access_rules": [
                             "^$CanReach|REGION_BRUNOS_ROOM"
@@ -18984,6 +19164,16 @@
                         ],
                         "chest_unopened_img": "images/trainers/bruno.png",
                         "chest_opened_img": "images/trainers/bruno_bw.png"
+                    },
+                    {
+                        "name": "Beat Elite 4 Karen",
+                        "access_rules": [
+                            "^$CanReach|REGION_KARENS_ROOM"
+                        ],
+                        "hosted_item": "EVENT_BEAT_ELITE_4_KAREN",
+                        "visibility_rules": [
+                            "show_events, lance_requires_elite_four_on"
+                        ]
                     },
                     {
                         "name": "Elite 4 Karen",
@@ -21915,6 +22105,16 @@
                         ]
                     },
                     {
+                        "name": "Gym - Meet Rocket Grunt",
+                        "access_rules": [
+                            "^$CanReach|REGION_CERULEAN_GYM:ROCKET"
+                        ],
+                        "hosted_item": "EVENT_MET_ROCKET_GRUNT_AT_CERULEAN_GYM",
+                        "visibility_rules": [
+                            "show_events, vanilla_chain_misty_on"
+                        ]
+                    },
+                    {
                         "name": "Gym - Machine Part in Water",
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_GYM:ROCKET"
@@ -22645,6 +22845,16 @@
                         ]
                     },
                     {
+                        "name": "Interrupt Misty's Date",
+                        "access_rules": [
+                            "^$CanReach|REGION_ROUTE_25:MISTY_DATE"
+                        ],
+                        "hosted_item": "EVENT_MISTY_RETURNED_TO_GYM",
+                        "visibility_rules": [
+                            "show_events, vanilla_chain_misty_on"
+                        ]
+                    },
+                    {
                         "name": "Grass",
                         "item_count": 2,
                         "clear_as_group": true,
@@ -23151,6 +23361,16 @@
                         ],
                         "chest_unopened_img": "images/gift/red_guy.png",
                         "chest_opened_img": "images/gift/red_guy_open.png"
+                    },
+                    {
+                        "name": "Learn of the robbery",
+                        "access_rules": [
+                            "^$CanReach|REGION_POWER_PLANT"
+                        ],
+                        "hosted_item": "EVENT_MET_MANAGER_AT_POWER_PLANT",
+                        "visibility_rules": [
+                            "show_events, vanilla_chain_misty_on"
+                        ]
                     },
                     {
                         "name": "Restore Power to Kanto",
@@ -24655,6 +24875,16 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Copycat's House 2F - Meet Copycat",
+                        "access_rules": [
+                            "^$CanReach|REGION_COPYCATS_HOUSE_2F"
+                        ],
+                        "hosted_item": "EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM",
+                        "visibility_rules": [
+                            "show_events, vanilla_chain_copycat_on"
                         ]
                     },
                     {
