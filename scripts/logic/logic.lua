@@ -334,6 +334,10 @@ function fly_cheese_unlock()
 end
 
 function kurt_shop(color)
+    if not has("EVENT_CLEARED_SLOWPOKE_WELL") then
+        return AccessibilityLevel.None
+    end
+
     if has(color.."_APRICORN") then
         return AccessibilityLevel.Normal
     elseif not has("EVENT_SEEN_MART_KURTS_BALLS") then
