@@ -609,7 +609,7 @@ function magikarp()
 end
 
 function mom_saving(number)
-    if not (has("EVENT_GAVE_MYSTERY_EGG_TO_ELM") or has("EVENT_MOM_CALLS")) then
+    if not (has("EVENT_GAVE_MYSTERY_EGG_TO_ELM") or has("EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST")) then
         return AccessibilityLevel.None
     end
     local available_gyms = has("johto_only_off") and 16 or 8

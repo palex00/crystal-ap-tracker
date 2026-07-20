@@ -4884,7 +4884,7 @@
                         "chest_unopened_img": "images/other/celebi.png",
                         "chest_opened_img": "images/other/celebi_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_ILEX_FOREST:SOUTH, ^$static_encounter, ^$dark|ilexforest, GS_BALL, EVENT_CLEARED_SLOWPOKE_WELL, EVENT_KURT_BALLS"
+                            "^$CanReach|REGION_ILEX_FOREST:SOUTH, ^$static_encounter, ^$dark|ilexforest, GS_BALL, EVENT_CLEARED_SLOWPOKE_WELL, EVENT_KURT_RETURNED_GS_BALL"
                         ],
                         "visibility_rules": [
                             "show_mons"
