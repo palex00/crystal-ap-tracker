@@ -558,8 +558,8 @@ function r12_passage()
     return has("SQUIRTBOTTLE") or has("route_12_access_vanilla") or can_surf_kanto()
 end
 
-function alph_passage()
-    return (not has("goal_unown") or (has("HO-OH_TILE", 16) or can_strength()))
+function unown_tile(tile)
+    return not has("goal_unown") or has(tile, 16)
 end
 
 function partial_trainersanity()

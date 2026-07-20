@@ -1548,10 +1548,10 @@ NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:CENTER"]:connect_one_way(NAMED_NODES["R
 -- === REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL ===
 NAMED_NODES["REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL"]:connect_two_ways_entrance(REGION_WISE_TRIOS_ROOM, "gate")
 NAMED_NODES["REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL"]:connect_one_way_entrance(REGION_TIN_TOWER_1F, "dungeon_interior")
-REGION_TIN_TOWER_1F:connect_one_way_entrance(NAMED_NODES["REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL"], "dungeon_interior", function() return has("CLEAR_BELL") end)
+REGION_TIN_TOWER_1F:connect_one_way_entrance(NAMED_NODES["REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL"], "dungeon_interior")
 
 -- === REGION_TIN_TOWER_1F ===
-REGION_TIN_TOWER_1F:connect_one_way_entrance(REGION_TIN_TOWER_2F, "dungeon_interior", function() return has("RAINBOW_WING") and has("CLEAR_BELL") end)
+REGION_TIN_TOWER_1F:connect_one_way_entrance(REGION_TIN_TOWER_2F, "dungeon_interior", function() return has("RAINBOW_WING") end)
 REGION_TIN_TOWER_2F:connect_one_way_entrance(REGION_TIN_TOWER_1F, "dungeon_interior")
 
 -- === REGION_TIN_TOWER_2F ===

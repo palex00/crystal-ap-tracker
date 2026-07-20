@@ -677,7 +677,7 @@
                             "^$CanReach|REGION_CHERRYGROVE_CITY:FLOODED_MINE_ENTRANCE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
+                            "show_entrances, er_dungeon_on, flooded_mine_on"
                         ]
                     },
                     {
@@ -1462,7 +1462,7 @@
                         "name": "Dark Cave (Violet Side) North Exit",
                         "hosted_item": "REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTH -> REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST",
                         "access_rules": [
-                            "^$CanReach|REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTH"
+                            "^$CanReach|REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTH, ^$dark|darkcave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -1472,7 +1472,7 @@
                         "name": "Dark Cave Southeast Exit",
                         "hosted_item": "REGION_DARK_CAVE_VIOLET_ENTRANCE:SOUTHEAST -> REGION_ROUTE_46:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_DARK_CAVE_VIOLET_ENTRANCE:SOUTHEAST"
+                            "^$CanReach|REGION_DARK_CAVE_VIOLET_ENTRANCE:SOUTHEAST, ^$dark|darkcave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -1482,7 +1482,7 @@
                         "name": "Dark Cave Southwest Exit",
                         "hosted_item": "REGION_DARK_CAVE_VIOLET_ENTRANCE:WEST -> REGION_ROUTE_31",
                         "access_rules": [
-                            "^$CanReach|REGION_DARK_CAVE_VIOLET_ENTRANCE:WEST"
+                            "^$CanReach|REGION_DARK_CAVE_VIOLET_ENTRANCE:WEST, ^$dark|darkcave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -2316,7 +2316,7 @@
                         "name": "Ruins of Alph Aerodactyl Chamber Hole",
                         "hosted_item": "REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER",
                         "access_rules": [
-                            "^$CanReach|REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER"
+                            "^$CanReach|REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER, ^$unown_tile|AERODACTYL_TILE"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -2326,7 +2326,7 @@
                         "name": "Ruins of Alph Aerodactyl Item Room Entrance",
                         "hosted_item": "REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER -> REGION_RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM",
                         "access_rules": [
-                            "^$CanReach|REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER"
+                            "^$CanReach|REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER, ^$can_use_flash|johto"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -2386,7 +2386,7 @@
                         "name": "Ruins of Alph Ho-Oh Chamber Hole",
                         "hosted_item": "REGION_RUINS_OF_ALPH_HO_OH_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER",
                         "access_rules": [
-                            "^$CanReach|REGION_RUINS_OF_ALPH_HO_OH_CHAMBER"
+                            "^$CanReach|REGION_RUINS_OF_ALPH_HO_OH_CHAMBER, ^$unown_tile|HO-OH_TILE"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -2396,7 +2396,7 @@
                         "name": "Ruins of Alph Ho-Oh Item Room Entrance",
                         "hosted_item": "REGION_RUINS_OF_ALPH_HO_OH_CHAMBER -> REGION_RUINS_OF_ALPH_HO_OH_ITEM_ROOM",
                         "access_rules": [
-                            "^$CanReach|REGION_RUINS_OF_ALPH_HO_OH_CHAMBER"
+                            "^$CanReach|REGION_RUINS_OF_ALPH_HO_OH_CHAMBER, RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -2476,7 +2476,7 @@
                         "name": "Ruins of Alph Kabuto Chamber Hole",
                         "hosted_item": "REGION_RUINS_OF_ALPH_KABUTO_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER",
                         "access_rules": [
-                            "^$CanReach|REGION_RUINS_OF_ALPH_KABUTO_CHAMBER"
+                            "^$CanReach|REGION_RUINS_OF_ALPH_KABUTO_CHAMBER, ^$unown_tile|KABUTO_TILE"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -2486,7 +2486,7 @@
                         "name": "Ruins of Alph Kabuto Item Room Entrance",
                         "hosted_item": "REGION_RUINS_OF_ALPH_KABUTO_CHAMBER -> REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM",
                         "access_rules": [
-                            "^$CanReach|REGION_RUINS_OF_ALPH_KABUTO_CHAMBER"
+                            "^$CanReach|REGION_RUINS_OF_ALPH_KABUTO_CHAMBER, ESCAPE_ROPE"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -2546,7 +2546,7 @@
                         "name": "Ruins of Alph Omanyte Chamber Hole",
                         "hosted_item": "REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER",
                         "access_rules": [
-                            "^$CanReach|REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER"
+                            "^$CanReach|REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER, ^$unown_tile|OMANYTE_TILE"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -2556,7 +2556,7 @@
                         "name": "Ruins of Alph Omanyte Item Room Entrance",
                         "hosted_item": "REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER -> REGION_RUINS_OF_ALPH_OMANYTE_ITEM_ROOM",
                         "access_rules": [
-                            "^$CanReach|REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER"
+                            "^$CanReach|REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER, WATER_STONE"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -2970,7 +2970,7 @@
                             "^$CanReach|REGION_ROUTE_32:SOUTH"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
+                            "show_entrances, er_dungeon_on, flooded_mine_on"
                         ]
                     },
                     {
@@ -3423,7 +3423,7 @@
                         "name": "Union Cave 1F Southwest Ladder",
                         "hosted_item": "REGION_UNION_CAVE_1F:SOUTH -> REGION_UNION_CAVE_B1F:SOUTHWEST",
                         "access_rules": [
-                            "^$CanReach|REGION_UNION_CAVE_1F:SOUTH"
+                            "^$CanReach|REGION_UNION_CAVE_1F:SOUTH, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -3433,7 +3433,7 @@
                         "name": "Union Cave 1F West Ladder",
                         "hosted_item": "REGION_UNION_CAVE_1F -> REGION_UNION_CAVE_B1F:CENTER",
                         "access_rules": [
-                            "^$CanReach|REGION_UNION_CAVE_1F"
+                            "^$CanReach|REGION_UNION_CAVE_1F, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -3443,7 +3443,7 @@
                         "name": "Union Cave B1F North Ladder",
                         "hosted_item": "REGION_UNION_CAVE_B1F:CENTER -> REGION_UNION_CAVE_1F",
                         "access_rules": [
-                            "^$CanReach|REGION_UNION_CAVE_B1F:CENTER"
+                            "^$CanReach|REGION_UNION_CAVE_B1F:CENTER, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -3453,7 +3453,7 @@
                         "name": "Union Cave B1F Southeast Ladder",
                         "hosted_item": "REGION_UNION_CAVE_B1F:SOUTHEAST -> REGION_UNION_CAVE_B2F:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_UNION_CAVE_B1F:SOUTHEAST"
+                            "^$CanReach|REGION_UNION_CAVE_B1F:SOUTHEAST, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -3463,7 +3463,7 @@
                         "name": "Union Cave B1F Southwest Ladder",
                         "hosted_item": "REGION_UNION_CAVE_B1F:SOUTHWEST -> REGION_UNION_CAVE_1F:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_UNION_CAVE_B1F:SOUTHWEST"
+                            "^$CanReach|REGION_UNION_CAVE_B1F:SOUTHWEST, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -3473,7 +3473,7 @@
                         "name": "Union Cave B2F Ladder",
                         "hosted_item": "REGION_UNION_CAVE_B2F:NORTH -> REGION_UNION_CAVE_B1F:SOUTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_UNION_CAVE_B2F:NORTH"
+                            "^$CanReach|REGION_UNION_CAVE_B2F:NORTH, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -3483,7 +3483,7 @@
                         "name": "Union Cave Ho-Oh Exit",
                         "hosted_item": "REGION_UNION_CAVE_B1F:NORTH -> REGION_RUINS_OF_ALPH_OUTSIDE:WEST",
                         "access_rules": [
-                            "^$CanReach|REGION_UNION_CAVE_B1F:NORTH"
+                            "^$CanReach|REGION_UNION_CAVE_B1F:NORTH, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -3493,7 +3493,7 @@
                         "name": "Union Cave North Exit",
                         "hosted_item": "REGION_UNION_CAVE_1F -> REGION_ROUTE_32:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_UNION_CAVE_1F"
+                            "^$CanReach|REGION_UNION_CAVE_1F, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -3503,7 +3503,7 @@
                         "name": "Union Cave Omanyte Exit",
                         "hosted_item": "REGION_UNION_CAVE_B1F:STRENGTH -> REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:UNION_LEDGE",
                         "access_rules": [
-                            "^$CanReach|REGION_UNION_CAVE_B1F:STRENGTH"
+                            "^$CanReach|REGION_UNION_CAVE_B1F:STRENGTH, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -3513,7 +3513,7 @@
                         "name": "Union Cave South Exit",
                         "hosted_item": "REGION_UNION_CAVE_1F -> REGION_ROUTE_33",
                         "access_rules": [
-                            "^$CanReach|REGION_UNION_CAVE_1F"
+                            "^$CanReach|REGION_UNION_CAVE_1F, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -3999,7 +3999,7 @@
                         "name": "Slowpoke Well B1F Ladder",
                         "hosted_item": "REGION_SLOWPOKE_WELL_B1F:CENTER -> REGION_SLOWPOKE_WELL_B2F:CENTER",
                         "access_rules": [
-                            "^$CanReach|REGION_SLOWPOKE_WELL_B1F:CENTER"
+                            "^$CanReach|REGION_SLOWPOKE_WELL_B1F:CENTER, ^$dark|slowpokewell"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -4009,7 +4009,7 @@
                         "name": "Slowpoke Well B2F Ladder",
                         "hosted_item": "REGION_SLOWPOKE_WELL_B2F:CENTER -> REGION_SLOWPOKE_WELL_B1F:CENTER",
                         "access_rules": [
-                            "^$CanReach|REGION_SLOWPOKE_WELL_B2F:CENTER"
+                            "^$CanReach|REGION_SLOWPOKE_WELL_B2F:CENTER, ^$dark|slowpokewell"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -4019,7 +4019,7 @@
                         "name": "Slowpoke Well Exit",
                         "hosted_item": "REGION_SLOWPOKE_WELL_B1F:ENTRANCE -> REGION_AZALEA_TOWN:WELL",
                         "access_rules": [
-                            "^$CanReach|REGION_SLOWPOKE_WELL_B1F:ENTRANCE"
+                            "^$CanReach|REGION_SLOWPOKE_WELL_B1F:ENTRANCE, ^$dark|slowpokewell"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -4210,7 +4210,7 @@
                         "name": "Azalea Gym Entrance",
                         "hosted_item": "REGION_AZALEA_TOWN -> REGION_AZALEA_GYM",
                         "access_rules": [
-                            "^$CanReach|REGION_AZALEA_TOWN"
+                            "^$CanReach|REGION_AZALEA_TOWN, EVENT_CLEARED_SLOWPOKE_WELL"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -4771,7 +4771,7 @@
                         "name": "Ilex Forest North Exit",
                         "hosted_item": "REGION_ILEX_FOREST:NORTH -> REGION_ROUTE_34_ILEX_FOREST_GATE",
                         "access_rules": [
-                            "^$CanReach|REGION_ILEX_FOREST:NORTH"
+                            "^$CanReach|REGION_ILEX_FOREST:NORTH, ^$dark|ilexforest"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -4781,7 +4781,7 @@
                         "name": "Ilex Forest South Exit",
                         "hosted_item": "REGION_ILEX_FOREST:SOUTH -> REGION_ILEX_FOREST_AZALEA_GATE",
                         "access_rules": [
-                            "^$CanReach|REGION_ILEX_FOREST:SOUTH"
+                            "^$CanReach|REGION_ILEX_FOREST:SOUTH, ^$dark|ilexforest"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -6580,7 +6580,7 @@
                         "name": "Goldenrod Underground B1F North Stairs",
                         "hosted_item": "REGION_GOLDENROD_UNDERGROUND -> REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES:NORTH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_UNDERGROUND"
+                            "^$CanReach|REGION_GOLDENROD_UNDERGROUND, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -6590,7 +6590,7 @@
                         "name": "Goldenrod Underground B1F South Stairs",
                         "hosted_item": "REGION_GOLDENROD_UNDERGROUND -> REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES:SOUTH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_UNDERGROUND"
+                            "^$CanReach|REGION_GOLDENROD_UNDERGROUND, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -6600,7 +6600,7 @@
                         "name": "Goldenrod Underground Basement Landing Exit",
                         "hosted_item": "REGION_GOLDENROD_UNDERGROUND:BASEMENT_LANDING -> REGION_GOLDENROD_UNDERGROUND",
                         "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_UNDERGROUND:BASEMENT_LANDING"
+                            "^$CanReach|REGION_GOLDENROD_UNDERGROUND:BASEMENT_LANDING, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -6610,7 +6610,7 @@
                         "name": "Goldenrod Underground Basement Landing Stairs",
                         "hosted_item": "REGION_GOLDENROD_UNDERGROUND:BASEMENT_LANDING -> REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES",
                         "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_UNDERGROUND:BASEMENT_LANDING"
+                            "^$CanReach|REGION_GOLDENROD_UNDERGROUND:BASEMENT_LANDING, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -6640,7 +6640,7 @@
                         "name": "Goldenrod Underground Northeast Exit",
                         "hosted_item": "REGION_GOLDENROD_UNDERGROUND -> REGION_GOLDENROD_UNDERGROUND:BASEMENT_LANDING",
                         "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_UNDERGROUND"
+                            "^$CanReach|REGION_GOLDENROD_UNDERGROUND, BASEMENT_KEY, ^$dark|goldenrodunderground"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -7087,7 +7087,7 @@
                         "name": "Radio Tower 2F Left Stairs",
                         "hosted_item": "REGION_RADIO_TOWER_2F -> REGION_RADIO_TOWER_3F",
                         "access_rules": [
-                            "^$CanReach|REGION_RADIO_TOWER_2F"
+                            "^$CanReach|REGION_RADIO_TOWER_2F, tower_requirement"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -8928,7 +8928,7 @@
                         "name": "Ecruteak Gym Exit",
                         "hosted_item": "REGION_ECRUTEAK_GYM -> REGION_ECRUTEAK_CITY",
                         "access_rules": [
-                            "^$CanReach|REGION_ECRUTEAK_GYM"
+                            "^$CanReach|REGION_ECRUTEAK_GYM, EVENT_RELEASED_THE_BEASTS"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -9483,7 +9483,7 @@
                         "name": "Burned Tower Exit",
                         "hosted_item": "REGION_BURNED_TOWER_1F -> REGION_ECRUTEAK_CITY",
                         "access_rules": [
-                            "^$CanReach|REGION_BURNED_TOWER_1F"
+                            "^$CanReach|REGION_BURNED_TOWER_1F, ^$dark|burnedtower"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -9618,7 +9618,7 @@
                         "name": "Tin Tower 1F Stairs",
                         "hosted_item": "REGION_TIN_TOWER_1F -> REGION_TIN_TOWER_2F",
                         "access_rules": [
-                            "^$CanReach|REGION_TIN_TOWER_1F"
+                            "^$CanReach|REGION_TIN_TOWER_1F, RAINBOW_WING"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11354,7 +11354,7 @@
                         "name": "Olivine Lighthouse 1F Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_1F -> REGION_OLIVINE_LIGHTHOUSE_2F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_1F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_1F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11364,7 +11364,7 @@
                         "name": "Olivine Lighthouse 2F Hole",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_2F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_1F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F:HOLE"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F:HOLE, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -11374,7 +11374,7 @@
                         "name": "Olivine Lighthouse 2F Northwest Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_2F -> REGION_OLIVINE_LIGHTHOUSE_3F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11384,7 +11384,7 @@
                         "name": "Olivine Lighthouse 2F Southwest Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_2F -> REGION_OLIVINE_LIGHTHOUSE_1F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11394,7 +11394,7 @@
                         "name": "Olivine Lighthouse 3F Center Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_3F:NORTH -> REGION_OLIVINE_LIGHTHOUSE_4F:CENTER",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_3F:NORTH"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_3F:NORTH, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11404,7 +11404,7 @@
                         "name": "Olivine Lighthouse 3F Hole",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_3F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_2F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_3F:HOLE"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_3F:HOLE, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -11414,7 +11414,7 @@
                         "name": "Olivine Lighthouse 3F Northeast Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_3F -> REGION_OLIVINE_LIGHTHOUSE_4F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_3F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_3F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11424,7 +11424,7 @@
                         "name": "Olivine Lighthouse 3F Northwest Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_3F -> REGION_OLIVINE_LIGHTHOUSE_2F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_3F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_3F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11434,7 +11434,7 @@
                         "name": "Olivine Lighthouse 4F Center Bottom Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_4F:CENTER -> REGION_OLIVINE_LIGHTHOUSE_3F:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F:CENTER"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F:CENTER, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11444,7 +11444,7 @@
                         "name": "Olivine Lighthouse 4F Center Top Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_4F:CENTER -> REGION_OLIVINE_LIGHTHOUSE_5F:CENTER",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F:CENTER"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F:CENTER, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11454,7 +11454,7 @@
                         "name": "Olivine Lighthouse 4F East Hole",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_4F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_3F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F:HOLE"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F:HOLE, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -11464,7 +11464,7 @@
                         "name": "Olivine Lighthouse 4F North Hole",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_4F:NORTH_HOLE -> REGION_OLIVINE_LIGHTHOUSE_3F:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F:NORTH_HOLE"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F:NORTH_HOLE, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -11474,7 +11474,7 @@
                         "name": "Olivine Lighthouse 4F Northeast Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_4F -> REGION_OLIVINE_LIGHTHOUSE_3F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11484,7 +11484,7 @@
                         "name": "Olivine Lighthouse 4F Northwest Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_4F -> REGION_OLIVINE_LIGHTHOUSE_5F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_4F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11494,7 +11494,7 @@
                         "name": "Olivine Lighthouse 5F Center North Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_5F:CENTER -> REGION_OLIVINE_LIGHTHOUSE_4F:CENTER",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_5F:CENTER"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_5F:CENTER, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11504,7 +11504,7 @@
                         "name": "Olivine Lighthouse 5F Center South Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_5F:CENTER -> REGION_OLIVINE_LIGHTHOUSE_6F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_5F:CENTER"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_5F:CENTER, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11514,7 +11514,7 @@
                         "name": "Olivine Lighthouse 5F Hole",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_5F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_4F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_5F:HOLE"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_5F:HOLE, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -11524,7 +11524,7 @@
                         "name": "Olivine Lighthouse 5F Northwest Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_5F -> REGION_OLIVINE_LIGHTHOUSE_4F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_5F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_5F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11534,7 +11534,7 @@
                         "name": "Olivine Lighthouse 6F Hole",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_6F -> REGION_OLIVINE_LIGHTHOUSE_5F",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_6F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_6F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -11544,7 +11544,7 @@
                         "name": "Olivine Lighthouse 6F Stairs",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_6F -> REGION_OLIVINE_LIGHTHOUSE_5F:CENTER",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_6F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_6F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -11554,7 +11554,7 @@
                         "name": "Olivine Lighthouse Exit",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_1F -> REGION_OLIVINE_CITY",
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_1F"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_1F, ^$dark|olivinelighthouse"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -12511,7 +12511,7 @@
                         "name": "Whirl Islands B1F East Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B1F:NORTHEAST -> REGION_WHIRL_ISLAND_B2F:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:NORTHEAST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:NORTHEAST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12521,7 +12521,7 @@
                         "name": "Whirl Islands B1F Lugia Exit Tunnel Entrance",
                         "hosted_item": "REGION_WHIRL_ISLAND_B1F:LEDGE -> REGION_WHIRL_ISLAND_CAVE",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:LEDGE"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:LEDGE, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12531,7 +12531,7 @@
                         "name": "Whirl Islands B1F North Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B1F:NORTH -> REGION_WHIRL_ISLAND_NE:SOUTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:NORTH"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:NORTH, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12541,7 +12541,7 @@
                         "name": "Whirl Islands B1F Northeast Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B1F:NORTHEAST -> REGION_WHIRL_ISLAND_NE:NORTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:NORTHEAST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:NORTHEAST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12551,7 +12551,7 @@
                         "name": "Whirl Islands B1F Northwest Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B1F:NORTH -> REGION_WHIRL_ISLAND_NW:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:NORTH"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:NORTH, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12561,7 +12561,7 @@
                         "name": "Whirl Islands B1F South Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B1F:SOUTHEAST -> REGION_WHIRL_ISLAND_SW:NORTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:SOUTHEAST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:SOUTHEAST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12571,7 +12571,7 @@
                         "name": "Whirl Islands B1F Southeast Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B1F:SOUTHEAST -> REGION_WHIRL_ISLAND_SE",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:SOUTHEAST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:SOUTHEAST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12581,7 +12581,7 @@
                         "name": "Whirl Islands B1F Southwest Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B1F:SOUTHWEST -> REGION_WHIRL_ISLAND_SW:NORTHWEST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:SOUTHWEST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:SOUTHWEST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12591,7 +12591,7 @@
                         "name": "Whirl Islands B1F West Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B1F:NORTH -> REGION_WHIRL_ISLAND_B2F:CENTER",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:NORTH"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B1F:NORTH, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12601,7 +12601,7 @@
                         "name": "Whirl Islands B2F Center Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B2F:CENTER -> REGION_WHIRL_ISLAND_B1F:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B2F:CENTER"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B2F:CENTER, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12611,7 +12611,7 @@
                         "name": "Whirl Islands B2F Lugia Chamber Entrance",
                         "hosted_item": "REGION_WHIRL_ISLAND_B2F:LUGIA_CHAMBER_ENTRANCE -> REGION_WHIRL_ISLAND_LUGIA_CHAMBER",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B2F:LUGIA_CHAMBER_ENTRANCE"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B2F:LUGIA_CHAMBER_ENTRANCE, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12621,7 +12621,7 @@
                         "name": "Whirl Islands B2F North Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B2F:NORTH -> REGION_WHIRL_ISLAND_B1F:NORTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B2F:NORTH"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B2F:NORTH, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12631,7 +12631,7 @@
                         "name": "Whirl Islands B2F South Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_B2F:SOUTH -> REGION_WHIRL_ISLAND_SW:SOUTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_B2F:SOUTH"
+                            "^$CanReach|REGION_WHIRL_ISLAND_B2F:SOUTH, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12641,7 +12641,7 @@
                         "name": "Whirl Islands Lugia Chamber Exit",
                         "hosted_item": "REGION_WHIRL_ISLAND_LUGIA_CHAMBER -> REGION_WHIRL_ISLAND_B2F:LUGIA_CHAMBER_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_LUGIA_CHAMBER"
+                            "^$CanReach|REGION_WHIRL_ISLAND_LUGIA_CHAMBER, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12651,7 +12651,7 @@
                         "name": "Whirl Islands Lugia Exit Tunnel B1F East Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_NW:SOUTH -> REGION_WHIRL_ISLAND_CAVE",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_NW:SOUTH"
+                            "^$CanReach|REGION_WHIRL_ISLAND_NW:SOUTH, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12661,7 +12661,7 @@
                         "name": "Whirl Islands Lugia Exit Tunnel B1F West Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_NW:SOUTH -> REGION_WHIRL_ISLAND_SW:SOUTHWEST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_NW:SOUTH"
+                            "^$CanReach|REGION_WHIRL_ISLAND_NW:SOUTH, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12671,7 +12671,7 @@
                         "name": "Whirl Islands Lugia Exit Tunnel B2F East Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_SW:SOUTHEAST -> REGION_WHIRL_ISLAND_B2F:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_SW:SOUTHEAST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_SW:SOUTHEAST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12681,7 +12681,7 @@
                         "name": "Whirl Islands Lugia Exit Tunnel B2F West Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_SW:SOUTHWEST -> REGION_WHIRL_ISLAND_NW:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_SW:SOUTHWEST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_SW:SOUTHWEST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12691,7 +12691,7 @@
                         "name": "Whirl Islands Lugia Exit Tunnel Exit",
                         "hosted_item": "REGION_WHIRL_ISLAND_CAVE -> REGION_WHIRL_ISLAND_B1F:LEDGE",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_CAVE"
+                            "^$CanReach|REGION_WHIRL_ISLAND_CAVE, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12701,7 +12701,7 @@
                         "name": "Whirl Islands Lugia Exit Tunnel Top Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_CAVE -> REGION_WHIRL_ISLAND_NW:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_CAVE"
+                            "^$CanReach|REGION_WHIRL_ISLAND_CAVE, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12711,7 +12711,7 @@
                         "name": "Whirl Islands Northeast Exit",
                         "hosted_item": "REGION_WHIRL_ISLAND_NE:WEST -> REGION_ROUTE_41:NE_ISLAND",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_NE:WEST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_NE:WEST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -12721,7 +12721,7 @@
                         "name": "Whirl Islands Northeast Island North Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_NE:NORTHEAST -> REGION_WHIRL_ISLAND_B1F:NORTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_NE:NORTHEAST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_NE:NORTHEAST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12731,7 +12731,7 @@
                         "name": "Whirl Islands Northeast Island South Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_NE:SOUTHEAST -> REGION_WHIRL_ISLAND_B1F:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_NE:SOUTHEAST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_NE:SOUTHEAST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12741,7 +12741,7 @@
                         "name": "Whirl Islands Northwest Exit",
                         "hosted_item": "REGION_WHIRL_ISLAND_NW:NORTH -> REGION_ROUTE_41:NW_ISLAND",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_NW:NORTH"
+                            "^$CanReach|REGION_WHIRL_ISLAND_NW:NORTH, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -12751,7 +12751,7 @@
                         "name": "Whirl Islands Northwest Island Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_NW:NORTH -> REGION_WHIRL_ISLAND_B1F:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_NW:NORTH"
+                            "^$CanReach|REGION_WHIRL_ISLAND_NW:NORTH, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12761,7 +12761,7 @@
                         "name": "Whirl Islands Southeast Exit",
                         "hosted_item": "REGION_WHIRL_ISLAND_SE -> REGION_ROUTE_41:SE_ISLAND",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_SE"
+                            "^$CanReach|REGION_WHIRL_ISLAND_SE, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -12771,7 +12771,7 @@
                         "name": "Whirl Islands Southeast Island Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_SE -> REGION_WHIRL_ISLAND_B1F:SOUTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_SE"
+                            "^$CanReach|REGION_WHIRL_ISLAND_SE, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12781,7 +12781,7 @@
                         "name": "Whirl Islands Southwest Exit",
                         "hosted_item": "REGION_WHIRL_ISLAND_SW:NORTHWEST -> REGION_ROUTE_41:SW_ISLAND",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_SW:NORTHWEST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_SW:NORTHWEST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -12791,7 +12791,7 @@
                         "name": "Whirl Islands Southwest Island East Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_SW:NORTHEAST -> REGION_WHIRL_ISLAND_B1F:SOUTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_SW:NORTHEAST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_SW:NORTHEAST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -12801,7 +12801,7 @@
                         "name": "Whirl Islands Southwest Island West Ladder",
                         "hosted_item": "REGION_WHIRL_ISLAND_SW:NORTHWEST -> REGION_WHIRL_ISLAND_B1F:SOUTHWEST",
                         "access_rules": [
-                            "^$CanReach|REGION_WHIRL_ISLAND_SW:NORTHWEST"
+                            "^$CanReach|REGION_WHIRL_ISLAND_SW:NORTHWEST, ^$dark|whirlislands"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -13950,7 +13950,7 @@
                         "name": "Mount Mortar 1F Inside North Ladder",
                         "hosted_item": "REGION_MOUNT_MORTAR_1F_INSIDE:NORTH -> REGION_MOUNT_MORTAR_2F_INSIDE:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:NORTH"
+                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:NORTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -13960,7 +13960,7 @@
                         "name": "Mount Mortar 1F Inside South Exit",
                         "hosted_item": "REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH -> REGION_MOUNT_MORTAR_1F_OUTSIDE:WATERFALL_ISLAND",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"
+                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -13970,7 +13970,7 @@
                         "name": "Mount Mortar 1F Inside Southeast Exit",
                         "hosted_item": "REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH -> REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"
+                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -13980,7 +13980,7 @@
                         "name": "Mount Mortar 1F Inside Southeast Ladder",
                         "hosted_item": "REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH -> REGION_MOUNT_MORTAR_1F_OUTSIDE:EAST",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"
+                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -13990,7 +13990,7 @@
                         "name": "Mount Mortar 1F Inside Southwest Exit",
                         "hosted_item": "REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH -> REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHWEST",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"
+                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -14000,7 +14000,7 @@
                         "name": "Mount Mortar 1F Inside Southwest Ladder",
                         "hosted_item": "REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH -> REGION_MOUNT_MORTAR_1F_OUTSIDE:WEST",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"
+                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -14010,7 +14010,7 @@
                         "name": "Mount Mortar 1F Inside West Ladder",
                         "hosted_item": "REGION_MOUNT_MORTAR_1F_INSIDE:NORTH -> REGION_MOUNT_MORTAR_B1F:NORTHWEST",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:NORTH"
+                            "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:NORTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -14090,7 +14090,7 @@
                         "name": "Mount Mortar 2F Northwest Ladder",
                         "hosted_item": "REGION_MOUNT_MORTAR_2F_INSIDE:NORTH -> REGION_MOUNT_MORTAR_1F_INSIDE:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_2F_INSIDE:NORTH"
+                            "^$CanReach|REGION_MOUNT_MORTAR_2F_INSIDE:NORTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -14100,7 +14100,7 @@
                         "name": "Mount Mortar 2F South Exit",
                         "hosted_item": "REGION_MOUNT_MORTAR_2F_INSIDE:SOUTH -> REGION_MOUNT_MORTAR_1F_OUTSIDE:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_2F_INSIDE:SOUTH"
+                            "^$CanReach|REGION_MOUNT_MORTAR_2F_INSIDE:SOUTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -14110,7 +14110,7 @@
                         "name": "Mount Mortar B1F Northwest Ladder",
                         "hosted_item": "REGION_MOUNT_MORTAR_B1F:NORTHWEST -> REGION_MOUNT_MORTAR_1F_INSIDE:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_B1F:NORTHWEST"
+                            "^$CanReach|REGION_MOUNT_MORTAR_B1F:NORTHWEST, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -14120,7 +14120,7 @@
                         "name": "Mount Mortar B1F South Ladder",
                         "hosted_item": "REGION_MOUNT_MORTAR_B1F:SOUTH -> REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MORTAR_B1F:SOUTH"
+                            "^$CanReach|REGION_MOUNT_MORTAR_B1F:SOUTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -14556,7 +14556,7 @@
                         "name": "Mahogany Gym Entrance",
                         "hosted_item": "REGION_MAHOGANY_TOWN -> REGION_MAHOGANY_GYM",
                         "access_rules": [
-                            "^$CanReach|REGION_MAHOGANY_TOWN"
+                            "^$CanReach|REGION_MAHOGANY_TOWN, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -14736,7 +14736,7 @@
                         "name": "Rocket HQ Entrance",
                         "hosted_item": "REGION_MAHOGANY_MART_1F -> REGION_TEAM_ROCKET_BASE_B1F",
                         "access_rules": [
-                            "^$CanReach|REGION_MAHOGANY_MART_1F"
+                            "^$CanReach|REGION_MAHOGANY_MART_1F, EVENT_DECIDED_TO_HELP_LANCE"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -16295,7 +16295,7 @@
                         "name": "Ice Path 1F North Ladder",
                         "hosted_item": "REGION_ICE_PATH_1F:WEST -> REGION_ICE_PATH_B1F:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_1F:WEST"
+                            "^$CanReach|REGION_ICE_PATH_1F:WEST, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16305,7 +16305,7 @@
                         "name": "Ice Path 1F South Ladder",
                         "hosted_item": "REGION_ICE_PATH_1F:EAST -> REGION_ICE_PATH_B1F:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_1F:EAST"
+                            "^$CanReach|REGION_ICE_PATH_1F:EAST, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16315,7 +16315,7 @@
                         "name": "Ice Path B1F (Blackthorn Side) East Ladder",
                         "hosted_item": "REGION_ICE_PATH_B1F:SOUTH -> REGION_ICE_PATH_B2F_BLACKTHORN_SIDE",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B1F:SOUTH"
+                            "^$CanReach|REGION_ICE_PATH_B1F:SOUTH, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16325,7 +16325,7 @@
                         "name": "Ice Path B1F (Blackthorn Side) West Ladder",
                         "hosted_item": "REGION_ICE_PATH_B1F:SOUTH -> REGION_ICE_PATH_1F:EAST",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B1F:SOUTH"
+                            "^$CanReach|REGION_ICE_PATH_B1F:SOUTH, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16335,7 +16335,7 @@
                         "name": "Ice Path B1F (Mahogany Side) Northeast Ladder",
                         "hosted_item": "REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B1F:NORTH"
+                            "^$CanReach|REGION_ICE_PATH_B1F:NORTH, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16345,7 +16345,7 @@
                         "name": "Ice Path B1F (Mahogany Side) Southwest Ladder",
                         "hosted_item": "REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_1F:WEST",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B1F:NORTH"
+                            "^$CanReach|REGION_ICE_PATH_B1F:NORTH, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16355,7 +16355,7 @@
                         "name": "Ice Path B1F Northeast Hole",
                         "hosted_item": "REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_1",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B1F:NORTH"
+                            "^$CanReach|REGION_ICE_PATH_B1F:NORTH, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -16365,7 +16365,7 @@
                         "name": "Ice Path B1F Northwest Hole",
                         "hosted_item": "REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_2",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B1F:NORTH"
+                            "^$CanReach|REGION_ICE_PATH_B1F:NORTH, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -16395,7 +16395,7 @@
                         "name": "Ice Path B2F (Blackthorn Side) North Ladder",
                         "hosted_item": "REGION_ICE_PATH_B2F_BLACKTHORN_SIDE -> REGION_ICE_PATH_B3F",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B2F_BLACKTHORN_SIDE"
+                            "^$CanReach|REGION_ICE_PATH_B2F_BLACKTHORN_SIDE, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16405,7 +16405,7 @@
                         "name": "Ice Path B2F (Blackthorn Side) South Ladder",
                         "hosted_item": "REGION_ICE_PATH_B2F_BLACKTHORN_SIDE -> REGION_ICE_PATH_B1F:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B2F_BLACKTHORN_SIDE"
+                            "^$CanReach|REGION_ICE_PATH_B2F_BLACKTHORN_SIDE, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16415,7 +16415,7 @@
                         "name": "Ice Path B2F (Mahogany Side) Center Ladder",
                         "hosted_item": "REGION_ICE_PATH_B2F_MAHOGANY_SIDE:MIDDLE -> REGION_ICE_PATH_B3F",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B2F_MAHOGANY_SIDE:MIDDLE"
+                            "^$CanReach|REGION_ICE_PATH_B2F_MAHOGANY_SIDE:MIDDLE, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16425,7 +16425,7 @@
                         "name": "Ice Path B2F (Mahogany Side) Northeast Ladder",
                         "hosted_item": "REGION_ICE_PATH_B2F_MAHOGANY_SIDE -> REGION_ICE_PATH_B1F:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B2F_MAHOGANY_SIDE"
+                            "^$CanReach|REGION_ICE_PATH_B2F_MAHOGANY_SIDE, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16435,7 +16435,7 @@
                         "name": "Ice Path B3F East Ladder",
                         "hosted_item": "REGION_ICE_PATH_B3F -> REGION_ICE_PATH_B2F_BLACKTHORN_SIDE",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B3F"
+                            "^$CanReach|REGION_ICE_PATH_B3F, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16445,7 +16445,7 @@
                         "name": "Ice Path B3F West Ladder",
                         "hosted_item": "REGION_ICE_PATH_B3F -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:MIDDLE",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_B3F"
+                            "^$CanReach|REGION_ICE_PATH_B3F, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16455,7 +16455,7 @@
                         "name": "Ice Path East Exit",
                         "hosted_item": "REGION_ICE_PATH_1F:EAST -> REGION_BLACKTHORN_CITY",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_1F:EAST"
+                            "^$CanReach|REGION_ICE_PATH_1F:EAST, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -16465,7 +16465,7 @@
                         "name": "Ice Path West Exit",
                         "hosted_item": "REGION_ICE_PATH_1F:WEST -> REGION_ROUTE_44",
                         "access_rules": [
-                            "^$CanReach|REGION_ICE_PATH_1F:WEST"
+                            "^$CanReach|REGION_ICE_PATH_1F:WEST, ^$dark|icepath"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -16777,7 +16777,7 @@
                         "name": "Blackthorn Gym 2F Northeast Hole",
                         "hosted_item": "REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_3",
                         "access_rules": [
-                            "^$CanReach|REGION_BLACKTHORN_GYM_2F"
+                            "^$CanReach|REGION_BLACKTHORN_GYM_2F, ^$can_strength"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -16817,7 +16817,7 @@
                         "name": "Blackthorn Gym Entrance",
                         "hosted_item": "REGION_BLACKTHORN_CITY -> REGION_BLACKTHORN_GYM_1F",
                         "access_rules": [
-                            "^$CanReach|REGION_BLACKTHORN_CITY"
+                            "^$CanReach|REGION_BLACKTHORN_CITY, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -16897,7 +16897,7 @@
                         "name": "Dragon Shrine Entrance",
                         "hosted_item": "REGION_DRAGONS_DEN_B1F:SOUTH -> REGION_DRAGON_SHRINE:ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_DRAGONS_DEN_B1F:SOUTH"
+                            "^$CanReach|REGION_DRAGONS_DEN_B1F:SOUTH, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16907,7 +16907,7 @@
                         "name": "Dragon Shrine Exit",
                         "hosted_item": "REGION_DRAGON_SHRINE:ENTRANCE -> REGION_DRAGONS_DEN_B1F:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_DRAGON_SHRINE:ENTRANCE"
+                            "^$CanReach|REGION_DRAGON_SHRINE:ENTRANCE, EVENT_BEAT_CLAIR"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16917,7 +16917,7 @@
                         "name": "Dragon's Den B1F Exit",
                         "hosted_item": "REGION_DRAGONS_DEN_B1F:NORTH -> REGION_DRAGONS_DEN_1F:LOWER",
                         "access_rules": [
-                            "^$CanReach|REGION_DRAGONS_DEN_B1F:NORTH"
+                            "^$CanReach|REGION_DRAGONS_DEN_B1F:NORTH, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16927,7 +16927,7 @@
                         "name": "Dragon's Den Entrance",
                         "hosted_item": "REGION_BLACKTHORN_CITY:DRAGONS_DEN_ENTRANCE -> REGION_DRAGONS_DEN_1F:UPPER",
                         "access_rules": [
-                            "^$CanReach|REGION_BLACKTHORN_CITY:DRAGONS_DEN_ENTRANCE"
+                            "^$CanReach|REGION_BLACKTHORN_CITY:DRAGONS_DEN_ENTRANCE, EVENT_BEAT_CLAIR"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -16937,7 +16937,7 @@
                         "name": "Dragon's Den Entrance Shaft Lower Exit",
                         "hosted_item": "REGION_DRAGONS_DEN_1F:LOWER -> REGION_DRAGONS_DEN_B1F:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_DRAGONS_DEN_1F:LOWER"
+                            "^$CanReach|REGION_DRAGONS_DEN_1F:LOWER, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16947,7 +16947,7 @@
                         "name": "Dragon's Den Entrance Shaft Lower Ladder",
                         "hosted_item": "REGION_DRAGONS_DEN_1F:LOWER -> REGION_DRAGONS_DEN_1F:UPPER",
                         "access_rules": [
-                            "^$CanReach|REGION_DRAGONS_DEN_1F:LOWER"
+                            "^$CanReach|REGION_DRAGONS_DEN_1F:LOWER, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16957,7 +16957,7 @@
                         "name": "Dragon's Den Entrance Shaft Upper Ladder",
                         "hosted_item": "REGION_DRAGONS_DEN_1F:UPPER -> REGION_DRAGONS_DEN_1F:LOWER",
                         "access_rules": [
-                            "^$CanReach|REGION_DRAGONS_DEN_1F:UPPER"
+                            "^$CanReach|REGION_DRAGONS_DEN_1F:UPPER, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -16967,7 +16967,7 @@
                         "name": "Dragon's Den Exit",
                         "hosted_item": "REGION_DRAGONS_DEN_1F:UPPER -> REGION_BLACKTHORN_CITY:DRAGONS_DEN_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_DRAGONS_DEN_1F:UPPER"
+                            "^$CanReach|REGION_DRAGONS_DEN_1F:UPPER, ^$dark|dragonsden"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -17469,7 +17469,7 @@
                         "name": "Dark Cave (Blackthorn Side) South Exit",
                         "hosted_item": "REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST -> REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST"
+                            "^$CanReach|REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST, ^$dark|darkcave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -17479,7 +17479,7 @@
                         "name": "Dark Cave North Exit",
                         "hosted_item": "REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:NORTHEAST -> REGION_ROUTE_45",
                         "access_rules": [
-                            "^$CanReach|REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:NORTHEAST"
+                            "^$CanReach|REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:NORTHEAST, ^$dark|darkcave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -18081,7 +18081,7 @@
                         "name": "Tohjo Falls East Exit",
                         "hosted_item": "REGION_TOHJO_FALLS:EAST -> REGION_ROUTE_27:CENTER",
                         "access_rules": [
-                            "^$CanReach|REGION_TOHJO_FALLS:EAST"
+                            "^$CanReach|REGION_TOHJO_FALLS:EAST, ^$dark|tohjofalls"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -18101,7 +18101,7 @@
                         "name": "Tohjo Falls West Exit",
                         "hosted_item": "REGION_TOHJO_FALLS:WEST -> REGION_ROUTE_27:WEST",
                         "access_rules": [
-                            "^$CanReach|REGION_TOHJO_FALLS:WEST"
+                            "^$CanReach|REGION_TOHJO_FALLS:WEST, ^$dark|tohjofalls"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -18668,7 +18668,7 @@
                         "name": "Victory Road 1F Ladder",
                         "hosted_item": "REGION_VICTORY_ROAD:1F -> REGION_VICTORY_ROAD:2F",
                         "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD:1F"
+                            "^$CanReach|REGION_VICTORY_ROAD:1F, ^$dark|victoryroad"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -18678,7 +18678,7 @@
                         "name": "Victory Road 2F North Ladder",
                         "hosted_item": "REGION_VICTORY_ROAD:2F -> REGION_VICTORY_ROAD:3F",
                         "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD:2F"
+                            "^$CanReach|REGION_VICTORY_ROAD:2F, ^$dark|victoryroad"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -18688,7 +18688,7 @@
                         "name": "Victory Road 2F Northeast Ladder",
                         "hosted_item": "REGION_VICTORY_ROAD:2F:NORTHEAST -> REGION_VICTORY_ROAD:3F:SOUTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD:2F:NORTHEAST"
+                            "^$CanReach|REGION_VICTORY_ROAD:2F:NORTHEAST, ^$dark|victoryroad"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -18698,7 +18698,7 @@
                         "name": "Victory Road 2F West Ladder",
                         "hosted_item": "REGION_VICTORY_ROAD:2F -> REGION_VICTORY_ROAD:1F",
                         "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD:2F"
+                            "^$CanReach|REGION_VICTORY_ROAD:2F, ^$dark|victoryroad"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -18708,7 +18708,7 @@
                         "name": "Victory Road 3F Hole",
                         "hosted_item": "REGION_VICTORY_ROAD:3F -> REGION_VICTORY_ROAD:2F:NORTHWEST",
                         "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD:3F"
+                            "^$CanReach|REGION_VICTORY_ROAD:3F, ^$dark|victoryroad"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_one_way_on"
@@ -18718,7 +18718,7 @@
                         "name": "Victory Road 3F North Ladder",
                         "hosted_item": "REGION_VICTORY_ROAD:3F -> REGION_VICTORY_ROAD:2F",
                         "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD:3F"
+                            "^$CanReach|REGION_VICTORY_ROAD:3F, ^$dark|victoryroad"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -18728,7 +18728,7 @@
                         "name": "Victory Road 3F Southeast Ladder",
                         "hosted_item": "REGION_VICTORY_ROAD:3F:SOUTHEAST -> REGION_VICTORY_ROAD:2F:NORTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD:3F:SOUTHEAST"
+                            "^$CanReach|REGION_VICTORY_ROAD:3F:SOUTHEAST, ^$dark|victoryroad"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -18751,7 +18751,7 @@
                             "^$CanReach|REGION_VICTORY_ROAD_GATE:NORTH"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_gate_on"
+                            "show_entrances, er_gate_on, route_23_restored_on"
                         ]
                     },
                     {
@@ -18778,7 +18778,7 @@
                         "name": "Victory Road North Exit",
                         "hosted_item": "REGION_VICTORY_ROAD:3F -> REGION_ROUTE_23",
                         "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD:3F"
+                            "^$CanReach|REGION_VICTORY_ROAD:3F, ^$dark|victoryroad"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -18791,27 +18791,27 @@
                             "^$CanReach|REGION_VICTORY_ROAD_GATE:NORTH"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
+                            "show_entrances, er_dungeon_on, route_23_restored_off"
                         ]
                     },
                     {
                         "name": "Victory Road South Exit",
                         "hosted_item": "REGION_VICTORY_ROAD:1F:ENTRANCE -> REGION_VICTORY_ROAD_GATE:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD:1F:ENTRANCE"
+                            "^$CanReach|REGION_VICTORY_ROAD:1F:ENTRANCE, ^$dark|victoryroad"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
+                            "show_entrances, er_dungeon_on, route_23_restored_off"
                         ]
                     },
                     {
                         "name": "Victory Road South Exit (Restored)",
                         "hosted_item": "REGION_VICTORY_ROAD:1F:ENTRANCE -> REGION_ROUTE_23_RESTORED:NORTH",
                         "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD:1F:ENTRANCE"
+                            "^$CanReach|REGION_VICTORY_ROAD:1F:ENTRANCE, ^$dark|victoryroad"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
+                            "show_entrances, er_dungeon_on, route_23_restored_on"
                         ]
                     },
                     {
@@ -19027,7 +19027,7 @@
                         "name": "Lance's Room South Door",
                         "hosted_item": "REGION_LANCES_ROOM -> REGION_KARENS_ROOM",
                         "access_rules": [
-                            "^$CanReach|REGION_LANCES_ROOM"
+                            "^$CanReach|REGION_LANCES_ROOM, ^$lance_e4"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_pokemon_league_on"
@@ -19257,7 +19257,7 @@
                             "^$CanReach|REGION_ROUTE_23_RESTORED:SOUTH"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_gate_on"
+                            "show_entrances, er_gate_on, route_23_restored_on"
                         ]
                     },
                     {
@@ -19277,7 +19277,7 @@
                             "^$CanReach|REGION_ROUTE_23_RESTORED:NORTH"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
+                            "show_entrances, er_dungeon_on, route_23_restored_on"
                         ]
                     },
                     {
@@ -19607,7 +19607,7 @@
                         "name": "Silver Cave Bottom North Exit",
                         "hosted_item": "REGION_SILVER_CAVE_ROOM_1 -> REGION_SILVER_CAVE_ROOM_2",
                         "access_rules": [
-                            "^$CanReach|REGION_SILVER_CAVE_ROOM_1"
+                            "^$CanReach|REGION_SILVER_CAVE_ROOM_1, ^$dark|silvercave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -19637,7 +19637,7 @@
                         "name": "Silver Cave Exit",
                         "hosted_item": "REGION_SILVER_CAVE_ROOM_1 -> REGION_SILVER_CAVE_OUTSIDE",
                         "access_rules": [
-                            "^$CanReach|REGION_SILVER_CAVE_ROOM_1"
+                            "^$CanReach|REGION_SILVER_CAVE_ROOM_1, ^$dark|silvercave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -20121,7 +20121,7 @@
                         "name": "Viridian Gym Entrance",
                         "hosted_item": "REGION_VIRIDIAN_CITY -> REGION_VIRIDIAN_GYM",
                         "access_rules": [
-                            "^$CanReach|REGION_VIRIDIAN_CITY"
+                            "^$CanReach|REGION_VIRIDIAN_CITY, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -21110,7 +21110,7 @@
                         "name": "Pewter Gym Entrance",
                         "hosted_item": "REGION_PEWTER_CITY -> REGION_PEWTER_GYM",
                         "access_rules": [
-                            "^$CanReach|REGION_PEWTER_CITY"
+                            "^$CanReach|REGION_PEWTER_CITY, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -21462,7 +21462,7 @@
                         "name": "Mount Moon West Entrance",
                         "hosted_item": "REGION_ROUTE_3 -> REGION_MOUNT_MOON",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_3"
+                            "^$CanReach|REGION_ROUTE_3, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -21595,7 +21595,7 @@
                         "name": "Mount Moon 2F Ladder",
                         "hosted_item": "REGION_MOUNT_MOON:NORTH_ENTRANCE -> REGION_MOUNT_MOON",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MOON:NORTH_ENTRANCE"
+                            "^$CanReach|REGION_MOUNT_MOON:NORTH_ENTRANCE, ^$dark|mountmoon"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -21605,7 +21605,7 @@
                         "name": "Mount Moon 2F North Exit",
                         "hosted_item": "REGION_MOUNT_MOON:NORTH_ENTRANCE -> REGION_MOUNT_MOON_SQUARE",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MOON:NORTH_ENTRANCE"
+                            "^$CanReach|REGION_MOUNT_MOON:NORTH_ENTRANCE, ^$dark|mountmoon"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -21615,7 +21615,7 @@
                         "name": "Mount Moon 2F South Exit",
                         "hosted_item": "REGION_MOUNT_MOON:SOUTH_ENTRANCE -> REGION_MOUNT_MOON_SQUARE",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MOON:SOUTH_ENTRANCE"
+                            "^$CanReach|REGION_MOUNT_MOON:SOUTH_ENTRANCE, ^$dark|mountmoon"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -21625,7 +21625,7 @@
                         "name": "Mount Moon 2F South Ladder",
                         "hosted_item": "REGION_MOUNT_MOON:SOUTH_ENTRANCE -> REGION_MOUNT_MOON:LEDGE",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MOON:SOUTH_ENTRANCE"
+                            "^$CanReach|REGION_MOUNT_MOON:SOUTH_ENTRANCE, ^$dark|mountmoon"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -21635,7 +21635,7 @@
                         "name": "Mount Moon East Exit",
                         "hosted_item": "REGION_MOUNT_MOON -> REGION_ROUTE_4:WEST",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MOON"
+                            "^$CanReach|REGION_MOUNT_MOON, ^$dark|mountmoon"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -21665,7 +21665,7 @@
                         "name": "Mount Moon Northeast Ladder",
                         "hosted_item": "REGION_MOUNT_MOON -> REGION_MOUNT_MOON:NORTH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MOON"
+                            "^$CanReach|REGION_MOUNT_MOON, ^$dark|mountmoon"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -21675,7 +21675,7 @@
                         "name": "Mount Moon Southeast Ladder",
                         "hosted_item": "REGION_MOUNT_MOON:LEDGE -> REGION_MOUNT_MOON:SOUTH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MOON:LEDGE"
+                            "^$CanReach|REGION_MOUNT_MOON:LEDGE, ^$dark|mountmoon"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -21685,7 +21685,7 @@
                         "name": "Mount Moon Square North Exit",
                         "hosted_item": "REGION_MOUNT_MOON_SQUARE -> REGION_MOUNT_MOON:NORTH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MOON_SQUARE"
+                            "^$CanReach|REGION_MOUNT_MOON_SQUARE, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -21695,7 +21695,7 @@
                         "name": "Mount Moon Square South Exit",
                         "hosted_item": "REGION_MOUNT_MOON_SQUARE -> REGION_MOUNT_MOON:SOUTH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MOON_SQUARE"
+                            "^$CanReach|REGION_MOUNT_MOON_SQUARE, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -21705,7 +21705,7 @@
                         "name": "Mount Moon West Exit",
                         "hosted_item": "REGION_MOUNT_MOON -> REGION_ROUTE_3",
                         "access_rules": [
-                            "^$CanReach|REGION_MOUNT_MOON"
+                            "^$CanReach|REGION_MOUNT_MOON, ^$dark|mountmoon"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -21812,7 +21812,7 @@
                         "name": "Mount Moon East Entrance",
                         "hosted_item": "REGION_ROUTE_4:WEST -> REGION_MOUNT_MOON",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_4:WEST"
+                            "^$CanReach|REGION_ROUTE_4:WEST, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -21986,7 +21986,7 @@
                         "name": "Cerulean Gym Entrance",
                         "hosted_item": "REGION_CERULEAN_CITY -> REGION_CERULEAN_GYM",
                         "access_rules": [
-                            "^$CanReach|REGION_CERULEAN_CITY"
+                            "^$CanReach|REGION_CERULEAN_CITY, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -22419,7 +22419,7 @@
                         "name": "Underground Path North Entrance",
                         "hosted_item": "REGION_ROUTE_5 -> REGION_ROUTE_5_UNDERGROUND_PATH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_5"
+                            "^$CanReach|REGION_ROUTE_5, ^$passage|ns"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -23116,7 +23116,7 @@
                         "name": "Rock Tunnel 1F Center Ladder",
                         "hosted_item": "REGION_ROCK_TUNNEL_1F:NORTHWEST -> REGION_ROCK_TUNNEL_B1F:WEST",
                         "access_rules": [
-                            "^$CanReach|REGION_ROCK_TUNNEL_1F:NORTHWEST"
+                            "^$CanReach|REGION_ROCK_TUNNEL_1F:NORTHWEST, ^$dark|rocktunnel"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -23126,7 +23126,7 @@
                         "name": "Rock Tunnel 1F Northeast Ladder",
                         "hosted_item": "REGION_ROCK_TUNNEL_1F:NORTHEAST -> REGION_ROCK_TUNNEL_B1F:EAST",
                         "access_rules": [
-                            "^$CanReach|REGION_ROCK_TUNNEL_1F:NORTHEAST"
+                            "^$CanReach|REGION_ROCK_TUNNEL_1F:NORTHEAST, ^$dark|rocktunnel"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -23136,7 +23136,7 @@
                         "name": "Rock Tunnel 1F Northwest Ladder",
                         "hosted_item": "REGION_ROCK_TUNNEL_1F:NORTHWEST -> REGION_ROCK_TUNNEL_B1F:EAST",
                         "access_rules": [
-                            "^$CanReach|REGION_ROCK_TUNNEL_1F:NORTHWEST"
+                            "^$CanReach|REGION_ROCK_TUNNEL_1F:NORTHWEST, ^$dark|rocktunnel"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -23146,7 +23146,7 @@
                         "name": "Rock Tunnel 1F Southeast Ladder",
                         "hosted_item": "REGION_ROCK_TUNNEL_1F:SOUTH -> REGION_ROCK_TUNNEL_B1F:WEST",
                         "access_rules": [
-                            "^$CanReach|REGION_ROCK_TUNNEL_1F:SOUTH"
+                            "^$CanReach|REGION_ROCK_TUNNEL_1F:SOUTH, ^$dark|rocktunnel"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -23156,7 +23156,7 @@
                         "name": "Rock Tunnel B1F Center Ladder",
                         "hosted_item": "REGION_ROCK_TUNNEL_B1F:WEST -> REGION_ROCK_TUNNEL_1F:NORTHWEST",
                         "access_rules": [
-                            "^$CanReach|REGION_ROCK_TUNNEL_B1F:WEST"
+                            "^$CanReach|REGION_ROCK_TUNNEL_B1F:WEST, ^$dark|rocktunnel"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -23166,7 +23166,7 @@
                         "name": "Rock Tunnel B1F Northeast Ladder",
                         "hosted_item": "REGION_ROCK_TUNNEL_B1F:EAST -> REGION_ROCK_TUNNEL_1F:NORTHWEST",
                         "access_rules": [
-                            "^$CanReach|REGION_ROCK_TUNNEL_B1F:EAST"
+                            "^$CanReach|REGION_ROCK_TUNNEL_B1F:EAST, ^$dark|rocktunnel"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -23176,7 +23176,7 @@
                         "name": "Rock Tunnel B1F Northwest Ladder",
                         "hosted_item": "REGION_ROCK_TUNNEL_B1F:WEST -> REGION_ROCK_TUNNEL_1F:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_ROCK_TUNNEL_B1F:WEST"
+                            "^$CanReach|REGION_ROCK_TUNNEL_B1F:WEST, ^$dark|rocktunnel"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -23186,7 +23186,7 @@
                         "name": "Rock Tunnel B1F Southeast Ladder",
                         "hosted_item": "REGION_ROCK_TUNNEL_B1F:EAST -> REGION_ROCK_TUNNEL_1F:NORTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_ROCK_TUNNEL_B1F:EAST"
+                            "^$CanReach|REGION_ROCK_TUNNEL_B1F:EAST, ^$dark|rocktunnel"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -23196,7 +23196,7 @@
                         "name": "Rock Tunnel North Exit",
                         "hosted_item": "REGION_ROCK_TUNNEL_1F:NORTHEAST -> REGION_ROUTE_9",
                         "access_rules": [
-                            "^$CanReach|REGION_ROCK_TUNNEL_1F:NORTHEAST"
+                            "^$CanReach|REGION_ROCK_TUNNEL_1F:NORTHEAST, ^$dark|rocktunnel"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -23206,7 +23206,7 @@
                         "name": "Rock Tunnel South Exit",
                         "hosted_item": "REGION_ROCK_TUNNEL_1F:SOUTH -> REGION_ROUTE_10_SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_ROCK_TUNNEL_1F:SOUTH"
+                            "^$CanReach|REGION_ROCK_TUNNEL_1F:SOUTH, ^$dark|rocktunnel"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -23924,10 +23924,10 @@
                         "name": "Underground Path East Entrance",
                         "hosted_item": "REGION_ROUTE_8 -> REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_8"
+                            "^$CanReach|REGION_ROUTE_8, ^$passage|ew"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_interior_on, ew_underground_on"
                         ]
                     },
                     {
@@ -23937,7 +23937,7 @@
                             "^$CanReach|REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_interior_on, ew_underground_on"
                         ]
                     },
                     {
@@ -23947,7 +23947,7 @@
                             "^$CanReach|REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_interior_on, ew_underground_on"
                         ]
                     },
                     {
@@ -23957,7 +23957,7 @@
                             "^$CanReach|REGION_EAST_WEST_UNDERGROUND"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_interior_on, ew_underground_on"
                         ]
                     },
                     {
@@ -23967,7 +23967,7 @@
                             "^$CanReach|REGION_EAST_WEST_UNDERGROUND"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_interior_on, ew_underground_on"
                         ]
                     },
                     {
@@ -24302,7 +24302,7 @@
                         "name": "Saffron Gym Entrance",
                         "hosted_item": "REGION_SAFFRON_CITY -> REGION_SAFFRON_GYM:ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_SAFFRON_CITY"
+                            "^$CanReach|REGION_SAFFRON_CITY, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -25270,7 +25270,7 @@
                         "name": "Celadon Gym Entrance",
                         "hosted_item": "REGION_CELADON_CITY:GYM_ENTRANCE -> REGION_CELADON_GYM",
                         "access_rules": [
-                            "^$CanReach|REGION_CELADON_CITY:GYM_ENTRANCE"
+                            "^$CanReach|REGION_CELADON_CITY:GYM_ENTRANCE, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -26086,7 +26086,7 @@
                         "name": "Route 16 Gate West Entrance",
                         "hosted_item": "REGION_ROUTE_16:CYCLING_ROAD -> REGION_ROUTE_16_GATE:WEST",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_16:CYCLING_ROAD"
+                            "^$CanReach|REGION_ROUTE_16:CYCLING_ROAD, BICYCLE"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gate_on"
@@ -26211,7 +26211,7 @@
                         "name": "Route 17-18 Gate West Entrance",
                         "hosted_item": "REGION_ROUTE_17 -> REGION_ROUTE_17_ROUTE_18_GATE:WEST",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17"
+                            "^$CanReach|REGION_ROUTE_17, BICYCLE"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gate_on"
@@ -26524,7 +26524,7 @@
                         "name": "Vermilion Gym Entrance",
                         "hosted_item": "REGION_VERMILION_CITY:GYM_ENTRANCE -> REGION_VERMILION_GYM",
                         "access_rules": [
-                            "^$CanReach|REGION_VERMILION_CITY:GYM_ENTRANCE"
+                            "^$CanReach|REGION_VERMILION_CITY:GYM_ENTRANCE, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -27028,7 +27028,7 @@
                         "name": "Diglett's Cave North Entrance Ladder",
                         "hosted_item": "REGION_DIGLETTS_CAVE:NORTH_ENTRANCE -> REGION_DIGLETTS_CAVE",
                         "access_rules": [
-                            "^$CanReach|REGION_DIGLETTS_CAVE:NORTH_ENTRANCE"
+                            "^$CanReach|REGION_DIGLETTS_CAVE:NORTH_ENTRANCE, ^$dark|diglettscave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -27038,7 +27038,7 @@
                         "name": "Diglett's Cave North Exit",
                         "hosted_item": "REGION_DIGLETTS_CAVE:NORTH_ENTRANCE -> REGION_ROUTE_2:NORTHEAST",
                         "access_rules": [
-                            "^$CanReach|REGION_DIGLETTS_CAVE:NORTH_ENTRANCE"
+                            "^$CanReach|REGION_DIGLETTS_CAVE:NORTH_ENTRANCE, ^$dark|diglettscave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -27048,7 +27048,7 @@
                         "name": "Diglett's Cave North Ladder",
                         "hosted_item": "REGION_DIGLETTS_CAVE -> REGION_DIGLETTS_CAVE:NORTH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_DIGLETTS_CAVE"
+                            "^$CanReach|REGION_DIGLETTS_CAVE, ^$dark|diglettscave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -27058,7 +27058,7 @@
                         "name": "Diglett's Cave South Entrance Ladder",
                         "hosted_item": "REGION_DIGLETTS_CAVE:SOUTH_ENTRANCE -> REGION_DIGLETTS_CAVE",
                         "access_rules": [
-                            "^$CanReach|REGION_DIGLETTS_CAVE:SOUTH_ENTRANCE"
+                            "^$CanReach|REGION_DIGLETTS_CAVE:SOUTH_ENTRANCE, ^$dark|diglettscave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -27068,7 +27068,7 @@
                         "name": "Diglett's Cave South Exit",
                         "hosted_item": "REGION_DIGLETTS_CAVE:SOUTH_ENTRANCE -> REGION_VERMILION_CITY:DIGLETTS_CAVE_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_DIGLETTS_CAVE:SOUTH_ENTRANCE"
+                            "^$CanReach|REGION_DIGLETTS_CAVE:SOUTH_ENTRANCE, ^$dark|diglettscave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -27078,7 +27078,7 @@
                         "name": "Diglett's Cave South Ladder",
                         "hosted_item": "REGION_DIGLETTS_CAVE -> REGION_DIGLETTS_CAVE:SOUTH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_DIGLETTS_CAVE"
+                            "^$CanReach|REGION_DIGLETTS_CAVE, ^$dark|diglettscave"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
@@ -27177,7 +27177,7 @@
                         "name": "Underground Path South Entrance",
                         "hosted_item": "REGION_ROUTE_6 -> REGION_ROUTE_6_UNDERGROUND_PATH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_6"
+                            "^$CanReach|REGION_ROUTE_6, ^$passage|ns"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -27342,17 +27342,17 @@
                             "^$CanReach|REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_interior_on, ew_underground_on"
                         ]
                     },
                     {
                         "name": "Underground Path West Entrance",
                         "hosted_item": "REGION_ROUTE_7 -> REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_7"
+                            "^$CanReach|REGION_ROUTE_7, ^$passage|ew"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
+                            "show_entrances, er_dungeon_on, ew_underground_on"
                         ]
                     },
                     {
@@ -27362,7 +27362,7 @@
                             "^$CanReach|REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
+                            "show_entrances, er_dungeon_on, ew_underground_on"
                         ]
                     },
                     {
@@ -28257,7 +28257,7 @@
                         "name": "Fuchsia Gym Entrance",
                         "hosted_item": "REGION_FUCHSIA_CITY -> REGION_FUCHSIA_GYM",
                         "access_rules": [
-                            "^$CanReach|REGION_FUCHSIA_CITY"
+                            "^$CanReach|REGION_FUCHSIA_CITY, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -28803,7 +28803,7 @@
                         "name": "Seafoam Gym Entrance",
                         "hosted_item": "REGION_ROUTE_20:SEAFOAM -> REGION_SEAFOAM_GYM",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_20:SEAFOAM"
+                            "^$CanReach|REGION_ROUTE_20:SEAFOAM, ^$kantogymlock"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_on"
@@ -29215,60 +29215,60 @@
                         "name": "Flooded Mine North Entrance Ladder",
                         "hosted_item": "REGION_FLOODED_MINE:NORTH_ENTRANCE -> REGION_FLOODED_MINE",
                         "access_rules": [
-                            "^$CanReach|REGION_FLOODED_MINE:NORTH_ENTRANCE"
+                            "^$CanReach|REGION_FLOODED_MINE:NORTH_ENTRANCE, ^$dark|floodedmine"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_interior_on, flooded_mine_on"
                         ]
                     },
                     {
                         "name": "Flooded Mine North Exit",
                         "hosted_item": "REGION_FLOODED_MINE:NORTH_ENTRANCE -> REGION_ROUTE_32:SOUTH",
                         "access_rules": [
-                            "^$CanReach|REGION_FLOODED_MINE:NORTH_ENTRANCE"
+                            "^$CanReach|REGION_FLOODED_MINE:NORTH_ENTRANCE, ^$dark|floodedmine"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
+                            "show_entrances, er_dungeon_on, flooded_mine_on"
                         ]
                     },
                     {
                         "name": "Flooded Mine North Ladder",
                         "hosted_item": "REGION_FLOODED_MINE -> REGION_FLOODED_MINE:NORTH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_FLOODED_MINE"
+                            "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_interior_on, flooded_mine_on"
                         ]
                     },
                     {
                         "name": "Flooded Mine South Entrance Ladder",
                         "hosted_item": "REGION_FLOODED_MINE:SOUTH_ENTRANCE -> REGION_FLOODED_MINE",
                         "access_rules": [
-                            "^$CanReach|REGION_FLOODED_MINE:SOUTH_ENTRANCE"
+                            "^$CanReach|REGION_FLOODED_MINE:SOUTH_ENTRANCE, ^$dark|floodedmine"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_interior_on, flooded_mine_on"
                         ]
                     },
                     {
                         "name": "Flooded Mine South Exit",
                         "hosted_item": "REGION_FLOODED_MINE:SOUTH_ENTRANCE -> REGION_CHERRYGROVE_CITY:FLOODED_MINE_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_FLOODED_MINE:SOUTH_ENTRANCE"
+                            "^$CanReach|REGION_FLOODED_MINE:SOUTH_ENTRANCE, ^$dark|floodedmine"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
+                            "show_entrances, er_dungeon_on, flooded_mine_on"
                         ]
                     },
                     {
                         "name": "Flooded Mine South Ladder",
                         "hosted_item": "REGION_FLOODED_MINE -> REGION_FLOODED_MINE:SOUTH_ENTRANCE",
                         "access_rules": [
-                            "^$CanReach|REGION_FLOODED_MINE"
+                            "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_interior_on, flooded_mine_on"
                         ]
                     },
                     {
