@@ -32,8 +32,6 @@ Features that work in live but not in beta:
 - Fly Unlock Rando
 - Free Fly & Map Fly
 
-Note: Maps are currently fucked (look wrong)
-
 
 
 # Crystal AP Tracker
@@ -114,4 +112,4 @@ Forest | Ilex Forest
 You can adjust the aesthetic of certain aspects of this pack via user-overrides. For more information, please visit the [user-overrides branch](https://github.com/palex00/crystal-ap-tracker/tree/user-overrides).
 
 ## AI Usage Declaration
-The Porting of the ER-mechanics from Stripes007's poptracker pack was done with AI.
+The implementation of Entrance Randomisation on the basis of Stripes007' ALTTP pack was heavily done by AI.

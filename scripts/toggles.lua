@@ -1,11 +1,11 @@
 function toggle_johto()
     local coffee = has("coffee_west") or has("coffee_north") or has("coffee_east") or has("coffee_south")
     local phone = has("phone_calls_visible")
-    
+
     if has("johto_only_off") then
         Tracker:AddMaps("maps/maps_johto_and_kanto.json")
         Tracker:AddLayouts("layouts/overworld.json")
-        
+
         if has("goal_e4") then
             Tracker:AddLayouts("layouts/events/events_e4.json")
         elseif has("goal_red") then
@@ -18,11 +18,11 @@ function toggle_johto()
             Tracker:AddLayouts("layouts/events/events_rocket.json")
         elseif has("goal_unown") then
             Tracker:AddLayouts("layouts/events/events_unown.json")
-        end       
-        
+        end
+
         Tracker:AddLayouts("layouts/settings/settings.json")
         Tracker:AddLayouts("layouts/flyunlocks.json")
-        
+
         if coffee and phone then
             Tracker:AddLayouts("layouts/items/items.json")
         elseif coffee and not phone then
@@ -43,9 +43,9 @@ function toggle_johto()
         elseif not badges and not phone then
             Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges_and_no_phone.json")
         end
-        
+
         Tracker:AddLayouts("layouts/johto_only/overworld.json")
-        
+
         if has("goal_e4") then
             Tracker:AddLayouts("layouts/johto_only/events_e4.json")
         elseif has("goal_red") then
@@ -69,212 +69,199 @@ function toggle_johto()
     toggle_splitmap()
 end
 
-function toggle_ilex()
-    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
-    if has("ilextree_on") and not sudowoodo then
-        Tracker:AddMaps("maps/ilex_forest_tree.json")
-    elseif has("ilextree_on") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/ilex_forest_tree.json")
-    elseif has("ilextree_off") and not sudowoodo then
-        Tracker:AddMaps("maps/ilex_forest_no_tree.json")
-    elseif has("ilextree_off") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.json")
-    end
+SUDOWOODO = false
+
+local function add_map(name)
+    Tracker:AddMaps("maps/"..(SUDOWOODO and "mischief/" or "")..name..".json")
 end
 
 function toggle_mischief()
     local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1
-    if sudowoodo then
-        Tracker:AddMaps("maps/mischief/maps.json")
-        Tracker:AddMaps("maps/mischief/ilex_forest_no_tree.json")
-    else
-        Tracker:AddMaps("maps/maps.json")
-        toggle_ilex()
+    if sudowoodo == SUDOWOODO then
+        return
     end
+    SUDOWOODO = sudowoodo
+
+    add_map("maps")
+    toggle_ilex()
+    toggle_route2()
+    toggle_lakeofrage()
+    toggle_darkcave()
+    toggle_mountmortar()
+    toggle_r12()
+    toggle_victoryroad()
+    toggle_floodedmine()
+end
+
+function toggle_ilex()
+    local suffix = "_no_tree"
+
+    if has("ilextree_on") then
+        suffix = "_tree"
+    end
+
+    add_map("ilex_forest"..suffix)
 end
 
 function toggle_route2()
-    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
-    if has("route_2_fence") and not sudowoodo then
-        Tracker:AddMaps("maps/route_2_fence.json")
-    elseif has("route_2_ledge") and not sudowoodo then
-        Tracker:AddMaps("maps/route_2_ledge.json")
-    elseif has("route_2_open") and not sudowoodo then
-        Tracker:AddMaps("maps/route_2_open.json")
-    elseif has("route_2_fence") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/route_2_fence.json")
-    elseif has("route_2_ledge") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/route_2_ledge.json")
-    elseif has("route_2_open") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/route_2_open.json")
+    local suffix = "_ledge"
+
+    if has("route_2_fence") then
+        suffix = "_fence"
+    elseif has("route_2_open") then
+        suffix = "_open"
     end
+
+    add_map("route_2"..suffix)
 end
 
 function toggle_lakeofrage()
-    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
-    if has("red_gyarados_vanilla") and not sudowoodo then
-        Tracker:AddMaps("maps/lake_of_rage_vanilla.json")
-    elseif has("red_gyarados_whirlpool") and not sudowoodo then
-        Tracker:AddMaps("maps/lake_of_rage_whirlpool.json")
-    elseif has("red_gyarados_vanilla") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/lake_of_rage_vanilla.json")
-    elseif has("red_gyarados_whirlpool") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/lake_of_rage_whirlpool.json")
-    elseif has("red_gyarados_shore") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/lake_of_rage_shore.json")
-    elseif has("red_gyarados_shore") and not sudowoodo then
-        Tracker:AddMaps("maps/lake_of_rage_shore.json")
+    local suffix = "_vanilla"
+
+    if has("red_gyarados_whirlpool") then
+        suffix = "_whirlpool"
+    elseif has("red_gyarados_shore") then
+        suffix = "_shore"
     end
+
+    add_map("lake_of_rage"..suffix)
 end
 
 function toggle_darkcave()
-    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
-    if has("blackthorn_dark_cave_vanilla") and not sudowoodo then
-        Tracker:AddMaps("maps/blackthorn_dark_cave_vanilla.json")
-    elseif has("blackthorn_dark_cave_waterfall") and not sudowoodo then
-        Tracker:AddMaps("maps/blackthorn_dark_cave_waterfall.json")
-    elseif has("blackthorn_dark_cave_vanilla") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_vanilla.json")
-    elseif has("blackthorn_dark_cave_waterfall") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/blackthorn_dark_cave_waterfall.json")
+    local suffix = "_vanilla"
+
+    if has("blackthorn_dark_cave_waterfall") then
+        suffix = "_waterfall"
     end
+
+    add_map("blackthorn_dark_cave"..suffix)
 end
 
 function toggle_mountmortar()
-    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
-    prefix = ""
-    suffix = ""
-    
-    if sudowoodo then
-        prefix = "mischief/"
-    end
-    
-    if has("mount_mortar_access_vanilla") then
-        suffix = "vanilla"
-    elseif has("mount_mortar_access_rocksmash") then
+    local suffix = "vanilla"
+
+    if has("mount_mortar_access_rocksmash") then
         suffix = "rocksmash"
     end
-    
+
     if has("route_42_access_whirlchanges") or has("route_42_access_blocked") then
         suffix = suffix.."_hole"
     end
-    
-    Tracker:AddMaps("maps/"..prefix.."mm_"..suffix..".json")
-    
+
+    add_map("mm_"..suffix)
+
     suffix = ""
-    
+
     if has("route_42_access_whirlpool") or has("route_42_access_whirlchanges") then
         suffix = "_whirl"
     elseif has("route_42_access_blocked") then
         suffix = "_blocked"
     end
-    
-    Tracker:AddMaps("maps/"..prefix.."r42"..suffix..".json")
+
+    add_map("r42"..suffix)
 end
 
 function toggle_r12()
-    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
-    prefix = ""
-    suffix = ""
-    
-    if sudowoodo then
-        prefix = "mischief/"
-    end
-    
+    local suffix = ""
+
     if has("route_12_access_weirdtree") then
         suffix = "_tree"
     end
 
-    Tracker:AddMaps("maps/"..prefix.."r12"..suffix..".json")
+    add_map("r12"..suffix)
 end
 
 function toggle_victoryroad()
-    local sudowoodo = Tracker:FindObjectForCode("mischief").CurrentStage == 1 or Tracker:FindObjectForCode("chrism").CurrentStage == 1 
-    if has("victory_road_access_vanilla") and not sudowoodo then
-        Tracker:AddMaps("maps/victory_road_vanilla.json")
-    elseif has("victory_road_access_strength") and not sudowoodo then
-        Tracker:AddMaps("maps/victory_road_strength.json")
-    elseif has("victory_road_access_vanilla") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/victory_road_vanilla.json")
-    elseif has("victory_road_access_strength") and sudowoodo then
-        Tracker:AddMaps("maps/mischief/victory_road_strength.json")
+    local suffix = "_vanilla"
+
+    if has("victory_road_access_strength") then
+        suffix = "_strength"
     end
+
+    add_map("victory_road"..suffix)
+end
+
+function toggle_floodedmine()
+    local suffix = "_off"
+
+    if has("flooded_mine_on") then
+        suffix = "_on"
+    end
+
+    add_map("floodedmine"..suffix)
 end
 
 function toggle_splitmap()
-    if has("splitmap_off") and has("johto_only_off") then
-        Tracker:AddLayouts("layouts/tabs_single.json")
-    elseif has("splitmap_on") and has("johto_only_off") then
-        Tracker:AddLayouts("layouts/tabs_split.json")
-    elseif has("splitmap_reverse") and has("johto_only_off") then
-        Tracker:AddLayouts("layouts/tabs_reverse.json")
-    elseif has("splitmap_off") then
-        Tracker:AddLayouts("layouts/johto_only/tabs_single.json")
-    elseif has("splitmap_on") then
-        Tracker:AddLayouts("layouts/johto_only/tabs_split.json")
-    elseif has("splitmap_reverse") then
-        Tracker:AddLayouts("layouts/johto_only/tabs_reverse.json")
+    local prefix = ""
+    if not has("johto_only_off") then
+        prefix = "johto_only/"
     end
+
+    local suffix = "_single"
+    if has("splitmap_on") then
+        suffix = "_split"
+    elseif has("splitmap_reverse") then
+        suffix = "_reverse"
+    end
+
+    Tracker:AddLayouts("layouts/"..prefix.."tabs"..suffix..".json")
 end
 
-
 function toggle_itemgrid()
-    local shops = has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true")
-    
     local suffix = ""
     if has("randomize_fly_unlocks_true") then
         suffix = suffix .. "_flyunlock"
     end
-    if shops then
+    if has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true") then
         suffix = suffix .. "_shopsanity"
     end
     if has("goal_unown") then
         suffix = suffix .. "_tiles"
     end
-        
+
     Tracker:AddLayouts("layouts/tracker/tracker"..suffix..".json")
-    
+
     local prefix = ""
     if has("broadcast_view_vertical") then
         prefix = "vertical_"
     end
-    
+
     Tracker:AddLayouts("layouts/broadcast/"..prefix.."broadcast"..suffix..".json")
-    
+
     toggle_shopgrid()
 end
 
 function toggle_shopgrid()
     local bluecard = has("shopsanity_bluecard_true")
     local apricorn = has("shopsanity_apricorn_true")
-    if bluecard and not apricorn then
-        Tracker:AddLayouts("layouts/shopsanity/shopsanity_bluecard.json")
-    elseif not bluecard and apricorn then
-        Tracker:AddLayouts("layouts/shopsanity/shopsanity_apricorn.json")
-    elseif bluecard and apricorn then
+    if bluecard and apricorn then
         Tracker:AddLayouts("layouts/shopsanity/shopsanity_all.json")
+    elseif bluecard then
+        Tracker:AddLayouts("layouts/shopsanity/shopsanity_bluecard.json")
+    elseif apricorn then
+        Tracker:AddLayouts("layouts/shopsanity/shopsanity_apricorn.json")
     end
 end
 
 function toggleQuickSettings()
     local suffix = ""
-    
+
     if SLOT_TRACK == true then
         suffix = suffix .. "_slots"
     end
-    
+
     if has("goal_unown") then
         suffix = suffix .. "_signs"
     end
-    
+
     if has("grasssanity_any") then
         suffix = suffix .. "_grass"
     end
-    
+
     if has("shopsanity_anymart") then
         suffix = suffix .. "_shop"
     end
-    
+
     Tracker:AddLayouts("layouts/settings_quick/settings_quick"..suffix..".json")
 end
 
