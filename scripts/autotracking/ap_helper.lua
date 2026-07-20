@@ -468,6 +468,10 @@ SLOT_CODES = {
     momsanity = {
         code = "momsanity",
         mapping = MAP_TOGGLE
+    },
+    coupled_entrances = {
+        code = "coupled_entrances",
+        mapping = MAP_TOGGLE
     }
 }
 

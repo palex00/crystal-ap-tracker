@@ -258,5 +258,26 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Entrance-Coupling",
+        "type": "progressive",
+        "loop": true,
+        "initial_active_state": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Entrances are decoupled",
+                "img": "/images/items/pokeball.png",
+                "codes": "coupled_entrances, coupled_entrances_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Entrances are coupled",
+                "img": "/images/items/placeholder.png",
+                "codes": "coupled_entrances, coupled_entrances_on",
+                "inherit_codes": false
+            }
+        ]
     }
 ]
