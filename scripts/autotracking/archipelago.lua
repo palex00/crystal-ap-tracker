@@ -468,24 +468,36 @@ end
 
 -- Reveals directed connections for every entrance ID in the DataStorage "entered" list.
 -- Each entered id reveals: item(id).forwardTarget = its exit, item(exit).reverseSource = id.
+-- On a coupled seed the opposite direction of a two-way connection is implied by the one
+-- that was entered, so reveal both halves at once (item(id).reverseSource = its exit,
+-- item(exit).forwardTarget = id) -- either ID entered shows the <-> badge on both sides.
+-- One-way pairings stay directed even when coupled.
 ---@param list integer[]  loose list of entrance IDs that have been entered into
 function updateEntrances(list)
     if type(list) ~= "table" or not ENTRANCE_ITEMS then
         return
     end
+    local coupled = has("coupled_entrances_on")
     for _, id in ipairs(list) do
         local row = ResolveEntranceRow(id)
         if row then
             local token = row.token
             local exit = ENTRANCE_CONNECTIONS[token]
             if exit then
+                local both = coupled and not ENTRANCE_ONE_WAY[token]
                 local item = ENTRANCE_ITEMS[token]
                 if item then
                     item:setForward(exit)
+                    if both then
+                        item:setReverse(exit)
+                    end
                 end
                 local target = ENTRANCE_ITEMS[exit]
                 if target then
                     target:setReverse(token)
+                    if both then
+                        target:setForward(token)
+                    end
                 end
             end
         end

@@ -1,8 +1,9 @@
 -- EntranceItem: one custom Lua item per randomizable entrance.
 -- Extends the pack's CustomItem base (scripts/custom_items/custom_item.lua).
 --
--- Each item is keyed by its region-string token (also its LuaItem Name, used for
--- hosted_item placement in the location JSON). Its connection state is revealed by the
+-- Each item is keyed by its region-string token, which it provides as its item CODE (used
+-- for hosted_item placement in the location JSON); the LuaItem Name is the pretty name, so
+-- the UI/tooltip/feed shows that instead. Its connection state is revealed by the
 -- autotracker (archipelago.lua's updateEntrances) from the DataStorage "entered" list:
 --   forwardTarget = token of where entering THIS entrance emerges (left-click destination)
 --   reverseSource = token of the entrance that emerges HERE          (right-click source)
@@ -35,7 +36,7 @@ end
 EntranceItem = CustomItem:extend()
 
 function EntranceItem:init(token, row)
-    self:createItem(token) -- LuaItem.Name = token
+    self:createItem(row.pretty) -- display name; the token is provided as the item CODE
     self.token = token
     self.ids = row.ids
     self.pretty = row.pretty
