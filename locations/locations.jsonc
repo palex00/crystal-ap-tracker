@@ -6298,7 +6298,7 @@
                             "show_items, shopsanity_johtomarts_true"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_DEPT_STORE_ROOF"
+                            "^$CanReach|REGION_GOLDENROD_DEPT_STORE_ROOF, EVENT_BEAT_ELITE_FOUR"
                         ]
                     },
                     {
