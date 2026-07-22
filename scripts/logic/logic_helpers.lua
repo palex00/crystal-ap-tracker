@@ -87,7 +87,7 @@ end
 ---@param amountInLogic? integer
 ---@return integer
 function Has(item, amount, amountInLogic)
-    local count = LogicCount(item)
+    local count = Tracker:ProviderCountForCode(item)
     if amountInLogic then
         if count >= amountInLogic then
             return ACCESS_NORMAL

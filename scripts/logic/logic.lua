@@ -1,76 +1,76 @@
 function badges()
   return
-  LogicCount("ZEPHYR_BADGE") +
-  LogicCount("HIVE_BADGE") +
-  LogicCount("PLAIN_BADGE") +
-  LogicCount("FOG_BADGE") +
-  LogicCount("STORM_BADGE") +
-  LogicCount("MINERAL_BADGE") +
-  LogicCount("GLACIER_BADGE") +
-  LogicCount("RISING_BADGE") +
+  Tracker:ProviderCountForCode("ZEPHYR_BADGE") +
+  Tracker:ProviderCountForCode("HIVE_BADGE") +
+  Tracker:ProviderCountForCode("PLAIN_BADGE") +
+  Tracker:ProviderCountForCode("FOG_BADGE") +
+  Tracker:ProviderCountForCode("STORM_BADGE") +
+  Tracker:ProviderCountForCode("MINERAL_BADGE") +
+  Tracker:ProviderCountForCode("GLACIER_BADGE") +
+  Tracker:ProviderCountForCode("RISING_BADGE") +
 
-  LogicCount("BOULDER_BADGE") +
-  LogicCount("CASCADE_BADGE") +
-  LogicCount("THUNDER_BADGE") +
-  LogicCount("RAINBOW_BADGE") +
-  LogicCount("SOUL_BADGE") +
-  LogicCount("MARSH_BADGE") +
-  LogicCount("VOLCANO_BADGE") +
-  LogicCount("EARTH_BADGE")
+  Tracker:ProviderCountForCode("BOULDER_BADGE") +
+  Tracker:ProviderCountForCode("CASCADE_BADGE") +
+  Tracker:ProviderCountForCode("THUNDER_BADGE") +
+  Tracker:ProviderCountForCode("RAINBOW_BADGE") +
+  Tracker:ProviderCountForCode("SOUL_BADGE") +
+  Tracker:ProviderCountForCode("MARSH_BADGE") +
+  Tracker:ProviderCountForCode("VOLCANO_BADGE") +
+  Tracker:ProviderCountForCode("EARTH_BADGE")
 end
 
 function johtobadges()
   return
-  LogicCount("ZEPHYR_BADGE") +
-  LogicCount("HIVE_BADGE") +
-  LogicCount("PLAIN_BADGE") +
-  LogicCount("FOG_BADGE") +
-  LogicCount("STORM_BADGE") +
-  LogicCount("MINERAL_BADGE") +
-  LogicCount("GLACIER_BADGE") +
-  LogicCount("RISING_BADGE")
+  Tracker:ProviderCountForCode("ZEPHYR_BADGE") +
+  Tracker:ProviderCountForCode("HIVE_BADGE") +
+  Tracker:ProviderCountForCode("PLAIN_BADGE") +
+  Tracker:ProviderCountForCode("FOG_BADGE") +
+  Tracker:ProviderCountForCode("STORM_BADGE") +
+  Tracker:ProviderCountForCode("MINERAL_BADGE") +
+  Tracker:ProviderCountForCode("GLACIER_BADGE") +
+  Tracker:ProviderCountForCode("RISING_BADGE")
 end
 
 function kantobadges()
   return
-  LogicCount("BOULDER_BADGE") +
-  LogicCount("CASCADE_BADGE") +
-  LogicCount("THUNDER_BADGE") +
-  LogicCount("RAINBOW_BADGE") +
-  LogicCount("SOUL_BADGE") +
-  LogicCount("MARSH_BADGE") +
-  LogicCount("VOLCANO_BADGE") +
-  LogicCount("EARTH_BADGE")
+  Tracker:ProviderCountForCode("BOULDER_BADGE") +
+  Tracker:ProviderCountForCode("CASCADE_BADGE") +
+  Tracker:ProviderCountForCode("THUNDER_BADGE") +
+  Tracker:ProviderCountForCode("RAINBOW_BADGE") +
+  Tracker:ProviderCountForCode("SOUL_BADGE") +
+  Tracker:ProviderCountForCode("MARSH_BADGE") +
+  Tracker:ProviderCountForCode("VOLCANO_BADGE") +
+  Tracker:ProviderCountForCode("EARTH_BADGE")
 end
 
 function unown_goal()
   return((
-  LogicCount("UNOWN_1") +
-  LogicCount("UNOWN_2") +
-  LogicCount("UNOWN_3") +
-  LogicCount("UNOWN_4") +
-  LogicCount("UNOWN_5") +
-  LogicCount("UNOWN_6") +
-  LogicCount("UNOWN_7") +
-  LogicCount("UNOWN_8") +
-  LogicCount("UNOWN_9") +
-  LogicCount("UNOWN_10") +
-  LogicCount("UNOWN_11") +
-  LogicCount("UNOWN_12") +
-  LogicCount("UNOWN_13") +
-  LogicCount("UNOWN_14") +
-  LogicCount("UNOWN_15") +
-  LogicCount("UNOWN_16") +
-  LogicCount("UNOWN_17") +
-  LogicCount("UNOWN_18") +
-  LogicCount("UNOWN_19") +
-  LogicCount("UNOWN_20") +
-  LogicCount("UNOWN_21") +
-  LogicCount("UNOWN_22") +
-  LogicCount("UNOWN_23") +
-  LogicCount("UNOWN_24") +
-  LogicCount("UNOWN_25") +
-  LogicCount("UNOWN_26")) == 26)
+  Tracker:ProviderCountForCode("UNOWN_1") +
+  Tracker:ProviderCountForCode("UNOWN_2") +
+  Tracker:ProviderCountForCode("UNOWN_3") +
+  Tracker:ProviderCountForCode("UNOWN_4") +
+  Tracker:ProviderCountForCode("UNOWN_5") +
+  Tracker:ProviderCountForCode("UNOWN_6") +
+  Tracker:ProviderCountForCode("UNOWN_7") +
+  Tracker:ProviderCountForCode("UNOWN_8") +
+  Tracker:ProviderCountForCode("UNOWN_9") +
+  Tracker:ProviderCountForCode("UNOWN_10") +
+  Tracker:ProviderCountForCode("UNOWN_11") +
+  Tracker:ProviderCountForCode("UNOWN_12") +
+  Tracker:ProviderCountForCode("UNOWN_13") +
+  Tracker:ProviderCountForCode("UNOWN_14") +
+  Tracker:ProviderCountForCode("UNOWN_15") +
+  Tracker:ProviderCountForCode("UNOWN_16") +
+  Tracker:ProviderCountForCode("UNOWN_17") +
+  Tracker:ProviderCountForCode("UNOWN_18") +
+  Tracker:ProviderCountForCode("UNOWN_19") +
+  Tracker:ProviderCountForCode("UNOWN_20") +
+  Tracker:ProviderCountForCode("UNOWN_21") +
+  Tracker:ProviderCountForCode("UNOWN_22") +
+  Tracker:ProviderCountForCode("UNOWN_23") +
+  Tracker:ProviderCountForCode("UNOWN_24") +
+  Tracker:ProviderCountForCode("UNOWN_25") +
+  Tracker:ProviderCountForCode("UNOWN_26")) == 26)
 end
 
 gym_codes = {
@@ -94,23 +94,23 @@ gym_codes = {
 
 function gyms()
   return
-  LogicCount("EVENT_BEAT_FALKNER") +
-  LogicCount("EVENT_BEAT_BUGSY") +
-  LogicCount("EVENT_BEAT_WHITNEY") +
-  LogicCount("EVENT_BEAT_MORTY") +
-  LogicCount("EVENT_BEAT_JASMINE") +
-  LogicCount("EVENT_BEAT_CHUCK") +
-  LogicCount("EVENT_BEAT_PRYCE") +
-  LogicCount("EVENT_BEAT_CLAIR") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_FALKNER") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_BUGSY") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_WHITNEY") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_MORTY") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_JASMINE") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_CHUCK") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_PRYCE") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_CLAIR") +
 
-  LogicCount("EVENT_BEAT_BROCK") +
-  LogicCount("EVENT_BEAT_MISTY") +
-  LogicCount("EVENT_BEAT_LTSURGE") +
-  LogicCount("EVENT_BEAT_ERIKA") +
-  LogicCount("EVENT_BEAT_JANINE") +
-  LogicCount("EVENT_BEAT_SABRINA") +
-  LogicCount("EVENT_BEAT_BLAINE") +
-  LogicCount("EVENT_BEAT_BLUE")
+  Tracker:ProviderCountForCode("EVENT_BEAT_BROCK") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_MISTY") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_LTSURGE") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_ERIKA") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_JANINE") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_SABRINA") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_BLAINE") +
+  Tracker:ProviderCountForCode("EVENT_BEAT_BLUE")
 end
 
 function hid()

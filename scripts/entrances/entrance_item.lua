@@ -168,44 +168,8 @@ function EntranceItem:onMiddleClick()
     end
 end
 
--- TEMPORARY DIAGNOSTIC (set ENTRANCE_PROBE = false to disable).
--- Pre-0.35.4, every PopTracker scan over _luaItems called canProvideCode on EVERY entrance item
--- as a separate uncached lua_pcall, so calls = #codes-scanned x #items. With PotentialCodes set
--- (0.35.4+) the core matches codes itself and never enters Lua, so a report of 0 calls means the
--- fast path is live; any nonzero count means we fell back to CanProvideCodeFunc.
-ENTRANCE_PROBE = true
-local probe_calls = 0
-local probe_codes = {}
-local probe_distinct = 0
-
 function EntranceItem:canProvideCode(code)
-    if ENTRANCE_PROBE then
-        probe_calls = probe_calls + 1
-        if not probe_codes[code] then
-            probe_codes[code] = true
-            probe_distinct = probe_distinct + 1
-        end
-    end
     return code == self.token
-end
-
-function EntranceProbeReport()
-    if probe_calls == 0 then
-        return
-    end
-    local sample, n = {}, 0
-    for c in pairs(probe_codes) do
-        n = n + 1
-        if n <= 8 then
-            sample[#sample + 1] = c
-        end
-    end
-    print(string.format("ENTRANCE PROBE: %d canProvideCode calls / %d distinct codes / %d items",
-        probe_calls, probe_distinct, ENTRANCE_ITEM_COUNT or 0))
-    print("  sample codes: " .. table.concat(sample, ", "))
-    probe_calls = 0
-    probe_codes = {}
-    probe_distinct = 0
 end
 
 --- Collected state for the section hosting this entrance (hosted_item = the token).
@@ -245,7 +209,6 @@ end
 --- (PopTracker has no RemoveItems), which is fine because categories are fixed per seed.
 --- Call after ENTRANCE_REGISTRY, the graph, and buildEntranceCategoryMap() are ready.
 ENTRANCE_ITEMS = {}
-ENTRANCE_ITEM_COUNT = 0
 function createEntrancesForEnabled()
     if not ENTRANCE_REGISTRY or not ER_CATEGORY_ENABLED then
         return
@@ -255,7 +218,6 @@ function createEntrancesForEnabled()
             local cat = ENTRANCE_CATEGORY[token]
             if cat and ER_CATEGORY_ENABLED[cat] then
                 ENTRANCE_ITEMS[token] = EntranceItem(token, row)
-                ENTRANCE_ITEM_COUNT = ENTRANCE_ITEM_COUNT + 1
             end
         end
     end

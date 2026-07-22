@@ -14,9 +14,6 @@ Tracker:AddItems("items/route.json")
 
 -- Logic
 ScriptHost:LoadScript("scripts/utils.lua")
--- Must be the FIRST watch registered: watch callbacks fire in registration order, so this drops the
--- LogicCount memo before any other callback can read it. See InvalidateLogicCounts in utils.lua.
-ScriptHost:AddWatchForCode("logiccount invalidate", "*", InvalidateLogicCounts)
 ScriptHost:LoadScript("scripts/toggles.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/logic/dexsanity.lua")
@@ -162,13 +159,6 @@ for _, cat in ipairs(ER_CATEGORIES) do
     ScriptHost:AddWatchForCode("er_" .. cat, "er_" .. cat, toggle_er)
 end
 refreshERCategories()
-
--- Warm the LogicCount cache across frames so a later batch (e.g. autotracking on connect)
--- never cold-resolves many codes inside one flood-fill. See WarmLogicCountsStep in canreach.lua.
-ScriptHost:AddOnFrameHandler("logic warm", WarmLogicCountsStep)
-
--- TEMPORARY: per-frame report of how many entrance canProvideCode calls PopTracker made.
-ScriptHost:AddOnFrameHandler("entrance probe", EntranceProbeReport)
 
 -- Makes version nil
 first_two_dots = nil
