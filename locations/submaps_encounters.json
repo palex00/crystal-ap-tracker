@@ -3127,6 +3127,74 @@
                         "shape": "diamond"
                     }
                 ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 23/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 23/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Route 45",
+                        "ref": "Special Encounters/Old Rod/Route 45"
+                    },
+                    {
+                        "name": "Good Rod - Route 45",
+                        "ref": "Special Encounters/Good Rod/Route 45"
+                    },
+                    {
+                        "name": "Super Rod - Route 45",
+                        "ref": "Special Encounters/Super Rod/Route 45"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route23Restored",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Flooded Mine/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Flooded Mine/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "FloodedMine",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
             }
         ]
     }

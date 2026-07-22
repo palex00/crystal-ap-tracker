@@ -1,7 +1,141 @@
 [
     {
-        "name": "Submaps: Special",
+        "name": "Submaps: S.S. Aqua",
+        "chest_unopened_img": "/images/items/pokeball.png",
+        "chest_opened_img": "/images/items/pokeball_open.png",
         "children": [
+            {
+                "name": "Olivine Port",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine City/Port - Hidden Item in Buoy",
+                        "name": "Hidden Item in Buoy"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/Metal Coat from Grandpa",
+                        "name": "S.S. Aqua - Metal Coat from Grandpa"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Beauty Cassie (Eastbound)",
+                        "name": "S.S. Aqua 1F - Beauty Cassie (Eastbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Cool Trainer Carol (Eastbound)",
+                        "name": "S.S. Aqua 1F - Cool Trainer Carol (Eastbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Cool Trainer Sean (Eastbound)",
+                        "name": "S.S. Aqua 1F - Cool Trainer Sean (Eastbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Gentleman Edward (Eastbound)",
+                        "name": "S.S. Aqua 1F - Gentleman Edward (Eastbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Psychic Rodney (Eastbound)",
+                        "name": "S.S. Aqua 1F - Psychic Rodney (Eastbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Super Nerd Shawn (Eastbound)",
+                        "name": "S.S. Aqua 1F - Super Nerd Shawn (Eastbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/B1F - Blackbelt Wai (Eastbound)",
+                        "name": "S.S. Aqua B1F - Blackbelt Wai (Eastbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/B1F - Fisher Jonah (Eastbound)",
+                        "name": "S.S. Aqua B1F - Fisher Jonah (Eastbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/B1F - Sailor Garrett (Eastbound)",
+                        "name": "S.S. Aqua B1F - Sailor Garrett (Eastbound)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineCity",
+                        "x": 320,
+                        "y": 440
+                    }
+                ]
+            },
+            {
+                "name": "Vermilion Port",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Port - Hidden Item in Buoy",
+                        "name": "Hidden Item in Buoy"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/Metal Coat from Grandpa",
+                        "name": "S.S. Aqua - Metal Coat from Grandpa"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Bug Catcher Ken (Westbound)",
+                        "name": "S.S. Aqua 1F - Bug Catcher Ken (Westbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Burglar Corey (Westbound)",
+                        "name": "S.S. Aqua 1F - Burglar Corey (Westbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Guitarist Clyde (Westbound)",
+                        "name": "S.S. Aqua 1F - Guitarist Clyde (Westbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Pokefan Georgia (Westbound)",
+                        "name": "S.S. Aqua 1F - Pokefan Georgia (Westbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Pokefan Jeremy (Westbound)",
+                        "name": "S.S. Aqua 1F - Pokefan Jeremy (Westbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Pokemaniac Ethan (Westbound)",
+                        "name": "S.S. Aqua 1F - Pokemaniac Ethan (Westbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/B1F - Sailor Kenneth (Westbound)",
+                        "name": "S.S. Aqua B1F - Sailor Kenneth (Westbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/B1F - Schoolboy Nate (Westbound)",
+                        "name": "S.S. Aqua B1F - Schoolboy Nate (Westbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/B1F - Schoolboy Ricky (Westbound)",
+                        "name": "S.S. Aqua B1F - Schoolboy Ricky (Westbound)"
+                    },
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/B1F - Teacher Shirley (Westbound)",
+                        "name": "S.S. Aqua B1F - Teacher Shirley (Westbound)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionCity",
+                        "x": 320,
+                        "y": 504
+                    }
+                ]
+            },
+            {
+                "name": "S.S. Aqua 1F",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/S.S. Aqua/1F - Sailor Stanly",
+                        "name": "Sailor Stanly"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FastShipCabins_Overview",
+                        "x": 392,
+                        "y": 40
+                    }
+                ]
+            },
             {
                 "name": "S.S. Aqua B1F",
                 "sections": [
@@ -228,7 +362,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F",
+                "name": "S.S. Aqua 1F​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Firebreather Lyle",
@@ -254,7 +388,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​",
+                "name": "S.S. Aqua 1F​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Twins Meg & Peg",
@@ -280,7 +414,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​",
+                "name": "S.S. Aqua 1F​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Pokefan Colin",
@@ -306,7 +440,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​",
+                "name": "S.S. Aqua 1F​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Hiker Noland",
@@ -332,7 +466,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​",
+                "name": "S.S. Aqua 1F​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Cool Trainer Sean (Eastbound)",
@@ -353,7 +487,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Cool Trainer Carol (Eastbound)",
@@ -373,7 +507,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Pokemaniac Ethan (Westbound)",
@@ -389,7 +523,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Cool Trainer Carol (Eastbound)",
@@ -405,7 +539,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Gentleman Edward (Eastbound)",
@@ -426,7 +560,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Burglar Corey (Westbound)",
@@ -478,7 +612,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Psychic Rodney (Eastbound)",
@@ -498,7 +632,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Pokefan Georgia (Westbound)",
@@ -514,7 +648,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Psychic Rodney (Eastbound)",
@@ -530,7 +664,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Pokefan Jeremy (Westbound)",
@@ -551,7 +685,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Super Nerd Shawn (Eastbound)",
@@ -572,7 +706,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​​​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Bug Catcher Ken (Westbound)",
@@ -593,7 +727,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​​​​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​​​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Beauty Cassie (Eastbound)",
@@ -614,7 +748,7 @@
                 ]
             },
             {
-                "name": "S.S. Aqua 1F​​​​​​​​​​​​​​​​​",
+                "name": "S.S. Aqua 1F​​​​​​​​​​​​​​​​​​",
                 "sections": [
                     {
                         "ref": "JohtoKanto/S.S. Aqua/1F - Guitarist Clyde (Westbound)",

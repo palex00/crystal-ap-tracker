@@ -43,7 +43,7 @@
                             "^$CanReach|REGION_NEW_BARK_TOWN"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_building_on"
                         ]
                     },
                     {
@@ -53,7 +53,7 @@
                             "^$CanReach|REGION_ELMS_LAB"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_building_on"
                         ]
                     },
                     {
@@ -2299,7 +2299,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2309,7 +2309,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2369,7 +2369,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE:WEST"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2379,7 +2379,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_HO_OH_CHAMBER"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2439,7 +2439,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2449,7 +2449,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_INNER_CHAMBER"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2459,7 +2459,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2469,7 +2469,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_KABUTO_CHAMBER"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2529,7 +2529,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:OMANYTE_LEDGE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2539,7 +2539,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2619,7 +2619,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE:WEST"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -2629,7 +2629,7 @@
                             "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:UNION_LEDGE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -3486,7 +3486,7 @@
                             "^$CanReach|REGION_UNION_CAVE_B1F:NORTH, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -3506,7 +3506,7 @@
                             "^$CanReach|REGION_UNION_CAVE_B1F:STRENGTH, ^$dark|unioncave"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -9041,7 +9041,7 @@
                             "^$CanReach|REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -9951,7 +9951,7 @@
                             "^$CanReach|REGION_TIN_TOWER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on"
+                            "show_entrances, er_dungeon_on"
                         ]
                     },
                     {
@@ -18735,46 +18735,6 @@
                         ]
                     },
                     {
-                        "name": "Victory Road Gate East Exit",
-                        "hosted_item": "REGION_VICTORY_ROAD_GATE:EAST -> REGION_ROUTE_22",
-                        "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD_GATE:EAST"
-                        ],
-                        "visibility_rules": [
-                            "show_entrances, er_gate_on"
-                        ]
-                    },
-                    {
-                        "name": "Victory Road Gate North Exit",
-                        "hosted_item": "REGION_VICTORY_ROAD_GATE:NORTH -> REGION_ROUTE_23_RESTORED:SOUTH",
-                        "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD_GATE:NORTH"
-                        ],
-                        "visibility_rules": [
-                            "show_entrances, er_gate_on, route_23_restored_on"
-                        ]
-                    },
-                    {
-                        "name": "Victory Road Gate South Exit",
-                        "hosted_item": "REGION_VICTORY_ROAD_GATE -> REGION_ROUTE_26",
-                        "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD_GATE"
-                        ],
-                        "visibility_rules": [
-                            "show_entrances, er_gate_on"
-                        ]
-                    },
-                    {
-                        "name": "Victory Road Gate West Exit",
-                        "hosted_item": "REGION_VICTORY_ROAD_GATE:WEST -> REGION_ROUTE_28",
-                        "access_rules": [
-                            "^$CanReach|REGION_VICTORY_ROAD_GATE:WEST"
-                        ],
-                        "visibility_rules": [
-                            "show_entrances, er_gate_on"
-                        ]
-                    },
-                    {
                         "name": "Victory Road North Exit",
                         "hosted_item": "REGION_VICTORY_ROAD:3F -> REGION_ROUTE_23",
                         "access_rules": [
@@ -18937,6 +18897,68 @@
                         "map": "kanto_overview",
                         "x": 20,
                         "y": 36
+                    }
+                ]
+            },
+            {
+                "name": "Victory Road Gate",
+                "sections": [
+                    {
+                        "name": "Victory Road Gate South Exit",
+                        "hosted_item": "REGION_VICTORY_ROAD_GATE -> REGION_ROUTE_26",
+                        "access_rules": [
+                            "^$CanReach|REGION_VICTORY_ROAD_GATE"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_gate_on"
+                        ]
+                    },
+                    {
+                        "name": "Victory Road Gate East Exit",
+                        "hosted_item": "REGION_VICTORY_ROAD_GATE:EAST -> REGION_ROUTE_22",
+                        "access_rules": [
+                            "^$CanReach|REGION_VICTORY_ROAD_GATE:EAST"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_gate_on"
+                        ]
+                    },
+                    {
+                        "name": "Victory Road Gate North Exit",
+                        "hosted_item": "REGION_VICTORY_ROAD_GATE:NORTH -> REGION_ROUTE_23_RESTORED:SOUTH",
+                        "access_rules": [
+                            "^$CanReach|REGION_VICTORY_ROAD_GATE:NORTH"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_gate_on, route_23_restored_on"
+                        ]
+                    },
+                    {
+                        "name": "Victory Road Gate West Exit",
+                        "hosted_item": "REGION_VICTORY_ROAD_GATE:WEST -> REGION_ROUTE_28",
+                        "access_rules": [
+                            "^$CanReach|REGION_VICTORY_ROAD_GATE:WEST"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_gate_on"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "johtokanto",
+                        "x": 164,
+                        "y": 52
+                    },
+                    {
+                        "map": "johtokanto_vertical",
+                        "x": 20,
+                        "y": 172
+                    },
+                    {
+                        "map": "kanto_overview",
+                        "x": 20,
+                        "y": 52
                     }
                 ]
             },
@@ -25745,16 +25767,6 @@
                         ]
                     },
                     {
-                        "name": "Dept. Store 1F - Buy Water Stone",
-                        "access_rules": [
-                            "^$CanReach|REGION_CELADON_DEPT_STORE_1F"
-                        ],
-                        "hosted_item": "WATER_STONE",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "Dept. Store 2F - Directory Sign",
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
@@ -30317,12 +30329,6 @@
                     },
                     {
                         "map": "johtokanto_vertical",
-                        "x": 20,
-                        "y": 36,
-                        "size": 6
-                    },
-                    {
-                        "map": "kanto_overview",
                         "x": 20,
                         "y": 36,
                         "size": 6

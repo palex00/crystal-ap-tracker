@@ -1,0 +1,2964 @@
+[
+    {
+        "name": "Submaps: Deep (group)",
+        "chest_unopened_img": "/images/items/pokeball.png",
+        "chest_opened_img": "/images/items/pokeball_open.png",
+        "children": [
+            {
+                "name": "National Park",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/National Park/Schoolboy Jack"
+                    },
+                    {
+                        "ref": "JohtoKanto/National Park/Schoolboy Jack Rematch - Champion",
+                        "name": "Schoolboy Jack Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/National Park/Schoolboy Jack Rematch - Kanto Power Restored",
+                        "name": "Schoolboy Jack Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/National Park/Schoolboy Jack Rematch - Olivine",
+                        "name": "Schoolboy Jack Rematch - Olivine"
+                    },
+                    {
+                        "ref": "JohtoKanto/National Park/Schoolboy Jack Rematch - Radio",
+                        "name": "Schoolboy Jack Rematch - Radio"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "NationalPark",
+                        "x": 440,
+                        "y": 376
+                    }
+                ]
+            },
+            {
+                "name": "Olivine Lighthouse 6F",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/6F - Heal Amphy",
+                        "name": "Heal Amphy"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/6F - Jasmine explains Amphy's sickness",
+                        "name": "6F - Jasmine explains Amphy's sickness"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineLighthouse6F",
+                        "x": 136,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Route 26",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Gaven"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Gaven Rematch - Champion",
+                        "name": "Cool Trainer Gaven Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Gaven Rematch - Kanto Power Restored",
+                        "name": "Cool Trainer Gaven Rematch - Kanto Power Restored"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route26North",
+                        "x": 152,
+                        "y": 616
+                    }
+                ]
+            },
+            {
+                "name": "Route 26​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Beth"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Beth Rematch - Champion",
+                        "name": "Cool Trainer Beth Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Beth Rematch - Kanto Power Restored",
+                        "name": "Cool Trainer Beth Rematch - Kanto Power Restored"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route26North",
+                        "x": 88,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Route 27",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 27/Cool Trainer Reena"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Cool Trainer Reena Rematch - Champion",
+                        "name": "Cool Trainer Reena Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Cool Trainer Reena Rematch - Kanto Power Restored",
+                        "name": "Cool Trainer Reena Rematch - Kanto Power Restored"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route27",
+                        "x": 1160,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "Route 32",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 32/Picnicker Liz"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Picnicker Liz Rematch - Champion",
+                        "name": "Picnicker Liz Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Picnicker Liz Rematch - Ecruteak",
+                        "name": "Picnicker Liz Rematch - Ecruteak"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Picnicker Liz Rematch - Radio",
+                        "name": "Picnicker Liz Rematch - Radio"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Picnicker Liz Rematch - Rocket Hideout",
+                        "name": "Picnicker Liz Rematch - Rocket Hideout"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route32North",
+                        "x": 168,
+                        "y": 504
+                    }
+                ]
+            },
+            {
+                "name": "Route 32​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 32/Fisher Ralph"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Fisher Ralph Rematch - Champion",
+                        "name": "Fisher Ralph Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Fisher Ralph Rematch - Ecruteak",
+                        "name": "Fisher Ralph Rematch - Ecruteak"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Fisher Ralph Rematch - Kanto Power Restored",
+                        "name": "Fisher Ralph Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Fisher Ralph Rematch - Lake of Rage",
+                        "name": "Fisher Ralph Rematch - Lake of Rage"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route32South",
+                        "x": 200,
+                        "y": 280
+                    }
+                ]
+            },
+            {
+                "name": "Route 33",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 33/Hiker Anthony"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 33/Hiker Anthony Rematch - Champion",
+                        "name": "Hiker Anthony Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 33/Hiker Anthony Rematch - Kanto Power Restored",
+                        "name": "Hiker Anthony Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 33/Hiker Anthony Rematch - Olivine",
+                        "name": "Hiker Anthony Rematch - Olivine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 33/Hiker Anthony Rematch - Radio",
+                        "name": "Hiker Anthony Rematch - Radio"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route33",
+                        "x": 104,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "name": "Route 34",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 34/Camper Todd"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Camper Todd Rematch - Blackthorn",
+                        "name": "Camper Todd Rematch - Blackthorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Camper Todd Rematch - Champion",
+                        "name": "Camper Todd Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Camper Todd Rematch - Cianwood",
+                        "name": "Camper Todd Rematch - Cianwood"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Camper Todd Rematch - Kanto Power Restored",
+                        "name": "Camper Todd Rematch - Kanto Power Restored"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 216,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Route 35",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 35/Bug Catcher Arnie"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/Bug Catcher Arnie Rematch - Blackthorn",
+                        "name": "Bug Catcher Arnie Rematch - Blackthorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/Bug Catcher Arnie Rematch - Champion",
+                        "name": "Bug Catcher Arnie Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/Bug Catcher Arnie Rematch - Kanto Power Restored",
+                        "name": "Bug Catcher Arnie Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/Bug Catcher Arnie Rematch - Lake of Rage",
+                        "name": "Bug Catcher Arnie Rematch - Lake of Rage"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route35",
+                        "x": 264,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Route 38",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 38/Schoolboy Chad"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Schoolboy Chad Rematch - Champion",
+                        "name": "Schoolboy Chad Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Schoolboy Chad Rematch - Kanto Power Restored",
+                        "name": "Schoolboy Chad Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Schoolboy Chad Rematch - Mahogany",
+                        "name": "Schoolboy Chad Rematch - Mahogany"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Schoolboy Chad Rematch - Radio",
+                        "name": "Schoolboy Chad Rematch - Radio"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route38",
+                        "x": 72,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Route 43",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 43/Pokemaniac Brent"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Pokemaniac Brent Rematch - Champion",
+                        "name": "Pokemaniac Brent Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Pokemaniac Brent Rematch - Kanto Power Restored",
+                        "name": "Pokemaniac Brent Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Pokemaniac Brent Rematch - Rocket Hideout",
+                        "name": "Pokemaniac Brent Rematch - Rocket Hideout"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route43",
+                        "x": 216,
+                        "y": 328
+                    }
+                ]
+            },
+            {
+                "name": "Rocket HQ B3F",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Grunt 1",
+                        "name": "Grunt 1"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Learn the password SlowpokeTail",
+                        "name": "Rocket HQ B3F - Learn the password SlowpokeTail"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TeamRocketBaseB3F",
+                        "x": 344,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Rocket HQ B3F​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Grunt 2",
+                        "name": "Grunt 2"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Learn the password RaticateTail",
+                        "name": "Rocket HQ B3F - Learn the password RaticateTail"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TeamRocketBaseB3F",
+                        "x": 88,
+                        "y": 232
+                    }
+                ]
+            },
+            {
+                "name": "Gym - Leader Clair",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Leader Clair",
+                        "name": "Gym - Leader Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Beat Clair",
+                        "name": "Beat Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Rising Badge from Clair",
+                        "name": "Rising Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/​Gym - Rising Badge from Clair",
+                        "name": "Rising Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - TM24 from Clair",
+                        "name": "TM24"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornGym1F",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Gym - Leader Chuck",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - Leader Chuck",
+                        "name": "Gym - Leader Chuck"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - Beat Chuck",
+                        "name": "Beat Chuck"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - Storm Badge from Chuck",
+                        "name": "Storm Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/​Gym - Storm Badge from Chuck",
+                        "name": "Storm Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Gym - TM01 from Chuck",
+                        "name": "TM01"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodGym",
+                        "x": 72,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Learn of the robbery",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Power Plant/Learn of the robbery",
+                        "name": "Learn of the robbery"
+                    },
+                    {
+                        "ref": "JohtoKanto/Power Plant/Restore Power to Kanto",
+                        "name": "Restore Power to Kanto"
+                    },
+                    {
+                        "ref": "JohtoKanto/Power Plant/TM07 from Manager",
+                        "name": "TM07 from Manager"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "PowerPlant",
+                        "x": 232,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "Azalea Town",
+                "sections": [
+                    {
+                        "name": "Berry Tree",
+                        "ref": "JohtoKanto/Azalea Town/Berry Tree"
+                    },
+                    {
+                        "name": "White Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Azalea Town/White Apricorn from Apricorn Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaTown",
+                        "x": 136,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Cherrygrove City",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cherrygrove City/Map Card from Guide",
+                        "name": "Map Card from Guide"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cherrygrove City/​Map Card from Guide",
+                        "name": "Map Card from Guide​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CherrygroveCity",
+                        "x": 520,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "Hiker Parry",
+                "sections": [
+                    {
+                        "name": "Hiker Parry",
+                        "ref": "JohtoKanto/Route 45/Hiker Parry"
+                    },
+                    {
+                        "name": "Iron from Parry",
+                        "ref": "JohtoKanto/Route 45/Iron from Parry"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 45/Hiker Parry Rematch - Champion",
+                        "name": "Hiker Parry Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 45/Hiker Parry Rematch - Kanto Power Restored",
+                        "name": "Hiker Parry Rematch - Kanto Power Restored"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route45North",
+                        "x": 88,
+                        "y": 456
+                    }
+                ]
+            },
+            {
+                "name": "Bug Catcher Wade",
+                "sections": [
+                    {
+                        "name": "Bug Catcher Wade",
+                        "ref": "JohtoKanto/Route 31/Bug Catcher Wade"
+                    },
+                    {
+                        "name": "Berry from Wade",
+                        "ref": "JohtoKanto/Route 31/Berry from Wade"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/Bug Catcher Wade Rematch - Champion",
+                        "name": "Bug Catcher Wade Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/Bug Catcher Wade Rematch - Goldenrod",
+                        "name": "Bug Catcher Wade Rematch - Goldenrod"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/Bug Catcher Wade Rematch - Mahogany",
+                        "name": "Bug Catcher Wade Rematch - Mahogany"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/Bug Catcher Wade Rematch - Radio",
+                        "name": "Bug Catcher Wade Rematch - Radio"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route31",
+                        "x": 344,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "name": "Route 31",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 31/Deliver Kenya",
+                        "name": "Deliver Kenya"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/TM50 for delivering Kenya",
+                        "name": "TM50 for delivering Kenya"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route31",
+                        "x": 280,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Picnicker Erin",
+                "sections": [
+                    {
+                        "name": "Picnicker Erin",
+                        "ref": "JohtoKanto/Route 46/Picnicker Erin"
+                    },
+                    {
+                        "name": "Calcium from Erin",
+                        "ref": "JohtoKanto/Route 46/Calcium from Erin"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 46/Picnicker Erin Rematch - Champion",
+                        "name": "Picnicker Erin Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 46/Picnicker Erin Rematch - Kanto Power Restored",
+                        "name": "Picnicker Erin Rematch - Kanto Power Restored"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route46",
+                        "x": 40,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "name": "Receptionist",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM21 from Receptionist",
+                        "name": "TM21 from Receptionist"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM27 from Receptionist",
+                        "name": "TM27 from Receptionist"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodDeptStore5F",
+                        "x": 120,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Rival in Goldenrod Underround",
+                "sections": [
+                    {
+                        "name": "Beat Rival in Goldenrod Underground",
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Beat Rival in Goldenrod Underground"
+                    },
+                    {
+                        "name": "Rival",
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodUndergroundSwitchRoomEntrances",
+                        "x": 312,
+                        "y": 80
+                    }
+                ]
+            },
+            {
+                "name": "Fisher Wilton",
+                "sections": [
+                    {
+                        "name": "Fisher Wilton",
+                        "ref": "JohtoKanto/Route 44/Fisher Wilton"
+                    },
+                    {
+                        "name": "Poke Ball from Wilton",
+                        "ref": "JohtoKanto/Route 44/Poke Ball from Wilton"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 44/Fisher Wilton Rematch - Champion",
+                        "name": "Fisher Wilton Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 44/Fisher Wilton Rematch - Kanto Power Restored",
+                        "name": "Fisher Wilton Rematch - Kanto Power Restored"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route44",
+                        "x": 568,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Bird Keeper Vance",
+                "sections": [
+                    {
+                        "name": "Bird Keeper Vance",
+                        "ref": "JohtoKanto/Route 44/Bird Keeper Vance"
+                    },
+                    {
+                        "name": "Carbos from Vance",
+                        "ref": "JohtoKanto/Route 44/Carbos from Vance"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 44/Bird Keeper Vance Rematch - Champion",
+                        "name": "Bird Keeper Vance Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 44/Bird Keeper Vance Rematch - Kanto Power Restored",
+                        "name": "Bird Keeper Vance Rematch - Kanto Power Restored"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route44",
+                        "x": 824,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Blackbelt Kiyo",
+                "sections": [
+                    {
+                        "name": "B1F - Blackbelt Kiyo",
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Blackbelt Kiyo"
+                    },
+                    {
+                        "name": "B1F - Got Tyrogue from Kiyo",
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Got Tyrogue from Kiyo"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MountMortarB1F",
+                        "x": 264,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "Youngster Joey",
+                "sections": [
+                    {
+                        "name": "Youngster Joey",
+                        "ref": "JohtoKanto/Route 30/Youngster Joey"
+                    },
+                    {
+                        "name": "HP Up from Joey",
+                        "ref": "JohtoKanto/Route 30/HP Up from Joey"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Youngster Joey Rematch - Champion",
+                        "name": "Youngster Joey Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Youngster Joey Rematch - Goldenrod",
+                        "name": "Youngster Joey Rematch - Goldenrod"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Youngster Joey Rematch - Olivine",
+                        "name": "Youngster Joey Rematch - Olivine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Youngster Joey Rematch - Radio",
+                        "name": "Youngster Joey Rematch - Radio"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route30",
+                        "x": 40,
+                        "y": 456
+                    }
+                ]
+            },
+            {
+                "name": "Pokefan Beverly",
+                "sections": [
+                    {
+                        "name": "Pokefan Beverly",
+                        "ref": "JohtoKanto/National Park/Pokefan Beverly"
+                    },
+                    {
+                        "name": "Nugget from Beverly",
+                        "ref": "JohtoKanto/National Park/Nugget from Beverly"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "NationalPark",
+                        "x": 296,
+                        "y": 472
+                    }
+                ]
+            },
+            {
+                "name": "Sailor Huey",
+                "sections": [
+                    {
+                        "name": "Sailor Huey",
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey"
+                    },
+                    {
+                        "name": "Protein from Huey",
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Protein from Huey"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Champion",
+                        "name": "2F - Sailor Huey Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Kanto Power Restored",
+                        "name": "2F - Sailor Huey Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Radio",
+                        "name": "2F - Sailor Huey Rematch - Radio"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineLighthouse2F",
+                        "x": 152,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Radio Tower",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Radio Tower/1F - Radio Card from Quiz",
+                        "name": "1F - Radio Card from Quiz"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/​1F - Radio Card from Quiz",
+                        "name": "1F - Radio Card from Quiz​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RadioTower1F",
+                        "x": 200,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "Radio Tower 2F",
+                "sections": [
+                    {
+                        "name": "2F - Blue Card Shop - 2 Points",
+                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card Shop - 2 Points"
+                    },
+                    {
+                        "name": "2F - Blue Card Shop - 3 Points",
+                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card Shop - 3 Points"
+                    },
+                    {
+                        "name": "2F - Blue Card Shop - 5 Points",
+                        "ref": "JohtoKanto/Radio Tower/2F - Blue Card Shop - 5 Points"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RadioTower2F",
+                        "x": 200,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Radio Tower 5F",
+                "sections": [
+                    {
+                        "name": "Unmask the False Director",
+                        "ref": "JohtoKanto/Radio Tower/5F - Unmask the False Director"
+                    },
+                    {
+                        "name": "False Director",
+                        "ref": "JohtoKanto/Radio Tower/5F - False Director"
+                    },
+                    {
+                        "name": "Basement Key from False Director",
+                        "ref": "JohtoKanto/Radio Tower/5F - Basement Key from False Director"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RadioTower5F",
+                        "x": 8,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Radio Tower 5F​",
+                "sections": [
+                    {
+                        "name": "Rocket Executive 2",
+                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive 2"
+                    },
+                    {
+                        "name": "Clear Radio Tower",
+                        "ref": "JohtoKanto/Radio Tower/5F - Clear Radio Tower"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RadioTower5F",
+                        "x": 216,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Nugget Grunt",
+                "sections": [
+                    {
+                        "name": "Defeat the Grunt on Nugget Bridge",
+                        "ref": "JohtoKanto/Route 24/Defeat the Grunt on Nugget Bridge"
+                    },
+                    {
+                        "name": "Grunt",
+                        "ref": "JohtoKanto/Route 24/Grunt"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route24",
+                        "x": 136,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Route 25",
+                "sections": [
+                    {
+                        "name": "Nugget Bridge Prize",
+                        "ref": "JohtoKanto/Route 25/Nugget Bridge Prize"
+                    },
+                    {
+                        "name": "Cool Trainer Kevin",
+                        "ref": "JohtoKanto/Route 25/Cool Trainer Kevin"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route25",
+                        "x": 600,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Bird Keeper Jose",
+                "sections": [
+                    {
+                        "name": "Bird Keeper Jose",
+                        "ref": "JohtoKanto/Route 27/Bird Keeper Jose"
+                    },
+                    {
+                        "name": "Star Piece from Jose",
+                        "ref": "JohtoKanto/Route 27/Star Piece from Jose"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Bird Keeper Jose Rematch - Champion",
+                        "name": "Bird Keeper Jose Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Bird Keeper Jose Rematch - Kanto Power Restored",
+                        "name": "Bird Keeper Jose Rematch - Kanto Power Restored"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route27",
+                        "x": 936,
+                        "y": 216
+                    }
+                ]
+            },
+            {
+                "name": "Picnicker Gina",
+                "sections": [
+                    {
+                        "name": "Picnicker Gina",
+                        "ref": "JohtoKanto/Route 34/Picnicker Gina"
+                    },
+                    {
+                        "name": "Leaf Stone from Gina",
+                        "ref": "JohtoKanto/Route 34/Leaf Stone from Gina"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Picnicker Gina Rematch - Champion",
+                        "name": "Picnicker Gina Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Picnicker Gina Rematch - Kanto Power Restored",
+                        "name": "Picnicker Gina Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Picnicker Gina Rematch - Mahogany",
+                        "name": "Picnicker Gina Rematch - Mahogany"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Picnicker Gina Rematch - Radio",
+                        "name": "Picnicker Gina Rematch - Radio"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 168,
+                        "y": 424
+                    }
+                ]
+            },
+            {
+                "name": "Route 34​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 34/Cool Trainer Kate",
+                        "name": "Cool Trainer Kate"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Soft Sand from Kate",
+                        "name": "Soft Sand from Kate"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route34",
+                        "x": 104,
+                        "y": 824
+                    }
+                ]
+            },
+            {
+                "name": "Schoolboy Alan",
+                "sections": [
+                    {
+                        "name": "Schoolboy Alan",
+                        "ref": "JohtoKanto/Route 36/Schoolboy Alan"
+                    },
+                    {
+                        "name": "Fire Stone from Alan",
+                        "ref": "JohtoKanto/Route 36/Fire Stone from Alan"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 36/Schoolboy Alan Rematch - Blackthorn",
+                        "name": "Schoolboy Alan Rematch - Blackthorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 36/Schoolboy Alan Rematch - Champion",
+                        "name": "Schoolboy Alan Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 36/Schoolboy Alan Rematch - Kanto Power Restored",
+                        "name": "Schoolboy Alan Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 36/Schoolboy Alan Rematch - Olivine",
+                        "name": "Schoolboy Alan Rematch - Olivine"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route36",
+                        "x": 504,
+                        "y": 232
+                    }
+                ]
+            },
+            {
+                "name": "Route 37",
+                "sections": [
+                    {
+                        "name": "Berry Tree 1",
+                        "ref": "JohtoKanto/Route 37/Berry Tree 1"
+                    },
+                    {
+                        "name": "Red Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 37/Red Apricorn from Apricorn Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route37",
+                        "x": 216,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Route 37​",
+                "sections": [
+                    {
+                        "name": "Berry Tree 2",
+                        "ref": "JohtoKanto/Route 37/Berry Tree 2"
+                    },
+                    {
+                        "name": "Blue Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 37/Blue Apricorn from Apricorn Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route37",
+                        "x": 264,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Route 37​​",
+                "sections": [
+                    {
+                        "name": "Berry Tree 3",
+                        "ref": "JohtoKanto/Route 37/Berry Tree 3"
+                    },
+                    {
+                        "name": "Black Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 37/Black Apricorn from Apricorn Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route37",
+                        "x": 248,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Lass Dana",
+                "sections": [
+                    {
+                        "name": "Lass Dana",
+                        "ref": "JohtoKanto/Route 38/Lass Dana"
+                    },
+                    {
+                        "name": "Thunderstone from Dana",
+                        "ref": "JohtoKanto/Route 38/Thunderstone from Dana"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Lass Dana Rematch - Champion",
+                        "name": "Lass Dana Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Lass Dana Rematch - Cianwood",
+                        "name": "Lass Dana Rematch - Cianwood"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Lass Dana Rematch - Kanto Power Restored",
+                        "name": "Lass Dana Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Lass Dana Rematch - Radio",
+                        "name": "Lass Dana Rematch - Radio"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route38",
+                        "x": 248,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Pokefan Derek",
+                "sections": [
+                    {
+                        "name": "Pokefan Derek",
+                        "ref": "JohtoKanto/Route 39/Pokefan Derek"
+                    },
+                    {
+                        "name": "Nugget from Derek",
+                        "ref": "JohtoKanto/Route 39/Nugget from Derek"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route39",
+                        "x": 168,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "name": "Route 42",
+                "sections": [
+                    {
+                        "name": "Berry Tree 1",
+                        "ref": "JohtoKanto/Route 42/Berry Tree 1"
+                    },
+                    {
+                        "name": "Pink Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 42/Pink Apricorn from Apricorn Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route42",
+                        "x": 440,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "name": "Route 42​",
+                "sections": [
+                    {
+                        "name": "Berry Tree 2",
+                        "ref": "JohtoKanto/Route 42/Berry Tree 2"
+                    },
+                    {
+                        "name": "Green Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 42/Green Apricorn from Apricorn Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route42",
+                        "x": 456,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "name": "Route 42​​",
+                "sections": [
+                    {
+                        "name": "Berry Tree 3",
+                        "ref": "JohtoKanto/Route 42/Berry Tree 3"
+                    },
+                    {
+                        "name": "Yellow Apricorn from Apricorn Tree",
+                        "ref": "JohtoKanto/Route 42/Yellow Apricorn from Apricorn Tree"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route42",
+                        "x": 472,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "name": "Fisher Tully",
+                "sections": [
+                    {
+                        "name": "Fisher Tully",
+                        "ref": "JohtoKanto/Route 42/Fisher Tully"
+                    },
+                    {
+                        "name": "Water Stone from Tully",
+                        "ref": "JohtoKanto/Route 42/Water Stone from Tully"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 42/Fisher Tully Rematch - Champion",
+                        "name": "Fisher Tully Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 42/Fisher Tully Rematch - Kanto Power Restored",
+                        "name": "Fisher Tully Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 42/Fisher Tully Rematch - Rocket Hideout",
+                        "name": "Fisher Tully Rematch - Rocket Hideout"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route42",
+                        "x": 648,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "Picnicker Tiffany",
+                "sections": [
+                    {
+                        "name": "Picnicker Tiffany",
+                        "ref": "JohtoKanto/Route 43/Picnicker Tiffany"
+                    },
+                    {
+                        "name": "Pink Bow from Tiffany",
+                        "ref": "JohtoKanto/Route 43/Pink Bow from Tiffany"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Picnicker Tiffany Rematch - Champion",
+                        "name": "Picnicker Tiffany Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Picnicker Tiffany Rematch - Kanto Power Restored",
+                        "name": "Picnicker Tiffany Rematch - Kanto Power Restored"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Picnicker Tiffany Rematch - Radio",
+                        "name": "Picnicker Tiffany Rematch - Radio"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route43",
+                        "x": 152,
+                        "y": 408
+                    }
+                ]
+            },
+            {
+                "name": "Blackbelt Kenji",
+                "sections": [
+                    {
+                        "name": "Blackbelt Kenji",
+                        "ref": "JohtoKanto/Route 45/Blackbelt Kenji"
+                    },
+                    {
+                        "name": "PP Up from Kenji",
+                        "ref": "JohtoKanto/Route 45/PP Up from Kenji"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route45South",
+                        "x": 184,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Slowpoke Well B1F",
+                "sections": [
+                    {
+                        "name": "Grunt 4",
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Grunt 4"
+                    },
+                    {
+                        "name": "Cleared Slowpoke Well",
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SlowpokeWellB1F",
+                        "x": 88,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Rocket HQ B1F",
+                "sections": [
+                    {
+                        "name": "Poké-Trap Koffing",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Koffing"
+                    },
+                    {
+                        "name": "Poké-Trap Voltorb",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Voltorb"
+                    },
+                    {
+                        "name": "Poké-Trap Geodude",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Geodude"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TeamRocketBaseB1F",
+                        "x": 56,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "Rocket HQ B2F",
+                "sections": [
+                    {
+                        "name": "HM06 from Lance",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - HM06 from Lance"
+                    },
+                    {
+                        "name": "Electrode Top",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Top"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TeamRocketBaseB2F",
+                        "x": 120,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Rocket HQ B2F​",
+                "sections": [
+                    {
+                        "name": "Clear Rocket HQ",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Clear Rocket HQ"
+                    },
+                    {
+                        "name": "Electrode Middle",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Middle"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TeamRocketBaseB2F",
+                        "x": 120,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Rocket HQ B2F​​",
+                "sections": [
+                    {
+                        "name": "Rocket Executive",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Rocket Executive"
+                    },
+                    {
+                        "name": "Electrode Bottom",
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Bottom"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TeamRocketBaseB2F",
+                        "x": 120,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "Falkner",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - Beat Falkner",
+                        "name": "Beat Falkner"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - Leader Falkner",
+                        "name": "Leader Falkner"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - Zephyr Badge from Falkner",
+                        "name": "Zephyr Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/​Gym - Zephyr Badge from Falkner",
+                        "name": "Zephyr Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/Gym - TM31 from Falkner",
+                        "name": "TM31"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VioletGym",
+                        "x": 88,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Bugsy",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Gym - Beat Bugsy",
+                        "name": "Beat Bugsy"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Gym - Leader Bugsy",
+                        "name": "Leader Bugsy"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Gym - Hive Badge from Bugsy",
+                        "name": "Hive Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/​Gym - Hive Badge from Bugsy",
+                        "name": "Hive Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Gym - TM49 from Bugsy",
+                        "name": "TM49"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaGym",
+                        "x": 88,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Whitney",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Beat Whitney",
+                        "name": "Beat Whitney"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Leader Whitney",
+                        "name": "Leader Whitney"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Plain Badge from Whitney",
+                        "name": "Plain Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/​Gym - Plain Badge from Whitney",
+                        "name": "Plain Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Gym - TM45 from Whitney",
+                        "name": "TM45"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGym",
+                        "x": 136,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Morty",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Beat Morty",
+                        "name": "Beat Morty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Leader Morty",
+                        "name": "Leader Morty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Fog Badge from Morty",
+                        "name": "Fog Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/​Gym - Fog Badge from Morty",
+                        "name": "Fog Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Gym - TM30 from Morty",
+                        "name": "TM30"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakGym",
+                        "x": 88,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Jasmine",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine City/Gym - Beat Jasmine",
+                        "name": "Beat Jasmine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine City/Gym - Leader Jasmine",
+                        "name": "Leader Jasmine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine City/Gym - Mineral Badge from Jasmine",
+                        "name": "Mineral Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine City/​Gym - Mineral Badge from Jasmine",
+                        "name": "Mineral Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine City/Gym - TM23 from Jasmine",
+                        "name": "TM23"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Pryce",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Beat Pryce",
+                        "name": "Beat Pryce"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Leader Pryce",
+                        "name": "Leader Pryce"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Glacier Badge from Pryce",
+                        "name": "Glacier Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/​Gym - Glacier Badge from Pryce",
+                        "name": "Glacier Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Gym - TM16 from Pryce",
+                        "name": "TM16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Brock",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Pewter City/Gym - Beat Brock",
+                        "name": "Beat Brock"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pewter City/Gym - Leader Brock",
+                        "name": "Leader Brock"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pewter City/Gym - Boulder Badge from Brock",
+                        "name": "Boulder Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pewter City/​Gym - Boulder Badge from Brock",
+                        "name": "Boulder Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "PewterGym",
+                        "x": 88,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Misty",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Beat Misty",
+                        "name": "Beat Misty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Leader Misty",
+                        "name": "Leader Misty"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Cascade Badge from Misty",
+                        "name": "Cascade Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cerulean City/​Gym - Cascade Badge from Misty",
+                        "name": "Cascade Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Lt. Surge",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Gym - Beat Lt. Surge",
+                        "name": "Beat Lt. Surge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Gym - Leader Lt. Surge",
+                        "name": "Leader Lt. Surge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Gym - Thunder Badge from Lt. Surge",
+                        "name": "Thunder Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Vermilion City/​Gym - Thunder Badge from Lt. Surge",
+                        "name": "Thunder Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionGym",
+                        "x": 88,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Erika",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Gym - Beat Erika",
+                        "name": "Beat Erika"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Gym - Leader Erika",
+                        "name": "Leader Erika"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Gym - Rainbow Badge from Erika",
+                        "name": "Rainbow Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/​Gym - Rainbow Badge from Erika",
+                        "name": "Rainbow Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Gym - TM19 from Erika",
+                        "name": "TM19 from Erika"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Sabrina",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Saffron City/Gym - Beat Sabrina",
+                        "name": "Beat Sabrina"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/Gym - Leader Sabrina",
+                        "name": "Leader Sabrina"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/Gym - Marsh Badge from Sabrina",
+                        "name": "Marsh Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/​Gym - Marsh Badge from Sabrina",
+                        "name": "Marsh Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronGym",
+                        "x": 152,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Janine",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Beat Janine",
+                        "name": "Beat Janine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Leader Janine",
+                        "name": "Leader Janine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Soul Badge from Janine",
+                        "name": "Soul Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/​Gym - Soul Badge from Janine",
+                        "name": "Soul Badge​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Gym - TM06 from Janine",
+                        "name": "TM06 from Janine"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaGym",
+                        "x": 24,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "Blaine",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/Gym - Beat Blaine",
+                        "name": "Beat Blaine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/Gym - Leader Blaine",
+                        "name": "Leader Blaine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/Gym - Volcano Badge from Blaine",
+                        "name": "Volcano Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Seafoam Islands/​Gym - Volcano Badge from Blaine",
+                        "name": "Volcano Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SeafoamGym",
+                        "x": 88,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Blue",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Viridian City/Gym - Beat Blue",
+                        "name": "Beat Blue"
+                    },
+                    {
+                        "ref": "JohtoKanto/Viridian City/Gym - Leader Blue",
+                        "name": "Leader Blue"
+                    },
+                    {
+                        "ref": "JohtoKanto/Viridian City/Gym - Earth Badge from Blue",
+                        "name": "Earth Badge"
+                    },
+                    {
+                        "ref": "JohtoKanto/Viridian City/​Gym - Earth Badge from Blue",
+                        "name": "Earth Badge​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ViridianGym",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Rival in Azalea Town",
+                "sections": [
+                    {
+                        "name": "Beat Rival in Azalea Town",
+                        "ref": "JohtoKanto/Azalea Town/Beat Rival in Azalea Town"
+                    },
+                    {
+                        "name": "Rival",
+                        "ref": "JohtoKanto/Azalea Town/Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaTown",
+                        "x": 88,
+                        "y": 176
+                    }
+                ]
+            },
+            {
+                "name": "Rival in Burned Tower",
+                "sections": [
+                    {
+                        "name": "Beat Rival in Burned Tower",
+                        "ref": "JohtoKanto/Burned Tower/1F - Beat Rival in Burned Tower"
+                    },
+                    {
+                        "name": "Rival",
+                        "ref": "JohtoKanto/Burned Tower/1F - Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BurnedTower1F",
+                        "x": 168,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "Rival in Cherrygrove City",
+                "sections": [
+                    {
+                        "name": "Beat Rival in Cherrygrove City",
+                        "ref": "JohtoKanto/Cherrygrove City/Beat Rival in Cherrygrove City"
+                    },
+                    {
+                        "name": "Rival",
+                        "ref": "JohtoKanto/Cherrygrove City/Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CherrygroveCity",
+                        "x": 552,
+                        "y": 112
+                    }
+                ]
+            },
+            {
+                "name": "Bug Catching Contest",
+                "map_locations": [
+                    {
+                        "map": "NationalPark",
+                        "x": 616,
+                        "y": 24
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Bug Catching Contest - First Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - First Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Second Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Third Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Third Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Consolation Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Consolation Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second or Third Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Second or Third Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Participation Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Participation Prize"
+                    }
+                ]
+            },
+            {
+                "name": "Beauty Frost",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Beauty Frost",
+                        "name": "Beauty Frost"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Beauty Valentino",
+                        "name": "Beauty Valentino"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Biker Eaton",
+                        "name": "Biker Eaton"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Biker Erickson",
+                        "name": "Biker Erickson"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Bird Keeper Sells",
+                        "name": "Bird Keeper Sells"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Bird Keeper Yates",
+                        "name": "Bird Keeper Yates"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Blackbelt Nguyen",
+                        "name": "Blackbelt Nguyen"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Blackbelt Yufune",
+                        "name": "Blackbelt Yufune"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Boarder Crawford",
+                        "name": "Boarder Crawford"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Boarder Rockwell",
+                        "name": "Boarder Rockwell"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Bug Catcher Smith",
+                        "name": "Bug Catcher Smith"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Bug Catcher Tajiri",
+                        "name": "Bug Catcher Tajiri"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Camper Freeman",
+                        "name": "Camper Freeman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Camper McMahill",
+                        "name": "Camper McMahill"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Camper Wagner",
+                        "name": "Camper Wagner"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Cool Trainer Park",
+                        "name": "Cool Trainer Park"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Cool Trainer Rajan",
+                        "name": "Cool Trainer Rajan"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Firebreather Hill",
+                        "name": "Firebreather Hill"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Firebreather Wong",
+                        "name": "Firebreather Wong"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Fisher Hanson",
+                        "name": "Fisher Hanson"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Fisher Hughes",
+                        "name": "Fisher Hughes"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Gentleman Hatcher",
+                        "name": "Gentleman Hatcher"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Gentleman Obrien",
+                        "name": "Gentleman Obrien"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Guitarist Adams",
+                        "name": "Guitarist Adams"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Guitarist Masuda",
+                        "name": "Guitarist Masuda"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Hiker Alexander",
+                        "name": "Hiker Alexander"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Juggler Fairfield",
+                        "name": "Juggler Fairfield"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Kimono Girl Arita",
+                        "name": "Kimono Girl Arita"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Kimono Girl Saito",
+                        "name": "Kimono Girl Saito"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Lass Giese",
+                        "name": "Lass Giese"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Lass Thornton",
+                        "name": "Lass Thornton"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Lass Zaborowski",
+                        "name": "Lass Zaborowski"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Officer Rodriguez",
+                        "name": "Officer Rodriguez"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Officer Turner",
+                        "name": "Officer Turner"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Picnicker Andrews",
+                        "name": "Picnicker Andrews"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Picnicker Diaz",
+                        "name": "Picnicker Diaz"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokefan Bickett",
+                        "name": "Pokefan Bickett"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokefan Hunter",
+                        "name": "Pokefan Hunter"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokefan Jackson",
+                        "name": "Pokefan Jackson"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokefan Olson",
+                        "name": "Pokefan Olson"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokefan Stock",
+                        "name": "Pokefan Stock"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokemaniac Bahn",
+                        "name": "Pokemaniac Bahn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokemaniac Baker",
+                        "name": "Pokemaniac Baker"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokemaniac Kahn",
+                        "name": "Pokemaniac Kahn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokemaniac Sawyer",
+                        "name": "Pokemaniac Sawyer"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Psychic Easton",
+                        "name": "Psychic Easton"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Psychic Santiago",
+                        "name": "Psychic Santiago"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Sage Buckman",
+                        "name": "Sage Buckman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Sailor Newman",
+                        "name": "Sailor Newman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Schoolboy Cobb",
+                        "name": "Schoolboy Cobb"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Schoolboy Walker",
+                        "name": "Schoolboy Walker"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Scientist Collins",
+                        "name": "Scientist Collins"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Scientist Mori",
+                        "name": "Scientist Mori"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Scientist Nickel",
+                        "name": "Scientist Nickel"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Scientist Thurman",
+                        "name": "Scientist Thurman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Skier Lancaster",
+                        "name": "Skier Lancaster"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Skier Van Dyke",
+                        "name": "Skier Van Dyke"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Super Nerd Morse",
+                        "name": "Super Nerd Morse"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Super Nerd Ogden",
+                        "name": "Super Nerd Ogden"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Super Nerd Smart",
+                        "name": "Super Nerd Smart"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Swimmer Dykstra",
+                        "name": "Swimmer Dykstra"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Swimmer Javier",
+                        "name": "Swimmer Javier"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Swimmer Kaufman",
+                        "name": "Swimmer Kaufman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Swimmer Meyer",
+                        "name": "Swimmer Meyer"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Swimmer Raine",
+                        "name": "Swimmer Raine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Teacher Kawakami",
+                        "name": "Teacher Kawakami"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Teacher Marino",
+                        "name": "Teacher Marino"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 1 Complete",
+                        "name": "Tier 1 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 10 Complete",
+                        "name": "Tier 10 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 2 Complete",
+                        "name": "Tier 2 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 3 Complete",
+                        "name": "Tier 3 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 4 Complete",
+                        "name": "Tier 4 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 5 Complete",
+                        "name": "Tier 5 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 6 Complete",
+                        "name": "Tier 6 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 7 Complete",
+                        "name": "Tier 7 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 8 Complete",
+                        "name": "Tier 8 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 9 Complete",
+                        "name": "Tier 9 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Youngster Johnson",
+                        "name": "Youngster Johnson"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Youngster Leong",
+                        "name": "Youngster Leong"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Youngster Wright",
+                        "name": "Youngster Wright"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BattleTower1F",
+                        "x": 120,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "Beat Elite 4 Bruno",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Elite 4 Bruno",
+                        "name": "Beat Elite 4 Bruno"
+                    },
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Elite 4 Bruno",
+                        "name": "Elite 4 Bruno"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BrunosRoom",
+                        "x": 88,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Dept. Store 2F - Left Salesman - Shop Items",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Left Salesman - Shop Items",
+                        "name": "Dept. Store 2F - Left Salesman - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Right Salesman - Shop Items",
+                        "name": "Dept. Store 2F - Right Salesman - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 3F - TM Shop - Shop Items",
+                        "name": "Dept. Store 3F - TM Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 4F - Mail Shop - Shop Items",
+                        "name": "Dept. Store 4F - Mail Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 5F - Vitamin Shop - Shop Items",
+                        "name": "Dept. Store 5F - Vitamin Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 5F - X Items Shop - Shop Items",
+                        "name": "Dept. Store 5F - X Items Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 6F - Vending Machine - Shop Items",
+                        "name": "Dept. Store 6F - Vending Machine - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonDeptStore1F",
+                        "x": 168,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Game Corner Pokemon Shop - Larvitar",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Game Corner Pokemon Shop - Larvitar",
+                        "name": "Game Corner Pokemon Shop - Larvitar"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Game Corner Pokemon Shop - Pikachu",
+                        "name": "Game Corner Pokemon Shop - Pikachu"
+                    },
+                    {
+                        "ref": "JohtoKanto/Celadon City/Game Corner Pokemon Shop - Porygon",
+                        "name": "Game Corner Pokemon Shop - Porygon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonGameCornerPrizeRoom",
+                        "x": 72,
+                        "y": 8
+                    }
+                ]
+            },
+            {
+                "name": "Pharmacy - Secretpotion",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Pharmacy - Secretpotion",
+                        "name": "Pharmacy - Secretpotion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Pharmacy - Shop Items",
+                        "name": "Pharmacy - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodPharmacy",
+                        "x": 40,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Copycat's House 2F - Meet Copycat",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Saffron City/Copycat's House 2F - Meet Copycat",
+                        "name": "Copycat's House 2F - Meet Copycat"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/Pass from Copycat",
+                        "name": "Pass from Copycat"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CopycatsHouse2F",
+                        "x": 72,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Dragon's Den B1F - Rising Badge from Clair",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Rising Badge from Clair",
+                        "name": "Dragon's Den B1F - Rising Badge from Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - TM24 from Clair",
+                        "name": "Dragon's Den B1F - TM24 from Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/​Dragon's Den B1F - Rising Badge from Clair",
+                        "name": "​Dragon's Den B1F - Rising Badge from Clair"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DragonShrine",
+                        "x": 72,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Elm's Lab - Gift from Aide after returning Mystery Egg",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Gift from Aide after returning Mystery Egg",
+                        "name": "Elm's Lab - Gift from Aide after returning Mystery Egg"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Potion from Aide",
+                        "name": "Elm's Lab - Potion from Aide"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ElmsLab",
+                        "x": 40,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "Elm's Lab - Everstone from Elm",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Everstone from Elm",
+                        "name": "Elm's Lab - Everstone from Elm"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Give Mystery Egg to Elm",
+                        "name": "Elm's Lab - Give Mystery Egg to Elm"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Master Ball from Elm",
+                        "name": "Elm's Lab - Master Ball from Elm"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - S.S. Ticket from Elm",
+                        "name": "Elm's Lab - S.S. Ticket from Elm"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Mystery Egg from Mr Pokemon",
+                        "name": "Mystery Egg from Mr Pokemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ElmsLab",
+                        "x": 88,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Game Corner Pokemon Shop - Abra",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Abra",
+                        "name": "Game Corner Pokemon Shop - Abra"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Cubone",
+                        "name": "Game Corner Pokemon Shop - Cubone"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Wobbuffet",
+                        "name": "Game Corner Pokemon Shop - Wobbuffet"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodGameCorner",
+                        "x": 296,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Exchange Eon Mail in Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Exchange Eon Mail in Pokecenter",
+                        "name": "Exchange Eon Mail in Pokecenter"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Post-E4 GS-Ball from Trade Corner Receptionist",
+                        "name": "Post-E4 GS-Ball from Trade Corner Receptionist"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodPokecenter1F",
+                        "x": 120,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Beat Rival in Indigo Plateau",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Rival in Indigo Plateau",
+                        "name": "Beat Rival in Indigo Plateau"
+                    },
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Rival",
+                        "name": "Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "IndigoPlateauPokecenter1F",
+                        "x": 264,
+                        "y": 152
+                    }
+                ]
+            },
+            {
+                "name": "Beat Elite 4 Karen",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Elite 4 Karen",
+                        "name": "Beat Elite 4 Karen"
+                    },
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Elite 4 Karen",
+                        "name": "Elite 4 Karen"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "KarensRoom",
+                        "x": 88,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Beat Elite 4 Koga",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Elite 4 Koga",
+                        "name": "Beat Elite 4 Koga"
+                    },
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Elite 4 Koga",
+                        "name": "Elite 4 Koga"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "KogasRoom",
+                        "x": 88,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Kurt's Ball Shop - Blk Apricorn",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Blk Apricorn",
+                        "name": "Kurt's Ball Shop - Blk Apricorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Blu Apricorn",
+                        "name": "Kurt's Ball Shop - Blu Apricorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Grn Apricorn",
+                        "name": "Kurt's Ball Shop - Grn Apricorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Pnk Apricorn",
+                        "name": "Kurt's Ball Shop - Pnk Apricorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Red Apricorn",
+                        "name": "Kurt's Ball Shop - Red Apricorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Wht Apricorn",
+                        "name": "Kurt's Ball Shop - Wht Apricorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Ylw Apricorn",
+                        "name": "Kurt's Ball Shop - Ylw Apricorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's House - Have Kurt investigate the GS Ball",
+                        "name": "Kurt's House - Have Kurt investigate the GS Ball"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's House - Meet Kurt",
+                        "name": "Kurt's House - Meet Kurt"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Lure Ball from Kurt",
+                        "name": "Lure Ball from Kurt"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "KurtsHouse",
+                        "x": 56,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Red Gyarados",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Red Gyarados",
+                        "name": "Red Gyarados"
+                    },
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Red Scale from Gyarados",
+                        "name": "Red Scale from Gyarados"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "x": 296,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "name": "Become Champion",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Become Champion",
+                        "name": "Become Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Champion Lance",
+                        "name": "Champion Lance"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LancesRoom",
+                        "x": 88,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Radio Tower - EXPN Card",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lavender Town/Radio Tower - EXPN Card",
+                        "name": "Radio Tower - EXPN Card"
+                    },
+                    {
+                        "ref": "JohtoKanto/Lavender Town/​Radio Tower - EXPN Card",
+                        "name": "​Radio Tower - EXPN Card"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LavRadioTower1F",
+                        "x": 152,
+                        "y": 24
+                    }
+                ]
+            },
+            {
+                "name": "Poke Mart - Shop Items",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Poke Mart - Shop Items",
+                        "name": "Poke Mart - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket Shop - Shop Items",
+                        "name": "Rocket Shop - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyMart1F",
+                        "x": 72,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Inside - Beat Rival",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Inside - Beat Rival",
+                        "name": "Inside - Beat Rival"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Inside - Rival",
+                        "name": "Inside - Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MountMoon",
+                        "x": 120,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Exp Share from Mr Pokemon",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 30/Exp Share from Mr Pokemon",
+                        "name": "Exp Share from Mr Pokemon"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Meet Mr. Pokemon",
+                        "name": "Meet Mr. Pokemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MrPokemonsHouse",
+                        "x": 56,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Pokedex from Oak",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 30/Pokedex from Oak",
+                        "name": "Pokedex from Oak"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Pokedex from Oak​",
+                        "name": "Pokedex from Oak​"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MrPokemonsHouse",
+                        "x": 104,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Mom's Savings - 10000",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 10000",
+                        "name": "Mom's Savings - 10000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 100000",
+                        "name": "Mom's Savings - 100000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 15000",
+                        "name": "Mom's Savings - 15000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 19000",
+                        "name": "Mom's Savings - 19000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 30000",
+                        "name": "Mom's Savings - 30000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 4000",
+                        "name": "Mom's Savings - 4000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 40000",
+                        "name": "Mom's Savings - 40000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 50000",
+                        "name": "Mom's Savings - 50000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 7000",
+                        "name": "Mom's Savings - 7000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 900",
+                        "name": "Mom's Savings - 900"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Player's House - Phone Card from Mom",
+                        "name": "Player's House - Phone Card from Mom"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Player's House - Pokegear from Mom",
+                        "name": "Player's House - Pokegear from Mom"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/​Player's House - Phone Card from Mom",
+                        "name": "​Player's House - Phone Card from Mom"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/​Player's House - Pokegear from Mom",
+                        "name": "​Player's House - Pokegear from Mom"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "PlayersHouse1F",
+                        "x": 120,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "1F - Lucky Number Show 1st Prize",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Radio Tower/1F - Lucky Number Show 1st Prize",
+                        "name": "1F - Lucky Number Show 1st Prize"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/1F - Lucky Number Show 2nd Prize",
+                        "name": "1F - Lucky Number Show 2nd Prize"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/1F - Lucky Number Show 3rd Prize",
+                        "name": "1F - Lucky Number Show 3rd Prize"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RadioTower1F",
+                        "x": 136,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "Collect Kenya",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 35/Collect Kenya",
+                        "name": "Collect Kenya"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/HP Up after delivering Kenya",
+                        "name": "HP Up after delivering Kenya"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route35GoldenrodGate",
+                        "x": 8,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "Beat Elite 4 Will",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Elite 4 Will",
+                        "name": "Beat Elite 4 Will"
+                    },
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Elite 4 Will",
+                        "name": "Elite 4 Will"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WillsRoom",
+                        "x": 88,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Red Gyarados​",
+                "sections": [
+                    {
+                        "name": "Red Scale",
+                        "ref": "JohtoKanto/Lake of Rage/Red Scale from Gyarados"
+                    },
+                    {
+                        "name": "Red Gyarados",
+                        "ref": "JohtoKanto/Lake of Rage/Red Gyarados"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "restrict_visibility_rules": [
+                            "red_gyarados_shore"
+                        ],
+                        "x": 296,
+                        "y": 440
+                    }
+                ]
+            },
+            {
+                "name": "Red Gyarados​​",
+                "sections": [
+                    {
+                        "name": "Red Scale",
+                        "ref": "JohtoKanto/Lake of Rage/Red Scale from Gyarados"
+                    },
+                    {
+                        "name": "Red Gyarados",
+                        "ref": "JohtoKanto/Lake of Rage/Red Gyarados"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LakeOfRage",
+                        "force_invisibility_rules": [
+                            "red_gyarados_shore"
+                        ],
+                        "x": 296,
+                        "y": 360
+                    }
+                ]
+            }
+        ]
+    }
+]

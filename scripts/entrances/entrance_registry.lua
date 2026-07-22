@@ -4807,19 +4807,19 @@ ENTRANCE_REGISTRY = {
         ids = {1167, 1168},
         pretty = "Victory Road Gate South Exit",
         tab = {"Johto Routes", "Victory Road Gate"},
-        section = "@JohtoKanto/Victory Road/Victory Road Gate South Exit",
+        section = "@JohtoKanto/Victory Road Gate/Victory Road Gate South Exit",
     },
     ["REGION_VICTORY_ROAD_GATE:EAST -> REGION_ROUTE_22"] = {
         ids = {1165, 1166},
         pretty = "Victory Road Gate East Exit",
         tab = {"Johto Routes", "Victory Road Gate"},
-        section = "@JohtoKanto/Victory Road/Victory Road Gate East Exit",
+        section = "@JohtoKanto/Victory Road Gate/Victory Road Gate East Exit",
     },
     ["REGION_VICTORY_ROAD_GATE:NORTH -> REGION_ROUTE_23_RESTORED:SOUTH"] = {
         ids = {1169, 1170},
         pretty = "Victory Road Gate North Exit",
         tab = {"Johto Routes", "Victory Road Gate"},
-        section = "@JohtoKanto/Victory Road/Victory Road Gate North Exit",
+        section = "@JohtoKanto/Victory Road Gate/Victory Road Gate North Exit",
         gate = "route_23_restored_on",
     },
     ["REGION_VICTORY_ROAD_GATE:NORTH -> REGION_VICTORY_ROAD:1F:ENTRANCE"] = {
@@ -4832,7 +4832,7 @@ ENTRANCE_REGISTRY = {
         ids = {1171, 1172},
         pretty = "Victory Road Gate West Exit",
         tab = {"Johto Routes", "Victory Road Gate"},
-        section = "@JohtoKanto/Victory Road/Victory Road Gate West Exit",
+        section = "@JohtoKanto/Victory Road Gate/Victory Road Gate West Exit",
     },
     ["REGION_VIOLET_CITY -> REGION_EARLS_POKEMON_ACADEMY"] = {
         ids = {644},
