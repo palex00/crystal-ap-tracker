@@ -1,8 +1,8 @@
 KantoAccessRequirement = CustomItem:extend()
 
 function KantoAccessRequirement:init()
-    self:createItem("Kanto Access - Wake up Snorlax")
     self.code = "kanto_access_condition"
+    self:createItem("Kanto Access - Wake up Snorlax", {self.code})
     self.type = "snorlax"
     self:setStage(8)
     self.baseImage = "images/settings/kanto_access.png"

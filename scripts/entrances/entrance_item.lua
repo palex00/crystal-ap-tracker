@@ -36,7 +36,7 @@ end
 EntranceItem = CustomItem:extend()
 
 function EntranceItem:init(token, row)
-    self:createItem(row.pretty) -- display name; the token is provided as the item CODE
+    self:createItem(row.pretty, {token}) -- display name; the token is provided as the item CODE
     self.token = token
     self.ids = row.ids
     self.pretty = row.pretty
@@ -169,9 +169,10 @@ function EntranceItem:onMiddleClick()
 end
 
 -- TEMPORARY DIAGNOSTIC (set ENTRANCE_PROBE = false to disable).
--- Every PopTracker scan over _luaItems calls canProvideCode on EVERY entrance item as a separate
--- lua_pcall (luaitem.cpp:179, uncached -- the source even has a TODO about it). Counting here
--- therefore measures PopTracker's real per-toggle cost exactly: calls = #codes-scanned x #items.
+-- Pre-0.35.4, every PopTracker scan over _luaItems called canProvideCode on EVERY entrance item
+-- as a separate uncached lua_pcall, so calls = #codes-scanned x #items. With PotentialCodes set
+-- (0.35.4+) the core matches codes itself and never enters Lua, so a report of 0 calls means the
+-- fast path is live; any nonzero count means we fell back to CanProvideCodeFunc.
 ENTRANCE_PROBE = true
 local probe_calls = 0
 local probe_codes = {}

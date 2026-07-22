@@ -2,8 +2,8 @@ BadgesGymsRequirement = CustomItem:extend()
 
 function BadgesGymsRequirement:init(name, code, stage, stageCount, baseImage)
     self.name = name
-    self:createItem(name.." - Badges")
     self.code = code
+    self:createItem(name.." - Badges", {code})
     self.type = "badges"
     self:setStage(stage)
     self.stageCount = stageCount
