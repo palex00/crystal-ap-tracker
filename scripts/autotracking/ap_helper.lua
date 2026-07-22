@@ -225,34 +225,6 @@ SLOT_CODES = {
         code = "tea_west",
         mapping = MAP_TOGGLE
     },
-    free_cut = {
-        code = "FREE_CUT",
-        mapping = MAP_TOGGLE
-    },
-    free_fly = {
-        code = "FREE_FLY",
-        mapping = MAP_TOGGLE
-    },
-    free_surf = {
-        code = "FREE_SURF",
-        mapping = MAP_TOGGLE
-    },
-    free_strength = {
-        code = "FREE_STRENGTH",
-        mapping = MAP_TOGGLE
-    },
-    free_flash = {
-        code = "FREE_FLASH",
-        mapping = MAP_TOGGLE
-    },
-    free_whirlpool = {
-        code = "FREE_WHIRLPOOL",
-        mapping = MAP_TOGGLE
-    },
-    free_waterfall = {
-        code = "FREE_WATERFALL",
-        mapping = MAP_TOGGLE
-    },
     east_west_underground = {
         code = "ew_underground",
         mapping = MAP_TOGGLE
@@ -356,26 +328,6 @@ SLOT_CODES = {
     randomize_fly_unlocks = {
         code = "randomize_fly_unlocks",
         mapping = MAP_TRIPLE
-    },
-    shopsanity_apricorn = {
-        code = "shopsanity_apricorn",
-        mapping = MAP_TOGGLE
-    },
-    shopsanity_bluecard = {
-        code = "shopsanity_bluecard",
-        mapping = MAP_TOGGLE
-    },
-    shopsanity_gamecorners = {
-        code = "shopsanity_gamecorners",
-        mapping = MAP_TOGGLE
-    },
-    shopsanity_johtomarts = {
-        code = "shopsanity_johtomarts",
-        mapping = MAP_TOGGLE
-    },
-    shopsanity_kantomarts = {
-        code = "shopsanity_kantomarts",
-        mapping = MAP_TOGGLE
     },
     randomize_evolution = {
         code = "randomize_evolution",
@@ -587,6 +539,28 @@ LIST_CODES = {
             ["Clair"]               = "clair_behaviour",
             ["Jasmine"]             = "vanilla_chain_jasmine",
             ["Copycat"]             = "vanilla_chain_copycat",
+        }
+    },
+    remove_badge_requirement = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Cut"]                 = "FREE_CUT",
+            ["Fly"]                 = "FREE_FLY",
+            ["Surf"]                = "FREE_SURF",
+            ["Strength"]            = "FREE_STRENGTH",
+            ["Flash"]               = "FREE_FLASH",
+            ["Whirlpool"]           = "FREE_WHIRLPOOL",
+            ["Waterfall"]           = "FREE_WATERFALL",
+        }
+    },
+    shopsanity = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Johto Marts"]         = "shopsanity_johtomarts",
+            ["Kanto Marts"]         = "shopsanity_kantomarts",
+            ["Blue Card"]           = "shopsanity_bluecard",
+            ["Game Corners"]        = "shopsanity_gamecorners",
+            ["Apricorns"]           = "shopsanity_apricorn",
         }
     }
 }

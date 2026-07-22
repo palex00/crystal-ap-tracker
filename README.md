@@ -15,7 +15,8 @@ Supported Features:
 - Vanilla Event Chains
 - Momsanity (locations, logic, autotracking. Note that the Call Mom event doesn't work yet).
 - Lance Requires E4
-- ENTRANCE RANDOMISATION!!! (but no submaps yet)
+- ENTRANCE RANDOMISATION!!!
+- Submaps (tentative)
 
 Unsupported Beta Features:
 - Multiple Goals - currently debug shows all of them; event grid shows all events
@@ -25,12 +26,12 @@ Unsupported Beta Features:
     - Lucky Number Show
 - Fly Destination Rando
 - Time of Day Encounters
-- new submaps
 - everything else, basically
 
 Features that work in live but not in beta:
-- Fly Unlock Rando
+- Fly Unlock Rando (maybe works)
 - Free Fly & Map Fly
+- Autotracking of the encounter & evolution method options
 
 
 
