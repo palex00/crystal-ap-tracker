@@ -178,8 +178,6 @@ function onClear(slot_data)
 
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then
-            print(k)
-            print(v)
             Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
         elseif REQUIREMENT_CODES[k] then
 			local item = REQUIREMENT_CODES[k].item
@@ -451,6 +449,7 @@ function onNotify(key, value, old_value)
         elseif key == IDs.SHOP_K then
             updateShopEvents("K", value)
         elseif key == IDs.ENTRANCE then
+            print(dump_table(value))
             updateEntrances(value)
         end
     end
