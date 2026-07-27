@@ -3514,9 +3514,9 @@ ENTRANCE_REGISTRY = {
     },
     ["REGION_ROUTE_7_SAFFRON_GATE:EAST -> REGION_SAFFRON_CITY"] = {
         ids = {1080, 1081},
-        pretty = "Route 7 Gate East Entrance",
+        pretty = "Route 7 Gate East Exit",
         tab = {"Kanto Routes", "Route 7", "Saffron Gate"},
-        section = "@JohtoKanto/Route 7/Route 7 Gate East Entrance",
+        section = "@JohtoKanto/Route 7/Route 7 Gate East Exit",
     },
     ["REGION_ROUTE_7_SAFFRON_GATE:WEST -> REGION_ROUTE_7"] = {
         ids = {1078, 1079},
