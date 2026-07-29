@@ -26,6 +26,7 @@ CHECKED_SIGNS = nil
 UNOWN_DATA = nil
 TRADE_DATA = nil
 SAVED_HINTS = {}
+BATTLE_TOWER_TRAINERS = nil
 
 if Highlight then
     HIGHLIGHT_LEVEL= {
@@ -175,6 +176,8 @@ function onClear(slot_data)
         end
     end
     resetEntrances()
+    
+    BATTLE_TOWER_TRAINERS = slot_data.battle_tower_trainer_permutation
 
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then

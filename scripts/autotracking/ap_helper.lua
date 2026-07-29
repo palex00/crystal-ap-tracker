@@ -6,7 +6,7 @@ function resetItems()
             else
                 local obj = Tracker:FindObjectForCode(v)
                 if obj then
-                    if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" then
+                    if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
                         obj.AcquiredCount = 0
                     else
                         obj.Active = false
@@ -107,38 +107,38 @@ MAP_KANTO_ACCESS = {
 }
 
 FLYTOWN_MAPPING = {
-    [0]  = 0,   -- No Starting Town Rando
-    [1]  = 0,   -- New Bark Town
-    [2]  = 1,   -- Cherrygrove City
-    [3]  = 2,   -- Violet City
-    [4]  = 3,   -- Azalea Town
-    [5]  = 4,   -- Goldenrod City
-    [6]  = 5,   -- Ecruteak City
-    [7]  = 6,   -- Olivine City
-    [8]  = 7,   -- Cianwood City
-    [9]  = 8,   -- Mahogany Town
-    [10] = 9,   -- Lake of Rage
-    [11] = 10,  -- Blackthorn City
-    [12] = 11,  -- Silver Cave
-    [13] = 12,  -- Pallet Town
-    [14] = 13,  -- Viridian City
-    [15] = 14,  -- Pewter City
-    [16] = 15,  -- Cerulean City
-    [17] = 16,  -- Vermilion City
-    [18] = 17,  -- Lavender Town
-    [19] = 18,  -- Celadon City
-    [20] = 19,  -- Saffron City
-    [21] = 20,  -- Cinnabar Island
-    [22] = 21,  -- Fuchsia City
-    [23] = 22   -- Indigo Plateau
+    [0]  = 0,   -- No Free Fly Location
+    [1]  = 1,   -- New Bark Town
+    [2]  = 2,   -- Cherrygrove City
+    [3]  = 3,   -- Violet City
+    [4]  = 4,   -- Azalea Town
+    [5]  = 5,   -- Goldenrod City
+    [6]  = 6,   -- Ecruteak City
+    [7]  = 7,   -- Olivine City
+    [8]  = 8,   -- Cianwood City
+    [9]  = 9,   -- Mahogany Town
+    [10] = 10,  -- Lake of Rage
+    [11] = 11,  -- Blackthorn City
+    [12] = 12,  -- Silver Cave
+    [13] = 13,  -- Pallet Town
+    [14] = 14,  -- Viridian City
+    [15] = 15,  -- Pewter City
+    [16] = 16,  -- Cerulean City
+    [17] = 17,  -- Vermilion City
+    [18] = 18,  -- Lavender Town
+    [19] = 19,  -- Celadon City
+    [20] = 20,  -- Saffron City
+    [21] = 21,  -- Cinnabar Island
+    [22] = 22,  -- Fuchsia City
+    [23] = 23   -- Indigo Plateau
 }
 
 STARTTOWN_MAPPING = {
-    [0]  = 0,    -- None (no dedicated stage; falls back to New Bark Town)
+    [0]   = 0,   -- None (no dedicated stage; falls back to New Bark Town)
     [37]  = 0,   -- New Bark Town
     [38]  = 1,   -- Cherrygrove City
     [39]  = 2,   -- Violet City
-    [40]  = 3,   -- Rock Tunnel
+    [40]  = 3,   -- Union Cave
     [41]  = 4,   -- Azalea Town
     [42]  = 5,   -- Goldenrod City
     [43]  = 6,   -- Ecruteak City
@@ -152,12 +152,12 @@ STARTTOWN_MAPPING = {
     [27]  = 14,  -- Pewter City
     [28]  = 15,  -- Cerulean City
     [29]  = 16,  -- Rock Tunnel
-    [29]  = 17,  -- Vermilion City
-    [30]  = 18,  -- Lavender Town
-    [31]  = 19,  -- Celadon City
-    [32]  = 20,  -- Saffron City
-    [33]  = 21,  -- Cinnabar Island
-    [34]  = 22   -- Fuchsia City
+    [30]  = 17,  -- Vermilion City
+    [31]  = 18,  -- Lavender Town
+    [32]  = 19,  -- Celadon City
+    [33]  = 20,  -- Saffron City
+    [34]  = 21,  -- Cinnabar Island
+    [35]  = 22   -- Fuchsia City
 }
 
 SLOT_CODES = {
@@ -423,6 +423,14 @@ SLOT_CODES = {
     },
     coupled_entrances = {
         code = "coupled_entrances",
+        mapping = MAP_TOGGLE
+    },
+    battle_tower_sanity = {
+        code = "battle_tower_sanity",
+        mapping = MAP_TRIPLE
+    },
+    battle_tower_progressive_tier_unlocks = {
+        code = "battle_tower_progressive_tier_unlocks",
         mapping = MAP_TOGGLE
     }
 }

@@ -113,6 +113,53 @@ function gyms()
   Tracker:ProviderCountForCode("EVENT_BEAT_BLUE")
 end
 
+function battletower_milestones(value)
+    local value = tonumber(value)
+
+    if has("battle_tower_progressive_tier_unlocks_on") then
+        local unlocked = Tracker:ProviderCountForCode("BATTLE_TOWER_TIER_UNLOCK")
+        if value > unlocked then
+            return AccessibilityLevel.None
+        end
+    end
+
+    local gymcount = gyms()
+    local red = Tracker:ProviderCountForCode("EVENT_BEAT_RED")
+    local e4 = Tracker:ProviderCountForCode("EVENT_BEAT_ELITE_FOUR")
+    local ubers = has("BATTLE_TOWER_UBER_PASS")
+    
+    local total = gymcount + red + e4
+    local milestone = total >= value
+    
+    if milestone and (ubers or (value <= 6)) then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function battletower_trainer(ID)
+    if BATTLE_TOWER_TRAINERS == nil then
+        return AccessibilityLevel.Normal
+    end
+    
+    ID = tonumber(ID)
+    local rolled = nil
+    for index, number in ipairs(BATTLE_TOWER_TRAINERS) do
+        if number == ID then
+            rolled = index - 1
+            break
+        end
+    end
+
+    if rolled == nil then
+        print("This should never happen but here's a print just in case.")
+    end
+
+    local milestone = math.floor(rolled / 7) + 1
+    return battletower_milestones(milestone)
+end
+
 function hid()
     if has("reqitemfinder_off") then
         return AccessibilityLevel.Normal

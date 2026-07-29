@@ -364,15 +364,15 @@
                 "inherit_codes": false
             },
             {
-                "name": "Free Fly Location - Cinnabar Island",
-                "img": "/images/settings/town_locations/cinnabar.png",
-                "codes": "free_fly_location,free_fly_Cinnabar",
-                "inherit_codes": false
-            },
-            {
                 "name": "Free Fly Location - Fuchsia City",
                 "img": "/images/settings/town_locations/fuchsia.png",
                 "codes": "free_fly_location,free_fly_Fuchsia",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Cinnabar Island",
+                "img": "/images/settings/town_locations/cinnabar.png",
+                "codes": "free_fly_location,free_fly_Cinnabar",
                 "inherit_codes": false
             },
             {
@@ -1035,15 +1035,15 @@
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Goldenrod City",
-                "img": "/images/settings/town_locations/goldenrod.png",
-                "codes": "start_town_location,start_town_Goldenrod",
+                "name": "Starting Town - Cianwood City",
+                "img": "/images/settings/town_locations/cianwood.png",
+                "codes": "start_town_location,start_town_Cianwood",
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Ecruteak City",
-                "img": "/images/settings/town_locations/ecruteak.png",
-                "codes": "start_town_location,start_town_Ecruteak",
+                "name": "Starting Town - Goldenrod City",
+                "img": "/images/settings/town_locations/goldenrod.png",
+                "codes": "start_town_location,start_town_Goldenrod",
                 "inherit_codes": false
             },
             {
@@ -1053,9 +1053,9 @@
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Cianwood City",
-                "img": "/images/settings/town_locations/cianwood.png",
-                "codes": "start_town_location,start_town_Cianwood",
+                "name": "Starting Town - Ecruteak City",
+                "img": "/images/settings/town_locations/ecruteak.png",
+                "codes": "start_town_location,start_town_Ecruteak",
                 "inherit_codes": false
             },
             {
@@ -1119,27 +1119,27 @@
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Celadon City",
-                "img": "/images/settings/town_locations/celadon.png",
-                "codes": "start_town_location,start_town_Celadon",
-                "inherit_codes": false
-            },
-            {
                 "name": "Starting Town - Saffron City",
                 "img": "/images/settings/town_locations/saffron.png",
                 "codes": "start_town_location,start_town_Saffron",
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Cinnabar Island",
-                "img": "/images/settings/town_locations/cinnabar.png",
-                "codes": "start_town_location,start_town_Cinnabar",
+                "name": "Starting Town - Celadon City",
+                "img": "/images/settings/town_locations/celadon.png",
+                "codes": "start_town_location,start_town_Celadon",
                 "inherit_codes": false
             },
             {
                 "name": "Starting Town - Fuchsia City",
                 "img": "/images/settings/town_locations/fuchsia.png",
                 "codes": "start_town_location,start_town_Fuchsia",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Town - Cinnabar Island",
+                "img": "/images/settings/town_locations/cinnabar.png",
+                "codes": "start_town_location,start_town_Cinnabar",
                 "inherit_codes": false
             }
         ]
@@ -2585,6 +2585,56 @@
                 "name": "Momsanity is on",
                 "img": "/images/placeholder.png",
                 "codes": "momsanity, momsanity_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Battle Tower Sanity",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Battle Tower does not have checks",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "battle_tower_sanity, battle_tower_sanity_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Battle Tower has tier checks",
+                "img": "/images/placeholder.png",
+                "codes": "battle_tower_sanity, battle_tower_sanity_tiers",
+                "inherit_codes": false
+            },
+            {
+                "name": "Battle Tower has tier and trainer checks",
+                "img": "/images/placeholder.png",
+                "codes": "battle_tower_sanity, battle_tower_sanity_tiers, battle_tower_sanity_trainers",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Battle Tower Progressive Tier Unlocks",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Battle Tower is not gated by Progressive Tier Unlocks",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "battle_tower_progressive_tier_unlocks, battle_tower_progressive_tier_unlocks_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Battle Tower is gated by Progressive Tier Unlocks",
+                "img": "/images/placeholder.png",
+                "codes": "battle_tower_progressive_tier_unlocks, battle_tower_progressive_tier_unlocks_on",
                 "inherit_codes": false
             }
         ]

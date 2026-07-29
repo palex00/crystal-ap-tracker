@@ -30292,10 +30292,10 @@
                     {
                         "name": "Tier 1 Complete",
                         "visibility_rules": [
-                            "show_items, battle_tower_1"
+                            "show_items, battle_tower_sanity_tiers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|1"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30303,10 +30303,10 @@
                     {
                         "name": "Tier 2 Complete",
                         "visibility_rules": [
-                            "show_items, battle_tower_1"
+                            "show_items, battle_tower_sanity_tiers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|2"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30314,10 +30314,10 @@
                     {
                         "name": "Tier 3 Complete",
                         "visibility_rules": [
-                            "show_items, battle_tower_1"
+                            "show_items, battle_tower_sanity_tiers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|3"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30325,10 +30325,10 @@
                     {
                         "name": "Tier 4 Complete",
                         "visibility_rules": [
-                            "show_items, battle_tower_1"
+                            "show_items, battle_tower_sanity_tiers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|4"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30336,10 +30336,10 @@
                     {
                         "name": "Tier 5 Complete",
                         "visibility_rules": [
-                            "show_items, battle_tower_1"
+                            "show_items, battle_tower_sanity_tiers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|5"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30347,10 +30347,10 @@
                     {
                         "name": "Tier 6 Complete",
                         "visibility_rules": [
-                            "show_items, battle_tower_1"
+                            "show_items, battle_tower_sanity_tiers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|6"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30358,10 +30358,10 @@
                     {
                         "name": "Tier 7 Complete",
                         "visibility_rules": [
-                            "show_items, battle_tower_1"
+                            "show_items, battle_tower_sanity_tiers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|7"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30369,10 +30369,10 @@
                     {
                         "name": "Tier 8 Complete",
                         "visibility_rules": [
-                            "show_items, battle_tower_1"
+                            "show_items, battle_tower_sanity_tiers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|8"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30380,10 +30380,10 @@
                     {
                         "name": "Tier 9 Complete",
                         "visibility_rules": [
-                            "show_items, battle_tower_1"
+                            "show_items, battle_tower_sanity_tiers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|9"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30391,10 +30391,10 @@
                     {
                         "name": "Tier 10 Complete",
                         "visibility_rules": [
-                            "show_items, battle_tower_1"
+                            "show_items, battle_tower_sanity_tiers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|10"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30402,10 +30402,10 @@
                     {
                         "name": "Fisher Hanson",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|0"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30413,10 +30413,10 @@
                     {
                         "name": "Pokemaniac Sawyer",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|1"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30424,10 +30424,10 @@
                     {
                         "name": "Guitarist Masuda",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|2"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30435,10 +30435,10 @@
                     {
                         "name": "Scientist Nickel",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|3"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30446,10 +30446,10 @@
                     {
                         "name": "Pokefan Olson",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|4"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30457,10 +30457,10 @@
                     {
                         "name": "Lass Zaborowski",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|5"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30468,10 +30468,10 @@
                     {
                         "name": "Youngster Wright",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|6"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30479,10 +30479,10 @@
                     {
                         "name": "Hiker Alexander",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|7"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30490,10 +30490,10 @@
                     {
                         "name": "Teacher Kawakami",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|8"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30501,10 +30501,10 @@
                     {
                         "name": "Pokefan Bickett",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|9"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30512,10 +30512,10 @@
                     {
                         "name": "Kimono Girl Saito",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|10"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30523,10 +30523,10 @@
                     {
                         "name": "Boarder Crawford",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|11"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30534,10 +30534,10 @@
                     {
                         "name": "Picnicker Diaz",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|12"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30545,10 +30545,10 @@
                     {
                         "name": "Biker Erickson",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|13"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30556,10 +30556,10 @@
                     {
                         "name": "Juggler Fairfield",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|14"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30567,10 +30567,10 @@
                     {
                         "name": "Pokefan Hunter",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|15"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30578,10 +30578,10 @@
                     {
                         "name": "Firebreather Hill",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|16"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30589,10 +30589,10 @@
                     {
                         "name": "Swimmer Javier",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|17"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30600,10 +30600,10 @@
                     {
                         "name": "Swimmer Kaufman",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|18"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30611,10 +30611,10 @@
                     {
                         "name": "Skier Lancaster",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|19"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30622,10 +30622,10 @@
                     {
                         "name": "Camper McMahill",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|20"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30633,10 +30633,10 @@
                     {
                         "name": "Gentleman Obrien",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|21"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30644,10 +30644,10 @@
                     {
                         "name": "Beauty Frost",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|22"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30655,10 +30655,10 @@
                     {
                         "name": "Super Nerd Morse",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|23"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30666,10 +30666,10 @@
                     {
                         "name": "Blackbelt Yufune",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|24"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30677,10 +30677,10 @@
                     {
                         "name": "Cool Trainer Rajan",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|25"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30688,10 +30688,10 @@
                     {
                         "name": "Officer Rodriguez",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|26"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30699,10 +30699,10 @@
                     {
                         "name": "Psychic Santiago",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|27"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30710,10 +30710,10 @@
                     {
                         "name": "Pokefan Stock",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|28"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30721,10 +30721,10 @@
                     {
                         "name": "Scientist Thurman",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|29"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30732,10 +30732,10 @@
                     {
                         "name": "Beauty Valentino",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|30"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30743,10 +30743,10 @@
                     {
                         "name": "Camper Wagner",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|31"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30754,10 +30754,10 @@
                     {
                         "name": "Bird Keeper Yates",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|32"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30765,10 +30765,10 @@
                     {
                         "name": "Picnicker Andrews",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|33"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30776,10 +30776,10 @@
                     {
                         "name": "Pokemaniac Bahn",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|34"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30787,10 +30787,10 @@
                     {
                         "name": "Scientist Mori",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|35"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30798,10 +30798,10 @@
                     {
                         "name": "Sage Buckman",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|36"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30809,10 +30809,10 @@
                     {
                         "name": "Schoolboy Cobb",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|37"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30820,10 +30820,10 @@
                     {
                         "name": "Fisher Hughes",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|38"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30831,10 +30831,10 @@
                     {
                         "name": "Kimono Girl Arita",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|39"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30842,10 +30842,10 @@
                     {
                         "name": "Psychic Easton",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|40"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30853,10 +30853,10 @@
                     {
                         "name": "Camper Freeman",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|41"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30864,10 +30864,10 @@
                     {
                         "name": "Lass Giese",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|42"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30875,10 +30875,10 @@
                     {
                         "name": "Gentleman Hatcher",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|43"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30886,10 +30886,10 @@
                     {
                         "name": "Pokefan Jackson",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|44"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30897,10 +30897,10 @@
                     {
                         "name": "Pokemaniac Kahn",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|45"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30908,10 +30908,10 @@
                     {
                         "name": "Youngster Leong",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|46"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30919,10 +30919,10 @@
                     {
                         "name": "Teacher Marino",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|47"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30930,10 +30930,10 @@
                     {
                         "name": "Sailor Newman",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|48"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30941,10 +30941,10 @@
                     {
                         "name": "Blackbelt Nguyen",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|49"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30952,10 +30952,10 @@
                     {
                         "name": "Super Nerd Ogden",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|50"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30963,10 +30963,10 @@
                     {
                         "name": "Cool Trainer Park",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|51"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30974,10 +30974,10 @@
                     {
                         "name": "Swimmer Raine",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|52"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30985,10 +30985,10 @@
                     {
                         "name": "Bird Keeper Sells",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|53"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30996,10 +30996,10 @@
                     {
                         "name": "Boarder Rockwell",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|54"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31007,10 +31007,10 @@
                     {
                         "name": "Lass Thornton",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|55"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31018,10 +31018,10 @@
                     {
                         "name": "Officer Turner",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|56"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31029,10 +31029,10 @@
                     {
                         "name": "Skier Van Dyke",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|57"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31040,10 +31040,10 @@
                     {
                         "name": "Schoolboy Walker",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|58"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31051,10 +31051,10 @@
                     {
                         "name": "Swimmer Meyer",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|59"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31062,10 +31062,10 @@
                     {
                         "name": "Youngster Johnson",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|60"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31073,10 +31073,10 @@
                     {
                         "name": "Guitarist Adams",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|61"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31084,10 +31084,10 @@
                     {
                         "name": "Bug Catcher Smith",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|62"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31095,10 +31095,10 @@
                     {
                         "name": "Bug Catcher Tajiri",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|63"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31106,10 +31106,10 @@
                     {
                         "name": "Pokemaniac Baker",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|64"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31117,10 +31117,10 @@
                     {
                         "name": "Scientist Collins",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|65"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31128,10 +31128,10 @@
                     {
                         "name": "Super Nerd Smart",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|66"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31139,10 +31139,10 @@
                     {
                         "name": "Swimmer Dykstra",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|67"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31150,10 +31150,10 @@
                     {
                         "name": "Biker Eaton",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|68"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -31161,10 +31161,10 @@
                     {
                         "name": "Firebreather Wong",
                         "visibility_rules": [
-                            "show_items, battle_tower_2"
+                            "show_items, battle_tower_sanity_trainers"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BATTLE_TOWER_1F"
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_trainer|69"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
