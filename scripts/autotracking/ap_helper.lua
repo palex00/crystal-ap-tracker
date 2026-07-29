@@ -107,7 +107,7 @@ MAP_KANTO_ACCESS = {
 }
 
 FLYTOWN_MAPPING = {
-    [0]  = 0,   -- No Starting Town Rando
+    [0]  = 0,   -- No free fly (no dedicated stage; falls back to New Bark Town)
     [1]  = 0,   -- New Bark Town
     [2]  = 1,   -- Cherrygrove City
     [3]  = 2,   -- Violet City
@@ -128,8 +128,8 @@ FLYTOWN_MAPPING = {
     [18] = 17,  -- Lavender Town
     [19] = 18,  -- Celadon City
     [20] = 19,  -- Saffron City
-    [21] = 20,  -- Cinnabar Island
-    [22] = 21,  -- Fuchsia City
+    [21] = 21,  -- Fuchsia City
+    [22] = 20,  -- Cinnabar Island
     [23] = 22   -- Indigo Plateau
 }
 
@@ -138,12 +138,12 @@ STARTTOWN_MAPPING = {
     [37]  = 0,   -- New Bark Town
     [38]  = 1,   -- Cherrygrove City
     [39]  = 2,   -- Violet City
-    [40]  = 3,   -- Rock Tunnel
+    [40]  = 3,   -- Union Cave
     [41]  = 4,   -- Azalea Town
-    [42]  = 5,   -- Goldenrod City
-    [43]  = 6,   -- Ecruteak City
+    [42]  = 8,   -- Cianwood City
+    [43]  = 5,   -- Goldenrod City
     [44]  = 7,   -- Olivine City
-    [45]  = 8,   -- Cianwood City
+    [45]  = 6,   -- Ecruteak City
     [46]  = 9,   -- Mahogany Town
     [47]  = 10,  -- Lake of Rage
     [48]  = 11,  -- Blackthorn City
@@ -152,11 +152,10 @@ STARTTOWN_MAPPING = {
     [27]  = 14,  -- Pewter City
     [28]  = 15,  -- Cerulean City
     [29]  = 16,  -- Rock Tunnel
-    [29]  = 17,  -- Vermilion City
-    [30]  = 18,  -- Lavender Town
-    [31]  = 19,  -- Celadon City
+    [30]  = 17,  -- Vermilion City
+    [31]  = 18,  -- Lavender Town
     [32]  = 20,  -- Saffron City
-    [33]  = 21,  -- Cinnabar Island
+    [33]  = 19,  -- Celadon City
     [34]  = 22   -- Fuchsia City
 }
 
