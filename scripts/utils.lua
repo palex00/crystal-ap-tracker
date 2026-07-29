@@ -43,6 +43,13 @@ function dump_table(o, depth)
         hm_compat = true,
         breeding_info = true,
         evolution_info = true,
+        battle_tower_trainer_permutation = true,
+        grass_location_mapping = true,
+        trades = true,
+        trap_weights = true,
+        trap_weights_option = true,
+        unown_signs = true,
+        randomize_entrances = true,
     }
 
     if type(o) == 'table' then
