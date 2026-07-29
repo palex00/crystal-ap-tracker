@@ -117,7 +117,7 @@ function onClear(slot_data)
 
                 if first_two_dots == "6.0" or nil then
                     Tracker:AddLayouts("layouts/tracker/tracker.json")
-                    if beta_num ~= nil and beta_num < 6 then -- remove after beta
+                    if beta_num ~= nil and beta_num < 7 then -- remove after beta
                         ScriptHost:LoadScript("scripts/logic/regions/connections_old.lua") -- remove after beta
                     end -- remove after beta
                 else
