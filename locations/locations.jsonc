@@ -26756,7 +26756,7 @@
                             "show_items, shopsanity_gamecorners_true"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_CELADON_GAME_CORNER_PRIZE_ROOM"
+                            "^$CanReach|REGION_CELADON_GAME_CORNER_PRIZE_ROOM, COIN_CASE"
                         ]
                     },
                     {
