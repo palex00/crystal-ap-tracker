@@ -113,8 +113,13 @@ function onClear(slot_data)
             if  k == "apworld_version" then
                 local version_str = tostring(v)
                 local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
+                local beta_num = tonumber(version_str:match("%.(%d+)$")) -- remove after beta
+
                 if first_two_dots == "6.0" or nil then
                     Tracker:AddLayouts("layouts/tracker/tracker.json")
+                    if beta_num ~= nil and beta_num < 6 then -- remove after beta
+                        ScriptHost:LoadScript("scripts/logic/regions/connections_old.lua") -- remove after beta
+                    end -- remove after beta
                 else
                     Tracker:AddLayouts("layouts/versionmismatch.json")
                     return
