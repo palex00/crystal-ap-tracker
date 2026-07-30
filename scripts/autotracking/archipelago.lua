@@ -116,7 +116,7 @@ function onClear(slot_data)
                 local beta_num = tonumber(version_str:match("%.(%d+)$")) -- remove after beta
 
                 if first_two_dots == "6.0" or nil then
-                    Tracker:AddLayouts("layouts/tracker/tracker.json")
+                    --Tracker:AddLayouts("layouts/tracker/tracker.json")
                     if beta_num ~= nil and beta_num < 7 then -- remove after beta
                         ScriptHost:LoadScript("scripts/logic/regions/connections_old.lua") -- remove after beta
                     end -- remove after beta
@@ -342,7 +342,7 @@ function onClear(slot_data)
         end
     end
 
-    toggle_itemgrid()
+    --toggle_itemgrid() temporary disabled
     if refreshERCategories then
         refreshERCategories()
     end
@@ -447,7 +447,7 @@ function onNotify(key, value, old_value)
             updateTrades(value)
         elseif key == IDs.SLOT_UNLOCK then
             SLOT_TRACK = true
-            toggleQuickSettings()
+            -- toggleQuickSettings() [temporary disabled]
         elseif key == IDs.HINT then
             SAVED_HINTS = value
             updateHints()
@@ -457,7 +457,6 @@ function onNotify(key, value, old_value)
         elseif key == IDs.SHOP_K then
             updateShopEvents("K", value)
         elseif key == IDs.ENTRANCE then
-            print(dump_table(value))
             updateEntrances(value)
         end
     end
