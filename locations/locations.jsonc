@@ -30137,10 +30137,10 @@
                     {
                         "name": "Hidden Item Near Cherrygrove Entrance",
                         "visibility_rules": [
-                            "show_items, flooded_mine_on"
+                            "show_items, flooded_mine_on, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_FLOODED_MINE:SOUTH_ENTRANCE, ^$dark|floodedmine"
+                            "^$CanReach|REGION_FLOODED_MINE:SOUTH_ENTRANCE, ^$dark|floodedmine, ^$hid"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30148,10 +30148,10 @@
                     {
                         "name": "Hidden Item Southeast",
                         "visibility_rules": [
-                            "show_items, flooded_mine_on"
+                            "show_items, flooded_mine_on, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine"
+                            "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine, ^$hid"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -30159,10 +30159,10 @@
                     {
                         "name": "Hidden Item Northwest",
                         "visibility_rules": [
-                            "show_items, flooded_mine_on"
+                            "show_items, flooded_mine_on, hiddenitems_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine"
+                            "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine, ^$hid"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
