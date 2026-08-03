@@ -144,9 +144,6 @@ for _, code in ipairs(gym_codes) do
 end
 ScriptHost:AddWatchForCode("yaml_digit1", "yaml_digit1", calculateEvoLevel)
 ScriptHost:AddWatchForCode("yaml_digit2", "yaml_digit2", calculateEvoLevel)
-for _, code in ipairs(FLAG_STATIC_CODES) do
-    ScriptHost:AddWatchForCode(code, code, updatePokemon)
-end
 ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function() updatePokemon() end)
 
 ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)

@@ -55,20 +55,12 @@ HIGHLIGHT_PRIORITY =  {
 }
 
 function unloadWatches()
-    for _, code in ipairs(FLAG_STATIC_CODES) do
-        ScriptHost:RemoveWatchForCode(code)
-    end
-    
     for _, code in ipairs(gym_codes) do
         ScriptHost:RemoveWatchForCode(code)
     end
 end
 
 function loadWatches()
-    for _, code in ipairs(FLAG_STATIC_CODES) do
-        ScriptHost:AddWatchForCode(code, code, updatePokemon)
-    end
-    
     for _, code in ipairs(gym_codes) do
         ScriptHost:AddWatchForCode(code, code, calculateEvoLevel)
     end
@@ -456,6 +448,7 @@ function onNotify(key, value, old_value)
             updateEvents(3, value)
         elseif key == IDs.STATIC then
             updateStatics(value)
+            updatePokemon()
         elseif key == IDs.KEY then
             updateVanillaKeyItems(value)
         elseif key == IDs.CAUGHT then
@@ -465,9 +458,8 @@ function onNotify(key, value, old_value)
             SEEN = value
             updatePokemon()
         elseif key == IDs.ROCKETTRAP then
-            print(dump_table(value))
-            print(value)
             updateRocketTraps(value)
+            updatePokemon()
         elseif key == IDs.SIGN then
             updateSigns(value)
             Tracker:FindObjectForCode("update").Active = not Tracker:FindObjectForCode("update").Active
