@@ -257,10 +257,10 @@ REGION_SILVER_CAVE_ROOM_3:connect_one_way("EVENT_BEAT_RED", function() return ha
 
 -- === REGION_TIN_TOWER_1F ===
 REGION_TIN_TOWER_1F:connect_one_way("EVENT_GOT_EON_MAIL_FROM_EUSINE", function()
-        return has("EVENT_SAW_SUICUNE_ON_ROUTE_36") and has("EVENT_SAW_SUICUNE_ON_ROUTE_42")
+        return has("CLEAR_BELL") and has("EVENT_SAW_SUICUNE_ON_ROUTE_36") and has("EVENT_SAW_SUICUNE_ON_ROUTE_42")
            and has("EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY")
     end)
-REGION_TIN_TOWER_1F:connect_one_way("TIN_TOWER_1F_RAINBOW_WING", function() return has("EVENT_BEAT_ELITE_FOUR") end)
+REGION_TIN_TOWER_1F:connect_one_way("TIN_TOWER_1F_RAINBOW_WING", function() return has("CLEAR_BELL") and has("EVENT_BEAT_ELITE_FOUR") end)
 
 -- === REGION_TIN_TOWER_ROOF ===
 REGION_TIN_TOWER_ROOF:connect_one_way("EVENT_FOUGHT_HO_OH", function() return has("RAINBOW_WING") end)
