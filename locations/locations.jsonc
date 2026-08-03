@@ -6302,16 +6302,6 @@
                         ]
                     },
                     {
-                        "name": "Dept. Store 1F - Buy Water Stone",
-                        "access_rules": [
-                            "^$CanReach|REGION_GOLDENROD_DEPT_STORE_1F"
-                        ],
-                        "hosted_item": "WATER_STONE",
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
                         "name": "Dept. Store 2F - Directory Sign",
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
