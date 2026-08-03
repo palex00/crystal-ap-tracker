@@ -22751,7 +22751,7 @@
                     {
                         "name": "Gym - Machine Part in Water",
                         "access_rules": [
-                            "^$CanReach|REGION_CERULEAN_GYM:ROCKET"
+                            "^$CanReach|REGION_CERULEAN_GYM:ROCKET, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items"
@@ -24506,7 +24506,7 @@
                     {
                         "name": "​Radio Tower - EXPN Card",
                         "access_rules": [
-                            "^$CanReach|REGION_LAV_RADIO_TOWER_1F"
+                            "^$CanReach|EXPN_CARD"
                         ],
                         "visibility_rules": [
                             "show_items, pokegear_off"
