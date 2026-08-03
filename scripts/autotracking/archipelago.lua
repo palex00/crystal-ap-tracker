@@ -458,6 +458,7 @@ function onNotify(key, value, old_value)
             updateShopEvents("K", value)
         elseif key == IDs.ENTRANCE then
             updateEntrances(value)
+            print(dump_table(value))
         end
     end
 end

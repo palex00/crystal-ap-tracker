@@ -5,10 +5,11 @@
         "chest_opened_img": "/images/items/pokeball_open.png",
         "children": [
             {
-                "name": "National Park",
+                "name": "Schoolboy Jack",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/National Park/Schoolboy Jack"
+                        "ref": "JohtoKanto/National Park/Schoolboy Jack",
+                        "name": "Schoolboy Jack"
                     },
                     {
                         "ref": "JohtoKanto/National Park/Schoolboy Jack Rematch - Champion",
@@ -36,7 +37,7 @@
                 ]
             },
             {
-                "name": "Olivine Lighthouse 6F",
+                "name": "Jasmine & Amphy",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Olivine Lighthouse/6F - Heal Amphy",
@@ -56,10 +57,11 @@
                 ]
             },
             {
-                "name": "Route 26",
+                "name": "Cool Trainer Gaven",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 26/Cool Trainer Gaven"
+                        "ref": "JohtoKanto/Route 26/Cool Trainer Gaven",
+                        "name": "Cool Trainer Gaven"
                     },
                     {
                         "ref": "JohtoKanto/Route 26/Cool Trainer Gaven Rematch - Champion",
@@ -79,9 +81,10 @@
                 ]
             },
             {
-                "name": "Route 26​",
+                "name": "Cool Trainer Beth",
                 "sections": [
                     {
+                        "name": "Cool Trainer Beth",
                         "ref": "JohtoKanto/Route 26/Cool Trainer Beth"
                     },
                     {
@@ -102,10 +105,11 @@
                 ]
             },
             {
-                "name": "Route 27",
+                "name": "Cool Trainer Reena",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 27/Cool Trainer Reena"
+                        "ref": "JohtoKanto/Route 27/Cool Trainer Reena",
+                        "name": "Cool Trainer Reena"
                     },
                     {
                         "ref": "JohtoKanto/Route 27/Cool Trainer Reena Rematch - Champion",
@@ -125,10 +129,11 @@
                 ]
             },
             {
-                "name": "Route 32",
+                "name": "Picnicker Liz",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 32/Picnicker Liz"
+                        "ref": "JohtoKanto/Route 32/Picnicker Liz",
+                        "name": "Picnicker Liz"
                     },
                     {
                         "ref": "JohtoKanto/Route 32/Picnicker Liz Rematch - Champion",
@@ -156,10 +161,11 @@
                 ]
             },
             {
-                "name": "Route 32​",
+                "name": "Fisher Ralph",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 32/Fisher Ralph"
+                        "ref": "JohtoKanto/Route 32/Fisher Ralph",
+                        "name": "Fisher Ralph"
                     },
                     {
                         "ref": "JohtoKanto/Route 32/Fisher Ralph Rematch - Champion",
@@ -187,10 +193,11 @@
                 ]
             },
             {
-                "name": "Route 33",
+                "name": "Hiker Anthony",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 33/Hiker Anthony"
+                        "ref": "JohtoKanto/Route 33/Hiker Anthony",
+                        "name": "Hiker Anthony"
                     },
                     {
                         "ref": "JohtoKanto/Route 33/Hiker Anthony Rematch - Champion",
@@ -218,10 +225,11 @@
                 ]
             },
             {
-                "name": "Route 34",
+                "name": "Camper Todd",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 34/Camper Todd"
+                        "ref": "JohtoKanto/Route 34/Camper Todd",
+                        "name": "Camper Todd"
                     },
                     {
                         "ref": "JohtoKanto/Route 34/Camper Todd Rematch - Blackthorn",
@@ -249,10 +257,11 @@
                 ]
             },
             {
-                "name": "Route 35",
+                "name": "Bug Catcher Arnie",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 35/Bug Catcher Arnie"
+                        "ref": "JohtoKanto/Route 35/Bug Catcher Arnie",
+                        "name": "Bug Catcher Arnie"
                     },
                     {
                         "ref": "JohtoKanto/Route 35/Bug Catcher Arnie Rematch - Blackthorn",
@@ -280,10 +289,11 @@
                 ]
             },
             {
-                "name": "Route 38",
+                "name": "Schoolboy Chad",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 38/Schoolboy Chad"
+                        "ref": "JohtoKanto/Route 38/Schoolboy Chad",
+                        "name": "Schoolboy Chad"
                     },
                     {
                         "ref": "JohtoKanto/Route 38/Schoolboy Chad Rematch - Champion",
@@ -311,10 +321,11 @@
                 ]
             },
             {
-                "name": "Route 43",
+                "name": "Pokemaniac Brent",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 43/Pokemaniac Brent"
+                        "ref": "JohtoKanto/Route 43/Pokemaniac Brent",
+                        "name": "Pokemaniac Brent"
                     },
                     {
                         "ref": "JohtoKanto/Route 43/Pokemaniac Brent Rematch - Champion",
@@ -338,7 +349,7 @@
                 ]
             },
             {
-                "name": "Rocket HQ B3F",
+                "name": "Grunt 1",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Grunt 1",
@@ -358,7 +369,7 @@
                 ]
             },
             {
-                "name": "Rocket HQ B3F​",
+                "name": "Grunt 2",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Grunt 2",
@@ -378,7 +389,7 @@
                 ]
             },
             {
-                "name": "Gym - Leader Clair",
+                "name": "Clair",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Blackthorn City/Gym - Leader Clair",
@@ -410,7 +421,7 @@
                 ]
             },
             {
-                "name": "Gym - Leader Chuck",
+                "name": "Chuck",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Cianwood City/Gym - Leader Chuck",
@@ -442,7 +453,7 @@
                 ]
             },
             {
-                "name": "Learn of the robbery",
+                "name": "Power Plant Manager",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Power Plant/Learn of the robbery",
@@ -466,7 +477,7 @@
                 ]
             },
             {
-                "name": "Azalea Town",
+                "name": "Berry Tree & White Apricorn",
                 "sections": [
                     {
                         "name": "Berry Tree",
@@ -486,7 +497,7 @@
                 ]
             },
             {
-                "name": "Cherrygrove City",
+                "name": "Map Card from Guide",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Cherrygrove City/Map Card from Guide",
@@ -570,7 +581,7 @@
                 ]
             },
             {
-                "name": "Route 31",
+                "name": "Deliver Kenya",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Route 31/Deliver Kenya",
@@ -638,7 +649,7 @@
                 ]
             },
             {
-                "name": "Rival in Goldenrod Underround",
+                "name": "Rival in Goldenrod Underground",
                 "sections": [
                     {
                         "name": "Beat Rival in Goldenrod Underground",
@@ -822,7 +833,7 @@
                 ]
             },
             {
-                "name": "Radio Tower",
+                "name": "Radio Card from Quiz",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Radio Tower/1F - Radio Card from Quiz",
@@ -842,7 +853,7 @@
                 ]
             },
             {
-                "name": "Radio Tower 2F",
+                "name": "Blue Card Shop",
                 "sections": [
                     {
                         "name": "2F - Blue Card Shop - 2 Points",
@@ -866,7 +877,7 @@
                 ]
             },
             {
-                "name": "Radio Tower 5F",
+                "name": "False Director",
                 "sections": [
                     {
                         "name": "Unmask the False Director",
@@ -890,7 +901,7 @@
                 ]
             },
             {
-                "name": "Radio Tower 5F​",
+                "name": "Rocket Executive 2",
                 "sections": [
                     {
                         "name": "Rocket Executive 2",
@@ -930,7 +941,7 @@
                 ]
             },
             {
-                "name": "Route 25",
+                "name": "Cool Trainer Kevin",
                 "sections": [
                     {
                         "name": "Nugget Bridge Prize",
@@ -1014,7 +1025,7 @@
                 ]
             },
             {
-                "name": "Route 34​",
+                "name": "Cool Trainer Kate",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Route 34/Cool Trainer Kate",
@@ -1070,7 +1081,7 @@
                 ]
             },
             {
-                "name": "Route 37",
+                "name": "Berry Tree & Red Apricorn",
                 "sections": [
                     {
                         "name": "Berry Tree 1",
@@ -1090,7 +1101,7 @@
                 ]
             },
             {
-                "name": "Route 37​",
+                "name": "Berry Tree & Blue Apricorn",
                 "sections": [
                     {
                         "name": "Berry Tree 2",
@@ -1110,7 +1121,7 @@
                 ]
             },
             {
-                "name": "Route 37​​",
+                "name": "Berry Tree & Black Apricorn",
                 "sections": [
                     {
                         "name": "Berry Tree 3",
@@ -1186,7 +1197,7 @@
                 ]
             },
             {
-                "name": "Route 42",
+                "name": "Berry Tree & Pink Apricorn",
                 "sections": [
                     {
                         "name": "Berry Tree 1",
@@ -1206,7 +1217,7 @@
                 ]
             },
             {
-                "name": "Route 42​",
+                "name": "Berry Tree & Green Apricorn",
                 "sections": [
                     {
                         "name": "Berry Tree 2",
@@ -1226,7 +1237,7 @@
                 ]
             },
             {
-                "name": "Route 42​​",
+                "name": "Berry Tree & Yellow Apricorn",
                 "sections": [
                     {
                         "name": "Berry Tree 3",
@@ -1330,7 +1341,7 @@
                 ]
             },
             {
-                "name": "Slowpoke Well B1F",
+                "name": "Grunt 4",
                 "sections": [
                     {
                         "name": "Grunt 4",
@@ -1350,7 +1361,7 @@
                 ]
             },
             {
-                "name": "Rocket HQ B1F",
+                "name": "Poké-Traps",
                 "sections": [
                     {
                         "name": "Poké-Trap Koffing",
@@ -1374,7 +1385,7 @@
                 ]
             },
             {
-                "name": "Rocket HQ B2F",
+                "name": "Top Electrode",
                 "sections": [
                     {
                         "name": "HM06 from Lance",
@@ -1394,7 +1405,7 @@
                 ]
             },
             {
-                "name": "Rocket HQ B2F​",
+                "name": "Middle Electrode",
                 "sections": [
                     {
                         "name": "Clear Rocket HQ",
@@ -1414,7 +1425,7 @@
                 ]
             },
             {
-                "name": "Rocket HQ B2F​​",
+                "name": "Bottom Electrode",
                 "sections": [
                     {
                         "name": "Rocket Executive",
@@ -1954,7 +1965,7 @@
                 ]
             },
             {
-                "name": "Beauty Frost",
+                "name": "Battle Tower",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Battle Tower/Beauty Frost",
@@ -2306,7 +2317,7 @@
                 ]
             },
             {
-                "name": "Dept. Store 2F - Left Salesman - Shop Items",
+                "name": "Celadon Dept. Store Shops",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Left Salesman - Shop Items",
@@ -2346,7 +2357,7 @@
                 ]
             },
             {
-                "name": "Game Corner Pokemon Shop - Larvitar",
+                "name": "Celadon Game Corner Pokemon Shop",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Celadon City/Game Corner Pokemon Shop - Larvitar",
@@ -2370,7 +2381,7 @@
                 ]
             },
             {
-                "name": "Pharmacy - Secretpotion",
+                "name": "Cianwood Pharmacy",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Cianwood City/Pharmacy - Secretpotion",
@@ -2390,7 +2401,7 @@
                 ]
             },
             {
-                "name": "Copycat's House 2F - Meet Copycat",
+                "name": "Copycat",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Saffron City/Copycat's House 2F - Meet Copycat",
@@ -2410,7 +2421,7 @@
                 ]
             },
             {
-                "name": "Dragon's Den B1F - Rising Badge from Clair",
+                "name": "Dragon's Den - Clair",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Rising Badge from Clair",
@@ -2434,7 +2445,7 @@
                 ]
             },
             {
-                "name": "Elm's Lab - Gift from Aide after returning Mystery Egg",
+                "name": "Elm's Lab Aide",
                 "sections": [
                     {
                         "ref": "JohtoKanto/New Bark Town/Elm's Lab - Gift from Aide after returning Mystery Egg",
@@ -2454,7 +2465,7 @@
                 ]
             },
             {
-                "name": "Elm's Lab - Everstone from Elm",
+                "name": "Elm",
                 "sections": [
                     {
                         "ref": "JohtoKanto/New Bark Town/Elm's Lab - Everstone from Elm",
@@ -2486,7 +2497,7 @@
                 ]
             },
             {
-                "name": "Game Corner Pokemon Shop - Abra",
+                "name": "Goldenrod Game Corner Pokemon Shop",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Goldenrod City/Game Corner Pokemon Shop - Abra",
@@ -2510,27 +2521,7 @@
                 ]
             },
             {
-                "name": "Exchange Eon Mail in Pokecenter",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Goldenrod City/Exchange Eon Mail in Pokecenter",
-                        "name": "Exchange Eon Mail in Pokecenter"
-                    },
-                    {
-                        "ref": "JohtoKanto/Goldenrod City/Post-E4 GS-Ball from Trade Corner Receptionist",
-                        "name": "Post-E4 GS-Ball from Trade Corner Receptionist"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "GoldenrodPokecenter1F",
-                        "x": 120,
-                        "y": 88
-                    }
-                ]
-            },
-            {
-                "name": "Beat Rival in Indigo Plateau",
+                "name": "Rival in Indigo Plateau",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Indigo Plateau/Beat Rival in Indigo Plateau",
@@ -2590,7 +2581,27 @@
                 ]
             },
             {
-                "name": "Kurt's Ball Shop - Blk Apricorn",
+                "name": "Rival in Indigo Plateau",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Victory Road/3F - Beat Rival in Victory Road",
+                        "name": "Beat Rival in Victory Road"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/3F - Rival",
+                        "name": "Rival",
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VictoryRoad3F",
+                        "x": 208,
+                        "y": 128
+                    }
+                ]
+            },
+            {
+                "name": "Kurt",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Blk Apricorn",
@@ -2702,7 +2713,7 @@
                 ]
             },
             {
-                "name": "Poke Mart - Shop Items",
+                "name": "Mahogany Town Shops",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Mahogany Town/Poke Mart - Shop Items",
@@ -2722,7 +2733,7 @@
                 ]
             },
             {
-                "name": "Inside - Beat Rival",
+                "name": "Rival in Mount Moon",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Mount Moon/Inside - Beat Rival",
@@ -2742,7 +2753,7 @@
                 ]
             },
             {
-                "name": "Exp Share from Mr Pokemon",
+                "name": "Mr. Pokemon",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Route 30/Exp Share from Mr Pokemon",
@@ -2782,7 +2793,7 @@
                 ]
             },
             {
-                "name": "Mom's Savings - 10000",
+                "name": "Mom",
                 "sections": [
                     {
                         "ref": "JohtoKanto/New Bark Town/Mom's Savings - 10000",
@@ -2850,7 +2861,7 @@
                 ]
             },
             {
-                "name": "1F - Lucky Number Show 1st Prize",
+                "name": "Lucky Number Show",
                 "sections": [
                     {
                         "ref": "JohtoKanto/Radio Tower/1F - Lucky Number Show 1st Prize",

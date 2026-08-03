@@ -593,16 +593,6 @@
                         "map": "DiglettsCave",
                         "x": 104,
                         "y": 184
-                    },
-                    {
-                        "map": "Route2",
-                        "x": 200,
-                        "y": 120
-                    },
-                    {
-                        "map": "VermilionCity",
-                        "x": 552,
-                        "y": 88
                     }
                 ]
             },
@@ -8732,6 +8722,38 @@
                 ]
             },
             {
+                "name": "Goldenrod Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Exchange Eon Mail in Pokecenter",
+                        "name": "Exchange Eon Mail in Pokecenter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodPokecenter1F",
+                        "x": 120,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Goldenrod Pokecenter​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Post-E4 GS-Ball from Trade Corner Receptionist",
+                        "name": "Post-E4 GS-Ball from Trade Corner Receptionist"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "GoldenrodPokecenter1F",
+                        "x": 8,
+                        "y": 120
+                    }
+                ]
+            },
+            {
                 "name": "Goldenrod Gym",
                 "sections": [
                     {
@@ -10874,22 +10896,6 @@
                 ]
             },
             {
-                "name": "3F - Beat Rival in Victory Road",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Victory Road/3F - Beat Rival in Victory Road",
-                        "name": "3F - Beat Rival in Victory Road"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "VictoryRoad3F",
-                        "x": 296,
-                        "y": 216
-                    }
-                ]
-            },
-            {
                 "name": "Trade: Kyle",
                 "sections": [
                     {
@@ -10998,22 +11004,6 @@
                         "map": "WiseTriosRoom",
                         "x": 104,
                         "y": 72
-                    }
-                ]
-            },
-            {
-                "name": "Rival in Indigo Plateau",
-                "sections": [
-                    {
-                        "name": "3F - Rival",
-                        "ref": "JohtoKanto/Victory Road/3F - Rival"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "VictoryRoad3F",
-                        "x": 208,
-                        "y": 128
                     }
                 ]
             },

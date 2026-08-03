@@ -49,7 +49,7 @@ function dump_table(o, depth)
         trap_weights = true,
         trap_weights_option = true,
         unown_signs = true,
-        randomize_entrances = true,
+        randomize_entrances = false,
     }
 
     if type(o) == 'table' then

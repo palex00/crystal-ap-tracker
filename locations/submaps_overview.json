@@ -252,6 +252,130 @@
                 ]
             },
             {
+                "name": "Burned Tower",
+                "sections": [
+                    {
+                        "name": "Burned Tower Exit",
+                        "hosted_item": "REGION_BURNED_TOWER_1F -> REGION_ECRUTEAK_CITY",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$CanReach|REGION_BURNED_TOWER_1F, ^$dark|burnedtower"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_dungeon_on"
+                        ]
+                    },
+                    {
+                        "name": "1F - Item",
+                        "access_rules": [
+                            "^$CanReach|BURNED_TOWER_1F_HP_UP, ^$dark|burnedtower"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "1F - Hidden Item above Rival",
+                        "access_rules": [
+                            "^$CanReach|REGION_BURNED_TOWER_1F, ^$hid, ^$dark|burnedtower"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ],
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
+                    },
+                    {
+                        "name": "1F - Southeast Hidden Item",
+                        "access_rules": [
+                            "^$CanReach|REGION_BURNED_TOWER_1F, ^$hid, ^$dark|burnedtower"
+                        ],
+                        "visibility_rules": [
+                            "show_items, hiddenitems_on"
+                        ],
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
+                    },
+                    {
+                        "name": "1F - Beat Rival in Burned Tower",
+                        "access_rules": [
+                            "^$CanReach|REGION_BURNED_TOWER_1F, ^$dark|burnedtower"
+                        ],
+                        "hosted_item": "EVENT_RIVAL_BURNED_TOWER",
+                        "visibility_rules": [
+                            "show_events, goal_rival"
+                        ]
+                    },
+                    {
+                        "name": "1F - Rival",
+                        "access_rules": [
+                            "^$CanReach|REGION_BURNED_TOWER_1F, ^$dark|burnedtower"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, $partial_trainersanity, trainersanity_298"
+                        ],
+                        "chest_unopened_img": "images/trainers/rival.png",
+                        "chest_opened_img": "images/trainers/rival_bw.png"
+                    },
+                    {
+                        "name": "1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
+                        "visibility_rules": [
+                            "show_mons, encmethod_land_visible"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|GRASS_BURNED_TOWER_1F, ^$land_encounter"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Item",
+                        "access_rules": [
+                            "^$CanReach|BURNED_TOWER_B1F_TM_ENDURE, ^$dark|burnedtower"
+                        ],
+                        "visibility_rules": [
+                            "show_items"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Released the Beasts",
+                        "access_rules": [
+                            "^$CanReach|REGION_BURNED_TOWER_B1F, ^$dark|burnedtower"
+                        ],
+                        "hosted_item": "EVENT_RELEASED_THE_BEASTS",
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
+                        "name": "B1F - Land Encounters",
+                        "item_count": 7,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/encounter.png",
+                        "chest_opened_img": "images/other/encounter_bw.png",
+                        "visibility_rules": [
+                            "show_mons, encmethod_land_visible"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|GRASS_BURNED_TOWER_B1F, ^$land_encounter"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EcruteakCity",
+                        "x": 88,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
                 "name": "Dragon's Den",
                 "sections": [
                     {
@@ -328,6 +452,33 @@
                         "map": "BlackthornCity",
                         "x": 328,
                         "y": 24,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Diglett's Cave",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Diglett's Cave/Hidden Item on Boulder",
+                        "name": "Hidden Item on Boulder"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route2",
+                        "x": 200,
+                        "y": 120,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off"
+                        ]
+                    },
+                    {
+                        "map": "VermilionCity",
+                        "x": 552,
+                        "y": 88,
                         "restrict_visibility_rules": [
                             "er_dungeon_interior_off, er_dungeon_off"
                         ]
@@ -1419,7 +1570,7 @@
                         "x": 104,
                         "y": 56,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_building_off"
                         ]
                     }
                 ]
