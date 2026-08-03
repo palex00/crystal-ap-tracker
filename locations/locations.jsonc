@@ -679,7 +679,7 @@
                             "^$CanReach|REGION_CHERRYGROVE_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Cherrygrove"
                         ]
                     },
                     {
@@ -690,7 +690,7 @@
                             "^$CanReach|REGION_CHERRYGROVE_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Cherrygrove"
                         ]
                     },
                     {
@@ -1736,7 +1736,7 @@
                             "^$CanReach|REGION_VIOLET_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Violet"
                         ]
                     },
                     {
@@ -1747,7 +1747,7 @@
                             "^$CanReach|REGION_VIOLET_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Violet"
                         ]
                     },
                     {
@@ -3109,7 +3109,7 @@
                             "^$CanReach|REGION_ROUTE_32:SOUTH"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|UnionCave"
                         ]
                     },
                     {
@@ -3120,7 +3120,7 @@
                             "^$CanReach|REGION_ROUTE_32_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|UnionCave"
                         ]
                     },
                     {
@@ -4375,7 +4375,7 @@
                             "^$CanReach|REGION_AZALEA_TOWN"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Azalea"
                         ]
                     },
                     {
@@ -4386,7 +4386,7 @@
                             "^$CanReach|REGION_AZALEA_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Azalea"
                         ]
                     },
                     {
@@ -6067,7 +6067,7 @@
                             "^$CanReach|REGION_GOLDENROD_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Goldenrod"
                         ]
                     },
                     {
@@ -6078,7 +6078,7 @@
                             "^$CanReach|REGION_GOLDENROD_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Goldenrod"
                         ]
                     },
                     {
@@ -9231,7 +9231,7 @@
                             "^$CanReach|REGION_ECRUTEAK_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Ecruteak"
                         ]
                     },
                     {
@@ -9242,7 +9242,7 @@
                             "^$CanReach|REGION_ECRUTEAK_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Ecruteak"
                         ]
                     },
                     {
@@ -11253,7 +11253,7 @@
                             "^$CanReach|REGION_OLIVINE_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Olivine"
                         ]
                     },
                     {
@@ -11264,7 +11264,7 @@
                             "^$CanReach|REGION_OLIVINE_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Olivine"
                         ]
                     },
                     {
@@ -13592,7 +13592,7 @@
                             "^$CanReach|REGION_CIANWOOD_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Cianwood"
                         ]
                     },
                     {
@@ -13603,7 +13603,7 @@
                             "^$CanReach|REGION_CIANWOOD_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Cianwood"
                         ]
                     },
                     {
@@ -15002,7 +15002,7 @@
                             "^$CanReach|REGION_MAHOGANY_TOWN"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Mahogany"
                         ]
                     },
                     {
@@ -15013,7 +15013,7 @@
                             "^$CanReach|REGION_MAHOGANY_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Mahogany"
                         ]
                     },
                     {
@@ -17347,7 +17347,7 @@
                             "^$CanReach|REGION_BLACKTHORN_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Blackthorn"
                         ]
                     },
                     {
@@ -17358,7 +17358,7 @@
                             "^$CanReach|REGION_BLACKTHORN_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Blackthorn"
                         ]
                     },
                     {
@@ -20752,7 +20752,7 @@
                             "^$CanReach|REGION_VIRIDIAN_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Viridian"
                         ]
                     },
                     {
@@ -20763,7 +20763,7 @@
                             "^$CanReach|REGION_VIRIDIAN_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Viridian"
                         ]
                     },
                     {
@@ -21768,7 +21768,7 @@
                             "^$CanReach|REGION_PEWTER_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Pewter"
                         ]
                     },
                     {
@@ -21779,7 +21779,7 @@
                             "^$CanReach|REGION_PEWTER_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Pewter"
                         ]
                     },
                     {
@@ -22648,7 +22648,7 @@
                             "^$CanReach|REGION_CERULEAN_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Cerulean"
                         ]
                     },
                     {
@@ -22659,7 +22659,7 @@
                             "^$CanReach|REGION_CERULEAN_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Cerulean"
                         ]
                     },
                     {
@@ -24103,7 +24103,7 @@
                             "^$CanReach|REGION_ROUTE_10_NORTH:POKECENTER"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|RockTunnel"
                         ]
                     },
                     {
@@ -24114,7 +24114,7 @@
                             "^$CanReach|REGION_ROUTE_10_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|RockTunnel"
                         ]
                     },
                     {
@@ -24303,7 +24303,7 @@
                             "^$CanReach|REGION_LAVENDER_TOWN"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Lavender"
                         ]
                     },
                     {
@@ -24314,7 +24314,7 @@
                             "^$CanReach|REGION_LAVENDER_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Lavender"
                         ]
                     },
                     {
@@ -25347,7 +25347,7 @@
                             "^$CanReach|REGION_SAFFRON_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Saffron"
                         ]
                     },
                     {
@@ -25358,7 +25358,7 @@
                             "^$CanReach|REGION_SAFFRON_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Saffron"
                         ]
                     },
                     {
@@ -26249,7 +26249,7 @@
                             "^$CanReach|REGION_CELADON_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Celadon"
                         ]
                     },
                     {
@@ -26260,7 +26260,7 @@
                             "^$CanReach|REGION_CELADON_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Celadon"
                         ]
                     },
                     {
@@ -27376,7 +27376,7 @@
                             "^$CanReach|REGION_VERMILION_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Vermilion"
                         ]
                     },
                     {
@@ -27387,7 +27387,7 @@
                             "^$CanReach|REGION_VERMILION_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Vermilion"
                         ]
                     },
                     {
@@ -29128,7 +29128,7 @@
                             "^$CanReach|REGION_FUCHSIA_CITY"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Fuchsia"
                         ]
                     },
                     {
@@ -29139,7 +29139,7 @@
                             "^$CanReach|REGION_FUCHSIA_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Fuchsia"
                         ]
                     },
                     {
@@ -29820,7 +29820,7 @@
                             "^$CanReach|REGION_CINNABAR_ISLAND"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Cinnabar"
                         ]
                     },
                     {
@@ -29831,7 +29831,7 @@
                             "^$CanReach|REGION_CINNABAR_POKECENTER_1F"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokecenter_on"
+                            "show_entrances, er_pokecenter_on, $started|Cinnabar"
                         ]
                     },
                     {

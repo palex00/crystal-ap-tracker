@@ -352,6 +352,16 @@ function nationalpark()
   return has("national_park_vanilla") or has("BICYCLE")
 end
 
+function started(town)
+  if town == "Cherrygrove" and has("start_town_New_Bark") then
+    return false
+  end
+  if town == "Viridian" and has("start_town_Pallet") then
+    return false
+  end
+  return not has("start_town_" .. town)
+end
+
 function scout()
   return AccessibilityLevel.Inspect
 end
