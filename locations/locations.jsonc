@@ -24780,7 +24780,7 @@
                             "show_items, hiddenitems_on, ew_underground_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_EAST_WEST_UNDERGROUND"
+                            "^$CanReach|REGION_EAST_WEST_UNDERGROUND, ^$hid"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -24791,7 +24791,7 @@
                             "show_items, hiddenitems_on, ew_underground_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_EAST_WEST_UNDERGROUND"
+                            "^$CanReach|REGION_EAST_WEST_UNDERGROUND, ^$hid"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
