@@ -346,8 +346,36 @@ function onClear(slot_data)
     if refreshERCategories then
         refreshERCategories()
     end
+    setupFlyDestinations(slot_data)
     loadWatches()
 
+end
+
+--- Point every fly unlock at its destination for this seed. Defaults to each town's vanilla
+--- region (behaviour unchanged), overridden from slot_data.fly_destinations -- a list of
+--- [map_name, warp_index] indexed by FlyRegion id -- when fly destinations are randomized.
+--- FLY_ARRIVAL_REGIONS turns each warp into its landing region; connect_fly reads FLY_DESTINATIONS
+--- at discover time, so updating the table (+ invalidating the cache) reroutes the fly edges.
+function setupFlyDestinations(slot_data)
+    for token, region in pairs(FLY_VANILLA_REGIONS) do
+        FLY_DESTINATIONS[token] = region
+    end
+    local dests = slot_data.fly_destinations
+    if dests then
+        for i, warp in ipairs(dests) do
+            local token = FLY_REGION_TOKENS[i]
+            local region = token and FLY_ARRIVAL_REGIONS[string.format("%s:%d", warp[1], warp[2])]
+            if token and region then
+                FLY_DESTINATIONS[token] = region
+            end
+        end
+    end
+    if createFlyDestinationItems then
+        createFlyDestinationItems() -- refresh the (already-created) display badges
+    end
+    if InvalidateCanReach then
+        InvalidateCanReach()
+    end
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -437,6 +465,8 @@ function onNotify(key, value, old_value)
             SEEN = value
             updatePokemon()
         elseif key == IDs.ROCKETTRAP then
+            print(dump_table(value))
+            print(value)
             updateRocketTraps(value)
         elseif key == IDs.SIGN then
             updateSigns(value)
@@ -458,7 +488,6 @@ function onNotify(key, value, old_value)
             updateShopEvents("K", value)
         elseif key == IDs.ENTRANCE then
             updateEntrances(value)
-            print(dump_table(value))
         end
     end
 end

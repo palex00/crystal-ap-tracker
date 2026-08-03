@@ -1,0 +1,56 @@
+{
+    "settings_flydest": {
+        "type": "array",
+        "orientation": "horizontal",
+        "h_alignment": "left",
+        "content": [
+            {
+                "type": "group",
+                "header": "Johto",
+                "content": {
+                    "type": "itemgrid",
+                    "item_margin": "2,2",
+                    "h_alignment": "left",
+                    "item_size": "250,34",
+                    "rows": [
+                        [ "flydest_NewBark" ],
+                        [ "flydest_Cherrygrove" ],
+                        [ "flydest_Violet" ],
+                        [ "flydest_Azalea" ],
+                        [ "flydest_Goldenrod" ],
+                        [ "flydest_Ecruteak" ],
+                        [ "flydest_Olivine" ],
+                        [ "flydest_Cianwood" ],
+                        [ "flydest_Mahogany" ],
+                        [ "flydest_LakeOfRage" ],
+                        [ "flydest_Blackthorn" ],
+                        [ "flydest_SilverCave" ]
+                    ]
+                }
+            },
+            {
+                "type": "group",
+                "header": "Kanto",
+                "content": {
+                    "type": "itemgrid",
+                    "item_margin": "2,2",
+                    "h_alignment": "left",
+                    "item_size": "250,34",
+                    "rows": [
+                        [ "flydest_Pallet" ],
+                        [ "flydest_Viridian" ],
+                        [ "flydest_Pewter" ],
+                        [ "flydest_Cerulean" ],
+                        [ "flydest_Vermilion" ],
+                        [ "flydest_Lavender" ],
+                        [ "flydest_Celadon" ],
+                        [ "flydest_Saffron" ],
+                        [ "flydest_Fuchsia" ],
+                        [ "flydest_Cinnabar" ],
+                        [ "flydest_IndigoPlateau" ]
+                    ]
+                }
+            }
+        ]
+    }
+}

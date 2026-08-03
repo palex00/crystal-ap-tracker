@@ -78,6 +78,8 @@ local function FindPath(start, finish, stage)
         local is_entrance = exit[3]
         if is_entrance and ER_CATEGORY_ENABLED[exit[4]] then
             target = EntranceDetourTarget(exit[5])
+        elseif exit[7] then
+            target = FlyDetourTarget(exit[7])
         end
         local rule = exit[2]
         local access = rule(target.keys)

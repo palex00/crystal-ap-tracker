@@ -180,6 +180,28 @@
         ]
     },
     {
+        "name": "Randomize Fly Destinations",
+        "type": "progressive",
+        "initial_stage_idx": 0,
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Fly Destinations - Off",
+                "img": "/images/items/flyunlocks/flyunlock.png",
+                "img_mods": "@disabled",
+                "codes": "randomize_fly_destinations,randomize_fly_destinations_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Fly Destinations - On",
+                "img": "/images/items/flyunlocks/flyunlock.png",
+                "codes": "randomize_fly_destinations,randomize_fly_destinations_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Randomize Hidden Items",
         "type": "progressive",
         "allow_disabled": false,

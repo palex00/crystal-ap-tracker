@@ -20,6 +20,10 @@ NAMED_NODES_KEYS = {}
 -- which ER categories are shuffled this seed; set in onClear. Empty => everything vanilla.
 ER_CATEGORY_ENABLED = ER_CATEGORY_ENABLED or {}
 
+-- fly-unlock token -> destination region name for this seed; set in onClear (defaults to each
+-- town's vanilla region, overridden per slot_data when fly destinations are randomized).
+FLY_DESTINATIONS = FLY_DESTINATIONS or {}
+
 local stale = true
 local accessibilityCache = {}
 local accessibilityCacheComplete = false
@@ -176,6 +180,17 @@ function Node:connect_two_ways_entrance(exit, category, rule)
     exit:connect_one_way_entrance(self, category, rule)
 end
 
+--- One directed fly edge self -> (dynamic). The destination is resolved at discover time from
+--- FLY_DESTINATIONS[token] (set per seed in onClear), mirroring the entrance detour mechanism but
+--- keyed by a fly-unlock token instead of a revealed warp pairing. The stored target is a
+--- placeholder; `label` is the route pretty-name. The fly token lives in exit[7].
+---@param token string  fly-unlock token (e.g. "Cherrygrove")
+---@param label string|nil
+---@param rule? function
+function Node:connect_fly(token, label, rule)
+    self.exits[#self.exits + 1] = { Empty_node, rule or always, false, nil, nil, label, token }
+end
+
 --- Cached accessibility for this node (ACCESS_NONE if not discovered this rebuild).
 ---@return integer
 function Node:accessibility()
@@ -211,6 +226,14 @@ function EntranceDetourTarget(token)
     return Empty_node
 end
 
+--- Destination node a fly-unlock token leads to this seed (Empty_node until FLY_DESTINATIONS is
+--- set). Also used by route_mode.lua's FindPath so routes can take fly hops.
+---@param token string fly-unlock token
+---@return table
+function FlyDetourTarget(token)
+    return NAMED_NODES[FLY_DESTINATIONS[token]] or Empty_node
+end
+
 --- Flood-fill relaxation from this node. Bellman-Ford-style fixed point driven by CanReach.
 ---@param accessibility integer
 ---@param keys integer
@@ -236,6 +259,9 @@ function Node:discover(accessibility, keys)
         if is_entrance and ER_CATEGORY_ENABLED[exit[4]] then
             -- shuffled entrance: detour through the revealed pairing (or dead-end)
             target = EntranceDetourTarget(exit[5])
+        elseif exit[7] then
+            -- fly edge: detour to this seed's destination for the fly token
+            target = FlyDetourTarget(exit[7])
         end
 
         local oldAccess = target:accessibility()

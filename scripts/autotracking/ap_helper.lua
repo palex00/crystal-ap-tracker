@@ -329,6 +329,10 @@ SLOT_CODES = {
         code = "randomize_fly_unlocks",
         mapping = MAP_TRIPLE
     },
+    randomize_fly_destinations = {
+        code = "randomize_fly_destinations",
+        mapping = MAP_TOGGLE
+    },
     randomize_evolution = {
         code = "randomize_evolution",
         mapping = MAP_TRIPLE

@@ -25,6 +25,9 @@ ScriptHost:LoadScript("scripts/custom_items.lua")
 ScriptHost:LoadScript("scripts/logic/logic_helpers.lua")
 ScriptHost:LoadScript("scripts/logic/canreach.lua")
 ScriptHost:LoadScript("scripts/logic/regions/region_definitions.lua")
+-- Fly-destination data (FLY_REGION_TOKENS / FLY_VANILLA_REGIONS / FLY_ARRIVAL_REGIONS); read by
+-- connections.lua's fly edges, so it must load before them.
+ScriptHost:LoadScript("scripts/entrances/fly_registry.lua")
 ScriptHost:LoadScript("scripts/logic/regions/connections.lua")
 -- Encounter leaves load BEFORE the dark pass ON PURPOSE -- the opposite of check_leafs.lua
 -- below. An encounter leaf is shared: one table is attached from every region that holds it,
@@ -43,6 +46,10 @@ ScriptHost:LoadScript("scripts/logic/regions/connections_darkareas.lua")
 ScriptHost:LoadScript("scripts/logic/regions/check_leafs.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_registry.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_item.lua")
+-- Read-only fly-destination display items. Created once here (all 23); they show a placeholder
+-- until slot_data fills in destinations in onClear. Display-only -- they never affect logic.
+ScriptHost:LoadScript("scripts/entrances/fly_destination_item.lua")
+createFlyDestinationItems()
 -- Entrance items are created per-ENABLED-category, not all at once: a vanilla entrance needs no
 -- tracker item, and a large _luaItems set makes every toggle laggy. Build the token->category
 -- map now; the actual EntranceItems are instantiated by createEntrancesForEnabled(), driven by
@@ -98,10 +105,11 @@ Tracker:AddLayouts("layouts/items/flyunlocks.json") --static
 Tracker:AddLayouts("layouts/events/events_max.json") -- debug for now, will be changed to dynamic later
 
 ---- settings
-Tracker:AddLayouts("layouts/settings/settings.json")
+Tracker:AddLayouts("layouts/settings/settings.json") -- debug for now, will be changed to dynamic later
 Tracker:AddLayouts("layouts/settings/settings_encevo.json")
-Tracker:AddLayouts("layouts/settings/settings_popup.json")
-Tracker:AddLayouts("layouts/tools/tools_max.json")
+Tracker:AddLayouts("layouts/settings/settings_popup.json") -- debug for now, will be changed to dynamic later
+Tracker:AddLayouts("layouts/tools/tools_max.json") -- debug for now, will be changed to dynamic later
+Tracker:AddLayouts("layouts/settings/settings_flydestinations.json") --static
 
 ---- other
 Tracker:AddLayouts("layouts/levelinglogic.json")
