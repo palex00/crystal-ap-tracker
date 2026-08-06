@@ -327,6 +327,7 @@ function onClear(slot_data)
             SHOP_K     = makeID("seen_kanto_marts_"),
             SHOP_J     = makeID("seen_johto_marts_"),
             ENTRANCE   = makeID("warps_"),
+            FLYUNLOCK  = makeID("fly_unlocks_"),
         }
         for _, id in pairs(IDs) do
             Archipelago:SetNotify({id})
@@ -480,6 +481,8 @@ function onNotify(key, value, old_value)
             updateShopEvents("K", value)
         elseif key == IDs.ENTRANCE then
             updateEntrances(value)
+        elseif key == IDs.FLYUNLOCK then
+            updateFlyunlock(value)
         end
     end
 end
@@ -569,6 +572,18 @@ function updateEvents(register, value)
         for i, code in ipairs(list) do
             local bit = (value >> (i - 1)) & 1
             Tracker:FindObjectForCode(code).Active = (bit == 1)
+        end
+    end
+end
+
+function updateFlyunlock(value)
+    if value ~= nil then
+        for i, code in ipairs(FLAG_FLYUNLOCKS) do
+            local bit = (value >> (i - 1)) & 1
+            local obj = Tracker:FindObjectForCode(code)
+            if obj ~= nil then
+                obj.Active = (bit == 1)
+            end
         end
     end
 end
