@@ -18,14 +18,14 @@ Supported Features:
 - ENTRANCE RANDOMISATION!!!
 - Submaps (tentative)
 - Battle Tower
+- Fly Destination Rando
+- Time of Day Encounters
 
 Unsupported Beta Features:
 - Multiple Goals - currently debug shows all of them; event grid shows all events
 - New Locations (these auto-track but do not have logic to them)
     - Rematchsanity
     - Lucky Number Show
-- Fly Destination Rando
-- Time of Day Encounters
 - everything else, basically
 
 Features that work in live but not in beta:

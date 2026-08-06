@@ -22170,7 +22170,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown, route_23_restored_off"
+                            "show_signs, goal_unown"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_23, ^$unownsign|Route23IndigoPlateauSign"
