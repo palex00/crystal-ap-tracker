@@ -255,6 +255,72 @@
         ]
     },
     {
+        "name": "Land Time of Day Encounters",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Land Time of Day Encounters Off",
+                "img": "/images/placeholder.png",
+                "codes": "land_tod, land_tod_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Land Time of Day Encounters On",
+                "img": "/images/placeholder.png",
+                "codes": "land_tod, land_tod_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Unlockable Time of Day",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Unlockable Time of Day Off",
+                "img": "/images/placeholder.png",
+                "codes": "unlockable_tod, unlockable_tod_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Unlockable Time of Day On",
+                "img": "/images/placeholder.png",
+                "codes": "unlockable_tod, unlockable_tod_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Starting Time of Day",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Starting Time of Day: Morn",
+                "img": "/images/other/encounter_morn.png",
+                "codes": "starttod, starttod_MORN",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Time of Day: Day",
+                "img": "/images/other/encounter.png",
+                "codes": "starttod, starttod_DAY",
+                "inherit_codes": false
+            },
+            {
+                "name": "Starting Time of Day: Nite",
+                "img": "/images/other/encounter_nite.png",
+                "codes": "starttod, starttod_NITE",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "dexcountsanity_logicleniency_digit1",
         "type": "progressive",
         "codes": "dexcountsanity_logicleniency_digit1",

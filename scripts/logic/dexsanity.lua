@@ -127,6 +127,16 @@ function land_encounter()
     end
 end
 
+function land_tod(tod)
+    if has("unlockable_tod_off") or has("starttod_" .. tod) then
+        return AccessibilityLevel.Normal
+    end
+    if has(tod .. "_ITEM") and has("POKE_GEAR") then
+        return AccessibilityLevel.Normal
+    end
+    return AccessibilityLevel.None
+end
+
 function surf_encounter_johto()
     if has("encmethod_water_on") and can_surf_johto() then
         return AccessibilityLevel.Normal

@@ -196,6 +196,14 @@ function onClear(slot_data)
                     Tracker:FindObjectForCode(code).CurrentStage = LIST_CODES[k].mapping[1]
                 end
             end
+        elseif k == "precollected_tod" then
+            if v == "Morn" then
+                Tracker:FindObjectForCode("starttod").CurrentStage = 0
+            elseif v == "Day" then
+                Tracker:FindObjectForCode("starttod").CurrentStage = 1
+            elseif v == "Nite" then
+                Tracker:FindObjectForCode("starttod").CurrentStage = 2
+            end
         elseif k == "trainersanity" then
             if #v == 0 then
                 TRAINERS:setType("none")
@@ -740,14 +748,11 @@ function updatePokemon()
         local pendingDecrements = {}
         
         for region_key, location in pairs(ENCOUNTER_MAPPING) do
-            regionObjects[region_key] = Tracker:FindObjectForCode(location)
-            -- remove this if condition once you implemented DAY/NITE-split
             if REGION_ENCOUNTERS[region_key] then
+                regionObjects[region_key] = Tracker:FindObjectForCode(location)
                 baseCounts[region_key] = #REGION_ENCOUNTERS[region_key]
-            else
-                return
+                pendingDecrements[region_key] = 0
             end
-            pendingDecrements[region_key] = 0
         end
 
         for dex_number, locations in pairs(POKEMON_TO_LOCATIONS) do

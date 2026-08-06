@@ -297,6 +297,14 @@ SLOT_CODES = {
         code = "encmethod_rocksmash",
         mapping = MAP_TRIPLE
     },
+    land_time_of_day_encounters = {
+        code = "land_tod",
+        mapping = MAP_TOGGLE
+    },
+    unlockable_time_of_day = {
+        code = "unlockable_tod",
+        mapping = MAP_TOGGLE
+    },
     static_pokemon_required = {
         code = "encmethod_static",
         mapping = MAP_TOGGLE
