@@ -2598,14 +2598,14 @@
         "stages": [
             {
                 "name": "Momsanity is off",
-                "img": "/images/settings/Momsanity.png",
+                "img": "images/other/Momsanity.png",
                 "img_mods": "@disabled",
                 "codes": "momsanity, momsanity_off",
                 "inherit_codes": false
             },
             {
                 "name": "Momsanity is on",
-                "img": "/images/settings/Momsanity.png",
+                "img": "images/other/Momsanity.png",
                 "codes": "momsanity, momsanity_on",
                 "inherit_codes": false
             }
