@@ -1,61 +1,63 @@
 {
     "settings_popup": {
         "type": "dock",
-        "content": {
-            "type": "array",
-            "orientation": "vertical",
-            "h_alignment": "left",
-            "content": [
-                {
-                    "type": "group",
-                    "header": "Sanities & Shuffles",
-                    "content": {
-                        "type": "layout",
-                        "key": "sanity_grid"
+        "content": [
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "h_alignment": "left",
+                "content": [
+                    {
+                        "type": "group",
+                        "header": "Sanities & Shuffles",
+                        "content": {
+                            "type": "layout",
+                            "key": "sanity_grid"
+                        }
+                    },
+                    {
+                        "type": "group",
+                        "header": "Logic",
+                        "content": {
+                            "type": "layout",
+                            "key": "logic_grid"
+                        }
+                    },
+                    {
+                        "type": "group",
+                        "header": "Roadblocks",
+                        "content": {
+                            "type": "layout",
+                            "key": "roadblock_grid"
+                        }
+                    },
+                    {
+                        "type": "group",
+                        "header": "Shopsanity",
+                        "content": {
+                            "type": "layout",
+                            "key": "shopsanity_grid"
+                        }
+                    },
+                    {
+                        "type": "group",
+                        "header": "Dark Caves",
+                        "content": {
+                            "type": "layout",
+                            "key": "darkcave_grid"
+                        }
+                    },
+                    {
+                        "type": "group",
+                        "header": "Start Town & Fly Locations",
+                        "content": {
+                            "type": "layout",
+                            "key": "flysetting_grid"
+                        }
                     }
-                },
-                {
-                    "type": "group",
-                    "header": "Logic",
-                    "content": {
-                        "type": "layout",
-                        "key": "logic_grid"
-                    }
-                },
-                {
-                    "type": "group",
-                    "header": "Roadblocks",
-                    "content": {
-                        "type": "layout",
-                        "key": "roadblock_grid"
-                    }
-                },
-                {
-                    "type": "group",
-                    "header": "Shopsanity",
-                    "content": {
-                        "type": "layout",
-                        "key": "shopsanity_grid"
-                    }
-                },
-                {
-                    "type": "group",
-                    "header": "Dark Caves",
-                    "content": {
-                        "type": "layout",
-                        "key": "darkcave_grid"
-                    }
-                },
-                {
-                    "type": "group",
-                    "header": "Start Town & Fly Locations",
-                    "content": {
-                        "type": "layout",
-                        "key": "flysetting_grid"
-                    }
-                }
-            ]
-        }
+                ]
+            }
+        ]
     },
     "sanity_grid": {
         "type": "itemgrid",

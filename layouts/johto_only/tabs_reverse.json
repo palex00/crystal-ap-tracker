@@ -14,20 +14,24 @@
                                     "title": "Overworld",
                                     "content": {
                                         "type": "dock",
-                                        "content": {
-                                            "type": "layout",
-                                            "key": "overworld"
-                                        }
+                                        "content": [
+                                            {
+                                                "type": "layout",
+                                                "key": "overworld"
+                                            }
+                                        ]
                                     }
                                 },
                                 {
                                     "title": "Pokedex",
                                     "content": {
                                         "type": "dock",
-                                        "content": {
-                                            "type": "layout",
-                                            "key": "pokedex_grid_full"
-                                        }
+                                        "content": [
+                                            {
+                                                "type": "layout",
+                                                "key": "pokedex_grid_full"
+                                            }
+                                        ]
                                     }
                                 }
                             ]
@@ -39,30 +43,36 @@
                                     "title": "Johto Cities",
                                     "content": {
                                         "type": "dock",
-                                        "content": {
-                                            "type": "layout",
-                                            "key": "johto_cities"
-                                        }
+                                        "content": [
+                                            {
+                                                "type": "layout",
+                                                "key": "johto_cities"
+                                            }
+                                        ]
                                     }
                                 },
                                 {
                                     "title": "Johto Routes",
                                     "content": {
                                         "type": "dock",
-                                        "content": {
-                                            "type": "layout",
-                                            "key": "johto_routes"
-                                        }
+                                        "content": [
+                                            {
+                                                "type": "layout",
+                                                "key": "johto_routes"
+                                            }
+                                        ]
                                     }
                                 },
                                 {
                                     "title": "Johto Dungeons",
                                     "content": {
                                         "type": "dock",
-                                        "content": {
-                                            "type": "layout",
-                                            "key": "johto_dungeons"
-                                        }
+                                        "content": [
+                                            {
+                                                "type": "layout",
+                                                "key": "johto_dungeons"
+                                            }
+                                        ]
                                     }
                                 }
                             ]
