@@ -1585,14 +1585,14 @@
         "stages": [
             {
                 "name": "Flooded Mine is lit",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/dark_areas/dark_floodedmine.png",
                 "img_mods": "@disabled",
                 "codes": "dark_floodedmine, dark_floodedmine_false",
                 "inherit_codes": false
             },
             {
                 "name": "Flooded Mine is dark",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/dark_areas/dark_floodedmine.png",
                 "codes": "dark_floodedmine, dark_floodedmine_true",
                 "inherit_codes": false
             }
@@ -2598,14 +2598,14 @@
         "stages": [
             {
                 "name": "Momsanity is off",
-                "img": "/images/placeholder.png",
+                "img": "/images/other/momsanity.png",
                 "img_mods": "@disabled",
                 "codes": "momsanity, momsanity_off",
                 "inherit_codes": false
             },
             {
                 "name": "Momsanity is on",
-                "img": "/images/placeholder.png",
+                "img": "/images/other/momsanity.png",
                 "codes": "momsanity, momsanity_on",
                 "inherit_codes": false
             }
