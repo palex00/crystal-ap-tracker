@@ -274,10 +274,6 @@ function can_rock_smash()
     return has("TM_ROCK_SMASH")
 end
 
-function can_headbutt()
-    return has("TM_HEAD_BUTT")
-end
-
 function route42_passage()
     if has("route_42_access_vanilla") then
         return can_surf_johto()
@@ -362,10 +358,6 @@ function started(town)
   return not has("start_town_" .. town)
 end
 
-function scout()
-  return AccessibilityLevel.Inspect
-end
-
 function badges_randomised()
   return has("badges_on") or has("badges_shuffle")
 end
@@ -422,10 +414,6 @@ function victory_road_access()
     else
         return AccessibilityLevel.None
     end
-end
-
-function has_pokedex()
-    return has("POKEDEX")
 end
 
 function dark(area)
