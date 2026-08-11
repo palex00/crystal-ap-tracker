@@ -161,6 +161,119 @@
                 ]
             },
             {
+                "name": "Left Salesman",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Left Salesman - Shop Items",
+                        "name": "Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonDeptStore2F",
+                        "x": 216,
+                        "y": 84
+                    }
+                ]
+            },
+            {
+                "name": "Right Salesman",
+                "sections": [
+                    
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Right Salesman - Shop Items",
+                        "name": "Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonDeptStore2F",
+                        "x": 232,
+                        "y": 84
+                    }
+                ]
+            },
+            {
+                "name": "TM Shop",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 3F - TM Shop - Shop Items",
+                        "name": "Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonDeptStore3F",
+                        "x": 120,
+                        "y": 20
+                    }
+                ]
+            },
+            {
+                "name": "Mail Shop",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 4F - Mail Shop - Shop Items",
+                        "name": "Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonDeptStore4F",
+                        "x": 216,
+                        "y": 84
+                    }
+                ]
+            },
+            {
+                "name": "Vitamin Shop",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 5F - Vitamin Shop - Shop Items",
+                        "name": "Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonDeptStore5F",
+                        "x": 120,
+                        "y": 84
+                    }
+                ]
+            },
+            {
+                "name": "X Items Shop​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 5F - X Items Shop - Shop Items",
+                        "name": "Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonDeptStore5F",
+                        "x": 136,
+                        "y": 84
+                    }
+                ]
+            },
+            {
+                "name": "Vending Machine",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Dept. Store 6F - Vending Machine - Shop Items",
+                        "name": "Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonDeptStore6F",
+                        "x": 168,
+                        "y": 24
+                    }
+                ]
+            },
+            {
                 "name": "Cerulean City",
                 "sections": [
                     {
@@ -3331,7 +3444,7 @@
                     {
                         "map": "Route10",
                         "x": 280,
-                        "y": 376
+                        "y": 344
                     }
                 ]
             },
@@ -3346,7 +3459,7 @@
                     {
                         "map": "Route10",
                         "x": 136,
-                        "y": 488
+                        "y": 456
                     }
                 ]
             },
@@ -4932,7 +5045,7 @@
                     {
                         "map": "Route32North",
                         "x": 296,
-                        "y": 152
+                        "y": 136
                     }
                 ]
             },
@@ -4947,7 +5060,7 @@
                     {
                         "map": "Route32North",
                         "x": 200,
-                        "y": 376
+                        "y": 360
                     }
                 ]
             },
@@ -4962,7 +5075,7 @@
                     {
                         "map": "Route32North",
                         "x": 248,
-                        "y": 232
+                        "y": 216
                     }
                 ]
             },
@@ -4977,7 +5090,7 @@
                     {
                         "map": "Route32North",
                         "x": 56,
-                        "y": 504
+                        "y": 488
                     }
                 ]
             },
@@ -9642,8 +9755,8 @@
                 "map_locations": [
                     {
                         "map": "CeladonGameCornerPrizeRoom",
-                        "x": 72,
-                        "y": 72
+                        "x": 40,
+                        "y": 8
                     }
                 ]
             },
@@ -9739,22 +9852,6 @@
                     {
                         "map": "CeruleanMart",
                         "x": 24,
-                        "y": 56
-                    }
-                ]
-            },
-            {
-                "name": "HM01 from Farfetch'd Guy",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Ilex Forest/HM01 from Farfetch'd Guy",
-                        "name": "HM01 from Farfetch'd Guy"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "CharcoalKiln",
-                        "x": 40,
                         "y": 56
                     }
                 ]

@@ -33715,8 +33715,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_FLOODED_MINE:SOUTH_ENTRANCE, ^$dark|floodedmine, ^$hid"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
                         "name": "Hidden Item Southeast",
@@ -33726,8 +33726,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine, ^$hid"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
                         "name": "Hidden Item Northwest",
@@ -33737,8 +33737,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine, ^$hid"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
                         "name": "Item",
@@ -33747,9 +33747,7 @@
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FLOODED_MINE, ^$dark|floodedmine"
-                        ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        ]
                     },
                     {
                         "name": "Land Encounters",
