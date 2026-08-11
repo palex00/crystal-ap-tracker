@@ -448,6 +448,11 @@ SLOT_CODES = {
 }
 
 REQUIREMENT_CODES = {
+    victory_road_requirement = {
+        code = "vr_requirement",
+        mapping = MAP_BADGEGYM,
+        item = VR_REQ
+    },
     elite_four_requirement = {
         code = "e4_requirement",
         mapping = MAP_BADGEGYM,
@@ -480,6 +485,10 @@ REQUIREMENT_CODES = {
     }
 }
 AMOUNT_CODES = {
+    victory_road_count = {
+        code = "vr_requirement",
+        item = VR_REQ
+    },
     elite_four_count = {
         code = "e4_requirement",
         item = E4_REQ

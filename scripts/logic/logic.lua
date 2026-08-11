@@ -424,17 +424,6 @@ function victory_road_access()
     end
 end
 
--- DUMMY. The apworld gates the Victory Road Gate on a badge/gym COUNT
--- (VictoryRoadRequirement + victory_road_count), which the pack does not model yet: it needs
--- its own BadgesGymsRequirement custom item plus an ap_helper slot mapping, the way
--- e4_requirement / mt_silver_requirement / route_44_requirement do. Until then this always
--- passes, so the gate is not enforced.
--- NOTE: unrelated to victory_road_access() above, which is the Strength-boulder gate inside
--- Victory Road itself.
-function has_victory_road_requirement()
-    return true
-end
-
 function has_pokedex()
     return has("POKEDEX")
 end
