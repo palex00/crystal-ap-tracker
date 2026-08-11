@@ -297,8 +297,8 @@ SLOT_CODES = {
         code = "encmethod_rocksmash",
         mapping = MAP_TRIPLE
     },
-    land_time_of_day_encounters = {
-        code = "land_tod",
+    time_of_day_encounters = {
+        code = "timeofday",
         mapping = MAP_TOGGLE
     },
     unlockable_time_of_day = {

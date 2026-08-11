@@ -363,7 +363,7 @@
 {"name": "Learn the password SlowpokeTail", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ROCKET_GRUNTF_5"},
 {"name": "Learn the password RaticateTail", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ROCKET_GRUNTM_28"},
 {"name": "Heal Moomoo", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_HEALED_MOOMOO"},
-{"name": "Jasmine explains Amphy's sickness", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS"},
+{"name": "Jasmine explains Amphy's sickness", "type": "toggle", "img": "/images/events/beat_jasmine.png", "img_mods": "overlay|images/events/amphy_overlay.png", "codes": "EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS"},
 {"name": "Learn the password Hail Giovanni", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_LEARNED_HAIL_GIOVANNI"},
 {"name": "Meet Copycat", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM"},
 {"name": "Meet Kurt", "type": "toggle", "img": "/images/events/kurt.png", "codes": "EVENT_MET_KURT"},
