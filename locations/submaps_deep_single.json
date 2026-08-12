@@ -7412,6 +7412,38 @@
                 ]
             },
             {
+                "name": "Mahogany Town Shop",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Poke Mart - Shop Items",
+                        "name": "Poke Mart - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyMart1F",
+                        "x": 24,
+                        "y": 56
+                    }
+                ]
+            },
+            {
+                "name": "Mahogany Town Rocket Shop",
+                "sections": [        
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket Shop - Shop Items",
+                        "name": "Rocket Shop - Shop Items"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyMart1F",
+                        "x": 72,
+                        "y": 56
+                    }
+                ]
+            },
+            {
                 "name": "Rocket HQ B1F",
                 "sections": [
                     {

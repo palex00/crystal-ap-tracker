@@ -2317,46 +2317,6 @@
                 ]
             },
             {
-                "name": "Celadon Dept. Store Shops",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Left Salesman - Shop Items",
-                        "name": "Dept. Store 2F - Left Salesman - Shop Items"
-                    },
-                    {
-                        "ref": "JohtoKanto/Celadon City/Dept. Store 2F - Right Salesman - Shop Items",
-                        "name": "Dept. Store 2F - Right Salesman - Shop Items"
-                    },
-                    {
-                        "ref": "JohtoKanto/Celadon City/Dept. Store 3F - TM Shop - Shop Items",
-                        "name": "Dept. Store 3F - TM Shop - Shop Items"
-                    },
-                    {
-                        "ref": "JohtoKanto/Celadon City/Dept. Store 4F - Mail Shop - Shop Items",
-                        "name": "Dept. Store 4F - Mail Shop - Shop Items"
-                    },
-                    {
-                        "ref": "JohtoKanto/Celadon City/Dept. Store 5F - Vitamin Shop - Shop Items",
-                        "name": "Dept. Store 5F - Vitamin Shop - Shop Items"
-                    },
-                    {
-                        "ref": "JohtoKanto/Celadon City/Dept. Store 5F - X Items Shop - Shop Items",
-                        "name": "Dept. Store 5F - X Items Shop - Shop Items"
-                    },
-                    {
-                        "ref": "JohtoKanto/Celadon City/Dept. Store 6F - Vending Machine - Shop Items",
-                        "name": "Dept. Store 6F - Vending Machine - Shop Items"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "CeladonDeptStore1F",
-                        "x": 168,
-                        "y": 24
-                    }
-                ]
-            },
-            {
                 "name": "Celadon Game Corner Pokemon Shop",
                 "sections": [
                     {
@@ -2713,26 +2673,6 @@
                 ]
             },
             {
-                "name": "Mahogany Town Shops",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Mahogany Town/Poke Mart - Shop Items",
-                        "name": "Poke Mart - Shop Items"
-                    },
-                    {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket Shop - Shop Items",
-                        "name": "Rocket Shop - Shop Items"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "MahoganyMart1F",
-                        "x": 72,
-                        "y": 56
-                    }
-                ]
-            },
-            {
                 "name": "Rival in Mount Moon",
                 "sections": [
                     {
@@ -2832,8 +2772,8 @@
                         "name": "Mom's Savings - 50000"
                     },
                     {
-                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 10000",
-                        "name": "Mom's Savings - 10000"
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 100000",
+                        "name": "Mom's Savings - 100000"
                     },
                     {
                         "ref": "JohtoKanto/New Bark Town/Player's House - Phone Card from Mom",
