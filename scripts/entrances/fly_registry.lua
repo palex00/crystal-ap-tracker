@@ -311,6 +311,11 @@ FLY_VANILLA_REGIONS = {
     ["IndigoPlateau"] = "REGION_ROUTE_23",
 }
 
+-- set vanilla in init of the tracker. Gets overwritten in onClear later with real values.
+for token, region in pairs(FLY_VANILLA_REGIONS) do
+    FLY_DESTINATIONS[token] = region
+end
+
 -- token -> town overlay icon (reused from the flyunlock item art) for the destination display.
 FLY_ICON_OVERLAYS = {
     ["NewBark"]       = "images/items/flyunlocks/fly_newbarktown.png",
