@@ -174,7 +174,7 @@ end
 function toggle_victoryroad()
     local suffix = "_vanilla"
 
-    if has("victory_road_access_strength") then
+    if has("victory_road_strength_on") then
         suffix = "_strength"
     end
 

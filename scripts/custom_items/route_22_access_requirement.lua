@@ -1,48 +1,48 @@
-KantoAccessRequirement = CustomItem:extend()
+Route22AccessRequirement = CustomItem:extend()
 
-function KantoAccessRequirement:init()
-    self.code = "kanto_access_condition"
-    self:createItem("Kanto Access - Wake up Snorlax", {self.code})
+function Route22AccessRequirement:init()
+    self.code = "route_22_access"
+    self:createItem("Route 22 Access - Wake up Snorlax", {self.code})
     self.type = "snorlax"
     self:setStage(8)
-    self.baseImage = "images/settings/kanto_access.png"
+    self.baseImage = "images/settings/route_22_access.png"
     self.stageCount = 16
     self:updateIcon()
 end
 
-function KantoAccessRequirement:setType(type)
+function Route22AccessRequirement:setType(type)
     self:setProperty("type", type)
 end
 
-function KantoAccessRequirement:getType()
+function Route22AccessRequirement:getType()
     return self:getProperty("type")
 end
 
-function KantoAccessRequirement:setStage(stage)
+function Route22AccessRequirement:setStage(stage)
     self:setProperty("stage", stage)
 end
 
-function KantoAccessRequirement:getStage()
+function Route22AccessRequirement:getStage()
     return self:getProperty("stage")
 end
 
-function KantoAccessRequirement:updateIcon()
+function Route22AccessRequirement:updateIcon()
     local stage = self:getStage()
     local type = self:getType()
     local overlayImg = ""
     local img_mod = ""
     if type == "snorlax" then
-        self.ItemInstance.Name = "Kanto Access - Wake up Snorlax"
-        overlayImg = "images/settings/kanto_access_snorlax_overlay.png"
+        self.ItemInstance.Name = "Route 22 Access - Wake up Snorlax"
+        overlayImg = "images/settings/route_22_access_snorlax_overlay.png"
     elseif type == "badges" then
-        self.ItemInstance.Name = "Kanto Access - Obtain Badges"
-        overlayImg = "images/settings/kanto_access_badges_overlay.png"
+        self.ItemInstance.Name = "Route 22 Access - Obtain Badges"
+        overlayImg = "images/settings/route_22_access_badges_overlay.png"
     elseif type == "gyms" then
-        self.ItemInstance.Name = "Kanto Access - Defeat Gyms"
+        self.ItemInstance.Name = "Route 22 Access - Defeat Gyms"
         overlayImg = "images/settings/gym_overlay_left.png"
     elseif type == "champion" then
-        self.ItemInstance.Name = "Kanto Access - Become Champion"
-        overlayImg = "images/settings/kanto_access_champion_overlay.png"
+        self.ItemInstance.Name = "Route 22 Access - Become Champion"
+        overlayImg = "images/settings/route_22_access_champion_overlay.png"
     end
     if self:getType() == "badges" or self:getType() == "gyms" then
         self.ItemInstance:SetOverlay(tostring(math.floor(stage)))
@@ -54,7 +54,7 @@ function KantoAccessRequirement:updateIcon()
     self.ItemInstance:SetOverlayBackground("202020")
 end
 
-function KantoAccessRequirement:onLeftClick()
+function Route22AccessRequirement:onLeftClick()
     if self:getType() == "badges" or self:getType() == "gyms" then
         if self:getStage() < self.stageCount then
             self:setStage(self:getStage() + 1)
@@ -64,7 +64,7 @@ function KantoAccessRequirement:onLeftClick()
     end
 end
 
-function KantoAccessRequirement:onRightClick()
+function Route22AccessRequirement:onRightClick()
     if self:getType() == "snorlax" then
         self:setType("badges")
     elseif self:getType() == "badges" then
@@ -76,14 +76,14 @@ function KantoAccessRequirement:onRightClick()
     end
 end
 
-function KantoAccessRequirement:canProvideCode(code)
+function Route22AccessRequirement:canProvideCode(code)
     if self.code == code then
         return true
     end
     return false
 end
 
-function KantoAccessRequirement:providesCode(code)
+function Route22AccessRequirement:providesCode(code)
     if self:canProvideCode(code) then
         if self:getType() == "snorlax" then
             if clear_snorlax() == true then
@@ -106,14 +106,14 @@ function KantoAccessRequirement:providesCode(code)
     return 0
 end
 
-function KantoAccessRequirement:save()
+function Route22AccessRequirement:save()
     local save_data = {}
     save_data["type"] = self:getType()
     save_data["stage"] = self:getStage()
     return save_data
 end
 
-function KantoAccessRequirement:load(data)
+function Route22AccessRequirement:load(data)
     if data["type"] ~= nil then
         self:setType(data["type"])
     end
@@ -124,7 +124,7 @@ function KantoAccessRequirement:load(data)
     return true
 end
 
-function KantoAccessRequirement:propertyChanged(key, value)
+function Route22AccessRequirement:propertyChanged(key, value)
     --if TRACKER_READY then
         if key == "type" or key == "stage" then
             self:updateIcon()

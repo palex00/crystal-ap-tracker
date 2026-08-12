@@ -1658,7 +1658,7 @@ NAMED_NODES["REGION_VERMILION_PORT:TICKET"]:connect_one_way(REGION_VERMILION_POR
 NAMED_NODES["REGION_VERMILION_PORT_PASSAGE:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_VERMILION_PORT_PASSAGE:TUNNEL"], "dungeon_interior")
 
 -- === REGION_VICTORY_ROAD:1F:ENTRANCE ===
-NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F"], "TODOBYSNOWFLAV", victory_road_access)
+NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F"], "TODOBYSNOWFLAV", victory_road_strength)
 NAMED_NODES["REGION_VICTORY_ROAD:1F"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"], "TODOBYSNOWFLAV")
 NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "dungeon", function() return has("route_23_restored_off") end)
 NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_23_RESTORED:NORTH"], "dungeon", function() return has("route_23_restored_on") end)
@@ -1681,7 +1681,7 @@ NAMED_NODES["REGION_VICTORY_ROAD:3F"]:connect_one_way_entrance(NAMED_NODES["REGI
 NAMED_NODES["REGION_VICTORY_ROAD:3F"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:3F:SOUTHEAST"], "Victory Road 3F Southeast Ledge Jump")
 
 -- === REGION_VICTORY_ROAD_GATE ===
-REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:EAST"], "Victory Road Gate Traversal (to East)", "Victory Road Gate Traversal (from East)", function() return has("kanto_access_condition") end)
+REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:EAST"], "Victory Road Gate Traversal (to East)", "Victory Road Gate Traversal (from East)", function() return has("route_22_access") end)
 REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:WEST"], "Victory Road Gate Traversal (to West)", "Victory Road Gate Traversal (from West)", function() return has("mt_silver_requirement") end)
 REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "Victory Road Gate Traversal (to North)", "Victory Road Gate Traversal (from North)", function() return has("vr_requirement") end)
 

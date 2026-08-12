@@ -135,7 +135,7 @@ ScriptHost:AddWatchForCode("blackthorn_dark_cave_access", "blackthorn_dark_cave_
 ScriptHost:AddWatchForCode("mount_mortar_access", "mount_mortar_access", toggle_mountmortar)
 ScriptHost:AddWatchForCode("route_42_access", "route_42_access", toggle_mountmortar)
 ScriptHost:AddWatchForCode("route_12_access", "route_12_access", toggle_r12)
-ScriptHost:AddWatchForCode("victory_road_access", "victory_road_access", toggle_victoryroad)
+ScriptHost:AddWatchForCode("victory_road_strength", "victory_road_strength", toggle_victoryroad)
 ScriptHost:AddWatchForCode("flooded_mine", "flooded_mine", toggle_floodedmine)
 ScriptHost:AddWatchForCode("mischief", "mischief", toggle_mischief)
 ScriptHost:AddWatchForCode("chrism", "chrism", toggle_mischief)

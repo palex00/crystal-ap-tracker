@@ -99,7 +99,7 @@ MAP_BADGEGYM = {
     [1] = "gyms",
     [2] = "johtobadges"
 }
-MAP_KANTO_ACCESS = {
+MAP_ROUTE_22_ACCESS = {
     [0] = "snorlax",
     [1] = "badges",
     [2] = "gyms",
@@ -244,10 +244,6 @@ SLOT_CODES = {
         code = "national_park_access",
         mapping = MAP_TOGGLE
     },
-    kanto_access_condition = {
-        code = "kanto_access_condition",
-        mapping = MAP_TRIPLE
-    },
     route_3_access = {
         code = "route_3_access",
         mapping = MAP_TOGGLE
@@ -340,8 +336,8 @@ SLOT_CODES = {
         code = "randomize_evolution",
         mapping = MAP_TRIPLE
     },
-    victory_road_access = {
-        code = "victory_road_access",
+    victory_road_strength = {
+        code = "victory_road_strength",
         mapping = MAP_TOGGLE
     },
     require_flash = {
@@ -481,10 +477,10 @@ REQUIREMENT_CODES = {
         mapping = MAP_BADGEGYM,
         item = R44_REQ
     },
-    kanto_access_requirement = {
-        code = "kanto_access_condition",
-        mapping = MAP_KANTO_ACCESS,
-        item = KANTO_REQ
+    route_22_access_requirement = {
+        code = "route_22_access",
+        mapping = MAP_ROUTE_22_ACCESS,
+        item = ROUTE_22_REQ
     }
 }
 AMOUNT_CODES = {
@@ -512,9 +508,9 @@ AMOUNT_CODES = {
         code = "route_44_requirement",
         item = R44_REQ
     },
-    kanto_access_count = {
-        code = "kanto_access_count",
-        item = KANTO_REQ
+    route_22_access_count = {
+        code = "route_22_access_count",
+        item = ROUTE_22_REQ
     }
 }
 
