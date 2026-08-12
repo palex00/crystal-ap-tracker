@@ -168,11 +168,6 @@ SLOT_CODES = {
     -- Entrance randomization is NOT one slot_data key per category: the apworld sends a single
     -- `randomize_entrances` OptionSet holding the display names of the enabled categories
     -- (empty = ER off). It is handled in LIST_CODES below.
-    -- temp disabled
-    --goal = {
-    --    code = "goal",
-    --    mapping = MAP_SIXTUPLE
-    --},
     randomize_badges = {
         code = "badges",
         mapping = MAP_TRIPLE
@@ -524,6 +519,18 @@ AMOUNT_CODES = {
 }
 
 LIST_CODES = {
+    goal_option = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Elite Four"]         = "goal_e4",
+            ["Red"]                = "goal_red",
+            ["Diploma"]            = "goal_diploma",
+            ["Rival"]              = "goal_rival",
+            ["Defeat Team Rocket"] = "goal_rocket",
+            ["Unown Hunt"]         = "goal_unown",
+            ["Battle Tower"]       = "goal_battletower",
+        }
+    },
     -- ER categories actually in the shuffle pool. The apworld's RandomizeEntrances OptionSet
     -- sends the display names below; anything absent stays off (its entrances are vanilla and
     -- get no tracker item). Setting er_<cat> fires the init.lua watch -> refreshERCategories()

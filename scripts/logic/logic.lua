@@ -594,7 +594,7 @@ function r12_passage()
 end
 
 function unown_tile(tile)
-    return not has("goal_unown") or has(tile, 16)
+    return not has("goal_unown_on") or has(tile, 16)
 end
 
 function partial_trainersanity()
