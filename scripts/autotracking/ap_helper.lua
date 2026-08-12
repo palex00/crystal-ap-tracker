@@ -395,7 +395,15 @@ SLOT_CODES = {
     },
     randomize_phone_call_items = {
         code = "randomize_phone_call_items",
-        mapping = MAP_TRIPLE
+        mapping = MAP_TOGGLE
+    },
+    phone_call_mode = {
+        code = "phone_call_mode",
+        mapping = MAP_TOGGLE
+    },
+    rematchsanity = {
+        code = "randomize_rematches",
+        mapping = MAP_TOGGLE
     },
     route_12_access = {
         code = "route_12_access",

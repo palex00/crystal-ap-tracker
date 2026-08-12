@@ -557,20 +557,21 @@ function phonecard()
 end
 
 function phonecall()
-    if has("randomize_phone_call_items_vanilla") then
-        local newbark = CanReach("REGION_NEW_BARK_TOWN")
-        if newbark ~= AccessibilityLevel.None then
-            return math.min(newbark, phonecard())
-        else
-            return phonecard()
-        end
-    elseif has("randomize_phone_call_items_simple") then
-        return phonecard()
+    local level = phonecard()
+    if has("phone_call_mode_vanilla") then
+        level = math.min(level, CanReach("REGION_PLAYERS_HOUSE_1F"))
     end
-    -- randomize_phone_call_items_off: the phone call items are not in the pool at all.
-    -- Explicit None rather than falling off the end -- a nil was already treated as None by
-    -- PopTracker, but Node:discover logs a warning for every nil a rule returns.
-    return AccessibilityLevel.None
+    return level
+end
+
+function joey_hp_up()
+    if has("EVENT_BEAT_ELITE_FOUR") then
+        return AccessibilityLevel.Normal
+    elseif has("randomize_rematches_true") then
+        return AccessibilityLevel.SequenceBreak
+    else
+        return AccessibilityLevel.None
+    end
 end
 
 -- Kanto phone calls only work once the power is back on.
