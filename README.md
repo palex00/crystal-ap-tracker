@@ -21,15 +21,16 @@ Supported Features:
 - Fly Destination Rando
 - Time of Day Encounters (fishing & land)
 - Rematchsanity
+- Multiple Goals
 
 Unsupported Beta Features:
-- Multiple Goals - currently debug shows all of them; event grid shows all events
 - New Locations (these auto-track but do not have logic to them)
     - Lucky Number Show
 - everything else, basically
 
 Features that work in live but not in beta:
 - Autotracking of the encounter & evolution method options
+- dynamic layouts (itemgrids)
 
 
 
