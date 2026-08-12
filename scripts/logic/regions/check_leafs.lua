@@ -105,7 +105,7 @@ REGION_LAKE_OF_RAGE:connect_one_way("EVENT_DECIDED_TO_HELP_LANCE", function() re
 
 -- === REGION_LAKE_OF_RAGE_MAGIKARP_HOUSE ===
 REGION_LAKE_OF_RAGE_MAGIKARP_HOUSE:connect_one_way("LAKE_OF_RAGE_MAGIKARP_PRIZE", function()
-        return has("EVENT_CLEARED_ROCKET_HIDEOUT") and has_pokedex()
+        return has("EVENT_CLEARED_ROCKET_HIDEOUT") and has("POKEDEX")
     end)
 
 -- === REGION_LAV_RADIO_TOWER_1F ===
@@ -118,7 +118,7 @@ REGION_MOUNT_MOON_SQUARE:connect_one_way("MOUNT_MOON_SQUARE_HIDDEN_MOON_STONE", 
 REGION_MR_POKEMONS_HOUSE:connect_one_way("EXP_SHARE", function() return has("RED_SCALE") end)
 
 -- === REGION_NATIONAL_PARK ===
-REGION_NATIONAL_PARK:connect_one_way("NUGGET_FROM_BEVERLY", function() return ALL(phonecall, request_pokemon, has_pokedex) end)
+REGION_NATIONAL_PARK:connect_one_way("NUGGET_FROM_BEVERLY", function() return ALL(phonecall, request_pokemon, "POKEDEX") end)
 
 -- === REGION_OLIVINE_LIGHTHOUSE_6F ===
 REGION_OLIVINE_LIGHTHOUSE_6F:connect_one_way("EVENT_JASMINE_RETURNED_TO_GYM", function() return has("SECRETPOTION") end)
@@ -167,7 +167,7 @@ NAMED_NODES["REGION_ROUTE_27:WESTWATER"]:connect_one_way("ROUTE_27_RARE_CANDY", 
 REGION_ROUTE_29:connect_one_way("PINK_BOW_FROM_TUSCANY", function() return has("ZEPHYR_BADGE") end)
 
 -- === REGION_ROUTE_30:POST_MYSTERY_EGG ===
-NAMED_NODES["REGION_ROUTE_30:POST_MYSTERY_EGG"]:connect_one_way("HP_UP_FROM_JOEY", function() return ALL(phonecall, function() return has("EVENT_BEAT_ELITE_FOUR") end) end)
+NAMED_NODES["REGION_ROUTE_30:POST_MYSTERY_EGG"]:connect_one_way("HP_UP_FROM_JOEY", function() return ALL(phonecall, joey_hp_up) end)
 
 -- === REGION_ROUTE_31 ===
 REGION_ROUTE_31:connect_one_way("BERRY_FROM_BUG_CATCHER_WADE", phonecall)
@@ -197,7 +197,7 @@ NAMED_NODES["REGION_ROUTE_36:WEST"]:connect_one_way("FIRE_STONE_FROM_ALAN", phon
 REGION_ROUTE_38:connect_one_way("THUNDERSTONE_FROM_DANA", phonecall)
 
 -- === REGION_ROUTE_39 ===
-REGION_ROUTE_39:connect_one_way("NUGGET_FROM_DEREK", function() return ALL(phonecall, request_pokemon, has_pokedex) end)
+REGION_ROUTE_39:connect_one_way("NUGGET_FROM_DEREK", function() return ALL(phonecall, request_pokemon, "POKEDEX") end)
 
 -- === REGION_ROUTE_39_FARMHOUSE ===
 REGION_ROUTE_39_FARMHOUSE:connect_one_way("MOOMOO_MILK_FROM_MOOMOO_FARM", function() return has("EVENT_HEALED_MOOMOO") end)
@@ -216,7 +216,7 @@ NAMED_NODES["REGION_ROUTE_42:EAST"]:connect_one_way("WATER_STONE_FROM_TULLY", ph
 NAMED_NODES["REGION_ROUTE_42:WEST"]:connect_one_way("ROUTE_42_HIDDEN_MAX_POTION", can_surf_johto)
 
 -- === REGION_ROUTE_43 ===
-REGION_ROUTE_43:connect_one_way("PINK_BOW_FROM_TIFFANY", function() return ALL(phonecall, request_pokemon, has_pokedex) end)
+REGION_ROUTE_43:connect_one_way("PINK_BOW_FROM_TIFFANY", function() return ALL(phonecall, request_pokemon, "POKEDEX") end)
 
 -- === REGION_ROUTE_43_GATE ===
 REGION_ROUTE_43_GATE:connect_one_way("TM36_SLUDGE_BOMB", function() return has("EVENT_CLEARED_ROCKET_HIDEOUT") end)

@@ -274,10 +274,6 @@ function can_rock_smash()
     return has("TM_ROCK_SMASH")
 end
 
-function can_headbutt()
-    return has("TM_HEAD_BUTT")
-end
-
 function route42_passage()
     if has("route_42_access_vanilla") then
         return can_surf_johto()
@@ -362,10 +358,6 @@ function started(town)
   return not has("start_town_" .. town)
 end
 
-function scout()
-  return AccessibilityLevel.Inspect
-end
-
 function badges_randomised()
   return has("badges_on") or has("badges_shuffle")
 end
@@ -422,21 +414,6 @@ function victory_road_access()
     else
         return AccessibilityLevel.None
     end
-end
-
--- DUMMY. The apworld gates the Victory Road Gate on a badge/gym COUNT
--- (VictoryRoadRequirement + victory_road_count), which the pack does not model yet: it needs
--- its own BadgesGymsRequirement custom item plus an ap_helper slot mapping, the way
--- e4_requirement / mt_silver_requirement / route_44_requirement do. Until then this always
--- passes, so the gate is not enforced.
--- NOTE: unrelated to victory_road_access() above, which is the Strength-boulder gate inside
--- Victory Road itself.
-function has_victory_road_requirement()
-    return true
-end
-
-function has_pokedex()
-    return has("POKEDEX")
 end
 
 function dark(area)
@@ -580,20 +557,21 @@ function phonecard()
 end
 
 function phonecall()
-    if has("randomize_phone_call_items_vanilla") then
-        local newbark = CanReach("REGION_NEW_BARK_TOWN")
-        if newbark ~= AccessibilityLevel.None then
-            return math.min(newbark, phonecard())
-        else
-            return phonecard()
-        end
-    elseif has("randomize_phone_call_items_simple") then
-        return phonecard()
+    local level = phonecard()
+    if has("phone_call_mode_vanilla") then
+        level = math.min(level, CanReach("REGION_PLAYERS_HOUSE_1F"))
     end
-    -- randomize_phone_call_items_off: the phone call items are not in the pool at all.
-    -- Explicit None rather than falling off the end -- a nil was already treated as None by
-    -- PopTracker, but Node:discover logs a warning for every nil a rule returns.
-    return AccessibilityLevel.None
+    return level
+end
+
+function joey_hp_up()
+    if has("EVENT_BEAT_ELITE_FOUR") then
+        return AccessibilityLevel.Normal
+    elseif has("randomize_rematches_true") then
+        return AccessibilityLevel.SequenceBreak
+    else
+        return AccessibilityLevel.None
+    end
 end
 
 -- Kanto phone calls only work once the power is back on.

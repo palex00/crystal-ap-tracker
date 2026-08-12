@@ -297,8 +297,8 @@ SLOT_CODES = {
         code = "encmethod_rocksmash",
         mapping = MAP_TRIPLE
     },
-    land_time_of_day_encounters = {
-        code = "land_tod",
+    time_of_day_encounters = {
+        code = "timeofday",
         mapping = MAP_TOGGLE
     },
     unlockable_time_of_day = {
@@ -395,7 +395,15 @@ SLOT_CODES = {
     },
     randomize_phone_call_items = {
         code = "randomize_phone_call_items",
-        mapping = MAP_TRIPLE
+        mapping = MAP_TOGGLE
+    },
+    phone_call_mode = {
+        code = "phone_call_mode",
+        mapping = MAP_TOGGLE
+    },
+    rematchsanity = {
+        code = "randomize_rematches",
+        mapping = MAP_TOGGLE
     },
     route_12_access = {
         code = "route_12_access",
@@ -448,6 +456,11 @@ SLOT_CODES = {
 }
 
 REQUIREMENT_CODES = {
+    victory_road_requirement = {
+        code = "vr_requirement",
+        mapping = MAP_BADGEGYM,
+        item = VR_REQ
+    },
     elite_four_requirement = {
         code = "e4_requirement",
         mapping = MAP_BADGEGYM,
@@ -480,6 +493,10 @@ REQUIREMENT_CODES = {
     }
 }
 AMOUNT_CODES = {
+    victory_road_count = {
+        code = "vr_requirement",
+        item = VR_REQ
+    },
     elite_four_count = {
         code = "e4_requirement",
         item = E4_REQ

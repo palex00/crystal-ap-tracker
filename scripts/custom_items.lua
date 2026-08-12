@@ -10,6 +10,7 @@ ScriptHost:LoadScript("scripts/custom_items/trainersanity.lua")
 -- ScriptHost:LoadScript("scripts/custom_items/pokedex.lua")
 -- ScriptHost:LoadScript("scripts/custom_items/pokedex_requirement.lua")
 
+VR_REQ = BadgesGymsRequirement("Victory Road Requirement", "vr_requirement", 8, 16, "images/settings/vr_requirement.png")
 E4_REQ = BadgesGymsRequirement("Elite Four Requirement", "e4_requirement", 8, 16, "images/settings/e4_requirement.png")
 RED_REQ = BadgesGymsRequirement("Red Requirement", "red_requirement", 16, 16, "images/settings/red_requirement.png")
 RADIO_REQ = BadgesGymsRequirement("Radio Tower Requirement", "tower_requirement", 7, 16, "images/settings/tower_requirement.png")

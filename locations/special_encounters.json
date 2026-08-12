@@ -140,8 +140,33 @@
                         "name": "Shore",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "timeofday_off"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Shore"
+                        ]
+                    },
+                    {
+                        "name": "Shore (Day)",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "visibility_rules": [
+                            "timeofday_on"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|FISHING_Shore, ^$fish_tod|DAY"
+                        ]
+                    },
+                    {
+                        "name": "Shore (Nite)",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "visibility_rules": [
+                            "timeofday_on"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|FISHING_Shore, ^$fish_tod|NITE"
                         ]
                     },
                     {
@@ -251,8 +276,33 @@
                         "name": "Shore",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "timeofday_off"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Shore"
+                        ]
+                    },
+                    {
+                        "name": "Shore (Day)",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "visibility_rules": [
+                            "timeofday_on"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|FISHING_Shore, ^$fish_tod|DAY"
+                        ]
+                    },
+                    {
+                        "name": "Shore (Nite)",
+                        "clear_as_group": false,
+                        "item_count": 4,
+                        "visibility_rules": [
+                            "timeofday_on"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|FISHING_Shore, ^$fish_tod|NITE"
                         ]
                     },
                     {

@@ -255,21 +255,21 @@
         ]
     },
     {
-        "name": "Land Time of Day Encounters",
+        "name": "Time of Day Encounters",
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Land Time of Day Encounters Off",
+                "name": "Time of Day Encounters Off",
                 "img": "/images/placeholder.png",
-                "codes": "land_tod, land_tod_off",
+                "codes": "timeofday, timeofday_off",
                 "inherit_codes": false
             },
             {
-                "name": "Land Time of Day Encounters On",
+                "name": "Time of Day Encounters On",
                 "img": "/images/placeholder.png",
-                "codes": "land_tod, land_tod_on",
+                "codes": "timeofday, timeofday_on",
                 "inherit_codes": false
             }
         ]

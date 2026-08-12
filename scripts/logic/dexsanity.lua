@@ -137,6 +137,13 @@ function land_tod(tod)
     return AccessibilityLevel.None
 end
 
+function fish_tod(tod)
+    if tod == "DAY" then
+        return math.max(land_tod("MORN"), land_tod("DAY"))
+    end
+    return land_tod(tod)
+end
+
 function surf_encounter_johto()
     if has("encmethod_water_on") and can_surf_johto() then
         return AccessibilityLevel.Normal

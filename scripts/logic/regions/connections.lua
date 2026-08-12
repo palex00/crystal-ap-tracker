@@ -1645,7 +1645,7 @@ NAMED_NODES["REGION_VICTORY_ROAD:3F"]:connect_one_way(NAMED_NODES["REGION_VICTOR
 -- === REGION_VICTORY_ROAD_GATE ===
 REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:EAST"], "Victory Road Gate Traversal (to East)", "Victory Road Gate Traversal (from East)", function() return has("kanto_access_condition") end)
 REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:WEST"], "Victory Road Gate Traversal (to West)", "Victory Road Gate Traversal (from West)", function() return has("mt_silver_requirement") end)
-REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "Victory Road Gate Traversal (to North)", "Victory Road Gate Traversal (from North)", has_victory_road_requirement)
+REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "Victory Road Gate Traversal (to North)", "Victory Road Gate Traversal (from North)", function() return has("vr_requirement") end)
 
 -- === REGION_VICTORY_ROAD_GATE:NORTH ===
 NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_23_RESTORED:SOUTH"], "gate", function() return has("route_23_restored_on") end)
