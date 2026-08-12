@@ -313,10 +313,6 @@ function clear_snorlax()
   return (has("POKE_GEAR") and has("RADIO_CARD") and has("EXPN_CARD"))
 end
 
-function all_badges()
-    return kantobadges() == 8
-end
-
 function silver_cave()
   return not has("johto_only_on")
 end
@@ -449,16 +445,6 @@ function can_flash(region)
     else
         return can_use_flash(region) and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
     end
-end
-
--- this one literally only exists for the Aerodactyl Room
-function flash_badge()
-    return (
-        has("badgereqs_none") or
-        has("FREE_FLASH") or
-        ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
-        (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
-    )
 end
 
 function kantogymlock()
