@@ -920,14 +920,6 @@ function calculateEvoLevel()
     makeDigits(result, "result_digit1", "result_digit2")
 end
 
-function snorlax_access()
-    if snorlax_code == true then
-        return CanReach("REGION_VERMILION_CITY")
-    else
-        return false
-    end
-end
-
 function toggleHints()
     if has("hint_tracking_off") then
         updatePokemon()

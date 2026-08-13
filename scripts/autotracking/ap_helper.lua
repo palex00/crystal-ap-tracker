@@ -99,7 +99,7 @@ MAP_BADGEGYM = {
     [1] = "gyms",
     [2] = "johtobadges"
 }
-MAP_KANTO_ACCESS = {
+MAP_ROUTE_22_ACCESS = {
     [0] = "snorlax",
     [1] = "badges",
     [2] = "gyms",
@@ -168,11 +168,6 @@ SLOT_CODES = {
     -- Entrance randomization is NOT one slot_data key per category: the apworld sends a single
     -- `randomize_entrances` OptionSet holding the display names of the enabled categories
     -- (empty = ER off). It is handled in LIST_CODES below.
-    -- temp disabled
-    --goal = {
-    --    code = "goal",
-    --    mapping = MAP_SIXTUPLE
-    --},
     randomize_badges = {
         code = "badges",
         mapping = MAP_TRIPLE
@@ -248,10 +243,6 @@ SLOT_CODES = {
     national_park_access = {
         code = "national_park_access",
         mapping = MAP_TOGGLE
-    },
-    kanto_access_condition = {
-        code = "kanto_access_condition",
-        mapping = MAP_TRIPLE
     },
     route_3_access = {
         code = "route_3_access",
@@ -345,8 +336,8 @@ SLOT_CODES = {
         code = "randomize_evolution",
         mapping = MAP_TRIPLE
     },
-    victory_road_access = {
-        code = "victory_road_access",
+    victory_road_strength = {
+        code = "victory_road_strength",
         mapping = MAP_TOGGLE
     },
     require_flash = {
@@ -486,10 +477,10 @@ REQUIREMENT_CODES = {
         mapping = MAP_BADGEGYM,
         item = R44_REQ
     },
-    kanto_access_requirement = {
-        code = "kanto_access_condition",
-        mapping = MAP_KANTO_ACCESS,
-        item = KANTO_REQ
+    route_22_access_requirement = {
+        code = "route_22_access",
+        mapping = MAP_ROUTE_22_ACCESS,
+        item = ROUTE_22_REQ
     }
 }
 AMOUNT_CODES = {
@@ -517,13 +508,25 @@ AMOUNT_CODES = {
         code = "route_44_requirement",
         item = R44_REQ
     },
-    kanto_access_count = {
-        code = "kanto_access_count",
-        item = KANTO_REQ
+    route_22_access_count = {
+        code = "route_22_access_count",
+        item = ROUTE_22_REQ
     }
 }
 
 LIST_CODES = {
+    goal_option = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Elite Four"]         = "goal_e4",
+            ["Red"]                = "goal_red",
+            ["Diploma"]            = "goal_diploma",
+            ["Rival"]              = "goal_rival",
+            ["Defeat Team Rocket"] = "goal_rocket",
+            ["Unown Hunt"]         = "goal_unown",
+            ["Battle Tower"]       = "goal_battletower",
+        }
+    },
     -- ER categories actually in the shuffle pool. The apworld's RandomizeEntrances OptionSet
     -- sends the display names below; anything absent stays off (its entrances are vanilla and
     -- get no tracker item). Setting er_<cat> fires the init.lua watch -> refreshERCategories()

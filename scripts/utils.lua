@@ -17,10 +17,6 @@ function has(item, amount)
     end
 end
 
-function progCount(code)
-    return Tracker:FindObjectForCode(code).AcquiredCount
-end
-
 function table_contains(table, element)
     for _, value in pairs(table) do
         if value == element then

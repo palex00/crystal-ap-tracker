@@ -1,50 +1,154 @@
 [
     {
-        "name": "Goal",
+        "name": "Goal: Elite Four",
         "type": "progressive",
         "loop": true,
+        "initial_stage_idx": 0,
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Goal - DEBUG: ALL",
+                "name": "Elite Four is not a goal",
                 "img": "/images/events/become_champion.png",
-                "codes": "goal, goal_e4, goal_red, goal_diploma, goal_rival, goal_rocket, goal_unown",
+                "img_mods": "@disabled",
+                "codes": "goal_e4, goal_e4_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Defeat Elite Four",
+                "name": "Goal: Defeat the Elite Four",
                 "img": "/images/events/become_champion.png",
-                "codes": "goal, goal_e4",
+                "codes": "goal_e4, goal_e4_on",
                 "inherit_codes": false
-            },
+            }
+        ]
+    },
+    {
+        "name": "Goal: Red",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
             {
-                "name": "Goal - Defeat Red",
+                "name": "Red is not a goal",
                 "img": "/images/events/defeat_red.png",
-                "codes": "goal, goal_red",
+                "img_mods": "@disabled",
+                "codes": "goal_red, goal_red_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Diploma",
+                "name": "Goal: Defeat Red",
+                "img": "/images/events/defeat_red.png",
+                "codes": "goal_red, goal_red_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Diploma",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Diploma is not a goal",
                 "img": "/images/events/diploma.png",
-                "codes": "goal, goal_diploma",
+                "img_mods": "@disabled",
+                "codes": "goal_diploma, goal_diploma_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Rival Hunt",
+                "name": "Goal: Obtain the Diploma",
+                "img": "/images/events/diploma.png",
+                "codes": "goal_diploma, goal_diploma_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Rival",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Rival is not a goal",
                 "img": "/images/trainers/rival.png",
-                "codes": "goal, goal_rival",
+                "img_mods": "@disabled",
+                "codes": "goal_rival, goal_rival_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Team Rocket Hunt",
+                "name": "Goal: Win all rival battles",
+                "img": "/images/trainers/rival.png",
+                "codes": "goal_rival, goal_rival_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Defeat Team Rocket",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Team Rocket is not a goal",
                 "img": "/images/trainers/rocket_m.png",
-                "codes": "goal, goal_rocket",
+                "img_mods": "@disabled",
+                "codes": "goal_rocket, goal_rocket_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Unown Hunt",
+                "name": "Goal: Defeat Team Rocket",
+                "img": "/images/trainers/rocket_m.png",
+                "codes": "goal_rocket, goal_rocket_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Unown Hunt",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Unown Hunt is not a goal",
                 "img": "/images/events/unown.png",
-                "codes": "goal, goal_unown",
+                "img_mods": "@disabled",
+                "codes": "goal_unown, goal_unown_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal: Catch all 26 Unown",
+                "img": "/images/events/unown.png",
+                "codes": "goal_unown, goal_unown_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Battle Tower",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Battle Tower is not a goal",
+                "img": "/images/other/battletower.png",
+                "img_mods": "@disabled",
+                "codes": "goal_battletower, goal_battletower_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal: Beat all Battle Tower tiers",
+                "img": "/images/other/battletower.png",
+                "codes": "goal_battletower, goal_battletower_on",
                 "inherit_codes": false
             }
         ]
@@ -1505,23 +1609,23 @@
         ]
     },
     {
-        "name": "Victory Road Access",
+        "name": "Victory Road Strength",
         "type": "progressive",
         "loop": true,
         "initial_stage_idx": 0,
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Victory Road Access: Vanilla",
-                "img": "/images/settings/victoryroadaccess.png",
+                "name": "Victory Road Strength: Off",
+                "img": "/images/settings/victoryroadstrength.png",
                 "img_mods": "@disabled",
-                "codes": "victory_road_access, victory_road_access_vanilla",
+                "codes": "victory_road_strength, victory_road_strength_off",
                 "inherit_codes": false
             },
             {
-                "name": "Victory Road Access: Strength",
-                "img": "/images/settings/victoryroadaccess.png",
-                "codes": "victory_road_access, victory_road_access_strength",
+                "name": "Victory Road Strength: On",
+                "img": "/images/settings/victoryroadstrength.png",
+                "codes": "victory_road_strength, victory_road_strength_on",
                 "inherit_codes": false
             }
         ]

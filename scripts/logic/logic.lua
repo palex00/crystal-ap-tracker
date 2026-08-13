@@ -313,10 +313,6 @@ function clear_snorlax()
   return (has("POKE_GEAR") and has("RADIO_CARD") and has("EXPN_CARD"))
 end
 
-function all_badges()
-    return kantobadges() == 8
-end
-
 function silver_cave()
   return not has("johto_only_on")
 end
@@ -406,10 +402,10 @@ function bluecard_shop(amount)
     end
 end
 
-function victory_road_access()
-    if has("victory_road_access_vanilla") then
+function victory_road_strength()
+    if has("victory_road_strength_off") then
         return AccessibilityLevel.Normal
-    elseif has("victory_road_access_strength") and can_strength() then
+    elseif has("victory_road_strength_on") and can_strength() then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.None
@@ -449,16 +445,6 @@ function can_flash(region)
     else
         return can_use_flash(region) and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
     end
-end
-
--- this one literally only exists for the Aerodactyl Room
-function flash_badge()
-    return (
-        has("badgereqs_none") or
-        has("FREE_FLASH") or
-        ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
-        (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
-    )
 end
 
 function kantogymlock()
@@ -594,7 +580,7 @@ function r12_passage()
 end
 
 function unown_tile(tile)
-    return not has("goal_unown") or has(tile, 16)
+    return not has("goal_unown_on") or has(tile, 16)
 end
 
 function partial_trainersanity()

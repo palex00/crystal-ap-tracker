@@ -6,6 +6,14 @@
             "content": [
                 {
                     "type": "group",
+                    "header": "Goal",
+                    "content": {
+                        "type": "layout",
+                        "key": "goal_grid"
+                    }
+                },
+                {
+                    "type": "group",
                     "header": "Sanities & Shuffles",
                     "content": {
                         "type": "layout",
@@ -70,6 +78,25 @@
                 }
             ]
     },
+    "goal_grid": {
+        "type": "itemgrid",
+        "item_margin": "2, 2",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "goal_e4",
+                "goal_red",
+                "goal_rival",
+                "goal_rocket",
+                "goal_unown",
+                "goal_diploma",
+                "goal_battletower"
+            ]
+        ]
+    },
     "sanity_grid": {
         "type": "itemgrid",
         "item_margin": "2, 2",
@@ -79,7 +106,6 @@
         "h_alignment": "left",
         "rows": [
             [
-                "goal",
                 "johto_only",
                 "dexsanity",
                 "berries",
@@ -169,7 +195,7 @@
                 "red_gyarados_access",
                 "route_44_requirement",
                 "vr_requirement",
-                "victory_road_access",
+                "victory_road_strength",
                 "e4_requirement",
                 "lance_requires_elite_four",
                 "mt_silver_requirement",
@@ -187,7 +213,7 @@
         "h_alignment": "left",
         "rows": [
             [
-                "kanto_access_condition",
+                "route_22_access",
                 "ew_underground",
                 "underground_power",
                 "tea_guard",

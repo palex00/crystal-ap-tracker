@@ -1326,7 +1326,7 @@ NAMED_NODES["REGION_ROUTE_8_SAFFRON_GATE:WEST"]:connect_two_ways(NAMED_NODES["RE
 
 -- === REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER ===
 REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER:connect_two_ways_entrance(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH"], "dungeon")
-REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_INNER_CHAMBER, "one_way", function() return not has("goal_unown") or has("AERODACTYL_TILE", 16) end)
+REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_INNER_CHAMBER, "one_way", function() return unown_tile("AERODACTYL_TILE") end)
 REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM, "dungeon_interior", function() return can_use_flash("johto") end)
 REGION_RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM:connect_one_way_entrance(REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER, "dungeon_interior")
 
@@ -1338,7 +1338,7 @@ REGION_RUINS_OF_ALPH_AERODACTYL_WORD_ROOM:connect_one_way_entrance(REGION_RUINS_
 
 -- === REGION_RUINS_OF_ALPH_HO_OH_CHAMBER ===
 REGION_RUINS_OF_ALPH_HO_OH_CHAMBER:connect_two_ways_entrance(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:WEST"], "dungeon")
-REGION_RUINS_OF_ALPH_HO_OH_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_INNER_CHAMBER, "one_way", function() return not has("goal_unown") or has("HO-OH_TILE", 16) end)
+REGION_RUINS_OF_ALPH_HO_OH_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_INNER_CHAMBER, "one_way", function() return unown_tile("HO-OH_TILE") end)
 REGION_RUINS_OF_ALPH_HO_OH_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_HO_OH_ITEM_ROOM, "dungeon_interior", function() return has("RAINBOW_WING") end)
 REGION_RUINS_OF_ALPH_HO_OH_ITEM_ROOM:connect_one_way_entrance(REGION_RUINS_OF_ALPH_HO_OH_CHAMBER, "dungeon_interior")
 
@@ -1353,7 +1353,7 @@ REGION_RUINS_OF_ALPH_INNER_CHAMBER:connect_two_ways_entrance(REGION_RUINS_OF_ALP
 
 -- === REGION_RUINS_OF_ALPH_KABUTO_CHAMBER ===
 REGION_RUINS_OF_ALPH_KABUTO_CHAMBER:connect_two_ways_entrance(REGION_RUINS_OF_ALPH_OUTSIDE, "dungeon")
-REGION_RUINS_OF_ALPH_KABUTO_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_INNER_CHAMBER, "one_way", function() return not has("goal_unown") or has("KABUTO_TILE", 16) end)
+REGION_RUINS_OF_ALPH_KABUTO_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_INNER_CHAMBER, "one_way", function() return unown_tile("KABUTO_TILE") end)
 REGION_RUINS_OF_ALPH_KABUTO_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM, "dungeon_interior", function() return has("ESCAPE_ROPE") end)
 REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM:connect_one_way_entrance(REGION_RUINS_OF_ALPH_KABUTO_CHAMBER, "dungeon_interior")
 
@@ -1365,7 +1365,7 @@ REGION_RUINS_OF_ALPH_KABUTO_WORD_ROOM:connect_one_way_entrance(REGION_RUINS_OF_A
 
 -- === REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER ===
 REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER:connect_two_ways_entrance(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:OMANYTE_LEDGE"], "dungeon")
-REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_INNER_CHAMBER, "one_way", function() return not has("goal_unown") or has("OMANYTE_TILE", 16) end)
+REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_INNER_CHAMBER, "one_way", function() return unown_tile("OMANYTE_TILE") end)
 REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER:connect_one_way_entrance(REGION_RUINS_OF_ALPH_OMANYTE_ITEM_ROOM, "dungeon_interior", function() return has("WATER_STONE") end)
 REGION_RUINS_OF_ALPH_OMANYTE_ITEM_ROOM:connect_one_way_entrance(REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER, "dungeon_interior")
 
@@ -1620,7 +1620,7 @@ NAMED_NODES["REGION_VERMILION_PORT:TICKET"]:connect_one_way(REGION_VERMILION_POR
 NAMED_NODES["REGION_VERMILION_PORT_PASSAGE:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_VERMILION_PORT_PASSAGE:TUNNEL"], "dungeon_interior")
 
 -- === REGION_VICTORY_ROAD:1F:ENTRANCE ===
-NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F"], "TODOBYSNOWFLAV", victory_road_access)
+NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F"], "TODOBYSNOWFLAV", victory_road_strength)
 NAMED_NODES["REGION_VICTORY_ROAD:1F"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"], "TODOBYSNOWFLAV")
 NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "dungeon", function() return has("route_23_restored_off") end)
 NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_23_RESTORED:NORTH"], "dungeon", function() return has("route_23_restored_on") end)
@@ -1643,7 +1643,7 @@ NAMED_NODES["REGION_VICTORY_ROAD:3F"]:connect_one_way_entrance(NAMED_NODES["REGI
 NAMED_NODES["REGION_VICTORY_ROAD:3F"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:3F:SOUTHEAST"], "Victory Road 3F Southeast Ledge Jump")
 
 -- === REGION_VICTORY_ROAD_GATE ===
-REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:EAST"], "Victory Road Gate Traversal (to East)", "Victory Road Gate Traversal (from East)", function() return has("kanto_access_condition") end)
+REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:EAST"], "Victory Road Gate Traversal (to East)", "Victory Road Gate Traversal (from East)", function() return has("route_22_access") end)
 REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:WEST"], "Victory Road Gate Traversal (to West)", "Victory Road Gate Traversal (from West)", function() return has("mt_silver_requirement") end)
 REGION_VICTORY_ROAD_GATE:connect_two_ways(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "Victory Road Gate Traversal (to North)", "Victory Road Gate Traversal (from North)", function() return has("vr_requirement") end)
 
