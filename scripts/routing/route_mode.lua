@@ -18,6 +18,8 @@ local STEPS = -1
 -- region node (set per route in GetRoute); nil until then. See HomeRegion below.
 local HOME = nil
 
+local FLY_HOPS = {}
+
 --- The starting-town region for this seed: the single Entry_point exit whose start_town_*
 --- rule currently passes. Derived from the structural entry edges in connections.lua so there
 --- is one source of truth. Returns nil if no start town is set yet.
@@ -31,6 +33,23 @@ local function HomeRegion()
         end
     end
     return nil
+end
+
+local function ReachableFlyHops()
+    local hops = {}
+    for _, exit in pairs(Entry_point.exits) do
+        local token = exit[7]
+        if token then
+            local ok = exit[2](0)
+            if type(ok) == "boolean" then ok = A(ok) end
+            local target = FlyDetourTarget(token)
+            if ok and ok > ACCESS_SEQUENCEBREAK - 1
+                and target:accessibility() > ACCESS_SEQUENCEBREAK - 1 then
+                hops[#hops + 1] = { node = target, label = exit[6] or "" }
+            end
+        end
+    end
+    return hops
 end
 
 --- Depth-first search over the graph honoring the entrance detour. Fills PATH with the
@@ -105,6 +124,12 @@ local function FindPath(start, finish, stage)
         table.insert(next_sweep, { node = HOME, label = "Warp Home" })
     end
 
+    for _, hop in pairs(FLY_HOPS) do
+        if hop.node ~= start then
+            table.insert(next_sweep, { node = hop.node, label = hop.label })
+        end
+    end
+
     for _, step in pairs(next_sweep) do
         if FindPath(step.node, finish, stage) then
             PATH[stage] = step.label
@@ -152,6 +177,7 @@ function GetRoute(start, finish)
     PATH = {}
     STEPS = -1
     HOME = HomeRegion()
+    FLY_HOPS = ReachableFlyHops()
 
     FindPath(start, finish, 0)
     clearRouteTiles()
@@ -185,4 +211,5 @@ function GetRoute(start, finish)
     PATH = {}
     STEPS = -1
     HOME = nil
+    FLY_HOPS = {}
 end
