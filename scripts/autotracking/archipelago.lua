@@ -264,7 +264,15 @@ function onClear(slot_data)
     if has("randomize_pokedex_startwith") then
         Tracker:FindObjectForCode("POKEDEX").Active = true
     end
-    
+
+    local enforce = slot_data.enforce_wild_encounter_methods_logic
+    for _, code in pairs(LIST_CODES.wild_encounter_methods_required.values) do
+        local obj = Tracker:FindObjectForCode(code)
+        if enforce == 1 and code ~= "encmethod_contest" and obj.CurrentStage == 0 then
+            obj.CurrentStage = 2
+        end
+    end
+
     updateRemainingDexcountsanityChecks()
     showMonVisibility()
     

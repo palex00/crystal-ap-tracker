@@ -43,16 +43,6 @@
                         "type": "layout",
                         "key": "dexcountsanity"
                     }
-                },
-                {
-                    "type": "group",
-                    "header": "Information",
-                    "content": {
-                        "type": "map",
-                        "maps": [
-                            "info_sheet"
-                        ]
-                    }
                 }
             ]
     },
@@ -68,6 +58,7 @@
                 "encmethod_fishing",
                 "encmethod_headbutt",
                 "encmethod_rocksmash",
+                "encmethod_swarm",
                 "encmethod_static"
             ]
         ]
@@ -83,6 +74,7 @@
                 "evomethod_level",
                 "evomethod_tyrogue",
                 "evomethod_useitem",
+                "evomethod_helditem",
             ]
         ]
     },

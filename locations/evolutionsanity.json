@@ -317,7 +317,7 @@
         {
             "name": "Using a Kings Rock",
             "access_rules": [
-                "^$evolve_new|61"
+                "^$evolve_new|61|EVOLVE_TRADE"
             ],
             "chest_unopened_img": "images/evolutionsanity/kingsrock.png",
             "chest_opened_img": "images/evolutionsanity/kingsrock_bw.png"
@@ -332,14 +332,14 @@
     ]
 },
 {"name":"Evolve Abra","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|63"]}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":140}]},
-{"name":"Evolve Kadabra","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|64"]}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":196}]},
+{"name":"Evolve Kadabra","sections":[{"name":"Using a Link Cable","access_rules":["^$evolve_new|64"]}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":196}]},
 {"name":"Evolve Machop","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|66"]}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":308}]},
-{"name":"Evolve Machoke","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|67"]}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":364}]},
+{"name":"Evolve Machoke","sections":[{"name":"Using a Link Cable","access_rules":["^$evolve_new|67"]}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":364}]},
 {"name":"Evolve Bellsprout","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|69"]}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":476}]},
 {"name":"Evolve Weepinbell","sections":[{"name":"Using a Leaf Stone","access_rules":["^$evolve_new|70"],"chest_unopened_img":"images/evolutionsanity/leafstone.png","chest_opened_img":"images/evolutionsanity/leafstone_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":98,"y":532}]},
 {"name":"Evolve Tentacool","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|72"]}],"map_locations":[{"map":"evolutionsanity_2","x":266,"y":84}]},
 {"name":"Evolve Geodude","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|74"]}],"map_locations":[{"map":"evolutionsanity_2","x":266,"y":196}]},
-{"name":"Evolve Graveler","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|75"]}],"map_locations":[{"map":"evolutionsanity_2","x":266,"y":252}]},
+{"name":"Evolve Graveler","sections":[{"name":"Using a Link Cable","access_rules":["^$evolve_new|75"]}],"map_locations":[{"map":"evolutionsanity_2","x":266,"y":252}]},
 {"name":"Evolve Ponyta","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|77"]}],"map_locations":[{"map":"evolutionsanity_2","x":266,"y":364}]},
 {
     "name": "Evolve Slowpoke",
@@ -353,7 +353,7 @@
         {
             "name": "Using a Kings Rock",
             "access_rules": [
-                "^$evolve_new|79"
+                "^$evolve_new|79|EVOLVE_TRADE"
             ],
             "chest_unopened_img": "images/evolutionsanity/kingsrock.png",
             "chest_opened_img": "images/evolutionsanity/kingsrock_bw.png"
@@ -373,7 +373,7 @@
 {"name":"Evolve Grimer","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|88"]}],"map_locations":[{"map":"evolutionsanity_2","x":434,"y":420}]},
 {"name":"Evolve Shellder","sections":[{"name":"Using a Water Stone","access_rules":["^$evolve_new|90"],"chest_unopened_img":"images/evolutionsanity/waterstone.png","chest_opened_img":"images/evolutionsanity/waterstone_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":434,"y":532}]},
 {"name":"Evolve Gastly","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|92"]}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":84}]},
-{"name":"Evolve Haunter","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|93"]}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":140}]},
+{"name":"Evolve Haunter","sections":[{"name":"Using a Link Cable","access_rules":["^$evolve_new|93"]}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":140}]},
 {"name":"Evolve Onix","sections":[{"name":"Using a Metal Coat","access_rules":["^$evolve_new|95"],"chest_unopened_img":"images/evolutionsanity/metalcoat.png","chest_opened_img":"images/evolutionsanity/metalcoat_bw.png"}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":252}]},
 {"name":"Evolve Drowzee","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|96"]}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":308}]},
 {"name":"Evolve Krabby","sections":[{"name":"Via Levelup","access_rules":["^$evolve_new|98"]}],"map_locations":[{"map":"evolutionsanity_2","x":602,"y":420}]},

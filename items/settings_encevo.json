@@ -88,6 +88,28 @@
         ]
     },
     {
+        "name": "Evolution Method: Held Item",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Evolution Method: Held Item NOT in logic",
+                "img": "/images/placeholder.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "evomethod_helditem, evomethod_helditem_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Evolution Method: Held Item in logic",
+                "img": "/images/placeholder.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "evomethod_helditem, evomethod_helditem_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Encounter Method: Fishing",
         "type": "progressive",
         "loop": true,
@@ -101,17 +123,17 @@
                 "inherit_codes": false
             },
             {
-                "name": "Encounter Method: Fishing Encounters IMPOSSIBLE",
-                "img": "/images/settings/dex_related/enc_fishing.png",
-                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
-                "codes": "encmethod_fishing, encmethod_fishing_forbidden",
-                "inherit_codes": false
-            },
-            {
                 "name": "Encounter Method: Fishing Encounters in logic",
                 "img": "/images/settings/dex_related/enc_fishing.png",
                 "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
                 "codes": "encmethod_fishing, encmethod_fishing_on, encmethod_fishing_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Fishing Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_fishing.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_fishing, encmethod_fishing_forbidden",
                 "inherit_codes": false
             }
         ]
@@ -130,17 +152,17 @@
                 "inherit_codes": false
             },
             {
-                "name": "Encounter Method: Headbutt Encounters IMPOSSIBLE",
-                "img": "/images/settings/dex_related/enc_headbutt.png",
-                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
-                "codes": "encmethod_headbutt, encmethod_headbutt_forbidden",
-                "inherit_codes": false
-            },
-            {
                 "name": "Encounter Method: Headbutt Encounters in logic",
                 "img": "/images/settings/dex_related/enc_headbutt.png",
                 "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
                 "codes": "encmethod_headbutt, encmethod_headbutt_on, encmethod_headbutt_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Headbutt Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_headbutt.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_headbutt, encmethod_headbutt_forbidden",
                 "inherit_codes": false
             }
         ]
@@ -159,17 +181,17 @@
                 "inherit_codes": false
             },
             {
-                "name": "Encounter Method: Land Encounters IMPOSSIBLE",
-                "img": "/images/settings/dex_related/enc_land.png",
-                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
-                "codes": "encmethod_land, encmethod_land_forbidden",
-                "inherit_codes": false
-            },
-            {
                 "name": "Encounter Method: Land Encounters in logic",
                 "img": "/images/settings/dex_related/enc_land.png",
                 "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
                 "codes": "encmethod_land, encmethod_land_on, encmethod_land_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Land Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_land.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_land, encmethod_land_forbidden",
                 "inherit_codes": false
             }
         ]
@@ -188,17 +210,17 @@
                 "inherit_codes": false
             },
             {
-                "name": "Encounter Method: Rock Smash Encounters IMPOSSIBLE",
-                "img": "/images/settings/dex_related/enc_rocksmash.png",
-                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
-                "codes": "encmethod_rocksmash, encmethod_rocksmash_forbidden",
-                "inherit_codes": false
-            },
-            {
                 "name": "Encounter Method: Rock Smash Encounters in logic",
                 "img": "/images/settings/dex_related/enc_rocksmash.png",
                 "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
                 "codes": "encmethod_rocksmash, encmethod_rocksmash_on, encmethod_rocksmash_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Rock Smash Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_rocksmash.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_rocksmash, encmethod_rocksmash_forbidden",
                 "inherit_codes": false
             }
         ]
@@ -217,17 +239,17 @@
                 "inherit_codes": false
             },
             {
-                "name": "Encounter Method: Surfing Encounters IMPOSSIBLE",
-                "img": "/images/settings/dex_related/enc_surf.png",
-                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
-                "codes": "encmethod_water, encmethod_water_forbidden",
-                "inherit_codes": false
-            },
-            {
                 "name": "Encounter Method: Surfing Encounters in logic",
                 "img": "/images/settings/dex_related/enc_surf.png",
                 "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
                 "codes": "encmethod_water, encmethod_water_on, encmethod_water_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Surfing Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_surf.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_water, encmethod_water_forbidden",
                 "inherit_codes": false
             }
         ]
@@ -250,6 +272,35 @@
                 "img": "/images/settings/dex_related/enc_statics.png",
                 "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
                 "codes": "encmethod_static, encmethod_static_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Encounter Method: Swarm",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Encounter Method: Swarm Encounters NOT in logic",
+                "img": "/images/settings/dex_related/enc_swarm.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
+                "codes": "encmethod_swarm, encmethod_swarm_off, encmethod_swarm_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Swarm Encounters in logic",
+                "img": "/images/settings/dex_related/enc_swarm.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "encmethod_swarm, encmethod_swarm_on, encmethod_swarm_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Swarm Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_swarm.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_swarm, encmethod_swarm_forbidden",
                 "inherit_codes": false
             }
         ]

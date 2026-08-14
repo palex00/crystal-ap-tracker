@@ -22,6 +22,16 @@ EVOLUTION_METHOD_MAP = {
             SUN_STONE = "Using a Sun Stone",
             KINGS_ROCK = "Using a Kings Rock",
             LEAF_STONE = "Using a Leaf Stone",
+            LINK_CABLE = "Using a Link Cable",
+        }
+        return item_map[condition]
+    end,
+    EVOLVE_TRADE = function(condition)
+        local item_map = {
+            METAL_COAT = "Using a Metal Coat",
+            DRAGON_SCALE = "Using a Dragon Scale",
+            KINGS_ROCK = "Using a Kings Rock",
+            UP_GRADE = "Using an Up-Grade",
         }
         return item_map[condition]
     end
@@ -81,21 +91,35 @@ function evolve_friend_old()
     end
 end
 
-function evolve_item()
-    local goldenrod = CanReach("REGION_GOLDENROD_CITY")
-    local celadon = CanReach("REGION_CELADON_CITY")
-    if has("evomethod_useitem_on") and (goldenrod == 6 or celadon == 6) then
+function evolve_item(condition)
+    if has("evomethod_useitem_on") and has(condition) then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.SequenceBreak
     end
 end
 
-function evolve_item_old()
+function evolve_item_old(condition)
     if has("randomize_evolution_true") then
         return AccessibilityLevel.Inspect
     else
-       return evolve_item()
+       return evolve_item(condition)
+    end
+end
+
+function evolve_helditem(condition)
+    if has("evomethod_helditem_on") and has("LINK_CABLE") and has(condition) then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function evolve_helditem_old(condition)
+    if has("randomize_evolution_true") then
+        return AccessibilityLevel.Inspect
+    else
+       return evolve_helditem(condition)
     end
 end
        
@@ -230,6 +254,13 @@ function contest_encounter()
     end
 end
 
+function swarm_encounter(region)
+    if not has("encmethod_swarm_on") then
+        return AccessibilityLevel.SequenceBreak
+    end
+    return math.min(phonecall(), CanReach(region))
+end
+
 
 function trade(person)
     if TRADE_DATA ~= nil then
@@ -252,27 +283,31 @@ function trade(person)
     end
 end
 
-function evolve_new(ID)
+function evolve_new(ID, method_filter)
     local evolutions = EVOLUTION_DATA[ID]
 
     if not evolutions then
         return
     end
-    
+
     local pokemon_ownership = POKEMON_MAPPING[tonumber(ID)]
     if Tracker:FindObjectForCode(pokemon_ownership).Active == false then
         return AccessibilityLevel.None
     end
 
     for _, evo in ipairs(evolutions) do
-        if evo.method == "EVOLVE_LEVEL" then
-            return evolve(evo.condition)
-        elseif evo.method == "EVOLVE_ITEM" then
-            return evolve_item()
-        elseif evo.method == "EVOLVE_HAPPINESS" then
-            return evolve_friend()
-        elseif evo.method == "EVOLVE_STAT" then
-            return evolve_tyrogue()
+        if method_filter == nil or evo.method == method_filter then
+            if evo.method == "EVOLVE_LEVEL" then
+                return evolve(evo.condition)
+            elseif evo.method == "EVOLVE_ITEM" then
+                return evolve_item(evo.condition)
+            elseif evo.method == "EVOLVE_HAPPINESS" then
+                return evolve_friend()
+            elseif evo.method == "EVOLVE_STAT" then
+                return evolve_tyrogue()
+            elseif evo.method == "EVOLVE_TRADE" then
+                return evolve_helditem(evo.condition)
+            end
         end
     end
 end

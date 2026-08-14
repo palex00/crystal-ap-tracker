@@ -1751,6 +1751,19 @@
                         "access_rules": [
                             "^$CanReach|SURF_DARK_CAVE_VIOLET_ENTRANCE, ^$surf_encounter_johto"
                         ]
+                    },
+                    {
+                        "name": "Swarm Encounter",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/swarm.png",
+                        "chest_opened_img": "images/other/swarm_bw.png",
+                        "visibility_rules": [
+                            "show_mons, encmethod_swarm_visible"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|GRASS_DARK_CAVE_VIOLET_ENTRANCE, ^$swarm_encounter|REGION_ROUTE_33"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -3847,6 +3860,19 @@
                         ],
                         "access_rules": [
                             "^$CanReach|SURF_ROUTE_32, ^$surf_encounter_johto"
+                        ]
+                    },
+                    {
+                        "name": "Swarm Encounter",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/swarm.png",
+                        "chest_opened_img": "images/other/swarm_bw.png",
+                        "visibility_rules": [
+                            "show_mons, encmethod_swarm_visible"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|FISHING_Qwilfish, ^$swarm_encounter|REGION_ROUTE_32:SOUTH"
                         ]
                     }
                 ],
@@ -8967,6 +8993,19 @@
                         ],
                         "access_rules": [
                             "^$CanReach|SURF_ROUTE_35, ^$surf_encounter_johto"
+                        ]
+                    },
+                    {
+                        "name": "Swarm Encounter",
+                        "item_count": 1,
+                        "clear_as_group": false,
+                        "chest_unopened_img": "images/other/swarm.png",
+                        "chest_opened_img": "images/other/swarm_bw.png",
+                        "visibility_rules": [
+                            "show_mons, encmethod_swarm_visible"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|GRASS_ROUTE_35, ^$swarm_encounter|REGION_ROUTE_35"
                         ]
                     }
                 ],

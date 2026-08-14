@@ -2232,15 +2232,15 @@
                 "inherit_codes": false
             },
             {
-                "name": "Encounter Method: Contest Encounters IMPOSSIBLE",
-                "img": "/images/settings/dex_related/forbidden.png",
-                "codes": "encmethod_contest, encmethod_contest_forbidden",
-                "inherit_codes": false
-            },
-            {
                 "name": "Encounter Method: Contest Encounters in logic",
                 "img": "/images/settings/dex_related/inlogic.png",
                 "codes": "encmethod_contest, encmethod_contest_on, encmethod_contest_visible",
+                "inherit_codes": false
+            },
+            {
+                "name": "Encounter Method: Contest Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/forbidden.png",
+                "codes": "encmethod_contest, encmethod_contest_forbidden",
                 "inherit_codes": false
             }
         ]

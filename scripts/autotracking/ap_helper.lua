@@ -252,42 +252,6 @@ SLOT_CODES = {
         code = "start_town_location",
         mapping = STARTTOWN_MAPPING
     },
-    evomethod_happiness = {
-        code = "evomethod_happiness",
-        mapping = MAP_TOGGLE
-    },
-    evomethod_level = {
-        code = "evomethod_level",
-        mapping = MAP_TOGGLE
-    },
-    evomethod_tyrogue = {
-        code = "evomethod_tyrogue",
-        mapping = MAP_TOGGLE
-    },
-    evomethod_useitem = {
-        code = "evomethod_useitem",
-        mapping = MAP_TOGGLE
-    },
-    encmethod_land = {
-        code = "encmethod_land",
-        mapping = MAP_TRIPLE
-    },
-    encmethod_water = {
-        code = "encmethod_water",
-        mapping = MAP_TRIPLE
-    },
-    encmethod_fishing = {
-        code = "encmethod_fishing",
-        mapping = MAP_TRIPLE
-    },
-    encmethod_headbutt = {
-        code = "encmethod_headbutt",
-        mapping = MAP_TRIPLE
-    },
-    encmethod_rocksmash = {
-        code = "encmethod_rocksmash",
-        mapping = MAP_TRIPLE
-    },
     time_of_day_encounters = {
         code = "timeofday",
         mapping = MAP_TOGGLE
@@ -367,10 +331,6 @@ SLOT_CODES = {
     randomize_bug_catching_contest = {
         code = "randomize_bug_catching_contest",
         mapping = MAP_QUADRUPLE
-    },
-    encmethod_contest = {
-        code = "encmethod_contest",
-        mapping = MAP_TRIPLE
     },
     trades_required = {
         code = "encmethod_trades",
@@ -601,6 +561,28 @@ LIST_CODES = {
             ["Blue Card"]           = "shopsanity_bluecard",
             ["Game Corners"]        = "shopsanity_gamecorners",
             ["Apricorns"]           = "shopsanity_apricorn",
+        }
+    },
+    evolution_methods_required = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Level"]          = "evomethod_level",
+            ["Level and Stat"] = "evomethod_tyrogue",
+            ["Use Item"]       = "evomethod_useitem",
+            ["Held Item"]      = "evomethod_helditem",
+            ["Happiness"]      = "evomethod_happiness",
+        }
+    },
+    wild_encounter_methods_required = {
+        mapping = MAP_TOGGLE,
+        values = {
+            ["Land"]                 = "encmethod_land",
+            ["Surfing"]              = "encmethod_water",
+            ["Fishing"]              = "encmethod_fishing",
+            ["Headbutt"]             = "encmethod_headbutt",
+            ["Rock Smash"]           = "encmethod_rocksmash",
+            ["Swarm"]                = "encmethod_swarm",
+            ["Bug Catching Contest"] = "encmethod_contest",
         }
     }
 }
