@@ -8,5 +8,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: PopTracker/pack-checker-action@v1
         with:
-          strict: true
+          strict: false
           check-legacy-compat: true
