@@ -8,6 +8,9 @@
 
 ROUTE_TILE_COUNT = 30
 
+-- saved last warp taken (from a bounce)
+LAST_WARP_TOKEN = nil
+
 local FOUND = false
 local ALREADY_VISITED = {}
 local PATH = {}
@@ -212,4 +215,25 @@ function GetRoute(start, finish)
     STEPS = -1
     HOME = nil
     FLY_HOPS = {}
+end
+
+function CurrentRegionNode()
+    local token = LAST_WARP_TOKEN
+    if not token then
+        return nil
+    end
+    local cat = ENTRANCE_CATEGORY and ENTRANCE_CATEGORY[token]
+    if cat and ER_CATEGORY_ENABLED and ER_CATEGORY_ENABLED[cat] then
+        local target = EntranceDetourTarget(token)
+        if target and target ~= Empty_node then
+            return target
+        end
+    end
+    return NAMED_NODES[EntranceDestRegion(token)]
+end
+
+function ShowRouteMessage(text)
+    clearRouteTiles()
+    writeRouteTile(0, text)
+    Tracker:UiHint("ActivateTab", "Routing")
 end

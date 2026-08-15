@@ -156,15 +156,28 @@ function EntranceItem:onRightClick()
     end
 end
 
--- Route mode: first middle-click picks the start, second computes the route between them.
-ROUTE_START = nil
+-- Route mode: first middle-click picks the start. Second click on a different entrance routes
+-- between the two; on the same entrance, routes from the player's current position to it.
+ROUTE_START = nil      -- source region name of the first-picked entrance
+ROUTE_START_ITEM = nil -- first-picked item, to detect the same entrance twice
 
 function EntranceItem:onMiddleClick()
     if ROUTE_START == nil then
         ROUTE_START = self.node
+        ROUTE_START_ITEM = self
     else
-        GetRoute(NAMED_NODES[ROUTE_START], NAMED_NODES[self.node])
+        if ROUTE_START_ITEM == self then
+            local from = CurrentRegionNode()
+            if from then
+                GetRoute(from, NAMED_NODES[self.node])
+            else
+                ShowRouteMessage("Position Unknown")
+            end
+        else
+            GetRoute(NAMED_NODES[ROUTE_START], NAMED_NODES[self.node])
+        end
         ROUTE_START = nil
+        ROUTE_START_ITEM = nil
     end
 end
 
