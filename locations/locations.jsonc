@@ -3872,7 +3872,9 @@
                             "show_mons, encmethod_swarm_visible"
                         ],
                         "access_rules": [
-                            "^$CanReach|FISHING_Qwilfish, ^$swarm_encounter|REGION_ROUTE_32:SOUTH"
+                            "^$CanReach|FISHING_Qwilfish, ^$swarm_encounter|REGION_ROUTE_32:SOUTH, OLD_ROD",
+                            "^$CanReach|FISHING_Qwilfish, ^$swarm_encounter|REGION_ROUTE_32:SOUTH, GOOD_ROD",
+                            "^$CanReach|FISHING_Qwilfish, ^$swarm_encounter|REGION_ROUTE_32:SOUTH, SUPER_ROD"
                         ]
                     }
                 ],
