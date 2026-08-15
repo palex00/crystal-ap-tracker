@@ -5024,6 +5024,109 @@
                         ]
                     }
                 ]
+            },
+            {
+                "name": "Victory Road",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road 1F Ladder",
+                        "name": "Victory Road 1F Ladder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road 2F North Ladder",
+                        "name": "Victory Road 2F North Ladder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road 2F Northeast Ladder",
+                        "name": "Victory Road 2F Northeast Ladder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road 2F West Ladder",
+                        "name": "Victory Road 2F West Ladder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road 3F Hole",
+                        "name": "Victory Road 3F Hole"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road 3F North Ladder",
+                        "name": "Victory Road 3F North Ladder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road 3F Southeast Ladder",
+                        "name": "Victory Road 3F Southeast Ladder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road North Exit",
+                        "name": "Victory Road North Exit"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road South Entrance",
+                        "name": "Victory Road South Entrance"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road South Exit",
+                        "name": "Victory Road South Exit"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Victory Road South Exit (Restored)",
+                        "name": "Victory Road South Exit (Restored)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/1F - Hidden Item on Southwest Boulder",
+                        "name": "1F - Hidden Item on Southwest Boulder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/1F - North Item (Right)",
+                        "name": "1F - North Item (Right)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/1F - North Item (Left)",
+                        "name": "1F - North Item (Left)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/2F - South Item",
+                        "name": "2F - South Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/2F - Northeast Item",
+                        "name": "2F - Northeast Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/2F - Northwest Item",
+                        "name": "2F - Northwest Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/2F - Hidden Item on Northwest Boulder",
+                        "name": "2F - Hidden Item on Northwest Boulder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/3F - Beat Rival in Victory Road",
+                        "name": "3F - Beat Rival in Victory Road"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/3F - Rival",
+                        "name": "3F - Rival"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route23Restored",
+                        "x": 72,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off, er_one_way_off, route_23_restored_on"
+                        ]
+                    },
+                    {
+                        "map": "VictoryRoadGate",
+                        "x": 160,
+                        "y": 8,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off, er_one_way_off, route_23_restored_off"
+                        ]
+                    }
+                ]
             }
         ]
     }
