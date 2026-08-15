@@ -22,6 +22,8 @@ Supported Features:
 - Time of Day Encounters (fishing & land)
 - Rematchsanity
 - Multiple Goals
+- Autotracking of the new encounter & new evolution method options
+- Double Clicking an entrance now shows you a route from your current position to it
 
 Unsupported Beta Features:
 - New Locations (these auto-track but do not have logic to them)
@@ -29,7 +31,6 @@ Unsupported Beta Features:
 - everything else, basically
 
 Features that work in live but not in beta:
-- Autotracking of the encounter & evolution method options
 - dynamic layouts (itemgrids)
 
 
