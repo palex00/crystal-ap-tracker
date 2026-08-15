@@ -2672,14 +2672,14 @@
         "stages": [
             {
                 "name": "Flooded Mine does not exist",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/floodedmine.png",
                 "img_mods": "@disabled",
                 "codes": "flooded_mine, flooded_mine_off",
                 "inherit_codes": false
             },
             {
                 "name": "Flooded Mine exists",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/floodedmine.png",
                 "codes": "flooded_mine, flooded_mine_on",
                 "inherit_codes": false
             }
@@ -2694,14 +2694,14 @@
         "stages": [
             {
                 "name": "Route 23 is vanilla",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/route23restored.png",
                 "img_mods": "@disabled",
                 "codes": "route_23_restored, route_23_restored_off",
                 "inherit_codes": false
             },
             {
                 "name": "Route 23 is restored",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/route23restored.png",
                 "codes": "route_23_restored, route_23_restored_on",
                 "inherit_codes": false
             }
