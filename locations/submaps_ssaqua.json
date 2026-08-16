@@ -56,7 +56,10 @@
                     {
                         "map": "OlivineCity",
                         "x": 320,
-                        "y": 440
+                        "y": 440,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_off"
+                        ]
                     }
                 ]
             },
@@ -116,7 +119,10 @@
                     {
                         "map": "VermilionCity",
                         "x": 320,
-                        "y": 504
+                        "y": 504,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_off"
+                        ]
                     }
                 ]
             },
