@@ -4799,7 +4799,10 @@
                     {
                         "map": "Route27",
                         "x": 424,
-                        "y": 88
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_off"
+                        ]
                     },
                     {
                         "map": "TohjoFalls",
