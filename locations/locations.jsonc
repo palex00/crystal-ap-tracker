@@ -22247,8 +22247,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_23_RESTORED:SOUTH"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/items/berry_tree.png",
+                        "chest_opened_img": "images/items/berry_tree_bw.png"
                     },
                     {
                         "name": "Hidden Item in Bush",
@@ -22256,10 +22256,10 @@
                             "show_items, route_23_restored_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_23_RESTORED:NORTH"
+                            "^$CanReach|REGION_ROUTE_23_RESTORED:NORTH, ^$hid"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
                         "name": "Hidden Item on Island",
@@ -22267,10 +22267,10 @@
                             "show_items, route_23_restored_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_23_RESTORED:SURF"
+                            "^$CanReach|REGION_ROUTE_23_RESTORED:SURF, ^$hid"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
                         "name": "Grass",
