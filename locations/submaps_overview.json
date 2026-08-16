@@ -1601,6 +1601,62 @@
                     {
                         "ref": "JohtoKanto/New Bark Town/Player's House 2F Stairs",
                         "name": "Player's House 2F Stairs"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 900",
+                        "name": "Mom's Savings - 900"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 4000",
+                        "name": "Mom's Savings - 4000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 7000",
+                        "name": "Mom's Savings - 7000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 10000",
+                        "name": "Mom's Savings - 10000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 15000",
+                        "name": "Mom's Savings - 15000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 19000",
+                        "name": "Mom's Savings - 19000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 30000",
+                        "name": "Mom's Savings - 30000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 40000",
+                        "name": "Mom's Savings - 40000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 50000",
+                        "name": "Mom's Savings - 50000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Mom's Savings - 100000",
+                        "name": "Mom's Savings - 100000"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Player's House - Phone Card from Mom",
+                        "name": "Player's House - Phone Card from Mom"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Player's House - Pokegear from Mom",
+                        "name": "Player's House - Pokegear from Mom"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/​Player's House - Phone Card from Mom",
+                        "name": "​Player's House - Phone Card from Mom"
+                    },
+                    {
+                        "ref": "JohtoKanto/New Bark Town/​Player's House - Pokegear from Mom",
+                        "name": "​Player's House - Pokegear from Mom"
                     }
                 ],
                 "map_locations": [
@@ -3525,6 +3581,37 @@
                         "y": 312,
                         "restrict_visibility_rules": [
                             "er_gym_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Power Plant",
+                "sections": [
+                    {
+                        "name": "TM07 from Manager",
+                        "ref": "JohtoKanto/Power Plant/TM07 from Manager"
+                    },
+                    {
+                        "name": "Learn of the Robbery",
+                        "ref": "JohtoKanto/Power Plant/Learn of the robbery"
+                    },
+                    {
+                        "name": "Restore Power to Kanto",
+                        "ref": "JohtoKanto/Power Plant/Restore Power to Kanto"
+                    },
+                    {
+                        "name": "Trade: Forest",
+                        "ref": "JohtoKanto/Power Plant/Trade: Forest"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route10",
+                        "x": 56,
+                        "y": 152,
+                        "restrict_visibility_rules": [
+                            "er_building_off"
                         ]
                     }
                 ]
