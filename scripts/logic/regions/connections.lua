@@ -735,7 +735,7 @@ NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAM
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST"], "dungeon_interior")
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:WEST"], "dungeon_interior")
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:EAST"], "dungeon_interior")
-NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:WATERFALL_ISLAND"], "dungeon_interior")
+NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:WATERFALL_ISLAND"], "dungeon_interior", opened_mortar)
 
 -- === REGION_MOUNT_MORTAR_1F_INSIDE:NORTH ===
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:NORTH"]:connect_one_way(REGION_MOUNT_MORTAR_1F_INSIDE, "TODOBYSNOWFLAV")
@@ -751,7 +751,7 @@ NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTH"]:connect_two_ways_entrance(NA
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_B1F:SOUTH"], "dungeon_interior")
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTH"]:connect_one_way(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:NORTH"], "Mount Mortar 1F Outside Waterfall Ascent", can_waterfall)
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:NORTH"]:connect_one_way(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTH"], "Mount Mortar 1F Outside Waterfall Descent", can_surf_johto)
-NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTH"]:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:WATERFALL_ISLAND"], "Mount Mortar 1F Outside Water Crossing (South -> Waterfall Center)", "Mount Mortar 1F Outside Water Crossing (Waterfall Center -> South)", can_surf_johto)
+NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTH"]:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:WATERFALL_ISLAND"], "Mount Mortar 1F Outside Water Crossing (South -> Waterfall Center)", "Mount Mortar 1F Outside Water Crossing (Waterfall Center -> South)", function() return can_surf_johto() and opened_mortar() end)
 
 -- === REGION_MOUNT_MORTAR_1F_OUTSIDE:NORTH ===
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:NORTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_2F_INSIDE:SOUTH"], "dungeon_interior")
