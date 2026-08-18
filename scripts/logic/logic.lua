@@ -284,6 +284,10 @@ function route42_passage()
     end
 end
 
+function opened_mortar()
+    return (has("route_42_access_blocked") or has("route_42_access_whirlchanges"))
+end
+
 function fly_badge()
   return (
     (has("badgereqs_vanilla") and has("STORM_BADGE")) or
