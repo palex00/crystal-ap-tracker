@@ -1088,6 +1088,8 @@ last_map_group = nil
 last_map_number = nil
 
 function onMap(value)
+    print("Ran:")
+    print(dump_table(value))
     -- capture the last traversed warp for route mode (independent of automap)
     if value ~= nil and value["data"] ~= nil then
         local rslot = getDigits("slotdigit_1", "slotdigit_2", "slotdigit_3")
