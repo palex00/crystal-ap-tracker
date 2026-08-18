@@ -361,23 +361,23 @@
 {"name": "Plug the south-east hole in Ice Path", "type": "toggle", "img": "/images/events/pushboulder_ice.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_se.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_4A"},
 
 {"name": "Learn the password SlowpokeTail", "type": "toggle", "img": "/images/events/password_slowpoketail.png", "codes": "EVENT_BEAT_ROCKET_GRUNTF_5"},
-{"name": "Learn the password RaticateTail", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ROCKET_GRUNTM_28"},
+{"name": "Learn the password RaticateTail", "type": "toggle", "img": "/images/events/password_raticatetail.png", "codes": "EVENT_BEAT_ROCKET_GRUNTM_28"},
 {"name": "Heal Moomoo", "type": "toggle", "img": "/images/events/healmoomoo.png", "codes": "EVENT_HEALED_MOOMOO"},
 {"name": "Jasmine explains Amphy's sickness", "type": "toggle", "img": "/images/events/beat_jasmine.png", "img_mods": "overlay|images/events/amphy_overlay.png", "codes": "EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS"},
 {"name": "Learn the password Hail Giovanni", "type": "toggle", "img": "/images/events/password_hailgiovanni.png", "codes": "EVENT_LEARNED_HAIL_GIOVANNI"},
 {"name": "Meet Copycat", "type": "toggle", "img": "/images/events/player.png","img_mods": "overlay|images/events/rival_overlays/mount_moon.png", "codes": "EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM"},
 {"name": "Meet Kurt", "type": "toggle", "img": "/images/events/kurt.png", "codes": "EVENT_MET_KURT"},
-{"name": "Learn of the robbery", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_MET_MANAGER_AT_POWER_PLANT"},
-{"name": "Meet Rocket Grunt in Cerulean Gym", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_MET_ROCKET_GRUNT_AT_CERULEAN_GYM"},
+{"name": "Learn of the robbery", "type": "toggle", "img": "/images/events/robbery.png", "codes": "EVENT_MET_MANAGER_AT_POWER_PLANT"},
+{"name": "Meet Rocket Grunt in Cerulean Gym", "type": "toggle", "img": "/images/events/rocket_cerulean.png", "codes": "EVENT_MET_ROCKET_GRUNT_AT_CERULEAN_GYM"},
 {"name": "Interrupt Misty's Date", "type": "toggle", "img": "/images/events/beat_misty.png","img_mods": "overlay|images/events/crackedheart_overlay.png", "codes": "EVENT_MISTY_RETURNED_TO_GYM"},
 {"name": "Open the Card Key Gate", "type": "toggle", "img": "/images/events/cardkeygate_open.png", "codes": "EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER"},
 {"name": "Your mom calls you", "type": "toggle", "img": "/images/events/mom_called.png", "codes": "EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST"},
 {"name": "Have Kurt investigate the GS Ball", "type": "toggle", "img": "/images/events/kurt_gsball.png", "codes": "EVENT_KURT_RETURNED_GS_BALL"},
 
-{"name": "Beat Will", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ELITE_4_WILL"},
-{"name": "Beat Koga", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ELITE_4_KOGA"},
-{"name": "Beat Bruno", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ELITE_4_BRUNO"},
-{"name": "Beat Karen", "type": "toggle", "img": "/images/placeholder.png", "codes": "EVENT_BEAT_ELITE_4_KAREN"},
+{"name": "Beat Will", "type": "toggle", "img": "/images/events/will_e4.png", "codes": "EVENT_BEAT_ELITE_4_WILL"},
+{"name": "Beat Koga", "type": "toggle", "img": "/images/events/koga_e4.png", "codes": "EVENT_BEAT_ELITE_4_KOGA"},
+{"name": "Beat Bruno", "type": "toggle", "img": "/images/events/bruno_e4.png", "codes": "EVENT_BEAT_ELITE_4_BRUNO"},
+{"name": "Beat Karen", "type": "toggle", "img": "/images/events/karen_e4.png", "codes": "EVENT_BEAT_ELITE_4_KAREN"},
 
 {"name": ":)", "type": "toggle", "codes": "EVENT_MISCHIEF"}
 ]
