@@ -175,7 +175,8 @@
     {
         "name": "Defeat Elite Four",
         "type": "toggle",
-        "img": "/images/events/halloffame.png",
+        "img": "/images/trainers/lance.png",
+        "img_mods": "overlay|images/events/overlay_e4.png",
         "codes": "EVENT_BEAT_ELITE_FOUR"
     },
     {
@@ -374,10 +375,10 @@
 {"name": "Your mom calls you", "type": "toggle", "img": "/images/events/mom_called.png", "codes": "EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST"},
 {"name": "Have Kurt investigate the GS Ball", "type": "toggle", "img": "/images/events/kurt_gsball.png", "codes": "EVENT_KURT_RETURNED_GS_BALL"},
 
-{"name": "Beat Will", "type": "toggle", "img": "/images/events/will_e4.png", "codes": "EVENT_BEAT_ELITE_4_WILL"},
-{"name": "Beat Koga", "type": "toggle", "img": "/images/events/koga_e4.png", "codes": "EVENT_BEAT_ELITE_4_KOGA"},
-{"name": "Beat Bruno", "type": "toggle", "img": "/images/events/bruno_e4.png", "codes": "EVENT_BEAT_ELITE_4_BRUNO"},
-{"name": "Beat Karen", "type": "toggle", "img": "/images/events/karen_e4.png", "codes": "EVENT_BEAT_ELITE_4_KAREN"},
+{"name": "Beat Will", "type": "toggle", "img": "/images/trainers/will.png", "img_mods": "overlay|images/events/overlay_e4.png", "codes": "EVENT_BEAT_ELITE_4_WILL"},
+{"name": "Beat Koga", "type": "toggle", "img": "/images/trainers/koga.png", "img_mods": "overlay|images/events/overlay_e4.png", "codes": "EVENT_BEAT_ELITE_4_KOGA"},
+{"name": "Beat Bruno", "type": "toggle", "img": "/images/trainers/bruno.png", "img_mods": "overlay|images/events/overlay_e4.png", "codes": "EVENT_BEAT_ELITE_4_BRUNO"},
+{"name": "Beat Karen", "type": "toggle", "img": "/images/trainers/karen.png", "img_mods": "overlay|images/events/overlay_e4.png", "codes": "EVENT_BEAT_ELITE_4_KAREN"},
 
 {"name": ":)", "type": "toggle", "codes": "EVENT_MISCHIEF"}
 ]
