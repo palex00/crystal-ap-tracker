@@ -2716,14 +2716,13 @@
         "stages": [
             {
                 "name": "Lance can be fought immediately",
-                "img": "/images/placeholder.png",
-                "img_mods": "@disabled",
+                "img": "/images/trainers/lance.png",
                 "codes": "lance_requires_elite_four, lance_requires_elite_four_off",
                 "inherit_codes": false
             },
             {
                 "name": "Lance requires the other Elite Four",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/lance_e4req.png",
                 "codes": "lance_requires_elite_four, lance_requires_elite_four_on",
                 "inherit_codes": false
             }
