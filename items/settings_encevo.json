@@ -95,14 +95,14 @@
         "stages": [
             {
                 "name": "Evolution Method: Held Item NOT in logic",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/dex_related/evo_helditem.png",
                 "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
                 "codes": "evomethod_helditem, evomethod_helditem_off",
                 "inherit_codes": false
             },
             {
                 "name": "Evolution Method: Held Item in logic",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/dex_related/evo_helditem.png",
                 "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
                 "codes": "evomethod_helditem, evomethod_helditem_on",
                 "inherit_codes": false
