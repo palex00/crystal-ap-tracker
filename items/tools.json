@@ -212,20 +212,20 @@
         ]
     },
     {
-        "name": "Visibility: Signs",
+        "name": "Visibility: Grass",
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Show Sign locations",
+                "name": "Show Grass locations",
                 "img": "/images/other/grass.png",
                 "img_mods": "overlay|/images/tools/show.png",
                 "codes": "visibility_grass, show_grass",
                 "inherit_codes": false
             },
             {
-                "name": "Hide Sign locations",
+                "name": "Hide Grass locations",
                 "img": "/images/other/grass_bw.png",
                 "img_mods": "overlay|/images/tools/hide.png",
                 "codes": "visibility_grass",
