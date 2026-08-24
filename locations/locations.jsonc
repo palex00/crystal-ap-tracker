@@ -5212,7 +5212,7 @@
                     {
                         "name": "Kurt's House - Have Kurt investigate the GS Ball",
                         "access_rules": [
-                            "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_CLEARED_SLOWPOKE_WELL"
+                            "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_BEAT_AZALEA_RIVAL"
                         ],
                         "hosted_item": "EVENT_KURT_RETURNED_GS_BALL",
                         "visibility_rules": [
@@ -11227,7 +11227,7 @@
                         "chest_unopened_img": "images/other/suicune.png",
                         "chest_opened_img": "images/other/suicune_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_TIN_TOWER_1F, ^$static_encounter"
+                            "^$CanReach|REGION_TIN_TOWER_1F, ^$static_encounter, CLEAR_BELL"
                         ],
                         "visibility_rules": [
                             "show_mons"

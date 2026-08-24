@@ -280,10 +280,6 @@ SLOT_CODES = {
         code = "mount_mortar_access",
         mapping = MAP_TOGGLE
     },
-    fly_cheese = {
-        code = "fly_cheese",
-        mapping = MAP_TRIPLE
-    },
     randomize_pokemon_requests = {
         code = "randomize_pokemon_requests",
         mapping = MAP_QUADRUPLE

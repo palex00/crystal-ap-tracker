@@ -510,11 +510,6 @@
         ]
     },
     {
-        "img": "/images/settings/town_locations/freefly_template.png",
-        "codes": "free_fly_dummy",
-        "type": "static"
-    },
-    {
         "name": "Map Card Fly Location",
         "type": "progressive",
         "loop": true,
@@ -1384,32 +1379,6 @@
         ]
     },
     {
-        "name": "Fly Cheese",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-            {
-                "name": "Fly Cheese is out of logic",
-                "img": "/images/settings/fly_cheese_optional.png",
-                "codes": "fly_cheese, fly_cheese_optional",
-                "inherit_codes": false
-            },
-            {
-                "name": "Fly Cheese is impossible",
-                "img": "/images/settings/fly_cheese_forbidden.png",
-                "codes": "fly_cheese, fly_cheese_forbidden",
-                "inherit_codes": false
-            },
-            {
-                "name": "Fly Cheese is in logic",
-                "img": "/images/settings/fly_cheese_required.png",
-                "codes": "fly_cheese, fly_cheese_required",
-                "inherit_codes": false
-            }
-        ]
-    },
-    {
         "name": "Bill's Grandpa",
         "type": "progressive",
         "loop": true,
@@ -2271,11 +2240,6 @@
         ]
     },
     {
-        "img": "/images/settings/dex_related/trades.png",
-        "codes": "trades_dummy",
-        "type": "static"
-    },
-    {
         "name": "Randomize Phone Call Items",
         "type": "progressive",
         "loop": true,
@@ -2593,14 +2557,6 @@
             }
         ]
     },
-
-    // ========================================================================
-    // TO BE COMPLETED LATER
-    // Referenced by scripts/logic/regions/*.lua. Placeholder art, and not yet
-    // wired up: no slot_data read in onClear, no watch in init.lua, not placed
-    // in any layout.
-    // ========================================================================
-
     {
         "name": "Vanilla Event Chains: Misty",
         "type": "progressive",
