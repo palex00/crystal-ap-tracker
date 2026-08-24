@@ -510,6 +510,11 @@
         ]
     },
     {
+        "img": "/images/settings/town_locations/freefly_template.png",
+        "codes": "free_fly_dummy",
+        "type": "static"
+    },
+    {
         "name": "Map Card Fly Location",
         "type": "progressive",
         "loop": true,
