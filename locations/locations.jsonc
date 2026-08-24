@@ -17582,7 +17582,7 @@
                             "show_items, randomize_fly_unlocks_true"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_MAHOGANY_TOWN, ^$fly_cheese_unlock"
+                            "^$CanReach|REGION_MAHOGANY_TOWN"
                         ]
                     }
                 ],
@@ -31103,7 +31103,7 @@
                             "show_items, randomize_fly_unlocks_true"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_VERMILION_CITY, ^$fly_cheese_unlock"
+                            "^$CanReach|REGION_VERMILION_CITY"
                         ]
                     }
                 ],

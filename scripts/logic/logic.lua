@@ -362,26 +362,6 @@ function badges_randomised()
   return has("badges_on") or has("badges_shuffle")
 end
 
-function fly_cheese()
-    if has("fly_cheese_optional") and can_fly() and has("randomize_fly_unlocks_false") then
-        return AccessibilityLevel.SequenceBreak
-    elseif has("fly_cheese_required") and can_fly() and has("randomize_fly_unlocks_false") then
-        return AccessibilityLevel.Normal
-    else
-        return AccessibilityLevel.None
-    end
-end
-
-function fly_cheese_unlock()
-    if has("fly_cheese_optional") then
-        return AccessibilityLevel.SequenceBreak
-    elseif has("fly_cheese_required") then
-        return AccessibilityLevel.Normal
-    else
-        return AccessibilityLevel.None
-    end
-end
-
 function kurt_shop(color)
     if not has("EVENT_CLEARED_SLOWPOKE_WELL") then
         return AccessibilityLevel.None
