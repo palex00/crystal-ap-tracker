@@ -111,9 +111,9 @@ function ValidateEntrances()
 
     -- 2. Every registry ROW needs a matching graph edge, a well-formed token whose regions
     --    both exist, a pretty name, and tile ids that no OTHER ungated row also claims (a
-    --    silent collision would make ResolveEntranceRow reveal the wrong entrance). Empty ids
-    --    are allowed (reverse-elevator rows); gated rows may share an id with their vanilla
-    --    partner on purpose and are exempt from the uniqueness check.
+    --    silent collision would make ResolveEntranceRow reveal the wrong entrance). Gated
+    --    rows may share an id with their vanilla partner on purpose and are exempt from the
+    --    uniqueness check.
     local seenId = {}
     if hasRegistry then
         for token, row in pairs(ENTRANCE_REGISTRY) do
@@ -142,8 +142,9 @@ function ValidateEntrances()
                 warn("registry row '" .. token .. "' has no pretty name.")
             end
 
-            if row.ids == nil then
-                warn("registry row '" .. token .. "' has no ids field.")
+            if row.ids == nil or #row.ids == 0 then
+                warn("registry row '" .. token .. "' has no ids"
+                    .. " -> the autotracker can never reveal it.")
             elseif not row.gate then
                 for _, wid in ipairs(row.ids) do
                     if seenId[wid] ~= nil then

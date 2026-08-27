@@ -1090,16 +1090,15 @@ last_map_number = nil
 function onMap(value)
     print("Ran:")
     print(dump_table(value))
-    -- capture the last traversed warp for route mode (independent of automap)
+    -- capture the last warp/spawn id for route mode (independent of automap)
     if value ~= nil and value["data"] ~= nil then
         local rslot = getDigits("slotdigit_1", "slotdigit_2", "slotdigit_3")
         local warp_id = value["data"]["lastWarp_0"]
         if warp_id == nil then
             warp_id = value["data"]["lastWarp_" .. rslot]
         end
-        if warp_id ~= nil then
-            local row = ResolveEntranceRow(warp_id)
-            LAST_WARP_TOKEN = row and row.token or nil
+        if warp_id ~= nil and SetLastWarp then
+            SetLastWarp(warp_id)
         end
     end
 

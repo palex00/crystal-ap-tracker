@@ -214,8 +214,8 @@ function EntranceDetourTarget(token)
         -- Mouth-to-mouth: entering this door drops you at the paired door's mouth, i.e. the
         -- SOURCE region of the paired token. Exterior doors pair with interior ones (hence the
         -- gym/gym_interior category split), so reading the source side is what lands you inside.
-        -- Matches the apworld: world.py _resolve_pairing_target returns the target connection's
-        -- exit_region, and in entrance_data.json exit_region is the LEFT side of "A -> B".
+        -- Matches the apworld: entrance_rando.py _resolve_pairing_target returns the target
+        -- connection's exit_region, and in entrance_data.json that is the LEFT side of "A -> B".
         -- A one-way pairing is the exception -- there the apworld resolves the ORIGINAL
         -- connection's entrance_region (the RIGHT side), so use the destination instead.
         if ENTRANCE_ONE_WAY and ENTRANCE_ONE_WAY[token] then
