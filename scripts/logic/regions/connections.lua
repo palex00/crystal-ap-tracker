@@ -474,6 +474,7 @@ REGION_FUCHSIA_CITY:connect_two_ways_entrance(REGION_FUCHSIA_POKECENTER_1F, "pok
 REGION_FUCHSIA_CITY:connect_two_ways_entrance(REGION_SAFARI_ZONE_WARDENS_HOME, "building")
 REGION_FUCHSIA_CITY:connect_two_ways_entrance(REGION_ROUTE_15_FUCHSIA_GATE, "gate")
 REGION_FUCHSIA_CITY:connect_two_ways_entrance(REGION_ROUTE_19_FUCHSIA_GATE, "gate")
+REGION_FUCHSIA_CITY:connect_one_way(NAMED_NODES["REGION_ROUTE_19:SIGN"], "Route 19 Sign Access (from Fuchsia City)")
 
 -- === REGION_FUCHSIA_CITY:CUT ===
 NAMED_NODES["REGION_FUCHSIA_CITY:CUT"]:connect_two_ways_entrance(REGION_FUCHSIA_MART, "mart")
@@ -1034,6 +1035,7 @@ NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"]:connect_one_way(NAMED_NODES["REGION
 
 -- === REGION_ROUTE_19:GATE_ENTRANCE ===
 NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"]:connect_two_ways_entrance(REGION_ROUTE_19_FUCHSIA_GATE, "gate")
+NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_ROUTE_19:SIGN"], "Route 19 Sign Access (from Gate Entrance)")
 
 -- === REGION_ROUTE_2:WEST ===
 NAMED_NODES["REGION_ROUTE_2:WEST"]:connect_two_ways(REGION_VIRIDIAN_CITY, "Route 2 South Exit", "Viridian City North Exit")
