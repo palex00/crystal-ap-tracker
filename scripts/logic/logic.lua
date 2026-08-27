@@ -629,3 +629,11 @@ function mom_saving(number)
         return AccessibilityLevel.SequenceBreak
     end
 end
+
+function luckynumber()
+    if has("EVENT_SAW_LUCKY_NUMBERS") then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.Inspect
+    end
+end
