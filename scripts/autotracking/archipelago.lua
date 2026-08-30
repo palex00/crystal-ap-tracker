@@ -369,10 +369,11 @@ function setupFlyDestinations(slot_data)
     for token, region in pairs(FLY_VANILLA_REGIONS) do
         FLY_DESTINATIONS[token] = region
     end
+    setupFlyIndexTokens(slot_data.johto_only or 0)
     local dests = slot_data.fly_destinations
     if dests then
         for i, warp in ipairs(dests) do
-            local token = FLY_REGION_TOKENS[i]
+            local token = FLY_INDEX_TOKENS[i]
             local region = token and FLY_ARRIVAL_REGIONS[string.format("%s:%d", warp[1], warp[2])]
             if token and region then
                 FLY_DESTINATIONS[token] = region
@@ -387,12 +388,19 @@ function setupFlyDestinations(slot_data)
     end
 end
 
+FLY_UNLOCK_ITEM_BASE = 1536 -- 0x400 | FLAG_ITEM_OFFSET
+
 function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then
         return
     end
     CUR_INDEX = index;
     local v = ITEM_MAPPING[item_id]
+    if item_id >= FLY_UNLOCK_ITEM_BASE + 1 and item_id <= FLY_UNLOCK_ITEM_BASE + #FLY_REGION_TOKENS then
+        -- "Fly Unlock N" (randomize_fly_destinations): N is seed order, not FlyRegion id
+        local token = FLY_INDEX_TOKENS[item_id - FLY_UNLOCK_ITEM_BASE]
+        v = token and ("flyunlock_" .. token)
+    end
     if not v then
         --print(string.format("onItem: could not find item mapping for id %s", item_id))
         return
