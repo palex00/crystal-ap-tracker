@@ -98,7 +98,7 @@ local function FindPath(start, finish, stage)
     for _, exit in pairs(start.exits) do
         local target = exit[1]
         local is_entrance = exit[3]
-        if is_entrance and ER_CATEGORY_ENABLED[exit[4]] then
+        if is_entrance and ER_CATEGORY_ENABLED[exit[4]] and not EntranceVanillaPinned(exit[5]) then
             target = EntranceDetourTarget(exit[5])
         elseif exit[7] then
             target = FlyDetourTarget(exit[7])
