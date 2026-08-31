@@ -33122,7 +33122,7 @@
                             "show_signs, goal_unown"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_19, ^$unownsign|Route19CarefulSwimming"
+                            "^$CanReach|REGION_ROUTE_19, ^$unownsign|Route19CarefulSwimming",
                             "^$CanReach|REGION_FUCHSIA_CITY, ^$unownsign|Route19CarefulSwimming"
                         ]
                     },
