@@ -490,9 +490,9 @@ REGION_ELMS_HOUSE:connect_two_ways_entrance(REGION_NEW_BARK_TOWN, "building")
 REGION_ELMS_LAB:connect_two_ways_entrance(REGION_NEW_BARK_TOWN, "building")
 
 -- === REGION_FAST_SHIP_1F ===
-REGION_FAST_SHIP_1F:connect_one_way(NAMED_NODES["REGION_VERMILION_PORT:TICKET"], "S.S. Aqua Vermilion Exit", function() return has("EVENT_FAST_SHIP_LAZY_SAILOR") end)
+REGION_FAST_SHIP_1F:connect_one_way(NAMED_NODES["REGION_VERMILION_PORT:TICKET"], "S.S. Aqua Vermilion Exit")
 NAMED_NODES["REGION_VERMILION_PORT:TICKET"]:connect_one_way(REGION_FAST_SHIP_1F, "S.S. Aqua Vermilion Entrance")
-REGION_FAST_SHIP_1F:connect_one_way(NAMED_NODES["REGION_OLIVINE_PORT:TICKET"], "S.S. Aqua Olivine Exit", function() return has("EVENT_FAST_SHIP_LAZY_SAILOR") end)
+REGION_FAST_SHIP_1F:connect_one_way(NAMED_NODES["REGION_OLIVINE_PORT:TICKET"], "S.S. Aqua Olivine Exit")
 NAMED_NODES["REGION_OLIVINE_PORT:TICKET"]:connect_one_way(REGION_FAST_SHIP_1F, "S.S. Aqua Olivine Entrance")
 REGION_FAST_SHIP_1F:connect_two_ways(REGION_FAST_SHIP_CABINS_NNW_NNE_NE, "S.S. Aqua North Cabin Entrances", "S.S. Aqua North Cabin Exits")
 REGION_FAST_SHIP_1F:connect_two_ways(REGION_FAST_SHIP_CABINS_SW_SSW_NW, "S.S. Aqua Southwest Cabin Entrances", "S.S. Aqua Southwest Cabin Exits")
