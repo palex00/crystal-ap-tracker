@@ -166,6 +166,8 @@ function toggle_r12()
 
     if has("route_12_access_weirdtree") then
         suffix = "_tree"
+	elseif has("route_12_access_weirdtree_surfblock") then
+		suffix = "_treerocks"
     end
 
     add_map("r12"..suffix)
