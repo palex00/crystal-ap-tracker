@@ -560,7 +560,7 @@ function diplomagoal()
 end
 
 function r12_passage()
-    return has("SQUIRTBOTTLE") or has("route_12_access_vanilla") or can_surf_kanto()
+    return has("SQUIRTBOTTLE") or has("route_12_access_vanilla") or (can_surf_kanto() and has("route_12_access_weirdtree"))
 end
 
 function unown_tile(tile)
