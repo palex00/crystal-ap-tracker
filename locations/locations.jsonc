@@ -8176,7 +8176,7 @@
                             "show_items, luckynumbershow"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_RADIO_TOWER_1F"
+                            "^$CanReach|REGION_RADIO_TOWER_1F, ^$luckynumber|1"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -8187,7 +8187,7 @@
                             "show_items, luckynumbershow"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_RADIO_TOWER_1F"
+                            "^$CanReach|REGION_RADIO_TOWER_1F, ^$luckynumber|2"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -8198,7 +8198,7 @@
                             "show_items, luckynumbershow"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_RADIO_TOWER_1F"
+                            "^$CanReach|REGION_RADIO_TOWER_1F, ^$luckynumber|3"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
