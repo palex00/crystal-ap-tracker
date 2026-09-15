@@ -25,6 +25,7 @@ allChecked = nil
 CHECKED_SIGNS = nil
 UNOWN_DATA = nil
 TRADE_DATA = nil
+LUCKY_NUMBER_TRADES = nil
 SAVED_HINTS = {}
 BATTLE_TOWER_TRAINERS = nil
 
@@ -142,6 +143,7 @@ function onClear(slot_data)
     end
     
     TRADE_DATA = slot_data.trades
+    LUCKY_NUMBER_TRADES = slot_data.lucky_number_trades
     UNOWN_DATA = slot_data.unown_signs
     
     -- This sets each Encounter location to however many unique encounters there are in it
