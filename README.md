@@ -16,7 +16,7 @@ Supported Features:
 - Momsanity
 - Lance Requires E4
 - ENTRANCE RANDOMISATION!!!
-- Submaps (tentative)
+- Submaps
 - Battle Tower
 - Fly Destination Rando
 - Time of Day Encounters (fishing & land)
