@@ -16021,7 +16021,8 @@
                             "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
-                            "show_entrances, route_42_access_whirlchanges, er_dungeon_interior_on"
+                            "show_entrances, route_42_access_whirlchanges, er_dungeon_interior_on",
+                            "show_entrances, route_42_access_blocked, er_dungeon_interior_on"
                         ]
                     },
                     {
@@ -16087,7 +16088,8 @@
                             "^$CanReach|REGION_MOUNT_MORTAR_1F_OUTSIDE:WATERFALL_ISLAND"
                         ],
                         "visibility_rules": [
-                            "show_entrances, route_42_access_whirlchanges, er_dungeon_interior_on"
+                            "show_entrances, route_42_access_whirlchanges, er_dungeon_interior_on",
+                            "show_entrances, route_42_access_blocked, er_dungeon_interior_on"
                         ]
                     },
                     {
