@@ -8173,7 +8173,7 @@
                     {
                         "name": "1F - Lucky Number Show 1st Prize",
                         "visibility_rules": [
-                            "show_items, luckynumbershow"
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_1F, ^$luckynumber|1"
@@ -8184,7 +8184,7 @@
                     {
                         "name": "1F - Lucky Number Show 2nd Prize",
                         "visibility_rules": [
-                            "show_items, luckynumbershow"
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_1F, ^$luckynumber|2"
@@ -8195,7 +8195,7 @@
                     {
                         "name": "1F - Lucky Number Show 3rd Prize",
                         "visibility_rules": [
-                            "show_items, luckynumbershow"
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_1F, ^$luckynumber|3"

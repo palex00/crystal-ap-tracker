@@ -399,6 +399,10 @@ SLOT_CODES = {
     battle_tower_progressive_tier_unlocks = {
         code = "battle_tower_progressive_tier_unlocks",
         mapping = MAP_TOGGLE
+    },
+    randomize_lucky_number_show = {
+        code = "luckynumbershow",
+        mapping = MAP_TOGGLE
     }
 }
 
