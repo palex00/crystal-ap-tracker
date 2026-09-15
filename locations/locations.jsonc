@@ -5224,7 +5224,8 @@
                     {
                         "name": "Kurt's House - Have Kurt investigate the GS Ball",
                         "access_rules": [
-                            "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_BEAT_AZALEA_RIVAL"
+                            "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_BEAT_AZALEA_RIVAL, dark_ilexforest_true, $can_use_flash|johto",
+                            "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_BEAT_AZALEA_RIVAL, dark_ilexforest_false"
                         ],
                         "hosted_item": "EVENT_KURT_RETURNED_GS_BALL",
                         "visibility_rules": [
