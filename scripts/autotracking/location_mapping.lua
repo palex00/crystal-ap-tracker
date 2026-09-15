@@ -259,6 +259,7 @@ LOCATION_MAPPING = {
   [1085] = "@JohtoKanto/Ecruteak City/Gym - Sage Ping",
   [1086] = "@JohtoKanto/Sprout Tower/2F - Sage Edmond",
   [1087] = "@JohtoKanto/Sprout Tower/3F - Sage Neal",
+  [1088] = "@JohtoKanto/Sprout Tower/3F - Sage Li",
   [1089] = "@JohtoKanto/Route 32/Camper Roland",
   [1090] = "@JohtoKanto/Route 34/Camper Todd",
   [1091] = "@JohtoKanto/Route 35/Camper Ivan",

@@ -2460,6 +2460,18 @@
                         "chest_opened_img": "images/trainers/sage_bw.png"
                     },
                     {
+                        "name": "3F - Sage Li",
+                        "access_rules": [
+                            "^$CanReach|REGION_SPROUT_TOWER_3F"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, $partial_trainersanity, trainersanity_1088"
+                        ],
+                        "chest_unopened_img": "images/trainers/sage.png",
+                        "chest_opened_img": "images/trainers/sage_bw.png"
+                    },
+                    {
                         "name": "3F - Sage Neal",
                         "access_rules": [
                             "^$CanReach|REGION_SPROUT_TOWER_3F"
