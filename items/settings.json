@@ -2752,5 +2752,27 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Randomize Lucky Numbr Show",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Lucky Number Show is not randomized",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "luckynumbershow, luckynumbershow_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Lucky Number Show is randomized",
+                "img": "/images/placeholder.png",
+                "codes": "luckynumbershow, luckynumbershow_on",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

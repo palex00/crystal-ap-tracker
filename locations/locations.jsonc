@@ -2460,6 +2460,18 @@
                         "chest_opened_img": "images/trainers/sage_bw.png"
                     },
                     {
+                        "name": "3F - Sage Li",
+                        "access_rules": [
+                            "^$CanReach|REGION_SPROUT_TOWER_3F"
+                        ],
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, $partial_trainersanity, trainersanity_1088"
+                        ],
+                        "chest_unopened_img": "images/trainers/sage.png",
+                        "chest_opened_img": "images/trainers/sage_bw.png"
+                    },
+                    {
                         "name": "3F - Sage Neal",
                         "access_rules": [
                             "^$CanReach|REGION_SPROUT_TOWER_3F"
@@ -5212,7 +5224,8 @@
                     {
                         "name": "Kurt's House - Have Kurt investigate the GS Ball",
                         "access_rules": [
-                            "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_CLEARED_SLOWPOKE_WELL"
+                            "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_BEAT_AZALEA_RIVAL, dark_ilexforest_true, $can_use_flash|johto",
+                            "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_BEAT_AZALEA_RIVAL, dark_ilexforest_false"
                         ],
                         "hosted_item": "EVENT_KURT_RETURNED_GS_BALL",
                         "visibility_rules": [
@@ -8160,10 +8173,10 @@
                     {
                         "name": "1F - Lucky Number Show 1st Prize",
                         "visibility_rules": [
-                            "show_items, luckynumbershow"
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_RADIO_TOWER_1F"
+                            "^$CanReach|REGION_RADIO_TOWER_1F, ^$luckynumber|1"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -8171,10 +8184,10 @@
                     {
                         "name": "1F - Lucky Number Show 2nd Prize",
                         "visibility_rules": [
-                            "show_items, luckynumbershow"
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_RADIO_TOWER_1F"
+                            "^$CanReach|REGION_RADIO_TOWER_1F, ^$luckynumber|2"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -8182,10 +8195,10 @@
                     {
                         "name": "1F - Lucky Number Show 3rd Prize",
                         "visibility_rules": [
-                            "show_items, luckynumbershow"
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_RADIO_TOWER_1F"
+                            "^$CanReach|REGION_RADIO_TOWER_1F, ^$luckynumber|3"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -11227,7 +11240,7 @@
                         "chest_unopened_img": "images/other/suicune.png",
                         "chest_opened_img": "images/other/suicune_bw.png",
                         "access_rules": [
-                            "^$CanReach|REGION_TIN_TOWER_1F, ^$static_encounter"
+                            "^$CanReach|REGION_TIN_TOWER_1F, ^$static_encounter, CLEAR_BELL"
                         ],
                         "visibility_rules": [
                             "show_mons"
@@ -16021,7 +16034,8 @@
                             "^$CanReach|REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH, ^$dark|mountmortar"
                         ],
                         "visibility_rules": [
-                            "show_entrances, route_42_access_whirlchanges, er_dungeon_interior_on"
+                            "show_entrances, route_42_access_whirlchanges, er_dungeon_interior_on",
+                            "show_entrances, route_42_access_blocked, er_dungeon_interior_on"
                         ]
                     },
                     {
@@ -16087,7 +16101,8 @@
                             "^$CanReach|REGION_MOUNT_MORTAR_1F_OUTSIDE:WATERFALL_ISLAND"
                         ],
                         "visibility_rules": [
-                            "show_entrances, route_42_access_whirlchanges, er_dungeon_interior_on"
+                            "show_entrances, route_42_access_whirlchanges, er_dungeon_interior_on",
+                            "show_entrances, route_42_access_blocked, er_dungeon_interior_on"
                         ]
                     },
                     {
@@ -33122,7 +33137,7 @@
                             "show_signs, goal_unown"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_19, ^$unownsign|Route19CarefulSwimming"
+                            "^$CanReach|REGION_ROUTE_19:SIGN, ^$unownsign|Route19CarefulSwimming"
                         ]
                     },
                     {

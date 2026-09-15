@@ -202,6 +202,16 @@ function Node:accessibility()
     return res
 end
 
+--- A token in an enabled ER category with no entry in the seed's pairing map was kept vanilla
+--- by the apworld (e.g. the starting town's pokecenter, or an option-removed edge): no pairing
+--- or reveal will ever arrive, so its edge is traversed as authored, like a true vanilla door.
+---@param token string
+---@return boolean
+function EntranceVanillaPinned(token)
+    return ENTRANCE_CONNECTIONS ~= nil and next(ENTRANCE_CONNECTIONS) ~= nil
+        and ENTRANCE_CONNECTIONS[token] == nil
+end
+
 --- Given a shuffled entrance edge, returns the region node the player actually reaches.
 --- Reads the revealed pairing off the entrance's LuaItem (keyed by the forward token).
 --- Also used by route_mode.lua's FindPath so routes respect entrance connections.
@@ -256,7 +266,7 @@ function Node:discover(accessibility, keys)
         local rule = exit[2]
         local is_entrance = exit[3]
 
-        if is_entrance and ER_CATEGORY_ENABLED[exit[4]] then
+        if is_entrance and ER_CATEGORY_ENABLED[exit[4]] and not EntranceVanillaPinned(exit[5]) then
             -- shuffled entrance: detour through the revealed pairing (or dead-end)
             target = EntranceDetourTarget(exit[5])
         elseif exit[7] then

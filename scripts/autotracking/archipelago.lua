@@ -25,6 +25,7 @@ allChecked = nil
 CHECKED_SIGNS = nil
 UNOWN_DATA = nil
 TRADE_DATA = nil
+LUCKY_NUMBER_TRADES = nil
 SAVED_HINTS = {}
 BATTLE_TOWER_TRAINERS = nil
 
@@ -142,6 +143,7 @@ function onClear(slot_data)
     end
     
     TRADE_DATA = slot_data.trades
+    LUCKY_NUMBER_TRADES = slot_data.lucky_number_trades
     UNOWN_DATA = slot_data.unown_signs
     
     -- This sets each Encounter location to however many unique encounters there are in it
@@ -207,9 +209,9 @@ function onClear(slot_data)
         elseif k == "trainersanity" then
             if #v == 0 then
                 TRAINERS:setType("none")
-            elseif #v == 373 and has("johto_only_off") then
+            elseif #v == 374 and has("johto_only_off") then
                 TRAINERS:setType("full")
-            elseif #v == 242 and (has("johto_only_on") or has("johto_only_silver")) then
+            elseif #v == 243 and (has("johto_only_on") or has("johto_only_silver")) then
                 TRAINERS:setType("full")
             else
                 TRAINERS:setType("partial")

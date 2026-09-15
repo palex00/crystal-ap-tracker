@@ -629,3 +629,15 @@ function mom_saving(number)
         return AccessibilityLevel.SequenceBreak
     end
 end
+
+function luckynumber(prize)
+    if not has("EVENT_SAW_LUCKY_NUMBERS") then
+        return AccessibilityLevel.Inspect
+    end
+    local trade = LUCKY_NUMBER_TRADES[tonumber(prize)]
+    if has(trade) then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
+    end
+end
