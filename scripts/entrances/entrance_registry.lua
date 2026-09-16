@@ -1890,7 +1890,7 @@ ENTRANCE_REGISTRY = {
         ids = {2369, 2370},
         pretty = "Lavender Radio Tower Exit",
         tab = {"Kanto Cities", "Lavender Town", "Radio Tower"},
-        section = "@JohtoKanto/Radio Tower/Lavender Radio Tower Exit",
+        section = "@JohtoKanto/Lavender Town/Lavender Radio Tower Exit",
     },
     ["REGION_MAHOGANY_GYM -> REGION_MAHOGANY_TOWN"] = {
         ids = {129, 130},
