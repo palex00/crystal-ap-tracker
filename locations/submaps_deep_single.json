@@ -3823,7 +3823,18 @@
                     {
                         "map": "Route12North",
                         "x": 232,
-                        "y": 376
+                        "y": 376,
+                        "force_invisibility_rules": [
+                            "route_12_access_weirdtree_surfblock"
+                        ]
+                    },
+                    {
+                        "map": "Route12North",
+                        "x": 232,
+                        "y": 344,
+                        "restrict_visibility_rules": [
+                            "route_12_access_weirdtree_surfblock"
+                        ]
                     }
                 ]
             },
