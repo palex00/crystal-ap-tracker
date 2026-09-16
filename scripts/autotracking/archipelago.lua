@@ -98,29 +98,23 @@ function onClear(slot_data)
 
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
+    GAME = Archipelago:GetPlayerGame(PLAYER_ID)
 
     print(dump_table(slot_data))
     
-    for k, v in pairs(slot_data) do
-        if slot_data["johto_only"] ~= nil then
-            if  k == "apworld_version" then
-                local version_str = tostring(v)
-                local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-                local beta_num = tonumber(version_str:match("%.(%d+)$")) -- remove after beta
+    if GAME == "Pokemon Crystal Prerelease" then
+        local version_str = tostring(slot_data["apworld_version"])
+        local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
+        local rc_num = tonumber(version_str:match("%-rc%.(%d+)$")) -- remove before full release
 
-                if first_two_dots == "6.0" or nil then
-                    --Tracker:AddLayouts("layouts/tracker/tracker.json")
-                    if beta_num ~= nil and beta_num < 7 then -- remove after beta
-                        ScriptHost:LoadScript("scripts/logic/regions/connections_old.lua") -- remove after beta
-                    end -- remove after beta
-                else
-                    Tracker:AddLayouts("layouts/versionmismatch.json")
-                    return
-                end
-            end
+        if first_two_dots == "6.0" and rc_num ~= nil then
+            Tracker:AddLayouts("layouts/tracker/tracker.json")
         else
-            Tracker:AddLayouts("layouts/not_crystal.json")
-        end            
+            Tracker:AddLayouts("layouts/versionmismatch.json")
+            return
+        end
+    else
+        Tracker:AddLayouts("layouts/not_crystal.json")
     end
 
 
