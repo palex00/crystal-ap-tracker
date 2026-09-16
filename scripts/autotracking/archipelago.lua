@@ -143,10 +143,7 @@ function onClear(slot_data)
     -- This sets each Encounter location to however many unique encounters there are in it
     for region_key, location in pairs(ENCOUNTER_MAPPING) do
         local object = Tracker:FindObjectForCode(location)
-        -- TEMP-FIX
-        if REGION_ENCOUNTERS[region_key] ~= nil then
-            object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
-        end
+        object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
     end
     
     EVOLUTION_DATA = slot_data.evolution_info
