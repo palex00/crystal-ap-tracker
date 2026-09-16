@@ -7,13 +7,14 @@
         "stages": [
             {
                 "name": "ER: Dungeon - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/dungeon.png",
+                "img_mods": "@disabled",
                 "codes": "er_dungeon, er_dungeon_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Dungeon - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/dungeon.png",
                 "codes": "er_dungeon, er_dungeon_on",
                 "inherit_codes": false
             }
@@ -27,13 +28,14 @@
         "stages": [
             {
                 "name": "ER: Dungeon Interior - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/dungeon_interior.png",
+                "img_mods": "@disabled",
                 "codes": "er_dungeon_interior, er_dungeon_interior_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Dungeon Interior - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/dungeon_interior.png",
                 "codes": "er_dungeon_interior, er_dungeon_interior_on",
                 "inherit_codes": false
             }
@@ -47,13 +49,14 @@
         "stages": [
             {
                 "name": "ER: Gym - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/gym.png",
+                "img_mods": "@disabled",
                 "codes": "er_gym, er_gym_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Gym - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/gym.png",
                 "codes": "er_gym, er_gym_on",
                 "inherit_codes": false
             }
@@ -67,13 +70,14 @@
         "stages": [
             {
                 "name": "ER: Gym Interior - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/gym_interior.png",
+                "img_mods": "@disabled",
                 "codes": "er_gym_interior, er_gym_interior_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Gym Interior - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/gym_interior.png",
                 "codes": "er_gym_interior, er_gym_interior_on",
                 "inherit_codes": false
             }
@@ -87,13 +91,14 @@
         "stages": [
             {
                 "name": "ER: Mart - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/mart.png",
+                "img_mods": "@disabled",
                 "codes": "er_mart, er_mart_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Mart - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/mart.png",
                 "codes": "er_mart, er_mart_on",
                 "inherit_codes": false
             }
@@ -107,13 +112,14 @@
         "stages": [
             {
                 "name": "ER: Mart Interior - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/mart_interior.png",
+                "img_mods": "@disabled",
                 "codes": "er_mart_interior, er_mart_interior_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Mart Interior - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/mart_interior.png",
                 "codes": "er_mart_interior, er_mart_interior_on",
                 "inherit_codes": false
             }
@@ -127,13 +133,14 @@
         "stages": [
             {
                 "name": "ER: Building - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/building.png",
+                "img_mods": "@disabled",
                 "codes": "er_building, er_building_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Building - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/building.png",
                 "codes": "er_building, er_building_on",
                 "inherit_codes": false
             }
@@ -147,13 +154,14 @@
         "stages": [
             {
                 "name": "ER: Building Interior - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/building_interior.png",
+                "img_mods": "@disabled",
                 "codes": "er_building_interior, er_building_interior_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Building Interior - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/building_interior.png",
                 "codes": "er_building_interior, er_building_interior_on",
                 "inherit_codes": false
             }
@@ -167,33 +175,35 @@
         "stages": [
             {
                 "name": "ER: Gate - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/gate.png",
+                "img_mods": "@disabled",
                 "codes": "er_gate, er_gate_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Gate - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/gate.png",
                 "codes": "er_gate, er_gate_on",
                 "inherit_codes": false
             }
         ]
     },
     {
-        "name": "ER: Pokecenter",
+        "name": "ER: Poke Center",
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
         "stages": [
             {
-                "name": "ER: Pokecenter - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "name": "ER: Poke Center - Off",
+                "img": "/images/settings/entrances/pokecenter.png",
+                "img_mods": "@disabled",
                 "codes": "er_pokecenter, er_pokecenter_off",
                 "inherit_codes": false
             },
             {
-                "name": "ER: Pokecenter - On",
-                "img": "/images/items/pokeball.png",
+                "name": "ER: Poke Center - On",
+                "img": "/images/settings/entrances/pokecenter.png",
                 "codes": "er_pokecenter, er_pokecenter_on",
                 "inherit_codes": false
             }
@@ -207,13 +217,14 @@
         "stages": [
             {
                 "name": "ER: Elevator - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/elevator.png",
+                "img_mods": "@disabled",
                 "codes": "er_elevator, er_elevator_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Elevator - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/elevator.png",
                 "codes": "er_elevator, er_elevator_on",
                 "inherit_codes": false
             }
@@ -227,13 +238,14 @@
         "stages": [
             {
                 "name": "ER: Pokemon League - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/pokemonleague.png",
+                "img_mods": "@disabled",
                 "codes": "er_pokemon_league, er_pokemon_league_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: Pokemon League - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/pokemonleague.png",
                 "codes": "er_pokemon_league, er_pokemon_league_on",
                 "inherit_codes": false
             }
@@ -247,13 +259,14 @@
         "stages": [
             {
                 "name": "ER: One-Way - Off",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/oneway.png",
+                "img_mods": "@disabled",
                 "codes": "er_one_way, er_one_way_off",
                 "inherit_codes": false
             },
             {
                 "name": "ER: One-Way - On",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/oneway.png",
                 "codes": "er_one_way, er_one_way_on",
                 "inherit_codes": false
             }
@@ -263,18 +276,18 @@
         "name": "Entrance-Coupling",
         "type": "progressive",
         "loop": true,
-        "initial_active_state": true,
+        "initial_stage_idx": 1,
         "allow_disabled": false,
         "stages": [
             {
                 "name": "Entrances are decoupled",
-                "img": "/images/items/pokeball.png",
+                "img": "/images/settings/entrances/decoupled.png",
                 "codes": "coupled_entrances, coupled_entrances_off",
                 "inherit_codes": false
             },
             {
                 "name": "Entrances are coupled",
-                "img": "/images/items/pokeball_bw.png",
+                "img": "/images/settings/entrances/coupled.png",
                 "codes": "coupled_entrances, coupled_entrances_on",
                 "inherit_codes": false
             }
