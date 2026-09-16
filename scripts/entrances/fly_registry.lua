@@ -283,6 +283,30 @@ FLY_REGION_TOKENS = {
     [23] = "IndigoPlateau",
 }
 
+-- FlyRegion ids kept under johto_only (apworld FlyRegion.johto; Indigo Plateau counts as Johto).
+FLY_JOHTO_IDS = { [1]=true, [2]=true, [3]=true, [4]=true, [5]=true, [6]=true, [7]=true, [8]=true,
+    [9]=true, [10]=true, [11]=true, [12]=true, [23]=true }
+FLY_SILVER_CAVE_ID = 12
+
+-- Seed order (apworld get_fly_regions): "Fly Unlock N" and slot_data.fly_destinations[N] refer to
+-- FLY_INDEX_TOKENS[N]. Equals FLY_REGION_TOKENS unless johto_only drops Kanto (and Silver Cave).
+FLY_INDEX_TOKENS = {}
+FLY_TOKEN_INDEX = {}
+
+---@param johto_only integer 0 off, 1 on, 2 include_silver_cave
+function setupFlyIndexTokens(johto_only)
+    FLY_INDEX_TOKENS = {}
+    FLY_TOKEN_INDEX = {}
+    for id, token in ipairs(FLY_REGION_TOKENS) do
+        local keep = johto_only == 0 or (FLY_JOHTO_IDS[id] and not (johto_only == 1 and id == FLY_SILVER_CAVE_ID))
+        if keep then
+            FLY_INDEX_TOKENS[#FLY_INDEX_TOKENS + 1] = token
+            FLY_TOKEN_INDEX[token] = #FLY_INDEX_TOKENS
+        end
+    end
+end
+setupFlyIndexTokens(0)
+
 -- token -> vanilla destination region (used as the default when fly destinations aren't
 -- randomized, so behaviour is unchanged). Equals each FlyRegion's exit_region.
 FLY_VANILLA_REGIONS = {

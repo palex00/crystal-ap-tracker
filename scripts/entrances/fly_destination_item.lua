@@ -31,8 +31,11 @@ function FlyDestinationItem:refresh()
         inst.IconMods = "overlay|" .. self.overlay
     end
     local dest = FLY_DESTINATIONS[self.token]
+    local index = FLY_TOKEN_INDEX[self.token]
+    inst.Name = index and ("Fly Unlock " .. index) or ("Fly " .. self.token)
     -- Trailing newline makes the (vertically centered) overlay a line taller, nudging the visible text up.
-    inst.BadgeText = FLY_BADGE_INDENT .. (dest and FlyRegionPrettyName(dest) or FLY_DESTINATION_PLACEHOLDER) .. "\n"
+    inst.BadgeText = FLY_BADGE_INDENT .. (index and (index .. ": ") or "")
+        .. (dest and FlyRegionPrettyName(dest) or FLY_DESTINATION_PLACEHOLDER) .. "\n"
     inst.BadgeTextColor = "#abcdef"
     inst:SetOverlayBackground("")
     inst:SetOverlayFontSize(11)
