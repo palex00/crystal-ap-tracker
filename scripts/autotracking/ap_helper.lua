@@ -475,7 +475,7 @@ AMOUNT_CODES = {
 }
 
 LIST_CODES = {
-    goal_option = {
+    goal = {
         mapping = MAP_TOGGLE,
         values = {
             ["Elite Four"]         = "goal_e4",
