@@ -60,40 +60,6 @@ function resetTrainers()
     Tracker:FindObjectForCode("trainersanity_344").Active = false -- literally just Cal the fucker.
 end
 
-MAP_TOGGLE = {
-    [0] = 0,
-    [1] = 1
-}
-MAP_TRIPLE = {
-    [0] = 0,
-    [1] = 1,
-    [2] = 2
-}
-MAP_QUADRUPLE = {
-    [0] = 0,
-    [1] = 1,
-    [2] = 2,
-    [3] = 3
-}
-MAP_QUINTUPLE = {
-    [0] = 0,
-    [1] = 1,
-    [2] = 2,
-    [3] = 3,
-    [4] = 4
-}
-MAP_SIXTUPLE = {
-    [0] = 0,
-    [1] = 1,
-    [2] = 2,
-    [3] = 3,
-    [4] = 4,
-    [5] = 5
-}
-MAP_TOGGLE_REVERSE = {
-    [0] = 1,
-    [1] = 0
-}
 MAP_BADGEGYM = {
     [0] = "badges",
     [1] = "gyms",
@@ -161,315 +127,118 @@ STARTTOWN_MAPPING = {
 }
 
 SLOT_CODES = {
-    enable_mischief = {
-        code = "mischief",
-        mapping = MAP_TOGGLE
-    },
-    -- Entrance randomization is NOT one slot_data key per category: the apworld sends a single
-    -- `randomize_entrances` OptionSet holding the display names of the enabled categories
-    -- (empty = ER off). It is handled in LIST_CODES below.
-    randomize_badges = {
-        code = "badges",
-        mapping = MAP_TRIPLE
-    },
-    randomize_pokegear = {
-        code = "pokegear",
-        mapping = MAP_TOGGLE
-    },
-    hm_badge_requirements = {
-        code = "badgereqs",
-        mapping = MAP_QUADRUPLE
-    },
-    johto_only = {
-        code = "johto_only",
-        mapping = MAP_TRIPLE
-    },
-    free_fly_location = {
-        code = "free_fly_location",
-        mapping = FLYTOWN_MAPPING
-    },
-    map_card_fly_location = {
-        code = "map_card_fly",
-        mapping = FLYTOWN_MAPPING
-    },
-    randomize_berry_trees = {
-        code = "berries",
-        mapping = MAP_TOGGLE
-    },
-    remove_ilex_cut_tree = {
-        code = "ilextree",
-        mapping = MAP_TOGGLE
-    },
-    route_32_condition = {
-        code = "r32_guy",
-        mapping = MAP_QUINTUPLE
-    },
-    tea_north = {
-        code = "tea_north",
-        mapping = MAP_TOGGLE
-    },
-    tea_east = {
-        code = "tea_east",
-        mapping = MAP_TOGGLE
-    },
-    tea_south = {
-        code = "tea_south",
-        mapping = MAP_TOGGLE
-    },
-    tea_west = {
-        code = "tea_west",
-        mapping = MAP_TOGGLE
-    },
-    east_west_underground = {
-        code = "ew_underground",
-        mapping = MAP_TOGGLE
-    },
-    undergrounds_require_power = {
-        code = "underground_power",
-        mapping = MAP_QUADRUPLE
-    },
-    route_2_access = {
-        code = "route_2_access",
-        mapping = MAP_TRIPLE
-    },
-    red_gyarados_access = {
-        code = "red_gyarados_access",
-        mapping = MAP_TRIPLE
-    },
-    blackthorn_dark_cave_access = {
-        code = "blackthorn_dark_cave_access",
-        mapping = MAP_TOGGLE
-    },
-    national_park_access = {
-        code = "national_park_access",
-        mapping = MAP_TOGGLE
-    },
-    route_3_access = {
-        code = "route_3_access",
-        mapping = MAP_TOGGLE
-    },
-    starting_town = {
-        code = "start_town_location",
-        mapping = STARTTOWN_MAPPING
-    },
-    time_of_day_encounters = {
-        code = "timeofday",
-        mapping = MAP_TOGGLE
-    },
-    unlockable_time_of_day = {
-        code = "unlockable_tod",
-        mapping = MAP_TOGGLE
-    },
-    static_pokemon_required = {
-        code = "encmethod_static",
-        mapping = MAP_TOGGLE
-    },
-    breeding_method = {
-        code = "breeding_logic",
-        mapping = MAP_QUINTUPLE
-    },
-    all_pokemon_seen = {
-        code = "all_pokemon_seen",
-        mapping = MAP_TOGGLE
-    },
-    hiddenitem_logic = {
-        code = "hiddenitem_logic",
-        mapping = MAP_SIXTUPLE
-    },
-    mount_mortar_access = {
-        code = "mount_mortar_access",
-        mapping = MAP_TOGGLE
-    },
-    randomize_pokemon_requests = {
-        code = "randomize_pokemon_requests",
-        mapping = MAP_QUADRUPLE
-    },
-    randomize_fly_unlocks = {
-        code = "randomize_fly_unlocks",
-        mapping = MAP_TRIPLE
-    },
-    randomize_fly_destinations = {
-        code = "randomize_fly_destinations",
-        mapping = MAP_TOGGLE
-    },
-    randomize_evolution = {
-        code = "randomize_evolution",
-        mapping = MAP_TRIPLE
-    },
-    victory_road_strength = {
-        code = "victory_road_strength",
-        mapping = MAP_TOGGLE
-    },
-    require_flash = {
-        code = "require_flash",
-        mapping = MAP_TRIPLE
-    },
-    lock_kanto_gyms = {
-        code = "lock_kanto_gyms",
-        mapping = MAP_TOGGLE
-    },
-    grasssanity = {
-        code = "grasssanity",
-        mapping = MAP_TRIPLE
-    },
-    route_30_battle = {
-        code = "route_30_battle",
-        mapping = MAP_TOGGLE
-    },
-    ss_aqua_access = {
-        code = "ss_aqua_access",
-        mapping = MAP_TOGGLE
-    },
-    magnet_train_access = {
-        code = "magnet_train_access",
-        mapping = MAP_TOGGLE
-    },
-    randomize_bug_catching_contest = {
-        code = "randomize_bug_catching_contest",
-        mapping = MAP_QUADRUPLE
-    },
-    trades_required = {
-        code = "encmethod_trades",
-        mapping = MAP_TOGGLE
-    },
-    require_pokegear_for_phone_numbers = {
-        code = "require_pokegear_for_phone_numbers",
-        mapping = MAP_TOGGLE
-    },
-    route_42_access = {
-        code = "route_42_access",
-        mapping = MAP_QUADRUPLE
-    },
-    randomize_phone_call_items = {
-        code = "randomize_phone_call_items",
-        mapping = MAP_TOGGLE
-    },
-    phone_call_mode = {
-        code = "phone_call_mode",
-        mapping = MAP_TOGGLE
-    },
-    rematchsanity = {
-        code = "randomize_rematches",
-        mapping = MAP_TOGGLE
-    },
-    route_12_access = {
-        code = "route_12_access",
-        mapping = MAP_TOGGLE
-    },
-    route_30_access = {
-        code = "route_30_access",
-        mapping = MAP_TOGGLE
-    },
-    randomize_pokedex = {
-        code = "randomize_pokedex",
-        mapping = MAP_TRIPLE
-    },
-    south_kanto_access = {
-        code = "south_kanto_access",
-        mapping = MAP_QUADRUPLE
-    },
-    south_kanto_condition = {
-        code = "south_kanto_condition",
-        mapping = MAP_TOGGLE
-    },
-    route_23_restored = {
-        code = "route_23_restored",
-        mapping = MAP_TOGGLE
-    },
-    lance_requires_elite_four = {
-        code = "lance_requires_elite_four",
-        mapping = MAP_TOGGLE
-    },
-    flooded_mine = {
-        code = "flooded_mine",
-        mapping = MAP_TOGGLE
-    },
-    momsanity = {
-        code = "momsanity",
-        mapping = MAP_TOGGLE
-    },
-    coupled_entrances = {
-        code = "coupled_entrances",
-        mapping = MAP_TOGGLE
-    },
-    battle_tower_sanity = {
-        code = "battle_tower_sanity",
-        mapping = MAP_TRIPLE
-    },
-    battle_tower_progressive_tier_unlocks = {
-        code = "battle_tower_progressive_tier_unlocks",
-        mapping = MAP_TOGGLE
-    },
-    randomize_lucky_number_show = {
-        code = "luckynumbershow",
-        mapping = MAP_TOGGLE
-    }
+    enable_mischief = {code = "mischief"},
+    randomize_badges = {code = "badges"},
+    randomize_pokegear = {code = "pokegear"},
+    hm_badge_requirements = {code = "badgereqs"},
+    johto_only = {code = "johto_only"},
+    free_fly_location = {code = "free_fly_location", mapping = FLYTOWN_MAPPING},
+    map_card_fly_location = {code = "map_card_fly", mapping = FLYTOWN_MAPPING},
+    randomize_berry_trees = {code = "berries"},
+    remove_ilex_cut_tree = {code = "ilextree"},
+    route_32_condition = {code = "r32_guy"},
+    tea_north = {code = "tea_north"},
+    tea_east = {code = "tea_east"},
+    tea_south = {code = "tea_south"},
+    tea_west = {code = "tea_west"},
+    east_west_underground = {code = "ew_underground"},
+    undergrounds_require_power = {code = "underground_power"},
+    route_2_access = {code = "route_2_access"},
+    red_gyarados_access = {code = "red_gyarados_access"},
+    blackthorn_dark_cave_access = {code = "blackthorn_dark_cave_access"},
+    national_park_access = {code = "national_park_access"},
+    route_3_access = {code = "route_3_access"},
+    starting_town = {code = "start_town_location", mapping = STARTTOWN_MAPPING},
+    time_of_day_encounters = {code = "timeofday"},
+    unlockable_time_of_day = {code = "unlockable_tod"},
+    static_pokemon_required = {code = "encmethod_static"},
+    breeding_method = {code = "breeding_logic"},
+    all_pokemon_seen = {code = "all_pokemon_seen"},
+    hiddenitem_logic = {code = "hiddenitem_logic"},
+    mount_mortar_access = {code = "mount_mortar_access"},
+    randomize_pokemon_requests = {code = "randomize_pokemon_requests"},
+    randomize_fly_unlocks = {code = "randomize_fly_unlocks"},
+    randomize_fly_destinations = {code = "randomize_fly_destinations"},
+    randomize_evolution = {code = "randomize_evolution"},
+    victory_road_strength = {code = "victory_road_strength"},
+    require_flash = {code = "require_flash"},
+    lock_kanto_gyms = {code = "lock_kanto_gyms"},
+    grasssanity = {code = "grasssanity"},
+    route_30_battle = {code = "route_30_battle"},
+    ss_aqua_access = {code = "ss_aqua_access"},
+    magnet_train_access = {code = "magnet_train_access"},
+    randomize_bug_catching_contest = {code = "randomize_bug_catching_contest"},
+    trades_required = {code = "encmethod_trades"},
+    require_pokegear_for_phone_numbers = {code = "require_pokegear_for_phone_numbers"},
+    route_42_access = {code = "route_42_access"},
+    randomize_phone_call_items = {code = "randomize_phone_call_items"},
+    phone_call_mode = {code = "phone_call_mode"},
+    rematchsanity = {code = "randomize_rematches"},
+    route_12_access = {code = "route_12_access"},
+    route_30_access = {code = "route_30_access"},
+    randomize_pokedex = {code = "randomize_pokedex"},
+    south_kanto_access = {code = "south_kanto_access"},
+    south_kanto_condition = {code = "south_kanto_condition"},
+    route_23_restored = {code = "route_23_restored"},
+    lance_requires_elite_four = {code = "lance_requires_elite_four"},
+    flooded_mine = {code = "flooded_mine"},
+    momsanity = {code = "momsanity"},
+    coupled_entrances = {code = "coupled_entrances"},
+    battle_tower_sanity = {code = "battle_tower_sanity"},
+    battle_tower_progressive_tier_unlocks = {code = "battle_tower_progressive_tier_unlocks"},
+    randomize_lucky_number_show = {code = "luckynumbershow"}
 }
 
 REQUIREMENT_CODES = {
-    victory_road_requirement = {
-        code = "vr_requirement",
+    victory_road_requirement = {code = "vr_requirement",
         mapping = MAP_BADGEGYM,
         item = VR_REQ
     },
-    elite_four_requirement = {
-        code = "e4_requirement",
+    elite_four_requirement = {code = "e4_requirement",
         mapping = MAP_BADGEGYM,
         item = E4_REQ
     },
-    red_requirement = {
-        code = "red_requirement",
+    red_requirement = {code = "red_requirement",
         mapping = MAP_BADGEGYM,
         item = RED_REQ
     },
-    radio_tower_requirement = {
-        code = "tower_requirement",
+    radio_tower_requirement = {code = "tower_requirement",
         mapping = MAP_BADGEGYM,
         item = RADIO_REQ
     },
-    mt_silver_requirement = {
-        code = "mt_silver_requirement",
+    mt_silver_requirement = {code = "mt_silver_requirement",
         mapping = MAP_BADGEGYM,
         item = SILVER_REQ
     },
-    route_44_access_requirement = {
-        code = "route_44_requirement",
+    route_44_access_requirement = {code = "route_44_requirement",
         mapping = MAP_BADGEGYM,
         item = R44_REQ
     },
-    route_22_access_requirement = {
-        code = "route_22_access",
+    route_22_access_requirement = {code = "route_22_access",
         mapping = MAP_ROUTE_22_ACCESS,
         item = ROUTE_22_REQ
     }
 }
 AMOUNT_CODES = {
-    victory_road_count = {
-        code = "vr_requirement",
+    victory_road_count = {code = "vr_requirement",
         item = VR_REQ
     },
-    elite_four_count = {
-        code = "e4_requirement",
+    elite_four_count = {code = "e4_requirement",
         item = E4_REQ
     },
-    red_count = {
-        code = "red_requirement",
+    red_count = {code = "red_requirement",
         item = RED_REQ
     },
-    radio_tower_count = {
-        code = "tower_requirement",
+    radio_tower_count = {code = "tower_requirement",
         item = RADIO_REQ
     },
-    mt_silver_count = {
-        code = "mt_silver_requirement",
+    mt_silver_count = {code = "mt_silver_requirement",
         item = SILVER_REQ
     },
-    route_44_access_count = {
-        code = "route_44_requirement",
+    route_44_access_count = {code = "route_44_requirement",
         item = R44_REQ
     },
-    route_22_access_count = {
-        code = "route_22_access_count",
+    route_22_access_count = {code = "route_22_access_count",
         item = ROUTE_22_REQ
     }
 }
