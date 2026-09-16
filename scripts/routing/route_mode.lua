@@ -49,6 +49,10 @@ local function HomeRegion()
     return nil
 end
 
+local function FlyHopLabel(token)
+    return "Fly: " .. FlyRegionPrettyName(FLY_DESTINATIONS[token])
+end
+
 local function ReachableFlyHops()
     local hops = {}
     for _, exit in pairs(Entry_point.exits) do
@@ -59,7 +63,7 @@ local function ReachableFlyHops()
             local target = FlyDetourTarget(token)
             if ok and ok > ACCESS_SEQUENCEBREAK - 1
                 and target:accessibility() > ACCESS_SEQUENCEBREAK - 1 then
-                hops[#hops + 1] = { node = target, label = exit[6] or "" }
+                hops[#hops + 1] = { node = target, label = FlyHopLabel(token) }
             end
         end
     end
@@ -124,6 +128,8 @@ local function FindPath(start, finish, stage)
             if is_entrance then
                 local row = ENTRANCE_REGISTRY[exit[5]]
                 label = row and row.pretty
+            elseif exit[7] then
+                label = FlyHopLabel(exit[7])
             else
                 label = exit[6]
             end

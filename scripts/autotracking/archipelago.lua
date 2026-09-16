@@ -184,13 +184,13 @@ function onClear(slot_data)
 			item:setStage(v)
         elseif LIST_CODES[k] then
             for _, code in pairs(LIST_CODES[k].values) do
-                Tracker:FindObjectForCode(code).CurrentStage = LIST_CODES[k].mapping[0]
+                Tracker:FindObjectForCode(code).CurrentStage = 0
             end
         
             for _, name in ipairs(v or {}) do
                 local code = LIST_CODES[k].values[name]
                 if code then
-                    Tracker:FindObjectForCode(code).CurrentStage = LIST_CODES[k].mapping[1]
+                    Tracker:FindObjectForCode(code).CurrentStage = 1
                 end
             end
         elseif k == "precollected_tod" then
