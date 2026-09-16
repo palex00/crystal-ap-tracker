@@ -4,8 +4,8 @@
 -- FLY_ARRIVAL_REGIONS: "<CamelCaseMap>:<warp_index>" -> destination region a fly to that
 --   overworld warp lands you in. Keys are exactly the [map_name, warp_index] pairs the
 --   apworld sends in slot_data.fly_destinations. Matches regions.py _get_fly_dest_region:
---   entrance_region of the connection whose arrival_map/arrival_warp_id equal the flypoint.
---   (Route23Restored's two arrivals are synthesized at apworld runtime, appended here.)
+--   entrance_region of the connection whose arrival_map/arrival_warp_index equal the flypoint.
+--   (Route23Restored's two arrivals included -- the generator emits them into entrance_data.json.)
 
 FLY_ARRIVAL_REGIONS = {
     ["AzaleaTown:1"] = "REGION_AZALEA_TOWN",

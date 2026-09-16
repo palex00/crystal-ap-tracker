@@ -10,6 +10,17 @@ ROUTE_TILE_COUNT = 30
 
 -- saved last warp taken (from a bounce)
 LAST_WARP_TOKEN = nil
+-- region the last bounce put the player in outright (dig/escape rope arrival)
+LAST_WARP_REGION = nil
+-- fly token (or HOME_SENTINEL) the last bounce landed on; resolved lazily in
+-- CurrentRegionNode, like the ER pairing, so a reroute or a reconnect isn't baked in
+LAST_WARP_SPAWN = nil
+
+-- wLastWarpID id ranges, from the apworld's data/warp_ids.json.
+local SPAWN_ID_BASE = 0x2000
+local DIG_ID_BASE = 0x4000
+local SPAWN_HOME = 23
+local HOME_SENTINEL = "@HOME"
 
 local FOUND = false
 local ALREADY_VISITED = {}
@@ -217,10 +228,48 @@ function GetRoute(start, finish)
     FLY_HOPS = {}
 end
 
+--- Records the warp id a map bounce carried. A map-connection crossing never commits a new
+--- id, so the bounce omits the key entirely and the last position goes stale rather than nil.
+---   0                  no warp identity (scripted warp, new game) -- position unknown
+---   < SPAWN_ID_BASE    a warp that was traversed: the player is on its far side
+---   SPAWN_ID_BASE + i  spawn point i -- fly/teleport (flypoints 0-22), Go Home (23);
+---                      the pokecenter respawns above those are left unknown
+---   DIG_ID_BASE + id   materialised standing ON warp id (dig, escape rope, warpback)
+---@param id integer|nil
+function SetLastWarp(id)
+    LAST_WARP_TOKEN = nil
+    LAST_WARP_REGION = nil
+    LAST_WARP_SPAWN = nil
+    if id == nil or id == 0 then
+        return
+    end
+    if id >= DIG_ID_BASE then
+        local row = ResolveEntranceRow(id - DIG_ID_BASE)
+        -- standing on the tile rather than through it, so this is its near side
+        LAST_WARP_REGION = row and EntranceSourceRegion(row.token) or nil
+    elseif id >= SPAWN_ID_BASE then
+        local spawn = id - SPAWN_ID_BASE
+        if spawn == SPAWN_HOME then
+            LAST_WARP_SPAWN = HOME_SENTINEL
+        else
+            LAST_WARP_SPAWN = FLY_REGION_TOKENS[spawn + 1]
+        end
+    else
+        local row = ResolveEntranceRow(id)
+        LAST_WARP_TOKEN = row and row.token or nil
+    end
+end
+
 function CurrentRegionNode()
     local token = LAST_WARP_TOKEN
     if not token then
-        return nil
+        local region = LAST_WARP_REGION
+        if LAST_WARP_SPAWN == HOME_SENTINEL then
+            return HomeRegion()
+        elseif LAST_WARP_SPAWN then
+            region = FLY_DESTINATIONS[LAST_WARP_SPAWN]
+        end
+        return region and NAMED_NODES[region] or nil
     end
     local cat = ENTRANCE_CATEGORY and ENTRANCE_CATEGORY[token]
     if cat and ER_CATEGORY_ENABLED and ER_CATEGORY_ENABLED[cat] then
