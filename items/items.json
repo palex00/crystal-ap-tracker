@@ -668,6 +668,24 @@
         "codes": "KABUTO_TILE"
     },
     {
+        "name": "Unowns Seen",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 26,
+        "initial_quantity": 0,
+        "img": "/images/other/unown_seen.png",
+        "codes": "UNOWN_SEEN_COUNT"
+    },
+    {
+        "name": "Unowns Caught",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 26,
+        "initial_quantity": 0,
+        "img": "/images/other/unown_caught.png",
+        "codes": "UNOWN_CAUGHT_COUNT"
+    },
+    {
         "name": "Pokedex",
         "type": "toggle",
         "img": "/images/settings/pokedex.png",

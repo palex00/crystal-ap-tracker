@@ -83,6 +83,8 @@ function onClear(slot_data)
             obj.Active = false
         end
     end
+    Tracker:FindObjectForCode("UNOWN_SEEN_COUNT").AcquiredCount = 0
+    Tracker:FindObjectForCode("UNOWN_CAUGHT_COUNT").AcquiredCount = 0
 
     for _, code in ipairs(FLAG_TRADE_CODES) do
         Tracker:FindObjectForCode(code).Active = false
@@ -729,6 +731,34 @@ function updateSigns(checked_signs)
             end
         end
     end
+
+    updateUnownCounts()
+end
+
+function updateUnownCounts()
+    local revealed = {}
+    local seen_count = 0
+
+    for _, sign in ipairs(CHECKED_SIGNS) do
+        local value = UNOWN_DATA[sign]
+        if value then
+            local letter = string.byte(value:sub(#value, #value)) - string.byte("A") + 1
+            if not revealed[letter] then
+                revealed[letter] = true
+                seen_count = seen_count + 1
+            end
+        end
+    end
+
+    local caught_count = 0
+    for i = 1, 26 do
+        if Tracker:FindObjectForCode("UNOWN_"..i).Active then
+            caught_count = caught_count + 1
+        end
+    end
+
+    Tracker:FindObjectForCode("UNOWN_SEEN_COUNT").AcquiredCount = seen_count
+    Tracker:FindObjectForCode("UNOWN_CAUGHT_COUNT").AcquiredCount = caught_count
 end
 
 CAUGHT_COUNT = 0
