@@ -208,8 +208,7 @@ end
 ---@param token string
 ---@return boolean
 function EntranceVanillaPinned(token)
-    return ENTRANCE_CONNECTIONS ~= nil and next(ENTRANCE_CONNECTIONS) ~= nil
-        and ENTRANCE_CONNECTIONS[token] == nil
+    return ENTRANCE_CONNECTIONS ~= nil and ENTRANCE_CONNECTIONS[token] == nil
 end
 
 --- Given a shuffled entrance edge, returns the region node the player actually reaches.
