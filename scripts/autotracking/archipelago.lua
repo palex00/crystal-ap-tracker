@@ -147,7 +147,7 @@ function onClear(slot_data)
     -- This sets each Encounter location to however many unique encounters there are in it
     for region_key, location in pairs(ENCOUNTER_MAPPING) do
         local object = Tracker:FindObjectForCode(location)
-        -- TEMP-FIX
+        -- This isn't a temp fix after all. Since we use one table, some of these are going to be nil because of day/nite/morn <-> no split entries
         if REGION_ENCOUNTERS[region_key] ~= nil then
             object.AvailableChestCount = #REGION_ENCOUNTERS[region_key]
         end
