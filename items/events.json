@@ -349,11 +349,6 @@
 {"name": "EVENT_SEEN_MART_MAHOGANY_2", "type": "toggle", "codes": "EVENT_SEEN_MART_MAHOGANY_2"},
 {"name": "EVENT_SEEN_MART_BLACKTHORN", "type": "toggle", "codes": "EVENT_SEEN_MART_BLACKTHORN"},
 
-// ============================================================================
-// TO BE COMPLETED LATER
-// Referenced by scripts/logic/regions/*.lua but not yet given real art.
-// ============================================================================
-
 {"name": "Blackthorn Gym: Push top-right boulder into hole", "type": "toggle", "img": "/images/events/pushboulder_gym.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_tr.png", "codes": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1"},
 {"name": "Blackthorn Gym: Push bottom boulder into hole", "type": "toggle", "img": "/images/events/pushboulder_gym.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_b.png", "codes": "EVENT_BOULDER_IN_BLACKTHORN_GYM_3"},
 {"name": "Plug the north hole in Ice Path", "type": "toggle", "img": "/images/events/pushboulder_ice.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_n.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_1A"},

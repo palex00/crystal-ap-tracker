@@ -11132,6 +11132,27 @@
                         "y": 88
                     }
                 ]
+            },
+            {
+                "name": "Gift from IMAKUNI",
+                "sections": [
+                    {
+                        "name": "This is a check.",
+                        "chest_unopened_img": "images/gift/old_man.png",
+                        "chest_opened_img": "images/gift/old_man_open.png",
+                        "access_rules": [
+                            "^$CanReach|REGION_INDIGO_PLATEAU_POKECENTER_1F"
+                        ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "IndigoPlateauPokecenter1F",
+                        "force_invisibility_rules": "EVENT_MISCHIEF",
+                        "x": 24,
+                        "y": 152
+                    }
+                ]
             }
         ]
     }
