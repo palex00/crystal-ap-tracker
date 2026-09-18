@@ -25,6 +25,7 @@ allChecked = nil
 CHECKED_SIGNS = nil
 UNOWN_DATA = nil
 TRADE_DATA = nil
+REQUEST_POKEMON = {108, 43, 120, 58, 172, 183, 25, 35}
 LUCKY_NUMBER_TRADES = nil
 SAVED_HINTS = {}
 BATTLE_TOWER_TRAINERS = nil
@@ -139,6 +140,7 @@ function onClear(slot_data)
     end
     
     TRADE_DATA = slot_data.trades
+    REQUEST_POKEMON = slot_data.request_pokemon
     LUCKY_NUMBER_TRADES = slot_data.lucky_number_trades
     UNOWN_DATA = slot_data.unown_signs
     

@@ -2929,6 +2929,38 @@
                         "y": 360
                     }
                 ]
+            },
+            {
+                "name": "Bill's Grandpa",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 25/Everstone from Bill's Grandpa",
+                        "name": "Everstone from Bill's Grandpa"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 25/Leaf Stone from Bill's Grandpa",
+                        "name": "Leaf Stone from Bill's Grandpa"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 25/Water Stone from Bill's Grandpa",
+                        "name": "Water Stone from Bill's Grandpa"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 25/Fire Stone from Bill's Grandpa",
+                        "name": "Fire Stone from Bill's Grandpa"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 25/Thunderstone from Bill's Grandpa",
+                        "name": "Thunderstone from Bill's Grandpa"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BillsHouse",
+                        "x": 40,
+                        "y": 56
+                    }
+                ]
             }
         ]
     }

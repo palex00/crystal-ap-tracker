@@ -17709,7 +17709,7 @@
                             "show_items, randomize_rematches_true, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_43, ^$phonecall, EVENT_CLEARED_RADIO_TOWER"
+                            "^$CanReach|REGION_ROUTE_43, ^$phonecall, ^$request_pokemon|7, POKEDEX, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "chest_unopened_img": "images/placeholder.png",
                         "chest_opened_img": "images/placeholder.png"
@@ -26539,16 +26539,58 @@
                         ]
                     },
                     {
-                        "name": "Bill's Grandpa - Pokémon Request Rewards",
-                        "item_count": 5,
-                        "clear_as_group": false,
-                        "chest_unopened_img": "images/other/bills_grandpa.png",
-                        "chest_opened_img": "images/other/bills_grandpa_bw.png",
+                        "name": "Everstone from Bill's Grandpa",
+                        "chest_unopened_img": "images/gift/old_man.png",
+                        "chest_opened_img": "images/gift/old_man_open.png",
                         "visibility_rules": [
                             "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_BILLS_HOUSE"
+                            "^$CanReach|REGION_BILLS_HOUSE, ^$request_pokemon|0, POKEDEX"
+                        ]
+                    },
+                    {
+                        "name": "Leaf Stone from Bill's Grandpa",
+                        "chest_unopened_img": "images/gift/old_man.png",
+                        "chest_opened_img": "images/gift/old_man_open.png",
+                        "visibility_rules": [
+                            "show_items, randomize_pokemon_requests_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 25/Everstone from Bill's Grandpa, ^$request_pokemon|1"
+                        ]
+                    },
+                    {
+                        "name": "Water Stone from Bill's Grandpa",
+                        "chest_unopened_img": "images/gift/old_man.png",
+                        "chest_opened_img": "images/gift/old_man_open.png",
+                        "visibility_rules": [
+                            "show_items, randomize_pokemon_requests_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 25/Leaf Stone from Bill's Grandpa, ^$request_pokemon|2"
+                        ]
+                    },
+                    {
+                        "name": "Fire Stone from Bill's Grandpa",
+                        "chest_unopened_img": "images/gift/old_man.png",
+                        "chest_opened_img": "images/gift/old_man_open.png",
+                        "visibility_rules": [
+                            "show_items, randomize_pokemon_requests_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 25/Water Stone from Bill's Grandpa, ^$request_pokemon|3"
+                        ]
+                    },
+                    {
+                        "name": "Thunderstone from Bill's Grandpa",
+                        "chest_unopened_img": "images/gift/old_man.png",
+                        "chest_opened_img": "images/gift/old_man_open.png",
+                        "visibility_rules": [
+                            "show_items, randomize_pokemon_requests_true"
+                        ],
+                        "access_rules": [
+                            "@JohtoKanto/Route 25/Fire Stone from Bill's Grandpa, ^$request_pokemon|4"
                         ]
                     }
                 ],

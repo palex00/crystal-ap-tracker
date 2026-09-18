@@ -118,7 +118,7 @@ REGION_MOUNT_MOON_SQUARE:connect_one_way("MOUNT_MOON_SQUARE_HIDDEN_MOON_STONE", 
 REGION_MR_POKEMONS_HOUSE:connect_one_way("EXP_SHARE", function() return has("RED_SCALE") end)
 
 -- === REGION_NATIONAL_PARK ===
-REGION_NATIONAL_PARK:connect_one_way("NUGGET_FROM_BEVERLY", function() return ALL(phonecall, request_pokemon, "POKEDEX") end)
+REGION_NATIONAL_PARK:connect_one_way("NUGGET_FROM_BEVERLY", function() return ALL(phonecall, function() return request_pokemon(5) end, "POKEDEX") end)
 
 -- === REGION_OLIVINE_LIGHTHOUSE_6F ===
 REGION_OLIVINE_LIGHTHOUSE_6F:connect_one_way("EVENT_JASMINE_RETURNED_TO_GYM", function() return has("SECRETPOTION") end)
@@ -197,7 +197,7 @@ NAMED_NODES["REGION_ROUTE_36:WEST"]:connect_one_way("FIRE_STONE_FROM_ALAN", phon
 REGION_ROUTE_38:connect_one_way("THUNDERSTONE_FROM_DANA", phonecall)
 
 -- === REGION_ROUTE_39 ===
-REGION_ROUTE_39:connect_one_way("NUGGET_FROM_DEREK", function() return ALL(phonecall, request_pokemon, "POKEDEX") end)
+REGION_ROUTE_39:connect_one_way("NUGGET_FROM_DEREK", function() return ALL(phonecall, function() return request_pokemon(6) end, "POKEDEX") end)
 
 -- === REGION_ROUTE_39_FARMHOUSE ===
 REGION_ROUTE_39_FARMHOUSE:connect_one_way("MOOMOO_MILK_FROM_MOOMOO_FARM", function() return has("EVENT_HEALED_MOOMOO") end)
@@ -216,7 +216,7 @@ NAMED_NODES["REGION_ROUTE_42:EAST"]:connect_one_way("WATER_STONE_FROM_TULLY", ph
 NAMED_NODES["REGION_ROUTE_42:WEST"]:connect_one_way("ROUTE_42_HIDDEN_MAX_POTION", can_surf_johto)
 
 -- === REGION_ROUTE_43 ===
-REGION_ROUTE_43:connect_one_way("PINK_BOW_FROM_TIFFANY", function() return ALL(phonecall, request_pokemon, "POKEDEX") end)
+REGION_ROUTE_43:connect_one_way("PINK_BOW_FROM_TIFFANY", function() return ALL(phonecall, function() return request_pokemon(7) end, "POKEDEX") end)
 
 -- === REGION_ROUTE_43_GATE ===
 REGION_ROUTE_43_GATE:connect_one_way("TM36_SLUDGE_BOMB", function() return has("EVENT_CLEARED_ROCKET_HIDEOUT") end)
@@ -225,17 +225,23 @@ REGION_ROUTE_43_GATE:connect_one_way("TM36_SLUDGE_BOMB", function() return has("
 REGION_ROUTE_44:connect_one_way("POKE_BALL_FROM_WILTON", phonecall)
 
 -- === REGION_ROUTE_44:POWER ===
-NAMED_NODES["REGION_ROUTE_44:POWER"]:connect_one_way("CARBOS_FROM_VANCE", can_phone_call_power)
+NAMED_NODES["REGION_ROUTE_44:POWER"]:connect_one_way("CARBOS_FROM_VANCE", function()
+        return ALL(can_phone_call_power, not has("randomize_rematches_true") or has("EVENT_BEAT_ELITE_FOUR"))
+    end)
 
 -- === REGION_ROUTE_45 ===
 REGION_ROUTE_45:connect_one_way("PP_UP_FROM_KENJI", phonecall)
 REGION_ROUTE_45:connect_one_way("ROUTE_45_HIDDEN_PP_UP", can_surf_johto)
 
 -- === REGION_ROUTE_45:POWER ===
-NAMED_NODES["REGION_ROUTE_45:POWER"]:connect_one_way("IRON_FROM_PARRY", can_phone_call_power)
+NAMED_NODES["REGION_ROUTE_45:POWER"]:connect_one_way("IRON_FROM_PARRY", function()
+        return ALL(can_phone_call_power, not has("randomize_rematches_true") or has("EVENT_BEAT_ELITE_FOUR"))
+    end)
 
 -- === REGION_ROUTE_46:POWER ===
-NAMED_NODES["REGION_ROUTE_46:POWER"]:connect_one_way("CALCIUM_FROM_ERIN", can_phone_call_power)
+NAMED_NODES["REGION_ROUTE_46:POWER"]:connect_one_way("CALCIUM_FROM_ERIN", function()
+        return ALL(can_phone_call_power, not has("randomize_rematches_true") or has("EVENT_BEAT_ELITE_FOUR"))
+    end)
 
 -- === REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER ===
 REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER:connect_one_way("ENGINE_UNLOCKED_UNOWNS_S_TO_W", function() return has("AERODACTYL_TILE", 16) end)

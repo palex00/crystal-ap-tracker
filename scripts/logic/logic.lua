@@ -550,9 +550,12 @@ function can_phone_call_power()
         has("EVENT_RESTORED_POWER_TO_KANTO") and AccessibilityLevel.Normal or AccessibilityLevel.None)
 end
 
-function request_pokemon()
-    return AccessibilityLevel.Normal
-    -- we'll deal with this when people complain.
+function request_pokemon(slot)
+    if has(POKEMON_MAPPING[REQUEST_POKEMON[tonumber(slot) + 1]]) then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.Inspect
+    end
 end
 
 function diplomagoal()
