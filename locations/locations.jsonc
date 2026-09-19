@@ -30275,7 +30275,7 @@
                     {
                         "name": "Biker Charles",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17"
+                            "^$CanReach|REGION_ROUTE_17, BICYCLE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -30287,7 +30287,7 @@
                     {
                         "name": "Hidden Item in Fence",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17, ^$hid"
+                            "^$CanReach|REGION_ROUTE_17, BICYCLE, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -30298,7 +30298,7 @@
                     {
                         "name": "Biker Joel",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17"
+                            "^$CanReach|REGION_ROUTE_17, BICYCLE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -30310,7 +30310,7 @@
                     {
                         "name": "Biker Glenn",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17"
+                            "^$CanReach|REGION_ROUTE_17, BICYCLE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -30322,7 +30322,7 @@
                     {
                         "name": "Hidden Item at Corner",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17, ^$hid"
+                            "^$CanReach|REGION_ROUTE_17, BICYCLE, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
@@ -30333,7 +30333,7 @@
                     {
                         "name": "Biker Riley",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17"
+                            "^$CanReach|REGION_ROUTE_17, BICYCLE"
                         ],
                         "visibility_rules": [
                             "show_items, trainersanity",
@@ -30352,7 +30352,7 @@
                             "show_grass, grasssanity_full"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17, $can_cut_kanto"
+                            "^$CanReach|REGION_ROUTE_17, BICYCLE, $can_cut_kanto"
                         ]
                     },
                     {
@@ -30365,7 +30365,7 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_17, $can_cut_kanto"
+                            "^$CanReach|REGION_ROUTE_17, BICYCLE, $can_cut_kanto"
                         ]
                     },
                     {
