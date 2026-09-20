@@ -35,7 +35,8 @@
 -- Two regions that exit to each other => two-way; otherwise one-way. Edges listed in
 -- entrance_types.json are randomizable warps (connect_*_entrance, category only; the warp
 -- pretty-name lives in ENTRANCE_REGISTRY, not here); all others are walking (inline names).
--- "TODOBYSNOWFLAV" marks a walking transition with no approved Friendly Name yet.
+-- "If you read this, contact palex00" marks a reverse walk the apworld never declares;
+-- it exists only to keep the edge two-way and should never show up in a route.
 -- Loaded after region_definitions.lua, before locations.
 --
 -- On rule style: has() returns a bool and Node:discover coerces bools, so a rule may return
@@ -105,7 +106,7 @@ REGION_AZALEA_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Azalea Pokece
 -- === REGION_AZALEA_TOWN ===
 REGION_AZALEA_TOWN:connect_two_ways_entrance(REGION_CHARCOAL_KILN, "building")
 REGION_AZALEA_TOWN:connect_two_ways_entrance(REGION_KURTS_HOUSE, "building")
-REGION_AZALEA_TOWN:connect_two_ways(NAMED_NODES["REGION_AZALEA_TOWN:WELL"], "TODOBYSNOWFLAV", function() return has("EVENT_MET_KURT") end)
+REGION_AZALEA_TOWN:connect_two_ways(NAMED_NODES["REGION_AZALEA_TOWN:WELL"], "Azalea Town Well Access (Post-Kurt)", "Azalea Town Main Access (Post-Kurt)", function() return has("EVENT_MET_KURT") end)
 REGION_AZALEA_TOWN:connect_two_ways_entrance(REGION_ILEX_FOREST_AZALEA_GATE, "gate")
 REGION_AZALEA_TOWN:connect_two_ways(REGION_ROUTE_33, "Azalea Town East Exit", "Route 33 West Exit")
 
@@ -114,13 +115,6 @@ NAMED_NODES["REGION_AZALEA_TOWN:WELL"]:connect_two_ways_entrance(NAMED_NODES["RE
 
 -- === REGION_BATTLE_TOWER_1F ===
 REGION_BATTLE_TOWER_1F:connect_two_ways_entrance(REGION_BATTLE_TOWER_OUTSIDE, "dungeon")
-REGION_BATTLE_TOWER_1F:connect_one_way(REGION_BATTLE_TOWER_ELEVATOR, "TODOBYSNOWFLAV")
-
--- === REGION_BATTLE_TOWER_BATTLE_ROOM ===
-REGION_BATTLE_TOWER_BATTLE_ROOM:connect_two_ways(REGION_BATTLE_TOWER_HALLWAY, "TODOBYSNOWFLAV")
-
--- === REGION_BATTLE_TOWER_ELEVATOR ===
-REGION_BATTLE_TOWER_ELEVATOR:connect_two_ways(REGION_BATTLE_TOWER_HALLWAY, "TODOBYSNOWFLAV")
 
 -- === REGION_BATTLE_TOWER_OUTSIDE ===
 REGION_BATTLE_TOWER_OUTSIDE:connect_two_ways_entrance(REGION_ROUTE_40_BATTLE_TOWER_GATE, "gate")
@@ -155,10 +149,10 @@ REGION_BLACKTHORN_GYM_1F:connect_two_ways_entrance(REGION_BLACKTHORN_GYM_2F, "gy
 
 -- === REGION_BLACKTHORN_GYM_1F:MIDDLE ===
 NAMED_NODES["REGION_BLACKTHORN_GYM_1F:MIDDLE"]:connect_two_ways_entrance(REGION_BLACKTHORN_GYM_2F, "gym_interior")
-NAMED_NODES["REGION_BLACKTHORN_GYM_1F:MIDDLE"]:connect_one_way(NAMED_NODES["REGION_BLACKTHORN_GYM_1F:LOLA"], "TODOBYSNOWFLAV", function() return has("EVENT_BOULDER_IN_BLACKTHORN_GYM_3") end)
+NAMED_NODES["REGION_BLACKTHORN_GYM_1F:MIDDLE"]:connect_one_way(NAMED_NODES["REGION_BLACKTHORN_GYM_1F:LOLA"], "Blackthorn Gym 1F Boulder Bridge (to Lola)", function() return has("EVENT_BOULDER_IN_BLACKTHORN_GYM_3") end)
 
 -- === REGION_BLACKTHORN_GYM_1F:LOLA ===
-NAMED_NODES["REGION_BLACKTHORN_GYM_1F:LOLA"]:connect_one_way(NAMED_NODES["REGION_BLACKTHORN_GYM_1F:CLAIR"], "TODOBYSNOWFLAV", function() return has("EVENT_BOULDER_IN_BLACKTHORN_GYM_1") end)
+NAMED_NODES["REGION_BLACKTHORN_GYM_1F:LOLA"]:connect_one_way(NAMED_NODES["REGION_BLACKTHORN_GYM_1F:CLAIR"], "Blackthorn Gym 1F Boulder Bridge (to Clair)", function() return has("EVENT_BOULDER_IN_BLACKTHORN_GYM_1") end)
 
 -- === REGION_BLACKTHORN_GYM_1F:HOLE_1 ===
 NAMED_NODES["REGION_BLACKTHORN_GYM_1F:HOLE_1"]:connect_one_way(REGION_BLACKTHORN_GYM_1F, "Blackthorn Gym 1F West Hole Fall")
@@ -198,7 +192,7 @@ REGION_CELADON_CITY:connect_two_ways_entrance(NAMED_NODES["REGION_CELADON_MANSIO
 REGION_CELADON_CITY:connect_two_ways_entrance(REGION_CELADON_POKECENTER_1F, "pokecenter")
 REGION_CELADON_CITY:connect_two_ways_entrance(REGION_CELADON_GAME_CORNER, "building")
 REGION_CELADON_CITY:connect_two_ways_entrance(REGION_CELADON_GAME_CORNER_PRIZE_ROOM, "building")
-REGION_CELADON_CITY:connect_two_ways(NAMED_NODES["REGION_CELADON_CITY:GYM_ENTRANCE"], "TODOBYSNOWFLAV", can_cut_kanto)
+REGION_CELADON_CITY:connect_two_ways(NAMED_NODES["REGION_CELADON_CITY:GYM_ENTRANCE"], "Celadon City Cut Passage (to Gym)", "Celadon City Cut Passage (from Gym)", can_cut_kanto)
 REGION_CELADON_CITY:connect_two_ways(REGION_ROUTE_16, "Celadon City West Exit", "Route 16 East Exit")
 REGION_CELADON_CITY:connect_two_ways(REGION_ROUTE_7, "Celadon City East Exit", "Route 7 West Exit")
 
@@ -282,9 +276,9 @@ NAMED_NODES["REGION_CERULEAN_CITY:SURF"]:connect_two_ways(NAMED_NODES["REGION_RO
 -- === REGION_CERULEAN_GYM ===
 -- These four only apply on the MISTY vanilla_event_chain; without it the seed does not gate
 -- them at all, so the rule must pass when the setting is off.
-REGION_CERULEAN_GYM:connect_one_way(NAMED_NODES["REGION_CERULEAN_GYM:ROCKET"], "TODOBYSNOWFLAV",
+REGION_CERULEAN_GYM:connect_one_way(NAMED_NODES["REGION_CERULEAN_GYM:ROCKET"], "Cerulean Gym Machine Part Access (Post-Power Plant 1)",
     function() return not has("vanilla_chain_misty_on") or has("EVENT_MET_MANAGER_AT_POWER_PLANT") end)
-REGION_CERULEAN_GYM:connect_one_way(NAMED_NODES["REGION_CERULEAN_GYM:MISTY"], "TODOBYSNOWFLAV",
+REGION_CERULEAN_GYM:connect_one_way(NAMED_NODES["REGION_CERULEAN_GYM:MISTY"], "Cerulean Gym Trainers Access (Post-Misty Date)",
     function() return not has("vanilla_chain_misty_on") or has("EVENT_MISTY_RETURNED_TO_GYM") end)
 
 -- === REGION_CERULEAN_POKECENTER_1F ===
@@ -315,8 +309,8 @@ REGION_CIANWOOD_CITY:connect_one_way(REGION_ROUTE_41, "Cianwood City East Exit",
 REGION_ROUTE_41:connect_one_way(REGION_CIANWOOD_CITY, "Route 41 West Exit")
 
 -- === REGION_CIANWOOD_GYM ===
-REGION_CIANWOOD_GYM:connect_one_way(NAMED_NODES["REGION_CIANWOOD_GYM:STRENGTH"], "TODOBYSNOWFLAV", can_strength)
-NAMED_NODES["REGION_CIANWOOD_GYM:STRENGTH"]:connect_one_way(REGION_CIANWOOD_GYM, "TODOBYSNOWFLAV")
+REGION_CIANWOOD_GYM:connect_one_way(NAMED_NODES["REGION_CIANWOOD_GYM:STRENGTH"], "Cianwood Gym Strength Passage", can_strength)
+NAMED_NODES["REGION_CIANWOOD_GYM:STRENGTH"]:connect_one_way(REGION_CIANWOOD_GYM, "If you read this, contact palex00")
 
 -- === REGION_CIANWOOD_POKECENTER_1F ===
 REGION_CIANWOOD_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Cianwood Pokecenter Stairs")
@@ -331,9 +325,6 @@ REGION_ROUTE_20:connect_one_way(REGION_CINNABAR_ISLAND, "Route 20 West Exit")
 -- === REGION_CINNABAR_POKECENTER_1F ===
 REGION_CINNABAR_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Cinnabar Pokecenter Stairs")
 
--- === REGION_COLOSSEUM ===
-REGION_COLOSSEUM:connect_two_ways(REGION_POKECENTER_2F, "TODOBYSNOWFLAV")
-
 -- === REGION_COPYCATS_HOUSE_1F ===
 REGION_COPYCATS_HOUSE_1F:connect_two_ways_entrance(REGION_SAFFRON_CITY, "building")
 REGION_COPYCATS_HOUSE_1F:connect_two_ways_entrance(REGION_COPYCATS_HOUSE_2F, "building_interior")
@@ -347,10 +338,11 @@ NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:NORTHEAST"]:connect_two_ways(N
 
 -- === REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHEAST ===
 NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHEAST"]:connect_two_ways(NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:NORTHWEST"], "Dark Cave (Blackthorn Side) Water Crossing (Southeast -> Northwest)", "Dark Cave (Blackthorn Side) Water Crossing (Northwest -> Southeast)", can_surf_johto)
-NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHEAST"]:connect_one_way(NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHEAST"]:connect_one_way(NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST"], "Dark Cave (Blackthorn Side) Ledge Jump (Southeast -> Southwest)")
 
 -- === REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:NORTHWEST ===
-NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:NORTHWEST"]:connect_one_way(NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:NORTHWEST"]:connect_one_way(NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST"], "Dark Cave (Blackthorn Side) Ledge Jump (Northwest -> Southwest)", function() return has("blackthorn_dark_cave_vanilla") end)
+NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:NORTHWEST"]:connect_one_way(NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST"], "Dark Cave (Blackthorn Side) Traversal (Northwest -> Southwest)", function() return has("blackthorn_dark_cave_waterfall") end)
 
 -- === REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST ===
 NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST"]:connect_two_ways_entrance(NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTH"], "dungeon_interior")
@@ -360,7 +352,7 @@ NAMED_NODES["REGION_DARK_CAVE_BLACKTHORN_ENTRANCE:SOUTHWEST"]:connect_one_way(NA
 
 -- === REGION_DARK_CAVE_VIOLET_ENTRANCE:WEST ===
 NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:WEST"]:connect_two_ways_entrance(REGION_ROUTE_31, "dungeon")
-NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:WEST"]:connect_two_ways(NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTHEAST"], "TODOBYSNOWFLAV", can_rock_smash)
+NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:WEST"]:connect_two_ways(NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTHEAST"], "Dark Cave (Violet Side) Rock Smash Passage (West -> Northeast)", "Dark Cave (Violet Side) Rock Smash Passage (Northeast -> West)", can_rock_smash)
 NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:WEST"]:connect_one_way(NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTH"], "Dark Cave (Violet Side) Water Crossing (West -> North)", function()
         if has("blackthorn_dark_cave_waterfall") then return can_waterfall() end
         return can_surf_johto()
@@ -368,7 +360,7 @@ NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:WEST"]:connect_one_way(NAMED_NODES
 NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTH"]:connect_one_way(NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:WEST"], "Dark Cave (Violet Side) Water Crossing (North -> West)", can_surf_johto)
 
 -- === REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTHEAST ===
-NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTHEAST"]:connect_two_ways(NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:SOUTHEAST"], "TODOBYSNOWFLAV", can_rock_smash)
+NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:NORTHEAST"]:connect_two_ways(NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:SOUTHEAST"], "Dark Cave (Violet Side) East Ledge Jumps", "Dark Cave (Violet Side) Rock Smash Passage (Southeast -> Northeast)", can_rock_smash)
 
 -- === REGION_DARK_CAVE_VIOLET_ENTRANCE:SOUTHEAST ===
 NAMED_NODES["REGION_DARK_CAVE_VIOLET_ENTRANCE:SOUTHEAST"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_46:NORTH"], "dungeon")
@@ -395,7 +387,7 @@ NAMED_NODES["REGION_DIGLETTS_CAVE:NORTH_ENTRANCE"]:connect_two_ways_entrance(NAM
 -- === REGION_DRAGON_SHRINE:ENTRANCE ===
 NAMED_NODES["REGION_DRAGON_SHRINE:ENTRANCE"]:connect_one_way_entrance(NAMED_NODES["REGION_DRAGONS_DEN_B1F:SOUTH"], "dungeon_interior", function() return has("EVENT_BEAT_CLAIR") end)
 NAMED_NODES["REGION_DRAGONS_DEN_B1F:SOUTH"]:connect_one_way_entrance(NAMED_NODES["REGION_DRAGON_SHRINE:ENTRANCE"], "dungeon_interior")
-NAMED_NODES["REGION_DRAGON_SHRINE:ENTRANCE"]:connect_one_way(REGION_DRAGON_SHRINE, "TODOBYSNOWFLAV", function() return has("EVENT_BEAT_CLAIR") end)
+NAMED_NODES["REGION_DRAGON_SHRINE:ENTRANCE"]:connect_one_way(REGION_DRAGON_SHRINE, "Dragon Shrine Interior Access (Post-Clair)", function() return has("EVENT_BEAT_CLAIR") end)
 
 -- === REGION_DRAGONS_DEN_1F:UPPER ===
 NAMED_NODES["REGION_DRAGONS_DEN_1F:UPPER"]:connect_two_ways_entrance(NAMED_NODES["REGION_DRAGONS_DEN_1F:LOWER"], "dungeon_interior")
@@ -404,14 +396,14 @@ NAMED_NODES["REGION_DRAGONS_DEN_1F:UPPER"]:connect_two_ways_entrance(NAMED_NODES
 NAMED_NODES["REGION_DRAGONS_DEN_1F:LOWER"]:connect_two_ways_entrance(NAMED_NODES["REGION_DRAGONS_DEN_B1F:NORTH"], "dungeon_interior")
 
 -- === REGION_DRAGONS_DEN_B1F:NORTH ===
-NAMED_NODES["REGION_DRAGONS_DEN_B1F:NORTH"]:connect_two_ways(NAMED_NODES["REGION_DRAGONS_DEN_B1F:CENTER"], "Dragon's Den B1F North Water Crossing (North -> Center)", "TODOBYSNOWFLAV", can_surf_johto)
+NAMED_NODES["REGION_DRAGONS_DEN_B1F:NORTH"]:connect_two_ways(NAMED_NODES["REGION_DRAGONS_DEN_B1F:CENTER"], "Dragon's Den B1F North Water Crossing (North -> Center)", "If you read this, contact palex00", can_surf_johto)
 NAMED_NODES["REGION_DRAGONS_DEN_B1F:NORTH"]:connect_two_ways(NAMED_NODES["REGION_DRAGONS_DEN_B1F:WEST"], "Dragon's Den B1F North Water Crossing (North -> West)", "Dragon's Den B1F North Water Crossing (West -> North)", can_surf_johto)
 
 -- === REGION_DRAGONS_DEN_B1F:WEST ===
 NAMED_NODES["REGION_DRAGONS_DEN_B1F:WEST"]:connect_two_ways(NAMED_NODES["REGION_DRAGONS_DEN_B1F:SOUTH"], "Dragon's Den B1F Whirlpool Crosing (Southbound)", "Dragon's Den B1F Whirlpool Crosing (Northbound)", can_whirlpool)
 
 -- === REGION_DRAGONS_DEN_B1F:SOUTH ===
-NAMED_NODES["REGION_DRAGONS_DEN_B1F:SOUTH"]:connect_two_ways(NAMED_NODES["REGION_DRAGONS_DEN_B1F:SOUTHEAST"], "Dragon's Den B1F South Water Crossing", "TODOBYSNOWFLAV", can_surf_johto)
+NAMED_NODES["REGION_DRAGONS_DEN_B1F:SOUTH"]:connect_two_ways(NAMED_NODES["REGION_DRAGONS_DEN_B1F:SOUTHEAST"], "Dragon's Den B1F South Water Crossing", "If you read this, contact palex00", can_surf_johto)
 
 -- === REGION_EARLS_POKEMON_ACADEMY ===
 REGION_EARLS_POKEMON_ACADEMY:connect_two_ways_entrance(REGION_VIOLET_CITY, "building")
@@ -429,15 +421,15 @@ REGION_ECRUTEAK_CITY:connect_two_ways_entrance(REGION_ECRUTEAK_ITEMFINDER_HOUSE,
 REGION_ECRUTEAK_CITY:connect_two_ways_entrance(REGION_ROUTE_38_ECRUTEAK_GATE, "gate")
 
 -- === REGION_ECRUTEAK_GYM ===
-REGION_ECRUTEAK_GYM:connect_one_way(NAMED_NODES["REGION_ECRUTEAK_GYM:INTERIOR"], "TODOBYSNOWFLAV", function() return has("EVENT_RELEASED_THE_BEASTS") end)
+REGION_ECRUTEAK_GYM:connect_one_way(NAMED_NODES["REGION_ECRUTEAK_GYM:INTERIOR"], "Ecruteak Gym Interior Access (Post-Burned Tower)", function() return has("EVENT_RELEASED_THE_BEASTS") end)
 
 -- === REGION_ECRUTEAK_POKECENTER_1F ===
 REGION_ECRUTEAK_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Ecruteak Pokecenter Stairs")
 
 -- === REGION_ECRUTEAK_TIN_TOWER_ENTRANCE ===
-REGION_ECRUTEAK_TIN_TOWER_ENTRANCE:connect_one_way(NAMED_NODES["REGION_ECRUTEAK_TIN_TOWER_ENTRANCE:BEHIND_SAGE"], "TODOBYSNOWFLAV",
+REGION_ECRUTEAK_TIN_TOWER_ENTRANCE:connect_one_way(NAMED_NODES["REGION_ECRUTEAK_TIN_TOWER_ENTRANCE:BEHIND_SAGE"], "Tin Tower Gate Traversal (Northbound)",
     function() return has("CLEAR_BELL") end)
-NAMED_NODES["REGION_ECRUTEAK_TIN_TOWER_ENTRANCE:BEHIND_SAGE"]:connect_one_way(REGION_ECRUTEAK_TIN_TOWER_ENTRANCE, "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_ECRUTEAK_TIN_TOWER_ENTRANCE:BEHIND_SAGE"]:connect_one_way(REGION_ECRUTEAK_TIN_TOWER_ENTRANCE, "Tin Tower Gate Traversal (Southbound)")
 
 -- === REGION_ECRUTEAK_TIN_TOWER_ENTRANCE:BEHIND_SAGE ===
 NAMED_NODES["REGION_ECRUTEAK_TIN_TOWER_ENTRANCE:BEHIND_SAGE"]:connect_two_ways_entrance(NAMED_NODES["REGION_ECRUTEAK_TIN_TOWER_ENTRANCE:UNDERGROUND"], "gate")
@@ -466,7 +458,7 @@ REGION_FIGHTING_DOJO:connect_two_ways_entrance(REGION_SAFFRON_CITY, "gym")
 
 -- === REGION_FUCHSIA_CITY ===
 REGION_FUCHSIA_CITY:connect_two_ways(REGION_ROUTE_18, "Fuchsia City West Exit", "Route 18 East Exit")
-REGION_FUCHSIA_CITY:connect_two_ways(NAMED_NODES["REGION_FUCHSIA_CITY:CUT"], "TODOBYSNOWFLAV", can_cut_kanto)
+REGION_FUCHSIA_CITY:connect_two_ways(NAMED_NODES["REGION_FUCHSIA_CITY:CUT"], "Fuchsia City Cut Passage (Northbound)", "Fuchsia City Cut Passage (Southbound)", can_cut_kanto)
 REGION_FUCHSIA_CITY:connect_two_ways_entrance(REGION_SAFARI_ZONE_MAIN_OFFICE, "building")
 REGION_FUCHSIA_CITY:connect_one_way_entrance(REGION_FUCHSIA_GYM, "gym", kantogymlock)
 REGION_FUCHSIA_GYM:connect_one_way_entrance(REGION_FUCHSIA_CITY, "gym")
@@ -526,7 +518,7 @@ REGION_GOLDENROD_DEPT_STORE_6F:connect_two_ways_entrance(NAMED_NODES["REGION_GOL
 REGION_GOLDENROD_DEPT_STORE_6F:connect_two_ways_entrance(REGION_GOLDENROD_DEPT_STORE_ROOF, "mart_interior")
 
 -- === REGION_GOLDENROD_DEPT_STORE_B1F ===
-REGION_GOLDENROD_DEPT_STORE_B1F:connect_two_ways(NAMED_NODES["REGION_GOLDENROD_DEPT_STORE_B1F:WAREHOUSE"], "TODOBYSNOWFLAV", function() return has("CARD_KEY") end)
+REGION_GOLDENROD_DEPT_STORE_B1F:connect_two_ways(NAMED_NODES["REGION_GOLDENROD_DEPT_STORE_B1F:WAREHOUSE"], "Goldenrod Dept. Store B1F Card Key Gate Passage (to Warehouse)", "Goldenrod Dept. Store B1F Card Key Gate Passage (from Warehouse)", function() return has("CARD_KEY") end)
 REGION_GOLDENROD_DEPT_STORE_B1F:connect_two_ways_entrance(NAMED_NODES["REGION_GOLDENROD_DEPT_STORE_ELEVATOR:B1F"], "elevator")
 
 -- === REGION_GOLDENROD_DEPT_STORE_B1F:WAREHOUSE ===
@@ -545,7 +537,6 @@ REGION_GOLDENROD_DEPT_STORE_ELEVATOR:connect_two_ways(NAMED_NODES["REGION_GOLDEN
 REGION_GOLDENROD_MAGNET_TRAIN_STATION:connect_two_ways(REGION_SAFFRON_MAGNET_TRAIN_STATION, "Magnet Train (Eastbound)", "Magnet Train (Westbound)", train_access)
 
 -- === REGION_GOLDENROD_POKECENTER_1F ===
-REGION_GOLDENROD_POKECENTER_1F:connect_two_ways(REGION_POKECOM_CENTER_ADMIN_OFFICE_MOBILE, "TODOBYSNOWFLAV")
 REGION_GOLDENROD_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Goldenrod Pokecenter Stairs")
 
 -- === REGION_GOLDENROD_UNDERGROUND:BASEMENT_LANDING ===
@@ -559,12 +550,12 @@ REGION_GOLDENROD_UNDERGROUND:connect_two_ways_entrance(NAMED_NODES["REGION_GOLDE
 
 -- === REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES ===
 REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES:connect_two_ways_entrance(REGION_GOLDENROD_UNDERGROUND_WAREHOUSE, "dungeon_interior")
-REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES:connect_one_way(NAMED_NODES["REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES:TAKEOVER"], "TODOBYSNOWFLAV", function() return has("tower_requirement") end)
-NAMED_NODES["REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES:TAKEOVER"]:connect_one_way(REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES, "TODOBYSNOWFLAV")
+REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES:connect_one_way(NAMED_NODES["REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES:TAKEOVER"], "Goldenrod Underground Switch Room Trainers Access (Post-Takeover)", function() return has("tower_requirement") end)
+NAMED_NODES["REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES:TAKEOVER"]:connect_one_way(REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES, "If you read this, contact palex00")
 
 -- === REGION_GOLDENROD_UNDERGROUND_WAREHOUSE ===
-REGION_GOLDENROD_UNDERGROUND_WAREHOUSE:connect_one_way(NAMED_NODES["REGION_GOLDENROD_UNDERGROUND_WAREHOUSE:TAKEOVER"], "TODOBYSNOWFLAV", function() return has("tower_requirement") end)
-NAMED_NODES["REGION_GOLDENROD_UNDERGROUND_WAREHOUSE:TAKEOVER"]:connect_one_way(REGION_GOLDENROD_UNDERGROUND_WAREHOUSE, "TODOBYSNOWFLAV")
+REGION_GOLDENROD_UNDERGROUND_WAREHOUSE:connect_one_way(NAMED_NODES["REGION_GOLDENROD_UNDERGROUND_WAREHOUSE:TAKEOVER"], "Goldenrod Underground Warehouse Rockets Access (Post-Takeover)", function() return has("tower_requirement") end)
+NAMED_NODES["REGION_GOLDENROD_UNDERGROUND_WAREHOUSE:TAKEOVER"]:connect_one_way(REGION_GOLDENROD_UNDERGROUND_WAREHOUSE, "If you read this, contact palex00")
 
 -- === REGION_HALL_OF_FAME ===
 REGION_HALL_OF_FAME:connect_one_way(REGION_LANCES_ROOM, "Hall of Fame Exit")
@@ -581,7 +572,7 @@ NAMED_NODES["REGION_ICE_PATH_1F:EAST"]:connect_two_ways_entrance(NAMED_NODES["RE
 NAMED_NODES["REGION_ICE_PATH_B1F:NORTH"]:connect_two_ways_entrance(REGION_ICE_PATH_B2F_MAHOGANY_SIDE, "dungeon_interior")
 NAMED_NODES["REGION_ICE_PATH_B1F:NORTH"]:connect_one_way_entrance(NAMED_NODES["REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_1"], "one_way")
 NAMED_NODES["REGION_ICE_PATH_B1F:NORTH"]:connect_one_way_entrance(NAMED_NODES["REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_2"], "one_way")
-NAMED_NODES["REGION_ICE_PATH_B1F:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ICE_PATH_B1F:NORTH:STRENGTH"], "TODOBYSNOWFLAV", can_strength)
+NAMED_NODES["REGION_ICE_PATH_B1F:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ICE_PATH_B1F:NORTH:STRENGTH"], "Ice Path B1F (Mahogany Side) Strength Passage", "If you read this, contact palex00", can_strength)
 
 -- === REGION_ICE_PATH_B1F:NORTH:STRENGTH ===
 NAMED_NODES["REGION_ICE_PATH_B1F:NORTH:STRENGTH"]:connect_one_way_entrance(NAMED_NODES["REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_3"], "one_way")
@@ -617,7 +608,8 @@ NAMED_NODES["REGION_ICE_PATH_B2F_MAHOGANY_SIDE:MIDDLE"]:connect_two_ways_entranc
 
 -- === REGION_ILEX_FOREST:NORTH ===
 NAMED_NODES["REGION_ILEX_FOREST:NORTH"]:connect_two_ways_entrance(REGION_ROUTE_34_ILEX_FOREST_GATE, "dungeon")
-NAMED_NODES["REGION_ILEX_FOREST:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ILEX_FOREST:SOUTH"], "TODOBYSNOWFLAV", ilextree)
+NAMED_NODES["REGION_ILEX_FOREST:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ILEX_FOREST:SOUTH"], "Ilex Forest Cut Passage (Southbound)", "Ilex Forest Cut Passage (Northbound)", function() return has("ilextree_on") and ilextree() end)
+NAMED_NODES["REGION_ILEX_FOREST:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ILEX_FOREST:SOUTH"], "Ilex Forest Traversal (Southbound)", "Ilex Forest Traversal (Northbound)", function() return has("ilextree_off") and ilextree() end)
 
 -- === REGION_ILEX_FOREST:SOUTH ===
 NAMED_NODES["REGION_ILEX_FOREST:SOUTH"]:connect_two_ways_entrance(REGION_ILEX_FOREST_AZALEA_GATE, "dungeon")
@@ -625,12 +617,12 @@ NAMED_NODES["REGION_ILEX_FOREST:SOUTH"]:connect_two_ways_entrance(REGION_ILEX_FO
 -- === REGION_INDIGO_PLATEAU_POKECENTER_1F ===
 REGION_INDIGO_PLATEAU_POKECENTER_1F:connect_two_ways_entrance(REGION_ROUTE_23, "pokecenter")
 REGION_INDIGO_PLATEAU_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Indigo Plateau Pokecenter Stairs")
-REGION_INDIGO_PLATEAU_POKECENTER_1F:connect_two_ways(NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"], "TODOBYSNOWFLAV", function() return has("e4_requirement") end)
+REGION_INDIGO_PLATEAU_POKECENTER_1F:connect_two_ways(NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"], "Indigo Plateau Checkpoint Traversal (Northbound)", "Indigo Plateau Checkpoint Traversal (Southbound)", function() return has("e4_requirement") end)
 REGION_INDIGO_PLATEAU_POKECENTER_1F:connect_one_way(REGION_NEW_BARK_TOWN, "Indigo Plateau Abra Teleport")
 
 -- === REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE ===
 NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"]:connect_two_ways_entrance(REGION_WILLS_ROOM, "pokemon_league")
-NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"]:connect_one_way(NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:RIVAL"], "TODOBYSNOWFLAV", function() return has("EVENT_BEAT_RIVAL_IN_MT_MOON") and has("e4_requirement") end)
+NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"]:connect_one_way(NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:RIVAL"], "Indigo Plateau Rival Access (Post-Mt. Moon)", function() return has("EVENT_BEAT_RIVAL_IN_MT_MOON") and has("e4_requirement") end)
 
 -- === REGION_KARENS_ROOM ===
 REGION_KARENS_ROOM:connect_one_way_entrance(REGION_LANCES_ROOM, "pokemon_league")
@@ -641,8 +633,8 @@ REGION_KOGAS_ROOM:connect_two_ways_entrance(REGION_WILLS_ROOM, "pokemon_league")
 
 -- === REGION_LAKE_OF_RAGE ===
 REGION_LAKE_OF_RAGE:connect_two_ways(REGION_ROUTE_43, "Lake of Rage South Exit", "Route 43 North Exit")
-REGION_LAKE_OF_RAGE:connect_one_way(NAMED_NODES["REGION_LAKE_OF_RAGE:CUT"], "TODOBYSNOWFLAV", can_cut_johto)
-NAMED_NODES["REGION_LAKE_OF_RAGE:CUT"]:connect_one_way(REGION_LAKE_OF_RAGE, "TODOBYSNOWFLAV")
+REGION_LAKE_OF_RAGE:connect_one_way(NAMED_NODES["REGION_LAKE_OF_RAGE:CUT"], "Lake of Rage Tree Maze South Entrance", can_cut_johto)
+NAMED_NODES["REGION_LAKE_OF_RAGE:CUT"]:connect_one_way(REGION_LAKE_OF_RAGE, "Lake of Rage Tree Maze South Exit")
 REGION_LAKE_OF_RAGE:connect_two_ways_entrance(REGION_LAKE_OF_RAGE_MAGIKARP_HOUSE, "building")
 REGION_LAKE_OF_RAGE:connect_one_way(NAMED_NODES["REGION_LAKE_OF_RAGE:GYARADOS"], "Lake of Rage Gyarados Access", function()
         if has("red_gyarados_whirlpool") then return can_whirlpool() end
@@ -651,7 +643,7 @@ REGION_LAKE_OF_RAGE:connect_one_way(NAMED_NODES["REGION_LAKE_OF_RAGE:GYARADOS"],
         end)
 
 -- === REGION_LAKE_OF_RAGE:HIDDEN_POWER_HOUSE ===
-NAMED_NODES["REGION_LAKE_OF_RAGE:HIDDEN_POWER_HOUSE"]:connect_two_ways(NAMED_NODES["REGION_LAKE_OF_RAGE:CUT"], "TODOBYSNOWFLAV", can_cut_johto)
+NAMED_NODES["REGION_LAKE_OF_RAGE:HIDDEN_POWER_HOUSE"]:connect_two_ways(NAMED_NODES["REGION_LAKE_OF_RAGE:CUT"], "Lake of Rage Tree Maze North Entrance", "Lake of Rage Tree Maze North Exit", can_cut_johto)
 NAMED_NODES["REGION_LAKE_OF_RAGE:HIDDEN_POWER_HOUSE"]:connect_two_ways_entrance(REGION_LAKE_OF_RAGE_HIDDEN_POWER_HOUSE, "building")
 
 -- === REGION_LAV_RADIO_TOWER_1F ===
@@ -694,18 +686,12 @@ REGION_MAHOGANY_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Mahogany Po
 REGION_MAHOGANY_RED_GYARADOS_SPEECH_HOUSE:connect_two_ways_entrance(NAMED_NODES["REGION_MAHOGANY_TOWN:EAST"], "building")
 
 -- === REGION_MAHOGANY_TOWN ===
-REGION_MAHOGANY_TOWN:connect_two_ways(NAMED_NODES["REGION_MAHOGANY_TOWN:EAST"], "TODOBYSNOWFLAV", function() return has("route_44_requirement") end)
+REGION_MAHOGANY_TOWN:connect_two_ways(NAMED_NODES["REGION_MAHOGANY_TOWN:EAST"], "Mahogany Town Ragecandybar Roadblock Passage (Eastbound)", "Mahogany Town Ragecandybar Roadblock Passage (Westbound)", function() return has("route_44_requirement") end)
 REGION_MAHOGANY_TOWN:connect_two_ways(NAMED_NODES["REGION_ROUTE_42:EAST"], "Mahogany Town West Exit", "Route 42 East Exit")
 REGION_MAHOGANY_TOWN:connect_two_ways_entrance(REGION_ROUTE_43_MAHOGANY_GATE, "gate")
 
 -- === REGION_MAHOGANY_TOWN:EAST ===
 NAMED_NODES["REGION_MAHOGANY_TOWN:EAST"]:connect_two_ways(REGION_ROUTE_44, "Mahogany Town East Exit", "Route 44 West Exit")
-
--- === REGION_MOBILE_BATTLE_ROOM ===
-REGION_MOBILE_BATTLE_ROOM:connect_two_ways(REGION_POKECENTER_2F, "TODOBYSNOWFLAV")
-
--- === REGION_MOBILE_TRADE_ROOM ===
-REGION_MOBILE_TRADE_ROOM:connect_two_ways(REGION_POKECENTER_2F, "TODOBYSNOWFLAV")
 
 -- === REGION_MOUNT_MOON ===
 REGION_MOUNT_MOON:connect_one_way_entrance(REGION_ROUTE_3, "dungeon")
@@ -730,8 +716,8 @@ REGION_MOUNT_MOON_SQUARE:connect_one_way_entrance(NAMED_NODES["REGION_MOUNT_MOON
 REGION_MOUNT_MOON_GIFT_SHOP:connect_two_ways_entrance(REGION_MOUNT_MOON_SQUARE, "mart")
 
 -- === REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH ===
-NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_one_way(REGION_MOUNT_MORTAR_1F_INSIDE, "TODOBYSNOWFLAV", can_strength)
-REGION_MOUNT_MORTAR_1F_INSIDE:connect_one_way(NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_one_way(REGION_MOUNT_MORTAR_1F_INSIDE, "Mount Mortar 1F Inside Strength Passage (South -> Center)", can_strength)
+REGION_MOUNT_MORTAR_1F_INSIDE:connect_one_way(NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"], "Mount Mortar 1F Inside South Ledge Jump")
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHWEST"], "dungeon_interior")
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST"], "dungeon_interior")
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:WEST"], "dungeon_interior")
@@ -739,13 +725,14 @@ NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAM
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:WATERFALL_ISLAND"], "dungeon_interior", opened_mortar)
 
 -- === REGION_MOUNT_MORTAR_1F_INSIDE:NORTH ===
-NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:NORTH"]:connect_one_way(REGION_MOUNT_MORTAR_1F_INSIDE, "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:NORTH"]:connect_one_way(REGION_MOUNT_MORTAR_1F_INSIDE, "Mount Mortar 1F Inside North Ledge Jump")
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:NORTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_B1F:NORTHWEST"], "dungeon_interior")
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_INSIDE:NORTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_MOUNT_MORTAR_2F_INSIDE:NORTH"], "dungeon_interior")
 
 -- === REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHWEST:ENTRANCE ===
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHWEST:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_42:WEST"], "dungeon")
-NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHWEST:ENTRANCE"]:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHWEST"], "TODOBYSNOWFLAV", mm_rocksmash)
+NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHWEST:ENTRANCE"]:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHWEST"], "Mount Mortar 1F Outside West Inner Access", "Mount Mortar 1F Outside West Entrance Access", function() return has("mount_mortar_access_vanilla") and mm_rocksmash() end)
+NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHWEST:ENTRANCE"]:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHWEST"], "Mount Mortar 1F Outside West Rock Smash Passage (Northbound)", "Mount Mortar 1F Outside West Rock Smash Passage (Southbound)", function() return has("mount_mortar_access_rocksmash") and mm_rocksmash() end)
 
 -- === REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTH ===
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_42:CENTER"], "dungeon")
@@ -759,10 +746,11 @@ NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:NORTH"]:connect_two_ways_entrance(NA
 
 -- === REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST:ENTRANCE ===
 NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_42:EAST"], "dungeon")
-NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST:ENTRANCE"]:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST"], "TODOBYSNOWFLAV", mm_rocksmash)
+NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST:ENTRANCE"]:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST"], "Mount Mortar 1F Outside East Inner Access", "Mount Mortar 1F Outside East Entrance Access", function() return has("mount_mortar_access_vanilla") and mm_rocksmash() end)
+NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST:ENTRANCE"]:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_1F_OUTSIDE:SOUTHEAST"], "Mount Mortar 1F Outside East Rock Smash Passage (Northbound)", "Mount Mortar 1F Outside East Rock Smash Passage (Southbound)", function() return has("mount_mortar_access_rocksmash") and mm_rocksmash() end)
 
 -- === REGION_MOUNT_MORTAR_2F_INSIDE:SOUTH ===
-NAMED_NODES["REGION_MOUNT_MORTAR_2F_INSIDE:SOUTH"]:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_2F_INSIDE:SOUTHWEST"], "Mount Mortar 2F Water Crossing (South -> Southwest)", "TODOBYSNOWFLAV", can_surf_johto)
+NAMED_NODES["REGION_MOUNT_MORTAR_2F_INSIDE:SOUTH"]:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_2F_INSIDE:SOUTHWEST"], "Mount Mortar 2F Water Crossing (South -> Southwest)", "If you read this, contact palex00", can_surf_johto)
 NAMED_NODES["REGION_MOUNT_MORTAR_2F_INSIDE:SOUTH"]:connect_two_ways(REGION_MOUNT_MORTAR_2F_INSIDE, "Mount Mortar 2F Water Crossing (South -> Center)", "Mount Mortar 2F Water Crossing (Center -> South)", can_surf_johto)
 
 -- === REGION_MOUNT_MORTAR_2F_INSIDE ===
@@ -772,7 +760,7 @@ REGION_MOUNT_MORTAR_2F_INSIDE:connect_two_ways(NAMED_NODES["REGION_MOUNT_MORTAR_
 NAMED_NODES["REGION_MOUNT_MORTAR_B1F:SOUTH"]:connect_two_ways(REGION_MOUNT_MORTAR_B1F, "Mount Mortar B1F Water Crossing (South -> Center)", "Mount Mortar B1F Water Crossing (Center -> South)", can_surf_johto)
 
 -- === REGION_MOUNT_MORTAR_B1F:NORTHWEST ===
-NAMED_NODES["REGION_MOUNT_MORTAR_B1F:NORTHWEST"]:connect_one_way(REGION_MOUNT_MORTAR_B1F, "TODOBYSNOWFLAV", function() return can_strength() and can_surf_johto() end)
+NAMED_NODES["REGION_MOUNT_MORTAR_B1F:NORTHWEST"]:connect_one_way(REGION_MOUNT_MORTAR_B1F, "Mount Mortar B1F Strength Passage (Northwest -> Center)", function() return can_strength() and can_surf_johto() end)
 
 -- === REGION_MR_POKEMONS_HOUSE ===
 REGION_MR_POKEMONS_HOUSE:connect_two_ways_entrance(REGION_ROUTE_30, "building")
@@ -815,13 +803,13 @@ REGION_OLIVINE_CITY:connect_two_ways_entrance(REGION_OLIVINE_LIGHTHOUSE_1F, "dun
 REGION_OLIVINE_CITY:connect_two_ways_entrance(NAMED_NODES["REGION_OLIVINE_PORT_PASSAGE:ENTRANCE"], "dungeon")
 
 -- === REGION_OLIVINE_GYM ===
-REGION_OLIVINE_GYM:connect_one_way(NAMED_NODES["REGION_OLIVINE_GYM:JASMINE"], "TODOBYSNOWFLAV", function() return has("EVENT_JASMINE_RETURNED_TO_GYM") end)
+REGION_OLIVINE_GYM:connect_one_way(NAMED_NODES["REGION_OLIVINE_GYM:JASMINE"], "Olivine Gym Jasmine Access (Post-Amphy)", function() return has("EVENT_JASMINE_RETURNED_TO_GYM") end)
 
 -- === REGION_OLIVINE_LIGHTHOUSE_1F ===
 REGION_OLIVINE_LIGHTHOUSE_1F:connect_two_ways_entrance(REGION_OLIVINE_LIGHTHOUSE_2F, "dungeon_interior")
 
 -- === REGION_OLIVINE_LIGHTHOUSE_2F ===
-REGION_OLIVINE_LIGHTHOUSE_2F:connect_one_way(NAMED_NODES["REGION_OLIVINE_LIGHTHOUSE_2F:POWER"], "TODOBYSNOWFLAV", can_phone_call_power)
+REGION_OLIVINE_LIGHTHOUSE_2F:connect_one_way(NAMED_NODES["REGION_OLIVINE_LIGHTHOUSE_2F:POWER"], "Olivine Lighthouse 2F Rematches Access (Post-Power Restoration)", can_phone_call_power)
 REGION_OLIVINE_LIGHTHOUSE_2F:connect_one_way(NAMED_NODES["REGION_OLIVINE_LIGHTHOUSE_2F:HOLE"], "Olivine Lighthouse 2F Hole Access")
 REGION_OLIVINE_LIGHTHOUSE_2F:connect_two_ways_entrance(REGION_OLIVINE_LIGHTHOUSE_3F, "dungeon_interior")
 
@@ -898,10 +886,6 @@ REGION_PEWTER_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Pewter Pokece
 -- === REGION_PLAYERS_HOUSE_1F ===
 REGION_PLAYERS_HOUSE_1F:connect_two_ways_entrance(REGION_PLAYERS_HOUSE_2F, "building_interior")
 
--- === REGION_POKECENTER_2F ===
-REGION_POKECENTER_2F:connect_two_ways(REGION_TRADE_CENTER, "TODOBYSNOWFLAV")
-REGION_POKECENTER_2F:connect_two_ways(REGION_TIME_CAPSULE, "TODOBYSNOWFLAV")
-
 -- === REGION_POKEMON_FAN_CLUB ===
 REGION_POKEMON_FAN_CLUB:connect_two_ways_entrance(REGION_VERMILION_CITY, "building")
 
@@ -910,37 +894,37 @@ REGION_POWER_PLANT:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_10_NORTH:
 
 -- === REGION_RADIO_TOWER_1F ===
 REGION_RADIO_TOWER_1F:connect_two_ways_entrance(REGION_RADIO_TOWER_2F, "dungeon_interior")
-REGION_RADIO_TOWER_1F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_1F:TAKEOVER"], "TODOBYSNOWFLAV", function() return has("tower_requirement") end)
+REGION_RADIO_TOWER_1F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_1F:TAKEOVER"], "Radio Tower 1F Rockets Access (Post-Takeover)", function() return has("tower_requirement") end)
 
 -- === REGION_RADIO_TOWER_2F ===
 REGION_RADIO_TOWER_2F:connect_one_way_entrance(REGION_RADIO_TOWER_3F, "dungeon_interior", function() return has("tower_requirement") end)
 REGION_RADIO_TOWER_3F:connect_one_way_entrance(REGION_RADIO_TOWER_2F, "dungeon_interior")
-REGION_RADIO_TOWER_2F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_2F:TAKEOVER"], "TODOBYSNOWFLAV",
+REGION_RADIO_TOWER_2F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_2F:TAKEOVER"], "Radio Tower 2F Rockets Access (Post-Takeover)",
     function() return has("tower_requirement") end)
 
 -- === REGION_RADIO_TOWER_3F ===
 REGION_RADIO_TOWER_3F:connect_two_ways_entrance(NAMED_NODES["REGION_RADIO_TOWER_4F:WEST"], "dungeon_interior")
-REGION_RADIO_TOWER_3F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"], "TODOBYSNOWFLAV", function() return has("CARD_KEY") end)
-NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"]:connect_one_way(REGION_RADIO_TOWER_3F, "TODOBYSNOWFLAV", function() return has("EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER") end)
-REGION_RADIO_TOWER_3F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_3F:TAKEOVER"], "TODOBYSNOWFLAV", function() return has("tower_requirement") end)
+REGION_RADIO_TOWER_3F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"], "Radio Tower 3F Card Key Gate Passage (Eastbound)", function() return has("CARD_KEY") end)
+NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"]:connect_one_way(REGION_RADIO_TOWER_3F, "Radio Tower 3F Card Key Gate Passage (Westbound)", function() return has("EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER") end)
+REGION_RADIO_TOWER_3F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_3F:TAKEOVER"], "Radio Tower 3F West Rockets Access (Post-Takeover)", function() return has("tower_requirement") end)
 
 -- === REGION_RADIO_TOWER_3F:EAST ===
 NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"]:connect_two_ways_entrance(NAMED_NODES["REGION_RADIO_TOWER_4F:EAST"], "dungeon_interior")
-NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"]:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_3F:EAST:TAKEOVER"], "TODOBYSNOWFLAV", function() return has("tower_requirement") end)
+NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"]:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_3F:EAST:TAKEOVER"], "Radio Tower 3F East Rockets Access (Post-Takeover)", function() return has("tower_requirement") end)
 
 -- === REGION_RADIO_TOWER_4F:WEST ===
 NAMED_NODES["REGION_RADIO_TOWER_4F:WEST"]:connect_two_ways_entrance(NAMED_NODES["REGION_RADIO_TOWER_5F:WEST"], "dungeon_interior")
-NAMED_NODES["REGION_RADIO_TOWER_4F:WEST"]:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_4F:WEST:TAKEOVER"], "TODOBYSNOWFLAV", function() return has("tower_requirement") end)
+NAMED_NODES["REGION_RADIO_TOWER_4F:WEST"]:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_4F:WEST:TAKEOVER"], "Radio Tower 4F West Rockets Access (Post-Takeover)", function() return has("tower_requirement") end)
 
 -- === REGION_RADIO_TOWER_4F:EAST ===
 NAMED_NODES["REGION_RADIO_TOWER_4F:EAST"]:connect_two_ways_entrance(NAMED_NODES["REGION_RADIO_TOWER_5F:EAST"], "dungeon_interior")
-NAMED_NODES["REGION_RADIO_TOWER_4F:EAST"]:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_4F:EAST:TAKEOVER"], "TODOBYSNOWFLAV", function() return has("tower_requirement") end)
+NAMED_NODES["REGION_RADIO_TOWER_4F:EAST"]:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_4F:EAST:TAKEOVER"], "Radio Tower 4F East Rockets Access (Post-Takeover)", function() return has("tower_requirement") end)
 
 -- === REGION_RADIO_TOWER_5F:WEST ===
-NAMED_NODES["REGION_RADIO_TOWER_5F:WEST"]:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_5F:WEST:TAKEOVER"], "TODOBYSNOWFLAV", function() return has("tower_requirement") end)
+NAMED_NODES["REGION_RADIO_TOWER_5F:WEST"]:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_5F:WEST:TAKEOVER"], "Radio Tower 5F West Rockets Access (Post-Takeover)", function() return has("tower_requirement") end)
 
 -- === REGION_RADIO_TOWER_5F:EAST ===
-NAMED_NODES["REGION_RADIO_TOWER_5F:EAST"]:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_5F:EAST:TAKEOVER"], "TODOBYSNOWFLAV", function() return has("tower_requirement") end)
+NAMED_NODES["REGION_RADIO_TOWER_5F:EAST"]:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_5F:EAST:TAKEOVER"], "Radio Tower 5F East Rockets Access (Post-Takeover)", function() return has("tower_requirement") end)
 
 -- === REGION_REDS_HOUSE_1F ===
 REGION_REDS_HOUSE_1F:connect_two_ways_entrance(REGION_REDS_HOUSE_2F, "building_interior")
@@ -975,7 +959,9 @@ REGION_ROUTE_11:connect_two_ways(REGION_VERMILION_CITY, "Route 11 West Exit", "V
 REGION_ROUTE_11:connect_two_ways(NAMED_NODES["REGION_ROUTE_12:SOUTH"], "Route 11 East Exit", "Route 12 West Exit")
 
 -- === REGION_ROUTE_12:NORTH ===
-NAMED_NODES["REGION_ROUTE_12:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_12:SOUTH"], "TODOBYSNOWFLAV", r12_passage)
+NAMED_NODES["REGION_ROUTE_12:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_12:SOUTH"], "Route 12 Traversal (Southbound)", "Route 12 Traversal (Northbound)", function() return has("route_12_access_vanilla") and r12_passage() end)
+NAMED_NODES["REGION_ROUTE_12:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_12:SOUTH"], "Route 12 Weird Tree / Water Crossing (Southbound)", "Route 12 Weird Tree / Water Crossing (Northbound)", function() return has("route_12_access_weirdtree") and r12_passage() end)
+NAMED_NODES["REGION_ROUTE_12:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_12:SOUTH"], "Route 12 Weird Tree Passage (Southbound)", "Route 12 Weird Tree Passage (Northbound)", function() return has("route_12_access_weirdtree_surfblock") and r12_passage() end)
 NAMED_NODES["REGION_ROUTE_12:NORTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_12:SIGN"], "Route 12 Sign Access (from North)")
 
 -- === REGION_ROUTE_12:SOUTH ===
@@ -984,20 +970,20 @@ NAMED_NODES["REGION_ROUTE_12:SOUTH"]:connect_two_ways(REGION_ROUTE_13, "Route 12
 NAMED_NODES["REGION_ROUTE_12:SOUTH"]:connect_two_ways_entrance(REGION_ROUTE_12_SUPER_ROD_HOUSE, "building")
 
 -- === REGION_ROUTE_13 ===
-REGION_ROUTE_13:connect_one_way(NAMED_NODES["REGION_ROUTE_13:CUT"], "TODOBYSNOWFLAV", can_cut_kanto)
-NAMED_NODES["REGION_ROUTE_13:CUT"]:connect_one_way(REGION_ROUTE_13, "TODOBYSNOWFLAV")
+REGION_ROUTE_13:connect_one_way(NAMED_NODES["REGION_ROUTE_13:CUT"], "Route 13 Cut Passage", can_cut_kanto)
+NAMED_NODES["REGION_ROUTE_13:CUT"]:connect_one_way(REGION_ROUTE_13, "If you read this, contact palex00")
 REGION_ROUTE_13:connect_two_ways(REGION_ROUTE_14, "Route 13 West Exit", "Route 14 North Exit")
 
 -- === REGION_ROUTE_14 ===
-REGION_ROUTE_14:connect_one_way(NAMED_NODES["REGION_ROUTE_14:CUT"], "TODOBYSNOWFLAV", can_cut_kanto)
-NAMED_NODES["REGION_ROUTE_14:CUT"]:connect_one_way(REGION_ROUTE_14, "TODOBYSNOWFLAV")
+REGION_ROUTE_14:connect_one_way(NAMED_NODES["REGION_ROUTE_14:CUT"], "Route 14 Cut Passage", can_cut_kanto)
+NAMED_NODES["REGION_ROUTE_14:CUT"]:connect_one_way(REGION_ROUTE_14, "If you read this, contact palex00")
 REGION_ROUTE_14:connect_two_ways(REGION_ROUTE_15, "Route 14 South Exit", "Route 15 East Exit")
 
 -- === REGION_ROUTE_15 ===
 REGION_ROUTE_15:connect_two_ways_entrance(REGION_ROUTE_15_FUCHSIA_GATE, "gate")
 
 -- === REGION_ROUTE_16 ===
-REGION_ROUTE_16:connect_two_ways(NAMED_NODES["REGION_ROUTE_16:NORTH"], "TODOBYSNOWFLAV", can_cut_kanto)
+REGION_ROUTE_16:connect_two_ways(NAMED_NODES["REGION_ROUTE_16:NORTH"], "Route 16 Cut Passage (Northbound)", "Route 16 Cut Passage (Southbound)", can_cut_kanto)
 REGION_ROUTE_16:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_16_GATE:EAST"], "gate")
 
 -- === REGION_ROUTE_16:CYCLING_ROAD ===
@@ -1027,11 +1013,20 @@ REGION_ROUTE_19:connect_one_way(NAMED_NODES["REGION_ROUTE_19:SHORE"], "Route 19 
 NAMED_NODES["REGION_ROUTE_19:SHORE"]:connect_one_way(REGION_ROUTE_19, "Route 19 Water Crossing (Southbound)", can_surf_kanto)
 
 -- === REGION_ROUTE_19:SHORE ===
-NAMED_NODES["REGION_ROUTE_19:SHORE"]:connect_one_way(NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"], "TODOBYSNOWFLAV", function()
-        if has("south_kanto_condition_south") then return true end
-        return landslide_19()
+NAMED_NODES["REGION_ROUTE_19:SHORE"]:connect_one_way(NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"], "Route 19 North Access (Post-Landslide Clear)", function()
+        return ALL(ANY("south_kanto_access_19", "south_kanto_access_both"), function()
+            if has("south_kanto_condition_south") then return true end
+            return landslide_19()
         end)
-NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_ROUTE_19:SHORE"], "TODOBYSNOWFLAV", landslide_19)
+        end)
+NAMED_NODES["REGION_ROUTE_19:SHORE"]:connect_one_way(NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"], "Route 19 Traversal (Shore -> North)", function()
+        return ALL(ANY("south_kanto_access_21", "south_kanto_access_free"), function()
+            if has("south_kanto_condition_south") then return true end
+            return landslide_19()
+        end)
+        end)
+NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_ROUTE_19:SHORE"], "Route 19 Shore Access (Post-Landslide Clear)", function() return ALL(ANY("south_kanto_access_19", "south_kanto_access_both"), landslide_19) end)
+NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_ROUTE_19:SHORE"], "Route 19 Traversal (North -> Shore)", function() return ALL(ANY("south_kanto_access_21", "south_kanto_access_free"), landslide_19) end)
 
 -- === REGION_ROUTE_19:GATE_ENTRANCE ===
 NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"]:connect_two_ways_entrance(REGION_ROUTE_19_FUCHSIA_GATE, "gate")
@@ -1039,13 +1034,16 @@ NAMED_NODES["REGION_ROUTE_19:GATE_ENTRANCE"]:connect_one_way(NAMED_NODES["REGION
 
 -- === REGION_ROUTE_2:WEST ===
 NAMED_NODES["REGION_ROUTE_2:WEST"]:connect_two_ways(REGION_VIRIDIAN_CITY, "Route 2 South Exit", "Viridian City North Exit")
-NAMED_NODES["REGION_ROUTE_2:WEST"]:connect_one_way(NAMED_NODES["REGION_ROUTE_2:NORTHEAST"], "TODOBYSNOWFLAV", function() return has("route_2_open") or can_cut_kanto() end)
-NAMED_NODES["REGION_ROUTE_2:NORTHEAST"]:connect_one_way(NAMED_NODES["REGION_ROUTE_2:WEST"], "TODOBYSNOWFLAV", function() return not has("route_2_fence") or can_cut_kanto() end)
-NAMED_NODES["REGION_ROUTE_2:WEST"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_2:SOUTHEAST"], "TODOBYSNOWFLAV", can_cut_kanto)
+NAMED_NODES["REGION_ROUTE_2:WEST"]:connect_one_way(NAMED_NODES["REGION_ROUTE_2:NORTHEAST"], "Route 2 Cut Passage (North -> Northeast)", function() return (has("route_2_fence") or has("route_2_ledge")) and can_cut_kanto() end)
+NAMED_NODES["REGION_ROUTE_2:WEST"]:connect_one_way(NAMED_NODES["REGION_ROUTE_2:NORTHEAST"], "Route 2 Traversal (North -> Northeast)", function() return has("route_2_open") end)
+NAMED_NODES["REGION_ROUTE_2:NORTHEAST"]:connect_one_way(NAMED_NODES["REGION_ROUTE_2:WEST"], "Route 2 Cut Passage (Northeast -> North)", function() return has("route_2_fence") and can_cut_kanto() end)
+NAMED_NODES["REGION_ROUTE_2:NORTHEAST"]:connect_one_way(NAMED_NODES["REGION_ROUTE_2:WEST"], "Route 2 Ledge Jump (Northeast -> North)", function() return has("route_2_ledge") end)
+NAMED_NODES["REGION_ROUTE_2:NORTHEAST"]:connect_one_way(NAMED_NODES["REGION_ROUTE_2:WEST"], "Route 2 Traversal (Northeast -> North)", function() return has("route_2_open") end)
+NAMED_NODES["REGION_ROUTE_2:WEST"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_2:SOUTHEAST"], "Route 2 Cut Passage (Southwest -> Southeast)", "Route 2 Cut Passage (Southeast -> Southwest)", can_cut_kanto)
 
 -- === REGION_ROUTE_2:NORTHEAST ===
 NAMED_NODES["REGION_ROUTE_2:NORTHEAST"]:connect_two_ways_entrance(REGION_ROUTE_2_NUGGET_HOUSE, "building")
-NAMED_NODES["REGION_ROUTE_2:NORTHEAST"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_2:CENTEREAST"], "TODOBYSNOWFLAV", can_cut_kanto)
+NAMED_NODES["REGION_ROUTE_2:NORTHEAST"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_2:CENTEREAST"], "Route 2 Cut Passage (Northeast -> East)", "Route 2 Cut Passage (East -> Northeast)", can_cut_kanto)
 
 -- === REGION_ROUTE_2:CENTEREAST ===
 NAMED_NODES["REGION_ROUTE_2:CENTEREAST"]:connect_two_ways_entrance(REGION_ROUTE_2_GATE, "gate")
@@ -1062,10 +1060,19 @@ NAMED_NODES["REGION_ROUTE_20:SEAFOAM"]:connect_one_way_entrance(REGION_SEAFOAM_G
 REGION_SEAFOAM_GYM:connect_one_way_entrance(NAMED_NODES["REGION_ROUTE_20:SEAFOAM"], "gym")
 
 -- === REGION_ROUTE_21:NORTH ===
-NAMED_NODES["REGION_ROUTE_21:NORTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_21:SOUTH"], "TODOBYSNOWFLAV", landslide_21)
-NAMED_NODES["REGION_ROUTE_21:SOUTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_21:NORTH"], "TODOBYSNOWFLAV", function()
-        if has("south_kanto_condition_south") then return true end
-        return landslide_21()
+NAMED_NODES["REGION_ROUTE_21:NORTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_21:SOUTH"], "Route 21 Water Crossing (Southbound, Post-Landslide Clear)", function() return ALL(ANY("south_kanto_access_21", "south_kanto_access_both"), landslide_21) end)
+NAMED_NODES["REGION_ROUTE_21:NORTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_21:SOUTH"], "Route 21 Water Crossing (Southbound)", function() return ALL(ANY("south_kanto_access_19", "south_kanto_access_free"), landslide_21) end)
+NAMED_NODES["REGION_ROUTE_21:SOUTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_21:NORTH"], "Route 21 Water Crossing (Northbound, Post-Landslide Clear)", function()
+        return ALL(ANY("south_kanto_access_21", "south_kanto_access_both"), function()
+            if has("south_kanto_condition_south") then return true end
+            return landslide_21()
+        end)
+        end)
+NAMED_NODES["REGION_ROUTE_21:SOUTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_21:NORTH"], "Route 21 Water Crossing (Northbound)", function()
+        return ALL(ANY("south_kanto_access_19", "south_kanto_access_free"), function()
+            if has("south_kanto_condition_south") then return true end
+            return landslide_21()
+        end)
         end)
 
 -- === REGION_ROUTE_22 ===
@@ -1077,11 +1084,11 @@ REGION_ROUTE_23:connect_two_ways_entrance(NAMED_NODES["REGION_VICTORY_ROAD:3F"],
 
 -- === REGION_ROUTE_24 ===
 REGION_ROUTE_24:connect_two_ways(REGION_ROUTE_25, "Route 24 North Exit", "Route 25 South Exit")
-REGION_ROUTE_24:connect_one_way(NAMED_NODES["REGION_ROUTE_24:ROCKET"], "TODOBYSNOWFLAV",
+REGION_ROUTE_24:connect_one_way(NAMED_NODES["REGION_ROUTE_24:ROCKET"], "Route 24 Rocket Access (Post-Cerulean Gym)",
     function() return not has("vanilla_chain_misty_on") or has("EVENT_MET_ROCKET_GRUNT_AT_CERULEAN_GYM") end)
 
 -- === REGION_ROUTE_25 ===
-REGION_ROUTE_25:connect_one_way(NAMED_NODES["REGION_ROUTE_25:MISTY_DATE"], "TODOBYSNOWFLAV",
+REGION_ROUTE_25:connect_one_way(NAMED_NODES["REGION_ROUTE_25:MISTY_DATE"], "Route 25 Misty Date Access (Post-Power Restoration)",
     function() return not has("vanilla_chain_misty_on") or has("EVENT_MET_ROCKET_GRUNT_AT_CERULEAN_GYM") end)
 
 -- === REGION_ROUTE_26 ===
@@ -1092,7 +1099,7 @@ REGION_ROUTE_26:connect_two_ways_entrance(REGION_ROUTE_26_HEAL_HOUSE, "building"
 -- === REGION_ROUTE_27:WEST ===
 NAMED_NODES["REGION_ROUTE_27:WEST"]:connect_two_ways_entrance(NAMED_NODES["REGION_TOHJO_FALLS:WEST"], "dungeon")
 NAMED_NODES["REGION_ROUTE_27:WEST"]:connect_one_way(NAMED_NODES["REGION_ROUTE_27:WESTWATER"], "Route 27 South Water Crossing", can_surf_johto)
-NAMED_NODES["REGION_ROUTE_27:WESTWATER"]:connect_one_way(NAMED_NODES["REGION_ROUTE_27:WEST"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_ROUTE_27:WESTWATER"]:connect_one_way(NAMED_NODES["REGION_ROUTE_27:WEST"], "If you read this, contact palex00")
 
 -- === REGION_ROUTE_27:CENTER ===
 NAMED_NODES["REGION_ROUTE_27:CENTER"]:connect_two_ways_entrance(REGION_ROUTE_27_SANDSTORM_HOUSE, "building")
@@ -1102,7 +1109,7 @@ NAMED_NODES["REGION_ROUTE_27:CENTER"]:connect_two_ways(NAMED_NODES["REGION_ROUTE
 
 -- === REGION_ROUTE_27:EAST ===
 NAMED_NODES["REGION_ROUTE_27:EAST"]:connect_one_way(NAMED_NODES["REGION_ROUTE_27:EASTWHIRLPOOL"], "Route 27 Whirlpool Crossing", can_whirlpool)
-NAMED_NODES["REGION_ROUTE_27:EASTWHIRLPOOL"]:connect_one_way(NAMED_NODES["REGION_ROUTE_27:EAST"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_ROUTE_27:EASTWHIRLPOOL"]:connect_one_way(NAMED_NODES["REGION_ROUTE_27:EAST"], "If you read this, contact palex00")
 
 -- === REGION_ROUTE_28 ===
 REGION_ROUTE_28:connect_two_ways(REGION_SILVER_CAVE_OUTSIDE, "Route 28 West Exit", "Silver Cave Outside East Exit")
@@ -1121,9 +1128,10 @@ REGION_ROUTE_29_ROUTE_46_GATE:connect_two_ways_entrance(NAMED_NODES["REGION_ROUT
 
 -- === REGION_ROUTE_30 ===
 REGION_ROUTE_30:connect_two_ways_entrance(REGION_ROUTE_30_BERRY_HOUSE, "building")
-REGION_ROUTE_30:connect_one_way(NAMED_NODES["REGION_ROUTE_30:NORTHWEST"], "TODOBYSNOWFLAV", function() return r30_passage("northbound") end)
-NAMED_NODES["REGION_ROUTE_30:NORTHWEST"]:connect_one_way(REGION_ROUTE_30, "TODOBYSNOWFLAV", function() return r30_passage("southbound") end)
-REGION_ROUTE_30:connect_one_way(NAMED_NODES["REGION_ROUTE_30:POST_MYSTERY_EGG"], "TODOBYSNOWFLAV", function()
+REGION_ROUTE_30:connect_one_way(NAMED_NODES["REGION_ROUTE_30:NORTHWEST"], "Route 30 Cut / Post-Mystery Egg Access (Northbound)", function() return r30_passage("northbound") end)
+NAMED_NODES["REGION_ROUTE_30:NORTHWEST"]:connect_one_way(REGION_ROUTE_30, "Route 30 Ledge Jump", function() return has("route_30_battle_north") and r30_passage("southbound") end)
+NAMED_NODES["REGION_ROUTE_30:NORTHWEST"]:connect_one_way(REGION_ROUTE_30, "Route 30 Cut / Post-Mystery Egg Access (Southbound)", function() return has("route_30_battle_both") and r30_passage("southbound") end)
+REGION_ROUTE_30:connect_one_way(NAMED_NODES["REGION_ROUTE_30:POST_MYSTERY_EGG"], "Route 30 Trainers Access (Post-Mystery Egg)", function()
         return (has("route_30_access_mrpokemon") and has("EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON"))
         or (has("route_30_access_egg") and has("EVENT_GAVE_MYSTERY_EGG_TO_ELM"))
         end)
@@ -1140,7 +1148,7 @@ REGION_ROUTE_31_VIOLET_GATE:connect_two_ways_entrance(REGION_VIOLET_CITY, "gate"
 -- === REGION_ROUTE_32:NORTH ===
 NAMED_NODES["REGION_ROUTE_32:NORTH"]:connect_two_ways(REGION_VIOLET_CITY, "Route 32 North Exit", "Violet City South Exit")
 NAMED_NODES["REGION_ROUTE_32:NORTH"]:connect_two_ways_entrance(REGION_ROUTE_32_RUINS_OF_ALPH_GATE, "gate")
-NAMED_NODES["REGION_ROUTE_32:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_32:SOUTH"], "TODOBYSNOWFLAV", r32_guy)
+NAMED_NODES["REGION_ROUTE_32:NORTH"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_32:SOUTH"], "Route 32 Miracle Seed Roadblock Passage (Southbound)", "Route 32 Miracle Seed Roadblock Passage (Northbound)", r32_guy)
 NAMED_NODES["REGION_ROUTE_32:NORTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_32:MIRACLE_SEED"], "Route 32 Miracle Seed Guy Access (from North)")
 
 -- === REGION_ROUTE_32:SOUTH ===
@@ -1161,23 +1169,23 @@ REGION_ROUTE_33:connect_two_ways_entrance(REGION_UNION_CAVE_1F, "dungeon")
 -- === REGION_ROUTE_34 ===
 REGION_ROUTE_34:connect_two_ways_entrance(REGION_ROUTE_34_ILEX_FOREST_GATE, "gate")
 REGION_ROUTE_34:connect_one_way(NAMED_NODES["REGION_ROUTE_34:WATER"], "Route 34 Water Crossing", can_surf_johto)
-NAMED_NODES["REGION_ROUTE_34:WATER"]:connect_one_way(REGION_ROUTE_34, "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_ROUTE_34:WATER"]:connect_one_way(REGION_ROUTE_34, "If you read this, contact palex00")
 
 -- === REGION_ROUTE_35 ===
 REGION_ROUTE_35:connect_two_ways_entrance(REGION_ROUTE_35_GOLDENROD_GATE, "gate")
 REGION_ROUTE_35:connect_two_ways_entrance(REGION_ROUTE_35_NATIONAL_PARK_GATE, "gate")
 REGION_ROUTE_35:connect_two_ways(NAMED_NODES["REGION_ROUTE_36:WEST"], "Route 35 North Exit", "Route 36 South Exit", can_cut_johto)
 REGION_ROUTE_35:connect_one_way(NAMED_NODES["REGION_ROUTE_35:FRUITTREE"], "Route 35 Water Crossing", can_surf_johto)
-NAMED_NODES["REGION_ROUTE_35:FRUITTREE"]:connect_one_way(REGION_ROUTE_35, "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_ROUTE_35:FRUITTREE"]:connect_one_way(REGION_ROUTE_35, "If you read this, contact palex00")
 
 -- === REGION_ROUTE_35_NATIONAL_PARK_GATE ===
-REGION_ROUTE_35_NATIONAL_PARK_GATE:connect_one_way(NAMED_NODES["REGION_ROUTE_35_NATIONAL_PARK_GATE:BIKE"], "TODOBYSNOWFLAV", nationalpark)
+REGION_ROUTE_35_NATIONAL_PARK_GATE:connect_one_way(NAMED_NODES["REGION_ROUTE_35_NATIONAL_PARK_GATE:BIKE"], "Route 35-National Park Gate Traversal (Northbound)", nationalpark)
 
 -- === REGION_ROUTE_35_NATIONAL_PARK_GATE:BIKE ===
 NAMED_NODES["REGION_ROUTE_35_NATIONAL_PARK_GATE:BIKE"]:connect_one_way(NAMED_NODES["REGION_NATIONAL_PARK:CONTEST"], "Bug Catching Contest South Entrance")
 
 -- === REGION_ROUTE_36:EAST ===
-NAMED_NODES["REGION_ROUTE_36:EAST"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_36:WEST"], "TODOBYSNOWFLAV", function() return has("SQUIRTBOTTLE") end)
+NAMED_NODES["REGION_ROUTE_36:EAST"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_36:WEST"], "Route 36 Weird Tree Passage (Westbound)", "Route 36 Weird Tree Passage (Eastbound)", function() return has("SQUIRTBOTTLE") end)
 NAMED_NODES["REGION_ROUTE_36:EAST"]:connect_two_ways(REGION_ROUTE_37, "Route 36 North Exit (from East)", "Route 37 Southeast Exit", function() return has("SQUIRTBOTTLE") end)
 NAMED_NODES["REGION_ROUTE_36:EAST"]:connect_two_ways(REGION_VIOLET_CITY, "Route 36 East Exit", "Violet City West Exit")
 NAMED_NODES["REGION_ROUTE_36:EAST"]:connect_two_ways_entrance(REGION_ROUTE_36_RUINS_OF_ALPH_GATE, "gate")
@@ -1225,7 +1233,7 @@ NAMED_NODES["REGION_ROUTE_41:SW_ISLAND"]:connect_two_ways_entrance(NAMED_NODES["
 
 -- === REGION_ROUTE_41:SE_ISLAND ===
 NAMED_NODES["REGION_ROUTE_41:SE_ISLAND"]:connect_two_ways_entrance(REGION_WHIRL_ISLAND_SE, "dungeon")
-NAMED_NODES["REGION_ROUTE_41:SE_ISLAND"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_41:SE_ISLAND:ITEM"], "Route 41 Southeast Island Water Crossing (to Hidden Item)", "TODOBYSNOWFLAV", can_surf_johto)
+NAMED_NODES["REGION_ROUTE_41:SE_ISLAND"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_41:SE_ISLAND:ITEM"], "Route 41 Southeast Island Water Crossing (to Hidden Item)", "If you read this, contact palex00", can_surf_johto)
 
 -- === REGION_ROUTE_42:WEST ===
 NAMED_NODES["REGION_ROUTE_42:WEST"]:connect_two_ways_entrance(REGION_ROUTE_42_ECRUTEAK_GATE, "gate")
@@ -1237,10 +1245,12 @@ NAMED_NODES["REGION_ROUTE_42:WEST"]:connect_one_way(NAMED_NODES["REGION_ROUTE_42
 -- missing from the generated file. rules.py sets can_surf() on them when route_42_access is
 -- vanilla, can_surf & can_whirlpool when it requires whirlpool, and omits the connection
 -- entirely when it is blocked; route42_passage() already branches on all three.
-NAMED_NODES["REGION_ROUTE_42:CENTER"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_42:WEST"], "TODOBYSNOWFLAV", "TODOBYSNOWFLAV", route42_passage)
-NAMED_NODES["REGION_ROUTE_42:CENTER"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_42:EAST"], "TODOBYSNOWFLAV", "TODOBYSNOWFLAV", route42_passage)
-NAMED_NODES["REGION_ROUTE_42:CENTER"]:connect_one_way(NAMED_NODES["REGION_ROUTE_42:CENTERFRUIT"], "TODOBYSNOWFLAV", can_cut_johto)
-NAMED_NODES["REGION_ROUTE_42:CENTERFRUIT"]:connect_one_way(NAMED_NODES["REGION_ROUTE_42:CENTER"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_ROUTE_42:CENTER"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_42:WEST"], "Route 42 Water Crossing (Center -> West)", "Route 42 Water Crossing (West -> Center)", function() return has("route_42_access_vanilla") and route42_passage() end)
+NAMED_NODES["REGION_ROUTE_42:CENTER"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_42:WEST"], "Route 42 Whirlpool Crossing (Center -> West)", "Route 42 Whirlpool Crossing (West -> Center)", function() return (has("route_42_access_whirlpool") or has("route_42_access_whirlchanges")) and route42_passage() end)
+NAMED_NODES["REGION_ROUTE_42:CENTER"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_42:EAST"], "Route 42 Water Crossing (Center -> East)", "Route 42 Water Crossing (East -> Center)", function() return has("route_42_access_vanilla") and route42_passage() end)
+NAMED_NODES["REGION_ROUTE_42:CENTER"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_42:EAST"], "Route 42 Whirlpool Crossing (Center -> East)", "Route 42 Whirlpool Crossing (East -> Center)", function() return (has("route_42_access_whirlpool") or has("route_42_access_whirlchanges")) and route42_passage() end)
+NAMED_NODES["REGION_ROUTE_42:CENTER"]:connect_one_way(NAMED_NODES["REGION_ROUTE_42:CENTERFRUIT"], "Route 42 Center Cut Passage", can_cut_johto)
+NAMED_NODES["REGION_ROUTE_42:CENTERFRUIT"]:connect_one_way(NAMED_NODES["REGION_ROUTE_42:CENTER"], "If you read this, contact palex00")
 
 -- === REGION_ROUTE_42:CENTERFRUIT ===
 NAMED_NODES["REGION_ROUTE_42:CENTERFRUIT"]:connect_one_way(NAMED_NODES["REGION_ROUTE_42:HEADBUTT"], "Route 42 Headbutt Trees Access (from Center)", function() return reach("REGION_ROUTE_42:WEST") end)
@@ -1250,7 +1260,7 @@ REGION_ROUTE_43:connect_two_ways_entrance(REGION_ROUTE_43_MAHOGANY_GATE, "gate")
 REGION_ROUTE_43:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_43_GATE:NORTH"], "gate")
 REGION_ROUTE_43:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_43_GATE:SOUTH"], "gate")
 REGION_ROUTE_43:connect_one_way(NAMED_NODES["REGION_ROUTE_43:FRUITTREE"], "Route 43 Water Crossing", function() return can_cut_johto() and can_surf_johto() end)
-NAMED_NODES["REGION_ROUTE_43:FRUITTREE"]:connect_one_way(REGION_ROUTE_43, "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_ROUTE_43:FRUITTREE"]:connect_one_way(REGION_ROUTE_43, "If you read this, contact palex00")
 
 -- === REGION_ROUTE_43_GATE:NORTH ===
 NAMED_NODES["REGION_ROUTE_43_GATE:NORTH"]:connect_two_ways(REGION_ROUTE_43_GATE, "Route 43 Gate Traversal (from North)", "Route 43 Gate Traversal (to North)")
@@ -1260,16 +1270,16 @@ NAMED_NODES["REGION_ROUTE_43_GATE:SOUTH"]:connect_two_ways(REGION_ROUTE_43_GATE,
 
 -- === REGION_ROUTE_44 ===
 REGION_ROUTE_44:connect_one_way(NAMED_NODES["REGION_ROUTE_44:WATER"], "Route 44 Water Crossing", can_surf_johto)
-NAMED_NODES["REGION_ROUTE_44:WATER"]:connect_one_way(REGION_ROUTE_44, "TODOBYSNOWFLAV")
-REGION_ROUTE_44:connect_one_way(NAMED_NODES["REGION_ROUTE_44:POWER"], "TODOBYSNOWFLAV", can_phone_call_power)
+NAMED_NODES["REGION_ROUTE_44:WATER"]:connect_one_way(REGION_ROUTE_44, "If you read this, contact palex00")
+REGION_ROUTE_44:connect_one_way(NAMED_NODES["REGION_ROUTE_44:POWER"], "Route 44 Rematches Access (Post-Power Restoration)", can_phone_call_power)
 
 -- === REGION_ROUTE_45 ===
 REGION_ROUTE_45:connect_one_way(NAMED_NODES["REGION_ROUTE_46:NORTH"], "Route 45 South Exit")
-REGION_ROUTE_45:connect_one_way(NAMED_NODES["REGION_ROUTE_45:POWER"], "TODOBYSNOWFLAV", can_phone_call_power)
+REGION_ROUTE_45:connect_one_way(NAMED_NODES["REGION_ROUTE_45:POWER"], "Route 45 Rematches Access (Post-Power Restoration)", can_phone_call_power)
 
 -- === REGION_ROUTE_46:NORTH ===
 NAMED_NODES["REGION_ROUTE_46:NORTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_46:SOUTH"], "Route 46 Ledge Jumps")
-NAMED_NODES["REGION_ROUTE_46:NORTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_46:POWER"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_ROUTE_46:NORTH"]:connect_one_way(NAMED_NODES["REGION_ROUTE_46:POWER"], "Route 46 Rematches Access (Post-Power Restoration)")
 
 -- === REGION_ROUTE_5 ===
 REGION_ROUTE_5:connect_one_way_entrance(REGION_ROUTE_5_UNDERGROUND_PATH_ENTRANCE, "dungeon", function() return passage("ns") end)
@@ -1320,7 +1330,7 @@ NAMED_NODES["REGION_ROUTE_7_SAFFRON_GATE:EAST"]:connect_two_ways_entrance(REGION
 
 -- === REGION_ROUTE_8 ===
 REGION_ROUTE_8:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_8_SAFFRON_GATE:EAST"], "gate")
-REGION_ROUTE_8:connect_two_ways(NAMED_NODES["REGION_ROUTE_8:CUT"], "TODOBYSNOWFLAV", can_cut_kanto)
+REGION_ROUTE_8:connect_two_ways(NAMED_NODES["REGION_ROUTE_8:CUT"], "Route 8 Cut Passage", "If you read this, contact palex00", can_cut_kanto)
 
 -- === REGION_ROUTE_8_SAFFRON_GATE:WEST ===
 NAMED_NODES["REGION_ROUTE_8_SAFFRON_GATE:WEST"]:connect_two_ways_entrance(REGION_SAFFRON_CITY, "gate")
@@ -1382,12 +1392,12 @@ REGION_RUINS_OF_ALPH_OUTSIDE:connect_two_ways_entrance(REGION_RUINS_OF_ALPH_RESE
 REGION_RUINS_OF_ALPH_OUTSIDE:connect_two_ways(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH"], "Ruins of Alph Water Crossing (Southbound)", "Ruins of Alph Water Crossing (Northbound)", can_surf_johto)
 
 -- === REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:UNION_LEDGE ===
-NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:UNION_LEDGE"]:connect_one_way(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH"], "TODOBYSNOWFLAV")
-NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:UNION_LEDGE"]:connect_one_way(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:OMANYTE_LEDGE"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:UNION_LEDGE"]:connect_one_way(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH"], "Ruins of Alph South Ledge Jump (Southbound)")
+NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:UNION_LEDGE"]:connect_one_way(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:OMANYTE_LEDGE"], "Ruins of Alph South Ledge Jump (Westbound)")
 NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:UNION_LEDGE"]:connect_two_ways_entrance(NAMED_NODES["REGION_UNION_CAVE_B1F:STRENGTH"], "dungeon")
 
 -- === REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:OMANYTE_LEDGE ===
-NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:OMANYTE_LEDGE"]:connect_one_way(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:OMANYTE_LEDGE"]:connect_one_way(NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH"], "Ruins of Alph Southwest Ledge Jump")
 
 -- === REGION_RUINS_OF_ALPH_OUTSIDE:WEST ===
 NAMED_NODES["REGION_RUINS_OF_ALPH_OUTSIDE:WEST"]:connect_two_ways_entrance(NAMED_NODES["REGION_UNION_CAVE_B1F:NORTH"], "dungeon")
@@ -1441,7 +1451,7 @@ NAMED_NODES["REGION_SILVER_CAVE_ITEM_ROOMS:EAST"]:connect_two_ways_entrance(NAME
 -- === REGION_SILVER_CAVE_OUTSIDE ===
 REGION_SILVER_CAVE_OUTSIDE:connect_two_ways_entrance(REGION_SILVER_CAVE_POKECENTER_1F, "pokecenter")
 REGION_SILVER_CAVE_OUTSIDE:connect_two_ways_entrance(REGION_SILVER_CAVE_ROOM_1, "dungeon")
-REGION_SILVER_CAVE_OUTSIDE:connect_two_ways(NAMED_NODES["REGION_SILVER_CAVE_OUTSIDE:SURF"], "Silver Cave Outside Water Crossing", "TODOBYSNOWFLAV", can_surf_johto)
+REGION_SILVER_CAVE_OUTSIDE:connect_two_ways(NAMED_NODES["REGION_SILVER_CAVE_OUTSIDE:SURF"], "Silver Cave Outside Water Crossing", "If you read this, contact palex00", can_surf_johto)
 
 -- === REGION_SILVER_CAVE_POKECENTER_1F ===
 REGION_SILVER_CAVE_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Silver Cave Pokecenter Stairs")
@@ -1452,7 +1462,7 @@ REGION_SILVER_CAVE_ROOM_1:connect_two_ways_entrance(REGION_SILVER_CAVE_ROOM_2, "
 -- === REGION_SILVER_CAVE_ROOM_2:WEST ===
 NAMED_NODES["REGION_SILVER_CAVE_ROOM_2:WEST"]:connect_one_way(REGION_SILVER_CAVE_ROOM_2, "Silver Cave Middle West Waterfall Descent", can_surf_johto)
 REGION_SILVER_CAVE_ROOM_2:connect_one_way(NAMED_NODES["REGION_SILVER_CAVE_ROOM_2:WEST"], "Silver Cave Middle West Waterfall Ascent", can_waterfall)
-NAMED_NODES["REGION_SILVER_CAVE_ROOM_2:WEST"]:connect_two_ways(NAMED_NODES["REGION_SILVER_CAVE_ROOM_2:WEST_ITEM"], "Silver Cave Middle West Water Crossing (to Item)", "TODOBYSNOWFLAV", can_surf_johto)
+NAMED_NODES["REGION_SILVER_CAVE_ROOM_2:WEST"]:connect_two_ways(NAMED_NODES["REGION_SILVER_CAVE_ROOM_2:WEST_ITEM"], "Silver Cave Middle West Water Crossing (to Item)", "If you read this, contact palex00", can_surf_johto)
 
 -- === REGION_SILVER_CAVE_ROOM_2:EAST ===
 NAMED_NODES["REGION_SILVER_CAVE_ROOM_2:EAST"]:connect_one_way(REGION_SILVER_CAVE_ROOM_2, "Silver Cave Middle East Waterfall Descent", can_surf_johto)
@@ -1465,10 +1475,10 @@ REGION_SILVER_CAVE_ROOM_2:connect_two_ways_entrance(REGION_SILVER_CAVE_ROOM_3, "
 REGION_SILVER_CAVE_ROOM_3:connect_one_way(REGION_SILVER_CAVE_OUTSIDE, "Beat Red", function() return has("EVENT_BEAT_RED") end)
 
 -- === REGION_SLOWPOKE_WELL_B1F:ENTRANCE ===
-NAMED_NODES["REGION_SLOWPOKE_WELL_B1F:ENTRANCE"]:connect_two_ways(REGION_SLOWPOKE_WELL_B1F, "TODOBYSNOWFLAV", function() return has("EVENT_MET_KURT") end)
+NAMED_NODES["REGION_SLOWPOKE_WELL_B1F:ENTRANCE"]:connect_two_ways(REGION_SLOWPOKE_WELL_B1F, "Slowpoke Well B1F Main Access (Post-Kurt)", "Slowpoke Well B1F Entrance Access (Post-Kurt)", function() return has("EVENT_MET_KURT") end)
 
 -- === REGION_SLOWPOKE_WELL_B1F ===
-REGION_SLOWPOKE_WELL_B1F:connect_two_ways(NAMED_NODES["REGION_SLOWPOKE_WELL_B1F:WEST"], "TODOBYSNOWFLAV", function() return can_strength() and has("EVENT_CLEARED_SLOWPOKE_WELL") end)
+REGION_SLOWPOKE_WELL_B1F:connect_two_ways(NAMED_NODES["REGION_SLOWPOKE_WELL_B1F:WEST"], "Slowpoke Well B1F Strength Passage (Westbound)", "Slowpoke Well B1F Strength Passage (Eastbound)", function() return can_strength() and has("EVENT_CLEARED_SLOWPOKE_WELL") end)
 
 -- === REGION_SLOWPOKE_WELL_B1F:WEST ===
 NAMED_NODES["REGION_SLOWPOKE_WELL_B1F:WEST"]:connect_two_ways(NAMED_NODES["REGION_SLOWPOKE_WELL_B1F:CENTER"], "Slowpoke Well B1F Water Crossing (West -> Center)", "Slowpoke Well B1F Water Crossing (Center -> West)", can_surf_johto)
@@ -1477,7 +1487,7 @@ NAMED_NODES["REGION_SLOWPOKE_WELL_B1F:WEST"]:connect_two_ways(NAMED_NODES["REGIO
 NAMED_NODES["REGION_SLOWPOKE_WELL_B1F:CENTER"]:connect_two_ways_entrance(NAMED_NODES["REGION_SLOWPOKE_WELL_B2F:CENTER"], "dungeon_interior")
 
 -- === REGION_SLOWPOKE_WELL_B2F:CENTER ===
-NAMED_NODES["REGION_SLOWPOKE_WELL_B2F:CENTER"]:connect_two_ways(NAMED_NODES["REGION_SLOWPOKE_WELL_B2F:ISLANDS"], "Slowpoke Well B2F Water Crossing", "TODOBYSNOWFLAV", can_surf_johto)
+NAMED_NODES["REGION_SLOWPOKE_WELL_B2F:CENTER"]:connect_two_ways(NAMED_NODES["REGION_SLOWPOKE_WELL_B2F:ISLANDS"], "Slowpoke Well B2F Water Crossing", "If you read this, contact palex00", can_surf_johto)
 
 -- === REGION_SPROUT_TOWER_1F:OUTER ===
 NAMED_NODES["REGION_SPROUT_TOWER_1F:OUTER"]:connect_two_ways_entrance(NAMED_NODES["REGION_SPROUT_TOWER_2F:OUTER"], "dungeon_interior")
@@ -1494,8 +1504,8 @@ NAMED_NODES["REGION_SPROUT_TOWER_2F:OUTER"]:connect_two_ways_entrance(REGION_SPR
 REGION_TEAM_ROCKET_BASE_B1F:connect_two_ways_entrance(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:SOUTH"], "dungeon_interior")
 
 -- === REGION_TEAM_ROCKET_BASE_B2F:SOUTH ===
-NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:SOUTH"]:connect_one_way(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:CENTER"], "TODOBYSNOWFLAV", function() return has("EVENT_LEARNED_HAIL_GIOVANNI") end)
-NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:CENTER"]:connect_one_way(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:SOUTH"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:SOUTH"]:connect_one_way(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:CENTER"], "Rocket HQ B2F Center Access (Post-Executive 1)", function() return has("EVENT_LEARNED_HAIL_GIOVANNI") end)
+NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:CENTER"]:connect_one_way(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:SOUTH"], "If you read this, contact palex00")
 NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:SOUTH"], "dungeon_interior")
 
 -- === REGION_TEAM_ROCKET_BASE_B2F:NORTH ===
@@ -1506,8 +1516,8 @@ NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:NORTH"]:connect_two_ways_entrance(NAMED
 NAMED_NODES["REGION_TEAM_ROCKET_BASE_B2F:WEST"]:connect_two_ways_entrance(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:WEST"], "dungeon_interior")
 
 -- === REGION_TEAM_ROCKET_BASE_B3F:WEST ===
-NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:WEST"]:connect_one_way(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:CENTER"], "TODOBYSNOWFLAV", function() return has("EVENT_BEAT_ROCKET_GRUNTF_5") and has("EVENT_BEAT_ROCKET_GRUNTM_28") end)
-NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:CENTER"]:connect_one_way(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:WEST"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:WEST"]:connect_one_way(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:CENTER"], "Rocket HQ B3F Center Access (Post-Passwords)", function() return has("EVENT_BEAT_ROCKET_GRUNTF_5") and has("EVENT_BEAT_ROCKET_GRUNTM_28") end)
+NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:CENTER"]:connect_one_way(NAMED_NODES["REGION_TEAM_ROCKET_BASE_B3F:WEST"], "If you read this, contact palex00")
 
 -- === REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL ===
 NAMED_NODES["REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL"]:connect_two_ways_entrance(REGION_WISE_TRIOS_ROOM, "gate")
@@ -1572,7 +1582,7 @@ REGION_TRAINER_HOUSE_1F:connect_two_ways_entrance(REGION_VIRIDIAN_CITY, "buildin
 REGION_TRAINER_HOUSE_1F:connect_two_ways_entrance(REGION_TRAINER_HOUSE_B1F, "building_interior")
 
 -- === REGION_TRAINER_HOUSE_B1F ===
-REGION_TRAINER_HOUSE_B1F:connect_one_way(NAMED_NODES["REGION_TRAINER_HOUSE_B1F:CAL"], "TODOBYSNOWFLAV", kantogymlock)
+REGION_TRAINER_HOUSE_B1F:connect_one_way(NAMED_NODES["REGION_TRAINER_HOUSE_B1F:CAL"], "Viridian Trainer House B1F Cal Access", kantogymlock)
 
 -- === REGION_UNION_CAVE_1F ===
 REGION_UNION_CAVE_1F:connect_two_ways(NAMED_NODES["REGION_UNION_CAVE_1F:SOUTH"], "Union Cave 1F Water Crossing (Center -> Southwest)", "Union Cave 1F Water Crossing (Southwest -> Center)", can_surf_johto)
@@ -1582,7 +1592,7 @@ REGION_UNION_CAVE_1F:connect_two_ways_entrance(NAMED_NODES["REGION_UNION_CAVE_B1
 NAMED_NODES["REGION_UNION_CAVE_1F:SOUTH"]:connect_two_ways_entrance(NAMED_NODES["REGION_UNION_CAVE_B1F:SOUTHWEST"], "dungeon_interior")
 
 -- === REGION_UNION_CAVE_B1F:NORTH ===
-NAMED_NODES["REGION_UNION_CAVE_B1F:NORTH"]:connect_two_ways(NAMED_NODES["REGION_UNION_CAVE_B1F:STRENGTH"], "TODOBYSNOWFLAV", can_strength)
+NAMED_NODES["REGION_UNION_CAVE_B1F:NORTH"]:connect_two_ways(NAMED_NODES["REGION_UNION_CAVE_B1F:STRENGTH"], "Union Cave B1F North Strength Passage (Westbound)", "Union Cave B1F North Strength Passage (Eastbound)", can_strength)
 NAMED_NODES["REGION_UNION_CAVE_B1F:NORTH"]:connect_two_ways(NAMED_NODES["REGION_UNION_CAVE_B1F:CENTER"], "Union Cave B1F North Water Crossing (Southbound)", "Union Cave B1F North Water Crossing (Northbound)", can_surf_johto)
 
 -- === REGION_UNION_CAVE_B1F:SOUTHWEST ===
@@ -1592,7 +1602,7 @@ NAMED_NODES["REGION_UNION_CAVE_B1F:SOUTHWEST"]:connect_two_ways(NAMED_NODES["REG
 NAMED_NODES["REGION_UNION_CAVE_B1F:SOUTHEAST"]:connect_two_ways_entrance(NAMED_NODES["REGION_UNION_CAVE_B2F:NORTH"], "dungeon_interior")
 
 -- === REGION_UNION_CAVE_B2F:NORTH ===
-NAMED_NODES["REGION_UNION_CAVE_B2F:NORTH"]:connect_two_ways(NAMED_NODES["REGION_UNION_CAVE_B2F:SURF"], "Union Cave B2F Water Crossing", "TODOBYSNOWFLAV", can_surf_johto)
+NAMED_NODES["REGION_UNION_CAVE_B2F:NORTH"]:connect_two_ways(NAMED_NODES["REGION_UNION_CAVE_B2F:SURF"], "Union Cave B2F Water Crossing", "If you read this, contact palex00", can_surf_johto)
 
 -- === REGION_VERMILION_CITY ===
 REGION_VERMILION_CITY:connect_two_ways_entrance(REGION_VERMILION_FISHING_SPEECH_HOUSE, "building")
@@ -1601,9 +1611,9 @@ REGION_VERMILION_CITY:connect_two_ways_entrance(REGION_VERMILION_MAGNET_TRAIN_SP
 REGION_VERMILION_CITY:connect_two_ways_entrance(REGION_VERMILION_MART, "mart")
 REGION_VERMILION_CITY:connect_two_ways_entrance(REGION_VERMILION_DIGLETTS_CAVE_SPEECH_HOUSE, "building")
 REGION_VERMILION_CITY:connect_two_ways_entrance(NAMED_NODES["REGION_VERMILION_PORT_PASSAGE:ENTRANCE"], "dungeon")
-REGION_VERMILION_CITY:connect_two_ways(NAMED_NODES["REGION_VERMILION_CITY:GYM_ENTRANCE"], "TODOBYSNOWFLAV", function() return can_cut_kanto() or can_surf_kanto() end)
+REGION_VERMILION_CITY:connect_two_ways(NAMED_NODES["REGION_VERMILION_CITY:GYM_ENTRANCE"], "Vermilion City Water Crossing / Cut Passage (to Gym)", "Vermilion City Water Crossing / Cut Passage (from Gym)", function() return can_cut_kanto() or can_surf_kanto() end)
 REGION_VERMILION_CITY:connect_one_way(NAMED_NODES["REGION_VERMILION_CITY:GYM_ENTRANCE_SHARED"], "Vermilion City Hidden Item Bush Access (from Mainland)")
-REGION_VERMILION_CITY:connect_two_ways(NAMED_NODES["REGION_VERMILION_CITY:DIGLETTS_CAVE_ENTRANCE"], "TODOBYSNOWFLAV", clear_snorlax)
+REGION_VERMILION_CITY:connect_two_ways(NAMED_NODES["REGION_VERMILION_CITY:DIGLETTS_CAVE_ENTRANCE"], "Vermilion City Snorlax Roadblock Passage (Northbound)", "Vermilion City Snorlax Roadblock Passage (Southbound)", clear_snorlax)
 
 -- === REGION_VERMILION_CITY:GYM_ENTRANCE ===
 NAMED_NODES["REGION_VERMILION_CITY:GYM_ENTRANCE"]:connect_one_way_entrance(REGION_VERMILION_GYM, "gym", kantogymlock)
@@ -1622,8 +1632,10 @@ NAMED_NODES["REGION_VERMILION_PORT:TICKET"]:connect_one_way(REGION_VERMILION_POR
 NAMED_NODES["REGION_VERMILION_PORT_PASSAGE:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_VERMILION_PORT_PASSAGE:TUNNEL"], "dungeon_interior")
 
 -- === REGION_VICTORY_ROAD:1F:ENTRANCE ===
-NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F"], "TODOBYSNOWFLAV", victory_road_strength)
-NAMED_NODES["REGION_VICTORY_ROAD:1F"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"], "TODOBYSNOWFLAV")
+NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F"], "Victory Road 1F Traversal (Northbound)", function() return ALL("victory_road_strength_off", victory_road_strength) end)
+NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F"], "Victory Road 1F Strength Passage (Northbound)", function() return ALL("victory_road_strength_on", victory_road_strength) end)
+NAMED_NODES["REGION_VICTORY_ROAD:1F"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"], "Victory Road 1F Traversal (Southbound)", function() return has("victory_road_strength_off") end)
+NAMED_NODES["REGION_VICTORY_ROAD:1F"]:connect_one_way(NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"], "Victory Road 1F Strength Passage (Southbound)", function() return has("victory_road_strength_on") end)
 NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_VICTORY_ROAD_GATE:NORTH"], "dungeon", function() return has("route_23_restored_off") end)
 NAMED_NODES["REGION_VICTORY_ROAD:1F:ENTRANCE"]:connect_two_ways_entrance(NAMED_NODES["REGION_ROUTE_23_RESTORED:NORTH"], "dungeon", function() return has("route_23_restored_on") end)
 
@@ -1670,7 +1682,7 @@ REGION_VIRIDIAN_CITY:connect_two_ways_entrance(REGION_VIRIDIAN_MART, "mart")
 REGION_VIRIDIAN_CITY:connect_two_ways_entrance(REGION_VIRIDIAN_POKECENTER_1F, "pokecenter")
 
 -- === REGION_VIRIDIAN_GYM ===
-REGION_VIRIDIAN_GYM:connect_one_way(NAMED_NODES["REGION_VIRIDIAN_GYM:BLUE"], "TODOBYSNOWFLAV", function() return has("EVENT_VIRIDIAN_GYM_BLUE") end)
+REGION_VIRIDIAN_GYM:connect_one_way(NAMED_NODES["REGION_VIRIDIAN_GYM:BLUE"], "Viridian Gym Blue Access (Post-Cinnabar)", function() return has("EVENT_VIRIDIAN_GYM_BLUE") end)
 
 -- === REGION_VIRIDIAN_POKECENTER_1F ===
 REGION_VIRIDIAN_POKECENTER_1F:connect_one_way(REGION_POKECENTER_2F, "Viridian Pokecenter Stairs")
@@ -1691,7 +1703,7 @@ NAMED_NODES["REGION_WHIRL_ISLAND_B1F:SOUTHWEST"]:connect_two_ways_entrance(NAMED
 -- === REGION_WHIRL_ISLAND_B1F:SOUTHEAST ===
 NAMED_NODES["REGION_WHIRL_ISLAND_B1F:SOUTHEAST"]:connect_two_ways_entrance(NAMED_NODES["REGION_WHIRL_ISLAND_SW:NORTHEAST"], "dungeon_interior")
 NAMED_NODES["REGION_WHIRL_ISLAND_B1F:SOUTHEAST"]:connect_two_ways_entrance(REGION_WHIRL_ISLAND_SE, "dungeon_interior")
-NAMED_NODES["REGION_WHIRL_ISLAND_B1F:SOUTHEAST"]:connect_one_way(NAMED_NODES["REGION_WHIRL_ISLAND_B1F:SOUTHWEST"], "TODOBYSNOWFLAV", can_strength)
+NAMED_NODES["REGION_WHIRL_ISLAND_B1F:SOUTHEAST"]:connect_one_way(NAMED_NODES["REGION_WHIRL_ISLAND_B1F:SOUTHWEST"], "Whirl Islands B1F Strength Passage", can_strength)
 
 -- === REGION_WHIRL_ISLAND_B1F:LEDGE ===
 NAMED_NODES["REGION_WHIRL_ISLAND_B1F:LEDGE"]:connect_two_ways_entrance(REGION_WHIRL_ISLAND_CAVE, "dungeon_interior")
@@ -1712,7 +1724,7 @@ NAMED_NODES["REGION_WHIRL_ISLAND_B2F:SOUTH"]:connect_two_ways_entrance(NAMED_NOD
 REGION_WHIRL_ISLAND_CAVE:connect_two_ways_entrance(NAMED_NODES["REGION_WHIRL_ISLAND_NW:SOUTH"], "dungeon_interior")
 
 -- === REGION_WHIRL_ISLAND_LUGIA_CHAMBER ===
-REGION_WHIRL_ISLAND_LUGIA_CHAMBER:connect_one_way(NAMED_NODES["REGION_WHIRL_ISLAND_LUGIA_CHAMBER:WATER"], "TODOBYSNOWFLAV", can_surf_johto)
+REGION_WHIRL_ISLAND_LUGIA_CHAMBER:connect_one_way(NAMED_NODES["REGION_WHIRL_ISLAND_LUGIA_CHAMBER:WATER"], "Whirl Islands Lugia Chamber Water Access", can_surf_johto)
 
 -- === REGION_WHIRL_ISLAND_NE:WEST ===
 NAMED_NODES["REGION_WHIRL_ISLAND_NE:WEST"]:connect_one_way(NAMED_NODES["REGION_WHIRL_ISLAND_NE:CENTER"], "Whirl Islands Northeast Island West Ledge Jump")
