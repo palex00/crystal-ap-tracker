@@ -2563,13 +2563,15 @@
             {
                 "name": "Misty isn't dating",
                 "img": "/images/placeholder.png",
-                "img_mods": "@disabled",
+                "img": "/images/events/beat_misty.png",
+                "img_mods": "overlay|images/events/crackedheart_overlay.png, @disabled",
                 "codes": "vanilla_chain_misty, vanilla_chain_misty_off",
                 "inherit_codes": false
             },
             {
                 "name": "Misty is on a hot date",
-                "img": "/images/placeholder.png",
+                "img": "/images/events/beat_misty.png",
+                "img_mods": "overlay|images/events/crackedheart_overlay.png",
                 "codes": "vanilla_chain_misty, vanilla_chain_misty_on",
                 "inherit_codes": false
             }
@@ -2583,14 +2585,15 @@
         "stages": [
             {
                 "name": "You know all there is to know about AMPHY",
-                "img": "/images/placeholder.png",
-                "img_mods": "@disabled",
+                "img": "/images/events/beat_jasmine.png",
+                "img_mods": "overlay|images/events/amphy_overlay.png, @disabled",
                 "codes": "vanilla_chain_jasmine, vanilla_chain_jasmine_off",
                 "inherit_codes": false
             },
             {
                 "name": "You better learn about AMPHY",
-                "img": "/images/placeholder.png",
+                "img": "/images/events/beat_jasmine.png",
+                "img_mods": "overlay|images/events/amphy_overlay.png",
                 "codes": "vanilla_chain_jasmine, vanilla_chain_jasmine_on",
                 "inherit_codes": false
             }
@@ -2604,14 +2607,15 @@
         "stages": [
             {
                 "name": "You telephatically connect to copycat",
-                "img": "/images/placeholder.png",
-                "img_mods": "@disabled",
+                "img": "/images/events/player.png",
+                "img_mods": "overlay|images/events/rival_overlays/mount_moon.png, @disabled",
                 "codes": "vanilla_chain_copycat, vanilla_chain_copycat_off",
                 "inherit_codes": false
             },
             {
                 "name": "To find a lost item, you first need to know an item is lost",
-                "img": "/images/placeholder.png",
+                "img": "/images/events/player.png",
+                "img_mods": "overlay|images/events/rival_overlays/mount_moon.png",
                 "codes": "vanilla_chain_copycat, vanilla_chain_copycat_on",
                 "inherit_codes": false
             }
