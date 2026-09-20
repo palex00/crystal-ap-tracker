@@ -987,8 +987,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_30:POST_MYSTERY_EGG, ^$phonecall, ^$CanReach|REGION_GOLDENROD_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_goldenrod.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_goldenrod.png"
                     },
                     {
                         "name": "Youngster Joey Rematch - Olivine",
@@ -998,8 +998,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 30/Youngster Joey Rematch - Goldenrod, ^$CanReach|REGION_OLIVINE_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_olivine.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_olivine.png"
                     },
                     {
                         "name": "Youngster Joey Rematch - Radio",
@@ -1009,8 +1009,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 30/Youngster Joey Rematch - Olivine, EVENT_CLEARED_RADIO_TOWER"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_radio.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_radio.png"
                     },
                     {
                         "name": "Youngster Joey Rematch - Champion",
@@ -1020,8 +1020,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 30/Youngster Joey Rematch - Radio, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_champion.png"
                     },
                     {
                         "name": "HP Up from Joey",
@@ -1363,8 +1363,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_31, ^$phonecall, ^$CanReach|REGION_GOLDENROD_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/bug_catcher_goldenrod.png",
+                        "chest_opened_img": "images/trainers/rematch/bug_catcher_bw_goldenrod.png"
                     },
                     {
                         "name": "Bug Catcher Wade Rematch - Mahogany",
@@ -1374,8 +1374,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 31/Bug Catcher Wade Rematch - Goldenrod, ^$CanReach|REGION_MAHOGANY_TOWN"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/bug_catcher_mahogany.png",
+                        "chest_opened_img": "images/trainers/rematch/bug_catcher_bw_mahogany.png"
                     },
                     {
                         "name": "Bug Catcher Wade Rematch - Radio",
@@ -1385,8 +1385,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 31/Bug Catcher Wade Rematch - Mahogany, EVENT_CLEARED_RADIO_TOWER"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/bug_catcher_radio.png",
+                        "chest_opened_img": "images/trainers/rematch/bug_catcher_bw_radio.png"
                     },
                     {
                         "name": "Bug Catcher Wade Rematch - Champion",
@@ -1396,8 +1396,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 31/Bug Catcher Wade Rematch - Radio, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/bug_catcher_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/bug_catcher_bw_champion.png"
                     },
                     {
                         "name": "Berry from Wade",
@@ -3501,8 +3501,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_32:SOUTH, ^$phonecall, ^$CanReach|REGION_ECRUTEAK_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_ecruteak.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_ecruteak.png"
                     },
                     {
                         "name": "Picnicker Liz Rematch - Rocket Hideout",
@@ -3512,8 +3512,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 32/Picnicker Liz Rematch - Ecruteak, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_hideout.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_hideout.png"
                     },
                     {
                         "name": "Picnicker Liz Rematch - Radio",
@@ -3523,8 +3523,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 32/Picnicker Liz Rematch - Rocket Hideout, EVENT_CLEARED_RADIO_TOWER"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_radio.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_radio.png"
                     },
                     {
                         "name": "Picnicker Liz Rematch - Champion",
@@ -3534,8 +3534,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 32/Picnicker Liz Rematch - Radio, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_champion.png"
                     },
                     {
                         "name": "Hidden Item North of Bridge",
@@ -3613,8 +3613,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_32:SOUTH, ^$phonecall, ^$CanReach|REGION_ECRUTEAK_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/fisher_ecruteak.png",
+                        "chest_opened_img": "images/trainers/rematch/fisher_bw_ecruteak.png"
                     },
                     {
                         "name": "Fisher Ralph Rematch - Lake of Rage",
@@ -3624,8 +3624,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 32/Fisher Ralph Rematch - Ecruteak, ^$CanReach|REGION_LAKE_OF_RAGE"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/fisher_lakeofrage.png",
+                        "chest_opened_img": "images/trainers/rematch/fisher_bw_lakeofrage.png"
                     },
                     {
                         "name": "Fisher Ralph Rematch - Champion",
@@ -3635,8 +3635,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 32/Fisher Ralph Rematch - Lake of Rage, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/fisher_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/fisher_bw_champion.png"
                     },
                     {
                         "name": "Fisher Ralph Rematch - Kanto Power Restored",
@@ -3646,8 +3646,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 32/Fisher Ralph Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/fisher_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/fisher_bw_powerrestored.png"
                     },
                     {
                         "name": "Youngster Gordon",
@@ -4507,8 +4507,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_33, ^$phonecall, ^$CanReach|REGION_OLIVINE_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/hiker_olivine.png",
+                        "chest_opened_img": "images/trainers/rematch/hiker_bw_olivine.png"
                     },
                     {
                         "name": "Hiker Anthony Rematch - Radio",
@@ -4518,8 +4518,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 33/Hiker Anthony Rematch - Olivine, EVENT_CLEARED_RADIO_TOWER"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/hiker_radio.png",
+                        "chest_opened_img": "images/trainers/rematch/hiker_bw_radio.png"
                     },
                     {
                         "name": "Hiker Anthony Rematch - Champion",
@@ -4529,8 +4529,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 33/Hiker Anthony Rematch - Radio, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/hiker_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/hiker_bw_champion.png"
                     },
                     {
                         "name": "Hiker Anthony Rematch - Kanto Power Restored",
@@ -4540,8 +4540,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 33/Hiker Anthony Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/hiker_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/hiker_bw_powerrestored.png"
                     },
                     {
                         "name": "Grass",
@@ -5841,8 +5841,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_34, ^$phonecall, ^$CanReach|REGION_MAHOGANY_TOWN"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_mahogany.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_mahogany.png"
                     },
                     {
                         "name": "Picnicker Gina Rematch - Radio",
@@ -5852,8 +5852,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 34/Picnicker Gina Rematch - Mahogany, EVENT_CLEARED_RADIO_TOWER"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_radio.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_radio.png"
                     },
                     {
                         "name": "Picnicker Gina Rematch - Champion",
@@ -5863,8 +5863,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 34/Picnicker Gina Rematch - Radio, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_champion.png"
                     },
                     {
                         "name": "Picnicker Gina Rematch - Kanto Power Restored",
@@ -5874,8 +5874,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 34/Picnicker Gina Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_powerrestored.png"
                     },
                     {
                         "name": "Leaf Stone from Gina",
@@ -5943,8 +5943,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_34, ^$phonecall, ^$CanReach|REGION_CIANWOOD_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/camper_cianwood.png",
+                        "chest_opened_img": "images/trainers/rematch/camper_bw_cianwood.png"
                     },
                     {
                         "name": "Camper Todd Rematch - Blackthorn",
@@ -5954,8 +5954,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 34/Camper Todd Rematch - Cianwood, ^$CanReach|REGION_BLACKTHORN_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/camper_blackthorn.png",
+                        "chest_opened_img": "images/trainers/rematch/camper_bw_blackthorn.png"
                     },
                     {
                         "name": "Camper Todd Rematch - Champion",
@@ -5965,8 +5965,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 34/Camper Todd Rematch - Blackthorn, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/camper_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/camper_bw_champion.png"
                     },
                     {
                         "name": "Camper Todd Rematch - Kanto Power Restored",
@@ -5976,8 +5976,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 34/Camper Todd Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/camper_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/camper_bw_powerrestored.png"
                     },
                     {
                         "name": "Item across Water",
@@ -8774,8 +8774,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_35, ^$phonecall, ^$CanReach|REGION_LAKE_OF_RAGE"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/bug_catcher_lakeofrage.png",
+                        "chest_opened_img": "images/trainers/rematch/bug_catcher_bw_lakeofrage.png"
                     },
                     {
                         "name": "Bug Catcher Arnie Rematch - Blackthorn",
@@ -8785,8 +8785,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 35/Bug Catcher Arnie Rematch - Lake of Rage, ^$CanReach|REGION_BLACKTHORN_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/bug_catcher_blackthorn.png",
+                        "chest_opened_img": "images/trainers/rematch/bug_catcher_bw_blackthorn.png"
                     },
                     {
                         "name": "Bug Catcher Arnie Rematch - Champion",
@@ -8796,8 +8796,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 35/Bug Catcher Arnie Rematch - Blackthorn, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/bug_catcher_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/bug_catcher_bw_champion.png"
                     },
                     {
                         "name": "Bug Catcher Arnie Rematch - Kanto Power Restored",
@@ -8807,8 +8807,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 35/Bug Catcher Arnie Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/bug_catcher_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/bug_catcher_bw_powerrestored.png"
                     },
                     {
                         "name": "Bird Keeper Bryan",
@@ -9088,8 +9088,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_NATIONAL_PARK, ^$phonecall, ^$CanReach|REGION_OLIVINE_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_olivine.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_olivine.png"
                     },
                     {
                         "name": "Schoolboy Jack Rematch - Radio",
@@ -9099,8 +9099,8 @@
                         "access_rules": [
                             "@JohtoKanto/National Park/Schoolboy Jack Rematch - Olivine, EVENT_CLEARED_RADIO_TOWER"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_radio.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_radio.png"
                     },
                     {
                         "name": "Schoolboy Jack Rematch - Champion",
@@ -9110,8 +9110,8 @@
                         "access_rules": [
                             "@JohtoKanto/National Park/Schoolboy Jack Rematch - Radio, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_champion.png"
                     },
                     {
                         "name": "Schoolboy Jack Rematch - Kanto Power Restored",
@@ -9121,8 +9121,8 @@
                         "access_rules": [
                             "@JohtoKanto/National Park/Schoolboy Jack Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_powerrestored.png"
                     },
                     {
                         "name": "Northeast Item",
@@ -9496,8 +9496,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_36:WEST, ^$phonecall, ^$CanReach|REGION_OLIVINE_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_olivine.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_olivine.png"
                     },
                     {
                         "name": "Schoolboy Alan Rematch - Blackthorn",
@@ -9507,8 +9507,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 36/Schoolboy Alan Rematch - Olivine, ^$CanReach|REGION_BLACKTHORN_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_blackthorn.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_blackthorn.png"
                     },
                     {
                         "name": "Schoolboy Alan Rematch - Champion",
@@ -9518,8 +9518,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 36/Schoolboy Alan Rematch - Blackthorn, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_champion.png"
                     },
                     {
                         "name": "Schoolboy Alan Rematch - Kanto Power Restored",
@@ -9529,8 +9529,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 36/Schoolboy Alan Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_powerrestored.png"
                     },
                     {
                         "name": "Fire Stone from Alan",
@@ -11915,8 +11915,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_38, ^$phonecall, ^$CanReach|REGION_CIANWOOD_CITY"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/lass_cianwood.png",
+                        "chest_opened_img": "images/trainers/rematch/lass_bw_cianwood.png"
                     },
                     {
                         "name": "Lass Dana Rematch - Radio",
@@ -11926,8 +11926,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 38/Lass Dana Rematch - Cianwood, EVENT_CLEARED_RADIO_TOWER"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/lass_radio.png",
+                        "chest_opened_img": "images/trainers/rematch/lass_bw_radio.png"
                     },
                     {
                         "name": "Lass Dana Rematch - Champion",
@@ -11937,8 +11937,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 38/Lass Dana Rematch - Radio, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/lass_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/lass_bw_champion.png"
                     },
                     {
                         "name": "Lass Dana Rematch - Kanto Power Restored",
@@ -11948,8 +11948,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 38/Lass Dana Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/lass_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/lass_bw_powerrestored.png"
                     },
                     {
                         "name": "Thunderstone from Dana",
@@ -11982,8 +11982,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_38, ^$phonecall, ^$CanReach|REGION_MAHOGANY_TOWN"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_mahogany.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_mahogany.png"
                     },
                     {
                         "name": "Schoolboy Chad Rematch - Radio",
@@ -11993,8 +11993,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 38/Schoolboy Chad Rematch - Mahogany, EVENT_CLEARED_RADIO_TOWER"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_radio.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_radio.png"
                     },
                     {
                         "name": "Schoolboy Chad Rematch - Champion",
@@ -12004,8 +12004,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 38/Schoolboy Chad Rematch - Radio, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_champion.png"
                     },
                     {
                         "name": "Schoolboy Chad Rematch - Kanto Power Restored",
@@ -12015,8 +12015,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 38/Schoolboy Chad Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_powerrestored.png"
                     },
                     {
                         "name": "Beauty Olivia",
@@ -13057,8 +13057,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F, ^$phonecall, EVENT_CLEARED_RADIO_TOWER"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/sailor_radio.png",
+                        "chest_opened_img": "images/trainers/rematch/sailor_bw_radio.png"
                     },
                     {
                         "name": "2F - Sailor Huey Rematch - Champion",
@@ -13068,8 +13068,8 @@
                         "access_rules": [
                             "@JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Radio, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/sailor_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/sailor_bw_champion.png"
                     },
                     {
                         "name": "2F - Sailor Huey Rematch - Kanto Power Restored",
@@ -13079,8 +13079,8 @@
                         "access_rules": [
                             "@JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/sailor_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/sailor_bw_powerrestored.png"
                     },
                     {
                         "name": "2F - Protein from Huey",
@@ -15765,8 +15765,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_42:EAST, ^$phonecall, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/fisher_hideout.png",
+                        "chest_opened_img": "images/trainers/rematch/fisher_bw_hideout.png"
                     },
                     {
                         "name": "Fisher Tully Rematch - Champion",
@@ -15776,8 +15776,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 42/Fisher Tully Rematch - Rocket Hideout, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/fisher_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/fisher_bw_champion.png"
                     },
                     {
                         "name": "Fisher Tully Rematch - Kanto Power Restored",
@@ -15787,8 +15787,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 42/Fisher Tully Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/fisher_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/fisher_bw_powerrestored.png"
                     },
                     {
                         "name": "Water Stone from Tully",
@@ -17711,8 +17711,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_43, ^$phonecall, ^$request_pokemon|7, POKEDEX, EVENT_CLEARED_RADIO_TOWER"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_radio.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_radio.png"
                     },
                     {
                         "name": "Picnicker Tiffany Rematch - Champion",
@@ -17722,8 +17722,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 43/Picnicker Tiffany Rematch - Radio, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_champion.png"
                     },
                     {
                         "name": "Picnicker Tiffany Rematch - Kanto Power Restored",
@@ -17733,8 +17733,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 43/Picnicker Tiffany Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_powerrestored.png"
                     },
                     {
                         "name": "Pink Bow from Tiffany",
@@ -17779,8 +17779,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_43, ^$phonecall, EVENT_CLEARED_ROCKET_HIDEOUT"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/juggler_pokemaniac_hideout.png",
+                        "chest_opened_img": "images/trainers/rematch/juggler_pokemaniac_bw_hideout.png"
                     },
                     {
                         "name": "Pokemaniac Brent Rematch - Champion",
@@ -17790,8 +17790,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 43/Pokemaniac Brent Rematch - Rocket Hideout, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/juggler_pokemaniac_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/juggler_pokemaniac_bw_champion.png"
                     },
                     {
                         "name": "Pokemaniac Brent Rematch - Kanto Power Restored",
@@ -17801,8 +17801,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 43/Pokemaniac Brent Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/juggler_pokemaniac_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/juggler_pokemaniac_bw_powerrestored.png"
                     },
                     {
                         "name": "Pokemaniac Ron",
@@ -18413,8 +18413,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_44, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/fisher_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/fisher_bw_champion.png"
                     },
                     {
                         "name": "Fisher Wilton Rematch - Kanto Power Restored",
@@ -18424,8 +18424,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 44/Fisher Wilton Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/fisher_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/fisher_bw_powerrestored.png"
                     },
                     {
                         "name": "Poke Ball from Wilton",
@@ -18479,8 +18479,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_44, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/camper_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/camper_bw_champion.png"
                     },
                     {
                         "name": "Bird Keeper Vance Rematch - Kanto Power Restored",
@@ -18490,8 +18490,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 44/Bird Keeper Vance Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/camper_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/camper_bw_powerrestored.png"
                     },
                     {
                         "name": "Carbos from Vance",
@@ -20256,8 +20256,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_45, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/hiker_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/hiker_bw_champion.png"
                     },
                     {
                         "name": "Hiker Parry Rematch - Kanto Power Restored",
@@ -20267,8 +20267,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 45/Hiker Parry Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/hiker_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/hiker_bw_powerrestored.png"
                     },
                     {
                         "name": "Iron from Parry",
@@ -20610,8 +20610,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_46:NORTH, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_champion.png"
                     },
                     {
                         "name": "Picnicker Erin Rematch - Kanto Power Restored",
@@ -20621,8 +20621,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 46/Picnicker Erin Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/picnicker_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/picnicker_bw_powerrestored.png"
                     },
                     {
                         "name": "Calcium from Erin",
@@ -20868,8 +20868,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_27:EAST, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/cool_trainer_f_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/cool_trainer_f_bw_champion.png"
                     },
                     {
                         "name": "Cool Trainer Reena Rematch - Kanto Power Restored",
@@ -20879,8 +20879,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 27/Cool Trainer Reena Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/cool_trainer_f_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/cool_trainer_f_bw_powerrestored.png"
                     },
                     {
                         "name": "East Item behind Whirlpool",
@@ -20911,8 +20911,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_27:EASTWHIRLPOOL, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_champion.png"
                     },
                     {
                         "name": "Bird Keeper Jose Rematch - Kanto Power Restored",
@@ -20922,8 +20922,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 27/Bird Keeper Jose Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/blue_dude_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/blue_dude_bw_powerrestored.png"
                     },
                     {
                         "name": "Star Piece from Jose",
@@ -21283,8 +21283,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_26, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/cool_trainer_m_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/cool_trainer_m_bw_champion.png"
                     },
                     {
                         "name": "Cool Trainer Gaven Rematch - Kanto Power Restored",
@@ -21294,8 +21294,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 26/Cool Trainer Gaven Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/cool_trainer_m_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/cool_trainer_m_bw_powerrestored.png"
                     },
                     {
                         "name": "Cool Trainer Jake",
@@ -21338,8 +21338,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_26, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/cool_trainer_f_champion.png",
+                        "chest_opened_img": "images/trainers/rematch/cool_trainer_f_bw_champion.png"
                     },
                     {
                         "name": "Cool Trainer Beth Rematch - Kanto Power Restored",
@@ -21349,8 +21349,8 @@
                         "access_rules": [
                             "@JohtoKanto/Route 26/Cool Trainer Beth Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/trainers/rematch/cool_trainer_f_powerrestored.png",
+                        "chest_opened_img": "images/trainers/rematch/cool_trainer_f_bw_powerrestored.png"
                     },
                     {
                         "name": "Grass",
