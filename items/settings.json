@@ -2762,14 +2762,14 @@
         "stages": [
             {
                 "name": "Lucky Number Show is not randomized",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/luckynumbershow.png",
                 "img_mods": "@disabled",
                 "codes": "luckynumbershow, luckynumbershow_off",
                 "inherit_codes": false
             },
             {
                 "name": "Lucky Number Show is randomized",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/luckynumbershow.png",
                 "codes": "luckynumbershow, luckynumbershow_on",
                 "inherit_codes": false
             }
