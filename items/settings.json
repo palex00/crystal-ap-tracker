@@ -2280,14 +2280,14 @@
         "stages": [
             {
                 "name": "Rematchsanity: Off",
-                "img": "/images/settings/trainersanity.png",
+                "img": "/images/settings/rematchsanity.png",
                 "img_mods": "@disabled",
                 "codes": "randomize_rematches, randomize_rematches_false",
                 "inherit_codes": false
             },
             {
                 "name": "Rematchsanity: On",
-                "img": "/images/settings/trainersanity.png",
+                "img": "/images/settings/rematchsanity.png",
                 "codes": "randomize_rematches, randomize_rematches_true",
                 "inherit_codes": false
             }
@@ -2716,20 +2716,20 @@
         "stages": [
             {
                 "name": "Battle Tower does not have checks",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/battletower_tier.png",
                 "img_mods": "@disabled",
                 "codes": "battle_tower_sanity, battle_tower_sanity_off",
                 "inherit_codes": false
             },
             {
                 "name": "Battle Tower has tier checks",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/battletower_tier.png",
                 "codes": "battle_tower_sanity, battle_tower_sanity_tiers",
                 "inherit_codes": false
             },
             {
                 "name": "Battle Tower has tier and trainer checks",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/battletower_tier_trainer.png",
                 "codes": "battle_tower_sanity, battle_tower_sanity_tiers, battle_tower_sanity_trainers",
                 "inherit_codes": false
             }
@@ -2744,14 +2744,14 @@
         "stages": [
             {
                 "name": "Battle Tower is not gated by Progressive Tier Unlocks",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/battletower_gated.png",
                 "img_mods": "@disabled",
                 "codes": "battle_tower_progressive_tier_unlocks, battle_tower_progressive_tier_unlocks_off",
                 "inherit_codes": false
             },
             {
                 "name": "Battle Tower is gated by Progressive Tier Unlocks",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/battletower_gated.png",
                 "codes": "battle_tower_progressive_tier_unlocks, battle_tower_progressive_tier_unlocks_on",
                 "inherit_codes": false
             }
