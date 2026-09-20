@@ -33,6 +33,65 @@ function RemoveEntranceHighlight()
     end
 end
 
+-- PopTracker renders the lines of a multi-line overlay right-aligned against each other
+-- (ui/item.cpp hardcodes HAlign::RIGHT when it rasterizes the text; SetOverlayAlign only places
+-- the finished block), so a two-line badge reads ragged-left unless both lines rasterize to the
+-- same width. Rendered advance widths, in whole pixels, of the overlay font (PopTracker's
+-- assets/DejaVuSans-Bold.ttf at the overlay font size set in updateBadge) for every character
+-- that occurs in a pretty name, plus the three space glyphs used to pad the narrower line.
+local BADGE_PAD_3 = " "                   -- plain space, 3px
+local BADGE_PAD_2 = "\226\128\137"        -- U+2009 THIN SPACE, 2px
+local BADGE_PAD_1 = "\226\128\138"        -- U+200A HAIR SPACE, 1px
+-- Leading pad so the badge starts clear of the 32px entrance icon instead of sitting on it.
+-- The overlay background is dropped for the same reason: PopTracker fills it across the
+-- whole rasterized block (ui/item.cpp), indent included, so it would cover the icon.
+local BADGE_INDENT = string.rep(BADGE_PAD_3, 12) -- 12 * 3px = 36px
+local BADGE_CHAR_W = {}
+do
+    local function w(width, chars)
+        for ch in chars:gmatch(".") do
+            BADGE_CHAR_W[ch] = width
+        end
+    end
+    w(3, " 'ijl")
+    w(4, "-.If")
+    w(5, "()rt")
+    w(6, "Lcsxz")
+    w(7, "0123456789CEFPSTZabdeghknopquvy")
+    w(8, "ABDGHKNRUV")
+    w(9, "OQw")
+    w(10, "Mm")
+    w(11, "W")
+end
+
+--- Rendered width of a badge line's name, in pixels. All three arrow glyphs advance 8px, so the
+--- prefix cancels out between the two lines and is left out of the comparison.
+local function badgeWidth(name)
+    local total = 0
+    for i = 1, #name do
+        total = total + BADGE_CHAR_W[name:sub(i, i)]
+    end
+    return total
+end
+
+--- Pad the narrower of two names out to the wider one, to the pixel, so both badge lines
+--- rasterize the same width -- which is what makes the right-aligned lines sit flush left.
+local function padBadgePair(a, b)
+    local diff = badgeWidth(a) - badgeWidth(b)
+    local n = diff < 0 and -diff or diff
+    local pad = string.rep(BADGE_PAD_3, math.floor(n / 3))
+    local rest = n % 3
+    if rest == 2 then
+        pad = pad .. BADGE_PAD_2
+    elseif rest == 1 then
+        pad = pad .. BADGE_PAD_1
+    end
+    if diff < 0 then
+        return a .. pad, b
+    end
+    return a, b .. pad
+end
+
 EntranceItem = CustomItem:extend()
 
 function EntranceItem:init(token, row)
@@ -64,11 +123,6 @@ function EntranceItem:reset()
     self:updateBadge()
 end
 
---- Whether either direction has been revealed.
-function EntranceItem:isRevealed()
-    return self.forwardTarget ~= nil or self.reverseSource ~= nil
-end
-
 --- Badge + icon. Badge rule:
 ---   one direction known -> "->dest" or "<-src"
 ---   both known & equal  -> "<->name"   (coupled/symmetric)
@@ -85,24 +139,22 @@ function EntranceItem:updateBadge()
     local text = ""
     if fwd and rev then
         if self.forwardTarget == self.reverseSource then
-            text = ARROW_BOTH .. fwd.pretty
+            text = BADGE_INDENT .. ARROW_BOTH .. fwd.pretty
         else
-            text = ARROW_FWD .. fwd.pretty .. "\n" .. ARROW_REV .. rev.pretty
+            local f, r = padBadgePair(fwd.pretty, rev.pretty)
+            text = BADGE_INDENT .. ARROW_FWD .. f .. "\n" .. BADGE_INDENT .. ARROW_REV .. r
         end
     elseif fwd then
-        text = ARROW_FWD .. fwd.pretty
+        text = BADGE_INDENT .. ARROW_FWD .. fwd.pretty
     elseif rev then
-        text = ARROW_REV .. rev.pretty
-    end
-    if text ~= "" then
-        text = text .. "\n"
+        text = BADGE_INDENT .. ARROW_REV .. rev.pretty
     end
     inst.BadgeText = text
     inst.BadgeTextColor = "#abcdef"
-    inst:SetOverlayBackground("#c0000000")
+    inst:SetOverlayBackground("")
     inst:SetOverlayFontSize(10)
     inst:SetOverlayAlign("left")
-    if self:isRevealed() then
+    if self.forwardTarget then
         inst.Icon = ImageReference:FromPackRelativePath(ENTRANCE_OPEN_ICON)
     else
         inst.Icon = ImageReference:FromPackRelativePath(ENTRANCE_CLOSED_ICON)
@@ -186,8 +238,10 @@ function EntranceItem:canProvideCode(code)
 end
 
 --- Collected state for the section hosting this entrance (hosted_item = the token).
+--- Forward only: a revealed reverseSource says what emerges here, not where this door goes,
+--- so a decoupled entrance stays unchecked until it has actually been entered.
 function EntranceItem:providesCode(code)
-    if code == self.token and self:isRevealed() then
+    if code == self.token and self.forwardTarget ~= nil then
         return 1
     end
     return 0
