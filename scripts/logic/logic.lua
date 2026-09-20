@@ -447,7 +447,7 @@ function kantogymlock()
     if (snorlax == AccessibilityLevel.Normal and clear_snorlax())
     or hooh == AccessibilityLevel.Normal
     or (lugia == AccessibilityLevel.Normal and has("SILVER_WING"))
-    or suicune == AccessibilityLevel.Normal
+    or (suicune == AccessibilityLevel.Normal and has("CLEAR_BELL"))
     or silvercave == AccessibilityLevel.Normal
     or victoryroad == AccessibilityLevel.Normal then
         return AccessibilityLevel.Normal

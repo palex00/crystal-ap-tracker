@@ -10844,7 +10844,7 @@
                         "hosted_item": "REGION_TIN_TOWER_1F -> REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_TIN_TOWER_1F"
+                            "^$CanReach|REGION_TIN_TOWER_1F, CLEAR_BELL"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
@@ -10855,7 +10855,7 @@
                         "hosted_item": "REGION_TIN_TOWER_1F -> REGION_TIN_TOWER_2F",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_TIN_TOWER_1F, RAINBOW_WING"
+                            "^$CanReach|REGION_TIN_TOWER_1F, RAINBOW_WING, CLEAR_BELL"
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
