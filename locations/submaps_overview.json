@@ -309,102 +309,32 @@
                 "name": "Burned Tower",
                 "sections": [
                     {
-                        "name": "1F - Item",
-                        "access_rules": [
-                            "^$CanReach|BURNED_TOWER_1F_HP_UP, ^$dark|burnedtower"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
+                        "ref": "JohtoKanto/Burned Tower/1F - Item",
+                        "name": "1F - Item"
                     },
                     {
-                        "name": "1F - Hidden Item above Rival",
-                        "access_rules": [
-                            "^$CanReach|REGION_BURNED_TOWER_1F, ^$hid, ^$dark|burnedtower"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ],
-                        "chest_unopened_img": "images/items/hidden_item.png",
-                        "chest_opened_img": "images/items/hidden_item_open.png"
+                        "ref": "JohtoKanto/Burned Tower/1F - Hidden Item above Rival",
+                        "name": "1F - Hidden Item above Rival"
                     },
                     {
-                        "name": "1F - Southeast Hidden Item",
-                        "access_rules": [
-                            "^$CanReach|REGION_BURNED_TOWER_1F, ^$hid, ^$dark|burnedtower"
-                        ],
-                        "visibility_rules": [
-                            "show_items, hiddenitems_on"
-                        ],
-                        "chest_unopened_img": "images/items/hidden_item.png",
-                        "chest_opened_img": "images/items/hidden_item_open.png"
+                        "ref": "JohtoKanto/Burned Tower/1F - Southeast Hidden Item",
+                        "name": "1F - Southeast Hidden Item"
                     },
                     {
-                        "name": "1F - Beat Rival in Burned Tower",
-                        "access_rules": [
-                            "^$CanReach|REGION_BURNED_TOWER_1F, ^$dark|burnedtower"
-                        ],
-                        "hosted_item": "EVENT_RIVAL_BURNED_TOWER",
-                        "visibility_rules": [
-                            "show_events, goal_rival"
-                        ]
+                        "ref": "JohtoKanto/Burned Tower/1F - Beat Rival in Burned Tower",
+                        "name": "1F - Beat Rival in Burned Tower"
                     },
                     {
-                        "name": "1F - Rival",
-                        "access_rules": [
-                            "^$CanReach|REGION_BURNED_TOWER_1F, ^$dark|burnedtower"
-                        ],
-                        "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, $partial_trainersanity, trainersanity_298"
-                        ],
-                        "chest_unopened_img": "images/trainers/rival.png",
-                        "chest_opened_img": "images/trainers/rival_bw.png"
+                        "ref": "JohtoKanto/Burned Tower/1F - Rival",
+                        "name": "1F - Rival"
                     },
                     {
-                        "name": "1F - Land Encounters",
-                        "item_count": 7,
-                        "clear_as_group": false,
-                        "chest_unopened_img": "images/other/encounter.png",
-                        "chest_opened_img": "images/other/encounter_bw.png",
-                        "visibility_rules": [
-                            "show_mons, encmethod_land_visible"
-                        ],
-                        "access_rules": [
-                            "^$CanReach|GRASS_BURNED_TOWER_1F, ^$land_encounter"
-                        ]
+                        "ref": "JohtoKanto/Burned Tower/B1F - Item",
+                        "name": "B1F - Item"
                     },
                     {
-                        "name": "B1F - Item",
-                        "access_rules": [
-                            "^$CanReach|BURNED_TOWER_B1F_TM_ENDURE, ^$dark|burnedtower"
-                        ],
-                        "visibility_rules": [
-                            "show_items"
-                        ]
-                    },
-                    {
-                        "name": "B1F - Released the Beasts",
-                        "access_rules": [
-                            "^$CanReach|REGION_BURNED_TOWER_B1F, ^$dark|burnedtower"
-                        ],
-                        "hosted_item": "EVENT_RELEASED_THE_BEASTS",
-                        "visibility_rules": [
-                            "show_events"
-                        ]
-                    },
-                    {
-                        "name": "B1F - Land Encounters",
-                        "item_count": 7,
-                        "clear_as_group": false,
-                        "chest_unopened_img": "images/other/encounter.png",
-                        "chest_opened_img": "images/other/encounter_bw.png",
-                        "visibility_rules": [
-                            "show_mons, encmethod_land_visible"
-                        ],
-                        "access_rules": [
-                            "^$CanReach|GRASS_BURNED_TOWER_B1F, ^$land_encounter"
-                        ]
+                        "ref": "JohtoKanto/Burned Tower/B1F - Released the Beasts",
+                        "name": "B1F - Released the Beasts"
                     }
                 ],
                 "map_locations": [

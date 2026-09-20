@@ -169,7 +169,7 @@
                         "visibility_rules": [
                             "show_events"
                         ],
-                        "hosted_item": "EVENT_GAVE_MYSTERY_EGG_TO_ELM"
+                        "hosted_item": "EVENT_GAVE_MYSTERY_EGG_TO_ELM_hosted"
                     },
                     {
                         "name": "Elm's Lab - Gift from Aide after returning Mystery Egg",
@@ -256,7 +256,7 @@
                         "visibility_rules": [
                             "show_items, pokegear_off"
                         ],
-                        "hosted_item": "POKE_GEAR"
+                        "hosted_item": "POKE_GEAR_hosted"
                     },
                     {
                         "name": "Player's House - Phone Card from Mom",
@@ -277,7 +277,7 @@
                         "visibility_rules": [
                             "show_items, pokegear_off"
                         ],
-                        "hosted_item": "PHONE_CARD"
+                        "hosted_item": "PHONE_CARD_hosted"
                     },
                     {
                         "name": "Mom's Savings - 900",
@@ -707,7 +707,7 @@
                         "visibility_rules": [
                             "show_items, pokegear_off"
                         ],
-                        "hosted_item": "MAP_CARD"
+                        "hosted_item": "MAP_CARD_hosted"
                     },
                     {
                         "name": "Mystic Water from Island Man",
@@ -725,7 +725,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_BEAT_CHERRYGROVE_RIVAL"
                         ],
-                        "hosted_item": "EVENT_BEAT_CHERRYGROVE_RIVAL",
+                        "hosted_item": "EVENT_BEAT_CHERRYGROVE_RIVAL_hosted",
                         "visibility_rules": [
                             "show_events, goal_rival"
                         ]
@@ -1209,7 +1209,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_MR_POKEMONS_HOUSE"
                         ],
-                        "hosted_item": "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON",
+                        "hosted_item": "EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -1244,7 +1244,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_MR_POKEMONS_HOUSE"
                         ],
-                        "hosted_item": "POKEDEX"
+                        "hosted_item": "POKEDEX_hosted"
                     },
                     {
                         "name": "Exp Share from Mr Pokemon",
@@ -1424,7 +1424,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_31"
                         ],
-                        "hosted_item": "EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST",
+                        "hosted_item": "EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -1434,7 +1434,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_GAVE_KENYA"
                         ],
-                        "hosted_item": "EVENT_GAVE_KENYA",
+                        "hosted_item": "EVENT_GAVE_KENYA_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -2045,7 +2045,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_GYM"
                         ],
-                        "hosted_item": "EVENT_BEAT_FALKNER",
+                        "hosted_item": "EVENT_BEAT_FALKNER_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -2081,7 +2081,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "ZEPHYR_BADGE"
+                        "hosted_item": "ZEPHYR_BADGE_hosted"
                     },
                     {
                         "name": "Gym - TM31 from Falkner",
@@ -2188,7 +2188,7 @@
                     },
                     {
                         "name": "Egg Collected",
-                        "hosted_item": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
+                        "hosted_item": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE_hosted",
                         "access_rules": [
                             "^$CanReach|EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
                         ],
@@ -2870,7 +2870,7 @@
                     },
                     {
                         "name": "Aerodactyl Room Puzzle Solved",
-                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_S_TO_W",
+                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_S_TO_W_hosted",
                         "access_rules": [
                             "^$CanReach|ENGINE_UNLOCKED_UNOWNS_S_TO_W"
                         ],
@@ -2983,7 +2983,7 @@
                     },
                     {
                         "name": "Ho-Oh Room Puzzle Solved",
-                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_X_TO_Z",
+                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_X_TO_Z_hosted",
                         "access_rules": [
                             "^$CanReach|ENGINE_UNLOCKED_UNOWNS_X_TO_Z"
                         ],
@@ -3159,7 +3159,7 @@
                     },
                     {
                         "name": "Kabuto Room Puzzle Solved",
-                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_A_TO_K",
+                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_A_TO_K_hosted",
                         "access_rules": [
                             "^$CanReach|ENGINE_UNLOCKED_UNOWNS_A_TO_K"
                         ],
@@ -3272,7 +3272,7 @@
                     },
                     {
                         "name": "Omanyte Room Puzzle Solved",
-                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_L_TO_R",
+                        "hosted_item": "ENGINE_UNLOCKED_UNOWNS_L_TO_R_hosted",
                         "access_rules": [
                             "^$CanReach|ENGINE_UNLOCKED_UNOWNS_L_TO_R"
                         ],
@@ -3363,7 +3363,7 @@
                     },
                     {
                         "name": "Research Center - Complete the Unown Dex",
-                        "hosted_item": "EVENT_GOT_ALL_UNOWN",
+                        "hosted_item": "EVENT_GOT_ALL_UNOWN_hosted",
                         "access_rules": [
                             "^$CanReach|EVENT_GOT_ALL_UNOWN"
                         ],
@@ -4899,7 +4899,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_SLOWPOKE_WELL_B1F, ^$dark|slowpokewell"
                         ],
-                        "hosted_item": "EVENT_CLEARED_SLOWPOKE_WELL",
+                        "hosted_item": "EVENT_CLEARED_SLOWPOKE_WELL_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -5033,14 +5033,14 @@
                         "visibility_rules": [
                             "show_items, berries_off, shopsanity_apricorn_true"
                         ],
-                        "hosted_item": "WHT_APRICORN"
+                        "hosted_item": "WHT_APRICORN_hosted"
                     },
                     {
                         "name": "Beat Rival in Azalea Town",
                         "access_rules": [
                             "^$CanReach|EVENT_BEAT_AZALEA_RIVAL"
                         ],
-                        "hosted_item": "EVENT_BEAT_AZALEA_RIVAL",
+                        "hosted_item": "EVENT_BEAT_AZALEA_RIVAL_hosted",
                         "visibility_rules": [
                             "show_events, goal_rival"
                         ]
@@ -5239,7 +5239,7 @@
                     },
                     {
                         "name": "Gym - Beat Bugsy",
-                        "hosted_item": "EVENT_BEAT_BUGSY",
+                        "hosted_item": "EVENT_BEAT_BUGSY_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_GYM"
                         ],
@@ -5275,7 +5275,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "HIVE_BADGE",
+                        "hosted_item": "HIVE_BADGE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_GYM"
                         ]
@@ -5397,7 +5397,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_KURTS_HOUSE"
                         ],
-                        "hosted_item": "EVENT_MET_KURT",
+                        "hosted_item": "EVENT_MET_KURT_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -5408,7 +5408,7 @@
                             "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_BEAT_AZALEA_RIVAL, dark_ilexforest_true, $can_use_flash|johto",
                             "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_BEAT_AZALEA_RIVAL, dark_ilexforest_false"
                         ],
-                        "hosted_item": "EVENT_KURT_RETURNED_GS_BALL",
+                        "hosted_item": "EVENT_KURT_RETURNED_GS_BALL_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -5705,7 +5705,7 @@
                     },
                     {
                         "name": "Herded Farfetch'd",
-                        "hosted_item": "EVENT_HERDED_FARFETCHD",
+                        "hosted_item": "EVENT_HERDED_FARFETCHD_hosted",
                         "access_rules": [
                             "^$CanReach|EVENT_HERDED_FARFETCHD, ^$dark|ilexforest"
                         ],
@@ -6227,7 +6227,7 @@
                     },
                     {
                         "name": "Odd Egg Collected",
-                        "hosted_item": "EVENT_GOT_ODD_EGG",
+                        "hosted_item": "EVENT_GOT_ODD_EGG_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_DAY_CARE, ^$static_encounter"
                         ],
@@ -7288,7 +7288,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_GYM"
                         ],
-                        "hosted_item": "EVENT_BEAT_WHITNEY",
+                        "hosted_item": "EVENT_BEAT_WHITNEY_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -7324,7 +7324,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "PLAIN_BADGE"
+                        "hosted_item": "PLAIN_BADGE_hosted"
                     },
                     {
                         "name": "Gym - TM45 from Whitney",
@@ -7670,7 +7670,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES"
                         ],
-                        "hosted_item": "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL",
+                        "hosted_item": "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL_hosted",
                         "visibility_rules": [
                             "show_events, goal_rival"
                         ]
@@ -8002,7 +8002,7 @@
                         "visibility_rules": [
                             "show_items, pokegear_off"
                         ],
-                        "hosted_item": "RADIO_CARD"
+                        "hosted_item": "RADIO_CARD_hosted"
                     },
                     {
                         "name": "1F - Grunt",
@@ -8298,7 +8298,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER"
                         ],
-                        "hosted_item": "EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER",
+                        "hosted_item": "EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -8524,7 +8524,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_5F:EAST:TAKEOVER"
                         ],
-                        "hosted_item": "EVENT_CLEARED_RADIO_TOWER",
+                        "hosted_item": "EVENT_CLEARED_RADIO_TOWER_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -8576,7 +8576,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_5F:WEST:TAKEOVER"
                         ],
-                        "hosted_item": "EVENT_BEAT_ROCKET_EXECUTIVEM_3",
+                        "hosted_item": "EVENT_BEAT_ROCKET_EXECUTIVEM_3_hosted",
                         "visibility_rules": [
                             "show_events, goal_rocket"
                         ]
@@ -8984,7 +8984,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_35_GOLDENROD_GATE"
                         ],
-                        "hosted_item": "EVENT_GOT_KENYA",
+                        "hosted_item": "EVENT_GOT_KENYA_hosted",
                         "visibility_rules": [
                             "show_events",
                             "show_mons"
@@ -9445,7 +9445,7 @@
                     },
                     {
                         "name": "Saw Suicune on Route 36 (Event)",
-                        "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_36",
+                        "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_36_hosted",
                         "visibility_rules": [
                             "show_events"
                         ],
@@ -9785,7 +9785,7 @@
                         "visibility_rules": [
                             "show_items, berries_off, shopsanity_apricorn_true"
                         ],
-                        "hosted_item": "RED_APRICORN"
+                        "hosted_item": "RED_APRICORN_hosted"
                     },
                     {
                         "name": "Blue Apricorn from Apricorn Tree",
@@ -9795,7 +9795,7 @@
                         "visibility_rules": [
                             "show_items, berries_off, shopsanity_apricorn_true"
                         ],
-                        "hosted_item": "BLU_APRICORN"
+                        "hosted_item": "BLU_APRICORN_hosted"
                     },
                     {
                         "name": "Black Apricorn from Apricorn Tree",
@@ -9805,7 +9805,7 @@
                         "visibility_rules": [
                             "show_items, berries_off, shopsanity_apricorn_true"
                         ],
-                        "hosted_item": "BLK_APRICORN"
+                        "hosted_item": "BLK_APRICORN_hosted"
                     },
                     {
                         "name": "Magnet from Sunny",
@@ -10340,7 +10340,7 @@
                     },
                     {
                         "name": "Gym - Beat Morty",
-                        "hosted_item": "EVENT_BEAT_MORTY",
+                        "hosted_item": "EVENT_BEAT_MORTY_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_GYM:INTERIOR"
                         ],
@@ -10376,7 +10376,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "FOG_BADGE",
+                        "hosted_item": "FOG_BADGE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_GYM:INTERIOR"
                         ]
@@ -10487,7 +10487,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_POKECENTER_1F"
                         ],
-                        "hosted_item": "EVENT_MET_BILL",
+                        "hosted_item": "EVENT_MET_BILL_hosted",
                         "visibility_rules": [
                             "show_events, show_mons"
                         ]
@@ -10630,7 +10630,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_BURNED_TOWER_1F, ^$dark|burnedtower"
                         ],
-                        "hosted_item": "EVENT_RIVAL_BURNED_TOWER",
+                        "hosted_item": "EVENT_RIVAL_BURNED_TOWER_hosted",
                         "visibility_rules": [
                             "show_events, goal_rival"
                         ]
@@ -10661,7 +10661,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_BURNED_TOWER_B1F, ^$dark|burnedtower"
                         ],
-                        "hosted_item": "EVENT_RELEASED_THE_BEASTS",
+                        "hosted_item": "EVENT_RELEASED_THE_BEASTS_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -10874,7 +10874,7 @@
                     },
                     {
                         "name": "1F - Got Eon Mail from Eusine (Event)",
-                        "hosted_item": "EVENT_GOT_EON_MAIL_FROM_EUSINE",
+                        "hosted_item": "EVENT_GOT_EON_MAIL_FROM_EUSINE_hosted",
                         "visibility_rules": [
                             "show_events"
                         ],
@@ -12416,7 +12416,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_39_BARN"
                         ],
-                        "hosted_item": "EVENT_HEALED_MOOMOO",
+                        "hosted_item": "EVENT_HEALED_MOOMOO_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -12733,7 +12733,7 @@
                     },
                     {
                         "name": "Gym - Beat Jasmine",
-                        "hosted_item": "EVENT_BEAT_JASMINE",
+                        "hosted_item": "EVENT_BEAT_JASMINE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_GYM:JASMINE"
                         ],
@@ -12772,7 +12772,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "MINERAL_BADGE"
+                        "hosted_item": "MINERAL_BADGE_hosted"
                     },
                     {
                         "name": "Gym - TM23 from Jasmine",
@@ -13425,7 +13425,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_6F, ^$dark|olivinelighthouse"
                         ],
-                        "hosted_item": "EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS",
+                        "hosted_item": "EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS_hosted",
                         "visibility_rules": [
                             "show_events, vanilla_chain_jasmine_on"
                         ]
@@ -13435,7 +13435,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_JASMINE_RETURNED_TO_GYM, ^$dark|olivinelighthouse"
                         ],
-                        "hosted_item": "EVENT_JASMINE_RETURNED_TO_GYM",
+                        "hosted_item": "EVENT_JASMINE_RETURNED_TO_GYM_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -15195,7 +15195,7 @@
                     },
                     {
                         "name": "Saw Suicune in Cianwood City (Event)",
-                        "hosted_item": "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY",
+                        "hosted_item": "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY_hosted",
                         "visibility_rules": [
                             "show_events"
                         ],
@@ -15402,7 +15402,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_CIANWOOD_GYM:STRENGTH"
                         ],
-                        "hosted_item": "EVENT_BEAT_CHUCK",
+                        "hosted_item": "EVENT_BEAT_CHUCK_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -15438,7 +15438,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "STORM_BADGE"
+                        "hosted_item": "STORM_BADGE_hosted"
                     },
                     {
                         "name": "Gym - TM01 from Chuck",
@@ -15674,7 +15674,7 @@
                     },
                     {
                         "name": "Saw Suicune on Route 42 (Event)",
-                        "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_42",
+                        "hosted_item": "EVENT_SAW_SUICUNE_ON_ROUTE_42_hosted",
                         "visibility_rules": [
                             "show_events"
                         ],
@@ -15723,7 +15723,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_42:CENTERFRUIT"
                         ],
-                        "hosted_item": "PNK_APRICORN"
+                        "hosted_item": "PNK_APRICORN_hosted"
                     },
                     {
                         "name": "Green Apricorn from Apricorn Tree",
@@ -15733,7 +15733,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_42:CENTERFRUIT"
                         ],
-                        "hosted_item": "GRN_APRICORN"
+                        "hosted_item": "GRN_APRICORN_hosted"
                     },
                     {
                         "name": "Yellow Apricorn from Apricorn Tree",
@@ -15743,7 +15743,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_42:CENTERFRUIT"
                         ],
-                        "hosted_item": "YLW_APRICORN"
+                        "hosted_item": "YLW_APRICORN_hosted"
                     },
                     {
                         "name": "Fisher Tully",
@@ -16972,7 +16972,7 @@
                     },
                     {
                         "name": "Gym - Beat Pryce",
-                        "hosted_item": "EVENT_BEAT_PRYCE",
+                        "hosted_item": "EVENT_BEAT_PRYCE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_MAHOGANY_GYM"
                         ],
@@ -17011,7 +17011,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "GLACIER_BADGE"
+                        "hosted_item": "GLACIER_BADGE_hosted"
                     },
                     {
                         "name": "Gym - TM16 from Pryce",
@@ -17385,7 +17385,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_TEAM_ROCKET_BASE_B2F:CENTER"
                         ],
-                        "hosted_item": "EVENT_CLEARED_ROCKET_HIDEOUT",
+                        "hosted_item": "EVENT_CLEARED_ROCKET_HIDEOUT_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -17521,7 +17521,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_TEAM_ROCKET_BASE_B3F:SOUTH"
                         ],
-                        "hosted_item": "EVENT_BEAT_ROCKET_GRUNTF_5",
+                        "hosted_item": "EVENT_BEAT_ROCKET_GRUNTF_5_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -17531,7 +17531,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_TEAM_ROCKET_BASE_B3F:SOUTH"
                         ],
-                        "hosted_item": "EVENT_BEAT_ROCKET_GRUNTM_28",
+                        "hosted_item": "EVENT_BEAT_ROCKET_GRUNTM_28_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -17584,7 +17584,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_TEAM_ROCKET_BASE_B3F:CENTER"
                         ],
-                        "hosted_item": "EVENT_LEARNED_HAIL_GIOVANNI",
+                        "hosted_item": "EVENT_LEARNED_HAIL_GIOVANNI_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -18174,7 +18174,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_DECIDED_TO_HELP_LANCE"
                         ],
-                        "hosted_item": "EVENT_DECIDED_TO_HELP_LANCE",
+                        "hosted_item": "EVENT_DECIDED_TO_HELP_LANCE_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -18853,7 +18853,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_1A, ^$dark|icepath"
                         ],
-                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_1A",
+                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_1A_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -18863,7 +18863,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_2A, ^$dark|icepath"
                         ],
-                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_2A",
+                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_2A_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -18947,7 +18947,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_3A, ^$dark|icepath"
                         ],
-                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_3A",
+                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_3A_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -18957,7 +18957,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_4A, ^$dark|icepath"
                         ],
-                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_4A",
+                        "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_4A_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -19592,7 +19592,7 @@
                     },
                     {
                         "name": "Gym - Beat Clair",
-                        "hosted_item": "EVENT_BEAT_CLAIR",
+                        "hosted_item": "EVENT_BEAT_CLAIR_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_GYM_1F:CLAIR"
                         ],
@@ -19631,7 +19631,7 @@
                         "visibility_rules": [
                             "show_items, badges_off, clair_behaviour_adult"
                         ],
-                        "hosted_item": "RISING_BADGE"
+                        "hosted_item": "RISING_BADGE_hosted"
                     },
                     {
                         "name": "Gym - TM24 from Clair",
@@ -19728,7 +19728,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_BLACKTHORN_GYM_1"
                         ],
-                        "hosted_item": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1",
+                        "hosted_item": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -19738,7 +19738,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_BLACKTHORN_GYM_3"
                         ],
-                        "hosted_item": "EVENT_BOULDER_IN_BLACKTHORN_GYM_3",
+                        "hosted_item": "EVENT_BOULDER_IN_BLACKTHORN_GYM_3_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -19894,7 +19894,7 @@
                         "visibility_rules": [
                             "show_items, badges_off, clair_behaviour_child"
                         ],
-                        "hosted_item": "RISING_BADGE"
+                        "hosted_item": "RISING_BADGE_hosted"
                     },
                     {
                         "name": "Dragon's Den B1F - TM24 from Clair",
@@ -21693,7 +21693,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_VICTORY_ROAD:3F, ^$dark|victoryroad"
                         ],
-                        "hosted_item": "EVENT_BEAT_VICTORY_ROAD_RIVAL",
+                        "hosted_item": "EVENT_BEAT_VICTORY_ROAD_RIVAL_hosted",
                         "visibility_rules": [
                             "show_events, goal_rival"
                         ]
@@ -21885,7 +21885,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_BRUNOS_ROOM"
                         ],
-                        "hosted_item": "EVENT_BEAT_ELITE_4_BRUNO",
+                        "hosted_item": "EVENT_BEAT_ELITE_4_BRUNO_hosted",
                         "visibility_rules": [
                             "show_events, lance_requires_elite_four_on"
                         ]
@@ -21953,7 +21953,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_INDIGO_PLATEAU_POKECENTER_1F:RIVAL"
                         ],
-                        "hosted_item": "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU",
+                        "hosted_item": "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU_hosted",
                         "visibility_rules": [
                             "show_events, goal_rival"
                         ]
@@ -21997,7 +21997,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_KARENS_ROOM"
                         ],
-                        "hosted_item": "EVENT_BEAT_ELITE_4_KAREN",
+                        "hosted_item": "EVENT_BEAT_ELITE_4_KAREN_hosted",
                         "visibility_rules": [
                             "show_events, lance_requires_elite_four_on"
                         ]
@@ -22041,7 +22041,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_KOGAS_ROOM"
                         ],
-                        "hosted_item": "EVENT_BEAT_ELITE_4_KOGA",
+                        "hosted_item": "EVENT_BEAT_ELITE_4_KOGA_hosted",
                         "visibility_rules": [
                             "show_events, lance_requires_elite_four_on"
                         ]
@@ -22086,7 +22086,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_HALL_OF_FAME"
                         ],
-                        "hosted_item": "EVENT_BEAT_ELITE_FOUR",
+                        "hosted_item": "EVENT_BEAT_ELITE_FOUR_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -22118,7 +22118,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_WILLS_ROOM"
                         ],
-                        "hosted_item": "EVENT_BEAT_ELITE_4_WILL",
+                        "hosted_item": "EVENT_BEAT_ELITE_4_WILL_hosted",
                         "visibility_rules": [
                             "show_events, lance_requires_elite_four_on"
                         ]
@@ -23129,7 +23129,7 @@
                     },
                     {
                         "name": "3F - Defeat Red",
-                        "hosted_item": "EVENT_BEAT_RED",
+                        "hosted_item": "EVENT_BEAT_RED_hosted",
                         "access_rules": [
                             "^$CanReach|EVENT_BEAT_RED"
                         ],
@@ -23544,7 +23544,7 @@
                     },
                     {
                         "name": "Gym - Beat Blue",
-                        "hosted_item": "EVENT_BEAT_BLUE",
+                        "hosted_item": "EVENT_BEAT_BLUE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_VIRIDIAN_GYM:BLUE"
                         ],
@@ -23583,7 +23583,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "EARTH_BADGE"
+                        "hosted_item": "EARTH_BADGE_hosted"
                     },
                     {
                         "name": "Gym - Left Statue Sign",
@@ -24670,7 +24670,7 @@
                     },
                     {
                         "name": "Gym - Beat Brock",
-                        "hosted_item": "EVENT_BEAT_BROCK",
+                        "hosted_item": "EVENT_BEAT_BROCK_hosted",
                         "visibility_rules": [
                             "show_events"
                         ],
@@ -24706,7 +24706,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "BOULDER_BADGE",
+                        "hosted_item": "BOULDER_BADGE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_GYM"
                         ]
@@ -25054,7 +25054,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_MOUNT_MOON, ^$dark|mountmoon"
                         ],
-                        "hosted_item": "EVENT_BEAT_RIVAL_IN_MT_MOON",
+                        "hosted_item": "EVENT_BEAT_RIVAL_IN_MT_MOON_hosted",
                         "visibility_rules": [
                             "show_events, trainersanity",
                             "show_events, $partial_trainersanity, trainersanity_301",
@@ -25671,7 +25671,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_GYM:ROCKET"
                         ],
-                        "hosted_item": "EVENT_MET_ROCKET_GRUNT_AT_CERULEAN_GYM",
+                        "hosted_item": "EVENT_MET_ROCKET_GRUNT_AT_CERULEAN_GYM_hosted",
                         "visibility_rules": [
                             "show_events, vanilla_chain_misty_on"
                         ]
@@ -25723,7 +25723,7 @@
                     },
                     {
                         "name": "Gym - Beat Misty",
-                        "hosted_item": "EVENT_BEAT_MISTY",
+                        "hosted_item": "EVENT_BEAT_MISTY_hosted",
                         "visibility_rules": [
                             "show_events"
                         ],
@@ -25759,7 +25759,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "CASCADE_BADGE",
+                        "hosted_item": "CASCADE_BADGE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_GYM:MISTY"
                         ]
@@ -26144,7 +26144,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_24:ROCKET"
                         ],
-                        "hosted_item": "EVENT_ROUTE_24_ROCKET",
+                        "hosted_item": "EVENT_ROUTE_24_ROCKET_hosted",
                         "visibility_rules": [
                             "show_events, goal_rocket"
                         ]
@@ -26420,7 +26420,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_25:MISTY_DATE"
                         ],
-                        "hosted_item": "EVENT_MISTY_RETURNED_TO_GYM",
+                        "hosted_item": "EVENT_MISTY_RETURNED_TO_GYM_hosted",
                         "visibility_rules": [
                             "show_events, vanilla_chain_misty_on"
                         ]
@@ -27183,7 +27183,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_POWER_PLANT"
                         ],
-                        "hosted_item": "EVENT_MET_MANAGER_AT_POWER_PLANT",
+                        "hosted_item": "EVENT_MET_MANAGER_AT_POWER_PLANT_hosted",
                         "visibility_rules": [
                             "show_events, vanilla_chain_misty_on"
                         ]
@@ -27193,7 +27193,7 @@
                         "access_rules": [
                             "^$CanReach|EVENT_RESTORED_POWER_TO_KANTO"
                         ],
-                        "hosted_item": "EVENT_RESTORED_POWER_TO_KANTO",
+                        "hosted_item": "EVENT_RESTORED_POWER_TO_KANTO_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -27683,7 +27683,7 @@
                         "visibility_rules": [
                             "show_items, pokegear_off"
                         ],
-                        "hosted_item": "EXPN_CARD"
+                        "hosted_item": "EXPN_CARD_hosted"
                     },
                     {
                         "name": "Radio Tower - Directory Sign",
@@ -28352,7 +28352,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_COPYCATS_HOUSE_2F"
                         ],
-                        "hosted_item": "EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM",
+                        "hosted_item": "EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM_hosted",
                         "visibility_rules": [
                             "show_events, vanilla_chain_copycat_on"
                         ]
@@ -28654,7 +28654,7 @@
                     },
                     {
                         "name": "Gym - Beat Sabrina",
-                        "hosted_item": "EVENT_BEAT_SABRINA",
+                        "hosted_item": "EVENT_BEAT_SABRINA_hosted",
                         "visibility_rules": [
                             "show_events"
                         ],
@@ -28688,7 +28688,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "MARSH_BADGE",
+                        "hosted_item": "MARSH_BADGE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_SAFFRON_GYM:CENTER"
                         ]
@@ -29713,7 +29713,7 @@
                     },
                     {
                         "name": "Gym - Beat Erika",
-                        "hosted_item": "EVENT_BEAT_ERIKA",
+                        "hosted_item": "EVENT_BEAT_ERIKA_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_GYM"
                         ],
@@ -29752,7 +29752,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "RAINBOW_BADGE"
+                        "hosted_item": "RAINBOW_BADGE_hosted"
                     },
                     {
                         "name": "Gym - TM19 from Erika",
@@ -29935,7 +29935,7 @@
                     },
                     {
                         "name": "Celadon Mansion 3F - Obtain Diploma",
-                        "hosted_item": "EVENT_OBTAINED_DIPLOMA",
+                        "hosted_item": "EVENT_OBTAINED_DIPLOMA_hosted",
                         "access_rules": [
                             "^$CanReach|EVENT_OBTAINED_DIPLOMA"
                         ],
@@ -30923,7 +30923,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_GYM"
                         ],
-                        "hosted_item": "EVENT_BEAT_LTSURGE",
+                        "hosted_item": "EVENT_BEAT_LTSURGE_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]
@@ -30948,7 +30948,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "THUNDER_BADGE"
+                        "hosted_item": "THUNDER_BADGE_hosted"
                     },
                     {
                         "name": "Gym - Thunder Badge from Lt. Surge",
@@ -32979,7 +32979,7 @@
                     },
                     {
                         "name": "Gym - Beat Janine",
-                        "hosted_item": "EVENT_BEAT_JANINE",
+                        "hosted_item": "EVENT_BEAT_JANINE_hosted",
                         "visibility_rules": [
                             "show_events"
                         ],
@@ -33015,7 +33015,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "SOUL_BADGE",
+                        "hosted_item": "SOUL_BADGE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_GYM"
                         ]
@@ -33377,7 +33377,7 @@
                 "sections": [
                     {
                         "name": "Gym - Beat Blaine",
-                        "hosted_item": "EVENT_BEAT_BLAINE",
+                        "hosted_item": "EVENT_BEAT_BLAINE_hosted",
                         "visibility_rules": [
                             "show_events"
                         ],
@@ -33413,7 +33413,7 @@
                         "visibility_rules": [
                             "show_items, badges_off"
                         ],
-                        "hosted_item": "VOLCANO_BADGE",
+                        "hosted_item": "VOLCANO_BADGE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_SEAFOAM_GYM"
                         ]
@@ -33470,7 +33470,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_CINNABAR_ISLAND"
                         ],
-                        "hosted_item": "EVENT_VIRIDIAN_GYM_BLUE",
+                        "hosted_item": "EVENT_VIRIDIAN_GYM_BLUE_hosted",
                         "visibility_rules": [
                             "show_events"
                         ]

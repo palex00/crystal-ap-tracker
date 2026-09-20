@@ -2,7 +2,9 @@ Tracker.AllowDeferredLogicUpdate = true
 
 -- Items
 Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/items_hosted.json")
 Tracker:AddItems("items/events.json")
+Tracker:AddItems("items/events_hosted.json")
 Tracker:AddItems("items/settings.json")
 Tracker:AddItems("items/settings_encevo.json")
 Tracker:AddItems("items/tools.json")
@@ -158,6 +160,13 @@ ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
 --ScriptHost:AddWatchForCode("goal", "goal", updateGoalLayout)
 --ScriptHost:AddWatchForCode("shopsanity_johtomarts", "shopsanity_johtomarts", toggleQuickSettings)
 --ScriptHost:AddWatchForCode("shopsanity_kantomarts", "shopsanity_kantomarts", toggleQuickSettings)
+
+for _, list in ipairs({HOSTED_EVENT_CODES, HOSTED_ITEM_CODES}) do
+    for _, code in ipairs(list) do
+        ScriptHost:AddWatchForCode(code .. "_hostsync", code, syncHostedFromBase)
+        ScriptHost:AddWatchForCode(code .. "_hosted", code .. "_hosted", syncBaseFromHosted)
+    end
+end
 
 -- ER category toggles -> refresh ER_CATEGORY_ENABLED for the CanReach detour
 for _, cat in ipairs(ER_CATEGORIES) do
