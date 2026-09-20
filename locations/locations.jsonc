@@ -28024,8 +28024,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_EAST_WEST_UNDERGROUND, ^$hid"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
                         "name": "East-West Underground Path - Hidden Nugget",
@@ -28035,8 +28035,8 @@
                         "access_rules": [
                             "^$CanReach|REGION_EAST_WEST_UNDERGROUND, ^$hid"
                         ],
-                        "chest_unopened_img": "images/placeholder.png",
-                        "chest_opened_img": "images/placeholder.png"
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
                     }
                 ],
                 "map_locations": [
