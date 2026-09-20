@@ -26,6 +26,18 @@ function table_contains(table, element)
     return false
 end
 
+function dedupe_list(t)
+    local seen = {}
+    local out = {}
+    for _, value in ipairs(t) do
+        if not seen[value] then
+            seen[value] = true
+            table.insert(out, value)
+        end
+    end
+    return out
+end
+
 function dump_table(o, depth)
     if depth == nil then
         depth = 0
@@ -46,6 +58,7 @@ function dump_table(o, depth)
         trap_weights_option = true,
         unown_signs = true,
         randomize_entrances = false,
+        er_pairings = true,
     }
 
     if type(o) == 'table' then

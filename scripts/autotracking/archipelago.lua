@@ -123,9 +123,13 @@ function onClear(slot_data)
 
     POKEMON_TO_LOCATIONS = {}
     
-    -- This appends Trades & BCC to region encounters slot data
-    REGION_ENCOUNTERS = slot_data.region_encounters
-    REGION_ENCOUNTERS["contest_encounters"] = slot_data.contest_encounters
+    -- we now need to dedupe the list so we get unique IDs in each region.
+    -- then we also dedupe contest_encounters and append them
+    REGION_ENCOUNTERS = {}
+    for region_key, dex_list in pairs(slot_data.region_encounters) do
+        REGION_ENCOUNTERS[region_key] = dedupe_list(dex_list)
+    end
+    REGION_ENCOUNTERS["contest_encounters"] = dedupe_list(slot_data.contest_encounters)
     for trade_key, trade_data in pairs(slot_data.trades) do
         REGION_ENCOUNTERS[trade_key] = { tonumber(trade_data.received) }
     end
