@@ -13055,7 +13055,7 @@
                             "show_items, randomize_rematches_true"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F, ^$phonecall, EVENT_CLEARED_RADIO_TOWER"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F, ^$dark|olivinelighthouse, ^$phonecall, EVENT_CLEARED_RADIO_TOWER"
                         ],
                         "chest_unopened_img": "images/trainers/rematch/sailor_radio.png",
                         "chest_opened_img": "images/trainers/rematch/sailor_bw_radio.png"

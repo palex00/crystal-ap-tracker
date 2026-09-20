@@ -438,14 +438,14 @@ function kantogymlock()
     end
 
     local snorlax = CanReach("REGION_VERMILION_CITY")
-    local hooh = CanReach("REGION_TIN_TOWER_9F:NORTH")
+    local hooh = CanReach("REGION_TIN_TOWER_ROOF")
     local lugia = CanReach("REGION_WHIRL_ISLAND_B2F:NORTH")
     local suicune = CanReach("REGION_TIN_TOWER_1F")
     local silvercave = CanReach("REGION_SILVER_CAVE_OUTSIDE")
     local victoryroad = CanReach("REGION_VICTORY_ROAD:1F:ENTRANCE")
 
     if (snorlax == AccessibilityLevel.Normal and clear_snorlax())
-    or hooh == AccessibilityLevel.Normal
+    or (hooh == AccessibilityLevel.Normal and has("RAINBOW_WING"))
     or (lugia == AccessibilityLevel.Normal and has("SILVER_WING"))
     or (suicune == AccessibilityLevel.Normal and has("CLEAR_BELL"))
     or silvercave == AccessibilityLevel.Normal
