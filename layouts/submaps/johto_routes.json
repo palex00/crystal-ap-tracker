@@ -1,0 +1,597 @@
+{
+    "johto_routes": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Route 29",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route29"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Route 46 Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route29Route46Gate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 30",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route30"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Berry House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route30BerryHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mr. Pokémon's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MrPokemonsHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 31",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route31"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Violet Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route31VioletGate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 32",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route32North",
+                                    "Route32South"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ruins of Alph Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route32RuinsOfAlphGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route32Pokecenter1F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 33",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route33"
+                    ]
+                }
+            },
+            {
+                "title": "Route 34",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route34"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ilex Forest Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route34IlexForestGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Day Care",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "DayCare"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 35",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route35"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Goldenrod Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route35GoldenrodGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "National Park Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route35NationalParkGate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 36",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route36"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ruins of Alph Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route36RuinsOfAlphGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "National Park Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route36NationalParkGate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 37",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route37"
+                    ]
+                }
+            },
+            {
+                "title": "Route 38",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route38"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ecruteak Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route38EcruteakGate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 39",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route39"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Barn",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route39Barn"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Farmhouse",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route39Farmhouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 40",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route40"
+                    ]
+                }
+            },
+            {
+                "title": "Route 41",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route41"
+                    ]
+                }
+            },
+            {
+                "title": "Route 42",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route42"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ecruteak Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route42EcruteakGate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 43",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route43"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mahogany Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route43MahoganyGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Scam Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route43Gate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Lake of Rage",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Outside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LakeOfRage"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Hidden Power House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LakeOfRageHiddenPowerHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Magikarp House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LakeOfRageMagikarpHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 44",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route44"
+                    ]
+                }
+            },
+            {
+                "title": "Route 45",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route45North",
+                        "Route45South"
+                    ]
+                }
+            },
+            {
+                "title": "Route 46",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route46"
+                    ]
+                }
+            },
+            {
+                "title": "Route 23",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Vanilla",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route23"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Restored",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route23Restored"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 26",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route26South",
+                                    "Route26North"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Heal House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route26HealHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Day of Week Sibling's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "DayOfWeekSiblingsHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 27",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route27"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Sandstorm House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route27SandstormHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 28",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route28"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Outside Silver Cave",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilverCaveOutside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilverCavePokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Steel Wing House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route28SteelWingHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Victory Road Gate",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "VictoryRoadGate"
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -3641,7 +3641,7 @@
                     {
                         "name": "Fisher Ralph Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 32/Fisher Ralph Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -4535,7 +4535,7 @@
                     {
                         "name": "Hiker Anthony Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 33/Hiker Anthony Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -5869,7 +5869,7 @@
                     {
                         "name": "Picnicker Gina Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 34/Picnicker Gina Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -5971,7 +5971,7 @@
                     {
                         "name": "Camper Todd Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 34/Camper Todd Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -8802,7 +8802,7 @@
                     {
                         "name": "Bug Catcher Arnie Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 35/Bug Catcher Arnie Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -9116,7 +9116,7 @@
                     {
                         "name": "Schoolboy Jack Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/National Park/Schoolboy Jack Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -9524,7 +9524,7 @@
                     {
                         "name": "Schoolboy Alan Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 36/Schoolboy Alan Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -11943,7 +11943,7 @@
                     {
                         "name": "Lass Dana Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 38/Lass Dana Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -12010,7 +12010,7 @@
                     {
                         "name": "Schoolboy Chad Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 38/Schoolboy Chad Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -13074,7 +13074,7 @@
                     {
                         "name": "2F - Sailor Huey Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -13087,7 +13087,7 @@
                         "chest_unopened_img": "images/gift/sailor_phonecall.png",
                         "chest_opened_img": "images/gift/sailor_phonecall_bw.png",
                         "visibility_rules": [
-                            "show_items, randomize_phone_call_items_on"
+                            "show_items, randomize_phone_call_items_on, johto_only_off"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F:POWER, ^$dark|olivinelighthouse"
@@ -15782,7 +15782,7 @@
                     {
                         "name": "Fisher Tully Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 42/Fisher Tully Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -17728,7 +17728,7 @@
                     {
                         "name": "Picnicker Tiffany Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true, randomize_pokemon_requests_true"
+                            "show_items, randomize_rematches_true, randomize_pokemon_requests_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 43/Picnicker Tiffany Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -17796,7 +17796,7 @@
                     {
                         "name": "Pokemaniac Brent Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 43/Pokemaniac Brent Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -18419,7 +18419,7 @@
                     {
                         "name": "Fisher Wilton Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 44/Fisher Wilton Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -18485,7 +18485,7 @@
                     {
                         "name": "Bird Keeper Vance Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 44/Bird Keeper Vance Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -20262,7 +20262,7 @@
                     {
                         "name": "Hiker Parry Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 45/Hiker Parry Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -20616,7 +20616,7 @@
                     {
                         "name": "Picnicker Erin Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 46/Picnicker Erin Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -20874,7 +20874,7 @@
                     {
                         "name": "Cool Trainer Reena Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 27/Cool Trainer Reena Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -20917,7 +20917,7 @@
                     {
                         "name": "Bird Keeper Jose Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 27/Bird Keeper Jose Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -21289,7 +21289,7 @@
                     {
                         "name": "Cool Trainer Gaven Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 26/Cool Trainer Gaven Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -21344,7 +21344,7 @@
                     {
                         "name": "Cool Trainer Beth Rematch - Kanto Power Restored",
                         "visibility_rules": [
-                            "show_items, randomize_rematches_true"
+                            "show_items, randomize_rematches_true, johto_only_off"
                         ],
                         "access_rules": [
                             "@JohtoKanto/Route 26/Cool Trainer Beth Rematch - Champion, EVENT_RESTORED_POWER_TO_KANTO"
@@ -21955,7 +21955,7 @@
                         ],
                         "hosted_item": "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU_hosted",
                         "visibility_rules": [
-                            "show_events, goal_rival"
+                            "show_events, goal_rival, johto_only_off"
                         ]
                     },
                     {

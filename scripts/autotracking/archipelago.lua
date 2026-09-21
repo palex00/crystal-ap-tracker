@@ -111,7 +111,7 @@ function onClear(slot_data)
         local rc_num = tonumber(version_str:match("%-rc%.(%d+)$")) -- remove before full release
 
         if first_two_dots == "6.0" and rc_num ~= nil then
-            Tracker:AddLayouts("layouts/tracker/tracker.json")
+            Tracker:AddLayouts("layouts/tracker/tracker_flyunlock_other.json")
         else
             Tracker:AddLayouts("layouts/versionmismatch.json")
             return

@@ -93,25 +93,31 @@ Tracker:AddLocations("locations/special_encounters.json")
 
 -- Layout
 ---- maps & locations
-Tracker:AddLayouts("layouts/dungeon_maps.json")
-Tracker:AddLayouts("layouts/tabs_single.json")
-Tracker:AddLayouts("layouts/overworld.json")
+Tracker:AddLayouts("layouts/submaps/johto_cities.json")
+Tracker:AddLayouts("layouts/submaps/johto_routes.json")
+Tracker:AddLayouts("layouts/submaps/johto_dungeons.json")
+Tracker:AddLayouts("layouts/submaps/fast_ship.json")
+Tracker:AddLayouts("layouts/submaps/kanto_cities.json")
+Tracker:AddLayouts("layouts/submaps/kanto_routes.json")
+Tracker:AddLayouts("layouts/submaps/kanto_dungeons.json")
+Tracker:AddLayouts("layouts/full/tabs_single.json")
+Tracker:AddLayouts("layouts/full/overworld.json")
 Tracker:AddLayouts("layouts/routing.json")
 
 ---- items
 Tracker:AddLayouts("layouts/tracker/tracker_flyunlock_other.json") -- maximum itemgrids
-Tracker:AddLayouts("layouts/items/items_max.json") -- debug for now, will be changed to dynamic later
+Tracker:AddLayouts("layouts/full/items.json") -- debug for now, will be changed to dynamic later
 Tracker:AddLayouts("layouts/items/encevo_max.json") -- debug for now, will be changed to dynamic later
 Tracker:AddLayouts("layouts/items/other_max.json") -- debug for now, will be changed to dynamic later
-Tracker:AddLayouts("layouts/items/flyunlocks.json") --static
-Tracker:AddLayouts("layouts/events/events_max.json") -- debug for now, will be changed to dynamic later
+Tracker:AddLayouts("layouts/full/flyunlocks.json") --static
+Tracker:AddLayouts("layouts/full/events.json") -- debug for now, will be changed to dynamic later
 
 ---- settings
-Tracker:AddLayouts("layouts/settings/settings.json") -- debug for now, will be changed to dynamic later
+Tracker:AddLayouts("layouts/full/settings.json") -- debug for now, will be changed to dynamic later
 Tracker:AddLayouts("layouts/settings/settings_encevo.json")
 Tracker:AddLayouts("layouts/settings/settings_popup.json") -- debug for now, will be changed to dynamic later
 Tracker:AddLayouts("layouts/tools/tools_max.json") -- debug for now, will be changed to dynamic later
-Tracker:AddLayouts("layouts/settings/settings_flydestinations.json") --static
+Tracker:AddLayouts("layouts/full/settings_flydestinations.json") --static
 
 ---- other
 Tracker:AddLayouts("layouts/levelinglogic.json")
@@ -124,11 +130,7 @@ Tracker:AddLayouts("layouts/dexcountsanity.json")
 ScriptHost:LoadScript("scripts/autotracking.lua")
 
 ---- Watches
---ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
---ScriptHost:AddWatchForCode("tea_guard", "tea_guard", toggle_johto)
---ScriptHost:AddWatchForCode("phone_calls_visible", "phone_calls_visible", toggle_johto)
---ScriptHost:AddWatchForCode("badges", "badges", toggle_johto)
---ScriptHost:AddWatchForCode("goal", "goal", toggle_johto)
+ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
 ScriptHost:AddWatchForCode("splitmap", "splitmap", toggle_splitmap)
 ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
 ScriptHost:AddWatchForCode("route_2_access", "route_2_access", toggle_route2)

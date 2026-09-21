@@ -1,0 +1,112 @@
+{
+    "kanto_dungeons": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Rock Tunnel",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Rock Tunnel 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RockTunnel1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Rock Tunnel B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RockTunnelB1F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Power Plant",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "PowerPlant"
+                    ]
+                }
+            },
+            {
+                "title": "Digletts Cave",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "DiglettsCave"
+                    ]
+                }
+            },
+            {
+                "title": "Underground Path",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "North-South",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "UndergroundPath"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "East-West",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EastWestUnderground"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Mount Moon",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Inside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMoon"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Square",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMoonSquare"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gift Shop",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMoonGiftShop"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

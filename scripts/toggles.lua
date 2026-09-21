@@ -1,71 +1,25 @@
+MODE_LAYOUTS = {
+    "items",
+    "overworld",
+    "events",
+    "flyunlocks",
+    "settings",
+    "settings_flydestinations"
+}
+
+function johto_mode()
+    return has("johto_only_off") and "full" or "johto_only"
+end
+
 function toggle_johto()
-    local coffee = has("coffee_west") or has("coffee_north") or has("coffee_east") or has("coffee_south")
-    local phone = has("phone_calls_visible")
+    local dir = johto_mode()
 
-    if has("johto_only_off") then
-        Tracker:AddMaps("maps/maps_johto_and_kanto.json")
-        Tracker:AddLayouts("layouts/overworld.json")
+    Tracker:AddMaps(dir == "full" and "maps/maps_johto_and_kanto.json" or "maps/maps_johto_only.json")
 
-        if has("goal_e4") then
-            Tracker:AddLayouts("layouts/events/events_e4.json")
-        elseif has("goal_red") then
-            Tracker:AddLayouts("layouts/events/events_red.json")
-        elseif has("goal_diploma") then
-            Tracker:AddLayouts("layouts/events/events_diploma.json")
-        elseif has("goal_rival") then
-            Tracker:AddLayouts("layouts/events/events_rival.json")
-        elseif has("goal_rocket") then
-            Tracker:AddLayouts("layouts/events/events_rocket.json")
-        elseif has("goal_unown") then
-            Tracker:AddLayouts("layouts/events/events_unown.json")
-        end
-
-        Tracker:AddLayouts("layouts/settings/settings.json")
-        Tracker:AddLayouts("layouts/flyunlocks.json")
-
-        if coffee and phone then
-            Tracker:AddLayouts("layouts/items/items.json")
-        elseif coffee and not phone then
-            Tracker:AddLayouts("layouts/items/items_no_phone.json")
-        elseif not coffee and not phone then
-            Tracker:AddLayouts("layouts/items/items_no_to_both.json")
-        elseif not coffee and phone then
-            Tracker:AddLayouts("layouts/items/items_no_tea.json")
-        end
-    else
-        local badges = has("badges_on")
-        if badges and phone then
-            Tracker:AddLayouts("layouts/johto_only/items.json")
-        elseif not badges and phone then
-            Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges.json")
-        elseif badges and not phone then
-            Tracker:AddLayouts("layouts/johto_only/items_no_phone.json")
-        elseif not badges and not phone then
-            Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges_and_no_phone.json")
-        end
-
-        Tracker:AddLayouts("layouts/johto_only/overworld.json")
-
-        if has("goal_e4") then
-            Tracker:AddLayouts("layouts/johto_only/events_e4.json")
-        elseif has("goal_red") then
-            Tracker:AddLayouts("layouts/johto_only/events_red.json")
-        elseif has("goal_rival") then
-            Tracker:AddLayouts("layouts/johto_only/events_rival.json")
-        elseif has("goal_rocket") then
-            Tracker:AddLayouts("layouts/johto_only/events_rocket.json")
-        end
-
-        if has("johto_only_on") then
-            Tracker:AddMaps("maps/maps_johto_no_silver.json")
-            Tracker:AddLayouts("layouts/johto_only/flyunlocks_no_silver.json")
-            Tracker:AddLayouts("layouts/johto_only/settings_johto_no_silver.json")
-        elseif has("johto_only_silver") then
-            Tracker:AddMaps("maps/maps_johto_only.json")
-            Tracker:AddLayouts("layouts/johto_only/flyunlocks.json")
-            Tracker:AddLayouts("layouts/johto_only/settings_johto_with_silver.json")
-        end
+    for _, name in ipairs(MODE_LAYOUTS) do
+        Tracker:AddLayouts("layouts/"..dir.."/"..name..".json")
     end
+
     toggle_splitmap()
 end
 
@@ -194,11 +148,6 @@ function toggle_floodedmine()
 end
 
 function toggle_splitmap()
-    local prefix = ""
-    if not has("johto_only_off") then
-        prefix = "johto_only/"
-    end
-
     local suffix = "_single"
     if has("splitmap_on") then
         suffix = "_split"
@@ -206,7 +155,7 @@ function toggle_splitmap()
         suffix = "_reverse"
     end
 
-    Tracker:AddLayouts("layouts/"..prefix.."tabs"..suffix..".json")
+    Tracker:AddLayouts("layouts/"..johto_mode().."/tabs"..suffix..".json")
 end
 
 function toggle_itemgrid()
