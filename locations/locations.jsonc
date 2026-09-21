@@ -76,7 +76,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_NEW_BARK_TOWN, ^$unownsign|NewBarkTown"
@@ -87,7 +87,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_NEW_BARK_TOWN, ^$unownsign|NewBarkTownElmsHouse"
@@ -98,7 +98,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_NEW_BARK_TOWN, ^$unownsign|NewBarkTownElmsLab"
@@ -109,7 +109,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_NEW_BARK_TOWN, ^$unownsign|NewBarkTownPlayersHouse"
@@ -162,7 +162,7 @@
                         "chest_opened_img": "images/gift/scientist_open.png"
                     },
                     {
-                        "name": "Elm's Lab - Give Mystery Egg to Elm",
+                        "name": "Elm's Lab - Give Mystery Egg to Elm (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_GAVE_MYSTERY_EGG_TO_ELM"
                         ],
@@ -509,7 +509,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_29, ^$unownsign|Route29Sign1"
@@ -520,7 +520,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_29, ^$unownsign|Route29Sign2"
@@ -721,13 +721,13 @@
                         "chest_opened_img": "images/gift/green_guy_open.png"
                     },
                     {
-                        "name": "Beat Rival in Cherrygrove City",
+                        "name": "Beat Rival in Cherrygrove City (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_BEAT_CHERRYGROVE_RIVAL"
                         ],
                         "hosted_item": "EVENT_BEAT_CHERRYGROVE_RIVAL_hosted",
                         "visibility_rules": [
-                            "show_events, goal_rival"
+                            "show_events, goal_rival_on"
                         ]
                     },
                     {
@@ -758,7 +758,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CHERRYGROVE_CITY, ^$unownsign|CherrygroveCity"
@@ -769,7 +769,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CHERRYGROVE_CITY, ^$unownsign|CherrygroveCityMart"
@@ -780,7 +780,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CHERRYGROVE_CITY, ^$unownsign|CherrygroveCityPokecenter"
@@ -791,7 +791,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CHERRYGROVE_CITY, ^$unownsign|GuideGentsHouse"
@@ -1089,7 +1089,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_30, ^$unownsign|Route30"
@@ -1100,7 +1100,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_30, ^$unownsign|MrPokemonsHouseDirections"
@@ -1111,7 +1111,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_30, ^$unownsign|MrPokemonsHouse"
@@ -1122,7 +1122,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_30:NORTHWEST, ^$unownsign|Route30TrainerTips"
@@ -1205,7 +1205,7 @@
                         ]
                     },
                     {
-                        "name": "Meet Mr. Pokemon",
+                        "name": "Meet Mr. Pokemon (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_MR_POKEMONS_HOUSE"
                         ],
@@ -1420,17 +1420,17 @@
                         ]
                     },
                     {
-                        "name": "Your mom calls you",
+                        "name": "Your mom calls you (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_31"
                         ],
                         "hosted_item": "EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST_hosted",
                         "visibility_rules": [
-                            "show_events"
+                            "show_events, momsanity_on"
                         ]
                     },
                     {
-                        "name": "Deliver Kenya",
+                        "name": "Deliver Kenya (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_GAVE_KENYA"
                         ],
@@ -1481,7 +1481,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_31, ^$unownsign|DarkCave"
@@ -1492,7 +1492,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_31, ^$unownsign|Route31"
@@ -1931,7 +1931,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_CITY, ^$unownsign|EarlsPokemonAcademy"
@@ -1942,7 +1942,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_CITY, ^$unownsign|SproutTower"
@@ -1953,7 +1953,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_CITY, ^$unownsign|VioletCity"
@@ -1964,7 +1964,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_CITY, ^$unownsign|VioletCityMart"
@@ -1975,7 +1975,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_CITY, ^$unownsign|VioletCityPokecenter"
@@ -1986,7 +1986,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_CITY, ^$unownsign|VioletGym"
@@ -2041,7 +2041,7 @@
                         "chest_opened_img": "images/trainers/blue_dude_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Falkner",
+                        "name": "Gym - Beat Falkner (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_GYM"
                         ],
@@ -2099,7 +2099,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_GYM, ^$unownsign|VioletGymStatueLeft"
@@ -2110,7 +2110,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_GYM, ^$unownsign|VioletGymStatueRight"
@@ -2187,13 +2187,13 @@
                         ]
                     },
                     {
-                        "name": "Egg Collected",
+                        "name": "Egg Collected (Event)",
                         "hosted_item": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE_hosted",
                         "access_rules": [
                             "^$CanReach|EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
                         ],
                         "visibility_rules": [
-                            "show_events, r32_guy_egg",
+                            "show_events",
                             "show_mons"
                         ]
                     },
@@ -2742,7 +2742,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE, ^$unownsign|RuinsOfAlph"
@@ -2753,7 +2753,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE, ^$unownsign|RuinsOfAlphOutsideMysteryChamber"
@@ -2764,7 +2764,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RUINS_OF_ALPH_OUTSIDE, ^$unownsign|RuinsOfAlphResearchCenter"
@@ -2869,14 +2869,14 @@
                         ]
                     },
                     {
-                        "name": "Aerodactyl Room Puzzle Solved",
+                        "name": "Aerodactyl Room Puzzle Solved (Event)",
                         "hosted_item": "ENGINE_UNLOCKED_UNOWNS_S_TO_W_hosted",
                         "access_rules": [
                             "^$CanReach|ENGINE_UNLOCKED_UNOWNS_S_TO_W"
                         ],
                         "visibility_rules": [
-                            "show_signs, goal_unown",
-                            "show_events, goal_unown"
+                            "show_signs, goal_unown_on",
+                            "show_events, goal_unown_on"
                         ]
                     },
                     {
@@ -2982,14 +2982,14 @@
                         ]
                     },
                     {
-                        "name": "Ho-Oh Room Puzzle Solved",
+                        "name": "Ho-Oh Room Puzzle Solved (Event)",
                         "hosted_item": "ENGINE_UNLOCKED_UNOWNS_X_TO_Z_hosted",
                         "access_rules": [
                             "^$CanReach|ENGINE_UNLOCKED_UNOWNS_X_TO_Z"
                         ],
                         "visibility_rules": [
-                            "show_signs, goal_unown",
-                            "show_events, goal_unown"
+                            "show_signs, goal_unown_on",
+                            "show_events, goal_unown_on"
                         ]
                     },
                     {
@@ -3158,14 +3158,14 @@
                         ]
                     },
                     {
-                        "name": "Kabuto Room Puzzle Solved",
+                        "name": "Kabuto Room Puzzle Solved (Event)",
                         "hosted_item": "ENGINE_UNLOCKED_UNOWNS_A_TO_K_hosted",
                         "access_rules": [
                             "^$CanReach|ENGINE_UNLOCKED_UNOWNS_A_TO_K"
                         ],
                         "visibility_rules": [
-                            "show_signs, goal_unown",
-                            "show_events, goal_unown"
+                            "show_signs, goal_unown_on",
+                            "show_events, goal_unown_on"
                         ]
                     },
                     {
@@ -3271,14 +3271,14 @@
                         ]
                     },
                     {
-                        "name": "Omanyte Room Puzzle Solved",
+                        "name": "Omanyte Room Puzzle Solved (Event)",
                         "hosted_item": "ENGINE_UNLOCKED_UNOWNS_L_TO_R_hosted",
                         "access_rules": [
                             "^$CanReach|ENGINE_UNLOCKED_UNOWNS_L_TO_R"
                         ],
                         "visibility_rules": [
-                            "show_signs, goal_unown",
-                            "show_events, goal_unown"
+                            "show_signs, goal_unown_on",
+                            "show_events, goal_unown_on"
                         ]
                     },
                     {
@@ -3362,14 +3362,14 @@
                         ]
                     },
                     {
-                        "name": "Research Center - Complete the Unown Dex",
+                        "name": "Research Center - Complete the Unown Dex (Event)",
                         "hosted_item": "EVENT_GOT_ALL_UNOWN_hosted",
                         "access_rules": [
                             "^$CanReach|EVENT_GOT_ALL_UNOWN"
                         ],
                         "visibility_rules": [
-                            "show_signs, goal_unown",
-                            "show_events, goal_unown"
+                            "show_signs, goal_unown_on",
+                            "show_events, goal_unown_on"
                         ]
                     }
                 ],
@@ -3726,7 +3726,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_32:NORTH, ^$unownsign|Route32"
@@ -3737,7 +3737,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_32:NORTH, ^$unownsign|Route32Ruins"
@@ -3748,7 +3748,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_32:SOUTH, ^$unownsign|Route32Pokecenter"
@@ -3759,7 +3759,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_32:SOUTH, ^$unownsign|Route32UnionCave"
@@ -4574,7 +4574,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_33, ^$unownsign|Route33"
@@ -4895,7 +4895,7 @@
                         "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
-                        "name": "B1F - Cleared Slowpoke Well",
+                        "name": "B1F - Cleared Slowpoke Well (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_SLOWPOKE_WELL_B1F, ^$dark|slowpokewell"
                         ],
@@ -5036,13 +5036,14 @@
                         "hosted_item": "WHT_APRICORN_hosted"
                     },
                     {
-                        "name": "Beat Rival in Azalea Town",
+                        "name": "Beat Rival in Azalea Town (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_BEAT_AZALEA_RIVAL"
                         ],
                         "hosted_item": "EVENT_BEAT_AZALEA_RIVAL_hosted",
                         "visibility_rules": [
-                            "show_events, goal_rival"
+                            "show_events, show_mons",
+                            "show_events, goal_rival_on"
                         ]
                     },
                     {
@@ -5073,7 +5074,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_TOWN, ^$unownsign|AzaleaGym"
@@ -5084,7 +5085,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_TOWN, ^$unownsign|AzaleaTown"
@@ -5095,7 +5096,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_TOWN, ^$unownsign|AzaleaTownIlexForest"
@@ -5106,7 +5107,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_TOWN, ^$unownsign|AzaleaTownMart"
@@ -5117,7 +5118,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_TOWN, ^$unownsign|AzaleaTownPokecenter"
@@ -5128,7 +5129,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_TOWN, ^$unownsign|CharcoalKiln"
@@ -5139,7 +5140,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_TOWN, ^$unownsign|KurtsHouse"
@@ -5150,7 +5151,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_TOWN, ^$unownsign|SlowpokeWell"
@@ -5238,7 +5239,7 @@
                         "chest_opened_img": "images/trainers/bug_catcher_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Bugsy",
+                        "name": "Gym - Beat Bugsy (Event)",
                         "hosted_item": "EVENT_BEAT_BUGSY_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_GYM"
@@ -5296,7 +5297,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_GYM, ^$unownsign|AzaleaGymStatueLeft"
@@ -5307,7 +5308,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_AZALEA_GYM, ^$unownsign|AzaleaGymStatueRight"
@@ -5393,7 +5394,7 @@
                         "chest_opened_img": "images/gift/kurt_open.png"
                     },
                     {
-                        "name": "Kurt's House - Meet Kurt",
+                        "name": "Kurt's House - Meet Kurt (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_KURTS_HOUSE"
                         ],
@@ -5403,14 +5404,14 @@
                         ]
                     },
                     {
-                        "name": "Kurt's House - Have Kurt investigate the GS Ball",
+                        "name": "Kurt's House - Have Kurt investigate the GS Ball (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_BEAT_AZALEA_RIVAL, dark_ilexforest_true, $can_use_flash|johto",
                             "^$CanReach|REGION_KURTS_HOUSE, GS_BALL, EVENT_BEAT_AZALEA_RIVAL, dark_ilexforest_false"
                         ],
                         "hosted_item": "EVENT_KURT_RETURNED_GS_BALL_hosted",
                         "visibility_rules": [
-                            "show_events"
+                            "show_events, show_mons"
                         ]
                     },
                     {
@@ -5621,7 +5622,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ILEX_FOREST:NORTH, ^$unownsign|IlexForest, ^$dark|ilexforest"
@@ -5704,7 +5705,7 @@
                         ]
                     },
                     {
-                        "name": "Herded Farfetch'd",
+                        "name": "Herded Farfetch'd (Event)",
                         "hosted_item": "EVENT_HERDED_FARFETCHD_hosted",
                         "access_rules": [
                             "^$CanReach|EVENT_HERDED_FARFETCHD, ^$dark|ilexforest"
@@ -6077,7 +6078,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_34, ^$unownsign|DayCare"
@@ -6088,7 +6089,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_34, ^$unownsign|Route34"
@@ -6099,7 +6100,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_34, ^$unownsign|Route34TrainerTips"
@@ -6226,7 +6227,7 @@
                         ]
                     },
                     {
-                        "name": "Odd Egg Collected",
+                        "name": "Odd Egg Collected (Event)",
                         "hosted_item": "EVENT_GOT_ODD_EGG_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_DAY_CARE, ^$static_encounter"
@@ -6438,7 +6439,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodCity"
@@ -6449,7 +6450,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodCityBikeShop"
@@ -6460,7 +6461,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodCityFlowerShop"
@@ -6471,7 +6472,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodCityGameCorner"
@@ -6482,7 +6483,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodCityNameRater"
@@ -6493,7 +6494,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodCityPokecenter"
@@ -6504,7 +6505,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodCityRadioTower"
@@ -6515,7 +6516,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodCityStation"
@@ -6526,7 +6527,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodCityUndergroundNorth"
@@ -6537,7 +6538,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodCityUndergroundSouth"
@@ -6548,7 +6549,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodDeptStore"
@@ -6559,7 +6560,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_CITY, ^$unownsign|GoldenrodGym"
@@ -6647,7 +6648,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_DEPT_STORE_1F, ^$unownsign|GoldenrodDeptStore1FDirectory"
@@ -6728,7 +6729,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_DEPT_STORE_2F, ^$unownsign|GoldenrodDeptStore2FDirectory"
@@ -6796,7 +6797,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_DEPT_STORE_3F, ^$unownsign|GoldenrodDeptStore3FDirectory"
@@ -6864,7 +6865,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_DEPT_STORE_4F, ^$unownsign|GoldenrodDeptStore4FDirectory"
@@ -6967,7 +6968,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_DEPT_STORE_5F, ^$unownsign|GoldenrodDeptStore5FDirectory"
@@ -7035,7 +7036,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_DEPT_STORE_6F, ^$unownsign|GoldenrodDeptStore6FDirectory"
@@ -7284,7 +7285,7 @@
                         "chest_opened_img": "images/trainers/lass_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Whitney",
+                        "name": "Gym - Beat Whitney (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_GYM"
                         ],
@@ -7342,7 +7343,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_GYM, ^$unownsign|GoldenrodGymStatueLeft"
@@ -7353,7 +7354,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_GYM, ^$unownsign|GoldenrodGymStatueRight"
@@ -7615,7 +7616,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_UNDERGROUND, ^$unownsign|GoldenrodUndergroundNoEntrySign, ^$dark|goldenrodunderground"
@@ -7666,13 +7667,13 @@
                         ]
                     },
                     {
-                        "name": "B2F - Beat Rival in Goldenrod Underground",
+                        "name": "B2F - Beat Rival in Goldenrod Underground (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES"
                         ],
                         "hosted_item": "EVENT_BEAT_GOLDENROD_UNDERGROUND_RIVAL_hosted",
                         "visibility_rules": [
-                            "show_events, goal_rival"
+                            "show_events, goal_rival_on"
                         ]
                     },
                     {
@@ -8054,7 +8055,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_1F, ^$unownsign|RadioTower1FDirectory"
@@ -8065,7 +8066,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_1F, ^$unownsign|RadioTower1FLuckyChannelSign"
@@ -8196,7 +8197,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_2F, ^$unownsign|RadioTower2FOaksPKMNTalkSign"
@@ -8207,7 +8208,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_2F, ^$unownsign|RadioTower2FPokemonRadioSign"
@@ -8218,7 +8219,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_2F, ^$unownsign|RadioTower2FSalesSign"
@@ -8294,13 +8295,13 @@
                         "chest_opened_img": "images/gift/radio_tower_woman_open.png"
                     },
                     {
-                        "name": "3F - Open the Card Key Gate",
+                        "name": "3F - Open the Card Key Gate (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER"
                         ],
                         "hosted_item": "EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER_hosted",
                         "visibility_rules": [
-                            "show_events"
+                            "show_events, er_dungeon_interior_on"
                         ]
                     },
                     {
@@ -8308,7 +8309,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_3F, ^$unownsign|RadioTower3FPersonnelSign"
@@ -8319,7 +8320,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_3F, ^$unownsign|RadioTower3FPokemonMusicSign"
@@ -8410,7 +8411,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_4F:EAST, ^$unownsign|RadioTower4FStudio2Sign"
@@ -8467,7 +8468,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_4F:WEST, ^$unownsign|RadioTower4FProductionSign"
@@ -8520,7 +8521,7 @@
                         "chest_opened_img": "images/gift/gentleman_open.png"
                     },
                     {
-                        "name": "5F - Clear Radio Tower",
+                        "name": "5F - Clear Radio Tower (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_5F:EAST:TAKEOVER"
                         ],
@@ -8543,7 +8544,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_5F:EAST, ^$unownsign|RadioTower5FStudioLeftSign"
@@ -8554,7 +8555,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_5F:EAST, ^$unownsign|RadioTower5FStudioRightSign"
@@ -8572,13 +8573,13 @@
                         ]
                     },
                     {
-                        "name": "5F - Unmask the False Director",
+                        "name": "5F - Unmask the False Director (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_5F:WEST:TAKEOVER"
                         ],
                         "hosted_item": "EVENT_BEAT_ROCKET_EXECUTIVEM_3_hosted",
                         "visibility_rules": [
-                            "show_events, goal_rocket"
+                            "show_events, goal_rocket_on"
                         ]
                     },
                     {
@@ -8609,7 +8610,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_RADIO_TOWER_5F:WEST, ^$unownsign|RadioTower5FDirectorsOfficeSign"
@@ -8862,7 +8863,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_35, ^$unownsign|Route35North"
@@ -8873,7 +8874,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_35, ^$unownsign|Route35South"
@@ -8980,7 +8981,7 @@
                         ]
                     },
                     {
-                        "name": "Collect Kenya",
+                        "name": "Collect Kenya (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_35_GOLDENROD_GATE"
                         ],
@@ -9262,7 +9263,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_35_NATIONAL_PARK_GATE:BIKE, ^$unownsign|Route35BugCatchingContestExplanationSign"
@@ -9273,7 +9274,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_NATIONAL_PARK, ^$unownsign|NationalParkBattleNotice"
@@ -9284,7 +9285,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_NATIONAL_PARK, ^$unownsign|NationalParkRelaxationSquare"
@@ -9295,7 +9296,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_NATIONAL_PARK, ^$unownsign|NationalParkTrainerTips"
@@ -9306,7 +9307,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_36_NATIONAL_PARK_GATE, ^$unownsign|Route36BugCatchingContextExplanationSign"
@@ -9598,7 +9599,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_36:EAST, ^$unownsign|Route36"
@@ -9609,7 +9610,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_36:EAST, ^$unownsign|RuinsOfAlphNorth"
@@ -9620,7 +9621,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_36:WEST, ^$unownsign|Route36TrainerTips1"
@@ -9631,7 +9632,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_37, ^$unownsign|Route36TrainerTips2"
@@ -9884,7 +9885,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_37, ^$unownsign|Route37"
@@ -10123,7 +10124,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_CITY, ^$unownsign|BurnedTower"
@@ -10134,7 +10135,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_CITY, ^$unownsign|EcruteakCity"
@@ -10145,7 +10146,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_CITY, ^$unownsign|EcruteakCityMart"
@@ -10156,7 +10157,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_CITY, ^$unownsign|EcruteakCityPokecenter"
@@ -10167,7 +10168,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_CITY, ^$unownsign|EcruteakDanceTheater"
@@ -10178,7 +10179,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_CITY, ^$unownsign|EcruteakGym"
@@ -10339,7 +10340,7 @@
                         "chest_opened_img": "images/trainers/medium_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Morty",
+                        "name": "Gym - Beat Morty (Event)",
                         "hosted_item": "EVENT_BEAT_MORTY_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_GYM:INTERIOR"
@@ -10397,7 +10398,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_GYM:INTERIOR, ^$unownsign|EcruteakGymStatueLeft"
@@ -10408,7 +10409,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_GYM:INTERIOR, ^$unownsign|EcruteakGymStatueRight"
@@ -10483,7 +10484,7 @@
                         ]
                     },
                     {
-                        "name": "Met Bill",
+                        "name": "Met Bill (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_POKECENTER_1F"
                         ],
@@ -10626,13 +10627,13 @@
                         "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
-                        "name": "1F - Beat Rival in Burned Tower",
+                        "name": "1F - Beat Rival in Burned Tower (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_BURNED_TOWER_1F, ^$dark|burnedtower"
                         ],
                         "hosted_item": "EVENT_RIVAL_BURNED_TOWER_hosted",
                         "visibility_rules": [
-                            "show_events, goal_rival"
+                            "show_events, goal_rival_on"
                         ]
                     },
                     {
@@ -10657,7 +10658,7 @@
                         ]
                     },
                     {
-                        "name": "B1F - Released the Beasts",
+                        "name": "B1F - Released the Beasts (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_BURNED_TOWER_B1F, ^$dark|burnedtower"
                         ],
@@ -10833,7 +10834,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL, ^$unownsign|TinTower"
@@ -12061,7 +12062,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_38, ^$unownsign|Route38"
@@ -12072,7 +12073,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_38, ^$unownsign|Route38TrainerTips"
@@ -12320,7 +12321,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_39, ^$unownsign|MoomooFarm"
@@ -12331,7 +12332,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_39, ^$unownsign|Route39"
@@ -12342,7 +12343,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_39, ^$unownsign|Route39TrainerTips"
@@ -12412,7 +12413,7 @@
                         ]
                     },
                     {
-                        "name": "Moomoo Farm Barn - Heal Moomoo",
+                        "name": "Moomoo Farm Barn - Heal Moomoo (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_39_BARN"
                         ],
@@ -12591,7 +12592,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_CITY, ^$unownsign|OlivineCity"
@@ -12602,7 +12603,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_CITY, ^$unownsign|OlivineCityBattleTower"
@@ -12613,7 +12614,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_CITY, ^$unownsign|OlivineCityMart"
@@ -12624,7 +12625,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_CITY, ^$unownsign|OlivineCityPokecenter"
@@ -12635,7 +12636,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_CITY, ^$unownsign|OlivineCityPort"
@@ -12646,7 +12647,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_CITY, ^$unownsign|OlivineGym"
@@ -12657,7 +12658,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_CITY, ^$unownsign|OlivineLighthouse"
@@ -12732,7 +12733,7 @@
                         ]
                     },
                     {
-                        "name": "Gym - Beat Jasmine",
+                        "name": "Gym - Beat Jasmine (Event)",
                         "hosted_item": "EVENT_BEAT_JASMINE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_GYM:JASMINE"
@@ -12790,7 +12791,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_GYM, ^$unownsign|OlivineGymStatueLeft"
@@ -12801,7 +12802,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_GYM, ^$unownsign|OlivineGymStatueRight"
@@ -13421,7 +13422,7 @@
                         ]
                     },
                     {
-                        "name": "6F - Jasmine explains Amphy's sickness",
+                        "name": "6F - Jasmine explains Amphy's sickness (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_6F, ^$dark|olivinelighthouse"
                         ],
@@ -13431,7 +13432,7 @@
                         ]
                     },
                     {
-                        "name": "6F - Heal Amphy",
+                        "name": "6F - Heal Amphy (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_JASMINE_RETURNED_TO_GYM, ^$dark|olivinelighthouse"
                         ],
@@ -13913,7 +13914,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BATTLE_TOWER_OUTSIDE, ^$unownsign|BattleTowerOutside"
@@ -13924,7 +13925,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_40, ^$unownsign|Route40"
@@ -15264,7 +15265,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CIANWOOD_CITY, ^$unownsign|CianwoodCity"
@@ -15275,7 +15276,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CIANWOOD_CITY, ^$unownsign|CianwoodGym"
@@ -15286,7 +15287,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CIANWOOD_CITY, ^$unownsign|CianwoodPharmacy"
@@ -15297,7 +15298,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CIANWOOD_CITY, ^$unownsign|CianwoodPhotoStudio"
@@ -15308,7 +15309,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CIANWOOD_CITY, ^$unownsign|CianwoodPokecenter"
@@ -15319,7 +15320,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CIANWOOD_CITY, ^$unownsign|CianwoodPokeSeer"
@@ -15398,7 +15399,7 @@
                         "chest_opened_img": "images/trainers/blackbelt_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Chuck",
+                        "name": "Gym - Beat Chuck (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_CIANWOOD_GYM:STRENGTH"
                         ],
@@ -15456,7 +15457,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CIANWOOD_GYM, ^$unownsign|CianwoodGymStatueLeft"
@@ -15467,7 +15468,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CIANWOOD_GYM, ^$unownsign|CianwoodGymStatueRight"
@@ -15856,7 +15857,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_42:WEST, ^$unownsign|Route42Sign1"
@@ -15867,7 +15868,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_42:WEST, ^$unownsign|MtMortarSign1"
@@ -15878,7 +15879,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_42:EAST, ^$unownsign|MtMortarSign2"
@@ -15889,7 +15890,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_42:EAST, ^$unownsign|Route42Sign2"
@@ -16860,7 +16861,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_MAHOGANY_TOWN, ^$unownsign|MahoganyGym"
@@ -16871,7 +16872,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_MAHOGANY_TOWN, ^$unownsign|MahoganyTown"
@@ -16882,7 +16883,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_MAHOGANY_TOWN, ^$unownsign|MahoganyTownPokecenter"
@@ -16893,7 +16894,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_MAHOGANY_TOWN, ^$unownsign|MahoganyTownRagecandybar"
@@ -16971,7 +16972,7 @@
                         "chest_opened_img": "images/trainers/boarder_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Pryce",
+                        "name": "Gym - Beat Pryce (Event)",
                         "hosted_item": "EVENT_BEAT_PRYCE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_MAHOGANY_GYM"
@@ -17029,7 +17030,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_MAHOGANY_GYM, ^$unownsign|MahoganyGymStatueLeft"
@@ -17040,7 +17041,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_MAHOGANY_GYM, ^$unownsign|MahoganyGymStatueRight"
@@ -17381,7 +17382,7 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B2F - Clear Rocket HQ",
+                        "name": "Rocket HQ B2F - Clear Rocket HQ (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_TEAM_ROCKET_BASE_B2F:CENTER"
                         ],
@@ -17517,7 +17518,7 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B3F - Learn the password SlowpokeTail",
+                        "name": "Rocket HQ B3F - Learn the password SlowpokeTail (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_TEAM_ROCKET_BASE_B3F:SOUTH"
                         ],
@@ -17527,7 +17528,7 @@
                         ]
                     },
                     {
-                        "name": "Rocket HQ B3F - Learn the password RaticateTail",
+                        "name": "Rocket HQ B3F - Learn the password RaticateTail (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_TEAM_ROCKET_BASE_B3F:SOUTH"
                         ],
@@ -17580,7 +17581,7 @@
                         "chest_opened_img": "images/trainers/rocket_m_bw.png"
                     },
                     {
-                        "name": "Rocket HQ B3F - Learn the password Hail Giovanni",
+                        "name": "Rocket HQ B3F - Learn the password Hail Giovanni (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_TEAM_ROCKET_BASE_B3F:CENTER"
                         ],
@@ -17847,7 +17848,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_43, ^$unownsign|Route43TrainerTips"
@@ -17858,7 +17859,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_43, ^$unownsign|Route43Sign1"
@@ -17869,7 +17870,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_43, ^$unownsign|Route43Sign2"
@@ -18170,7 +18171,7 @@
                         "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
-                        "name": "Help Lance",
+                        "name": "Help Lance (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_DECIDED_TO_HELP_LANCE"
                         ],
@@ -18195,7 +18196,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_LAKE_OF_RAGE, ^$unownsign|LakeOfRage"
@@ -18206,7 +18207,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_LAKE_OF_RAGE, ^$unownsign|MagikarpHouse"
@@ -18535,7 +18536,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_44, ^$unownsign|Route44Sign1"
@@ -18546,7 +18547,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_44, ^$unownsign|Route44Sign2"
@@ -18849,23 +18850,23 @@
                         ]
                     },
                     {
-                        "name": "B1F - Plug the north hole",
+                        "name": "B1F - Plug the north hole (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_1A, ^$dark|icepath"
                         ],
                         "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_1A_hosted",
                         "visibility_rules": [
-                            "show_events"
+                            "show_events, er_dungeon_interior_on"
                         ]
                     },
                     {
-                        "name": "B1F - Plug the center-west hole",
+                        "name": "B1F - Plug the center-west hole (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_2A, ^$dark|icepath"
                         ],
                         "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_2A_hosted",
                         "visibility_rules": [
-                            "show_events"
+                            "show_events, er_dungeon_interior_on"
                         ]
                     },
                     {
@@ -18943,23 +18944,23 @@
                         ]
                     },
                     {
-                        "name": "B1F - Plug the south-west hole",
+                        "name": "B1F - Plug the south-west hole (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_3A, ^$dark|icepath"
                         ],
                         "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_3A_hosted",
                         "visibility_rules": [
-                            "show_events"
+                            "show_events, er_dungeon_interior_on"
                         ]
                     },
                     {
-                        "name": "B1F - Plug the south-east hole",
+                        "name": "B1F - Plug the south-east hole (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_ICE_PATH_4A, ^$dark|icepath"
                         ],
                         "hosted_item": "EVENT_BOULDER_IN_ICE_PATH_4A_hosted",
                         "visibility_rules": [
-                            "show_events"
+                            "show_events, er_dungeon_interior_on"
                         ]
                     },
                     {
@@ -19379,7 +19380,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_CITY, ^$unownsign|BlackthornCity"
@@ -19390,7 +19391,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_CITY, ^$unownsign|BlackthornCityMart"
@@ -19401,7 +19402,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_CITY, ^$unownsign|BlackthornCityPokecenter"
@@ -19412,7 +19413,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_CITY, ^$unownsign|BlackthornCityTrainerTips"
@@ -19423,7 +19424,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_CITY, ^$unownsign|BlackthornGym"
@@ -19434,7 +19435,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_CITY, ^$unownsign|MoveDeletersHouse"
@@ -19445,7 +19446,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_CITY:DRAGONS_DEN_ENTRANCE, ^$unownsign|DragonDens"
@@ -19538,7 +19539,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_GYM_1F, ^$unownsign|BlackthornGymStatueLeft"
@@ -19549,7 +19550,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_GYM_1F, ^$unownsign|BlackthornGymStatueRight"
@@ -19591,7 +19592,7 @@
                         "chest_opened_img": "images/trainers/cool_trainer_f_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Clair",
+                        "name": "Gym - Beat Clair (Event)",
                         "hosted_item": "EVENT_BEAT_CLAIR_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_GYM_1F:CLAIR"
@@ -19724,23 +19725,23 @@
                         "chest_opened_img": "images/trainers/cool_trainer_m_bw.png"
                     },
                     {
-                        "name": "Gym - 2F - Push top-right boulder into hole",
+                        "name": "Gym - 2F - Push top-right boulder into hole (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_BLACKTHORN_GYM_1"
                         ],
                         "hosted_item": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1_hosted",
                         "visibility_rules": [
-                            "show_events"
+                            "show_events, er_gym_interior_on"
                         ]
                     },
                     {
-                        "name": "Gym - 2F - Push bottom boulder into hole",
+                        "name": "Gym - 2F - Push bottom boulder into hole (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_BOULDER_IN_BLACKTHORN_GYM_3"
                         ],
                         "hosted_item": "EVENT_BOULDER_IN_BLACKTHORN_GYM_3_hosted",
                         "visibility_rules": [
-                            "show_events"
+                            "show_events, er_gym_interior_on"
                         ]
                     },
                     {
@@ -19966,7 +19967,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_DRAGONS_DEN_B1F:CENTER, ^$unownsign|DragonsDenB1FDragonShrine, ^$dark|dragonsden"
@@ -20432,7 +20433,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_45, ^$unownsign|Route45"
@@ -20678,7 +20679,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_46:SOUTH, ^$unownsign|Route46"
@@ -20967,7 +20968,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_27:WEST, ^$unownsign|Route27TohjoFalls"
@@ -21383,7 +21384,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_26, ^$unownsign|Route26"
@@ -21689,13 +21690,13 @@
                         ]
                     },
                     {
-                        "name": "3F - Beat Rival in Victory Road",
+                        "name": "3F - Beat Rival in Victory Road (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_VICTORY_ROAD:3F, ^$dark|victoryroad"
                         ],
                         "hosted_item": "EVENT_BEAT_VICTORY_ROAD_RIVAL_hosted",
                         "visibility_rules": [
-                            "show_events, goal_rival"
+                            "show_events, goal_rival_on"
                         ]
                     },
                     {
@@ -21881,7 +21882,7 @@
                         ]
                     },
                     {
-                        "name": "Beat Elite 4 Bruno",
+                        "name": "Beat Elite 4 Bruno (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_BRUNOS_ROOM"
                         ],
@@ -21949,13 +21950,13 @@
                         ]
                     },
                     {
-                        "name": "Beat Rival in Indigo Plateau",
+                        "name": "Beat Rival in Indigo Plateau (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_INDIGO_PLATEAU_POKECENTER_1F:RIVAL"
                         ],
                         "hosted_item": "EVENT_BEAT_RIVAL_IN_INDIGO_PLATEAU_hosted",
                         "visibility_rules": [
-                            "show_events, goal_rival, johto_only_off"
+                            "show_events, goal_rival_on, johto_only_off"
                         ]
                     },
                     {
@@ -21993,7 +21994,7 @@
                         ]
                     },
                     {
-                        "name": "Beat Elite 4 Karen",
+                        "name": "Beat Elite 4 Karen (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_KARENS_ROOM"
                         ],
@@ -22037,7 +22038,7 @@
                         ]
                     },
                     {
-                        "name": "Beat Elite 4 Koga",
+                        "name": "Beat Elite 4 Koga (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_KOGAS_ROOM"
                         ],
@@ -22082,7 +22083,7 @@
                         "chest_opened_img": "images/trainers/lance_bw.png"
                     },
                     {
-                        "name": "Become Champion",
+                        "name": "Become Champion (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_HALL_OF_FAME"
                         ],
@@ -22114,7 +22115,7 @@
                         ]
                     },
                     {
-                        "name": "Beat Elite 4 Will",
+                        "name": "Beat Elite 4 Will (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_WILLS_ROOM"
                         ],
@@ -22274,7 +22275,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_23, ^$unownsign|Route23IndigoPlateauSign"
@@ -22285,7 +22286,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown, route_23_restored_on"
+                            "show_signs, goal_unown_on, route_23_restored_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_23_RESTORED:SOUTH, ^$unownsign|Route23RestoredSign1"
@@ -22296,7 +22297,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown, route_23_restored_on"
+                            "show_signs, goal_unown_on, route_23_restored_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_23_RESTORED:SOUTH, ^$unownsign|Route23RestoredSign2"
@@ -22483,7 +22484,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_28, ^$unownsign|Route28"
@@ -22683,7 +22684,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SILVER_CAVE_OUTSIDE, ^$unownsign|SilverCaveOutside"
@@ -22694,7 +22695,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SILVER_CAVE_OUTSIDE, ^$unownsign|SilverCaveOutsidePokecenter"
@@ -23128,13 +23129,14 @@
                         ]
                     },
                     {
-                        "name": "3F - Defeat Red",
+                        "name": "3F - Defeat Red (Event)",
                         "hosted_item": "EVENT_BEAT_RED_hosted",
                         "access_rules": [
                             "^$CanReach|EVENT_BEAT_RED"
                         ],
                         "visibility_rules": [
-                            "show_events, goal_red"
+                            "show_events, goal_red_on",
+                            "show_events, battle_tower_sanity_tiers"
                         ]
                     },
                     {
@@ -23279,7 +23281,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_22, ^$unownsign|Route22VictoryRoadEntrance"
@@ -23457,7 +23459,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIRIDIAN_CITY, ^$unownsign|ViridianCity"
@@ -23468,7 +23470,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIRIDIAN_CITY, ^$unownsign|ViridianCityGym"
@@ -23479,7 +23481,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIRIDIAN_CITY, ^$unownsign|ViridianCityMart"
@@ -23490,7 +23492,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIRIDIAN_CITY, ^$unownsign|ViridianCityPokecenter"
@@ -23501,7 +23503,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIRIDIAN_CITY, ^$unownsign|ViridianCityTrainerHouse"
@@ -23512,7 +23514,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIRIDIAN_CITY, ^$unownsign|ViridianCityWelcome"
@@ -23543,7 +23545,7 @@
                         ]
                     },
                     {
-                        "name": "Gym - Beat Blue",
+                        "name": "Gym - Beat Blue (Event)",
                         "hosted_item": "EVENT_BEAT_BLUE_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_VIRIDIAN_GYM:BLUE"
@@ -23590,7 +23592,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIRIDIAN_GYM, ^$unownsign|ViridianGymStatueLeft"
@@ -23601,7 +23603,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIRIDIAN_GYM, ^$unownsign|ViridianGymStatueRight"
@@ -23680,7 +23682,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_TRAINER_HOUSE_1F, ^$unownsign|TrainerHouseSign1"
@@ -23691,7 +23693,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_TRAINER_HOUSE_1F, ^$unownsign|TrainerHouseSign2"
@@ -23814,7 +23816,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_1, ^$unownsign|Route1"
@@ -23972,7 +23974,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PALLET_TOWN, ^$unownsign|PalletTown"
@@ -23983,7 +23985,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PALLET_TOWN, ^$unownsign|PalletTownBluesHouse"
@@ -23994,7 +23996,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PALLET_TOWN, ^$unownsign|PalletTownOaksLab"
@@ -24005,7 +24007,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PALLET_TOWN, ^$unownsign|PalletTownRedsHouse"
@@ -24051,7 +24053,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OAKS_LAB, ^$unownsign|OaksLabPoster1"
@@ -24062,7 +24064,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OAKS_LAB, ^$unownsign|OaksLabPoster2"
@@ -24331,7 +24333,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_2:NORTHEAST, ^$unownsign|Route2DiglettsCave"
@@ -24342,7 +24344,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_2:WEST, ^$unownsign|Route2"
@@ -24573,7 +24575,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_CITY, ^$unownsign|PewterCity"
@@ -24584,7 +24586,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_CITY, ^$unownsign|PewterCityGym"
@@ -24595,7 +24597,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_CITY, ^$unownsign|PewterCityMart"
@@ -24606,7 +24608,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_CITY, ^$unownsign|PewterCityMtMoonGiftShop"
@@ -24617,7 +24619,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_CITY, ^$unownsign|PewterCityMuseum"
@@ -24628,7 +24630,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_CITY, ^$unownsign|PewterCityPokecenter"
@@ -24639,7 +24641,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_CITY, ^$unownsign|PewterCityWelcome"
@@ -24669,7 +24671,7 @@
                         "chest_opened_img": "images/trainers/camper_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Brock",
+                        "name": "Gym - Beat Brock (Event)",
                         "hosted_item": "EVENT_BEAT_BROCK_hosted",
                         "visibility_rules": [
                             "show_events"
@@ -24716,7 +24718,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_GYM, ^$unownsign|PewterGymStatueLeft"
@@ -24727,7 +24729,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_GYM, ^$unownsign|PewterGymStatueRight"
@@ -24921,7 +24923,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_3, ^$unownsign|Route3MtMoonSquare"
@@ -25050,7 +25052,7 @@
                         "chest_opened_img": "images/trainers/rival_bw.png"
                     },
                     {
-                        "name": "Inside - Beat Rival",
+                        "name": "Inside - Beat Rival (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_MOUNT_MOON, ^$dark|mountmoon"
                         ],
@@ -25058,7 +25060,7 @@
                         "visibility_rules": [
                             "show_events, trainersanity",
                             "show_events, $partial_trainersanity, trainersanity_301",
-                            "show_events, goal_rival"
+                            "show_events, goal_rival_on"
                         ]
                     },
                     {
@@ -25217,7 +25219,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_MOUNT_MOON_SQUARE, ^$unownsign|MountMoonSquareDontLitter"
@@ -25370,7 +25372,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_4:WEST, ^$unownsign|Route4MtMoonSquare"
@@ -25559,7 +25561,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_CITY, ^$unownsign|CeruleanCity"
@@ -25570,7 +25572,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_CITY, ^$unownsign|CeruleanCityBikeShop"
@@ -25581,7 +25583,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_CITY, ^$unownsign|CeruleanCityCape"
@@ -25592,7 +25594,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_CITY, ^$unownsign|CeruleanCityGym"
@@ -25603,7 +25605,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_CITY, ^$unownsign|CeruleanCityMart"
@@ -25614,7 +25616,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_CITY, ^$unownsign|CeruleanCityPokecenter"
@@ -25625,7 +25627,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_CITY, ^$unownsign|CeruleanCityPolice"
@@ -25667,7 +25669,7 @@
                         ]
                     },
                     {
-                        "name": "Gym - Meet Rocket Grunt",
+                        "name": "Gym - Meet Rocket Grunt (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_GYM:ROCKET"
                         ],
@@ -25722,7 +25724,7 @@
                         "chest_opened_img": "images/trainers/swimmer_f_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Misty",
+                        "name": "Gym - Beat Misty (Event)",
                         "hosted_item": "EVENT_BEAT_MISTY_hosted",
                         "visibility_rules": [
                             "show_events"
@@ -25769,7 +25771,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_GYM, ^$unownsign|CeruleanGymStatueLeft"
@@ -25780,7 +25782,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CERULEAN_GYM, ^$unownsign|CeruleanGymStatueRight"
@@ -25935,7 +25937,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_5, ^$unownsign|Route5HouseForSale"
@@ -25946,7 +25948,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_5, ^$unownsign|Route5UndergroundPath"
@@ -26140,13 +26142,13 @@
                 ],
                 "sections": [
                     {
-                        "name": "Defeat the Grunt on Nugget Bridge",
+                        "name": "Defeat the Grunt on Nugget Bridge (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_24:ROCKET"
                         ],
                         "hosted_item": "EVENT_ROUTE_24_ROCKET_hosted",
                         "visibility_rules": [
-                            "show_events, goal_rocket"
+                            "show_events, goal_rocket_on"
                         ]
                     },
                     {
@@ -26416,7 +26418,7 @@
                         ]
                     },
                     {
-                        "name": "Interrupt Misty's Date",
+                        "name": "Interrupt Misty's Date (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_25:MISTY_DATE"
                         ],
@@ -26456,7 +26458,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_25, ^$unownsign|Route25BillsHouse"
@@ -26743,7 +26745,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_9, ^$unownsign|Route9"
@@ -27179,7 +27181,7 @@
                         "chest_opened_img": "images/gift/red_guy_open.png"
                     },
                     {
-                        "name": "Learn of the robbery",
+                        "name": "Learn of the robbery (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_POWER_PLANT"
                         ],
@@ -27189,7 +27191,7 @@
                         ]
                     },
                     {
-                        "name": "Restore Power to Kanto",
+                        "name": "Restore Power to Kanto (Event)",
                         "access_rules": [
                             "^$CanReach|EVENT_RESTORED_POWER_TO_KANTO"
                         ],
@@ -27324,7 +27326,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_10_NORTH:POKECENTER, ^$unownsign|Route10NorthPokecenter"
@@ -27335,7 +27337,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_10_NORTH:SURF, ^$unownsign|Route10NorthPowerPlant"
@@ -27346,7 +27348,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_10_SOUTH, ^$unownsign|Route10South"
@@ -27546,7 +27548,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_LAVENDER_TOWN, ^$unownsign|LavenderTown"
@@ -27557,7 +27559,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_LAVENDER_TOWN, ^$unownsign|LavenderTownMart"
@@ -27568,7 +27570,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_LAVENDER_TOWN, ^$unownsign|LavenderTownPokecenter"
@@ -27579,7 +27581,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_LAVENDER_TOWN, ^$unownsign|LavenderTownRadioStation"
@@ -27590,7 +27592,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_LAVENDER_TOWN, ^$unownsign|LavenderTownSoulHouse"
@@ -27601,7 +27603,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_LAVENDER_TOWN, ^$unownsign|LavenderTownVolunteerPokemonHouse"
@@ -27690,7 +27692,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_LAV_RADIO_TOWER_1F, ^$unownsign|LavRadioTower1FDirectory"
@@ -27701,7 +27703,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_LAV_RADIO_TOWER_1F, ^$unownsign|LavRadioTower1FPokeFluteSign"
@@ -27892,7 +27894,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_8, ^$unownsign|Route8UndergroundPath"
@@ -28211,7 +28213,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SAFFRON_CITY, ^$unownsign|SaffronCity"
@@ -28222,7 +28224,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SAFFRON_CITY, ^$unownsign|SaffronCityFightingDojo"
@@ -28233,7 +28235,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SAFFRON_CITY, ^$unownsign|SaffronCityGym"
@@ -28244,7 +28246,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SAFFRON_CITY, ^$unownsign|SaffronCityMagnetTrainStation"
@@ -28255,7 +28257,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SAFFRON_CITY, ^$unownsign|SaffronCityMart"
@@ -28266,7 +28268,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SAFFRON_CITY, ^$unownsign|SaffronCityMrPsychicsHouse"
@@ -28277,7 +28279,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SAFFRON_CITY, ^$unownsign|SaffronCityPokecenter"
@@ -28288,7 +28290,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SAFFRON_CITY, ^$unownsign|SaffronCitySilphCo"
@@ -28348,7 +28350,7 @@
                         ]
                     },
                     {
-                        "name": "Copycat's House 2F - Meet Copycat",
+                        "name": "Copycat's House 2F - Meet Copycat (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_COPYCATS_HOUSE_2F"
                         ],
@@ -28391,7 +28393,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FIGHTING_DOJO, ^$unownsign|FightingDojoSign1"
@@ -28402,7 +28404,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FIGHTING_DOJO, ^$unownsign|FightingDojoSign2"
@@ -28479,7 +28481,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_SAFFRON_GYM:ENTRANCE, ^$unownsign|SaffronGymStatue"
@@ -28653,7 +28655,7 @@
                         ]
                     },
                     {
-                        "name": "Gym - Beat Sabrina",
+                        "name": "Gym - Beat Sabrina (Event)",
                         "hosted_item": "EVENT_BEAT_SABRINA_hosted",
                         "visibility_rules": [
                             "show_events"
@@ -29058,7 +29060,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_CITY, ^$unownsign|CeladonCity"
@@ -29069,7 +29071,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_CITY:GYM_ENTRANCE, ^$unownsign|CeladonCityGym"
@@ -29080,7 +29082,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_CITY, ^$unownsign|CeladonCityMansion"
@@ -29091,7 +29093,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_CITY, ^$unownsign|CeladonCityDeptStore"
@@ -29102,7 +29104,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_CITY, ^$unownsign|CeladonCityPokecenter"
@@ -29113,7 +29115,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_CITY, ^$unownsign|CeladonCityTrainerTips"
@@ -29124,7 +29126,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_CITY, ^$unownsign|CeladonCityGameCorner"
@@ -29168,7 +29170,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_CAFE, ^$unownsign|EatathonContestPoster"
@@ -29212,7 +29214,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_DEPT_STORE_1F, ^$unownsign|CeladonDeptStore1FDirectory"
@@ -29293,7 +29295,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_DEPT_STORE_2F, ^$unownsign|CeladonDeptStore2FDirectory"
@@ -29361,7 +29363,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_DEPT_STORE_3F, ^$unownsign|CeladonDeptStore3FDirectory"
@@ -29429,7 +29431,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_DEPT_STORE_4F, ^$unownsign|CeladonDeptStore4FDirectory"
@@ -29510,7 +29512,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_DEPT_STORE_5F, ^$unownsign|CeladonDeptStore5FDirectory"
@@ -29567,7 +29569,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_DEPT_STORE_6F, ^$unownsign|CeladonDeptStore6FDirectory"
@@ -29712,7 +29714,7 @@
                         "chest_opened_img": "images/trainers/beauty_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Erika",
+                        "name": "Gym - Beat Erika (Event)",
                         "hosted_item": "EVENT_BEAT_ERIKA_hosted",
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_GYM"
@@ -29770,7 +29772,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_GYM, ^$unownsign|CeladonGymStatueLeft"
@@ -29781,7 +29783,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_GYM, ^$unownsign|CeladonGymStatueRight"
@@ -29828,7 +29830,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_MANSION_1F, ^$unownsign|CeladonMansionManagersSuiteSign"
@@ -29883,7 +29885,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_MANSION_2F, ^$unownsign|CeladonMansion2FMeetingRoomSign"
@@ -29934,13 +29936,13 @@
                         ]
                     },
                     {
-                        "name": "Celadon Mansion 3F - Obtain Diploma",
+                        "name": "Celadon Mansion 3F - Obtain Diploma (Event)",
                         "hosted_item": "EVENT_OBTAINED_DIPLOMA_hosted",
                         "access_rules": [
                             "^$CanReach|EVENT_OBTAINED_DIPLOMA"
                         ],
                         "visibility_rules": [
-                            "show_events, goal_diploma"
+                            "show_events, goal_diploma_on"
                         ]
                     },
                     {
@@ -29948,7 +29950,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_MANSION_3F, ^$unownsign|CeladonMansion3FDevRoomSign"
@@ -30036,7 +30038,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CELADON_MANSION_ROOF:EAST, ^$unownsign|CeladonMansionRoofGraffiti"
@@ -30145,7 +30147,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_16:SIGN, ^$unownsign|Route16CyclingRoad"
@@ -30533,7 +30535,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_18, ^$unownsign|Route18"
@@ -30764,7 +30766,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_CITY, ^$unownsign|VermilionCity"
@@ -30775,7 +30777,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_CITY:DIGLETTS_CAVE_ENTRANCE, ^$unownsign|VermilionCityDiglettsCave"
@@ -30786,7 +30788,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_CITY:GYM_ENTRANCE_SHARED, ^$unownsign|VermilionCityGym"
@@ -30797,7 +30799,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_CITY, ^$unownsign|VermilionCityMart"
@@ -30808,7 +30810,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_CITY, ^$unownsign|VermilionCityPokecenter"
@@ -30819,7 +30821,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_CITY, ^$unownsign|VermilionCityPokemonFanClub"
@@ -30830,7 +30832,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_CITY, ^$unownsign|VermilionCityPort"
@@ -30919,7 +30921,7 @@
                         "chest_opened_img": "images/trainers/guitarist_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Lt. Surge",
+                        "name": "Gym - Beat Lt. Surge (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_GYM"
                         ],
@@ -30966,7 +30968,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_GYM, ^$unownsign|VermilionGymStatueLeft"
@@ -30977,7 +30979,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VERMILION_GYM, ^$unownsign|VermilionGymStatueRight"
@@ -31067,7 +31069,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_POKEMON_FAN_CLUB, ^$unownsign|PokemonFanClubBraggingSign"
@@ -31078,7 +31080,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_POKEMON_FAN_CLUB, ^$unownsign|PokemonFanClubListenSign"
@@ -31422,7 +31424,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_6, ^$unownsign|Route6UndergroundPath"
@@ -31615,7 +31617,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_7, ^$unownsign|Route7UndergroundPath"
@@ -31843,7 +31845,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_11, ^$unownsign|Route11"
@@ -32019,7 +32021,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_12:NORTH, ^$unownsign|Route12FishingSpot"
@@ -32030,7 +32032,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_12:SIGN, ^$unownsign|Route12"
@@ -32202,7 +32204,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_13, ^$unownsign|Route13"
@@ -32213,7 +32215,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_13, ^$unownsign|Route13Directions"
@@ -32224,7 +32226,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_13, ^$unownsign|Route13TrainerTips"
@@ -32599,7 +32601,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_15, ^$unownsign|Route15"
@@ -32819,7 +32821,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_CITY:CUT, ^$unownsign|FuchsiaCityNoLittering"
@@ -32830,7 +32832,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_CITY:CUT, ^$unownsign|FuchsiaCityMart"
@@ -32841,7 +32843,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_CITY:CUT, ^$unownsign|FuchsiaCitySafariZoneClosed"
@@ -32852,7 +32854,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_CITY, ^$unownsign|FuchsiaCity"
@@ -32863,7 +32865,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_CITY, ^$unownsign|FuchsiaCityGym"
@@ -32874,7 +32876,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_CITY, ^$unownsign|FuchsiaCityPokecenter"
@@ -32885,7 +32887,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_CITY, ^$unownsign|FuchsiaCitySafariZoneOffice"
@@ -32896,7 +32898,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_CITY, ^$unownsign|FuchsiaCityWardensHome"
@@ -32986,7 +32988,7 @@
                         "chest_opened_img": "images/trainers/lass_bw.png"
                     },
                     {
-                        "name": "Gym - Beat Janine",
+                        "name": "Gym - Beat Janine (Event)",
                         "hosted_item": "EVENT_BEAT_JANINE_hosted",
                         "visibility_rules": [
                             "show_events"
@@ -33044,7 +33046,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_GYM, ^$unownsign|FuchsiaGymStatueLeft"
@@ -33055,7 +33057,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_FUCHSIA_GYM, ^$unownsign|FuchsiaGymStatueRight"
@@ -33210,7 +33212,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_19:SIGN, ^$unownsign|Route19CarefulSwimming"
@@ -33221,7 +33223,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_19:SHORE, ^$unownsign|Route19"
@@ -33384,7 +33386,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Gym - Beat Blaine",
+                        "name": "Gym - Beat Blaine (Event)",
                         "hosted_item": "EVENT_BEAT_BLAINE_hosted",
                         "visibility_rules": [
                             "show_events"
@@ -33431,7 +33433,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_20, ^$unownsign|Route20CinnabarGym"
@@ -33474,7 +33476,7 @@
                         ]
                     },
                     {
-                        "name": "Blue Returns to Gym",
+                        "name": "Blue Returns to Gym (Event)",
                         "access_rules": [
                             "^$CanReach|REGION_CINNABAR_ISLAND"
                         ],
@@ -33510,7 +33512,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CINNABAR_ISLAND, ^$unownsign|CinnabarIsland"
@@ -33521,7 +33523,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CINNABAR_ISLAND, ^$unownsign|CinnabarIslandPokecenter"
@@ -33532,7 +33534,7 @@
                         "chest_unopened_img": "images/other/unownsign.png",
                         "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_signs, goal_unown"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_CINNABAR_ISLAND, ^$unownsign|CinnabarIslandGym"
