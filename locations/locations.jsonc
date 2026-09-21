@@ -32050,6 +32050,10 @@
                         ]
                     },
                     {
+                        "name": "Swarm Encounter",
+                        "ref": "JohtoKanto/Route 32/Swarm Encounter"
+                    },
+                    {
                         "name": "Route 12 Fishing Guru's House Exit                                                   ",
                         "hosted_item": "REGION_ROUTE_12_SUPER_ROD_HOUSE -> REGION_ROUTE_12:SOUTH",
                         "clear_as_group": false,
@@ -32238,6 +32242,10 @@
                         "access_rules": [
                             "^$CanReach|GRASS_ROUTE_13, ^$land_encounter"
                         ]
+                    },
+                    {
+                        "name": "Swarm Encounter",
+                        "ref": "JohtoKanto/Route 32/Swarm Encounter"
                     },
                     {
                         "name": "Land Encounters (Morn)",
