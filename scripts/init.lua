@@ -95,14 +95,14 @@ Tracker:AddLocations("locations/special_encounters.json")
 ---- maps & locations
 Tracker:AddLayouts("layouts/submaps/johto_cities.json")
 Tracker:AddLayouts("layouts/submaps/johto_routes.json")
-Tracker:AddLayouts("layouts/submaps/johto_dungeons.json")
+Tracker:AddLayouts("layouts/submaps/silver_cave.json")
 Tracker:AddLayouts("layouts/submaps/fast_ship.json")
 Tracker:AddLayouts("layouts/submaps/kanto_cities.json")
 Tracker:AddLayouts("layouts/submaps/kanto_routes.json")
 Tracker:AddLayouts("layouts/submaps/kanto_dungeons.json")
-Tracker:AddLayouts("layouts/full/tabs_single.json")
 Tracker:AddLayouts("layouts/full/overworld.json")
 Tracker:AddLayouts("layouts/routing.json")
+toggle_tabs()
 
 ---- items
 Tracker:AddLayouts("layouts/tracker/tracker_flyunlock_other.json") -- maximum itemgrids
@@ -131,7 +131,11 @@ ScriptHost:LoadScript("scripts/autotracking.lua")
 
 ---- Watches
 ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
-ScriptHost:AddWatchForCode("splitmap", "splitmap", toggle_splitmap)
+ScriptHost:AddWatchForCode("splitmap", "splitmap", toggle_tabs)
+ScriptHost:AddWatchForCode("routing_tab", "routing_tab", toggle_tabs)
+ScriptHost:AddWatchForCode("flooded_mine_tabs", "flooded_mine", toggle_tabs)
+ScriptHost:AddWatchForCode("route_23_restored", "route_23_restored", toggle_tabs)
+ScriptHost:AddWatchForCode("ew_underground", "ew_underground", toggle_tabs)
 ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
 ScriptHost:AddWatchForCode("route_2_access", "route_2_access", toggle_route2)
 ScriptHost:AddWatchForCode("red_gyarados_access", "red_gyarados_access", toggle_lakeofrage)

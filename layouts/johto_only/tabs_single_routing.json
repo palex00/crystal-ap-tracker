@@ -24,6 +24,18 @@
                 }
             },
             {
+                "title": "Routing",
+                "content": {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "routing"
+                        }
+                    ]
+                }
+            },
+            {
                 "title": "Johto Cities",
                 "content": {
                     "type": "dock",

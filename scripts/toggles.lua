@@ -20,7 +20,7 @@ function toggle_johto()
         Tracker:AddLayouts("layouts/"..dir.."/"..name..".json")
     end
 
-    toggle_splitmap()
+    toggle_tabs()
 end
 
 SUDOWOODO = false
@@ -147,15 +147,43 @@ function toggle_floodedmine()
     add_map("floodedmine"..suffix)
 end
 
-function toggle_splitmap()
-    local suffix = "_single"
-    if has("splitmap_on") then
-        suffix = "_split"
-    elseif has("splitmap_reverse") then
-        suffix = "_reverse"
+LOADED_LAYOUTS = {}
+
+function load_layout(slot, path)
+    if LOADED_LAYOUTS[slot] ~= path then
+        LOADED_LAYOUTS[slot] = path
+        Tracker:AddLayouts(path)
+    end
+end
+
+function toggle_tabs()
+    local mode = johto_mode()
+    local silver = has("johto_only_on") and "_nosilver" or ""
+    local routing = ""
+    for _, enabled in pairs(ER_CATEGORY_ENABLED) do
+        if enabled then
+            routing = "_routing"
+            break
+        end
     end
 
-    Tracker:AddLayouts("layouts/"..johto_mode().."/tabs"..suffix..".json")
+    load_layout("johto_dungeons", "layouts/submaps/johto_dungeons"..(has("flooded_mine_on") and "_floodedmine" or "")..".json")
+    load_layout("route_23", "layouts/submaps/route_23"..(has("route_23_restored_on") and "_restored" or "")..".json")
+    load_layout("ew_underground", "layouts/submaps/ew_underground"..(has("ew_underground_on") and "_on" or "_off")..".json")
+
+    if has("splitmap_off") then
+        load_layout("tabbed_maps", "layouts/"..mode.."/tabs_single"..silver..routing..".json")
+        return
+    end
+
+    local meta_routing, submap_routing = routing, ""
+    if has("routing_tab_submap") then
+        meta_routing, submap_routing = "", routing
+    end
+
+    load_layout("tabs_meta", "layouts/tabs/meta"..meta_routing..".json")
+    load_layout("tabs_regions", "layouts/"..mode.."/tabs_regions"..silver..submap_routing..".json")
+    load_layout("tabbed_maps", "layouts/tabs/tabs_"..(has("splitmap_on") and "split" or "reverse")..".json")
 end
 
 function toggle_itemgrid()

@@ -1,27 +1,45 @@
 {
-    "kanto_dungeons": {
+    "silver_cave": {
         "type": "tabbed",
         "tabs": [
             {
-                "title": "Rock Tunnel",
+                "title": "Route 28",
                 "content": {
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Rock Tunnel 1F",
+                            "title": "Route",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "RockTunnel1F"
+                                    "Route28"
                                 ]
                             }
                         },
                         {
-                            "title": "Rock Tunnel B1F",
+                            "title": "Outside Silver Cave",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "RockTunnelB1F"
+                                    "SilverCaveOutside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilverCavePokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Steel Wing House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route28SteelWingHouse"
                                 ]
                             }
                         }
@@ -29,59 +47,35 @@
                 }
             },
             {
-                "title": "Power Plant",
-                "content": {
-                    "type": "map",
-                    "maps": [
-                        "PowerPlant"
-                    ]
-                }
-            },
-            {
-                "title": "Digletts Cave",
-                "content": {
-                    "type": "map",
-                    "maps": [
-                        "DiglettsCave"
-                    ]
-                }
-            },
-            {
-                "title": "Underground Path",
-                "content": {
-                    "type": "layout",
-                    "key": "underground_path"
-                }
-            },
-            {
-                "title": "Mount Moon",
+                "title": "Silver Cave",
                 "content": {
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Inside",
+                            "title": "1F",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "MountMoon"
+                                    "SilverCaveRoom1"
                                 ]
                             }
                         },
                         {
-                            "title": "Square",
+                            "title": "2F",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "MountMoonSquare"
+                                    "SilverCaveRoom2",
+                                    "SilverCaveItemRooms"
                                 ]
                             }
                         },
                         {
-                            "title": "Gift Shop",
+                            "title": "3F",
                             "content": {
                                 "type": "map",
                                 "maps": [
-                                    "MountMoonGiftShop"
+                                    "SilverCaveRoom3"
                                 ]
                             }
                         }

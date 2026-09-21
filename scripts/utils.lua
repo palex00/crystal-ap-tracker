@@ -100,11 +100,9 @@ function refreshERCategories()
     end
 end
 
--- Entrance randomization is per-category; there is no single ER on/off. The Route tab is
--- part of tabs_single.json. When you author additional tab variants (split/reverse/johto),
--- add a "Routing" tab there too, or swap ER-specific tab layouts here.
 function toggle_er()
     refreshERCategories()
+    toggle_tabs()
 end
 
 function updateRemainingDexcountsanityChecks()

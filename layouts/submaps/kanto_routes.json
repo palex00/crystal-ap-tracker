@@ -146,71 +146,15 @@
             {
                 "title": "Route 7",
                 "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Route",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "Route7"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Saffron Gate",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "Route7SaffronGate"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Underground Path Entrance",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "Route7UndergroundPathEntrance"
-                                ]
-                            }
-                        }
-                    ]
+                    "type": "layout",
+                    "key": "route_7"
                 }
             },
             {
                 "title": "Route 8",
                 "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Route",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "Route8"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Saffron Gate",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "Route8SaffronGate"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Underground Path Entrance",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "Route8UndergroundPathEntrance"
-                                ]
-                            }
-                        }
-                    ]
+                    "type": "layout",
+                    "key": "route_8"
                 }
             },
             {

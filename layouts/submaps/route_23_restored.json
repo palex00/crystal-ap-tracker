@@ -1,0 +1,25 @@
+{
+    "route_23": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Vanilla",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route23"
+                    ]
+                }
+            },
+            {
+                "title": "Restored",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route23Restored"
+                    ]
+                }
+            }
+        ]
+    }
+}

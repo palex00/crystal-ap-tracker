@@ -1,0 +1,43 @@
+{
+    "tabs_meta": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Overworld",
+                "content": {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "overworld"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Pokedex",
+                "content": {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "pokedex_grid_full"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Routing",
+                "content": {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "routing"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

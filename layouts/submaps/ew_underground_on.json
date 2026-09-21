@@ -1,0 +1,89 @@
+{
+    "underground_path": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "North-South",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "UndergroundPath"
+                    ]
+                }
+            },
+            {
+                "title": "East-West",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "EastWestUnderground"
+                    ]
+                }
+            }
+        ]
+    },
+    "route_7": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Route",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route7"
+                    ]
+                }
+            },
+            {
+                "title": "Saffron Gate",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route7SaffronGate"
+                    ]
+                }
+            },
+            {
+                "title": "Underground Path Entrance",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route7UndergroundPathEntrance"
+                    ]
+                }
+            }
+        ]
+    },
+    "route_8": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Route",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route8"
+                    ]
+                }
+            },
+            {
+                "title": "Saffron Gate",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route8SaffronGate"
+                    ]
+                }
+            },
+            {
+                "title": "Underground Path Entrance",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route8UndergroundPathEntrance"
+                    ]
+                }
+            }
+        ]
+    }
+}

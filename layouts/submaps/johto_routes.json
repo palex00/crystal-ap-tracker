@@ -454,27 +454,8 @@
             {
                 "title": "Route 23",
                 "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Vanilla",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "Route23"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Restored",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "Route23Restored"
-                                ]
-                            }
-                        }
-                    ]
+                    "type": "layout",
+                    "key": "route_23"
                 }
             },
             {
@@ -533,50 +514,6 @@
                                 "type": "map",
                                 "maps": [
                                     "Route27SandstormHouse"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "title": "Route 28",
-                "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Route",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "Route28"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Outside Silver Cave",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "SilverCaveOutside"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "PokeCenter",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "SilverCavePokecenter1F"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Steel Wing House",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "Route28SteelWingHouse"
                                 ]
                             }
                         }

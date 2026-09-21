@@ -1,28 +1,7 @@
 {
-    "tabbed_maps": {
+    "tabs_regions": {
         "type": "tabbed",
         "tabs": [
-            {
-                "title": "Overworld",
-                "content": {
-                    "type": "map",
-                    "maps": [
-                        "johtokanto"
-                    ]
-                }
-            },
-            {
-                "title": "Pokedex",
-                "content": {
-                    "type": "dock",
-                    "content": [
-                        {
-                            "type": "layout",
-                            "key": "pokedex_grid_full"
-                        }
-                    ]
-                }
-            },
             {
                 "title": "Johto Cities",
                 "content": {
@@ -115,6 +94,18 @@
                         {
                             "type": "layout",
                             "key": "kanto_dungeons"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Routing",
+                "content": {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "routing"
                         }
                     ]
                 }
