@@ -1315,8 +1315,8 @@ REGION_ROUTE_7:connect_one_way_entrance(REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE
 REGION_ROUTE_7_UNDERGROUND_PATH_ENTRANCE:connect_two_ways_entrance(REGION_EAST_WEST_UNDERGROUND, "dungeon_interior", function() return has("ew_underground_on") end)
 
 -- === REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE ===
-REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE:connect_one_way_entrance(REGION_ROUTE_8, "dungeon_interior", function() return has("ew_underground_on") end)
-REGION_ROUTE_8:connect_one_way_entrance(REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE, "dungeon_interior", function() return has("ew_underground_on") and passage("ew") end)
+REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE:connect_one_way_entrance(REGION_ROUTE_8, "dungeon", function() return has("ew_underground_on") end)
+REGION_ROUTE_8:connect_one_way_entrance(REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE, "dungeon", function() return has("ew_underground_on") and passage("ew") end)
 REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE:connect_two_ways_entrance(REGION_EAST_WEST_UNDERGROUND, "dungeon_interior", function() return has("ew_underground_on") end)
 
 -- === REGION_ROUTE_7 ===

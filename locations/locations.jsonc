@@ -27787,7 +27787,7 @@
                             "^$CanReach|REGION_ROUTE_8, ^$passage|ew"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on, ew_underground_on"
+                            "show_entrances, er_dungeon_on, ew_underground_on"
                         ]
                     },
                     {
@@ -27980,7 +27980,7 @@
                             "^$CanReach|REGION_ROUTE_8_UNDERGROUND_PATH_ENTRANCE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_dungeon_interior_on, ew_underground_on"
+                            "show_entrances, er_dungeon_on, ew_underground_on"
                         ]
                     },
                     {

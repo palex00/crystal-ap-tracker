@@ -5783,6 +5783,90 @@
                 ]
             },
             {
+                "name": "Underground Path​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 8/East-West Underground Path - Hidden Max Revive",
+                        "name": "Hidden Max Revive"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 8/East-West Underground Path - Hidden Nugget",
+                        "name": "Hidden Nugget"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route7",
+                        "x": 104,
+                        "y": 152,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Underground Path​​​​​",
+                "sections": [
+                    {
+                        "name": "Underground Path Entrance West Stairs                                            ",
+                        "ref": "JohtoKanto/Route 7/Underground Path Entrance West Stairs                                            "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route7",
+                        "x": 104,
+                        "y": 152,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Underground Path​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 8/East-West Underground Path - Hidden Max Revive",
+                        "name": "Hidden Max Revive"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 8/East-West Underground Path - Hidden Nugget",
+                        "name": "Hidden Nugget"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route8",
+                        "x": 168,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Underground Path​​​​​​​",
+                "sections": [
+                    {
+                        "name": "Underground Path Entrance East Stairs                                             ",
+                        "ref": "JohtoKanto/Route 8/Underground Path Entrance East Stairs                                             "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route8",
+                        "x": 168,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
                 "name": "Victory Road",
                 "sections": [
                     {
