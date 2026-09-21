@@ -27,10 +27,13 @@
 --   Only needed when a location has requirements beyond reaching its region; otherwise the
 --   location JSON can just use "$CanReach|REGION_*" directly.
 
--- Region connections for Pokemon Crystal -- originally AUTO-GENERATED from external_files/
+-- Region connections for Pokemon Crystal -- originally AUTO-GENERATED from the apworld's
 --   regions.json (exits), entrance_types.json (randomizable category),
 --   and "Crystal Region Connection Names.xlsx" (transition pretty-names, Friendly Name column).
--- Access rules were then ported from external_files/rules.py (every set_rule(get_entrance(...))).
+-- Access rules were then ported from the apworld's rules.py (every set_rule(get_entrance(...))).
+-- The generator and its snapshots lived in external_files/, which is gone and was never
+-- git-tracked; this file is hand-maintained. Verify categories against the LIVE apworld's
+-- data/entrance_types.json (strip the " Entrance"/" Exit" side-suffix first).
 --
 -- Two regions that exit to each other => two-way; otherwise one-way. Edges listed in
 -- entrance_types.json are randomizable warps (connect_*_entrance, category only; the warp

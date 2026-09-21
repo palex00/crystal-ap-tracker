@@ -1,5 +1,5 @@
 -- Check leaves: locations whose reachability needs MORE than reaching their region.
--- Ported from external_files/rules.py (every set_rule(get_location(...)) that resolves to a
+-- Ported from the apworld's rules.py (every set_rule(get_location(...)) that resolves to a
 -- real location or an event).
 --
 -- A leaf is a dead-end node named exactly after the AP location const, attached to the region

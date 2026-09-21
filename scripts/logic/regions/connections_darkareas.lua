@@ -1,5 +1,5 @@
 -- Dark areas and Cycling Road: requirements that belong to a REGION rather than to any one
--- transition. Ported from external_files/rules.py (DARK_AREA_REGIONS / CYCLING_ROAD_REGIONS).
+-- transition. Ported from the apworld's rules.py (DARK_AREA_REGIONS / CYCLING_ROAD_REGIONS).
 --
 -- Loaded AFTER connections.lua (the edges must already exist to be wrapped) and BEFORE
 -- check_leafs.lua (so the check leaves are not wrapped -- see "locations" below).

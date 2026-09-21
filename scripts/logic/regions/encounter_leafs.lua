@@ -1,6 +1,7 @@
 -- Encounter leaves: one dead-end node per wild-encounter TABLE, attached from every
--- region whose regions.json `wild_encounters` names that table. Generated from
--- external_files/regions.json -- regenerate rather than hand-edit.
+-- region whose regions.json `wild_encounters` names that table. Originally generated from the
+-- apworld's regions.json; the generator is gone, so hand-edit and cross-check against the
+-- live apworld.
 --
 -- WHY A SHARED LEAF: an encounter table is fishable/catchable from many regions, so the
 -- check is reachable if ANY of them is. Attaching the same leaf name from N regions makes
