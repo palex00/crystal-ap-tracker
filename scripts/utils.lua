@@ -102,7 +102,6 @@ end
 
 function toggle_er()
     refreshERCategories()
-    toggle_tabs()
 end
 
 function updateRemainingDexcountsanityChecks()

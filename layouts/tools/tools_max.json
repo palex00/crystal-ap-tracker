@@ -1,40 +1,112 @@
 {
     "tools_grid": {
-        "type": "itemgrid",
+        "type": "array",
         "orientation": "vertical",
         "margin": "2,2",
-        "item_margin": "2,2",
-        "h_alignment": "left",
-        "item_size": "32",
-        "rows": [
-            [
-                "visibility_items",
-                "slotdigit_1",
-                "slotdigit_2",
-                "slotdigit_3"
-            ],
-            [
-                "visibility_mons",
-                "automap",
-                "auto_shop_markoff"
-            ],
-            [
-                "visibility_events",
-                "splitmap",
-                "routing_tab"
-            ],
-            [
-                "visibility_signs",
-                "encounter_tracking",
-            ],
-            [
-                "visibility_grass",
-                "hint_tracking",
-            ],
-            [
-                "visibility_entrances",
-                "broadcast_view"
-            ]
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "layout",
+                        "key": "slot_digits"
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "margin": "0,0",
+                        "item_margin": "3,3",
+                        "item_size": "32",
+                        "rows": [
+                            [
+                                "visibility_items",
+                                "visibility_mons",
+                                "visibility_events"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "layout",
+                        "key": "slot_show_signs"
+                    },
+                    {
+                        "type": "layout",
+                        "key": "slot_show_grass"
+                    },
+                    {
+                        "type": "layout",
+                        "key": "slot_show_entrances"
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "margin": "0,0",
+                        "item_margin": "3,3",
+                        "item_size": "32",
+                        "rows": [
+                            [
+                                "automap",
+                                "encounter_tracking",
+                                "hint_tracking"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "margin": "0,0",
+                        "item_margin": "3,3",
+                        "item_size": "32",
+                        "rows": [
+                            [
+                                "splitmap"
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "layout",
+                        "key": "slot_routing_tab"
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "layout",
+                        "key": "slot_auto_shop"
+                    }
+                ]
+            }
         ]
     }
 }

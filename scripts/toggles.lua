@@ -1,5 +1,4 @@
 MODE_LAYOUTS = {
-    "items",
     "overworld",
     "events",
     "flyunlocks",
@@ -19,8 +18,6 @@ function toggle_johto()
     for _, name in ipairs(MODE_LAYOUTS) do
         Tracker:AddLayouts("layouts/"..dir.."/"..name..".json")
     end
-
-    toggle_tabs()
 end
 
 SUDOWOODO = false
@@ -147,108 +144,6 @@ function toggle_floodedmine()
     add_map("floodedmine"..suffix)
 end
 
-LOADED_LAYOUTS = {}
-
-function load_layout(slot, path)
-    if LOADED_LAYOUTS[slot] ~= path then
-        LOADED_LAYOUTS[slot] = path
-        Tracker:AddLayouts(path)
-    end
-end
-
-function toggle_tabs()
-    local mode = johto_mode()
-    local silver = has("johto_only_on") and "_nosilver" or ""
-    local routing = ""
-    for _, enabled in pairs(ER_CATEGORY_ENABLED) do
-        if enabled then
-            routing = "_routing"
-            break
-        end
-    end
-
-    load_layout("johto_dungeons", "layouts/submaps/johto_dungeons"..(has("flooded_mine_on") and "_floodedmine" or "")..".json")
-    load_layout("route_23", "layouts/submaps/route_23"..(has("route_23_restored_on") and "_restored" or "")..".json")
-    load_layout("ew_underground", "layouts/submaps/ew_underground"..(has("ew_underground_on") and "_on" or "_off")..".json")
-
-    if has("splitmap_off") then
-        load_layout("tabbed_maps", "layouts/"..mode.."/tabs_single"..silver..routing..".json")
-        return
-    end
-
-    local meta_routing, submap_routing = routing, ""
-    if has("routing_tab_submap") then
-        meta_routing, submap_routing = "", routing
-    end
-
-    load_layout("tabs_meta", "layouts/tabs/meta"..meta_routing..".json")
-    load_layout("tabs_regions", "layouts/"..mode.."/tabs_regions"..silver..submap_routing..".json")
-    load_layout("tabbed_maps", "layouts/tabs/tabs_"..(has("splitmap_on") and "split" or "reverse")..".json")
-end
-
-function toggle_itemgrid()
-    local suffix = ""
-    if has("randomize_fly_unlocks_true") then
-        suffix = suffix .. "_flyunlock"
-    end
-    if has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true") then
-        suffix = suffix .. "_shopsanity"
-    end
-    if has("goal_unown") then
-        suffix = suffix .. "_tiles"
-    end
-
-    Tracker:AddLayouts("layouts/tracker/tracker"..suffix..".json")
-
-    local prefix = ""
-    if has("broadcast_view_vertical") then
-        prefix = "vertical_"
-    end
-
-    Tracker:AddLayouts("layouts/broadcast/"..prefix.."broadcast"..suffix..".json")
-
-    toggle_shopgrid()
-end
-
-function toggle_shopgrid()
-    local bluecard = has("shopsanity_bluecard_true")
-    local apricorn = has("shopsanity_apricorn_true")
-    if bluecard and apricorn then
-        Tracker:AddLayouts("layouts/shopsanity/shopsanity_all.json")
-    elseif bluecard then
-        Tracker:AddLayouts("layouts/shopsanity/shopsanity_bluecard.json")
-    elseif apricorn then
-        Tracker:AddLayouts("layouts/shopsanity/shopsanity_apricorn.json")
-    end
-end
-
-function toggleQuickSettings()
-    local suffix = ""
-
-    if SLOT_TRACK == true then
-        suffix = suffix .. "_slots"
-    end
-
-    if has("goal_unown") then
-        suffix = suffix .. "_signs"
-    end
-
-    if has("grasssanity_any") then
-        suffix = suffix .. "_grass"
-    end
-
-    if has("shopsanity_anymart") then
-        suffix = suffix .. "_shop"
-    end
-
-    Tracker:AddLayouts("layouts/settings_quick/settings_quick"..suffix..".json")
-end
-
-function updateGoalLayout()
-    toggleQuickSettings()
-    toggle_itemgrid()
-end
-
 HOSTED_EVENT_CODES = {
     "ENGINE_UNLOCKED_UNOWNS_A_TO_K",
     "ENGINE_UNLOCKED_UNOWNS_L_TO_R",
@@ -367,4 +262,11 @@ end
 function syncBaseFromHosted(code)
     local base = code:gsub("_hosted$", "")
     Tracker:FindObjectForCode(base).Active = Tracker:FindObjectForCode(code).Active
+end
+
+function updateBlueCardOverlay()
+    local card = Tracker:FindObjectForCode("BLUE_CARD")
+    local points = card.CurrentStage
+    card:SetOverlay(points > 0 and tostring(points) or "")
+    card:SetOverlayColor(points == 5 and "#1fff1f" or "")
 end

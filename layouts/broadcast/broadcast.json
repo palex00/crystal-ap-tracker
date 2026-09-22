@@ -16,7 +16,19 @@
                     },
                     {
                         "type": "layout",
+                        "key": "goal_progress_grid"
+                    },
+                    {
+                        "type": "layout",
                         "key": "event_grid"
+                    },
+                    {
+                        "type": "layout",
+                        "key": "puzzle_event_grid"
+                    },
+                    {
+                        "type": "layout",
+                        "key": "kanto_event_grid"
                     }
                 ]
             }

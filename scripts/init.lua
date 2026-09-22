@@ -102,22 +102,19 @@ Tracker:AddLayouts("layouts/submaps/kanto_routes.json")
 Tracker:AddLayouts("layouts/submaps/kanto_dungeons.json")
 Tracker:AddLayouts("layouts/full/overworld.json")
 Tracker:AddLayouts("layouts/routing.json")
-toggle_tabs()
+ScriptHost:LoadScript("scripts/layout_slots.lua")
 
 ---- items
-Tracker:AddLayouts("layouts/tracker/tracker_flyunlock_other.json") -- maximum itemgrids
-Tracker:AddLayouts("layouts/full/items.json") -- debug for now, will be changed to dynamic later
-Tracker:AddLayouts("layouts/items/encevo_max.json") -- debug for now, will be changed to dynamic later
-Tracker:AddLayouts("layouts/items/other_max.json") -- debug for now, will be changed to dynamic later
-Tracker:AddLayouts("layouts/full/flyunlocks.json") --static
-Tracker:AddLayouts("layouts/full/events.json") -- debug for now, will be changed to dynamic later
+Tracker:AddLayouts("layouts/items/encevo_max.json")
+Tracker:AddLayouts("layouts/full/flyunlocks.json")
+Tracker:AddLayouts("layouts/full/events.json")
 
 ---- settings
-Tracker:AddLayouts("layouts/full/settings.json") -- debug for now, will be changed to dynamic later
+Tracker:AddLayouts("layouts/full/settings.json")
 Tracker:AddLayouts("layouts/settings/settings_encevo.json")
-Tracker:AddLayouts("layouts/settings/settings_popup.json") -- debug for now, will be changed to dynamic later
-Tracker:AddLayouts("layouts/tools/tools_max.json") -- debug for now, will be changed to dynamic later
-Tracker:AddLayouts("layouts/full/settings_flydestinations.json") --static
+Tracker:AddLayouts("layouts/settings/settings_popup.json")
+Tracker:AddLayouts("layouts/tools/tools_max.json")
+Tracker:AddLayouts("layouts/full/settings_flydestinations.json")
 
 ---- other
 Tracker:AddLayouts("layouts/levelinglogic.json")
@@ -131,11 +128,6 @@ ScriptHost:LoadScript("scripts/autotracking.lua")
 
 ---- Watches
 ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
-ScriptHost:AddWatchForCode("splitmap", "splitmap", toggle_tabs)
-ScriptHost:AddWatchForCode("routing_tab", "routing_tab", toggle_tabs)
-ScriptHost:AddWatchForCode("flooded_mine_tabs", "flooded_mine", toggle_tabs)
-ScriptHost:AddWatchForCode("route_23_restored", "route_23_restored", toggle_tabs)
-ScriptHost:AddWatchForCode("ew_underground", "ew_underground", toggle_tabs)
 ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
 ScriptHost:AddWatchForCode("route_2_access", "route_2_access", toggle_route2)
 ScriptHost:AddWatchForCode("red_gyarados_access", "red_gyarados_access", toggle_lakeofrage)
@@ -156,16 +148,8 @@ ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function(
 
 ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
 
---ScriptHost:AddWatchForCode("randomize_fly_unlocks", "randomize_fly_unlocks", toggle_itemgrid)
---ScriptHost:AddWatchForCode("shopsanity_gamecorners", "shopsanity_gamecorners", toggle_itemgrid)
---ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_itemgrid)
---ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_itemgrid)
---ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
 ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
---ScriptHost:AddWatchForCode("grasssanity", "grasssanity", toggleQuickSettings)
---ScriptHost:AddWatchForCode("goal", "goal", updateGoalLayout)
---ScriptHost:AddWatchForCode("shopsanity_johtomarts", "shopsanity_johtomarts", toggleQuickSettings)
---ScriptHost:AddWatchForCode("shopsanity_kantomarts", "shopsanity_kantomarts", toggleQuickSettings)
+ScriptHost:AddWatchForCode("blue_card_overlay", "BLUE_CARD", updateBlueCardOverlay)
 
 for _, list in ipairs({HOSTED_EVENT_CODES, HOSTED_ITEM_CODES}) do
     for _, code in ipairs(list) do

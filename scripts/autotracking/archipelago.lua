@@ -111,13 +111,13 @@ function onClear(slot_data)
         local rc_num = tonumber(version_str:match("%-rc%.(%d+)$")) -- remove before full release
 
         if first_two_dots == "6.0" and rc_num ~= nil then
-            Tracker:AddLayouts("layouts/tracker/tracker_flyunlock_other.json")
+            update_layout_slot("tracker_default")
         else
-            Tracker:AddLayouts("layouts/versionmismatch.json")
+            load_layout("tracker_default", "layouts/versionmismatch.json")
             return
         end
     else
-        Tracker:AddLayouts("layouts/not_crystal.json")
+        load_layout("tracker_default", "layouts/not_crystal.json")
     end
 
 
@@ -356,7 +356,6 @@ function onClear(slot_data)
         end
     end
 
-    --toggle_itemgrid() temporary disabled
     if refreshERCategories then
         refreshERCategories()
     end
@@ -424,7 +423,9 @@ function onItem(index, item_id, item_name, player_number)
     
     local obj = Tracker:FindObjectForCode(v)
     if obj then
-        if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
+        if v == "BLUE_CARD_POINT" then
+            obj.CurrentStage = obj.CurrentStage + 1
+        elseif v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
             obj.AcquiredCount = obj.AcquiredCount + 1
         else
             obj.Active = true
@@ -499,7 +500,7 @@ function onNotify(key, value, old_value)
             updateTrades(value)
         elseif key == IDs.SLOT_UNLOCK then
             SLOT_TRACK = true
-            -- toggleQuickSettings() [temporary disabled]
+            update_layout_slot("slot_digits")
         elseif key == IDs.HINT then
             SAVED_HINTS = value
             updateHints()

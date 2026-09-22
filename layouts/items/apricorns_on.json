@@ -1,0 +1,50 @@
+{
+    "apricorn_section": {
+        "type": "group",
+        "background": "#171717",
+        "header": "Apricorns",
+        "dock": "left",
+        "content": {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,5",
+            "content": [
+                {
+                    "type": "itemgrid",
+                    "margin": "0,0",
+                    "item_margin": "3,3",
+                    "rows": [
+                        [
+                            "RED_APRICORN"
+                        ],
+                        [
+                            "BLU_APRICORN"
+                        ],
+                        [
+                            "YLW_APRICORN"
+                        ],
+                        [
+                            "GRN_APRICORN"
+                        ]
+                    ]
+                },
+                {
+                    "type": "itemgrid",
+                    "margin": "0,19,0,0",
+                    "item_margin": "3,3",
+                    "rows": [
+                        [
+                            "WHT_APRICORN"
+                        ],
+                        [
+                            "BLK_APRICORN"
+                        ],
+                        [
+                            "PNK_APRICORN"
+                        ]
+                    ]
+                }
+            ]
+        }
+    }
+}

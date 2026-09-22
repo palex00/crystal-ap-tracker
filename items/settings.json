@@ -3,7 +3,7 @@
         "name": "Goal: Elite Four",
         "type": "progressive",
         "loop": true,
-        "initial_stage_idx": 0,
+        "initial_stage_idx": 1,
         "allow_disabled": false,
         "stages": [
             {
@@ -1306,11 +1306,6 @@
         ]
     },
     {
-        "img": "/images/settings/dex_related/breedinglogic.png",
-        "codes": "breedinglogic_dummy",
-        "type": "static"
-    },
-    {
         "name": "Breeding Logic",
         "type": "progressive",
         "loop": true,
@@ -1347,11 +1342,6 @@
                 "inherit_codes": false
             }
         ]
-    },
-    {
-        "img": "/images/settings/dex_related/informationsheet.png",
-        "codes": "informationsheet",
-        "type": "static"
     },
     {
         "name": "Mount Mortar Rock Smash Rock",

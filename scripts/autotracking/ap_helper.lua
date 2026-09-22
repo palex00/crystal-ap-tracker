@@ -6,7 +6,9 @@ function resetItems()
             else
                 local obj = Tracker:FindObjectForCode(v)
                 if obj then
-                    if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
+                    if v == "BLUE_CARD_POINT" then
+                        obj.CurrentStage = 0
+                    elseif v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
                         obj.AcquiredCount = 0
                     else
                         obj.Active = false
