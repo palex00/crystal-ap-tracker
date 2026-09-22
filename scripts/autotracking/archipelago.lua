@@ -7,6 +7,7 @@ ScriptHost:LoadScript("scripts/autotracking/encounter_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/pokemon_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/evolution_location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/ap_helper.lua")
+ScriptHost:LoadScript("scripts/autotracking/request_mapping.lua")
 
 CUR_INDEX = -1
 PLAYER_ID = -1
@@ -72,6 +73,7 @@ function onClear(slot_data)
     CUR_INDEX = -1
     resetLocations()
     resetItems()
+    resetRequests()
     CAUGHT = {}
     SEEN = {}
     
@@ -465,6 +467,8 @@ function onLocation(location_id, location_name)
     if #id_str == 5 and id_str:sub(1, 2) == "20" then
         updateRemainingDexcountsanityChecks()
     end
+
+    syncRequests()
 end
 
 
@@ -785,6 +789,7 @@ function updatePokemon()
     end
 
     if has("encounter_tracking_off") then
+        syncRequests()
         return
     end
 
@@ -881,6 +886,8 @@ function updatePokemon()
             end
         end
     end
+
+    syncRequests()
 end
 
 function resetEvolutionsanityData()
@@ -1014,6 +1021,8 @@ function resetHints()
             obj.Highlight = 0
         end
     end
+
+    syncRequests()
 end
 
 CLEARED_HINTS = {}
@@ -1122,6 +1131,8 @@ function updateHints()
             end
         end
     end
+
+    syncRequests()
 end
 
 
