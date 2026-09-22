@@ -22,6 +22,14 @@
                 },
                 {
                     "type": "group",
+                    "header": "Randomization",
+                    "content": {
+                        "type": "layout",
+                        "key": "randomization_grid"
+                    }
+                },
+                {
+                    "type": "group",
                     "header": "Leveling Logic",
                     "content": {
                         "type": "layout",
@@ -67,6 +75,7 @@
     },
     "evomethod_grid": {
         "type": "itemgrid",
+        "margin": "45,0,0,0",
         "item_margin": "17, 5",
         "item_size": "40,48",
         "h_alignment": "center",
@@ -77,6 +86,21 @@
                 "evomethod_tyrogue",
                 "evomethod_useitem",
                 "evomethod_helditem",
+            ]
+        ]
+    },
+    "randomization_grid": {
+        "type": "itemgrid",
+        "margin": "160,0,0,0",
+        "item_margin": "17, 5",
+        "item_size": "36,36",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "h_alignment": "center",
+        "rows": [
+            [
+                "randomize_evolution",
+                "randomize_breeding"
             ]
         ]
     },

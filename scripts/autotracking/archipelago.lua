@@ -955,7 +955,7 @@ end
 function updateBreedingInfo()
     for first_id, second_id in pairs(BREEDING_DATA) do
         for _, caught_id in pairs(CAUGHT) do
-            if second_id == caught_id then
+            if second_id == caught_id or (second_id == 29 and caught_id == 32) then
                 local evo_string = EVO_LOC_MAPPING[tonumber(first_id)]
                 if evo_string then
                     local loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string .. "/Breed " .. evo_string)

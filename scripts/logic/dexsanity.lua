@@ -37,13 +37,41 @@ EVOLUTION_METHOD_MAP = {
     end
 }
 
-function breeding()
-    local daycare = CanReach("REGION_ROUTE_34")
-    
+BREEDING_REQUIRES_DITTO = {
+    [29] = true,  -- Nidoran (F)
+    [32] = true,  -- Nidoran (M)
+    [33] = true,  -- Nidorino
+    [34] = true,  -- Nidoking
+    [81] = true,  -- Magnemite
+    [82] = true,  -- Magneton
+    [100] = true, -- Voltorb
+    [101] = true, -- Electrode
+    [106] = true, -- Hitmonlee
+    [107] = true, -- Hitmonchan
+    [113] = true, -- Chansey
+    [115] = true, -- Kangaskhan
+    [120] = true, -- Staryu
+    [121] = true, -- Starmie
+    [124] = true, -- Jynx
+    [128] = true, -- Tauros
+    [137] = true, -- Porygon
+    [233] = true, -- Porygon2
+    [237] = true, -- Hitmontop
+    [241] = true, -- Miltank
+    [242] = true, -- Blissey
+}
+
+function breeding(ID)
+    local daycare = ALL(CanReach("REGION_DAY_CARE"), CanReach("REGION_ROUTE_34:DAY_CARE_YARD"))
+
     if (daycare == 0) or has("breeding_logic_off_hard") then
         return AccessibilityLevel.None
     end
-    
+
+    if not has("ditto") and (BREEDING_REQUIRES_DITTO[tonumber(ID)] or has("breeding_logic_ditto_hard")) then
+        return AccessibilityLevel.None
+    end
+
     if has("breeding_logic_on") then
         return daycare
     elseif has("ditto") and (has("breeding_logic_ditto_hard") or has("breeding_logic_ditto_soft")) then
@@ -317,6 +345,6 @@ function breeding_new(ID)
     if Tracker:FindObjectForCode(pokemon_ownership).Active == false then
         return AccessibilityLevel.None
     end
-    return breeding()
+    return breeding(ID)
 end
 

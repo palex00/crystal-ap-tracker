@@ -162,6 +162,7 @@ SLOT_CODES = {
     randomize_fly_unlocks = {code = "randomize_fly_unlocks"},
     randomize_fly_destinations = {code = "randomize_fly_destinations"},
     randomize_evolution = {code = "randomize_evolution"},
+    randomize_breeding = {code = "randomize_breeding"},
     victory_road_strength = {code = "victory_road_strength"},
     require_flash = {code = "require_flash"},
     lock_kanto_gyms = {code = "lock_kanto_gyms"},

@@ -1564,6 +1564,46 @@
         ]
     },
     {
+        "name": "Randomize Breeding",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Breeding: Vanilla",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "randomize_breeding, randomize_breeding_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Random Line Base",
+                "img": "/images/placeholder.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Random Any Base",
+                "img": "/images/placeholder.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Random Lower BST",
+                "img": "/images/placeholder.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Completely Random",
+                "img": "/images/placeholder.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Victory Road Strength",
         "type": "progressive",
         "loop": true,
