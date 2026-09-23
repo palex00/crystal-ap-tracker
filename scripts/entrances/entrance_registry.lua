@@ -6,6 +6,8 @@
 --     Regenerated from the apworld's data/entrance_data.json (connection exit_warps).
 --   * pretty name          (item badge + route hop label)
 --   * tab chain / section  (UiHint navigation + temp-highlight)
+--   * landing (optional)   (region a one-way target drops you in; the row is keyed by the
+--     slot_data target name "<hole token> (one-way target)" and has no ids of its own)
 --   * gate (optional)      (item code that must be set for this row to own its shared
 --     id; used only where a vanilla edge and its Route-23-Restored variant reuse a tile.)
 --
@@ -218,17 +220,38 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Cities", "Blackthorn City", "Gym", "2F"},
         section = "@JohtoKanto/Blackthorn City/Blackthorn Gym 2F West Hole                                                           ",
     },
+    ["REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_1 (one-way target)"] = {
+        ids = {},
+        pretty = "Blackthorn Gym 2F West Hole Landing",
+        tab = {"Johto Cities", "Blackthorn City", "Gym", "1F"},
+        section = "@JohtoKanto/Blackthorn City/Blackthorn Gym 2F West Hole Landing                                             ",
+        landing = "REGION_BLACKTHORN_GYM_1F:HOLE_1",
+    },
     ["REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_2"] = {
         ids = {1108},
         pretty = "Blackthorn Gym 2F Southeast Hole",
         tab = {"Johto Cities", "Blackthorn City", "Gym", "2F"},
         section = "@JohtoKanto/Blackthorn City/Blackthorn Gym 2F Southeast Hole                                                   ",
     },
+    ["REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_2 (one-way target)"] = {
+        ids = {},
+        pretty = "Blackthorn Gym 2F Southeast Hole Landing",
+        tab = {"Johto Cities", "Blackthorn City", "Gym", "1F"},
+        section = "@JohtoKanto/Blackthorn City/Blackthorn Gym 2F Southeast Hole Landing                                     ",
+        landing = "REGION_BLACKTHORN_GYM_1F:HOLE_2",
+    },
     ["REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_3"] = {
         ids = {1109},
         pretty = "Blackthorn Gym 2F Northeast Hole",
         tab = {"Johto Cities", "Blackthorn City", "Gym", "2F"},
         section = "@JohtoKanto/Blackthorn City/Blackthorn Gym 2F Northeast Hole                                                   ",
+    },
+    ["REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_3 (one-way target)"] = {
+        ids = {},
+        pretty = "Blackthorn Gym 2F Northeast Hole Landing",
+        tab = {"Johto Cities", "Blackthorn City", "Gym", "1F"},
+        section = "@JohtoKanto/Blackthorn City/Blackthorn Gym 2F Northeast Hole Landing                                     ",
+        landing = "REGION_BLACKTHORN_GYM_1F:HOLE_3",
     },
     ["REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:MIDDLE"] = {
         ids = {1106},
@@ -1658,11 +1681,25 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Dungeons", "Ice Path", "Ice Path B1F"},
         section = "@JohtoKanto/Ice Path/Ice Path B1F Northeast Hole                                                              ",
     },
+    ["REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_1 (one-way target)"] = {
+        ids = {},
+        pretty = "Ice Path B1F Northeast Hole Landing",
+        tab = {"Johto Dungeons", "Ice Path", "Ice Path B2F - Mahogany Side"},
+        section = "@JohtoKanto/Ice Path/Ice Path B1F Northeast Hole Landing                                                ",
+        landing = "REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_1",
+    },
     ["REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_2"] = {
         ids = {716},
         pretty = "Ice Path B1F Northwest Hole",
         tab = {"Johto Dungeons", "Ice Path", "Ice Path B1F"},
         section = "@JohtoKanto/Ice Path/Ice Path B1F Northwest Hole                                                             ",
+    },
+    ["REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_2 (one-way target)"] = {
+        ids = {},
+        pretty = "Ice Path B1F Northwest Hole Landing",
+        tab = {"Johto Dungeons", "Ice Path", "Ice Path B2F - Mahogany Side"},
+        section = "@JohtoKanto/Ice Path/Ice Path B1F Northwest Hole Landing                                               ",
+        landing = "REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_2",
     },
     ["REGION_ICE_PATH_B1F:NORTH:STRENGTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_3"] = {
         ids = {717},
@@ -1670,11 +1707,25 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Dungeons", "Ice Path", "Ice Path B1F"},
         section = "@JohtoKanto/Ice Path/Ice Path B1F Southwest Hole                                                             ",
     },
+    ["REGION_ICE_PATH_B1F:NORTH:STRENGTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_3 (one-way target)"] = {
+        ids = {},
+        pretty = "Ice Path B1F Southwest Hole Landing",
+        tab = {"Johto Dungeons", "Ice Path", "Ice Path B2F - Mahogany Side"},
+        section = "@JohtoKanto/Ice Path/Ice Path B1F Southwest Hole Landing                                               ",
+        landing = "REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_3",
+    },
     ["REGION_ICE_PATH_B1F:NORTH:STRENGTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_4"] = {
         ids = {718},
         pretty = "Ice Path B1F Southeast Hole",
         tab = {"Johto Dungeons", "Ice Path", "Ice Path B1F"},
         section = "@JohtoKanto/Ice Path/Ice Path B1F Southeast Hole                                                              ",
+    },
+    ["REGION_ICE_PATH_B1F:NORTH:STRENGTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_4 (one-way target)"] = {
+        ids = {},
+        pretty = "Ice Path B1F Southeast Hole Landing",
+        tab = {"Johto Dungeons", "Ice Path", "Ice Path B2F - Mahogany Side"},
+        section = "@JohtoKanto/Ice Path/Ice Path B1F Southeast Hole Landing                                                ",
+        landing = "REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_4",
     },
     ["REGION_ICE_PATH_B1F:SOUTH -> REGION_ICE_PATH_1F:EAST"] = {
         ids = {719},
@@ -2312,6 +2363,13 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Cities", "Olivine City", "Lighthouse", "2F"},
         section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 2F Hole                                                                ",
     },
+    ["REGION_OLIVINE_LIGHTHOUSE_2F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_1F (one-way target)"] = {
+        ids = {},
+        pretty = "Olivine Lighthouse 2F Hole Landing",
+        tab = {"Johto Cities", "Olivine City", "Lighthouse", "1F"},
+        section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 2F Hole Landing                                                  ",
+        landing = "REGION_OLIVINE_LIGHTHOUSE_1F",
+    },
     ["REGION_OLIVINE_LIGHTHOUSE_3F -> REGION_OLIVINE_LIGHTHOUSE_2F"] = {
         ids = {538},
         pretty = "Olivine Lighthouse 3F Northwest Stairs",
@@ -2329,6 +2387,13 @@ ENTRANCE_REGISTRY = {
         pretty = "Olivine Lighthouse 3F Hole",
         tab = {"Johto Cities", "Olivine City", "Lighthouse", "3F"},
         section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 3F Hole                                                                ",
+    },
+    ["REGION_OLIVINE_LIGHTHOUSE_3F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_2F (one-way target)"] = {
+        ids = {},
+        pretty = "Olivine Lighthouse 3F Hole Landing",
+        tab = {"Johto Cities", "Olivine City", "Lighthouse", "2F"},
+        section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 3F Hole Landing                                                  ",
+        landing = "REGION_OLIVINE_LIGHTHOUSE_2F",
     },
     ["REGION_OLIVINE_LIGHTHOUSE_3F:NORTH -> REGION_OLIVINE_LIGHTHOUSE_4F:CENTER"] = {
         ids = {539},
@@ -2366,11 +2431,25 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Cities", "Olivine City", "Lighthouse", "4F"},
         section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 4F East Hole                                                        ",
     },
+    ["REGION_OLIVINE_LIGHTHOUSE_4F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_3F (one-way target)"] = {
+        ids = {},
+        pretty = "Olivine Lighthouse 4F East Hole Landing",
+        tab = {"Johto Cities", "Olivine City", "Lighthouse", "3F"},
+        section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 4F East Hole Landing                                          ",
+        landing = "REGION_OLIVINE_LIGHTHOUSE_3F",
+    },
     ["REGION_OLIVINE_LIGHTHOUSE_4F:NORTH_HOLE -> REGION_OLIVINE_LIGHTHOUSE_3F:NORTH"] = {
         ids = {559, 560},
         pretty = "Olivine Lighthouse 4F North Hole",
         tab = {"Johto Cities", "Olivine City", "Lighthouse", "4F"},
         section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 4F North Hole                                                      ",
+    },
+    ["REGION_OLIVINE_LIGHTHOUSE_4F:NORTH_HOLE -> REGION_OLIVINE_LIGHTHOUSE_3F:NORTH (one-way target)"] = {
+        ids = {},
+        pretty = "Olivine Lighthouse 4F North Hole Landing",
+        tab = {"Johto Cities", "Olivine City", "Lighthouse", "3F"},
+        section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 4F North Hole Landing                                        ",
+        landing = "REGION_OLIVINE_LIGHTHOUSE_3F:NORTH",
     },
     ["REGION_OLIVINE_LIGHTHOUSE_5F -> REGION_OLIVINE_LIGHTHOUSE_4F"] = {
         ids = {570},
@@ -2396,11 +2475,25 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Cities", "Olivine City", "Lighthouse", "5F"},
         section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 5F Hole                                                                ",
     },
+    ["REGION_OLIVINE_LIGHTHOUSE_5F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_4F (one-way target)"] = {
+        ids = {},
+        pretty = "Olivine Lighthouse 5F Hole Landing",
+        tab = {"Johto Cities", "Olivine City", "Lighthouse", "4F"},
+        section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 5F Hole Landing                                                  ",
+        landing = "REGION_OLIVINE_LIGHTHOUSE_4F",
+    },
     ["REGION_OLIVINE_LIGHTHOUSE_6F -> REGION_OLIVINE_LIGHTHOUSE_5F"] = {
         ids = {578, 579},
         pretty = "Olivine Lighthouse 6F Hole",
         tab = {"Johto Cities", "Olivine City", "Lighthouse", "6F"},
         section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 6F Hole                                                                ",
+    },
+    ["REGION_OLIVINE_LIGHTHOUSE_6F -> REGION_OLIVINE_LIGHTHOUSE_5F (one-way target)"] = {
+        ids = {},
+        pretty = "Olivine Lighthouse 6F Hole Landing",
+        tab = {"Johto Cities", "Olivine City", "Lighthouse", "5F"},
+        section = "@JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 6F Hole Landing                                                  ",
+        landing = "REGION_OLIVINE_LIGHTHOUSE_5F",
     },
     ["REGION_OLIVINE_LIGHTHOUSE_6F -> REGION_OLIVINE_LIGHTHOUSE_5F:CENTER"] = {
         ids = {577},
@@ -3590,6 +3683,13 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Dungeons", "Ruins of Alph", "Aerodactyl Chamber"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Chamber Hole                                            ",
     },
+    ["REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Aerodactyl Chamber Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Inner Chamber"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Chamber Hole Landing                              ",
+        landing = "REGION_RUINS_OF_ALPH_INNER_CHAMBER",
+    },
     ["REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER -> REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH"] = {
         ids = {385, 386},
         pretty = "Ruins of Alph Aerodactyl Chamber Exit",
@@ -3608,11 +3708,25 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Dungeons", "Ruins of Alph", "Aerodactyl Item Room"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Item Room Hole                                         ",
     },
+    ["REGION_RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM -> REGION_RUINS_OF_ALPH_AERODACTYL_WORD_ROOM (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Aerodactyl Item Room Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Aerodactyl Word Room"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Item Room Hole Landing                           ",
+        landing = "REGION_RUINS_OF_ALPH_AERODACTYL_WORD_ROOM",
+    },
     ["REGION_RUINS_OF_ALPH_AERODACTYL_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER"] = {
         ids = {475},
         pretty = "Ruins of Alph Aerodactyl Word Room Hole",
         tab = {"Johto Dungeons", "Ruins of Alph", "Aerodactyl Word Room"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Word Room Hole                                       ",
+    },
+    ["REGION_RUINS_OF_ALPH_AERODACTYL_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Aerodactyl Word Room Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Inner Chamber"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Word Room Hole Landing                         ",
+        landing = "REGION_RUINS_OF_ALPH_INNER_CHAMBER",
     },
     ["REGION_RUINS_OF_ALPH_HO_OH_CHAMBER -> REGION_RUINS_OF_ALPH_HO_OH_ITEM_ROOM"] = {
         ids = {365},
@@ -3625,6 +3739,13 @@ ENTRANCE_REGISTRY = {
         pretty = "Ruins of Alph Ho-Oh Chamber Hole",
         tab = {"Johto Dungeons", "Ruins of Alph", "Ho-Oh Chamber"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Chamber Hole                                                   ",
+    },
+    ["REGION_RUINS_OF_ALPH_HO_OH_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Ho-Oh Chamber Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Inner Chamber"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Chamber Hole Landing                                     ",
+        landing = "REGION_RUINS_OF_ALPH_INNER_CHAMBER",
     },
     ["REGION_RUINS_OF_ALPH_HO_OH_CHAMBER -> REGION_RUINS_OF_ALPH_OUTSIDE:WEST"] = {
         ids = {361, 362},
@@ -3644,11 +3765,25 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Dungeons", "Ruins of Alph", "Ho-Oh Item Room"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Item Room Hole                                                ",
     },
+    ["REGION_RUINS_OF_ALPH_HO_OH_ITEM_ROOM -> REGION_RUINS_OF_ALPH_HO_OH_WORD_ROOM (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Ho-Oh Item Room Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Ho-Oh Word Room"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Item Room Hole Landing                                  ",
+        landing = "REGION_RUINS_OF_ALPH_HO_OH_WORD_ROOM",
+    },
     ["REGION_RUINS_OF_ALPH_HO_OH_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER"] = {
         ids = {451},
         pretty = "Ruins of Alph Ho-Oh Word Room Hole",
         tab = {"Johto Dungeons", "Ruins of Alph", "Ho-Oh Word Room"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Word Room Hole                                              ",
+    },
+    ["REGION_RUINS_OF_ALPH_HO_OH_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Ho-Oh Word Room Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Inner Chamber"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Word Room Hole Landing                                ",
+        landing = "REGION_RUINS_OF_ALPH_INNER_CHAMBER",
     },
     ["REGION_RUINS_OF_ALPH_INNER_CHAMBER -> REGION_RUINS_OF_ALPH_OUTSIDE"] = {
         ids = {393},
@@ -3661,6 +3796,13 @@ ENTRANCE_REGISTRY = {
         pretty = "Ruins of Alph Kabuto Chamber Hole",
         tab = {"Johto Dungeons", "Ruins of Alph", "Kabuto Chamber"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Chamber Hole                                                  ",
+    },
+    ["REGION_RUINS_OF_ALPH_KABUTO_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Kabuto Chamber Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Inner Chamber"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Chamber Hole Landing                                    ",
+        landing = "REGION_RUINS_OF_ALPH_INNER_CHAMBER",
     },
     ["REGION_RUINS_OF_ALPH_KABUTO_CHAMBER -> REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM"] = {
         ids = {373},
@@ -3686,17 +3828,38 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Dungeons", "Ruins of Alph", "Kabuto Item Room"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Item Room Hole                                               ",
     },
+    ["REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM -> REGION_RUINS_OF_ALPH_KABUTO_WORD_ROOM (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Kabuto Item Room Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Kabuto Word Room"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Item Room Hole Landing                                 ",
+        landing = "REGION_RUINS_OF_ALPH_KABUTO_WORD_ROOM",
+    },
     ["REGION_RUINS_OF_ALPH_KABUTO_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER"] = {
         ids = {459},
         pretty = "Ruins of Alph Kabuto Word Room Hole",
         tab = {"Johto Dungeons", "Ruins of Alph", "Kabuto Word Room"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Word Room Hole                                             ",
     },
+    ["REGION_RUINS_OF_ALPH_KABUTO_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Kabuto Word Room Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Inner Chamber"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Word Room Hole Landing                               ",
+        landing = "REGION_RUINS_OF_ALPH_INNER_CHAMBER",
+    },
     ["REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER"] = {
         ids = {379, 380},
         pretty = "Ruins of Alph Omanyte Chamber Hole",
         tab = {"Johto Dungeons", "Ruins of Alph", "Omanyte Chamber"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Chamber Hole                                              ",
+    },
+    ["REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Omanyte Chamber Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Inner Chamber"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Chamber Hole Landing                                ",
+        landing = "REGION_RUINS_OF_ALPH_INNER_CHAMBER",
     },
     ["REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER -> REGION_RUINS_OF_ALPH_OMANYTE_ITEM_ROOM"] = {
         ids = {381},
@@ -3722,11 +3885,25 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Dungeons", "Ruins of Alph", "Omanyte Item Room"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Item Room Hole                                           ",
     },
+    ["REGION_RUINS_OF_ALPH_OMANYTE_ITEM_ROOM -> REGION_RUINS_OF_ALPH_OMANYTE_WORD_ROOM (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Omanyte Item Room Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Omanyte Word Room"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Item Room Hole Landing                             ",
+        landing = "REGION_RUINS_OF_ALPH_OMANYTE_WORD_ROOM",
+    },
     ["REGION_RUINS_OF_ALPH_OMANYTE_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER"] = {
         ids = {467},
         pretty = "Ruins of Alph Omanyte Word Room Hole",
         tab = {"Johto Dungeons", "Ruins of Alph", "Omanyte Word Room"},
         section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Word Room Hole                                          ",
+    },
+    ["REGION_RUINS_OF_ALPH_OMANYTE_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"] = {
+        ids = {},
+        pretty = "Ruins of Alph Omanyte Word Room Hole Landing",
+        tab = {"Johto Dungeons", "Ruins of Alph", "Inner Chamber"},
+        section = "@JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Word Room Hole Landing                            ",
+        landing = "REGION_RUINS_OF_ALPH_INNER_CHAMBER",
     },
     ["REGION_RUINS_OF_ALPH_OUTSIDE -> REGION_ROUTE_32_RUINS_OF_ALPH_GATE"] = {
         ids = {354, 355},
@@ -4796,6 +4973,13 @@ ENTRANCE_REGISTRY = {
         pretty = "Victory Road 3F Hole",
         tab = {"Johto Dungeons", "Victory Road"},
         section = "@JohtoKanto/Victory Road/Victory Road 3F Hole                                                                          ",
+    },
+    ["REGION_VICTORY_ROAD:3F -> REGION_VICTORY_ROAD:2F:NORTHWEST (one-way target)"] = {
+        ids = {},
+        pretty = "Victory Road 3F Hole Landing",
+        tab = {"Johto Dungeons", "Victory Road"},
+        section = "@JohtoKanto/Victory Road/Victory Road 3F Hole Landing                                                            ",
+        landing = "REGION_VICTORY_ROAD:2F:NORTHWEST",
     },
     ["REGION_VICTORY_ROAD:3F:SOUTHEAST -> REGION_VICTORY_ROAD:2F:NORTHEAST"] = {
         ids = {959},

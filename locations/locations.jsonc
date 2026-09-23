@@ -2960,6 +2960,17 @@
                         ]
                     },
                     {
+                        "name": "Ruins of Alph Aerodactyl Item Room Hole Landing                           ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM -> REGION_RUINS_OF_ALPH_AERODACTYL_WORD_ROOM (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM -> REGION_RUINS_OF_ALPH_AERODACTYL_WORD_ROOM (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
                         "name": "Ruins of Alph Aerodactyl Word Room Hole                                       ",
                         "hosted_item": "REGION_RUINS_OF_ALPH_AERODACTYL_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER",
                         "clear_as_group": false,
@@ -3073,6 +3084,17 @@
                         ]
                     },
                     {
+                        "name": "Ruins of Alph Ho-Oh Item Room Hole Landing                                  ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_HO_OH_ITEM_ROOM -> REGION_RUINS_OF_ALPH_HO_OH_WORD_ROOM (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_HO_OH_ITEM_ROOM -> REGION_RUINS_OF_ALPH_HO_OH_WORD_ROOM (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
                         "name": "Ruins of Alph Ho-Oh Word Room Hole                                              ",
                         "hosted_item": "REGION_RUINS_OF_ALPH_HO_OH_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER",
                         "clear_as_group": false,
@@ -3092,6 +3114,94 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_on"
+                        ]
+                    },
+                    {
+                        "name": "Ruins of Alph Aerodactyl Chamber Hole Landing                              ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_AERODACTYL_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Ruins of Alph Aerodactyl Word Room Hole Landing                         ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_AERODACTYL_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_AERODACTYL_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Ruins of Alph Ho-Oh Chamber Hole Landing                                     ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_HO_OH_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_HO_OH_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Ruins of Alph Ho-Oh Word Room Hole Landing                                ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_HO_OH_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_HO_OH_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Ruins of Alph Kabuto Chamber Hole Landing                                    ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_KABUTO_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_KABUTO_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Ruins of Alph Kabuto Word Room Hole Landing                               ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_KABUTO_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_KABUTO_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Ruins of Alph Omanyte Chamber Hole Landing                                ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_OMANYTE_CHAMBER -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Ruins of Alph Omanyte Word Room Hole Landing                            ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_OMANYTE_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_OMANYTE_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
                         ]
                     },
                     {
@@ -3249,6 +3359,17 @@
                         ]
                     },
                     {
+                        "name": "Ruins of Alph Kabuto Item Room Hole Landing                                 ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM -> REGION_RUINS_OF_ALPH_KABUTO_WORD_ROOM (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_KABUTO_ITEM_ROOM -> REGION_RUINS_OF_ALPH_KABUTO_WORD_ROOM (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
                         "name": "Ruins of Alph Kabuto Word Room Hole                                             ",
                         "hosted_item": "REGION_RUINS_OF_ALPH_KABUTO_WORD_ROOM -> REGION_RUINS_OF_ALPH_INNER_CHAMBER",
                         "clear_as_group": false,
@@ -3359,6 +3480,17 @@
                         ],
                         "visibility_rules": [
                             "show_items"
+                        ]
+                    },
+                    {
+                        "name": "Ruins of Alph Omanyte Item Room Hole Landing                             ",
+                        "hosted_item": "REGION_RUINS_OF_ALPH_OMANYTE_ITEM_ROOM -> REGION_RUINS_OF_ALPH_OMANYTE_WORD_ROOM (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_RUINS_OF_ALPH_OMANYTE_ITEM_ROOM -> REGION_RUINS_OF_ALPH_OMANYTE_WORD_ROOM (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
                         ]
                     },
                     {
@@ -13083,6 +13215,17 @@
                         ]
                     },
                     {
+                        "name": "Olivine Lighthouse 2F Hole Landing                                                  ",
+                        "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_2F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_1F (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_OLIVINE_LIGHTHOUSE_2F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_1F (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
                         "name": "Olivine Lighthouse 2F Northwest Stairs                                            ",
                         "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_2F -> REGION_OLIVINE_LIGHTHOUSE_3F",
                         "clear_as_group": false,
@@ -13102,6 +13245,17 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
+                        ]
+                    },
+                    {
+                        "name": "Olivine Lighthouse 3F Hole Landing                                                  ",
+                        "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_3F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_2F (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_OLIVINE_LIGHTHOUSE_3F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_2F (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
                         ]
                     },
                     {
@@ -13206,6 +13360,17 @@
                         ]
                     },
                     {
+                        "name": "Olivine Lighthouse 4F East Hole Landing                                          ",
+                        "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_4F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_3F (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_OLIVINE_LIGHTHOUSE_4F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_3F (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
                         "name": "3F - Bird Keeper Theo",
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_3F, ^$dark|olivinelighthouse"
@@ -13238,6 +13403,17 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
+                        ]
+                    },
+                    {
+                        "name": "Olivine Lighthouse 4F North Hole Landing                                        ",
+                        "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_4F:NORTH_HOLE -> REGION_OLIVINE_LIGHTHOUSE_3F:NORTH (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_OLIVINE_LIGHTHOUSE_4F:NORTH_HOLE -> REGION_OLIVINE_LIGHTHOUSE_3F:NORTH (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
                         ]
                     },
                     {
@@ -13292,6 +13468,17 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
+                        ]
+                    },
+                    {
+                        "name": "Olivine Lighthouse 5F Hole Landing                                                  ",
+                        "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_5F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_4F (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_OLIVINE_LIGHTHOUSE_5F:HOLE -> REGION_OLIVINE_LIGHTHOUSE_4F (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
                         ]
                     },
                     {
@@ -13371,6 +13558,17 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_dungeon_interior_on"
+                        ]
+                    },
+                    {
+                        "name": "Olivine Lighthouse 6F Hole Landing                                                  ",
+                        "hosted_item": "REGION_OLIVINE_LIGHTHOUSE_6F -> REGION_OLIVINE_LIGHTHOUSE_5F (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_OLIVINE_LIGHTHOUSE_6F -> REGION_OLIVINE_LIGHTHOUSE_5F (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
                         ]
                     },
                     {
@@ -19170,6 +19368,50 @@
                         ]
                     },
                     {
+                        "name": "Ice Path B1F Northeast Hole Landing                                                ",
+                        "hosted_item": "REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_1 (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_1 (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Ice Path B1F Northwest Hole Landing                                               ",
+                        "hosted_item": "REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_2 (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_ICE_PATH_B1F:NORTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_2 (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Ice Path B1F Southeast Hole Landing                                                ",
+                        "hosted_item": "REGION_ICE_PATH_B1F:NORTH:STRENGTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_4 (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_ICE_PATH_B1F:NORTH:STRENGTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_4 (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Ice Path B1F Southwest Hole Landing                                               ",
+                        "hosted_item": "REGION_ICE_PATH_B1F:NORTH:STRENGTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_3 (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_ICE_PATH_B1F:NORTH:STRENGTH -> REGION_ICE_PATH_B2F_MAHOGANY_SIDE:HOLE_3 (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
                         "name": "B2F - Northwest Item",
                         "access_rules": [
                             "^$CanReach|REGION_ICE_PATH_B2F_MAHOGANY_SIDE, ^$dark|icepath"
@@ -19625,6 +19867,17 @@
                         ]
                     },
                     {
+                        "name": "Blackthorn Gym 2F West Hole Landing                                             ",
+                        "hosted_item": "REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_1 (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_1 (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
                         "name": "Gym - 1F - Cool Trainer Paul",
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_GYM_1F"
@@ -19667,6 +19920,28 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_gym_interior_on"
+                        ]
+                    },
+                    {
+                        "name": "Blackthorn Gym 2F Northeast Hole Landing                                     ",
+                        "hosted_item": "REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_3 (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_3 (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
+                        ]
+                    },
+                    {
+                        "name": "Blackthorn Gym 2F Southeast Hole Landing                                     ",
+                        "hosted_item": "REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_2 (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_BLACKTHORN_GYM_2F -> REGION_BLACKTHORN_GYM_1F:HOLE_2 (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
                         ]
                     },
                     {
@@ -21735,6 +22010,17 @@
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VICTORY_ROAD:2F:NORTHWEST, ^$dark|victoryroad"
+                        ]
+                    },
+                    {
+                        "name": "Victory Road 3F Hole Landing                                                            ",
+                        "hosted_item": "REGION_VICTORY_ROAD:3F -> REGION_VICTORY_ROAD:2F:NORTHWEST (one-way target)",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$landing|REGION_VICTORY_ROAD:3F -> REGION_VICTORY_ROAD:2F:NORTHWEST (one-way target)"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_one_way_on"
                         ]
                     },
                     {

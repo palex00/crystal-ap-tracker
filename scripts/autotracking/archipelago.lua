@@ -165,17 +165,13 @@ function onClear(slot_data)
     -- Entrance randomization: full connection map (token -> token). The apworld sends
     -- `er_pairings`, a list of (source, target) connection-name pairs. A one-way pairing's
     -- target carries a " (one-way target)" suffix naming the connection whose DESTINATION
-    -- side you land in; strip it so both kinds key the registry the same way.
+    -- side you land in; the suffixed name is itself a registry row (a landing).
     -- Connections are only revealed per-direction later, as warp IDs arrive in the
     -- DataStorage warps list.
     ENTRANCE_CONNECTIONS = {}
-    ENTRANCE_ONE_WAY = {}
     if slot_data.er_pairings then
         for _, pair in ipairs(slot_data.er_pairings) do
-            local target = pair[2]
-            local stripped = string.gsub(target, " %(one%-way target%)$", "")
-            ENTRANCE_CONNECTIONS[pair[1]] = stripped
-            ENTRANCE_ONE_WAY[pair[1]] = stripped ~= target
+            ENTRANCE_CONNECTIONS[pair[1]] = pair[2]
         end
     end
     resetEntrances()
@@ -555,7 +551,7 @@ function updateEntrances(list)
             local token = row.token
             local exit = ENTRANCE_CONNECTIONS[token]
             if exit then
-                local both = coupled and not ENTRANCE_ONE_WAY[token]
+                local both = coupled and not ENTRANCE_REGISTRY[exit].landing
                 local item = ENTRANCE_ITEMS[token]
                 if item then
                     item:setForward(exit)
