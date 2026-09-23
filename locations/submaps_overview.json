@@ -622,6 +622,10 @@
                     {
                         "ref": "JohtoKanto/Ecruteak City/Met Bill (Event)",
                         "name": "Met Bill (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
                     }
                 ],
                 "map_locations": [
@@ -630,7 +634,8 @@
                         "x": 376,
                         "y": 440,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_pokecenter_off",
+                            "start_town_Ecruteak"
                         ]
                     }
                 ]
@@ -1792,6 +1797,10 @@
                     {
                         "ref": "JohtoKanto/Goldenrod City/Post-E4 GS-Ball from Trade Corner Receptionist",
                         "name": "Post-E4 GS-Ball from Trade Corner Receptionist"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
                     }
                 ],
                 "map_locations": [
@@ -1800,7 +1809,8 @@
                         "x": 248,
                         "y": 440,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_pokecenter_off",
+                            "start_town_Goldenrod"
                         ]
                     }
                 ]
@@ -4421,6 +4431,10 @@
                     {
                         "ref": "JohtoKanto/Route 32/Old Rod from Pokecenter Fishing Guru",
                         "name": "Old Rod from Pokecenter Fishing Guru"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
                     }
                 ],
                 "map_locations": [
@@ -4429,7 +4443,8 @@
                         "x": 184,
                         "y": 552,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_pokecenter_off",
+                            "start_town_UnionCave"
                         ]
                     }
                 ]
@@ -5263,6 +5278,10 @@
                 "sections": [
                     {
                         "ref": "JohtoKanto/Violet City/Egg Collected (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
                     }
                 ],
                 "map_locations": [
@@ -5271,7 +5290,8 @@
                         "x": 504,
                         "y": 408,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_pokecenter_off",
+                            "start_town_Violet"
                         ]
                     }
                 ]
@@ -5666,6 +5686,10 @@
                     {
                         "name": "Trading​​​",
                         "ref": "JohtoKanto/Pewter City/Trade: Chris"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pewter City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
                     }
                 ],
                 "map_locations": [
@@ -5674,7 +5698,8 @@
                         "x": 216,
                         "y": 408,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_pokecenter_off",
+                            "start_town_Pewter"
                         ]
                     }
                 ]
@@ -6015,6 +6040,294 @@
                         "y": 8,
                         "restrict_visibility_rules": [
                             "er_dungeon_interior_on, er_dungeon_off, route_23_restored_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cherrygrove Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cherrygrove City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CherrygroveCity",
+                        "x": 472,
+                        "y": 56,
+                        "restrict_visibility_rules": [
+                            "start_town_New_Bark",
+                            "start_town_Cherrygrove"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Azalea Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaTown",
+                        "x": 248,
+                        "y": 152,
+                        "restrict_visibility_rules": [
+                            "start_town_Azalea"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Olivine Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineCity",
+                        "x": 216,
+                        "y": 344,
+                        "restrict_visibility_rules": [
+                            "start_town_Olivine"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cianwood Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodCity",
+                        "x": 376,
+                        "y": 696,
+                        "restrict_visibility_rules": [
+                            "start_town_Cianwood"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mahogany Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyTown",
+                        "x": 248,
+                        "y": 216,
+                        "restrict_visibility_rules": [
+                            "start_town_Mahogany",
+                            "start_town_LakeOfRage"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Blackthorn Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornCity",
+                        "x": 344,
+                        "y": 472,
+                        "restrict_visibility_rules": [
+                            "start_town_Blackthorn"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Viridian Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Viridian City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ViridianCity",
+                        "x": 376,
+                        "y": 408,
+                        "restrict_visibility_rules": [
+                            "start_town_Pallet",
+                            "start_town_Viridian"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cerulean Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanCity",
+                        "x": 312,
+                        "y": 344,
+                        "restrict_visibility_rules": [
+                            "start_town_Cerulean"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Route 10 Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 10/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route10",
+                        "x": 184,
+                        "y": 24,
+                        "restrict_visibility_rules": [
+                            "start_town_RockTunnel"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Lavender Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lavender Town/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LavenderTown",
+                        "x": 88,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "start_town_Lavender"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Saffron Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Saffron City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronCity",
+                        "x": 152,
+                        "y": 472,
+                        "restrict_visibility_rules": [
+                            "start_town_Saffron"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Celadon Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonCity",
+                        "x": 472,
+                        "y": 152,
+                        "restrict_visibility_rules": [
+                            "start_town_Celadon"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Vermilion Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionCity",
+                        "x": 152,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "start_town_Vermilion"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Fuchsia Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaCity",
+                        "x": 312,
+                        "y": 440,
+                        "restrict_visibility_rules": [
+                            "start_town_Fuchsia"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cinnabar Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cinnabar Island/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CinnabarIsland",
+                        "x": 184,
+                        "y": 184,
+                        "restrict_visibility_rules": [
+                            "start_town_Cinnabar"
                         ]
                     }
                 ]

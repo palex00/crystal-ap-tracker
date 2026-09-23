@@ -230,5 +230,13 @@
         "img_mods": "@disabled",
         "disabled_img_mods": "none",
         "codes": "RADIO_CARD_hosted"
+    },
+    {
+        "name": "Escape Rope",
+        "type": "toggle",
+        "img": "/images/items/escaperope.png",
+        "img_mods": "@disabled",
+        "disabled_img_mods": "none",
+        "codes": "ESCAPE_ROPE_hosted"
     }
 ]

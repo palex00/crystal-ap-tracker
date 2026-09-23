@@ -877,6 +877,17 @@
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|Cherrygrove"
                         ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_New_Bark",
+                            "show_events, start_town_Cherrygrove"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -2196,6 +2207,16 @@
                         "visibility_rules": [
                             "show_events",
                             "show_mons"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Violet"
                         ]
                     },
                     {
@@ -3889,6 +3910,16 @@
                         ],
                         "chest_unopened_img": "images/gift/green_fishing_guru.png",
                         "chest_opened_img": "images/gift/green_fishing_guru_open.png"
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_UnionCave"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -5348,6 +5379,16 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|Azalea"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Azalea"
                         ]
                     },
                     {
@@ -7438,6 +7479,16 @@
                         ],
                         "chest_unopened_img": "images/gift/wife.png",
                         "chest_opened_img": "images/gift/wife_open.png"
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Goldenrod"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -10498,6 +10549,16 @@
                         ]
                     },
                     {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Ecruteak"
+                        ]
+                    },
+                    {
                         "name": "Tin Tower Gate Exit                                                                            ",
                         "hosted_item": "REGION_ECRUTEAK_TIN_TOWER_ENTRANCE -> REGION_ECRUTEAK_CITY",
                         "clear_as_group": false,
@@ -12847,6 +12908,16 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|Olivine"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Olivine"
                         ]
                     },
                     {
@@ -15561,6 +15632,16 @@
                         ]
                     },
                     {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Cianwood"
+                        ]
+                    },
+                    {
                         "name": "Mania's House Exit                                                                             ",
                         "hosted_item": "REGION_MANIAS_HOUSE -> REGION_CIANWOOD_CITY",
                         "clear_as_group": false,
@@ -17111,6 +17192,17 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|Mahogany"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Mahogany",
+                            "show_events, start_town_LakeOfRage"
                         ]
                     },
                     {
@@ -19798,6 +19890,16 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|Blackthorn"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Blackthorn"
                         ]
                     },
                     {
@@ -23666,6 +23768,17 @@
                         ]
                     },
                     {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Pallet",
+                            "show_events, start_town_Viridian"
+                        ]
+                    },
+                    {
                         "name": "Viridian Trainer House Exit                                                                ",
                         "hosted_item": "REGION_TRAINER_HOUSE_1F -> REGION_VIRIDIAN_CITY",
                         "clear_as_group": false,
@@ -24806,6 +24919,16 @@
                         ]
                     },
                     {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Pewter"
+                        ]
+                    },
+                    {
                         "name": "Pewter Snooze Speech House Exit                                                     ",
                         "hosted_item": "REGION_PEWTER_SNOOZE_SPEECH_HOUSE -> REGION_PEWTER_CITY",
                         "clear_as_group": false,
@@ -25832,6 +25955,16 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|Cerulean"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Cerulean"
                         ]
                     },
                     {
@@ -27451,6 +27584,16 @@
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|RockTunnel"
                         ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_RockTunnel"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -27675,6 +27818,16 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|Lavender"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Lavender"
                         ]
                     },
                     {
@@ -28920,6 +29073,16 @@
                         ]
                     },
                     {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Saffron"
+                        ]
+                    },
+                    {
                         "name": "Silph Co. Exit                                                                                       ",
                         "hosted_item": "REGION_SILPH_CO_1F -> REGION_SAFFRON_CITY",
                         "clear_as_group": false,
@@ -30076,6 +30239,16 @@
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|Celadon"
                         ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Celadon"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -31051,6 +31224,16 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|Vermilion"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Vermilion"
                         ]
                     },
                     {
@@ -33122,6 +33305,16 @@
                         ]
                     },
                     {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Fuchsia"
+                        ]
+                    },
+                    {
                         "name": "Safari Zone Main Office Exit                                                              ",
                         "hosted_item": "REGION_SAFARI_ZONE_MAIN_OFFICE -> REGION_FUCHSIA_CITY",
                         "clear_as_group": false,
@@ -33585,6 +33778,16 @@
                         ],
                         "visibility_rules": [
                             "show_entrances, er_pokecenter_on, $started|Cinnabar"
+                        ]
+                    },
+                    {
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "hosted_item": "ESCAPE_ROPE_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_POKECENTER_2F"
+                        ],
+                        "visibility_rules": [
+                            "show_events, start_town_Cinnabar"
                         ]
                     }
                 ],
