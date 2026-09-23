@@ -4719,6 +4719,25 @@
                 ]
             },
             {
+                "name": "Moomoo Farm Barn",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 39/Moomoo Farm Barn - Heal Moomoo (Event)",
+                        "name": "Heal Moomoo (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route39",
+                        "x": 24,
+                        "y": 56,
+                        "restrict_visibility_rules": [
+                            "er_building_off"
+                        ]
+                    }
+                ]
+            },
+            {
                 "name": "Route 43",
                 "sections": [
                     {
