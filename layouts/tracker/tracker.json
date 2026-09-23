@@ -39,6 +39,13 @@
                                                         "type": "layout",
                                                         "key": "encevo_grid"
                                                     }
+                                                },
+                                                {
+                                                    "title": "Fly Unlocks",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "key": "fly_grid"
+                                                    }
                                                 }
                                             ]
                                         }
@@ -47,20 +54,39 @@
                             ]
                         },
                         {
+                            "type": "layout",
+                            "key": "apricorn_section",
+                            "dock": "left"
+                        },
+                        {
+                            "type": "group",
+                            "background": "#171717",
+                            "header": "Goal",
+                            "dock": "left",
+                            "content": {
+                                "type": "layout",
+                                "key": "goal_progress_grid"
+                            }
+                        },
+                        {
                             "type": "group",
                             "background": "#171717",
                             "header": "Events",
                             "dock": "left",
                             "content": {
-                                "type": "array",
-                                "margin": "0,-3,0,0",
-                                "content": [
-                                    {
-                                        "type": "layout",
-                                        "key": "event_grid"
-                                    }
-                                ]
+                                "type": "layout",
+                                "key": "event_grid"
                             }
+                        },
+                        {
+                            "type": "layout",
+                            "key": "puzzle_event_section",
+                            "dock": "left"
+                        },
+                        {
+                            "type": "layout",
+                            "key": "kanto_event_section",
+                            "dock": "left"
                         },
                         {
                             "type": "group",

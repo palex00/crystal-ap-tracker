@@ -152,10 +152,16 @@ REGION_BLACKTHORN_GYM_1F:connect_two_ways_entrance(REGION_BLACKTHORN_GYM_2F, "gy
 
 -- === REGION_BLACKTHORN_GYM_1F:MIDDLE ===
 NAMED_NODES["REGION_BLACKTHORN_GYM_1F:MIDDLE"]:connect_two_ways_entrance(REGION_BLACKTHORN_GYM_2F, "gym_interior")
-NAMED_NODES["REGION_BLACKTHORN_GYM_1F:MIDDLE"]:connect_one_way(NAMED_NODES["REGION_BLACKTHORN_GYM_1F:LOLA"], "Blackthorn Gym 1F Boulder Bridge (to Lola)", function() return has("EVENT_BOULDER_IN_BLACKTHORN_GYM_3") end)
+NAMED_NODES["REGION_BLACKTHORN_GYM_1F:MIDDLE"]:connect_one_way(NAMED_NODES["REGION_BLACKTHORN_GYM_1F:LOLA"], "Blackthorn Gym 1F Boulder Bridge (to Lola)", function()
+        if has("er_gym_interior_on") then return has("EVENT_BOULDER_IN_BLACKTHORN_GYM_3") end
+        return can_strength()
+        end)
 
 -- === REGION_BLACKTHORN_GYM_1F:LOLA ===
-NAMED_NODES["REGION_BLACKTHORN_GYM_1F:LOLA"]:connect_one_way(NAMED_NODES["REGION_BLACKTHORN_GYM_1F:CLAIR"], "Blackthorn Gym 1F Boulder Bridge (to Clair)", function() return has("EVENT_BOULDER_IN_BLACKTHORN_GYM_1") end)
+NAMED_NODES["REGION_BLACKTHORN_GYM_1F:LOLA"]:connect_one_way(NAMED_NODES["REGION_BLACKTHORN_GYM_1F:CLAIR"], "Blackthorn Gym 1F Boulder Bridge (to Clair)", function()
+        if has("er_gym_interior_on") then return has("EVENT_BOULDER_IN_BLACKTHORN_GYM_1") end
+        return can_strength()
+        end)
 
 -- === REGION_BLACKTHORN_GYM_1F:HOLE_1 ===
 NAMED_NODES["REGION_BLACKTHORN_GYM_1F:HOLE_1"]:connect_one_way(REGION_BLACKTHORN_GYM_1F, "Blackthorn Gym 1F West Hole Fall")
@@ -589,8 +595,11 @@ REGION_ICE_PATH_B2F_BLACKTHORN_SIDE:connect_two_ways_entrance(REGION_ICE_PATH_B3
 
 -- === REGION_ICE_PATH_B2F_MAHOGANY_SIDE ===
 REGION_ICE_PATH_B2F_MAHOGANY_SIDE:connect_one_way(NAMED_NODES["REGION_ICE_PATH_B2F_MAHOGANY_SIDE:MIDDLE"], "Ice Path B2F (Mahogany Side) Central Platform Access", function()
-        return has("EVENT_BOULDER_IN_ICE_PATH_1A") and has("EVENT_BOULDER_IN_ICE_PATH_2A")
-        and has("EVENT_BOULDER_IN_ICE_PATH_3A") and has("EVENT_BOULDER_IN_ICE_PATH_4A")
+        if has("er_dungeon_interior_on") then
+            return has("EVENT_BOULDER_IN_ICE_PATH_1A") and has("EVENT_BOULDER_IN_ICE_PATH_2A")
+            and has("EVENT_BOULDER_IN_ICE_PATH_3A") and has("EVENT_BOULDER_IN_ICE_PATH_4A")
+        end
+        return can_strength()
         end)
 NAMED_NODES["REGION_ICE_PATH_B2F_MAHOGANY_SIDE:MIDDLE"]:connect_one_way(REGION_ICE_PATH_B2F_MAHOGANY_SIDE, "Ice Path B2F (Mahogany Side) Outer Platforms Access")
 
@@ -908,7 +917,10 @@ REGION_RADIO_TOWER_2F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_2F:TAKEOVE
 -- === REGION_RADIO_TOWER_3F ===
 REGION_RADIO_TOWER_3F:connect_two_ways_entrance(NAMED_NODES["REGION_RADIO_TOWER_4F:WEST"], "dungeon_interior")
 REGION_RADIO_TOWER_3F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"], "Radio Tower 3F Card Key Gate Passage (Eastbound)", function() return has("CARD_KEY") end)
-NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"]:connect_one_way(REGION_RADIO_TOWER_3F, "Radio Tower 3F Card Key Gate Passage (Westbound)", function() return has("EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER") end)
+NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"]:connect_one_way(REGION_RADIO_TOWER_3F, "Radio Tower 3F Card Key Gate Passage (Westbound)", function()
+        if has("er_dungeon_interior_on") then return has("EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER") end
+        return reach("EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER")
+        end)
 REGION_RADIO_TOWER_3F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_3F:TAKEOVER"], "Radio Tower 3F West Rockets Access (Post-Takeover)", function() return has("tower_requirement") end)
 
 -- === REGION_RADIO_TOWER_3F:EAST ===
@@ -1475,7 +1487,10 @@ REGION_SILVER_CAVE_ROOM_2:connect_one_way(NAMED_NODES["REGION_SILVER_CAVE_ROOM_2
 REGION_SILVER_CAVE_ROOM_2:connect_two_ways_entrance(REGION_SILVER_CAVE_ROOM_3, "dungeon_interior")
 
 -- === REGION_SILVER_CAVE_ROOM_3 ===
-REGION_SILVER_CAVE_ROOM_3:connect_one_way(REGION_SILVER_CAVE_OUTSIDE, "Beat Red", function() return has("EVENT_BEAT_RED") end)
+REGION_SILVER_CAVE_ROOM_3:connect_one_way(REGION_SILVER_CAVE_OUTSIDE, "Beat Red", function()
+        if has("goal_red_on") or has("battle_tower_sanity_tiers") then return has("EVENT_BEAT_RED") end
+        return reach("EVENT_BEAT_RED")
+        end)
 
 -- === REGION_SLOWPOKE_WELL_B1F:ENTRANCE ===
 NAMED_NODES["REGION_SLOWPOKE_WELL_B1F:ENTRANCE"]:connect_two_ways(REGION_SLOWPOKE_WELL_B1F, "Slowpoke Well B1F Main Access (Post-Kurt)", "Slowpoke Well B1F Entrance Access (Post-Kurt)", function() return has("EVENT_MET_KURT") end)

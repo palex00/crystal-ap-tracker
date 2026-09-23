@@ -377,7 +377,7 @@ function kurt_shop(color)
 end
 
 function bluecard_shop(amount)
-    if has("BLUE_CARD") and has("BLUE_CARD_POINT", amount) then
+    if has("BLUE_CARD") and has("BLUE_CARD_POINT_"..amount) then
         return AccessibilityLevel.Normal
     elseif has("BLUE_CARD") and not has("EVENT_SEEN_MART_BLUE_CARD") then
         return AccessibilityLevel.Inspect

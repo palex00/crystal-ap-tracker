@@ -3,7 +3,7 @@
         "name": "Goal: Elite Four",
         "type": "progressive",
         "loop": true,
-        "initial_stage_idx": 0,
+        "initial_stage_idx": 1,
         "allow_disabled": false,
         "stages": [
             {
@@ -1306,11 +1306,6 @@
         ]
     },
     {
-        "img": "/images/settings/dex_related/breedinglogic.png",
-        "codes": "breedinglogic_dummy",
-        "type": "static"
-    },
-    {
         "name": "Breeding Logic",
         "type": "progressive",
         "loop": true,
@@ -1347,11 +1342,6 @@
                 "inherit_codes": false
             }
         ]
-    },
-    {
-        "img": "/images/settings/dex_related/informationsheet.png",
-        "codes": "informationsheet",
-        "type": "static"
     },
     {
         "name": "Mount Mortar Rock Smash Rock",
@@ -1569,6 +1559,46 @@
                 "name": "Evolutionsanity: BST",
                 "img": "/images/settings/evolutionsanity.png",
                 "codes": "randomize_evolution, randomize_evolution_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Breeding",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Breeding: Vanilla",
+                "img": "/images/placeholder.png",
+                "img_mods": "@disabled",
+                "codes": "randomize_breeding, randomize_breeding_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Random Line Base",
+                "img": "/images/placeholder.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Random Any Base",
+                "img": "/images/placeholder.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Random Lower BST",
+                "img": "/images/placeholder.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Completely Random",
+                "img": "/images/placeholder.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
                 "inherit_codes": false
             }
         ]
@@ -2192,19 +2222,22 @@
         "stages": [
             {
                 "name": "Encounter Method: Contest Encounters NOT in logic",
-                "img": "/images/settings/dex_related/notinlogic.png",
+                "img": "/images/settings/dex_related/enc_contest.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
                 "codes": "encmethod_contest, encmethod_contest_off, encmethod_contest_visible",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Contest Encounters in logic",
-                "img": "/images/settings/dex_related/inlogic.png",
+                "img": "/images/settings/dex_related/enc_contest.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
                 "codes": "encmethod_contest, encmethod_contest_on, encmethod_contest_visible",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Contest Encounters IMPOSSIBLE",
-                "img": "/images/settings/dex_related/forbidden.png",
+                "img": "/images/settings/dex_related/enc_contest.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
                 "codes": "encmethod_contest, encmethod_contest_forbidden",
                 "inherit_codes": false
             }
@@ -2218,13 +2251,15 @@
         "stages": [
             {
                 "name": "Encounter Method: Trades NOT in logic",
-                "img": "/images/settings/dex_related/notinlogic.png",
+                "img": "/images/settings/dex_related/enc_trades.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
                 "codes": "encmethod_trades, encmethod_trades_off",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Trades in logic",
-                "img": "/images/settings/dex_related/inlogic.png",
+                "img": "/images/settings/dex_related/enc_trades.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
                 "codes": "encmethod_trades, encmethod_trades_on",
                 "inherit_codes": false
             }

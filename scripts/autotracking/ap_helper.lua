@@ -6,7 +6,9 @@ function resetItems()
             else
                 local obj = Tracker:FindObjectForCode(v)
                 if obj then
-                    if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
+                    if v == "BLUE_CARD_POINT" then
+                        obj.CurrentStage = 0
+                    elseif v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
                         obj.AcquiredCount = 0
                     else
                         obj.Active = false
@@ -160,6 +162,7 @@ SLOT_CODES = {
     randomize_fly_unlocks = {code = "randomize_fly_unlocks"},
     randomize_fly_destinations = {code = "randomize_fly_destinations"},
     randomize_evolution = {code = "randomize_evolution"},
+    randomize_breeding = {code = "randomize_breeding"},
     victory_road_strength = {code = "victory_road_strength"},
     require_flash = {code = "require_flash"},
     lock_kanto_gyms = {code = "lock_kanto_gyms"},

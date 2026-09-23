@@ -1,0 +1,122 @@
+{
+    "slot_inlogic": {
+        "type": "array",
+        "orientation": "vertical",
+        "h_alignment": "left",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "h_alignment": "left",
+                "margin": "5,5",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "3,3",
+                        "h_alignment": "left",
+                        "item_size": "260,34",
+                        "rows": [
+                            [
+                                "inlogic_sync"
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "h_alignment": "left",
+                        "content": [
+                            {
+                                "type": "group",
+                                "header": "New Pokemon",
+                                "content": {
+                                    "type": "array",
+                                    "orientation": "horizontal",
+                                    "h_alignment": "left",
+                                    "content": [
+                                        {
+                                            "type": "itemgrid",
+                                            "item_margin": "3,3",
+                                            "h_alignment": "left",
+                                            "item_size": "260,34",
+                                            "rows": [
+                                                [
+                                                    "inlogic_1"
+                                                ],
+                                                [
+                                                    "inlogic_2"
+                                                ],
+                                                [
+                                                    "inlogic_3"
+                                                ],
+                                                [
+                                                    "inlogic_4"
+                                                ],
+                                                [
+                                                    "inlogic_5"
+                                                ],
+                                                [
+                                                    "inlogic_6"
+                                                ],
+                                                [
+                                                    "inlogic_7"
+                                                ],
+                                                [
+                                                    "inlogic_8"
+                                                ],
+                                                [
+                                                    "inlogic_9"
+                                                ],
+                                                [
+                                                    "inlogic_10"
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "type": "itemgrid",
+                                            "item_margin": "3,3",
+                                            "h_alignment": "left",
+                                            "item_size": "260,34",
+                                            "rows": [
+                                                [
+                                                    "inlogic_11"
+                                                ],
+                                                [
+                                                    "inlogic_12"
+                                                ],
+                                                [
+                                                    "inlogic_13"
+                                                ],
+                                                [
+                                                    "inlogic_14"
+                                                ],
+                                                [
+                                                    "inlogic_15"
+                                                ],
+                                                [
+                                                    "inlogic_16"
+                                                ],
+                                                [
+                                                    "inlogic_17"
+                                                ],
+                                                [
+                                                    "inlogic_18"
+                                                ],
+                                                [
+                                                    "inlogic_19"
+                                                ],
+                                                [
+                                                    "inlogic_20"
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

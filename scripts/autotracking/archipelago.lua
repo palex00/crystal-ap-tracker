@@ -7,6 +7,7 @@ ScriptHost:LoadScript("scripts/autotracking/encounter_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/pokemon_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/evolution_location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/ap_helper.lua")
+ScriptHost:LoadScript("scripts/autotracking/request_mapping.lua")
 
 CUR_INDEX = -1
 PLAYER_ID = -1
@@ -72,6 +73,7 @@ function onClear(slot_data)
     CUR_INDEX = -1
     resetLocations()
     resetItems()
+    resetRequests()
     CAUGHT = {}
     SEEN = {}
     
@@ -111,13 +113,13 @@ function onClear(slot_data)
         local rc_num = tonumber(version_str:match("%-rc%.(%d+)$")) -- remove before full release
 
         if first_two_dots == "6.0" and rc_num ~= nil then
-            Tracker:AddLayouts("layouts/tracker/tracker.json")
+            update_layout_slot("tracker_default")
         else
-            Tracker:AddLayouts("layouts/versionmismatch.json")
+            load_layout("tracker_default", "layouts/versionmismatch.json")
             return
         end
     else
-        Tracker:AddLayouts("layouts/not_crystal.json")
+        load_layout("tracker_default", "layouts/not_crystal.json")
     end
 
 
@@ -163,22 +165,19 @@ function onClear(slot_data)
     -- Entrance randomization: full connection map (token -> token). The apworld sends
     -- `er_pairings`, a list of (source, target) connection-name pairs. A one-way pairing's
     -- target carries a " (one-way target)" suffix naming the connection whose DESTINATION
-    -- side you land in; strip it so both kinds key the registry the same way.
+    -- side you land in; the suffixed name is itself a registry row (a landing).
     -- Connections are only revealed per-direction later, as warp IDs arrive in the
     -- DataStorage warps list.
     ENTRANCE_CONNECTIONS = {}
-    ENTRANCE_ONE_WAY = {}
     if slot_data.er_pairings then
         for _, pair in ipairs(slot_data.er_pairings) do
-            local target = pair[2]
-            local stripped = string.gsub(target, " %(one%-way target%)$", "")
-            ENTRANCE_CONNECTIONS[pair[1]] = stripped
-            ENTRANCE_ONE_WAY[pair[1]] = stripped ~= target
+            ENTRANCE_CONNECTIONS[pair[1]] = pair[2]
         end
     end
     resetEntrances()
     
     BATTLE_TOWER_TRAINERS = slot_data.battle_tower_trainer_permutation
+    DEXSANITY_LOGIC = {Evolution = true, Breeding = true}
 
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then
@@ -226,6 +225,11 @@ function onClear(slot_data)
             end
         elseif k == "dexsanity" then
             Tracker:FindObjectForCode("dexsanity").AcquiredCount = v
+        elseif k == "dexsanity_logic" then
+            DEXSANITY_LOGIC = {}
+            for _, source in ipairs(v) do
+                DEXSANITY_LOGIC[source] = true
+            end
         elseif k == "maximum_evolution_level" then
             local val = tonumber(v) or 0
             if val == 100 then
@@ -356,7 +360,6 @@ function onClear(slot_data)
         end
     end
 
-    --toggle_itemgrid() temporary disabled
     if refreshERCategories then
         refreshERCategories()
     end
@@ -424,7 +427,9 @@ function onItem(index, item_id, item_name, player_number)
     
     local obj = Tracker:FindObjectForCode(v)
     if obj then
-        if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
+        if v == "BLUE_CARD_POINT" then
+            obj.CurrentStage = obj.CurrentStage + 1
+        elseif v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
             obj.AcquiredCount = obj.AcquiredCount + 1
         else
             obj.Active = true
@@ -464,6 +469,8 @@ function onLocation(location_id, location_name)
     if #id_str == 5 and id_str:sub(1, 2) == "20" then
         updateRemainingDexcountsanityChecks()
     end
+
+    syncRequests()
 end
 
 
@@ -499,7 +506,7 @@ function onNotify(key, value, old_value)
             updateTrades(value)
         elseif key == IDs.SLOT_UNLOCK then
             SLOT_TRACK = true
-            -- toggleQuickSettings() [temporary disabled]
+            update_layout_slot("slot_digits")
         elseif key == IDs.HINT then
             SAVED_HINTS = value
             updateHints()
@@ -544,7 +551,7 @@ function updateEntrances(list)
             local token = row.token
             local exit = ENTRANCE_CONNECTIONS[token]
             if exit then
-                local both = coupled and not ENTRANCE_ONE_WAY[token]
+                local both = coupled and not ENTRANCE_REGISTRY[exit].landing
                 local item = ENTRANCE_ITEMS[token]
                 if item then
                     item:setForward(exit)
@@ -784,6 +791,7 @@ function updatePokemon()
     end
 
     if has("encounter_tracking_off") then
+        syncRequests()
         return
     end
 
@@ -880,6 +888,8 @@ function updatePokemon()
             end
         end
     end
+
+    syncRequests()
 end
 
 function resetEvolutionsanityData()
@@ -947,7 +957,7 @@ end
 function updateBreedingInfo()
     for first_id, second_id in pairs(BREEDING_DATA) do
         for _, caught_id in pairs(CAUGHT) do
-            if second_id == caught_id then
+            if second_id == caught_id or (second_id == 29 and caught_id == 32) then
                 local evo_string = EVO_LOC_MAPPING[tonumber(first_id)]
                 if evo_string then
                     local loc = Tracker:FindObjectForCode("@Breeding/Breed " .. evo_string .. "/Breed " .. evo_string)
@@ -1013,6 +1023,8 @@ function resetHints()
             obj.Highlight = 0
         end
     end
+
+    syncRequests()
 end
 
 CLEARED_HINTS = {}
@@ -1121,6 +1133,8 @@ function updateHints()
             end
         end
     end
+
+    syncRequests()
 end
 
 
@@ -1190,4 +1204,9 @@ Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
 Archipelago:AddRetrievedHandler("notify launch handler", onNotify)
+Archipelago:AddRetrievedHandler("inlogic handler", function(key)
+    if key == IDs.CAUGHT then
+        syncInLogic()
+    end
+end)
 Archipelago:AddBouncedHandler("map handler", onMap)

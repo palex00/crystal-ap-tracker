@@ -1,0 +1,443 @@
+{
+    "johto_dungeons": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Dark Cave",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Dark Cave - Violet Entrance",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "DarkCaveVioletEntrance"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dark Cave - Blackthorn Entrance",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "DarkCaveBlackthornEntrance"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Ruins of Alph",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Outside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphOutside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Inner Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphInnerChamber"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Kabuto Item Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphKabutoItemRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Omanyte Item Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphOmanyteItemRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Aerodactyl Item Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphAerodactylItemRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ho-Oh Item Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphHoOhItemRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ho-Oh Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphHoOhChamber"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Kabuto Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphKabutoChamber"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Omanyte Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphOmanyteChamber"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Aerodactyl Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphAerodactylChamber"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Research Center",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphResearchCenter"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ho-Oh Word Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphHoOhWordRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Kabuto Word Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphKabutoWordRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Omanyte Word Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphOmanyteWordRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Aerodactyl Word Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RuinsOfAlphAerodactylWordRoom"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Union Cave",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Union Cave 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "UnionCave1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Union Cave B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "UnionCaveB1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Union Cave B2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "UnionCaveB2F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Ilex Forest",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "IlexForest"
+                    ]
+                }
+            },
+            {
+                "title": "National Park",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "NationalPark"
+                    ]
+                }
+            },
+            {
+                "title": "Whirl Islands",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Whirl Islands 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "WhirlIsland1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Whirl Islands Cave",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "WhirlIslandCave"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Whirl Islands B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "WhirlIslandB1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Whirl Islands B2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "WhirlIslandB2F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Whirl Islands Lugia Chamber",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "WhirlIslandLugiaChamber"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Mt. Mortar",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Mt. Mortar 1F - Outside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMortar1FOutside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mt. Mortar 1F - Inside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMortar1FInside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mt. Mortar 2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMortar2FInside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mt. Mortar B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MountMortarB1F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Ice Path",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Ice Path 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "IcePath1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ice Path B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "IcePathB1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ice Path B2F - Mahogany Side",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "IcePathB2FMahoganySide"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ice Path B2F - Blackthorn Side",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "IcePathB2FBlackthornSide"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ice Path B3F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "IcePathB3F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Tohjo Falls",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "TohjoFalls"
+                    ]
+                }
+            },
+            {
+                "title": "Victory Road",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "VictoryRoad1F",
+                        "VictoryRoad2F",
+                        "VictoryRoad3F"
+                    ]
+                }
+            },
+            {
+                "title": "Battle Tower",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BattleTower1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route40BattleTowerGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Outside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BattleTowerOutside"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Flooded Mine",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "FloodedMine"
+                    ]
+                }
+            }
+        ]
+    }
+}

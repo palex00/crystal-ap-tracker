@@ -1,0 +1,823 @@
+{
+    "kanto_cities": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Pallet Town",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Town",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PalletTown"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Red's House 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RedsHouse1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Red's House 2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RedsHouse2F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Blue's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BluesHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Oak's Lab",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OaksLab"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Viridian City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ViridianCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ViridianGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Nickname Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ViridianNicknameSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Trainer House 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "TrainerHouse1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Trainer House B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "TrainerHouseB1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ViridianMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ViridianPokecenter1F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Pewter City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Nidoran Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterNidoranSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Snooze Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PewterSnoozeSpeechHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Cerulean City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Badge Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanGymBadgeSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Police Station",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanPoliceStation"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Trade Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanTradeSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeruleanMart"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Vermilion City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fishing Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionFishingSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Pokemon Fan Club",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PokemonFanClub"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Magnet Train Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionMagnetTrainSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Diglett's Cave Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionDiglettsCaveSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Port Passage",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionPortPassage"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Port",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VermilionPort"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Celadon City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Cafe",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonCafe"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dept. Store",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "4F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore4F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "5F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore5F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "6F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStore6F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Elevator",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonDeptStoreElevator"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mansion",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonMansion1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonMansion2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonMansion3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Roof",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonMansionRoof"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Penthouse",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "CeladonMansionRoofHouse"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Game Corner",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonGameCorner"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Game Corner Prize Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CeladonGameCornerPrizeRoom"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Saffron City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SaffronCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SaffronGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fighting Dojo",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FightingDojo"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SaffronMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SaffronPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mr. Psychic's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MrPsychicsHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Magnet Train Station",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SaffronMagnetTrainStation"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Silph Co",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilphCo1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Copycat's House 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CopycatsHouse1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Copycat's House 2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CopycatsHouse2F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Lavender Town",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Town",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavenderTown"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavenderPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mr. Fuji's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MrFujisHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lavender Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavenderSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Name Rater",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavenderNameRater"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavenderMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Soul House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SoulHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Radio Tower",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LavRadioTower1F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Fuchsia City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FuchsiaCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FuchsiaGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FuchsiaMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Safari Zone Main Office",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SafariZoneMainOffice"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Bill's Brother's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BillsBrothersHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FuchsiaPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Safari Zone Warden's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SafariZoneWardensHome"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Cinnabar Island",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Island",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CinnabarIsland"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Center",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CinnabarPokecenter1F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

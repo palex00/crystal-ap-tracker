@@ -1,0 +1,11 @@
+{
+    "kanto_event_section": {
+        "type": "group",
+        "background": "#171717",
+        "dock": "left",
+        "content": {
+            "type": "layout",
+            "key": "kanto_event_grid"
+        }
+    }
+}

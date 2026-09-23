@@ -32,8 +32,8 @@
                         "name": "Bug Catcher Josh"
                     },
                     {
-                        "ref": "JohtoKanto/Azalea Town/Gym - Beat Bugsy",
-                        "name": "Beat Bugsy"
+                        "ref": "JohtoKanto/Azalea Town/Gym - Beat Bugsy (Event)",
+                        "name": "Beat Bugsy (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Azalea Town/Gym - Leader Bugsy",
@@ -116,6 +116,14 @@
                     {
                         "name": "Kurt's Ball Shop - Pnk Apricorn",
                         "ref": "JohtoKanto/Azalea Town/Kurt's Ball Shop - Pnk Apricorn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's House - Meet Kurt (Event)",
+                        "name": "Meet Kurt (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Kurt's House - Have Kurt investigate the GS Ball (Event)",
+                        "name": "Have Kurt investigate the GS Ball (Event)"
                     }
                 ],
                 "map_locations": [
@@ -149,8 +157,12 @@
                         "name": "B1F - Grunt 3"
                     },
                     {
-                        "ref": "JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well",
-                        "name": "B1F - Cleared Slowpoke Well"
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well (Event)",
+                        "name": "B1F - Cleared Slowpoke Well (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Grunt 4",
+                        "name": "B1F - Grunt 4"
                     },
                     {
                         "ref": "JohtoKanto/Slowpoke Well/B2F - Item",
@@ -192,8 +204,12 @@
                         "ref": "JohtoKanto/Slowpoke Well/B1F - Grunt 3"
                     },
                     {
-                        "name": "B1F - Cleared Slowpoke Well",
-                        "ref": "JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well"
+                        "name": "B1F - Cleared Slowpoke Well (Event)",
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Cleared Slowpoke Well (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Grunt 4",
+                        "name": "B1F - Grunt 4"
                     },
                     {
                         "name": "Slowpoke Well B1F Ladder                                                                 ",
@@ -223,8 +239,8 @@
                         "ref": "JohtoKanto/Blackthorn City/Gym - Right Statue Sign"
                     },
                     {
-                        "ref": "JohtoKanto/Blackthorn City/Gym - Beat Clair",
-                        "name": "Beat Clair"
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Beat Clair (Event)",
+                        "name": "Beat Clair (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Blackthorn City/Gym - Leader Clair",
@@ -261,6 +277,14 @@
                     {
                         "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Fran",
                         "name": "2F - Cool Trainer Fran"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Push top-right boulder into hole (Event)",
+                        "name": "2F - Push top-right boulder into hole (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Push bottom boulder into hole (Event)",
+                        "name": "2F - Push bottom boulder into hole (Event)"
                     }
                 ],
                 "map_locations": [
@@ -269,7 +293,7 @@
                         "x": 296,
                         "y": 184,
                         "restrict_visibility_rules": [
-                            "er_gym_interior_off, er_gym_off"
+                            "er_gym_interior_off, er_one_way_off, er_gym_off"
                         ]
                     }
                 ]
@@ -286,8 +310,103 @@
                         "ref": "JohtoKanto/Blackthorn City/Gym - Right Statue Sign"
                     },
                     {
-                        "name": "1F - Cool Trainer Paul",
-                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Paul"
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Beat Clair (Event)",
+                        "name": "Beat Clair (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Leader Clair",
+                        "name": "Leader Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Rising Badge from Clair",
+                        "name": "Rising Badge from Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/​Gym - Rising Badge from Clair",
+                        "name": "Rising Badge from Clair​"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - TM24 from Clair",
+                        "name": "TM24 from Clair"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Paul",
+                        "name": "1F - Cool Trainer Paul"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Mike",
+                        "name": "1F - Cool Trainer Mike"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Lola",
+                        "name": "1F - Cool Trainer Lola"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Cody",
+                        "name": "2F - Cool Trainer Cody"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Cool Trainer Fran",
+                        "name": "2F - Cool Trainer Fran"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Push top-right boulder into hole (Event)",
+                        "name": "2F - Push top-right boulder into hole (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 2F - Push bottom boulder into hole (Event)",
+                        "name": "2F - Push bottom boulder into hole (Event)"
+                    },
+                    {
+                        "name": "Blackthorn Gym 2F West Hole Landing                                             ",
+                        "ref": "JohtoKanto/Blackthorn City/Blackthorn Gym 2F West Hole Landing                                             "
+                    },
+                    {
+                        "name": "Blackthorn Gym 2F Northeast Hole Landing                                     ",
+                        "ref": "JohtoKanto/Blackthorn City/Blackthorn Gym 2F Northeast Hole Landing                                     "
+                    },
+                    {
+                        "name": "Blackthorn Gym 2F Southeast Hole Landing                                     ",
+                        "ref": "JohtoKanto/Blackthorn City/Blackthorn Gym 2F Southeast Hole Landing                                     "
+                    },
+                    {
+                        "name": "Blackthorn Gym 2F Northeast Hole                                                   ",
+                        "ref": "JohtoKanto/Blackthorn City/Blackthorn Gym 2F Northeast Hole                                                   "
+                    },
+                    {
+                        "name": "Blackthorn Gym 2F Southeast Hole                                                   ",
+                        "ref": "JohtoKanto/Blackthorn City/Blackthorn Gym 2F Southeast Hole                                                   "
+                    },
+                    {
+                        "name": "Blackthorn Gym 2F West Hole                                                           ",
+                        "ref": "JohtoKanto/Blackthorn City/Blackthorn Gym 2F West Hole                                                           "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornCity",
+                        "x": 296,
+                        "y": 184,
+                        "restrict_visibility_rules": [
+                            "er_gym_interior_off, er_one_way_on, er_gym_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Blackthorn Gym​​",
+                "sections": [
+                    {
+                        "name": "Left Statue Sign",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Right Statue Sign",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Right Statue Sign"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Paul",
+                        "name": "1F - Cool Trainer Paul"
                     },
                     {
                         "name": "Blackthorn Gym 1F West Stairs                                                          ",
@@ -300,7 +419,42 @@
                         "x": 296,
                         "y": 184,
                         "restrict_visibility_rules": [
-                            "er_gym_interior_on, er_gym_off"
+                            "er_gym_interior_on, er_one_way_off, er_gym_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Blackthorn Gym​​​",
+                "sections": [
+                    {
+                        "name": "Left Statue Sign",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Left Statue Sign"
+                    },
+                    {
+                        "name": "Right Statue Sign",
+                        "ref": "JohtoKanto/Blackthorn City/Gym - Right Statue Sign"
+                    },
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Gym - 1F - Cool Trainer Paul",
+                        "name": "1F - Cool Trainer Paul"
+                    },
+                    {
+                        "name": "Blackthorn Gym 1F West Stairs                                                          ",
+                        "ref": "JohtoKanto/Blackthorn City/Blackthorn Gym 1F West Stairs                                                          "
+                    },
+                    {
+                        "name": "Blackthorn Gym 2F West Hole Landing                                             ",
+                        "ref": "JohtoKanto/Blackthorn City/Blackthorn Gym 2F West Hole Landing                                             "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornCity",
+                        "x": 296,
+                        "y": 184,
+                        "restrict_visibility_rules": [
+                            "er_gym_interior_on, er_one_way_on, er_gym_off"
                         ]
                     }
                 ]
@@ -321,8 +475,8 @@
                         "name": "1F - Southeast Hidden Item"
                     },
                     {
-                        "ref": "JohtoKanto/Burned Tower/1F - Beat Rival in Burned Tower",
-                        "name": "1F - Beat Rival in Burned Tower"
+                        "ref": "JohtoKanto/Burned Tower/1F - Beat Rival in Burned Tower (Event)",
+                        "name": "1F - Beat Rival in Burned Tower (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Burned Tower/1F - Rival",
@@ -333,8 +487,8 @@
                         "name": "B1F - Item"
                     },
                     {
-                        "ref": "JohtoKanto/Burned Tower/B1F - Released the Beasts",
-                        "name": "B1F - Released the Beasts"
+                        "ref": "JohtoKanto/Burned Tower/B1F - Released the Beasts (Event)",
+                        "name": "B1F - Released the Beasts (Event)"
                     }
                 ],
                 "map_locations": [
@@ -566,8 +720,8 @@
                         "name": "Medium Martha"
                     },
                     {
-                        "ref": "JohtoKanto/Ecruteak City/Gym - Beat Morty",
-                        "name": "Beat Morty"
+                        "ref": "JohtoKanto/Ecruteak City/Gym - Beat Morty (Event)",
+                        "name": "Beat Morty (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Ecruteak City/Gym - Leader Morty",
@@ -620,8 +774,12 @@
                 "name": "Ecruteak City​",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ecruteak City/Met Bill",
-                        "name": "Met Bill"
+                        "ref": "JohtoKanto/Ecruteak City/Met Bill (Event)",
+                        "name": "Met Bill (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
                     }
                 ],
                 "map_locations": [
@@ -630,7 +788,8 @@
                         "x": 376,
                         "y": 440,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_pokecenter_off",
+                            "start_town_Ecruteak"
                         ]
                     }
                 ]
@@ -732,6 +891,10 @@
                     {
                         "ref": "JohtoKanto/Tin Tower/9F - Item",
                         "name": "9F - Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/Roof - Ho-Oh",
+                        "name": "Roof - Ho-Oh"
                     }
                 ],
                 "map_locations": [
@@ -804,8 +967,8 @@
                         "name": "Beauty Julia"
                     },
                     {
-                        "ref": "JohtoKanto/Celadon City/Gym - Beat Erika",
-                        "name": "Beat Erika"
+                        "ref": "JohtoKanto/Celadon City/Gym - Beat Erika (Event)",
+                        "name": "Beat Erika (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Celadon City/Gym - Leader Erika",
@@ -893,8 +1056,8 @@
                         "ref": "JohtoKanto/Celadon City/Celadon Mansion 3F - Dev Room Sign"
                     },
                     {
-                        "ref": "JohtoKanto/Celadon City/Celadon Mansion 3F - Obtain Diploma",
-                        "name": "3F - Obtain Diploma"
+                        "ref": "JohtoKanto/Celadon City/Celadon Mansion 3F - Obtain Diploma (Event)",
+                        "name": "3F - Obtain Diploma (Event)"
                     },
                     {
                         "name": "Roof Graffiti Sign",
@@ -978,6 +1141,10 @@
                         "name": "Machine Part in Water"
                     },
                     {
+                        "ref": "JohtoKanto/Cerulean City/Gym - Meet Rocket Grunt (Event)",
+                        "name": "Meet Rocket Grunt (Event)"
+                    },
+                    {
                         "ref": "JohtoKanto/Cerulean City/Gym - Swimmer Briana",
                         "name": "Swimmer Briana"
                     },
@@ -990,8 +1157,8 @@
                         "name": "Swimmer Diana"
                     },
                     {
-                        "ref": "JohtoKanto/Cerulean City/Gym - Beat Misty",
-                        "name": "Beat Misty"
+                        "ref": "JohtoKanto/Cerulean City/Gym - Beat Misty (Event)",
+                        "name": "Beat Misty (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Cerulean City/Gym - Leader Misty",
@@ -1082,8 +1249,8 @@
                         "name": "Blackbelt Lung"
                     },
                     {
-                        "ref": "JohtoKanto/Cianwood City/Gym - Beat Chuck",
-                        "name": "Beat Chuck"
+                        "ref": "JohtoKanto/Cianwood City/Gym - Beat Chuck (Event)",
+                        "name": "Beat Chuck (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Cianwood City/Gym - Leader Chuck",
@@ -1096,6 +1263,10 @@
                     {
                         "ref": "JohtoKanto/Cianwood City/Gym - TM01 from Chuck",
                         "name": "TM01 from Chuck"
+                    },
+                    {
+                        "ref": "JohtoKanto/Cianwood City/​Gym - Storm Badge from Chuck",
+                        "name": "Storm Badge from Chuck​"
                     }
                 ],
                 "map_locations": [
@@ -1138,6 +1309,10 @@
                     {
                         "ref": "JohtoKanto/Saffron City/Pass from Copycat",
                         "name": "Pass from Copycat"
+                    },
+                    {
+                        "ref": "JohtoKanto/Saffron City/Copycat's House 2F - Meet Copycat (Event)",
+                        "name": "2F - Meet Copycat (Event)"
                     }
                 ],
                 "map_locations": [
@@ -1240,8 +1415,8 @@
                         "name": "Psychic Jared"
                     },
                     {
-                        "ref": "JohtoKanto/Saffron City/Gym - Beat Sabrina",
-                        "name": "Beat Sabrina"
+                        "ref": "JohtoKanto/Saffron City/Gym - Beat Sabrina (Event)",
+                        "name": "Beat Sabrina (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Saffron City/Gym - Leader Sabrina",
@@ -1445,8 +1620,8 @@
                         "name": "Potion from Aide"
                     },
                     {
-                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Give Mystery Egg to Elm",
-                        "name": "Give Mystery Egg to Elm"
+                        "ref": "JohtoKanto/New Bark Town/Elm's Lab - Give Mystery Egg to Elm (Event)",
+                        "name": "Give Mystery Egg to Elm (Event)"
                     },
                     {
                         "ref": "JohtoKanto/New Bark Town/Elm's Lab - Gift from Aide after returning Mystery Egg",
@@ -1534,22 +1709,6 @@
                     {
                         "ref": "JohtoKanto/New Bark Town/Mom's Savings - 100000",
                         "name": "Mom's Savings - 100000"
-                    },
-                    {
-                        "ref": "JohtoKanto/New Bark Town/Player's House - Phone Card from Mom",
-                        "name": "Player's House - Phone Card from Mom"
-                    },
-                    {
-                        "ref": "JohtoKanto/New Bark Town/Player's House - Pokegear from Mom",
-                        "name": "Player's House - Pokegear from Mom"
-                    },
-                    {
-                        "ref": "JohtoKanto/New Bark Town/​Player's House - Phone Card from Mom",
-                        "name": "​Player's House - Phone Card from Mom"
-                    },
-                    {
-                        "ref": "JohtoKanto/New Bark Town/​Player's House - Pokegear from Mom",
-                        "name": "​Player's House - Pokegear from Mom"
                     }
                 ],
                 "map_locations": [
@@ -1625,22 +1784,6 @@
                     {
                         "name": "Mom's Savings - 100000",
                         "ref": "JohtoKanto/New Bark Town/Mom's Savings - 100000"
-                    },
-                    {
-                        "name": "Player's House - Phone Card from Mom",
-                        "ref": "JohtoKanto/New Bark Town/Player's House - Phone Card from Mom"
-                    },
-                    {
-                        "name": "Player's House - Pokegear from Mom",
-                        "ref": "JohtoKanto/New Bark Town/Player's House - Pokegear from Mom"
-                    },
-                    {
-                        "name": "​Player's House - Phone Card from Mom",
-                        "ref": "JohtoKanto/New Bark Town/​Player's House - Phone Card from Mom"
-                    },
-                    {
-                        "name": "​Player's House - Pokegear from Mom",
-                        "ref": "JohtoKanto/New Bark Town/​Player's House - Pokegear from Mom"
                     }
                 ],
                 "map_locations": [
@@ -1701,8 +1844,8 @@
                         "name": "Lass Alice"
                     },
                     {
-                        "ref": "JohtoKanto/Fuchsia City/Gym - Beat Janine",
-                        "name": "Beat Janine"
+                        "ref": "JohtoKanto/Fuchsia City/Gym - Beat Janine (Event)",
+                        "name": "Beat Janine (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Fuchsia City/Gym - Leader Janine",
@@ -1792,6 +1935,10 @@
                     {
                         "ref": "JohtoKanto/Goldenrod City/Post-E4 GS-Ball from Trade Corner Receptionist",
                         "name": "Post-E4 GS-Ball from Trade Corner Receptionist"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
                     }
                 ],
                 "map_locations": [
@@ -1800,7 +1947,8 @@
                         "x": 248,
                         "y": 440,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_pokecenter_off",
+                            "start_town_Goldenrod"
                         ]
                     }
                 ]
@@ -1855,6 +2003,10 @@
                     {
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM Shop - Shop Items",
                         "name": "5F - TM Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - Trade: Mike",
+                        "name": "5F - Trade: Mike"
                     },
                     {
                         "name": "6F - Directory Sign",
@@ -1946,6 +2098,10 @@
                     {
                         "name": "5F - TM Shop - Shop Items",
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - Trade: Mike",
+                        "name": "5F - Trade: Mike"
                     },
                     {
                         "name": "6F - Directory Sign",
@@ -2045,6 +2201,10 @@
                     {
                         "name": "5F - TM Shop - Shop Items",
                         "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - TM Shop - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Goldenrod City/Dept. Store 5F - Trade: Mike",
+                        "name": "5F - Trade: Mike"
                     },
                     {
                         "name": "6F - Directory Sign",
@@ -2541,8 +2701,8 @@
                         "name": "Lass Carrie"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod City/Gym - Beat Whitney",
-                        "name": "Beat Whitney"
+                        "ref": "JohtoKanto/Goldenrod City/Gym - Beat Whitney (Event)",
+                        "name": "Beat Whitney (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod City/Gym - Leader Whitney",
@@ -2620,8 +2780,8 @@
                         "name": "Super Nerd Eric"
                     },
                     {
-                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Beat Rival in Goldenrod Underground",
-                        "name": "B2F - Beat Rival in Goldenrod Underground"
+                        "ref": "JohtoKanto/Goldenrod Underground/B2F - Beat Rival in Goldenrod Underground (Event)",
+                        "name": "B2F - Beat Rival in Goldenrod Underground (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Goldenrod Underground/B2F - Rival",
@@ -2773,6 +2933,18 @@
                         "name": "1F - Radio Card from Quiz​"
                     },
                     {
+                        "ref": "JohtoKanto/Radio Tower/1F - Lucky Number Show 1st Prize",
+                        "name": "1F - Lucky Number Show 1st Prize"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/1F - Lucky Number Show 2nd Prize",
+                        "name": "1F - Lucky Number Show 2nd Prize"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/1F - Lucky Number Show 3rd Prize",
+                        "name": "1F - Lucky Number Show 3rd Prize"
+                    },
+                    {
                         "ref": "JohtoKanto/Radio Tower/1F - Grunt",
                         "name": "1F - Grunt"
                     },
@@ -2845,6 +3017,10 @@
                         "name": "3F - TM11 from Woman"
                     },
                     {
+                        "ref": "JohtoKanto/Radio Tower/3F - Open the Card Key Gate (Event)",
+                        "name": "3F - Open the Card Key Gate (Event)"
+                    },
+                    {
                         "ref": "JohtoKanto/Radio Tower/3F - Grunt 3",
                         "name": "3F - Grunt 3"
                     },
@@ -2889,8 +3065,8 @@
                         "ref": "JohtoKanto/Radio Tower/5F - Studio Right Sign"
                     },
                     {
-                        "ref": "JohtoKanto/Radio Tower/5F - Unmask the False Director",
-                        "name": "5F - Unmask the False Director"
+                        "ref": "JohtoKanto/Radio Tower/5F - Unmask the False Director (Event)",
+                        "name": "5F - Unmask the False Director (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/5F - False Director",
@@ -2909,12 +3085,16 @@
                         "name": "5F - Clear Bell from Director"
                     },
                     {
-                        "name": "5F - Clear Radio Tower",
-                        "ref": "JohtoKanto/Radio Tower/5F - Clear Radio Tower"
+                        "name": "5F - Clear Radio Tower (Event)",
+                        "ref": "JohtoKanto/Radio Tower/5F - Clear Radio Tower (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Radio Tower/5F - Item",
                         "name": "5F - Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/5F - Rocket Executive 2",
+                        "name": "5F - Rocket Executive 2"
                     }
                 ],
                 "map_locations": [
@@ -2946,6 +3126,18 @@
                     {
                         "name": "1F - Radio Card from Quiz​",
                         "ref": "JohtoKanto/Radio Tower/​1F - Radio Card from Quiz"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/1F - Lucky Number Show 1st Prize",
+                        "name": "1F - Lucky Number Show 1st Prize"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/1F - Lucky Number Show 2nd Prize",
+                        "name": "1F - Lucky Number Show 2nd Prize"
+                    },
+                    {
+                        "ref": "JohtoKanto/Radio Tower/1F - Lucky Number Show 3rd Prize",
+                        "name": "1F - Lucky Number Show 3rd Prize"
                     },
                     {
                         "name": "1F - Grunt",
@@ -3013,6 +3205,22 @@
                     {
                         "ref": "JohtoKanto/Ice Path/B3F - Item",
                         "name": "B3F - Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Plug the north hole (Event)",
+                        "name": "B1F - Plug the north hole (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Plug the center-west hole (Event)",
+                        "name": "B1F - Plug the center-west hole (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Plug the south-west hole (Event)",
+                        "name": "B1F - Plug the south-west hole (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Plug the south-east hole (Event)",
+                        "name": "B1F - Plug the south-east hole (Event)"
                     }
                 ],
                 "map_locations": [
@@ -3021,7 +3229,7 @@
                         "x": 904,
                         "y": 120,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_off, er_dungeon_off"
+                            "er_dungeon_interior_off, er_one_way_off, er_dungeon_off"
                         ]
                     },
                     {
@@ -3029,7 +3237,7 @@
                         "x": 584,
                         "y": 152,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_off, er_dungeon_off"
+                            "er_dungeon_interior_off, er_one_way_off, er_dungeon_off"
                         ]
                     }
                 ]
@@ -3038,8 +3246,123 @@
                 "name": "Ice Path​",
                 "sections": [
                     {
-                        "name": "1F - HM07 in Itemball",
-                        "ref": "JohtoKanto/Ice Path/1F - HM07 in Itemball"
+                        "ref": "JohtoKanto/Ice Path/1F - HM07 in Itemball",
+                        "name": "1F - HM07 in Itemball"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/1F - Southeast Item",
+                        "name": "1F - Southeast Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/1F - East Item",
+                        "name": "1F - East Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Hidden Item on Boulder",
+                        "name": "B1F - Hidden Item on Boulder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Item",
+                        "name": "B1F - Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F - Hidden Item on Boulder",
+                        "name": "B2F - Hidden Item on Boulder"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F - Southeast Item",
+                        "name": "B2F - Southeast Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F - Hidden Item in Corner",
+                        "name": "B2F - Hidden Item in Corner"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F - Northwest Item",
+                        "name": "B2F - Northwest Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F - Center Item",
+                        "name": "B2F - Center Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B3F - Item",
+                        "name": "B3F - Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Plug the north hole (Event)",
+                        "name": "B1F - Plug the north hole (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Plug the center-west hole (Event)",
+                        "name": "B1F - Plug the center-west hole (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Plug the south-west hole (Event)",
+                        "name": "B1F - Plug the south-west hole (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Plug the south-east hole (Event)",
+                        "name": "B1F - Plug the south-east hole (Event)"
+                    },
+                    {
+                        "name": "Ice Path B1F Northeast Hole                                                              ",
+                        "ref": "JohtoKanto/Ice Path/Ice Path B1F Northeast Hole                                                              "
+                    },
+                    {
+                        "name": "Ice Path B1F Northwest Hole                                                             ",
+                        "ref": "JohtoKanto/Ice Path/Ice Path B1F Northwest Hole                                                             "
+                    },
+                    {
+                        "name": "Ice Path B1F Southeast Hole                                                              ",
+                        "ref": "JohtoKanto/Ice Path/Ice Path B1F Southeast Hole                                                              "
+                    },
+                    {
+                        "name": "Ice Path B1F Southwest Hole                                                             ",
+                        "ref": "JohtoKanto/Ice Path/Ice Path B1F Southwest Hole                                                             "
+                    },
+                    {
+                        "name": "Ice Path B1F Northeast Hole Landing                                                ",
+                        "ref": "JohtoKanto/Ice Path/Ice Path B1F Northeast Hole Landing                                                "
+                    },
+                    {
+                        "name": "Ice Path B1F Northwest Hole Landing                                               ",
+                        "ref": "JohtoKanto/Ice Path/Ice Path B1F Northwest Hole Landing                                               "
+                    },
+                    {
+                        "name": "Ice Path B1F Southeast Hole Landing                                                ",
+                        "ref": "JohtoKanto/Ice Path/Ice Path B1F Southeast Hole Landing                                                "
+                    },
+                    {
+                        "name": "Ice Path B1F Southwest Hole Landing                                               ",
+                        "ref": "JohtoKanto/Ice Path/Ice Path B1F Southwest Hole Landing                                               "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route44",
+                        "x": 904,
+                        "y": 120,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_one_way_on, er_dungeon_off"
+                        ]
+                    },
+                    {
+                        "map": "BlackthornCity",
+                        "x": 584,
+                        "y": 152,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_one_way_on, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ice Path​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/1F - HM07 in Itemball",
+                        "name": "1F - HM07 in Itemball"
                     },
                     {
                         "name": "Ice Path 1F North Ladder                                                                   ",
@@ -3058,15 +3381,15 @@
                 ]
             },
             {
-                "name": "Ice Path​​",
+                "name": "Ice Path​​​",
                 "sections": [
                     {
-                        "name": "1F - Southeast Item",
-                        "ref": "JohtoKanto/Ice Path/1F - Southeast Item"
+                        "ref": "JohtoKanto/Ice Path/1F - Southeast Item",
+                        "name": "1F - Southeast Item"
                     },
                     {
-                        "name": "1F - East Item",
-                        "ref": "JohtoKanto/Ice Path/1F - East Item"
+                        "ref": "JohtoKanto/Ice Path/1F - East Item",
+                        "name": "1F - East Item"
                     },
                     {
                         "name": "Ice Path 1F South Ladder                                                                   ",
@@ -3203,8 +3526,8 @@
                         "name": "Skier Roxanne"
                     },
                     {
-                        "ref": "JohtoKanto/Mahogany Town/Gym - Beat Pryce",
-                        "name": "Beat Pryce"
+                        "ref": "JohtoKanto/Mahogany Town/Gym - Beat Pryce (Event)",
+                        "name": "Beat Pryce (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Mahogany Town/Gym - Leader Pryce",
@@ -3270,6 +3593,18 @@
                         "name": "Rocket HQ B1F - South Item"
                     },
                     {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Koffing",
+                        "name": "Rocket HQ B1F - Poké-Trap Koffing"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Voltorb",
+                        "name": "Rocket HQ B1F - Poké-Trap Voltorb"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Geodude",
+                        "name": "Rocket HQ B1F - Poké-Trap Geodude"
+                    },
+                    {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Grunt 3",
                         "name": "Rocket HQ B2F - Grunt 3"
                     },
@@ -3326,12 +3661,44 @@
                         "name": "Rocket HQ B3F - West Item (Left)"
                     },
                     {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Learn the password SlowpokeTail (Event)",
+                        "name": "Rocket HQ B3F - Learn the password SlowpokeTail (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Learn the password RaticateTail (Event)",
+                        "name": "Rocket HQ B3F - Learn the password RaticateTail (Event)"
+                    },
+                    {
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Center Item",
                         "name": "Rocket HQ B3F - Center Item"
                     },
                     {
-                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Clear Rocket HQ",
-                        "name": "Rocket HQ B2F - Clear Rocket HQ"
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Clear Rocket HQ (Event)",
+                        "name": "Rocket HQ B2F - Clear Rocket HQ (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Rocket Executive",
+                        "name": "Rocket HQ B2F - Rocket Executive"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Bottom",
+                        "name": "Rocket HQ B2F - Electrode Bottom"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Middle",
+                        "name": "Rocket HQ B2F - Electrode Middle"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B2F - Electrode Top",
+                        "name": "Rocket HQ B2F - Electrode Top"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Learn the password Hail Giovanni (Event)",
+                        "name": "Rocket HQ B3F - Learn the password Hail Giovanni (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B3F - Rocket Executive",
+                        "name": "Rocket HQ B3F - Rocket Executive"
                     }
                 ],
                 "map_locations": [
@@ -3379,6 +3746,18 @@
                     {
                         "name": "Rocket HQ B1F - South Item",
                         "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - South Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Koffing",
+                        "name": "Rocket HQ B1F - Poké-Trap Koffing"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Voltorb",
+                        "name": "Rocket HQ B1F - Poké-Trap Voltorb"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Rocket HQ B1F - Poké-Trap Geodude",
+                        "name": "Rocket HQ B1F - Poké-Trap Geodude"
                     },
                     {
                         "name": "Rocket HQ B1F Southwest Stairs                                                       ",
@@ -3669,8 +4048,8 @@
                 "name": "Mr. Pokemon's House",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 30/Meet Mr. Pokemon",
-                        "name": "Meet Mr. Pokemon"
+                        "ref": "JohtoKanto/Route 30/Meet Mr. Pokemon (Event)",
+                        "name": "Meet Mr. Pokemon (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Route 30/Mystery Egg from Mr Pokemon",
@@ -3679,6 +4058,14 @@
                     {
                         "ref": "JohtoKanto/Route 30/Exp Share from Mr Pokemon",
                         "name": "Exp Share from Mr. Pokemon"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Pokedex from Oak",
+                        "name": "Pokedex from Oak"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Pokedex from Oak​",
+                        "name": "Pokedex from Oak​"
                     }
                 ],
                 "map_locations": [
@@ -3742,8 +4129,8 @@
                         "ref": "JohtoKanto/Olivine City/Gym - Right Statue Sign"
                     },
                     {
-                        "ref": "JohtoKanto/Olivine City/Gym - Beat Jasmine",
-                        "name": "Beat Jasmine"
+                        "ref": "JohtoKanto/Olivine City/Gym - Beat Jasmine (Event)",
+                        "name": "Beat Jasmine (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Olivine City/Gym - Leader Jasmine",
@@ -3783,6 +4170,18 @@
                     {
                         "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey",
                         "name": "2F - Sailor Huey"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Radio",
+                        "name": "2F - Sailor Huey Rematch - Radio"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Champion",
+                        "name": "2F - Sailor Huey Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Kanto Power Restored",
+                        "name": "2F - Sailor Huey Rematch - Kanto Power Restored"
                     },
                     {
                         "name": "2F - Protein from Huey",
@@ -3841,8 +4240,12 @@
                         "name": "6F - Item"
                     },
                     {
-                        "ref": "JohtoKanto/Olivine Lighthouse/6F - Heal Amphy",
-                        "name": "6F - Heal Amphy"
+                        "ref": "JohtoKanto/Olivine Lighthouse/6F - Heal Amphy (Event)",
+                        "name": "6F - Heal Amphy (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/6F - Jasmine explains Amphy's sickness (Event)",
+                        "name": "6F - Jasmine explains Amphy's sickness (Event)"
                     }
                 ],
                 "map_locations": [
@@ -3860,56 +4263,84 @@
                 "name": "Olivine Lighthouse​",
                 "sections": [
                     {
-                        "name": "2F - Gentleman Alfred",
-                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Gentleman Alfred"
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Gentleman Alfred",
+                        "name": "2F - Gentleman Alfred"
                     },
                     {
-                        "name": "2F - Sailor Huey",
-                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey"
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey",
+                        "name": "2F - Sailor Huey"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Radio",
+                        "name": "2F - Sailor Huey Rematch - Radio"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Champion",
+                        "name": "2F - Sailor Huey Rematch - Champion"
+                    },
+                    {
+                        "ref": "JohtoKanto/Olivine Lighthouse/2F - Sailor Huey Rematch - Kanto Power Restored",
+                        "name": "2F - Sailor Huey Rematch - Kanto Power Restored"
                     },
                     {
                         "name": "2F - Protein from Huey",
                         "ref": "JohtoKanto/Olivine Lighthouse/2F - Protein from Huey"
                     },
                     {
-                        "name": "3F - Gentleman Preston",
-                        "ref": "JohtoKanto/Olivine Lighthouse/3F - Gentleman Preston"
+                        "ref": "JohtoKanto/Olivine Lighthouse/3F - Gentleman Preston",
+                        "name": "3F - Gentleman Preston"
                     },
                     {
-                        "name": "3F - Bird Keeper Theo",
-                        "ref": "JohtoKanto/Olivine Lighthouse/3F - Bird Keeper Theo"
+                        "ref": "JohtoKanto/Olivine Lighthouse/3F - Bird Keeper Theo",
+                        "name": "3F - Bird Keeper Theo"
                     },
                     {
-                        "name": "4F - Lass Connie",
-                        "ref": "JohtoKanto/Olivine Lighthouse/4F - Lass Connie"
+                        "ref": "JohtoKanto/Olivine Lighthouse/4F - Lass Connie",
+                        "name": "4F - Lass Connie"
                     },
                     {
-                        "name": "4F - Sailor Kent",
-                        "ref": "JohtoKanto/Olivine Lighthouse/4F - Sailor Kent"
+                        "ref": "JohtoKanto/Olivine Lighthouse/4F - Sailor Kent",
+                        "name": "4F - Sailor Kent"
                     },
                     {
-                        "name": "5F - Southwest Item",
-                        "ref": "JohtoKanto/Olivine Lighthouse/5F - Southwest Item"
+                        "ref": "JohtoKanto/Olivine Lighthouse/5F - Southwest Item",
+                        "name": "5F - Southwest Item"
                     },
                     {
-                        "name": "5F - Hidden Item",
-                        "ref": "JohtoKanto/Olivine Lighthouse/5F - Hidden Item"
+                        "ref": "JohtoKanto/Olivine Lighthouse/5F - Hidden Item",
+                        "name": "5F - Hidden Item"
                     },
                     {
-                        "name": "5F - Bird Keeper Denis",
-                        "ref": "JohtoKanto/Olivine Lighthouse/5F - Bird Keeper Denis"
+                        "ref": "JohtoKanto/Olivine Lighthouse/5F - Bird Keeper Denis",
+                        "name": "5F - Bird Keeper Denis"
                     },
                     {
-                        "name": "5F - East Item",
-                        "ref": "JohtoKanto/Olivine Lighthouse/5F - East Item"
+                        "ref": "JohtoKanto/Olivine Lighthouse/5F - East Item",
+                        "name": "5F - East Item"
+                    },
+                    {
+                        "name": "Olivine Lighthouse 2F Hole Landing                                                  ",
+                        "ref": "JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 2F Hole Landing                                                  "
+                    },
+                    {
+                        "name": "Olivine Lighthouse 3F Hole Landing                                                  ",
+                        "ref": "JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 3F Hole Landing                                                  "
                     },
                     {
                         "name": "Olivine Lighthouse 2F Hole                                                                ",
                         "ref": "JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 2F Hole                                                                "
                     },
                     {
+                        "name": "Olivine Lighthouse 4F East Hole Landing                                          ",
+                        "ref": "JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 4F East Hole Landing                                          "
+                    },
+                    {
                         "name": "Olivine Lighthouse 3F Hole                                                                ",
                         "ref": "JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 3F Hole                                                                "
+                    },
+                    {
+                        "name": "Olivine Lighthouse 5F Hole Landing                                                  ",
+                        "ref": "JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 5F Hole Landing                                                  "
                     },
                     {
                         "name": "Olivine Lighthouse 4F East Hole                                                        ",
@@ -3918,6 +4349,10 @@
                     {
                         "name": "Olivine Lighthouse 4F North Hole                                                      ",
                         "ref": "JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 4F North Hole                                                      "
+                    },
+                    {
+                        "name": "Olivine Lighthouse 6F Hole Landing                                                  ",
+                        "ref": "JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 6F Hole Landing                                                  "
                     },
                     {
                         "name": "Olivine Lighthouse 5F Hole                                                                ",
@@ -3949,7 +4384,30 @@
                         "x": 472,
                         "y": 440,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_on, er_dungeon_off"
+                            "er_dungeon_interior_on, er_one_way_off, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Olivine Lighthouse​​​",
+                "sections": [
+                    {
+                        "name": "Olivine Lighthouse 1F Stairs                                                              ",
+                        "ref": "JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 1F Stairs                                                              "
+                    },
+                    {
+                        "name": "Olivine Lighthouse 2F Hole Landing                                                  ",
+                        "ref": "JohtoKanto/Olivine Lighthouse/Olivine Lighthouse 2F Hole Landing                                                  "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineCity",
+                        "x": 472,
+                        "y": 440,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_one_way_on, er_dungeon_off"
                         ]
                     }
                 ]
@@ -3970,8 +4428,8 @@
                         "name": "Camper Jerry"
                     },
                     {
-                        "ref": "JohtoKanto/Pewter City/Gym - Beat Brock",
-                        "name": "Beat Brock"
+                        "ref": "JohtoKanto/Pewter City/Gym - Beat Brock (Event)",
+                        "name": "Beat Brock (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Pewter City/Gym - Leader Brock",
@@ -4052,8 +4510,8 @@
                         "name": "Juggler Horton"
                     },
                     {
-                        "ref": "JohtoKanto/Vermilion City/Gym - Beat Lt. Surge",
-                        "name": "Beat Lt. Surge"
+                        "ref": "JohtoKanto/Vermilion City/Gym - Beat Lt. Surge (Event)",
+                        "name": "Beat Lt. Surge (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Vermilion City/Gym - Leader Lt. Surge",
@@ -4087,12 +4545,12 @@
                         "ref": "JohtoKanto/Power Plant/TM07 from Manager"
                     },
                     {
-                        "name": "Learn of the Robbery",
-                        "ref": "JohtoKanto/Power Plant/Learn of the robbery"
+                        "name": "Learn of the Robbery (Event)",
+                        "ref": "JohtoKanto/Power Plant/Learn of the robbery (Event)"
                     },
                     {
-                        "name": "Restore Power to Kanto",
-                        "ref": "JohtoKanto/Power Plant/Restore Power to Kanto"
+                        "name": "Restore Power to Kanto (Event)",
+                        "ref": "JohtoKanto/Power Plant/Restore Power to Kanto (Event)"
                     },
                     {
                         "name": "Trade: Forest",
@@ -4296,8 +4754,8 @@
                 "name": "Seafoam Gym",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Seafoam Islands/Gym - Beat Blaine",
-                        "name": "Beat Blaine"
+                        "ref": "JohtoKanto/Seafoam Islands/Gym - Beat Blaine (Event)",
+                        "name": "Beat Blaine (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Seafoam Islands/Gym - Leader Blaine",
@@ -4397,6 +4855,80 @@
                 ]
             },
             {
+                "name": "Mount Moon",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Inside - Rival",
+                        "name": "Inside - Rival"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Inside - Beat Rival (Event)",
+                        "name": "Inside - Beat Rival (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Square - Hidden Item under Rock",
+                        "name": "Square - Hidden Item under Rock"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Square - Don't Litter Sign",
+                        "name": "Square - Don't Litter Sign"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route3",
+                        "x": 840,
+                        "y": 24,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off"
+                        ]
+                    },
+                    {
+                        "map": "Route4",
+                        "x": 40,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mount Moon​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Inside - Rival",
+                        "name": "Inside - Rival"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Inside - Beat Rival (Event)",
+                        "name": "Inside - Beat Rival (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Mount Moon Northeast Ladder                                                          ",
+                        "name": "Mount Moon Northeast Ladder                                                          "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route3",
+                        "x": 840,
+                        "y": 24,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_dungeon_off"
+                        ]
+                    },
+                    {
+                        "map": "Route4",
+                        "x": 40,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
                 "name": "Gift Shop",
                 "sections": [
                     {
@@ -4421,6 +4953,10 @@
                     {
                         "ref": "JohtoKanto/Route 32/Old Rod from Pokecenter Fishing Guru",
                         "name": "Old Rod from Pokecenter Fishing Guru"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
                     }
                 ],
                 "map_locations": [
@@ -4429,7 +4965,8 @@
                         "x": 184,
                         "y": 552,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_pokecenter_off",
+                            "start_town_UnionCave"
                         ]
                     }
                 ]
@@ -4508,6 +5045,10 @@
                     {
                         "ref": "JohtoKanto/Union Cave/B2F - Cool Trainer Emma",
                         "name": "B2F - Cool Trainer Emma"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Lapras",
+                        "name": "B2F - Lapras"
                     },
                     {
                         "ref": "JohtoKanto/Union Cave/1F - Firebreather Ray",
@@ -4635,7 +5176,7 @@
                 "name": "Pokemon Daycare",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 34/Odd Egg Collected"
+                        "ref": "JohtoKanto/Route 34/Odd Egg Collected (Event)"
                     }
                 ],
                 "map_locations": [
@@ -4653,8 +5194,8 @@
                 "name": "Route 35",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Route 35/Collect Kenya",
-                        "name": "Collect Kenya"
+                        "ref": "JohtoKanto/Route 35/Collect Kenya (Event)",
+                        "name": "Collect Kenya (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Route 35/HP Up after delivering Kenya",
@@ -4696,6 +5237,25 @@
                     {
                         "map": "Route39",
                         "x": 88,
+                        "y": 56,
+                        "restrict_visibility_rules": [
+                            "er_building_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Moomoo Farm Barn",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 39/Moomoo Farm Barn - Heal Moomoo (Event)",
+                        "name": "Heal Moomoo (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route39",
+                        "x": 24,
                         "y": 56,
                         "restrict_visibility_rules": [
                             "er_building_off"
@@ -4749,8 +5309,8 @@
                 "name": "Research Center",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ruins of Alph/Research Center - Complete the Unown Dex",
-                        "name": "Complete the Unown Dex"
+                        "ref": "JohtoKanto/Ruins of Alph/Research Center - Complete the Unown Dex (Event)",
+                        "name": "Complete the Unown Dex (Event)"
                     }
                 ],
                 "map_locations": [
@@ -4768,8 +5328,8 @@
                 "name": "Aerodactyl Room (Flash)",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Puzzle Solved",
-                        "name": "Puzzle Solved"
+                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Bottom Right Item (Flash)",
@@ -4794,7 +5354,7 @@
                         "x": 264,
                         "y": 536,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_off, er_dungeon_off"
+                            "er_dungeon_interior_off, er_one_way_off, er_dungeon_off"
                         ]
                     }
                 ]
@@ -4803,8 +5363,51 @@
                 "name": "Aerodactyl Room (Flash)​",
                 "sections": [
                     {
-                        "name": "Puzzle Solved",
-                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Puzzle Solved"
+                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Bottom Right Item (Flash)",
+                        "name": "Bottom Right Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Bottom Left Item (Flash)",
+                        "name": "Bottom Left Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Top Right Item (Flash)",
+                        "name": "Top Right Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Top Left Item (Flash)",
+                        "name": "Top Left Item"
+                    },
+                    {
+                        "name": "Ruins of Alph Aerodactyl Chamber Hole                                            ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Chamber Hole                                            "
+                    },
+                    {
+                        "name": "Ruins of Alph Aerodactyl Item Room Hole                                         ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Item Room Hole                                         "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphOutside",
+                        "x": 264,
+                        "y": 536,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_one_way_on, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Aerodactyl Room (Flash)​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
                     },
                     {
                         "name": "Ruins of Alph Aerodactyl Item Room Entrance                                  ",
@@ -4817,7 +5420,34 @@
                         "x": 264,
                         "y": 536,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_on, er_dungeon_off"
+                            "er_dungeon_interior_on, er_one_way_off, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Aerodactyl Room (Flash)​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Aerodactyl Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
+                    },
+                    {
+                        "name": "Ruins of Alph Aerodactyl Chamber Hole                                            ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Chamber Hole                                            "
+                    },
+                    {
+                        "name": "Ruins of Alph Aerodactyl Item Room Entrance                                  ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Item Room Entrance                                  "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphOutside",
+                        "x": 264,
+                        "y": 536,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_one_way_on, er_dungeon_off"
                         ]
                     }
                 ]
@@ -4826,8 +5456,8 @@
                 "name": "Kabuto Room (Escape Rope)",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Puzzle Solved",
-                        "name": "Puzzle Solved"
+                        "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Bottom Left Item (Escape Rope)",
@@ -4852,7 +5482,7 @@
                         "x": 232,
                         "y": 120,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_off, er_dungeon_off"
+                            "er_dungeon_interior_off, er_one_way_off, er_dungeon_off"
                         ]
                     }
                 ]
@@ -4861,8 +5491,51 @@
                 "name": "Kabuto Room (Escape Rope)​",
                 "sections": [
                     {
-                        "name": "Puzzle Solved",
-                        "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Puzzle Solved"
+                        "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Bottom Left Item (Escape Rope)",
+                        "name": "Bottom Left Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Top Right Item (Escape Rope)",
+                        "name": "Top Right Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Top Left Item (Escape Rope)",
+                        "name": "Top Left Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Bottom Right Item (Escape Rope)",
+                        "name": "Bottom Right Item"
+                    },
+                    {
+                        "name": "Ruins of Alph Kabuto Chamber Hole                                                  ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Chamber Hole                                                  "
+                    },
+                    {
+                        "name": "Ruins of Alph Kabuto Item Room Hole                                               ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Item Room Hole                                               "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphOutside",
+                        "x": 232,
+                        "y": 120,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_one_way_on, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Kabuto Room (Escape Rope)​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
                     },
                     {
                         "name": "Ruins of Alph Kabuto Item Room Entrance                                        ",
@@ -4875,7 +5548,34 @@
                         "x": 232,
                         "y": 120,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_on, er_dungeon_off"
+                            "er_dungeon_interior_on, er_one_way_off, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Kabuto Room (Escape Rope)​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Kabuto Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
+                    },
+                    {
+                        "name": "Ruins of Alph Kabuto Chamber Hole                                                  ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Chamber Hole                                                  "
+                    },
+                    {
+                        "name": "Ruins of Alph Kabuto Item Room Entrance                                        ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Item Room Entrance                                        "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphOutside",
+                        "x": 232,
+                        "y": 120,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_one_way_on, er_dungeon_off"
                         ]
                     }
                 ]
@@ -4884,8 +5584,8 @@
                 "name": "Omanyte Room (Water Stone)",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Puzzle Solved",
-                        "name": "Puzzle Solved"
+                        "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Bottom Left Item (Water Stone)",
@@ -4910,7 +5610,7 @@
                         "x": 40,
                         "y": 472,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_off, er_dungeon_off"
+                            "er_dungeon_interior_off, er_one_way_off, er_dungeon_off"
                         ]
                     }
                 ]
@@ -4919,8 +5619,51 @@
                 "name": "Omanyte Room (Water Stone)​",
                 "sections": [
                     {
-                        "name": "Puzzle Solved",
-                        "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Puzzle Solved"
+                        "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Bottom Left Item (Water Stone)",
+                        "name": "Bottom Left Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Bottom Right Item (Water Stone)",
+                        "name": "Bottom Right Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Top Right Item (Water Stone)",
+                        "name": "Top Right Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Top Left Item (Water Stone)",
+                        "name": "Top Left Item"
+                    },
+                    {
+                        "name": "Ruins of Alph Omanyte Chamber Hole                                              ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Chamber Hole                                              "
+                    },
+                    {
+                        "name": "Ruins of Alph Omanyte Item Room Hole                                           ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Item Room Hole                                           "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphOutside",
+                        "x": 40,
+                        "y": 472,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_one_way_on, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Omanyte Room (Water Stone)​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
                     },
                     {
                         "name": "Ruins of Alph Omanyte Item Room Entrance                                     ",
@@ -4933,7 +5676,34 @@
                         "x": 40,
                         "y": 472,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_on, er_dungeon_off"
+                            "er_dungeon_interior_on, er_one_way_off, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Omanyte Room (Water Stone)​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Omanyte Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
+                    },
+                    {
+                        "name": "Ruins of Alph Omanyte Chamber Hole                                              ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Chamber Hole                                              "
+                    },
+                    {
+                        "name": "Ruins of Alph Omanyte Item Room Entrance                                     ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Item Room Entrance                                     "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphOutside",
+                        "x": 40,
+                        "y": 472,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_one_way_on, er_dungeon_off"
                         ]
                     }
                 ]
@@ -4942,8 +5712,8 @@
                 "name": "Ho-Oh Room (Rainbow Wing)",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Puzzle Solved",
-                        "name": "Puzzle Solved"
+                        "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Top Right Item (Rainbow Wing)",
@@ -4968,7 +5738,7 @@
                         "x": 40,
                         "y": 280,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_off, er_dungeon_off"
+                            "er_dungeon_interior_off, er_one_way_off, er_dungeon_off"
                         ]
                     }
                 ]
@@ -4977,8 +5747,51 @@
                 "name": "Ho-Oh Room (Rainbow Wing)​",
                 "sections": [
                     {
-                        "name": "Puzzle Solved",
-                        "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Puzzle Solved"
+                        "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Top Right Item (Rainbow Wing)",
+                        "name": "Top Right Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Bottom Left Item (Rainbow Wing)",
+                        "name": "Bottom Left Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Bottom Right Item (Rainbow Wing)",
+                        "name": "Bottom Right Item"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Top Left Item (Rainbow Wing)",
+                        "name": "Top Left Item"
+                    },
+                    {
+                        "name": "Ruins of Alph Ho-Oh Chamber Hole                                                   ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Chamber Hole                                                   "
+                    },
+                    {
+                        "name": "Ruins of Alph Ho-Oh Item Room Hole                                                ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Item Room Hole                                                "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphOutside",
+                        "x": 40,
+                        "y": 280,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_one_way_on, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ho-Oh Room (Rainbow Wing)​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
                     },
                     {
                         "name": "Ruins of Alph Ho-Oh Item Room Entrance                                         ",
@@ -4991,7 +5804,81 @@
                         "x": 40,
                         "y": 280,
                         "restrict_visibility_rules": [
-                            "er_dungeon_interior_on, er_dungeon_off"
+                            "er_dungeon_interior_on, er_one_way_off, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ho-Oh Room (Rainbow Wing)​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Ho-Oh Room Puzzle Solved (Event)",
+                        "name": "Puzzle Solved (Event)"
+                    },
+                    {
+                        "name": "Ruins of Alph Ho-Oh Chamber Hole                                                   ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Chamber Hole                                                   "
+                    },
+                    {
+                        "name": "Ruins of Alph Ho-Oh Item Room Entrance                                         ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Item Room Entrance                                         "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphOutside",
+                        "x": 40,
+                        "y": 280,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_one_way_on, er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Inner Chamber",
+                "sections": [
+                    {
+                        "name": "Ruins of Alph Aerodactyl Chamber Hole Landing                              ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Chamber Hole Landing                              "
+                    },
+                    {
+                        "name": "Ruins of Alph Aerodactyl Word Room Hole Landing                         ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Aerodactyl Word Room Hole Landing                         "
+                    },
+                    {
+                        "name": "Ruins of Alph Ho-Oh Chamber Hole Landing                                     ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Chamber Hole Landing                                     "
+                    },
+                    {
+                        "name": "Ruins of Alph Ho-Oh Word Room Hole Landing                                ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Ho-Oh Word Room Hole Landing                                "
+                    },
+                    {
+                        "name": "Ruins of Alph Kabuto Chamber Hole Landing                                    ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Chamber Hole Landing                                    "
+                    },
+                    {
+                        "name": "Ruins of Alph Kabuto Word Room Hole Landing                               ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Kabuto Word Room Hole Landing                               "
+                    },
+                    {
+                        "name": "Ruins of Alph Omanyte Chamber Hole Landing                                ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Chamber Hole Landing                                "
+                    },
+                    {
+                        "name": "Ruins of Alph Omanyte Word Room Hole Landing                            ",
+                        "ref": "JohtoKanto/Ruins of Alph/Ruins of Alph Omanyte Word Room Hole Landing                            "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "RuinsOfAlphOutside",
+                        "x": 168,
+                        "y": 216,
+                        "restrict_visibility_rules": [
+                            "er_one_way_on, er_dungeon_off"
                         ]
                     }
                 ]
@@ -5048,8 +5935,8 @@
                         "ref": "JohtoKanto/Silver Cave/2F - North Chamber Item"
                     },
                     {
-                        "name": "3F - Defeat Red",
-                        "ref": "JohtoKanto/Silver Cave/3F - Defeat Red"
+                        "name": "3F - Defeat Red (Event)",
+                        "ref": "JohtoKanto/Silver Cave/3F - Defeat Red (Event)"
                     }
                 ],
                 "map_locations": [
@@ -5208,8 +6095,8 @@
                         "name": "Bird Keeper Rod"
                     },
                     {
-                        "ref": "JohtoKanto/Violet City/Gym - Beat Falkner",
-                        "name": "Beat Falkner"
+                        "ref": "JohtoKanto/Violet City/Gym - Beat Falkner (Event)",
+                        "name": "Beat Falkner (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Violet City/Gym - Leader Falkner",
@@ -5262,7 +6149,11 @@
                 "name": "Violet City",
                 "sections": [
                     {
-                        "ref": "JohtoKanto/Violet City/Egg Collected"
+                        "ref": "JohtoKanto/Violet City/Egg Collected (Event)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Violet City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
                     }
                 ],
                 "map_locations": [
@@ -5271,7 +6162,8 @@
                         "x": 504,
                         "y": 408,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_pokecenter_off",
+                            "start_town_Violet"
                         ]
                     }
                 ]
@@ -5361,8 +6253,8 @@
                         "ref": "JohtoKanto/Viridian City/Gym - Right Statue Sign"
                     },
                     {
-                        "ref": "JohtoKanto/Viridian City/Gym - Beat Blue",
-                        "name": "Beat Blue"
+                        "ref": "JohtoKanto/Viridian City/Gym - Beat Blue (Event)",
+                        "name": "Beat Blue (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Viridian City/Gym - Leader Blue",
@@ -5544,8 +6436,8 @@
                 "name": "Indigo Plateau",
                 "sections": [
                     {
-                        "name": "Beat Rival in Indigo Plateau",
-                        "ref": "JohtoKanto/Indigo Plateau/Beat Rival in Indigo Plateau"
+                        "name": "Beat Rival in Indigo Plateau (Event)",
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Rival in Indigo Plateau (Event)"
                     },
                     {
                         "name": "Rival",
@@ -5556,28 +6448,48 @@
                         "ref": "JohtoKanto/Indigo Plateau/Poke Mart - Shop Items"
                     },
                     {
+                        "ref": "JohtoKanto/Indigo Plateau/Visit Indigo Plateau",
+                        "name": "Visit Indigo Plateau"
+                    },
+                    {
                         "name": "Elite 4 Will",
                         "ref": "JohtoKanto/Indigo Plateau/Elite 4 Will"
+                    },
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Elite 4 Will (Event)",
+                        "name": "Beat Elite 4 Will (Event)"
                     },
                     {
                         "name": "Elite 4 Koga",
                         "ref": "JohtoKanto/Indigo Plateau/Elite 4 Koga"
                     },
                     {
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Elite 4 Koga (Event)",
+                        "name": "Beat Elite 4 Koga (Event)"
+                    },
+                    {
                         "name": "Elite 4 Bruno",
                         "ref": "JohtoKanto/Indigo Plateau/Elite 4 Bruno"
+                    },
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Elite 4 Bruno (Event)",
+                        "name": "Beat Elite 4 Bruno (Event)"
                     },
                     {
                         "name": "Elite 4 Karen",
                         "ref": "JohtoKanto/Indigo Plateau/Elite 4 Karen"
                     },
                     {
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Elite 4 Karen (Event)",
+                        "name": "Beat Elite 4 Karen (Event)"
+                    },
+                    {
                         "name": "Champion Lance",
                         "ref": "JohtoKanto/Indigo Plateau/Champion Lance"
                     },
                     {
-                        "name": "Become Champion",
-                        "ref": "JohtoKanto/Indigo Plateau/Become Champion"
+                        "name": "Become Champion (Event)",
+                        "ref": "JohtoKanto/Indigo Plateau/Become Champion (Event)"
                     }
                 ],
                 "map_locations": [
@@ -5595,8 +6507,8 @@
                 "name": "Indigo Plateau​",
                 "sections": [
                     {
-                        "name": "Beat Rival in Indigo Plateau",
-                        "ref": "JohtoKanto/Indigo Plateau/Beat Rival in Indigo Plateau"
+                        "name": "Beat Rival in Indigo Plateau (Event)",
+                        "ref": "JohtoKanto/Indigo Plateau/Beat Rival in Indigo Plateau (Event)"
                     },
                     {
                         "name": "Rival",
@@ -5605,6 +6517,10 @@
                     {
                         "name": "Poke Mart - Shop Items",
                         "ref": "JohtoKanto/Indigo Plateau/Poke Mart - Shop Items"
+                    },
+                    {
+                        "ref": "JohtoKanto/Indigo Plateau/Visit Indigo Plateau",
+                        "name": "Visit Indigo Plateau"
                     },
                     {
                         "name": "Indigo Plateau Elite Four Stairs                                                          ",
@@ -5666,6 +6582,10 @@
                     {
                         "name": "Trading​​​",
                         "ref": "JohtoKanto/Pewter City/Trade: Chris"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pewter City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
                     }
                 ],
                 "map_locations": [
@@ -5674,7 +6594,8 @@
                         "x": 216,
                         "y": 408,
                         "restrict_visibility_rules": [
-                            "er_pokecenter_off"
+                            "er_pokecenter_off",
+                            "start_town_Pewter"
                         ]
                     }
                 ]
@@ -5898,8 +6819,8 @@
                         "name": "2F - Hidden Item on Northwest Boulder"
                     },
                     {
-                        "ref": "JohtoKanto/Victory Road/3F - Beat Rival in Victory Road",
-                        "name": "3F - Beat Rival in Victory Road"
+                        "ref": "JohtoKanto/Victory Road/3F - Beat Rival in Victory Road (Event)",
+                        "name": "3F - Beat Rival in Victory Road (Event)"
                     },
                     {
                         "ref": "JohtoKanto/Victory Road/3F - Rival",
@@ -5929,32 +6850,36 @@
                 "name": "Victory Road​",
                 "sections": [
                     {
-                        "name": "1F - Hidden Item on Southwest Boulder",
-                        "ref": "JohtoKanto/Victory Road/1F - Hidden Item on Southwest Boulder"
+                        "ref": "JohtoKanto/Victory Road/1F - Hidden Item on Southwest Boulder",
+                        "name": "1F - Hidden Item on Southwest Boulder"
                     },
                     {
-                        "name": "1F - North Item (Right)",
-                        "ref": "JohtoKanto/Victory Road/1F - North Item (Right)"
+                        "ref": "JohtoKanto/Victory Road/1F - North Item (Right)",
+                        "name": "1F - North Item (Right)"
                     },
                     {
-                        "name": "1F - North Item (Left)",
-                        "ref": "JohtoKanto/Victory Road/1F - North Item (Left)"
+                        "ref": "JohtoKanto/Victory Road/1F - North Item (Left)",
+                        "name": "1F - North Item (Left)"
                     },
                     {
-                        "name": "2F - South Item",
-                        "ref": "JohtoKanto/Victory Road/2F - South Item"
+                        "ref": "JohtoKanto/Victory Road/2F - South Item",
+                        "name": "2F - South Item"
                     },
                     {
-                        "name": "2F - Northeast Item",
-                        "ref": "JohtoKanto/Victory Road/2F - Northeast Item"
+                        "ref": "JohtoKanto/Victory Road/2F - Northeast Item",
+                        "name": "2F - Northeast Item"
                     },
                     {
-                        "name": "3F - Beat Rival in Victory Road",
-                        "ref": "JohtoKanto/Victory Road/3F - Beat Rival in Victory Road"
+                        "ref": "JohtoKanto/Victory Road/3F - Beat Rival in Victory Road (Event)",
+                        "name": "3F - Beat Rival in Victory Road (Event)"
                     },
                     {
-                        "name": "3F - Rival",
-                        "ref": "JohtoKanto/Victory Road/3F - Rival"
+                        "ref": "JohtoKanto/Victory Road/3F - Rival",
+                        "name": "3F - Rival"
+                    },
+                    {
+                        "name": "Victory Road 3F Hole Landing                                                            ",
+                        "ref": "JohtoKanto/Victory Road/Victory Road 3F Hole Landing                                                            "
                     },
                     {
                         "name": "Victory Road 3F Hole                                                                          ",
@@ -5984,16 +6909,16 @@
                 "name": "Victory Road​​",
                 "sections": [
                     {
-                        "name": "1F - Hidden Item on Southwest Boulder",
-                        "ref": "JohtoKanto/Victory Road/1F - Hidden Item on Southwest Boulder"
+                        "ref": "JohtoKanto/Victory Road/1F - Hidden Item on Southwest Boulder",
+                        "name": "1F - Hidden Item on Southwest Boulder"
                     },
                     {
-                        "name": "1F - North Item (Right)",
-                        "ref": "JohtoKanto/Victory Road/1F - North Item (Right)"
+                        "ref": "JohtoKanto/Victory Road/1F - North Item (Right)",
+                        "name": "1F - North Item (Right)"
                     },
                     {
-                        "name": "1F - North Item (Left)",
-                        "ref": "JohtoKanto/Victory Road/1F - North Item (Left)"
+                        "ref": "JohtoKanto/Victory Road/1F - North Item (Left)",
+                        "name": "1F - North Item (Left)"
                     },
                     {
                         "name": "Victory Road 1F Ladder                                                                      ",
@@ -6015,6 +6940,717 @@
                         "y": 8,
                         "restrict_visibility_rules": [
                             "er_dungeon_interior_on, er_dungeon_off, route_23_restored_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Battle Tower",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 1 Complete",
+                        "name": "Tier 1 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 2 Complete",
+                        "name": "Tier 2 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 3 Complete",
+                        "name": "Tier 3 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 4 Complete",
+                        "name": "Tier 4 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 5 Complete",
+                        "name": "Tier 5 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 6 Complete",
+                        "name": "Tier 6 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 7 Complete",
+                        "name": "Tier 7 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 8 Complete",
+                        "name": "Tier 8 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 9 Complete",
+                        "name": "Tier 9 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Tier 10 Complete",
+                        "name": "Tier 10 Complete"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Fisher Hanson",
+                        "name": "Fisher Hanson"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokemaniac Sawyer",
+                        "name": "Pokemaniac Sawyer"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Guitarist Masuda",
+                        "name": "Guitarist Masuda"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Scientist Nickel",
+                        "name": "Scientist Nickel"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokefan Olson",
+                        "name": "Pokefan Olson"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Lass Zaborowski",
+                        "name": "Lass Zaborowski"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Youngster Wright",
+                        "name": "Youngster Wright"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Hiker Alexander",
+                        "name": "Hiker Alexander"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Teacher Kawakami",
+                        "name": "Teacher Kawakami"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokefan Bickett",
+                        "name": "Pokefan Bickett"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Kimono Girl Saito",
+                        "name": "Kimono Girl Saito"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Boarder Crawford",
+                        "name": "Boarder Crawford"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Picnicker Diaz",
+                        "name": "Picnicker Diaz"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Biker Erickson",
+                        "name": "Biker Erickson"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Juggler Fairfield",
+                        "name": "Juggler Fairfield"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokefan Hunter",
+                        "name": "Pokefan Hunter"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Firebreather Hill",
+                        "name": "Firebreather Hill"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Swimmer Javier",
+                        "name": "Swimmer Javier"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Swimmer Kaufman",
+                        "name": "Swimmer Kaufman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Skier Lancaster",
+                        "name": "Skier Lancaster"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Camper McMahill",
+                        "name": "Camper McMahill"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Gentleman Obrien",
+                        "name": "Gentleman Obrien"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Beauty Frost",
+                        "name": "Beauty Frost"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Super Nerd Morse",
+                        "name": "Super Nerd Morse"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Blackbelt Yufune",
+                        "name": "Blackbelt Yufune"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Cool Trainer Rajan",
+                        "name": "Cool Trainer Rajan"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Officer Rodriguez",
+                        "name": "Officer Rodriguez"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Psychic Santiago",
+                        "name": "Psychic Santiago"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokefan Stock",
+                        "name": "Pokefan Stock"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Scientist Thurman",
+                        "name": "Scientist Thurman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Beauty Valentino",
+                        "name": "Beauty Valentino"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Camper Wagner",
+                        "name": "Camper Wagner"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Bird Keeper Yates",
+                        "name": "Bird Keeper Yates"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Picnicker Andrews",
+                        "name": "Picnicker Andrews"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokemaniac Bahn",
+                        "name": "Pokemaniac Bahn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Scientist Mori",
+                        "name": "Scientist Mori"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Sage Buckman",
+                        "name": "Sage Buckman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Schoolboy Cobb",
+                        "name": "Schoolboy Cobb"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Fisher Hughes",
+                        "name": "Fisher Hughes"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Kimono Girl Arita",
+                        "name": "Kimono Girl Arita"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Psychic Easton",
+                        "name": "Psychic Easton"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Camper Freeman",
+                        "name": "Camper Freeman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Lass Giese",
+                        "name": "Lass Giese"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Gentleman Hatcher",
+                        "name": "Gentleman Hatcher"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokefan Jackson",
+                        "name": "Pokefan Jackson"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokemaniac Kahn",
+                        "name": "Pokemaniac Kahn"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Youngster Leong",
+                        "name": "Youngster Leong"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Teacher Marino",
+                        "name": "Teacher Marino"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Sailor Newman",
+                        "name": "Sailor Newman"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Blackbelt Nguyen",
+                        "name": "Blackbelt Nguyen"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Super Nerd Ogden",
+                        "name": "Super Nerd Ogden"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Cool Trainer Park",
+                        "name": "Cool Trainer Park"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Swimmer Raine",
+                        "name": "Swimmer Raine"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Bird Keeper Sells",
+                        "name": "Bird Keeper Sells"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Boarder Rockwell",
+                        "name": "Boarder Rockwell"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Lass Thornton",
+                        "name": "Lass Thornton"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Officer Turner",
+                        "name": "Officer Turner"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Skier Van Dyke",
+                        "name": "Skier Van Dyke"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Schoolboy Walker",
+                        "name": "Schoolboy Walker"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Swimmer Meyer",
+                        "name": "Swimmer Meyer"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Youngster Johnson",
+                        "name": "Youngster Johnson"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Guitarist Adams",
+                        "name": "Guitarist Adams"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Bug Catcher Smith",
+                        "name": "Bug Catcher Smith"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Bug Catcher Tajiri",
+                        "name": "Bug Catcher Tajiri"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Pokemaniac Baker",
+                        "name": "Pokemaniac Baker"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Scientist Collins",
+                        "name": "Scientist Collins"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Super Nerd Smart",
+                        "name": "Super Nerd Smart"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Swimmer Dykstra",
+                        "name": "Swimmer Dykstra"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Biker Eaton",
+                        "name": "Biker Eaton"
+                    },
+                    {
+                        "ref": "JohtoKanto/Battle Tower/Firebreather Wong",
+                        "name": "Firebreather Wong"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BattleTowerOutside",
+                        "x": 144,
+                        "y": 152,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Tohjo Falls",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 27/Tohjo Falls - Item",
+                        "name": "Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route27",
+                        "x": 424,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_off"
+                        ]
+                    },
+                    {
+                        "map": "Route27",
+                        "x": 584,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Route 35 National Park Gate",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/National Park/Route 35 Gate Bug Catching Contest Explanation Sign",
+                        "name": "Bug Catching Contest Explanation Sign"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route35",
+                        "x": 56,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_gate_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Route 36 National Park Gate",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/National Park/Route 36 Gate Bug Catching Contest Explanation Sign",
+                        "name": "Bug Catching Contest Explanation Sign"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route36",
+                        "x": 296,
+                        "y": 144,
+                        "restrict_visibility_rules": [
+                            "er_gate_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Oak's Lab",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Pallet Town/Oak's Lab MENU Poster Sign",
+                        "name": "MENU Poster Sign"
+                    },
+                    {
+                        "ref": "JohtoKanto/Pallet Town/Oak's Lab SAVE Poster Sign",
+                        "name": "SAVE Poster Sign"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "PalletTown",
+                        "x": 200,
+                        "y": 184,
+                        "restrict_visibility_rules": [
+                            "er_building_off"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cherrygrove Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cherrygrove City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CherrygroveCity",
+                        "x": 472,
+                        "y": 56,
+                        "restrict_visibility_rules": [
+                            "start_town_New_Bark",
+                            "start_town_Cherrygrove"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Azalea Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Azalea Town/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AzaleaTown",
+                        "x": 248,
+                        "y": 152,
+                        "restrict_visibility_rules": [
+                            "start_town_Azalea"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Olivine Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OlivineCity",
+                        "x": 216,
+                        "y": 344,
+                        "restrict_visibility_rules": [
+                            "start_town_Olivine"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cianwood Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CianwoodCity",
+                        "x": 376,
+                        "y": 696,
+                        "restrict_visibility_rules": [
+                            "start_town_Cianwood"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mahogany Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mahogany Town/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MahoganyTown",
+                        "x": 248,
+                        "y": 216,
+                        "restrict_visibility_rules": [
+                            "start_town_Mahogany",
+                            "start_town_LakeOfRage"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Blackthorn Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "BlackthornCity",
+                        "x": 344,
+                        "y": 472,
+                        "restrict_visibility_rules": [
+                            "start_town_Blackthorn"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Viridian Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Viridian City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "ViridianCity",
+                        "x": 376,
+                        "y": 408,
+                        "restrict_visibility_rules": [
+                            "start_town_Pallet",
+                            "start_town_Viridian"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cerulean Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeruleanCity",
+                        "x": 312,
+                        "y": 344,
+                        "restrict_visibility_rules": [
+                            "start_town_Cerulean"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Route 10 Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 10/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route10",
+                        "x": 184,
+                        "y": 24,
+                        "restrict_visibility_rules": [
+                            "start_town_RockTunnel"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Lavender Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lavender Town/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "LavenderTown",
+                        "x": 88,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "start_town_Lavender"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Saffron Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Saffron City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "SaffronCity",
+                        "x": 152,
+                        "y": 472,
+                        "restrict_visibility_rules": [
+                            "start_town_Saffron"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Celadon Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CeladonCity",
+                        "x": 472,
+                        "y": 152,
+                        "restrict_visibility_rules": [
+                            "start_town_Celadon"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Vermilion Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "VermilionCity",
+                        "x": 152,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "start_town_Vermilion"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Fuchsia Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "FuchsiaCity",
+                        "x": 312,
+                        "y": 440,
+                        "restrict_visibility_rules": [
+                            "start_town_Fuchsia"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cinnabar Pokecenter",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cinnabar Island/Pokemon Center 2F - Buy an Escape Rope (Event)",
+                        "name": "Pokemon Center 2F - Buy an Escape Rope (Event)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CinnabarIsland",
+                        "x": 184,
+                        "y": 184,
+                        "restrict_visibility_rules": [
+                            "start_town_Cinnabar"
                         ]
                     }
                 ]

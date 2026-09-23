@@ -1,72 +1,23 @@
+MODE_LAYOUTS = {
+    "overworld",
+    "events",
+    "flyunlocks",
+    "settings",
+    "settings_flydestinations"
+}
+
+function johto_mode()
+    return has("johto_only_off") and "full" or "johto_only"
+end
+
 function toggle_johto()
-    local coffee = has("coffee_west") or has("coffee_north") or has("coffee_east") or has("coffee_south")
-    local phone = has("phone_calls_visible")
+    local dir = johto_mode()
 
-    if has("johto_only_off") then
-        Tracker:AddMaps("maps/maps_johto_and_kanto.json")
-        Tracker:AddLayouts("layouts/overworld.json")
+    Tracker:AddMaps(dir == "full" and "maps/maps_johto_and_kanto.json" or "maps/maps_johto_only.json")
 
-        if has("goal_e4") then
-            Tracker:AddLayouts("layouts/events/events_e4.json")
-        elseif has("goal_red") then
-            Tracker:AddLayouts("layouts/events/events_red.json")
-        elseif has("goal_diploma") then
-            Tracker:AddLayouts("layouts/events/events_diploma.json")
-        elseif has("goal_rival") then
-            Tracker:AddLayouts("layouts/events/events_rival.json")
-        elseif has("goal_rocket") then
-            Tracker:AddLayouts("layouts/events/events_rocket.json")
-        elseif has("goal_unown") then
-            Tracker:AddLayouts("layouts/events/events_unown.json")
-        end
-
-        Tracker:AddLayouts("layouts/settings/settings.json")
-        Tracker:AddLayouts("layouts/flyunlocks.json")
-
-        if coffee and phone then
-            Tracker:AddLayouts("layouts/items/items.json")
-        elseif coffee and not phone then
-            Tracker:AddLayouts("layouts/items/items_no_phone.json")
-        elseif not coffee and not phone then
-            Tracker:AddLayouts("layouts/items/items_no_to_both.json")
-        elseif not coffee and phone then
-            Tracker:AddLayouts("layouts/items/items_no_tea.json")
-        end
-    else
-        local badges = has("badges_on")
-        if badges and phone then
-            Tracker:AddLayouts("layouts/johto_only/items.json")
-        elseif not badges and phone then
-            Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges.json")
-        elseif badges and not phone then
-            Tracker:AddLayouts("layouts/johto_only/items_no_phone.json")
-        elseif not badges and not phone then
-            Tracker:AddLayouts("layouts/johto_only/items_no_kanto_badges_and_no_phone.json")
-        end
-
-        Tracker:AddLayouts("layouts/johto_only/overworld.json")
-
-        if has("goal_e4") then
-            Tracker:AddLayouts("layouts/johto_only/events_e4.json")
-        elseif has("goal_red") then
-            Tracker:AddLayouts("layouts/johto_only/events_red.json")
-        elseif has("goal_rival") then
-            Tracker:AddLayouts("layouts/johto_only/events_rival.json")
-        elseif has("goal_rocket") then
-            Tracker:AddLayouts("layouts/johto_only/events_rocket.json")
-        end
-
-        if has("johto_only_on") then
-            Tracker:AddMaps("maps/maps_johto_no_silver.json")
-            Tracker:AddLayouts("layouts/johto_only/flyunlocks_no_silver.json")
-            Tracker:AddLayouts("layouts/johto_only/settings_johto_no_silver.json")
-        elseif has("johto_only_silver") then
-            Tracker:AddMaps("maps/maps_johto_only.json")
-            Tracker:AddLayouts("layouts/johto_only/flyunlocks.json")
-            Tracker:AddLayouts("layouts/johto_only/settings_johto_with_silver.json")
-        end
+    for _, name in ipairs(MODE_LAYOUTS) do
+        Tracker:AddLayouts("layouts/"..dir.."/"..name..".json")
     end
-    toggle_splitmap()
 end
 
 SUDOWOODO = false
@@ -193,85 +144,6 @@ function toggle_floodedmine()
     add_map("floodedmine"..suffix)
 end
 
-function toggle_splitmap()
-    local prefix = ""
-    if not has("johto_only_off") then
-        prefix = "johto_only/"
-    end
-
-    local suffix = "_single"
-    if has("splitmap_on") then
-        suffix = "_split"
-    elseif has("splitmap_reverse") then
-        suffix = "_reverse"
-    end
-
-    Tracker:AddLayouts("layouts/"..prefix.."tabs"..suffix..".json")
-end
-
-function toggle_itemgrid()
-    local suffix = ""
-    if has("randomize_fly_unlocks_true") then
-        suffix = suffix .. "_flyunlock"
-    end
-    if has("shopsanity_bluecard_true") or has("shopsanity_apricorn_true") then
-        suffix = suffix .. "_shopsanity"
-    end
-    if has("goal_unown") then
-        suffix = suffix .. "_tiles"
-    end
-
-    Tracker:AddLayouts("layouts/tracker/tracker"..suffix..".json")
-
-    local prefix = ""
-    if has("broadcast_view_vertical") then
-        prefix = "vertical_"
-    end
-
-    Tracker:AddLayouts("layouts/broadcast/"..prefix.."broadcast"..suffix..".json")
-
-    toggle_shopgrid()
-end
-
-function toggle_shopgrid()
-    local bluecard = has("shopsanity_bluecard_true")
-    local apricorn = has("shopsanity_apricorn_true")
-    if bluecard and apricorn then
-        Tracker:AddLayouts("layouts/shopsanity/shopsanity_all.json")
-    elseif bluecard then
-        Tracker:AddLayouts("layouts/shopsanity/shopsanity_bluecard.json")
-    elseif apricorn then
-        Tracker:AddLayouts("layouts/shopsanity/shopsanity_apricorn.json")
-    end
-end
-
-function toggleQuickSettings()
-    local suffix = ""
-
-    if SLOT_TRACK == true then
-        suffix = suffix .. "_slots"
-    end
-
-    if has("goal_unown") then
-        suffix = suffix .. "_signs"
-    end
-
-    if has("grasssanity_any") then
-        suffix = suffix .. "_grass"
-    end
-
-    if has("shopsanity_anymart") then
-        suffix = suffix .. "_shop"
-    end
-
-    Tracker:AddLayouts("layouts/settings_quick/settings_quick"..suffix..".json")
-end
-
-function updateGoalLayout()
-    toggleQuickSettings()
-    toggle_itemgrid()
-end
-
 HOSTED_EVENT_CODES = {
     "ENGINE_UNLOCKED_UNOWNS_A_TO_K",
     "ENGINE_UNLOCKED_UNOWNS_L_TO_R",
@@ -357,6 +229,7 @@ HOSTED_ITEM_CODES = {
     "BOULDER_BADGE",
     "CASCADE_BADGE",
     "EARTH_BADGE",
+    "ESCAPE_ROPE",
     "EXPN_CARD",
     "FOG_BADGE",
     "GLACIER_BADGE",
@@ -390,4 +263,11 @@ end
 function syncBaseFromHosted(code)
     local base = code:gsub("_hosted$", "")
     Tracker:FindObjectForCode(base).Active = Tracker:FindObjectForCode(code).Active
+end
+
+function updateBlueCardOverlay()
+    local card = Tracker:FindObjectForCode("BLUE_CARD")
+    local points = card.CurrentStage
+    card:SetOverlay(points > 0 and tostring(points) or "")
+    card:SetOverlayColor(points == 5 and "#1fff1f" or "")
 end

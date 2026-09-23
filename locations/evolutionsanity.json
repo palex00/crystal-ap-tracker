@@ -273,7 +273,7 @@
         {
             "name": "Using a Leaf Stone",
             "access_rules": [
-                "^$evolve_new|44"
+                "^$evolve_new|44|EVOLVE_ITEM|LEAF_STONE"
             ],
             "chest_unopened_img": "images/evolutionsanity/leafstone.png",
             "chest_opened_img": "images/evolutionsanity/leafstone_bw.png"
@@ -281,7 +281,7 @@
         {
             "name": "Using a Sun Stone",
             "access_rules": [
-                "^$evolve_new|44"
+                "^$evolve_new|44|EVOLVE_ITEM|SUN_STONE"
             ],
             "chest_unopened_img": "images/evolutionsanity/sunstone.png",
             "chest_opened_img": "images/evolutionsanity/sunstone_bw.png"
@@ -395,7 +395,7 @@
         {
             "name": "Using a Water Stone",
             "access_rules": [
-                "^$evolve_new|133"
+                "^$evolve_new|133|EVOLVE_ITEM|WATER_STONE"
             ],
             "chest_unopened_img": "images/evolutionsanity/waterstone.png",
             "chest_opened_img": "images/evolutionsanity/waterstone_bw.png"
@@ -403,7 +403,7 @@
         {
             "name": "Using a Thunderstone",
             "access_rules": [
-                "^$evolve_new|133"
+                "^$evolve_new|133|EVOLVE_ITEM|THUNDERSTONE"
             ],
             "chest_unopened_img": "images/evolutionsanity/thunderstone.png",
             "chest_opened_img": "images/evolutionsanity/thunderstone_bw.png"
@@ -411,7 +411,7 @@
         {
             "name": "Using a Fire Stone",
             "access_rules": [
-                "^$evolve_new|133"
+                "^$evolve_new|133|EVOLVE_ITEM|FIRE_STONE"
             ],
             "chest_unopened_img": "images/evolutionsanity/firestone.png",
             "chest_opened_img": "images/evolutionsanity/firestone_bw.png"
@@ -419,7 +419,7 @@
         {
             "name": "Using a Sun Stone",
             "access_rules": [
-                "^$evolve_new|133"
+                "^$evolve_new|133|EVOLVE_ITEM|SUN_STONE"
             ],
             "chest_unopened_img": "images/evolutionsanity/sunstone.png",
             "chest_opened_img": "images/evolutionsanity/sunstone_bw.png"
@@ -427,7 +427,7 @@
         {
             "name": "Using a Moon Stone",
             "access_rules": [
-                "^$evolve_new|133"
+                "^$evolve_new|133|EVOLVE_ITEM|MOON_STONE"
             ],
             "chest_unopened_img": "images/evolutionsanity/moonstone.png",
             "chest_opened_img": "images/evolutionsanity/moonstone_bw.png"

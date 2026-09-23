@@ -1,0 +1,144 @@
+{
+    "shared_item_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "margin": "5,5",
+                "content": [
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "margin": "0,0",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "margin": "0,0",
+                                "item_margin": "3,3",
+                                "rows": [
+                                    [
+                                        "HM_CUT",
+                                        "HM_FLY",
+                                        "HM_SURF",
+                                        "HM_STRENGTH",
+                                        "HM_FLASH",
+                                        "HM_WHIRLPOOL",
+                                        "HM_WATERFALL",
+                                        "TM_ROCK_SMASH",
+                                        "TM_HEAD_BUTT"
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "margin": "0,0",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "margin": "0,0",
+                                "item_margin": "3,3",
+                                "rows": [
+                                    [
+                                        "ZEPHYR_BADGE",
+                                        "HIVE_BADGE",
+                                        "PLAIN_BADGE",
+                                        "FOG_BADGE",
+                                        "STORM_BADGE",
+                                        "MINERAL_BADGE",
+                                        "GLACIER_BADGE",
+                                        "RISING_BADGE",
+                                        "ESCAPE_ROPE"
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "margin": "0,0",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "margin": "0,0",
+                                "item_margin": "3,3",
+                                "rows": [
+                                    [
+                                        "BOULDER_BADGE",
+                                        "CASCADE_BADGE",
+                                        "THUNDER_BADGE",
+                                        "RAINBOW_BADGE",
+                                        "SOUL_BADGE",
+                                        "MARSH_BADGE",
+                                        "VOLCANO_BADGE",
+                                        "EARTH_BADGE",
+                                        "WATER_STONE"
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "margin": "0,0",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "margin": "0,0",
+                                "item_margin": "3,3",
+                                "rows": [
+                                    [
+                                        "POKE_GEAR",
+                                        "RADIO_CARD",
+                                        "EXPN_CARD",
+                                        "POKEDEX",
+                                        "MACHINE_PART",
+                                        "LOST_ITEM",
+                                        "BICYCLE",
+                                        "PASS",
+                                        "S_S_TICKET"
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "margin": "0,0",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "margin": "0,0",
+                                "item_margin": "3,3",
+                                "rows": [
+                                    [
+                                        "MYSTERY_EGG",
+                                        "CLEAR_BELL",
+                                        "RAINBOW_WING",
+                                        "RED_SCALE",
+                                        "COIN_CASE",
+                                        "SQUIRTBOTTLE",
+                                        "SECRETPOTION",
+                                        "CARD_KEY",
+                                        "BASEMENT_KEY"
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "layout",
+                        "key": "item_tail"
+                    }
+                ]
+            }
+        ]
+    }
+}

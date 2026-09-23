@@ -570,18 +570,40 @@
     },
     {
         "name": "Blue Card",
-        "type": "toggle",
-        "img": "/images/shopsanity/blue_card.png",
-        "codes": "BLUE_CARD"
-    },
-    {
-        "name": "Blue Card Point",
-        "type": "consumable",
-        "min_quantity": 0,
-        "max_quantity": 5,
-        "initial_quantity": 0,
-        "img": "/images/shopsanity/blue_card.png",
-        "codes": "BLUE_CARD_POINT"
+        "type": "progressive_toggle",
+        "codes": "BLUE_CARD, BLUE_CARD_POINT",
+        "stages": [
+            {
+                "name": "Blue Card",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD"
+            },
+            {
+                "name": "Blue Card - 1 Point",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD_POINT_1"
+            },
+            {
+                "name": "Blue Card - 2 Points",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD_POINT_2"
+            },
+            {
+                "name": "Blue Card - 3 Points",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD_POINT_3"
+            },
+            {
+                "name": "Blue Card - 4 Points",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD_POINT_4"
+            },
+            {
+                "name": "Blue Card - 5 Points",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD_POINT_5"
+            }
+        ]
     },
     {
         "name": "Coin Case",

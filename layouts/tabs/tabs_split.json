@@ -1,0 +1,23 @@
+{
+    "tabbed_maps": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "content": {
+                    "type": "array",
+                    "orientation": "horizontal",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "tabs_regions"
+                        },
+                        {
+                            "type": "layout",
+                            "key": "tabs_meta"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

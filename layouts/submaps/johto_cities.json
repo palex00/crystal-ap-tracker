@@ -1,0 +1,1353 @@
+{
+    "johto_cities": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "New Bark Town",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Town",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "NewBarkTown"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Elm's Lab",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ElmsLab"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Player's House 1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PlayersHouse1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Player's House 2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PlayersHouse2F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Neighbor's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PlayersNeighborsHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Elm's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ElmsHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Cherrygrove City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CherrygroveCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CherrygroveMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CherrygrovePokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CherrygroveGymSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Guide Gent's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GuideGentsHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Evolution Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CherrygroveEvolutionSpeechHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Violet City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Sprout Tower",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "SproutTower1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "SproutTower2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "SproutTower3F"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Earl's Pokemon Academy",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EarlsPokemonAcademy"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Nickname Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletNicknameSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Kyle's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "VioletKylesHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Azalea Town",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Town",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "AzaleaTown"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "AzaleaGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Slowpoke Well",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "SlowpokeWellB1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "SlowpokeWellB2F"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "AzaleaPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Charcoal Kiln",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CharcoalKiln"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "AzaleaMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Kurt's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "KurtsHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ilex Forest Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "IlexForestAzaleaGate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Goldenrod City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dept. Store",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStoreB1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "4F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore4F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "5F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore5F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "6F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStore6F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Roof",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStoreRoof"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Elevator",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodDeptStoreElevator"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Radio Tower",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "RadioTower1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "RadioTower2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "RadioTower3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "4F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "RadioTower4F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "5F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "RadioTower5F"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Underground",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodUnderground"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodUndergroundSwitchRoomEntrances"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Warehouse",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "GoldenrodUndergroundWarehouse"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Bike Shop",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodBikeShop"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Happiness Rater",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodHappinessRater"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Bill's Family's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BillsFamilysHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Magnet Train Station",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodMagnetTrainStation"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Flower Shop",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodFlowerShop"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PP Speech House (yes, yes, the birds and the bees talk)",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodPPSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Name Rater",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodNameRater"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Game Corner",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodGameCorner"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GoldenrodPokecenter1F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Ecruteak City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Burned Tower",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "BurnedTower1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "BurnedTowerB1F"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Tin Tower",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "4F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower4F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "5F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower5F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "6F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower6F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "7F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower7F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "8F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower8F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "9F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTower9F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Roof",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TinTowerRoof"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Tin Tower Entrance Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakTinTowerEntrance"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Wise Trio's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "WiseTriosRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lugia Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakLugiaSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dance Theater",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "DanceTheater"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Itemfinder House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "EcruteakItemfinderHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Olivine City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lighthouse",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse3F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "4F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse4F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "5F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse5F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "6F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "OlivineLighthouse6F"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivinePokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Tim's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineTimsHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Punishment Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivinePunishmentSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Good Rod House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineGoodRodHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Cafe",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineCafe"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivineMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Port Passage",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivinePortPassage"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Port",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "OlivinePort"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Cianwood City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mania's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ManiasHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Pharmacy",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodPharmacy"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Photo Studio",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodPhotoStudio"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lugia Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CianwoodLugiaSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeSeer's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PokeSeersHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Mahogany Town",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Town",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MahoganyTown"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MahoganyGym"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Rocket HQ",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TeamRocketBaseB1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TeamRocketBaseB2F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B3F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "TeamRocketBaseB3F"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gyarados Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MahoganyRedGyaradosSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MahoganyPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MahoganyMart1F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Blackthorn City",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BlackthornCity"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gym",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "BlackthornGym1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "2F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "BlackthornGym2F"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dragons Den",
+                            "content": {
+                                "type": "tabbed",
+                                "tabs": [
+                                    {
+                                        "title": "1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "DragonsDen1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "B1F",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "DragonsDenB1F"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title": "Dragon Shrine",
+                                        "content": {
+                                            "type": "map",
+                                            "maps": [
+                                                "DragonShrine"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dragon Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BlackthornDragonSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Emy's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BlackthornEmysHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mart",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BlackthornMart"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BlackthornPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Move Deleter's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "MoveDeletersHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Indigo Plateau",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "IndigoPlateauPokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Will's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "WillsRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Koga's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "KogasRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Bruno's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BrunosRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Karen's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "KarensRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lance's Room",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LancesRoom"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Hall of Fame",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "HallOfFame"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

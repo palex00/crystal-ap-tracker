@@ -225,10 +225,11 @@ function EntranceDetourTarget(token)
         -- gym/gym_interior category split), so reading the source side is what lands you inside.
         -- Matches the apworld: entrance_rando.py _resolve_pairing_target returns the target
         -- connection's exit_region, and in entrance_data.json that is the LEFT side of "A -> B".
-        -- A one-way pairing is the exception -- there the apworld resolves the ORIGINAL
-        -- connection's entrance_region (the RIGHT side), so use the destination instead.
-        if ENTRANCE_ONE_WAY and ENTRANCE_ONE_WAY[token] then
-            return NAMED_NODES[EntranceDestRegion(paired)] or Empty_node
+        -- A one-way pairing is the exception -- it pairs with a landing row, which carries the
+        -- ORIGINAL connection's entrance_region (the RIGHT side) the apworld resolves it to.
+        local landing = ENTRANCE_REGISTRY[paired].landing
+        if landing then
+            return NAMED_NODES[landing]
         end
         return NAMED_NODES[EntranceSourceRegion(paired)] or Empty_node
     end

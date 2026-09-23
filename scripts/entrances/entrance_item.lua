@@ -100,7 +100,8 @@ function EntranceItem:init(token, row)
     self.ids = row.ids
     self.pretty = row.pretty
     self.tab = row.tab
-    self.node = EntranceSourceRegion(token) -- region this entrance sits in (route mode start/finish)
+    self.landing = row.landing
+    self.node = row.landing or EntranceSourceRegion(token) -- region this entrance sits in (route mode start/finish)
     self.forwardTarget = nil
     self.reverseSource = nil
     self:updateBadge()
@@ -154,7 +155,7 @@ function EntranceItem:updateBadge()
     inst:SetOverlayBackground("")
     inst:SetOverlayFontSize(10)
     inst:SetOverlayAlign("left")
-    if self.forwardTarget then
+    if self:isRevealed() then
         inst.Icon = ImageReference:FromPackRelativePath(ENTRANCE_OPEN_ICON)
     else
         inst.Icon = ImageReference:FromPackRelativePath(ENTRANCE_CLOSED_ICON)
@@ -237,11 +238,19 @@ function EntranceItem:canProvideCode(code)
     return code == self.token
 end
 
---- Collected state for the section hosting this entrance (hosted_item = the token).
 --- Forward only: a revealed reverseSource says what emerges here, not where this door goes,
---- so a decoupled entrance stays unchecked until it has actually been entered.
+--- so a decoupled entrance stays unchecked until it has actually been entered. A landing has
+--- no forward side, so knowing what drops onto it is all there is to reveal.
+function EntranceItem:isRevealed()
+    if self.landing then
+        return self.reverseSource ~= nil
+    end
+    return self.forwardTarget ~= nil
+end
+
+--- Collected state for the section hosting this entrance (hosted_item = the token).
 function EntranceItem:providesCode(code)
-    if code == self.token and self.forwardTarget ~= nil then
+    if code == self.token and self:isRevealed() then
         return 1
     end
     return 0
@@ -265,6 +274,21 @@ function buildEntranceCategoryMap()
             end
         end
     end
+    for token, row in pairs(ENTRANCE_REGISTRY) do
+        if row.landing then
+            ENTRANCE_CATEGORY[token] = "one_way"
+        end
+    end
+end
+
+--- Access level for a one-way landing section: only in logic once something has dropped onto it.
+---@param token string landing token ("<hole token> (one-way target)")
+---@return integer
+function landing(token)
+    if not ER_CATEGORY_ENABLED["one_way"] then
+        return ACCESS_NONE
+    end
+    return A(ENTRANCE_ITEMS[token]:isRevealed())
 end
 
 --- Instantiate EntranceItems ONLY for entrances whose ER category is currently enabled.

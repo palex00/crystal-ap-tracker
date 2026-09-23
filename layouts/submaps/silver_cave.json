@@ -1,0 +1,87 @@
+{
+    "silver_cave": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Route 28",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route28"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Outside Silver Cave",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilverCaveOutside"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilverCavePokecenter1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Steel Wing House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route28SteelWingHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Silver Cave",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilverCaveRoom1"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "2F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilverCaveRoom2",
+                                    "SilverCaveItemRooms"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "3F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SilverCaveRoom3"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,185 @@
+{
+    "settings_actual": {
+        "type": "array",
+        "orientation": "vertical",
+        "h_alignment": "left",
+        "content": [
+            {
+                "type": "group",
+                "header": "Goal",
+                "content": {
+                    "type": "layout",
+                    "key": "goal_grid"
+                }
+            },
+            {
+                "type": "group",
+                "header": "Sanities & Shuffles",
+                "content": {
+                    "type": "layout",
+                    "key": "sanity_grid"
+                }
+            },
+            {
+                "type": "group",
+                "header": "Logic",
+                "content": {
+                    "type": "layout",
+                    "key": "logic_grid"
+                }
+            },
+            {
+                "type": "group",
+                "header": "Entrance Randomization",
+                "content": {
+                    "type": "layout",
+                    "key": "er_grid"
+                }
+            },
+            {
+                "type": "group",
+                "header": "Roadblocks",
+                "content": {
+                    "type": "layout",
+                    "key": "roadblock_grid"
+                }
+            },
+            {
+                "type": "group",
+                "header": "Shopsanity",
+                "content": {
+                    "type": "layout",
+                    "key": "shopsanity_grid"
+                }
+            },
+            {
+                "type": "group",
+                "header": "Dark Caves",
+                "content": {
+                    "type": "layout",
+                    "key": "darkcave_grid"
+                }
+            },
+            {
+                "type": "group",
+                "header": "Start Town & Fly Locations",
+                "content": {
+                    "type": "layout",
+                    "key": "flysetting_grid"
+                }
+            }
+        ]
+    },
+    "goal_grid": {
+        "type": "itemgrid",
+        "item_margin": "3, 3",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "goal_e4",
+                "goal_red",
+                "goal_rival",
+                "goal_rocket",
+                "goal_unown",
+                "goal_battletower"
+            ]
+        ]
+    },
+    "logic_grid": {
+        "type": "itemgrid",
+        "item_margin": "3, 3",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "hiddenitem_logic",
+                "require_flash",
+                "randomize_fly_destinations",
+                "badgereqs",
+                "clair_behaviour",
+                "require_pokegear_for_phone_numbers",
+                "phone_call_mode",
+                "battle_tower_progressive_tier_unlocks",
+                "timeofday",
+                "unlockable_tod",
+                "starttod",
+                "vanilla_chain_jasmine"
+            ]
+        ]
+    },
+    "roadblock_grid": {
+        "type": "itemgrid",
+        "item_margin": "3, 3",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "route_30_battle",
+                "route_30_access",
+                "blackthorn_dark_cave_access",
+                "r32_guy",
+                "ilextree",
+                "tower_requirement",
+                "national_park_access",
+                "route_42_access",
+                "mount_mortar_access",
+                "red_gyarados_access",
+                "route_44_requirement",
+                "vr_requirement",
+                "victory_road_strength",
+                "e4_requirement",
+                "lance_requires_elite_four",
+                "mt_silver_requirement",
+                "red_requirement",
+                "route_23_restored",
+                "flooded_mine"
+            ]
+        ]
+    },
+    "shopsanity_grid": {
+        "type": "itemgrid",
+        "item_margin": "3, 3",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "shopsanity_apricorn",
+                "shopsanity_bluecard",
+                "shopsanity_gamecorners",
+                "shopsanity_johtomarts"
+            ]
+        ]
+    },
+    "darkcave_grid": {
+        "type": "itemgrid",
+        "item_margin": "3, 3",
+        "item_size": "32,44",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "dark_floodedmine",
+                "dark_darkcave",
+                "dark_unioncave",
+                "dark_ilexforest",
+                "dark_slowpokewell",
+                "dark_goldenrodunderground",
+                "dark_burnedtower",
+                "dark_olivinelighthouse",
+                "dark_whirlislands",
+                "dark_mountmortar",
+                "dark_icepath",
+                "dark_dragonsden",
+                "dark_tohjofalls",
+                "dark_victoryroad",
+                "dark_silvercave"
+            ]
+        ]
+    }
+}

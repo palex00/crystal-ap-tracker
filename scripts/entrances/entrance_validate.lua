@@ -117,12 +117,17 @@ function ValidateEntrances()
     local seenId = {}
     if hasRegistry then
         for token, row in pairs(ENTRANCE_REGISTRY) do
-            if not graphEdges[token] then
+            local edge = row.landing and string.gsub(token, " %(one%-way target%)$", "") or token
+            if row.landing and not NAMED_NODES[row.landing] then
+                warn("landing row '" .. token .. "' region '" .. row.landing
+                    .. "' is not a known region.")
+            end
+            if not graphEdges[edge] then
                 warn("registry row '" .. token .. "' has no matching graph entrance edge"
                     .. " -> nothing routes or detours through it.")
             end
 
-            local dst = entranceDestRegion(token)
+            local dst = entranceDestRegion(edge)
             if dst == nil then
                 warn("registry token '" .. token .. "' is malformed"
                     .. " (expected \"REGION_A -> REGION_B\").")
@@ -142,7 +147,7 @@ function ValidateEntrances()
                 warn("registry row '" .. token .. "' has no pretty name.")
             end
 
-            if row.ids == nil or #row.ids == 0 then
+            if not row.landing and (row.ids == nil or #row.ids == 0) then
                 warn("registry row '" .. token .. "' has no ids"
                     .. " -> the autotracker can never reveal it.")
             elseif not row.gate then
