@@ -21,7 +21,7 @@ end
 -- Shown until a slot with fly-destination data is connected (FLY_DESTINATIONS is empty).
 FLY_DESTINATION_PLACEHOLDER = "Connect to a slot..."
 -- Leading pad so the left-aligned badge clears the town icon instead of overlapping it.
-local FLY_BADGE_INDENT = "            "
+local FLY_BADGE_INDENT = "          "
 
 --- Re-read this fly's destination and redraw icon + badge.
 function FlyDestinationItem:refresh()

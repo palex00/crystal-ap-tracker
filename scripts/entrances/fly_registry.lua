@@ -368,7 +368,24 @@ FLY_ICON_OVERLAYS = {
 }
 
 -- Curated overrides for any region whose auto-derived label reads badly; wins over the deriver.
-FLY_REGION_NAME_OVERRIDES = {}
+FLY_REGION_NAME_OVERRIDES = {
+    ["REGION_RUINS_OF_ALPH_OUTSIDE"]                    = "Ruins of Alph",
+    ["REGION_RUINS_OF_ALPH_OUTSIDE:WEST"]               = "Ruins of Alph (West)",
+    ["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH"]              = "Ruins of Alph (South)",
+    ["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:OMANYTE_LEDGE"] = "Ruins of Alph (Omanyte)",
+    ["REGION_RUINS_OF_ALPH_OUTSIDE:SOUTH:UNION_LEDGE"]  = "Ruins of Alph (Union)",
+    ["REGION_BATTLE_TOWER_OUTSIDE"]                     = "Battle Tower",
+    ["REGION_SILVER_CAVE_OUTSIDE"]                      = "Silver Cave",
+    ["REGION_CHERRYGROVE_CITY:FLOODED_MINE_ENTRANCE"]   = "Cherrygrove (Flooded Mine)",
+    ["REGION_BLACKTHORN_CITY:DRAGONS_DEN_ENTRANCE"]     = "Blackthorn (Dragon's Den)",
+    ["REGION_VERMILION_CITY:DIGLETTS_CAVE_ENTRANCE"]    = "Vermilion (Diglett's Cave)",
+    ["REGION_VERMILION_CITY:GYM_ENTRANCE"]              = "Vermilion (Gym)",
+    ["REGION_CELADON_CITY:GYM_ENTRANCE"]                = "Celadon (Gym)",
+    ["REGION_LAKE_OF_RAGE:HIDDEN_POWER_HOUSE"]          = "Lake of Rage (Hidden House)",
+    ["REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL"]            = "Ecruteak (Tin Tower)",
+    ["REGION_ROUTE_19:GATE_ENTRANCE"]                   = "Route 19 (Gate)",
+    ["REGION_ROUTE_10_NORTH:POKECENTER"]                = "Route 10 (Pokecenter)",
+}
 
 local FLY_NAME_SMALL = { ["of"] = true, ["and"] = true, ["the"] = true }
 local FLY_NAME_UPPER = { ne = true, nw = true, se = true, sw = true }
