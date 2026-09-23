@@ -53,6 +53,7 @@ ScriptHost:LoadScript("scripts/entrances/entrance_item.lua")
 -- until slot_data fills in destinations in onClear. Display-only -- they never affect logic.
 ScriptHost:LoadScript("scripts/entrances/fly_destination_item.lua")
 createFlyDestinationItems()
+ScriptHost:LoadScript("scripts/logic/evobreed_helper.lua")
 -- Entrance items are created per-ENABLED-category, not all at once: a vanilla entrance needs no
 -- tracker item, and a large _luaItems set makes every toggle laggy. Build the token->category
 -- map now; the actual EntranceItems are instantiated by createEntrancesForEnabled(), driven by

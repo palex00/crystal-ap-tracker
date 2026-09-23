@@ -271,6 +271,10 @@ LAYOUT_SLOTS = {
     slot("tools", "auto_shop", {"shopsanity_johtomarts", "shopsanity_kantomarts"}, function()
         return has("shopsanity_anymart")
     end),
+
+    slot("pokedex", "inlogic", {"randomize_evolution", "randomize_breeding", "dexsanity"}, function()
+        return inlogic_split() and "split" or "new"
+    end),
 }
 
 SLOTS_BY_CODE = {}

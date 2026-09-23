@@ -311,7 +311,21 @@ function trade(person)
     end
 end
 
-function evolve_new(ID, method_filter)
+function evolution_access(evo)
+    if evo.method == "EVOLVE_LEVEL" then
+        return evolve(evo.condition)
+    elseif evo.method == "EVOLVE_ITEM" then
+        return evolve_item(evo.condition)
+    elseif evo.method == "EVOLVE_HAPPINESS" then
+        return evolve_friend()
+    elseif evo.method == "EVOLVE_STAT" then
+        return evolve_tyrogue()
+    elseif evo.method == "EVOLVE_TRADE" then
+        return evolve_helditem(evo.condition)
+    end
+end
+
+function evolve_new(ID, method_filter, condition_filter)
     local evolutions = EVOLUTION_DATA[ID]
 
     if not evolutions then
@@ -324,18 +338,9 @@ function evolve_new(ID, method_filter)
     end
 
     for _, evo in ipairs(evolutions) do
-        if method_filter == nil or evo.method == method_filter then
-            if evo.method == "EVOLVE_LEVEL" then
-                return evolve(evo.condition)
-            elseif evo.method == "EVOLVE_ITEM" then
-                return evolve_item(evo.condition)
-            elseif evo.method == "EVOLVE_HAPPINESS" then
-                return evolve_friend()
-            elseif evo.method == "EVOLVE_STAT" then
-                return evolve_tyrogue()
-            elseif evo.method == "EVOLVE_TRADE" then
-                return evolve_helditem(evo.condition)
-            end
+        if (method_filter == nil or evo.method == method_filter)
+        and (condition_filter == nil or tostring(evo.condition) == condition_filter) then
+            return evolution_access(evo)
         end
     end
 end
