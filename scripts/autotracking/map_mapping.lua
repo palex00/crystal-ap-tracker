@@ -269,8 +269,8 @@ MAP_MAPPING =  {
     [8] =  {"Kanto Cities", "Pewter City", "Snooze Speech House"},  --PEWTER_SNOOZE_SPEECH_HOUSE
   },
   [15] =  {
-    [1] =  {"S.S. Aqua", "Olivine Port"},                          --OLIVINE_PORT
-    [2] =  {"S.S. Aqua", "Vermilion Port"},                        --VERMILION_PORT
+    [1] =  {"Johto Cities", "Olivine City", "Port"},               --OLIVINE_PORT
+    [2] =  {"Kanto Cities", "Vermilion City", "Port"},             --VERMILION_PORT
     [3] =  {},                                                     --FAST_SHIP_1F [ignore: special handling in archipelago.lua]
     [4] =  {},                                                     --FAST_SHIP_CABINS_NNW_NNE_NE [ignore: special handling in archipelago.lua]
     [5] =  {},                                                     --FAST_SHIP_CABINS_SW_SSW_NW [ignore: special handling in archipelago.lua]
@@ -283,8 +283,8 @@ MAP_MAPPING =  {
     [12] = {"Johto Cities", "Ecruteak City", "Tin Tower", "Roof"}, --TIN_TOWER_ROOF
   },
   [115] =  {
-    [1] =  {"S.S. Aqua", "Olivine Port"},                          --OLIVINE_PORT
-    [2] =  {"S.S. Aqua", "Vermilion Port"},                        --VERMILION_PORT
+    [1] =  {"Johto Cities", "Olivine City", "Port"},               --OLIVINE_PORT
+    [2] =  {"Kanto Cities", "Vermilion City", "Port"},             --VERMILION_PORT
     [3] =  {"S.S. Aqua", "Eastbound", "1F Hallways"},              --FAST_SHIP_1F
     [4] =  {"S.S. Aqua", "Eastbound", "1F Cabins"},                --FAST_SHIP_CABINS_NNW_NNE_NE
     [5] =  {"S.S. Aqua", "Eastbound", "1F Cabins"},                --FAST_SHIP_CABINS_SW_SSW_NW
@@ -297,8 +297,8 @@ MAP_MAPPING =  {
     [12] = {"Johto Cities", "Ecruteak City", "Tin Tower", "Roof"}, --TIN_TOWER_ROOF
   },
   [215] =  {
-    [1] =  {"S.S. Aqua", "Olivine Port"},                          --OLIVINE_PORT
-    [2] =  {"S.S. Aqua", "Vermilion Port"},                        --VERMILION_PORT
+    [1] =  {"Johto Cities", "Olivine City", "Port"},               --OLIVINE_PORT
+    [2] =  {"Kanto Cities", "Vermilion City", "Port"},             --VERMILION_PORT
     [3] =  {"S.S. Aqua", "Westbound", "1F Hallways"},              --FAST_SHIP_1F
     [4] =  {"S.S. Aqua", "Westbound", "1F Cabins"},                --FAST_SHIP_CABINS_NNW_NNE_NE
     [5] =  {"S.S. Aqua", "Westbound", "1F Cabins"},                --FAST_SHIP_CABINS_SW_SSW_NW

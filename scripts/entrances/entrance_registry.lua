@@ -2423,7 +2423,7 @@ ENTRANCE_REGISTRY = {
     ["REGION_OLIVINE_PORT -> REGION_OLIVINE_PORT_PASSAGE:TUNNEL"] = {
         ids = {2009},
         pretty = "Olivine Port Stairs",
-        tab = {"S.S. Aqua", "Olivine Port"},
+        tab = {"Johto Cities", "Olivine City", "Port"},
         section = "@JohtoKanto/Olivine City/Olivine Port Stairs                                                                              ",
     },
     ["REGION_OLIVINE_PORT_PASSAGE:ENTRANCE -> REGION_OLIVINE_CITY"] = {
@@ -4715,7 +4715,7 @@ ENTRANCE_REGISTRY = {
     ["REGION_VERMILION_PORT -> REGION_VERMILION_PORT_PASSAGE:TUNNEL"] = {
         ids = {2017},
         pretty = "Vermilion Port Stairs",
-        tab = {"S.S. Aqua", "Vermilion Port"},
+        tab = {"Kanto Cities", "Vermilion City", "Port"},
         section = "@JohtoKanto/Vermilion City/Vermilion Port Stairs                                                                          ",
     },
     ["REGION_VERMILION_PORT_PASSAGE:ENTRANCE -> REGION_VERMILION_CITY"] = {

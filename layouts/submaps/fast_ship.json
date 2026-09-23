@@ -3,24 +3,6 @@
         "type": "tabbed",
         "tabs": [
             {
-                "title": "Olivine Port",
-                "content": {
-                    "type": "map",
-                    "maps": [
-                        "OlivinePort"
-                    ]
-                }
-            },
-            {
-                "title": "Vermilion Port",
-                "content": {
-                    "type": "map",
-                    "maps": [
-                        "VermilionPort"
-                    ]
-                }
-            },
-            {
                 "title": "Overview",
                 "content": {
                     "type": "tabbed",
