@@ -7654,6 +7654,87 @@
                         ]
                     }
                 ]
+            },
+            {
+                "name": "Flooded Mine",
+                "sections":[
+                    {
+                        "name": "Hidden Item Near Cherrygrove Entrance",
+                        "ref": "JohtoKanto/Flooded Mine/Hidden Item Near Cherrygrove Entrance"
+                    },
+                    {
+                        "name": "Hidden Item Southeast",
+                        "ref": "JohtoKanto/Flooded Mine/Hidden Item Southeast"
+                    },
+                    {
+                        "name": "Hidden Item Northwest",
+                        "ref": "JohtoKanto/Flooded Mine/Hidden Item Northwest"
+                    },
+                    {
+                        "name": "Item",
+                        "ref": "JohtoKanto/Flooded Mine/Item"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CherrygroveCity",
+                        "x": 72,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off, flooded_mine_on"
+                        ]
+                    },
+                    {
+                        "map": "Route32South",
+                        "x": 168,
+                        "y": 8,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_off, er_dungeon_off, flooded_mine_on"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Flooded Mine",
+                "sections":[
+                    {
+                        "name": "Flooded Mine North Entrance Ladder                                                ",
+                        "ref": "JohtoKanto/Flooded Mine/Flooded Mine North Entrance Ladder                                                "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route32South",
+                        "x": 168,
+                        "y": 8,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_dungeon_off, flooded_mine_on"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Flooded Mine",
+                "sections":[
+                    {
+                        "name": "Hidden Item Near Cherrygrove Entrance",
+                        "ref": "JohtoKanto/Flooded Mine/Hidden Item Near Cherrygrove Entrance"
+                    },
+                    {
+                        "name": "Flooded Mine South Entrance Ladder                                                ",
+                        "ref": "JohtoKanto/Flooded Mine/Flooded Mine South Entrance Ladder                                                "
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "CherrygroveCity",
+                        "x": 72,
+                        "y": 88,
+                        "restrict_visibility_rules": [
+                            "er_dungeon_interior_on, er_dungeon_off, flooded_mine_on"
+                        ]
+                    }
+                ]
             }
         ]
     }
