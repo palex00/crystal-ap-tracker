@@ -154,13 +154,13 @@ REGION_BLACKTHORN_GYM_1F:connect_two_ways_entrance(REGION_BLACKTHORN_GYM_2F, "gy
 NAMED_NODES["REGION_BLACKTHORN_GYM_1F:MIDDLE"]:connect_two_ways_entrance(REGION_BLACKTHORN_GYM_2F, "gym_interior")
 NAMED_NODES["REGION_BLACKTHORN_GYM_1F:MIDDLE"]:connect_one_way(NAMED_NODES["REGION_BLACKTHORN_GYM_1F:LOLA"], "Blackthorn Gym 1F Boulder Bridge (to Lola)", function()
         if has("er_gym_interior_on") then return has("EVENT_BOULDER_IN_BLACKTHORN_GYM_3") end
-        return reach("EVENT_BOULDER_IN_BLACKTHORN_GYM_3")
+        return can_strength()
         end)
 
 -- === REGION_BLACKTHORN_GYM_1F:LOLA ===
 NAMED_NODES["REGION_BLACKTHORN_GYM_1F:LOLA"]:connect_one_way(NAMED_NODES["REGION_BLACKTHORN_GYM_1F:CLAIR"], "Blackthorn Gym 1F Boulder Bridge (to Clair)", function()
         if has("er_gym_interior_on") then return has("EVENT_BOULDER_IN_BLACKTHORN_GYM_1") end
-        return reach("EVENT_BOULDER_IN_BLACKTHORN_GYM_1")
+        return can_strength()
         end)
 
 -- === REGION_BLACKTHORN_GYM_1F:HOLE_1 ===
@@ -599,8 +599,7 @@ REGION_ICE_PATH_B2F_MAHOGANY_SIDE:connect_one_way(NAMED_NODES["REGION_ICE_PATH_B
             return has("EVENT_BOULDER_IN_ICE_PATH_1A") and has("EVENT_BOULDER_IN_ICE_PATH_2A")
             and has("EVENT_BOULDER_IN_ICE_PATH_3A") and has("EVENT_BOULDER_IN_ICE_PATH_4A")
         end
-        return ALL(reach("EVENT_BOULDER_IN_ICE_PATH_1A"), reach("EVENT_BOULDER_IN_ICE_PATH_2A"),
-            reach("EVENT_BOULDER_IN_ICE_PATH_3A"), reach("EVENT_BOULDER_IN_ICE_PATH_4A"))
+        return can_strength()
         end)
 NAMED_NODES["REGION_ICE_PATH_B2F_MAHOGANY_SIDE:MIDDLE"]:connect_one_way(REGION_ICE_PATH_B2F_MAHOGANY_SIDE, "Ice Path B2F (Mahogany Side) Outer Platforms Access")
 
