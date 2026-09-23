@@ -181,6 +181,7 @@ function onClear(slot_data)
     resetEntrances()
     
     BATTLE_TOWER_TRAINERS = slot_data.battle_tower_trainer_permutation
+    DEXSANITY_LOGIC = {Evolution = true, Breeding = true}
 
     for k, v in pairs(slot_data) do
         if SLOT_CODES[k] then
@@ -228,6 +229,11 @@ function onClear(slot_data)
             end
         elseif k == "dexsanity" then
             Tracker:FindObjectForCode("dexsanity").AcquiredCount = v
+        elseif k == "dexsanity_logic" then
+            DEXSANITY_LOGIC = {}
+            for _, source in ipairs(v) do
+                DEXSANITY_LOGIC[source] = true
+            end
         elseif k == "maximum_evolution_level" then
             local val = tonumber(v) or 0
             if val == 100 then

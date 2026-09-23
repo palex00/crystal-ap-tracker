@@ -1,6 +1,7 @@
 INLOGIC_SLOT_COUNT = 30
 INLOGIC_COLUMN_SIZE = 15
 INLOGIC_ITEMS = {}
+DEXSANITY_LOGIC = {Evolution = true, Breeding = true}
 
 local BLANK_ICON = "images/other/blank.png"
 local SYNC_ICON = "images/placeholder.png"
@@ -192,10 +193,10 @@ function syncInLogic()
         if owned(id) then
             local evolves = evolve_targets(id, evo_vanilla, {})
             local breeds = breed_targets(id, evo_vanilla and breed_vanilla)
-            if evo_vanilla and any(evolves, is_dexsanity_check) then
+            if evo_vanilla and DEXSANITY_LOGIC.Evolution and any(evolves, is_dexsanity_check) then
                 table.insert(dexsanity, {id = id, action = "Evolve"})
             end
-            if breed_vanilla and any(breeds, is_dexsanity_check) then
+            if breed_vanilla and DEXSANITY_LOGIC.Breeding and any(breeds, is_dexsanity_check) then
                 table.insert(dexsanity, {id = id, action = "Breed"})
             end
             if any(evolves, is_new) then
