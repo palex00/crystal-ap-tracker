@@ -4608,7 +4608,7 @@
                     {
                         "map": "Route10",
                         "x": 104,
-                        "y": 344,
+                        "y": 312,
                         "restrict_visibility_rules": [
                             "er_dungeon_interior_off, er_dungeon_off"
                         ]
@@ -4639,7 +4639,7 @@
                     {
                         "map": "Route10",
                         "x": 104,
-                        "y": 344,
+                        "y": 312,
                         "restrict_visibility_rules": [
                             "er_dungeon_interior_on, er_dungeon_off"
                         ]
@@ -7312,6 +7312,30 @@
                     {
                         "ref": "JohtoKanto/National Park/Route 35 Gate Bug Catching Contest Explanation Sign",
                         "name": "Bug Catching Contest Explanation Sign"
+                    },
+                    {
+                        "name": "Bug Catching Contest - First Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - First Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Second Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Third Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Third Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Consolation Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Consolation Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second or Third Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Second or Third Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Participation Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Participation Prize"
                     }
                 ],
                 "map_locations": [
@@ -7331,6 +7355,30 @@
                     {
                         "ref": "JohtoKanto/National Park/Route 36 Gate Bug Catching Contest Explanation Sign",
                         "name": "Bug Catching Contest Explanation Sign"
+                    },
+                    {
+                        "name": "Bug Catching Contest - First Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - First Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Second Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Third Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Third Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Consolation Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Consolation Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second or Third Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Second or Third Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Participation Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Participation Prize"
                     }
                 ],
                 "map_locations": [
