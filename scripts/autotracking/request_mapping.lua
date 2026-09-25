@@ -33,6 +33,9 @@ function revealRequests()
 end
 
 function syncRequests()
+    if DEXSEARCH_ID then
+        return
+    end
     for _, request in ipairs(REQUEST_ITEMS) do
         Tracker:FindObjectForCode(request.code).Active = Tracker:FindObjectForCode(request.section).AvailableChestCount == 0
     end

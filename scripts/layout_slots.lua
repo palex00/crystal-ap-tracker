@@ -272,6 +272,10 @@ LAYOUT_SLOTS = {
         return has("shopsanity_anymart")
     end),
 
+    slot("dexsearch", "dexsearch_requests", {"randomize_pokemon_requests"}, function()
+        return has("randomize_pokemon_requests_true")
+    end),
+
     slot("pokedex", "inlogic", {"randomize_evolution", "randomize_breeding", "dexsanity"}, function()
         return inlogic_split() and "split" or "new"
     end),

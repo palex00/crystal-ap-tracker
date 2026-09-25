@@ -8,6 +8,7 @@ Tracker:AddItems("items/events_hosted.json")
 Tracker:AddItems("items/settings.json")
 Tracker:AddItems("items/settings_encevo.json")
 Tracker:AddItems("items/tools.json")
+Tracker:AddItems("items/dexsearch.json")
 Tracker:AddItems("items/pokemon.json")
 Tracker:AddItems("items/pokemon_requests.json")
 Tracker:AddItems("items/trainersanity.json")
@@ -116,6 +117,7 @@ Tracker:AddLayouts("layouts/full/settings.json")
 Tracker:AddLayouts("layouts/settings/settings_encevo.json")
 Tracker:AddLayouts("layouts/settings/settings_popup.json")
 Tracker:AddLayouts("layouts/tools/tools_max.json")
+Tracker:AddLayouts("layouts/tools/dexsearch.json")
 Tracker:AddLayouts("layouts/full/settings_flydestinations.json")
 
 ---- other
@@ -127,6 +129,7 @@ Tracker:AddLayouts("layouts/dexcountsanity.json")
 
 -- AutoTracking for Poptracker
 ScriptHost:LoadScript("scripts/autotracking.lua")
+ScriptHost:LoadScript("scripts/dexsearch.lua")
 
 ---- Watches
 ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)

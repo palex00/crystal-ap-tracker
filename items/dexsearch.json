@@ -1,0 +1,122 @@
+[
+    {
+        "name": "",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "codes": "dexsearch_digit1",
+                "img": "/images/tools/dexsearch/0--.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/1--.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/2--.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "codes": "dexsearch_digit2",
+                "img": "/images/tools/dexsearch/-0-.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/-1-.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/-2-.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/-3-.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/-4-.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/-5-.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/-6-.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/-7-.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/-8-.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/-9-.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "codes": "dexsearch_digit3",
+                "img": "/images/tools/dexsearch/--0.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/--1.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/--2.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/--3.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/--4.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/--5.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/--6.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/--7.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/--8.png"
+            },
+            {
+                "img": "/images/tools/dexsearch/--9.png"
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "static",
+        "img": "/images/tools/dexsearch/dexentrytop.png",
+        "codes": "dexsearch_frame_top"
+    },
+    {
+        "name": "",
+        "type": "static",
+        "img": "/images/tools/dexsearch/dexentryleft.png",
+        "codes": "dexsearch_frame_left"
+    },
+    {
+        "name": "",
+        "type": "static",
+        "img": "/images/tools/dexsearch/dexentryright.png",
+        "codes": "dexsearch_frame_right"
+    },
+    {
+        "name": "",
+        "type": "static",
+        "img": "/images/tools/dexsearch/dexentrybottom.png",
+        "codes": "dexsearch_frame_bottom"
+    }
+]

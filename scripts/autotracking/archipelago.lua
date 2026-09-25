@@ -28,6 +28,8 @@ TRADE_DATA = nil
 REQUEST_POKEMON = {108, 43, 120, 58, 172, 183, 25, 35}
 LUCKY_NUMBER_TRADES = nil
 SAVED_HINTS = {}
+CAUGHT = {}
+SEEN = {}
 BATTLE_TOWER_TRAINERS = nil
 
 if Highlight then
@@ -75,7 +77,8 @@ function onClear(slot_data)
     resetRequests()
     CAUGHT = {}
     SEEN = {}
-    
+    setDexSearchPokedex(false)
+
     unloadWatches()
     
     -- resets unown codes
@@ -273,6 +276,7 @@ function onClear(slot_data)
     
     if has("randomize_pokedex_startwith") then
         Tracker:FindObjectForCode("POKEDEX").Active = true
+        setDexSearchPokedex(true)
     end
 
     local enforce = slot_data.enforce_wild_encounter_methods_logic
@@ -425,7 +429,11 @@ function onItem(index, item_id, item_name, player_number)
         end
         return
     end
-    
+
+    if v == "pokedex" then
+        setDexSearchPokedex(true)
+    end
+
     local obj = Tracker:FindObjectForCode(v)
     if obj then
         if v == "BLUE_CARD_POINT" then
@@ -694,6 +702,9 @@ function updateVanillaKeyItems(value)
             if obj.codes and (obj.option == nil or has(obj.option)) then
                 for i, code in ipairs(obj.codes) do
                     Tracker:FindObjectForCode(code).Active = Tracker:FindObjectForCode(code).Active or bit
+                    if code == "POKEDEX" and bit == 1 then
+                        setDexSearchPokedex(true)
+                    end
                 end
             end
         end
@@ -891,6 +902,9 @@ function updatePokemon()
         end
     end
 
+    if DEXSEARCH_ID then
+        applyDexSearch()
+    end
     syncRequests()
 end
 
