@@ -353,7 +353,6 @@ function onClear(slot_data)
             SIGN       = makeID("signs_"),
             UNOWN      = makeID("unowns_"),
             TRADE      = makeID("trades_"),
-            SLOT_UNLOCK= makeID("tracker_slots_enabled_"),
             HINT       = "_read_hints_" .. suffix,
             SHOP_K     = makeID("seen_kanto_marts_"),
             SHOP_J     = makeID("seen_johto_marts_"),
@@ -485,7 +484,6 @@ function onLocation(location_id, location_name)
 end
 
 
-SLOT_TRACK = false
 function onNotify(key, value, old_value)
     if value ~= nil and value ~= 0 then
         if key == IDs.EVENT then
@@ -516,9 +514,6 @@ function onNotify(key, value, old_value)
         elseif key == IDs.TRADE then
             updateTrades(value)
             updatePokemon()
-        elseif key == IDs.SLOT_UNLOCK then
-            SLOT_TRACK = true
-            update_layout_slot("slot_digits")
         elseif key == IDs.HINT then
             SAVED_HINTS = value
             updateHints()

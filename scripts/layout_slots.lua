@@ -257,9 +257,6 @@ LAYOUT_SLOTS = {
         return "layouts/goal/"..johto_mode().."/goal"..suffix..".json"
     end),
 
-    slot("tools", "digits", {}, function()
-        return SLOT_TRACK == true
-    end),
     slot("tools", "show_signs", {"goal_unown"}, function()
         return has("goal_unown_on")
     end),
