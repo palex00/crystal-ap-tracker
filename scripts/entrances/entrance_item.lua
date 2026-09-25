@@ -220,12 +220,7 @@ function EntranceItem:onMiddleClick()
         ROUTE_START_ITEM = self
     else
         if ROUTE_START_ITEM == self then
-            local from = CurrentRegionNode()
-            if from then
-                GetRoute(from, NAMED_NODES[self.node])
-            else
-                ShowRouteMessage("Position Unknown")
-            end
+            RouteFromCurrent(NAMED_NODES[self.node])
         else
             GetRoute(NAMED_NODES[ROUTE_START], NAMED_NODES[self.node])
         end

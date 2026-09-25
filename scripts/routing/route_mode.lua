@@ -185,7 +185,8 @@ end
 --- list of TRANSITIONS to traverse — one transition pretty-name per Route tile.
 ---@param start table
 ---@param finish table
-function GetRoute(start, finish)
+---@param first_label string|nil  a hop written before the route (e.g. "Warp Home")
+function GetRoute(start, finish, first_label)
     if start == nil or finish == nil then
         return
     end
@@ -209,6 +210,10 @@ function GetRoute(start, finish)
             PATH[i] = nil
         end
         local line = 0
+        if first_label then
+            writeRouteTile(line, first_label)
+            line = line + 1
+        end
         for stage = 1, STEPS - 1 do
             local label = PATH[stage]
             if label and label ~= "" then
@@ -287,8 +292,14 @@ function CurrentRegionNode()
     return NAMED_NODES[EntranceDestRegion(token)]
 end
 
-function ShowRouteMessage(text)
-    clearRouteTiles()
-    writeRouteTile(0, text)
-    Tracker:UiHint("ActivateTab", "Routing")
+--- Routes from the player's current position to `finish`; with the position unknown, the
+--- route starts with a trip back to the starting town and goes on from there.
+---@param finish table
+function RouteFromCurrent(finish)
+    local from = CurrentRegionNode()
+    if from then
+        GetRoute(from, finish)
+    else
+        GetRoute(HomeRegion(), finish, "Warp Home")
+    end
 end
