@@ -150,6 +150,16 @@ HOSTED_EVENT_CODES = {
     "ENGINE_UNLOCKED_UNOWNS_S_TO_W",
     "ENGINE_UNLOCKED_UNOWNS_X_TO_Z",
     "EVENT_BEAT_AZALEA_RIVAL",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_1",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_10",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_2",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_3",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_4",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_5",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_6",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_7",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_8",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_9",
     "EVENT_BEAT_BLAINE",
     "EVENT_BEAT_BLUE",
     "EVENT_BEAT_BROCK",
@@ -263,6 +273,13 @@ end
 function syncBaseFromHosted(code)
     local base = code:gsub("_hosted$", "")
     Tracker:FindObjectForCode(base).Active = Tracker:FindObjectForCode(code).Active
+end
+
+function setBattleTowerTierOverlays()
+    for tier, code in ipairs(FLAG_BATTLE_TOWER_TIER_CODES) do
+        Tracker:FindObjectForCode(code):SetOverlay(tostring(tier))
+        Tracker:FindObjectForCode(code .. "_hosted"):SetOverlay(tostring(tier))
+    end
 end
 
 function updateBlueCardOverlay()

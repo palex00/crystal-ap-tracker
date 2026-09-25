@@ -336,7 +336,8 @@ function onClear(slot_data)
         updateVanillaKeyItems(0)
         updateShopEvents("J", 0)
         updateShopEvents("K", 0)
-        
+        updateBattleTowerTiers({})
+
         local suffix = TEAM_NUMBER .. "_" .. PLAYER_ID
         local function makeID(s) return "pokemon_crystal_" .. s .. suffix end
         
@@ -358,6 +359,7 @@ function onClear(slot_data)
             SHOP_J     = makeID("seen_johto_marts_"),
             ENTRANCE   = makeID("warps_"),
             FLYUNLOCK  = makeID("fly_unlocks_"),
+            BATTLETOWER= makeID("battle_tower_"),
         }
         for _, id in pairs(IDs) do
             Archipelago:SetNotify({id})
@@ -529,6 +531,8 @@ function onNotify(key, value, old_value)
             updateEntrances(value)
         elseif key == IDs.FLYUNLOCK then
             updateFlyunlock(value)
+        elseif key == IDs.BATTLETOWER then
+            updateBattleTowerTiers(value)
         end
     end
 end
@@ -631,6 +635,15 @@ function updateFlyunlock(value)
                 obj.Active = (bit == 1)
             end
         end
+    end
+end
+
+function updateBattleTowerTiers(value)
+    for _, code in ipairs(FLAG_BATTLE_TOWER_TIER_CODES) do
+        Tracker:FindObjectForCode(code).Active = false
+    end
+    for _, tier in ipairs(value) do
+        Tracker:FindObjectForCode(FLAG_BATTLE_TOWER_TIER_CODES[tier + 1]).Active = true
     end
 end
 

@@ -155,6 +155,7 @@ ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
 
 ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
 ScriptHost:AddWatchForCode("blue_card_overlay", "BLUE_CARD", updateBlueCardOverlay)
+setBattleTowerTierOverlays()
 
 for _, list in ipairs({HOSTED_EVENT_CODES, HOSTED_ITEM_CODES}) do
     for _, code in ipairs(list) do

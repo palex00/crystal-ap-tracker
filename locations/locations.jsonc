@@ -34613,6 +34613,106 @@
                         "chest_opened_img": "images/other/battletowertier_cleared.png"
                     },
                     {
+                        "name": "Tier 1 Complete (Event)",
+                        "hosted_item": "EVENT_BEAT_BATTLE_TOWER_TIER_1_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|1"
+                        ],
+                        "visibility_rules": [
+                            "show_events, goal_battletower_on"
+                        ]
+                    },
+                    {
+                        "name": "Tier 2 Complete (Event)",
+                        "hosted_item": "EVENT_BEAT_BATTLE_TOWER_TIER_2_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|2"
+                        ],
+                        "visibility_rules": [
+                            "show_events, goal_battletower_on"
+                        ]
+                    },
+                    {
+                        "name": "Tier 3 Complete (Event)",
+                        "hosted_item": "EVENT_BEAT_BATTLE_TOWER_TIER_3_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|3"
+                        ],
+                        "visibility_rules": [
+                            "show_events, goal_battletower_on"
+                        ]
+                    },
+                    {
+                        "name": "Tier 4 Complete (Event)",
+                        "hosted_item": "EVENT_BEAT_BATTLE_TOWER_TIER_4_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|4"
+                        ],
+                        "visibility_rules": [
+                            "show_events, goal_battletower_on"
+                        ]
+                    },
+                    {
+                        "name": "Tier 5 Complete (Event)",
+                        "hosted_item": "EVENT_BEAT_BATTLE_TOWER_TIER_5_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|5"
+                        ],
+                        "visibility_rules": [
+                            "show_events, goal_battletower_on"
+                        ]
+                    },
+                    {
+                        "name": "Tier 6 Complete (Event)",
+                        "hosted_item": "EVENT_BEAT_BATTLE_TOWER_TIER_6_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|6"
+                        ],
+                        "visibility_rules": [
+                            "show_events, goal_battletower_on"
+                        ]
+                    },
+                    {
+                        "name": "Tier 7 Complete (Event)",
+                        "hosted_item": "EVENT_BEAT_BATTLE_TOWER_TIER_7_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|7"
+                        ],
+                        "visibility_rules": [
+                            "show_events, goal_battletower_on"
+                        ]
+                    },
+                    {
+                        "name": "Tier 8 Complete (Event)",
+                        "hosted_item": "EVENT_BEAT_BATTLE_TOWER_TIER_8_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|8"
+                        ],
+                        "visibility_rules": [
+                            "show_events, goal_battletower_on"
+                        ]
+                    },
+                    {
+                        "name": "Tier 9 Complete (Event)",
+                        "hosted_item": "EVENT_BEAT_BATTLE_TOWER_TIER_9_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|9"
+                        ],
+                        "visibility_rules": [
+                            "show_events, goal_battletower_on"
+                        ]
+                    },
+                    {
+                        "name": "Tier 10 Complete (Event)",
+                        "hosted_item": "EVENT_BEAT_BATTLE_TOWER_TIER_10_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_BATTLE_TOWER_1F, ^$battletower_milestones|10"
+                        ],
+                        "visibility_rules": [
+                            "show_events, goal_battletower_on"
+                        ]
+                    },
+                    {
                         "name": "Fisher Hanson",
                         "visibility_rules": [
                             "show_items, battle_tower_sanity_trainers"
