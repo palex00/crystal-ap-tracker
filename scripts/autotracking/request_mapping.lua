@@ -14,6 +14,7 @@ REQUEST_ITEMS = {
     { code = "request_beverly",   section = LOCATION_MAPPING[332], reveal = nil, pokemon = function() return REQUEST_POKEMON[6] end },
     { code = "request_derek",     section = LOCATION_MAPPING[376], reveal = nil, pokemon = function() return REQUEST_POKEMON[7] end },
     { code = "request_tiffany",   section = LOCATION_MAPPING[260], reveal = nil, pokemon = function() return REQUEST_POKEMON[8] end },
+    { code = "hatched_togepi",    section = LOCATION_MAPPING[86],  reveal = "EVENT_TOGEPI_HATCHED", pokemon = function() return REGION_ENCOUNTERS["Static_EggTogepi"][1] end },
 }
 
 function revealRequest(request)

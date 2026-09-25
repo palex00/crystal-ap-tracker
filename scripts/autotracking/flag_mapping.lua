@@ -98,7 +98,7 @@ FLAG_STATIC_CODES = {
     "Static_Shuckie",
     "Static_Eevee",
     "Static_Dratini",
-    "dummy", -- this is the Togepi Egg Hatch. Technically this locks a check but we'll just use the event where you get it
+    "EVENT_TOGEPI_HATCHED",
     "Static_Tyrogue",
     "Static_UnionCaveLapras",
     "Static_Celebi",
