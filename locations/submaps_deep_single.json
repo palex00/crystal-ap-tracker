@@ -10103,22 +10103,6 @@
                 ]
             },
             {
-                "name": "5F - Clear Bell from Director",
-                "sections": [
-                    {
-                        "ref": "JohtoKanto/Radio Tower/5F - Clear Bell from Director",
-                        "name": "5F - Clear Bell from Director"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "EcruteakTinTowerEntrance",
-                        "x": 104,
-                        "y": 152
-                    }
-                ]
-            },
-            {
                 "name": "Fighting Dojo - Item",
                 "sections": [
                     {
@@ -11151,7 +11135,7 @@
                         "access_rules": [
                             "^$CanReach|REGION_INDIGO_PLATEAU_POKECENTER_1F"
                         ]
-                    },
+                    }
                 ],
                 "map_locations": [
                     {

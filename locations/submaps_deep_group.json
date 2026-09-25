@@ -1932,9 +1932,45 @@
                 "name": "Bug Catching Contest",
                 "map_locations": [
                     {
-                        "map": "NationalPark",
-                        "x": 616,
-                        "y": 24
+                        "map": "Route35NationalParkGate",
+                        "x": 40,
+                        "y": 20
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Bug Catching Contest - First Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - First Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Second Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Third Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Third Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Consolation Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Consolation Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Second or Third Place Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Second or Third Place Prize"
+                    },
+                    {
+                        "name": "Bug Catching Contest - Participation Prize",
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest - Participation Prize"
+                    }
+                ]
+            },
+            {
+                "name": "Bug Catching Contest\u200b",
+                "map_locations": [
+                    {
+                        "map": "Route36NationalParkGate",
+                        "x": 8,
+                        "y": 56
                     }
                 ],
                 "sections": [
@@ -2628,7 +2664,10 @@
                     {
                         "map": "LakeOfRage",
                         "x": 296,
-                        "y": 360
+                        "y": 360,
+                        "force_invisibility_rules": [
+                            "red_gyarados_shore"
+                        ]
                     }
                 ]
             },
