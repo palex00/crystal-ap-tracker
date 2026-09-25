@@ -18,10 +18,16 @@ REQUEST_ITEMS = {
 
 function revealRequest(request)
     local obj = Tracker:FindObjectForCode(request.code)
-    if has(request.reveal) then
+    if request.reveal == nil or has(request.reveal) then
         obj.CurrentStage = tonumber(request.pokemon())
     else
         obj.CurrentStage = 0
+    end
+end
+
+function revealRequests()
+    for _, request in ipairs(REQUEST_ITEMS) do
+        revealRequest(request)
     end
 end
 

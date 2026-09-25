@@ -554,7 +554,7 @@ function request_pokemon(slot)
     if has(POKEMON_MAPPING[REQUEST_POKEMON[tonumber(slot) + 1]]) then
         return AccessibilityLevel.Normal
     else
-        return AccessibilityLevel.Inspect
+        return AccessibilityLevel.None
     end
 end
 

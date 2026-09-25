@@ -149,6 +149,7 @@ function onClear(slot_data)
     REQUEST_POKEMON = slot_data.request_pokemon
     LUCKY_NUMBER_TRADES = slot_data.lucky_number_trades
     UNOWN_DATA = slot_data.unown_signs
+    revealRequests()
     
     -- This sets each Encounter location to however many unique encounters there are in it
     for region_key, location in pairs(ENCOUNTER_MAPPING) do
@@ -504,6 +505,7 @@ function onNotify(key, value, old_value)
             updateUnown(value)
         elseif key == IDs.TRADE then
             updateTrades(value)
+            updatePokemon()
         elseif key == IDs.SLOT_UNLOCK then
             SLOT_TRACK = true
             update_layout_slot("slot_digits")

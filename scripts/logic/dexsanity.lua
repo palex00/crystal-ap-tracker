@@ -301,7 +301,9 @@ function trade(person)
     
         if not checked then
             return AccessibilityLevel.Inspect
-        elseif has(pokemon_name) and has("encmethod_trades_on") then
+        elseif not has(pokemon_name) then
+            return AccessibilityLevel.None
+        elseif has("encmethod_trades_on") then
             return AccessibilityLevel.Normal
         else
             return AccessibilityLevel.SequenceBreak
