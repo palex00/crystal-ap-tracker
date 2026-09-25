@@ -313,13 +313,13 @@
         "stages": [
             {
                 "name": "Time of Day Encounters Off",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/dex_related/encounter_neutral.png",
                 "codes": "timeofday, timeofday_off",
                 "inherit_codes": false
             },
             {
                 "name": "Time of Day Encounters On",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/dex_related/tod_encounters.png",
                 "codes": "timeofday, timeofday_on",
                 "inherit_codes": false
             }
@@ -333,13 +333,13 @@
         "stages": [
             {
                 "name": "Unlockable Time of Day Off",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/dex_related/shuffle_tod_off.png",
                 "codes": "unlockable_tod, unlockable_tod_off",
                 "inherit_codes": false
             },
             {
                 "name": "Unlockable Time of Day On",
-                "img": "/images/placeholder.png",
+                "img": "/images/settings/dex_related/shuffle_tod.png",
                 "codes": "unlockable_tod, unlockable_tod_on",
                 "inherit_codes": false
             }
