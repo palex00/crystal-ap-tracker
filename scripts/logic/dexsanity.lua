@@ -247,9 +247,9 @@ function fishing_super()
 end
 
 function headbutting()
-    if has("encmethod_headbutt_on") and has("TM_HEAD_BUTT") then
+    if has("encmethod_headbutt_on") and has("TM_HEAD_BUTT") and can_teach("HEADBUTT") then
         return AccessibilityLevel.Normal
-    elseif has("TM_HEAD_BUTT") then
+    elseif has("TM_HEAD_BUTT") and can_teach("HEADBUTT") then
         return AccessibilityLevel.SequenceBreak
     else
         return AccessibilityLevel.None
@@ -257,9 +257,9 @@ function headbutting()
 end
 
 function rocksmash_encounter()
-    if has("encmethod_rocksmash_on") and has("TM_ROCK_SMASH") then
+    if has("encmethod_rocksmash_on") and can_rock_smash() then
         return AccessibilityLevel.Normal
-    elseif has("TM_ROCK_SMASH") then
+    elseif can_rock_smash() then
         return AccessibilityLevel.SequenceBreak
     else
         return AccessibilityLevel.None

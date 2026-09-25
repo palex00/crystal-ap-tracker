@@ -182,23 +182,81 @@ function lance_e4()
     return AccessibilityLevel.None
 end
 
-function can_cut_johto()
-  return has("HM_CUT") and (
-  has("FREE_CUT") or
-  has("badgereqs_none") or
-  ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("HIVE_BADGE")) or
-  (has("badgereqs_kanto") and (has("HIVE_BADGE") or has("CASCADE_BADGE")))
-  )
+HM_MOVES = {"CUT", "FLY", "SURF", "STRENGTH", "FLASH", "WHIRLPOOL", "WATERFALL", "HEADBUTT", "ROCK_SMASH"}
+HM_COMPAT = {}
+HM_TEACHABLE = {}
+
+function setHMCompat(slot_data)
+    HM_COMPAT = {}
+    if slot_data.field_moves_always_usable == 0 then
+        for _, move in ipairs(HM_MOVES) do
+            HM_COMPAT[move] = {}
+        end
+        for dex, indices in pairs(slot_data.hm_compat) do
+            for _, index in ipairs(indices) do
+                table.insert(HM_COMPAT[HM_MOVES[index + 1]], POKEMON_MAPPING[tonumber(dex)])
+            end
+        end
+        for _, move in ipairs(HM_MOVES) do
+            if #HM_COMPAT[move] == 251 then
+                HM_COMPAT[move] = nil
+            end
+        end
+    end
+    updateHMTeachable()
+    InvalidateCanReach()
 end
 
-function can_cut_kanto()
-  return has("HM_CUT") and (
+function updateHMTeachable()
+    HM_TEACHABLE = {}
+    for move, pokemon_list in pairs(HM_COMPAT) do
+        HM_TEACHABLE[move] = false
+        for _, pokemon in ipairs(pokemon_list) do
+            if has(pokemon) then
+                HM_TEACHABLE[move] = true
+                break
+            end
+        end
+    end
+end
+
+ScriptHost:AddWatchForCode("HMTeachable", "*", updateHMTeachable)
+
+function can_teach(move)
+    return HM_TEACHABLE[move] ~= false
+end
+
+function hm_compat_notice()
+    return (not can_teach("CUT") and has("HM_CUT") and (cut_badge("johto") or cut_badge("kanto"))) or
+        (not can_teach("FLY") and has("HM_FLY") and fly_badge()) or
+        (not can_teach("SURF") and has("HM_SURF") and (surf_badge("johto") or surf_badge("kanto"))) or
+        (not can_teach("STRENGTH") and has("HM_STRENGTH") and strength_badge()) or
+        (not can_teach("FLASH") and has("HM_FLASH") and (flash_badge("johto") or flash_badge("kanto"))) or
+        (not can_teach("WHIRLPOOL") and has("HM_WHIRLPOOL") and whirlpool_badge() and can_surf_johto()) or
+        (not can_teach("WATERFALL") and has("HM_WATERFALL") and waterfall_badge() and can_surf_johto()) or
+        (not can_teach("HEADBUTT") and has("TM_HEAD_BUTT")) or
+        (not can_teach("ROCK_SMASH") and has("TM_ROCK_SMASH"))
+end
+
+function cut_badge(region)
+  return (
   has("FREE_CUT") or
   has("badgereqs_none") or
   (has("badgereqs_vanilla") and has("HIVE_BADGE")) or
   (has("badgereqs_kanto") and (has("HIVE_BADGE") or has("CASCADE_BADGE"))) or
-  (has("badgereqs_regional") and has("CASCADE_BADGE"))
+  (has("badgereqs_regional") and (
+    (region == "johto" and has("HIVE_BADGE")) or
+    (region == "kanto" and has("CASCADE_BADGE"))
+  ))
   )
+end
+
+function can_cut_johto()
+  return has("HM_CUT") and can_teach("CUT") and cut_badge("johto")
+end
+
+function can_cut_kanto()
+  return has("HM_CUT") and can_teach("CUT") and cut_badge("kanto")
 end
 
 function strength_badge()
@@ -212,26 +270,28 @@ function strength_badge()
 end
 
 function can_strength()
-    return (has("HM_STRENGTH") and strength_badge())
+    return (has("HM_STRENGTH") and can_teach("STRENGTH") and strength_badge())
 end
 
-function can_surf_johto()
-    return has("HM_SURF") and (
-        has("FREE_SURF") or
-        has("badgereqs_none") or
-        ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("FOG_BADGE")) or
-        (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE")))
-    )
-end
-
-function can_surf_kanto()
-    return has("HM_SURF") and (
+function surf_badge(region)
+    return (
         has("FREE_SURF") or
         has("badgereqs_none") or
         (has("badgereqs_vanilla") and has("FOG_BADGE")) or
         (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE"))) or
-        (has("badgereqs_regional") and has("SOUL_BADGE"))
+        (has("badgereqs_regional") and (
+            (region == "johto" and has("FOG_BADGE")) or
+            (region == "kanto" and has("SOUL_BADGE"))
+        ))
     )
+end
+
+function can_surf_johto()
+    return has("HM_SURF") and can_teach("SURF") and surf_badge("johto")
+end
+
+function can_surf_kanto()
+    return has("HM_SURF") and can_teach("SURF") and surf_badge("kanto")
 end
 
 function whirlpool_badge()
@@ -245,7 +305,7 @@ function whirlpool_badge()
 end
 
 function can_whirlpool()
-  return (has("HM_WHIRLPOOL") and whirlpool_badge() and can_surf_johto())
+  return (has("HM_WHIRLPOOL") and can_teach("WHIRLPOOL") and whirlpool_badge() and can_surf_johto())
   -- this is hardcoded to Johto because Kanto does currently not have whirlpools
 end
 
@@ -260,18 +320,18 @@ function waterfall_badge()
 end
 
 function can_waterfall()
-  return (has("HM_WATERFALL") and waterfall_badge() and can_surf_johto())
+  return (has("HM_WATERFALL") and can_teach("WATERFALL") and waterfall_badge() and can_surf_johto())
   -- this is hardcoded to Johto because Kanto does currently not have waterfalls
 end
 
 function mm_rocksmash()
-    return (has("TM_ROCK_SMASH") or has("mount_mortar_access_vanilla"))
+    return (can_rock_smash() or has("mount_mortar_access_vanilla"))
 end
 
 -- Generic Rock Smash. Distinct from mm_rocksmash(), which also passes when Mt. Mortar is
 -- set to vanilla access.
 function can_rock_smash()
-    return has("TM_ROCK_SMASH")
+    return has("TM_ROCK_SMASH") and can_teach("ROCK_SMASH")
 end
 
 function route42_passage()
@@ -299,7 +359,7 @@ function fly_badge()
 end
 
 function can_fly()
-  return (has("HM_FLY") and fly_badge())
+  return (has("HM_FLY") and can_teach("FLY") and fly_badge())
 end
 
 function has_mapcard()
@@ -408,8 +468,8 @@ function dark(area)
     end
 end
 
-function can_use_flash(region)
-    return has("HM_FLASH") and (
+function flash_badge(region)
+    return (
         has("FREE_FLASH") or
         has("badgereqs_none") or
         (has("badgereqs_vanilla") and has("ZEPHYR_BADGE")) or
@@ -419,6 +479,10 @@ function can_use_flash(region)
             (region == "kanto" and has("BOULDER_BADGE"))
         ))
     )
+end
+
+function can_use_flash(region)
+    return has("HM_FLASH") and can_teach("FLASH") and flash_badge(region)
 end
 
 function can_flash(region)

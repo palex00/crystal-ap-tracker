@@ -162,6 +162,7 @@ function onClear(slot_data)
     
     EVOLUTION_DATA = slot_data.evolution_info
     BREEDING_DATA = slot_data.breeding_info
+    setHMCompat(slot_data)
 
     -- Entrance randomization: full connection map (token -> token). The apworld sends
     -- `er_pairings`, a list of (source, target) connection-name pairs. A one-way pairing's

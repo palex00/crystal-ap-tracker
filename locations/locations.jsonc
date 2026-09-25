@@ -35427,5 +35427,48 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "You could use a new HM if you had a compatible Pokemon!",
+        "access_rules": [
+            "{}"
+        ],
+        "visibility_rules": [
+            "$hm_compat_notice"
+        ],
+        "sections": [
+            {
+                "name": "HM Compatibility",
+                "chest_unopened_img": "images/items/hm01.png",
+                "chest_opened_img": "images/items/hm01.png",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "johtokanto",
+                "x": 269,
+                "y": 19,
+                "size": 18,
+                "border_thickness": 1,
+                "shape": "trapezoid"
+            },
+            {
+                "map": "johtokanto_vertical",
+                "x": 125,
+                "y": 19,
+                "size": 18,
+                "border_thickness": 1,
+                "shape": "trapezoid"
+            },
+            {
+                "map": "johto_overview",
+                "x": 157,
+                "y": 18,
+                "size": 18,
+                "border_thickness": 1,
+                "shape": "trapezoid"
+            }
+        ]
     }
 ]
