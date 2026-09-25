@@ -68,13 +68,13 @@ function breeding(ID)
         return AccessibilityLevel.None
     end
 
-    if not has("ditto") and (BREEDING_REQUIRES_DITTO[tonumber(ID)] or has("breeding_logic_ditto_hard")) then
+    if not has("pokemon_132") and (BREEDING_REQUIRES_DITTO[tonumber(ID)] or has("breeding_logic_ditto_hard")) then -- 132 = ditto
         return AccessibilityLevel.None
     end
 
     if has("breeding_logic_on") then
         return daycare
-    elseif has("ditto") and (has("breeding_logic_ditto_hard") or has("breeding_logic_ditto_soft")) then
+    elseif has("pokemon_132") and (has("breeding_logic_ditto_hard") or has("breeding_logic_ditto_soft")) then -- 132 = ditto
         return daycare
     else
         return AccessibilityLevel.SequenceBreak
@@ -297,11 +297,11 @@ function trade(person)
         end
         
         local checked = Tracker:FindObjectForCode("TRADE_"..person).Active
-        local pokemon_name = POKEMON_MAPPING[tonumber(TRADE_DATA["TRADE_"..person].requested)]
+        local pokemon_code = "pokemon_" .. TRADE_DATA["TRADE_"..person].requested
     
         if not checked then
             return AccessibilityLevel.Inspect
-        elseif not has(pokemon_name) then
+        elseif not has(pokemon_code) then
             return AccessibilityLevel.None
         elseif has("encmethod_trades_on") then
             return AccessibilityLevel.Normal
@@ -334,8 +334,7 @@ function evolve_new(ID, method_filter, condition_filter)
         return
     end
 
-    local pokemon_ownership = POKEMON_MAPPING[tonumber(ID)]
-    if Tracker:FindObjectForCode(pokemon_ownership).Active == false then
+    if Tracker:FindObjectForCode("pokemon_" .. ID).Active == false then
         return AccessibilityLevel.None
     end
 
@@ -348,8 +347,7 @@ function evolve_new(ID, method_filter, condition_filter)
 end
 
 function breeding_new(ID)
-    local pokemon_ownership = POKEMON_MAPPING[tonumber(ID)]
-    if Tracker:FindObjectForCode(pokemon_ownership).Active == false then
+    if Tracker:FindObjectForCode("pokemon_" .. ID).Active == false then
         return AccessibilityLevel.None
     end
     return breeding(ID)

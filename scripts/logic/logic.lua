@@ -194,7 +194,7 @@ function setHMCompat(slot_data)
         end
         for dex, indices in pairs(slot_data.hm_compat) do
             for _, index in ipairs(indices) do
-                table.insert(HM_COMPAT[HM_MOVES[index + 1]], POKEMON_MAPPING[tonumber(dex)])
+                table.insert(HM_COMPAT[HM_MOVES[index + 1]], "pokemon_" .. dex)
             end
         end
         for _, move in ipairs(HM_MOVES) do
@@ -615,7 +615,7 @@ function can_phone_call_power()
 end
 
 function request_pokemon(slot)
-    if has(POKEMON_MAPPING[REQUEST_POKEMON[tonumber(slot) + 1]]) then
+    if has("pokemon_" .. REQUEST_POKEMON[tonumber(slot) + 1]) then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.None
@@ -677,7 +677,7 @@ function landslide_21()
 end
 
 function magikarp()
-    if has("magikarp") then
+    if has("pokemon_129") then -- 129 = magikarp
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.Inspect

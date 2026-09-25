@@ -4,7 +4,6 @@ ScriptHost:LoadScript("scripts/autotracking/map_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/flag_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/sign_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/encounter_mapping.lua")
-ScriptHost:LoadScript("scripts/autotracking/pokemon_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/evolution_location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/ap_helper.lua")
 ScriptHost:LoadScript("scripts/autotracking/request_mapping.lua")
@@ -784,12 +783,12 @@ CAUGHT_COUNT = 0
 
 function updatePokemon()
     CAUGHT_COUNT = 0
-    for dex_number, code in pairs(POKEMON_MAPPING) do
+    for dex_number = 1, 251 do
         if table_contains(CAUGHT, dex_number) then
-            Tracker:FindObjectForCode(code).Active = true
+            Tracker:FindObjectForCode("pokemon_" .. dex_number).Active = true
             CAUGHT_COUNT = CAUGHT_COUNT + 1
         else
-            Tracker:FindObjectForCode(code).Active = false
+            Tracker:FindObjectForCode("pokemon_" .. dex_number).Active = false
         end
     end
 
@@ -817,7 +816,7 @@ function updatePokemon()
 
         for dex_number, locations in pairs(POKEMON_TO_LOCATIONS) do
             local dexcode = Tracker:FindObjectForCode("dexsanity_" .. dex_number)
-            local dexloc = Tracker:FindObjectForCode("dexsanity_"..POKEMON_MAPPING[dex_number])
+            local dexloc = Tracker:FindObjectForCode("dexsanity_check_" .. dex_number)
             
             local is_caught = table_contains(CAUGHT, dex_number)
             local is_seen = table_contains(SEEN, dex_number)

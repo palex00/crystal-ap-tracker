@@ -7,12 +7,6 @@ local BLANK_ICON = "images/other/blank.png"
 local SYNC_ICON = "images/placeholder.png"
 local BADGE_INDENT = string.rep(" ", 12)
 
-local SPRITE_OVERRIDES = {
-    nidoranf = "nidoran_f",
-    nidoranm = "nidoran_m",
-    farfetchd = "farfetch'd",
-}
-
 local EMPTY_MESSAGES = {
     {"palex00 is proud of you!"},
     {"You truly are a MASTER BREEDER!"},
@@ -43,8 +37,7 @@ function InLogicItem:show(entry)
     local name = ""
     local badge = ""
     if entry and entry.id then
-        local code = POKEMON_MAPPING[entry.id]
-        icon = "images/pokemon/" .. (SPRITE_OVERRIDES[code] or code) .. ".png"
+        icon = "images/pokemon/" .. entry.id .. ".png"
         name = entry.action .. " " .. EVO_LOC_MAPPING[entry.id]
         badge = BADGE_INDENT .. name
     elseif entry and entry.text then
@@ -85,7 +78,7 @@ function InLogicSyncItem:onLeftClick()
 end
 
 local function owned(id)
-    return Tracker:FindObjectForCode(POKEMON_MAPPING[id]).Active
+    return Tracker:FindObjectForCode("pokemon_" .. id).Active
 end
 
 local function green(level)
@@ -93,7 +86,7 @@ local function green(level)
 end
 
 local function is_dexsanity_check(id)
-    return has("dexsanity_" .. id) and not owned(id) and not Tracker:FindObjectForCode("dexsanity_" .. POKEMON_MAPPING[id]).Active
+    return has("dexsanity_" .. id) and not owned(id) and not Tracker:FindObjectForCode("dexsanity_check_" .. id).Active
 end
 
 local function is_new(id)
@@ -189,7 +182,7 @@ function syncInLogic()
     local split = inlogic_split()
 
     local dexsanity, new = {}, {}
-    for id = 1, #POKEMON_MAPPING do
+    for id = 1, 251 do
         if owned(id) then
             local evolves = evolve_targets(id, evo_vanilla, {})
             local breeds = breed_targets(id, evo_vanilla and breed_vanilla)
