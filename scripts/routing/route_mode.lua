@@ -241,34 +241,40 @@ end
 
 --- Records the warp id a map bounce carried. A map-connection crossing never commits a new
 --- id, so the bounce omits the key entirely and the last position goes stale rather than nil.
----   0                  no warp identity (scripted warp, new game) -- position unknown
+---   0                  no warp identity (scripted warp, new game)
 ---   < SPAWN_ID_BASE    a warp that was traversed: the player is on its far side
 ---   SPAWN_ID_BASE + i  spawn point i -- fly/teleport (flypoints 0-22), Go Home (23);
----                      the pokecenter respawns above those are left unknown
+---                      the pokecenter respawns above those are not mapped
 ---   DIG_ID_BASE + id   materialised standing ON warp id (dig, escape rope, warpback)
+--- An id that resolves to nothing (0, a warp the registry doesn't own, an unmapped spawn)
+--- is ignored: the last known position stands.
 ---@param id integer|nil
 function SetLastWarp(id)
-    LAST_WARP_TOKEN = nil
-    LAST_WARP_REGION = nil
-    LAST_WARP_SPAWN = nil
     if id == nil or id == 0 then
         return
     end
+    local token, region, spawn
     if id >= DIG_ID_BASE then
         local row = ResolveEntranceRow(id - DIG_ID_BASE)
         -- standing on the tile rather than through it, so this is its near side
-        LAST_WARP_REGION = row and EntranceSourceRegion(row.token) or nil
+        region = row and EntranceSourceRegion(row.token) or nil
     elseif id >= SPAWN_ID_BASE then
-        local spawn = id - SPAWN_ID_BASE
-        if spawn == SPAWN_HOME then
-            LAST_WARP_SPAWN = HOME_SENTINEL
+        local index = id - SPAWN_ID_BASE
+        if index == SPAWN_HOME then
+            spawn = HOME_SENTINEL
         else
-            LAST_WARP_SPAWN = FLY_REGION_TOKENS[spawn + 1]
+            spawn = FLY_REGION_TOKENS[index + 1]
         end
     else
         local row = ResolveEntranceRow(id)
-        LAST_WARP_TOKEN = row and row.token or nil
+        token = row and row.token or nil
     end
+    if not (token or region or spawn) then
+        return
+    end
+    LAST_WARP_TOKEN = token
+    LAST_WARP_REGION = region
+    LAST_WARP_SPAWN = spawn
 end
 
 function CurrentRegionNode()
