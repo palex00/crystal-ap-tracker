@@ -22623,7 +22623,7 @@
                     {
                         "name": "Hidden Item in Bush",
                         "visibility_rules": [
-                            "show_items, route_23_restored_on"
+                            "show_items, route_23_restored_on, hiddenitems_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_23_RESTORED:NORTH, ^$hid"
@@ -22634,7 +22634,7 @@
                     {
                         "name": "Hidden Item on Island",
                         "visibility_rules": [
-                            "show_items, route_23_restored_on"
+                            "show_items, route_23_restored_on, hiddenitems_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_23_RESTORED:SURF, ^$hid"
