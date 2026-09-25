@@ -27690,28 +27690,6 @@
                 ],
                 "sections": [
                     {
-                        "name": "Power Plant Entrance                                                                         ",
-                        "hosted_item": "REGION_ROUTE_10_NORTH:SURF -> REGION_POWER_PLANT",
-                        "clear_as_group": false,
-                        "access_rules": [
-                            "^$CanReach|REGION_ROUTE_10_NORTH:SURF"
-                        ],
-                        "visibility_rules": [
-                            "show_entrances, er_building_on"
-                        ]
-                    },
-                    {
-                        "name": "Rock Tunnel South Entrance                                                               ",
-                        "hosted_item": "REGION_ROUTE_10_SOUTH -> REGION_ROCK_TUNNEL_1F:SOUTH",
-                        "clear_as_group": false,
-                        "access_rules": [
-                            "^$CanReach|REGION_ROUTE_10_SOUTH"
-                        ],
-                        "visibility_rules": [
-                            "show_entrances, er_dungeon_on"
-                        ]
-                    },
-                    {
                         "name": "Route 10 Pokecenter Entrance                                                           ",
                         "hosted_item": "REGION_ROUTE_10_NORTH:POKECENTER -> REGION_ROUTE_10_POKECENTER_1F",
                         "clear_as_group": false,
@@ -27723,28 +27701,26 @@
                         ]
                     },
                     {
-                        "name": "Hiker Jim",
+                        "name": "North - Pokecenter Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
                         "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, $partial_trainersanity, trainersanity_1371"
+                            "show_signs, goal_unown_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_10_SOUTH"
-                        ],
-                        "chest_unopened_img": "images/trainers/hiker.png",
-                        "chest_opened_img": "images/trainers/hiker_bw.png"
+                            "^$CanReach|REGION_ROUTE_10_NORTH:POKECENTER, ^$unownsign|Route10NorthPokecenter"
+                        ]
                     },
                     {
-                        "name": "Pokefan Robert",
-                        "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, $partial_trainersanity, trainersanity_1270"
-                        ],
+                        "name": "Power Plant Entrance                                                                         ",
+                        "hosted_item": "REGION_ROUTE_10_NORTH:SURF -> REGION_POWER_PLANT",
+                        "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_10_SOUTH"
+                            "^$CanReach|REGION_ROUTE_10_NORTH:SURF"
                         ],
-                        "chest_unopened_img": "images/trainers/pokefan_m.png",
-                        "chest_opened_img": "images/trainers/pokefan_m_bw.png"
+                        "visibility_rules": [
+                            "show_entrances, er_building_on"
+                        ]
                     },
                     {
                         "name": "Grass",
@@ -27770,39 +27746,6 @@
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_10_NORTH:SURF, $can_cut_kanto"
-                        ]
-                    },
-                    {
-                        "name": "North - Pokecenter Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
-                        "visibility_rules": [
-                            "show_signs, goal_unown_on"
-                        ],
-                        "access_rules": [
-                            "^$CanReach|REGION_ROUTE_10_NORTH:POKECENTER, ^$unownsign|Route10NorthPokecenter"
-                        ]
-                    },
-                    {
-                        "name": "North - Power Plant Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
-                        "visibility_rules": [
-                            "show_signs, goal_unown_on"
-                        ],
-                        "access_rules": [
-                            "^$CanReach|REGION_ROUTE_10_NORTH:SURF, ^$unownsign|Route10NorthPowerPlant"
-                        ]
-                    },
-                    {
-                        "name": "South Sign",
-                        "chest_unopened_img": "images/other/unownsign.png",
-                        "chest_opened_img": "images/other/unownsign_bw.png",
-                        "visibility_rules": [
-                            "show_signs, goal_unown_on"
-                        ],
-                        "access_rules": [
-                            "^$CanReach|REGION_ROUTE_10_SOUTH, ^$unownsign|Route10South"
                         ]
                     },
                     {
@@ -27869,6 +27812,63 @@
                         "access_rules": [
                             "^$CanReach|SURF_ROUTE_10_NORTH, ^$surf_encounter_kanto"
                         ]
+                    },
+                    {
+                        "name": "North - Power Plant Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_signs, goal_unown_on"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|REGION_ROUTE_10_NORTH:SURF, ^$unownsign|Route10NorthPowerPlant"
+                        ]
+                    },
+                    {
+                        "name": "Rock Tunnel South Entrance                                                               ",
+                        "hosted_item": "REGION_ROUTE_10_SOUTH -> REGION_ROCK_TUNNEL_1F:SOUTH",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$CanReach|REGION_ROUTE_10_SOUTH"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_dungeon_on"
+                        ]
+                    },
+                    {
+                        "name": "South Sign",
+                        "chest_unopened_img": "images/other/unownsign.png",
+                        "chest_opened_img": "images/other/unownsign_bw.png",
+                        "visibility_rules": [
+                            "show_signs, goal_unown_on"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|REGION_ROUTE_10_SOUTH, ^$unownsign|Route10South"
+                        ]
+                    },
+                    {
+                        "name": "Hiker Jim",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, $partial_trainersanity, trainersanity_1371"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|REGION_ROUTE_10_SOUTH"
+                        ],
+                        "chest_unopened_img": "images/trainers/hiker.png",
+                        "chest_opened_img": "images/trainers/hiker_bw.png"
+                    },
+                    {
+                        "name": "Pokefan Robert",
+                        "visibility_rules": [
+                            "show_items, trainersanity",
+                            "show_items, $partial_trainersanity, trainersanity_1270"
+                        ],
+                        "access_rules": [
+                            "^$CanReach|REGION_ROUTE_10_SOUTH"
+                        ],
+                        "chest_unopened_img": "images/trainers/pokefan_m.png",
+                        "chest_opened_img": "images/trainers/pokefan_m_bw.png"
                     },
                     {
                         "name": "Route 10 Pokecenter Exit                                                                   ",
