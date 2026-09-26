@@ -1805,6 +1805,13 @@ ENTRANCE_REGISTRY = {
         tab = {"Johto Cities", "Indigo Plateau", "PokeCenter"},
         section = "@JohtoKanto/Indigo Plateau/Indigo Plateau Pokecenter Exit                                                          ",
     },
+    ["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE -> REGION_LANCES_ROOM"] = {
+        ids = {2124},
+        pretty = "Indigo Plateau Elite Four Skip",
+        tab = {"Johto Cities", "Indigo Plateau", "PokeCenter"},
+        section = "@JohtoKanto/Indigo Plateau/Indigo Plateau Elite Four Skip                                                            ",
+        gate = "skip_elite_four_on",
+    },
     ["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE -> REGION_WILLS_ROOM"] = {
         ids = {2124},
         pretty = "Indigo Plateau Elite Four Stairs",
@@ -1864,6 +1871,13 @@ ENTRANCE_REGISTRY = {
         pretty = "Lake of Rage Magikarp House Exit",
         tab = {"Johto Routes", "Lake of Rage", "Magikarp House"},
         section = "@JohtoKanto/Lake of Rage/Lake of Rage Magikarp House Exit                                                    ",
+    },
+    ["REGION_LANCES_ROOM -> REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"] = {
+        ids = {2161, 2162},
+        pretty = "Lance's Room Elite Four Skip",
+        tab = {"Johto Cities", "Indigo Plateau", "Lance's Room"},
+        section = "@JohtoKanto/Indigo Plateau/Lance's Room Elite Four Skip                                                             ",
+        gate = "skip_elite_four_on",
     },
     ["REGION_LANCES_ROOM -> REGION_KARENS_ROOM"] = {
         ids = {2161, 2162},

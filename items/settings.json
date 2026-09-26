@@ -2720,6 +2720,28 @@
         ]
     },
     {
+        "name": "Skip Elite Four",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "The Elite Four must be fought",
+                "img": "/images/settings/e4_requirement.png",
+                "img_mods": "@disabled",
+                "codes": "skip_elite_four, skip_elite_four_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "The Elite Four stairs lead straight to Lance",
+                "img": "/images/settings/e4_requirement.png",
+                "codes": "skip_elite_four, skip_elite_four_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Momsanity",
         "type": "progressive",
         "loop": true,

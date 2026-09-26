@@ -22267,10 +22267,10 @@
                         "hosted_item": "REGION_BRUNOS_ROOM -> REGION_KARENS_ROOM",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_BRUNOS_ROOM"
+                            "^$CanReach|REGION_BRUNOS_ROOM, skip_elite_four_off"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokemon_league_on"
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_off"
                         ]
                     },
                     {
@@ -22278,10 +22278,10 @@
                         "hosted_item": "REGION_BRUNOS_ROOM -> REGION_KOGAS_ROOM",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_BRUNOS_ROOM"
+                            "^$CanReach|REGION_BRUNOS_ROOM, skip_elite_four_off"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokemon_league_on"
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_off"
                         ]
                     },
                     {
@@ -22300,8 +22300,8 @@
                             "^$CanReach|REGION_BRUNOS_ROOM"
                         ],
                         "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, $partial_trainersanity, trainersanity_1505"
+                            "show_items, trainersanity, skip_elite_four_off",
+                            "show_items, $partial_trainersanity, trainersanity_1505, skip_elite_four_off"
                         ],
                         "chest_unopened_img": "images/trainers/bruno.png",
                         "chest_opened_img": "images/trainers/bruno_bw.png"
@@ -22342,6 +22342,17 @@
                         ]
                     },
                     {
+                        "name": "Indigo Plateau Elite Four Skip                                                            ",
+                        "hosted_item": "REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE -> REGION_LANCES_ROOM",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$CanReach|REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_on"
+                        ]
+                    },
+                    {
                         "name": "Indigo Plateau Elite Four Stairs                                                          ",
                         "hosted_item": "REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE -> REGION_WILLS_ROOM",
                         "clear_as_group": false,
@@ -22349,7 +22360,7 @@
                             "^$CanReach|REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokemon_league_on"
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_off"
                         ]
                     },
                     {
@@ -22379,10 +22390,10 @@
                         "hosted_item": "REGION_KARENS_ROOM -> REGION_LANCES_ROOM",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_KARENS_ROOM"
+                            "^$CanReach|REGION_KARENS_ROOM, skip_elite_four_off"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokemon_league_on"
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_off"
                         ]
                     },
                     {
@@ -22390,10 +22401,10 @@
                         "hosted_item": "REGION_KARENS_ROOM -> REGION_BRUNOS_ROOM",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_KARENS_ROOM"
+                            "^$CanReach|REGION_KARENS_ROOM, skip_elite_four_off"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokemon_league_on"
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_off"
                         ]
                     },
                     {
@@ -22412,8 +22423,8 @@
                             "^$CanReach|REGION_KARENS_ROOM"
                         ],
                         "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, $partial_trainersanity, trainersanity_1506"
+                            "show_items, trainersanity, skip_elite_four_off",
+                            "show_items, $partial_trainersanity, trainersanity_1506, skip_elite_four_off"
                         ],
                         "chest_unopened_img": "images/trainers/karen.png",
                         "chest_opened_img": "images/trainers/karen_bw.png"
@@ -22423,10 +22434,10 @@
                         "hosted_item": "REGION_KOGAS_ROOM -> REGION_BRUNOS_ROOM",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_KOGAS_ROOM"
+                            "^$CanReach|REGION_KOGAS_ROOM, skip_elite_four_off"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokemon_league_on"
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_off"
                         ]
                     },
                     {
@@ -22434,10 +22445,10 @@
                         "hosted_item": "REGION_KOGAS_ROOM -> REGION_WILLS_ROOM",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_KOGAS_ROOM"
+                            "^$CanReach|REGION_KOGAS_ROOM, skip_elite_four_off"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokemon_league_on"
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_off"
                         ]
                     },
                     {
@@ -22456,11 +22467,22 @@
                             "^$CanReach|REGION_KOGAS_ROOM"
                         ],
                         "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, $partial_trainersanity, trainersanity_1504"
+                            "show_items, trainersanity, skip_elite_four_off",
+                            "show_items, $partial_trainersanity, trainersanity_1504, skip_elite_four_off"
                         ],
                         "chest_unopened_img": "images/trainers/koga.png",
                         "chest_opened_img": "images/trainers/koga_bw.png"
+                    },
+                    {
+                        "name": "Lance's Room Elite Four Skip                                                             ",
+                        "hosted_item": "REGION_LANCES_ROOM -> REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$CanReach|REGION_LANCES_ROOM, ^$lance_e4"
+                        ],
+                        "visibility_rules": [
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_on"
+                        ]
                     },
                     {
                         "name": "Lance's Room South Door                                                                   ",
@@ -22470,7 +22492,7 @@
                             "^$CanReach|REGION_LANCES_ROOM, ^$lance_e4"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokemon_league_on"
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_off"
                         ]
                     },
                     {
@@ -22500,10 +22522,10 @@
                         "hosted_item": "REGION_WILLS_ROOM -> REGION_KOGAS_ROOM",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_WILLS_ROOM"
+                            "^$CanReach|REGION_WILLS_ROOM, skip_elite_four_off"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokemon_league_on"
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_off"
                         ]
                     },
                     {
@@ -22511,10 +22533,10 @@
                         "hosted_item": "REGION_WILLS_ROOM -> REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$CanReach|REGION_WILLS_ROOM"
+                            "^$CanReach|REGION_WILLS_ROOM, skip_elite_four_off"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_pokemon_league_on"
+                            "show_entrances, er_pokemon_league_on, skip_elite_four_off"
                         ]
                     },
                     {
@@ -22533,8 +22555,8 @@
                             "^$CanReach|REGION_WILLS_ROOM"
                         ],
                         "visibility_rules": [
-                            "show_items, trainersanity",
-                            "show_items, $partial_trainersanity, trainersanity_1503"
+                            "show_items, trainersanity, skip_elite_four_off",
+                            "show_items, $partial_trainersanity, trainersanity_1503, skip_elite_four_off"
                         ],
                         "chest_unopened_img": "images/trainers/will.png",
                         "chest_opened_img": "images/trainers/will_bw.png"

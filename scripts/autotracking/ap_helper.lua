@@ -184,6 +184,7 @@ SLOT_CODES = {
     south_kanto_condition = {code = "south_kanto_condition"},
     route_23_restored = {code = "route_23_restored"},
     lance_requires_elite_four = {code = "lance_requires_elite_four"},
+    skip_elite_four = {code = "skip_elite_four"},
     flooded_mine = {code = "flooded_mine"},
     momsanity = {code = "momsanity"},
     coupled_entrances = {code = "coupled_entrances"},

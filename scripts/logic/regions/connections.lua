@@ -633,12 +633,13 @@ REGION_INDIGO_PLATEAU_POKECENTER_1F:connect_two_ways(NAMED_NODES["REGION_INDIGO_
 REGION_INDIGO_PLATEAU_POKECENTER_1F:connect_one_way(REGION_NEW_BARK_TOWN, "Indigo Plateau Abra Teleport")
 
 -- === REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE ===
-NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"]:connect_two_ways_entrance(REGION_WILLS_ROOM, "pokemon_league")
+NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"]:connect_two_ways_entrance(REGION_WILLS_ROOM, "pokemon_league", function() return has("skip_elite_four_off") end)
+NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"]:connect_two_ways_entrance(REGION_LANCES_ROOM, "pokemon_league", function() return has("skip_elite_four_on") end)
 NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:E4_GATE"]:connect_one_way(NAMED_NODES["REGION_INDIGO_PLATEAU_POKECENTER_1F:RIVAL"], "Indigo Plateau Rival Access (Post-Mt. Moon)", function() return has("EVENT_BEAT_RIVAL_IN_MT_MOON") and has("e4_requirement") end)
 
 -- === REGION_KARENS_ROOM ===
-REGION_KARENS_ROOM:connect_one_way_entrance(REGION_LANCES_ROOM, "pokemon_league")
-REGION_LANCES_ROOM:connect_one_way_entrance(REGION_KARENS_ROOM, "pokemon_league", lance_e4)
+REGION_KARENS_ROOM:connect_one_way_entrance(REGION_LANCES_ROOM, "pokemon_league", function() return has("skip_elite_four_off") end)
+REGION_LANCES_ROOM:connect_one_way_entrance(REGION_KARENS_ROOM, "pokemon_league", function() return has("skip_elite_four_off") and lance_e4() end)
 
 -- === REGION_KOGAS_ROOM ===
 REGION_KOGAS_ROOM:connect_two_ways_entrance(REGION_WILLS_ROOM, "pokemon_league")
