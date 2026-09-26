@@ -269,6 +269,23 @@
 {"name": "[Trade] Mike",  "type": "toggle", "codes": "TRADE_MIKE"},
 {"name": "[Trade] Kyle",  "type": "toggle", "codes": "TRADE_KYLE"},
 
+{"name": "[Trade Done] Kim",  "type": "toggle", "codes": "TRADE_KIM_DONE"},
+{"name": "[Trade Done] Emy",  "type": "toggle", "codes": "TRADE_EMY_DONE"},
+{"name": "[Trade Done] Forest",  "type": "toggle", "codes": "TRADE_FOREST_DONE"},
+{"name": "[Trade Done] Tim",  "type": "toggle", "codes": "TRADE_TIM_DONE"},
+{"name": "[Trade Done] Chris",  "type": "toggle", "codes": "TRADE_CHRIS_DONE"},
+{"name": "[Trade Done] Mike",  "type": "toggle", "codes": "TRADE_MIKE_DONE"},
+{"name": "[Trade Done] Kyle",  "type": "toggle", "codes": "TRADE_KYLE_DONE"},
+
+{"name": "EVENT_SAW_BILLS_GRANDPA_REQUEST_1", "type": "toggle", "codes": "EVENT_SAW_BILLS_GRANDPA_REQUEST_1"},
+{"name": "EVENT_SAW_BILLS_GRANDPA_REQUEST_2", "type": "toggle", "codes": "EVENT_SAW_BILLS_GRANDPA_REQUEST_2"},
+{"name": "EVENT_SAW_BILLS_GRANDPA_REQUEST_3", "type": "toggle", "codes": "EVENT_SAW_BILLS_GRANDPA_REQUEST_3"},
+{"name": "EVENT_SAW_BILLS_GRANDPA_REQUEST_4", "type": "toggle", "codes": "EVENT_SAW_BILLS_GRANDPA_REQUEST_4"},
+{"name": "EVENT_SAW_BILLS_GRANDPA_REQUEST_5", "type": "toggle", "codes": "EVENT_SAW_BILLS_GRANDPA_REQUEST_5"},
+{"name": "EVENT_SAW_BEVERLY_REQUEST", "type": "toggle", "codes": "EVENT_SAW_BEVERLY_REQUEST"},
+{"name": "EVENT_SAW_DEREK_REQUEST", "type": "toggle", "codes": "EVENT_SAW_DEREK_REQUEST"},
+{"name": "EVENT_SAW_TIFFANY_REQUEST", "type": "toggle", "codes": "EVENT_SAW_TIFFANY_REQUEST"},
+
 {"name": "Beat Rival in Cherrygrove City",      "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/cherrygrove_city.png", "codes": "EVENT_BEAT_CHERRYGROVE_RIVAL"},
 {"name": "Beat Rival in Azalea Town",           "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/azalea_town.png", "codes": "EVENT_BEAT_AZALEA_RIVAL"},
 {"name": "Beat Rival in Burned Tower",          "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/burned_tower.png", "codes": "EVENT_RIVAL_BURNED_TOWER"},

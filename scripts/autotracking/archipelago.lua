@@ -95,6 +95,9 @@ function onClear(slot_data)
     for _, code in ipairs(FLAG_TRADE_CODES) do
         Tracker:FindObjectForCode(code).Active = false
     end
+    for _, code in ipairs(FLAG_TRADE_DONE_CODES) do
+        Tracker:FindObjectForCode(code).Active = false
+    end
 
     -- reset shop codes
     for i, code in ipairs(FLAG_SHOP_J_CODES) do
@@ -152,7 +155,6 @@ function onClear(slot_data)
     REQUEST_POKEMON = slot_data.request_pokemon
     LUCKY_NUMBER_TRADES = slot_data.lucky_number_trades
     UNOWN_DATA = slot_data.unown_signs
-    revealRequests()
     
     -- This sets each Encounter location to however many unique encounters there are in it
     for region_key, location in pairs(ENCOUNTER_MAPPING) do
@@ -354,6 +356,7 @@ function onClear(slot_data)
             SIGN       = makeID("signs_"),
             UNOWN      = makeID("unowns_"),
             TRADE      = makeID("trades_"),
+            TRADE_DONE = makeID("trades_finished_"),
             HINT       = "_read_hints_" .. suffix,
             SHOP_K     = makeID("seen_kanto_marts_"),
             SHOP_J     = makeID("seen_johto_marts_"),
@@ -481,6 +484,10 @@ function onLocation(location_id, location_name)
         updateRemainingDexcountsanityChecks()
     end
 
+    if LUCKY_NUMBER_PRIZE_IDS[location_id] then
+        updatePokemon()
+    end
+
     syncRequests()
 end
 
@@ -516,7 +523,10 @@ function onNotify(key, value, old_value)
         elseif key == IDs.UNOWN then
             updateUnown(value)
         elseif key == IDs.TRADE then
-            updateTrades(value)
+            updateTrades(value, FLAG_TRADE_CODES)
+            updatePokemon()
+        elseif key == IDs.TRADE_DONE then
+            updateTrades(value, FLAG_TRADE_DONE_CODES)
             updatePokemon()
         elseif key == IDs.HINT then
             SAVED_HINTS = value
@@ -692,10 +702,10 @@ function updateRocketTraps(value)
 end
 
 
-function updateTrades(value)
+function updateTrades(value, codes)
     if value ~= nil then
         for _, intVal in ipairs(value) do
-            local code = FLAG_TRADE_CODES[intVal + 1]
+            local code = codes[intVal + 1]
             if code then
                 local obj = Tracker:FindObjectForCode(code)
                 if obj then
@@ -804,6 +814,20 @@ end
 
 CAUGHT_COUNT = 0
 
+LUCKY_NUMBER_PRIZE_IDS = {[370] = true, [372] = true, [374] = true}
+
+function luckyNumberTradesPending()
+    if not has("luckynumbershow_on") then
+        return false
+    end
+    for id, _ in pairs(LUCKY_NUMBER_PRIZE_IDS) do
+        if not CLEARED_LOCATIONS[LOCATION_MAPPING[id]] then
+            return true
+        end
+    end
+    return false
+end
+
 function updatePokemon()
     CAUGHT_COUNT = 0
     for dex_number = 1, 251 do
@@ -902,7 +926,12 @@ function updatePokemon()
         for region_key, object in pairs(regionObjects) do
             object.AvailableChestCount = baseCounts[region_key] - pendingDecrements[region_key]
         end
-        
+
+        if luckyNumberTradesPending() then
+            for _, code in ipairs(FLAG_TRADE_CODES) do
+                regionObjects[code].AvailableChestCount = has(code .. "_DONE") and 0 or 1
+            end
+        end
     end
 
     for _, location in pairs(ENCOUNTER_MAPPING) do

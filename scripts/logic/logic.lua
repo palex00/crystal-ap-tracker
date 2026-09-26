@@ -614,8 +614,22 @@ function can_phone_call_power()
         has("EVENT_RESTORED_POWER_TO_KANTO") and AccessibilityLevel.Normal or AccessibilityLevel.None)
 end
 
+REQUEST_SEEN_EVENTS = {
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_1",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_2",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_3",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_4",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_5",
+    "EVENT_SAW_BEVERLY_REQUEST",
+    "EVENT_SAW_DEREK_REQUEST",
+    "EVENT_SAW_TIFFANY_REQUEST",
+}
+
 function request_pokemon(slot)
-    if has("pokemon_" .. REQUEST_POKEMON[tonumber(slot) + 1]) then
+    local index = tonumber(slot) + 1
+    if not has(REQUEST_SEEN_EVENTS[index]) then
+        return AccessibilityLevel.Inspect
+    elseif has("pokemon_" .. REQUEST_POKEMON[index]) then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.None
@@ -704,7 +718,7 @@ function luckynumber(prize)
         return AccessibilityLevel.Inspect
     end
     local trade = LUCKY_NUMBER_TRADES[tonumber(prize)]
-    if has(trade) then
+    if has(trade .. "_DONE") then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.None
