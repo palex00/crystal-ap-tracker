@@ -14,6 +14,14 @@
                 },
                 {
                     "type": "group",
+                    "header": "Time of Day",
+                    "content": {
+                        "type": "layout",
+                        "key": "tod_grid"
+                    }
+                },
+                {
+                    "type": "group",
                     "header": "Evolution Logic",
                     "content": {
                         "type": "layout",
@@ -70,6 +78,20 @@
                 "encmethod_static",
                 "encmethod_contest",
                 "encmethod_trades"
+            ]
+        ]
+    },
+    "tod_grid": {
+        "type": "itemgrid",
+        "item_margin": "5, 5",
+        "item_size": "32,32",
+        "item_h_alignment": "center",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "timeofday",
+                "unlockable_tod",
+                "starttod"
             ]
         ]
     },
