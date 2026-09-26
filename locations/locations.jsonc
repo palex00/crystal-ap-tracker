@@ -22953,7 +22953,7 @@
                     {
                         "name": "Berry Tree",
                         "visibility_rules": [
-                            "show_items, route_23_restored_on"
+                            "show_items, route_23_restored_on, berries_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_23_RESTORED:SOUTH"
