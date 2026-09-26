@@ -1208,5 +1208,68 @@
                 "img": "/images/settings/digits/d9.png"
             }
         ]
+    },
+    {
+        "name": "Dexsanity Logic: Land",
+        "type": "toggle",
+        "initial_active_state": true,
+        "img": "/images/settings/dex_related/enc_land.png",
+        "codes": "dexlogic_land"
+    },
+    {
+        "name": "Dexsanity Logic: Surfing",
+        "type": "toggle",
+        "initial_active_state": true,
+        "img": "/images/settings/dex_related/enc_surf.png",
+        "codes": "dexlogic_surfing"
+    },
+    {
+        "name": "Dexsanity Logic: Fishing",
+        "type": "toggle",
+        "initial_active_state": true,
+        "img": "/images/settings/dex_related/enc_fishing.png",
+        "codes": "dexlogic_fishing"
+    },
+    {
+        "name": "Dexsanity Logic: Headbutt",
+        "type": "toggle",
+        "initial_active_state": true,
+        "img": "/images/settings/dex_related/enc_headbutt.png",
+        "codes": "dexlogic_headbutt"
+    },
+    {
+        "name": "Dexsanity Logic: Rock Smash",
+        "type": "toggle",
+        "initial_active_state": true,
+        "img": "/images/settings/dex_related/enc_rocksmash.png",
+        "codes": "dexlogic_rocksmash"
+    },
+    {
+        "name": "Dexsanity Logic: Swarm",
+        "type": "toggle",
+        "initial_active_state": true,
+        "img": "/images/settings/dex_related/enc_swarm.png",
+        "codes": "dexlogic_swarm"
+    },
+    {
+        "name": "Dexsanity Logic: Bug Catching Contest",
+        "type": "toggle",
+        "initial_active_state": true,
+        "img": "/images/settings/dex_related/enc_contest.png",
+        "codes": "dexlogic_contest"
+    },
+    {
+        "name": "Dexsanity Logic: Statics",
+        "type": "toggle",
+        "initial_active_state": true,
+        "img": "/images/settings/dex_related/enc_statics.png",
+        "codes": "dexlogic_statics"
+    },
+    {
+        "name": "Dexsanity Logic: Trades",
+        "type": "toggle",
+        "initial_active_state": true,
+        "img": "/images/settings/dex_related/enc_trades.png",
+        "codes": "dexlogic_trades"
     }
 ]

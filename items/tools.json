@@ -152,10 +152,17 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Show encounter locations",
+                "name": "Show all encounter locations",
                 "img": "/images/other/encounter.png",
                 "img_mods": "overlay|/images/tools/show.png",
-                "codes": "visibility_mons, show_mons",
+                "codes": "visibility_mons, show_mons, show_mons_all",
+                "inherit_codes": false
+            },
+            {
+                "name": "Show only Dexsanity encounter locations",
+                "img": "/images/settings/pokedex.png",
+                "img_mods": "overlay|/images/tools/show.png",
+                "codes": "visibility_mons, show_mons, show_mons_dex",
                 "inherit_codes": false
             },
             {

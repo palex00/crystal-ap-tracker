@@ -22,7 +22,8 @@
                     "^$fishing_old"
                 ],
                 "visibility_rules": [
-                    "encmethod_fishing_visible"
+                    "show_mons_all, encmethod_fishing_visible",
+                    "show_mons_dex, encmethod_fishing_on, dexlogic_fishing"
                 ],
                 "sections": [
                     {
@@ -133,7 +134,8 @@
                     "^$fishing_good"
                 ],
                 "visibility_rules": [
-                    "encmethod_fishing_visible"
+                    "show_mons_all, encmethod_fishing_visible",
+                    "show_mons_dex, encmethod_fishing_on, dexlogic_fishing"
                 ],
                 "sections": [
                     {
@@ -269,7 +271,8 @@
                     "^$fishing_super"
                 ],
                 "visibility_rules": [
-                    "encmethod_fishing_visible"
+                    "show_mons_all, encmethod_fishing_visible",
+                    "show_mons_dex, encmethod_fishing_on, dexlogic_fishing"
                 ],
                 "sections": [
                     {
@@ -405,7 +408,8 @@
                     "^$headbutting"
                 ],
                 "visibility_rules": [
-                    "encmethod_headbutt_visible"
+                    "show_mons_all, encmethod_headbutt_visible",
+                    "show_mons_dex, encmethod_headbutt_on, dexlogic_headbutt"
                 ],
                 "sections": [
                     {
@@ -540,7 +544,8 @@
                     "^$rocksmash_encounter"
                 ],
                 "visibility_rules": [
-                    "encmethod_rocksmash_visible"
+                    "show_mons_all, encmethod_rocksmash_visible",
+                    "show_mons_dex, encmethod_rocksmash_on, dexlogic_rocksmash"
                 ],
                 "sections": [
                     {

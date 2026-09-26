@@ -359,3 +359,15 @@ LIST_CODES = {
         }
     }
 }
+
+DEXSANITY_LOGIC_CODES = {
+    ["Land"]                 = "dexlogic_land",
+    ["Surfing"]              = "dexlogic_surfing",
+    ["Fishing"]              = "dexlogic_fishing",
+    ["Headbutt"]             = "dexlogic_headbutt",
+    ["Rock Smash"]           = "dexlogic_rocksmash",
+    ["Swarm"]                = "dexlogic_swarm",
+    ["Bug Catching Contest"] = "dexlogic_contest",
+    ["Statics"]              = "dexlogic_statics",
+    ["Trades"]               = "dexlogic_trades",
+}

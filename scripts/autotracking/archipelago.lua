@@ -237,6 +237,9 @@ function onClear(slot_data)
             for _, source in ipairs(v) do
                 DEXSANITY_LOGIC[source] = true
             end
+            for source, code in pairs(DEXSANITY_LOGIC_CODES) do
+                Tracker:FindObjectForCode(code).Active = DEXSANITY_LOGIC[source] == true
+            end
         elseif k == "maximum_evolution_level" then
             local val = tonumber(v) or 0
             if val == 100 then
