@@ -598,16 +598,6 @@ function phonecall()
     return level
 end
 
-function joey_hp_up()
-    if has("EVENT_BEAT_ELITE_FOUR") then
-        return AccessibilityLevel.Normal
-    elseif has("randomize_rematches_true") then
-        return AccessibilityLevel.SequenceBreak
-    else
-        return AccessibilityLevel.None
-    end
-end
-
 -- Kanto phone calls only work once the power is back on.
 function can_phone_call_power()
     return math.min(phonecall() or AccessibilityLevel.None,

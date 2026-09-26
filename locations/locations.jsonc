@@ -1050,7 +1050,8 @@
                             "show_items, randomize_phone_call_items_on"
                         ],
                         "access_rules": [
-                            "^$CanReach|HP_UP_FROM_JOEY"
+                            "randomize_rematches_true, @JohtoKanto/Route 30/Youngster Joey Rematch - Champion",
+                            "randomize_rematches_false, ^$CanReach|REGION_ROUTE_30:POST_MYSTERY_EGG, ^$phonecall, EVENT_BEAT_ELITE_FOUR"
                         ]
                     },
                     {

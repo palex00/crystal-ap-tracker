@@ -166,9 +166,6 @@ NAMED_NODES["REGION_ROUTE_27:WESTWATER"]:connect_one_way("ROUTE_27_RARE_CANDY", 
 -- === REGION_ROUTE_29 ===
 REGION_ROUTE_29:connect_one_way("PINK_BOW_FROM_TUSCANY", function() return has("ZEPHYR_BADGE") end)
 
--- === REGION_ROUTE_30:POST_MYSTERY_EGG ===
-NAMED_NODES["REGION_ROUTE_30:POST_MYSTERY_EGG"]:connect_one_way("HP_UP_FROM_JOEY", function() return ALL(phonecall, joey_hp_up) end)
-
 -- === REGION_ROUTE_31 ===
 REGION_ROUTE_31:connect_one_way("BERRY_FROM_BUG_CATCHER_WADE", phonecall)
 REGION_ROUTE_31:connect_one_way("EVENT_GAVE_KENYA", function() return has("EVENT_GOT_KENYA") end)
