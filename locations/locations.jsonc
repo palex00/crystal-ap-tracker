@@ -2173,7 +2173,8 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_mons_all",
-                            "show_mons_dex, encmethod_trades_on, dexlogic_trades"
+                            "show_mons_dex, encmethod_trades_on, dexlogic_trades",
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_VIOLET_KYLES_HOUSE, ^$trade|KYLE"
@@ -7216,7 +7217,8 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_mons_all",
-                            "show_mons_dex, encmethod_trades_on, dexlogic_trades"
+                            "show_mons_dex, encmethod_trades_on, dexlogic_trades",
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_GOLDENROD_DEPT_STORE_5F, ^$trade|MIKE"
@@ -13339,7 +13341,8 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_mons_all",
-                            "show_mons_dex, encmethod_trades_on, dexlogic_trades"
+                            "show_mons_dex, encmethod_trades_on, dexlogic_trades",
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_OLIVINE_TIMS_HOUSE, ^$trade|TIM"
@@ -20122,7 +20125,8 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_mons_all",
-                            "show_mons_dex, encmethod_trades_on, dexlogic_trades"
+                            "show_mons_dex, encmethod_trades_on, dexlogic_trades",
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_BLACKTHORN_EMYS_HOUSE, ^$trade|EMY"
@@ -25587,7 +25591,8 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_mons_all",
-                            "show_mons_dex, encmethod_trades_on, dexlogic_trades"
+                            "show_mons_dex, encmethod_trades_on, dexlogic_trades",
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_PEWTER_POKECENTER_1F, ^$trade|CHRIS"
@@ -28084,7 +28089,8 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_mons_all",
-                            "show_mons_dex, encmethod_trades_on, dexlogic_trades"
+                            "show_mons_dex, encmethod_trades_on, dexlogic_trades",
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_POWER_PLANT, ^$trade|FOREST"
@@ -33349,7 +33355,8 @@
                         "clear_as_group": false,
                         "visibility_rules": [
                             "show_mons_all",
-                            "show_mons_dex, encmethod_trades_on, dexlogic_trades"
+                            "show_mons_dex, encmethod_trades_on, dexlogic_trades",
+                            "show_items, luckynumbershow_on"
                         ],
                         "access_rules": [
                             "^$CanReach|REGION_ROUTE_14:CUT, ^$trade|KIM"
