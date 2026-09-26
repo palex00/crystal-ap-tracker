@@ -77,6 +77,7 @@ function onClear(slot_data)
     resetRequests()
     CAUGHT = {}
     SEEN = {}
+    Tracker:FindObjectForCode("magikarp_seen").Active = false
     setDexSearchPokedex(false)
 
     unloadWatches()
@@ -502,6 +503,9 @@ function onNotify(key, value, old_value)
             updatePokemon()
         elseif key == IDs.SEEN then
             SEEN = value
+            if not has("magikarp_seen") and table_contains(SEEN, 129) then
+                Tracker:FindObjectForCode("magikarp_seen").Active = true
+            end
             updatePokemon()
         elseif key == IDs.ROCKETTRAP then
             updateRocketTraps(value)

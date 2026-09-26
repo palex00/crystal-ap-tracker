@@ -679,6 +679,8 @@ end
 function magikarp()
     if has("pokemon_129") then -- 129 = magikarp
         return AccessibilityLevel.Normal
+    elseif has("all_pokemon_seen_true") or has("magikarp_seen") then
+        return AccessibilityLevel.None
     else
         return AccessibilityLevel.Inspect
     end
