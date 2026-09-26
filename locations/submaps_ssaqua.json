@@ -139,6 +139,22 @@
                         "map": "FastShipCabins_Overview",
                         "x": 392,
                         "y": 40
+                    },
+                    {
+                        "map": "FastShipB1F_Eastbound",
+                        "x": 392,
+                        "y": 40,
+                        "force_invisibility_rules": [
+                            "EVENT_FAST_SHIP_FOUND_GIRL"
+                        ]
+                    },
+                    {
+                        "map": "FastShipB1F_Westbound",
+                        "x": 392,
+                        "y": 40,
+                        "force_invisibility_rules": [
+                            "EVENT_FAST_SHIP_FOUND_GIRL"
+                        ]
                     }
                 ]
             },
