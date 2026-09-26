@@ -11127,6 +11127,9 @@
             },
             {
                 "name": "Gift from IMAKUNI",
+                "visibility_rules": [
+                    "teleporting_abra_on"
+                ],
                 "sections": [
                     {
                         "name": "This is a check.",

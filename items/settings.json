@@ -2834,5 +2834,20 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Imakuni",
+        "type": "progressive",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "codes": "teleporting_abra, teleporting_abra_off",
+                "inherit_codes": false
+            },
+            {
+                "codes": "teleporting_abra, teleporting_abra_on",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

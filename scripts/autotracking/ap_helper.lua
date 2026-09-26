@@ -190,7 +190,8 @@ SLOT_CODES = {
     coupled_entrances = {code = "coupled_entrances"},
     battle_tower_sanity = {code = "battle_tower_sanity"},
     battle_tower_progressive_tier_unlocks = {code = "battle_tower_progressive_tier_unlocks"},
-    randomize_lucky_number_show = {code = "luckynumbershow"}
+    randomize_lucky_number_show = {code = "luckynumbershow"},
+    teleporting_abra = {code = "teleporting_abra"}
 }
 
 REQUIREMENT_CODES = {
