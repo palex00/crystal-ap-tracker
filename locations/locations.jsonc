@@ -26513,7 +26513,9 @@
                         ],
                         "visibility_rules": [
                             "show_items"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
                         "name": "Gym - Swimmer Briana",
@@ -30086,7 +30088,9 @@
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
-                        ]
+                        ],
+                        "chest_unopened_img": "images/items/hidden_item.png",
+                        "chest_opened_img": "images/items/hidden_item_open.png"
                     },
                     {
                         "name": "Celadon Cafe - Eatathon Contest Poster Sign",
