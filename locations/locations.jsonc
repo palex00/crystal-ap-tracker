@@ -13526,7 +13526,8 @@
                             "show_items, randomize_phone_call_items_on, johto_only_off"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F:POWER, ^$dark|olivinelighthouse"
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F:POWER, ^$dark|olivinelighthouse, randomize_rematches_false",
+                            "^$CanReach|REGION_OLIVINE_LIGHTHOUSE_2F:POWER, ^$dark|olivinelighthouse, EVENT_CLEARED_RADIO_TOWER, EVENT_BEAT_ELITE_FOUR"
                         ]
                     },
                     {
