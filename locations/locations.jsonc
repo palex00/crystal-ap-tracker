@@ -29288,7 +29288,7 @@
                     {
                         "name": "Copycat's House 2F - Meet Copycat (Event)",
                         "access_rules": [
-                            "^$CanReach|REGION_COPYCATS_HOUSE_2F"
+                            "^$CanReach|REGION_COPYCATS_HOUSE_2F, EVENT_RESTORED_POWER_TO_KANTO"
                         ],
                         "hosted_item": "EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM_hosted",
                         "visibility_rules": [
