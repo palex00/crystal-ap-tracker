@@ -3843,6 +3843,23 @@
                 ]
             },
             {
+                "name": "House for Sale Door Sign",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 5/House for Sale Door Sign",
+                        "name": "House for Sale Door Sign"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Route5",
+                        "x": 168,
+                        "y": 184,
+                        "restrict_visibility_rules": ["er_building_on, goal_unown_on, show_signs"]
+                    }
+                ]
+            },
+            {
                 "name": "Underground Path Sign",
                 "sections": [
                     {
