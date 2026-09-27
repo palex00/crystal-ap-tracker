@@ -11,17 +11,6 @@
                 "margin": "5,5",
                 "content": [
                     {
-                        "type": "itemgrid",
-                        "item_margin": "3,3",
-                        "h_alignment": "left",
-                        "item_size": "260,34",
-                        "rows": [
-                            [
-                                "inlogic_sync"
-                            ]
-                        ]
-                    },
-                    {
                         "type": "array",
                         "orientation": "horizontal",
                         "h_alignment": "left",

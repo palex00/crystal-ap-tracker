@@ -3,9 +3,11 @@ INLOGIC_COLUMN_SIZE = 10
 INLOGIC_ITEMS = {}
 DEXSANITY_LOGIC = {Evolution = true, Breeding = true}
 
+INLOGIC_DIRTY = true
+
 local BLANK_ICON = "images/other/blank.png"
-local SYNC_ICON = "images/placeholder.png"
 local BADGE_INDENT = string.rep(" ", 12)
+local empty_message = nil
 
 local EMPTY_MESSAGES = {
     {"palex00 is proud of you!"},
@@ -43,6 +45,10 @@ function InLogicItem:show(entry)
     elseif entry and entry.text then
         badge = entry.text
     end
+    if self.shown == icon .. badge then
+        return
+    end
+    self.shown = icon .. badge
     inst.Icon = ImageReference:FromPackRelativePath(icon)
     inst.Name = name
     inst.BadgeText = badge
@@ -50,31 +56,6 @@ function InLogicItem:show(entry)
     inst:SetOverlayBackground("")
     inst:SetOverlayFontSize(11)
     inst:SetOverlayAlign("left")
-end
-
-InLogicSyncItem = CustomItem:extend()
-
-function InLogicSyncItem:init()
-    self:createItem("Sync", {"inlogic_sync"})
-    local inst = self.ItemInstance
-    inst.Icon = ImageReference:FromPackRelativePath(SYNC_ICON)
-    inst.BadgeText = BADGE_INDENT .. "Sync"
-    inst.BadgeTextColor = "#abcdef"
-    inst:SetOverlayBackground("")
-    inst:SetOverlayFontSize(11)
-    inst:SetOverlayAlign("left")
-end
-
-function InLogicSyncItem:canProvideCode(code)
-    return code == "inlogic_sync"
-end
-
-function InLogicSyncItem:providesCode(code)
-    return 0
-end
-
-function InLogicSyncItem:onLeftClick()
-    syncInLogic()
 end
 
 local function owned(id)
@@ -202,9 +183,12 @@ function syncInLogic()
     end
 
     if #new == 0 then
-        for _, line in ipairs(EMPTY_MESSAGES[math.random(#EMPTY_MESSAGES)]) do
+        empty_message = empty_message or EMPTY_MESSAGES[math.random(#EMPTY_MESSAGES)]
+        for _, line in ipairs(empty_message) do
             table.insert(new, {text = line})
         end
+    else
+        empty_message = nil
     end
 
     if split then
@@ -218,4 +202,16 @@ end
 for i = 1, INLOGIC_SLOT_COUNT do
     INLOGIC_ITEMS[i] = InLogicItem(i)
 end
-INLOGIC_SYNC = InLogicSyncItem()
+
+ScriptHost:AddWatchForCode("inlogic_dirty", "*", function(code)
+    if code:sub(1, 8) ~= "inlogic_" then
+        INLOGIC_DIRTY = true
+    end
+end)
+
+ScriptHost:AddOnFrameHandler("inlogic_flush", function()
+    if INLOGIC_DIRTY then
+        INLOGIC_DIRTY = false
+        syncInLogic()
+    end
+end)
