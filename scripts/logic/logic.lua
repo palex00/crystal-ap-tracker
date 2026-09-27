@@ -626,6 +626,14 @@ function request_pokemon(slot)
     end
 end
 
+function request_previous_done(slot)
+    local prev = tonumber(slot)
+    if has("request_grandpa_" .. prev) or request_pokemon(prev - 1) == AccessibilityLevel.Normal then
+        return AccessibilityLevel.Normal
+    end
+    return AccessibilityLevel.None
+end
+
 function diplomagoal()
     return CAUGHT_COUNT >= Tracker:FindObjectForCode("diploma_goal_count").AcquiredCount
 end

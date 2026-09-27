@@ -27441,7 +27441,7 @@
                             "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 25/Everstone from Bill's Grandpa, ^$request_pokemon|1"
+                            "@JohtoKanto/Route 25/Everstone from Bill's Grandpa, ^$request_pokemon|1, ^$request_previous_done|1"
                         ]
                     },
                     {
@@ -27455,7 +27455,7 @@
                             "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 25/Leaf Stone from Bill's Grandpa, ^$request_pokemon|2"
+                            "@JohtoKanto/Route 25/Leaf Stone from Bill's Grandpa, ^$request_pokemon|2, ^$request_previous_done|2"
                         ]
                     },
                     {
@@ -27469,7 +27469,7 @@
                             "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 25/Water Stone from Bill's Grandpa, ^$request_pokemon|3"
+                            "@JohtoKanto/Route 25/Water Stone from Bill's Grandpa, ^$request_pokemon|3, ^$request_previous_done|3"
                         ]
                     },
                     {
@@ -27483,7 +27483,7 @@
                             "show_items, randomize_pokemon_requests_true"
                         ],
                         "access_rules": [
-                            "@JohtoKanto/Route 25/Fire Stone from Bill's Grandpa, ^$request_pokemon|4"
+                            "@JohtoKanto/Route 25/Fire Stone from Bill's Grandpa, ^$request_pokemon|4, ^$request_previous_done|4"
                         ]
                     }
                 ],
