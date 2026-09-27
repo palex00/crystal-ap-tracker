@@ -144,9 +144,6 @@ local EVENT_GROUPS = {
 }
 
 local GOAL_GROUPS = {
-    rival = {{"goal_rival"}, function()
-        return has("goal_rival_on")
-    end},
     rocket = {{"goal_rocket"}, function()
         return has("goal_rocket_on")
     end},
@@ -253,7 +250,10 @@ LAYOUT_SLOTS = {
         end
         return has("battle_tower_progressive_tier_unlocks_on") and "tierunlock" or "on"
     end),
-    flow_grid("goal_progress_grid", GOAL_GROUPS, {"rival", "rocket", "elitefour", "champion", "red", "diploma"}, {"johto_only"}, function(suffix)
+    slot("goal", "rival", {"goal_rival", "johto_only"}, function()
+        return has("goal_rival_on") and johto_mode() or "off"
+    end),
+    flow_grid("goal_progress_grid", GOAL_GROUPS, {"rocket", "elitefour", "champion", "red", "diploma"}, {"johto_only"}, function(suffix)
         return "layouts/goal/"..johto_mode().."/goal"..suffix..".json"
     end),
 

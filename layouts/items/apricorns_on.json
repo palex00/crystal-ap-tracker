@@ -11,8 +11,9 @@
             "content": [
                 {
                     "type": "itemgrid",
-                    "margin": "0,0",
+                    "margin": "0,2,0,2",
                     "item_margin": "3,3",
+                    "item_size": "26",
                     "rows": [
                         [
                             "RED_APRICORN"
@@ -25,14 +26,7 @@
                         ],
                         [
                             "GRN_APRICORN"
-                        ]
-                    ]
-                },
-                {
-                    "type": "itemgrid",
-                    "margin": "0,19,0,0",
-                    "item_margin": "3,3",
-                    "rows": [
+                        ],
                         [
                             "WHT_APRICORN"
                         ],
