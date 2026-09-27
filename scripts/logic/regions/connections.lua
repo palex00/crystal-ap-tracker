@@ -1246,10 +1246,10 @@ NAMED_NODES["REGION_ROUTE_41:NE_ISLAND"]:connect_two_ways_entrance(NAMED_NODES["
 
 -- === REGION_ROUTE_41:SW_ISLAND ===
 NAMED_NODES["REGION_ROUTE_41:SW_ISLAND"]:connect_two_ways_entrance(NAMED_NODES["REGION_WHIRL_ISLAND_SW:NORTHWEST"], "dungeon")
+NAMED_NODES["REGION_ROUTE_41:SW_ISLAND"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_41:SW_ISLAND:ITEM"], "Route 41 Southwest Island Water Crossing (to Hidden Item)", "If you read this, contact palex00", can_surf_johto)
 
 -- === REGION_ROUTE_41:SE_ISLAND ===
 NAMED_NODES["REGION_ROUTE_41:SE_ISLAND"]:connect_two_ways_entrance(REGION_WHIRL_ISLAND_SE, "dungeon")
-NAMED_NODES["REGION_ROUTE_41:SE_ISLAND"]:connect_two_ways(NAMED_NODES["REGION_ROUTE_41:SE_ISLAND:ITEM"], "Route 41 Southeast Island Water Crossing (to Hidden Item)", "If you read this, contact palex00", can_surf_johto)
 
 -- === REGION_ROUTE_42:WEST ===
 NAMED_NODES["REGION_ROUTE_42:WEST"]:connect_two_ways_entrance(REGION_ROUTE_42_ECRUTEAK_GATE, "gate")

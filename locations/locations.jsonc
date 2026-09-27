@@ -14649,7 +14649,7 @@
                     {
                         "name": "Hidden Item on Southwest Island",
                         "access_rules": [
-                            "^$CanReach|REGION_ROUTE_41:SE_ISLAND:ITEM, ^$hid"
+                            "^$CanReach|REGION_ROUTE_41:SW_ISLAND:ITEM, ^$hid"
                         ],
                         "visibility_rules": [
                             "show_items, hiddenitems_on"
