@@ -9915,7 +9915,8 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "[^$CanReach|REGION_ROUTE_36:EAST], [^$CanReach|REGION_ROUTE_36:WEST], $can_cut_johto"
+                            "^$CanReach|REGION_ROUTE_36:EAST, [^$CanReach|REGION_ROUTE_36:WEST], $can_cut_johto",
+                            "^$CanReach|REGION_ROUTE_36:WEST, [^$CanReach|REGION_ROUTE_36:EAST], $can_cut_johto"
                         ]
                     },
                     {

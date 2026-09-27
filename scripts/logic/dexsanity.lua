@@ -283,10 +283,11 @@ function contest_encounter()
 end
 
 function swarm_encounter(region)
+    local level = math.min(phonecall(), CanReach(region))
     if not has("encmethod_swarm_on") then
-        return AccessibilityLevel.SequenceBreak
+        return math.min(level, AccessibilityLevel.SequenceBreak)
     end
-    return math.min(phonecall(), CanReach(region))
+    return level
 end
 
 
