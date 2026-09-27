@@ -144,9 +144,6 @@ local EVENT_GROUPS = {
 }
 
 local GOAL_GROUPS = {
-    unown = {{"goal_unown"}, function()
-        return has("goal_unown_on")
-    end},
     rival = {{"goal_rival"}, function()
         return has("goal_rival_on")
     end},
@@ -164,12 +161,6 @@ local GOAL_GROUPS = {
     end},
     diploma = {{"goal_diploma"}, function()
         return has("goal_diploma_on")
-    end},
-    uberpass = {{"goal_battletower"}, function()
-        return has("goal_battletower_on")
-    end},
-    tierunlock = {{"goal_battletower", "battle_tower_progressive_tier_unlocks"}, function()
-        return has("goal_battletower_on") and has("battle_tower_progressive_tier_unlocks_on")
     end},
 }
 
@@ -253,7 +244,16 @@ LAYOUT_SLOTS = {
         end
         return "layouts/events/kanto/events"..suffix..".json"
     end),
-    flow_grid("goal_progress_grid", GOAL_GROUPS, {"unown", "rival", "rocket", "elitefour", "champion", "red", "diploma", "uberpass", "tierunlock"}, {"johto_only"}, function(suffix)
+    slot("goal", "unown_hunt", {"goal_unown"}, function()
+        return has("goal_unown_on")
+    end),
+    slot("goal", "battle_tower", {"goal_battletower", "battle_tower_progressive_tier_unlocks"}, function()
+        if not has("goal_battletower_on") then
+            return "off"
+        end
+        return has("battle_tower_progressive_tier_unlocks_on") and "tierunlock" or "on"
+    end),
+    flow_grid("goal_progress_grid", GOAL_GROUPS, {"rival", "rocket", "elitefour", "champion", "red", "diploma"}, {"johto_only"}, function(suffix)
         return "layouts/goal/"..johto_mode().."/goal"..suffix..".json"
     end),
 

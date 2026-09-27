@@ -64,8 +64,23 @@
                             "header": "Goal",
                             "dock": "left",
                             "content": {
-                                "type": "layout",
-                                "key": "goal_progress_grid"
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "5,5",
+                                "content": [
+                                    {
+                                        "type": "layout",
+                                        "key": "slot_unown_hunt"
+                                    },
+                                    {
+                                        "type": "layout",
+                                        "key": "slot_battle_tower"
+                                    },
+                                    {
+                                        "type": "layout",
+                                        "key": "goal_progress_grid"
+                                    }
+                                ]
                             }
                         },
                         {
