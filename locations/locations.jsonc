@@ -2233,7 +2233,17 @@
                             "^$CanReach|EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
                         ],
                         "visibility_rules": [
-                            "show_events",
+                            "show_events"
+                        ]
+                    },
+                    {
+                        "name": "Egg from Elm's Aide",
+                        "chest_unopened_img": "images/evolutionsanity/egg.png",
+                        "chest_opened_img": "images/evolutionsanity/egg_bw.png",
+                        "access_rules": [
+                            "^$CanReach|EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE, ^$static_encounter"
+                        ],
+                        "visibility_rules": [
                             "show_mons_all",
                             "show_mons_dex, encmethod_static_on, dexlogic_statics"
                         ]
@@ -6498,6 +6508,17 @@
                     {
                         "name": "Odd Egg Collected (Event)",
                         "hosted_item": "EVENT_GOT_ODD_EGG_hosted",
+                        "access_rules": [
+                            "^$CanReach|REGION_DAY_CARE"
+                        ],
+                        "visibility_rules": [
+                            "show_events"
+                        ]
+                    },
+                    {
+                        "name": "Odd Egg from Daycare",
+                        "chest_unopened_img": "images/evolutionsanity/egg.png",
+                        "chest_opened_img": "images/evolutionsanity/egg_bw.png",
                         "access_rules": [
                             "^$CanReach|REGION_DAY_CARE, ^$static_encounter"
                         ],

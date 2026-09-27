@@ -115,7 +115,7 @@
         "name": "Egg Collected",
         "type": "toggle",
         "img": "/images/events/egg_collected.png",
-        "codes": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
+        "codes": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE, Static_EggTogepi"
     },
     {
         "name": "Kenya Collected",
@@ -226,7 +226,7 @@
         "name": "[Static] Odd Egg Collected",      
         "type": "toggle", 
         "img": "/images/events/EVENT_GOT_ODD_EGG.png",
-        "codes": "EVENT_GOT_ODD_EGG"
+        "codes": "EVENT_GOT_ODD_EGG, Static_OddEgg"
     },
     
 {"name": "Met Bill (Event)", "type": "toggle", "img": "/images/events/met_bill.png", "codes": "EVENT_MET_BILL"},
