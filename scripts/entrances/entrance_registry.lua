@@ -12,7 +12,7 @@
 --     id; used only where a vanilla edge and its Route-23-Restored variant reuse a tile.)
 --
 -- The warp's ER CATEGORY and one-way-ness live on its connect_*_entrance edge in
--- connections.lua, NOT here. Loaded after the graph, before createEntrances().
+-- connections.lua, NOT here. Loaded after the graph, before entrance_item.lua.
 
 -- The ER categories. Each has a matching progressive toggle item in items/settings_er.json
 -- with codes "er_<cat>" / "er_<cat>_on" / "er_<cat>_off". Kept here for load order (init.lua

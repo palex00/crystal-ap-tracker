@@ -300,7 +300,7 @@ function Node:discover(accessibility, keys)
 end
 
 -- Root of the graph and the dead-end sink for unconnected entrances.
--- connections.lua (user-authored) must connect Entry_point to the starting region(s).
+-- connections.lua connects Entry_point to the starting region(s).
 Entry_point = Node.new("Entry_point")
 Empty_node = Node.new("Empty_node")
 

@@ -3,9 +3,8 @@
 -- the destination is fixed by the seed and the player cannot change it, just like a revealed
 -- entrance. The town icon is reused from the flyunlock art; the badge is the destination name.
 --
--- Items are created lazily (only when fly destinations are randomized) to match the entrance
--- items' perf pattern. Each provides only its own "flydest_<token>" code (PotentialCodes), so it
--- adds no cost to unrelated logic lookups.
+-- All 23 items are created once at init (init.lua) and refreshed from onClear. Each provides only
+-- its own "flydest_<token>" code (PotentialCodes), so it adds no cost to unrelated logic lookups.
 
 FLY_DESTINATION_ITEMS = {}
 
@@ -52,7 +51,7 @@ function FlyDestinationItem:providesCode(code)
 end
 
 --- Instantiate the fly-destination display items once (idempotent); refresh existing ones.
---- Called from onClear when fly destinations are randomized.
+--- Called at init and again from onClear (setupFlyDestinations) on every connect.
 function createFlyDestinationItems()
     for _, token in ipairs(FLY_REGION_TOKENS) do
         if not FLY_DESTINATION_ITEMS[token] then

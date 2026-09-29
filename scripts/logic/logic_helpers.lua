@@ -1,8 +1,7 @@
 -- Accessibility helpers for the CanReach entrance-graph system.
 -- Ported/trimmed from the ALTTP AP pack (scripts/logic/logic_helpers.lua).
--- These globals are consumed by the region-logic files (region_definitions.lua /
--- connections.lua) and by canreach.lua. The pack's existing scripts/logic/logic.lua
--- is untouched; it uses AccessibilityLevel.* inline and does not define any of these.
+-- Used by the CanReach engine, the region graph (connections*.lua and the leaf files) and
+-- route mode.
 
 ACCESS_NONE = AccessibilityLevel.None                   -- 0  unreachable
 ACCESS_SEQUENCEBREAK = AccessibilityLevel.SequenceBreak -- 5  reachable out of logic
