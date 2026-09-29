@@ -920,7 +920,7 @@ REGION_RADIO_TOWER_3F:connect_two_ways_entrance(NAMED_NODES["REGION_RADIO_TOWER_
 REGION_RADIO_TOWER_3F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"], "Radio Tower 3F Card Key Gate Passage (Eastbound)", function() return has("CARD_KEY") end)
 NAMED_NODES["REGION_RADIO_TOWER_3F:EAST"]:connect_one_way(REGION_RADIO_TOWER_3F, "Radio Tower 3F Card Key Gate Passage (Westbound)", function()
         if has("er_dungeon_interior_on") then return has("EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER") end
-        return reach("EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER")
+        return has("CARD_KEY")
         end)
 REGION_RADIO_TOWER_3F:connect_one_way(NAMED_NODES["REGION_RADIO_TOWER_3F:TAKEOVER"], "Radio Tower 3F West Rockets Access (Post-Takeover)", function() return has("tower_requirement") end)
 
@@ -1490,7 +1490,7 @@ REGION_SILVER_CAVE_ROOM_2:connect_two_ways_entrance(REGION_SILVER_CAVE_ROOM_3, "
 -- === REGION_SILVER_CAVE_ROOM_3 ===
 REGION_SILVER_CAVE_ROOM_3:connect_one_way(REGION_SILVER_CAVE_OUTSIDE, "Beat Red", function()
         if has("goal_red_on") or has("battle_tower_sanity_tiers") then return has("EVENT_BEAT_RED") end
-        return reach("EVENT_BEAT_RED")
+        return has("red_requirement")
         end)
 
 -- === REGION_SLOWPOKE_WELL_B1F:ENTRANCE ===
