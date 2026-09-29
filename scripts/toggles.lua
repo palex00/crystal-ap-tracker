@@ -13,7 +13,13 @@ end
 function toggle_johto()
     local dir = johto_mode()
 
-    Tracker:AddMaps(dir == "full" and "maps/maps_johto_and_kanto.json" or "maps/maps_johto_only.json")
+    if dir == "full" then
+        Tracker:AddMaps("maps/maps_johto_and_kanto.json")
+    elseif has("johto_only_on") then
+        Tracker:AddMaps("maps/maps_johto_no_silver.json")
+    else
+        Tracker:AddMaps("maps/maps_johto_only.json")
+    end
 
     for _, name in ipairs(MODE_LAYOUTS) do
         Tracker:AddLayouts("layouts/"..dir.."/"..name..".json")
