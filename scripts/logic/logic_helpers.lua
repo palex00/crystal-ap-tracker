@@ -5,11 +5,8 @@
 -- is untouched; it uses AccessibilityLevel.* inline and does not define any of these.
 
 ACCESS_NONE = AccessibilityLevel.None                   -- 0  unreachable
-ACCESS_PARTIAL = AccessibilityLevel.Partial             -- 1
-ACCESS_INSPECT = AccessibilityLevel.Inspect             -- 3  visible, not collectable
 ACCESS_SEQUENCEBREAK = AccessibilityLevel.SequenceBreak -- 5  reachable out of logic
 ACCESS_NORMAL = AccessibilityLevel.Normal               -- 6  reachable in logic
-ACCESS_CLEARED = AccessibilityLevel.Cleared             -- 7
 
 local bool_to_accesslvl = {
     [true] = ACCESS_NORMAL,

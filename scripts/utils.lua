@@ -100,10 +100,6 @@ function refreshERCategories()
     end
 end
 
-function toggle_er()
-    refreshERCategories()
-end
-
 function updateRemainingDexcountsanityChecks()
     Tracker.BulkUpdate = true
     local val = Tracker:FindObjectForCode("@ZDexsanity/Dexcountsanity/Total").AvailableChestCount

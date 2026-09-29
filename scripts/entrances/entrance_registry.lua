@@ -5374,10 +5374,9 @@ ENTRANCE_REGISTRY = {
 -- byId maps each physical tile id -> LIST of rows that own it (usually one; >1 only for
 -- the option-gated vanilla/Route-23-Restored pairs). ResolveEntranceRow picks the active
 -- one: a gated row wins when its gate code is set, else the ungated (vanilla) row.
-REGISTRY = { byId = {}, byPretty = {} }
+REGISTRY = { byId = {} }
 for token, row in pairs(ENTRANCE_REGISTRY) do
     row.token = token
-    REGISTRY.byPretty[row.pretty] = row
     for _, wid in ipairs(row.ids) do
         local bucket = REGISTRY.byId[wid]
         if bucket then

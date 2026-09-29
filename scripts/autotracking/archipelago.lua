@@ -12,13 +12,6 @@ CUR_INDEX = -1
 PLAYER_ID = -1
 TEAM_NUMBER = 0
 
-EVENT_ID = ""
-EVENT2_ID = ""
-KEY_ID = ""
-STATIC_ID = ""
-ROCKETTRAP_ID = ""
-SEEN_ID = ""
-CAUGHT_ID = ""
 EVOLUTION_DATA = ""
 BREEDING_DATA = ""
 allChecked = nil
@@ -245,7 +238,7 @@ function onClear(slot_data)
             if val == 100 then
                 val = 99
             end
-            makeDigits(v, "max_digit1", "max_digit2")
+            makeDigits(val, "max_digit1", "max_digit2")
         elseif k == "evolution_gym_levels" then
             makeDigits(v, "yaml_digit1", "yaml_digit2")
         elseif k == "dexcountsanity" then
@@ -670,7 +663,6 @@ function updateStatics(value)
             if #code > 0 then
                 Tracker:FindObjectForCode(code).Active = Tracker:FindObjectForCode(code).Active or bit
             end
-            local is_active = tostring(Tracker:FindObjectForCode(code).Active)
         end
     end
 end

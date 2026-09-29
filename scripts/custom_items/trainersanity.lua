@@ -106,9 +106,7 @@ function TrainersanityNumber:load(data)
 end
 
 function TrainersanityNumber:propertyChanged(key, value)
-    --if TRACKER_READY then
-        if key == "type" or key == "stage" then
-            self:updateIcon()
-        end
-    --end
+    if key == "type" or key == "stage" then
+        self:updateIcon()
+    end
 end

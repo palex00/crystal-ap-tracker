@@ -113,9 +113,7 @@ function BadgesGymsRequirement:load(data)
 end
 
 function BadgesGymsRequirement:propertyChanged(key, value)
-    --if TRACKER_READY then
-        if key == "type" or key == "stage" then
-            self:updateIcon()
-        end
-    --end
+    if key == "type" or key == "stage" then
+        self:updateIcon()
+    end
 end

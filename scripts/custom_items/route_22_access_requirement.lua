@@ -125,9 +125,7 @@ function Route22AccessRequirement:load(data)
 end
 
 function Route22AccessRequirement:propertyChanged(key, value)
-    --if TRACKER_READY then
-        if key == "type" or key == "stage" then
-            self:updateIcon()
-        end
-    --end
+    if key == "type" or key == "stage" then
+        self:updateIcon()
+    end
 end

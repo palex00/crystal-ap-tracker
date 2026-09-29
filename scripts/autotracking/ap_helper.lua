@@ -250,7 +250,6 @@ AMOUNT_CODES = {
 
 LIST_CODES = {
     goal = {
-        mapping = MAP_TOGGLE,
         values = {
             ["Elite Four"]         = "goal_e4",
             ["Red"]                = "goal_red",
@@ -266,7 +265,6 @@ LIST_CODES = {
     -- get no tracker item). Setting er_<cat> fires the init.lua watch -> refreshERCategories()
     -- -> createEntrancesForEnabled(). Keys must match options.py RandomizeEntrances exactly.
     randomize_entrances = {
-        mapping = MAP_TOGGLE,
         values = {
             ["Dungeon"]           = "er_dungeon",
             ["Dungeon Interior"]  = "er_dungeon_interior",
@@ -284,7 +282,6 @@ LIST_CODES = {
         }
     },
     dark_areas = {
-        mapping = MAP_TOGGLE,
         values = {
             ["Burned Tower"]         = "dark_burnedtower",
             ["Dark Cave"]            = "dark_darkcave",
@@ -307,7 +304,6 @@ LIST_CODES = {
         }
     },
     vanilla_event_chains = {
-        mapping = MAP_TOGGLE,
         values = {
             ["Misty"]               = "vanilla_chain_misty",
             ["Clair"]               = "clair_behaviour",
@@ -316,7 +312,6 @@ LIST_CODES = {
         }
     },
     remove_badge_requirement = {
-        mapping = MAP_TOGGLE,
         values = {
             ["Cut"]                 = "FREE_CUT",
             ["Fly"]                 = "FREE_FLY",
@@ -328,7 +323,6 @@ LIST_CODES = {
         }
     },
     shopsanity = {
-        mapping = MAP_TOGGLE,
         values = {
             ["Johto Marts"]         = "shopsanity_johtomarts",
             ["Kanto Marts"]         = "shopsanity_kantomarts",
@@ -338,7 +332,6 @@ LIST_CODES = {
         }
     },
     evolution_methods_required = {
-        mapping = MAP_TOGGLE,
         values = {
             ["Level"]          = "evomethod_level",
             ["Level and Stat"] = "evomethod_tyrogue",
@@ -348,7 +341,6 @@ LIST_CODES = {
         }
     },
     wild_encounter_methods_required = {
-        mapping = MAP_TOGGLE,
         values = {
             ["Land"]                 = "encmethod_land",
             ["Surfing"]              = "encmethod_water",

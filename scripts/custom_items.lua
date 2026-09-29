@@ -1,14 +1,11 @@
 -- palex00 here. I am out of my depth.
 -- I am cannibalising FRLG's custom lua items with Vyneras' permission.
--- I am leaving Pokedex stuff in it in case I ever need it
 
 ScriptHost:LoadScript("scripts/custom_items/class.lua")
 ScriptHost:LoadScript("scripts/custom_items/custom_item.lua")
 ScriptHost:LoadScript("scripts/custom_items/badges_gyms_requirement.lua")
 ScriptHost:LoadScript("scripts/custom_items/route_22_access_requirement.lua")
 ScriptHost:LoadScript("scripts/custom_items/trainersanity.lua")
--- ScriptHost:LoadScript("scripts/custom_items/pokedex.lua")
--- ScriptHost:LoadScript("scripts/custom_items/pokedex_requirement.lua")
 
 VR_REQ = BadgesGymsRequirement("Victory Road Requirement", "vr_requirement", 8, 16, "images/settings/vr_requirement.png")
 E4_REQ = BadgesGymsRequirement("Elite Four Requirement", "e4_requirement", 8, 16, "images/settings/e4_requirement.png")
@@ -18,5 +15,3 @@ SILVER_REQ = BadgesGymsRequirement("Mt. Silver Requirement", "mt_silver_requirem
 R44_REQ = BadgesGymsRequirement("Route 44 Requirement", "route_44_requirement", 7, 16, "images/settings/route_44_requirement.png")
 ROUTE_22_REQ = Route22AccessRequirement()
 TRAINERS = TrainersanityNumber()
-
--- POKEDEX = Pokedex()

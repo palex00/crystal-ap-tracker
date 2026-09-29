@@ -163,9 +163,6 @@ end
 
 -- ER category toggles -> refresh ER_CATEGORY_ENABLED for the CanReach detour
 for _, cat in ipairs(ER_CATEGORIES) do
-    ScriptHost:AddWatchForCode("er_" .. cat, "er_" .. cat, toggle_er)
+    ScriptHost:AddWatchForCode("er_" .. cat, "er_" .. cat, refreshERCategories)
 end
 refreshERCategories()
-
--- Makes version nil
-first_two_dots = nil

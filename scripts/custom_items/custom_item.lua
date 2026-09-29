@@ -48,15 +48,9 @@ function CustomItem:createItem(name, potentialCodes)
 end
 
 --	Declare the fixed set of codes this item can ever provide, so PopTracker can match codes
---	without a Lua call per item per code. Requires PopTracker 0.35.4+; on older versions the
---	assignment raises "Unknown property" and canProvideCode() stays the fallback.
+--	without a Lua call per item per code.
 function CustomItem:setPotentialCodes(codes)
-    if codes == nil then
-        return
-    end
-    pcall(function()
-        self.ItemInstance.PotentialCodes = codes
-    end)
+    self.ItemInstance.PotentialCodes = codes
 end
 
 --	Called when your item is left-clicked
