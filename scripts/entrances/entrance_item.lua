@@ -243,9 +243,14 @@ function EntranceItem:isRevealed()
     return self.forwardTarget ~= nil
 end
 
+--- Route mode: while on the active route the entrance reads as uncollected.
+function EntranceItem:setRouting(on)
+    self:setProperty("routing", on)
+end
+
 --- Collected state for the section hosting this entrance (hosted_item = the token).
 function EntranceItem:providesCode(code)
-    if code == self.token and self:isRevealed() then
+    if code == self.token and self:isRevealed() and not self.routing then
         return 1
     end
     return 0

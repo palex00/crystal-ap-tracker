@@ -11,6 +11,18 @@
                 "content": [
                     {
                         "type": "item",
+                        "item": "route_abort",
+                        "item_size": "660, 24"
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "2,4",
+                "content": [
+                    {
+                        "type": "item",
                         "item": "solidblack0",
                         "item_size": "660, 24"
                     },

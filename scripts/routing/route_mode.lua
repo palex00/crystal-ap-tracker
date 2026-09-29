@@ -25,7 +25,20 @@ local HOME_SENTINEL = "@HOME"
 local FOUND = false
 local ALREADY_VISITED = {}
 local PATH = {}
+-- entrance token of each PATH hop (nil for walking/fly/home hops)
+local PATH_TOKENS = {}
 local STEPS = -1
+
+-- Route blink: the route's entrance sections alternate Gold/Red once per second until the
+-- final entrance is traversed or ROUTE_BLINK_SECONDS pass.
+local ROUTE_BLINK_SECONDS = 300
+local ROUTE_BLINK_HANDLER = "route blink handler"
+local BLINK_SECTIONS = {}
+local BLINK_ITEMS = {}
+local BLINK_FINAL_TOKEN = nil
+local BLINK_ELAPSED = 0
+local BLINK_TICK = 0
+local BLINK_GOLD = true
 
 -- The player can always warp back to their starting town, so route mode treats "warp home"
 -- as a virtual one-hop transition available on every node. HOME is the active start-town
@@ -133,7 +146,7 @@ local function FindPath(start, finish, stage)
             else
                 label = exit[6]
             end
-            table.insert(next_sweep, { node = target, label = label or "" })
+            table.insert(next_sweep, { node = target, label = label or "", token = is_entrance and exit[5] or nil })
         end
     end
 
@@ -153,6 +166,7 @@ local function FindPath(start, finish, stage)
     for _, step in pairs(next_sweep) do
         if FindPath(step.node, finish, stage) then
             PATH[stage] = step.label
+            PATH_TOKENS[stage] = step.token
             any_true = true
         end
     end
@@ -181,6 +195,98 @@ local function writeRouteTile(index, text)
     tile:SetOverlayAlign("left")
 end
 
+--- The "Abort Routing" button at the top of the Routing tab: blank while no route is active.
+RouteAbortItem = CustomItem:extend()
+
+function RouteAbortItem:init()
+    self:createItem("", {"route_abort"})
+    self.ItemInstance.Icon = ImageReference:FromPackRelativePath("images/other/blank.png")
+    self:show(false)
+end
+
+function RouteAbortItem:canProvideCode(code)
+    return code == "route_abort"
+end
+
+function RouteAbortItem:show(active)
+    local inst = self.ItemInstance
+    inst.Name = active and "Abort Routing" or ""
+    inst.BadgeText = active and "Abort Routing" or ""
+    inst:SetOverlayFontSize(16)
+    inst.BadgeTextColor = "#FFD700"
+    inst:SetOverlayAlign("left")
+end
+
+function RouteAbortItem:onLeftClick()
+    if BLINK_FINAL_TOKEN then
+        StopRouting()
+    end
+end
+
+ROUTE_ABORT_ITEM = RouteAbortItem()
+
+local function setBlinkColor()
+    local level = BLINK_GOLD and Highlight.Priority or Highlight.Avoid
+    for _, section in ipairs(BLINK_SECTIONS) do
+        section.Highlight = level
+    end
+end
+
+--- Ends the active route: clears the blink highlights, lets the route's entrance squares read
+--- as revealed again, empties the Route tiles and hides the abort button.
+function StopRouting()
+    ScriptHost:RemoveOnFrameHandler(ROUTE_BLINK_HANDLER)
+    for _, section in ipairs(BLINK_SECTIONS) do
+        section.Highlight = Highlight.None
+    end
+    for _, item in ipairs(BLINK_ITEMS) do
+        item:setRouting(false)
+    end
+    BLINK_SECTIONS = {}
+    BLINK_ITEMS = {}
+    BLINK_FINAL_TOKEN = nil
+    clearRouteTiles()
+    ROUTE_ABORT_ITEM:show(false)
+end
+
+local function routeBlinkFrame(elapsed)
+    BLINK_ELAPSED = BLINK_ELAPSED + elapsed
+    if BLINK_ELAPSED >= ROUTE_BLINK_SECONDS then
+        StopRouting()
+        return
+    end
+    BLINK_TICK = BLINK_TICK + elapsed
+    if BLINK_TICK >= 1 then
+        BLINK_TICK = BLINK_TICK - 1
+        BLINK_GOLD = not BLINK_GOLD
+        setBlinkColor()
+    end
+end
+
+--- Starts blinking the sections of the given entrance tokens (route order); the last one is
+--- the entrance whose traversal ends the route.
+---@param tokens string[]
+local function startRouteBlink(tokens)
+    if #tokens == 0 then
+        return
+    end
+    for _, token in ipairs(tokens) do
+        BLINK_SECTIONS[#BLINK_SECTIONS + 1] = Tracker:FindObjectForCode(ENTRANCE_REGISTRY[token].section)
+        local item = ENTRANCE_ITEMS[token]
+        if item then
+            item:setRouting(true)
+            BLINK_ITEMS[#BLINK_ITEMS + 1] = item
+        end
+    end
+    BLINK_FINAL_TOKEN = tokens[#tokens]
+    BLINK_ELAPSED = 0
+    BLINK_TICK = 0
+    BLINK_GOLD = true
+    setBlinkColor()
+    ROUTE_ABORT_ITEM:show(true)
+    ScriptHost:AddOnFrameHandler(ROUTE_BLINK_HANDLER, routeBlinkFrame)
+end
+
 --- Compute and display the route from `start` to `finish` (both region Nodes) as the ordered
 --- list of TRANSITIONS to traverse — one transition pretty-name per Route tile.
 ---@param start table
@@ -190,19 +296,21 @@ function GetRoute(start, finish, first_label)
     if start == nil or finish == nil then
         return
     end
+    StopRouting()
     -- ensure the accessibility cache is current before pathfinding
     CanReach("Entry_point")
 
     FOUND = false
     ALREADY_VISITED = {}
     PATH = {}
+    PATH_TOKENS = {}
     STEPS = -1
     HOME = HomeRegion()
     FLY_HOPS = ReachableFlyHops()
 
     FindPath(start, finish, 0)
-    clearRouteTiles()
 
+    local route_tokens = {}
     if STEPS > 0 then
         -- the found route occupies stages 1..STEPS-1 (the hop into `finish` is at STEPS-1);
         -- clear any stale entries a longer rejected path may have left beyond it.
@@ -220,6 +328,9 @@ function GetRoute(start, finish, first_label)
                 writeRouteTile(line, label)
                 line = line + 1
             end
+            if PATH_TOKENS[stage] then
+                route_tokens[#route_tokens + 1] = PATH_TOKENS[stage]
+            end
         end
         if line == 0 then
             -- reachable, but no named transition lies between them (same area)
@@ -230,10 +341,12 @@ function GetRoute(start, finish, first_label)
     end
 
     Tracker:UiHint("ActivateTab", "Routing")
+    startRouteBlink(route_tokens)
 
     FOUND = false
     ALREADY_VISITED = {}
     PATH = {}
+    PATH_TOKENS = {}
     STEPS = -1
     HOME = nil
     FLY_HOPS = {}
@@ -271,6 +384,10 @@ function SetLastWarp(id)
     end
     if not (token or region or spawn) then
         return
+    end
+    if BLINK_FINAL_TOKEN and token == BLINK_FINAL_TOKEN and token ~= LAST_WARP_TOKEN then
+        StopRouting()
+        Tracker:UiHint("ActivateTab", "Overworld")
     end
     LAST_WARP_TOKEN = token
     LAST_WARP_REGION = region
