@@ -376,6 +376,7 @@ function onClear(slot_data)
     if refreshERCategories then
         refreshERCategories()
     end
+    updateEntrances({}) -- DEBUG: reveal all ER pairings on connect
     setupFlyDestinations(slot_data)
     loadWatches()
 
@@ -571,10 +572,10 @@ function updateEntrances(list)
         return
     end
     local coupled = has("coupled_entrances_on")
-    for _, id in ipairs(list) do
-        local row = ResolveEntranceRow(id)
+    -- DEBUG: reveal every pairing regardless of what has been entered
+    for token in pairs(ENTRANCE_CONNECTIONS) do
+        local row = ENTRANCE_REGISTRY[token]
         if row then
-            local token = row.token
             local exit = ENTRANCE_CONNECTIONS[token]
             if exit then
                 local both = coupled and not ENTRANCE_REGISTRY[exit].landing
