@@ -452,7 +452,7 @@ function onItem(index, item_id, item_name, player_number)
             obj.Active = true
         end
     else
-        print(string.format("onItem: could not find object for code %s", v[1]))
+        print(string.format("onItem: could not find object for code %s", v))
     end
 end
 
@@ -478,8 +478,8 @@ function onLocation(location_id, location_name)
     	else
     		obj.Active = true
     	end
-    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-    	print(string.format("onLocation: could not find object for code %s", v[1]))
+    else
+    	print(string.format("onLocation: could not find object for code %s", v))
     end
     
     local id_str = tostring(location_id)
@@ -1203,8 +1203,6 @@ last_map_group = nil
 last_map_number = nil
 
 function onMap(value)
-    print("Ran:")
-    print(dump_table(value))
     -- capture the last warp/spawn id for route mode (independent of automap)
     if value ~= nil and value["data"] ~= nil then
         local rslot = getDigits("slotdigit_1", "slotdigit_2", "slotdigit_3")

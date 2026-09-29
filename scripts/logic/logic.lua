@@ -152,10 +152,6 @@ function battletower_trainer(ID)
         end
     end
 
-    if rolled == nil then
-        print("This should never happen but here's a print just in case.")
-    end
-
     local milestone = math.floor(rolled / 7) + 1
     return battletower_milestones(milestone)
 end

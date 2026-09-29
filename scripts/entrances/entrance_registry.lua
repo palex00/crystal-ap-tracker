@@ -16,7 +16,7 @@
 
 -- The ER categories. Each has a matching progressive toggle item in items/settings_er.json
 -- with codes "er_<cat>" / "er_<cat>_on" / "er_<cat>_off". Kept here for load order (init.lua
--- and entrance_validate.lua read it before their own setup).
+-- reads it before its own setup).
 ER_CATEGORIES = {
     "dungeon",
     "dungeon_interior",

@@ -61,9 +61,6 @@ ScriptHost:LoadScript("scripts/logic/evobreed_helper.lua")
 -- refreshERCategories() (called at the end of init and whenever a category toggles / on connect).
 buildEntranceCategoryMap()
 ScriptHost:LoadScript("scripts/routing/route_mode.lua")
--- Structural sanity check: warns loudly if a warp is declared in only one of the graph /
--- registry, has a bad category, or collides on an id. Read-only; no-ops until data exists.
-ScriptHost:LoadScript("scripts/entrances/entrance_validate.lua")
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
@@ -128,7 +125,7 @@ Tracker:AddLayouts("layouts/dexcountsanity.json")
 
 
 -- AutoTracking for Poptracker
-ScriptHost:LoadScript("scripts/autotracking.lua")
+ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
 ScriptHost:LoadScript("scripts/dexsearch.lua")
 
 ---- Watches

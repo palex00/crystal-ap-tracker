@@ -1,40 +1,3 @@
-# CURRENT STATUS & ROADMAP FOR THE BETA
-++ THE TRACKER IS CURRENTLY AT A PASSABLE STATE, LIMITATIONS SEE BELOW ++
-In the beginning, I disabled some things so you could run seeds without the new features on the beta. These are slowly being re-implmented.
-Now, I will begin implementing the entire logical rewrite. This will cause the tracker to be *worse* for some time.
-
-2026-07-16: I have switched the logic engine to the new logic-graph now. It is severely buggy still but it will show more in logic than truthfully, and never too little. Locations and events now exist as dummies.
-2026-07-16: added autotracking to events and items. Refactored all item grids to show all items currently. Fixed some logic.
-2026-07-19: I have given up doing these
-
-The beta tracker now auto-updates!
-
-Supported Features:
-- Flooded Mine
-- Restored Route 23
-- Vanilla Event Chains
-- Momsanity
-- Lance Requires E4
-- ENTRANCE RANDOMISATION!!!
-- Submaps
-- Battle Tower
-- Fly Destination Rando
-- Time of Day Encounters (fishing & land)
-- Rematchsanity
-- Multiple Goals
-- Autotracking of the new encounter & new evolution method options
-- Double Clicking an entrance now shows you a route from your current position to it
-
-Unsupported Beta Features:
-- New Locations (these auto-track but do not have logic to them)
-    - Lucky Number Show
-- everything else, basically
-
-Features that work in live but not in beta:
-- dynamic layouts (itemgrids)
-
-
-
 # Crystal AP Tracker
 
 Archipelago Pokémon Crystal tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with Autotracking.
@@ -84,6 +47,9 @@ apworld | pack version
 ## Planned Features
 - Continuous support of the AP integration
 
+## Explanations on how to do certain things
+
+
 ## Special Encounter Equivalency Table
 ### Fishing Rods
 Internal Name (Spoiler Log) | Tracker Name | Which Regions are included
@@ -93,7 +59,7 @@ Ocean | Ocean | Cinnabar, New Bark, Ship Ports, Pallet, Vermilion, R20, R21, R26
 Lake | Lake | Dark Cave, Mt. Mortar, Silver Cave, Slowpoke Well, Tohjo Falls, Union Cave, R10, R24, R25, R42, R9
 Pond | Pond | Blackthorn, Ecruteak, Violet, Viridian, Ilex Forest, Ruins of Alph, Silver Cave Outside, R22, R28, R30, R31, R35, R43, R44, R6
 Dratini | Dragon's Den | Dragon's Den
-Gyarados | Lake of Rage | Lake of Rage, Fuchsia
+Gyarados | Lake of Rage, Fuchsia | Lake of Rage, Fuchsia
 Dratini_2 | Route 45 | Route 45
 WhirlIslands | Whirl Islands | Whirl Islands (Inside)
 Qwilfish | Routes 12, 13, 32 | R12, R13, R32
@@ -113,4 +79,5 @@ Forest | Ilex Forest
 You can adjust the aesthetic of certain aspects of this pack via user-overrides. For more information, please visit the [user-overrides branch](https://github.com/palex00/crystal-ap-tracker/tree/user-overrides).
 
 ## AI Usage Declaration
-The implementation of Entrance Randomisation on the basis of Stripes007' ALTTP pack was heavily done by AI.
+Pre-12.0.0 very little was done with AI. A substantial part of 12.0.0 was created by AI. The porting of Stripes007' AlttP's Entrance Randomisation System was done with AI.
+Everything was reviewed before merging. Everything was tested. The apworld this is paired with employs the same degree of AI usage.
