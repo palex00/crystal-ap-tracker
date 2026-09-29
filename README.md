@@ -22,7 +22,7 @@ Pokédex Vanilla Logic Page   |  Evolutionsanity Logic Page
 
 
 
-PopTracker v0.33.0 or higher is neccessary.
+PopTracker v0.35.4 or higher is necessary.
 
 Original project by AliceMousie. 
 
