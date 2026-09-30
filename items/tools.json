@@ -83,13 +83,13 @@
         "stages": [
             {
                 "name": "Routing Tab - With Overworld & Pokedex",
-                "img": "/images/settings/splitmap.png",
+                "img": "/images/settings/routing_over.png",
                 "codes": "routing_tab, routing_tab_meta",
                 "inherit_codes": false
             },
             {
                 "name": "Routing Tab - With Submaps",
-                "img": "/images/settings/splitmap.png",
+                "img": "/images/settings/routing_sub.png",
                 "codes": "routing_tab, routing_tab_submap",
                 "inherit_codes": false
             }
