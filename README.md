@@ -2,25 +2,7 @@
 
 Archipelago Pokémon Crystal tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with Autotracking.
 
-You can find a video guide on its usage here: https://youtu.be/m1s8IS-FtYs
-
-Full Map             |  Johto-Only
-:-------------------------:|:-------------------------:
-<img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/e6d34243-ab04-4b3e-b099-f4050603d314" /> | <img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/e77c3308-5fd3-449b-a363-c234b8d544c9" />
-
-Submap View             |  Split Map View
-:-------------------------:|:-------------------------:
-<img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/2dc35ed5-bc14-46f4-8721-66dd5a9a8059" /> | <img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/d154099b-5a0e-449f-92b2-00dba426a177" />
-
-Split Vertical Map View   |  Split Kanto Only Map View
-:-------------------------:|:-------------------------:
-<img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/5b7c0939-9d1d-421f-a3db-748fce750241" /> | <img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/2ba55e22-a5c9-43fb-8f26-0284dd3608f0" />
-
-Pokédex Vanilla Logic Page   |  Evolutionsanity Logic Page
-:-------------------------:|:-------------------------:
-<img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/e08c4e44-e6e1-4ecc-a9e4-822250ec9b09" /> | <img width="1920" height="1040" alt="grafik" src="https://github.com/user-attachments/assets/bd2cf7da-f536-4f7a-84a1-151c08833c71" />
-
-
+You can find a video guide on its usage here: https://youtu.be/m1s8IS-FtYs [OUTDATED. TODO LATER]
 
 PopTracker v0.35.4 or higher is necessary.
 
@@ -48,7 +30,14 @@ apworld | pack version
 - Continuous support of the AP integration
 
 ## Explanations on how to do certain things
-
+1. Entrance Randomisation Routing
+- If you right-click on a revealed entrance, it will show you what lead to this entrance
+- If you left-click on a revealed entrance, it will show you what this entrance leads to
+- If you double middle-click any in-logic entrance, it will tell you the shortest path to go there
+- If you middle-click one entrance and then another, it will tell you the shortest path between the two points
+2. DexSearch
+- Once you have the Pokedex, you can input any normal Dex-ID in the DexSearch menu. If you have seen this Pokémon, it will tell you where you can catch it.
+3. TODO LATER.
 
 ## Special Encounter Equivalency Table
 ### Fishing Rods
