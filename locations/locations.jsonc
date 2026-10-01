@@ -23441,7 +23441,8 @@
                             "show_grass, grasssanity_single"
                         ],
                         "access_rules": [
-                            "[^$CanReach|REGION_SILVER_CAVE_OUTSIDE], [^$CanReach|REGION_SILVER_CAVE_OUTSIDE:SURF], $can_cut_johto"
+                            "[^$CanReach|REGION_SILVER_CAVE_OUTSIDE], ^$CanReach|REGION_SILVER_CAVE_OUTSIDE:SURF, $can_cut_johto",
+                            "^$CanReach|REGION_SILVER_CAVE_OUTSIDE, [^$CanReach|REGION_SILVER_CAVE_OUTSIDE:SURF], $can_cut_johto"
                         ]
                     },
                     {
