@@ -62,7 +62,7 @@ BREEDING_REQUIRES_DITTO = {
 }
 
 function breeding(ID)
-    local daycare = ALL(CanReach("REGION_DAY_CARE"), CanReach("REGION_ROUTE_34:DAY_CARE_YARD"))
+    local daycare = ALL(UNFILTERED.CanReach("REGION_DAY_CARE"), UNFILTERED.CanReach("REGION_ROUTE_34:DAY_CARE_YARD"))
 
     if (daycare == 0) or has("breeding_logic_off_hard") then
         return AccessibilityLevel.None
@@ -283,7 +283,7 @@ function contest_encounter()
 end
 
 function swarm_encounter(region)
-    local level = math.min(phonecall(), CanReach(region))
+    local level = math.min(UNFILTERED.phonecall(), UNFILTERED.CanReach(region))
     if not has("encmethod_swarm_on") then
         return math.min(level, AccessibilityLevel.SequenceBreak)
     end

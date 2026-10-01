@@ -48,6 +48,7 @@ ScriptHost:LoadScript("scripts/logic/regions/encounter_leafs.lua")
 -- See connections_darkareas.lua.
 ScriptHost:LoadScript("scripts/logic/regions/connections_darkareas.lua")
 ScriptHost:LoadScript("scripts/logic/regions/check_leafs.lua")
+ScriptHost:LoadScript("scripts/logic/out_of_logic.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_registry.lua")
 ScriptHost:LoadScript("scripts/entrances/entrance_item.lua")
 -- Read-only fly-destination display items. Created once here (all 23); they show a placeholder

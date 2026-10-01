@@ -263,6 +263,26 @@
         ]
     },
     {
+        "name": "Out of Logic Locations",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Show potentially gettable out of logic locations",
+                "img": "/images/settings/show_cheese.png",
+                "codes": "out_of_logic, out_of_logic_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hide potentially gettable out of logic locations",
+                "img": "/images/settings/hide_cheese.png",
+                "codes": "out_of_logic, out_of_logic_off",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Auto-Mark Off Shops after checked",
         "type": "progressive",
         "loop": true,

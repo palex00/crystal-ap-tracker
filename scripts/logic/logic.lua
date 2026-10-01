@@ -589,14 +589,14 @@ end
 function phonecall()
     local level = phonecard()
     if has("phone_call_mode_vanilla") then
-        level = math.min(level, CanReach("REGION_PLAYERS_HOUSE_1F"))
+        level = math.min(level, UNFILTERED.CanReach("REGION_PLAYERS_HOUSE_1F"))
     end
     return level
 end
 
 -- Kanto phone calls only work once the power is back on.
 function can_phone_call_power()
-    return math.min(phonecall() or AccessibilityLevel.None,
+    return math.min(UNFILTERED.phonecall() or AccessibilityLevel.None,
         has("EVENT_RESTORED_POWER_TO_KANTO") and AccessibilityLevel.Normal or AccessibilityLevel.None)
 end
 
@@ -662,7 +662,7 @@ function landslide_clear()
     if has("south_kanto_condition_power") and has("EVENT_RESTORED_POWER_TO_KANTO") then
         return AccessibilityLevel.Normal
     elseif has("south_kanto_condition_south") then
-        return CanReach("REGION_CINNABAR_ISLAND")
+        return UNFILTERED.CanReach("REGION_CINNABAR_ISLAND")
     else
         return AccessibilityLevel.None
     end

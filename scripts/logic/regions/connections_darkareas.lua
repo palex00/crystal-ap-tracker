@@ -224,7 +224,7 @@ for area, regions in pairs(DARK_AREA_REGIONS) do
     local a = area -- capture per iteration; `area` is reused by the loop
     -- dark() returns nil when neither dark_<a>_true nor dark_<a>_false is set (its if/elseif
     -- chain has no else), and ALL would then compare nil. Treat that as unreachable.
-    gate_region_exits(regions, function() return dark(a) or ACCESS_NONE end)
+    gate_region_exits(regions, function() return UNFILTERED.dark(a) or ACCESS_NONE end)
 end
 
 gate_region_exits(CYCLING_ROAD_REGIONS, function() return has("BICYCLE") end)
