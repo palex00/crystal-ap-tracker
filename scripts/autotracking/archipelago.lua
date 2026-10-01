@@ -106,12 +106,11 @@ function onClear(slot_data)
 
     print(dump_table(slot_data))
     
-    if GAME == "Pokemon Crystal Prerelease" then
+    if GAME == "Pokemon Crystal" then
         local version_str = tostring(slot_data["apworld_version"])
         local first_two_dots = version_str:match("^([^.]+%.[^.]+)%.")
-        local rc_num = tonumber(version_str:match("%-rc%.(%d+)$")) -- remove before full release
 
-        if first_two_dots == "6.0" and rc_num ~= nil then
+        if first_two_dots == "6.0" then
             update_layout_slot("tracker_default")
         else
             load_layout("tracker_default", "layouts/versionmismatch.json")
