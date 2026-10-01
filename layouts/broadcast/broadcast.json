@@ -1,4 +1,4 @@
-﻿{
+{
     "tracker_broadcast": {
         "type": "array",
         "orientation": "vertical",
@@ -15,8 +15,39 @@
                         "key": "shared_item_grid"
                     },
                     {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "margin": "5,5",
+                        "content": [
+                            {
+                                "type": "layout",
+                                "key": "slot_unown_hunt"
+                            },
+                            {
+                                "type": "layout",
+                                "key": "slot_battle_tower"
+                            },
+                            {
+                                "type": "layout",
+                                "key": "slot_rival"
+                            },
+                            {
+                                "type": "layout",
+                                "key": "goal_progress_grid"
+                            }
+                        ]
+                    },
+                    {
                         "type": "layout",
                         "key": "event_grid"
+                    },
+                    {
+                        "type": "layout",
+                        "key": "puzzle_event_grid"
+                    },
+                    {
+                        "type": "layout",
+                        "key": "kanto_event_grid"
                     }
                 ]
             }

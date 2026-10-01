@@ -6,7 +6,9 @@ function resetItems()
             else
                 local obj = Tracker:FindObjectForCode(v)
                 if obj then
-                    if v == "BLUE_CARD_POINT" or v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" then
+                    if v == "BLUE_CARD_POINT" then
+                        obj.CurrentStage = 0
+                    elseif v == "AERODACTYL_TILE" or v == "HO-OH_TILE" or v == "KABUTO_TILE" or v == "OMANYTE_TILE" or v == "BATTLE_TOWER_TIER_UNLOCK" then
                         obj.AcquiredCount = 0
                     else
                         obj.Active = false
@@ -60,494 +62,232 @@ function resetTrainers()
     Tracker:FindObjectForCode("trainersanity_344").Active = false -- literally just Cal the fucker.
 end
 
-MAP_TOGGLE = {
-    [0] = 0,
-    [1] = 1
-}
-MAP_TRIPLE = {
-    [0] = 0,
-    [1] = 1,
-    [2] = 2
-}
-MAP_QUADRUPLE = {
-    [0] = 0,
-    [1] = 1,
-    [2] = 2,
-    [3] = 3
-}
-MAP_QUINTUPLE = {
-    [0] = 0,
-    [1] = 1,
-    [2] = 2,
-    [3] = 3,
-    [4] = 4
-}
-MAP_SIXTUPLE = {
-    [0] = 0,
-    [1] = 1,
-    [2] = 2,
-    [3] = 3,
-    [4] = 4,
-    [5] = 5
-}
-MAP_TOGGLE_REVERSE = {
-    [0] = 1,
-    [1] = 0
-}
 MAP_BADGEGYM = {
     [0] = "badges",
     [1] = "gyms",
     [2] = "johtobadges"
 }
-MAP_KANTO_ACCESS = {
+MAP_ROUTE_22_ACCESS = {
     [0] = "snorlax",
     [1] = "badges",
     [2] = "gyms",
     [3] = "champion"
 }
 
-NONE = 0
-PALLET = 2
-VIRIDIAN = 3
-PEWTER = 4
-CERULEAN = 5
-ROCKTUNNEL = 6
-VERMILION = 7
-LAVENDER = 8
-SAFFRON = 9
-CELADON = 10
-FUCHSIA = 11
-CINNABAR = 12
-NEW_BARK = 14
-CHERRYGROVE = 15
-VIOLET = 16
-UNIONCAVE = 17
-AZALEA = 18
-CIANWOOD = 19
-GOLDENROD = 20
-OLIVINE = 21
-ECRUTEAK = 22
-MAHOGANY = 23
-LAKE_OF_RAGE = 24
-BLACKTHORN = 25
-SILVER_CAVE = 26
-
-TOWN_MAPPING = {
-    [NONE] = 0,
-    [NEW_BARK] = 1,
-    [CHERRYGROVE] = 2,
-    [VIOLET] = 3,
-    [AZALEA] = 4,
-    [GOLDENROD] = 5,
-    [ECRUTEAK] = 6,
-    [OLIVINE] = 7,
-    [CIANWOOD] = 8,
-    [MAHOGANY] = 9,
-    [LAKE_OF_RAGE] = 10,
-    [BLACKTHORN] = 11,
-    [PALLET] = 12,
-    [VIRIDIAN] = 13,
-    [PEWTER] = 14,
-    [CERULEAN] = 15,
-    [VERMILION] = 16,
-    [LAVENDER] = 17,
-    [CELADON] = 18,
-    [SAFFRON] = 19,
-    [CINNABAR] = 20,
-    [FUCHSIA] = 21,
-    [SILVER_CAVE] = 22
+FLYTOWN_MAPPING = {
+    [0]  = 0,   -- No Free Fly Location
+    [1]  = 1,   -- New Bark Town
+    [2]  = 2,   -- Cherrygrove City
+    [3]  = 3,   -- Violet City
+    [4]  = 4,   -- Azalea Town
+    [5]  = 5,   -- Goldenrod City
+    [6]  = 6,   -- Ecruteak City
+    [7]  = 7,   -- Olivine City
+    [8]  = 8,   -- Cianwood City
+    [9]  = 9,   -- Mahogany Town
+    [10] = 10,  -- Lake of Rage
+    [11] = 11,  -- Blackthorn City
+    [12] = 12,  -- Silver Cave
+    [13] = 13,  -- Pallet Town
+    [14] = 14,  -- Viridian City
+    [15] = 15,  -- Pewter City
+    [16] = 16,  -- Cerulean City
+    [17] = 17,  -- Vermilion City
+    [18] = 18,  -- Lavender Town
+    [19] = 19,  -- Celadon City
+    [20] = 20,  -- Saffron City
+    [21] = 21,  -- Cinnabar Island
+    [22] = 22,  -- Fuchsia City
+    [23] = 23   -- Indigo Plateau
 }
 
 STARTTOWN_MAPPING = {
-    [NONE] = 0,
-    [NEW_BARK] = 0,
-    [CHERRYGROVE] = 1,
-    [VIOLET] = 2,
-    [UNIONCAVE] = 3,
-    [AZALEA] = 4,
-    [GOLDENROD] = 5,
-    [ECRUTEAK] = 6,
-    [OLIVINE] = 7,
-    [CIANWOOD] = 8,
-    [MAHOGANY] = 9,
-    [LAKE_OF_RAGE] = 10,
-    [BLACKTHORN] = 11,
-    [PALLET] = 12,
-    [VIRIDIAN] = 13,
-    [PEWTER] = 14,
-    [CERULEAN] = 15,
-    [ROCKTUNNEL] = 16,
-    [VERMILION] = 17,
-    [LAVENDER] = 18,
-    [CELADON] = 19,
-    [SAFFRON] = 20,
-    [CINNABAR] = 21,
-    [FUCHSIA] = 22,
-    [SILVER_CAVE] = 23
+    [0]   = 0,   -- None (no dedicated stage; falls back to New Bark Town)
+    [37]  = 0,   -- New Bark Town
+    [38]  = 1,   -- Cherrygrove City
+    [39]  = 2,   -- Violet City
+    [40]  = 3,   -- Union Cave
+    [41]  = 4,   -- Azalea Town
+    [42]  = 5,   -- Goldenrod City
+    [43]  = 6,   -- Ecruteak City
+    [44]  = 7,   -- Olivine City
+    [45]  = 8,   -- Cianwood City
+    [46]  = 9,   -- Mahogany Town
+    [47]  = 10,  -- Lake of Rage
+    [48]  = 11,  -- Blackthorn City
+    [25]  = 12,  -- Pallet Town
+    [26]  = 13,  -- Viridian City
+    [27]  = 14,  -- Pewter City
+    [28]  = 15,  -- Cerulean City
+    [29]  = 16,  -- Rock Tunnel
+    [30]  = 17,  -- Vermilion City
+    [31]  = 18,  -- Lavender Town
+    [32]  = 19,  -- Celadon City
+    [33]  = 20,  -- Saffron City
+    [34]  = 21,  -- Cinnabar Island
+    [35]  = 22   -- Fuchsia City
 }
 
 SLOT_CODES = {
-    enable_mischief = {
-        code = "mischief",
-        mapping = MAP_TOGGLE
-    },
-    goal = {
-        code = "goal",
-        mapping = MAP_SIXTUPLE
-    },
-    randomize_badges = {
-        code = "badges",
-        mapping = MAP_TRIPLE
-    },
-    randomize_pokegear = {
-        code = "pokegear",
-        mapping = MAP_TOGGLE
-    },
-    hm_badge_requirements = {
-        code = "badgereqs",
-        mapping = MAP_QUADRUPLE
-    },
-    johto_only = {
-        code = "johto_only",
-        mapping = MAP_TRIPLE
-    },
-    free_fly_location = {
-        code = "free_fly_location",
-        mapping = TOWN_MAPPING
-    },
-    map_card_fly_location = {
-        code = "map_card_fly",
-        mapping = TOWN_MAPPING
-    },
-    randomize_berry_trees = {
-        code = "berries",
-        mapping = MAP_TOGGLE
-    },
-    remove_ilex_cut_tree = {
-        code = "ilextree",
-        mapping = MAP_TOGGLE
-    },
-    route_32_condition = {
-        code = "r32_guy",
-        mapping = MAP_QUINTUPLE
-    },
-    tea_north = {
-        code = "tea_north",
-        mapping = MAP_TOGGLE
-    },
-    tea_east = {
-        code = "tea_east",
-        mapping = MAP_TOGGLE
-    },
-    tea_south = {
-        code = "tea_south",
-        mapping = MAP_TOGGLE
-    },
-    tea_west = {
-        code = "tea_west",
-        mapping = MAP_TOGGLE
-    },
-    free_cut = {
-        code = "FREE_CUT",
-        mapping = MAP_TOGGLE
-    },
-    free_fly = {
-        code = "FREE_FLY",
-        mapping = MAP_TOGGLE
-    },
-    free_surf = {
-        code = "FREE_SURF",
-        mapping = MAP_TOGGLE
-    },
-    free_strength = {
-        code = "FREE_STRENGTH",
-        mapping = MAP_TOGGLE
-    },
-    free_flash = {
-        code = "FREE_FLASH",
-        mapping = MAP_TOGGLE
-    },
-    free_whirlpool = {
-        code = "FREE_WHIRLPOOL",
-        mapping = MAP_TOGGLE
-    },
-    free_waterfall = {
-        code = "FREE_WATERFALL",
-        mapping = MAP_TOGGLE
-    },
-    east_west_underground = {
-        code = "ew_underground",
-        mapping = MAP_TOGGLE
-    },
-    undergrounds_require_power = {
-        code = "underground_power",
-        mapping = MAP_QUADRUPLE
-    },
-    route_2_access = {
-        code = "route_2_access",
-        mapping = MAP_TRIPLE
-    },
-    red_gyarados_access = {
-        code = "red_gyarados_access",
-        mapping = MAP_TRIPLE
-    },
-    blackthorn_dark_cave_access = {
-        code = "blackthorn_dark_cave_access",
-        mapping = MAP_TOGGLE
-    },
-    national_park_access = {
-        code = "national_park_access",
-        mapping = MAP_TOGGLE
-    },
-    kanto_access_condition = {
-        code = "kanto_access_condition",
-        mapping = MAP_TRIPLE
-    },
-    route_3_access = {
-        code = "route_3_access",
-        mapping = MAP_TOGGLE
-    },
-    starting_town = {
-        code = "start_town_location",
-        mapping = STARTTOWN_MAPPING
-    },
-    vanilla_clair = {
-        code = "clair_behaviour",
-        mapping = MAP_TOGGLE
-    },
-    evomethod_happiness = {
-        code = "evomethod_happiness",
-        mapping = MAP_TOGGLE
-    },
-    evomethod_level = {
-        code = "evomethod_level",
-        mapping = MAP_TOGGLE
-    },
-    evomethod_tyrogue = {
-        code = "evomethod_tyrogue",
-        mapping = MAP_TOGGLE
-    },
-    evomethod_useitem = {
-        code = "evomethod_useitem",
-        mapping = MAP_TOGGLE
-    },
-    encmethod_land = {
-        code = "encmethod_land",
-        mapping = MAP_TRIPLE
-    },
-    encmethod_water = {
-        code = "encmethod_water",
-        mapping = MAP_TRIPLE
-    },
-    encmethod_fishing = {
-        code = "encmethod_fishing",
-        mapping = MAP_TRIPLE
-    },
-    encmethod_headbutt = {
-        code = "encmethod_headbutt",
-        mapping = MAP_TRIPLE
-    },
-    encmethod_rocksmash = {
-        code = "encmethod_rocksmash",
-        mapping = MAP_TRIPLE
-    },
-    static_pokemon_required = {
-        code = "encmethod_static",
-        mapping = MAP_TOGGLE
-    },
-    breeding_method = {
-        code = "breeding_logic",
-        mapping = MAP_QUINTUPLE
-    },
-    all_pokemon_seen = {
-        code = "all_pokemon_seen",
-        mapping = MAP_TOGGLE
-    },
-    hiddenitem_logic = {
-        code = "hiddenitem_logic",
-        mapping = MAP_SIXTUPLE
-    },
-    mount_mortar_access = {
-        code = "mount_mortar_access",
-        mapping = MAP_TOGGLE
-    },
-    fly_cheese = {
-        code = "fly_cheese",
-        mapping = MAP_TRIPLE
-    },
-    randomize_pokemon_requests = {
-        code = "randomize_pokemon_requests",
-        mapping = MAP_QUADRUPLE
-    },
-    randomize_fly_unlocks = {
-        code = "randomize_fly_unlocks",
-        mapping = MAP_TRIPLE
-    },
-    shopsanity_apricorn = {
-        code = "shopsanity_apricorn",
-        mapping = MAP_TOGGLE
-    },
-    shopsanity_bluecard = {
-        code = "shopsanity_bluecard",
-        mapping = MAP_TOGGLE
-    },
-    shopsanity_gamecorners = {
-        code = "shopsanity_gamecorners",
-        mapping = MAP_TOGGLE
-    },
-    shopsanity_johtomarts = {
-        code = "shopsanity_johtomarts",
-        mapping = MAP_TOGGLE
-    },
-    shopsanity_kantomarts = {
-        code = "shopsanity_kantomarts",
-        mapping = MAP_TOGGLE
-    },
-    randomize_evolution = {
-        code = "randomize_evolution",
-        mapping = MAP_TRIPLE
-    },
-    victory_road_access = {
-        code = "victory_road_access",
-        mapping = MAP_TOGGLE
-    },
-    require_flash = {
-        code = "require_flash",
-        mapping = MAP_TRIPLE
-    },
-    lock_kanto_gyms = {
-        code = "lock_kanto_gyms",
-        mapping = MAP_TOGGLE
-    },
-    grasssanity = {
-        code = "grasssanity",
-        mapping = MAP_TRIPLE
-    },
-    route_30_battle = {
-        code = "route_30_battle",
-        mapping = MAP_TOGGLE
-    },
-    ss_aqua_access = {
-        code = "ss_aqua_access",
-        mapping = MAP_TOGGLE
-    },
-    magnet_train_access = {
-        code = "magnet_train_access",
-        mapping = MAP_TOGGLE
-    },
-    randomize_bug_catching_contest = {
-        code = "randomize_bug_catching_contest",
-        mapping = MAP_QUADRUPLE
-    },
-    encmethod_contest = {
-        code = "encmethod_contest",
-        mapping = MAP_TRIPLE
-    },
-    trades_required = {
-        code = "encmethod_trades",
-        mapping = MAP_TOGGLE
-    },
-    require_pokegear_for_phone_numbers = {
-        code = "require_pokegear_for_phone_numbers",
-        mapping = MAP_TOGGLE
-    },
-    route_42_access = {
-        code = "route_42_access",
-        mapping = MAP_QUADRUPLE
-    },
-    randomize_phone_call_items = {
-        code = "randomize_phone_call_items",
-        mapping = MAP_TRIPLE
-    },
-    route_12_access = {
-        code = "route_12_access",
-        mapping = MAP_TOGGLE
-    },
-    route_30_access = {
-        code = "route_30_access",
-        mapping = MAP_TOGGLE
-    },
-    randomize_pokedex = {
-        code = "randomize_pokedex",
-        mapping = MAP_TRIPLE
-    },
-    south_kanto_access = {
-        code = "south_kanto_access",
-        mapping = MAP_TRIPLE
-    },
-    south_kanto_condition = {
-        code = "south_kanto_condition",
-        mapping = MAP_TOGGLE
-    }
+    enable_mischief = {code = "mischief"},
+    randomize_badges = {code = "badges"},
+    randomize_pokegear = {code = "pokegear"},
+    hm_badge_requirements = {code = "badgereqs"},
+    johto_only = {code = "johto_only"},
+    free_fly_location = {code = "free_fly_location", mapping = FLYTOWN_MAPPING},
+    map_card_fly_location = {code = "map_card_fly", mapping = FLYTOWN_MAPPING},
+    randomize_berry_trees = {code = "berries"},
+    remove_ilex_cut_tree = {code = "ilextree"},
+    route_32_condition = {code = "r32_guy"},
+    tea_north = {code = "tea_north"},
+    tea_east = {code = "tea_east"},
+    tea_south = {code = "tea_south"},
+    tea_west = {code = "tea_west"},
+    east_west_underground = {code = "ew_underground"},
+    undergrounds_require_power = {code = "underground_power"},
+    route_2_access = {code = "route_2_access"},
+    red_gyarados_access = {code = "red_gyarados_access"},
+    blackthorn_dark_cave_access = {code = "blackthorn_dark_cave_access"},
+    national_park_access = {code = "national_park_access"},
+    route_3_access = {code = "route_3_access"},
+    starting_town = {code = "start_town_location", mapping = STARTTOWN_MAPPING},
+    time_of_day_encounters = {code = "timeofday"},
+    unlockable_time_of_day = {code = "unlockable_tod"},
+    static_pokemon_required = {code = "encmethod_static"},
+    breeding_method = {code = "breeding_logic"},
+    all_pokemon_seen = {code = "all_pokemon_seen"},
+    hiddenitem_logic = {code = "hiddenitem_logic"},
+    mount_mortar_access = {code = "mount_mortar_access"},
+    randomize_pokemon_requests = {code = "randomize_pokemon_requests"},
+    randomize_fly_unlocks = {code = "randomize_fly_unlocks"},
+    randomize_fly_destinations = {code = "randomize_fly_destinations"},
+    randomize_evolution = {code = "randomize_evolution"},
+    randomize_breeding = {code = "randomize_breeding"},
+    victory_road_strength = {code = "victory_road_strength"},
+    require_flash = {code = "require_flash"},
+    lock_kanto_gyms = {code = "lock_kanto_gyms"},
+    grasssanity = {code = "grasssanity"},
+    route_30_battle = {code = "route_30_battle"},
+    ss_aqua_access = {code = "ss_aqua_access"},
+    magnet_train_access = {code = "magnet_train_access"},
+    randomize_bug_catching_contest = {code = "randomize_bug_catching_contest"},
+    trades_required = {code = "encmethod_trades"},
+    require_pokegear_for_phone_numbers = {code = "require_pokegear_for_phone_numbers"},
+    route_42_access = {code = "route_42_access"},
+    randomize_phone_call_items = {code = "randomize_phone_call_items"},
+    phone_call_mode = {code = "phone_call_mode"},
+    rematchsanity = {code = "randomize_rematches"},
+    route_12_access = {code = "route_12_access"},
+    route_30_access = {code = "route_30_access"},
+    randomize_pokedex = {code = "randomize_pokedex"},
+    south_kanto_access = {code = "south_kanto_access"},
+    south_kanto_condition = {code = "south_kanto_condition"},
+    route_23_restored = {code = "route_23_restored"},
+    lance_requires_elite_four = {code = "lance_requires_elite_four"},
+    skip_elite_four = {code = "skip_elite_four"},
+    flooded_mine = {code = "flooded_mine"},
+    momsanity = {code = "momsanity"},
+    coupled_entrances = {code = "coupled_entrances"},
+    battle_tower_sanity = {code = "battle_tower_sanity"},
+    battle_tower_progressive_tier_unlocks = {code = "battle_tower_progressive_tier_unlocks"},
+    randomize_lucky_number_show = {code = "luckynumbershow"},
+    teleporting_abra = {code = "teleporting_abra"}
 }
 
 REQUIREMENT_CODES = {
-    elite_four_requirement = {
-        code = "e4_requirement",
+    victory_road_requirement = {code = "vr_requirement",
+        mapping = MAP_BADGEGYM,
+        item = VR_REQ
+    },
+    elite_four_requirement = {code = "e4_requirement",
         mapping = MAP_BADGEGYM,
         item = E4_REQ
     },
-    red_requirement = {
-        code = "red_requirement",
+    red_requirement = {code = "red_requirement",
         mapping = MAP_BADGEGYM,
         item = RED_REQ
     },
-    radio_tower_requirement = {
-        code = "tower_requirement",
+    radio_tower_requirement = {code = "tower_requirement",
         mapping = MAP_BADGEGYM,
         item = RADIO_REQ
     },
-    mt_silver_requirement = {
-        code = "mt_silver_requirement",
+    mt_silver_requirement = {code = "mt_silver_requirement",
         mapping = MAP_BADGEGYM,
         item = SILVER_REQ
     },
-    route_44_access_requirement = {
-        code = "route_44_requirement",
+    route_44_access_requirement = {code = "route_44_requirement",
         mapping = MAP_BADGEGYM,
         item = R44_REQ
     },
-    kanto_access_requirement = {
-        code = "kanto_access_condition",
-        mapping = MAP_KANTO_ACCESS,
-        item = KANTO_REQ
+    route_22_access_requirement = {code = "route_22_access",
+        mapping = MAP_ROUTE_22_ACCESS,
+        item = ROUTE_22_REQ
     }
 }
 AMOUNT_CODES = {
-    elite_four_count = {
-        code = "e4_requirement",
+    victory_road_count = {code = "vr_requirement",
+        item = VR_REQ
+    },
+    elite_four_count = {code = "e4_requirement",
         item = E4_REQ
     },
-    red_count = {
-        code = "red_requirement",
+    red_count = {code = "red_requirement",
         item = RED_REQ
     },
-    radio_tower_count = {
-        code = "tower_requirement",
+    radio_tower_count = {code = "tower_requirement",
         item = RADIO_REQ
     },
-    mt_silver_count = {
-        code = "mt_silver_requirement",
+    mt_silver_count = {code = "mt_silver_requirement",
         item = SILVER_REQ
     },
-    route_44_access_count = {
-        code = "route_44_requirement",
+    route_44_access_count = {code = "route_44_requirement",
         item = R44_REQ
     },
-    kanto_access_count = {
-        code = "kanto_access_count",
-        item = KANTO_REQ
+    route_22_access_count = {code = "route_22_access_count",
+        item = ROUTE_22_REQ
     }
 }
 
 LIST_CODES = {
+    goal = {
+        values = {
+            ["Elite Four"]         = "goal_e4",
+            ["Red"]                = "goal_red",
+            ["Diploma"]            = "goal_diploma",
+            ["Rival"]              = "goal_rival",
+            ["Defeat Team Rocket"] = "goal_rocket",
+            ["Unown Hunt"]         = "goal_unown",
+            ["Battle Tower"]       = "goal_battletower",
+        }
+    },
+    -- ER categories actually in the shuffle pool. The apworld's RandomizeEntrances OptionSet
+    -- sends the display names below; anything absent stays off (its entrances are vanilla and
+    -- get no tracker item). Setting er_<cat> fires the init.lua watch -> refreshERCategories()
+    -- -> createEntrancesForEnabled(). Keys must match options.py RandomizeEntrances exactly.
+    randomize_entrances = {
+        values = {
+            ["Dungeon"]           = "er_dungeon",
+            ["Dungeon Interior"]  = "er_dungeon_interior",
+            ["Gym"]               = "er_gym",
+            ["Gym Interior"]      = "er_gym_interior",
+            ["Mart"]              = "er_mart",
+            ["Mart Interior"]     = "er_mart_interior",
+            ["Building"]          = "er_building",
+            ["Building Interior"] = "er_building_interior",
+            ["Gate"]              = "er_gate",
+            ["Pokecenter"]        = "er_pokecenter",
+            ["Elevator"]          = "er_elevator",
+            ["Pokemon League"]    = "er_pokemon_league",
+            ["One-Way"]           = "er_one_way",
+        }
+    },
     dark_areas = {
-        mapping = MAP_TOGGLE,
         values = {
             ["Burned Tower"]         = "dark_burnedtower",
             ["Dark Cave"]            = "dark_darkcave",
             ["Digletts Cave"]        = "dark_diglettscave",
             ["Dragons Den"]          = "dark_dragonsden",
+            ["Flooded Mine"]         = "dark_floodedmine",
             ["Goldenrod Underground"]= "dark_goldenrodunderground",
             ["Ice Path"]             = "dark_icepath",
             ["Ilex Forest"]          = "dark_ilexforest",
@@ -562,5 +302,65 @@ LIST_CODES = {
             ["Victory Road"]         = "dark_victoryroad",
             ["Whirl Islands"]        = "dark_whirlislands",
         }
+    },
+    vanilla_event_chains = {
+        values = {
+            ["Misty"]               = "vanilla_chain_misty",
+            ["Clair"]               = "clair_behaviour",
+            ["Jasmine"]             = "vanilla_chain_jasmine",
+            ["Copycat"]             = "vanilla_chain_copycat",
+        }
+    },
+    remove_badge_requirement = {
+        values = {
+            ["Cut"]                 = "FREE_CUT",
+            ["Fly"]                 = "FREE_FLY",
+            ["Surf"]                = "FREE_SURF",
+            ["Strength"]            = "FREE_STRENGTH",
+            ["Flash"]               = "FREE_FLASH",
+            ["Whirlpool"]           = "FREE_WHIRLPOOL",
+            ["Waterfall"]           = "FREE_WATERFALL",
+        }
+    },
+    shopsanity = {
+        values = {
+            ["Johto Marts"]         = "shopsanity_johtomarts",
+            ["Kanto Marts"]         = "shopsanity_kantomarts",
+            ["Blue Card"]           = "shopsanity_bluecard",
+            ["Game Corners"]        = "shopsanity_gamecorners",
+            ["Apricorns"]           = "shopsanity_apricorn",
+        }
+    },
+    evolution_methods_required = {
+        values = {
+            ["Level"]          = "evomethod_level",
+            ["Level and Stat"] = "evomethod_tyrogue",
+            ["Use Item"]       = "evomethod_useitem",
+            ["Held Item"]      = "evomethod_helditem",
+            ["Happiness"]      = "evomethod_happiness",
+        }
+    },
+    wild_encounter_methods_required = {
+        values = {
+            ["Land"]                 = "encmethod_land",
+            ["Surfing"]              = "encmethod_water",
+            ["Fishing"]              = "encmethod_fishing",
+            ["Headbutt"]             = "encmethod_headbutt",
+            ["Rock Smash"]           = "encmethod_rocksmash",
+            ["Swarm"]                = "encmethod_swarm",
+            ["Bug Catching Contest"] = "encmethod_contest",
+        }
     }
+}
+
+DEXSANITY_LOGIC_CODES = {
+    ["Land"]                 = "dexlogic_land",
+    ["Surfing"]              = "dexlogic_surfing",
+    ["Fishing"]              = "dexlogic_fishing",
+    ["Headbutt"]             = "dexlogic_headbutt",
+    ["Rock Smash"]           = "dexlogic_rocksmash",
+    ["Swarm"]                = "dexlogic_swarm",
+    ["Bug Catching Contest"] = "dexlogic_contest",
+    ["Statics"]              = "dexlogic_statics",
+    ["Trades"]               = "dexlogic_trades",
 }

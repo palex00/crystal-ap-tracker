@@ -1,0 +1,452 @@
+{
+    "kanto_routes": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Route 1",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route1"
+                    ]
+                }
+            },
+            {
+                "title": "Route 2",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route2"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Nugget House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route2NuggetHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route2Gate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 3",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route3"
+                    ]
+                }
+            },
+            {
+                "title": "Route 4",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route4"
+                    ]
+                }
+            },
+            {
+                "title": "Route 5",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route5"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Underground Path Entrance",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route5UndergroundPathEntrance"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Saffron Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route5SaffronGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Cleanse Tag House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route5CleanseTagHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 6",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route6"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Saffron Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route6SaffronGate"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Underground Path Entrance",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route6UndergroundPathEntrance"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 7",
+                "content": {
+                    "type": "layout",
+                    "key": "route_7"
+                }
+            },
+            {
+                "title": "Route 8",
+                "content": {
+                    "type": "layout",
+                    "key": "route_8"
+                }
+            },
+            {
+                "title": "Route 9",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route9"
+                    ]
+                }
+            },
+            {
+                "title": "Route 10",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route10"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "PokeCenter",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route10Pokecenter1F"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 11",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route11"
+                    ]
+                }
+            },
+            {
+                "title": "Route 12",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route12North",
+                                    "Route12South"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Super Rod House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route12SuperRodHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 13",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route13"
+                    ]
+                }
+            },
+            {
+                "title": "Route 14",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route14"
+                    ]
+                }
+            },
+            {
+                "title": "Route 15",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route15"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fuchsia Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route15FuchsiaGate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 16",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route16"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fuchsia Speech House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route16FuchsiaSpeechHouse"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route16Gate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 17",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route17"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Route 18 Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route17Route18Gate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 18",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route18"
+                    ]
+                }
+            },
+            {
+                "title": "Route 19",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route19"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fuchsia Gate",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route19FuchsiaGate"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 20",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route20"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Seafoam Gym",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SeafoamGym"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Route 21",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route21"
+                    ]
+                }
+            },
+            {
+                "title": "Route 22",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route22"
+                    ]
+                }
+            },
+            {
+                "title": "Route 24",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route24"
+                    ]
+                }
+            },
+            {
+                "title": "Route 25",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Route",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Route25"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Bill's House",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "BillsHouse"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

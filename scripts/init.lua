@@ -2,19 +2,66 @@ Tracker.AllowDeferredLogicUpdate = true
 
 -- Items
 Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/items_hosted.json")
 Tracker:AddItems("items/events.json")
+Tracker:AddItems("items/events_hosted.json")
 Tracker:AddItems("items/settings.json")
 Tracker:AddItems("items/settings_encevo.json")
 Tracker:AddItems("items/tools.json")
+Tracker:AddItems("items/dexsearch.json")
 Tracker:AddItems("items/pokemon.json")
+Tracker:AddItems("items/pokemon_requests.json")
 Tracker:AddItems("items/trainersanity.json")
 Tracker:AddItems("items/dexsanity_items.json")
+Tracker:AddItems("items/settings_er.json")
+Tracker:AddItems("items/route.json")
 
 -- Logic
 ScriptHost:LoadScript("scripts/utils.lua")
+ScriptHost:LoadScript("scripts/toggles.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/logic/dexsanity.lua")
 ScriptHost:LoadScript("scripts/custom_items.lua")
+
+-- Entrance Randomization: CanReach graph engine + entrance items + route mode.
+-- Order matters (imperative graph construction): helpers -> engine -> nodes -> connections
+-- -> registry -> items -> route mode. custom_items.lua (above) must load first (CustomItem base).
+ScriptHost:LoadScript("scripts/logic/logic_helpers.lua")
+ScriptHost:LoadScript("scripts/logic/canreach.lua")
+ScriptHost:LoadScript("scripts/logic/regions/region_definitions.lua")
+-- Fly-destination data (FLY_REGION_TOKENS / FLY_VANILLA_REGIONS / FLY_ARRIVAL_REGIONS); read by
+-- connections.lua's fly edges, so it must load before them.
+ScriptHost:LoadScript("scripts/entrances/fly_registry.lua")
+ScriptHost:LoadScript("scripts/logic/regions/connections.lua")
+-- Encounter leaves load BEFORE the dark pass ON PURPOSE -- the opposite of check_leafs.lua
+-- below. An encounter leaf is shared: one table is attached from every region that holds it,
+-- and some tables straddle dark and lit regions (FISHING_Ocean has 1 dark attach point and 23
+-- lit ones). A per-section $dark in the JSON would then demand Flash to fish the Ocean
+-- anywhere, so the gate has to sit on the individual attach EDGE instead -- which is exactly
+-- what gate_region_exits does to every outgoing edge of a dark region. Loading here lets the
+-- dark attach points get gated and leaves the lit ones alone.
+ScriptHost:LoadScript("scripts/logic/regions/encounter_leafs.lua")
+-- Dark areas wrap the edges declared above, so they must come after connections.lua -- and
+-- BEFORE check_leafs.lua, because they wrap every exit of a dark region and the check leaves
+-- are exits too. Those leaves are deliberately left ungated here; each is attached from a
+-- single region, so the area gate is ANDed onto the location in its JSON instead.
+-- See connections_darkareas.lua.
+ScriptHost:LoadScript("scripts/logic/regions/connections_darkareas.lua")
+ScriptHost:LoadScript("scripts/logic/regions/check_leafs.lua")
+ScriptHost:LoadScript("scripts/logic/out_of_logic.lua")
+ScriptHost:LoadScript("scripts/entrances/entrance_registry.lua")
+ScriptHost:LoadScript("scripts/entrances/entrance_item.lua")
+-- Read-only fly-destination display items. Created once here (all 23); they show a placeholder
+-- until slot_data fills in destinations in onClear. Display-only -- they never affect logic.
+ScriptHost:LoadScript("scripts/entrances/fly_destination_item.lua")
+createFlyDestinationItems()
+ScriptHost:LoadScript("scripts/logic/evobreed_helper.lua")
+-- Entrance items are created per-ENABLED-category, not all at once: a vanilla entrance needs no
+-- tracker item, and a large _luaItems set makes every toggle laggy. Build the token->category
+-- map now; the actual EntranceItems are instantiated by createEntrancesForEnabled(), driven by
+-- refreshERCategories() (called at the end of init and whenever a category toggles / on connect).
+buildEntranceCategoryMap()
+ScriptHost:LoadScript("scripts/routing/route_mode.lua")
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
@@ -25,50 +72,65 @@ Tracker:AddMaps("maps/lake_of_rage_vanilla.json")
 Tracker:AddMaps("maps/blackthorn_dark_cave_vanilla.json")
 Tracker:AddMaps("maps/mm_vanilla.json")
 Tracker:AddMaps("maps/r42.json")
+Tracker:AddMaps("maps/floodedmine_off.json")
 Tracker:AddMaps("maps/r12.json")
 Tracker:AddMaps("maps/victory_road_vanilla.json")
 Tracker:AddMaps("maps/maps_johto_and_kanto.json")
 
 -- Locations
-Tracker:AddLocations("locations/locations.json")
-Tracker:AddLocations("locations/dungeons.json")
+Tracker:AddLocations("locations/locations.jsonc")
+Tracker:AddLocations("locations/submaps_overview.json")
+Tracker:AddLocations("locations/submaps_entrances.json")
+Tracker:AddLocations("locations/submaps_deep_single.json")
+Tracker:AddLocations("locations/submaps_deep_group.json")
+Tracker:AddLocations("locations/submaps_ssaqua.json")
+Tracker:AddLocations("locations/submaps_encounters.json")
+Tracker:AddLocations("locations/submaps_grass.json")
+Tracker:AddLocations("locations/submaps_signs.json")
 Tracker:AddLocations("locations/dexsanity.json")
 Tracker:AddLocations("locations/pokedex.json")
 Tracker:AddLocations("locations/evolutionsanity.json")
-Tracker:AddLocations("locations/encounters_submaps.json")
 Tracker:AddLocations("locations/special_encounters.json")
-Tracker:AddLocations("locations/grass_submaps.json")
-Tracker:AddLocations("locations/new_signs.json")
 
 -- Layout
-Tracker:AddLayouts("layouts/dungeon_maps.json")
-Tracker:AddLayouts("layouts/events_red.json")
-Tracker:AddLayouts("layouts/settings.json")
-Tracker:AddLayouts("layouts/settings_encevo.json")
-Tracker:AddLayouts("layouts/settings_popup.json")
-Tracker:AddLayouts("layouts/settings_quick/settings_quick.json")
+---- maps & locations
+Tracker:AddLayouts("layouts/submaps/johto_cities.json")
+Tracker:AddLayouts("layouts/submaps/johto_routes.json")
+Tracker:AddLayouts("layouts/submaps/silver_cave.json")
+Tracker:AddLayouts("layouts/submaps/fast_ship.json")
+Tracker:AddLayouts("layouts/submaps/kanto_cities.json")
+Tracker:AddLayouts("layouts/submaps/kanto_routes.json")
+Tracker:AddLayouts("layouts/submaps/kanto_dungeons.json")
+Tracker:AddLayouts("layouts/full/overworld.json")
+Tracker:AddLayouts("layouts/routing.json")
+ScriptHost:LoadScript("scripts/layout_slots.lua")
+
+---- items
+Tracker:AddLayouts("layouts/items/encevo_max.json")
+Tracker:AddLayouts("layouts/full/flyunlocks.json")
+Tracker:AddLayouts("layouts/full/events.json")
+
+---- settings
+Tracker:AddLayouts("layouts/full/settings.json")
+Tracker:AddLayouts("layouts/settings/settings_encevo.json")
+Tracker:AddLayouts("layouts/settings/settings_popup.json")
+Tracker:AddLayouts("layouts/tools/tools_max.json")
+Tracker:AddLayouts("layouts/tools/dexsearch.json")
+Tracker:AddLayouts("layouts/full/settings_flydestinations.json")
+
+---- other
 Tracker:AddLayouts("layouts/levelinglogic.json")
-Tracker:AddLayouts("layouts/items_no_tea.json")
-Tracker:AddLayouts("layouts/flyunlocks.json")
-Tracker:AddLayouts("layouts/shopsanity_all.json")
-Tracker:AddLayouts("layouts/tabs_single.json")
-Tracker:AddLayouts("layouts/overworld.json")
-Tracker:AddLayouts("layouts/tracker.json")
-Tracker:AddLayouts("layouts/unown_tiles.json")
 Tracker:AddLayouts("layouts/broadcast/broadcast.json")
 Tracker:AddLayouts("layouts/pokedex.json")
 Tracker:AddLayouts("layouts/dexcountsanity.json")
 
--- AutoTracking for Poptracker
-ScriptHost:LoadScript("scripts/autotracking.lua")
 
--- Watches
+-- AutoTracking for Poptracker
+ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
+ScriptHost:LoadScript("scripts/dexsearch.lua")
+
+---- Watches
 ScriptHost:AddWatchForCode("johto_only", "johto_only", toggle_johto)
-ScriptHost:AddWatchForCode("tea_guard", "tea_guard", toggle_johto)
-ScriptHost:AddWatchForCode("phone_calls_visible", "phone_calls_visible", toggle_johto)
-ScriptHost:AddWatchForCode("badges", "badges", toggle_johto)
-ScriptHost:AddWatchForCode("goal", "goal", toggle_johto)
-ScriptHost:AddWatchForCode("splitmap", "splitmap", toggle_splitmap)
 ScriptHost:AddWatchForCode("ilextree", "ilextree", toggle_ilex)
 ScriptHost:AddWatchForCode("route_2_access", "route_2_access", toggle_route2)
 ScriptHost:AddWatchForCode("red_gyarados_access", "red_gyarados_access", toggle_lakeofrage)
@@ -76,7 +138,8 @@ ScriptHost:AddWatchForCode("blackthorn_dark_cave_access", "blackthorn_dark_cave_
 ScriptHost:AddWatchForCode("mount_mortar_access", "mount_mortar_access", toggle_mountmortar)
 ScriptHost:AddWatchForCode("route_42_access", "route_42_access", toggle_mountmortar)
 ScriptHost:AddWatchForCode("route_12_access", "route_12_access", toggle_r12)
-ScriptHost:AddWatchForCode("victory_road_access", "victory_road_access", toggle_victoryroad)
+ScriptHost:AddWatchForCode("victory_road_strength", "victory_road_strength", toggle_victoryroad)
+ScriptHost:AddWatchForCode("flooded_mine", "flooded_mine", toggle_floodedmine)
 ScriptHost:AddWatchForCode("mischief", "mischief", toggle_mischief)
 ScriptHost:AddWatchForCode("chrism", "chrism", toggle_mischief)
 for _, code in ipairs(gym_codes) do
@@ -84,24 +147,23 @@ for _, code in ipairs(gym_codes) do
 end
 ScriptHost:AddWatchForCode("yaml_digit1", "yaml_digit1", calculateEvoLevel)
 ScriptHost:AddWatchForCode("yaml_digit2", "yaml_digit2", calculateEvoLevel)
-for _, code in ipairs(FLAG_STATIC_CODES) do
-    ScriptHost:AddWatchForCode(code, code, updatePokemon)
-end
 ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function() updatePokemon() end)
 
 ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
 
-ScriptHost:AddWatchForCode("goal2", "goal", toggle_itemgrid)
-ScriptHost:AddWatchForCode("randomize_fly_unlocks", "randomize_fly_unlocks", toggle_itemgrid)
-ScriptHost:AddWatchForCode("shopsanity_gamecorners", "shopsanity_gamecorners", toggle_itemgrid)
-ScriptHost:AddWatchForCode("shopsanity_bluecard", "shopsanity_bluecard", toggle_itemgrid)
-ScriptHost:AddWatchForCode("shopsanity_apricorn", "shopsanity_apricorn", toggle_itemgrid)
-ScriptHost:AddWatchForCode("broadcast_view", "broadcast_view", toggle_itemgrid)
 ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
-ScriptHost:AddWatchForCode("grasssanity", "grasssanity", toggleQuickSettings)
-ScriptHost:AddWatchForCode("goal", "goal", toggleQuickSettings)
-ScriptHost:AddWatchForCode("shopsanity_johtomarts", "shopsanity_johtomarts", toggleQuickSettings)
-ScriptHost:AddWatchForCode("shopsanity_kantomarts", "shopsanity_kantomarts", toggleQuickSettings)
+ScriptHost:AddWatchForCode("blue_card_overlay", "BLUE_CARD", updateBlueCardOverlay)
+setBattleTowerTierOverlays()
 
--- Makes version nil
-first_two_dots = nil
+for _, list in ipairs({HOSTED_EVENT_CODES, HOSTED_ITEM_CODES}) do
+    for _, code in ipairs(list) do
+        ScriptHost:AddWatchForCode(code .. "_hostsync", code, syncHostedFromBase)
+        ScriptHost:AddWatchForCode(code .. "_hosted", code .. "_hosted", syncBaseFromHosted)
+    end
+end
+
+-- ER category toggles -> refresh ER_CATEGORY_ENABLED for the CanReach detour
+for _, cat in ipairs(ER_CATEGORIES) do
+    ScriptHost:AddWatchForCode("er_" .. cat, "er_" .. cat, refreshERCategories)
+end
+refreshERCategories()

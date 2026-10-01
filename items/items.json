@@ -562,19 +562,48 @@
         "codes": "flyunlock_SilverCave"
     },
     {
-        "name": "Blue Card",
+        "name": "Fly Indigo Plateau",
         "type": "toggle",
-        "img": "/images/shopsanity/blue_card.png",
-        "codes": "BLUE_CARD"
+        "img": "/images/items/flyunlocks/flyunlock.png",
+        "img_mods": "overlay|images/items/flyunlocks/fly_indigoplateau.png",
+        "codes": "flyunlock_IndigoPlateau"
     },
     {
-        "name": "Blue Card Point",
-        "type": "consumable",
-        "min_quantity": 0,
-        "max_quantity": 5,
-        "initial_quantity": 0,
-        "img": "/images/shopsanity/blue_card.png",
-        "codes": "BLUE_CARD_POINT"
+        "name": "Blue Card",
+        "type": "progressive_toggle",
+        "codes": "BLUE_CARD, BLUE_CARD_POINT",
+        "stages": [
+            {
+                "name": "Blue Card",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD"
+            },
+            {
+                "name": "Blue Card - 1 Point",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD_POINT_1"
+            },
+            {
+                "name": "Blue Card - 2 Points",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD_POINT_2"
+            },
+            {
+                "name": "Blue Card - 3 Points",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD_POINT_3"
+            },
+            {
+                "name": "Blue Card - 4 Points",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD_POINT_4"
+            },
+            {
+                "name": "Blue Card - 5 Points",
+                "img": "/images/shopsanity/blue_card.png",
+                "codes": "BLUE_CARD_POINT_5"
+            }
+        ]
     },
     {
         "name": "Coin Case",
@@ -661,6 +690,24 @@
         "codes": "KABUTO_TILE"
     },
     {
+        "name": "Unowns Seen",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 26,
+        "initial_quantity": 0,
+        "img": "/images/other/unown_seen.png",
+        "codes": "UNOWN_SEEN_COUNT"
+    },
+    {
+        "name": "Unowns Caught",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 26,
+        "initial_quantity": 0,
+        "img": "/images/other/unown_caught.png",
+        "codes": "UNOWN_CAUGHT_COUNT"
+    },
+    {
         "name": "Pokedex",
         "type": "toggle",
         "img": "/images/settings/pokedex.png",
@@ -670,5 +717,98 @@
         "name": "Dummy Update",
         "type": "toggle",
         "codes": "update"
+    },
+    {
+        "name": "Moon Stone",
+        "type": "toggle",
+        "img": "/images/evolutionsanity/moonstone.png",
+        "codes": "MOON_STONE"
+    },
+    {
+        "name": "Fire Stone",
+        "type": "toggle",
+        "img": "/images/evolutionsanity/firestone.png",
+        "codes": "FIRE_STONE"
+    },
+    {
+        "name": "Thunderstone",
+        "type": "toggle",
+        "img": "/images/evolutionsanity/thunderstone.png",
+        "codes": "THUNDERSTONE"
+    },
+    {
+        "name": "Leaf Stone",
+        "type": "toggle",
+        "img": "/images/evolutionsanity/leafstone.png",
+        "codes": "LEAF_STONE"
+    },
+    {
+        "name": "Link Cable",
+        "type": "toggle",
+        "img": "/images/items/linkingcord.png",
+        "codes": "LINK_CABLE"
+    },
+    {
+        "name": "King's Rock",
+        "type": "toggle",
+        "img": "/images/evolutionsanity/kingsrock.png",
+        "codes": "KINGS_ROCK"
+    },
+    {
+        "name": "Metal Coat",
+        "type": "toggle",
+        "img": "/images/evolutionsanity/metalcoat.png",
+        "codes": "METAL_COAT"
+    },
+    {
+        "name": "Dragon Scale",
+        "type": "toggle",
+        "img": "/images/evolutionsanity/dragonscale.png",
+        "codes": "DRAGON_SCALE"
+    },
+    {
+        "name": "Sun Stone",
+        "type": "toggle",
+        "img": "/images/evolutionsanity/sunstone.png",
+        "codes": "SUN_STONE"
+    },
+    {
+        "name": "Up-Grade",
+        "type": "toggle",
+        "img": "/images/evolutionsanity/upgrade.png",
+        "codes": "UP_GRADE"
+    },
+    {
+        "name": "Morning",
+        "type": "toggle",
+        "img": "/images/items/morn.png",
+        "codes": "MORN_ITEM"
+    },
+    {
+        "name": "Day",
+        "type": "toggle",
+        "img": "/images/items/day.png",
+        "codes": "DAY_ITEM"
+    },
+    {
+        "name": "Night",
+        "type": "toggle",
+        "img": "/images/items/nite.png",
+        "codes": "NITE_ITEM"
+    },
+    {
+        "name": "Battle Tower UBER Pass",
+        "type": "toggle",
+        "img": "/images/items/battletower_pass.png",
+        "codes": "BATTLE_TOWER_UBER_PASS"
+    },
+    {
+        "name": "Battle Tower Tier Unlock",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 10,
+        "initial_quantity": 0,
+        "img": "/images/other/battletower.png",
+        "codes": "BATTLE_TOWER_TIER_UNLOCK"
     }
 ]

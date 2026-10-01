@@ -3,7 +3,7 @@ CustomItem = class()
 function CustomItem:init()
 end
 
-function CustomItem:createItem(name)
+function CustomItem:createItem(name, potentialCodes)
     local function invokeLeftClick(item)
         item.ItemState:onLeftClick()
     end
@@ -44,6 +44,13 @@ function CustomItem:createItem(name)
     self.ItemInstance.SaveFunc = invokeSave
     self.ItemInstance.LoadFunc = invokeLoad
     self.ItemInstance.PropertyChangedFunc = invokePropertyChanged
+    self:setPotentialCodes(potentialCodes)
+end
+
+--	Declare the fixed set of codes this item can ever provide, so PopTracker can match codes
+--	without a Lua call per item per code.
+function CustomItem:setPotentialCodes(codes)
+    self.ItemInstance.PotentialCodes = codes
 end
 
 --	Called when your item is left-clicked

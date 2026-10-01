@@ -1,44 +1,154 @@
 [
     {
-        "name": "Goal",
+        "name": "Goal: Elite Four",
         "type": "progressive",
         "loop": true,
+        "initial_stage_idx": 1,
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Goal - Defeat Elite Four",
+                "name": "Elite Four is not a goal",
                 "img": "/images/events/become_champion.png",
-                "codes": "goal, goal_e4",
+                "img_mods": "@disabled",
+                "codes": "goal_e4, goal_e4_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Defeat Red",
+                "name": "Goal: Defeat the Elite Four",
+                "img": "/images/events/become_champion.png",
+                "codes": "goal_e4, goal_e4_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Red",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Red is not a goal",
                 "img": "/images/events/defeat_red.png",
-                "codes": "goal, goal_red",
+                "img_mods": "@disabled",
+                "codes": "goal_red, goal_red_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Diploma",
+                "name": "Goal: Defeat Red",
+                "img": "/images/events/defeat_red.png",
+                "codes": "goal_red, goal_red_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Diploma",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Diploma is not a goal",
                 "img": "/images/events/diploma.png",
-                "codes": "goal, goal_diploma",
+                "img_mods": "@disabled",
+                "codes": "goal_diploma, goal_diploma_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Rival Hunt",
+                "name": "Goal: Obtain the Diploma",
+                "img": "/images/events/diploma.png",
+                "codes": "goal_diploma, goal_diploma_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Rival",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Rival is not a goal",
                 "img": "/images/trainers/rival.png",
-                "codes": "goal, goal_rival",
+                "img_mods": "@disabled",
+                "codes": "goal_rival, goal_rival_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Team Rocket Hunt",
+                "name": "Goal: Win all rival battles",
+                "img": "/images/trainers/rival.png",
+                "codes": "goal_rival, goal_rival_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Defeat Team Rocket",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Team Rocket is not a goal",
                 "img": "/images/trainers/rocket_m.png",
-                "codes": "goal, goal_rocket",
+                "img_mods": "@disabled",
+                "codes": "goal_rocket, goal_rocket_off",
                 "inherit_codes": false
             },
             {
-                "name": "Goal - Unown Hunt",
+                "name": "Goal: Defeat Team Rocket",
+                "img": "/images/trainers/rocket_m.png",
+                "codes": "goal_rocket, goal_rocket_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Unown Hunt",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Unown Hunt is not a goal",
                 "img": "/images/events/unown.png",
-                "codes": "goal, goal_unown",
+                "img_mods": "@disabled",
+                "codes": "goal_unown, goal_unown_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal: Catch all 26 Unown",
+                "img": "/images/events/unown.png",
+                "codes": "goal_unown, goal_unown_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Goal: Battle Tower",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Battle Tower is not a goal",
+                "img": "/images/other/battletower.png",
+                "img_mods": "@disabled",
+                "codes": "goal_battletower, goal_battletower_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal: Beat all Battle Tower tiers",
+                "img": "/images/other/battletower.png",
+                "codes": "goal_battletower, goal_battletower_on",
                 "inherit_codes": false
             }
         ]
@@ -174,6 +284,28 @@
         ]
     },
     {
+        "name": "Randomize Fly Destinations",
+        "type": "progressive",
+        "initial_stage_idx": 0,
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Randomize Fly Destinations - Off",
+                "img": "/images/items/flyunlocks/flyunlock.png",
+                "img_mods": "@disabled",
+                "codes": "randomize_fly_destinations,randomize_fly_destinations_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Fly Destinations - On",
+                "img": "/images/items/flyunlocks/flyunlock.png",
+                "codes": "randomize_fly_destinations,randomize_fly_destinations_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Randomize Hidden Items",
         "type": "progressive",
         "allow_disabled": false,
@@ -304,6 +436,12 @@
                 "inherit_codes": false
             },
             {
+                "name": "Free Fly Location - Silver Cave",
+                "img": "/images/settings/town_locations/silvercave.png",
+                "codes": "free_fly_location,free_fly_SilverCave",
+                "inherit_codes": false
+            },
+            {
                 "name": "Free Fly Location - Pallet Town",
                 "img": "/images/settings/town_locations/pallet.png",
                 "codes": "free_fly_location,free_fly_Pallet",
@@ -352,21 +490,21 @@
                 "inherit_codes": false
             },
             {
-                "name": "Free Fly Location - Cinnabar Island",
-                "img": "/images/settings/town_locations/cinnabar.png",
-                "codes": "free_fly_location,free_fly_Cinnabar",
-                "inherit_codes": false
-            },
-            {
                 "name": "Free Fly Location - Fuchsia City",
                 "img": "/images/settings/town_locations/fuchsia.png",
                 "codes": "free_fly_location,free_fly_Fuchsia",
                 "inherit_codes": false
             },
             {
-                "name": "Free Fly Location - Silver Cave",
-                "img": "/images/settings/town_locations/silvercave.png",
-                "codes": "free_fly_location,free_fly_SilverCave",
+                "name": "Free Fly Location - Cinnabar Island",
+                "img": "/images/settings/town_locations/cinnabar.png",
+                "codes": "free_fly_location,free_fly_Cinnabar",
+                "inherit_codes": false
+            },
+            {
+                "name": "Free Fly Location - Indigo Plateau",
+                "img": "/images/settings/town_locations/indigo.png",
+                "codes": "free_fly_location,free_fly_IndigoPlateau",
                 "inherit_codes": false
             }
         ]
@@ -455,6 +593,12 @@
                 "inherit_codes": false
             },
             {
+                "name": "Map Card Fly Location - Silver Cave",
+                "img": "/images/settings/town_locations/silvercave.png",
+                "codes": "map_card_fly,map_card_fly_SilverCave",
+                "inherit_codes": false
+            },
+            {
                 "name": "Map Card Fly Location - Pallet Town",
                 "img": "/images/settings/town_locations/pallet.png",
                 "codes": "map_card_fly,map_card_fly_Pallet",
@@ -515,9 +659,9 @@
                 "inherit_codes": false
             },
             {
-                "name": "Map Card Fly Location - Silver Cave",
-                "img": "/images/settings/town_locations/silvercave.png",
-                "codes": "map_card_fly,map_card_fly_SilverCave",
+                "name": "Map Card Fly Location - Indigo Plateau",
+                "img": "/images/settings/town_locations/indigo.png",
+                "codes": "map_card_fly,map_card_fly_IndigoPlateau",
                 "inherit_codes": false
             }
         ]
@@ -547,15 +691,6 @@
                 "inherit_codes": false
             }
         ]
-    },
-    {
-        "name": "Radio Tower Badges",
-        "img": "/images/events/tower_cleared.png",
-        "codes": "tower_badges",
-        "type": "consumable",
-        "min_quantity": 1,
-        "max_quantity": 16,
-        "initial_quantity": 7
     },
     {
         "name": "Route 32 Guy Condition",
@@ -977,7 +1112,7 @@
         "allow_disabled": true,
         "min_quantity": 0,
         "max_quantity": 251,
-        "overlay_background": "000000",
+        "overlay_background": "#000000",
         "initial_quantity": 0
     },
     {
@@ -1017,15 +1152,15 @@
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Goldenrod City",
-                "img": "/images/settings/town_locations/goldenrod.png",
-                "codes": "start_town_location,start_town_Goldenrod",
+                "name": "Starting Town - Cianwood City",
+                "img": "/images/settings/town_locations/cianwood.png",
+                "codes": "start_town_location,start_town_Cianwood",
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Ecruteak City",
-                "img": "/images/settings/town_locations/ecruteak.png",
-                "codes": "start_town_location,start_town_Ecruteak",
+                "name": "Starting Town - Goldenrod City",
+                "img": "/images/settings/town_locations/goldenrod.png",
+                "codes": "start_town_location,start_town_Goldenrod",
                 "inherit_codes": false
             },
             {
@@ -1035,9 +1170,9 @@
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Cianwood City",
-                "img": "/images/settings/town_locations/cianwood.png",
-                "codes": "start_town_location,start_town_Cianwood",
+                "name": "Starting Town - Ecruteak City",
+                "img": "/images/settings/town_locations/ecruteak.png",
+                "codes": "start_town_location,start_town_Ecruteak",
                 "inherit_codes": false
             },
             {
@@ -1101,21 +1236,15 @@
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Celadon City",
-                "img": "/images/settings/town_locations/celadon.png",
-                "codes": "start_town_location,start_town_Celadon",
-                "inherit_codes": false
-            },
-            {
                 "name": "Starting Town - Saffron City",
                 "img": "/images/settings/town_locations/saffron.png",
                 "codes": "start_town_location,start_town_Saffron",
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Cinnabar Island",
-                "img": "/images/settings/town_locations/cinnabar.png",
-                "codes": "start_town_location,start_town_Cinnabar",
+                "name": "Starting Town - Celadon City",
+                "img": "/images/settings/town_locations/celadon.png",
+                "codes": "start_town_location,start_town_Celadon",
                 "inherit_codes": false
             },
             {
@@ -1125,9 +1254,9 @@
                 "inherit_codes": false
             },
             {
-                "name": "Starting Town - Silver Cave",
-                "img": "/images/settings/town_locations/silvercave.png",
-                "codes": "start_town_location,start_town_SilverCave",
+                "name": "Starting Town - Cinnabar Island",
+                "img": "/images/settings/town_locations/cinnabar.png",
+                "codes": "start_town_location,start_town_Cinnabar",
                 "inherit_codes": false
             }
         ]
@@ -1177,11 +1306,6 @@
         ]
     },
     {
-        "img": "/images/settings/dex_related/breedinglogic.png",
-        "codes": "breedinglogic_dummy",
-        "type": "static"
-    },
-    {
         "name": "Breeding Logic",
         "type": "progressive",
         "loop": true,
@@ -1220,11 +1344,6 @@
         ]
     },
     {
-        "img": "/images/settings/dex_related/informationsheet.png",
-        "codes": "informationsheet",
-        "type": "static"
-    },
-    {
         "name": "Mount Mortar Rock Smash Rock",
         "type": "progressive",
         "loop": true,
@@ -1241,32 +1360,6 @@
                 "name": "Mount Mortar has Rock Smash Rocks",
                 "img": "/images/other/rocksmash.png",
                 "codes": "mount_mortar_access, mount_mortar_access_rocksmash",
-                "inherit_codes": false
-            }
-        ]
-    },
-    {
-        "name": "Fly Cheese",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-            {
-                "name": "Fly Cheese is out of logic",
-                "img": "/images/settings/fly_cheese_optional.png",
-                "codes": "fly_cheese, fly_cheese_optional",
-                "inherit_codes": false
-            },
-            {
-                "name": "Fly Cheese is impossible",
-                "img": "/images/settings/fly_cheese_forbidden.png",
-                "codes": "fly_cheese, fly_cheese_forbidden",
-                "inherit_codes": false
-            },
-            {
-                "name": "Fly Cheese is in logic",
-                "img": "/images/settings/fly_cheese_required.png",
-                "codes": "fly_cheese, fly_cheese_required",
                 "inherit_codes": false
             }
         ]
@@ -1471,23 +1564,67 @@
         ]
     },
     {
-        "name": "Victory Road Access",
+        "name": "Randomize Breeding",
         "type": "progressive",
         "loop": true,
         "initial_stage_idx": 0,
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Victory Road Access: Vanilla",
-                "img": "/images/settings/victoryroadaccess.png",
+                "name": "Randomize Breeding: Vanilla",
+                "img": "/images/settings/egg.png",
                 "img_mods": "@disabled",
-                "codes": "victory_road_access, victory_road_access_vanilla",
+                "codes": "randomize_breeding, randomize_breeding_false",
                 "inherit_codes": false
             },
             {
-                "name": "Victory Road Access: Strength",
-                "img": "/images/settings/victoryroadaccess.png",
-                "codes": "victory_road_access, victory_road_access_strength",
+                "name": "Randomize Breeding: Random Line Base",
+                "img": "/images/settings/egg.png",
+                "img_mods": "overlay|/images/settings/opt_egg_overlay.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Random Any Base",
+                "img": "/images/settings/egg.png",
+                "img_mods": "overlay|/images/settings/opt_egg_overlay.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Random Lower BST",
+                "img": "/images/settings/egg.png",
+                "img_mods": "overlay|/images/settings/opt_egg_overlay.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomize Breeding: Completely Random",
+                "img": "/images/settings/egg.png",
+                "img_mods": "overlay|/images/settings/opt_egg_overlay.png",
+                "codes": "randomize_breeding, randomize_breeding_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Victory Road Strength",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Victory Road Strength: Off",
+                "img": "/images/settings/victoryroadstrength.png",
+                "img_mods": "@disabled",
+                "codes": "victory_road_strength, victory_road_strength_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Victory Road Strength: On",
+                "img": "/images/settings/victoryroadstrength.png",
+                "codes": "victory_road_strength, victory_road_strength_on",
                 "inherit_codes": false
             }
         ]
@@ -1538,6 +1675,28 @@
                 "name": "Burned Tower is dark",
                 "img": "/images/settings/dark_areas/dark_burnedtower.png",
                 "codes": "dark_burnedtower, dark_burnedtower_true",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Dark Area: Flooded Mine",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Flooded Mine is lit",
+                "img": "/images/settings/dark_areas/dark_floodedmine.png",
+                "img_mods": "@disabled",
+                "codes": "dark_floodedmine, dark_floodedmine_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Flooded Mine is dark",
+                "img": "/images/settings/dark_areas/dark_floodedmine.png",
+                "codes": "dark_floodedmine, dark_floodedmine_true",
                 "inherit_codes": false
             }
         ]
@@ -2067,28 +2226,26 @@
         "stages": [
             {
                 "name": "Encounter Method: Contest Encounters NOT in logic",
-                "img": "/images/settings/dex_related/notinlogic.png",
+                "img": "/images/settings/dex_related/enc_contest.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
                 "codes": "encmethod_contest, encmethod_contest_off, encmethod_contest_visible",
                 "inherit_codes": false
             },
             {
-                "name": "Encounter Method: Contest Encounters IMPOSSIBLE",
-                "img": "/images/settings/dex_related/forbidden.png",
-                "codes": "encmethod_contest, encmethod_contest_forbidden",
+                "name": "Encounter Method: Contest Encounters in logic",
+                "img": "/images/settings/dex_related/enc_contest.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
+                "codes": "encmethod_contest, encmethod_contest_on, encmethod_contest_visible",
                 "inherit_codes": false
             },
             {
-                "name": "Encounter Method: Contest Encounters in logic",
-                "img": "/images/settings/dex_related/inlogic.png",
-                "codes": "encmethod_contest, encmethod_contest_on, encmethod_contest_visible",
+                "name": "Encounter Method: Contest Encounters IMPOSSIBLE",
+                "img": "/images/settings/dex_related/enc_contest.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_no.png",
+                "codes": "encmethod_contest, encmethod_contest_forbidden",
                 "inherit_codes": false
             }
         ]
-    },
-    {
-        "img": "/images/settings/dex_related/contest.png",
-        "codes": "contest_dummy",
-        "type": "static"
     },
     {
         "name": "Encounter Method: Trades",
@@ -2098,46 +2255,79 @@
         "stages": [
             {
                 "name": "Encounter Method: Trades NOT in logic",
-                "img": "/images/settings/dex_related/notinlogic.png",
+                "img": "/images/settings/dex_related/enc_trades.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_ool.png",
                 "codes": "encmethod_trades, encmethod_trades_off",
                 "inherit_codes": false
             },
             {
                 "name": "Encounter Method: Trades in logic",
-                "img": "/images/settings/dex_related/inlogic.png",
+                "img": "/images/settings/dex_related/enc_trades.png",
+                "img_mods": "overlay|/images/settings/dex_related/overlay_yes.png",
                 "codes": "encmethod_trades, encmethod_trades_on",
                 "inherit_codes": false
             }
         ]
     },
     {
-        "img": "/images/settings/dex_related/trades.png",
-        "codes": "trades_dummy",
-        "type": "static"
-    },
-    {
-        "name": "Randomize Phone Calls",
+        "name": "Randomize Phone Call Items",
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Randomize Phone Calls: Off",
+                "name": "Randomize Phone Call Items: Off",
                 "img": "/images/settings/phonecalls.png",
                 "img_mods": "@disabled",
                 "codes": "randomize_phone_call_items, randomize_phone_call_items_off",
                 "inherit_codes": false
             },
             {
-                "name": "Randomize Phone Calls: Vanilla",
+                "name": "Randomize Phone Call Items: On",
+                "img": "/images/settings/phonecalls.png",
+                "codes": "randomize_phone_call_items, randomize_phone_call_items_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Phone Call Mode",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Phone Call Mode: Vanilla",
                 "img": "/images/settings/phonecalls_vanilla.png",
-                "codes": "randomize_phone_call_items, phone_calls_visible, randomize_phone_call_items_vanilla",
+                "codes": "phone_call_mode, phone_call_mode_vanilla",
                 "inherit_codes": false
             },
             {
-                "name": "Randomize Phone Calls: Simple",
+                "name": "Phone Call Mode: Simple",
                 "img": "/images/settings/phonecalls.png",
-                "codes": "randomize_phone_call_items, phone_calls_visible, randomize_phone_call_items_simple",
+                "codes": "phone_call_mode, phone_call_mode_simple",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Rematchsanity",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Rematchsanity: Off",
+                "img": "/images/settings/rematchsanity.png",
+                "img_mods": "@disabled",
+                "codes": "randomize_rematches, randomize_rematches_false",
+                "inherit_codes": false
+            },
+            {
+                "name": "Rematchsanity: On",
+                "img": "/images/settings/rematchsanity.png",
+                "codes": "randomize_rematches, randomize_rematches_true",
                 "inherit_codes": false
             }
         ]
@@ -2219,6 +2409,12 @@
                 "name": "Route 12: Weird Tree",
                 "img": "/images/settings/route_12_access_weirdtree.png",
                 "codes": "route_12_access, route_12_access_weirdtree",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 12: Weird Tree and Rocks",
+                "img": "/images/settings/route_12_access_weirdtree_surfblock.png",
+                "codes": "route_12_access, route_12_access_weirdtree_surfblock",
                 "inherit_codes": false
             }
         ]
@@ -2368,6 +2564,12 @@
                 "img": "/images/settings/landslide_neither.png",
                 "codes": "south_kanto_access, south_kanto_access_free",
                 "inherit_codes": false
+            },
+            {
+                "name": "The landslide blocks both routes",
+                "img": "/images/settings/landslide_both.png",
+                "codes": "south_kanto_access, south_kanto_access_both",
+                "inherit_codes": false
             }
         ]
     },
@@ -2387,6 +2589,267 @@
                 "name": "Restoring the Power clears the landslide",
                 "img": "/images/settings/landslide_condition_power.png",
                 "codes": "south_kanto_condition, south_kanto_condition_power",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Vanilla Event Chains: Misty",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Misty isn't dating",
+                "img": "/images/events/beat_misty.png",
+                "img_mods": "overlay|images/events/crackedheart_overlay.png, @disabled",
+                "codes": "vanilla_chain_misty, vanilla_chain_misty_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Misty is on a hot date",
+                "img": "/images/events/beat_misty.png",
+                "img_mods": "overlay|images/events/crackedheart_overlay.png",
+                "codes": "vanilla_chain_misty, vanilla_chain_misty_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Vanilla Event Chains: Jasmine",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "You know all there is to know about AMPHY",
+                "img": "/images/events/beat_jasmine.png",
+                "img_mods": "overlay|images/events/amphy_overlay.png, @disabled",
+                "codes": "vanilla_chain_jasmine, vanilla_chain_jasmine_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "You better learn about AMPHY",
+                "img": "/images/events/beat_jasmine.png",
+                "img_mods": "overlay|images/events/amphy_overlay.png",
+                "codes": "vanilla_chain_jasmine, vanilla_chain_jasmine_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Vanilla Event Chains: Copycat",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "You telephatically connect to copycat",
+                "img": "/images/events/player.png",
+                "img_mods": "overlay|images/events/rival_overlays/mount_moon.png, @disabled",
+                "codes": "vanilla_chain_copycat, vanilla_chain_copycat_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "To find a lost item, you first need to know an item is lost",
+                "img": "/images/events/player.png",
+                "img_mods": "overlay|images/events/rival_overlays/mount_moon.png",
+                "codes": "vanilla_chain_copycat, vanilla_chain_copycat_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Flooded Mine",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Flooded Mine does not exist",
+                "img": "/images/settings/floodedmine.png",
+                "img_mods": "@disabled",
+                "codes": "flooded_mine, flooded_mine_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Flooded Mine exists",
+                "img": "/images/settings/floodedmine.png",
+                "codes": "flooded_mine, flooded_mine_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Restored Route 23",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Route 23 is vanilla",
+                "img": "/images/settings/route23restored.png",
+                "img_mods": "@disabled",
+                "codes": "route_23_restored, route_23_restored_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Route 23 is restored",
+                "img": "/images/settings/route23restored.png",
+                "codes": "route_23_restored, route_23_restored_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Lance Requires Elite Four",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Lance can be fought immediately",
+                "img": "/images/settings/lance_e4notreq.png",
+                "codes": "lance_requires_elite_four, lance_requires_elite_four_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Lance requires the other Elite Four",
+                "img": "/images/settings/lance_e4req.png",
+                "codes": "lance_requires_elite_four, lance_requires_elite_four_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Skip Elite Four",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 0,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "The Elite Four must be fought",
+                "img": "/images/settings/e4_requirement.png",
+                "img_mods": "@disabled",
+                "codes": "skip_elite_four, skip_elite_four_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "The Elite Four stairs lead straight to Lance",
+                "img": "/images/settings/e4_requirement.png",
+                "codes": "skip_elite_four, skip_elite_four_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Momsanity",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Momsanity is off",
+                "img": "/images/other/momsanity.png",
+                "img_mods": "@disabled",
+                "codes": "momsanity, momsanity_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Momsanity is on",
+                "img": "/images/other/momsanity.png",
+                "codes": "momsanity, momsanity_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Battle Tower Sanity",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Battle Tower does not have checks",
+                "img": "/images/settings/battletower_tier.png",
+                "img_mods": "@disabled",
+                "codes": "battle_tower_sanity, battle_tower_sanity_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Battle Tower has tier checks",
+                "img": "/images/settings/battletower_tier.png",
+                "codes": "battle_tower_sanity, battle_tower_sanity_tiers",
+                "inherit_codes": false
+            },
+            {
+                "name": "Battle Tower has tier and trainer checks",
+                "img": "/images/settings/battletower_tier_trainer.png",
+                "codes": "battle_tower_sanity, battle_tower_sanity_tiers, battle_tower_sanity_trainers",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Battle Tower Progressive Tier Unlocks",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Battle Tower is not gated by Progressive Tier Unlocks",
+                "img": "/images/settings/battletower_gated.png",
+                "img_mods": "@disabled",
+                "codes": "battle_tower_progressive_tier_unlocks, battle_tower_progressive_tier_unlocks_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Battle Tower is gated by Progressive Tier Unlocks",
+                "img": "/images/settings/battletower_gated.png",
+                "codes": "battle_tower_progressive_tier_unlocks, battle_tower_progressive_tier_unlocks_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Randomize Lucky Numbr Show",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Lucky Number Show is not randomized",
+                "img": "/images/settings/luckynumbershow.png",
+                "img_mods": "@disabled",
+                "codes": "luckynumbershow, luckynumbershow_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Lucky Number Show is randomized",
+                "img": "/images/settings/luckynumbershow.png",
+                "codes": "luckynumbershow, luckynumbershow_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Imakuni",
+        "type": "progressive",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "codes": "teleporting_abra, teleporting_abra_off",
+                "inherit_codes": false
+            },
+            {
+                "codes": "teleporting_abra, teleporting_abra_on",
                 "inherit_codes": false
             }
         ]

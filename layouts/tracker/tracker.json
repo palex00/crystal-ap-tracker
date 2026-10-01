@@ -1,0 +1,163 @@
+{
+    "tracker_default": {
+        "type": "container",
+        "background": "#171717",
+        "content": {
+            "type": "dock",
+            "dropshadow": true,
+            "content": [
+                {
+                    "type": "dock",
+                    "dropshadow": false,
+                    "dock": "bottom",
+                    "content": [
+                        {
+                            "type": "group",
+                            "margin": "100,100",
+                            "background": "#171717",
+                            "dock": "left",
+                            "content": [
+                                {
+                                    "type": "array",
+                                    "margin": "2,-28, 2, 2",
+                                    "content": [
+                                        {
+                                            "type": "tabbed",
+                                            "h_alignment": "center",
+                                            "dock": "left",
+                                            "tabs": [
+                                                {
+                                                    "title": "Items",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "key": "shared_item_grid"
+                                                    }
+                                                },
+                                                {
+                                                    "title": "EncEvo",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "key": "encevo_grid"
+                                                    }
+                                                },
+                                                {
+                                                    "title": "Fly Unlocks",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "key": "fly_grid"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "layout",
+                            "key": "apricorn_section",
+                            "dock": "left"
+                        },
+                        {
+                            "type": "group",
+                            "background": "#171717",
+                            "header": "Goal",
+                            "dock": "left",
+                            "content": {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "margin": "5,5",
+                                "content": [
+                                    {
+                                        "type": "layout",
+                                        "key": "slot_unown_hunt"
+                                    },
+                                    {
+                                        "type": "layout",
+                                        "key": "slot_battle_tower"
+                                    },
+                                    {
+                                        "type": "layout",
+                                        "key": "slot_rival"
+                                    },
+                                    {
+                                        "type": "layout",
+                                        "key": "goal_progress_grid"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "background": "#171717",
+                            "header": "Events",
+                            "dock": "left",
+                            "content": {
+                                "type": "layout",
+                                "key": "event_grid"
+                            }
+                        },
+                        {
+                            "type": "layout",
+                            "key": "puzzle_event_section",
+                            "dock": "left"
+                        },
+                        {
+                            "type": "layout",
+                            "key": "kanto_event_section",
+                            "dock": "left"
+                        },
+                        {
+                            "type": "group",
+                            "background": "#171717",
+                            "dock": "left",
+                            "content": [
+                                {
+                                    "type": "array",
+                                    "margin": "2,-28, 2, 2",
+                                    "content": [
+                                        {
+                                            "type": "tabbed",
+                                            "h_alignment": "center",
+                                            "tabs": [
+                                                {
+                                                    "title": "Tools",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "key": "tools_grid"
+                                                    }
+                                                },
+                                                {
+                                                    "title": "DexSearch",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "key": "dexsearch_grid"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "background": "#171717",
+                            "dock": "left",
+                            "content": []
+                        }
+                    ]
+                },
+                {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "tabbed_maps"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

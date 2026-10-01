@@ -28,26 +28,6 @@
         ]
     },
     {
-        "name": "Secret Broadcast Orientation Toggle Setting",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-            {
-                "name": "Broadcast View: Horizontal",
-                "img": "/images/settings/invisible.png",
-                "codes": "broadcast_view, broadcast_view_horizontal",
-                "inherit_codes": false
-            },
-            {
-                "name": "Broadcast View: Vertical",
-                "img": "/images/settings/invisible.png",
-                "codes": "broadcast_view, broadcast_view_vertical",
-                "inherit_codes": false
-            }
-        ]
-    },
-    {
         "name": "Auto-Track Map",
         "type": "progressive",
         "loop": true,
@@ -91,6 +71,26 @@
                 "name": "Split Map - Reverse",
                 "img": "/images/settings/splitmap_reverse.png",
                 "codes": "splitmap, splitmap_reverse",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Routing Tab",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Routing Tab - With Overworld & Pokedex",
+                "img": "/images/settings/routing_over.png",
+                "codes": "routing_tab, routing_tab_meta",
+                "inherit_codes": false
+            },
+            {
+                "name": "Routing Tab - With Submaps",
+                "img": "/images/settings/routing_sub.png",
+                "codes": "routing_tab, routing_tab_submap",
                 "inherit_codes": false
             }
         ]
@@ -152,10 +152,17 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Show encounter locations",
+                "name": "Show all encounter locations",
                 "img": "/images/other/encounter.png",
                 "img_mods": "overlay|/images/tools/show.png",
-                "codes": "visibility_mons, show_mons",
+                "codes": "visibility_mons, show_mons, show_mons_all",
+                "inherit_codes": false
+            },
+            {
+                "name": "Show only Dexsanity encounter locations",
+                "img": "/images/settings/pokedex.png",
+                "img_mods": "overlay|/images/tools/show.png",
+                "codes": "visibility_mons, show_mons, show_mons_dex",
                 "inherit_codes": false
             },
             {
@@ -212,23 +219,65 @@
         ]
     },
     {
-        "name": "Visibility: Signs",
+        "name": "Visibility: Grass",
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
         "stages": [
             {
-                "name": "Show Sign locations",
+                "name": "Show Grass locations",
                 "img": "/images/other/grass.png",
                 "img_mods": "overlay|/images/tools/show.png",
                 "codes": "visibility_grass, show_grass",
                 "inherit_codes": false
             },
             {
-                "name": "Hide Sign locations",
+                "name": "Hide Grass locations",
                 "img": "/images/other/grass_bw.png",
                 "img_mods": "overlay|/images/tools/hide.png",
                 "codes": "visibility_grass",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Visibility: Entrances",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Show Entrances",
+                "img": "/images/entrances/entrance_unexplored.png",
+                "img_mods": "overlay|/images/tools/show.png",
+                "codes": "visibility_entrances, show_entrances",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hide Entrances",
+                "img": "/images/entrances/entrance_unexplored.png",
+                "img_mods": "overlay|/images/tools/hide.png, @disabled",
+                "codes": "visibility_entrances",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Out of Logic Locations",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Show potentially gettable out of logic locations",
+                "img": "/images/settings/show_cheese.png",
+                "codes": "out_of_logic, out_of_logic_on",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hide potentially gettable out of logic locations",
+                "img": "/images/settings/hide_cheese.png",
+                "codes": "out_of_logic, out_of_logic_off",
                 "inherit_codes": false
             }
         ]
@@ -253,5 +302,11 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Magikarp Seen",
+        "type": "toggle",
+        "img": "/images/pokemon/129.png",
+        "codes": "magikarp_seen"
     }
 ]

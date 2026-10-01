@@ -1,0 +1,54 @@
+{
+    "underground_path": {
+        "type": "map",
+        "maps": [
+            "UndergroundPath"
+        ]
+    },
+    "route_7": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Route",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route7"
+                    ]
+                }
+            },
+            {
+                "title": "Saffron Gate",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route7SaffronGate"
+                    ]
+                }
+            }
+        ]
+    },
+    "route_8": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Route",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route8"
+                    ]
+                }
+            },
+            {
+                "title": "Saffron Gate",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Route8SaffronGate"
+                    ]
+                }
+            }
+        ]
+    }
+}

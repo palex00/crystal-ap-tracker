@@ -1,0 +1,46 @@
+name: Update beta_versions.json on manifest change
+on:
+  push:
+    branches: [12.0.0-beta]
+    paths: [manifest.json]
+jobs:
+  autoupdate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: 12.0.0-beta
+          fetch-depth: 0
+      - name: Get last commit that changed manifest.json
+        id: sha
+        run: echo "sha=$(git log -1 --format=%H -- manifest.json)" >> "$GITHUB_OUTPUT"
+      - name: Get package_version from manifest
+        id: version
+        run: echo "version=$(jq -r .package_version manifest.json)" >> "$GITHUB_OUTPUT"
+      - name: Download source archive
+        run: curl -L -o source.zip "https://github.com/${{ github.repository }}/archive/${{ steps.sha.outputs.sha }}.zip"
+      - name: Get checksum
+        id: checksum
+        run: echo "sha256sum=$(sha256sum source.zip | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+      - name: Checkout versions branch
+        uses: actions/checkout@v5
+        with:
+          ref: versions
+          path: versions-branch
+      - name: Update beta_versions.json
+        run: |-
+          cd versions-branch
+          jq --arg v "${{ steps.version.outputs.version }}" \
+             --arg url "https://github.com/${{ github.repository }}/archive/${{ steps.sha.outputs.sha }}.zip" \
+             --arg sha "${{ steps.checksum.outputs.sha256sum }}" \
+             '.versions |= ([{package_version:$v, download_url:$url, sha256:$sha, changelog:["Beta build"]}] + map(select(.package_version != $v)))' \
+             beta_versions.json > new_versions.json
+          mv new_versions.json beta_versions.json
+      - name: Git config
+        run: cd versions-branch && git config user.name "Automation" && git config user.email "automation@localhost"
+      - name: Commit
+        run: cd versions-branch && git commit -am "Beta ${{ steps.version.outputs.version }} (${{ steps.sha.outputs.sha }})"
+      - name: Push
+        run: cd versions-branch && git push origin HEAD:versions

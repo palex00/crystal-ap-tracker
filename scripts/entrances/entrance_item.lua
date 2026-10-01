@@ -1,0 +1,315 @@
+-- EntranceItem: one custom Lua item per randomizable entrance.
+-- Extends the pack's CustomItem base (scripts/custom_items/custom_item.lua).
+--
+-- Each item is keyed by its region-string token, which it provides as its item CODE (used
+-- for hosted_item placement in the location JSON); the LuaItem Name is the pretty name, so
+-- the UI/tooltip/feed shows that instead. Its connection state is revealed by the
+-- autotracker (archipelago.lua's updateEntrances) from the DataStorage "entered" list:
+--   forwardTarget = token of where entering THIS entrance emerges (left-click destination)
+--   reverseSource = token of the entrance that emerges HERE          (right-click source)
+-- Both are independent and may be nil (decoupled seeds / one-way holes only fill one).
+--
+-- Clicks are pure navigation (no manual connecting):
+--   left   -> tab to where this entrance leads          (no-op if unrevealed)
+--   right  -> tab to what leads to this entrance         (no-op if unrevealed)
+--   middle -> route mode (pick two entrances -> GetRoute)
+
+ENTRANCE_CLOSED_ICON = "images/entrances/entrance_unexplored.png" -- unrevealed marker
+ENTRANCE_OPEN_ICON = "images/entrances/entrance_explored.png"     -- revealed marker
+
+-- Temp-highlight state (feature: briefly highlight the destination after navigating).
+local HIGHLIGHT_TARGET = nil
+local HIGHLIGHT_TIME = 0
+local HIGHLIGHT_SECONDS = 5
+
+function RemoveEntranceHighlight()
+    if os.clock() - HIGHLIGHT_TIME > HIGHLIGHT_SECONDS then
+        ScriptHost:RemoveOnFrameHandler("entrance highlight handler")
+        if HIGHLIGHT_TARGET then
+            HIGHLIGHT_TARGET.Highlight = Highlight.None
+        end
+        HIGHLIGHT_TARGET = nil
+        HIGHLIGHT_TIME = 0
+    end
+end
+
+-- PopTracker renders the lines of a multi-line overlay right-aligned against each other
+-- (ui/item.cpp hardcodes HAlign::RIGHT when it rasterizes the text; SetOverlayAlign only places
+-- the finished block), so a two-line badge reads ragged-left unless both lines rasterize to the
+-- same width. Rendered advance widths, in whole pixels, of the overlay font (PopTracker's
+-- assets/DejaVuSans-Bold.ttf at the overlay font size set in updateBadge) for every character
+-- that occurs in a pretty name, plus the three space glyphs used to pad the narrower line.
+local BADGE_PAD_3 = " "                   -- plain space, 3px
+local BADGE_PAD_2 = "\226\128\137"        -- U+2009 THIN SPACE, 2px
+local BADGE_PAD_1 = "\226\128\138"        -- U+200A HAIR SPACE, 1px
+-- Leading pad so the badge starts clear of the 32px entrance icon instead of sitting on it.
+-- The overlay background is dropped for the same reason: PopTracker fills it across the
+-- whole rasterized block (ui/item.cpp), indent included, so it would cover the icon.
+local BADGE_INDENT = string.rep(BADGE_PAD_3, 12) -- 12 * 3px = 36px
+local BADGE_CHAR_W = {}
+do
+    local function w(width, chars)
+        for ch in chars:gmatch(".") do
+            BADGE_CHAR_W[ch] = width
+        end
+    end
+    w(3, " 'ijl")
+    w(4, "-.If")
+    w(5, "()rt")
+    w(6, "Lcsxz")
+    w(7, "0123456789CEFPSTZabdeghknopquvy")
+    w(8, "ABDGHKNRUV")
+    w(9, "OQw")
+    w(10, "Mm")
+    w(11, "W")
+end
+
+--- Rendered width of a badge line's name, in pixels. All three arrow glyphs advance 8px, so the
+--- prefix cancels out between the two lines and is left out of the comparison.
+local function badgeWidth(name)
+    local total = 0
+    for i = 1, #name do
+        total = total + BADGE_CHAR_W[name:sub(i, i)]
+    end
+    return total
+end
+
+--- Pad the narrower of two names out to the wider one, to the pixel, so both badge lines
+--- rasterize the same width -- which is what makes the right-aligned lines sit flush left.
+local function padBadgePair(a, b)
+    local diff = badgeWidth(a) - badgeWidth(b)
+    local n = diff < 0 and -diff or diff
+    local pad = string.rep(BADGE_PAD_3, math.floor(n / 3))
+    local rest = n % 3
+    if rest == 2 then
+        pad = pad .. BADGE_PAD_2
+    elseif rest == 1 then
+        pad = pad .. BADGE_PAD_1
+    end
+    if diff < 0 then
+        return a .. pad, b
+    end
+    return a, b .. pad
+end
+
+EntranceItem = CustomItem:extend()
+
+function EntranceItem:init(token, row)
+    self:createItem(row.pretty, {token}) -- display name; the token is provided as the item CODE
+    self.token = token
+    self.ids = row.ids
+    self.pretty = row.pretty
+    self.tab = row.tab
+    self.landing = row.landing
+    self.node = row.landing or EntranceSourceRegion(token) -- region this entrance sits in (route mode start/finish)
+    self.forwardTarget = nil
+    self.reverseSource = nil
+    self:updateBadge()
+end
+
+--- Set/clear the revealed connection directions, then refresh the display.
+function EntranceItem:setForward(token)
+    self.forwardTarget = token
+    self:updateBadge()
+end
+
+function EntranceItem:setReverse(token)
+    self.reverseSource = token
+    self:updateBadge()
+end
+
+function EntranceItem:reset()
+    self.forwardTarget = nil
+    self.reverseSource = nil
+    self:updateBadge()
+end
+
+--- Badge + icon. Badge rule:
+---   one direction known -> "->dest" or "<-src"
+---   both known & equal  -> "<->name"   (coupled/symmetric)
+---   both known & differ -> two lines "->dest" / "<-src"  (decoupled)
+function EntranceItem:updateBadge()
+    local inst = self.ItemInstance
+    local fwd = self.forwardTarget and ENTRANCE_REGISTRY[self.forwardTarget]
+    local rev = self.reverseSource and ENTRANCE_REGISTRY[self.reverseSource]
+    -- UTF-8 arrow glyphs as byte escapes (version-agnostic): -> = \226\134\146,
+    -- <- = \226\134\144, <-> = \226\134\148
+    local ARROW_FWD = "\226\134\146"
+    local ARROW_REV = "\226\134\144"
+    local ARROW_BOTH = "\226\134\148"
+    local text = ""
+    if fwd and rev then
+        if self.forwardTarget == self.reverseSource then
+            text = BADGE_INDENT .. ARROW_BOTH .. fwd.pretty
+        else
+            local f, r = padBadgePair(fwd.pretty, rev.pretty)
+            text = BADGE_INDENT .. ARROW_FWD .. f .. "\n" .. BADGE_INDENT .. ARROW_REV .. r
+        end
+    elseif fwd then
+        text = BADGE_INDENT .. ARROW_FWD .. fwd.pretty
+    elseif rev then
+        text = BADGE_INDENT .. ARROW_REV .. rev.pretty
+    end
+    inst.BadgeText = text
+    inst.BadgeTextColor = "#abcdef"
+    inst:SetOverlayBackground("")
+    inst:SetOverlayFontSize(10)
+    inst:SetOverlayAlign("left")
+    if self:isRevealed() then
+        inst.Icon = ImageReference:FromPackRelativePath(ENTRANCE_OPEN_ICON)
+    else
+        inst.Icon = ImageReference:FromPackRelativePath(ENTRANCE_CLOSED_ICON)
+    end
+end
+
+--- Walk a tab-title chain to bring the destination marker into view.
+local function activateTabChain(chain)
+    if chain then
+        for _, t in ipairs(chain) do
+            Tracker:UiHint("ActivateTab", t)
+        end
+    end
+end
+
+--- Briefly highlight the destination marker (if its section is registered).
+local function highlightTarget(token)
+    local row = ENTRANCE_REGISTRY[token]
+    if not row or not row.section then
+        return
+    end
+    if HIGHLIGHT_TARGET then
+        HIGHLIGHT_TARGET.Highlight = Highlight.None
+    end
+    HIGHLIGHT_TARGET = Tracker:FindObjectForCode(row.section)
+    if HIGHLIGHT_TARGET then
+        HIGHLIGHT_TARGET.Highlight = Highlight.Avoid
+        HIGHLIGHT_TIME = os.clock()
+        ScriptHost:AddOnFrameHandler("entrance highlight handler", RemoveEntranceHighlight)
+    end
+end
+
+--- Navigate to a target entrance token (tab there + highlight it).
+local function navigateTo(token)
+    local row = ENTRANCE_REGISTRY[token]
+    if row then
+        activateTabChain(row.tab)
+    end
+    highlightTarget(token)
+end
+
+function EntranceItem:onLeftClick()
+    if self.forwardTarget then
+        navigateTo(self.forwardTarget)
+    end
+end
+
+function EntranceItem:onRightClick()
+    if self.reverseSource then
+        navigateTo(self.reverseSource)
+    end
+end
+
+-- Route mode: first middle-click picks the start. Second click on a different entrance routes
+-- between the two; on the same entrance, routes from the player's current position to it.
+ROUTE_START = nil      -- source region name of the first-picked entrance
+ROUTE_START_ITEM = nil -- first-picked item, to detect the same entrance twice
+
+function EntranceItem:onMiddleClick()
+    if ROUTE_START == nil then
+        ROUTE_START = self.node
+        ROUTE_START_ITEM = self
+    else
+        if ROUTE_START_ITEM == self then
+            RouteFromCurrent(NAMED_NODES[self.node])
+        else
+            GetRoute(NAMED_NODES[ROUTE_START], NAMED_NODES[self.node])
+        end
+        ROUTE_START = nil
+        ROUTE_START_ITEM = nil
+    end
+end
+
+function EntranceItem:canProvideCode(code)
+    return code == self.token
+end
+
+--- Forward only: a revealed reverseSource says what emerges here, not where this door goes,
+--- so a decoupled entrance stays unchecked until it has actually been entered. A landing has
+--- no forward side, so knowing what drops onto it is all there is to reveal.
+function EntranceItem:isRevealed()
+    if self.landing then
+        return self.reverseSource ~= nil
+    end
+    return self.forwardTarget ~= nil
+end
+
+--- Route mode: while on the active route the entrance reads as uncollected.
+function EntranceItem:setRouting(on)
+    self:setProperty("routing", on)
+end
+
+--- Collected state for the section hosting this entrance (hosted_item = the token).
+function EntranceItem:providesCode(code)
+    if code == self.token and self:isRevealed() and not self.routing then
+        return 1
+    end
+    return 0
+end
+
+--- token -> ER category, harvested from the graph's entrance edges (the category lives on the
+--- connect_*_entrance edge as exit[4], with the token as exit[5]). Built once after the graph
+--- is loaded, so we can tell which registry rows belong to a shuffled category.
+ENTRANCE_CATEGORY = {}
+function buildEntranceCategoryMap()
+    if not NAMED_NODES_KEYS then
+        return
+    end
+    for _, name in ipairs(NAMED_NODES_KEYS) do
+        local node = NAMED_NODES[name]
+        if node then
+            for _, exit in ipairs(node.exits) do
+                if exit[3] then -- is_entrance edge
+                    ENTRANCE_CATEGORY[exit[5]] = exit[4]
+                end
+            end
+        end
+    end
+    for token, row in pairs(ENTRANCE_REGISTRY) do
+        if row.landing then
+            ENTRANCE_CATEGORY[token] = "one_way"
+        end
+    end
+end
+
+--- Access level for a one-way landing section: only in logic once something has dropped onto it.
+---@param token string landing token ("<hole token> (one-way target)")
+---@return integer
+function landing(token)
+    if not ER_CATEGORY_ENABLED["one_way"] then
+        return ACCESS_NONE
+    end
+    return A(ENTRANCE_ITEMS[token]:isRevealed())
+end
+
+--- Instantiate EntranceItems ONLY for entrances whose ER category is currently enabled.
+--- A vanilla (non-shuffled) entrance has a fixed connection and needs no tracker item, so the
+--- LuaItem count tracks what's actually shuffled (0 on a non-ER seed). This is what keeps
+--- PopTracker's per-update cost down -- a large _luaItems set makes every item toggle laggy
+--- regardless of the logic path. Idempotent and additive: safe to call repeatedly (e.g. from
+--- refreshERCategories on connect / manual toggle). Items are never removed once created
+--- (PopTracker has no RemoveItems), which is fine because categories are fixed per seed.
+--- Call after ENTRANCE_REGISTRY, the graph, and buildEntranceCategoryMap() are ready.
+ENTRANCE_ITEMS = {}
+function createEntrancesForEnabled()
+    if not ENTRANCE_REGISTRY or not ER_CATEGORY_ENABLED then
+        return
+    end
+    for token, row in pairs(ENTRANCE_REGISTRY) do
+        if not ENTRANCE_ITEMS[token] then
+            local cat = ENTRANCE_CATEGORY[token]
+            if cat and ER_CATEGORY_ENABLED[cat] then
+                ENTRANCE_ITEMS[token] = EntranceItem(token, row)
+            end
+        end
+    end
+end

@@ -1,4 +1,4 @@
-﻿{
+{
     "tracker_default": {
         "type": "container",
         "background": "#000000",
@@ -8,20 +8,22 @@
             "content": [
                 {
                     "type": "dock",
-                    "content": {
-                        "type": "tabbed",
-                        "tabs": [
-                            {
-                                "title": "This is not Crystal",
-                                "content": {
-                                    "type": "map",
-                                    "maps": [
-                                        "not_crystal"
-                                    ]
+                    "content": [
+                        {
+                            "type": "tabbed",
+                            "tabs": [
+                                {
+                                    "title": "This is not Crystal",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": [
+                                            "not_crystal"
+                                        ]
+                                    }
                                 }
-                            }
-                        ]
-                    }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

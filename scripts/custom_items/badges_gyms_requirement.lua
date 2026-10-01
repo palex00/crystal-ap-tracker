@@ -2,8 +2,8 @@ BadgesGymsRequirement = CustomItem:extend()
 
 function BadgesGymsRequirement:init(name, code, stage, stageCount, baseImage)
     self.name = name
-    self:createItem(name.." - Badges")
     self.code = code
+    self:createItem(name.." - Badges", {code})
     self.type = "badges"
     self:setStage(stage)
     self.stageCount = stageCount
@@ -113,9 +113,7 @@ function BadgesGymsRequirement:load(data)
 end
 
 function BadgesGymsRequirement:propertyChanged(key, value)
-    --if TRACKER_READY then
-        if key == "type" or key == "stage" then
-            self:updateIcon()
-        end
-    --end
+    if key == "type" or key == "stage" then
+        self:updateIcon()
+    end
 end

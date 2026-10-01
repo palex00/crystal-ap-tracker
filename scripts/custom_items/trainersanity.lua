@@ -1,12 +1,12 @@
 TrainersanityNumber = CustomItem:extend()
 
 function TrainersanityNumber:init()
-    self:createItem("Trainersanity - Full")
     self.code = "trainersanity"
+    self:createItem("Trainersanity - Full", {self.code})
     self.type = "full"
-    self:setStage(372)
+    self:setStage(374)
     self.baseImage = "images/settings/trainersanity.png"
-    self.stageCount = 372
+    self.stageCount = 374
     self:updateIcon()
 end
 
@@ -106,9 +106,7 @@ function TrainersanityNumber:load(data)
 end
 
 function TrainersanityNumber:propertyChanged(key, value)
-    --if TRACKER_READY then
-        if key == "type" or key == "stage" then
-            self:updateIcon()
-        end
-    --end
+    if key == "type" or key == "stage" then
+        self:updateIcon()
+    end
 end

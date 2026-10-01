@@ -53,7 +53,57 @@ FLAG_EVENT_2_CODES = {
     "ENGINE_UNLOCKED_UNOWNS_L_TO_R",
     "ENGINE_UNLOCKED_UNOWNS_S_TO_W",
     "ENGINE_UNLOCKED_UNOWNS_X_TO_Z",
-    "EVENT_GAVE_MYSTERY_EGG_TO_ELM"
+    "EVENT_GAVE_MYSTERY_EGG_TO_ELM",
+    "EVENT_MISCHIEF",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_1",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_2",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_3",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_4",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_5",
+    "EVENT_SAW_BEVERLY_REQUEST",
+    "EVENT_SAW_DEREK_REQUEST",
+    "EVENT_SAW_TIFFANY_REQUEST"
+}
+
+FLAG_EVENT_3_CODES = {
+    "EVENT_BOULDER_IN_BLACKTHORN_GYM_1",
+    "EVENT_BOULDER_IN_BLACKTHORN_GYM_3",
+    "EVENT_BOULDER_IN_ICE_PATH_1A",
+    "EVENT_BOULDER_IN_ICE_PATH_2A",
+    "EVENT_BOULDER_IN_ICE_PATH_3A",
+    "EVENT_BOULDER_IN_ICE_PATH_4A",
+    "EVENT_BEAT_ROCKET_GRUNTF_5",
+    "EVENT_BEAT_ROCKET_GRUNTM_28",
+    "dummy",
+    "EVENT_HEALED_MOOMOO",
+    "EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS",
+    "EVENT_LEARNED_HAIL_GIOVANNI",
+    "EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM",
+    "EVENT_MET_KURT",
+    "EVENT_MET_MANAGER_AT_POWER_PLANT",
+    "EVENT_MET_ROCKET_GRUNT_AT_CERULEAN_GYM",
+    "EVENT_MISTY_RETURNED_TO_GYM",
+    "EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER",
+    "EVENT_BEAT_ELITE_4_WILL",
+    "EVENT_BEAT_ELITE_4_KOGA",
+    "EVENT_BEAT_ELITE_4_BRUNO",
+    "EVENT_BEAT_ELITE_4_KAREN",
+    "EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST",
+    "EVENT_KURT_RETURNED_GS_BALL",
+    "EVENT_SAW_LUCKY_NUMBERS",
+}
+
+FLAG_BATTLE_TOWER_TIER_CODES = {
+    "EVENT_BEAT_BATTLE_TOWER_TIER_1",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_2",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_3",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_4",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_5",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_6",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_7",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_8",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_9",
+    "EVENT_BEAT_BATTLE_TOWER_TIER_10",
 }
 
 FLAG_STATIC_CODES = {
@@ -69,7 +119,7 @@ FLAG_STATIC_CODES = {
     "Static_Shuckie",
     "Static_Eevee",
     "Static_Dratini",
-    "dummy", -- this is the Togepi Egg Hatch. Technically this locks a check but we'll just use the event where you get it
+    "EVENT_TOGEPI_HATCHED",
     "Static_Tyrogue",
     "Static_UnionCaveLapras",
     "Static_Celebi",
@@ -121,6 +171,16 @@ FLAG_TRADE_CODES = {
     "TRADE_FOREST"
 }
 
+FLAG_TRADE_DONE_CODES = {
+    "TRADE_MIKE_DONE",
+    "TRADE_KYLE_DONE",
+    "TRADE_TIM_DONE",
+    "TRADE_EMY_DONE",
+    "TRADE_CHRIS_DONE",
+    "TRADE_KIM_DONE",
+    "TRADE_FOREST_DONE"
+}
+
 FLAG_ITEM_CODES = {
   {option="badges_off", codes={"ZEPHYR_BADGE"}},
   {option="badges_off", codes={"HIVE_BADGE"}},
@@ -145,7 +205,6 @@ FLAG_ITEM_CODES = {
   {option="pokegear_off", codes={"POKE_GEAR"}},
   {option="randomize_pokedex_vanilla", codes={"POKEDEX"}},
   {option=nil, codes={"ESCAPE_ROPE"}},
-  {option=nil, codes={"WATER_STONE"}},
   {option="badges_off", codes={"RISING_BADGE"}},
   {option="berries_off", codes={"RED_APRICORN"}},
   {option="berries_off", codes={"BLU_APRICORN"}},
@@ -235,4 +294,30 @@ SHOP_MAPPING = {
     ["EVENT_SEEN_MART_MAHOGANY_1"] = "@JohtoKanto/Mahogany Town/Rocket Shop - Shop Items",
     ["EVENT_SEEN_MART_MAHOGANY_2"] = "@JohtoKanto/Mahogany Town/Poke Mart - Shop Items",
     ["EVENT_SEEN_MART_BLACKTHORN"] = "@JohtoKanto/Blackthorn City/Poke Mart - Shop Items",
+}
+
+FLAG_FLYUNLOCKS = {
+    "flyunlock_NewBark",
+    "flyunlock_Cherrygrove",
+    "flyunlock_Violet",
+    "flyunlock_Azalea",
+    "flyunlock_Goldenrod",
+    "flyunlock_Ecruteak",
+    "flyunlock_Olivine",
+    "flyunlock_Cianwood",
+    "flyunlock_Mahogany",
+    "flyunlock_LakeOfRage",
+    "flyunlock_Blackthorn",
+    "flyunlock_SilverCave",
+    "flyunlock_Pallet",
+    "flyunlock_Viridian",
+    "flyunlock_Pewter",
+    "flyunlock_Cerulean",
+    "flyunlock_Vermilion",
+    "flyunlock_Lavender",
+    "flyunlock_Celadon",
+    "flyunlock_Saffron",
+    "flyunlock_Fuchsia",
+    "flyunlock_Cinnabar",
+    "flyunlock_IndigoPlateau",
 }

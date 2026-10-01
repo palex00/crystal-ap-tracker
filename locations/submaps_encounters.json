@@ -1,0 +1,4463 @@
+[
+    {
+        "name": "Encounters",
+        "children": [
+            {
+                "name": "2F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/2F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/2F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/2F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "SproutTower2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "3F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/3F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/3F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/3F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Sprout Tower/3F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "SproutTower3F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "2F Encounters​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/2F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/2F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/2F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "TinTower2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "3F Encounters​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/3F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/3F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/3F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/3F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "TinTower3F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "4F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/4F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/4F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/4F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/4F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "TinTower4F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "5F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/5F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/5F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/5F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/5F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "TinTower5F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "6F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/6F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/6F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/6F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/6F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "TinTower6F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "7F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/7F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/7F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/7F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/7F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "TinTower7F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "8F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/8F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/8F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/8F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/8F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "TinTower8F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "9F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Tin Tower/9F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/9F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/9F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Tin Tower/9F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "TinTower9F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Burned Tower/1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Burned Tower/1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Burned Tower/1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Burned Tower/1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "BurnedTower1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Burned Tower/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Burned Tower/B1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Burned Tower/B1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Burned Tower/B1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "BurnedTowerB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/National Park/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/National Park/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/National Park/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/National Park/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/National Park/Bug Catching Contest Encounters",
+                        "name": "Bug Catching Contest Encounters"
+                    }                
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "NationalPark",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Outside Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Outside - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Outside - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Outside - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Outside - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Outside - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "RuinsOfAlphOutside",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Inside Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Inside - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Inside - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Inside - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ruins of Alph/Inside - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "RuinsOfAlphInnerChamber",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Encounters​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/1F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "UnionCave1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Union Cave/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B1F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "UnionCaveB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B2F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Union Cave/B2F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Shore",
+                        "ref": "Special Encounters/Old Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore",
+                        "ref": "Special Encounters/Good Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Day)",
+                        "ref": "Special Encounters/Good Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Good Rod/Shore (Nite)"
+                    },
+                    {
+                        "name": "Super Rod - Shore",
+                        "ref": "Special Encounters/Super Rod/Shore"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Day)",
+                        "ref": "Special Encounters/Super Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Super Rod/Shore (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "UnionCaveB2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B1F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "SlowpokeWellB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B2F Encounters​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B2F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B2F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B2F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Slowpoke Well/B2F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "SlowpokeWellB2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ilex Forest/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ilex Forest/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ilex Forest/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ilex Forest/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ilex Forest/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    },
+                    {
+                        "name": "Forest - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Forest - Common"
+                    },
+                    {
+                        "name": "Forest - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Forest - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "IlexForest",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Outside Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Outside - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "MountMortar1FOutside",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Inside Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/1F Inside - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "MountMortar1FInside",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "2F Encounters​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/2F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/2F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/2F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/2F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "MountMortar2FInside",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Mortar/B1F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "MountMortarB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Encounters​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "IcePath1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "IcePathB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B2F Mahogany Side Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F Mahogany Side - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F Mahogany Side - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F Mahogany Side - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F Mahogany Side - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "IcePathB2FMahoganySide",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B2F Blackthorn Side Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F Blackthorn Side - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F Blackthorn Side - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F Blackthorn Side - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B2F Blackthorn Side - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "IcePathB2FBlackthornSide",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B3F Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ice Path/B3F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B3F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B3F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Ice Path/B3F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "IcePathB3F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "NW Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/NW - Land Encounters",
+                        "name": "NW Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/NW - Land Encounters (Morn)",
+                        "name": "NW Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/NW - Land Encounters (Day)",
+                        "name": "NW Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/NW - Land Encounters (Nite)",
+                        "name": "NW Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "WhirlIsland1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "NE Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/NE - Land Encounters",
+                        "name": "NE Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/NE - Land Encounters (Morn)",
+                        "name": "NE Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/NE - Land Encounters (Day)",
+                        "name": "NE Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/NE - Land Encounters (Nite)",
+                        "name": "NE Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "WhirlIsland1F",
+                        "x": 192,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "SW Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SW - Land Encounters",
+                        "name": "SW Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SW - Land Encounters (Morn)",
+                        "name": "SW Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SW - Land Encounters (Day)",
+                        "name": "SW Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SW - Land Encounters (Nite)",
+                        "name": "SW Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SW - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Whirl Islands",
+                        "ref": "Special Encounters/Old Rod/Whirl Islands"
+                    },
+                    {
+                        "name": "Good Rod - Whirl Islands",
+                        "ref": "Special Encounters/Good Rod/Whirl Islands"
+                    },
+                    {
+                        "name": "Super Rod - Whirl Islands",
+                        "ref": "Special Encounters/Super Rod/Whirl Islands"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "WhirlIsland1F",
+                        "x": 16,
+                        "y": 320,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Cave Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Cave - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Cave - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Cave - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Cave - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "WhirlIslandCave",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "SE Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SE - Land Encounters",
+                        "name": "SE Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SE - Land Encounters (Morn)",
+                        "name": "SE Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SE - Land Encounters (Day)",
+                        "name": "SE Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/SE - Land Encounters (Nite)",
+                        "name": "SE Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "WhirlIsland1F",
+                        "x": 352,
+                        "y": 320,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "WhirlIslandB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B2F Encounters​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B2F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B2F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B2F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/B2F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Whirl Islands",
+                        "ref": "Special Encounters/Old Rod/Whirl Islands"
+                    },
+                    {
+                        "name": "Good Rod - Whirl Islands",
+                        "ref": "Special Encounters/Good Rod/Whirl Islands"
+                    },
+                    {
+                        "name": "Super Rod - Whirl Islands",
+                        "ref": "Special Encounters/Super Rod/Whirl Islands"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "WhirlIslandB2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Lugia Chamber Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Lugia Chamber - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Lugia Chamber - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Lugia Chamber - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Lugia Chamber - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Whirl Islands/Lugia Chamber - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Whirl Islands",
+                        "ref": "Special Encounters/Old Rod/Whirl Islands"
+                    },
+                    {
+                        "name": "Good Rod - Whirl Islands",
+                        "ref": "Special Encounters/Good Rod/Whirl Islands"
+                    },
+                    {
+                        "name": "Super Rod - Whirl Islands",
+                        "ref": "Special Encounters/Super Rod/Whirl Islands"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "WhirlIslandLugiaChamber",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Encounters​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Silver Cave/1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "SilverCaveRoom1",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "2F Encounters​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "SilverCaveRoom2",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "3F Encounters​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Silver Cave/3F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/3F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/3F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/3F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "SilverCaveRoom3",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "2F Item Rooms Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F Item Rooms - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F Item Rooms - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F Item Rooms - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/2F Item Rooms - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "SilverCaveItemRooms",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Violet Entrance/Swarm Encounter",
+                        "name": "Swarm Encounter"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    },
+                    {
+                        "name": "Rock Smash Encounters",
+                        "ref": "Special Encounters/Rocksmash/Rocksmash"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "DarkCaveVioletEntrance",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Dark Cave Blackthorn Entrance/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Blackthorn Entrance/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Blackthorn Entrance/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Blackthorn Entrance/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Dark Cave Blackthorn Entrance/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "DarkCaveBlackthornEntrance",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 29/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 29/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 29/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 29/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "name": "Route - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Common"
+                    },
+                    {
+                        "name": "Route - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route29",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 30/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 30/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    },
+                    {
+                        "name": "Route - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Common"
+                    },
+                    {
+                        "name": "Route - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route30",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 31/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 31/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    },
+                    {
+                        "name": "Route - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Common"
+                    },
+                    {
+                        "name": "Route - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route31",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 32/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Swarm Encounter",
+                        "name": "Swarm Encounter"
+                    },
+                    {
+                        "name": "Old Rod - Routes 12, 13, 32",
+                        "ref": "Special Encounters/Old Rod/Routes 12, 13, 32"
+                    },
+                    {
+                        "name": "Good Rod - Routes 12, 13, 32",
+                        "ref": "Special Encounters/Good Rod/Routes 12, 13, 32"
+                    },
+                    {
+                        "name": "Super Rod - Routes 12, 13, 32",
+                        "ref": "Special Encounters/Super Rod/Routes 12, 13, 32"
+                    },
+                    {
+                        "name": "Border - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Border - Common"
+                    },
+                    {
+                        "name": "Border - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Border - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route32North",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
+                    {
+                        "size": 24,
+                        "map": "Route32South",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 33/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 33/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 33/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 33/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "name": "Town - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Town - Common"
+                    },
+                    {
+                        "name": "Town - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Town - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route33",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 34/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 34/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Shore",
+                        "ref": "Special Encounters/Old Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore",
+                        "ref": "Special Encounters/Good Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Day)",
+                        "ref": "Special Encounters/Good Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Good Rod/Shore (Nite)"
+                    },
+                    {
+                        "name": "Super Rod - Shore",
+                        "ref": "Special Encounters/Super Rod/Shore"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Day)",
+                        "ref": "Special Encounters/Super Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Super Rod/Shore (Nite)"
+                    },
+                    {
+                        "name": "Route - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Common"
+                    },
+                    {
+                        "name": "Route - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route34",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 35/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 35/Swarm Encounter",
+                        "name": "Swarm Encounter"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    },
+                    {
+                        "name": "Route - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Common"
+                    },
+                    {
+                        "name": "Route - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route35",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 36/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 36/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 36/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 36/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "name": "Route - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Common"
+                    },
+                    {
+                        "name": "Route - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route36",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 37/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 37/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 37/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 37/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "name": "Route - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Common"
+                    },
+                    {
+                        "name": "Route - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route37",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 38/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 38/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "name": "Route - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Common"
+                    },
+                    {
+                        "name": "Route - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route38",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 39/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 39/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 39/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 39/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "name": "Route - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Common"
+                    },
+                    {
+                        "name": "Route - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Route - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route39",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 42/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 42/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 42/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 42/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 42/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    },
+                    {
+                        "name": "Town - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Town - Common"
+                    },
+                    {
+                        "name": "Town - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Town - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route42",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 43/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 43/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    },
+                    {
+                        "name": "Lake - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Lake - Common"
+                    },
+                    {
+                        "name": "Lake - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Lake - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route43",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 44/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 44/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 44/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 44/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 44/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    },
+                    {
+                        "name": "Canyon - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Canyon - Common"
+                    },
+                    {
+                        "name": "Canyon - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Canyon - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route44",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 45/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 45/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 45/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 45/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 45/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Route 45",
+                        "ref": "Special Encounters/Old Rod/Route 45"
+                    },
+                    {
+                        "name": "Good Rod - Route 45",
+                        "ref": "Special Encounters/Good Rod/Route 45"
+                    },
+                    {
+                        "name": "Super Rod - Route 45",
+                        "ref": "Special Encounters/Super Rod/Route 45"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route45North",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
+                    {
+                        "size": 24,
+                        "map": "Route45South",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 46/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 46/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 46/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 46/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route46",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Outside Encounters​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Silver Cave/Outside - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/Outside - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/Outside - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/Outside - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Silver Cave/Outside Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "SilverCaveOutside",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Diglett's Cave/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Diglett's Cave/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Diglett's Cave/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Diglett's Cave/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "DiglettsCave",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Mount Moon/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "MountMoon",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "1F Encounters​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Rock Tunnel/1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Rock Tunnel/1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Rock Tunnel/1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Rock Tunnel/1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "RockTunnel1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Rock Tunnel/B1F - Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Rock Tunnel/B1F - Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Rock Tunnel/B1F - Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Rock Tunnel/B1F - Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "RockTunnelB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Victory Road/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Victory Road/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "VictoryRoad1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
+                    {
+                        "size": 24,
+                        "map": "VictoryRoad2F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
+                    {
+                        "size": 24,
+                        "map": "VictoryRoad3F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 27/Tohjo Falls Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Tohjo Falls Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Tohjo Falls Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Tohjo Falls Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Tohjo Falls Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "TohjoFalls",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 1/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 1/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 1/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 1/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route1",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 2/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 2/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 2/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 2/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route2",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 3/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 3/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 3/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 3/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route3",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 4/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 4/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 4/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 4/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 4/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route4",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 5/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 5/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 5/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 5/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route5",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 6/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 6/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 6/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 6/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 6/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route6",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 7/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 7/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 7/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 7/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route7",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 8/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 8/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 8/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 8/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route8",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 9/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 9/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 9/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 9/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 9/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route9",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 10/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 10/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 10/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 10/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 10/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route10",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 11/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 11/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 11/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 11/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route11",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 13/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 13/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 13/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 13/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 13/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Swarm Encounter",
+                        "name": "Swarm Encounter"
+                    },
+                    {
+                        "name": "Old Rod - Routes 12, 13, 32",
+                        "ref": "Special Encounters/Old Rod/Routes 12, 13, 32"
+                    },
+                    {
+                        "name": "Good Rod - Routes 12, 13, 32",
+                        "ref": "Special Encounters/Good Rod/Routes 12, 13, 32"
+                    },
+                    {
+                        "name": "Super Rod - Routes 12, 13, 32",
+                        "ref": "Special Encounters/Super Rod/Routes 12, 13, 32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route13",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 14/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 14/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 14/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 14/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route14",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 15/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 15/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 15/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 15/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route15",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 16/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 16/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 16/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 16/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route16",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 17/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 17/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 17/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 17/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route17",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 18/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 18/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 18/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 18/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route18",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 21/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 21/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 21/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 21/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 21/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route21",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 22/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 22/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 22/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 22/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 22/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route22",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 24/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 24/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 24/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 24/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 24/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route24",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 25/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 25/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 25/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 25/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 25/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake",
+                        "ref": "Special Encounters/Old Rod/Lake"
+                    },
+                    {
+                        "name": "Good Rod - Lake",
+                        "ref": "Special Encounters/Good Rod/Lake"
+                    },
+                    {
+                        "name": "Super Rod - Lake",
+                        "ref": "Special Encounters/Super Rod/Lake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route25",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 26/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 26/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 26/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 26/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 26/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    },
+                    {
+                        "name": "Border - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Border - Common"
+                    },
+                    {
+                        "name": "Border - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Border - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route26North",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
+                    {
+                        "size": 24,
+                        "map": "Route26South",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 27/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 27/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    },
+                    {
+                        "name": "Border - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Border - Common"
+                    },
+                    {
+                        "name": "Border - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Border - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route27",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 28/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 28/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 28/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 28/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 28/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route28",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "B1F Encounters​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Dragon's Den B1F - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Dragon's Den",
+                        "ref": "Special Encounters/Old Rod/Dragon's Den"
+                    },
+                    {
+                        "name": "Good Rod - Dragon's Den",
+                        "ref": "Special Encounters/Good Rod/Dragon's Den"
+                    },
+                    {
+                        "name": "Super Rod - Dragon's Den",
+                        "ref": "Special Encounters/Super Rod/Dragon's Den"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "DragonsDenB1F",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Port Encounters",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine City/Port - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "OlivinePort",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Port Encounters​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Port - Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "VermilionPort",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 40/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Shore",
+                        "ref": "Special Encounters/Old Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore",
+                        "ref": "Special Encounters/Good Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Day)",
+                        "ref": "Special Encounters/Good Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Good Rod/Shore (Nite)"
+                    },
+                    {
+                        "name": "Super Rod - Shore",
+                        "ref": "Special Encounters/Super Rod/Shore"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Day)",
+                        "ref": "Special Encounters/Super Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Super Rod/Shore (Nite)"
+                    },
+                    {
+                        "name": "Rock Smash Encounters",
+                        "ref": "Special Encounters/Rocksmash/Rocksmash"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route40",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 41/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route41",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/New Bark Town/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "NewBarkTown",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cherrygrove City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Shore",
+                        "ref": "Special Encounters/Old Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore",
+                        "ref": "Special Encounters/Good Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Day)",
+                        "ref": "Special Encounters/Good Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Good Rod/Shore (Nite)"
+                    },
+                    {
+                        "name": "Super Rod - Shore",
+                        "ref": "Special Encounters/Super Rod/Shore"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Day)",
+                        "ref": "Special Encounters/Super Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Super Rod/Shore (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "CherrygroveCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "name": "Town - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Town - Common"
+                    },
+                    {
+                        "name": "Town - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Town - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "AzaleaTown",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Violet City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "VioletCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cianwood City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Shore",
+                        "ref": "Special Encounters/Old Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore",
+                        "ref": "Special Encounters/Good Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Day)",
+                        "ref": "Special Encounters/Good Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Good Rod/Shore (Nite)"
+                    },
+                    {
+                        "name": "Super Rod - Shore",
+                        "ref": "Special Encounters/Super Rod/Shore"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Day)",
+                        "ref": "Special Encounters/Super Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Super Rod/Shore (Nite)"
+                    },
+                    {
+                        "name": "Rock Smash Encounters",
+                        "ref": "Special Encounters/Rocksmash/Rocksmash"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "CianwoodCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Olivine City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Shore",
+                        "ref": "Special Encounters/Old Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore",
+                        "ref": "Special Encounters/Good Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Day)",
+                        "ref": "Special Encounters/Good Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Good Rod/Shore (Nite)"
+                    },
+                    {
+                        "name": "Super Rod - Shore",
+                        "ref": "Special Encounters/Super Rod/Shore"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Day)",
+                        "ref": "Special Encounters/Super Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Super Rod/Shore (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "OlivineCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Ecruteak City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "EcruteakCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Lake of Rage/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake of Rage, Fuchsia City",
+                        "ref": "Special Encounters/Old Rod/Lake of Rage, Fuchsia City"
+                    },
+                    {
+                        "name": "Good Rod - Lake of Rage, Fuchsia City",
+                        "ref": "Special Encounters/Good Rod/Lake of Rage, Fuchsia City"
+                    },
+                    {
+                        "name": "Super Rod - Lake of Rage, Fuchsia City",
+                        "ref": "Special Encounters/Super Rod/Lake of Rage, Fuchsia City"
+                    },
+                    {
+                        "name": "Lake - Common",
+                        "ref": "Special Encounters/Headbutt Trees/Lake - Common"
+                    },
+                    {
+                        "name": "Lake - Rare",
+                        "ref": "Special Encounters/Headbutt Trees/Lake - Rare"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "LakeOfRage",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Blackthorn City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "BlackthornCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 12/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 32/Swarm Encounter",
+                        "name": "Swarm Encounter"
+                    },
+                    {
+                        "name": "Old Rod - Routes 12, 13, 32",
+                        "ref": "Special Encounters/Old Rod/Routes 12, 13, 32"
+                    },
+                    {
+                        "name": "Good Rod - Routes 12, 13, 32",
+                        "ref": "Special Encounters/Good Rod/Routes 12, 13, 32"
+                    },
+                    {
+                        "name": "Super Rod - Routes 12, 13, 32",
+                        "ref": "Special Encounters/Super Rod/Routes 12, 13, 32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route12North",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
+                    {
+                        "size": 24,
+                        "map": "Route12South",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 19/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Shore",
+                        "ref": "Special Encounters/Old Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore",
+                        "ref": "Special Encounters/Good Rod/Shore"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Day)",
+                        "ref": "Special Encounters/Good Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Good Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Good Rod/Shore (Nite)"
+                    },
+                    {
+                        "name": "Super Rod - Shore",
+                        "ref": "Special Encounters/Super Rod/Shore"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Day)",
+                        "ref": "Special Encounters/Super Rod/Shore (Day)"
+                    },
+                    {
+                        "name": "Super Rod - Shore (Nite)",
+                        "ref": "Special Encounters/Super Rod/Shore (Nite)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route19",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 20/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route20",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Pallet Town/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "PalletTown",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Viridian City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Pond",
+                        "ref": "Special Encounters/Old Rod/Pond"
+                    },
+                    {
+                        "name": "Good Rod - Pond",
+                        "ref": "Special Encounters/Good Rod/Pond"
+                    },
+                    {
+                        "name": "Super Rod - Pond",
+                        "ref": "Special Encounters/Super Rod/Pond"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "ViridianCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cerulean City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "CeruleanCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Vermilion City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "VermilionCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Celadon City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "CeladonCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Fuchsia City/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Lake of Rage, Fuchsia City",
+                        "ref": "Special Encounters/Old Rod/Lake of Rage, Fuchsia City"
+                    },
+                    {
+                        "name": "Good Rod - Lake of Rage, Fuchsia City",
+                        "ref": "Special Encounters/Good Rod/Lake of Rage, Fuchsia City"
+                    },
+                    {
+                        "name": "Super Rod - Lake of Rage, Fuchsia City",
+                        "ref": "Special Encounters/Super Rod/Lake of Rage, Fuchsia City"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "FuchsiaCity",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Cinnabar Island/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "CinnabarIsland",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Route 23/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 23/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 23/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 23/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Route 23/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Route 45",
+                        "ref": "Special Encounters/Old Rod/Route 45"
+                    },
+                    {
+                        "name": "Good Rod - Route 45",
+                        "ref": "Special Encounters/Good Rod/Route 45"
+                    },
+                    {
+                        "name": "Super Rod - Route 45",
+                        "ref": "Special Encounters/Super Rod/Route 45"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "Route23Restored",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Encounters​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+                "sections": [
+                    {
+                        "ref": "JohtoKanto/Flooded Mine/Land Encounters",
+                        "name": "Land Encounters"
+                    },
+                    {
+                        "ref": "JohtoKanto/Flooded Mine/Land Encounters (Morn)",
+                        "name": "Land Encounters (Morn)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Flooded Mine/Land Encounters (Day)",
+                        "name": "Land Encounters (Day)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Flooded Mine/Land Encounters (Nite)",
+                        "name": "Land Encounters (Nite)"
+                    },
+                    {
+                        "ref": "JohtoKanto/Flooded Mine/Surf Encounters",
+                        "name": "Surf Encounters"
+                    },
+                    {
+                        "name": "Old Rod - Ocean",
+                        "ref": "Special Encounters/Old Rod/Ocean"
+                    },
+                    {
+                        "name": "Good Rod - Ocean",
+                        "ref": "Special Encounters/Good Rod/Ocean"
+                    },
+                    {
+                        "name": "Super Rod - Ocean",
+                        "ref": "Special Encounters/Super Rod/Ocean"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 24,
+                        "map": "FloodedMine",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    }
+                ]
+            }
+        ]
+    }
+]

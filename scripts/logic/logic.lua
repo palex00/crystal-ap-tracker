@@ -113,6 +113,49 @@ function gyms()
   Tracker:ProviderCountForCode("EVENT_BEAT_BLUE")
 end
 
+function battletower_milestones(value)
+    local value = tonumber(value)
+
+    if has("battle_tower_progressive_tier_unlocks_on") then
+        local unlocked = Tracker:ProviderCountForCode("BATTLE_TOWER_TIER_UNLOCK")
+        if value > unlocked then
+            return AccessibilityLevel.None
+        end
+    end
+
+    local gymcount = gyms()
+    local red = Tracker:ProviderCountForCode("EVENT_BEAT_RED")
+    local e4 = Tracker:ProviderCountForCode("EVENT_BEAT_ELITE_FOUR")
+    local ubers = has("BATTLE_TOWER_UBER_PASS")
+    
+    local total = gymcount + red + e4
+    local milestone = total >= value
+    
+    if milestone and (ubers or (value <= 6)) then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function battletower_trainer(ID)
+    if BATTLE_TOWER_TRAINERS == nil then
+        return AccessibilityLevel.Normal
+    end
+    
+    ID = tonumber(ID)
+    local rolled = nil
+    for index, number in ipairs(BATTLE_TOWER_TRAINERS) do
+        if number == ID then
+            rolled = index - 1
+            break
+        end
+    end
+
+    local milestone = math.floor(rolled / 7) + 1
+    return battletower_milestones(milestone)
+end
+
 function hid()
     if has("reqitemfinder_off") then
         return AccessibilityLevel.Normal
@@ -125,23 +168,91 @@ function hid()
     end
 end
 
-function can_cut_johto()
-  return has("HM_CUT") and (
-  has("FREE_CUT") or
-  has("badgereqs_none") or
-  ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("HIVE_BADGE")) or
-  (has("badgereqs_kanto") and (has("HIVE_BADGE") or has("CASCADE_BADGE")))
-  )
+function lance_e4()
+    if has("lance_requires_elite_four_off") then
+        return AccessibilityLevel.Normal
+    elseif has("EVENT_BEAT_ELITE_4_WILL") and has("EVENT_BEAT_ELITE_4_KOGA")
+        and has("EVENT_BEAT_ELITE_4_BRUNO") and has("EVENT_BEAT_ELITE_4_KAREN") then
+        return AccessibilityLevel.Normal
+    end
+    return AccessibilityLevel.None
 end
 
-function can_cut_kanto()
-  return has("HM_CUT") and (
+HM_MOVES = {"CUT", "FLY", "SURF", "STRENGTH", "FLASH", "WHIRLPOOL", "WATERFALL", "HEADBUTT", "ROCK_SMASH"}
+HM_COMPAT = {}
+HM_TEACHABLE = {}
+
+function setHMCompat(slot_data)
+    HM_COMPAT = {}
+    if slot_data.field_moves_always_usable == 0 then
+        for _, move in ipairs(HM_MOVES) do
+            HM_COMPAT[move] = {}
+        end
+        for dex, indices in pairs(slot_data.hm_compat) do
+            for _, index in ipairs(indices) do
+                table.insert(HM_COMPAT[HM_MOVES[index + 1]], "pokemon_" .. dex)
+            end
+        end
+        for _, move in ipairs(HM_MOVES) do
+            if #HM_COMPAT[move] == 251 then
+                HM_COMPAT[move] = nil
+            end
+        end
+    end
+    updateHMTeachable()
+    InvalidateCanReach()
+end
+
+function updateHMTeachable()
+    HM_TEACHABLE = {}
+    for move, pokemon_list in pairs(HM_COMPAT) do
+        HM_TEACHABLE[move] = false
+        for _, pokemon in ipairs(pokemon_list) do
+            if has(pokemon) then
+                HM_TEACHABLE[move] = true
+                break
+            end
+        end
+    end
+end
+
+ScriptHost:AddWatchForCode("HMTeachable", "*", updateHMTeachable)
+
+function can_teach(move)
+    return HM_TEACHABLE[move] ~= false
+end
+
+function hm_compat_notice()
+    return (not can_teach("CUT") and has("HM_CUT") and (cut_badge("johto") or cut_badge("kanto"))) or
+        (not can_teach("FLY") and has("HM_FLY") and fly_badge()) or
+        (not can_teach("SURF") and has("HM_SURF") and (surf_badge("johto") or surf_badge("kanto"))) or
+        (not can_teach("STRENGTH") and has("HM_STRENGTH") and strength_badge()) or
+        (not can_teach("FLASH") and has("HM_FLASH") and (flash_badge("johto") or flash_badge("kanto"))) or
+        (not can_teach("WHIRLPOOL") and has("HM_WHIRLPOOL") and whirlpool_badge() and can_surf_johto()) or
+        (not can_teach("WATERFALL") and has("HM_WATERFALL") and waterfall_badge() and can_surf_johto()) or
+        (not can_teach("HEADBUTT") and has("TM_HEAD_BUTT")) or
+        (not can_teach("ROCK_SMASH") and has("TM_ROCK_SMASH"))
+end
+
+function cut_badge(region)
+  return (
   has("FREE_CUT") or
   has("badgereqs_none") or
   (has("badgereqs_vanilla") and has("HIVE_BADGE")) or
   (has("badgereqs_kanto") and (has("HIVE_BADGE") or has("CASCADE_BADGE"))) or
-  (has("badgereqs_regional") and has("CASCADE_BADGE"))
+  (has("badgereqs_regional") and (
+    (region == "johto" and has("HIVE_BADGE")) or
+    (region == "kanto" and has("CASCADE_BADGE"))
+  ))
   )
+end
+
+function can_cut_johto()
+  return has("HM_CUT") and can_teach("CUT") and cut_badge("johto")
+end
+
+function can_cut_kanto()
+  return has("HM_CUT") and can_teach("CUT") and cut_badge("kanto")
 end
 
 function strength_badge()
@@ -155,26 +266,28 @@ function strength_badge()
 end
 
 function can_strength()
-    return (has("HM_STRENGTH") and strength_badge())
+    return (has("HM_STRENGTH") and can_teach("STRENGTH") and strength_badge())
 end
 
-function can_surf_johto()
-    return has("HM_SURF") and (
-        has("FREE_SURF") or
-        has("badgereqs_none") or
-        ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("FOG_BADGE")) or
-        (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE")))
-    )
-end
-
-function can_surf_kanto()
-    return has("HM_SURF") and (
+function surf_badge(region)
+    return (
         has("FREE_SURF") or
         has("badgereqs_none") or
         (has("badgereqs_vanilla") and has("FOG_BADGE")) or
         (has("badgereqs_kanto") and (has("FOG_BADGE") or has("SOUL_BADGE"))) or
-        (has("badgereqs_regional") and has("SOUL_BADGE"))
+        (has("badgereqs_regional") and (
+            (region == "johto" and has("FOG_BADGE")) or
+            (region == "kanto" and has("SOUL_BADGE"))
+        ))
     )
+end
+
+function can_surf_johto()
+    return has("HM_SURF") and can_teach("SURF") and surf_badge("johto")
+end
+
+function can_surf_kanto()
+    return has("HM_SURF") and can_teach("SURF") and surf_badge("kanto")
 end
 
 function whirlpool_badge()
@@ -188,7 +301,7 @@ function whirlpool_badge()
 end
 
 function can_whirlpool()
-  return (has("HM_WHIRLPOOL") and whirlpool_badge() and can_surf_johto())
+  return (has("HM_WHIRLPOOL") and can_teach("WHIRLPOOL") and whirlpool_badge() and can_surf_johto())
   -- this is hardcoded to Johto because Kanto does currently not have whirlpools
 end
 
@@ -203,12 +316,18 @@ function waterfall_badge()
 end
 
 function can_waterfall()
-  return (has("HM_WATERFALL") and waterfall_badge() and can_surf_johto())
+  return (has("HM_WATERFALL") and can_teach("WATERFALL") and waterfall_badge() and can_surf_johto())
   -- this is hardcoded to Johto because Kanto does currently not have waterfalls
 end
 
 function mm_rocksmash()
-    return (has("TM_ROCK_SMASH") or has("mount_mortar_access_vanilla"))
+    return (can_rock_smash() or has("mount_mortar_access_vanilla"))
+end
+
+-- Generic Rock Smash. Distinct from mm_rocksmash(), which also passes when Mt. Mortar is
+-- set to vanilla access.
+function can_rock_smash()
+    return has("TM_ROCK_SMASH") and can_teach("ROCK_SMASH")
 end
 
 function route42_passage()
@@ -219,6 +338,10 @@ function route42_passage()
     else
         return false
     end
+end
+
+function opened_mortar()
+    return (has("route_42_access_blocked") or has("route_42_access_whirlchanges"))
 end
 
 function fly_badge()
@@ -232,7 +355,7 @@ function fly_badge()
 end
 
 function can_fly()
-  return (has("HM_FLY") and fly_badge())
+  return (has("HM_FLY") and can_teach("FLY") and fly_badge())
 end
 
 function has_mapcard()
@@ -248,10 +371,6 @@ end
 
 function clear_snorlax()
   return (has("POKE_GEAR") and has("RADIO_CARD") and has("EXPN_CARD"))
-end
-
-function all_badges()
-    return kantobadges() == 8
 end
 
 function silver_cave()
@@ -272,7 +391,7 @@ function r32_guy()
 end
 
 function tea(direction)
-  return (has("coffee_"..direction) and has("tea"))
+  return (has("coffee_"..direction) and has("TEA"))
   or not has("coffee_"..direction)
 end
 
@@ -285,35 +404,25 @@ function nationalpark()
   return has("national_park_vanilla") or has("BICYCLE")
 end
 
-function scout()
-  return AccessibilityLevel.Inspect
+function started(town)
+  if town == "Cherrygrove" and has("start_town_New_Bark") then
+    return false
+  end
+  if town == "Viridian" and has("start_town_Pallet") then
+    return false
+  end
+  return not has("start_town_" .. town)
 end
 
 function badges_randomised()
   return has("badges_on") or has("badges_shuffle")
 end
 
-function fly_cheese()
-    if has("fly_cheese_optional") and can_fly() and has("randomize_fly_unlocks_false") then
-        return AccessibilityLevel.SequenceBreak
-    elseif has("fly_cheese_required") and can_fly() and has("randomize_fly_unlocks_false") then
-        return AccessibilityLevel.Normal
-    else
-        return AccessibilityLevel.None
-    end
-end
-
-function fly_cheese_unlock()
-    if has("fly_cheese_optional") then
-        return AccessibilityLevel.SequenceBreak
-    elseif has("fly_cheese_required") then
-        return AccessibilityLevel.Normal
-    else
-        return AccessibilityLevel.None
-    end
-end
-
 function kurt_shop(color)
+    if not has("EVENT_CLEARED_SLOWPOKE_WELL") then
+        return AccessibilityLevel.None
+    end
+
     if has(color.."_APRICORN") then
         return AccessibilityLevel.Normal
     elseif not has("EVENT_SEEN_MART_KURTS_BALLS") then
@@ -324,7 +433,7 @@ function kurt_shop(color)
 end
 
 function bluecard_shop(amount)
-    if has("BLUE_CARD") and has("BLUE_CARD_POINT", amount) then
+    if has("BLUE_CARD") and has("BLUE_CARD_POINT_"..amount) then
         return AccessibilityLevel.Normal
     elseif has("BLUE_CARD") and not has("EVENT_SEEN_MART_BLUE_CARD") then
         return AccessibilityLevel.Inspect
@@ -333,10 +442,10 @@ function bluecard_shop(amount)
     end
 end
 
-function victory_road_access()
-    if has("victory_road_access_vanilla") then
+function victory_road_strength()
+    if has("victory_road_strength_off") then
         return AccessibilityLevel.Normal
-    elseif has("victory_road_access_strength") and can_strength() then
+    elseif has("victory_road_strength_on") and can_strength() then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.None
@@ -355,8 +464,8 @@ function dark(area)
     end
 end
 
-function can_use_flash(region)
-    return has("HM_FLASH") and (
+function flash_badge(region)
+    return (
         has("FREE_FLASH") or
         has("badgereqs_none") or
         (has("badgereqs_vanilla") and has("ZEPHYR_BADGE")) or
@@ -366,6 +475,10 @@ function can_use_flash(region)
             (region == "kanto" and has("BOULDER_BADGE"))
         ))
     )
+end
+
+function can_use_flash(region)
+    return has("HM_FLASH") and can_teach("FLASH") and flash_badge(region)
 end
 
 function can_flash(region)
@@ -378,40 +491,28 @@ function can_flash(region)
     end
 end
 
--- this one literally only exists for the Aerodactyl Room
-function flash_badge()
-    return (
-        has("badgereqs_none") or
-        has("FREE_FLASH") or
-        ((has("badgereqs_vanilla") or has("badgereqs_regional")) and has("ZEPHYR_BADGE")) or
-        (has("badgereqs_kanto") and (has("ZEPHYR_BADGE") or has("BOULDER_BADGE")))
-    )
-end
-
 function kantogymlock()
-    local snorlax = Tracker:FindObjectForCode("@JohtoKanto/Vermilion City/City").AccessibilityLevel
-    local hooh = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower/9F - Item").AccessibilityLevel
-    local lugia = Tracker:FindObjectForCode("@JohtoKanto/Whirl Islands/B2F - North Item").AccessibilityLevel
-    local suicune = Tracker:FindObjectForCode("@JohtoKanto/Tin Tower").AccessibilityLevel
-    local silvercave = Tracker:FindObjectForCode("@JohtoKanto/Silver Cave").AccessibilityLevel
-    local victoryroad = Tracker:FindObjectForCode("@JohtoKanto/Victory Road").AccessibilityLevel
-
-    if has("lock_kanto_gyms_false") then
+    -- The gate only exists at all when lock_kanto_gyms is on.
+    if not has("lock_kanto_gyms_true") then
         return AccessibilityLevel.Normal
     end
 
-    if has("lock_kanto_gyms_true") then
-        if (snorlax == AccessibilityLevel.Normal and clear_snorlax())
-        or hooh == AccessibilityLevel.Normal
-        or (lugia == AccessibilityLevel.Normal and has("SILVER_WING"))
-        or suicune == AccessibilityLevel.Normal
-        or silvercave == AccessibilityLevel.Normal
-        or victoryroad == AccessibilityLevel.Normal then
-            return AccessibilityLevel.Normal
-        else
-            return AccessibilityLevel.SequenceBreak
-        end
+    local snorlax = CanReach("REGION_VERMILION_CITY")
+    local hooh = CanReach("REGION_TIN_TOWER_ROOF")
+    local lugia = CanReach("REGION_WHIRL_ISLAND_B2F:NORTH")
+    local suicune = CanReach("REGION_TIN_TOWER_1F")
+    local silvercave = CanReach("REGION_SILVER_CAVE_OUTSIDE")
+    local victoryroad = CanReach("REGION_VICTORY_ROAD:1F:ENTRANCE")
+
+    if (snorlax == AccessibilityLevel.Normal and clear_snorlax())
+    or (hooh == AccessibilityLevel.Normal and has("RAINBOW_WING"))
+    or (lugia == AccessibilityLevel.Normal and has("SILVER_WING"))
+    or (suicune == AccessibilityLevel.Normal and has("CLEAR_BELL"))
+    or silvercave == AccessibilityLevel.Normal
+    or victoryroad == AccessibilityLevel.Normal then
+        return AccessibilityLevel.Normal
     end
+    return AccessibilityLevel.SequenceBreak
 end
 
 function boat_access()
@@ -486,20 +587,47 @@ function phonecard()
 end
 
 function phonecall()
-    if has("randomize_phone_call_items_vanilla") then
-        if Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel ~= AccessibilityLevel.None then
-            return math.min(Tracker:FindObjectForCode("@JohtoKanto/New Bark Town").AccessibilityLevel, phonecard())
-        else
-            return phonecard()
-        end
-    elseif has("randomize_phone_call_items_simple") then
-        return phonecard()
+    local level = phonecard()
+    if has("phone_call_mode_vanilla") then
+        level = math.min(level, UNFILTERED.CanReach("REGION_PLAYERS_HOUSE_1F"))
+    end
+    return level
+end
+
+-- Kanto phone calls only work once the power is back on.
+function can_phone_call_power()
+    return math.min(UNFILTERED.phonecall() or AccessibilityLevel.None,
+        has("EVENT_RESTORED_POWER_TO_KANTO") and AccessibilityLevel.Normal or AccessibilityLevel.None)
+end
+
+REQUEST_SEEN_EVENTS = {
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_1",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_2",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_3",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_4",
+    "EVENT_SAW_BILLS_GRANDPA_REQUEST_5",
+    "EVENT_SAW_BEVERLY_REQUEST",
+    "EVENT_SAW_DEREK_REQUEST",
+    "EVENT_SAW_TIFFANY_REQUEST",
+}
+
+function request_pokemon(slot)
+    local index = tonumber(slot) + 1
+    if not has(REQUEST_SEEN_EVENTS[index]) then
+        return AccessibilityLevel.Inspect
+    elseif has("pokemon_" .. REQUEST_POKEMON[index]) then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
     end
 end
 
-function request_pokemon()
-    return AccessibilityLevel.Normal
-    -- we'll deal with this when people complain.
+function request_previous_done(slot)
+    local prev = tonumber(slot)
+    if has("request_grandpa_" .. prev) or request_pokemon(prev - 1) == AccessibilityLevel.Normal then
+        return AccessibilityLevel.Normal
+    end
+    return AccessibilityLevel.None
 end
 
 function diplomagoal()
@@ -507,11 +635,11 @@ function diplomagoal()
 end
 
 function r12_passage()
-    return has("SQUIRTBOTTLE") or has("route_12_access_vanilla") or can_surf_kanto()
+    return has("SQUIRTBOTTLE") or has("route_12_access_vanilla") or (can_surf_kanto() and has("route_12_access_weirdtree"))
 end
 
-function alph_passage()
-    return (not has("goal_unown") or (has("HO-OH_TILE", 16) or can_strength()))
+function unown_tile(tile)
+    return not has("goal_unown_on") or has(tile, 16)
 end
 
 function partial_trainersanity()
@@ -534,7 +662,7 @@ function landslide_clear()
     if has("south_kanto_condition_power") and has("EVENT_RESTORED_POWER_TO_KANTO") then
         return AccessibilityLevel.Normal
     elseif has("south_kanto_condition_south") then
-        return Tracker:FindObjectForCode("@JohtoKanto/Cinnabar Island").AccessibilityLevel
+        return UNFILTERED.CanReach("REGION_CINNABAR_ISLAND")
     else
         return AccessibilityLevel.None
     end
@@ -543,7 +671,7 @@ end
 function landslide_19()
     if has("south_kanto_access_free") or has("south_kanto_access_21") then
         return AccessibilityLevel.Normal
-    elseif has("south_kanto_access_19") then
+    else
         return landslide_clear()
     end
 end
@@ -551,7 +679,42 @@ end
 function landslide_21()
     if has("south_kanto_access_free") or has("south_kanto_access_19") then
         return AccessibilityLevel.Normal
-    elseif has("south_kanto_access_21") then
+    else
         return landslide_clear()
+    end
+end
+
+function magikarp()
+    if has("pokemon_129") then -- 129 = magikarp
+        return AccessibilityLevel.Normal
+    elseif has("all_pokemon_seen_true") or has("magikarp_seen") then
+        return AccessibilityLevel.None
+    else
+        return AccessibilityLevel.Inspect
+    end
+end
+
+function mom_saving(number)
+    if not (has("EVENT_GAVE_MYSTERY_EGG_TO_ELM") or has("EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST")) then
+        return AccessibilityLevel.None
+    end
+    local available_gyms = has("johto_only_off") and 16 or 8
+    local required = math.min(number - 1, available_gyms)
+    if gyms() >= required then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function luckynumber(prize)
+    if not has("EVENT_SAW_LUCKY_NUMBERS") then
+        return AccessibilityLevel.Inspect
+    end
+    local trade = LUCKY_NUMBER_TRADES[tonumber(prize)]
+    if has(trade .. "_DONE") then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
     end
 end

@@ -115,7 +115,7 @@
         "name": "Egg Collected",
         "type": "toggle",
         "img": "/images/events/egg_collected.png",
-        "codes": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE"
+        "codes": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE, Static_EggTogepi"
     },
     {
         "name": "Kenya Collected",
@@ -173,9 +173,10 @@
         "codes": "EVENT_CLEARED_RADIO_TOWER"
     },
     {
-        "name": "Defeat Elite Four",
+        "name": "Become Champ",
         "type": "toggle",
-        "img": "/images/events/become_champion.png",
+        "img": "/images/trainers/lance.png",
+        "img_mods": "overlay|images/events/overlay_e4.png",
         "codes": "EVENT_BEAT_ELITE_FOUR"
     },
     {
@@ -225,7 +226,7 @@
         "name": "[Static] Odd Egg Collected",      
         "type": "toggle", 
         "img": "/images/events/EVENT_GOT_ODD_EGG.png",
-        "codes": "EVENT_GOT_ODD_EGG"
+        "codes": "EVENT_GOT_ODD_EGG, Static_OddEgg"
     },
     
 {"name": "Met Bill (Event)", "type": "toggle", "img": "/images/events/met_bill.png", "codes": "EVENT_MET_BILL"},
@@ -240,7 +241,7 @@
 {"name": "[Static] Got Shuckie from Mania", "type": "toggle", "codes": "Static_Shuckie"},
 {"name": "[Static] Got Eevee from Bill",    "type": "toggle", "codes": "Static_Eevee"},
 {"name": "[Static] Got Dratini from Elder", "type": "toggle", "codes": "Static_Dratini"},
-//{"name": "[Static] Togepi-Egg Hatched",     "type": "toggle", "codes": "EVENT_TOGEPI_HATCHED"},
+{"name": "[Static] Togepi-Egg Hatched",     "type": "toggle", "codes": "EVENT_TOGEPI_HATCHED"},
 {"name": "[Static] Got Tyrogue from Kiyo",  "type": "toggle", "codes": "Static_Tyrogue"},
 {"name": "[Static] Rocket HQ Trap Voltorb", "type": "toggle", "codes": "Static_RocketHQTrap1"},
 {"name": "[Static] Rocket HQ Trap Geodude", "type": "toggle", "codes": "Static_RocketHQTrap2"},
@@ -254,7 +255,7 @@
 {"name": "[Static] Celadon Game Corner 2",  "type": "toggle", "codes": "Static_CeladonGameCornerPrizeRoom2"},
 {"name": "[Static] Celadon Game Corner 3",  "type": "toggle", "codes": "Static_CeladonGameCornerPrizeRoom3"},
 
-{"name": "Saw Suicune in Cianwood City (Event)", "type": "toggle", "img": "/images/events/saw_suicune_cw.png", "codes": "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY"},
+{"name": "Saw Suicune in Cianwood City (Event)", "type": "toggle", "img": "/images/events/saw_suicune_CW.png", "codes": "EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY"},
 {"name": "Saw Suicune on Route 42 (Event)", "type": "toggle", "img": "/images/events/saw_suicune_42.png", "codes": "EVENT_SAW_SUICUNE_ON_ROUTE_42"},
 {"name": "Saw Suicune on Route 36 (Event)", "type": "toggle", "img": "/images/events/saw_suicune_36.png", "codes": "EVENT_SAW_SUICUNE_ON_ROUTE_36"},
 {"name": "Beat Rival in Mount Moon", "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/mount_moon.png", "codes": "EVENT_BEAT_RIVAL_IN_MT_MOON"},
@@ -267,6 +268,23 @@
 {"name": "[Trade] Chris",  "type": "toggle", "codes": "TRADE_CHRIS"},
 {"name": "[Trade] Mike",  "type": "toggle", "codes": "TRADE_MIKE"},
 {"name": "[Trade] Kyle",  "type": "toggle", "codes": "TRADE_KYLE"},
+
+{"name": "[Trade Done] Kim",  "type": "toggle", "codes": "TRADE_KIM_DONE"},
+{"name": "[Trade Done] Emy",  "type": "toggle", "codes": "TRADE_EMY_DONE"},
+{"name": "[Trade Done] Forest",  "type": "toggle", "codes": "TRADE_FOREST_DONE"},
+{"name": "[Trade Done] Tim",  "type": "toggle", "codes": "TRADE_TIM_DONE"},
+{"name": "[Trade Done] Chris",  "type": "toggle", "codes": "TRADE_CHRIS_DONE"},
+{"name": "[Trade Done] Mike",  "type": "toggle", "codes": "TRADE_MIKE_DONE"},
+{"name": "[Trade Done] Kyle",  "type": "toggle", "codes": "TRADE_KYLE_DONE"},
+
+{"name": "EVENT_SAW_BILLS_GRANDPA_REQUEST_1", "type": "toggle", "codes": "EVENT_SAW_BILLS_GRANDPA_REQUEST_1"},
+{"name": "EVENT_SAW_BILLS_GRANDPA_REQUEST_2", "type": "toggle", "codes": "EVENT_SAW_BILLS_GRANDPA_REQUEST_2"},
+{"name": "EVENT_SAW_BILLS_GRANDPA_REQUEST_3", "type": "toggle", "codes": "EVENT_SAW_BILLS_GRANDPA_REQUEST_3"},
+{"name": "EVENT_SAW_BILLS_GRANDPA_REQUEST_4", "type": "toggle", "codes": "EVENT_SAW_BILLS_GRANDPA_REQUEST_4"},
+{"name": "EVENT_SAW_BILLS_GRANDPA_REQUEST_5", "type": "toggle", "codes": "EVENT_SAW_BILLS_GRANDPA_REQUEST_5"},
+{"name": "EVENT_SAW_BEVERLY_REQUEST", "type": "toggle", "codes": "EVENT_SAW_BEVERLY_REQUEST"},
+{"name": "EVENT_SAW_DEREK_REQUEST", "type": "toggle", "codes": "EVENT_SAW_DEREK_REQUEST"},
+{"name": "EVENT_SAW_TIFFANY_REQUEST", "type": "toggle", "codes": "EVENT_SAW_TIFFANY_REQUEST"},
 
 {"name": "Beat Rival in Cherrygrove City",      "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/cherrygrove_city.png", "codes": "EVENT_BEAT_CHERRYGROVE_RIVAL"},
 {"name": "Beat Rival in Azalea Town",           "type": "toggle", "img": "/images/events/rival.png", "img_mods": "overlay|images/events/rival_overlays/azalea_town.png", "codes": "EVENT_BEAT_AZALEA_RIVAL"},
@@ -348,4 +366,44 @@
 {"name": "EVENT_SEEN_MART_MAHOGANY_2", "type": "toggle", "codes": "EVENT_SEEN_MART_MAHOGANY_2"},
 {"name": "EVENT_SEEN_MART_BLACKTHORN", "type": "toggle", "codes": "EVENT_SEEN_MART_BLACKTHORN"},
 
+{"name": "Blackthorn Gym: Push top-right boulder into hole", "type": "toggle", "img": "/images/events/pushboulder_gym.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_tr.png", "codes": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1"},
+{"name": "Blackthorn Gym: Push bottom boulder into hole", "type": "toggle", "img": "/images/events/pushboulder_gym.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_b.png", "codes": "EVENT_BOULDER_IN_BLACKTHORN_GYM_3"},
+{"name": "Blackthorn Gym Boulders", "type": "composite_toggle", "item_left": "EVENT_BOULDER_IN_BLACKTHORN_GYM_1", "item_right": "EVENT_BOULDER_IN_BLACKTHORN_GYM_3", "codes": "BLACKTHORN_GYM_BOULDERS", "images": [{"left": false, "right": false, "name": "Blackthorn Gym Boulders", "img": "/images/events/pushboulder_gym.png", "img_mods": "@disabled"}, {"left": true, "right": false, "name": "Blackthorn Gym Boulders: top-right pushed", "img": "/images/events/pushboulder_gym.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_tr.png"}, {"left": false, "right": true, "name": "Blackthorn Gym Boulders: bottom pushed", "img": "/images/events/pushboulder_gym.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_b.png"}, {"left": true, "right": true, "name": "Blackthorn Gym Boulders: both pushed", "img": "/images/events/pushboulder_gym.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_tr.png, overlay|images/events/boulder_overlays/overlay_b.png"}]},
+{"name": "Plug the north hole in Ice Path", "type": "toggle", "img": "/images/events/pushboulder_ice.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_n.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_1A"},
+{"name": "Plug the center-west hole in Ice Path", "type": "toggle", "img": "/images/events/pushboulder_ice.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_cw.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_2A"},
+{"name": "Plug the south-west hole in Ice Path", "type": "toggle", "img": "/images/events/pushboulder_ice.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_sw.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_3A"},
+{"name": "Plug the south-east hole in Ice Path", "type": "toggle", "img": "/images/events/pushboulder_ice.png", "img_mods": "overlay|images/events/boulder_overlays/overlay_se.png", "codes": "EVENT_BOULDER_IN_ICE_PATH_4A"},
+
+{"name": "Learn the password SlowpokeTail", "type": "toggle", "img": "/images/events/password_slowpoketail.png", "codes": "EVENT_BEAT_ROCKET_GRUNTF_5"},
+{"name": "Learn the password RaticateTail", "type": "toggle", "img": "/images/events/password_raticatetail.png", "codes": "EVENT_BEAT_ROCKET_GRUNTM_28"},
+{"name": "Heal Moomoo", "type": "toggle", "img": "/images/events/healmoomoo.png", "codes": "EVENT_HEALED_MOOMOO"},
+{"name": "Jasmine explains Amphy's sickness", "type": "toggle", "img": "/images/events/beat_jasmine.png", "img_mods": "overlay|images/events/amphy_overlay.png", "codes": "EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS"},
+{"name": "Learn the password Hail Giovanni", "type": "toggle", "img": "/images/events/password_hailgiovanni.png", "codes": "EVENT_LEARNED_HAIL_GIOVANNI"},
+{"name": "Meet Copycat", "type": "toggle", "img": "/images/events/player.png","img_mods": "overlay|images/events/rival_overlays/mount_moon.png", "codes": "EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM"},
+{"name": "Meet Kurt", "type": "toggle", "img": "/images/events/kurt.png", "codes": "EVENT_MET_KURT"},
+{"name": "Learn of the robbery", "type": "toggle", "img": "/images/events/robbery.png", "codes": "EVENT_MET_MANAGER_AT_POWER_PLANT"},
+{"name": "Meet Rocket Grunt in Cerulean Gym", "type": "toggle", "img": "/images/events/rocket_cerulean.png", "codes": "EVENT_MET_ROCKET_GRUNT_AT_CERULEAN_GYM"},
+{"name": "Interrupt Misty's Date", "type": "toggle", "img": "/images/events/beat_misty.png","img_mods": "overlay|images/events/crackedheart_overlay.png", "codes": "EVENT_MISTY_RETURNED_TO_GYM"},
+{"name": "Open the Card Key Gate", "type": "toggle", "img": "/images/events/cardkeygate_open.png", "codes": "EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER"},
+{"name": "Your mom calls you", "type": "toggle", "img": "/images/events/mom_called.png", "codes": "EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST"},
+{"name": "Have Kurt investigate the GS Ball", "type": "toggle", "img": "/images/events/kurt_gsball.png", "codes": "EVENT_KURT_RETURNED_GS_BALL"},
+{"name": "EVENT_SAW_LUCKY_NUMBERS", "type": "toggle", "codes": "EVENT_SAW_LUCKY_NUMBERS"},
+
+{"name": "Beat Elite 4 Will", "type": "toggle", "img": "/images/trainers/will.png", "img_mods": "overlay|images/events/overlay_e4.png", "codes": "EVENT_BEAT_ELITE_4_WILL"},
+{"name": "Beat Elite 4 Koga", "type": "toggle", "img": "/images/trainers/koga.png", "img_mods": "overlay|images/events/overlay_e4.png", "codes": "EVENT_BEAT_ELITE_4_KOGA"},
+{"name": "Beat Elite 4 Bruno", "type": "toggle", "img": "/images/trainers/bruno.png", "img_mods": "overlay|images/events/overlay_e4.png", "codes": "EVENT_BEAT_ELITE_4_BRUNO"},
+{"name": "Beat Elite 4 Karen", "type": "toggle", "img": "/images/trainers/karen.png", "img_mods": "overlay|images/events/overlay_e4.png", "codes": "EVENT_BEAT_ELITE_4_KAREN"},
+
+{"name": "Complete Battle Tower Tier 1", "type": "toggle", "img": "/images/other/battletowertier.png", "codes": "EVENT_BEAT_BATTLE_TOWER_TIER_1"},
+{"name": "Complete Battle Tower Tier 2", "type": "toggle", "img": "/images/other/battletowertier.png", "codes": "EVENT_BEAT_BATTLE_TOWER_TIER_2"},
+{"name": "Complete Battle Tower Tier 3", "type": "toggle", "img": "/images/other/battletowertier.png", "codes": "EVENT_BEAT_BATTLE_TOWER_TIER_3"},
+{"name": "Complete Battle Tower Tier 4", "type": "toggle", "img": "/images/other/battletowertier.png", "codes": "EVENT_BEAT_BATTLE_TOWER_TIER_4"},
+{"name": "Complete Battle Tower Tier 5", "type": "toggle", "img": "/images/other/battletowertier.png", "codes": "EVENT_BEAT_BATTLE_TOWER_TIER_5"},
+{"name": "Complete Battle Tower Tier 6", "type": "toggle", "img": "/images/other/battletowertier.png", "codes": "EVENT_BEAT_BATTLE_TOWER_TIER_6"},
+{"name": "Complete Battle Tower Tier 7", "type": "toggle", "img": "/images/other/battletowertier.png", "codes": "EVENT_BEAT_BATTLE_TOWER_TIER_7"},
+{"name": "Complete Battle Tower Tier 8", "type": "toggle", "img": "/images/other/battletowertier.png", "codes": "EVENT_BEAT_BATTLE_TOWER_TIER_8"},
+{"name": "Complete Battle Tower Tier 9", "type": "toggle", "img": "/images/other/battletowertier.png", "codes": "EVENT_BEAT_BATTLE_TOWER_TIER_9"},
+{"name": "Complete Battle Tower Tier 10", "type": "toggle", "img": "/images/other/battletowertier.png", "codes": "EVENT_BEAT_BATTLE_TOWER_TIER_10"},
+
+{"name": ":)", "type": "toggle", "codes": "EVENT_MISCHIEF"}
 ]

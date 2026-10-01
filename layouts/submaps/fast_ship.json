@@ -1,0 +1,112 @@
+{
+    "fast_ship": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Overview",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "1F Hallways",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FastShip1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "1F Cabins",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FastShipCabins_Overview"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FastShipB1F_Overview"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Eastbound",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "1F Hallways",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FastShip1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "1F Cabins",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FastShipCabins_Eastbound"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FastShipB1F_Eastbound"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Westbound",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "1F Hallways",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FastShip1F"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "1F Cabins",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FastShipCabins_Westbound"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "B1F",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FastShipB1F_Westbound"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
