@@ -36073,9 +36073,84 @@
         ],
         "sections": [
             {
-                "name": "HM Compatibility",
+                "name": "Cut",
                 "chest_unopened_img": "images/items/hm01.png",
                 "chest_opened_img": "images/items/hm01.png",
+                "visibility_rules": [
+                    "$hm_compat_blocked|CUT"
+                ],
+                "item_count": 1
+            },
+            {
+                "name": "Fly",
+                "chest_unopened_img": "images/items/hm02.png",
+                "chest_opened_img": "images/items/hm02.png",
+                "visibility_rules": [
+                    "$hm_compat_blocked|FLY"
+                ],
+                "item_count": 1
+            },
+            {
+                "name": "Surf",
+                "chest_unopened_img": "images/items/hm03.png",
+                "chest_opened_img": "images/items/hm03.png",
+                "visibility_rules": [
+                    "$hm_compat_blocked|SURF"
+                ],
+                "item_count": 1
+            },
+            {
+                "name": "Strength",
+                "chest_unopened_img": "images/items/hm04.png",
+                "chest_opened_img": "images/items/hm04.png",
+                "visibility_rules": [
+                    "$hm_compat_blocked|STRENGTH"
+                ],
+                "item_count": 1
+            },
+            {
+                "name": "Flash",
+                "chest_unopened_img": "images/items/hm05.png",
+                "chest_opened_img": "images/items/hm05.png",
+                "visibility_rules": [
+                    "$hm_compat_blocked|FLASH"
+                ],
+                "item_count": 1
+            },
+            {
+                "name": "Whirlpool",
+                "chest_unopened_img": "images/items/hm06.png",
+                "chest_opened_img": "images/items/hm06.png",
+                "visibility_rules": [
+                    "$hm_compat_blocked|WHIRLPOOL"
+                ],
+                "item_count": 1
+            },
+            {
+                "name": "Waterfall",
+                "chest_unopened_img": "images/items/hm07.png",
+                "chest_opened_img": "images/items/hm07.png",
+                "visibility_rules": [
+                    "$hm_compat_blocked|WATERFALL"
+                ],
+                "item_count": 1
+            },
+            {
+                "name": "Headbutt",
+                "chest_unopened_img": "images/items/tm02.png",
+                "chest_opened_img": "images/items/tm02.png",
+                "visibility_rules": [
+                    "$hm_compat_blocked|HEADBUTT"
+                ],
+                "item_count": 1
+            },
+            {
+                "name": "Rock Smash",
+                "chest_unopened_img": "images/items/tm08.png",
+                "chest_opened_img": "images/items/tm08.png",
+                "visibility_rules": [
+                    "$hm_compat_blocked|ROCK_SMASH"
+                ],
                 "item_count": 1
             }
         ],

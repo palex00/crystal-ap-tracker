@@ -222,16 +222,29 @@ function can_teach(move)
     return HM_TEACHABLE[move] ~= false
 end
 
+HM_USABLE = {
+    CUT = function() return has("HM_CUT") and (cut_badge("johto") or cut_badge("kanto")) end,
+    FLY = function() return has("HM_FLY") and fly_badge() end,
+    SURF = function() return has("HM_SURF") and (surf_badge("johto") or surf_badge("kanto")) end,
+    STRENGTH = function() return has("HM_STRENGTH") and strength_badge() end,
+    FLASH = function() return has("HM_FLASH") and (flash_badge("johto") or flash_badge("kanto")) end,
+    WHIRLPOOL = function() return has("HM_WHIRLPOOL") and whirlpool_badge() and can_surf_johto() end,
+    WATERFALL = function() return has("HM_WATERFALL") and waterfall_badge() and can_surf_johto() end,
+    HEADBUTT = function() return has("TM_HEAD_BUTT") end,
+    ROCK_SMASH = function() return has("TM_ROCK_SMASH") end
+}
+
+function hm_compat_blocked(move)
+    return not can_teach(move) and HM_USABLE[move]()
+end
+
 function hm_compat_notice()
-    return (not can_teach("CUT") and has("HM_CUT") and (cut_badge("johto") or cut_badge("kanto"))) or
-        (not can_teach("FLY") and has("HM_FLY") and fly_badge()) or
-        (not can_teach("SURF") and has("HM_SURF") and (surf_badge("johto") or surf_badge("kanto"))) or
-        (not can_teach("STRENGTH") and has("HM_STRENGTH") and strength_badge()) or
-        (not can_teach("FLASH") and has("HM_FLASH") and (flash_badge("johto") or flash_badge("kanto"))) or
-        (not can_teach("WHIRLPOOL") and has("HM_WHIRLPOOL") and whirlpool_badge() and can_surf_johto()) or
-        (not can_teach("WATERFALL") and has("HM_WATERFALL") and waterfall_badge() and can_surf_johto()) or
-        (not can_teach("HEADBUTT") and has("TM_HEAD_BUTT")) or
-        (not can_teach("ROCK_SMASH") and has("TM_ROCK_SMASH"))
+    for _, move in ipairs(HM_MOVES) do
+        if hm_compat_blocked(move) then
+            return true
+        end
+    end
+    return false
 end
 
 function cut_badge(region)
