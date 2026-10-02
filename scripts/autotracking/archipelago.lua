@@ -619,6 +619,22 @@ function updateShops()
     end
 end
 
+function toggleShopMarkoff()
+    if has("auto_shop_markoff_true") then
+        updateShops()
+        return
+    end
+
+    for event, location in pairs(SHOP_MAPPING) do
+        if has(event) then
+            local obj = Tracker:FindObjectForCode(location)
+            local cleared = CLEARED_LOCATIONS[location] or 0
+            local hinted = CLEARED_HINTS[location] or 0
+            obj.AvailableChestCount = obj.ChestCount - cleared - hinted
+        end
+    end
+end
+
 function updateEvents(register, value)
     if value ~= nil then
         local list = _G["FLAG_EVENT_" .. tostring(register) .. "_CODES"]

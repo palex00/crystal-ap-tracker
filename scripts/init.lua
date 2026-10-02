@@ -153,6 +153,7 @@ ScriptHost:AddWatchForCode("encounter_tracking", "encounter_tracking", function(
 ScriptHost:AddWatchForCode("dexsanity", "dexsanity", showMonVisibility)
 
 ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
+ScriptHost:AddWatchForCode("auto_shop_markoff", "auto_shop_markoff", toggleShopMarkoff)
 ScriptHost:AddWatchForCode("blue_card_overlay", "BLUE_CARD", updateBlueCardOverlay)
 setBattleTowerTierOverlays()
 
