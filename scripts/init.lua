@@ -21,6 +21,7 @@ ScriptHost:LoadScript("scripts/utils.lua")
 ScriptHost:LoadScript("scripts/toggles.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/logic/dexsanity.lua")
+ScriptHost:LoadScript("scripts/hide_cleared.lua")
 ScriptHost:LoadScript("scripts/custom_items.lua")
 
 -- Entrance Randomization: CanReach graph engine + entrance items + route mode.

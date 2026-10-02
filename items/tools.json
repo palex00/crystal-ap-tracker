@@ -263,6 +263,28 @@
         ]
     },
     {
+        "name": "Visibility: Cleared",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Show cleared locations",
+                "img": "/images/items/pokeball_open.png",
+                "img_mods": "overlay|/images/tools/show.png",
+                "codes": "hide_cleared, hide_cleared_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hide cleared locations (except encounters and entrances)",
+                "img": "/images/items/pokeball_open.png",
+                "img_mods": "overlay|/images/tools/hide.png",
+                "codes": "hide_cleared, hide_cleared_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Out of Logic Locations",
         "type": "progressive",
         "loop": true,
