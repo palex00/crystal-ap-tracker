@@ -37,7 +37,12 @@ apworld | pack version
 - If you middle-click one entrance and then another, it will tell you the shortest path between the two points
 2. DexSearch
 - Once you have the Pokedex, you can input any normal Dex-ID in the DexSearch menu. If you have seen this Pokémon, it will tell you where you can catch it.
-3. TODO LATER.
+- For all of the request locations and trades, once you have talked to the Person to learn what they want, it will show up as an immediately clickable icon next to the DexSearch
+3. "In Logic"-Tab for Evolutions and Breeding
+- Inside the "Pokedex" tab you will find the "In Logic" tab. It will tell you which Pokémon are in logic to be either bred or evolved. There are two possible rows:
+  - If you have dexsanity, the left column will show you checks that are guaranteed to lead you to a Dexsanity-Check-Pokemon
+  - If you have dexsanity, the right column will show you Pokemon that, if you breed or evolve them, give you a new Pokemon
+  - If you don't have dexsanity, both columns will show you new Pokemon that are guaranteed to be in logic.
 
 ## Special Encounter Equivalency Table
 ### Fishing Rods
