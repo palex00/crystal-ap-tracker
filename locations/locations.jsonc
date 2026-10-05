@@ -752,7 +752,8 @@
                     {
                         "name": "Visit Cherrygrove City",
                         "access_rules": [
-                            "^$CanReach|REGION_CHERRYGROVE_CITY"
+                            "^$CanReach|REGION_CHERRYGROVE_CITY",
+                            "^$CanReach|REGION_CHERRYGROVE_CITY:FLOODED_MINE_ENTRANCE"
                         ],
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -5318,7 +5319,8 @@
                     {
                         "name": "Visit Azalea Town",
                         "access_rules": [
-                            "^$CanReach|REGION_AZALEA_TOWN"
+                            "^$CanReach|REGION_AZALEA_TOWN",
+                            "^$CanReach|REGION_AZALEA_TOWN:WELL"
                         ],
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -10444,7 +10446,8 @@
                     {
                         "name": "Visit Ecruteak City",
                         "access_rules": [
-                            "^$CanReach|REGION_ECRUTEAK_CITY"
+                            "^$CanReach|REGION_ECRUTEAK_CITY",
+                            "^$CanReach|REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL"
                         ],
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -17408,7 +17411,8 @@
                             "show_items, randomize_fly_unlocks_true, ^$uncleared|JohtoKanto/Mahogany Town/Visit Mahogany Town"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_MAHOGANY_TOWN"
+                            "^$CanReach|REGION_MAHOGANY_TOWN",
+                            "^$CanReach|REGION_MAHOGANY_TOWN:EAST"
                         ]
                     },
                     {
@@ -18764,7 +18768,8 @@
                     {
                         "name": "Visit Lake of Rage",
                         "access_rules": [
-                            "^$CanReach|REGION_LAKE_OF_RAGE"
+                            "^$CanReach|REGION_LAKE_OF_RAGE",
+                            "^$CanReach|REGION_LAKE_OF_RAGE:HIDDEN_POWER_HOUSE"
                         ],
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -20018,7 +20023,8 @@
                     {
                         "name": "Visit Blackthorn City",
                         "access_rules": [
-                            "^$CanReach|REGION_BLACKTHORN_CITY"
+                            "^$CanReach|REGION_BLACKTHORN_CITY",
+                            "^$CanReach|REGION_BLACKTHORN_CITY:DRAGONS_DEN_ENTRANCE"
                         ],
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -22661,7 +22667,7 @@
                     {
                         "name": "Visit Indigo Plateau",
                         "access_rules": [
-                            "^$CanReach|REGION_INDIGO_PLATEAU_POKECENTER_1F"
+                            "^$CanReach|REGION_ROUTE_23"
                         ],
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -29995,7 +30001,8 @@
                     {
                         "name": "Visit Celadon City",
                         "access_rules": [
-                            "^$CanReach|REGION_CELADON_CITY"
+                            "^$CanReach|REGION_CELADON_CITY",
+                            "^$CanReach|REGION_CELADON_CITY:GYM_ENTRANCE"
                         ],
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
@@ -31735,7 +31742,10 @@
                             "show_items, randomize_fly_unlocks_true, ^$uncleared|JohtoKanto/Vermilion City/Visit Vermilion City"
                         ],
                         "access_rules": [
-                            "^$CanReach|REGION_VERMILION_CITY"
+                            "^$CanReach|REGION_VERMILION_CITY",
+                            "^$CanReach|REGION_VERMILION_CITY:GYM_ENTRANCE",
+                            "^$CanReach|REGION_VERMILION_CITY:DIGLETTS_CAVE_ENTRANCE",
+                            "^$CanReach|REGION_ROUTE_11"
                         ]
                     },
                     {
@@ -33831,7 +33841,8 @@
                     {
                         "name": "Visit Fuchsia City",
                         "access_rules": [
-                            "^$CanReach|REGION_FUCHSIA_CITY"
+                            "^$CanReach|REGION_FUCHSIA_CITY",
+                            "^$CanReach|REGION_FUCHSIA_CITY:CUT"
                         ],
                         "chest_unopened_img": "images/items/flyunlocks/flyunlock.png",
                         "chest_opened_img": "images/items/flyunlocks/flyunlock_bw.png",
