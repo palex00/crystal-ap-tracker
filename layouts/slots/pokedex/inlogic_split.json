@@ -8,7 +8,7 @@
                 "type": "array",
                 "orientation": "vertical",
                 "h_alignment": "left",
-                "margin": "5,5",
+                "margin": "5,5,-300,-380",
                 "content": [
                     {
                         "type": "array",
@@ -22,7 +22,7 @@
                                     "type": "itemgrid",
                                     "item_margin": "3,3",
                                     "h_alignment": "left",
-                                    "item_size": "260,34",
+                                    "item_size": "170,34",
                                     "rows": [
                                         [
                                             "inlogic_1"
@@ -64,7 +64,7 @@
                                     "type": "itemgrid",
                                     "item_margin": "3,3",
                                     "h_alignment": "left",
-                                    "item_size": "260,34",
+                                    "item_size": "170,34",
                                     "rows": [
                                         [
                                             "inlogic_11"
