@@ -1,0 +1,118 @@
+{
+    "dexsearch_grid": {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "2,2",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "margin": "7,0",
+                        "content": [
+                            {
+                                "type": "item",
+                                "item": "dexsearch_frame_top",
+                                "item_size": "43, 8",
+                                "max_width": 43,
+                                "max_height": 8
+                            }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "margin": "7,0",
+                        "content": [
+                            {
+                                "type": "item",
+                                "item": "dexsearch_frame_left",
+                                "item_size": "6, 32",
+                                "max_width": 6,
+                                "max_height": 32
+                            },
+                            {
+                                "type": "item",
+                                "item": "dexsearch_result",
+                                "item_size": "32, 32",
+                                "max_width": 32,
+                                "max_height": 32
+                            },
+                            {
+                                "type": "item",
+                                "item": "dexsearch_frame_right",
+                                "item_size": "6, 32",
+                                "max_width": 6,
+                                "max_height": 32
+                            }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "margin": "7,0",
+                        "content": [
+                            {
+                                "type": "item",
+                                "item": "dexsearch_frame_bottom",
+                                "item_size": "43, 5",
+                                "max_width": 43,
+                                "max_height": 5
+                            }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "margin": "0,0",
+                        "content": [
+                            {
+                                "type": "item",
+                                "item": "dexsearch_digit1",
+                                "item_size": "12, 22",
+                                "max_width": 12,
+                                "max_height": 22
+                            },
+                            {
+                                "type": "item",
+                                "item": "dexsearch_digit2",
+                                "item_size": "9, 22",
+                                "max_width": 9,
+                                "max_height": 22
+                            },
+                            {
+                                "type": "item",
+                                "item": "dexsearch_digit3",
+                                "item_size": "12, 22",
+                                "max_width": 12,
+                                "max_height": 22
+                            },
+                            {
+                                "type": "itemgrid",
+                                "margin": "0,0",
+                                "item_margin": "0,-4",
+                                "rows": [
+                                    [
+                                        "dexsearch_reset"
+                                    ],
+                                    [
+                                        "dexsearch_go"
+                                    ]
+                                ],
+                                "item_size": "16, 16"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "layout",
+                "key": "slot_dexsearch_requests"
+            }
+        ]
+    }
+}

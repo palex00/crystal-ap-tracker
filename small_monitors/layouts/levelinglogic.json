@@ -1,0 +1,93 @@
+{
+    "levelinglogic": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "8,6",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "2,6",
+                "content": [
+                    {
+                        "type": "item",
+                        "item": "level_maxevo",
+                        "item_size": "118, 8",
+                        "max_width": 118,
+                        "max_height": 8
+                    },
+                    {
+                        "type": "item",
+                        "item": "max_digit1",
+                        "item_size": "12, 9",
+                        "max_width": 12,
+                        "max_height": 9
+                    },
+                    {
+                        "type": "item",
+                        "item": "max_digit2",
+                        "item_size": "12, 9",
+                        "max_width": 12,
+                        "max_height": 9
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "2,6",
+                "content": [
+                    {
+                        "type": "item",
+                        "item": "level_pergym",
+                        "item_size": "118, 8",
+                        "max_width": 118,
+                        "max_height": 8
+                    },
+                    {
+                        "type": "item",
+                        "item": "yaml_digit1",
+                        "item_size": "12, 9",
+                        "max_width": 12,
+                        "max_height": 9
+                    },
+                    {
+                        "type": "item",
+                        "item": "yaml_digit2",
+                        "item_size": "12, 9",
+                        "max_width": 12,
+                        "max_height": 9
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "2,6",
+                "content": [
+                    {
+                        "type": "item",
+                        "item": "level_inlogic",
+                        "item_size": "118, 8",
+                        "max_width": 118,
+                        "max_height": 8
+                    },
+                    {
+                        "type": "item",
+                        "item": "result_digit1",
+                        "item_size": "12, 9",
+                        "max_width": 12,
+                        "max_height": 9
+                    },
+                    {
+                        "type": "item",
+                        "item": "result_digit2",
+                        "item_size": "12, 9",
+                        "max_width": 12,
+                        "max_height": 9
+                    }
+                ]
+            }
+        ]
+    }
+}
