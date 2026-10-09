@@ -1,4 +1,5 @@
 Tracker.AllowDeferredLogicUpdate = true
+SMALL_MONITORS = Tracker.ActiveVariantUID == "small_monitors"
 
 -- Items
 Tracker:AddItems("items/items.json")
@@ -114,7 +115,7 @@ Tracker:AddLayouts("layouts/full/events.json")
 ---- settings
 Tracker:AddLayouts("layouts/full/settings.json")
 Tracker:AddLayouts("layouts/settings/settings_encevo.json")
-Tracker:AddLayouts("layouts/settings/settings_popup.json")
+Tracker:AddLayouts(SMALL_MONITORS and "layouts/small_monitors/settings_popup.json" or "layouts/settings/settings_popup.json")
 Tracker:AddLayouts("layouts/tools/tools_max.json")
 Tracker:AddLayouts("layouts/tools/dexsearch.json")
 Tracker:AddLayouts("layouts/full/settings_flydestinations.json")
@@ -122,7 +123,7 @@ Tracker:AddLayouts("layouts/full/settings_flydestinations.json")
 ---- other
 Tracker:AddLayouts("layouts/levelinglogic.json")
 Tracker:AddLayouts("layouts/broadcast/broadcast.json")
-Tracker:AddLayouts("layouts/pokedex.json")
+Tracker:AddLayouts(SMALL_MONITORS and "layouts/small_monitors/pokedex.json" or "layouts/pokedex.json")
 Tracker:AddLayouts("layouts/dexcountsanity.json")
 
 

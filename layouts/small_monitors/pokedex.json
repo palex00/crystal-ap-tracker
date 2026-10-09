@@ -1,0 +1,69 @@
+{
+    "pokedex_grid_full": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Kanto Dex (001-151)",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "kantopokemon"
+                    ]
+                }
+            },
+            {
+                "title": "Johto Dex (152-251)",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "johtopokemon"
+                    ]
+                }
+            },
+            {
+                "title": "Detailed",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "1",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "evolutionsanity_1"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "2",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "evolutionsanity_2"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "3",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "evolutionsanity_3"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "4",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "evolutionsanity_4"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

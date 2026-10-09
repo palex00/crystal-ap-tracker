@@ -39,7 +39,7 @@ local function any_er()
 end
 
 local function routing()
-    return any_er() and "_routing" or ""
+    return any_er() and not SMALL_MONITORS and "_routing" or ""
 end
 
 local function routing_side(side)
@@ -264,7 +264,9 @@ LAYOUT_SLOTS = {
         return has("grasssanity_any")
     end),
     slot("tools", "show_entrances", with_er(), any_er),
-    slot("tools", "routing_tab", with_er(), any_er),
+    slot("tools", "routing_tab", with_er(), function()
+        return any_er() and not SMALL_MONITORS
+    end),
     slot("tools", "auto_shop", {"shopsanity_johtomarts", "shopsanity_kantomarts"}, function()
         return has("shopsanity_anymart")
     end),
