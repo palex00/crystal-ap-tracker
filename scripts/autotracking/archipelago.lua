@@ -326,6 +326,11 @@ function onClear(slot_data)
         else
             Tracker:FindObjectForCode("chrism").CurrentStage = 0
         end
+        if Archipelago:GetPlayerAlias(PLAYER_ID) == "Gamer" then
+            load_layout("settings_popup", "layouts/settings/settings_popup_hidden.json")
+        else
+            load_layout("settings_popup", "layouts/settings/settings_popup.json")
+        end
         updateEvents(1, 0)
         updateEvents(2, 0)
         updateEvents(3, 0)

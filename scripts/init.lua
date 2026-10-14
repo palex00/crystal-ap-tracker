@@ -114,7 +114,7 @@ Tracker:AddLayouts("layouts/full/events.json")
 ---- settings
 Tracker:AddLayouts("layouts/full/settings.json")
 Tracker:AddLayouts("layouts/settings/settings_encevo.json")
-Tracker:AddLayouts("layouts/settings/settings_popup.json")
+load_layout("settings_popup", "layouts/settings/settings_popup.json")
 Tracker:AddLayouts("layouts/tools/tools_max.json")
 Tracker:AddLayouts("layouts/tools/dexsearch.json")
 Tracker:AddLayouts("layouts/full/settings_flydestinations.json")
