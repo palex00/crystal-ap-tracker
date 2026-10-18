@@ -59,12 +59,23 @@ end
 function CanReach(name)
     if stale then
         stale = false
-        accessibilityCacheComplete = false
         accessibilityCache = {}
-        while not accessibilityCacheComplete do
+        Entry_point:discover(ACCESS_NORMAL, 0)
+        -- Rules that read another region's level (reach() / CanReach(), e.g. kantogymlock,
+        -- landslide_clear, the Lake of Rage Gyarados leaf) can turn true after their source
+        -- region was discovered, and discover() only walks on from nodes whose level improved.
+        -- Re-relax every reached node until nothing changes; restarting from Entry_point alone
+        -- would never revisit those edges.
+        repeat
             accessibilityCacheComplete = true
-            Entry_point:discover(ACCESS_NORMAL, 0)
-        end
+            for _, name in ipairs(NAMED_NODES_KEYS) do
+                local node = NAMED_NODES[name]
+                local level = accessibilityCache[node]
+                if level and level > ACCESS_NONE then
+                    node:discover(level, node.keys)
+                end
+            end
+        until accessibilityCacheComplete
     end
     local node = NAMED_NODES[name]
     if node == nil then
