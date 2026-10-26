@@ -155,7 +155,9 @@ function dexSearch(id)
         end
     end
     DEXSEARCH_ID = id
-    if applyDexSearch() then
+    local found = applyDexSearch()
+    syncRequests()
+    if found then
         DEXSEARCH_RESULT:show(id, "showing encounter locations", false)
     else
         DEXSEARCH_RESULT:show(id, "no known encounter locations", true)

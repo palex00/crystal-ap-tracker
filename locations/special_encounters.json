@@ -30,6 +30,9 @@
                         "name": "Shore",
                         "clear_as_group": false,
                         "item_count": 3,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Old Rod/Shore"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Shore"
                         ]
@@ -38,6 +41,9 @@
                         "name": "Ocean",
                         "clear_as_group": false,
                         "item_count": 3,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Old Rod/Ocean"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Ocean"
                         ]
@@ -46,6 +52,9 @@
                         "name": "Lake",
                         "clear_as_group": false,
                         "item_count": 3,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Old Rod/Lake"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Lake"
                         ]
@@ -54,6 +63,9 @@
                         "name": "Pond",
                         "clear_as_group": false,
                         "item_count": 3,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Old Rod/Pond"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Pond"
                         ]
@@ -62,14 +74,20 @@
                         "name": "Dragon's Den",
                         "clear_as_group": false,
                         "item_count": 3,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Old Rod/Dragon's Den"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Dratini"
                         ]
                     },
                     {
-                        "name": "Lake of Rage, Fuchsia City",
+                        "name": "Lake of Rage & Fuchsia City",
                         "clear_as_group": false,
                         "item_count": 3,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Old Rod/Lake of Rage & Fuchsia City"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Gyarados"
                         ]
@@ -78,6 +96,9 @@
                         "name": "Route 45",
                         "clear_as_group": false,
                         "item_count": 3,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Old Rod/Route 45"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Dratini_2"
                         ]
@@ -86,14 +107,20 @@
                         "name": "Whirl Islands",
                         "clear_as_group": false,
                         "item_count": 3,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Old Rod/Whirl Islands"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_WhirlIslands"
                         ]
                     },
                     {
-                        "name": "Routes 12, 13, 32",
+                        "name": "Routes 12 & 13 & 32",
                         "clear_as_group": false,
                         "item_count": 3,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Old Rod/Routes 12 & 13 & 32"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Qwilfish"
                         ]
@@ -143,7 +170,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "visibility_rules": [
-                            "timeofday_off"
+                            "timeofday_off, ^$uncleared|Special Encounters/Good Rod/Shore"
                         ],
                         "access_rules": [
                             "^$CanReach|FISHING_Shore"
@@ -154,7 +181,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "visibility_rules": [
-                            "timeofday_on"
+                            "timeofday_on, ^$uncleared|Special Encounters/Good Rod/Shore (Day)"
                         ],
                         "access_rules": [
                             "^$CanReach|FISHING_Shore, ^$fish_tod|DAY"
@@ -165,7 +192,7 @@
                         "clear_as_group": false,
                         "item_count": 1,
                         "visibility_rules": [
-                            "timeofday_on"
+                            "timeofday_on, ^$uncleared|Special Encounters/Good Rod/Shore (Nite)"
                         ],
                         "access_rules": [
                             "^$CanReach|FISHING_Shore, ^$fish_tod|NITE"
@@ -175,6 +202,9 @@
                         "name": "Ocean",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Good Rod/Ocean"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Ocean"
                         ]
@@ -183,6 +213,9 @@
                         "name": "Lake",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Good Rod/Lake"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Lake"
                         ]
@@ -191,6 +224,9 @@
                         "name": "Pond",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Good Rod/Pond"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Pond"
                         ]
@@ -199,14 +235,20 @@
                         "name": "Dragon's Den",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Good Rod/Dragon's Den"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Dratini"
                         ]
                     },
                     {
-                        "name": "Lake of Rage, Fuchsia City",
+                        "name": "Lake of Rage & Fuchsia City",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Good Rod/Lake of Rage & Fuchsia City"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Gyarados"
                         ]
@@ -215,6 +257,9 @@
                         "name": "Route 45",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Good Rod/Route 45"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Dratini_2"
                         ]
@@ -223,14 +268,20 @@
                         "name": "Whirl Islands",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Good Rod/Whirl Islands"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_WhirlIslands"
                         ]
                     },
                     {
-                        "name": "Routes 12, 13, 32",
+                        "name": "Routes 12 & 13 & 32",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Good Rod/Routes 12 & 13 & 32"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Qwilfish"
                         ]
@@ -280,7 +331,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "visibility_rules": [
-                            "timeofday_off"
+                            "timeofday_off, ^$uncleared|Special Encounters/Super Rod/Shore"
                         ],
                         "access_rules": [
                             "^$CanReach|FISHING_Shore"
@@ -291,7 +342,7 @@
                         "clear_as_group": false,
                         "item_count": 4,
                         "visibility_rules": [
-                            "timeofday_on"
+                            "timeofday_on, ^$uncleared|Special Encounters/Super Rod/Shore (Day)"
                         ],
                         "access_rules": [
                             "^$CanReach|FISHING_Shore, ^$fish_tod|DAY"
@@ -302,7 +353,7 @@
                         "clear_as_group": false,
                         "item_count": 1,
                         "visibility_rules": [
-                            "timeofday_on"
+                            "timeofday_on, ^$uncleared|Special Encounters/Super Rod/Shore (Nite)"
                         ],
                         "access_rules": [
                             "^$CanReach|FISHING_Shore, ^$fish_tod|NITE"
@@ -312,6 +363,9 @@
                         "name": "Ocean",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Super Rod/Ocean"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Ocean"
                         ]
@@ -320,6 +374,9 @@
                         "name": "Lake",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Super Rod/Lake"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Lake"
                         ]
@@ -328,6 +385,9 @@
                         "name": "Pond",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Super Rod/Pond"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Pond"
                         ]
@@ -336,14 +396,20 @@
                         "name": "Dragon's Den",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Super Rod/Dragon's Den"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Dratini"
                         ]
                     },
                     {
-                        "name": "Lake of Rage, Fuchsia City",
+                        "name": "Lake of Rage & Fuchsia City",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Super Rod/Lake of Rage & Fuchsia City"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Gyarados"
                         ]
@@ -352,6 +418,9 @@
                         "name": "Route 45",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Super Rod/Route 45"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Dratini_2"
                         ]
@@ -360,14 +429,20 @@
                         "name": "Whirl Islands",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Super Rod/Whirl Islands"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_WhirlIslands"
                         ]
                     },
                     {
-                        "name": "Routes 12, 13, 32",
+                        "name": "Routes 12 & 13 & 32",
                         "clear_as_group": false,
                         "item_count": 4,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Super Rod/Routes 12 & 13 & 32"
+                        ],
                         "access_rules": [
                             "^$CanReach|FISHING_Qwilfish"
                         ]
@@ -416,6 +491,9 @@
                         "name": "Canyon - Common",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Canyon - Common"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Canyon"
                         ]
@@ -424,6 +502,9 @@
                         "name": "Canyon - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Canyon - Rare"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Canyon"
                         ]
@@ -432,6 +513,9 @@
                         "name": "Town - Common",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Town - Common"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Town"
                         ]
@@ -440,6 +524,9 @@
                         "name": "Town - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Town - Rare"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Town"
                         ]
@@ -448,6 +535,9 @@
                         "name": "Route - Common",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Route - Common"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Route"
                         ]
@@ -456,6 +546,9 @@
                         "name": "Route - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Route - Rare"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Route"
                         ]
@@ -464,6 +557,9 @@
                         "name": "Border - Common",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Border - Common"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Border"
                         ]
@@ -472,6 +568,9 @@
                         "name": "Border - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Border - Rare"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Border"
                         ]
@@ -480,6 +579,9 @@
                         "name": "Lake - Common",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Lake - Common"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Lake"
                         ]
@@ -488,6 +590,9 @@
                         "name": "Lake - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Lake - Rare"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Lake"
                         ]
@@ -496,6 +601,9 @@
                         "name": "Forest - Common",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Forest - Common"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Forest"
                         ]
@@ -504,6 +612,9 @@
                         "name": "Forest - Rare",
                         "clear_as_group": false,
                         "item_count": 6,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Headbutt Trees/Forest - Rare"
+                        ],
                         "access_rules": [
                             "^$CanReach|HEADBUTT_Forest"
                         ]
@@ -552,6 +663,9 @@
                         "name": "Rocksmash",
                         "clear_as_group": false,
                         "item_count": 2,
+                        "visibility_rules": [
+                            "^$uncleared|Special Encounters/Rocksmash/Rocksmash"
+                        ],
                         "access_rules": [
                             "^$CanReach|ROCK_SMASH_ANY"
                         ]
