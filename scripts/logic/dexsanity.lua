@@ -120,7 +120,9 @@ function evolve_friend_old()
 end
 
 function evolve_item(condition)
-    if has("evomethod_useitem_on") and has(condition) then
+    if not has(condition) then
+        return AccessibilityLevel.None
+    elseif has("evomethod_useitem_on") then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.SequenceBreak
@@ -136,7 +138,9 @@ function evolve_item_old(condition)
 end
 
 function evolve_helditem(condition)
-    if has("evomethod_helditem_on") and has("LINK_CABLE") and has(condition) then
+    if not has("LINK_CABLE") or not has(condition) then
+        return AccessibilityLevel.Normal
+    elseif has("evomethod_helditem_on") then
         return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.SequenceBreak
