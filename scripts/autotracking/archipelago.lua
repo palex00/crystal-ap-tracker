@@ -70,6 +70,7 @@ function onClear(slot_data)
     resetRequests()
     CAUGHT = {}
     SEEN = {}
+    RECEIVED_FLY_UNLOCKS = {}
     Tracker:FindObjectForCode("magikarp_seen").Active = false
     setDexSearchPokedex(false)
 
@@ -418,7 +419,15 @@ function onItem(index, item_id, item_name, player_number)
         --print(string.format("onItem: could not find item mapping for id %s", item_id))
         return
     end
-    
+
+    if v:sub(1, 10) == "flyunlock_" then
+        RECEIVED_FLY_UNLOCKS[v] = true
+        if has(v) then
+            local upd = Tracker:FindObjectForCode("update")
+            upd.Active = not upd.Active
+        end
+    end
+
     if v == "PROGRESSIVE_ROD" then
         if has("GOOD_ROD") then
             Tracker:FindObjectForCode("SUPER_ROD").Active = true

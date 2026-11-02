@@ -1,76 +1,76 @@
 function badges()
-  return
-  Tracker:ProviderCountForCode("ZEPHYR_BADGE") +
-  Tracker:ProviderCountForCode("HIVE_BADGE") +
-  Tracker:ProviderCountForCode("PLAIN_BADGE") +
-  Tracker:ProviderCountForCode("FOG_BADGE") +
-  Tracker:ProviderCountForCode("STORM_BADGE") +
-  Tracker:ProviderCountForCode("MINERAL_BADGE") +
-  Tracker:ProviderCountForCode("GLACIER_BADGE") +
-  Tracker:ProviderCountForCode("RISING_BADGE") +
-
-  Tracker:ProviderCountForCode("BOULDER_BADGE") +
-  Tracker:ProviderCountForCode("CASCADE_BADGE") +
-  Tracker:ProviderCountForCode("THUNDER_BADGE") +
-  Tracker:ProviderCountForCode("RAINBOW_BADGE") +
-  Tracker:ProviderCountForCode("SOUL_BADGE") +
-  Tracker:ProviderCountForCode("MARSH_BADGE") +
-  Tracker:ProviderCountForCode("VOLCANO_BADGE") +
-  Tracker:ProviderCountForCode("EARTH_BADGE")
+    return
+    Tracker:ProviderCountForCode("ZEPHYR_BADGE") +
+    Tracker:ProviderCountForCode("HIVE_BADGE") +
+    Tracker:ProviderCountForCode("PLAIN_BADGE") +
+    Tracker:ProviderCountForCode("FOG_BADGE") +
+    Tracker:ProviderCountForCode("STORM_BADGE") +
+    Tracker:ProviderCountForCode("MINERAL_BADGE") +
+    Tracker:ProviderCountForCode("GLACIER_BADGE") +
+    Tracker:ProviderCountForCode("RISING_BADGE") +
+    
+    Tracker:ProviderCountForCode("BOULDER_BADGE") +
+    Tracker:ProviderCountForCode("CASCADE_BADGE") +
+    Tracker:ProviderCountForCode("THUNDER_BADGE") +
+    Tracker:ProviderCountForCode("RAINBOW_BADGE") +
+    Tracker:ProviderCountForCode("SOUL_BADGE") +
+    Tracker:ProviderCountForCode("MARSH_BADGE") +
+    Tracker:ProviderCountForCode("VOLCANO_BADGE") +
+    Tracker:ProviderCountForCode("EARTH_BADGE")
 end
 
 function johtobadges()
-  return
-  Tracker:ProviderCountForCode("ZEPHYR_BADGE") +
-  Tracker:ProviderCountForCode("HIVE_BADGE") +
-  Tracker:ProviderCountForCode("PLAIN_BADGE") +
-  Tracker:ProviderCountForCode("FOG_BADGE") +
-  Tracker:ProviderCountForCode("STORM_BADGE") +
-  Tracker:ProviderCountForCode("MINERAL_BADGE") +
-  Tracker:ProviderCountForCode("GLACIER_BADGE") +
-  Tracker:ProviderCountForCode("RISING_BADGE")
+    return
+    Tracker:ProviderCountForCode("ZEPHYR_BADGE") +
+    Tracker:ProviderCountForCode("HIVE_BADGE") +
+    Tracker:ProviderCountForCode("PLAIN_BADGE") +
+    Tracker:ProviderCountForCode("FOG_BADGE") +
+    Tracker:ProviderCountForCode("STORM_BADGE") +
+    Tracker:ProviderCountForCode("MINERAL_BADGE") +
+    Tracker:ProviderCountForCode("GLACIER_BADGE") +
+    Tracker:ProviderCountForCode("RISING_BADGE")
 end
 
 function kantobadges()
-  return
-  Tracker:ProviderCountForCode("BOULDER_BADGE") +
-  Tracker:ProviderCountForCode("CASCADE_BADGE") +
-  Tracker:ProviderCountForCode("THUNDER_BADGE") +
-  Tracker:ProviderCountForCode("RAINBOW_BADGE") +
-  Tracker:ProviderCountForCode("SOUL_BADGE") +
-  Tracker:ProviderCountForCode("MARSH_BADGE") +
-  Tracker:ProviderCountForCode("VOLCANO_BADGE") +
-  Tracker:ProviderCountForCode("EARTH_BADGE")
+    return
+    Tracker:ProviderCountForCode("BOULDER_BADGE") +
+    Tracker:ProviderCountForCode("CASCADE_BADGE") +
+    Tracker:ProviderCountForCode("THUNDER_BADGE") +
+    Tracker:ProviderCountForCode("RAINBOW_BADGE") +
+    Tracker:ProviderCountForCode("SOUL_BADGE") +
+    Tracker:ProviderCountForCode("MARSH_BADGE") +
+    Tracker:ProviderCountForCode("VOLCANO_BADGE") +
+    Tracker:ProviderCountForCode("EARTH_BADGE")
 end
 
 function unown_goal()
-  return((
-  Tracker:ProviderCountForCode("UNOWN_1") +
-  Tracker:ProviderCountForCode("UNOWN_2") +
-  Tracker:ProviderCountForCode("UNOWN_3") +
-  Tracker:ProviderCountForCode("UNOWN_4") +
-  Tracker:ProviderCountForCode("UNOWN_5") +
-  Tracker:ProviderCountForCode("UNOWN_6") +
-  Tracker:ProviderCountForCode("UNOWN_7") +
-  Tracker:ProviderCountForCode("UNOWN_8") +
-  Tracker:ProviderCountForCode("UNOWN_9") +
-  Tracker:ProviderCountForCode("UNOWN_10") +
-  Tracker:ProviderCountForCode("UNOWN_11") +
-  Tracker:ProviderCountForCode("UNOWN_12") +
-  Tracker:ProviderCountForCode("UNOWN_13") +
-  Tracker:ProviderCountForCode("UNOWN_14") +
-  Tracker:ProviderCountForCode("UNOWN_15") +
-  Tracker:ProviderCountForCode("UNOWN_16") +
-  Tracker:ProviderCountForCode("UNOWN_17") +
-  Tracker:ProviderCountForCode("UNOWN_18") +
-  Tracker:ProviderCountForCode("UNOWN_19") +
-  Tracker:ProviderCountForCode("UNOWN_20") +
-  Tracker:ProviderCountForCode("UNOWN_21") +
-  Tracker:ProviderCountForCode("UNOWN_22") +
-  Tracker:ProviderCountForCode("UNOWN_23") +
-  Tracker:ProviderCountForCode("UNOWN_24") +
-  Tracker:ProviderCountForCode("UNOWN_25") +
-  Tracker:ProviderCountForCode("UNOWN_26")) == 26)
+    return((
+    Tracker:ProviderCountForCode("UNOWN_1") +
+    Tracker:ProviderCountForCode("UNOWN_2") +
+    Tracker:ProviderCountForCode("UNOWN_3") +
+    Tracker:ProviderCountForCode("UNOWN_4") +
+    Tracker:ProviderCountForCode("UNOWN_5") +
+    Tracker:ProviderCountForCode("UNOWN_6") +
+    Tracker:ProviderCountForCode("UNOWN_7") +
+    Tracker:ProviderCountForCode("UNOWN_8") +
+    Tracker:ProviderCountForCode("UNOWN_9") +
+    Tracker:ProviderCountForCode("UNOWN_10") +
+    Tracker:ProviderCountForCode("UNOWN_11") +
+    Tracker:ProviderCountForCode("UNOWN_12") +
+    Tracker:ProviderCountForCode("UNOWN_13") +
+    Tracker:ProviderCountForCode("UNOWN_14") +
+    Tracker:ProviderCountForCode("UNOWN_15") +
+    Tracker:ProviderCountForCode("UNOWN_16") +
+    Tracker:ProviderCountForCode("UNOWN_17") +
+    Tracker:ProviderCountForCode("UNOWN_18") +
+    Tracker:ProviderCountForCode("UNOWN_19") +
+    Tracker:ProviderCountForCode("UNOWN_20") +
+    Tracker:ProviderCountForCode("UNOWN_21") +
+    Tracker:ProviderCountForCode("UNOWN_22") +
+    Tracker:ProviderCountForCode("UNOWN_23") +
+    Tracker:ProviderCountForCode("UNOWN_24") +
+    Tracker:ProviderCountForCode("UNOWN_25") +
+    Tracker:ProviderCountForCode("UNOWN_26")) == 26)
 end
 
 gym_codes = {
@@ -93,24 +93,24 @@ gym_codes = {
 }
 
 function gyms()
-  return
-  Tracker:ProviderCountForCode("EVENT_BEAT_FALKNER") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_BUGSY") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_WHITNEY") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_MORTY") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_JASMINE") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_CHUCK") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_PRYCE") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_CLAIR") +
-
-  Tracker:ProviderCountForCode("EVENT_BEAT_BROCK") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_MISTY") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_LTSURGE") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_ERIKA") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_JANINE") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_SABRINA") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_BLAINE") +
-  Tracker:ProviderCountForCode("EVENT_BEAT_BLUE")
+    return
+    Tracker:ProviderCountForCode("EVENT_BEAT_FALKNER") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_BUGSY") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_WHITNEY") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_MORTY") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_JASMINE") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_CHUCK") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_PRYCE") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_CLAIR") +
+    
+    Tracker:ProviderCountForCode("EVENT_BEAT_BROCK") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_MISTY") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_LTSURGE") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_ERIKA") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_JANINE") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_SABRINA") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_BLAINE") +
+    Tracker:ProviderCountForCode("EVENT_BEAT_BLUE")
 end
 
 function battletower_milestones(value)
@@ -358,17 +358,17 @@ function opened_mortar()
 end
 
 function fly_badge()
-  return (
-    (has("badgereqs_vanilla") and has("STORM_BADGE")) or
-    (has("badgereqs_kanto") and (has("STORM_BADGE") or has("THUNDER_BADGE"))) or
-    has("badgereqs_none") or
-    (has("badgereqs_regional") and (has("STORM_BADGE") or has("THUNDER_BADGE"))) or 
-    has("FREE_FLY")
-  )
+    return (
+        (has("badgereqs_vanilla") and has("STORM_BADGE")) or
+        (has("badgereqs_kanto") and (has("STORM_BADGE") or has("THUNDER_BADGE"))) or
+        has("badgereqs_none") or
+        (has("badgereqs_regional") and (has("STORM_BADGE") or has("THUNDER_BADGE"))) or 
+        has("FREE_FLY")
+    )
 end
 
 function can_fly()
-  return (has("HM_FLY") and can_teach("FLY") and fly_badge())
+    return (has("HM_FLY") and can_teach("FLY") and fly_badge())
 end
 
 function has_mapcard()
@@ -376,59 +376,77 @@ function has_mapcard()
 end
 
 function can_freefly(destination)
-  return can_fly() and 
-  (has("free_fly_"..destination) or
-  (has("map_card_fly_"..destination) and has_mapcard()) or
-  (has("flyunlock_"..destination)))
+    if not can_fly() then
+        return ACCESS_NONE
+    end
+    if has("free_fly_"..destination) or (has("map_card_fly_"..destination) and has_mapcard()) then
+        return ACCESS_NORMAL
+    end
+    local code = "flyunlock_"..destination
+    if RECEIVED_FLY_UNLOCKS[code] then
+        return ACCESS_NORMAL
+    end
+    if not has(code) then
+        return ACCESS_NONE
+    end
+    if has("randomize_fly_unlocks_true") then
+        return PLAYER_ID > -1 and ACCESS_SEQUENCEBREAK or ACCESS_NORMAL
+    end
+    for _, region in ipairs(FLY_UNLOCK_REGIONS[destination]) do
+        if CanReach(region) == ACCESS_NORMAL then
+            return ACCESS_NORMAL
+        end
+    end
+    return ACCESS_SEQUENCEBREAK
 end
 
 function clear_snorlax()
-  return (has("POKE_GEAR") and has("RADIO_CARD") and has("EXPN_CARD"))
+    return (has("POKE_GEAR") and has("RADIO_CARD") and has("EXPN_CARD"))
 end
 
 function silver_cave()
-  return not has("johto_only_on")
+    return not has("johto_only_on")
 end
 
 function ilextree()
-  return has("ilextree_off")
-  or has("ilextree_on") and can_cut_johto()
+    return has("ilextree_off")
+    or has("ilextree_on") and can_cut_johto()
 end
 
 function r32_guy()
-  return has("r32_guy_open")
-  or has("r32_guy_badge") and (badges() >= 1)
-  or has("r32_guy_gym") and (gyms() >= 1)
-  or has("r32_guy_egg") and has("EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE")
-  or has("r32_guy_zephyr") and has("ZEPHYR_BADGE")
+    return has("r32_guy_open")
+    or has("r32_guy_badge") and (badges() >= 1)
+    or has("r32_guy_gym") and (gyms() >= 1)
+    or has("r32_guy_egg") and has("EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE")
+    or has("r32_guy_zephyr") and has("ZEPHYR_BADGE")
 end
 
 function tea(direction)
-  return (has("coffee_"..direction) and has("TEA"))
-  or not has("coffee_"..direction)
+    return (has("coffee_"..direction) and has("TEA"))
+    or not has("coffee_"..direction)
 end
 
 function passage(direction)
-  return has("underground_power_".. direction) and has("EVENT_RESTORED_POWER_TO_KANTO")
-  or not has("underground_power_".. direction)
+    return has("underground_power_".. direction) and has("EVENT_RESTORED_POWER_TO_KANTO")
+    or not has("underground_power_".. direction)
 end
 
 function nationalpark()
-  return has("national_park_vanilla") or has("BICYCLE")
+    return has("national_park_vanilla") or has("BICYCLE")
 end
 
 function started(town)
-  if town == "Cherrygrove" and has("start_town_New_Bark") then
-    return false
-  end
-  if town == "Viridian" and has("start_town_Pallet") then
-    return false
-  end
-  return not has("start_town_" .. town)
+    if town == "Cherrygrove" and has("start_town_New_Bark") then
+        return false
+    end
+    if town == "Viridian" and has("start_town_Pallet") then
+        return false
+    end
+    return not has("start_town_" .. town)
 end
 
 function badges_randomised()
-  return has("badges_on") or has("badges_shuffle")
+    return has("badges_on") or has("badges_shuffle")
 end
 
 function kurt_shop(color)

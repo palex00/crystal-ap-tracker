@@ -307,6 +307,36 @@ function setupFlyIndexTokens(johto_only)
 end
 setupFlyIndexTokens(0)
 
+-- Fly unlock codes that arrived as items this connection, as opposed to from visited-spawn bits.
+RECEIVED_FLY_UNLOCKS = {}
+
+-- token -> regions whose visit grants the unlock (apworld FlyRegion exit_region + unlock_sources).
+FLY_UNLOCK_REGIONS = {
+    ["NewBark"] = { "REGION_NEW_BARK_TOWN" },
+    ["Cherrygrove"] = { "REGION_CHERRYGROVE_CITY", "REGION_CHERRYGROVE_CITY:FLOODED_MINE_ENTRANCE" },
+    ["Violet"] = { "REGION_VIOLET_CITY" },
+    ["Azalea"] = { "REGION_AZALEA_TOWN", "REGION_AZALEA_TOWN:WELL" },
+    ["Goldenrod"] = { "REGION_GOLDENROD_CITY" },
+    ["Ecruteak"] = { "REGION_ECRUTEAK_CITY", "REGION_ECRUTEAK_CITY:TIN_TOWER_TRAIL" },
+    ["Olivine"] = { "REGION_OLIVINE_CITY" },
+    ["Cianwood"] = { "REGION_CIANWOOD_CITY" },
+    ["Mahogany"] = { "REGION_MAHOGANY_TOWN", "REGION_MAHOGANY_TOWN:EAST" },
+    ["LakeOfRage"] = { "REGION_LAKE_OF_RAGE", "REGION_LAKE_OF_RAGE:HIDDEN_POWER_HOUSE" },
+    ["Blackthorn"] = { "REGION_BLACKTHORN_CITY", "REGION_BLACKTHORN_CITY:DRAGONS_DEN_ENTRANCE" },
+    ["SilverCave"] = { "REGION_SILVER_CAVE_OUTSIDE" },
+    ["Pallet"] = { "REGION_PALLET_TOWN" },
+    ["Viridian"] = { "REGION_VIRIDIAN_CITY" },
+    ["Pewter"] = { "REGION_PEWTER_CITY" },
+    ["Cerulean"] = { "REGION_CERULEAN_CITY" },
+    ["Vermilion"] = { "REGION_VERMILION_CITY", "REGION_VERMILION_CITY:GYM_ENTRANCE", "REGION_VERMILION_CITY:DIGLETTS_CAVE_ENTRANCE", "REGION_ROUTE_11" },
+    ["Lavender"] = { "REGION_LAVENDER_TOWN" },
+    ["Celadon"] = { "REGION_CELADON_CITY", "REGION_CELADON_CITY:GYM_ENTRANCE" },
+    ["Saffron"] = { "REGION_SAFFRON_CITY" },
+    ["Fuchsia"] = { "REGION_FUCHSIA_CITY", "REGION_FUCHSIA_CITY:CUT" },
+    ["Cinnabar"] = { "REGION_CINNABAR_ISLAND" },
+    ["IndigoPlateau"] = { "REGION_ROUTE_23" },
+}
+
 -- token -> vanilla destination region (used as the default when fly destinations aren't
 -- randomized, so behaviour is unchanged). Equals each FlyRegion's exit_region.
 FLY_VANILLA_REGIONS = {

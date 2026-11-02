@@ -85,9 +85,9 @@ Entry_point:connect_one_way(REGION_SAFFRON_CITY, function() return has("start_to
 Entry_point:connect_one_way(REGION_CINNABAR_ISLAND, function() return has("start_town_Cinnabar") end)
 Entry_point:connect_one_way(REGION_FUCHSIA_CITY, function() return has("start_town_Fuchsia") end)
 
--- Fly: one edge per fly unlock. The unlock (visited town / Fly item / free fly / map card) is
--- surfaced by the apworld as the flyunlock_/free_fly_/map_card_fly_ codes that can_freefly reads,
--- so access needs no region-source inference. The destination is dynamic: vanilla by default and
+-- Fly: one edge per fly unlock. can_freefly returns the edge's level from the unlock's source:
+-- Fly item / free fly / map card are in logic, a visited town only while FLY_UNLOCK_REGIONS is in
+-- logic (never when unlocks are randomized). The destination is dynamic: vanilla by default and
 -- swapped per seed when fly destinations are randomized (FLY_DESTINATIONS, set in onClear).
 -- connect_fly resolves the current target at discover time, so ER logic routing follows it.
 for _, fly_token in ipairs(FLY_REGION_TOKENS) do
