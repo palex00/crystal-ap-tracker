@@ -22,13 +22,6 @@ local DIG_ID_BASE = 0x4000
 local SPAWN_HOME = 23
 local HOME_SENTINEL = "@HOME"
 
-local FOUND = false
-local ALREADY_VISITED = {}
-local PATH = {}
--- entrance token of each PATH hop (nil for walking/fly/home hops)
-local PATH_TOKENS = {}
-local STEPS = -1
-
 -- Route blink: the route's entrance sections alternate Gold/Red once per second until the
 -- final entrance is traversed or ROUTE_BLINK_SECONDS pass.
 local ROUTE_BLINK_SECONDS = 300
@@ -83,94 +76,81 @@ local function ReachableFlyHops()
     return hops
 end
 
---- Depth-first search over the graph honoring the entrance detour. Fills PATH with the
---- pretty-name of each TRANSITION (edge) taken when a route to `finish` is found. Only steps
---- onto nodes that are both reachable (cached accessibility) and whose edge rule passes.
---- The label stored for a hop is the transition you physically traverse:
+--- Breadth-first search over the graph honoring the entrance detour. Every edge is one hop, so
+--- the first time `finish` is reached is a fewest-hops route. Only steps onto nodes that are both
+--- reachable (cached accessibility) and whose edge rule passes. The label of a hop is the
+--- transition you physically traverse:
 ---   * walking edge      -> its inline pretty-name (exit[6])
 ---   * warp/entrance edge -> the door's pretty-name from ENTRANCE_REGISTRY[token] (exit[5]);
 ---     this is the door you step INTO, independent of where it currently leads once shuffled.
---- Structural/unnamed edges store "" so PATH stays dense (accurate #PATH) but print nothing.
+--- Structural/unnamed edges get "" and print nothing.
 ---@param start table
 ---@param finish table
----@param stage integer
----@return boolean
-local function FindPath(start, finish, stage)
-    local next_sweep = {}
-    local any_true = false
-    stage = stage + 1
+---@return table[]|nil  the hops { label, token } from start to finish, or nil if unreachable
+local function FindPath(start, finish)
+    -- node -> { node = previous node, label, token } of the hop that first reached it
+    local prev = { [start] = false }
+    local queue = { start }
+    local head = 1
 
-    if FOUND and ALREADY_VISITED[finish.name] and ALREADY_VISITED[finish.name] > stage then
-        FOUND = false
-    end
-    if FOUND and stage >= #PATH then
-        return false
-    end
-
-    if ALREADY_VISITED[start.name] ~= nil then
-        if ALREADY_VISITED[start.name] > stage then
-            ALREADY_VISITED[start.name] = stage
-        else
-            return false
+    local function step(node, target, label, token)
+        if prev[target] == nil then
+            prev[target] = { node = node, label = label or "", token = token }
+            queue[#queue + 1] = target
         end
-    else
-        ALREADY_VISITED[start.name] = stage
     end
 
-    if start.name == finish.name then
-        FOUND = true
-        STEPS = stage
-        return true
-    end
-
-    for _, exit in pairs(start.exits) do
-        local target = exit[1]
-        local is_entrance = exit[3]
-        if is_entrance and ER_CATEGORY_ENABLED[exit[4]] and not EntranceVanillaPinned(exit[5]) then
-            target = EntranceDetourTarget(exit[5])
-        elseif exit[7] then
-            target = FlyDetourTarget(exit[7])
-        end
-        local rule = exit[2]
-        local access = rule(target.keys)
-        if type(access) == "boolean" then
-            access = A(access)
-        end
-        if target:accessibility() > ACCESS_SEQUENCEBREAK - 1 and access > ACCESS_SEQUENCEBREAK - 1 then
-            local label
-            if is_entrance then
-                local row = ENTRANCE_REGISTRY[exit[5]]
-                label = row and row.pretty
+    while queue[head] and prev[finish] == nil do
+        local node = queue[head]
+        head = head + 1
+        for _, exit in pairs(node.exits) do
+            local target = exit[1]
+            local is_entrance = exit[3]
+            if is_entrance and ER_CATEGORY_ENABLED[exit[4]] and not EntranceVanillaPinned(exit[5]) then
+                target = EntranceDetourTarget(exit[5])
             elseif exit[7] then
-                label = FlyHopLabel(exit[7])
-            else
-                label = exit[6]
+                target = FlyDetourTarget(exit[7])
             end
-            table.insert(next_sweep, { node = target, label = label or "", token = is_entrance and exit[5] or nil })
+            if prev[target] == nil and target:accessibility() > ACCESS_SEQUENCEBREAK - 1 then
+                local access = exit[2](target.keys)
+                if type(access) == "boolean" then
+                    access = A(access)
+                end
+                if access > ACCESS_SEQUENCEBREAK - 1 then
+                    if is_entrance then
+                        local row = ENTRANCE_REGISTRY[exit[5]]
+                        step(node, target, row and row.pretty, exit[5])
+                    elseif exit[7] then
+                        step(node, target, FlyHopLabel(exit[7]))
+                    else
+                        step(node, target, exit[6])
+                    end
+                end
+            end
+        end
+
+        -- Warp home: a virtual one-hop transition available from any node. Home is always
+        -- reachable, so no rule/accessibility gate is needed. This lets the search pick
+        -- "warp home, then walk out" when that is fewer hops than walking from here.
+        if HOME then
+            step(node, HOME, "Warp Home")
+        end
+
+        for _, hop in pairs(FLY_HOPS) do
+            step(node, hop.node, hop.label)
         end
     end
 
-    -- Warp home: a virtual one-hop transition available from any node except home itself.
-    -- Home is always reachable, so no rule/accessibility gate is needed. This lets the search
-    -- pick "warp home, then walk out" when that is fewer hops than walking from here.
-    if HOME and start ~= HOME then
-        table.insert(next_sweep, { node = HOME, label = "Warp Home" })
+    if prev[finish] == nil then
+        return nil
     end
-
-    for _, hop in pairs(FLY_HOPS) do
-        if hop.node ~= start then
-            table.insert(next_sweep, { node = hop.node, label = hop.label })
-        end
+    local hops = {}
+    local node = finish
+    while prev[node] do
+        table.insert(hops, 1, prev[node])
+        node = prev[node].node
     end
-
-    for _, step in pairs(next_sweep) do
-        if FindPath(step.node, finish, stage) then
-            PATH[stage] = step.label
-            PATH_TOKENS[stage] = step.token
-            any_true = true
-        end
-    end
-    return any_true
+    return hops
 end
 
 --- Clears all route tiles.
@@ -300,36 +280,25 @@ function GetRoute(start, finish, first_label)
     -- ensure the accessibility cache is current before pathfinding
     CanReach("Entry_point")
 
-    FOUND = false
-    ALREADY_VISITED = {}
-    PATH = {}
-    PATH_TOKENS = {}
-    STEPS = -1
     HOME = HomeRegion()
     FLY_HOPS = ReachableFlyHops()
 
-    FindPath(start, finish, 0)
+    local hops = FindPath(start, finish)
 
     local route_tokens = {}
-    if STEPS > 0 then
-        -- the found route occupies stages 1..STEPS-1 (the hop into `finish` is at STEPS-1);
-        -- clear any stale entries a longer rejected path may have left beyond it.
-        for i = STEPS, #PATH do
-            PATH[i] = nil
-        end
+    if hops then
         local line = 0
         if first_label then
             writeRouteTile(line, first_label)
             line = line + 1
         end
-        for stage = 1, STEPS - 1 do
-            local label = PATH[stage]
-            if label and label ~= "" then
-                writeRouteTile(line, label)
+        for _, hop in ipairs(hops) do
+            if hop.label ~= "" then
+                writeRouteTile(line, hop.label)
                 line = line + 1
             end
-            if PATH_TOKENS[stage] then
-                route_tokens[#route_tokens + 1] = PATH_TOKENS[stage]
+            if hop.token then
+                route_tokens[#route_tokens + 1] = hop.token
             end
         end
         if line == 0 then
@@ -343,11 +312,6 @@ function GetRoute(start, finish, first_label)
     Tracker:UiHint("ActivateTab", "Routing")
     startRouteBlink(route_tokens)
 
-    FOUND = false
-    ALREADY_VISITED = {}
-    PATH = {}
-    PATH_TOKENS = {}
-    STEPS = -1
     HOME = nil
     FLY_HOPS = {}
 end
