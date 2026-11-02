@@ -8,7 +8,7 @@ function badges()
     Tracker:ProviderCountForCode("MINERAL_BADGE") +
     Tracker:ProviderCountForCode("GLACIER_BADGE") +
     Tracker:ProviderCountForCode("RISING_BADGE") +
-    
+
     Tracker:ProviderCountForCode("BOULDER_BADGE") +
     Tracker:ProviderCountForCode("CASCADE_BADGE") +
     Tracker:ProviderCountForCode("THUNDER_BADGE") +
