@@ -648,12 +648,10 @@ end
 
 function updateFlyunlock(value)
     if value ~= nil then
-        for i, code in ipairs(FLAG_FLYUNLOCKS) do
+        local tokens = has("randomize_fly_destinations_on") and FLY_INDEX_TOKENS or FLY_REGION_TOKENS
+        for i, token in ipairs(tokens) do
             local bit = (value >> (i - 1)) & 1
-            local obj = Tracker:FindObjectForCode(code)
-            if obj ~= nil then
-                obj.Active = (bit == 1)
-            end
+            Tracker:FindObjectForCode("flyunlock_" .. token).Active = (bit == 1)
         end
     end
 end
