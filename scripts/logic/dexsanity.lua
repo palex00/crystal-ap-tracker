@@ -139,7 +139,7 @@ end
 
 function evolve_helditem(condition)
     if not has("LINK_CABLE") or not has(condition) then
-        return AccessibilityLevel.Normal
+        return AccessibilityLevel.None
     elseif has("evomethod_helditem_on") then
         return AccessibilityLevel.Normal
     else
