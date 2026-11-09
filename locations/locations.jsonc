@@ -22572,7 +22572,7 @@
                             "^$CanReach|REGION_VICTORY_ROAD_GATE:EAST"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_gate_on"
+                            "show_entrances, er_gate_on, johto_only_off"
                         ]
                     },
                     {
@@ -22594,7 +22594,7 @@
                             "^$CanReach|REGION_VICTORY_ROAD_GATE:WEST"
                         ],
                         "visibility_rules": [
-                            "show_entrances, er_gate_on"
+                            "show_entrances, er_gate_on, $silver_cave"
                         ]
                     }
                 ],
