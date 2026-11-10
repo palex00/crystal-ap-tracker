@@ -59,7 +59,8 @@ local function FlyHopLabel(token)
     return "Fly: " .. FlyRegionPrettyName(FLY_DESTINATIONS[token])
 end
 
-local function ReachableFlyHops()
+---@param level integer  the lowest access level a fly hop may have
+local function ReachableFlyHops(level)
     local hops = {}
     for _, exit in pairs(Entry_point.exits) do
         local token = exit[7]
@@ -67,7 +68,7 @@ local function ReachableFlyHops()
             local ok = exit[2](0)
             if type(ok) == "boolean" then ok = A(ok) end
             local target = FlyDetourTarget(token)
-            if ok and ok > ACCESS_SEQUENCEBREAK - 1
+            if ok and ok >= level
                 and target:accessibility() > ACCESS_SEQUENCEBREAK - 1 then
                 hops[#hops + 1] = { node = target, label = FlyHopLabel(token) }
             end
@@ -86,8 +87,9 @@ end
 --- Structural/unnamed edges get "" and print nothing.
 ---@param start table
 ---@param finish table
+---@param level integer  the lowest access level an edge may have
 ---@return table[]|nil  the hops { label, token } from start to finish, or nil if unreachable
-local function FindPath(start, finish)
+local function FindPath(start, finish, level)
     -- node -> { node = previous node, label, token } of the hop that first reached it
     local prev = { [start] = false }
     local queue = { start }
@@ -116,7 +118,7 @@ local function FindPath(start, finish)
                 if type(access) == "boolean" then
                     access = A(access)
                 end
-                if access > ACCESS_SEQUENCEBREAK - 1 then
+                if access >= level then
                     if is_entrance then
                         local row = ENTRANCE_REGISTRY[exit[5]]
                         step(node, target, row and row.pretty, exit[5])
@@ -281,9 +283,15 @@ function GetRoute(start, finish, first_label)
     CanReach("Entry_point")
 
     HOME = HomeRegion()
-    FLY_HOPS = ReachableFlyHops()
 
-    local hops = FindPath(start, finish)
+    local hops
+    for _, level in ipairs({ ACCESS_NORMAL, ACCESS_SEQUENCEBREAK }) do
+        FLY_HOPS = ReachableFlyHops(level)
+        hops = FindPath(start, finish, level)
+        if hops then
+            break
+        end
+    end
 
     local route_tokens = {}
     if hops then
