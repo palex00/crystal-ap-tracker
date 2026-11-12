@@ -19096,7 +19096,7 @@
                         "chest_unopened_img": "images/gift/camper_phonecall.png",
                         "chest_opened_img": "images/gift/camper_phonecall_bw.png",
                         "visibility_rules": [
-                            "show_items, randomize_phone_call_items_on, ^$uncleared|JohtoKanto/Route 44/Carbos from Vance"
+                            "show_items, randomize_phone_call_items_on, johto_only_off, ^$uncleared|JohtoKanto/Route 44/Carbos from Vance"
                         ],
                         "access_rules": [
                             "^$CanReach|CARBOS_FROM_VANCE"
@@ -20997,7 +20997,7 @@
                         "chest_unopened_img": "images/gift/hiker_phonecall.png",
                         "chest_opened_img": "images/gift/hiker_phonecall_bw.png",
                         "visibility_rules": [
-                            "show_items, randomize_phone_call_items_on, ^$uncleared|JohtoKanto/Route 45/Iron from Parry"
+                            "show_items, randomize_phone_call_items_on, johto_only_off, ^$uncleared|JohtoKanto/Route 45/Iron from Parry"
                         ],
                         "access_rules": [
                             "^$CanReach|IRON_FROM_PARRY"
@@ -21356,7 +21356,7 @@
                         "chest_unopened_img": "images/gift/picnicker_phonecall.png",
                         "chest_opened_img": "images/gift/picnicker_phonecall_bw.png",
                         "visibility_rules": [
-                            "show_items, randomize_phone_call_items_on, ^$uncleared|JohtoKanto/Route 46/Calcium from Erin"
+                            "show_items, randomize_phone_call_items_on, johto_only_off, ^$uncleared|JohtoKanto/Route 46/Calcium from Erin"
                         ],
                         "access_rules": [
                             "^$CanReach|CALCIUM_FROM_ERIN"
