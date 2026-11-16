@@ -96,8 +96,8 @@ FLYTOWN_MAPPING = {
     [18] = 18,  -- Lavender Town
     [19] = 19,  -- Celadon City
     [20] = 20,  -- Saffron City
-    [21] = 21,  -- Cinnabar Island
-    [22] = 22,  -- Fuchsia City
+    [21] = 21,  -- Fuchsia City
+    [22] = 22,  -- Cinnabar Island
     [23] = 23   -- Indigo Plateau
 }
 

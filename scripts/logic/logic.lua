@@ -389,8 +389,8 @@ function can_freefly(destination)
     if not has(code) then
         return ACCESS_NONE
     end
-    if has("randomize_fly_unlocks_true") then
-        return PLAYER_ID > -1 and ACCESS_SEQUENCEBREAK or ACCESS_NORMAL
+    if has("randomize_fly_unlocks_true") and PLAYER_ID == -1 then
+        return ACCESS_NORMAL
     end
     for _, region in ipairs(FLY_UNLOCK_REGIONS[destination]) do
         if CanReach(region) == ACCESS_NORMAL then
