@@ -102,7 +102,7 @@ function evolve(req_level)
 end
 
 function evolve_friend()
-    local daisy = CanReach("REGION_PALLET_TOWN")
+    local daisy = CanReach("REGION_BLUES_HOUSE")
     local massage = CanReach("REGION_GOLDENROD_UNDERGROUND")
     if has("evomethod_happiness_on") and (daisy == 6 or massage == 6) then
         return AccessibilityLevel.Normal
