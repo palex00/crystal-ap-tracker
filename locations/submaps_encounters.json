@@ -4405,11 +4405,18 @@
                 "map_locations": [
                     {
                         "size": 24,
-                        "map": "Route23Restored",
+                        "map": "Route23RestoredNorth",
                         "x": 16,
                         "y": 16,
                         "shape": "diamond"
-                    }
+                    },
+                    {
+                        "size": 24,
+                        "map": "Route23RestoredSouth",
+                        "x": 16,
+                        "y": 16,
+                        "shape": "diamond"
+                    },
                 ]
             },
             {

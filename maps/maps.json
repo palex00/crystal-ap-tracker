@@ -1416,10 +1416,16 @@
         "img": "images/maps/Route23.png"
     },
     {
-        "name": "Route23Restored",
+        "name": "Route23RestoredNorth",
         "location_size": 12,
         "location_border_thickness": 2,
-        "img": "images/maps/Route23Restored.png"
+        "img": "images/maps/Route23RestoredNorth.png"
+    },
+    {
+        "name": "Route23RestoredSouth",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/Route23RestoredSouth.png"
     },
     {
         "name": "Route24",
